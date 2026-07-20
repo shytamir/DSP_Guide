@@ -1,11 +1,9 @@
 Hi there!
 
-I made this guide using HTML and CSS.
+I made this guide as a self-contained HTML, CSS, and JavaScript page.
 
-It has no server scripts, no external links, and no cookies.
+It has no server-side scripts, external dependencies, cookies, or tracking. The entire source is here in this repository and can be inspected before opening it.
 
-I made it for myself, and I thought it might help others.
+I originally made the guide for myself and thought it might help others. You are welcome to use and share it.
 
-You are welcome to share it and use it.
-
-But remember - It's only valid for the live game version at the time of publishing.
+Please keep in mind that the game data and progression advice are only guaranteed to match the live game version at the time the guide was published.
