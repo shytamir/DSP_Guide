@@ -23,6 +23,22 @@ for (const target of links) {
   if (!uniqueIds.has(target)) errors.push(`Broken card reference: #${target}`);
 }
 
+const indirectCardTargets = new Map([
+  ["card-purple-processors", "card-yellow-processors"],
+  ["card-purple-graphene", "card-yellow-graphene"],
+]);
+
+for (const [sourceId, body] of cards.map(([, id, cardBody]) => [id, cardBody])) {
+  for (const match of body.matchAll(/<a class="card-crossref-link" href="#([^"]+)"/g)) {
+    const finalTarget = indirectCardTargets.get(match[1]);
+    if (finalTarget) {
+      errors.push(
+        `${sourceId} links through #${match[1]}; link directly to #${finalTarget}`,
+      );
+    }
+  }
+}
+
 const rebuiltPrefixes = [
   "card-red-",
   "card-yellow-plastic",
