@@ -1,0 +1,175 @@
+item_node,item_id,item_name,item_type,acquisition_class,direct_recipe_count,alternative_recipe_count,direct_recipe_ids,direct_recipe_names,nonrecipe_source_count,nonrecipe_source_types,closure_node_count,closure_edge_count,closure_item_count,closure_recipe_count,closure_tech_count,closure_theme_count,closure_vein_count,raw_resource_item_count,unresolved_source_item_count,required_tech_count,research_input_edge_count,preitem_gate_count,material_cyclic_component_count,integrated_cyclic_component_count,material_component_id,integrated_component_id
+item:1000,1000,水,Resource,planetary_or_gas_resource,0,0,,,8,theme_water_resource,9,8,1,0,0,8,0,1,0,0,0,0,0,0,scc:0001,scc:0078
+item:1001,1001,铁矿,Resource,mined,0,0,,,1,vein_mines_item,21,20,1,0,0,19,1,1,0,0,0,0,0,0,scc:0002,scc:0079
+item:1002,1002,铜矿,Resource,mined,0,0,,,1,vein_mines_item,21,20,1,0,0,19,1,1,0,0,0,0,0,0,scc:0003,scc:0080
+item:1003,1003,Silicon Ore,Resource,manufactured_or_acquired,1,0,34,硅石,1,vein_mines_item,23,37,2,1,0,18,2,2,0,4,4,0,0,0,scc:0004,scc:0081
+item:1004,1004,Titanium Ore,Resource,mined,0,0,,,1,vein_mines_item,16,15,1,0,0,14,1,1,0,0,0,0,0,0,scc:0005,scc:0082
+item:1005,1005,Stone,Resource,mined,0,0,,,1,vein_mines_item,20,19,1,0,0,18,1,1,0,0,0,0,0,0,scc:0006,scc:0083
+item:1006,1006,煤矿,Resource,mined,0,0,,,1,vein_mines_item,21,20,1,0,0,19,1,1,0,0,0,0,0,0,scc:0007,scc:0084
+item:1007,1007,原油,Resource,mined,0,0,,,1,vein_mines_item,10,9,1,0,0,8,1,1,0,0,0,0,0,0,scc:0008,scc:0085
+item:1011,1011,可燃冰,Resource,mined,0,0,,,3,theme_gas_resource|vein_mines_item,9,8,1,0,0,7,1,1,0,0,0,0,0,0,scc:0009,scc:0086
+item:1012,1012,金伯利矿石,Resource,mined,0,0,,,1,vein_mines_item,11,10,1,0,0,9,1,1,0,0,0,0,0,0,scc:0010,scc:0087
+item:1013,1013,分形硅石,Resource,mined,0,0,,,1,vein_mines_item,8,7,1,0,0,6,1,1,0,0,0,0,0,0,scc:0011,scc:0088
+item:1014,1014,光栅石,Resource,mined,0,0,,,1,vein_mines_item,11,10,1,0,0,9,1,1,0,0,0,0,0,0,scc:0012,scc:0089
+item:1015,1015,刺笋结晶,Resource,mined,0,0,,,1,vein_mines_item,10,9,1,0,0,8,1,1,0,0,0,0,0,0,scc:0013,scc:0090
+item:1016,1016,单极磁石,Resource,mined,0,0,,,1,vein_mines_item,2,1,1,0,0,0,1,1,0,0,0,0,0,0,scc:0014,scc:0091
+item:1030,1030,木材,Resource,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,1,1,0,0,0,0,0,scc:0015,scc:0092
+item:1031,1031,植物燃料,Resource,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,1,1,0,0,0,0,0,scc:0016,scc:0093
+item:1099,1099,沙土,Resource,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,1,1,0,0,0,0,0,scc:0017,scc:0094
+item:1101,1101,铁块,Material,manufactured,1,0,1,铁块,0,,23,22,2,1,0,19,1,1,0,0,0,0,0,0,scc:0018,scc:0095
+item:1102,1102,磁铁,Material,manufactured,1,0,2,磁铁,0,,23,22,2,1,0,19,1,1,0,0,0,0,0,0,scc:0019,scc:0096
+item:1103,1103,钢材,Material,manufactured,1,0,63,钢材,0,,25,24,3,2,0,19,1,1,0,4,4,0,0,0,scc:0020,scc:0097
+item:1104,1104,铜块,Material,manufactured,1,0,3,铜块,0,,23,22,2,1,0,19,1,1,0,0,0,0,0,0,scc:0021,scc:0098
+item:1105,1105,High-Purity Silicon,Material,manufactured,1,0,59,高纯硅块,0,,25,39,3,2,0,18,2,2,0,4,4,0,0,0,scc:0022,scc:0099
+item:1106,1106,Titanium Ingot,Material,manufactured,1,0,65,钛块,0,,18,17,2,1,0,14,1,1,0,5,6,0,0,1,scc:0023,scc:0100
+item:1107,1107,钛合金,Material,manufactured,1,0,66,钛合金,0,,56,133,15,10,0,25,6,7,1,32,61,0,1,1,scc:0024,scc:0101
+item:1108,1108,石材,Material,manufactured,1,0,4,石材,0,,22,21,2,1,0,18,1,1,0,0,0,0,0,0,scc:0025,scc:0102
+item:1109,1109,高能石墨,Material,manufactured,2,1,17|58,高能石墨|X射线裂解,0,,41,59,7,6,0,25,3,3,1,29,55,0,1,1,scc:0026,scc:0100
+item:1110,1110,玻璃,Material,manufactured,1,0,57,玻璃,0,,22,21,2,1,0,18,1,1,0,3,3,0,0,0,scc:0027,scc:0103
+item:1111,1111,棱镜,Material,manufactured,1,0,11,棱镜,0,,24,23,3,2,0,18,1,1,0,4,4,0,0,0,scc:0028,scc:0104
+item:1112,1112,金刚石,Material,manufactured,2,1,60|61,金刚石|金刚石（高效）,0,,46,73,9,8,0,25,4,4,1,30,57,0,1,1,scc:0029,scc:0100
+item:1113,1113,晶格硅,Material,manufactured,2,1,37|62,晶格硅|晶格硅（高效）,0,,30,50,5,4,0,18,3,3,0,12,16,0,0,1,scc:0030,scc:0100
+item:1114,1114,精炼油,Material,manufactured,2,1,16|121,等离子精炼|重整精炼,0,,39,56,6,5,0,25,3,3,1,29,55,0,1,1,scc:0031,scc:0100
+item:1115,1115,塑料,Material,manufactured,1,0,23,塑料,0,,43,62,8,7,0,25,3,3,1,29,55,0,1,1,scc:0032,scc:0100
+item:1116,1116,硫酸,Material,manufactured_or_acquired,1,0,24,硫酸,1,theme_water_resource,44,88,9,6,0,25,4,5,1,29,55,0,1,1,scc:0033,scc:0100
+item:1117,1117,Organic Crystal,Material,manufactured_or_acquired,2,1,25|54,有机晶体|有机晶体（原始）,1,vein_mines_item,50,87,12,9,0,25,4,6,3,29,55,0,1,1,scc:0034,scc:0100
+item:1118,1118,Titanium Crystal,Material,manufactured,1,0,26,钛晶石,0,,56,107,15,11,0,25,5,7,3,31,58,0,1,1,scc:0035,scc:0100
+item:1119,1119,钛化玻璃,Material,manufactured,1,0,30,钛化玻璃,0,,31,50,6,3,0,20,2,3,0,12,15,0,0,1,scc:0036,scc:0100
+item:1120,1120,氢,Material,manufactured_or_acquired,4,3,16|32|58|74,等离子精炼|石墨烯（高效）|X射线裂解|光子物质化,5,theme_gas_resource,39,56,6,5,0,25,3,3,1,29,55,0,1,1,scc:0031,scc:0100
+item:1121,1121,重氢,Material,manufactured_or_acquired,2,1,40|115,重氢|重氢分馏,3,theme_gas_resource,42,63,7,7,0,25,3,3,1,31,58,0,1,1,scc:0037,scc:0100
+item:1122,1122,反物质,Material,manufactured,1,0,74,光子物质化,0,,3,2,2,1,0,0,0,0,1,26,50,0,0,1,scc:0038,scc:0105
+item:1123,1123,石墨烯,Material,manufactured,2,1,31|32,石墨烯|石墨烯（高效）,0,,48,95,11,8,0,25,4,5,1,29,55,0,1,1,scc:0039,scc:0100
+item:1124,1124,碳纳米管,Material,manufactured,2,1,33|35,碳纳米管|碳纳米管（高效）,0,,57,126,15,11,0,25,6,7,1,32,60,0,1,1,scc:0040,scc:0100
+item:1125,1125,框架材料,Material,manufactured,1,0,80,框架材料,0,,72,178,22,17,0,25,8,9,1,34,65,0,1,1,scc:0041,scc:0106
+item:1126,1126,卡西米尔晶体,Material,manufactured,2,1,28|29,卡西米尔晶体|卡西米尔晶体（高效）,0,,67,153,20,15,0,25,7,9,3,32,61,0,1,1,scc:0042,scc:0100
+item:1127,1127,奇异物质,Material,manufactured,1,0,104,奇异物质,0,,76,172,24,20,0,25,7,8,1,31,58,0,1,1,scc:0043,scc:0100
+item:1128,1128,燃烧单元,Component,manufactured,1,0,133,燃烧单元,0,,23,22,2,1,0,19,1,1,0,4,4,0,0,0,scc:0044,scc:0107
+item:1129,1129,爆破单元,Component,manufactured,1,0,134,爆破单元,0,,52,100,13,10,0,25,4,5,1,31,58,0,1,1,scc:0045,scc:0108
+item:1130,1130,晶石爆破单元,Component,manufactured,1,0,135,晶石爆破单元,0,,83,194,27,22,0,25,9,11,3,38,75,0,1,1,scc:0046,scc:0109
+item:1131,1131,地基,Decoration,manufactured,1,0,112,地基,0,,31,48,6,4,0,19,2,2,0,5,5,0,0,0,scc:0047,scc:0110
+item:1141,1141,增产剂 Mk.I,Material,manufactured,1,0,106,增产剂 Mk.I,0,,23,22,2,1,0,19,1,1,0,6,6,0,0,0,scc:0048,scc:0111
+item:1142,1142,增产剂 Mk.II,Material,manufactured,1,0,107,增产剂 Mk.II,0,,50,78,11,10,0,25,4,4,1,34,62,0,1,1,scc:0049,scc:0112
+item:1143,1143,增产剂 Mk.III,Material,manufactured,1,0,108,增产剂 Mk.III,0,,68,148,20,16,0,25,7,8,1,38,70,0,1,1,scc:0050,scc:0113
+item:1201,1201,齿轮,Component,manufactured,1,0,5,齿轮,0,,25,24,3,2,0,19,1,1,0,0,0,0,0,0,scc:0051,scc:0114
+item:1202,1202,磁线圈,Component,manufactured,1,0,6,磁线圈,0,,29,47,5,3,0,19,2,2,0,0,0,0,0,0,scc:0052,scc:0115
+item:1203,1203,电动机,Component,manufactured,1,0,97,电动机,0,,35,55,8,6,0,19,2,2,0,3,2,0,0,0,scc:0053,scc:0116
+item:1204,1204,电磁涡轮,Component,manufactured,1,0,98,电磁涡轮,0,,37,58,9,7,0,19,2,2,0,4,4,0,0,1,scc:0054,scc:0100
+item:1205,1205,超级磁场环,Component,manufactured,1,0,103,超级磁场环,0,,61,121,17,14,0,25,5,5,1,29,55,0,1,1,scc:0055,scc:0117
+item:1206,1206,粒子容器,Component,manufactured,2,1,99|100,粒子容器|粒子容器（高效）,0,,71,161,22,17,0,25,7,8,1,29,55,0,1,1,scc:0056,scc:0100
+item:1208,1208,临界光子,Material,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,0,1,0,0,0,0,0,scc:0057,scc:0118
+item:1209,1209,引力透镜,Component,manufactured,1,0,101,引力透镜,0,,83,189,27,23,0,25,8,9,1,32,60,0,1,1,scc:0058,scc:0100
+item:1210,1210,空间翘曲器,Component,manufactured,2,1,78|79,空间翘曲器|空间翘曲器（高级）,0,,126,295,47,42,0,25,12,14,3,44,86,0,1,1,scc:0059,scc:0119
+item:1301,1301,电路板,Component,manufactured,1,0,50,电路板,0,,29,47,5,3,0,19,2,2,0,0,0,0,0,0,scc:0060,scc:0120
+item:1302,1302,微晶元件,Component,manufactured,1,0,53,微晶元件,0,,32,64,6,4,0,19,3,3,0,6,7,0,0,0,scc:0061,scc:0121
+item:1303,1303,处理器,Component,manufactured,1,0,51,处理器,0,,40,92,10,7,0,19,4,4,0,7,8,0,0,0,scc:0062,scc:0122
+item:1304,1304,位面过滤器,Component,manufactured,1,0,38,位面过滤器,0,,73,162,23,18,0,25,7,9,3,35,68,0,1,1,scc:0063,scc:0100
+item:1305,1305,量子芯片,Component,manufactured,1,0,52,量子芯片,0,,94,238,33,26,0,25,10,12,3,40,78,0,1,1,scc:0064,scc:0100
+item:1401,1401,电浆激发器,Component,manufactured_or_acquired,1,0,12,电浆激发器,1,grants_item,37,73,9,6,0,19,3,3,0,4,4,0,0,0,scc:0065,scc:0123
+item:1402,1402,粒子宽带,Component,manufactured,1,0,36,粒子宽带,0,,71,164,21,17,0,25,8,9,1,34,65,0,1,1,scc:0066,scc:0100
+item:1403,1403,湮灭约束球,Component,manufactured,1,0,42,湮灭约束球,0,,84,193,28,23,0,25,8,9,1,32,59,0,1,1,scc:0067,scc:0124
+item:1404,1404,光子合并器,Component,manufactured,2,1,68|69,光子合并器|光子合并器（高效）,0,,40,86,10,7,0,19,4,4,0,9,12,0,0,1,scc:0068,scc:0125
+item:1405,1405,推进器2,Component,manufactured,1,0,20,推进器,0,,31,49,6,4,0,19,2,2,0,10,10,0,0,1,scc:0069,scc:0126
+item:1406,1406,加力推进器,Component,manufactured,1,0,21,加力推进器,0,,72,172,23,17,0,25,7,8,1,36,65,0,1,1,scc:0070,scc:0127
+item:1407,1407,动力引擎,Component,manufactured,1,0,105,动力引擎,0,,31,50,6,4,0,19,2,2,0,3,2,0,0,0,scc:0071,scc:0128
+item:1501,1501,太阳帆,Product,manufactured,1,0,70,太阳帆,0,,69,165,21,16,0,25,7,8,1,29,55,0,1,1,scc:0072,scc:0129
+item:1502,1502,戴森球组件,Component,manufactured,1,0,81,戴森球组件,0,,95,236,33,27,0,25,10,11,1,36,67,0,1,1,scc:0073,scc:0130
+item:1503,1503,小型运载火箭,Product,manufactured,1,0,83,小型运载火箭,0,,133,310,51,46,0,25,11,13,3,46,93,0,1,1,scc:0074,scc:0131
+item:1601,1601,机枪弹箱,Product,manufactured_or_acquired,1,0,136,机枪弹箱,1,grants_item,25,24,3,2,0,19,1,1,0,4,4,0,0,0,scc:0075,scc:0132
+item:1602,1602,钛化弹箱,Product,manufactured,1,0,137,钛化弹箱,0,,31,44,6,4,0,19,2,2,0,7,9,0,0,1,scc:0076,scc:0133
+item:1603,1603,超合金弹箱,Product,manufactured,1,0,138,超合金弹箱,0,,66,163,20,14,0,25,7,8,1,35,67,0,1,1,scc:0077,scc:0134
+item:1604,1604,炮弹组,Product,manufactured,1,0,139,炮弹组,0,,30,47,5,3,0,20,2,2,0,10,12,0,0,1,scc:0078,scc:0135
+item:1605,1605,高爆炮弹组,Product,manufactured,1,0,140,高爆炮弹组,0,,64,146,19,14,0,25,6,7,1,38,68,0,1,1,scc:0079,scc:0136
+item:1606,1606,晶石炮弹组,Product,manufactured,1,0,141,晶石炮弹组,0,,101,255,36,29,0,25,11,13,3,49,95,0,1,1,scc:0080,scc:0137
+item:1607,1607,等离子胶囊,Product,manufactured,1,0,142,等离子胶囊,0,,57,128,15,12,0,25,5,6,1,40,74,0,1,1,scc:0081,scc:0138
+item:1608,1608,反物质胶囊,Product,manufactured,1,0,143,反物质胶囊,0,,79,178,26,21,0,25,7,8,1,42,81,0,1,1,scc:0082,scc:0139
+item:1609,1609,导弹组,Product,manufactured,1,0,144,导弹组,0,,42,82,11,8,0,20,3,3,0,7,7,0,0,0,scc:0083,scc:0140
+item:1610,1610,超音速导弹组,Product,manufactured,1,0,145,超音速导弹组,0,,85,196,29,24,0,25,7,8,1,44,76,0,1,1,scc:0084,scc:0141
+item:1611,1611,引力导弹组,Product,manufactured,1,0,146,引力导弹组,0,,129,302,49,43,0,25,12,14,3,54,105,0,1,1,scc:0085,scc:0142
+item:1612,1612,电磁干扰胶囊,Product,manufactured,1,0,158,电磁干扰胶囊,0,,67,144,20,16,0,25,6,6,1,36,63,0,1,1,scc:0086,scc:0143
+item:1613,1613,电磁压制胶囊,Product,manufactured,1,0,159,电磁压制胶囊,0,,80,184,27,21,0,25,7,8,1,41,73,0,1,1,scc:0087,scc:0144
+item:1801,1801,氢燃料棒,Product,manufactured,1,0,19,氢燃料棒,0,,45,76,9,7,0,25,4,4,1,33,60,0,1,1,scc:0088,scc:0145
+item:1802,1802,氘核燃料棒,Product,manufactured,1,0,41,氘核燃料棒,0,,79,187,26,21,0,25,7,8,1,35,67,0,1,1,scc:0089,scc:0146
+item:1803,1803,反物质燃料棒,Product,manufactured,1,0,44,反物质燃料棒,0,,95,222,34,27,0,25,9,10,1,35,65,0,1,1,scc:0090,scc:0147
+item:1804,1804,金色燃料棒,Product,manufactured,1,0,156,金色燃料棒,0,,110,256,41,34,0,25,10,11,2,40,73,1,1,1,scc:0091,scc:0148
+item:2001,2001,低速传送带,Logistics,manufactured_or_acquired,1,0,84,低速传送带,1,grants_item,27,27,4,3,0,19,1,1,0,3,3,0,0,0,scc:0092,scc:0149
+item:2002,2002,高速传送带,Logistics,manufactured,1,0,89,高速传送带,0,,41,64,11,9,0,19,2,2,0,7,9,0,0,1,scc:0093,scc:0150
+item:2003,2003,极速传送带,Logistics,manufactured,1,0,92,极速传送带,0,,74,167,24,19,0,25,6,7,1,37,66,0,1,1,scc:0094,scc:0151
+item:2011,2011,低速分拣器,Logistics,manufactured_or_acquired,1,0,85,低速分拣器,1,grants_item,31,50,6,4,0,19,2,2,0,3,3,0,0,0,scc:0095,scc:0152
+item:2012,2012,高速分拣器,Logistics,manufactured_or_acquired,1,0,88,高速分拣器,1,grants_item,41,64,11,9,0,19,2,2,0,5,5,0,0,0,scc:0096,scc:0153
+item:2013,2013,极速分拣器,Logistics,manufactured,1,0,90,极速分拣器,0,,45,70,13,11,0,19,2,2,0,7,9,0,0,1,scc:0097,scc:0154
+item:2014,2014,集装分拣器,Logistics,manufactured,1,0,160,集装分拣器,0,,82,182,27,23,0,25,7,7,1,35,65,0,1,1,scc:0098,scc:0155
+item:2020,2020,四向分流器,Logistics,manufactured_or_acquired,1,0,87,四向分流器,1,grants_item,33,53,7,5,0,19,2,2,0,4,4,0,0,0,scc:0099,scc:0156
+item:2030,2030,流速器,Logistics,manufactured_or_acquired,1,0,117,流速器,1,grants_item,37,75,9,6,0,19,3,3,0,5,6,0,0,0,scc:0100,scc:0157
+item:2040,2040,自动集装机,Logistics,manufactured,1,0,120,自动集装机,0,,78,176,25,21,0,25,7,7,1,36,66,0,1,1,scc:0101,scc:0158
+item:2101,2101,小型储物仓,Logistics,manufactured,1,0,86,小型储物仓,0,,29,46,5,3,0,19,2,2,0,3,3,0,0,0,scc:0102,scc:0159
+item:2102,2102,大型储物仓,Logistics,manufactured,1,0,91,大型储物仓,0,,31,48,6,4,0,19,2,2,0,9,12,0,0,1,scc:0103,scc:0160
+item:2103,2103,物流运输站,Logistics,manufactured,1,0,93,物流运输站,0,,90,214,31,25,0,25,9,10,1,41,71,0,1,1,scc:0104,scc:0161
+item:2104,2104,星际物流运输站,Logistics,manufactured,1,0,95,星际物流运输站,0,,94,222,33,27,0,25,9,10,1,44,78,0,1,1,scc:0105,scc:0162
+item:2105,2105,轨道采集器,Logistics,manufactured,1,0,111,轨道采集器,0,,101,234,37,30,0,25,9,10,2,48,88,0,1,1,scc:0106,scc:0163
+item:2106,2106,储液罐,Logistics,manufactured_or_acquired,1,0,114,储液罐,1,grants_item,31,49,6,4,0,19,2,2,0,4,4,0,0,0,scc:0107,scc:0164
+item:2107,2107,物流配送器,Logistics,manufactured,1,0,122,物流配送器,0,,52,108,16,13,0,19,4,4,0,13,17,0,0,1,scc:0108,scc:0165
+item:2201,2201,电力感应塔,Logistics,manufactured_or_acquired,1,0,8,电力感应塔,1,grants_item,33,52,7,5,0,19,2,2,0,2,1,0,0,0,scc:0109,scc:0166
+item:2202,2202,无线输电塔,Logistics,manufactured,1,0,13,无线输电塔,0,,43,81,12,9,0,19,3,3,0,4,4,0,0,0,scc:0110,scc:0167
+item:2203,2203,风力涡轮机,Production,manufactured_or_acquired,1,0,7,风力涡轮机,1,grants_item,35,55,8,6,0,19,2,2,0,2,1,0,0,0,scc:0111,scc:0168
+item:2204,2204,火力发电厂,Production,manufactured_or_acquired,1,0,64,火力发电厂,1,grants_item,39,77,10,7,0,19,3,3,0,4,4,0,0,0,scc:0112,scc:0169
+item:2205,2205,太阳能板,Production,manufactured_or_acquired,1,0,67,太阳能板,1,grants_item,38,90,9,6,0,19,4,4,0,7,9,0,0,0,scc:0113,scc:0170
+item:2206,2206,蓄电器,Logistics,manufactured,1,0,76,蓄电器,0,,75,175,23,19,0,25,8,8,1,33,64,0,1,1,scc:0114,scc:0171
+item:2207,2207,蓄电器（满）,Logistics,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,0,1,0,0,0,0,0,scc:0115,scc:0172
+item:2208,2208,射线接收站,Production,manufactured,1,0,72,射线接收站,0,,87,197,29,25,0,25,8,8,1,32,58,0,1,1,scc:0116,scc:0173
+item:2209,2209,能量枢纽,Logistics,manufactured,1,0,77,能量枢纽,0,,92,218,32,26,0,25,9,10,1,37,70,0,1,1,scc:0117,scc:0174
+item:2210,2210,人造恒星,Production,manufactured,1,0,43,人造恒星,0,,124,292,47,40,0,25,12,14,3,44,90,0,1,1,scc:0118,scc:0175
+item:2211,2211,微型聚变发电站,Production,manufactured,1,0,113,微型聚变发电站,0,,94,228,33,27,0,25,9,10,1,38,71,0,1,1,scc:0119,scc:0176
+item:2212,2212,卫星配电站,Logistics,manufactured,1,0,73,卫星配电站,0,,100,235,36,30,0,25,9,10,1,35,68,0,1,1,scc:0120,scc:0177
+item:2213,2213,地热发电站,Production,manufactured,1,0,118,地热发电站,0,,78,170,25,21,0,25,7,7,1,31,58,0,1,1,scc:0121,scc:0178
+item:2301,2301,采矿机,Production,manufactured_or_acquired,1,0,48,采矿机,1,grants_item,37,59,9,7,0,19,2,2,0,2,1,0,0,0,scc:0122,scc:0179
+item:2302,2302,电弧熔炉,Production,manufactured_or_acquired,1,0,56,电弧熔炉,1,grants_item,39,78,10,7,0,19,3,3,0,3,3,0,0,0,scc:0123,scc:0180
+item:2303,2303,制造台 Mk.I,Production,manufactured_or_acquired,1,0,45,制造台 Mk.I,1,grants_item,33,53,7,5,0,19,2,2,0,3,3,0,0,0,scc:0124,scc:0181
+item:2304,2304,制造台 Mk.II,Production,manufactured,1,0,46,制造台 Mk.II,0,,73,178,23,18,0,25,7,8,1,32,59,0,1,1,scc:0125,scc:0182
+item:2305,2305,制造台 Mk.III,Production,manufactured,1,0,47,制造台 Mk.III,0,,114,281,42,35,0,25,12,14,3,43,86,0,1,1,scc:0126,scc:0183
+item:2306,2306,抽水站,Production,manufactured,1,0,49,抽水站,0,,43,84,12,9,0,19,3,3,0,4,3,0,0,0,scc:0127,scc:0184
+item:2307,2307,原油萃取站,Production,manufactured,1,0,14,原油萃取站,0,,47,87,14,11,0,19,3,3,0,7,7,0,0,0,scc:0128,scc:0185
+item:2308,2308,原油精炼厂,Production,manufactured,1,0,15,原油精炼厂,0,,47,87,14,11,0,19,3,3,0,7,7,0,0,0,scc:0129,scc:0186
+item:2309,2309,化工厂,Production,manufactured,1,0,22,化工厂,0,,39,77,10,7,0,19,3,3,0,8,8,0,0,0,scc:0130,scc:0187
+item:2310,2310,微型粒子对撞机,Production,manufactured,1,0,39,微型粒子对撞机,0,,96,233,34,28,0,25,9,10,1,36,67,0,1,1,scc:0131,scc:0188
+item:2311,2311,电磁轨道弹射器,Production,manufactured,1,0,71,电磁轨道弹射器,0,,78,176,25,21,0,25,7,7,1,32,58,0,1,1,scc:0132,scc:0189
+item:2312,2312,垂直发射井,Production,manufactured,1,0,82,垂直发射井,0,,134,317,51,45,0,25,13,15,3,46,92,0,1,1,scc:0133,scc:0190
+item:2313,2313,喷涂机,Production,manufactured,1,0,109,喷涂机,0,,52,108,16,13,0,19,4,4,0,9,10,0,0,0,scc:0134,scc:0191
+item:2314,2314,分馏塔,Production,manufactured,1,0,110,分馏塔,0,,48,103,14,11,0,19,4,4,0,13,15,0,0,1,scc:0135,scc:0192
+item:2315,2315,位面熔炉,Production,manufactured,1,0,116,位面熔炉,0,,111,271,41,33,0,25,12,14,3,39,79,0,1,1,scc:0136,scc:0193
+item:2316,2316,大型采矿机,Production,manufactured,1,0,119,大型采矿机,0,,119,286,45,38,0,25,11,13,3,43,88,0,1,1,scc:0137,scc:0194
+item:2317,2317,化工厂 Mk.II,Production,manufactured,1,0,124,化工厂 Mk.II,0,,122,285,46,40,0,25,11,13,3,43,85,0,1,1,scc:0138,scc:0195
+item:2318,2318,制造台 Mk.IV,Production,manufactured,1,0,154,制造台 Mk.IV,0,,118,286,45,36,0,25,12,14,5,44,87,1,1,1,scc:0139,scc:0196
+item:2319,2319,熔炉 Mk.III,Production,manufactured,1,0,155,熔炉 Mk.III,0,,121,285,47,37,0,25,12,14,5,45,90,1,1,1,scc:0140,scc:0197
+item:2401,2401,激光灯塔,Decoration,manufactured_or_acquired,1,0,161,激光灯塔,1,grants_item,43,83,12,9,0,19,3,3,0,5,5,0,0,0,scc:0141,scc:0198
+item:2901,2901,矩阵研究站,Production,manufactured_or_acquired,1,0,10,矩阵研究站,1,grants_item,39,78,10,7,0,19,3,3,0,4,5,0,0,0,scc:0142,scc:0199
+item:2902,2902,矩阵研究站 Mk.II,Production,manufactured,1,0,153,矩阵研究站 Mk.II,0,,104,253,39,30,0,25,10,12,5,41,79,1,1,1,scc:0143,scc:0200
+item:3001,3001,高斯机枪塔,Turret,manufactured,1,0,125,高斯机枪塔,0,,37,59,9,7,0,19,2,2,0,4,4,0,0,0,scc:0144,scc:0201
+item:3002,3002,高频激光塔,Turret,manufactured,1,0,126,高频激光塔,0,,50,101,15,12,0,19,4,4,0,19,26,0,0,1,scc:0145,scc:0202
+item:3003,3003,聚爆加农炮,Turret,manufactured,1,0,127,聚爆加农炮,0,,67,131,20,17,0,25,5,5,1,35,62,0,1,1,scc:0146,scc:0203
+item:3004,3004,磁化电浆炮,Turret,manufactured,1,0,128,磁化电浆炮,0,,95,222,34,28,0,25,8,9,1,43,79,0,1,1,scc:0147,scc:0204
+item:3005,3005,导弹防御塔,Turret,manufactured,1,0,129,导弹防御塔,0,,43,68,12,10,0,19,2,2,0,9,9,0,0,0,scc:0148,scc:0205
+item:3006,3006,干扰塔,Turret,manufactured,1,0,130,干扰塔,0,,79,182,25,21,0,25,8,8,1,37,65,0,1,1,scc:0149,scc:0206
+item:3007,3007,信标,Defense,manufactured,1,0,131,信标,0,,57,118,18,15,0,19,5,5,0,18,23,0,0,1,scc:0150,scc:0207
+item:3008,3008,护盾发生器,Defense,manufactured,1,0,132,护盾发生器,0,,77,172,25,20,0,25,7,8,1,36,64,0,1,1,scc:0151,scc:0208
+item:3009,3009,战场分析基站,Defense,manufactured,1,0,152,战场分析基站,0,,48,104,14,11,0,19,4,4,0,10,11,0,0,0,scc:0152,scc:0209
+item:3010,3010,地面电浆炮,Turret,manufactured,1,0,157,地面电浆炮,0,,84,183,28,24,0,25,7,7,1,41,74,0,1,1,scc:0153,scc:0210
+item:5001,5001,物流运输机,Logistics,manufactured,1,0,94,物流运输机,0,,46,101,13,10,0,19,4,4,0,21,26,0,0,1,scc:0154,scc:0211
+item:5002,5002,星际物流运输船,Logistics,manufactured,1,0,96,星际物流运输船,0,,85,205,29,23,0,25,8,9,1,44,78,0,1,1,scc:0155,scc:0212
+item:5003,5003,配送运输机,Logistics,manufactured,1,0,123,配送运输机,0,,48,104,14,11,0,19,4,4,0,13,17,0,0,1,scc:0156,scc:0213
+item:5101,5101,地面战斗机-E型,Product,manufactured,1,0,147,地面战斗机-E型,0,,45,86,13,10,0,19,3,3,0,8,8,0,0,0,scc:0157,scc:0214
+item:5102,5102,地面战斗机-A型,Product,manufactured,1,0,148,地面战斗机-A型,0,,58,116,19,16,0,19,4,4,0,16,21,0,0,1,scc:0158,scc:0215
+item:5103,5103,地面战斗机-F型,Product,manufactured,1,0,149,地面战斗机-F型,0,,94,210,33,28,0,25,8,9,1,36,64,0,1,1,scc:0159,scc:0216
+item:5111,5111,太空战斗机-A型,Product,manufactured,1,0,150,太空战斗机-A型,0,,94,221,33,27,0,25,9,10,1,48,83,0,1,1,scc:0160,scc:0217
+item:5112,5112,太空战斗机-F型,Product,manufactured,1,0,151,太空战斗机-F型,0,,106,250,38,33,0,25,10,11,1,54,98,0,1,1,scc:0161,scc:0218
+item:5201,5201,存储单元,DarkFog,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,0,1,0,0,0,0,0,scc:0162,scc:0219
+item:5202,5202,硅基神经元,DarkFog,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,0,1,0,0,0,0,0,scc:0163,scc:0220
+item:5203,5203,物质重组器,DarkFog,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,0,1,0,0,0,0,0,scc:0164,scc:0221
+item:5204,5204,负熵奇点,DarkFog,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,0,1,0,0,0,0,0,scc:0165,scc:0222
+item:5205,5205,虚粒子,DarkFog,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,0,1,0,0,0,0,0,scc:0166,scc:0223
+item:5206,5206,能量碎片,DarkFog,unresolved_source,0,0,,,0,,1,0,1,0,0,0,0,0,1,0,0,0,0,0,scc:0167,scc:0224
+item:6001,6001,Electromagnetic Matrix,Matrix,manufactured,1,0,9,电磁矩阵,0,,35,55,8,6,0,19,2,2,0,3,3,0,0,0,scc:0168,scc:0225
+item:6002,6002,Energy Matrix,Matrix,manufactured,1,0,18,能量矩阵,0,,43,62,8,7,0,25,3,3,1,30,56,0,1,1,scc:0169,scc:0100
+item:6003,6003,Structure Matrix,Matrix,manufactured,1,0,27,结构矩阵,0,,63,124,18,14,0,25,6,8,3,32,60,0,1,1,scc:0170,scc:0100
+item:6004,6004,Information Matrix,Matrix,manufactured,1,0,55,信息矩阵,0,,87,220,29,23,0,25,10,11,1,37,69,0,1,1,scc:0171,scc:0100
+item:6005,6005,Gravity Matrix,Matrix,manufactured,1,0,102,引力矩阵,0,,123,291,46,40,0,25,12,14,3,44,86,0,1,1,scc:0172,scc:0100
+item:6006,6006,Universe Matrix,Matrix,manufactured,1,0,75,宇宙矩阵,0,,146,340,57,50,0,25,14,16,3,46,92,0,1,1,scc:0173,scc:0226

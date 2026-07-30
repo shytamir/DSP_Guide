@@ -1,0 +1,76 @@
+{
+  "generated_at_utc": "2026-07-30T05:52:28.519Z",
+  "output_dir": "C:\\Users\\Usuario\\Documents\\Codex\\2026-07-27\\referenced-chatgpt-conversation-this-is-untrusted\\outputs\\dsp_universal_end_product_dag_v1_0",
+  "source_sha256": "b52defc068830f6f36433d8136edeead05b52603bf46154e3eeb7d300baa719d",
+  "counts": {
+    "nodes": 765,
+    "edges_total": 2580,
+    "formal_edges": 2573,
+    "practical_overlay_edges": 7,
+    "product_dependency_edges": 2231,
+    "material_dependency_edges": 796,
+    "research_prerequisite_edges": 417,
+    "item_targets": 174,
+    "recipe_hyperedges": 161,
+    "node_types": {
+      "capability": 7,
+      "item_proto": 174,
+      "recipe_proto": 161,
+      "tech_proto": 314,
+      "theme_proto": 25,
+      "unlock_function": 70,
+      "vein_proto": 14
+    },
+    "formal_edge_types": {
+      "grants_item": 17,
+      "preitem_gate": 4,
+      "pretech_explicit": 305,
+      "pretech_implicit": 112,
+      "recipe_input": 441,
+      "recipe_output": 165,
+      "research_input": 843,
+      "theme_base_vein_config_absent": 28,
+      "theme_base_vein_config_present": 112,
+      "theme_gas_resource": 10,
+      "theme_rare_vein_config": 45,
+      "theme_water_resource": 9,
+      "unlocks_function": 314,
+      "unlocks_recipe": 154,
+      "vein_mines_item": 14
+    }
+  },
+  "formal_condensation": {
+    "components": 680,
+    "cyclic_components": 1,
+    "nodes_in_cycles": 86,
+    "edges": 2015,
+    "acyclic": true
+  },
+  "product_condensation": {
+    "components": 680,
+    "cyclic_components": 1,
+    "nodes_in_cycles": 86,
+    "edges": 1674,
+    "acyclic": true
+  },
+  "material_condensation": {
+    "source_nodes": 374,
+    "source_edges": 796,
+    "components": 371,
+    "cyclic_components": 1,
+    "nodes_in_cycles": 4,
+    "edges": 789,
+    "acyclic": true
+  },
+  "research_condensation": {
+    "source_nodes": 314,
+    "source_edges": 417,
+    "components": 314,
+    "cyclic_components": 0,
+    "nodes_in_cycles": 0,
+    "edges": 417,
+    "acyclic": true
+  },
+  "items_with_alternative_recipes": 13,
+  "unresolved_direct_item_sources": 11
+}

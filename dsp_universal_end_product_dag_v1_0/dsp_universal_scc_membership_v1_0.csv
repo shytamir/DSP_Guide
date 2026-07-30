@@ -1,0 +1,2219 @@
+profile,component_id,cyclic,component_member_count,topological_rank,node_id,node_type,game_id,display_name
+all_exact_formal_game_data,scc:0001,false,1,0,capability:automated_interplanetary_logistics,capability,,Automated interplanetary logistics
+all_exact_formal_game_data,scc:0002,false,1,1,capability:automated_planetary_logistics,capability,,Automated planetary logistics
+all_exact_formal_game_data,scc:0003,false,1,2,capability:efficient_bulk_silicon_access,capability,,Efficient bulk silicon access
+all_exact_formal_game_data,scc:0004,false,1,3,capability:manual_interplanetary_travel,capability,,Manual interplanetary travel
+all_exact_formal_game_data,scc:0005,false,1,4,capability:mecha_warp,capability,,Mecha warp
+all_exact_formal_game_data,scc:0006,false,1,5,capability:sustained_titanium_access,capability,,Sustained titanium access
+all_exact_formal_game_data,scc:0007,false,1,6,capability:vessel_warp,capability,,Logistics vessel warp
+all_exact_formal_game_data,scc:0008,false,1,446,function:1,unlock_function,1,UnlockFunction 1
+all_exact_formal_game_data,scc:0009,false,1,459,function:10,unlock_function,10,UnlockFunction 10
+all_exact_formal_game_data,scc:0010,false,1,477,function:11,unlock_function,11,UnlockFunction 11
+all_exact_formal_game_data,scc:0011,false,1,495,function:12,unlock_function,12,UnlockFunction 12
+all_exact_formal_game_data,scc:0012,false,1,504,function:13,unlock_function,13,UnlockFunction 13
+all_exact_formal_game_data,scc:0013,false,1,510,function:14,unlock_function,14,UnlockFunction 14
+all_exact_formal_game_data,scc:0014,false,1,554,function:15,unlock_function,15,UnlockFunction 15
+all_exact_formal_game_data,scc:0015,false,1,555,function:16,unlock_function,16,UnlockFunction 16
+all_exact_formal_game_data,scc:0016,false,1,550,function:17,unlock_function,17,UnlockFunction 17
+all_exact_formal_game_data,scc:0017,false,1,568,function:18,unlock_function,18,UnlockFunction 18
+all_exact_formal_game_data,scc:0018,false,1,569,function:19,unlock_function,19,UnlockFunction 19
+all_exact_formal_game_data,scc:0019,false,1,453,function:2,unlock_function,2,UnlockFunction 2
+all_exact_formal_game_data,scc:0020,false,1,527,function:20,unlock_function,20,UnlockFunction 20
+all_exact_formal_game_data,scc:0021,false,1,528,function:21,unlock_function,21,UnlockFunction 21
+all_exact_formal_game_data,scc:0022,false,1,587,function:22,unlock_function,22,UnlockFunction 22
+all_exact_formal_game_data,scc:0023,false,1,596,function:23,unlock_function,23,UnlockFunction 23
+all_exact_formal_game_data,scc:0024,false,1,577,function:24,unlock_function,24,UnlockFunction 24
+all_exact_formal_game_data,scc:0025,false,1,578,function:25,unlock_function,25,UnlockFunction 25
+all_exact_formal_game_data,scc:0026,false,1,312,function:26,unlock_function,26,UnlockFunction 26
+all_exact_formal_game_data,scc:0027,false,1,482,function:27,unlock_function,27,UnlockFunction 27
+all_exact_formal_game_data,scc:0028,false,1,463,function:28,unlock_function,28,UnlockFunction 28
+all_exact_formal_game_data,scc:0029,false,1,582,function:29,unlock_function,29,UnlockFunction 29
+all_exact_formal_game_data,scc:0030,false,1,428,function:3,unlock_function,3,UnlockFunction 3
+all_exact_formal_game_data,scc:0031,false,1,570,function:30,unlock_function,30,UnlockFunction 30
+all_exact_formal_game_data,scc:0032,false,1,571,function:31,unlock_function,31,UnlockFunction 31
+all_exact_formal_game_data,scc:0033,false,1,437,function:32,unlock_function,32,UnlockFunction 32
+all_exact_formal_game_data,scc:0034,false,1,434,function:33,unlock_function,33,UnlockFunction 33
+all_exact_formal_game_data,scc:0035,false,1,556,function:34,unlock_function,34,UnlockFunction 34
+all_exact_formal_game_data,scc:0036,false,1,564,function:35,unlock_function,35,UnlockFunction 35
+all_exact_formal_game_data,scc:0037,false,1,593,function:36,unlock_function,36,UnlockFunction 36
+all_exact_formal_game_data,scc:0038,false,1,96,function:37,unlock_function,37,UnlockFunction 37
+all_exact_formal_game_data,scc:0039,false,1,438,function:38,unlock_function,38,UnlockFunction 38
+all_exact_formal_game_data,scc:0040,false,1,518,function:39,unlock_function,39,UnlockFunction 39
+all_exact_formal_game_data,scc:0041,false,1,479,function:4,unlock_function,4,UnlockFunction 4
+all_exact_formal_game_data,scc:0042,false,1,520,function:40,unlock_function,40,UnlockFunction 40
+all_exact_formal_game_data,scc:0043,false,1,516,function:41,unlock_function,41,UnlockFunction 41
+all_exact_formal_game_data,scc:0044,false,1,219,function:42,unlock_function,42,UnlockFunction 42
+all_exact_formal_game_data,scc:0045,false,1,603,function:43,unlock_function,43,UnlockFunction 43
+all_exact_formal_game_data,scc:0046,false,1,465,function:44,unlock_function,44,UnlockFunction 44
+all_exact_formal_game_data,scc:0047,false,1,435,function:5,unlock_function,5,UnlockFunction 5
+all_exact_formal_game_data,scc:0048,false,1,418,function:6,unlock_function,6,UnlockFunction 6
+all_exact_formal_game_data,scc:0049,false,1,609,function:61,unlock_function,61,UnlockFunction 61
+all_exact_formal_game_data,scc:0050,false,1,615,function:62,unlock_function,62,UnlockFunction 62
+all_exact_formal_game_data,scc:0051,false,1,621,function:63,unlock_function,63,UnlockFunction 63
+all_exact_formal_game_data,scc:0052,false,1,679,function:64,unlock_function,64,UnlockFunction 64
+all_exact_formal_game_data,scc:0053,false,1,472,function:65,unlock_function,65,UnlockFunction 65
+all_exact_formal_game_data,scc:0054,false,1,474,function:66,unlock_function,66,UnlockFunction 66
+all_exact_formal_game_data,scc:0055,false,1,627,function:67,unlock_function,67,UnlockFunction 67
+all_exact_formal_game_data,scc:0056,false,1,634,function:68,unlock_function,68,UnlockFunction 68
+all_exact_formal_game_data,scc:0057,false,1,641,function:69,unlock_function,69,UnlockFunction 69
+all_exact_formal_game_data,scc:0058,false,1,259,function:7,unlock_function,7,UnlockFunction 7
+all_exact_formal_game_data,scc:0059,false,1,628,function:71,unlock_function,71,UnlockFunction 71
+all_exact_formal_game_data,scc:0060,false,1,635,function:72,unlock_function,72,UnlockFunction 72
+all_exact_formal_game_data,scc:0061,false,1,642,function:73,unlock_function,73,UnlockFunction 73
+all_exact_formal_game_data,scc:0062,false,1,648,function:74,unlock_function,74,UnlockFunction 74
+all_exact_formal_game_data,scc:0063,false,1,137,function:75,unlock_function,75,UnlockFunction 75
+all_exact_formal_game_data,scc:0064,false,1,488,function:76,unlock_function,76,UnlockFunction 76
+all_exact_formal_game_data,scc:0065,false,1,657,function:77,unlock_function,77,UnlockFunction 77
+all_exact_formal_game_data,scc:0066,false,1,653,function:78,unlock_function,78,UnlockFunction 78
+all_exact_formal_game_data,scc:0067,false,1,666,function:79,unlock_function,79,UnlockFunction 79
+all_exact_formal_game_data,scc:0068,false,1,220,function:8,unlock_function,8,UnlockFunction 8
+all_exact_formal_game_data,scc:0069,false,1,660,function:80,unlock_function,80,UnlockFunction 80
+all_exact_formal_game_data,scc:0070,false,1,419,function:81,unlock_function,81,UnlockFunction 81
+all_exact_formal_game_data,scc:0071,false,1,416,function:82,unlock_function,82,UnlockFunction 82
+all_exact_formal_game_data,scc:0072,false,1,420,function:83,unlock_function,83,UnlockFunction 83
+all_exact_formal_game_data,scc:0073,false,1,672,function:84,unlock_function,84,UnlockFunction 84
+all_exact_formal_game_data,scc:0074,false,1,529,function:85,unlock_function,85,UnlockFunction 85
+all_exact_formal_game_data,scc:0075,false,1,468,function:86,unlock_function,86,UnlockFunction 86
+all_exact_formal_game_data,scc:0076,false,1,444,function:9,unlock_function,9,UnlockFunction 9
+all_exact_formal_game_data,scc:0077,false,1,283,function:99,unlock_function,99,UnlockFunction 99
+all_exact_formal_game_data,scc:0078,false,1,43,item:1000,item_proto,1000,水
+all_exact_formal_game_data,scc:0079,false,1,46,item:1001,item_proto,1001,铁矿
+all_exact_formal_game_data,scc:0080,false,1,63,item:1002,item_proto,1002,铜矿
+all_exact_formal_game_data,scc:0081,false,1,151,item:1003,item_proto,1003,Silicon Ore
+all_exact_formal_game_data,scc:0082,false,1,147,item:1004,item_proto,1004,Titanium Ore
+all_exact_formal_game_data,scc:0083,false,1,149,item:1005,item_proto,1005,Stone
+all_exact_formal_game_data,scc:0084,false,1,201,item:1006,item_proto,1006,煤矿
+all_exact_formal_game_data,scc:0085,false,1,211,item:1007,item_proto,1007,原油
+all_exact_formal_game_data,scc:0086,false,1,214,item:1011,item_proto,1011,可燃冰
+all_exact_formal_game_data,scc:0087,false,1,217,item:1012,item_proto,1012,金伯利矿石
+all_exact_formal_game_data,scc:0088,false,1,54,item:1013,item_proto,1013,分形硅石
+all_exact_formal_game_data,scc:0089,false,1,57,item:1014,item_proto,1014,光栅石
+all_exact_formal_game_data,scc:0090,false,1,59,item:1015,item_proto,1015,刺笋结晶
+all_exact_formal_game_data,scc:0091,false,1,61,item:1016,item_proto,1016,单极磁石
+all_exact_formal_game_data,scc:0092,false,1,7,item:1030,item_proto,1030,木材
+all_exact_formal_game_data,scc:0093,false,1,8,item:1031,item_proto,1031,植物燃料
+all_exact_formal_game_data,scc:0094,false,1,9,item:1099,item_proto,1099,沙土
+all_exact_formal_game_data,scc:0095,false,1,48,item:1101,item_proto,1101,铁块
+all_exact_formal_game_data,scc:0096,false,1,50,item:1102,item_proto,1102,磁铁
+all_exact_formal_game_data,scc:0097,false,1,98,item:1103,item_proto,1103,钢材
+all_exact_formal_game_data,scc:0098,false,1,65,item:1104,item_proto,1104,铜块
+all_exact_formal_game_data,scc:0099,false,1,185,item:1105,item_proto,1105,High-Purity Silicon
+all_exact_formal_game_data,scc:0100,true,86,218,item:1106,item_proto,1106,Titanium Ingot
+all_exact_formal_game_data,scc:0100,true,86,218,item:1109,item_proto,1109,高能石墨
+all_exact_formal_game_data,scc:0100,true,86,218,item:1112,item_proto,1112,金刚石
+all_exact_formal_game_data,scc:0100,true,86,218,item:1113,item_proto,1113,晶格硅
+all_exact_formal_game_data,scc:0100,true,86,218,item:1114,item_proto,1114,精炼油
+all_exact_formal_game_data,scc:0100,true,86,218,item:1115,item_proto,1115,塑料
+all_exact_formal_game_data,scc:0100,true,86,218,item:1116,item_proto,1116,硫酸
+all_exact_formal_game_data,scc:0100,true,86,218,item:1117,item_proto,1117,Organic Crystal
+all_exact_formal_game_data,scc:0100,true,86,218,item:1118,item_proto,1118,Titanium Crystal
+all_exact_formal_game_data,scc:0100,true,86,218,item:1119,item_proto,1119,钛化玻璃
+all_exact_formal_game_data,scc:0100,true,86,218,item:1120,item_proto,1120,氢
+all_exact_formal_game_data,scc:0100,true,86,218,item:1121,item_proto,1121,重氢
+all_exact_formal_game_data,scc:0100,true,86,218,item:1123,item_proto,1123,石墨烯
+all_exact_formal_game_data,scc:0100,true,86,218,item:1124,item_proto,1124,碳纳米管
+all_exact_formal_game_data,scc:0100,true,86,218,item:1126,item_proto,1126,卡西米尔晶体
+all_exact_formal_game_data,scc:0100,true,86,218,item:1127,item_proto,1127,奇异物质
+all_exact_formal_game_data,scc:0100,true,86,218,item:1204,item_proto,1204,电磁涡轮
+all_exact_formal_game_data,scc:0100,true,86,218,item:1206,item_proto,1206,粒子容器
+all_exact_formal_game_data,scc:0100,true,86,218,item:1209,item_proto,1209,引力透镜
+all_exact_formal_game_data,scc:0100,true,86,218,item:1304,item_proto,1304,位面过滤器
+all_exact_formal_game_data,scc:0100,true,86,218,item:1305,item_proto,1305,量子芯片
+all_exact_formal_game_data,scc:0100,true,86,218,item:1402,item_proto,1402,粒子宽带
+all_exact_formal_game_data,scc:0100,true,86,218,item:6002,item_proto,6002,Energy Matrix
+all_exact_formal_game_data,scc:0100,true,86,218,item:6003,item_proto,6003,Structure Matrix
+all_exact_formal_game_data,scc:0100,true,86,218,item:6004,item_proto,6004,Information Matrix
+all_exact_formal_game_data,scc:0100,true,86,218,item:6005,item_proto,6005,Gravity Matrix
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:100,recipe_proto,100,粒子容器（高效）
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:101,recipe_proto,101,引力透镜
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:102,recipe_proto,102,引力矩阵
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:104,recipe_proto,104,奇异物质
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:115,recipe_proto,115,重氢分馏
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:121,recipe_proto,121,重整精炼
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:18,recipe_proto,18,能量矩阵
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:23,recipe_proto,23,塑料
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:24,recipe_proto,24,硫酸
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:25,recipe_proto,25,有机晶体
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:26,recipe_proto,26,钛晶石
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:27,recipe_proto,27,结构矩阵
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:28,recipe_proto,28,卡西米尔晶体
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:29,recipe_proto,29,卡西米尔晶体（高效）
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:30,recipe_proto,30,钛化玻璃
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:31,recipe_proto,31,石墨烯
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:33,recipe_proto,33,碳纳米管
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:35,recipe_proto,35,碳纳米管（高效）
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:36,recipe_proto,36,粒子宽带
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:37,recipe_proto,37,晶格硅
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:38,recipe_proto,38,位面过滤器
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:40,recipe_proto,40,重氢
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:52,recipe_proto,52,量子芯片
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:54,recipe_proto,54,有机晶体（原始）
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:55,recipe_proto,55,信息矩阵
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:58,recipe_proto,58,X射线裂解
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:60,recipe_proto,60,金刚石
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:61,recipe_proto,61,金刚石（高效）
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:62,recipe_proto,62,晶格硅（高效）
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:65,recipe_proto,65,钛块
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:74,recipe_proto,74,光子物质化
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:98,recipe_proto,98,电磁涡轮
+all_exact_formal_game_data,scc:0100,true,86,218,recipe:99,recipe_proto,99,粒子容器
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1103,tech_proto,1103,TX射线裂解
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1104,tech_proto,1104,T重整精炼
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1122,tech_proto,1122,T高分子化工
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1123,tech_proto,1123,High-Strength Crystal
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1124,tech_proto,1124,Structure Matrix
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1125,tech_proto,1125,T卡西米尔晶体
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1126,tech_proto,1126,T高强度玻璃
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1132,tech_proto,1132,T高强度材料
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1133,tech_proto,1133,T粒子可控技术
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1134,tech_proto,1134,T重氢分馏
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1141,tech_proto,1141,T波函数干扰
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1142,tech_proto,1142,T微型粒子对撞机
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1143,tech_proto,1143,T奇异物质
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1303,tech_proto,1303,Quantum Chip
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1312,tech_proto,1312,Information Matrix
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1403,tech_proto,1403,T晶体冶炼
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1413,tech_proto,1413,Titanium Smelting
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1502,tech_proto,1502,T光子变频
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1503,tech_proto,1503,T太阳帆轨道系统
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1504,tech_proto,1504,T射线接收站
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1505,tech_proto,1505,T行星电离层利用
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1506,tech_proto,1506,Dirac Inversion Mechanism
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1702,tech_proto,1702,T磁悬浮技术
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1703,tech_proto,1703,T粒子磁力阱
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1704,tech_proto,1704,Gravitational Wave Refraction
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1705,tech_proto,1705,Gravity Matrix
+all_exact_formal_game_data,scc:0100,true,86,218,tech:1711,tech_proto,1711,Super Magnetic Field Generator
+all_exact_formal_game_data,scc:0101,false,1,268,item:1107,item_proto,1107,钛合金
+all_exact_formal_game_data,scc:0102,false,1,153,item:1108,item_proto,1108,石材
+all_exact_formal_game_data,scc:0103,false,1,161,item:1110,item_proto,1110,玻璃
+all_exact_formal_game_data,scc:0104,false,1,165,item:1111,item_proto,1111,棱镜
+all_exact_formal_game_data,scc:0105,false,1,221,item:1122,item_proto,1122,反物质
+all_exact_formal_game_data,scc:0106,false,1,295,item:1125,item_proto,1125,框架材料
+all_exact_formal_game_data,scc:0107,false,1,205,item:1128,item_proto,1128,燃烧单元
+all_exact_formal_game_data,scc:0108,false,1,335,item:1129,item_proto,1129,爆破单元
+all_exact_formal_game_data,scc:0109,false,1,338,item:1130,item_proto,1130,晶石爆破单元
+all_exact_formal_game_data,scc:0110,false,1,155,item:1131,item_proto,1131,地基
+all_exact_formal_game_data,scc:0111,false,1,203,item:1141,item_proto,1141,增产剂 Mk.I
+all_exact_formal_game_data,scc:0112,false,1,251,item:1142,item_proto,1142,增产剂 Mk.II
+all_exact_formal_game_data,scc:0113,false,1,254,item:1143,item_proto,1143,增产剂 Mk.III
+all_exact_formal_game_data,scc:0114,false,1,52,item:1201,item_proto,1201,齿轮
+all_exact_formal_game_data,scc:0115,false,1,69,item:1202,item_proto,1202,磁线圈
+all_exact_formal_game_data,scc:0116,false,1,112,item:1203,item_proto,1203,电动机
+all_exact_formal_game_data,scc:0117,false,1,223,item:1205,item_proto,1205,超级磁场环
+all_exact_formal_game_data,scc:0118,false,1,10,item:1208,item_proto,1208,临界光子
+all_exact_formal_game_data,scc:0119,false,1,237,item:1210,item_proto,1210,空间翘曲器
+all_exact_formal_game_data,scc:0120,false,1,67,item:1301,item_proto,1301,电路板
+all_exact_formal_game_data,scc:0121,false,1,187,item:1302,item_proto,1302,微晶元件
+all_exact_formal_game_data,scc:0122,false,1,193,item:1303,item_proto,1303,处理器
+all_exact_formal_game_data,scc:0123,false,1,171,item:1401,item_proto,1401,电浆激发器
+all_exact_formal_game_data,scc:0124,false,1,247,item:1403,item_proto,1403,湮灭约束球
+all_exact_formal_game_data,scc:0125,false,1,228,item:1404,item_proto,1404,光子合并器
+all_exact_formal_game_data,scc:0126,false,1,243,item:1405,item_proto,1405,推进器2
+all_exact_formal_game_data,scc:0127,false,1,270,item:1406,item_proto,1406,加力推进器
+all_exact_formal_game_data,scc:0128,false,1,123,item:1407,item_proto,1407,动力引擎
+all_exact_formal_game_data,scc:0129,false,1,230,item:1501,item_proto,1501,太阳帆
+all_exact_formal_game_data,scc:0130,false,1,305,item:1502,item_proto,1502,戴森球组件
+all_exact_formal_game_data,scc:0131,false,1,310,item:1503,item_proto,1503,小型运载火箭
+all_exact_formal_game_data,scc:0132,false,1,119,item:1601,item_proto,1601,机枪弹箱
+all_exact_formal_game_data,scc:0133,false,1,366,item:1602,item_proto,1602,钛化弹箱
+all_exact_formal_game_data,scc:0134,false,1,369,item:1603,item_proto,1603,超合金弹箱
+all_exact_formal_game_data,scc:0135,false,1,343,item:1604,item_proto,1604,炮弹组
+all_exact_formal_game_data,scc:0136,false,1,372,item:1605,item_proto,1605,高爆炮弹组
+all_exact_formal_game_data,scc:0137,false,1,378,item:1606,item_proto,1606,晶石炮弹组
+all_exact_formal_game_data,scc:0138,false,1,361,item:1607,item_proto,1607,等离子胶囊
+all_exact_formal_game_data,scc:0139,false,1,384,item:1608,item_proto,1608,反物质胶囊
+all_exact_formal_game_data,scc:0140,false,1,207,item:1609,item_proto,1609,导弹组
+all_exact_formal_game_data,scc:0141,false,1,375,item:1610,item_proto,1610,超音速导弹组
+all_exact_formal_game_data,scc:0142,false,1,381,item:1611,item_proto,1611,引力导弹组
+all_exact_formal_game_data,scc:0143,false,1,356,item:1612,item_proto,1612,电磁干扰胶囊
+all_exact_formal_game_data,scc:0144,false,1,399,item:1613,item_proto,1613,电磁压制胶囊
+all_exact_formal_game_data,scc:0145,false,1,240,item:1801,item_proto,1801,氢燃料棒
+all_exact_formal_game_data,scc:0146,false,1,277,item:1802,item_proto,1802,氘核燃料棒
+all_exact_formal_game_data,scc:0147,false,1,272,item:1803,item_proto,1803,反物质燃料棒
+all_exact_formal_game_data,scc:0148,false,1,411,item:1804,item_proto,1804,金色燃料棒
+all_exact_formal_game_data,scc:0149,false,1,104,item:2001,item_proto,2001,低速传送带
+all_exact_formal_game_data,scc:0150,false,1,315,item:2002,item_proto,2002,高速传送带
+all_exact_formal_game_data,scc:0151,false,1,533,item:2003,item_proto,2003,极速传送带
+all_exact_formal_game_data,scc:0152,false,1,106,item:2011,item_proto,2011,低速分拣器
+all_exact_formal_game_data,scc:0153,false,1,114,item:2012,item_proto,2012,高速分拣器
+all_exact_formal_game_data,scc:0154,false,1,317,item:2013,item_proto,2013,极速分拣器
+all_exact_formal_game_data,scc:0155,false,1,324,item:2014,item_proto,2014,集装分拣器
+all_exact_formal_game_data,scc:0156,false,1,109,item:2020,item_proto,2020,四向分流器
+all_exact_formal_game_data,scc:0157,false,1,169,item:2030,item_proto,2030,流速器
+all_exact_formal_game_data,scc:0158,false,1,322,item:2040,item_proto,2040,自动集装机
+all_exact_formal_game_data,scc:0159,false,1,199,item:2101,item_proto,2101,小型储物仓
+all_exact_formal_game_data,scc:0160,false,1,319,item:2102,item_proto,2102,大型储物仓
+all_exact_formal_game_data,scc:0161,false,1,535,item:2103,item_proto,2103,物流运输站
+all_exact_formal_game_data,scc:0162,false,1,540,item:2104,item_proto,2104,星际物流运输站
+all_exact_formal_game_data,scc:0163,false,1,545,item:2105,item_proto,2105,轨道采集器
+all_exact_formal_game_data,scc:0164,false,1,167,item:2106,item_proto,2106,储液罐
+all_exact_formal_game_data,scc:0165,false,1,327,item:2107,item_proto,2107,物流配送器
+all_exact_formal_game_data,scc:0166,false,1,76,item:2201,item_proto,2201,电力感应塔
+all_exact_formal_game_data,scc:0167,false,1,173,item:2202,item_proto,2202,无线输电塔
+all_exact_formal_game_data,scc:0168,false,1,74,item:2203,item_proto,2203,风力涡轮机
+all_exact_formal_game_data,scc:0169,false,1,195,item:2204,item_proto,2204,火力发电厂
+all_exact_formal_game_data,scc:0170,false,1,197,item:2205,item_proto,2205,太阳能板
+all_exact_formal_game_data,scc:0171,false,1,286,item:2206,item_proto,2206,蓄电器
+all_exact_formal_game_data,scc:0172,false,1,11,item:2207,item_proto,2207,蓄电器（满）
+all_exact_formal_game_data,scc:0173,false,1,234,item:2208,item_proto,2208,射线接收站
+all_exact_formal_game_data,scc:0174,false,1,289,item:2209,item_proto,2209,能量枢纽
+all_exact_formal_game_data,scc:0175,false,1,303,item:2210,item_proto,2210,人造恒星
+all_exact_formal_game_data,scc:0176,false,1,275,item:2211,item_proto,2211,微型聚变发电站
+all_exact_formal_game_data,scc:0177,false,1,332,item:2212,item_proto,2212,卫星配电站
+all_exact_formal_game_data,scc:0178,false,1,292,item:2213,item_proto,2213,地热发电站
+all_exact_formal_game_data,scc:0179,false,1,72,item:2301,item_proto,2301,采矿机
+all_exact_formal_game_data,scc:0180,false,1,159,item:2302,item_proto,2302,电弧熔炉
+all_exact_formal_game_data,scc:0181,false,1,89,item:2303,item_proto,2303,制造台 Mk.I
+all_exact_formal_game_data,scc:0182,false,1,257,item:2304,item_proto,2304,制造台 Mk.II
+all_exact_formal_game_data,scc:0183,false,1,261,item:2305,item_proto,2305,制造台 Mk.III
+all_exact_formal_game_data,scc:0184,false,1,157,item:2306,item_proto,2306,抽水站
+all_exact_formal_game_data,scc:0185,false,1,175,item:2307,item_proto,2307,原油萃取站
+all_exact_formal_game_data,scc:0186,false,1,179,item:2308,item_proto,2308,原油精炼厂
+all_exact_formal_game_data,scc:0187,false,1,183,item:2309,item_proto,2309,化工厂
+all_exact_formal_game_data,scc:0188,false,1,301,item:2310,item_proto,2310,微型粒子对撞机
+all_exact_formal_game_data,scc:0189,false,1,232,item:2311,item_proto,2311,电磁轨道弹射器
+all_exact_formal_game_data,scc:0190,false,1,308,item:2312,item_proto,2312,垂直发射井
+all_exact_formal_game_data,scc:0191,false,1,189,item:2313,item_proto,2313,喷涂机
+all_exact_formal_game_data,scc:0192,false,1,225,item:2314,item_proto,2314,分馏塔
+all_exact_formal_game_data,scc:0193,false,1,297,item:2315,item_proto,2315,位面熔炉
+all_exact_formal_game_data,scc:0194,false,1,299,item:2316,item_proto,2316,大型采矿机
+all_exact_formal_game_data,scc:0195,false,1,265,item:2317,item_proto,2317,化工厂 Mk.II
+all_exact_formal_game_data,scc:0196,false,1,405,item:2318,item_proto,2318,制造台 Mk.IV
+all_exact_formal_game_data,scc:0197,false,1,408,item:2319,item_proto,2319,熔炉 Mk.III
+all_exact_formal_game_data,scc:0198,false,1,181,item:2401,item_proto,2401,激光灯塔
+all_exact_formal_game_data,scc:0199,false,1,163,item:2901,item_proto,2901,矩阵研究站
+all_exact_formal_game_data,scc:0200,false,1,402,item:2902,item_proto,2902,矩阵研究站 Mk.II
+all_exact_formal_game_data,scc:0201,false,1,117,item:3001,item_proto,3001,高斯机枪塔
+all_exact_formal_game_data,scc:0202,false,1,349,item:3002,item_proto,3002,高频激光塔
+all_exact_formal_game_data,scc:0203,false,1,341,item:3003,item_proto,3003,聚爆加农炮
+all_exact_formal_game_data,scc:0204,false,1,359,item:3004,item_proto,3004,磁化电浆炮
+all_exact_formal_game_data,scc:0205,false,1,126,item:3005,item_proto,3005,导弹防御塔
+all_exact_formal_game_data,scc:0206,false,1,354,item:3006,item_proto,3006,干扰塔
+all_exact_formal_game_data,scc:0207,false,1,346,item:3007,item_proto,3007,信标
+all_exact_formal_game_data,scc:0208,false,1,351,item:3008,item_proto,3008,护盾发生器
+all_exact_formal_game_data,scc:0209,false,1,191,item:3009,item_proto,3009,战场分析基站
+all_exact_formal_game_data,scc:0210,false,1,363,item:3010,item_proto,3010,地面电浆炮
+all_exact_formal_game_data,scc:0211,false,1,537,item:5001,item_proto,5001,物流运输机
+all_exact_formal_game_data,scc:0212,false,1,542,item:5002,item_proto,5002,星际物流运输船
+all_exact_formal_game_data,scc:0213,false,1,329,item:5003,item_proto,5003,配送运输机
+all_exact_formal_game_data,scc:0214,false,1,177,item:5101,item_proto,5101,地面战斗机-E型
+all_exact_formal_game_data,scc:0215,false,1,387,item:5102,item_proto,5102,地面战斗机-A型
+all_exact_formal_game_data,scc:0216,false,1,390,item:5103,item_proto,5103,地面战斗机-F型
+all_exact_formal_game_data,scc:0217,false,1,393,item:5111,item_proto,5111,太空战斗机-A型
+all_exact_formal_game_data,scc:0218,false,1,396,item:5112,item_proto,5112,太空战斗机-F型
+all_exact_formal_game_data,scc:0219,false,1,12,item:5201,item_proto,5201,存储单元
+all_exact_formal_game_data,scc:0220,false,1,13,item:5202,item_proto,5202,硅基神经元
+all_exact_formal_game_data,scc:0221,false,1,14,item:5203,item_proto,5203,物质重组器
+all_exact_formal_game_data,scc:0222,false,1,15,item:5204,item_proto,5204,负熵奇点
+all_exact_formal_game_data,scc:0223,false,1,16,item:5205,item_proto,5205,虚粒子
+all_exact_formal_game_data,scc:0224,false,1,17,item:5206,item_proto,5206,能量碎片
+all_exact_formal_game_data,scc:0225,false,1,79,item:6001,item_proto,6001,Electromagnetic Matrix
+all_exact_formal_game_data,scc:0226,false,1,281,item:6006,item_proto,6006,Universe Matrix
+all_exact_formal_game_data,scc:0227,false,1,47,recipe:1,recipe_proto,1,铁块
+all_exact_formal_game_data,scc:0228,false,1,162,recipe:10,recipe_proto,10,矩阵研究站
+all_exact_formal_game_data,scc:0229,false,1,222,recipe:103,recipe_proto,103,超级磁场环
+all_exact_formal_game_data,scc:0230,false,1,122,recipe:105,recipe_proto,105,动力引擎
+all_exact_formal_game_data,scc:0231,false,1,202,recipe:106,recipe_proto,106,增产剂 Mk.I
+all_exact_formal_game_data,scc:0232,false,1,250,recipe:107,recipe_proto,107,增产剂 Mk.II
+all_exact_formal_game_data,scc:0233,false,1,253,recipe:108,recipe_proto,108,增产剂 Mk.III
+all_exact_formal_game_data,scc:0234,false,1,188,recipe:109,recipe_proto,109,喷涂机
+all_exact_formal_game_data,scc:0235,false,1,164,recipe:11,recipe_proto,11,棱镜
+all_exact_formal_game_data,scc:0236,false,1,224,recipe:110,recipe_proto,110,分馏塔
+all_exact_formal_game_data,scc:0237,false,1,544,recipe:111,recipe_proto,111,轨道采集器
+all_exact_formal_game_data,scc:0238,false,1,154,recipe:112,recipe_proto,112,地基
+all_exact_formal_game_data,scc:0239,false,1,274,recipe:113,recipe_proto,113,微型聚变发电站
+all_exact_formal_game_data,scc:0240,false,1,166,recipe:114,recipe_proto,114,储液罐
+all_exact_formal_game_data,scc:0241,false,1,296,recipe:116,recipe_proto,116,位面熔炉
+all_exact_formal_game_data,scc:0242,false,1,168,recipe:117,recipe_proto,117,流速器
+all_exact_formal_game_data,scc:0243,false,1,291,recipe:118,recipe_proto,118,地热发电站
+all_exact_formal_game_data,scc:0244,false,1,298,recipe:119,recipe_proto,119,大型采矿机
+all_exact_formal_game_data,scc:0245,false,1,170,recipe:12,recipe_proto,12,电浆激发器
+all_exact_formal_game_data,scc:0246,false,1,321,recipe:120,recipe_proto,120,自动集装机
+all_exact_formal_game_data,scc:0247,false,1,326,recipe:122,recipe_proto,122,物流配送器
+all_exact_formal_game_data,scc:0248,false,1,328,recipe:123,recipe_proto,123,配送运输机
+all_exact_formal_game_data,scc:0249,false,1,264,recipe:124,recipe_proto,124,化工厂 Mk.II
+all_exact_formal_game_data,scc:0250,false,1,116,recipe:125,recipe_proto,125,高斯机枪塔
+all_exact_formal_game_data,scc:0251,false,1,348,recipe:126,recipe_proto,126,高频激光塔
+all_exact_formal_game_data,scc:0252,false,1,340,recipe:127,recipe_proto,127,聚爆加农炮
+all_exact_formal_game_data,scc:0253,false,1,358,recipe:128,recipe_proto,128,磁化电浆炮
+all_exact_formal_game_data,scc:0254,false,1,125,recipe:129,recipe_proto,129,导弹防御塔
+all_exact_formal_game_data,scc:0255,false,1,172,recipe:13,recipe_proto,13,无线输电塔
+all_exact_formal_game_data,scc:0256,false,1,353,recipe:130,recipe_proto,130,干扰塔
+all_exact_formal_game_data,scc:0257,false,1,345,recipe:131,recipe_proto,131,信标
+all_exact_formal_game_data,scc:0258,false,1,350,recipe:132,recipe_proto,132,护盾发生器
+all_exact_formal_game_data,scc:0259,false,1,204,recipe:133,recipe_proto,133,燃烧单元
+all_exact_formal_game_data,scc:0260,false,1,334,recipe:134,recipe_proto,134,爆破单元
+all_exact_formal_game_data,scc:0261,false,1,337,recipe:135,recipe_proto,135,晶石爆破单元
+all_exact_formal_game_data,scc:0262,false,1,118,recipe:136,recipe_proto,136,机枪弹箱
+all_exact_formal_game_data,scc:0263,false,1,365,recipe:137,recipe_proto,137,钛化弹箱
+all_exact_formal_game_data,scc:0264,false,1,368,recipe:138,recipe_proto,138,超合金弹箱
+all_exact_formal_game_data,scc:0265,false,1,342,recipe:139,recipe_proto,139,炮弹组
+all_exact_formal_game_data,scc:0266,false,1,174,recipe:14,recipe_proto,14,原油萃取站
+all_exact_formal_game_data,scc:0267,false,1,371,recipe:140,recipe_proto,140,高爆炮弹组
+all_exact_formal_game_data,scc:0268,false,1,377,recipe:141,recipe_proto,141,晶石炮弹组
+all_exact_formal_game_data,scc:0269,false,1,360,recipe:142,recipe_proto,142,等离子胶囊
+all_exact_formal_game_data,scc:0270,false,1,383,recipe:143,recipe_proto,143,反物质胶囊
+all_exact_formal_game_data,scc:0271,false,1,206,recipe:144,recipe_proto,144,导弹组
+all_exact_formal_game_data,scc:0272,false,1,374,recipe:145,recipe_proto,145,超音速导弹组
+all_exact_formal_game_data,scc:0273,false,1,380,recipe:146,recipe_proto,146,引力导弹组
+all_exact_formal_game_data,scc:0274,false,1,176,recipe:147,recipe_proto,147,地面战斗机-E型
+all_exact_formal_game_data,scc:0275,false,1,386,recipe:148,recipe_proto,148,地面战斗机-A型
+all_exact_formal_game_data,scc:0276,false,1,389,recipe:149,recipe_proto,149,地面战斗机-F型
+all_exact_formal_game_data,scc:0277,false,1,178,recipe:15,recipe_proto,15,原油精炼厂
+all_exact_formal_game_data,scc:0278,false,1,392,recipe:150,recipe_proto,150,太空战斗机-A型
+all_exact_formal_game_data,scc:0279,false,1,395,recipe:151,recipe_proto,151,太空战斗机-F型
+all_exact_formal_game_data,scc:0280,false,1,190,recipe:152,recipe_proto,152,战场分析基站
+all_exact_formal_game_data,scc:0281,false,1,401,recipe:153,recipe_proto,153,矩阵研究站 Mk.II
+all_exact_formal_game_data,scc:0282,false,1,404,recipe:154,recipe_proto,154,制造台 Mk.IV
+all_exact_formal_game_data,scc:0283,false,1,407,recipe:155,recipe_proto,155,熔炉 Mk.III
+all_exact_formal_game_data,scc:0284,false,1,410,recipe:156,recipe_proto,156,金色燃料棒
+all_exact_formal_game_data,scc:0285,false,1,362,recipe:157,recipe_proto,157,地面电浆炮
+all_exact_formal_game_data,scc:0286,false,1,355,recipe:158,recipe_proto,158,电磁干扰胶囊
+all_exact_formal_game_data,scc:0287,false,1,398,recipe:159,recipe_proto,159,电磁压制胶囊
+all_exact_formal_game_data,scc:0288,false,1,212,recipe:16,recipe_proto,16,等离子精炼
+all_exact_formal_game_data,scc:0289,false,1,323,recipe:160,recipe_proto,160,集装分拣器
+all_exact_formal_game_data,scc:0290,false,1,180,recipe:161,recipe_proto,161,激光灯塔
+all_exact_formal_game_data,scc:0291,false,1,208,recipe:17,recipe_proto,17,高能石墨
+all_exact_formal_game_data,scc:0292,false,1,239,recipe:19,recipe_proto,19,氢燃料棒
+all_exact_formal_game_data,scc:0293,false,1,49,recipe:2,recipe_proto,2,磁铁
+all_exact_formal_game_data,scc:0294,false,1,242,recipe:20,recipe_proto,20,推进器
+all_exact_formal_game_data,scc:0295,false,1,269,recipe:21,recipe_proto,21,加力推进器
+all_exact_formal_game_data,scc:0296,false,1,182,recipe:22,recipe_proto,22,化工厂
+all_exact_formal_game_data,scc:0297,false,1,64,recipe:3,recipe_proto,3,铜块
+all_exact_formal_game_data,scc:0298,false,1,215,recipe:32,recipe_proto,32,石墨烯（高效）
+all_exact_formal_game_data,scc:0299,false,1,150,recipe:34,recipe_proto,34,硅石
+all_exact_formal_game_data,scc:0300,false,1,300,recipe:39,recipe_proto,39,微型粒子对撞机
+all_exact_formal_game_data,scc:0301,false,1,152,recipe:4,recipe_proto,4,石材
+all_exact_formal_game_data,scc:0302,false,1,276,recipe:41,recipe_proto,41,氘核燃料棒
+all_exact_formal_game_data,scc:0303,false,1,246,recipe:42,recipe_proto,42,湮灭约束球
+all_exact_formal_game_data,scc:0304,false,1,302,recipe:43,recipe_proto,43,人造恒星
+all_exact_formal_game_data,scc:0305,false,1,271,recipe:44,recipe_proto,44,反物质燃料棒
+all_exact_formal_game_data,scc:0306,false,1,88,recipe:45,recipe_proto,45,制造台 Mk.I
+all_exact_formal_game_data,scc:0307,false,1,256,recipe:46,recipe_proto,46,制造台 Mk.II
+all_exact_formal_game_data,scc:0308,false,1,260,recipe:47,recipe_proto,47,制造台 Mk.III
+all_exact_formal_game_data,scc:0309,false,1,71,recipe:48,recipe_proto,48,采矿机
+all_exact_formal_game_data,scc:0310,false,1,156,recipe:49,recipe_proto,49,抽水站
+all_exact_formal_game_data,scc:0311,false,1,51,recipe:5,recipe_proto,5,齿轮
+all_exact_formal_game_data,scc:0312,false,1,66,recipe:50,recipe_proto,50,电路板
+all_exact_formal_game_data,scc:0313,false,1,192,recipe:51,recipe_proto,51,处理器
+all_exact_formal_game_data,scc:0314,false,1,186,recipe:53,recipe_proto,53,微晶元件
+all_exact_formal_game_data,scc:0315,false,1,158,recipe:56,recipe_proto,56,电弧熔炉
+all_exact_formal_game_data,scc:0316,false,1,160,recipe:57,recipe_proto,57,玻璃
+all_exact_formal_game_data,scc:0317,false,1,184,recipe:59,recipe_proto,59,高纯硅块
+all_exact_formal_game_data,scc:0318,false,1,68,recipe:6,recipe_proto,6,磁线圈
+all_exact_formal_game_data,scc:0319,false,1,97,recipe:63,recipe_proto,63,钢材
+all_exact_formal_game_data,scc:0320,false,1,194,recipe:64,recipe_proto,64,火力发电厂
+all_exact_formal_game_data,scc:0321,false,1,267,recipe:66,recipe_proto,66,钛合金
+all_exact_formal_game_data,scc:0322,false,1,196,recipe:67,recipe_proto,67,太阳能板
+all_exact_formal_game_data,scc:0323,false,1,226,recipe:68,recipe_proto,68,光子合并器
+all_exact_formal_game_data,scc:0324,false,1,227,recipe:69,recipe_proto,69,光子合并器（高效）
+all_exact_formal_game_data,scc:0325,false,1,73,recipe:7,recipe_proto,7,风力涡轮机
+all_exact_formal_game_data,scc:0326,false,1,229,recipe:70,recipe_proto,70,太阳帆
+all_exact_formal_game_data,scc:0327,false,1,231,recipe:71,recipe_proto,71,电磁轨道弹射器
+all_exact_formal_game_data,scc:0328,false,1,233,recipe:72,recipe_proto,72,射线接收站
+all_exact_formal_game_data,scc:0329,false,1,331,recipe:73,recipe_proto,73,卫星配电站
+all_exact_formal_game_data,scc:0330,false,1,280,recipe:75,recipe_proto,75,宇宙矩阵
+all_exact_formal_game_data,scc:0331,false,1,285,recipe:76,recipe_proto,76,蓄电器
+all_exact_formal_game_data,scc:0332,false,1,288,recipe:77,recipe_proto,77,能量枢纽
+all_exact_formal_game_data,scc:0333,false,1,235,recipe:78,recipe_proto,78,空间翘曲器
+all_exact_formal_game_data,scc:0334,false,1,236,recipe:79,recipe_proto,79,空间翘曲器（高级）
+all_exact_formal_game_data,scc:0335,false,1,75,recipe:8,recipe_proto,8,电力感应塔
+all_exact_formal_game_data,scc:0336,false,1,294,recipe:80,recipe_proto,80,框架材料
+all_exact_formal_game_data,scc:0337,false,1,304,recipe:81,recipe_proto,81,戴森球组件
+all_exact_formal_game_data,scc:0338,false,1,307,recipe:82,recipe_proto,82,垂直发射井
+all_exact_formal_game_data,scc:0339,false,1,309,recipe:83,recipe_proto,83,小型运载火箭
+all_exact_formal_game_data,scc:0340,false,1,103,recipe:84,recipe_proto,84,低速传送带
+all_exact_formal_game_data,scc:0341,false,1,105,recipe:85,recipe_proto,85,低速分拣器
+all_exact_formal_game_data,scc:0342,false,1,198,recipe:86,recipe_proto,86,小型储物仓
+all_exact_formal_game_data,scc:0343,false,1,108,recipe:87,recipe_proto,87,四向分流器
+all_exact_formal_game_data,scc:0344,false,1,113,recipe:88,recipe_proto,88,高速分拣器
+all_exact_formal_game_data,scc:0345,false,1,314,recipe:89,recipe_proto,89,高速传送带
+all_exact_formal_game_data,scc:0346,false,1,78,recipe:9,recipe_proto,9,电磁矩阵
+all_exact_formal_game_data,scc:0347,false,1,316,recipe:90,recipe_proto,90,极速分拣器
+all_exact_formal_game_data,scc:0348,false,1,318,recipe:91,recipe_proto,91,大型储物仓
+all_exact_formal_game_data,scc:0349,false,1,532,recipe:92,recipe_proto,92,极速传送带
+all_exact_formal_game_data,scc:0350,false,1,534,recipe:93,recipe_proto,93,物流运输站
+all_exact_formal_game_data,scc:0351,false,1,536,recipe:94,recipe_proto,94,物流运输机
+all_exact_formal_game_data,scc:0352,false,1,539,recipe:95,recipe_proto,95,星际物流运输站
+all_exact_formal_game_data,scc:0353,false,1,541,recipe:96,recipe_proto,96,星际物流运输船
+all_exact_formal_game_data,scc:0354,false,1,111,recipe:97,recipe_proto,97,电动机
+all_exact_formal_game_data,scc:0355,false,1,18,tech:1,tech_proto,1,Dyson Sphere Program
+all_exact_formal_game_data,scc:0356,false,1,70,tech:1001,tech_proto,1001,Electromagnetism
+all_exact_formal_game_data,scc:0357,false,1,77,tech:1002,tech_proto,1002,Electromagnetic Matrix
+all_exact_formal_game_data,scc:0358,false,1,80,tech:1101,tech_proto,1101,T高效电浆控制
+all_exact_formal_game_data,scc:0359,false,1,83,tech:1102,tech_proto,1102,Plasma Extract Refining
+all_exact_formal_game_data,scc:0360,false,1,81,tech:1105,tech_proto,1105,T电弧激光
+all_exact_formal_game_data,scc:0361,false,1,84,tech:1111,tech_proto,1111,Energy Matrix
+all_exact_formal_game_data,scc:0362,false,1,238,tech:1112,tech_proto,1112,T氢燃料棒
+all_exact_formal_game_data,scc:0363,false,1,241,tech:1113,tech_proto,1113,Thruster
+all_exact_formal_game_data,scc:0364,false,1,244,tech:1114,tech_proto,1114,Reinforced Thruster
+all_exact_formal_game_data,scc:0365,false,1,82,tech:1120,tech_proto,1120,T流体储存封装
+all_exact_formal_game_data,scc:0366,false,1,85,tech:1121,tech_proto,1121,T基础化工
+all_exact_formal_game_data,scc:0367,false,1,86,tech:1131,tech_proto,1131,T应用型超导体
+all_exact_formal_game_data,scc:0368,false,1,248,tech:1144,tech_proto,1144,T人造恒星
+all_exact_formal_game_data,scc:0369,false,1,245,tech:1145,tech_proto,1145,T可控湮灭反应
+all_exact_formal_game_data,scc:0370,false,1,91,tech:1151,tech_proto,1151,T增产剂 Mk.I
+all_exact_formal_game_data,scc:0371,false,1,249,tech:1152,tech_proto,1152,T增产剂 Mk.II
+all_exact_formal_game_data,scc:0372,false,1,252,tech:1153,tech_proto,1153,T增产剂 Mk.III
+all_exact_formal_game_data,scc:0373,false,1,87,tech:1201,tech_proto,1201,T基础制造工艺
+all_exact_formal_game_data,scc:0374,false,1,255,tech:1202,tech_proto,1202,T高速制造工艺
+all_exact_formal_game_data,scc:0375,false,1,258,tech:1203,tech_proto,1203,T量子打印技术
+all_exact_formal_game_data,scc:0376,false,1,92,tech:1302,tech_proto,1302,Processor
+all_exact_formal_game_data,scc:0377,false,1,262,tech:1304,tech_proto,1304,T大型采矿机
+all_exact_formal_game_data,scc:0378,false,1,263,tech:1305,tech_proto,1305,T高级化工
+all_exact_formal_game_data,scc:0379,false,1,90,tech:1311,tech_proto,1311,T半导体材料
+all_exact_formal_game_data,scc:0380,false,1,93,tech:1401,tech_proto,1401,T自动化冶金
+all_exact_formal_game_data,scc:0381,false,1,94,tech:1402,tech_proto,1402,Smelting Purification
+all_exact_formal_game_data,scc:0382,false,1,95,tech:1411,tech_proto,1411,T钢材冶炼
+all_exact_formal_game_data,scc:0383,false,1,99,tech:1412,tech_proto,1412,T火力发电
+all_exact_formal_game_data,scc:0384,false,1,266,tech:1414,tech_proto,1414,High-Strength Titanium Alloy
+all_exact_formal_game_data,scc:0385,false,1,100,tech:1415,tech_proto,1415,T移山填海工程
+all_exact_formal_game_data,scc:0386,false,1,273,tech:1416,tech_proto,1416,T微型核聚变发电
+all_exact_formal_game_data,scc:0387,false,1,278,tech:1417,tech_proto,1417,T位面冶金
+all_exact_formal_game_data,scc:0388,false,1,101,tech:1501,tech_proto,1501,T太阳能收集
+all_exact_formal_game_data,scc:0389,false,1,279,tech:1507,tech_proto,1507,Universe Matrix
+all_exact_formal_game_data,scc:0390,false,1,282,tech:1508,tech_proto,1508,T任务完成
+all_exact_formal_game_data,scc:0391,false,1,284,tech:1511,tech_proto,1511,T能量储存
+all_exact_formal_game_data,scc:0392,false,1,287,tech:1512,tech_proto,1512,T星际电力运输
+all_exact_formal_game_data,scc:0393,false,1,290,tech:1513,tech_proto,1513,T地热开采
+all_exact_formal_game_data,scc:0394,false,1,293,tech:1521,tech_proto,1521,T高强度轻质结构
+all_exact_formal_game_data,scc:0395,false,1,306,tech:1522,tech_proto,1522,T垂直发射井
+all_exact_formal_game_data,scc:0396,false,1,311,tech:1523,tech_proto,1523,T戴森球应力系统
+all_exact_formal_game_data,scc:0397,false,1,102,tech:1601,tech_proto,1601,T基础物流系统
+all_exact_formal_game_data,scc:0398,false,1,107,tech:1602,tech_proto,1602,T改良物流系统
+all_exact_formal_game_data,scc:0399,false,1,313,tech:1603,tech_proto,1603,High-Efficiency Logistics System
+all_exact_formal_game_data,scc:0400,false,1,531,tech:1604,tech_proto,1604,Planetary Logistics System
+all_exact_formal_game_data,scc:0401,false,1,538,tech:1605,tech_proto,1605,Interstellar Logistics System
+all_exact_formal_game_data,scc:0402,false,1,543,tech:1606,tech_proto,1606,T气态行星开采
+all_exact_formal_game_data,scc:0403,false,1,320,tech:1607,tech_proto,1607,Integrated Logistics System
+all_exact_formal_game_data,scc:0404,false,1,325,tech:1608,tech_proto,1608,T配送物流系统
+all_exact_formal_game_data,scc:0405,false,1,110,tech:1701,tech_proto,1701,T电磁驱动
+all_exact_formal_game_data,scc:0406,false,1,330,tech:1712,tech_proto,1712,T卫星配电系统
+all_exact_formal_game_data,scc:0407,false,1,115,tech:1801,tech_proto,1801,T武器系统
+all_exact_formal_game_data,scc:0408,false,1,120,tech:1802,tech_proto,1802,T燃烧单元
+all_exact_formal_game_data,scc:0409,false,1,333,tech:1803,tech_proto,1803,T爆破单元
+all_exact_formal_game_data,scc:0410,false,1,336,tech:1804,tech_proto,1804,T晶石爆破单元
+all_exact_formal_game_data,scc:0411,false,1,121,tech:1805,tech_proto,1805,T动力引擎
+all_exact_formal_game_data,scc:0412,false,1,124,tech:1806,tech_proto,1806,T导弹防御塔
+all_exact_formal_game_data,scc:0413,false,1,339,tech:1807,tech_proto,1807,T聚爆加农炮
+all_exact_formal_game_data,scc:0414,false,1,344,tech:1808,tech_proto,1808,T信号塔
+all_exact_formal_game_data,scc:0415,false,1,347,tech:1809,tech_proto,1809,T行星防御系统
+all_exact_formal_game_data,scc:0416,false,1,352,tech:1810,tech_proto,1810,T干扰塔
+all_exact_formal_game_data,scc:0417,false,1,357,tech:1811,tech_proto,1811,T磁化电浆炮
+all_exact_formal_game_data,scc:0418,false,1,364,tech:1812,tech_proto,1812,T钛化弹箱
+all_exact_formal_game_data,scc:0419,false,1,367,tech:1813,tech_proto,1813,T超合金弹箱
+all_exact_formal_game_data,scc:0420,false,1,370,tech:1814,tech_proto,1814,T高爆炮弹组
+all_exact_formal_game_data,scc:0421,false,1,373,tech:1815,tech_proto,1815,T超音速导弹组
+all_exact_formal_game_data,scc:0422,false,1,376,tech:1816,tech_proto,1816,T晶石炮弹组
+all_exact_formal_game_data,scc:0423,false,1,379,tech:1817,tech_proto,1817,T引力导弹组
+all_exact_formal_game_data,scc:0424,false,1,382,tech:1818,tech_proto,1818,T反物质胶囊
+all_exact_formal_game_data,scc:0425,false,1,128,tech:1819,tech_proto,1819,T地面战斗机-E型
+all_exact_formal_game_data,scc:0426,false,1,385,tech:1820,tech_proto,1820,T地面战斗机-A型
+all_exact_formal_game_data,scc:0427,false,1,388,tech:1821,tech_proto,1821,T地面战斗机-F型
+all_exact_formal_game_data,scc:0428,false,1,391,tech:1822,tech_proto,1822,T太空战斗机-A型
+all_exact_formal_game_data,scc:0429,false,1,394,tech:1823,tech_proto,1823,T太空战斗机-F型
+all_exact_formal_game_data,scc:0430,false,1,397,tech:1824,tech_proto,1824,T电磁胶囊II
+all_exact_formal_game_data,scc:0431,false,1,127,tech:1826,tech_proto,1826,T战场分析基站
+all_exact_formal_game_data,scc:0432,false,1,400,tech:1901,tech_proto,1901,T数字模拟计算
+all_exact_formal_game_data,scc:0433,false,1,403,tech:1902,tech_proto,1902,T物质重组技术
+all_exact_formal_game_data,scc:0434,false,1,406,tech:1903,tech_proto,1903,T负熵递归
+all_exact_formal_game_data,scc:0435,false,1,409,tech:1904,tech_proto,1904,T金色燃料棒
+all_exact_formal_game_data,scc:0436,false,1,129,tech:2101,tech_proto,2101,Mecha Core Lv1
+all_exact_formal_game_data,scc:0437,false,1,412,tech:2102,tech_proto,2102,Mecha Core Lv2
+all_exact_formal_game_data,scc:0438,false,1,413,tech:2103,tech_proto,2103,Mecha Core Lv3
+all_exact_formal_game_data,scc:0439,false,1,414,tech:2104,tech_proto,2104,Mecha Core Lv4
+all_exact_formal_game_data,scc:0440,false,1,415,tech:2105,tech_proto,2105,T机甲核心
+all_exact_formal_game_data,scc:0441,false,1,417,tech:2106,tech_proto,2106,T机甲核心
+all_exact_formal_game_data,scc:0442,false,1,130,tech:2201,tech_proto,2201,T机械骨骼
+all_exact_formal_game_data,scc:0443,false,1,421,tech:2202,tech_proto,2202,T机械骨骼
+all_exact_formal_game_data,scc:0444,false,1,422,tech:2203,tech_proto,2203,T机械骨骼
+all_exact_formal_game_data,scc:0445,false,1,423,tech:2204,tech_proto,2204,T机械骨骼
+all_exact_formal_game_data,scc:0446,false,1,424,tech:2205,tech_proto,2205,T机械骨骼
+all_exact_formal_game_data,scc:0447,false,1,425,tech:2206,tech_proto,2206,T机械骨骼
+all_exact_formal_game_data,scc:0448,false,1,426,tech:2207,tech_proto,2207,T机械骨骼
+all_exact_formal_game_data,scc:0449,false,1,427,tech:2208,tech_proto,2208,T机械骨骼
+all_exact_formal_game_data,scc:0450,false,1,131,tech:2301,tech_proto,2301,T机舱容量
+all_exact_formal_game_data,scc:0451,false,1,429,tech:2302,tech_proto,2302,T机舱容量
+all_exact_formal_game_data,scc:0452,false,1,430,tech:2303,tech_proto,2303,T机舱容量
+all_exact_formal_game_data,scc:0453,false,1,431,tech:2304,tech_proto,2304,T机舱容量
+all_exact_formal_game_data,scc:0454,false,1,432,tech:2305,tech_proto,2305,T机舱容量
+all_exact_formal_game_data,scc:0455,false,1,433,tech:2306,tech_proto,2306,T机舱容量
+all_exact_formal_game_data,scc:0456,false,1,436,tech:2307,tech_proto,2307,T机舱容量
+all_exact_formal_game_data,scc:0457,false,1,132,tech:2401,tech_proto,2401,T通讯控制
+all_exact_formal_game_data,scc:0458,false,1,439,tech:2402,tech_proto,2402,T通讯控制
+all_exact_formal_game_data,scc:0459,false,1,440,tech:2403,tech_proto,2403,T通讯控制
+all_exact_formal_game_data,scc:0460,false,1,441,tech:2404,tech_proto,2404,T通讯控制
+all_exact_formal_game_data,scc:0461,false,1,442,tech:2405,tech_proto,2405,T通讯控制
+all_exact_formal_game_data,scc:0462,false,1,443,tech:2406,tech_proto,2406,T通讯控制
+all_exact_formal_game_data,scc:0463,false,1,445,tech:2407,tech_proto,2407,T通讯控制
+all_exact_formal_game_data,scc:0464,false,1,447,tech:2501,tech_proto,2501,T能量回路
+all_exact_formal_game_data,scc:0465,false,1,448,tech:2502,tech_proto,2502,T能量回路
+all_exact_formal_game_data,scc:0466,false,1,449,tech:2503,tech_proto,2503,T能量回路
+all_exact_formal_game_data,scc:0467,false,1,450,tech:2504,tech_proto,2504,T能量回路
+all_exact_formal_game_data,scc:0468,false,1,451,tech:2505,tech_proto,2505,T能量回路
+all_exact_formal_game_data,scc:0469,false,1,452,tech:2506,tech_proto,2506,T能量回路
+all_exact_formal_game_data,scc:0470,false,1,133,tech:2601,tech_proto,2601,T无人机引擎
+all_exact_formal_game_data,scc:0471,false,1,454,tech:2602,tech_proto,2602,T无人机引擎
+all_exact_formal_game_data,scc:0472,false,1,455,tech:2603,tech_proto,2603,T无人机引擎
+all_exact_formal_game_data,scc:0473,false,1,456,tech:2604,tech_proto,2604,T无人机引擎
+all_exact_formal_game_data,scc:0474,false,1,457,tech:2605,tech_proto,2605,T无人机引擎
+all_exact_formal_game_data,scc:0475,false,1,458,tech:2606,tech_proto,2606,T无人机引擎
+all_exact_formal_game_data,scc:0476,false,1,134,tech:2701,tech_proto,2701,T批量建造
+all_exact_formal_game_data,scc:0477,false,1,135,tech:2702,tech_proto,2702,T批量建造
+all_exact_formal_game_data,scc:0478,false,1,460,tech:2703,tech_proto,2703,T批量建造
+all_exact_formal_game_data,scc:0479,false,1,461,tech:2704,tech_proto,2704,T批量建造
+all_exact_formal_game_data,scc:0480,false,1,462,tech:2705,tech_proto,2705,T批量建造
+all_exact_formal_game_data,scc:0481,false,1,464,tech:2706,tech_proto,2706,T批量建造
+all_exact_formal_game_data,scc:0482,false,1,136,tech:2801,tech_proto,2801,T能量护盾
+all_exact_formal_game_data,scc:0483,false,1,466,tech:2802,tech_proto,2802,T能量护盾
+all_exact_formal_game_data,scc:0484,false,1,467,tech:2803,tech_proto,2803,T能量护盾
+all_exact_formal_game_data,scc:0485,false,1,469,tech:2804,tech_proto,2804,T能量护盾
+all_exact_formal_game_data,scc:0486,false,1,470,tech:2805,tech_proto,2805,T能量护盾
+all_exact_formal_game_data,scc:0487,false,1,471,tech:2806,tech_proto,2806,T能量护盾
+all_exact_formal_game_data,scc:0488,false,1,473,tech:2807,tech_proto,2807,T能量护盾
+all_exact_formal_game_data,scc:0489,false,1,209,tech:2901,tech_proto,2901,Drive Engine Lv1
+all_exact_formal_game_data,scc:0490,false,1,475,tech:2902,tech_proto,2902,Drive Engine Lv2
+all_exact_formal_game_data,scc:0491,false,1,476,tech:2903,tech_proto,2903,Drive Engine Lv3
+all_exact_formal_game_data,scc:0492,false,1,478,tech:2904,tech_proto,2904,Drive Engine Lv4
+all_exact_formal_game_data,scc:0493,false,1,480,tech:2905,tech_proto,2905,T驱动引擎
+all_exact_formal_game_data,scc:0494,false,1,481,tech:2906,tech_proto,2906,T驱动引擎
+all_exact_formal_game_data,scc:0495,false,1,138,tech:2951,tech_proto,2951,T自动重建
+all_exact_formal_game_data,scc:0496,false,1,483,tech:2952,tech_proto,2952,T自动重建
+all_exact_formal_game_data,scc:0497,false,1,484,tech:2953,tech_proto,2953,T自动重建
+all_exact_formal_game_data,scc:0498,false,1,485,tech:2954,tech_proto,2954,T自动重建
+all_exact_formal_game_data,scc:0499,false,1,486,tech:2955,tech_proto,2955,T自动重建
+all_exact_formal_game_data,scc:0500,false,1,487,tech:2956,tech_proto,2956,T自动重建
+all_exact_formal_game_data,scc:0501,false,1,489,tech:3101,tech_proto,3101,T太阳帆寿命
+all_exact_formal_game_data,scc:0502,false,1,490,tech:3102,tech_proto,3102,T太阳帆寿命
+all_exact_formal_game_data,scc:0503,false,1,491,tech:3103,tech_proto,3103,T太阳帆寿命
+all_exact_formal_game_data,scc:0504,false,1,492,tech:3104,tech_proto,3104,T太阳帆寿命
+all_exact_formal_game_data,scc:0505,false,1,493,tech:3105,tech_proto,3105,T太阳帆寿命
+all_exact_formal_game_data,scc:0506,false,1,494,tech:3106,tech_proto,3106,T太阳帆寿命
+all_exact_formal_game_data,scc:0507,false,1,496,tech:3201,tech_proto,3201,T射线传输效率
+all_exact_formal_game_data,scc:0508,false,1,497,tech:3202,tech_proto,3202,T射线传输效率
+all_exact_formal_game_data,scc:0509,false,1,498,tech:3203,tech_proto,3203,T射线传输效率
+all_exact_formal_game_data,scc:0510,false,1,499,tech:3204,tech_proto,3204,T射线传输效率
+all_exact_formal_game_data,scc:0511,false,1,500,tech:3205,tech_proto,3205,T射线传输效率
+all_exact_formal_game_data,scc:0512,false,1,501,tech:3206,tech_proto,3206,T射线传输效率
+all_exact_formal_game_data,scc:0513,false,1,502,tech:3207,tech_proto,3207,T射线传输效率
+all_exact_formal_game_data,scc:0514,false,1,503,tech:3208,tech_proto,3208,T射线传输效率
+all_exact_formal_game_data,scc:0515,false,1,505,tech:3301,tech_proto,3301,T分拣器货物叠加
+all_exact_formal_game_data,scc:0516,false,1,506,tech:3302,tech_proto,3302,T分拣器货物叠加
+all_exact_formal_game_data,scc:0517,false,1,507,tech:3303,tech_proto,3303,T分拣器货物叠加
+all_exact_formal_game_data,scc:0518,false,1,508,tech:3304,tech_proto,3304,T分拣器货物叠加
+all_exact_formal_game_data,scc:0519,false,1,509,tech:3305,tech_proto,3305,T分拣器货物叠加
+all_exact_formal_game_data,scc:0520,false,1,511,tech:3306,tech_proto,3306,T分拣器货物集装
+all_exact_formal_game_data,scc:0521,false,1,512,tech:3311,tech_proto,3311,T集装分拣器叠加
+all_exact_formal_game_data,scc:0522,false,1,513,tech:3312,tech_proto,3312,T集装分拣器叠加
+all_exact_formal_game_data,scc:0523,false,1,514,tech:3313,tech_proto,3313,T集装分拣器叠加
+all_exact_formal_game_data,scc:0524,false,1,515,tech:3314,tech_proto,3314,T集装分拣器叠加
+all_exact_formal_game_data,scc:0525,false,1,517,tech:3315,tech_proto,3315,T集装分拣器叠加
+all_exact_formal_game_data,scc:0526,false,1,519,tech:3316,tech_proto,3316,T集装分拣器叠加
+all_exact_formal_game_data,scc:0527,false,1,546,tech:3401,tech_proto,3401,T运输船引擎
+all_exact_formal_game_data,scc:0528,false,1,547,tech:3402,tech_proto,3402,T运输船引擎
+all_exact_formal_game_data,scc:0529,false,1,548,tech:3403,tech_proto,3403,T运输船引擎
+all_exact_formal_game_data,scc:0530,false,1,549,tech:3404,tech_proto,3404,Logistics Carrier Engine Lv4
+all_exact_formal_game_data,scc:0531,false,1,551,tech:3405,tech_proto,3405,T运输船引擎
+all_exact_formal_game_data,scc:0532,false,1,552,tech:3406,tech_proto,3406,T运输船引擎
+all_exact_formal_game_data,scc:0533,false,1,553,tech:3407,tech_proto,3407,T运输船引擎
+all_exact_formal_game_data,scc:0534,false,1,557,tech:3501,tech_proto,3501,T运输机舱扩容
+all_exact_formal_game_data,scc:0535,false,1,558,tech:3502,tech_proto,3502,T运输机舱扩容
+all_exact_formal_game_data,scc:0536,false,1,559,tech:3503,tech_proto,3503,T运输机舱扩容
+all_exact_formal_game_data,scc:0537,false,1,560,tech:3504,tech_proto,3504,T运输机舱扩容
+all_exact_formal_game_data,scc:0538,false,1,561,tech:3505,tech_proto,3505,T运输机舱扩容
+all_exact_formal_game_data,scc:0539,false,1,562,tech:3506,tech_proto,3506,T运输机舱扩容
+all_exact_formal_game_data,scc:0540,false,1,563,tech:3507,tech_proto,3507,T运输机舱扩容
+all_exact_formal_game_data,scc:0541,false,1,565,tech:3508,tech_proto,3508,T运输机舱扩容
+all_exact_formal_game_data,scc:0542,false,1,566,tech:3509,tech_proto,3509,T运输机舱扩容
+all_exact_formal_game_data,scc:0543,false,1,567,tech:3510,tech_proto,3510,T运输机舱扩容
+all_exact_formal_game_data,scc:0544,false,1,521,tech:3601,tech_proto,3601,T矿物利用
+all_exact_formal_game_data,scc:0545,false,1,522,tech:3602,tech_proto,3602,T矿物利用
+all_exact_formal_game_data,scc:0546,false,1,523,tech:3603,tech_proto,3603,T矿物利用
+all_exact_formal_game_data,scc:0547,false,1,524,tech:3604,tech_proto,3604,T矿物利用
+all_exact_formal_game_data,scc:0548,false,1,525,tech:3605,tech_proto,3605,T矿物利用
+all_exact_formal_game_data,scc:0549,false,1,526,tech:3606,tech_proto,3606,T矿物利用
+all_exact_formal_game_data,scc:0550,false,1,530,tech:3701,tech_proto,3701,Vertical Construction Lv1
+all_exact_formal_game_data,scc:0551,false,1,572,tech:3702,tech_proto,3702,T垂直建造
+all_exact_formal_game_data,scc:0552,false,1,573,tech:3703,tech_proto,3703,T垂直建造
+all_exact_formal_game_data,scc:0553,false,1,574,tech:3704,tech_proto,3704,T垂直建造
+all_exact_formal_game_data,scc:0554,false,1,575,tech:3705,tech_proto,3705,T垂直建造
+all_exact_formal_game_data,scc:0555,false,1,576,tech:3706,tech_proto,3706,T垂直建造
+all_exact_formal_game_data,scc:0556,false,1,579,tech:3801,tech_proto,3801,T运输站集装物流
+all_exact_formal_game_data,scc:0557,false,1,580,tech:3802,tech_proto,3802,T运输站集装物流
+all_exact_formal_game_data,scc:0558,false,1,581,tech:3803,tech_proto,3803,T运输站集装物流
+all_exact_formal_game_data,scc:0559,false,1,583,tech:3901,tech_proto,3901,T研究速度
+all_exact_formal_game_data,scc:0560,false,1,584,tech:3902,tech_proto,3902,T研究速度
+all_exact_formal_game_data,scc:0561,false,1,585,tech:3903,tech_proto,3903,T研究速度
+all_exact_formal_game_data,scc:0562,false,1,586,tech:3904,tech_proto,3904,T研究速度
+all_exact_formal_game_data,scc:0563,false,1,588,tech:4001,tech_proto,4001,T配送范围
+all_exact_formal_game_data,scc:0564,false,1,589,tech:4002,tech_proto,4002,T配送范围
+all_exact_formal_game_data,scc:0565,false,1,590,tech:4003,tech_proto,4003,T配送范围
+all_exact_formal_game_data,scc:0566,false,1,591,tech:4004,tech_proto,4004,T配送范围
+all_exact_formal_game_data,scc:0567,false,1,592,tech:4005,tech_proto,4005,T配送范围
+all_exact_formal_game_data,scc:0568,false,1,139,tech:4101,tech_proto,4101,T宇宙探索
+all_exact_formal_game_data,scc:0569,false,1,140,tech:4102,tech_proto,4102,T宇宙探索
+all_exact_formal_game_data,scc:0570,false,1,594,tech:4103,tech_proto,4103,Universe Exploration Lv3
+all_exact_formal_game_data,scc:0571,false,1,595,tech:4104,tech_proto,4104,T宇宙探索
+all_exact_formal_game_data,scc:0572,false,1,597,tech:4201,tech_proto,4201,T戴森球吸附速度
+all_exact_formal_game_data,scc:0573,false,1,598,tech:4202,tech_proto,4202,T戴森球吸附速度
+all_exact_formal_game_data,scc:0574,false,1,599,tech:4203,tech_proto,4203,T戴森球吸附速度
+all_exact_formal_game_data,scc:0575,false,1,600,tech:4204,tech_proto,4204,T戴森球吸附速度
+all_exact_formal_game_data,scc:0576,false,1,601,tech:4205,tech_proto,4205,T戴森球吸附速度
+all_exact_formal_game_data,scc:0577,false,1,602,tech:4206,tech_proto,4206,T戴森球吸附速度
+all_exact_formal_game_data,scc:0578,false,1,141,tech:5001,tech_proto,5001,T动能武器伤害
+all_exact_formal_game_data,scc:0579,false,1,604,tech:5002,tech_proto,5002,T动能武器伤害
+all_exact_formal_game_data,scc:0580,false,1,605,tech:5003,tech_proto,5003,T动能武器伤害
+all_exact_formal_game_data,scc:0581,false,1,606,tech:5004,tech_proto,5004,T动能武器伤害
+all_exact_formal_game_data,scc:0582,false,1,607,tech:5005,tech_proto,5005,T动能武器伤害
+all_exact_formal_game_data,scc:0583,false,1,608,tech:5006,tech_proto,5006,T动能武器伤害
+all_exact_formal_game_data,scc:0584,false,1,142,tech:5101,tech_proto,5101,T能量武器伤害
+all_exact_formal_game_data,scc:0585,false,1,610,tech:5102,tech_proto,5102,T能量武器伤害
+all_exact_formal_game_data,scc:0586,false,1,611,tech:5103,tech_proto,5103,T能量武器伤害
+all_exact_formal_game_data,scc:0587,false,1,612,tech:5104,tech_proto,5104,T能量武器伤害
+all_exact_formal_game_data,scc:0588,false,1,613,tech:5105,tech_proto,5105,T能量武器伤害
+all_exact_formal_game_data,scc:0589,false,1,614,tech:5106,tech_proto,5106,T能量武器伤害
+all_exact_formal_game_data,scc:0590,false,1,143,tech:5201,tech_proto,5201,T爆炸武器伤害
+all_exact_formal_game_data,scc:0591,false,1,616,tech:5202,tech_proto,5202,T爆炸武器伤害
+all_exact_formal_game_data,scc:0592,false,1,617,tech:5203,tech_proto,5203,T爆炸武器伤害
+all_exact_formal_game_data,scc:0593,false,1,618,tech:5204,tech_proto,5204,T爆炸武器伤害
+all_exact_formal_game_data,scc:0594,false,1,619,tech:5205,tech_proto,5205,T爆炸武器伤害
+all_exact_formal_game_data,scc:0595,false,1,620,tech:5206,tech_proto,5206,T爆炸武器伤害
+all_exact_formal_game_data,scc:0596,false,1,622,tech:5301,tech_proto,5301,T战斗无人机伤害
+all_exact_formal_game_data,scc:0597,false,1,623,tech:5302,tech_proto,5302,T战斗无人机伤害
+all_exact_formal_game_data,scc:0598,false,1,624,tech:5303,tech_proto,5303,T战斗无人机伤害
+all_exact_formal_game_data,scc:0599,false,1,625,tech:5304,tech_proto,5304,T战斗无人机伤害
+all_exact_formal_game_data,scc:0600,false,1,626,tech:5305,tech_proto,5305,T战斗无人机伤害
+all_exact_formal_game_data,scc:0601,false,1,629,tech:5401,tech_proto,5401,T战斗无人机攻击速度
+all_exact_formal_game_data,scc:0602,false,1,630,tech:5402,tech_proto,5402,T战斗无人机攻击速度
+all_exact_formal_game_data,scc:0603,false,1,631,tech:5403,tech_proto,5403,T战斗无人机攻击速度
+all_exact_formal_game_data,scc:0604,false,1,632,tech:5404,tech_proto,5404,T战斗无人机攻击速度
+all_exact_formal_game_data,scc:0605,false,1,633,tech:5405,tech_proto,5405,T战斗无人机攻击速度
+all_exact_formal_game_data,scc:0606,false,1,636,tech:5601,tech_proto,5601,T战斗无人机耐久
+all_exact_formal_game_data,scc:0607,false,1,637,tech:5602,tech_proto,5602,T战斗无人机耐久
+all_exact_formal_game_data,scc:0608,false,1,638,tech:5603,tech_proto,5603,T战斗无人机耐久
+all_exact_formal_game_data,scc:0609,false,1,639,tech:5604,tech_proto,5604,T战斗无人机耐久
+all_exact_formal_game_data,scc:0610,false,1,640,tech:5605,tech_proto,5605,T战斗无人机耐久
+all_exact_formal_game_data,scc:0611,false,1,643,tech:5701,tech_proto,5701,T行星护盾
+all_exact_formal_game_data,scc:0612,false,1,644,tech:5702,tech_proto,5702,T行星护盾
+all_exact_formal_game_data,scc:0613,false,1,645,tech:5703,tech_proto,5703,T行星护盾
+all_exact_formal_game_data,scc:0614,false,1,646,tech:5704,tech_proto,5704,T行星护盾
+all_exact_formal_game_data,scc:0615,false,1,647,tech:5705,tech_proto,5705,T行星护盾
+all_exact_formal_game_data,scc:0616,false,1,649,tech:5801,tech_proto,5801,T地面编队扩容
+all_exact_formal_game_data,scc:0617,false,1,650,tech:5802,tech_proto,5802,T地面编队扩容
+all_exact_formal_game_data,scc:0618,false,1,651,tech:5803,tech_proto,5803,T地面编队扩容
+all_exact_formal_game_data,scc:0619,false,1,652,tech:5804,tech_proto,5804,T地面编队扩容
+all_exact_formal_game_data,scc:0620,false,1,654,tech:5805,tech_proto,5805,T地面编队扩容
+all_exact_formal_game_data,scc:0621,false,1,655,tech:5806,tech_proto,5806,T地面编队扩容
+all_exact_formal_game_data,scc:0622,false,1,656,tech:5807,tech_proto,5807,T地面编队扩容
+all_exact_formal_game_data,scc:0623,false,1,658,tech:5901,tech_proto,5901,T太空编队扩容
+all_exact_formal_game_data,scc:0624,false,1,659,tech:5902,tech_proto,5902,T太空编队扩容
+all_exact_formal_game_data,scc:0625,false,1,661,tech:5903,tech_proto,5903,T太空编队扩容
+all_exact_formal_game_data,scc:0626,false,1,662,tech:5904,tech_proto,5904,T太空编队扩容
+all_exact_formal_game_data,scc:0627,false,1,663,tech:5905,tech_proto,5905,T太空编队扩容
+all_exact_formal_game_data,scc:0628,false,1,664,tech:5906,tech_proto,5906,T太空编队扩容
+all_exact_formal_game_data,scc:0629,false,1,665,tech:5907,tech_proto,5907,T太空编队扩容
+all_exact_formal_game_data,scc:0630,false,1,144,tech:6001,tech_proto,6001,T全局耐久度提升
+all_exact_formal_game_data,scc:0631,false,1,667,tech:6002,tech_proto,6002,T全局耐久度提升
+all_exact_formal_game_data,scc:0632,false,1,668,tech:6003,tech_proto,6003,T全局耐久度提升
+all_exact_formal_game_data,scc:0633,false,1,669,tech:6004,tech_proto,6004,T全局耐久度提升
+all_exact_formal_game_data,scc:0634,false,1,670,tech:6005,tech_proto,6005,T全局耐久度提升
+all_exact_formal_game_data,scc:0635,false,1,671,tech:6006,tech_proto,6006,T全局耐久度提升
+all_exact_formal_game_data,scc:0636,false,1,673,tech:6101,tech_proto,6101,T干扰塔效果
+all_exact_formal_game_data,scc:0637,false,1,674,tech:6102,tech_proto,6102,T干扰塔效果
+all_exact_formal_game_data,scc:0638,false,1,675,tech:6103,tech_proto,6103,T干扰塔效果
+all_exact_formal_game_data,scc:0639,false,1,676,tech:6104,tech_proto,6104,T干扰塔效果
+all_exact_formal_game_data,scc:0640,false,1,677,tech:6105,tech_proto,6105,T干扰塔效果
+all_exact_formal_game_data,scc:0641,false,1,678,tech:6106,tech_proto,6106,T干扰塔效果
+all_exact_formal_game_data,scc:0642,false,1,19,theme:1,theme_proto,1,Ocean 1
+all_exact_formal_game_data,scc:0643,false,1,20,theme:10,theme_proto,10,Ice 1
+all_exact_formal_game_data,scc:0644,false,1,21,theme:11,theme_proto,11,Desert 3
+all_exact_formal_game_data,scc:0645,false,1,22,theme:12,theme_proto,12,Desert 4
+all_exact_formal_game_data,scc:0646,false,1,23,theme:13,theme_proto,13,Volcanic 1
+all_exact_formal_game_data,scc:0647,false,1,24,theme:14,theme_proto,14,Ocean 3
+all_exact_formal_game_data,scc:0648,false,1,25,theme:15,theme_proto,15,Ocean 4
+all_exact_formal_game_data,scc:0649,false,1,26,theme:16,theme_proto,16,Ocean 5
+all_exact_formal_game_data,scc:0650,false,1,27,theme:17,theme_proto,17,Desert 5
+all_exact_formal_game_data,scc:0651,false,1,28,theme:18,theme_proto,18,Ocean 6
+all_exact_formal_game_data,scc:0652,false,1,29,theme:19,theme_proto,19,Desert 6
+all_exact_formal_game_data,scc:0653,false,1,30,theme:2,theme_proto,2,Gas 1
+all_exact_formal_game_data,scc:0654,false,1,31,theme:20,theme_proto,20,Desert 7
+all_exact_formal_game_data,scc:0655,false,1,32,theme:21,theme_proto,21,Gas 5
+all_exact_formal_game_data,scc:0656,false,1,33,theme:22,theme_proto,22,Desert 8
+all_exact_formal_game_data,scc:0657,false,1,34,theme:23,theme_proto,23,Desert 9
+all_exact_formal_game_data,scc:0658,false,1,35,theme:24,theme_proto,24,Desert 10
+all_exact_formal_game_data,scc:0659,false,1,36,theme:25,theme_proto,25,Desert 11
+all_exact_formal_game_data,scc:0660,false,1,37,theme:3,theme_proto,3,Gas 2
+all_exact_formal_game_data,scc:0661,false,1,38,theme:4,theme_proto,4,Gas 3
+all_exact_formal_game_data,scc:0662,false,1,39,theme:5,theme_proto,5,Gas 4
+all_exact_formal_game_data,scc:0663,false,1,40,theme:6,theme_proto,6,Desert 1
+all_exact_formal_game_data,scc:0664,false,1,41,theme:7,theme_proto,7,Desert 2
+all_exact_formal_game_data,scc:0665,false,1,42,theme:8,theme_proto,8,Ocean 2
+all_exact_formal_game_data,scc:0666,false,1,44,theme:9,theme_proto,9,Lava 1
+all_exact_formal_game_data,scc:0667,false,1,45,vein:1,vein_proto,1,铁矿脉
+all_exact_formal_game_data,scc:0668,false,1,53,vein:10,vein_proto,10,分形硅矿
+all_exact_formal_game_data,scc:0669,false,1,55,vein:11,vein_proto,11,有机晶体矿
+all_exact_formal_game_data,scc:0670,false,1,56,vein:12,vein_proto,12,光栅石矿
+all_exact_formal_game_data,scc:0671,false,1,58,vein:13,vein_proto,13,刺笋矿脉
+all_exact_formal_game_data,scc:0672,false,1,60,vein:14,vein_proto,14,单极磁矿
+all_exact_formal_game_data,scc:0673,false,1,62,vein:2,vein_proto,2,铜矿脉
+all_exact_formal_game_data,scc:0674,false,1,145,vein:3,vein_proto,3,硅矿脉
+all_exact_formal_game_data,scc:0675,false,1,146,vein:4,vein_proto,4,钛矿脉
+all_exact_formal_game_data,scc:0676,false,1,148,vein:5,vein_proto,5,石矿脉
+all_exact_formal_game_data,scc:0677,false,1,200,vein:6,vein_proto,6,煤矿脉
+all_exact_formal_game_data,scc:0678,false,1,210,vein:7,vein_proto,7,原油涌泉
+all_exact_formal_game_data,scc:0679,false,1,213,vein:8,vein_proto,8,可燃冰矿
+all_exact_formal_game_data,scc:0680,false,1,216,vein:9,vein_proto,9,金伯利矿
+end_product_dependency_profile,scc:0001,false,1,0,capability:automated_interplanetary_logistics,capability,,Automated interplanetary logistics
+end_product_dependency_profile,scc:0002,false,1,1,capability:automated_planetary_logistics,capability,,Automated planetary logistics
+end_product_dependency_profile,scc:0003,false,1,2,capability:efficient_bulk_silicon_access,capability,,Efficient bulk silicon access
+end_product_dependency_profile,scc:0004,false,1,3,capability:manual_interplanetary_travel,capability,,Manual interplanetary travel
+end_product_dependency_profile,scc:0005,false,1,4,capability:mecha_warp,capability,,Mecha warp
+end_product_dependency_profile,scc:0006,false,1,5,capability:sustained_titanium_access,capability,,Sustained titanium access
+end_product_dependency_profile,scc:0007,false,1,6,capability:vessel_warp,capability,,Logistics vessel warp
+end_product_dependency_profile,scc:0008,false,1,7,function:1,unlock_function,1,UnlockFunction 1
+end_product_dependency_profile,scc:0009,false,1,8,function:10,unlock_function,10,UnlockFunction 10
+end_product_dependency_profile,scc:0010,false,1,9,function:11,unlock_function,11,UnlockFunction 11
+end_product_dependency_profile,scc:0011,false,1,10,function:12,unlock_function,12,UnlockFunction 12
+end_product_dependency_profile,scc:0012,false,1,11,function:13,unlock_function,13,UnlockFunction 13
+end_product_dependency_profile,scc:0013,false,1,12,function:14,unlock_function,14,UnlockFunction 14
+end_product_dependency_profile,scc:0014,false,1,13,function:15,unlock_function,15,UnlockFunction 15
+end_product_dependency_profile,scc:0015,false,1,14,function:16,unlock_function,16,UnlockFunction 16
+end_product_dependency_profile,scc:0016,false,1,15,function:17,unlock_function,17,UnlockFunction 17
+end_product_dependency_profile,scc:0017,false,1,16,function:18,unlock_function,18,UnlockFunction 18
+end_product_dependency_profile,scc:0018,false,1,17,function:19,unlock_function,19,UnlockFunction 19
+end_product_dependency_profile,scc:0019,false,1,18,function:2,unlock_function,2,UnlockFunction 2
+end_product_dependency_profile,scc:0020,false,1,19,function:20,unlock_function,20,UnlockFunction 20
+end_product_dependency_profile,scc:0021,false,1,20,function:21,unlock_function,21,UnlockFunction 21
+end_product_dependency_profile,scc:0022,false,1,21,function:22,unlock_function,22,UnlockFunction 22
+end_product_dependency_profile,scc:0023,false,1,22,function:23,unlock_function,23,UnlockFunction 23
+end_product_dependency_profile,scc:0024,false,1,23,function:24,unlock_function,24,UnlockFunction 24
+end_product_dependency_profile,scc:0025,false,1,24,function:25,unlock_function,25,UnlockFunction 25
+end_product_dependency_profile,scc:0026,false,1,25,function:26,unlock_function,26,UnlockFunction 26
+end_product_dependency_profile,scc:0027,false,1,26,function:27,unlock_function,27,UnlockFunction 27
+end_product_dependency_profile,scc:0028,false,1,27,function:28,unlock_function,28,UnlockFunction 28
+end_product_dependency_profile,scc:0029,false,1,28,function:29,unlock_function,29,UnlockFunction 29
+end_product_dependency_profile,scc:0030,false,1,29,function:3,unlock_function,3,UnlockFunction 3
+end_product_dependency_profile,scc:0031,false,1,30,function:30,unlock_function,30,UnlockFunction 30
+end_product_dependency_profile,scc:0032,false,1,31,function:31,unlock_function,31,UnlockFunction 31
+end_product_dependency_profile,scc:0033,false,1,32,function:32,unlock_function,32,UnlockFunction 32
+end_product_dependency_profile,scc:0034,false,1,33,function:33,unlock_function,33,UnlockFunction 33
+end_product_dependency_profile,scc:0035,false,1,34,function:34,unlock_function,34,UnlockFunction 34
+end_product_dependency_profile,scc:0036,false,1,35,function:35,unlock_function,35,UnlockFunction 35
+end_product_dependency_profile,scc:0037,false,1,36,function:36,unlock_function,36,UnlockFunction 36
+end_product_dependency_profile,scc:0038,false,1,37,function:37,unlock_function,37,UnlockFunction 37
+end_product_dependency_profile,scc:0039,false,1,38,function:38,unlock_function,38,UnlockFunction 38
+end_product_dependency_profile,scc:0040,false,1,39,function:39,unlock_function,39,UnlockFunction 39
+end_product_dependency_profile,scc:0041,false,1,40,function:4,unlock_function,4,UnlockFunction 4
+end_product_dependency_profile,scc:0042,false,1,41,function:40,unlock_function,40,UnlockFunction 40
+end_product_dependency_profile,scc:0043,false,1,42,function:41,unlock_function,41,UnlockFunction 41
+end_product_dependency_profile,scc:0044,false,1,43,function:42,unlock_function,42,UnlockFunction 42
+end_product_dependency_profile,scc:0045,false,1,44,function:43,unlock_function,43,UnlockFunction 43
+end_product_dependency_profile,scc:0046,false,1,45,function:44,unlock_function,44,UnlockFunction 44
+end_product_dependency_profile,scc:0047,false,1,46,function:5,unlock_function,5,UnlockFunction 5
+end_product_dependency_profile,scc:0048,false,1,47,function:6,unlock_function,6,UnlockFunction 6
+end_product_dependency_profile,scc:0049,false,1,48,function:61,unlock_function,61,UnlockFunction 61
+end_product_dependency_profile,scc:0050,false,1,49,function:62,unlock_function,62,UnlockFunction 62
+end_product_dependency_profile,scc:0051,false,1,50,function:63,unlock_function,63,UnlockFunction 63
+end_product_dependency_profile,scc:0052,false,1,51,function:64,unlock_function,64,UnlockFunction 64
+end_product_dependency_profile,scc:0053,false,1,52,function:65,unlock_function,65,UnlockFunction 65
+end_product_dependency_profile,scc:0054,false,1,53,function:66,unlock_function,66,UnlockFunction 66
+end_product_dependency_profile,scc:0055,false,1,54,function:67,unlock_function,67,UnlockFunction 67
+end_product_dependency_profile,scc:0056,false,1,55,function:68,unlock_function,68,UnlockFunction 68
+end_product_dependency_profile,scc:0057,false,1,56,function:69,unlock_function,69,UnlockFunction 69
+end_product_dependency_profile,scc:0058,false,1,57,function:7,unlock_function,7,UnlockFunction 7
+end_product_dependency_profile,scc:0059,false,1,58,function:71,unlock_function,71,UnlockFunction 71
+end_product_dependency_profile,scc:0060,false,1,59,function:72,unlock_function,72,UnlockFunction 72
+end_product_dependency_profile,scc:0061,false,1,60,function:73,unlock_function,73,UnlockFunction 73
+end_product_dependency_profile,scc:0062,false,1,61,function:74,unlock_function,74,UnlockFunction 74
+end_product_dependency_profile,scc:0063,false,1,62,function:75,unlock_function,75,UnlockFunction 75
+end_product_dependency_profile,scc:0064,false,1,63,function:76,unlock_function,76,UnlockFunction 76
+end_product_dependency_profile,scc:0065,false,1,64,function:77,unlock_function,77,UnlockFunction 77
+end_product_dependency_profile,scc:0066,false,1,65,function:78,unlock_function,78,UnlockFunction 78
+end_product_dependency_profile,scc:0067,false,1,66,function:79,unlock_function,79,UnlockFunction 79
+end_product_dependency_profile,scc:0068,false,1,67,function:8,unlock_function,8,UnlockFunction 8
+end_product_dependency_profile,scc:0069,false,1,68,function:80,unlock_function,80,UnlockFunction 80
+end_product_dependency_profile,scc:0070,false,1,69,function:81,unlock_function,81,UnlockFunction 81
+end_product_dependency_profile,scc:0071,false,1,70,function:82,unlock_function,82,UnlockFunction 82
+end_product_dependency_profile,scc:0072,false,1,71,function:83,unlock_function,83,UnlockFunction 83
+end_product_dependency_profile,scc:0073,false,1,72,function:84,unlock_function,84,UnlockFunction 84
+end_product_dependency_profile,scc:0074,false,1,73,function:85,unlock_function,85,UnlockFunction 85
+end_product_dependency_profile,scc:0075,false,1,74,function:86,unlock_function,86,UnlockFunction 86
+end_product_dependency_profile,scc:0076,false,1,75,function:9,unlock_function,9,UnlockFunction 9
+end_product_dependency_profile,scc:0077,false,1,76,function:99,unlock_function,99,UnlockFunction 99
+end_product_dependency_profile,scc:0078,false,1,113,item:1000,item_proto,1000,水
+end_product_dependency_profile,scc:0079,false,1,116,item:1001,item_proto,1001,铁矿
+end_product_dependency_profile,scc:0080,false,1,133,item:1002,item_proto,1002,铜矿
+end_product_dependency_profile,scc:0081,false,1,219,item:1003,item_proto,1003,Silicon Ore
+end_product_dependency_profile,scc:0082,false,1,215,item:1004,item_proto,1004,Titanium Ore
+end_product_dependency_profile,scc:0083,false,1,217,item:1005,item_proto,1005,Stone
+end_product_dependency_profile,scc:0084,false,1,269,item:1006,item_proto,1006,煤矿
+end_product_dependency_profile,scc:0085,false,1,279,item:1007,item_proto,1007,原油
+end_product_dependency_profile,scc:0086,false,1,282,item:1011,item_proto,1011,可燃冰
+end_product_dependency_profile,scc:0087,false,1,285,item:1012,item_proto,1012,金伯利矿石
+end_product_dependency_profile,scc:0088,false,1,124,item:1013,item_proto,1013,分形硅石
+end_product_dependency_profile,scc:0089,false,1,127,item:1014,item_proto,1014,光栅石
+end_product_dependency_profile,scc:0090,false,1,129,item:1015,item_proto,1015,刺笋结晶
+end_product_dependency_profile,scc:0091,false,1,131,item:1016,item_proto,1016,单极磁石
+end_product_dependency_profile,scc:0092,false,1,77,item:1030,item_proto,1030,木材
+end_product_dependency_profile,scc:0093,false,1,78,item:1031,item_proto,1031,植物燃料
+end_product_dependency_profile,scc:0094,false,1,79,item:1099,item_proto,1099,沙土
+end_product_dependency_profile,scc:0095,false,1,118,item:1101,item_proto,1101,铁块
+end_product_dependency_profile,scc:0096,false,1,120,item:1102,item_proto,1102,磁铁
+end_product_dependency_profile,scc:0097,false,1,167,item:1103,item_proto,1103,钢材
+end_product_dependency_profile,scc:0098,false,1,135,item:1104,item_proto,1104,铜块
+end_product_dependency_profile,scc:0099,false,1,253,item:1105,item_proto,1105,High-Purity Silicon
+end_product_dependency_profile,scc:0100,true,86,286,item:1106,item_proto,1106,Titanium Ingot
+end_product_dependency_profile,scc:0100,true,86,286,item:1109,item_proto,1109,高能石墨
+end_product_dependency_profile,scc:0100,true,86,286,item:1112,item_proto,1112,金刚石
+end_product_dependency_profile,scc:0100,true,86,286,item:1113,item_proto,1113,晶格硅
+end_product_dependency_profile,scc:0100,true,86,286,item:1114,item_proto,1114,精炼油
+end_product_dependency_profile,scc:0100,true,86,286,item:1115,item_proto,1115,塑料
+end_product_dependency_profile,scc:0100,true,86,286,item:1116,item_proto,1116,硫酸
+end_product_dependency_profile,scc:0100,true,86,286,item:1117,item_proto,1117,Organic Crystal
+end_product_dependency_profile,scc:0100,true,86,286,item:1118,item_proto,1118,Titanium Crystal
+end_product_dependency_profile,scc:0100,true,86,286,item:1119,item_proto,1119,钛化玻璃
+end_product_dependency_profile,scc:0100,true,86,286,item:1120,item_proto,1120,氢
+end_product_dependency_profile,scc:0100,true,86,286,item:1121,item_proto,1121,重氢
+end_product_dependency_profile,scc:0100,true,86,286,item:1123,item_proto,1123,石墨烯
+end_product_dependency_profile,scc:0100,true,86,286,item:1124,item_proto,1124,碳纳米管
+end_product_dependency_profile,scc:0100,true,86,286,item:1126,item_proto,1126,卡西米尔晶体
+end_product_dependency_profile,scc:0100,true,86,286,item:1127,item_proto,1127,奇异物质
+end_product_dependency_profile,scc:0100,true,86,286,item:1204,item_proto,1204,电磁涡轮
+end_product_dependency_profile,scc:0100,true,86,286,item:1206,item_proto,1206,粒子容器
+end_product_dependency_profile,scc:0100,true,86,286,item:1209,item_proto,1209,引力透镜
+end_product_dependency_profile,scc:0100,true,86,286,item:1304,item_proto,1304,位面过滤器
+end_product_dependency_profile,scc:0100,true,86,286,item:1305,item_proto,1305,量子芯片
+end_product_dependency_profile,scc:0100,true,86,286,item:1402,item_proto,1402,粒子宽带
+end_product_dependency_profile,scc:0100,true,86,286,item:6002,item_proto,6002,Energy Matrix
+end_product_dependency_profile,scc:0100,true,86,286,item:6003,item_proto,6003,Structure Matrix
+end_product_dependency_profile,scc:0100,true,86,286,item:6004,item_proto,6004,Information Matrix
+end_product_dependency_profile,scc:0100,true,86,286,item:6005,item_proto,6005,Gravity Matrix
+end_product_dependency_profile,scc:0100,true,86,286,recipe:100,recipe_proto,100,粒子容器（高效）
+end_product_dependency_profile,scc:0100,true,86,286,recipe:101,recipe_proto,101,引力透镜
+end_product_dependency_profile,scc:0100,true,86,286,recipe:102,recipe_proto,102,引力矩阵
+end_product_dependency_profile,scc:0100,true,86,286,recipe:104,recipe_proto,104,奇异物质
+end_product_dependency_profile,scc:0100,true,86,286,recipe:115,recipe_proto,115,重氢分馏
+end_product_dependency_profile,scc:0100,true,86,286,recipe:121,recipe_proto,121,重整精炼
+end_product_dependency_profile,scc:0100,true,86,286,recipe:18,recipe_proto,18,能量矩阵
+end_product_dependency_profile,scc:0100,true,86,286,recipe:23,recipe_proto,23,塑料
+end_product_dependency_profile,scc:0100,true,86,286,recipe:24,recipe_proto,24,硫酸
+end_product_dependency_profile,scc:0100,true,86,286,recipe:25,recipe_proto,25,有机晶体
+end_product_dependency_profile,scc:0100,true,86,286,recipe:26,recipe_proto,26,钛晶石
+end_product_dependency_profile,scc:0100,true,86,286,recipe:27,recipe_proto,27,结构矩阵
+end_product_dependency_profile,scc:0100,true,86,286,recipe:28,recipe_proto,28,卡西米尔晶体
+end_product_dependency_profile,scc:0100,true,86,286,recipe:29,recipe_proto,29,卡西米尔晶体（高效）
+end_product_dependency_profile,scc:0100,true,86,286,recipe:30,recipe_proto,30,钛化玻璃
+end_product_dependency_profile,scc:0100,true,86,286,recipe:31,recipe_proto,31,石墨烯
+end_product_dependency_profile,scc:0100,true,86,286,recipe:33,recipe_proto,33,碳纳米管
+end_product_dependency_profile,scc:0100,true,86,286,recipe:35,recipe_proto,35,碳纳米管（高效）
+end_product_dependency_profile,scc:0100,true,86,286,recipe:36,recipe_proto,36,粒子宽带
+end_product_dependency_profile,scc:0100,true,86,286,recipe:37,recipe_proto,37,晶格硅
+end_product_dependency_profile,scc:0100,true,86,286,recipe:38,recipe_proto,38,位面过滤器
+end_product_dependency_profile,scc:0100,true,86,286,recipe:40,recipe_proto,40,重氢
+end_product_dependency_profile,scc:0100,true,86,286,recipe:52,recipe_proto,52,量子芯片
+end_product_dependency_profile,scc:0100,true,86,286,recipe:54,recipe_proto,54,有机晶体（原始）
+end_product_dependency_profile,scc:0100,true,86,286,recipe:55,recipe_proto,55,信息矩阵
+end_product_dependency_profile,scc:0100,true,86,286,recipe:58,recipe_proto,58,X射线裂解
+end_product_dependency_profile,scc:0100,true,86,286,recipe:60,recipe_proto,60,金刚石
+end_product_dependency_profile,scc:0100,true,86,286,recipe:61,recipe_proto,61,金刚石（高效）
+end_product_dependency_profile,scc:0100,true,86,286,recipe:62,recipe_proto,62,晶格硅（高效）
+end_product_dependency_profile,scc:0100,true,86,286,recipe:65,recipe_proto,65,钛块
+end_product_dependency_profile,scc:0100,true,86,286,recipe:74,recipe_proto,74,光子物质化
+end_product_dependency_profile,scc:0100,true,86,286,recipe:98,recipe_proto,98,电磁涡轮
+end_product_dependency_profile,scc:0100,true,86,286,recipe:99,recipe_proto,99,粒子容器
+end_product_dependency_profile,scc:0100,true,86,286,tech:1103,tech_proto,1103,TX射线裂解
+end_product_dependency_profile,scc:0100,true,86,286,tech:1104,tech_proto,1104,T重整精炼
+end_product_dependency_profile,scc:0100,true,86,286,tech:1122,tech_proto,1122,T高分子化工
+end_product_dependency_profile,scc:0100,true,86,286,tech:1123,tech_proto,1123,High-Strength Crystal
+end_product_dependency_profile,scc:0100,true,86,286,tech:1124,tech_proto,1124,Structure Matrix
+end_product_dependency_profile,scc:0100,true,86,286,tech:1125,tech_proto,1125,T卡西米尔晶体
+end_product_dependency_profile,scc:0100,true,86,286,tech:1126,tech_proto,1126,T高强度玻璃
+end_product_dependency_profile,scc:0100,true,86,286,tech:1132,tech_proto,1132,T高强度材料
+end_product_dependency_profile,scc:0100,true,86,286,tech:1133,tech_proto,1133,T粒子可控技术
+end_product_dependency_profile,scc:0100,true,86,286,tech:1134,tech_proto,1134,T重氢分馏
+end_product_dependency_profile,scc:0100,true,86,286,tech:1141,tech_proto,1141,T波函数干扰
+end_product_dependency_profile,scc:0100,true,86,286,tech:1142,tech_proto,1142,T微型粒子对撞机
+end_product_dependency_profile,scc:0100,true,86,286,tech:1143,tech_proto,1143,T奇异物质
+end_product_dependency_profile,scc:0100,true,86,286,tech:1303,tech_proto,1303,Quantum Chip
+end_product_dependency_profile,scc:0100,true,86,286,tech:1312,tech_proto,1312,Information Matrix
+end_product_dependency_profile,scc:0100,true,86,286,tech:1403,tech_proto,1403,T晶体冶炼
+end_product_dependency_profile,scc:0100,true,86,286,tech:1413,tech_proto,1413,Titanium Smelting
+end_product_dependency_profile,scc:0100,true,86,286,tech:1502,tech_proto,1502,T光子变频
+end_product_dependency_profile,scc:0100,true,86,286,tech:1503,tech_proto,1503,T太阳帆轨道系统
+end_product_dependency_profile,scc:0100,true,86,286,tech:1504,tech_proto,1504,T射线接收站
+end_product_dependency_profile,scc:0100,true,86,286,tech:1505,tech_proto,1505,T行星电离层利用
+end_product_dependency_profile,scc:0100,true,86,286,tech:1506,tech_proto,1506,Dirac Inversion Mechanism
+end_product_dependency_profile,scc:0100,true,86,286,tech:1702,tech_proto,1702,T磁悬浮技术
+end_product_dependency_profile,scc:0100,true,86,286,tech:1703,tech_proto,1703,T粒子磁力阱
+end_product_dependency_profile,scc:0100,true,86,286,tech:1704,tech_proto,1704,Gravitational Wave Refraction
+end_product_dependency_profile,scc:0100,true,86,286,tech:1705,tech_proto,1705,Gravity Matrix
+end_product_dependency_profile,scc:0100,true,86,286,tech:1711,tech_proto,1711,Super Magnetic Field Generator
+end_product_dependency_profile,scc:0101,false,1,333,item:1107,item_proto,1107,钛合金
+end_product_dependency_profile,scc:0102,false,1,221,item:1108,item_proto,1108,石材
+end_product_dependency_profile,scc:0103,false,1,229,item:1110,item_proto,1110,玻璃
+end_product_dependency_profile,scc:0104,false,1,233,item:1111,item_proto,1111,棱镜
+end_product_dependency_profile,scc:0105,false,1,287,item:1122,item_proto,1122,反物质
+end_product_dependency_profile,scc:0106,false,1,359,item:1125,item_proto,1125,框架材料
+end_product_dependency_profile,scc:0107,false,1,273,item:1128,item_proto,1128,燃烧单元
+end_product_dependency_profile,scc:0108,false,1,398,item:1129,item_proto,1129,爆破单元
+end_product_dependency_profile,scc:0109,false,1,401,item:1130,item_proto,1130,晶石爆破单元
+end_product_dependency_profile,scc:0110,false,1,223,item:1131,item_proto,1131,地基
+end_product_dependency_profile,scc:0111,false,1,271,item:1141,item_proto,1141,增产剂 Mk.I
+end_product_dependency_profile,scc:0112,false,1,317,item:1142,item_proto,1142,增产剂 Mk.II
+end_product_dependency_profile,scc:0113,false,1,320,item:1143,item_proto,1143,增产剂 Mk.III
+end_product_dependency_profile,scc:0114,false,1,122,item:1201,item_proto,1201,齿轮
+end_product_dependency_profile,scc:0115,false,1,139,item:1202,item_proto,1202,磁线圈
+end_product_dependency_profile,scc:0116,false,1,181,item:1203,item_proto,1203,电动机
+end_product_dependency_profile,scc:0117,false,1,289,item:1205,item_proto,1205,超级磁场环
+end_product_dependency_profile,scc:0118,false,1,80,item:1208,item_proto,1208,临界光子
+end_product_dependency_profile,scc:0119,false,1,303,item:1210,item_proto,1210,空间翘曲器
+end_product_dependency_profile,scc:0120,false,1,137,item:1301,item_proto,1301,电路板
+end_product_dependency_profile,scc:0121,false,1,255,item:1302,item_proto,1302,微晶元件
+end_product_dependency_profile,scc:0122,false,1,261,item:1303,item_proto,1303,处理器
+end_product_dependency_profile,scc:0123,false,1,239,item:1401,item_proto,1401,电浆激发器
+end_product_dependency_profile,scc:0124,false,1,313,item:1403,item_proto,1403,湮灭约束球
+end_product_dependency_profile,scc:0125,false,1,294,item:1404,item_proto,1404,光子合并器
+end_product_dependency_profile,scc:0126,false,1,309,item:1405,item_proto,1405,推进器2
+end_product_dependency_profile,scc:0127,false,1,335,item:1406,item_proto,1406,加力推进器
+end_product_dependency_profile,scc:0128,false,1,192,item:1407,item_proto,1407,动力引擎
+end_product_dependency_profile,scc:0129,false,1,296,item:1501,item_proto,1501,太阳帆
+end_product_dependency_profile,scc:0130,false,1,369,item:1502,item_proto,1502,戴森球组件
+end_product_dependency_profile,scc:0131,false,1,374,item:1503,item_proto,1503,小型运载火箭
+end_product_dependency_profile,scc:0132,false,1,188,item:1601,item_proto,1601,机枪弹箱
+end_product_dependency_profile,scc:0133,false,1,429,item:1602,item_proto,1602,钛化弹箱
+end_product_dependency_profile,scc:0134,false,1,432,item:1603,item_proto,1603,超合金弹箱
+end_product_dependency_profile,scc:0135,false,1,406,item:1604,item_proto,1604,炮弹组
+end_product_dependency_profile,scc:0136,false,1,435,item:1605,item_proto,1605,高爆炮弹组
+end_product_dependency_profile,scc:0137,false,1,441,item:1606,item_proto,1606,晶石炮弹组
+end_product_dependency_profile,scc:0138,false,1,424,item:1607,item_proto,1607,等离子胶囊
+end_product_dependency_profile,scc:0139,false,1,447,item:1608,item_proto,1608,反物质胶囊
+end_product_dependency_profile,scc:0140,false,1,275,item:1609,item_proto,1609,导弹组
+end_product_dependency_profile,scc:0141,false,1,438,item:1610,item_proto,1610,超音速导弹组
+end_product_dependency_profile,scc:0142,false,1,444,item:1611,item_proto,1611,引力导弹组
+end_product_dependency_profile,scc:0143,false,1,419,item:1612,item_proto,1612,电磁干扰胶囊
+end_product_dependency_profile,scc:0144,false,1,462,item:1613,item_proto,1613,电磁压制胶囊
+end_product_dependency_profile,scc:0145,false,1,306,item:1801,item_proto,1801,氢燃料棒
+end_product_dependency_profile,scc:0146,false,1,342,item:1802,item_proto,1802,氘核燃料棒
+end_product_dependency_profile,scc:0147,false,1,337,item:1803,item_proto,1803,反物质燃料棒
+end_product_dependency_profile,scc:0148,false,1,474,item:1804,item_proto,1804,金色燃料棒
+end_product_dependency_profile,scc:0149,false,1,173,item:2001,item_proto,2001,低速传送带
+end_product_dependency_profile,scc:0150,false,1,378,item:2002,item_proto,2002,高速传送带
+end_product_dependency_profile,scc:0151,false,1,565,item:2003,item_proto,2003,极速传送带
+end_product_dependency_profile,scc:0152,false,1,175,item:2011,item_proto,2011,低速分拣器
+end_product_dependency_profile,scc:0153,false,1,183,item:2012,item_proto,2012,高速分拣器
+end_product_dependency_profile,scc:0154,false,1,380,item:2013,item_proto,2013,极速分拣器
+end_product_dependency_profile,scc:0155,false,1,387,item:2014,item_proto,2014,集装分拣器
+end_product_dependency_profile,scc:0156,false,1,178,item:2020,item_proto,2020,四向分流器
+end_product_dependency_profile,scc:0157,false,1,237,item:2030,item_proto,2030,流速器
+end_product_dependency_profile,scc:0158,false,1,385,item:2040,item_proto,2040,自动集装机
+end_product_dependency_profile,scc:0159,false,1,267,item:2101,item_proto,2101,小型储物仓
+end_product_dependency_profile,scc:0160,false,1,382,item:2102,item_proto,2102,大型储物仓
+end_product_dependency_profile,scc:0161,false,1,567,item:2103,item_proto,2103,物流运输站
+end_product_dependency_profile,scc:0162,false,1,572,item:2104,item_proto,2104,星际物流运输站
+end_product_dependency_profile,scc:0163,false,1,577,item:2105,item_proto,2105,轨道采集器
+end_product_dependency_profile,scc:0164,false,1,235,item:2106,item_proto,2106,储液罐
+end_product_dependency_profile,scc:0165,false,1,390,item:2107,item_proto,2107,物流配送器
+end_product_dependency_profile,scc:0166,false,1,146,item:2201,item_proto,2201,电力感应塔
+end_product_dependency_profile,scc:0167,false,1,241,item:2202,item_proto,2202,无线输电塔
+end_product_dependency_profile,scc:0168,false,1,144,item:2203,item_proto,2203,风力涡轮机
+end_product_dependency_profile,scc:0169,false,1,263,item:2204,item_proto,2204,火力发电厂
+end_product_dependency_profile,scc:0170,false,1,265,item:2205,item_proto,2205,太阳能板
+end_product_dependency_profile,scc:0171,false,1,350,item:2206,item_proto,2206,蓄电器
+end_product_dependency_profile,scc:0172,false,1,81,item:2207,item_proto,2207,蓄电器（满）
+end_product_dependency_profile,scc:0173,false,1,300,item:2208,item_proto,2208,射线接收站
+end_product_dependency_profile,scc:0174,false,1,353,item:2209,item_proto,2209,能量枢纽
+end_product_dependency_profile,scc:0175,false,1,367,item:2210,item_proto,2210,人造恒星
+end_product_dependency_profile,scc:0176,false,1,340,item:2211,item_proto,2211,微型聚变发电站
+end_product_dependency_profile,scc:0177,false,1,395,item:2212,item_proto,2212,卫星配电站
+end_product_dependency_profile,scc:0178,false,1,356,item:2213,item_proto,2213,地热发电站
+end_product_dependency_profile,scc:0179,false,1,142,item:2301,item_proto,2301,采矿机
+end_product_dependency_profile,scc:0180,false,1,227,item:2302,item_proto,2302,电弧熔炉
+end_product_dependency_profile,scc:0181,false,1,159,item:2303,item_proto,2303,制造台 Mk.I
+end_product_dependency_profile,scc:0182,false,1,323,item:2304,item_proto,2304,制造台 Mk.II
+end_product_dependency_profile,scc:0183,false,1,326,item:2305,item_proto,2305,制造台 Mk.III
+end_product_dependency_profile,scc:0184,false,1,225,item:2306,item_proto,2306,抽水站
+end_product_dependency_profile,scc:0185,false,1,243,item:2307,item_proto,2307,原油萃取站
+end_product_dependency_profile,scc:0186,false,1,247,item:2308,item_proto,2308,原油精炼厂
+end_product_dependency_profile,scc:0187,false,1,251,item:2309,item_proto,2309,化工厂
+end_product_dependency_profile,scc:0188,false,1,365,item:2310,item_proto,2310,微型粒子对撞机
+end_product_dependency_profile,scc:0189,false,1,298,item:2311,item_proto,2311,电磁轨道弹射器
+end_product_dependency_profile,scc:0190,false,1,372,item:2312,item_proto,2312,垂直发射井
+end_product_dependency_profile,scc:0191,false,1,257,item:2313,item_proto,2313,喷涂机
+end_product_dependency_profile,scc:0192,false,1,291,item:2314,item_proto,2314,分馏塔
+end_product_dependency_profile,scc:0193,false,1,361,item:2315,item_proto,2315,位面熔炉
+end_product_dependency_profile,scc:0194,false,1,363,item:2316,item_proto,2316,大型采矿机
+end_product_dependency_profile,scc:0195,false,1,330,item:2317,item_proto,2317,化工厂 Mk.II
+end_product_dependency_profile,scc:0196,false,1,468,item:2318,item_proto,2318,制造台 Mk.IV
+end_product_dependency_profile,scc:0197,false,1,471,item:2319,item_proto,2319,熔炉 Mk.III
+end_product_dependency_profile,scc:0198,false,1,249,item:2401,item_proto,2401,激光灯塔
+end_product_dependency_profile,scc:0199,false,1,231,item:2901,item_proto,2901,矩阵研究站
+end_product_dependency_profile,scc:0200,false,1,465,item:2902,item_proto,2902,矩阵研究站 Mk.II
+end_product_dependency_profile,scc:0201,false,1,186,item:3001,item_proto,3001,高斯机枪塔
+end_product_dependency_profile,scc:0202,false,1,412,item:3002,item_proto,3002,高频激光塔
+end_product_dependency_profile,scc:0203,false,1,404,item:3003,item_proto,3003,聚爆加农炮
+end_product_dependency_profile,scc:0204,false,1,422,item:3004,item_proto,3004,磁化电浆炮
+end_product_dependency_profile,scc:0205,false,1,195,item:3005,item_proto,3005,导弹防御塔
+end_product_dependency_profile,scc:0206,false,1,417,item:3006,item_proto,3006,干扰塔
+end_product_dependency_profile,scc:0207,false,1,409,item:3007,item_proto,3007,信标
+end_product_dependency_profile,scc:0208,false,1,414,item:3008,item_proto,3008,护盾发生器
+end_product_dependency_profile,scc:0209,false,1,259,item:3009,item_proto,3009,战场分析基站
+end_product_dependency_profile,scc:0210,false,1,426,item:3010,item_proto,3010,地面电浆炮
+end_product_dependency_profile,scc:0211,false,1,569,item:5001,item_proto,5001,物流运输机
+end_product_dependency_profile,scc:0212,false,1,574,item:5002,item_proto,5002,星际物流运输船
+end_product_dependency_profile,scc:0213,false,1,392,item:5003,item_proto,5003,配送运输机
+end_product_dependency_profile,scc:0214,false,1,245,item:5101,item_proto,5101,地面战斗机-E型
+end_product_dependency_profile,scc:0215,false,1,450,item:5102,item_proto,5102,地面战斗机-A型
+end_product_dependency_profile,scc:0216,false,1,453,item:5103,item_proto,5103,地面战斗机-F型
+end_product_dependency_profile,scc:0217,false,1,456,item:5111,item_proto,5111,太空战斗机-A型
+end_product_dependency_profile,scc:0218,false,1,459,item:5112,item_proto,5112,太空战斗机-F型
+end_product_dependency_profile,scc:0219,false,1,82,item:5201,item_proto,5201,存储单元
+end_product_dependency_profile,scc:0220,false,1,83,item:5202,item_proto,5202,硅基神经元
+end_product_dependency_profile,scc:0221,false,1,84,item:5203,item_proto,5203,物质重组器
+end_product_dependency_profile,scc:0222,false,1,85,item:5204,item_proto,5204,负熵奇点
+end_product_dependency_profile,scc:0223,false,1,86,item:5205,item_proto,5205,虚粒子
+end_product_dependency_profile,scc:0224,false,1,87,item:5206,item_proto,5206,能量碎片
+end_product_dependency_profile,scc:0225,false,1,149,item:6001,item_proto,6001,Electromagnetic Matrix
+end_product_dependency_profile,scc:0226,false,1,346,item:6006,item_proto,6006,Universe Matrix
+end_product_dependency_profile,scc:0227,false,1,117,recipe:1,recipe_proto,1,铁块
+end_product_dependency_profile,scc:0228,false,1,230,recipe:10,recipe_proto,10,矩阵研究站
+end_product_dependency_profile,scc:0229,false,1,288,recipe:103,recipe_proto,103,超级磁场环
+end_product_dependency_profile,scc:0230,false,1,191,recipe:105,recipe_proto,105,动力引擎
+end_product_dependency_profile,scc:0231,false,1,270,recipe:106,recipe_proto,106,增产剂 Mk.I
+end_product_dependency_profile,scc:0232,false,1,316,recipe:107,recipe_proto,107,增产剂 Mk.II
+end_product_dependency_profile,scc:0233,false,1,319,recipe:108,recipe_proto,108,增产剂 Mk.III
+end_product_dependency_profile,scc:0234,false,1,256,recipe:109,recipe_proto,109,喷涂机
+end_product_dependency_profile,scc:0235,false,1,232,recipe:11,recipe_proto,11,棱镜
+end_product_dependency_profile,scc:0236,false,1,290,recipe:110,recipe_proto,110,分馏塔
+end_product_dependency_profile,scc:0237,false,1,576,recipe:111,recipe_proto,111,轨道采集器
+end_product_dependency_profile,scc:0238,false,1,222,recipe:112,recipe_proto,112,地基
+end_product_dependency_profile,scc:0239,false,1,339,recipe:113,recipe_proto,113,微型聚变发电站
+end_product_dependency_profile,scc:0240,false,1,234,recipe:114,recipe_proto,114,储液罐
+end_product_dependency_profile,scc:0241,false,1,360,recipe:116,recipe_proto,116,位面熔炉
+end_product_dependency_profile,scc:0242,false,1,236,recipe:117,recipe_proto,117,流速器
+end_product_dependency_profile,scc:0243,false,1,355,recipe:118,recipe_proto,118,地热发电站
+end_product_dependency_profile,scc:0244,false,1,362,recipe:119,recipe_proto,119,大型采矿机
+end_product_dependency_profile,scc:0245,false,1,238,recipe:12,recipe_proto,12,电浆激发器
+end_product_dependency_profile,scc:0246,false,1,384,recipe:120,recipe_proto,120,自动集装机
+end_product_dependency_profile,scc:0247,false,1,389,recipe:122,recipe_proto,122,物流配送器
+end_product_dependency_profile,scc:0248,false,1,391,recipe:123,recipe_proto,123,配送运输机
+end_product_dependency_profile,scc:0249,false,1,329,recipe:124,recipe_proto,124,化工厂 Mk.II
+end_product_dependency_profile,scc:0250,false,1,185,recipe:125,recipe_proto,125,高斯机枪塔
+end_product_dependency_profile,scc:0251,false,1,411,recipe:126,recipe_proto,126,高频激光塔
+end_product_dependency_profile,scc:0252,false,1,403,recipe:127,recipe_proto,127,聚爆加农炮
+end_product_dependency_profile,scc:0253,false,1,421,recipe:128,recipe_proto,128,磁化电浆炮
+end_product_dependency_profile,scc:0254,false,1,194,recipe:129,recipe_proto,129,导弹防御塔
+end_product_dependency_profile,scc:0255,false,1,240,recipe:13,recipe_proto,13,无线输电塔
+end_product_dependency_profile,scc:0256,false,1,416,recipe:130,recipe_proto,130,干扰塔
+end_product_dependency_profile,scc:0257,false,1,408,recipe:131,recipe_proto,131,信标
+end_product_dependency_profile,scc:0258,false,1,413,recipe:132,recipe_proto,132,护盾发生器
+end_product_dependency_profile,scc:0259,false,1,272,recipe:133,recipe_proto,133,燃烧单元
+end_product_dependency_profile,scc:0260,false,1,397,recipe:134,recipe_proto,134,爆破单元
+end_product_dependency_profile,scc:0261,false,1,400,recipe:135,recipe_proto,135,晶石爆破单元
+end_product_dependency_profile,scc:0262,false,1,187,recipe:136,recipe_proto,136,机枪弹箱
+end_product_dependency_profile,scc:0263,false,1,428,recipe:137,recipe_proto,137,钛化弹箱
+end_product_dependency_profile,scc:0264,false,1,431,recipe:138,recipe_proto,138,超合金弹箱
+end_product_dependency_profile,scc:0265,false,1,405,recipe:139,recipe_proto,139,炮弹组
+end_product_dependency_profile,scc:0266,false,1,242,recipe:14,recipe_proto,14,原油萃取站
+end_product_dependency_profile,scc:0267,false,1,434,recipe:140,recipe_proto,140,高爆炮弹组
+end_product_dependency_profile,scc:0268,false,1,440,recipe:141,recipe_proto,141,晶石炮弹组
+end_product_dependency_profile,scc:0269,false,1,423,recipe:142,recipe_proto,142,等离子胶囊
+end_product_dependency_profile,scc:0270,false,1,446,recipe:143,recipe_proto,143,反物质胶囊
+end_product_dependency_profile,scc:0271,false,1,274,recipe:144,recipe_proto,144,导弹组
+end_product_dependency_profile,scc:0272,false,1,437,recipe:145,recipe_proto,145,超音速导弹组
+end_product_dependency_profile,scc:0273,false,1,443,recipe:146,recipe_proto,146,引力导弹组
+end_product_dependency_profile,scc:0274,false,1,244,recipe:147,recipe_proto,147,地面战斗机-E型
+end_product_dependency_profile,scc:0275,false,1,449,recipe:148,recipe_proto,148,地面战斗机-A型
+end_product_dependency_profile,scc:0276,false,1,452,recipe:149,recipe_proto,149,地面战斗机-F型
+end_product_dependency_profile,scc:0277,false,1,246,recipe:15,recipe_proto,15,原油精炼厂
+end_product_dependency_profile,scc:0278,false,1,455,recipe:150,recipe_proto,150,太空战斗机-A型
+end_product_dependency_profile,scc:0279,false,1,458,recipe:151,recipe_proto,151,太空战斗机-F型
+end_product_dependency_profile,scc:0280,false,1,258,recipe:152,recipe_proto,152,战场分析基站
+end_product_dependency_profile,scc:0281,false,1,464,recipe:153,recipe_proto,153,矩阵研究站 Mk.II
+end_product_dependency_profile,scc:0282,false,1,467,recipe:154,recipe_proto,154,制造台 Mk.IV
+end_product_dependency_profile,scc:0283,false,1,470,recipe:155,recipe_proto,155,熔炉 Mk.III
+end_product_dependency_profile,scc:0284,false,1,473,recipe:156,recipe_proto,156,金色燃料棒
+end_product_dependency_profile,scc:0285,false,1,425,recipe:157,recipe_proto,157,地面电浆炮
+end_product_dependency_profile,scc:0286,false,1,418,recipe:158,recipe_proto,158,电磁干扰胶囊
+end_product_dependency_profile,scc:0287,false,1,461,recipe:159,recipe_proto,159,电磁压制胶囊
+end_product_dependency_profile,scc:0288,false,1,280,recipe:16,recipe_proto,16,等离子精炼
+end_product_dependency_profile,scc:0289,false,1,386,recipe:160,recipe_proto,160,集装分拣器
+end_product_dependency_profile,scc:0290,false,1,248,recipe:161,recipe_proto,161,激光灯塔
+end_product_dependency_profile,scc:0291,false,1,276,recipe:17,recipe_proto,17,高能石墨
+end_product_dependency_profile,scc:0292,false,1,305,recipe:19,recipe_proto,19,氢燃料棒
+end_product_dependency_profile,scc:0293,false,1,119,recipe:2,recipe_proto,2,磁铁
+end_product_dependency_profile,scc:0294,false,1,308,recipe:20,recipe_proto,20,推进器
+end_product_dependency_profile,scc:0295,false,1,334,recipe:21,recipe_proto,21,加力推进器
+end_product_dependency_profile,scc:0296,false,1,250,recipe:22,recipe_proto,22,化工厂
+end_product_dependency_profile,scc:0297,false,1,134,recipe:3,recipe_proto,3,铜块
+end_product_dependency_profile,scc:0298,false,1,283,recipe:32,recipe_proto,32,石墨烯（高效）
+end_product_dependency_profile,scc:0299,false,1,218,recipe:34,recipe_proto,34,硅石
+end_product_dependency_profile,scc:0300,false,1,364,recipe:39,recipe_proto,39,微型粒子对撞机
+end_product_dependency_profile,scc:0301,false,1,220,recipe:4,recipe_proto,4,石材
+end_product_dependency_profile,scc:0302,false,1,341,recipe:41,recipe_proto,41,氘核燃料棒
+end_product_dependency_profile,scc:0303,false,1,312,recipe:42,recipe_proto,42,湮灭约束球
+end_product_dependency_profile,scc:0304,false,1,366,recipe:43,recipe_proto,43,人造恒星
+end_product_dependency_profile,scc:0305,false,1,336,recipe:44,recipe_proto,44,反物质燃料棒
+end_product_dependency_profile,scc:0306,false,1,158,recipe:45,recipe_proto,45,制造台 Mk.I
+end_product_dependency_profile,scc:0307,false,1,322,recipe:46,recipe_proto,46,制造台 Mk.II
+end_product_dependency_profile,scc:0308,false,1,325,recipe:47,recipe_proto,47,制造台 Mk.III
+end_product_dependency_profile,scc:0309,false,1,141,recipe:48,recipe_proto,48,采矿机
+end_product_dependency_profile,scc:0310,false,1,224,recipe:49,recipe_proto,49,抽水站
+end_product_dependency_profile,scc:0311,false,1,121,recipe:5,recipe_proto,5,齿轮
+end_product_dependency_profile,scc:0312,false,1,136,recipe:50,recipe_proto,50,电路板
+end_product_dependency_profile,scc:0313,false,1,260,recipe:51,recipe_proto,51,处理器
+end_product_dependency_profile,scc:0314,false,1,254,recipe:53,recipe_proto,53,微晶元件
+end_product_dependency_profile,scc:0315,false,1,226,recipe:56,recipe_proto,56,电弧熔炉
+end_product_dependency_profile,scc:0316,false,1,228,recipe:57,recipe_proto,57,玻璃
+end_product_dependency_profile,scc:0317,false,1,252,recipe:59,recipe_proto,59,高纯硅块
+end_product_dependency_profile,scc:0318,false,1,138,recipe:6,recipe_proto,6,磁线圈
+end_product_dependency_profile,scc:0319,false,1,166,recipe:63,recipe_proto,63,钢材
+end_product_dependency_profile,scc:0320,false,1,262,recipe:64,recipe_proto,64,火力发电厂
+end_product_dependency_profile,scc:0321,false,1,332,recipe:66,recipe_proto,66,钛合金
+end_product_dependency_profile,scc:0322,false,1,264,recipe:67,recipe_proto,67,太阳能板
+end_product_dependency_profile,scc:0323,false,1,292,recipe:68,recipe_proto,68,光子合并器
+end_product_dependency_profile,scc:0324,false,1,293,recipe:69,recipe_proto,69,光子合并器（高效）
+end_product_dependency_profile,scc:0325,false,1,143,recipe:7,recipe_proto,7,风力涡轮机
+end_product_dependency_profile,scc:0326,false,1,295,recipe:70,recipe_proto,70,太阳帆
+end_product_dependency_profile,scc:0327,false,1,297,recipe:71,recipe_proto,71,电磁轨道弹射器
+end_product_dependency_profile,scc:0328,false,1,299,recipe:72,recipe_proto,72,射线接收站
+end_product_dependency_profile,scc:0329,false,1,394,recipe:73,recipe_proto,73,卫星配电站
+end_product_dependency_profile,scc:0330,false,1,345,recipe:75,recipe_proto,75,宇宙矩阵
+end_product_dependency_profile,scc:0331,false,1,349,recipe:76,recipe_proto,76,蓄电器
+end_product_dependency_profile,scc:0332,false,1,352,recipe:77,recipe_proto,77,能量枢纽
+end_product_dependency_profile,scc:0333,false,1,301,recipe:78,recipe_proto,78,空间翘曲器
+end_product_dependency_profile,scc:0334,false,1,302,recipe:79,recipe_proto,79,空间翘曲器（高级）
+end_product_dependency_profile,scc:0335,false,1,145,recipe:8,recipe_proto,8,电力感应塔
+end_product_dependency_profile,scc:0336,false,1,358,recipe:80,recipe_proto,80,框架材料
+end_product_dependency_profile,scc:0337,false,1,368,recipe:81,recipe_proto,81,戴森球组件
+end_product_dependency_profile,scc:0338,false,1,371,recipe:82,recipe_proto,82,垂直发射井
+end_product_dependency_profile,scc:0339,false,1,373,recipe:83,recipe_proto,83,小型运载火箭
+end_product_dependency_profile,scc:0340,false,1,172,recipe:84,recipe_proto,84,低速传送带
+end_product_dependency_profile,scc:0341,false,1,174,recipe:85,recipe_proto,85,低速分拣器
+end_product_dependency_profile,scc:0342,false,1,266,recipe:86,recipe_proto,86,小型储物仓
+end_product_dependency_profile,scc:0343,false,1,177,recipe:87,recipe_proto,87,四向分流器
+end_product_dependency_profile,scc:0344,false,1,182,recipe:88,recipe_proto,88,高速分拣器
+end_product_dependency_profile,scc:0345,false,1,377,recipe:89,recipe_proto,89,高速传送带
+end_product_dependency_profile,scc:0346,false,1,148,recipe:9,recipe_proto,9,电磁矩阵
+end_product_dependency_profile,scc:0347,false,1,379,recipe:90,recipe_proto,90,极速分拣器
+end_product_dependency_profile,scc:0348,false,1,381,recipe:91,recipe_proto,91,大型储物仓
+end_product_dependency_profile,scc:0349,false,1,564,recipe:92,recipe_proto,92,极速传送带
+end_product_dependency_profile,scc:0350,false,1,566,recipe:93,recipe_proto,93,物流运输站
+end_product_dependency_profile,scc:0351,false,1,568,recipe:94,recipe_proto,94,物流运输机
+end_product_dependency_profile,scc:0352,false,1,571,recipe:95,recipe_proto,95,星际物流运输站
+end_product_dependency_profile,scc:0353,false,1,573,recipe:96,recipe_proto,96,星际物流运输船
+end_product_dependency_profile,scc:0354,false,1,180,recipe:97,recipe_proto,97,电动机
+end_product_dependency_profile,scc:0355,false,1,88,tech:1,tech_proto,1,Dyson Sphere Program
+end_product_dependency_profile,scc:0356,false,1,140,tech:1001,tech_proto,1001,Electromagnetism
+end_product_dependency_profile,scc:0357,false,1,147,tech:1002,tech_proto,1002,Electromagnetic Matrix
+end_product_dependency_profile,scc:0358,false,1,150,tech:1101,tech_proto,1101,T高效电浆控制
+end_product_dependency_profile,scc:0359,false,1,153,tech:1102,tech_proto,1102,Plasma Extract Refining
+end_product_dependency_profile,scc:0360,false,1,151,tech:1105,tech_proto,1105,T电弧激光
+end_product_dependency_profile,scc:0361,false,1,154,tech:1111,tech_proto,1111,Energy Matrix
+end_product_dependency_profile,scc:0362,false,1,304,tech:1112,tech_proto,1112,T氢燃料棒
+end_product_dependency_profile,scc:0363,false,1,307,tech:1113,tech_proto,1113,Thruster
+end_product_dependency_profile,scc:0364,false,1,310,tech:1114,tech_proto,1114,Reinforced Thruster
+end_product_dependency_profile,scc:0365,false,1,152,tech:1120,tech_proto,1120,T流体储存封装
+end_product_dependency_profile,scc:0366,false,1,155,tech:1121,tech_proto,1121,T基础化工
+end_product_dependency_profile,scc:0367,false,1,156,tech:1131,tech_proto,1131,T应用型超导体
+end_product_dependency_profile,scc:0368,false,1,314,tech:1144,tech_proto,1144,T人造恒星
+end_product_dependency_profile,scc:0369,false,1,311,tech:1145,tech_proto,1145,T可控湮灭反应
+end_product_dependency_profile,scc:0370,false,1,161,tech:1151,tech_proto,1151,T增产剂 Mk.I
+end_product_dependency_profile,scc:0371,false,1,315,tech:1152,tech_proto,1152,T增产剂 Mk.II
+end_product_dependency_profile,scc:0372,false,1,318,tech:1153,tech_proto,1153,T增产剂 Mk.III
+end_product_dependency_profile,scc:0373,false,1,157,tech:1201,tech_proto,1201,T基础制造工艺
+end_product_dependency_profile,scc:0374,false,1,321,tech:1202,tech_proto,1202,T高速制造工艺
+end_product_dependency_profile,scc:0375,false,1,324,tech:1203,tech_proto,1203,T量子打印技术
+end_product_dependency_profile,scc:0376,false,1,162,tech:1302,tech_proto,1302,Processor
+end_product_dependency_profile,scc:0377,false,1,327,tech:1304,tech_proto,1304,T大型采矿机
+end_product_dependency_profile,scc:0378,false,1,328,tech:1305,tech_proto,1305,T高级化工
+end_product_dependency_profile,scc:0379,false,1,160,tech:1311,tech_proto,1311,T半导体材料
+end_product_dependency_profile,scc:0380,false,1,163,tech:1401,tech_proto,1401,T自动化冶金
+end_product_dependency_profile,scc:0381,false,1,164,tech:1402,tech_proto,1402,Smelting Purification
+end_product_dependency_profile,scc:0382,false,1,165,tech:1411,tech_proto,1411,T钢材冶炼
+end_product_dependency_profile,scc:0383,false,1,168,tech:1412,tech_proto,1412,T火力发电
+end_product_dependency_profile,scc:0384,false,1,331,tech:1414,tech_proto,1414,High-Strength Titanium Alloy
+end_product_dependency_profile,scc:0385,false,1,169,tech:1415,tech_proto,1415,T移山填海工程
+end_product_dependency_profile,scc:0386,false,1,338,tech:1416,tech_proto,1416,T微型核聚变发电
+end_product_dependency_profile,scc:0387,false,1,343,tech:1417,tech_proto,1417,T位面冶金
+end_product_dependency_profile,scc:0388,false,1,170,tech:1501,tech_proto,1501,T太阳能收集
+end_product_dependency_profile,scc:0389,false,1,344,tech:1507,tech_proto,1507,Universe Matrix
+end_product_dependency_profile,scc:0390,false,1,347,tech:1508,tech_proto,1508,T任务完成
+end_product_dependency_profile,scc:0391,false,1,348,tech:1511,tech_proto,1511,T能量储存
+end_product_dependency_profile,scc:0392,false,1,351,tech:1512,tech_proto,1512,T星际电力运输
+end_product_dependency_profile,scc:0393,false,1,354,tech:1513,tech_proto,1513,T地热开采
+end_product_dependency_profile,scc:0394,false,1,357,tech:1521,tech_proto,1521,T高强度轻质结构
+end_product_dependency_profile,scc:0395,false,1,370,tech:1522,tech_proto,1522,T垂直发射井
+end_product_dependency_profile,scc:0396,false,1,375,tech:1523,tech_proto,1523,T戴森球应力系统
+end_product_dependency_profile,scc:0397,false,1,171,tech:1601,tech_proto,1601,T基础物流系统
+end_product_dependency_profile,scc:0398,false,1,176,tech:1602,tech_proto,1602,T改良物流系统
+end_product_dependency_profile,scc:0399,false,1,376,tech:1603,tech_proto,1603,High-Efficiency Logistics System
+end_product_dependency_profile,scc:0400,false,1,563,tech:1604,tech_proto,1604,Planetary Logistics System
+end_product_dependency_profile,scc:0401,false,1,570,tech:1605,tech_proto,1605,Interstellar Logistics System
+end_product_dependency_profile,scc:0402,false,1,575,tech:1606,tech_proto,1606,T气态行星开采
+end_product_dependency_profile,scc:0403,false,1,383,tech:1607,tech_proto,1607,Integrated Logistics System
+end_product_dependency_profile,scc:0404,false,1,388,tech:1608,tech_proto,1608,T配送物流系统
+end_product_dependency_profile,scc:0405,false,1,179,tech:1701,tech_proto,1701,T电磁驱动
+end_product_dependency_profile,scc:0406,false,1,393,tech:1712,tech_proto,1712,T卫星配电系统
+end_product_dependency_profile,scc:0407,false,1,184,tech:1801,tech_proto,1801,T武器系统
+end_product_dependency_profile,scc:0408,false,1,189,tech:1802,tech_proto,1802,T燃烧单元
+end_product_dependency_profile,scc:0409,false,1,396,tech:1803,tech_proto,1803,T爆破单元
+end_product_dependency_profile,scc:0410,false,1,399,tech:1804,tech_proto,1804,T晶石爆破单元
+end_product_dependency_profile,scc:0411,false,1,190,tech:1805,tech_proto,1805,T动力引擎
+end_product_dependency_profile,scc:0412,false,1,193,tech:1806,tech_proto,1806,T导弹防御塔
+end_product_dependency_profile,scc:0413,false,1,402,tech:1807,tech_proto,1807,T聚爆加农炮
+end_product_dependency_profile,scc:0414,false,1,407,tech:1808,tech_proto,1808,T信号塔
+end_product_dependency_profile,scc:0415,false,1,410,tech:1809,tech_proto,1809,T行星防御系统
+end_product_dependency_profile,scc:0416,false,1,415,tech:1810,tech_proto,1810,T干扰塔
+end_product_dependency_profile,scc:0417,false,1,420,tech:1811,tech_proto,1811,T磁化电浆炮
+end_product_dependency_profile,scc:0418,false,1,427,tech:1812,tech_proto,1812,T钛化弹箱
+end_product_dependency_profile,scc:0419,false,1,430,tech:1813,tech_proto,1813,T超合金弹箱
+end_product_dependency_profile,scc:0420,false,1,433,tech:1814,tech_proto,1814,T高爆炮弹组
+end_product_dependency_profile,scc:0421,false,1,436,tech:1815,tech_proto,1815,T超音速导弹组
+end_product_dependency_profile,scc:0422,false,1,439,tech:1816,tech_proto,1816,T晶石炮弹组
+end_product_dependency_profile,scc:0423,false,1,442,tech:1817,tech_proto,1817,T引力导弹组
+end_product_dependency_profile,scc:0424,false,1,445,tech:1818,tech_proto,1818,T反物质胶囊
+end_product_dependency_profile,scc:0425,false,1,197,tech:1819,tech_proto,1819,T地面战斗机-E型
+end_product_dependency_profile,scc:0426,false,1,448,tech:1820,tech_proto,1820,T地面战斗机-A型
+end_product_dependency_profile,scc:0427,false,1,451,tech:1821,tech_proto,1821,T地面战斗机-F型
+end_product_dependency_profile,scc:0428,false,1,454,tech:1822,tech_proto,1822,T太空战斗机-A型
+end_product_dependency_profile,scc:0429,false,1,457,tech:1823,tech_proto,1823,T太空战斗机-F型
+end_product_dependency_profile,scc:0430,false,1,460,tech:1824,tech_proto,1824,T电磁胶囊II
+end_product_dependency_profile,scc:0431,false,1,196,tech:1826,tech_proto,1826,T战场分析基站
+end_product_dependency_profile,scc:0432,false,1,463,tech:1901,tech_proto,1901,T数字模拟计算
+end_product_dependency_profile,scc:0433,false,1,466,tech:1902,tech_proto,1902,T物质重组技术
+end_product_dependency_profile,scc:0434,false,1,469,tech:1903,tech_proto,1903,T负熵递归
+end_product_dependency_profile,scc:0435,false,1,472,tech:1904,tech_proto,1904,T金色燃料棒
+end_product_dependency_profile,scc:0436,false,1,198,tech:2101,tech_proto,2101,Mecha Core Lv1
+end_product_dependency_profile,scc:0437,false,1,475,tech:2102,tech_proto,2102,Mecha Core Lv2
+end_product_dependency_profile,scc:0438,false,1,476,tech:2103,tech_proto,2103,Mecha Core Lv3
+end_product_dependency_profile,scc:0439,false,1,477,tech:2104,tech_proto,2104,Mecha Core Lv4
+end_product_dependency_profile,scc:0440,false,1,478,tech:2105,tech_proto,2105,T机甲核心
+end_product_dependency_profile,scc:0441,false,1,479,tech:2106,tech_proto,2106,T机甲核心
+end_product_dependency_profile,scc:0442,false,1,199,tech:2201,tech_proto,2201,T机械骨骼
+end_product_dependency_profile,scc:0443,false,1,480,tech:2202,tech_proto,2202,T机械骨骼
+end_product_dependency_profile,scc:0444,false,1,481,tech:2203,tech_proto,2203,T机械骨骼
+end_product_dependency_profile,scc:0445,false,1,482,tech:2204,tech_proto,2204,T机械骨骼
+end_product_dependency_profile,scc:0446,false,1,483,tech:2205,tech_proto,2205,T机械骨骼
+end_product_dependency_profile,scc:0447,false,1,484,tech:2206,tech_proto,2206,T机械骨骼
+end_product_dependency_profile,scc:0448,false,1,485,tech:2207,tech_proto,2207,T机械骨骼
+end_product_dependency_profile,scc:0449,false,1,486,tech:2208,tech_proto,2208,T机械骨骼
+end_product_dependency_profile,scc:0450,false,1,200,tech:2301,tech_proto,2301,T机舱容量
+end_product_dependency_profile,scc:0451,false,1,487,tech:2302,tech_proto,2302,T机舱容量
+end_product_dependency_profile,scc:0452,false,1,488,tech:2303,tech_proto,2303,T机舱容量
+end_product_dependency_profile,scc:0453,false,1,489,tech:2304,tech_proto,2304,T机舱容量
+end_product_dependency_profile,scc:0454,false,1,490,tech:2305,tech_proto,2305,T机舱容量
+end_product_dependency_profile,scc:0455,false,1,491,tech:2306,tech_proto,2306,T机舱容量
+end_product_dependency_profile,scc:0456,false,1,492,tech:2307,tech_proto,2307,T机舱容量
+end_product_dependency_profile,scc:0457,false,1,201,tech:2401,tech_proto,2401,T通讯控制
+end_product_dependency_profile,scc:0458,false,1,493,tech:2402,tech_proto,2402,T通讯控制
+end_product_dependency_profile,scc:0459,false,1,494,tech:2403,tech_proto,2403,T通讯控制
+end_product_dependency_profile,scc:0460,false,1,495,tech:2404,tech_proto,2404,T通讯控制
+end_product_dependency_profile,scc:0461,false,1,496,tech:2405,tech_proto,2405,T通讯控制
+end_product_dependency_profile,scc:0462,false,1,497,tech:2406,tech_proto,2406,T通讯控制
+end_product_dependency_profile,scc:0463,false,1,498,tech:2407,tech_proto,2407,T通讯控制
+end_product_dependency_profile,scc:0464,false,1,499,tech:2501,tech_proto,2501,T能量回路
+end_product_dependency_profile,scc:0465,false,1,500,tech:2502,tech_proto,2502,T能量回路
+end_product_dependency_profile,scc:0466,false,1,501,tech:2503,tech_proto,2503,T能量回路
+end_product_dependency_profile,scc:0467,false,1,502,tech:2504,tech_proto,2504,T能量回路
+end_product_dependency_profile,scc:0468,false,1,503,tech:2505,tech_proto,2505,T能量回路
+end_product_dependency_profile,scc:0469,false,1,504,tech:2506,tech_proto,2506,T能量回路
+end_product_dependency_profile,scc:0470,false,1,202,tech:2601,tech_proto,2601,T无人机引擎
+end_product_dependency_profile,scc:0471,false,1,505,tech:2602,tech_proto,2602,T无人机引擎
+end_product_dependency_profile,scc:0472,false,1,506,tech:2603,tech_proto,2603,T无人机引擎
+end_product_dependency_profile,scc:0473,false,1,507,tech:2604,tech_proto,2604,T无人机引擎
+end_product_dependency_profile,scc:0474,false,1,508,tech:2605,tech_proto,2605,T无人机引擎
+end_product_dependency_profile,scc:0475,false,1,509,tech:2606,tech_proto,2606,T无人机引擎
+end_product_dependency_profile,scc:0476,false,1,203,tech:2701,tech_proto,2701,T批量建造
+end_product_dependency_profile,scc:0477,false,1,204,tech:2702,tech_proto,2702,T批量建造
+end_product_dependency_profile,scc:0478,false,1,510,tech:2703,tech_proto,2703,T批量建造
+end_product_dependency_profile,scc:0479,false,1,511,tech:2704,tech_proto,2704,T批量建造
+end_product_dependency_profile,scc:0480,false,1,512,tech:2705,tech_proto,2705,T批量建造
+end_product_dependency_profile,scc:0481,false,1,513,tech:2706,tech_proto,2706,T批量建造
+end_product_dependency_profile,scc:0482,false,1,205,tech:2801,tech_proto,2801,T能量护盾
+end_product_dependency_profile,scc:0483,false,1,514,tech:2802,tech_proto,2802,T能量护盾
+end_product_dependency_profile,scc:0484,false,1,515,tech:2803,tech_proto,2803,T能量护盾
+end_product_dependency_profile,scc:0485,false,1,516,tech:2804,tech_proto,2804,T能量护盾
+end_product_dependency_profile,scc:0486,false,1,517,tech:2805,tech_proto,2805,T能量护盾
+end_product_dependency_profile,scc:0487,false,1,518,tech:2806,tech_proto,2806,T能量护盾
+end_product_dependency_profile,scc:0488,false,1,519,tech:2807,tech_proto,2807,T能量护盾
+end_product_dependency_profile,scc:0489,false,1,277,tech:2901,tech_proto,2901,Drive Engine Lv1
+end_product_dependency_profile,scc:0490,false,1,520,tech:2902,tech_proto,2902,Drive Engine Lv2
+end_product_dependency_profile,scc:0491,false,1,521,tech:2903,tech_proto,2903,Drive Engine Lv3
+end_product_dependency_profile,scc:0492,false,1,522,tech:2904,tech_proto,2904,Drive Engine Lv4
+end_product_dependency_profile,scc:0493,false,1,523,tech:2905,tech_proto,2905,T驱动引擎
+end_product_dependency_profile,scc:0494,false,1,524,tech:2906,tech_proto,2906,T驱动引擎
+end_product_dependency_profile,scc:0495,false,1,206,tech:2951,tech_proto,2951,T自动重建
+end_product_dependency_profile,scc:0496,false,1,525,tech:2952,tech_proto,2952,T自动重建
+end_product_dependency_profile,scc:0497,false,1,526,tech:2953,tech_proto,2953,T自动重建
+end_product_dependency_profile,scc:0498,false,1,527,tech:2954,tech_proto,2954,T自动重建
+end_product_dependency_profile,scc:0499,false,1,528,tech:2955,tech_proto,2955,T自动重建
+end_product_dependency_profile,scc:0500,false,1,529,tech:2956,tech_proto,2956,T自动重建
+end_product_dependency_profile,scc:0501,false,1,530,tech:3101,tech_proto,3101,T太阳帆寿命
+end_product_dependency_profile,scc:0502,false,1,531,tech:3102,tech_proto,3102,T太阳帆寿命
+end_product_dependency_profile,scc:0503,false,1,532,tech:3103,tech_proto,3103,T太阳帆寿命
+end_product_dependency_profile,scc:0504,false,1,533,tech:3104,tech_proto,3104,T太阳帆寿命
+end_product_dependency_profile,scc:0505,false,1,534,tech:3105,tech_proto,3105,T太阳帆寿命
+end_product_dependency_profile,scc:0506,false,1,535,tech:3106,tech_proto,3106,T太阳帆寿命
+end_product_dependency_profile,scc:0507,false,1,536,tech:3201,tech_proto,3201,T射线传输效率
+end_product_dependency_profile,scc:0508,false,1,537,tech:3202,tech_proto,3202,T射线传输效率
+end_product_dependency_profile,scc:0509,false,1,538,tech:3203,tech_proto,3203,T射线传输效率
+end_product_dependency_profile,scc:0510,false,1,539,tech:3204,tech_proto,3204,T射线传输效率
+end_product_dependency_profile,scc:0511,false,1,540,tech:3205,tech_proto,3205,T射线传输效率
+end_product_dependency_profile,scc:0512,false,1,541,tech:3206,tech_proto,3206,T射线传输效率
+end_product_dependency_profile,scc:0513,false,1,542,tech:3207,tech_proto,3207,T射线传输效率
+end_product_dependency_profile,scc:0514,false,1,543,tech:3208,tech_proto,3208,T射线传输效率
+end_product_dependency_profile,scc:0515,false,1,544,tech:3301,tech_proto,3301,T分拣器货物叠加
+end_product_dependency_profile,scc:0516,false,1,545,tech:3302,tech_proto,3302,T分拣器货物叠加
+end_product_dependency_profile,scc:0517,false,1,546,tech:3303,tech_proto,3303,T分拣器货物叠加
+end_product_dependency_profile,scc:0518,false,1,547,tech:3304,tech_proto,3304,T分拣器货物叠加
+end_product_dependency_profile,scc:0519,false,1,548,tech:3305,tech_proto,3305,T分拣器货物叠加
+end_product_dependency_profile,scc:0520,false,1,549,tech:3306,tech_proto,3306,T分拣器货物集装
+end_product_dependency_profile,scc:0521,false,1,550,tech:3311,tech_proto,3311,T集装分拣器叠加
+end_product_dependency_profile,scc:0522,false,1,551,tech:3312,tech_proto,3312,T集装分拣器叠加
+end_product_dependency_profile,scc:0523,false,1,552,tech:3313,tech_proto,3313,T集装分拣器叠加
+end_product_dependency_profile,scc:0524,false,1,553,tech:3314,tech_proto,3314,T集装分拣器叠加
+end_product_dependency_profile,scc:0525,false,1,554,tech:3315,tech_proto,3315,T集装分拣器叠加
+end_product_dependency_profile,scc:0526,false,1,555,tech:3316,tech_proto,3316,T集装分拣器叠加
+end_product_dependency_profile,scc:0527,false,1,578,tech:3401,tech_proto,3401,T运输船引擎
+end_product_dependency_profile,scc:0528,false,1,579,tech:3402,tech_proto,3402,T运输船引擎
+end_product_dependency_profile,scc:0529,false,1,580,tech:3403,tech_proto,3403,T运输船引擎
+end_product_dependency_profile,scc:0530,false,1,581,tech:3404,tech_proto,3404,Logistics Carrier Engine Lv4
+end_product_dependency_profile,scc:0531,false,1,582,tech:3405,tech_proto,3405,T运输船引擎
+end_product_dependency_profile,scc:0532,false,1,583,tech:3406,tech_proto,3406,T运输船引擎
+end_product_dependency_profile,scc:0533,false,1,584,tech:3407,tech_proto,3407,T运输船引擎
+end_product_dependency_profile,scc:0534,false,1,585,tech:3501,tech_proto,3501,T运输机舱扩容
+end_product_dependency_profile,scc:0535,false,1,586,tech:3502,tech_proto,3502,T运输机舱扩容
+end_product_dependency_profile,scc:0536,false,1,587,tech:3503,tech_proto,3503,T运输机舱扩容
+end_product_dependency_profile,scc:0537,false,1,588,tech:3504,tech_proto,3504,T运输机舱扩容
+end_product_dependency_profile,scc:0538,false,1,589,tech:3505,tech_proto,3505,T运输机舱扩容
+end_product_dependency_profile,scc:0539,false,1,590,tech:3506,tech_proto,3506,T运输机舱扩容
+end_product_dependency_profile,scc:0540,false,1,591,tech:3507,tech_proto,3507,T运输机舱扩容
+end_product_dependency_profile,scc:0541,false,1,592,tech:3508,tech_proto,3508,T运输机舱扩容
+end_product_dependency_profile,scc:0542,false,1,593,tech:3509,tech_proto,3509,T运输机舱扩容
+end_product_dependency_profile,scc:0543,false,1,594,tech:3510,tech_proto,3510,T运输机舱扩容
+end_product_dependency_profile,scc:0544,false,1,556,tech:3601,tech_proto,3601,T矿物利用
+end_product_dependency_profile,scc:0545,false,1,557,tech:3602,tech_proto,3602,T矿物利用
+end_product_dependency_profile,scc:0546,false,1,558,tech:3603,tech_proto,3603,T矿物利用
+end_product_dependency_profile,scc:0547,false,1,559,tech:3604,tech_proto,3604,T矿物利用
+end_product_dependency_profile,scc:0548,false,1,560,tech:3605,tech_proto,3605,T矿物利用
+end_product_dependency_profile,scc:0549,false,1,561,tech:3606,tech_proto,3606,T矿物利用
+end_product_dependency_profile,scc:0550,false,1,562,tech:3701,tech_proto,3701,Vertical Construction Lv1
+end_product_dependency_profile,scc:0551,false,1,595,tech:3702,tech_proto,3702,T垂直建造
+end_product_dependency_profile,scc:0552,false,1,596,tech:3703,tech_proto,3703,T垂直建造
+end_product_dependency_profile,scc:0553,false,1,597,tech:3704,tech_proto,3704,T垂直建造
+end_product_dependency_profile,scc:0554,false,1,598,tech:3705,tech_proto,3705,T垂直建造
+end_product_dependency_profile,scc:0555,false,1,599,tech:3706,tech_proto,3706,T垂直建造
+end_product_dependency_profile,scc:0556,false,1,600,tech:3801,tech_proto,3801,T运输站集装物流
+end_product_dependency_profile,scc:0557,false,1,601,tech:3802,tech_proto,3802,T运输站集装物流
+end_product_dependency_profile,scc:0558,false,1,602,tech:3803,tech_proto,3803,T运输站集装物流
+end_product_dependency_profile,scc:0559,false,1,603,tech:3901,tech_proto,3901,T研究速度
+end_product_dependency_profile,scc:0560,false,1,604,tech:3902,tech_proto,3902,T研究速度
+end_product_dependency_profile,scc:0561,false,1,605,tech:3903,tech_proto,3903,T研究速度
+end_product_dependency_profile,scc:0562,false,1,606,tech:3904,tech_proto,3904,T研究速度
+end_product_dependency_profile,scc:0563,false,1,607,tech:4001,tech_proto,4001,T配送范围
+end_product_dependency_profile,scc:0564,false,1,608,tech:4002,tech_proto,4002,T配送范围
+end_product_dependency_profile,scc:0565,false,1,609,tech:4003,tech_proto,4003,T配送范围
+end_product_dependency_profile,scc:0566,false,1,610,tech:4004,tech_proto,4004,T配送范围
+end_product_dependency_profile,scc:0567,false,1,611,tech:4005,tech_proto,4005,T配送范围
+end_product_dependency_profile,scc:0568,false,1,207,tech:4101,tech_proto,4101,T宇宙探索
+end_product_dependency_profile,scc:0569,false,1,208,tech:4102,tech_proto,4102,T宇宙探索
+end_product_dependency_profile,scc:0570,false,1,612,tech:4103,tech_proto,4103,Universe Exploration Lv3
+end_product_dependency_profile,scc:0571,false,1,613,tech:4104,tech_proto,4104,T宇宙探索
+end_product_dependency_profile,scc:0572,false,1,614,tech:4201,tech_proto,4201,T戴森球吸附速度
+end_product_dependency_profile,scc:0573,false,1,615,tech:4202,tech_proto,4202,T戴森球吸附速度
+end_product_dependency_profile,scc:0574,false,1,616,tech:4203,tech_proto,4203,T戴森球吸附速度
+end_product_dependency_profile,scc:0575,false,1,617,tech:4204,tech_proto,4204,T戴森球吸附速度
+end_product_dependency_profile,scc:0576,false,1,618,tech:4205,tech_proto,4205,T戴森球吸附速度
+end_product_dependency_profile,scc:0577,false,1,619,tech:4206,tech_proto,4206,T戴森球吸附速度
+end_product_dependency_profile,scc:0578,false,1,209,tech:5001,tech_proto,5001,T动能武器伤害
+end_product_dependency_profile,scc:0579,false,1,620,tech:5002,tech_proto,5002,T动能武器伤害
+end_product_dependency_profile,scc:0580,false,1,621,tech:5003,tech_proto,5003,T动能武器伤害
+end_product_dependency_profile,scc:0581,false,1,622,tech:5004,tech_proto,5004,T动能武器伤害
+end_product_dependency_profile,scc:0582,false,1,623,tech:5005,tech_proto,5005,T动能武器伤害
+end_product_dependency_profile,scc:0583,false,1,624,tech:5006,tech_proto,5006,T动能武器伤害
+end_product_dependency_profile,scc:0584,false,1,210,tech:5101,tech_proto,5101,T能量武器伤害
+end_product_dependency_profile,scc:0585,false,1,625,tech:5102,tech_proto,5102,T能量武器伤害
+end_product_dependency_profile,scc:0586,false,1,626,tech:5103,tech_proto,5103,T能量武器伤害
+end_product_dependency_profile,scc:0587,false,1,627,tech:5104,tech_proto,5104,T能量武器伤害
+end_product_dependency_profile,scc:0588,false,1,628,tech:5105,tech_proto,5105,T能量武器伤害
+end_product_dependency_profile,scc:0589,false,1,629,tech:5106,tech_proto,5106,T能量武器伤害
+end_product_dependency_profile,scc:0590,false,1,211,tech:5201,tech_proto,5201,T爆炸武器伤害
+end_product_dependency_profile,scc:0591,false,1,630,tech:5202,tech_proto,5202,T爆炸武器伤害
+end_product_dependency_profile,scc:0592,false,1,631,tech:5203,tech_proto,5203,T爆炸武器伤害
+end_product_dependency_profile,scc:0593,false,1,632,tech:5204,tech_proto,5204,T爆炸武器伤害
+end_product_dependency_profile,scc:0594,false,1,633,tech:5205,tech_proto,5205,T爆炸武器伤害
+end_product_dependency_profile,scc:0595,false,1,634,tech:5206,tech_proto,5206,T爆炸武器伤害
+end_product_dependency_profile,scc:0596,false,1,635,tech:5301,tech_proto,5301,T战斗无人机伤害
+end_product_dependency_profile,scc:0597,false,1,636,tech:5302,tech_proto,5302,T战斗无人机伤害
+end_product_dependency_profile,scc:0598,false,1,637,tech:5303,tech_proto,5303,T战斗无人机伤害
+end_product_dependency_profile,scc:0599,false,1,638,tech:5304,tech_proto,5304,T战斗无人机伤害
+end_product_dependency_profile,scc:0600,false,1,639,tech:5305,tech_proto,5305,T战斗无人机伤害
+end_product_dependency_profile,scc:0601,false,1,640,tech:5401,tech_proto,5401,T战斗无人机攻击速度
+end_product_dependency_profile,scc:0602,false,1,641,tech:5402,tech_proto,5402,T战斗无人机攻击速度
+end_product_dependency_profile,scc:0603,false,1,642,tech:5403,tech_proto,5403,T战斗无人机攻击速度
+end_product_dependency_profile,scc:0604,false,1,643,tech:5404,tech_proto,5404,T战斗无人机攻击速度
+end_product_dependency_profile,scc:0605,false,1,644,tech:5405,tech_proto,5405,T战斗无人机攻击速度
+end_product_dependency_profile,scc:0606,false,1,645,tech:5601,tech_proto,5601,T战斗无人机耐久
+end_product_dependency_profile,scc:0607,false,1,646,tech:5602,tech_proto,5602,T战斗无人机耐久
+end_product_dependency_profile,scc:0608,false,1,647,tech:5603,tech_proto,5603,T战斗无人机耐久
+end_product_dependency_profile,scc:0609,false,1,648,tech:5604,tech_proto,5604,T战斗无人机耐久
+end_product_dependency_profile,scc:0610,false,1,649,tech:5605,tech_proto,5605,T战斗无人机耐久
+end_product_dependency_profile,scc:0611,false,1,650,tech:5701,tech_proto,5701,T行星护盾
+end_product_dependency_profile,scc:0612,false,1,651,tech:5702,tech_proto,5702,T行星护盾
+end_product_dependency_profile,scc:0613,false,1,652,tech:5703,tech_proto,5703,T行星护盾
+end_product_dependency_profile,scc:0614,false,1,653,tech:5704,tech_proto,5704,T行星护盾
+end_product_dependency_profile,scc:0615,false,1,654,tech:5705,tech_proto,5705,T行星护盾
+end_product_dependency_profile,scc:0616,false,1,655,tech:5801,tech_proto,5801,T地面编队扩容
+end_product_dependency_profile,scc:0617,false,1,656,tech:5802,tech_proto,5802,T地面编队扩容
+end_product_dependency_profile,scc:0618,false,1,657,tech:5803,tech_proto,5803,T地面编队扩容
+end_product_dependency_profile,scc:0619,false,1,658,tech:5804,tech_proto,5804,T地面编队扩容
+end_product_dependency_profile,scc:0620,false,1,659,tech:5805,tech_proto,5805,T地面编队扩容
+end_product_dependency_profile,scc:0621,false,1,660,tech:5806,tech_proto,5806,T地面编队扩容
+end_product_dependency_profile,scc:0622,false,1,661,tech:5807,tech_proto,5807,T地面编队扩容
+end_product_dependency_profile,scc:0623,false,1,662,tech:5901,tech_proto,5901,T太空编队扩容
+end_product_dependency_profile,scc:0624,false,1,663,tech:5902,tech_proto,5902,T太空编队扩容
+end_product_dependency_profile,scc:0625,false,1,664,tech:5903,tech_proto,5903,T太空编队扩容
+end_product_dependency_profile,scc:0626,false,1,665,tech:5904,tech_proto,5904,T太空编队扩容
+end_product_dependency_profile,scc:0627,false,1,666,tech:5905,tech_proto,5905,T太空编队扩容
+end_product_dependency_profile,scc:0628,false,1,667,tech:5906,tech_proto,5906,T太空编队扩容
+end_product_dependency_profile,scc:0629,false,1,668,tech:5907,tech_proto,5907,T太空编队扩容
+end_product_dependency_profile,scc:0630,false,1,212,tech:6001,tech_proto,6001,T全局耐久度提升
+end_product_dependency_profile,scc:0631,false,1,669,tech:6002,tech_proto,6002,T全局耐久度提升
+end_product_dependency_profile,scc:0632,false,1,670,tech:6003,tech_proto,6003,T全局耐久度提升
+end_product_dependency_profile,scc:0633,false,1,671,tech:6004,tech_proto,6004,T全局耐久度提升
+end_product_dependency_profile,scc:0634,false,1,672,tech:6005,tech_proto,6005,T全局耐久度提升
+end_product_dependency_profile,scc:0635,false,1,673,tech:6006,tech_proto,6006,T全局耐久度提升
+end_product_dependency_profile,scc:0636,false,1,674,tech:6101,tech_proto,6101,T干扰塔效果
+end_product_dependency_profile,scc:0637,false,1,675,tech:6102,tech_proto,6102,T干扰塔效果
+end_product_dependency_profile,scc:0638,false,1,676,tech:6103,tech_proto,6103,T干扰塔效果
+end_product_dependency_profile,scc:0639,false,1,677,tech:6104,tech_proto,6104,T干扰塔效果
+end_product_dependency_profile,scc:0640,false,1,678,tech:6105,tech_proto,6105,T干扰塔效果
+end_product_dependency_profile,scc:0641,false,1,679,tech:6106,tech_proto,6106,T干扰塔效果
+end_product_dependency_profile,scc:0642,false,1,89,theme:1,theme_proto,1,Ocean 1
+end_product_dependency_profile,scc:0643,false,1,90,theme:10,theme_proto,10,Ice 1
+end_product_dependency_profile,scc:0644,false,1,91,theme:11,theme_proto,11,Desert 3
+end_product_dependency_profile,scc:0645,false,1,92,theme:12,theme_proto,12,Desert 4
+end_product_dependency_profile,scc:0646,false,1,93,theme:13,theme_proto,13,Volcanic 1
+end_product_dependency_profile,scc:0647,false,1,94,theme:14,theme_proto,14,Ocean 3
+end_product_dependency_profile,scc:0648,false,1,95,theme:15,theme_proto,15,Ocean 4
+end_product_dependency_profile,scc:0649,false,1,96,theme:16,theme_proto,16,Ocean 5
+end_product_dependency_profile,scc:0650,false,1,97,theme:17,theme_proto,17,Desert 5
+end_product_dependency_profile,scc:0651,false,1,98,theme:18,theme_proto,18,Ocean 6
+end_product_dependency_profile,scc:0652,false,1,99,theme:19,theme_proto,19,Desert 6
+end_product_dependency_profile,scc:0653,false,1,100,theme:2,theme_proto,2,Gas 1
+end_product_dependency_profile,scc:0654,false,1,101,theme:20,theme_proto,20,Desert 7
+end_product_dependency_profile,scc:0655,false,1,102,theme:21,theme_proto,21,Gas 5
+end_product_dependency_profile,scc:0656,false,1,103,theme:22,theme_proto,22,Desert 8
+end_product_dependency_profile,scc:0657,false,1,104,theme:23,theme_proto,23,Desert 9
+end_product_dependency_profile,scc:0658,false,1,105,theme:24,theme_proto,24,Desert 10
+end_product_dependency_profile,scc:0659,false,1,106,theme:25,theme_proto,25,Desert 11
+end_product_dependency_profile,scc:0660,false,1,107,theme:3,theme_proto,3,Gas 2
+end_product_dependency_profile,scc:0661,false,1,108,theme:4,theme_proto,4,Gas 3
+end_product_dependency_profile,scc:0662,false,1,109,theme:5,theme_proto,5,Gas 4
+end_product_dependency_profile,scc:0663,false,1,110,theme:6,theme_proto,6,Desert 1
+end_product_dependency_profile,scc:0664,false,1,111,theme:7,theme_proto,7,Desert 2
+end_product_dependency_profile,scc:0665,false,1,112,theme:8,theme_proto,8,Ocean 2
+end_product_dependency_profile,scc:0666,false,1,114,theme:9,theme_proto,9,Lava 1
+end_product_dependency_profile,scc:0667,false,1,115,vein:1,vein_proto,1,铁矿脉
+end_product_dependency_profile,scc:0668,false,1,123,vein:10,vein_proto,10,分形硅矿
+end_product_dependency_profile,scc:0669,false,1,125,vein:11,vein_proto,11,有机晶体矿
+end_product_dependency_profile,scc:0670,false,1,126,vein:12,vein_proto,12,光栅石矿
+end_product_dependency_profile,scc:0671,false,1,128,vein:13,vein_proto,13,刺笋矿脉
+end_product_dependency_profile,scc:0672,false,1,130,vein:14,vein_proto,14,单极磁矿
+end_product_dependency_profile,scc:0673,false,1,132,vein:2,vein_proto,2,铜矿脉
+end_product_dependency_profile,scc:0674,false,1,213,vein:3,vein_proto,3,硅矿脉
+end_product_dependency_profile,scc:0675,false,1,214,vein:4,vein_proto,4,钛矿脉
+end_product_dependency_profile,scc:0676,false,1,216,vein:5,vein_proto,5,石矿脉
+end_product_dependency_profile,scc:0677,false,1,268,vein:6,vein_proto,6,煤矿脉
+end_product_dependency_profile,scc:0678,false,1,278,vein:7,vein_proto,7,原油涌泉
+end_product_dependency_profile,scc:0679,false,1,281,vein:8,vein_proto,8,可燃冰矿
+end_product_dependency_profile,scc:0680,false,1,284,vein:9,vein_proto,9,金伯利矿
+material_production_profile,scc:0001,false,1,37,item:1000,item_proto,1000,水
+material_production_profile,scc:0002,false,1,41,item:1001,item_proto,1001,铁矿
+material_production_profile,scc:0003,false,1,64,item:1002,item_proto,1002,铜矿
+material_production_profile,scc:0004,false,1,117,item:1003,item_proto,1003,Silicon Ore
+material_production_profile,scc:0005,false,1,109,item:1004,item_proto,1004,Titanium Ore
+material_production_profile,scc:0006,false,1,115,item:1005,item_proto,1005,Stone
+material_production_profile,scc:0007,false,1,189,item:1006,item_proto,1006,煤矿
+material_production_profile,scc:0008,false,1,200,item:1007,item_proto,1007,原油
+material_production_profile,scc:0009,false,1,203,item:1011,item_proto,1011,可燃冰
+material_production_profile,scc:0010,false,1,349,item:1012,item_proto,1012,金伯利矿石
+material_production_profile,scc:0011,false,1,53,item:1013,item_proto,1013,分形硅石
+material_production_profile,scc:0012,false,1,57,item:1014,item_proto,1014,光栅石
+material_production_profile,scc:0013,false,1,59,item:1015,item_proto,1015,刺笋结晶
+material_production_profile,scc:0014,false,1,62,item:1016,item_proto,1016,单极磁石
+material_production_profile,scc:0015,false,1,0,item:1030,item_proto,1030,木材
+material_production_profile,scc:0016,false,1,1,item:1031,item_proto,1031,植物燃料
+material_production_profile,scc:0017,false,1,2,item:1099,item_proto,1099,沙土
+material_production_profile,scc:0018,false,1,43,item:1101,item_proto,1101,铁块
+material_production_profile,scc:0019,false,1,45,item:1102,item_proto,1102,磁铁
+material_production_profile,scc:0020,false,1,49,item:1103,item_proto,1103,钢材
+material_production_profile,scc:0021,false,1,66,item:1104,item_proto,1104,铜块
+material_production_profile,scc:0022,false,1,153,item:1105,item_proto,1105,High-Purity Silicon
+material_production_profile,scc:0023,false,1,111,item:1106,item_proto,1106,Titanium Ingot
+material_production_profile,scc:0024,false,1,273,item:1107,item_proto,1107,钛合金
+material_production_profile,scc:0025,false,1,119,item:1108,item_proto,1108,石材
+material_production_profile,scc:0026,false,1,206,item:1109,item_proto,1109,高能石墨
+material_production_profile,scc:0027,false,1,127,item:1110,item_proto,1110,玻璃
+material_production_profile,scc:0028,false,1,131,item:1111,item_proto,1111,棱镜
+material_production_profile,scc:0029,false,1,351,item:1112,item_proto,1112,金刚石
+material_production_profile,scc:0030,false,1,155,item:1113,item_proto,1113,晶格硅
+material_production_profile,scc:0031,true,4,205,item:1114,item_proto,1114,精炼油
+material_production_profile,scc:0031,true,4,205,item:1120,item_proto,1120,氢
+material_production_profile,scc:0031,true,4,205,recipe:121,recipe_proto,121,重整精炼
+material_production_profile,scc:0031,true,4,205,recipe:58,recipe_proto,58,X射线裂解
+material_production_profile,scc:0032,false,1,229,item:1115,item_proto,1115,塑料
+material_production_profile,scc:0033,false,1,231,item:1116,item_proto,1116,硫酸
+material_production_profile,scc:0034,false,1,239,item:1117,item_proto,1117,Organic Crystal
+material_production_profile,scc:0035,false,1,241,item:1118,item_proto,1118,Titanium Crystal
+material_production_profile,scc:0036,false,1,151,item:1119,item_proto,1119,钛化玻璃
+material_production_profile,scc:0037,false,1,256,item:1121,item_proto,1121,重氢
+material_production_profile,scc:0038,false,1,12,item:1122,item_proto,1122,反物质
+material_production_profile,scc:0039,false,1,243,item:1123,item_proto,1123,石墨烯
+material_production_profile,scc:0040,false,1,250,item:1124,item_proto,1124,碳纳米管
+material_production_profile,scc:0041,false,1,295,item:1125,item_proto,1125,框架材料
+material_production_profile,scc:0042,false,1,246,item:1126,item_proto,1126,卡西米尔晶体
+material_production_profile,scc:0043,false,1,317,item:1127,item_proto,1127,奇异物质
+material_production_profile,scc:0044,false,1,193,item:1128,item_proto,1128,燃烧单元
+material_production_profile,scc:0045,false,1,233,item:1129,item_proto,1129,爆破单元
+material_production_profile,scc:0046,false,1,248,item:1130,item_proto,1130,晶石爆破单元
+material_production_profile,scc:0047,false,1,121,item:1131,item_proto,1131,地基
+material_production_profile,scc:0048,false,1,191,item:1141,item_proto,1141,增产剂 Mk.I
+material_production_profile,scc:0049,false,1,357,item:1142,item_proto,1142,增产剂 Mk.II
+material_production_profile,scc:0050,false,1,359,item:1143,item_proto,1143,增产剂 Mk.III
+material_production_profile,scc:0051,false,1,47,item:1201,item_proto,1201,齿轮
+material_production_profile,scc:0052,false,1,77,item:1202,item_proto,1202,磁线圈
+material_production_profile,scc:0053,false,1,96,item:1203,item_proto,1203,电动机
+material_production_profile,scc:0054,false,1,102,item:1204,item_proto,1204,电磁涡轮
+material_production_profile,scc:0055,false,1,208,item:1205,item_proto,1205,超级磁场环
+material_production_profile,scc:0056,false,1,315,item:1206,item_proto,1206,粒子容器
+material_production_profile,scc:0057,false,1,3,item:1208,item_proto,1208,临界光子
+material_production_profile,scc:0058,false,1,353,item:1209,item_proto,1209,引力透镜
+material_production_profile,scc:0059,false,1,368,item:1210,item_proto,1210,空间翘曲器
+material_production_profile,scc:0060,false,1,73,item:1301,item_proto,1301,电路板
+material_production_profile,scc:0061,false,1,159,item:1302,item_proto,1302,微晶元件
+material_production_profile,scc:0062,false,1,165,item:1303,item_proto,1303,处理器
+material_production_profile,scc:0063,false,1,254,item:1304,item_proto,1304,位面过滤器
+material_production_profile,scc:0064,false,1,262,item:1305,item_proto,1305,量子芯片
+material_production_profile,scc:0065,false,1,137,item:1401,item_proto,1401,电浆激发器
+material_production_profile,scc:0066,false,1,252,item:1402,item_proto,1402,粒子宽带
+material_production_profile,scc:0067,false,1,333,item:1403,item_proto,1403,湮灭约束球
+material_production_profile,scc:0068,false,1,177,item:1404,item_proto,1404,光子合并器
+material_production_profile,scc:0069,false,1,71,item:1405,item_proto,1405,推进器2
+material_production_profile,scc:0070,false,1,283,item:1406,item_proto,1406,加力推进器
+material_production_profile,scc:0071,false,1,79,item:1407,item_proto,1407,动力引擎
+material_production_profile,scc:0072,false,1,287,item:1501,item_proto,1501,太阳帆
+material_production_profile,scc:0073,false,1,307,item:1502,item_proto,1502,戴森球组件
+material_production_profile,scc:0074,false,1,309,item:1503,item_proto,1503,小型运载火箭
+material_production_profile,scc:0075,false,1,69,item:1601,item_proto,1601,机枪弹箱
+material_production_profile,scc:0076,false,1,113,item:1602,item_proto,1602,钛化弹箱
+material_production_profile,scc:0077,false,1,279,item:1603,item_proto,1603,超合金弹箱
+material_production_profile,scc:0078,false,1,195,item:1604,item_proto,1604,炮弹组
+material_production_profile,scc:0079,false,1,235,item:1605,item_proto,1605,高爆炮弹组
+material_production_profile,scc:0080,false,1,281,item:1606,item_proto,1606,晶石炮弹组
+material_production_profile,scc:0081,false,1,258,item:1607,item_proto,1607,等离子胶囊
+material_production_profile,scc:0082,false,1,323,item:1608,item_proto,1608,反物质胶囊
+material_production_profile,scc:0083,false,1,197,item:1609,item_proto,1609,导弹组
+material_production_profile,scc:0084,false,1,237,item:1610,item_proto,1610,超音速导弹组
+material_production_profile,scc:0085,false,1,325,item:1611,item_proto,1611,引力导弹组
+material_production_profile,scc:0086,false,1,219,item:1612,item_proto,1612,电磁干扰胶囊
+material_production_profile,scc:0087,false,1,221,item:1613,item_proto,1613,电磁压制胶囊
+material_production_profile,scc:0088,false,1,227,item:1801,item_proto,1801,氢燃料棒
+material_production_profile,scc:0089,false,1,285,item:1802,item_proto,1802,氘核燃料棒
+material_production_profile,scc:0090,false,1,337,item:1803,item_proto,1803,反物质燃料棒
+material_production_profile,scc:0091,false,1,339,item:1804,item_proto,1804,金色燃料棒
+material_production_profile,scc:0092,false,1,51,item:2001,item_proto,2001,低速传送带
+material_production_profile,scc:0093,false,1,104,item:2002,item_proto,2002,高速传送带
+material_production_profile,scc:0094,false,1,311,item:2003,item_proto,2003,极速传送带
+material_production_profile,scc:0095,false,1,90,item:2011,item_proto,2011,低速分拣器
+material_production_profile,scc:0096,false,1,100,item:2012,item_proto,2012,高速分拣器
+material_production_profile,scc:0097,false,1,106,item:2013,item_proto,2013,极速分拣器
+material_production_profile,scc:0098,false,1,223,item:2014,item_proto,2014,集装分拣器
+material_production_profile,scc:0099,false,1,92,item:2020,item_proto,2020,四向分流器
+material_production_profile,scc:0100,false,1,135,item:2030,item_proto,2030,流速器
+material_production_profile,scc:0101,false,1,213,item:2040,item_proto,2040,自动集装机
+material_production_profile,scc:0102,false,1,183,item:2101,item_proto,2101,小型储物仓
+material_production_profile,scc:0103,false,1,185,item:2102,item_proto,2102,大型储物仓
+material_production_profile,scc:0104,false,1,343,item:2103,item_proto,2103,物流运输站
+material_production_profile,scc:0105,false,1,345,item:2104,item_proto,2104,星际物流运输站
+material_production_profile,scc:0106,false,1,347,item:2105,item_proto,2105,轨道采集器
+material_production_profile,scc:0107,false,1,133,item:2106,item_proto,2106,储液罐
+material_production_profile,scc:0108,false,1,169,item:2107,item_proto,2107,物流配送器
+material_production_profile,scc:0109,false,1,88,item:2201,item_proto,2201,电力感应塔
+material_production_profile,scc:0110,false,1,139,item:2202,item_proto,2202,无线输电塔
+material_production_profile,scc:0111,false,1,86,item:2203,item_proto,2203,风力涡轮机
+material_production_profile,scc:0112,false,1,173,item:2204,item_proto,2204,火力发电厂
+material_production_profile,scc:0113,false,1,175,item:2205,item_proto,2205,太阳能板
+material_production_profile,scc:0114,false,1,293,item:2206,item_proto,2206,蓄电器
+material_production_profile,scc:0115,false,1,4,item:2207,item_proto,2207,蓄电器（满）
+material_production_profile,scc:0116,false,1,291,item:2208,item_proto,2208,射线接收站
+material_production_profile,scc:0117,false,1,341,item:2209,item_proto,2209,能量枢纽
+material_production_profile,scc:0118,false,1,335,item:2210,item_proto,2210,人造恒星
+material_production_profile,scc:0119,false,1,275,item:2211,item_proto,2211,微型聚变发电站
+material_production_profile,scc:0120,false,1,305,item:2212,item_proto,2212,卫星配电站
+material_production_profile,scc:0121,false,1,211,item:2213,item_proto,2213,地热发电站
+material_production_profile,scc:0122,false,1,83,item:2301,item_proto,2301,采矿机
+material_production_profile,scc:0123,false,1,125,item:2302,item_proto,2302,电弧熔炉
+material_production_profile,scc:0124,false,1,75,item:2303,item_proto,2303,制造台 Mk.I
+material_production_profile,scc:0125,false,1,260,item:2304,item_proto,2304,制造台 Mk.II
+material_production_profile,scc:0126,false,1,266,item:2305,item_proto,2305,制造台 Mk.III
+material_production_profile,scc:0127,false,1,123,item:2306,item_proto,2306,抽水站
+material_production_profile,scc:0128,false,1,141,item:2307,item_proto,2307,原油萃取站
+material_production_profile,scc:0129,false,1,145,item:2308,item_proto,2308,原油精炼厂
+material_production_profile,scc:0130,false,1,149,item:2309,item_proto,2309,化工厂
+material_production_profile,scc:0131,false,1,303,item:2310,item_proto,2310,微型粒子对撞机
+material_production_profile,scc:0132,false,1,289,item:2311,item_proto,2311,电磁轨道弹射器
+material_production_profile,scc:0133,false,1,370,item:2312,item_proto,2312,垂直发射井
+material_production_profile,scc:0134,false,1,161,item:2313,item_proto,2313,喷涂机
+material_production_profile,scc:0135,false,1,167,item:2314,item_proto,2314,分馏塔
+material_production_profile,scc:0136,false,1,297,item:2315,item_proto,2315,位面熔炉
+material_production_profile,scc:0137,false,1,299,item:2316,item_proto,2316,大型采矿机
+material_production_profile,scc:0138,false,1,319,item:2317,item_proto,2317,化工厂 Mk.II
+material_production_profile,scc:0139,false,1,268,item:2318,item_proto,2318,制造台 Mk.IV
+material_production_profile,scc:0140,false,1,301,item:2319,item_proto,2319,熔炉 Mk.III
+material_production_profile,scc:0141,false,1,147,item:2401,item_proto,2401,激光灯塔
+material_production_profile,scc:0142,false,1,129,item:2901,item_proto,2901,矩阵研究站
+material_production_profile,scc:0143,false,1,264,item:2902,item_proto,2902,矩阵研究站 Mk.II
+material_production_profile,scc:0144,false,1,81,item:3001,item_proto,3001,高斯机枪塔
+material_production_profile,scc:0145,false,1,179,item:3002,item_proto,3002,高频激光塔
+material_production_profile,scc:0146,false,1,215,item:3003,item_proto,3003,聚爆加农炮
+material_production_profile,scc:0147,false,1,277,item:3004,item_proto,3004,磁化电浆炮
+material_production_profile,scc:0148,false,1,98,item:3005,item_proto,3005,导弹防御塔
+material_production_profile,scc:0149,false,1,361,item:3006,item_proto,3006,干扰塔
+material_production_profile,scc:0150,false,1,157,item:3007,item_proto,3007,信标
+material_production_profile,scc:0151,false,1,321,item:3008,item_proto,3008,护盾发生器
+material_production_profile,scc:0152,false,1,163,item:3009,item_proto,3009,战场分析基站
+material_production_profile,scc:0153,false,1,217,item:3010,item_proto,3010,地面电浆炮
+material_production_profile,scc:0154,false,1,187,item:5001,item_proto,5001,物流运输机
+material_production_profile,scc:0155,false,1,313,item:5002,item_proto,5002,星际物流运输船
+material_production_profile,scc:0156,false,1,171,item:5003,item_proto,5003,配送运输机
+material_production_profile,scc:0157,false,1,143,item:5101,item_proto,5101,地面战斗机-E型
+material_production_profile,scc:0158,false,1,181,item:5102,item_proto,5102,地面战斗机-A型
+material_production_profile,scc:0159,false,1,327,item:5103,item_proto,5103,地面战斗机-F型
+material_production_profile,scc:0160,false,1,329,item:5111,item_proto,5111,太空战斗机-A型
+material_production_profile,scc:0161,false,1,331,item:5112,item_proto,5112,太空战斗机-F型
+material_production_profile,scc:0162,false,1,5,item:5201,item_proto,5201,存储单元
+material_production_profile,scc:0163,false,1,6,item:5202,item_proto,5202,硅基神经元
+material_production_profile,scc:0164,false,1,7,item:5203,item_proto,5203,物质重组器
+material_production_profile,scc:0165,false,1,8,item:5204,item_proto,5204,负熵奇点
+material_production_profile,scc:0166,false,1,9,item:5205,item_proto,5205,虚粒子
+material_production_profile,scc:0167,false,1,10,item:5206,item_proto,5206,能量碎片
+material_production_profile,scc:0168,false,1,94,item:6001,item_proto,6001,Electromagnetic Matrix
+material_production_profile,scc:0169,false,1,225,item:6002,item_proto,6002,Energy Matrix
+material_production_profile,scc:0170,false,1,363,item:6003,item_proto,6003,Structure Matrix
+material_production_profile,scc:0171,false,1,270,item:6004,item_proto,6004,Information Matrix
+material_production_profile,scc:0172,false,1,355,item:6005,item_proto,6005,Gravity Matrix
+material_production_profile,scc:0173,false,1,365,item:6006,item_proto,6006,Universe Matrix
+material_production_profile,scc:0174,false,1,42,recipe:1,recipe_proto,1,铁块
+material_production_profile,scc:0175,false,1,128,recipe:10,recipe_proto,10,矩阵研究站
+material_production_profile,scc:0176,false,1,67,recipe:100,recipe_proto,100,粒子容器（高效）
+material_production_profile,scc:0177,false,1,352,recipe:101,recipe_proto,101,引力透镜
+material_production_profile,scc:0178,false,1,354,recipe:102,recipe_proto,102,引力矩阵
+material_production_profile,scc:0179,false,1,207,recipe:103,recipe_proto,103,超级磁场环
+material_production_profile,scc:0180,false,1,316,recipe:104,recipe_proto,104,奇异物质
+material_production_profile,scc:0181,false,1,78,recipe:105,recipe_proto,105,动力引擎
+material_production_profile,scc:0182,false,1,190,recipe:106,recipe_proto,106,增产剂 Mk.I
+material_production_profile,scc:0183,false,1,356,recipe:107,recipe_proto,107,增产剂 Mk.II
+material_production_profile,scc:0184,false,1,358,recipe:108,recipe_proto,108,增产剂 Mk.III
+material_production_profile,scc:0185,false,1,160,recipe:109,recipe_proto,109,喷涂机
+material_production_profile,scc:0186,false,1,130,recipe:11,recipe_proto,11,棱镜
+material_production_profile,scc:0187,false,1,166,recipe:110,recipe_proto,110,分馏塔
+material_production_profile,scc:0188,false,1,346,recipe:111,recipe_proto,111,轨道采集器
+material_production_profile,scc:0189,false,1,120,recipe:112,recipe_proto,112,地基
+material_production_profile,scc:0190,false,1,274,recipe:113,recipe_proto,113,微型聚变发电站
+material_production_profile,scc:0191,false,1,132,recipe:114,recipe_proto,114,储液罐
+material_production_profile,scc:0192,false,1,209,recipe:115,recipe_proto,115,重氢分馏
+material_production_profile,scc:0193,false,1,296,recipe:116,recipe_proto,116,位面熔炉
+material_production_profile,scc:0194,false,1,134,recipe:117,recipe_proto,117,流速器
+material_production_profile,scc:0195,false,1,210,recipe:118,recipe_proto,118,地热发电站
+material_production_profile,scc:0196,false,1,298,recipe:119,recipe_proto,119,大型采矿机
+material_production_profile,scc:0197,false,1,136,recipe:12,recipe_proto,12,电浆激发器
+material_production_profile,scc:0198,false,1,212,recipe:120,recipe_proto,120,自动集装机
+material_production_profile,scc:0199,false,1,168,recipe:122,recipe_proto,122,物流配送器
+material_production_profile,scc:0200,false,1,170,recipe:123,recipe_proto,123,配送运输机
+material_production_profile,scc:0201,false,1,318,recipe:124,recipe_proto,124,化工厂 Mk.II
+material_production_profile,scc:0202,false,1,80,recipe:125,recipe_proto,125,高斯机枪塔
+material_production_profile,scc:0203,false,1,178,recipe:126,recipe_proto,126,高频激光塔
+material_production_profile,scc:0204,false,1,214,recipe:127,recipe_proto,127,聚爆加农炮
+material_production_profile,scc:0205,false,1,276,recipe:128,recipe_proto,128,磁化电浆炮
+material_production_profile,scc:0206,false,1,97,recipe:129,recipe_proto,129,导弹防御塔
+material_production_profile,scc:0207,false,1,138,recipe:13,recipe_proto,13,无线输电塔
+material_production_profile,scc:0208,false,1,360,recipe:130,recipe_proto,130,干扰塔
+material_production_profile,scc:0209,false,1,156,recipe:131,recipe_proto,131,信标
+material_production_profile,scc:0210,false,1,320,recipe:132,recipe_proto,132,护盾发生器
+material_production_profile,scc:0211,false,1,192,recipe:133,recipe_proto,133,燃烧单元
+material_production_profile,scc:0212,false,1,232,recipe:134,recipe_proto,134,爆破单元
+material_production_profile,scc:0213,false,1,247,recipe:135,recipe_proto,135,晶石爆破单元
+material_production_profile,scc:0214,false,1,68,recipe:136,recipe_proto,136,机枪弹箱
+material_production_profile,scc:0215,false,1,112,recipe:137,recipe_proto,137,钛化弹箱
+material_production_profile,scc:0216,false,1,278,recipe:138,recipe_proto,138,超合金弹箱
+material_production_profile,scc:0217,false,1,194,recipe:139,recipe_proto,139,炮弹组
+material_production_profile,scc:0218,false,1,140,recipe:14,recipe_proto,14,原油萃取站
+material_production_profile,scc:0219,false,1,234,recipe:140,recipe_proto,140,高爆炮弹组
+material_production_profile,scc:0220,false,1,280,recipe:141,recipe_proto,141,晶石炮弹组
+material_production_profile,scc:0221,false,1,257,recipe:142,recipe_proto,142,等离子胶囊
+material_production_profile,scc:0222,false,1,322,recipe:143,recipe_proto,143,反物质胶囊
+material_production_profile,scc:0223,false,1,196,recipe:144,recipe_proto,144,导弹组
+material_production_profile,scc:0224,false,1,236,recipe:145,recipe_proto,145,超音速导弹组
+material_production_profile,scc:0225,false,1,324,recipe:146,recipe_proto,146,引力导弹组
+material_production_profile,scc:0226,false,1,142,recipe:147,recipe_proto,147,地面战斗机-E型
+material_production_profile,scc:0227,false,1,180,recipe:148,recipe_proto,148,地面战斗机-A型
+material_production_profile,scc:0228,false,1,326,recipe:149,recipe_proto,149,地面战斗机-F型
+material_production_profile,scc:0229,false,1,144,recipe:15,recipe_proto,15,原油精炼厂
+material_production_profile,scc:0230,false,1,328,recipe:150,recipe_proto,150,太空战斗机-A型
+material_production_profile,scc:0231,false,1,330,recipe:151,recipe_proto,151,太空战斗机-F型
+material_production_profile,scc:0232,false,1,162,recipe:152,recipe_proto,152,战场分析基站
+material_production_profile,scc:0233,false,1,263,recipe:153,recipe_proto,153,矩阵研究站 Mk.II
+material_production_profile,scc:0234,false,1,267,recipe:154,recipe_proto,154,制造台 Mk.IV
+material_production_profile,scc:0235,false,1,300,recipe:155,recipe_proto,155,熔炉 Mk.III
+material_production_profile,scc:0236,false,1,338,recipe:156,recipe_proto,156,金色燃料棒
+material_production_profile,scc:0237,false,1,216,recipe:157,recipe_proto,157,地面电浆炮
+material_production_profile,scc:0238,false,1,218,recipe:158,recipe_proto,158,电磁干扰胶囊
+material_production_profile,scc:0239,false,1,220,recipe:159,recipe_proto,159,电磁压制胶囊
+material_production_profile,scc:0240,false,1,201,recipe:16,recipe_proto,16,等离子精炼
+material_production_profile,scc:0241,false,1,222,recipe:160,recipe_proto,160,集装分拣器
+material_production_profile,scc:0242,false,1,146,recipe:161,recipe_proto,161,激光灯塔
+material_production_profile,scc:0243,false,1,198,recipe:17,recipe_proto,17,高能石墨
+material_production_profile,scc:0244,false,1,224,recipe:18,recipe_proto,18,能量矩阵
+material_production_profile,scc:0245,false,1,226,recipe:19,recipe_proto,19,氢燃料棒
+material_production_profile,scc:0246,false,1,44,recipe:2,recipe_proto,2,磁铁
+material_production_profile,scc:0247,false,1,70,recipe:20,recipe_proto,20,推进器
+material_production_profile,scc:0248,false,1,282,recipe:21,recipe_proto,21,加力推进器
+material_production_profile,scc:0249,false,1,148,recipe:22,recipe_proto,22,化工厂
+material_production_profile,scc:0250,false,1,228,recipe:23,recipe_proto,23,塑料
+material_production_profile,scc:0251,false,1,230,recipe:24,recipe_proto,24,硫酸
+material_production_profile,scc:0252,false,1,238,recipe:25,recipe_proto,25,有机晶体
+material_production_profile,scc:0253,false,1,240,recipe:26,recipe_proto,26,钛晶石
+material_production_profile,scc:0254,false,1,362,recipe:27,recipe_proto,27,结构矩阵
+material_production_profile,scc:0255,false,1,244,recipe:28,recipe_proto,28,卡西米尔晶体
+material_production_profile,scc:0256,false,1,245,recipe:29,recipe_proto,29,卡西米尔晶体（高效）
+material_production_profile,scc:0257,false,1,65,recipe:3,recipe_proto,3,铜块
+material_production_profile,scc:0258,false,1,150,recipe:30,recipe_proto,30,钛化玻璃
+material_production_profile,scc:0259,false,1,242,recipe:31,recipe_proto,31,石墨烯
+material_production_profile,scc:0260,false,1,204,recipe:32,recipe_proto,32,石墨烯（高效）
+material_production_profile,scc:0261,false,1,249,recipe:33,recipe_proto,33,碳纳米管
+material_production_profile,scc:0262,false,1,116,recipe:34,recipe_proto,34,硅石
+material_production_profile,scc:0263,false,1,60,recipe:35,recipe_proto,35,碳纳米管（高效）
+material_production_profile,scc:0264,false,1,251,recipe:36,recipe_proto,36,粒子宽带
+material_production_profile,scc:0265,false,1,154,recipe:37,recipe_proto,37,晶格硅
+material_production_profile,scc:0266,false,1,253,recipe:38,recipe_proto,38,位面过滤器
+material_production_profile,scc:0267,false,1,302,recipe:39,recipe_proto,39,微型粒子对撞机
+material_production_profile,scc:0268,false,1,118,recipe:4,recipe_proto,4,石材
+material_production_profile,scc:0269,false,1,255,recipe:40,recipe_proto,40,重氢
+material_production_profile,scc:0270,false,1,284,recipe:41,recipe_proto,41,氘核燃料棒
+material_production_profile,scc:0271,false,1,332,recipe:42,recipe_proto,42,湮灭约束球
+material_production_profile,scc:0272,false,1,334,recipe:43,recipe_proto,43,人造恒星
+material_production_profile,scc:0273,false,1,336,recipe:44,recipe_proto,44,反物质燃料棒
+material_production_profile,scc:0274,false,1,74,recipe:45,recipe_proto,45,制造台 Mk.I
+material_production_profile,scc:0275,false,1,259,recipe:46,recipe_proto,46,制造台 Mk.II
+material_production_profile,scc:0276,false,1,265,recipe:47,recipe_proto,47,制造台 Mk.III
+material_production_profile,scc:0277,false,1,82,recipe:48,recipe_proto,48,采矿机
+material_production_profile,scc:0278,false,1,122,recipe:49,recipe_proto,49,抽水站
+material_production_profile,scc:0279,false,1,46,recipe:5,recipe_proto,5,齿轮
+material_production_profile,scc:0280,false,1,72,recipe:50,recipe_proto,50,电路板
+material_production_profile,scc:0281,false,1,164,recipe:51,recipe_proto,51,处理器
+material_production_profile,scc:0282,false,1,261,recipe:52,recipe_proto,52,量子芯片
+material_production_profile,scc:0283,false,1,158,recipe:53,recipe_proto,53,微晶元件
+material_production_profile,scc:0284,false,1,38,recipe:54,recipe_proto,54,有机晶体（原始）
+material_production_profile,scc:0285,false,1,269,recipe:55,recipe_proto,55,信息矩阵
+material_production_profile,scc:0286,false,1,124,recipe:56,recipe_proto,56,电弧熔炉
+material_production_profile,scc:0287,false,1,126,recipe:57,recipe_proto,57,玻璃
+material_production_profile,scc:0288,false,1,152,recipe:59,recipe_proto,59,高纯硅块
+material_production_profile,scc:0289,false,1,76,recipe:6,recipe_proto,6,磁线圈
+material_production_profile,scc:0290,false,1,271,recipe:60,recipe_proto,60,金刚石
+material_production_profile,scc:0291,false,1,350,recipe:61,recipe_proto,61,金刚石（高效）
+material_production_profile,scc:0292,false,1,54,recipe:62,recipe_proto,62,晶格硅（高效）
+material_production_profile,scc:0293,false,1,48,recipe:63,recipe_proto,63,钢材
+material_production_profile,scc:0294,false,1,172,recipe:64,recipe_proto,64,火力发电厂
+material_production_profile,scc:0295,false,1,110,recipe:65,recipe_proto,65,钛块
+material_production_profile,scc:0296,false,1,272,recipe:66,recipe_proto,66,钛合金
+material_production_profile,scc:0297,false,1,174,recipe:67,recipe_proto,67,太阳能板
+material_production_profile,scc:0298,false,1,176,recipe:68,recipe_proto,68,光子合并器
+material_production_profile,scc:0299,false,1,84,recipe:69,recipe_proto,69,光子合并器（高效）
+material_production_profile,scc:0300,false,1,85,recipe:7,recipe_proto,7,风力涡轮机
+material_production_profile,scc:0301,false,1,286,recipe:70,recipe_proto,70,太阳帆
+material_production_profile,scc:0302,false,1,288,recipe:71,recipe_proto,71,电磁轨道弹射器
+material_production_profile,scc:0303,false,1,290,recipe:72,recipe_proto,72,射线接收站
+material_production_profile,scc:0304,false,1,304,recipe:73,recipe_proto,73,卫星配电站
+material_production_profile,scc:0305,false,1,11,recipe:74,recipe_proto,74,光子物质化
+material_production_profile,scc:0306,false,1,364,recipe:75,recipe_proto,75,宇宙矩阵
+material_production_profile,scc:0307,false,1,292,recipe:76,recipe_proto,76,蓄电器
+material_production_profile,scc:0308,false,1,340,recipe:77,recipe_proto,77,能量枢纽
+material_production_profile,scc:0309,false,1,366,recipe:78,recipe_proto,78,空间翘曲器
+material_production_profile,scc:0310,false,1,367,recipe:79,recipe_proto,79,空间翘曲器（高级）
+material_production_profile,scc:0311,false,1,87,recipe:8,recipe_proto,8,电力感应塔
+material_production_profile,scc:0312,false,1,294,recipe:80,recipe_proto,80,框架材料
+material_production_profile,scc:0313,false,1,306,recipe:81,recipe_proto,81,戴森球组件
+material_production_profile,scc:0314,false,1,369,recipe:82,recipe_proto,82,垂直发射井
+material_production_profile,scc:0315,false,1,308,recipe:83,recipe_proto,83,小型运载火箭
+material_production_profile,scc:0316,false,1,50,recipe:84,recipe_proto,84,低速传送带
+material_production_profile,scc:0317,false,1,89,recipe:85,recipe_proto,85,低速分拣器
+material_production_profile,scc:0318,false,1,182,recipe:86,recipe_proto,86,小型储物仓
+material_production_profile,scc:0319,false,1,91,recipe:87,recipe_proto,87,四向分流器
+material_production_profile,scc:0320,false,1,99,recipe:88,recipe_proto,88,高速分拣器
+material_production_profile,scc:0321,false,1,103,recipe:89,recipe_proto,89,高速传送带
+material_production_profile,scc:0322,false,1,93,recipe:9,recipe_proto,9,电磁矩阵
+material_production_profile,scc:0323,false,1,105,recipe:90,recipe_proto,90,极速分拣器
+material_production_profile,scc:0324,false,1,184,recipe:91,recipe_proto,91,大型储物仓
+material_production_profile,scc:0325,false,1,310,recipe:92,recipe_proto,92,极速传送带
+material_production_profile,scc:0326,false,1,342,recipe:93,recipe_proto,93,物流运输站
+material_production_profile,scc:0327,false,1,186,recipe:94,recipe_proto,94,物流运输机
+material_production_profile,scc:0328,false,1,344,recipe:95,recipe_proto,95,星际物流运输站
+material_production_profile,scc:0329,false,1,312,recipe:96,recipe_proto,96,星际物流运输船
+material_production_profile,scc:0330,false,1,95,recipe:97,recipe_proto,97,电动机
+material_production_profile,scc:0331,false,1,101,recipe:98,recipe_proto,98,电磁涡轮
+material_production_profile,scc:0332,false,1,314,recipe:99,recipe_proto,99,粒子容器
+material_production_profile,scc:0333,false,1,13,theme:1,theme_proto,1,Ocean 1
+material_production_profile,scc:0334,false,1,14,theme:10,theme_proto,10,Ice 1
+material_production_profile,scc:0335,false,1,15,theme:11,theme_proto,11,Desert 3
+material_production_profile,scc:0336,false,1,16,theme:12,theme_proto,12,Desert 4
+material_production_profile,scc:0337,false,1,17,theme:13,theme_proto,13,Volcanic 1
+material_production_profile,scc:0338,false,1,18,theme:14,theme_proto,14,Ocean 3
+material_production_profile,scc:0339,false,1,19,theme:15,theme_proto,15,Ocean 4
+material_production_profile,scc:0340,false,1,20,theme:16,theme_proto,16,Ocean 5
+material_production_profile,scc:0341,false,1,21,theme:17,theme_proto,17,Desert 5
+material_production_profile,scc:0342,false,1,22,theme:18,theme_proto,18,Ocean 6
+material_production_profile,scc:0343,false,1,23,theme:19,theme_proto,19,Desert 6
+material_production_profile,scc:0344,false,1,24,theme:2,theme_proto,2,Gas 1
+material_production_profile,scc:0345,false,1,25,theme:20,theme_proto,20,Desert 7
+material_production_profile,scc:0346,false,1,26,theme:21,theme_proto,21,Gas 5
+material_production_profile,scc:0347,false,1,27,theme:22,theme_proto,22,Desert 8
+material_production_profile,scc:0348,false,1,28,theme:23,theme_proto,23,Desert 9
+material_production_profile,scc:0349,false,1,29,theme:24,theme_proto,24,Desert 10
+material_production_profile,scc:0350,false,1,30,theme:25,theme_proto,25,Desert 11
+material_production_profile,scc:0351,false,1,31,theme:3,theme_proto,3,Gas 2
+material_production_profile,scc:0352,false,1,32,theme:4,theme_proto,4,Gas 3
+material_production_profile,scc:0353,false,1,33,theme:5,theme_proto,5,Gas 4
+material_production_profile,scc:0354,false,1,34,theme:6,theme_proto,6,Desert 1
+material_production_profile,scc:0355,false,1,35,theme:7,theme_proto,7,Desert 2
+material_production_profile,scc:0356,false,1,36,theme:8,theme_proto,8,Ocean 2
+material_production_profile,scc:0357,false,1,39,theme:9,theme_proto,9,Lava 1
+material_production_profile,scc:0358,false,1,40,vein:1,vein_proto,1,铁矿脉
+material_production_profile,scc:0359,false,1,52,vein:10,vein_proto,10,分形硅矿
+material_production_profile,scc:0360,false,1,55,vein:11,vein_proto,11,有机晶体矿
+material_production_profile,scc:0361,false,1,56,vein:12,vein_proto,12,光栅石矿
+material_production_profile,scc:0362,false,1,58,vein:13,vein_proto,13,刺笋矿脉
+material_production_profile,scc:0363,false,1,61,vein:14,vein_proto,14,单极磁矿
+material_production_profile,scc:0364,false,1,63,vein:2,vein_proto,2,铜矿脉
+material_production_profile,scc:0365,false,1,107,vein:3,vein_proto,3,硅矿脉
+material_production_profile,scc:0366,false,1,108,vein:4,vein_proto,4,钛矿脉
+material_production_profile,scc:0367,false,1,114,vein:5,vein_proto,5,石矿脉
+material_production_profile,scc:0368,false,1,188,vein:6,vein_proto,6,煤矿脉
+material_production_profile,scc:0369,false,1,199,vein:7,vein_proto,7,原油涌泉
+material_production_profile,scc:0370,false,1,202,vein:8,vein_proto,8,可燃冰矿
+material_production_profile,scc:0371,false,1,348,vein:9,vein_proto,9,金伯利矿
+formal_research_prerequisite_profile,scc:0001,false,1,0,tech:1,tech_proto,1,Dyson Sphere Program
+formal_research_prerequisite_profile,scc:0002,false,1,1,tech:1001,tech_proto,1001,Electromagnetism
+formal_research_prerequisite_profile,scc:0003,false,1,2,tech:1002,tech_proto,1002,Electromagnetic Matrix
+formal_research_prerequisite_profile,scc:0004,false,1,3,tech:1101,tech_proto,1101,T高效电浆控制
+formal_research_prerequisite_profile,scc:0005,false,1,6,tech:1102,tech_proto,1102,Plasma Extract Refining
+formal_research_prerequisite_profile,scc:0006,false,1,12,tech:1103,tech_proto,1103,TX射线裂解
+formal_research_prerequisite_profile,scc:0007,false,1,13,tech:1104,tech_proto,1104,T重整精炼
+formal_research_prerequisite_profile,scc:0008,false,1,4,tech:1105,tech_proto,1105,T电弧激光
+formal_research_prerequisite_profile,scc:0009,false,1,7,tech:1111,tech_proto,1111,Energy Matrix
+formal_research_prerequisite_profile,scc:0010,false,1,8,tech:1112,tech_proto,1112,T氢燃料棒
+formal_research_prerequisite_profile,scc:0011,false,1,9,tech:1113,tech_proto,1113,Thruster
+formal_research_prerequisite_profile,scc:0012,false,1,10,tech:1114,tech_proto,1114,Reinforced Thruster
+formal_research_prerequisite_profile,scc:0013,false,1,5,tech:1120,tech_proto,1120,T流体储存封装
+formal_research_prerequisite_profile,scc:0014,false,1,11,tech:1121,tech_proto,1121,T基础化工
+formal_research_prerequisite_profile,scc:0015,false,1,14,tech:1122,tech_proto,1122,T高分子化工
+formal_research_prerequisite_profile,scc:0016,false,1,15,tech:1123,tech_proto,1123,High-Strength Crystal
+formal_research_prerequisite_profile,scc:0017,false,1,16,tech:1124,tech_proto,1124,Structure Matrix
+formal_research_prerequisite_profile,scc:0018,false,1,17,tech:1125,tech_proto,1125,T卡西米尔晶体
+formal_research_prerequisite_profile,scc:0019,false,1,20,tech:1126,tech_proto,1126,T高强度玻璃
+formal_research_prerequisite_profile,scc:0020,false,1,18,tech:1131,tech_proto,1131,T应用型超导体
+formal_research_prerequisite_profile,scc:0021,false,1,19,tech:1132,tech_proto,1132,T高强度材料
+formal_research_prerequisite_profile,scc:0022,false,1,21,tech:1133,tech_proto,1133,T粒子可控技术
+formal_research_prerequisite_profile,scc:0023,false,1,42,tech:1134,tech_proto,1134,T重氢分馏
+formal_research_prerequisite_profile,scc:0024,false,1,22,tech:1141,tech_proto,1141,T波函数干扰
+formal_research_prerequisite_profile,scc:0025,false,1,23,tech:1142,tech_proto,1142,T微型粒子对撞机
+formal_research_prerequisite_profile,scc:0026,false,1,24,tech:1143,tech_proto,1143,T奇异物质
+formal_research_prerequisite_profile,scc:0027,false,1,65,tech:1144,tech_proto,1144,T人造恒星
+formal_research_prerequisite_profile,scc:0028,false,1,64,tech:1145,tech_proto,1145,T可控湮灭反应
+formal_research_prerequisite_profile,scc:0029,false,1,27,tech:1151,tech_proto,1151,T增产剂 Mk.I
+formal_research_prerequisite_profile,scc:0030,false,1,29,tech:1152,tech_proto,1152,T增产剂 Mk.II
+formal_research_prerequisite_profile,scc:0031,false,1,30,tech:1153,tech_proto,1153,T增产剂 Mk.III
+formal_research_prerequisite_profile,scc:0032,false,1,25,tech:1201,tech_proto,1201,T基础制造工艺
+formal_research_prerequisite_profile,scc:0033,false,1,31,tech:1202,tech_proto,1202,T高速制造工艺
+formal_research_prerequisite_profile,scc:0034,false,1,34,tech:1203,tech_proto,1203,T量子打印技术
+formal_research_prerequisite_profile,scc:0035,false,1,28,tech:1302,tech_proto,1302,Processor
+formal_research_prerequisite_profile,scc:0036,false,1,33,tech:1303,tech_proto,1303,Quantum Chip
+formal_research_prerequisite_profile,scc:0037,false,1,35,tech:1304,tech_proto,1304,T大型采矿机
+formal_research_prerequisite_profile,scc:0038,false,1,36,tech:1305,tech_proto,1305,T高级化工
+formal_research_prerequisite_profile,scc:0039,false,1,26,tech:1311,tech_proto,1311,T半导体材料
+formal_research_prerequisite_profile,scc:0040,false,1,32,tech:1312,tech_proto,1312,Information Matrix
+formal_research_prerequisite_profile,scc:0041,false,1,37,tech:1401,tech_proto,1401,T自动化冶金
+formal_research_prerequisite_profile,scc:0042,false,1,38,tech:1402,tech_proto,1402,Smelting Purification
+formal_research_prerequisite_profile,scc:0043,false,1,39,tech:1403,tech_proto,1403,T晶体冶炼
+formal_research_prerequisite_profile,scc:0044,false,1,40,tech:1411,tech_proto,1411,T钢材冶炼
+formal_research_prerequisite_profile,scc:0045,false,1,41,tech:1412,tech_proto,1412,T火力发电
+formal_research_prerequisite_profile,scc:0046,false,1,43,tech:1413,tech_proto,1413,Titanium Smelting
+formal_research_prerequisite_profile,scc:0047,false,1,44,tech:1414,tech_proto,1414,High-Strength Titanium Alloy
+formal_research_prerequisite_profile,scc:0048,false,1,45,tech:1415,tech_proto,1415,T移山填海工程
+formal_research_prerequisite_profile,scc:0049,false,1,46,tech:1416,tech_proto,1416,T微型核聚变发电
+formal_research_prerequisite_profile,scc:0050,false,1,47,tech:1417,tech_proto,1417,T位面冶金
+formal_research_prerequisite_profile,scc:0051,false,1,48,tech:1501,tech_proto,1501,T太阳能收集
+formal_research_prerequisite_profile,scc:0052,false,1,49,tech:1502,tech_proto,1502,T光子变频
+formal_research_prerequisite_profile,scc:0053,false,1,60,tech:1503,tech_proto,1503,T太阳帆轨道系统
+formal_research_prerequisite_profile,scc:0054,false,1,61,tech:1504,tech_proto,1504,T射线接收站
+formal_research_prerequisite_profile,scc:0055,false,1,62,tech:1505,tech_proto,1505,T行星电离层利用
+formal_research_prerequisite_profile,scc:0056,false,1,63,tech:1506,tech_proto,1506,Dirac Inversion Mechanism
+formal_research_prerequisite_profile,scc:0057,false,1,66,tech:1507,tech_proto,1507,Universe Matrix
+formal_research_prerequisite_profile,scc:0058,false,1,67,tech:1508,tech_proto,1508,T任务完成
+formal_research_prerequisite_profile,scc:0059,false,1,68,tech:1511,tech_proto,1511,T能量储存
+formal_research_prerequisite_profile,scc:0060,false,1,69,tech:1512,tech_proto,1512,T星际电力运输
+formal_research_prerequisite_profile,scc:0061,false,1,70,tech:1513,tech_proto,1513,T地热开采
+formal_research_prerequisite_profile,scc:0062,false,1,71,tech:1521,tech_proto,1521,T高强度轻质结构
+formal_research_prerequisite_profile,scc:0063,false,1,72,tech:1522,tech_proto,1522,T垂直发射井
+formal_research_prerequisite_profile,scc:0064,false,1,73,tech:1523,tech_proto,1523,T戴森球应力系统
+formal_research_prerequisite_profile,scc:0065,false,1,50,tech:1601,tech_proto,1601,T基础物流系统
+formal_research_prerequisite_profile,scc:0066,false,1,51,tech:1602,tech_proto,1602,T改良物流系统
+formal_research_prerequisite_profile,scc:0067,false,1,54,tech:1603,tech_proto,1603,High-Efficiency Logistics System
+formal_research_prerequisite_profile,scc:0068,false,1,203,tech:1604,tech_proto,1604,Planetary Logistics System
+formal_research_prerequisite_profile,scc:0069,false,1,204,tech:1605,tech_proto,1605,Interstellar Logistics System
+formal_research_prerequisite_profile,scc:0070,false,1,205,tech:1606,tech_proto,1606,T气态行星开采
+formal_research_prerequisite_profile,scc:0071,false,1,74,tech:1607,tech_proto,1607,Integrated Logistics System
+formal_research_prerequisite_profile,scc:0072,false,1,55,tech:1608,tech_proto,1608,T配送物流系统
+formal_research_prerequisite_profile,scc:0073,false,1,52,tech:1701,tech_proto,1701,T电磁驱动
+formal_research_prerequisite_profile,scc:0074,false,1,53,tech:1702,tech_proto,1702,T磁悬浮技术
+formal_research_prerequisite_profile,scc:0075,false,1,56,tech:1703,tech_proto,1703,T粒子磁力阱
+formal_research_prerequisite_profile,scc:0076,false,1,57,tech:1704,tech_proto,1704,Gravitational Wave Refraction
+formal_research_prerequisite_profile,scc:0077,false,1,58,tech:1705,tech_proto,1705,Gravity Matrix
+formal_research_prerequisite_profile,scc:0078,false,1,59,tech:1711,tech_proto,1711,Super Magnetic Field Generator
+formal_research_prerequisite_profile,scc:0079,false,1,75,tech:1712,tech_proto,1712,T卫星配电系统
+formal_research_prerequisite_profile,scc:0080,false,1,76,tech:1801,tech_proto,1801,T武器系统
+formal_research_prerequisite_profile,scc:0081,false,1,77,tech:1802,tech_proto,1802,T燃烧单元
+formal_research_prerequisite_profile,scc:0082,false,1,78,tech:1803,tech_proto,1803,T爆破单元
+formal_research_prerequisite_profile,scc:0083,false,1,79,tech:1804,tech_proto,1804,T晶石爆破单元
+formal_research_prerequisite_profile,scc:0084,false,1,80,tech:1805,tech_proto,1805,T动力引擎
+formal_research_prerequisite_profile,scc:0085,false,1,81,tech:1806,tech_proto,1806,T导弹防御塔
+formal_research_prerequisite_profile,scc:0086,false,1,82,tech:1807,tech_proto,1807,T聚爆加农炮
+formal_research_prerequisite_profile,scc:0087,false,1,83,tech:1808,tech_proto,1808,T信号塔
+formal_research_prerequisite_profile,scc:0088,false,1,84,tech:1809,tech_proto,1809,T行星防御系统
+formal_research_prerequisite_profile,scc:0089,false,1,85,tech:1810,tech_proto,1810,T干扰塔
+formal_research_prerequisite_profile,scc:0090,false,1,86,tech:1811,tech_proto,1811,T磁化电浆炮
+formal_research_prerequisite_profile,scc:0091,false,1,87,tech:1812,tech_proto,1812,T钛化弹箱
+formal_research_prerequisite_profile,scc:0092,false,1,88,tech:1813,tech_proto,1813,T超合金弹箱
+formal_research_prerequisite_profile,scc:0093,false,1,89,tech:1814,tech_proto,1814,T高爆炮弹组
+formal_research_prerequisite_profile,scc:0094,false,1,90,tech:1815,tech_proto,1815,T超音速导弹组
+formal_research_prerequisite_profile,scc:0095,false,1,91,tech:1816,tech_proto,1816,T晶石炮弹组
+formal_research_prerequisite_profile,scc:0096,false,1,92,tech:1817,tech_proto,1817,T引力导弹组
+formal_research_prerequisite_profile,scc:0097,false,1,93,tech:1818,tech_proto,1818,T反物质胶囊
+formal_research_prerequisite_profile,scc:0098,false,1,96,tech:1819,tech_proto,1819,T地面战斗机-E型
+formal_research_prerequisite_profile,scc:0099,false,1,97,tech:1820,tech_proto,1820,T地面战斗机-A型
+formal_research_prerequisite_profile,scc:0100,false,1,98,tech:1821,tech_proto,1821,T地面战斗机-F型
+formal_research_prerequisite_profile,scc:0101,false,1,99,tech:1822,tech_proto,1822,T太空战斗机-A型
+formal_research_prerequisite_profile,scc:0102,false,1,100,tech:1823,tech_proto,1823,T太空战斗机-F型
+formal_research_prerequisite_profile,scc:0103,false,1,94,tech:1824,tech_proto,1824,T电磁胶囊II
+formal_research_prerequisite_profile,scc:0104,false,1,95,tech:1826,tech_proto,1826,T战场分析基站
+formal_research_prerequisite_profile,scc:0105,false,1,101,tech:1901,tech_proto,1901,T数字模拟计算
+formal_research_prerequisite_profile,scc:0106,false,1,102,tech:1902,tech_proto,1902,T物质重组技术
+formal_research_prerequisite_profile,scc:0107,false,1,103,tech:1903,tech_proto,1903,T负熵递归
+formal_research_prerequisite_profile,scc:0108,false,1,104,tech:1904,tech_proto,1904,T金色燃料棒
+formal_research_prerequisite_profile,scc:0109,false,1,105,tech:2101,tech_proto,2101,Mecha Core Lv1
+formal_research_prerequisite_profile,scc:0110,false,1,106,tech:2102,tech_proto,2102,Mecha Core Lv2
+formal_research_prerequisite_profile,scc:0111,false,1,107,tech:2103,tech_proto,2103,Mecha Core Lv3
+formal_research_prerequisite_profile,scc:0112,false,1,108,tech:2104,tech_proto,2104,Mecha Core Lv4
+formal_research_prerequisite_profile,scc:0113,false,1,109,tech:2105,tech_proto,2105,T机甲核心
+formal_research_prerequisite_profile,scc:0114,false,1,110,tech:2106,tech_proto,2106,T机甲核心
+formal_research_prerequisite_profile,scc:0115,false,1,111,tech:2201,tech_proto,2201,T机械骨骼
+formal_research_prerequisite_profile,scc:0116,false,1,112,tech:2202,tech_proto,2202,T机械骨骼
+formal_research_prerequisite_profile,scc:0117,false,1,113,tech:2203,tech_proto,2203,T机械骨骼
+formal_research_prerequisite_profile,scc:0118,false,1,114,tech:2204,tech_proto,2204,T机械骨骼
+formal_research_prerequisite_profile,scc:0119,false,1,115,tech:2205,tech_proto,2205,T机械骨骼
+formal_research_prerequisite_profile,scc:0120,false,1,116,tech:2206,tech_proto,2206,T机械骨骼
+formal_research_prerequisite_profile,scc:0121,false,1,117,tech:2207,tech_proto,2207,T机械骨骼
+formal_research_prerequisite_profile,scc:0122,false,1,118,tech:2208,tech_proto,2208,T机械骨骼
+formal_research_prerequisite_profile,scc:0123,false,1,119,tech:2301,tech_proto,2301,T机舱容量
+formal_research_prerequisite_profile,scc:0124,false,1,120,tech:2302,tech_proto,2302,T机舱容量
+formal_research_prerequisite_profile,scc:0125,false,1,121,tech:2303,tech_proto,2303,T机舱容量
+formal_research_prerequisite_profile,scc:0126,false,1,122,tech:2304,tech_proto,2304,T机舱容量
+formal_research_prerequisite_profile,scc:0127,false,1,123,tech:2305,tech_proto,2305,T机舱容量
+formal_research_prerequisite_profile,scc:0128,false,1,124,tech:2306,tech_proto,2306,T机舱容量
+formal_research_prerequisite_profile,scc:0129,false,1,125,tech:2307,tech_proto,2307,T机舱容量
+formal_research_prerequisite_profile,scc:0130,false,1,126,tech:2401,tech_proto,2401,T通讯控制
+formal_research_prerequisite_profile,scc:0131,false,1,127,tech:2402,tech_proto,2402,T通讯控制
+formal_research_prerequisite_profile,scc:0132,false,1,128,tech:2403,tech_proto,2403,T通讯控制
+formal_research_prerequisite_profile,scc:0133,false,1,129,tech:2404,tech_proto,2404,T通讯控制
+formal_research_prerequisite_profile,scc:0134,false,1,130,tech:2405,tech_proto,2405,T通讯控制
+formal_research_prerequisite_profile,scc:0135,false,1,131,tech:2406,tech_proto,2406,T通讯控制
+formal_research_prerequisite_profile,scc:0136,false,1,132,tech:2407,tech_proto,2407,T通讯控制
+formal_research_prerequisite_profile,scc:0137,false,1,133,tech:2501,tech_proto,2501,T能量回路
+formal_research_prerequisite_profile,scc:0138,false,1,134,tech:2502,tech_proto,2502,T能量回路
+formal_research_prerequisite_profile,scc:0139,false,1,135,tech:2503,tech_proto,2503,T能量回路
+formal_research_prerequisite_profile,scc:0140,false,1,136,tech:2504,tech_proto,2504,T能量回路
+formal_research_prerequisite_profile,scc:0141,false,1,137,tech:2505,tech_proto,2505,T能量回路
+formal_research_prerequisite_profile,scc:0142,false,1,138,tech:2506,tech_proto,2506,T能量回路
+formal_research_prerequisite_profile,scc:0143,false,1,139,tech:2601,tech_proto,2601,T无人机引擎
+formal_research_prerequisite_profile,scc:0144,false,1,140,tech:2602,tech_proto,2602,T无人机引擎
+formal_research_prerequisite_profile,scc:0145,false,1,141,tech:2603,tech_proto,2603,T无人机引擎
+formal_research_prerequisite_profile,scc:0146,false,1,142,tech:2604,tech_proto,2604,T无人机引擎
+formal_research_prerequisite_profile,scc:0147,false,1,143,tech:2605,tech_proto,2605,T无人机引擎
+formal_research_prerequisite_profile,scc:0148,false,1,144,tech:2606,tech_proto,2606,T无人机引擎
+formal_research_prerequisite_profile,scc:0149,false,1,145,tech:2701,tech_proto,2701,T批量建造
+formal_research_prerequisite_profile,scc:0150,false,1,146,tech:2702,tech_proto,2702,T批量建造
+formal_research_prerequisite_profile,scc:0151,false,1,147,tech:2703,tech_proto,2703,T批量建造
+formal_research_prerequisite_profile,scc:0152,false,1,148,tech:2704,tech_proto,2704,T批量建造
+formal_research_prerequisite_profile,scc:0153,false,1,149,tech:2705,tech_proto,2705,T批量建造
+formal_research_prerequisite_profile,scc:0154,false,1,150,tech:2706,tech_proto,2706,T批量建造
+formal_research_prerequisite_profile,scc:0155,false,1,151,tech:2801,tech_proto,2801,T能量护盾
+formal_research_prerequisite_profile,scc:0156,false,1,152,tech:2802,tech_proto,2802,T能量护盾
+formal_research_prerequisite_profile,scc:0157,false,1,153,tech:2803,tech_proto,2803,T能量护盾
+formal_research_prerequisite_profile,scc:0158,false,1,154,tech:2804,tech_proto,2804,T能量护盾
+formal_research_prerequisite_profile,scc:0159,false,1,155,tech:2805,tech_proto,2805,T能量护盾
+formal_research_prerequisite_profile,scc:0160,false,1,156,tech:2806,tech_proto,2806,T能量护盾
+formal_research_prerequisite_profile,scc:0161,false,1,157,tech:2807,tech_proto,2807,T能量护盾
+formal_research_prerequisite_profile,scc:0162,false,1,158,tech:2901,tech_proto,2901,Drive Engine Lv1
+formal_research_prerequisite_profile,scc:0163,false,1,159,tech:2902,tech_proto,2902,Drive Engine Lv2
+formal_research_prerequisite_profile,scc:0164,false,1,160,tech:2903,tech_proto,2903,Drive Engine Lv3
+formal_research_prerequisite_profile,scc:0165,false,1,161,tech:2904,tech_proto,2904,Drive Engine Lv4
+formal_research_prerequisite_profile,scc:0166,false,1,162,tech:2905,tech_proto,2905,T驱动引擎
+formal_research_prerequisite_profile,scc:0167,false,1,163,tech:2906,tech_proto,2906,T驱动引擎
+formal_research_prerequisite_profile,scc:0168,false,1,164,tech:2951,tech_proto,2951,T自动重建
+formal_research_prerequisite_profile,scc:0169,false,1,165,tech:2952,tech_proto,2952,T自动重建
+formal_research_prerequisite_profile,scc:0170,false,1,166,tech:2953,tech_proto,2953,T自动重建
+formal_research_prerequisite_profile,scc:0171,false,1,167,tech:2954,tech_proto,2954,T自动重建
+formal_research_prerequisite_profile,scc:0172,false,1,168,tech:2955,tech_proto,2955,T自动重建
+formal_research_prerequisite_profile,scc:0173,false,1,169,tech:2956,tech_proto,2956,T自动重建
+formal_research_prerequisite_profile,scc:0174,false,1,170,tech:3101,tech_proto,3101,T太阳帆寿命
+formal_research_prerequisite_profile,scc:0175,false,1,171,tech:3102,tech_proto,3102,T太阳帆寿命
+formal_research_prerequisite_profile,scc:0176,false,1,172,tech:3103,tech_proto,3103,T太阳帆寿命
+formal_research_prerequisite_profile,scc:0177,false,1,173,tech:3104,tech_proto,3104,T太阳帆寿命
+formal_research_prerequisite_profile,scc:0178,false,1,174,tech:3105,tech_proto,3105,T太阳帆寿命
+formal_research_prerequisite_profile,scc:0179,false,1,175,tech:3106,tech_proto,3106,T太阳帆寿命
+formal_research_prerequisite_profile,scc:0180,false,1,176,tech:3201,tech_proto,3201,T射线传输效率
+formal_research_prerequisite_profile,scc:0181,false,1,177,tech:3202,tech_proto,3202,T射线传输效率
+formal_research_prerequisite_profile,scc:0182,false,1,178,tech:3203,tech_proto,3203,T射线传输效率
+formal_research_prerequisite_profile,scc:0183,false,1,179,tech:3204,tech_proto,3204,T射线传输效率
+formal_research_prerequisite_profile,scc:0184,false,1,180,tech:3205,tech_proto,3205,T射线传输效率
+formal_research_prerequisite_profile,scc:0185,false,1,181,tech:3206,tech_proto,3206,T射线传输效率
+formal_research_prerequisite_profile,scc:0186,false,1,182,tech:3207,tech_proto,3207,T射线传输效率
+formal_research_prerequisite_profile,scc:0187,false,1,183,tech:3208,tech_proto,3208,T射线传输效率
+formal_research_prerequisite_profile,scc:0188,false,1,184,tech:3301,tech_proto,3301,T分拣器货物叠加
+formal_research_prerequisite_profile,scc:0189,false,1,185,tech:3302,tech_proto,3302,T分拣器货物叠加
+formal_research_prerequisite_profile,scc:0190,false,1,186,tech:3303,tech_proto,3303,T分拣器货物叠加
+formal_research_prerequisite_profile,scc:0191,false,1,187,tech:3304,tech_proto,3304,T分拣器货物叠加
+formal_research_prerequisite_profile,scc:0192,false,1,188,tech:3305,tech_proto,3305,T分拣器货物叠加
+formal_research_prerequisite_profile,scc:0193,false,1,189,tech:3306,tech_proto,3306,T分拣器货物集装
+formal_research_prerequisite_profile,scc:0194,false,1,190,tech:3311,tech_proto,3311,T集装分拣器叠加
+formal_research_prerequisite_profile,scc:0195,false,1,191,tech:3312,tech_proto,3312,T集装分拣器叠加
+formal_research_prerequisite_profile,scc:0196,false,1,192,tech:3313,tech_proto,3313,T集装分拣器叠加
+formal_research_prerequisite_profile,scc:0197,false,1,193,tech:3314,tech_proto,3314,T集装分拣器叠加
+formal_research_prerequisite_profile,scc:0198,false,1,194,tech:3315,tech_proto,3315,T集装分拣器叠加
+formal_research_prerequisite_profile,scc:0199,false,1,195,tech:3316,tech_proto,3316,T集装分拣器叠加
+formal_research_prerequisite_profile,scc:0200,false,1,206,tech:3401,tech_proto,3401,T运输船引擎
+formal_research_prerequisite_profile,scc:0201,false,1,207,tech:3402,tech_proto,3402,T运输船引擎
+formal_research_prerequisite_profile,scc:0202,false,1,208,tech:3403,tech_proto,3403,T运输船引擎
+formal_research_prerequisite_profile,scc:0203,false,1,209,tech:3404,tech_proto,3404,Logistics Carrier Engine Lv4
+formal_research_prerequisite_profile,scc:0204,false,1,210,tech:3405,tech_proto,3405,T运输船引擎
+formal_research_prerequisite_profile,scc:0205,false,1,211,tech:3406,tech_proto,3406,T运输船引擎
+formal_research_prerequisite_profile,scc:0206,false,1,212,tech:3407,tech_proto,3407,T运输船引擎
+formal_research_prerequisite_profile,scc:0207,false,1,213,tech:3501,tech_proto,3501,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0208,false,1,214,tech:3502,tech_proto,3502,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0209,false,1,215,tech:3503,tech_proto,3503,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0210,false,1,216,tech:3504,tech_proto,3504,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0211,false,1,217,tech:3505,tech_proto,3505,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0212,false,1,218,tech:3506,tech_proto,3506,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0213,false,1,219,tech:3507,tech_proto,3507,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0214,false,1,220,tech:3508,tech_proto,3508,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0215,false,1,221,tech:3509,tech_proto,3509,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0216,false,1,222,tech:3510,tech_proto,3510,T运输机舱扩容
+formal_research_prerequisite_profile,scc:0217,false,1,196,tech:3601,tech_proto,3601,T矿物利用
+formal_research_prerequisite_profile,scc:0218,false,1,197,tech:3602,tech_proto,3602,T矿物利用
+formal_research_prerequisite_profile,scc:0219,false,1,198,tech:3603,tech_proto,3603,T矿物利用
+formal_research_prerequisite_profile,scc:0220,false,1,199,tech:3604,tech_proto,3604,T矿物利用
+formal_research_prerequisite_profile,scc:0221,false,1,200,tech:3605,tech_proto,3605,T矿物利用
+formal_research_prerequisite_profile,scc:0222,false,1,201,tech:3606,tech_proto,3606,T矿物利用
+formal_research_prerequisite_profile,scc:0223,false,1,202,tech:3701,tech_proto,3701,Vertical Construction Lv1
+formal_research_prerequisite_profile,scc:0224,false,1,223,tech:3702,tech_proto,3702,T垂直建造
+formal_research_prerequisite_profile,scc:0225,false,1,224,tech:3703,tech_proto,3703,T垂直建造
+formal_research_prerequisite_profile,scc:0226,false,1,225,tech:3704,tech_proto,3704,T垂直建造
+formal_research_prerequisite_profile,scc:0227,false,1,226,tech:3705,tech_proto,3705,T垂直建造
+formal_research_prerequisite_profile,scc:0228,false,1,227,tech:3706,tech_proto,3706,T垂直建造
+formal_research_prerequisite_profile,scc:0229,false,1,228,tech:3801,tech_proto,3801,T运输站集装物流
+formal_research_prerequisite_profile,scc:0230,false,1,229,tech:3802,tech_proto,3802,T运输站集装物流
+formal_research_prerequisite_profile,scc:0231,false,1,230,tech:3803,tech_proto,3803,T运输站集装物流
+formal_research_prerequisite_profile,scc:0232,false,1,231,tech:3901,tech_proto,3901,T研究速度
+formal_research_prerequisite_profile,scc:0233,false,1,232,tech:3902,tech_proto,3902,T研究速度
+formal_research_prerequisite_profile,scc:0234,false,1,233,tech:3903,tech_proto,3903,T研究速度
+formal_research_prerequisite_profile,scc:0235,false,1,234,tech:3904,tech_proto,3904,T研究速度
+formal_research_prerequisite_profile,scc:0236,false,1,235,tech:4001,tech_proto,4001,T配送范围
+formal_research_prerequisite_profile,scc:0237,false,1,236,tech:4002,tech_proto,4002,T配送范围
+formal_research_prerequisite_profile,scc:0238,false,1,237,tech:4003,tech_proto,4003,T配送范围
+formal_research_prerequisite_profile,scc:0239,false,1,238,tech:4004,tech_proto,4004,T配送范围
+formal_research_prerequisite_profile,scc:0240,false,1,239,tech:4005,tech_proto,4005,T配送范围
+formal_research_prerequisite_profile,scc:0241,false,1,240,tech:4101,tech_proto,4101,T宇宙探索
+formal_research_prerequisite_profile,scc:0242,false,1,241,tech:4102,tech_proto,4102,T宇宙探索
+formal_research_prerequisite_profile,scc:0243,false,1,242,tech:4103,tech_proto,4103,Universe Exploration Lv3
+formal_research_prerequisite_profile,scc:0244,false,1,243,tech:4104,tech_proto,4104,T宇宙探索
+formal_research_prerequisite_profile,scc:0245,false,1,244,tech:4201,tech_proto,4201,T戴森球吸附速度
+formal_research_prerequisite_profile,scc:0246,false,1,245,tech:4202,tech_proto,4202,T戴森球吸附速度
+formal_research_prerequisite_profile,scc:0247,false,1,246,tech:4203,tech_proto,4203,T戴森球吸附速度
+formal_research_prerequisite_profile,scc:0248,false,1,247,tech:4204,tech_proto,4204,T戴森球吸附速度
+formal_research_prerequisite_profile,scc:0249,false,1,248,tech:4205,tech_proto,4205,T戴森球吸附速度
+formal_research_prerequisite_profile,scc:0250,false,1,249,tech:4206,tech_proto,4206,T戴森球吸附速度
+formal_research_prerequisite_profile,scc:0251,false,1,250,tech:5001,tech_proto,5001,T动能武器伤害
+formal_research_prerequisite_profile,scc:0252,false,1,251,tech:5002,tech_proto,5002,T动能武器伤害
+formal_research_prerequisite_profile,scc:0253,false,1,252,tech:5003,tech_proto,5003,T动能武器伤害
+formal_research_prerequisite_profile,scc:0254,false,1,253,tech:5004,tech_proto,5004,T动能武器伤害
+formal_research_prerequisite_profile,scc:0255,false,1,254,tech:5005,tech_proto,5005,T动能武器伤害
+formal_research_prerequisite_profile,scc:0256,false,1,255,tech:5006,tech_proto,5006,T动能武器伤害
+formal_research_prerequisite_profile,scc:0257,false,1,256,tech:5101,tech_proto,5101,T能量武器伤害
+formal_research_prerequisite_profile,scc:0258,false,1,257,tech:5102,tech_proto,5102,T能量武器伤害
+formal_research_prerequisite_profile,scc:0259,false,1,258,tech:5103,tech_proto,5103,T能量武器伤害
+formal_research_prerequisite_profile,scc:0260,false,1,259,tech:5104,tech_proto,5104,T能量武器伤害
+formal_research_prerequisite_profile,scc:0261,false,1,260,tech:5105,tech_proto,5105,T能量武器伤害
+formal_research_prerequisite_profile,scc:0262,false,1,261,tech:5106,tech_proto,5106,T能量武器伤害
+formal_research_prerequisite_profile,scc:0263,false,1,262,tech:5201,tech_proto,5201,T爆炸武器伤害
+formal_research_prerequisite_profile,scc:0264,false,1,263,tech:5202,tech_proto,5202,T爆炸武器伤害
+formal_research_prerequisite_profile,scc:0265,false,1,264,tech:5203,tech_proto,5203,T爆炸武器伤害
+formal_research_prerequisite_profile,scc:0266,false,1,265,tech:5204,tech_proto,5204,T爆炸武器伤害
+formal_research_prerequisite_profile,scc:0267,false,1,266,tech:5205,tech_proto,5205,T爆炸武器伤害
+formal_research_prerequisite_profile,scc:0268,false,1,267,tech:5206,tech_proto,5206,T爆炸武器伤害
+formal_research_prerequisite_profile,scc:0269,false,1,268,tech:5301,tech_proto,5301,T战斗无人机伤害
+formal_research_prerequisite_profile,scc:0270,false,1,269,tech:5302,tech_proto,5302,T战斗无人机伤害
+formal_research_prerequisite_profile,scc:0271,false,1,270,tech:5303,tech_proto,5303,T战斗无人机伤害
+formal_research_prerequisite_profile,scc:0272,false,1,271,tech:5304,tech_proto,5304,T战斗无人机伤害
+formal_research_prerequisite_profile,scc:0273,false,1,272,tech:5305,tech_proto,5305,T战斗无人机伤害
+formal_research_prerequisite_profile,scc:0274,false,1,273,tech:5401,tech_proto,5401,T战斗无人机攻击速度
+formal_research_prerequisite_profile,scc:0275,false,1,274,tech:5402,tech_proto,5402,T战斗无人机攻击速度
+formal_research_prerequisite_profile,scc:0276,false,1,275,tech:5403,tech_proto,5403,T战斗无人机攻击速度
+formal_research_prerequisite_profile,scc:0277,false,1,276,tech:5404,tech_proto,5404,T战斗无人机攻击速度
+formal_research_prerequisite_profile,scc:0278,false,1,277,tech:5405,tech_proto,5405,T战斗无人机攻击速度
+formal_research_prerequisite_profile,scc:0279,false,1,278,tech:5601,tech_proto,5601,T战斗无人机耐久
+formal_research_prerequisite_profile,scc:0280,false,1,279,tech:5602,tech_proto,5602,T战斗无人机耐久
+formal_research_prerequisite_profile,scc:0281,false,1,280,tech:5603,tech_proto,5603,T战斗无人机耐久
+formal_research_prerequisite_profile,scc:0282,false,1,281,tech:5604,tech_proto,5604,T战斗无人机耐久
+formal_research_prerequisite_profile,scc:0283,false,1,282,tech:5605,tech_proto,5605,T战斗无人机耐久
+formal_research_prerequisite_profile,scc:0284,false,1,283,tech:5701,tech_proto,5701,T行星护盾
+formal_research_prerequisite_profile,scc:0285,false,1,284,tech:5702,tech_proto,5702,T行星护盾
+formal_research_prerequisite_profile,scc:0286,false,1,285,tech:5703,tech_proto,5703,T行星护盾
+formal_research_prerequisite_profile,scc:0287,false,1,286,tech:5704,tech_proto,5704,T行星护盾
+formal_research_prerequisite_profile,scc:0288,false,1,287,tech:5705,tech_proto,5705,T行星护盾
+formal_research_prerequisite_profile,scc:0289,false,1,288,tech:5801,tech_proto,5801,T地面编队扩容
+formal_research_prerequisite_profile,scc:0290,false,1,289,tech:5802,tech_proto,5802,T地面编队扩容
+formal_research_prerequisite_profile,scc:0291,false,1,290,tech:5803,tech_proto,5803,T地面编队扩容
+formal_research_prerequisite_profile,scc:0292,false,1,291,tech:5804,tech_proto,5804,T地面编队扩容
+formal_research_prerequisite_profile,scc:0293,false,1,292,tech:5805,tech_proto,5805,T地面编队扩容
+formal_research_prerequisite_profile,scc:0294,false,1,293,tech:5806,tech_proto,5806,T地面编队扩容
+formal_research_prerequisite_profile,scc:0295,false,1,294,tech:5807,tech_proto,5807,T地面编队扩容
+formal_research_prerequisite_profile,scc:0296,false,1,295,tech:5901,tech_proto,5901,T太空编队扩容
+formal_research_prerequisite_profile,scc:0297,false,1,296,tech:5902,tech_proto,5902,T太空编队扩容
+formal_research_prerequisite_profile,scc:0298,false,1,297,tech:5903,tech_proto,5903,T太空编队扩容
+formal_research_prerequisite_profile,scc:0299,false,1,298,tech:5904,tech_proto,5904,T太空编队扩容
+formal_research_prerequisite_profile,scc:0300,false,1,299,tech:5905,tech_proto,5905,T太空编队扩容
+formal_research_prerequisite_profile,scc:0301,false,1,300,tech:5906,tech_proto,5906,T太空编队扩容
+formal_research_prerequisite_profile,scc:0302,false,1,301,tech:5907,tech_proto,5907,T太空编队扩容
+formal_research_prerequisite_profile,scc:0303,false,1,302,tech:6001,tech_proto,6001,T全局耐久度提升
+formal_research_prerequisite_profile,scc:0304,false,1,303,tech:6002,tech_proto,6002,T全局耐久度提升
+formal_research_prerequisite_profile,scc:0305,false,1,304,tech:6003,tech_proto,6003,T全局耐久度提升
+formal_research_prerequisite_profile,scc:0306,false,1,305,tech:6004,tech_proto,6004,T全局耐久度提升
+formal_research_prerequisite_profile,scc:0307,false,1,306,tech:6005,tech_proto,6005,T全局耐久度提升
+formal_research_prerequisite_profile,scc:0308,false,1,307,tech:6006,tech_proto,6006,T全局耐久度提升
+formal_research_prerequisite_profile,scc:0309,false,1,308,tech:6101,tech_proto,6101,T干扰塔效果
+formal_research_prerequisite_profile,scc:0310,false,1,309,tech:6102,tech_proto,6102,T干扰塔效果
+formal_research_prerequisite_profile,scc:0311,false,1,310,tech:6103,tech_proto,6103,T干扰塔效果
+formal_research_prerequisite_profile,scc:0312,false,1,311,tech:6104,tech_proto,6104,T干扰塔效果
+formal_research_prerequisite_profile,scc:0313,false,1,312,tech:6105,tech_proto,6105,T干扰塔效果
+formal_research_prerequisite_profile,scc:0314,false,1,313,tech:6106,tech_proto,6106,T干扰塔效果

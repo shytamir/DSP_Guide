@@ -1,0 +1,766 @@
+node_id,node_type,game_id,display_name,name_en,name_raw,recipe_type,recipe_type_id,time_spend,item_type,item_type_id,stack_size,is_fluid,is_entity,can_build,hidden,obsolete,level,max_level
+tech:1,tech_proto,1,Dyson Sphere Program,Dyson Sphere Program,T戴森球计划,,,,,,,,,,false,false,0,0
+tech:1001,tech_proto,1001,Electromagnetism,Electromagnetism,T电磁学,,,,,,,,,,false,false,0,0
+tech:1002,tech_proto,1002,Electromagnetic Matrix,Electromagnetic Matrix,T电磁矩阵,,,,,,,,,,false,false,0,0
+tech:1101,tech_proto,1101,T高效电浆控制,,T高效电浆控制,,,,,,,,,,false,false,0,0
+tech:1102,tech_proto,1102,Plasma Extract Refining,Plasma Extract Refining,T等离子萃取精炼,,,,,,,,,,false,false,0,0
+tech:1103,tech_proto,1103,TX射线裂解,,TX射线裂解,,,,,,,,,,false,false,0,0
+tech:1104,tech_proto,1104,T重整精炼,,T重整精炼,,,,,,,,,,false,false,0,0
+tech:1105,tech_proto,1105,T电弧激光,,T电弧激光,,,,,,,,,,false,false,0,0
+tech:1111,tech_proto,1111,Energy Matrix,Energy Matrix,T能量矩阵,,,,,,,,,,false,false,0,0
+tech:1112,tech_proto,1112,T氢燃料棒,,T氢燃料棒,,,,,,,,,,false,false,0,0
+tech:1113,tech_proto,1113,Thruster,Thruster,T推进器,,,,,,,,,,false,false,0,0
+tech:1114,tech_proto,1114,Reinforced Thruster,Reinforced Thruster,T加力推进器,,,,,,,,,,false,false,0,0
+tech:1120,tech_proto,1120,T流体储存封装,,T流体储存封装,,,,,,,,,,false,false,0,0
+tech:1121,tech_proto,1121,T基础化工,,T基础化工,,,,,,,,,,false,false,0,0
+tech:1122,tech_proto,1122,T高分子化工,,T高分子化工,,,,,,,,,,false,false,0,0
+tech:1123,tech_proto,1123,High-Strength Crystal,High-Strength Crystal,T高强度晶体,,,,,,,,,,false,false,0,0
+tech:1124,tech_proto,1124,Structure Matrix,Structure Matrix,T结构矩阵,,,,,,,,,,false,false,0,0
+tech:1125,tech_proto,1125,T卡西米尔晶体,,T卡西米尔晶体,,,,,,,,,,false,false,0,0
+tech:1126,tech_proto,1126,T高强度玻璃,,T高强度玻璃,,,,,,,,,,false,false,0,0
+tech:1131,tech_proto,1131,T应用型超导体,,T应用型超导体,,,,,,,,,,false,false,0,0
+tech:1132,tech_proto,1132,T高强度材料,,T高强度材料,,,,,,,,,,false,false,0,0
+tech:1133,tech_proto,1133,T粒子可控技术,,T粒子可控技术,,,,,,,,,,false,false,0,0
+tech:1134,tech_proto,1134,T重氢分馏,,T重氢分馏,,,,,,,,,,false,false,0,0
+tech:1141,tech_proto,1141,T波函数干扰,,T波函数干扰,,,,,,,,,,false,false,0,0
+tech:1142,tech_proto,1142,T微型粒子对撞机,,T微型粒子对撞机,,,,,,,,,,false,false,0,0
+tech:1143,tech_proto,1143,T奇异物质,,T奇异物质,,,,,,,,,,false,false,0,0
+tech:1144,tech_proto,1144,T人造恒星,,T人造恒星,,,,,,,,,,false,false,0,0
+tech:1145,tech_proto,1145,T可控湮灭反应,,T可控湮灭反应,,,,,,,,,,false,false,0,0
+tech:1151,tech_proto,1151,T增产剂 Mk.I,,T增产剂 Mk.I,,,,,,,,,,false,false,0,0
+tech:1152,tech_proto,1152,T增产剂 Mk.II,,T增产剂 Mk.II,,,,,,,,,,false,false,0,0
+tech:1153,tech_proto,1153,T增产剂 Mk.III,,T增产剂 Mk.III,,,,,,,,,,false,false,0,0
+tech:1201,tech_proto,1201,T基础制造工艺,,T基础制造工艺,,,,,,,,,,false,false,0,0
+tech:1202,tech_proto,1202,T高速制造工艺,,T高速制造工艺,,,,,,,,,,false,false,0,0
+tech:1203,tech_proto,1203,T量子打印技术,,T量子打印技术,,,,,,,,,,false,false,0,0
+tech:1302,tech_proto,1302,Processor,Processor,T处理器,,,,,,,,,,false,false,0,0
+tech:1303,tech_proto,1303,Quantum Chip,Quantum Chip,T量子芯片,,,,,,,,,,false,false,0,0
+tech:1304,tech_proto,1304,T大型采矿机,,T大型采矿机,,,,,,,,,,false,false,0,0
+tech:1305,tech_proto,1305,T高级化工,,T高级化工,,,,,,,,,,false,false,0,0
+tech:1311,tech_proto,1311,T半导体材料,,T半导体材料,,,,,,,,,,false,false,0,0
+tech:1312,tech_proto,1312,Information Matrix,Information Matrix,T信息矩阵,,,,,,,,,,false,false,0,0
+tech:1401,tech_proto,1401,T自动化冶金,,T自动化冶金,,,,,,,,,,false,false,0,0
+tech:1402,tech_proto,1402,Smelting Purification,Smelting Purification,T冶炼提纯,,,,,,,,,,false,false,0,0
+tech:1403,tech_proto,1403,T晶体冶炼,,T晶体冶炼,,,,,,,,,,false,false,0,0
+tech:1411,tech_proto,1411,T钢材冶炼,,T钢材冶炼,,,,,,,,,,false,false,0,0
+tech:1412,tech_proto,1412,T火力发电,,T火力发电,,,,,,,,,,false,false,0,0
+tech:1413,tech_proto,1413,Titanium Smelting,Titanium Smelting,T钛矿冶炼,,,,,,,,,,false,false,0,0
+tech:1414,tech_proto,1414,High-Strength Titanium Alloy,High-Strength Titanium Alloy,T高强度钛合金,,,,,,,,,,false,false,0,0
+tech:1415,tech_proto,1415,T移山填海工程,,T移山填海工程,,,,,,,,,,false,false,0,0
+tech:1416,tech_proto,1416,T微型核聚变发电,,T微型核聚变发电,,,,,,,,,,false,false,0,0
+tech:1417,tech_proto,1417,T位面冶金,,T位面冶金,,,,,,,,,,false,false,0,0
+tech:1501,tech_proto,1501,T太阳能收集,,T太阳能收集,,,,,,,,,,false,false,0,0
+tech:1502,tech_proto,1502,T光子变频,,T光子变频,,,,,,,,,,false,false,0,0
+tech:1503,tech_proto,1503,T太阳帆轨道系统,,T太阳帆轨道系统,,,,,,,,,,false,false,0,0
+tech:1504,tech_proto,1504,T射线接收站,,T射线接收站,,,,,,,,,,false,false,0,0
+tech:1505,tech_proto,1505,T行星电离层利用,,T行星电离层利用,,,,,,,,,,false,false,0,0
+tech:1506,tech_proto,1506,Dirac Inversion Mechanism,Dirac Inversion Mechanism,T狄拉克逆变机制,,,,,,,,,,false,false,0,0
+tech:1507,tech_proto,1507,Universe Matrix,Universe Matrix,T宇宙矩阵,,,,,,,,,,false,false,0,0
+tech:1508,tech_proto,1508,T任务完成,,T任务完成,,,,,,,,,,false,false,0,0
+tech:1511,tech_proto,1511,T能量储存,,T能量储存,,,,,,,,,,false,false,0,0
+tech:1512,tech_proto,1512,T星际电力运输,,T星际电力运输,,,,,,,,,,false,false,0,0
+tech:1513,tech_proto,1513,T地热开采,,T地热开采,,,,,,,,,,false,false,0,0
+tech:1521,tech_proto,1521,T高强度轻质结构,,T高强度轻质结构,,,,,,,,,,false,false,0,0
+tech:1522,tech_proto,1522,T垂直发射井,,T垂直发射井,,,,,,,,,,false,false,0,0
+tech:1523,tech_proto,1523,T戴森球应力系统,,T戴森球应力系统,,,,,,,,,,false,false,1,6
+tech:1601,tech_proto,1601,T基础物流系统,,T基础物流系统,,,,,,,,,,false,false,0,0
+tech:1602,tech_proto,1602,T改良物流系统,,T改良物流系统,,,,,,,,,,false,false,0,0
+tech:1603,tech_proto,1603,High-Efficiency Logistics System,High-Efficiency Logistics System,T高效物流系统,,,,,,,,,,false,false,0,0
+tech:1604,tech_proto,1604,Planetary Logistics System,Planetary Logistics System,T行星物流系统,,,,,,,,,,false,false,0,0
+tech:1605,tech_proto,1605,Interstellar Logistics System,Interstellar Logistics System,T星际物流系统,,,,,,,,,,false,false,0,0
+tech:1606,tech_proto,1606,T气态行星开采,,T气态行星开采,,,,,,,,,,false,false,0,0
+tech:1607,tech_proto,1607,Integrated Logistics System,Integrated Logistics System,T集装物流系统,,,,,,,,,,false,false,0,0
+tech:1608,tech_proto,1608,T配送物流系统,,T配送物流系统,,,,,,,,,,false,false,0,0
+tech:1701,tech_proto,1701,T电磁驱动,,T电磁驱动,,,,,,,,,,false,false,0,0
+tech:1702,tech_proto,1702,T磁悬浮技术,,T磁悬浮技术,,,,,,,,,,false,false,0,0
+tech:1703,tech_proto,1703,T粒子磁力阱,,T粒子磁力阱,,,,,,,,,,false,false,0,0
+tech:1704,tech_proto,1704,Gravitational Wave Refraction,Gravitational Wave Refraction,T引力波折射,,,,,,,,,,false,false,0,0
+tech:1705,tech_proto,1705,Gravity Matrix,Gravity Matrix,T引力矩阵,,,,,,,,,,false,false,0,0
+tech:1711,tech_proto,1711,Super Magnetic Field Generator,Super Magnetic Field Generator,T超级磁场发生器,,,,,,,,,,false,false,0,0
+tech:1712,tech_proto,1712,T卫星配电系统,,T卫星配电系统,,,,,,,,,,false,false,0,0
+tech:1801,tech_proto,1801,T武器系统,,T武器系统,,,,,,,,,,false,false,0,0
+tech:1802,tech_proto,1802,T燃烧单元,,T燃烧单元,,,,,,,,,,false,false,0,0
+tech:1803,tech_proto,1803,T爆破单元,,T爆破单元,,,,,,,,,,false,false,0,0
+tech:1804,tech_proto,1804,T晶石爆破单元,,T晶石爆破单元,,,,,,,,,,false,false,0,0
+tech:1805,tech_proto,1805,T动力引擎,,T动力引擎,,,,,,,,,,false,false,0,0
+tech:1806,tech_proto,1806,T导弹防御塔,,T导弹防御塔,,,,,,,,,,false,false,0,0
+tech:1807,tech_proto,1807,T聚爆加农炮,,T聚爆加农炮,,,,,,,,,,false,false,0,0
+tech:1808,tech_proto,1808,T信号塔,,T信号塔,,,,,,,,,,false,false,0,0
+tech:1809,tech_proto,1809,T行星防御系统,,T行星防御系统,,,,,,,,,,false,false,0,0
+tech:1810,tech_proto,1810,T干扰塔,,T干扰塔,,,,,,,,,,false,false,0,0
+tech:1811,tech_proto,1811,T磁化电浆炮,,T磁化电浆炮,,,,,,,,,,false,false,0,0
+tech:1812,tech_proto,1812,T钛化弹箱,,T钛化弹箱,,,,,,,,,,false,false,0,0
+tech:1813,tech_proto,1813,T超合金弹箱,,T超合金弹箱,,,,,,,,,,false,false,0,0
+tech:1814,tech_proto,1814,T高爆炮弹组,,T高爆炮弹组,,,,,,,,,,false,false,0,0
+tech:1815,tech_proto,1815,T超音速导弹组,,T超音速导弹组,,,,,,,,,,false,false,0,0
+tech:1816,tech_proto,1816,T晶石炮弹组,,T晶石炮弹组,,,,,,,,,,false,false,0,0
+tech:1817,tech_proto,1817,T引力导弹组,,T引力导弹组,,,,,,,,,,false,false,0,0
+tech:1818,tech_proto,1818,T反物质胶囊,,T反物质胶囊,,,,,,,,,,false,false,0,0
+tech:1819,tech_proto,1819,T地面战斗机-E型,,T地面战斗机-E型,,,,,,,,,,false,false,0,0
+tech:1820,tech_proto,1820,T地面战斗机-A型,,T地面战斗机-A型,,,,,,,,,,false,false,0,0
+tech:1821,tech_proto,1821,T地面战斗机-F型,,T地面战斗机-F型,,,,,,,,,,false,false,0,0
+tech:1822,tech_proto,1822,T太空战斗机-A型,,T太空战斗机-A型,,,,,,,,,,false,false,0,0
+tech:1823,tech_proto,1823,T太空战斗机-F型,,T太空战斗机-F型,,,,,,,,,,false,false,0,0
+tech:1824,tech_proto,1824,T电磁胶囊II,,T电磁胶囊II,,,,,,,,,,false,false,0,0
+tech:1826,tech_proto,1826,T战场分析基站,,T战场分析基站,,,,,,,,,,false,false,0,0
+tech:1901,tech_proto,1901,T数字模拟计算,,T数字模拟计算,,,,,,,,,,true,false,0,0
+tech:1902,tech_proto,1902,T物质重组技术,,T物质重组技术,,,,,,,,,,true,false,0,0
+tech:1903,tech_proto,1903,T负熵递归,,T负熵递归,,,,,,,,,,true,false,0,0
+tech:1904,tech_proto,1904,T金色燃料棒,,T金色燃料棒,,,,,,,,,,true,false,0,0
+tech:2101,tech_proto,2101,Mecha Core Lv1,Mecha Core Lv1,T机甲核心,,,,,,,,,,false,false,1,1
+tech:2102,tech_proto,2102,Mecha Core Lv2,Mecha Core Lv2,T机甲核心,,,,,,,,,,false,false,2,2
+tech:2103,tech_proto,2103,Mecha Core Lv3,Mecha Core Lv3,T机甲核心,,,,,,,,,,false,false,3,3
+tech:2104,tech_proto,2104,Mecha Core Lv4,Mecha Core Lv4,T机甲核心,,,,,,,,,,false,false,4,4
+tech:2105,tech_proto,2105,T机甲核心,,T机甲核心,,,,,,,,,,false,false,5,5
+tech:2106,tech_proto,2106,T机甲核心,,T机甲核心,,,,,,,,,,false,false,6,10000
+tech:2201,tech_proto,2201,T机械骨骼,,T机械骨骼,,,,,,,,,,false,false,1,1
+tech:2202,tech_proto,2202,T机械骨骼,,T机械骨骼,,,,,,,,,,false,false,2,2
+tech:2203,tech_proto,2203,T机械骨骼,,T机械骨骼,,,,,,,,,,false,false,3,3
+tech:2204,tech_proto,2204,T机械骨骼,,T机械骨骼,,,,,,,,,,false,false,4,4
+tech:2205,tech_proto,2205,T机械骨骼,,T机械骨骼,,,,,,,,,,false,false,5,5
+tech:2206,tech_proto,2206,T机械骨骼,,T机械骨骼,,,,,,,,,,false,false,6,6
+tech:2207,tech_proto,2207,T机械骨骼,,T机械骨骼,,,,,,,,,,false,false,7,7
+tech:2208,tech_proto,2208,T机械骨骼,,T机械骨骼,,,,,,,,,,false,false,8,8
+tech:2301,tech_proto,2301,T机舱容量,,T机舱容量,,,,,,,,,,false,false,1,1
+tech:2302,tech_proto,2302,T机舱容量,,T机舱容量,,,,,,,,,,false,false,2,2
+tech:2303,tech_proto,2303,T机舱容量,,T机舱容量,,,,,,,,,,false,false,3,3
+tech:2304,tech_proto,2304,T机舱容量,,T机舱容量,,,,,,,,,,false,false,4,4
+tech:2305,tech_proto,2305,T机舱容量,,T机舱容量,,,,,,,,,,false,false,5,5
+tech:2306,tech_proto,2306,T机舱容量,,T机舱容量,,,,,,,,,,false,false,6,6
+tech:2307,tech_proto,2307,T机舱容量,,T机舱容量,,,,,,,,,,false,false,7,7
+tech:2401,tech_proto,2401,T通讯控制,,T通讯控制,,,,,,,,,,false,false,1,1
+tech:2402,tech_proto,2402,T通讯控制,,T通讯控制,,,,,,,,,,false,false,2,2
+tech:2403,tech_proto,2403,T通讯控制,,T通讯控制,,,,,,,,,,false,false,3,3
+tech:2404,tech_proto,2404,T通讯控制,,T通讯控制,,,,,,,,,,false,false,4,4
+tech:2405,tech_proto,2405,T通讯控制,,T通讯控制,,,,,,,,,,false,false,5,5
+tech:2406,tech_proto,2406,T通讯控制,,T通讯控制,,,,,,,,,,false,false,6,6
+tech:2407,tech_proto,2407,T通讯控制,,T通讯控制,,,,,,,,,,false,false,7,88
+tech:2501,tech_proto,2501,T能量回路,,T能量回路,,,,,,,,,,false,false,1,1
+tech:2502,tech_proto,2502,T能量回路,,T能量回路,,,,,,,,,,false,false,2,2
+tech:2503,tech_proto,2503,T能量回路,,T能量回路,,,,,,,,,,false,false,3,3
+tech:2504,tech_proto,2504,T能量回路,,T能量回路,,,,,,,,,,false,false,4,4
+tech:2505,tech_proto,2505,T能量回路,,T能量回路,,,,,,,,,,false,false,5,5
+tech:2506,tech_proto,2506,T能量回路,,T能量回路,,,,,,,,,,false,false,6,10000
+tech:2601,tech_proto,2601,T无人机引擎,,T无人机引擎,,,,,,,,,,false,false,1,1
+tech:2602,tech_proto,2602,T无人机引擎,,T无人机引擎,,,,,,,,,,false,false,2,2
+tech:2603,tech_proto,2603,T无人机引擎,,T无人机引擎,,,,,,,,,,false,false,3,3
+tech:2604,tech_proto,2604,T无人机引擎,,T无人机引擎,,,,,,,,,,false,false,4,4
+tech:2605,tech_proto,2605,T无人机引擎,,T无人机引擎,,,,,,,,,,false,false,5,5
+tech:2606,tech_proto,2606,T无人机引擎,,T无人机引擎,,,,,,,,,,false,false,6,24
+tech:2701,tech_proto,2701,T批量建造,,T批量建造,,,,,,,,,,false,false,1,1
+tech:2702,tech_proto,2702,T批量建造,,T批量建造,,,,,,,,,,false,false,2,2
+tech:2703,tech_proto,2703,T批量建造,,T批量建造,,,,,,,,,,false,false,3,3
+tech:2704,tech_proto,2704,T批量建造,,T批量建造,,,,,,,,,,false,false,4,4
+tech:2705,tech_proto,2705,T批量建造,,T批量建造,,,,,,,,,,false,false,5,5
+tech:2706,tech_proto,2706,T批量建造,,T批量建造,,,,,,,,,,false,false,6,6
+tech:2801,tech_proto,2801,T能量护盾,,T能量护盾,,,,,,,,,,false,false,1,1
+tech:2802,tech_proto,2802,T能量护盾,,T能量护盾,,,,,,,,,,false,false,2,2
+tech:2803,tech_proto,2803,T能量护盾,,T能量护盾,,,,,,,,,,false,false,3,3
+tech:2804,tech_proto,2804,T能量护盾,,T能量护盾,,,,,,,,,,false,false,4,4
+tech:2805,tech_proto,2805,T能量护盾,,T能量护盾,,,,,,,,,,false,false,5,5
+tech:2806,tech_proto,2806,T能量护盾,,T能量护盾,,,,,,,,,,false,false,6,25
+tech:2807,tech_proto,2807,T能量护盾,,T能量护盾,,,,,,,,,,false,false,26,10000
+tech:2901,tech_proto,2901,Drive Engine Lv1,Drive Engine Lv1,T驱动引擎,,,,,,,,,,false,false,1,1
+tech:2902,tech_proto,2902,Drive Engine Lv2,Drive Engine Lv2,T驱动引擎,,,,,,,,,,false,false,2,2
+tech:2903,tech_proto,2903,Drive Engine Lv3,Drive Engine Lv3,T驱动引擎,,,,,,,,,,false,false,3,3
+tech:2904,tech_proto,2904,Drive Engine Lv4,Drive Engine Lv4,T驱动引擎,,,,,,,,,,false,false,4,4
+tech:2905,tech_proto,2905,T驱动引擎,,T驱动引擎,,,,,,,,,,false,false,5,5
+tech:2906,tech_proto,2906,T驱动引擎,,T驱动引擎,,,,,,,,,,false,false,6,100
+tech:2951,tech_proto,2951,T自动重建,,T自动重建,,,,,,,,,,false,false,1,1
+tech:2952,tech_proto,2952,T自动重建,,T自动重建,,,,,,,,,,false,false,2,2
+tech:2953,tech_proto,2953,T自动重建,,T自动重建,,,,,,,,,,false,false,3,3
+tech:2954,tech_proto,2954,T自动重建,,T自动重建,,,,,,,,,,false,false,4,4
+tech:2955,tech_proto,2955,T自动重建,,T自动重建,,,,,,,,,,false,false,5,5
+tech:2956,tech_proto,2956,T自动重建,,T自动重建,,,,,,,,,,false,false,6,6
+tech:3101,tech_proto,3101,T太阳帆寿命,,T太阳帆寿命,,,,,,,,,,false,false,1,1
+tech:3102,tech_proto,3102,T太阳帆寿命,,T太阳帆寿命,,,,,,,,,,false,false,2,2
+tech:3103,tech_proto,3103,T太阳帆寿命,,T太阳帆寿命,,,,,,,,,,false,false,3,3
+tech:3104,tech_proto,3104,T太阳帆寿命,,T太阳帆寿命,,,,,,,,,,false,false,4,4
+tech:3105,tech_proto,3105,T太阳帆寿命,,T太阳帆寿命,,,,,,,,,,false,false,5,5
+tech:3106,tech_proto,3106,T太阳帆寿命,,T太阳帆寿命,,,,,,,,,,false,false,6,6
+tech:4201,tech_proto,4201,T戴森球吸附速度,,T戴森球吸附速度,,,,,,,,,,false,false,1,1
+tech:4202,tech_proto,4202,T戴森球吸附速度,,T戴森球吸附速度,,,,,,,,,,false,false,2,2
+tech:4203,tech_proto,4203,T戴森球吸附速度,,T戴森球吸附速度,,,,,,,,,,false,false,3,3
+tech:4204,tech_proto,4204,T戴森球吸附速度,,T戴森球吸附速度,,,,,,,,,,false,false,4,4
+tech:4205,tech_proto,4205,T戴森球吸附速度,,T戴森球吸附速度,,,,,,,,,,false,false,5,5
+tech:4206,tech_proto,4206,T戴森球吸附速度,,T戴森球吸附速度,,,,,,,,,,false,false,6,6
+tech:3201,tech_proto,3201,T射线传输效率,,T射线传输效率,,,,,,,,,,false,false,1,1
+tech:3202,tech_proto,3202,T射线传输效率,,T射线传输效率,,,,,,,,,,false,false,2,2
+tech:3203,tech_proto,3203,T射线传输效率,,T射线传输效率,,,,,,,,,,false,false,3,3
+tech:3204,tech_proto,3204,T射线传输效率,,T射线传输效率,,,,,,,,,,false,false,4,4
+tech:3205,tech_proto,3205,T射线传输效率,,T射线传输效率,,,,,,,,,,false,false,5,5
+tech:3206,tech_proto,3206,T射线传输效率,,T射线传输效率,,,,,,,,,,false,false,6,6
+tech:3207,tech_proto,3207,T射线传输效率,,T射线传输效率,,,,,,,,,,false,false,7,7
+tech:3208,tech_proto,3208,T射线传输效率,,T射线传输效率,,,,,,,,,,false,false,8,10000
+tech:3301,tech_proto,3301,T分拣器货物叠加,,T分拣器货物叠加,,,,,,,,,,false,true,1,1
+tech:3302,tech_proto,3302,T分拣器货物叠加,,T分拣器货物叠加,,,,,,,,,,false,true,2,2
+tech:3303,tech_proto,3303,T分拣器货物叠加,,T分拣器货物叠加,,,,,,,,,,false,true,3,3
+tech:3304,tech_proto,3304,T分拣器货物叠加,,T分拣器货物叠加,,,,,,,,,,false,true,4,4
+tech:3305,tech_proto,3305,T分拣器货物叠加,,T分拣器货物叠加,,,,,,,,,,false,true,5,5
+tech:3306,tech_proto,3306,T分拣器货物集装,,T分拣器货物集装,,,,,,,,,,false,true,1,1
+tech:3311,tech_proto,3311,T集装分拣器叠加,,T集装分拣器叠加,,,,,,,,,,false,false,1,1
+tech:3312,tech_proto,3312,T集装分拣器叠加,,T集装分拣器叠加,,,,,,,,,,false,false,2,2
+tech:3313,tech_proto,3313,T集装分拣器叠加,,T集装分拣器叠加,,,,,,,,,,false,false,3,3
+tech:3314,tech_proto,3314,T集装分拣器叠加,,T集装分拣器叠加,,,,,,,,,,false,false,4,4
+tech:3315,tech_proto,3315,T集装分拣器叠加,,T集装分拣器叠加,,,,,,,,,,false,false,5,5
+tech:3316,tech_proto,3316,T集装分拣器叠加,,T集装分拣器叠加,,,,,,,,,,false,false,6,6
+tech:4001,tech_proto,4001,T配送范围,,T配送范围,,,,,,,,,,false,false,1,1
+tech:4002,tech_proto,4002,T配送范围,,T配送范围,,,,,,,,,,false,false,2,2
+tech:4003,tech_proto,4003,T配送范围,,T配送范围,,,,,,,,,,false,false,3,3
+tech:4004,tech_proto,4004,T配送范围,,T配送范围,,,,,,,,,,false,false,4,4
+tech:4005,tech_proto,4005,T配送范围,,T配送范围,,,,,,,,,,false,false,5,5
+tech:3401,tech_proto,3401,T运输船引擎,,T运输船引擎,,,,,,,,,,false,false,1,1
+tech:3402,tech_proto,3402,T运输船引擎,,T运输船引擎,,,,,,,,,,false,false,2,2
+tech:3403,tech_proto,3403,T运输船引擎,,T运输船引擎,,,,,,,,,,false,false,3,3
+tech:3404,tech_proto,3404,Logistics Carrier Engine Lv4,Logistics Carrier Engine Lv4,T运输船引擎,,,,,,,,,,false,false,4,4
+tech:3405,tech_proto,3405,T运输船引擎,,T运输船引擎,,,,,,,,,,false,false,5,5
+tech:3406,tech_proto,3406,T运输船引擎,,T运输船引擎,,,,,,,,,,false,false,6,6
+tech:3407,tech_proto,3407,T运输船引擎,,T运输船引擎,,,,,,,,,,false,false,7,10000
+tech:3501,tech_proto,3501,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,1,1
+tech:3502,tech_proto,3502,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,2,2
+tech:3503,tech_proto,3503,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,3,3
+tech:3504,tech_proto,3504,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,4,4
+tech:3505,tech_proto,3505,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,5,5
+tech:3506,tech_proto,3506,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,6,6
+tech:3507,tech_proto,3507,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,7,7
+tech:3508,tech_proto,3508,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,8,8
+tech:3509,tech_proto,3509,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,9,11
+tech:3510,tech_proto,3510,T运输机舱扩容,,T运输机舱扩容,,,,,,,,,,false,false,12,13
+tech:3801,tech_proto,3801,T运输站集装物流,,T运输站集装物流,,,,,,,,,,false,false,1,1
+tech:3802,tech_proto,3802,T运输站集装物流,,T运输站集装物流,,,,,,,,,,false,false,2,2
+tech:3803,tech_proto,3803,T运输站集装物流,,T运输站集装物流,,,,,,,,,,false,false,3,3
+tech:3601,tech_proto,3601,T矿物利用,,T矿物利用,,,,,,,,,,false,false,1,1
+tech:3602,tech_proto,3602,T矿物利用,,T矿物利用,,,,,,,,,,false,false,2,2
+tech:3603,tech_proto,3603,T矿物利用,,T矿物利用,,,,,,,,,,false,false,3,3
+tech:3604,tech_proto,3604,T矿物利用,,T矿物利用,,,,,,,,,,false,false,4,4
+tech:3605,tech_proto,3605,T矿物利用,,T矿物利用,,,,,,,,,,false,false,5,5
+tech:3606,tech_proto,3606,T矿物利用,,T矿物利用,,,,,,,,,,false,false,6,10000
+tech:3701,tech_proto,3701,Vertical Construction Lv1,Vertical Construction Lv1,T垂直建造,,,,,,,,,,false,false,1,1
+tech:3702,tech_proto,3702,T垂直建造,,T垂直建造,,,,,,,,,,false,false,2,2
+tech:3703,tech_proto,3703,T垂直建造,,T垂直建造,,,,,,,,,,false,false,3,3
+tech:3704,tech_proto,3704,T垂直建造,,T垂直建造,,,,,,,,,,false,false,4,4
+tech:3705,tech_proto,3705,T垂直建造,,T垂直建造,,,,,,,,,,false,false,5,5
+tech:3706,tech_proto,3706,T垂直建造,,T垂直建造,,,,,,,,,,false,false,6,6
+tech:3901,tech_proto,3901,T研究速度,,T研究速度,,,,,,,,,,false,false,1,1
+tech:3902,tech_proto,3902,T研究速度,,T研究速度,,,,,,,,,,false,false,2,2
+tech:3903,tech_proto,3903,T研究速度,,T研究速度,,,,,,,,,,false,false,3,3
+tech:3904,tech_proto,3904,T研究速度,,T研究速度,,,,,,,,,,false,false,4,10000
+tech:4101,tech_proto,4101,T宇宙探索,,T宇宙探索,,,,,,,,,,false,false,1,1
+tech:4102,tech_proto,4102,T宇宙探索,,T宇宙探索,,,,,,,,,,false,false,2,2
+tech:4103,tech_proto,4103,Universe Exploration Lv3,Universe Exploration Lv3,T宇宙探索,,,,,,,,,,false,false,3,3
+tech:4104,tech_proto,4104,T宇宙探索,,T宇宙探索,,,,,,,,,,false,false,4,4
+tech:5001,tech_proto,5001,T动能武器伤害,,T动能武器伤害,,,,,,,,,,false,false,1,1
+tech:5002,tech_proto,5002,T动能武器伤害,,T动能武器伤害,,,,,,,,,,false,false,2,2
+tech:5003,tech_proto,5003,T动能武器伤害,,T动能武器伤害,,,,,,,,,,false,false,3,3
+tech:5004,tech_proto,5004,T动能武器伤害,,T动能武器伤害,,,,,,,,,,false,false,4,4
+tech:5005,tech_proto,5005,T动能武器伤害,,T动能武器伤害,,,,,,,,,,false,false,5,5
+tech:5006,tech_proto,5006,T动能武器伤害,,T动能武器伤害,,,,,,,,,,false,false,6,10000
+tech:5101,tech_proto,5101,T能量武器伤害,,T能量武器伤害,,,,,,,,,,false,false,1,1
+tech:5102,tech_proto,5102,T能量武器伤害,,T能量武器伤害,,,,,,,,,,false,false,2,2
+tech:5103,tech_proto,5103,T能量武器伤害,,T能量武器伤害,,,,,,,,,,false,false,3,3
+tech:5104,tech_proto,5104,T能量武器伤害,,T能量武器伤害,,,,,,,,,,false,false,4,4
+tech:5105,tech_proto,5105,T能量武器伤害,,T能量武器伤害,,,,,,,,,,false,false,5,5
+tech:5106,tech_proto,5106,T能量武器伤害,,T能量武器伤害,,,,,,,,,,false,false,6,10000
+tech:5201,tech_proto,5201,T爆炸武器伤害,,T爆炸武器伤害,,,,,,,,,,false,false,1,1
+tech:5202,tech_proto,5202,T爆炸武器伤害,,T爆炸武器伤害,,,,,,,,,,false,false,2,2
+tech:5203,tech_proto,5203,T爆炸武器伤害,,T爆炸武器伤害,,,,,,,,,,false,false,3,3
+tech:5204,tech_proto,5204,T爆炸武器伤害,,T爆炸武器伤害,,,,,,,,,,false,false,4,4
+tech:5205,tech_proto,5205,T爆炸武器伤害,,T爆炸武器伤害,,,,,,,,,,false,false,5,5
+tech:5206,tech_proto,5206,T爆炸武器伤害,,T爆炸武器伤害,,,,,,,,,,false,false,6,10000
+tech:5301,tech_proto,5301,T战斗无人机伤害,,T战斗无人机伤害,,,,,,,,,,false,false,1,1
+tech:5302,tech_proto,5302,T战斗无人机伤害,,T战斗无人机伤害,,,,,,,,,,false,false,2,2
+tech:5303,tech_proto,5303,T战斗无人机伤害,,T战斗无人机伤害,,,,,,,,,,false,false,3,3
+tech:5304,tech_proto,5304,T战斗无人机伤害,,T战斗无人机伤害,,,,,,,,,,false,false,4,4
+tech:5305,tech_proto,5305,T战斗无人机伤害,,T战斗无人机伤害,,,,,,,,,,false,false,5,10000
+tech:5401,tech_proto,5401,T战斗无人机攻击速度,,T战斗无人机攻击速度,,,,,,,,,,false,false,1,1
+tech:5402,tech_proto,5402,T战斗无人机攻击速度,,T战斗无人机攻击速度,,,,,,,,,,false,false,2,2
+tech:5403,tech_proto,5403,T战斗无人机攻击速度,,T战斗无人机攻击速度,,,,,,,,,,false,false,3,3
+tech:5404,tech_proto,5404,T战斗无人机攻击速度,,T战斗无人机攻击速度,,,,,,,,,,false,false,4,4
+tech:5405,tech_proto,5405,T战斗无人机攻击速度,,T战斗无人机攻击速度,,,,,,,,,,false,false,5,5
+tech:5601,tech_proto,5601,T战斗无人机耐久,,T战斗无人机耐久,,,,,,,,,,false,false,1,1
+tech:5602,tech_proto,5602,T战斗无人机耐久,,T战斗无人机耐久,,,,,,,,,,false,false,2,2
+tech:5603,tech_proto,5603,T战斗无人机耐久,,T战斗无人机耐久,,,,,,,,,,false,false,3,3
+tech:5604,tech_proto,5604,T战斗无人机耐久,,T战斗无人机耐久,,,,,,,,,,false,false,4,4
+tech:5605,tech_proto,5605,T战斗无人机耐久,,T战斗无人机耐久,,,,,,,,,,false,false,5,5
+tech:5701,tech_proto,5701,T行星护盾,,T行星护盾,,,,,,,,,,false,false,1,1
+tech:5702,tech_proto,5702,T行星护盾,,T行星护盾,,,,,,,,,,false,false,2,2
+tech:5703,tech_proto,5703,T行星护盾,,T行星护盾,,,,,,,,,,false,false,3,3
+tech:5704,tech_proto,5704,T行星护盾,,T行星护盾,,,,,,,,,,false,false,4,4
+tech:5705,tech_proto,5705,T行星护盾,,T行星护盾,,,,,,,,,,false,false,5,5
+tech:5801,tech_proto,5801,T地面编队扩容,,T地面编队扩容,,,,,,,,,,false,false,1,1
+tech:5802,tech_proto,5802,T地面编队扩容,,T地面编队扩容,,,,,,,,,,false,false,2,2
+tech:5803,tech_proto,5803,T地面编队扩容,,T地面编队扩容,,,,,,,,,,false,false,3,3
+tech:5804,tech_proto,5804,T地面编队扩容,,T地面编队扩容,,,,,,,,,,false,false,4,4
+tech:5805,tech_proto,5805,T地面编队扩容,,T地面编队扩容,,,,,,,,,,false,false,5,5
+tech:5806,tech_proto,5806,T地面编队扩容,,T地面编队扩容,,,,,,,,,,false,false,6,6
+tech:5807,tech_proto,5807,T地面编队扩容,,T地面编队扩容,,,,,,,,,,false,false,7,7
+tech:5901,tech_proto,5901,T太空编队扩容,,T太空编队扩容,,,,,,,,,,false,false,1,1
+tech:5902,tech_proto,5902,T太空编队扩容,,T太空编队扩容,,,,,,,,,,false,false,2,2
+tech:5903,tech_proto,5903,T太空编队扩容,,T太空编队扩容,,,,,,,,,,false,false,3,3
+tech:5904,tech_proto,5904,T太空编队扩容,,T太空编队扩容,,,,,,,,,,false,false,4,4
+tech:5905,tech_proto,5905,T太空编队扩容,,T太空编队扩容,,,,,,,,,,false,false,5,5
+tech:5906,tech_proto,5906,T太空编队扩容,,T太空编队扩容,,,,,,,,,,false,false,6,6
+tech:5907,tech_proto,5907,T太空编队扩容,,T太空编队扩容,,,,,,,,,,false,false,7,7
+tech:6001,tech_proto,6001,T全局耐久度提升,,T全局耐久度提升,,,,,,,,,,false,false,1,1
+tech:6002,tech_proto,6002,T全局耐久度提升,,T全局耐久度提升,,,,,,,,,,false,false,2,2
+tech:6003,tech_proto,6003,T全局耐久度提升,,T全局耐久度提升,,,,,,,,,,false,false,3,3
+tech:6004,tech_proto,6004,T全局耐久度提升,,T全局耐久度提升,,,,,,,,,,false,false,4,4
+tech:6005,tech_proto,6005,T全局耐久度提升,,T全局耐久度提升,,,,,,,,,,false,false,5,5
+tech:6006,tech_proto,6006,T全局耐久度提升,,T全局耐久度提升,,,,,,,,,,false,false,6,10000
+tech:6101,tech_proto,6101,T干扰塔效果,,T干扰塔效果,,,,,,,,,,false,false,1,1
+tech:6102,tech_proto,6102,T干扰塔效果,,T干扰塔效果,,,,,,,,,,false,false,2,2
+tech:6103,tech_proto,6103,T干扰塔效果,,T干扰塔效果,,,,,,,,,,false,false,3,3
+tech:6104,tech_proto,6104,T干扰塔效果,,T干扰塔效果,,,,,,,,,,false,false,4,4
+tech:6105,tech_proto,6105,T干扰塔效果,,T干扰塔效果,,,,,,,,,,false,false,5,5
+tech:6106,tech_proto,6106,T干扰塔效果,,T干扰塔效果,,,,,,,,,,false,false,6,6
+recipe:1,recipe_proto,1,铁块,,铁块,Smelt,1,60,,,,,,,,,,
+recipe:2,recipe_proto,2,磁铁,,磁铁,Smelt,1,90,,,,,,,,,,
+recipe:3,recipe_proto,3,铜块,,铜块,Smelt,1,60,,,,,,,,,,
+recipe:4,recipe_proto,4,石材,,石材,Smelt,1,60,,,,,,,,,,
+recipe:5,recipe_proto,5,齿轮,,齿轮,Assemble,4,60,,,,,,,,,,
+recipe:6,recipe_proto,6,磁线圈,,磁线圈,Assemble,4,60,,,,,,,,,,
+recipe:7,recipe_proto,7,风力涡轮机,,风力涡轮机,Assemble,4,240,,,,,,,,,,
+recipe:8,recipe_proto,8,电力感应塔,,电力感应塔,Assemble,4,60,,,,,,,,,,
+recipe:9,recipe_proto,9,电磁矩阵,,电磁矩阵,Research,15,180,,,,,,,,,,
+recipe:10,recipe_proto,10,矩阵研究站,,矩阵研究站,Assemble,4,180,,,,,,,,,,
+recipe:11,recipe_proto,11,棱镜,,棱镜,Assemble,4,120,,,,,,,,,,
+recipe:12,recipe_proto,12,电浆激发器,,电浆激发器,Assemble,4,120,,,,,,,,,,
+recipe:13,recipe_proto,13,无线输电塔,,无线输电塔,Assemble,4,180,,,,,,,,,,
+recipe:14,recipe_proto,14,原油萃取站,,原油萃取站,Assemble,4,480,,,,,,,,,,
+recipe:15,recipe_proto,15,原油精炼厂,,原油精炼厂,Assemble,4,360,,,,,,,,,,
+recipe:16,recipe_proto,16,等离子精炼,,等离子精炼,Refine,3,240,,,,,,,,,,
+recipe:17,recipe_proto,17,高能石墨,,高能石墨,Smelt,1,120,,,,,,,,,,
+recipe:18,recipe_proto,18,能量矩阵,,能量矩阵,Research,15,360,,,,,,,,,,
+recipe:19,recipe_proto,19,氢燃料棒,,氢燃料棒,Assemble,4,360,,,,,,,,,,
+recipe:20,recipe_proto,20,推进器,,推进器,Assemble,4,240,,,,,,,,,,
+recipe:21,recipe_proto,21,加力推进器,,加力推进器,Assemble,4,360,,,,,,,,,,
+recipe:22,recipe_proto,22,化工厂,,化工厂,Assemble,4,300,,,,,,,,,,
+recipe:23,recipe_proto,23,塑料,,塑料,Chemical,2,180,,,,,,,,,,
+recipe:24,recipe_proto,24,硫酸,,硫酸,Chemical,2,360,,,,,,,,,,
+recipe:25,recipe_proto,25,有机晶体,,有机晶体,Chemical,2,360,,,,,,,,,,
+recipe:26,recipe_proto,26,钛晶石,,钛晶石,Assemble,4,240,,,,,,,,,,
+recipe:27,recipe_proto,27,结构矩阵,,结构矩阵,Research,15,480,,,,,,,,,,
+recipe:28,recipe_proto,28,卡西米尔晶体,,卡西米尔晶体,Assemble,4,240,,,,,,,,,,
+recipe:29,recipe_proto,29,卡西米尔晶体（高效）,,卡西米尔晶体（高效）,Assemble,4,240,,,,,,,,,,
+recipe:30,recipe_proto,30,钛化玻璃,,钛化玻璃,Assemble,4,300,,,,,,,,,,
+recipe:31,recipe_proto,31,石墨烯,,石墨烯,Chemical,2,180,,,,,,,,,,
+recipe:32,recipe_proto,32,石墨烯（高效）,,石墨烯（高效）,Chemical,2,120,,,,,,,,,,
+recipe:33,recipe_proto,33,碳纳米管,,碳纳米管,Chemical,2,240,,,,,,,,,,
+recipe:34,recipe_proto,34,硅石,,硅石,Smelt,1,600,,,,,,,,,,
+recipe:35,recipe_proto,35,碳纳米管（高效）,,碳纳米管（高效）,Chemical,2,240,,,,,,,,,,
+recipe:36,recipe_proto,36,粒子宽带,,粒子宽带,Assemble,4,480,,,,,,,,,,
+recipe:37,recipe_proto,37,晶格硅,,晶格硅,Smelt,1,120,,,,,,,,,,
+recipe:38,recipe_proto,38,位面过滤器,,位面过滤器,Assemble,4,720,,,,,,,,,,
+recipe:39,recipe_proto,39,微型粒子对撞机,,微型粒子对撞机,Assemble,4,900,,,,,,,,,,
+recipe:40,recipe_proto,40,重氢,,重氢,Particle,5,150,,,,,,,,,,
+recipe:41,recipe_proto,41,氘核燃料棒,,氘核燃料棒,Assemble,4,720,,,,,,,,,,
+recipe:42,recipe_proto,42,湮灭约束球,,湮灭约束球,Assemble,4,1200,,,,,,,,,,
+recipe:43,recipe_proto,43,人造恒星,,人造恒星,Assemble,4,1800,,,,,,,,,,
+recipe:44,recipe_proto,44,反物质燃料棒,,反物质燃料棒,Assemble,4,1440,,,,,,,,,,
+recipe:45,recipe_proto,45,制造台 Mk.I,,制造台 Mk.I,Assemble,4,120,,,,,,,,,,
+recipe:46,recipe_proto,46,制造台 Mk.II,,制造台 Mk.II,Assemble,4,180,,,,,,,,,,
+recipe:47,recipe_proto,47,制造台 Mk.III,,制造台 Mk.III,Assemble,4,240,,,,,,,,,,
+recipe:48,recipe_proto,48,采矿机,,采矿机,Assemble,4,180,,,,,,,,,,
+recipe:49,recipe_proto,49,抽水站,,抽水站,Assemble,4,240,,,,,,,,,,
+recipe:50,recipe_proto,50,电路板,,电路板,Assemble,4,60,,,,,,,,,,
+recipe:51,recipe_proto,51,处理器,,处理器,Assemble,4,180,,,,,,,,,,
+recipe:52,recipe_proto,52,量子芯片,,量子芯片,Assemble,4,360,,,,,,,,,,
+recipe:53,recipe_proto,53,微晶元件,,微晶元件,Assemble,4,120,,,,,,,,,,
+recipe:54,recipe_proto,54,有机晶体（原始）,,有机晶体（原始）,Assemble,4,360,,,,,,,,,,
+recipe:55,recipe_proto,55,信息矩阵,,信息矩阵,Research,15,600,,,,,,,,,,
+recipe:56,recipe_proto,56,电弧熔炉,,电弧熔炉,Assemble,4,180,,,,,,,,,,
+recipe:57,recipe_proto,57,玻璃,,玻璃,Smelt,1,120,,,,,,,,,,
+recipe:58,recipe_proto,58,X射线裂解,,X射线裂解,Refine,3,240,,,,,,,,,,
+recipe:59,recipe_proto,59,高纯硅块,,高纯硅块,Smelt,1,120,,,,,,,,,,
+recipe:60,recipe_proto,60,金刚石,,金刚石,Smelt,1,120,,,,,,,,,,
+recipe:61,recipe_proto,61,金刚石（高效）,,金刚石（高效）,Smelt,1,90,,,,,,,,,,
+recipe:62,recipe_proto,62,晶格硅（高效）,,晶格硅（高效）,Assemble,4,90,,,,,,,,,,
+recipe:63,recipe_proto,63,钢材,,钢材,Smelt,1,180,,,,,,,,,,
+recipe:64,recipe_proto,64,火力发电厂,,火力发电厂,Assemble,4,300,,,,,,,,,,
+recipe:65,recipe_proto,65,钛块,,钛块,Smelt,1,120,,,,,,,,,,
+recipe:66,recipe_proto,66,钛合金,,钛合金,Smelt,1,720,,,,,,,,,,
+recipe:67,recipe_proto,67,太阳能板,,太阳能板,Assemble,4,360,,,,,,,,,,
+recipe:68,recipe_proto,68,光子合并器,,光子合并器,Assemble,4,180,,,,,,,,,,
+recipe:69,recipe_proto,69,光子合并器（高效）,,光子合并器（高效）,Assemble,4,180,,,,,,,,,,
+recipe:70,recipe_proto,70,太阳帆,,太阳帆,Assemble,4,240,,,,,,,,,,
+recipe:71,recipe_proto,71,电磁轨道弹射器,,电磁轨道弹射器,Assemble,4,360,,,,,,,,,,
+recipe:72,recipe_proto,72,射线接收站,,射线接收站,Assemble,4,480,,,,,,,,,,
+recipe:73,recipe_proto,73,卫星配电站,,卫星配电站,Assemble,4,300,,,,,,,,,,
+recipe:74,recipe_proto,74,光子物质化,,光子物质化,Particle,5,120,,,,,,,,,,
+recipe:75,recipe_proto,75,宇宙矩阵,,宇宙矩阵,Research,15,900,,,,,,,,,,
+recipe:76,recipe_proto,76,蓄电器,,蓄电器,Assemble,4,180,,,,,,,,,,
+recipe:77,recipe_proto,77,能量枢纽,,能量枢纽,Assemble,4,900,,,,,,,,,,
+recipe:78,recipe_proto,78,空间翘曲器,,空间翘曲器,Assemble,4,600,,,,,,,,,,
+recipe:79,recipe_proto,79,空间翘曲器（高级）,,空间翘曲器（高级）,Assemble,4,600,,,,,,,,,,
+recipe:80,recipe_proto,80,框架材料,,框架材料,Assemble,4,360,,,,,,,,,,
+recipe:81,recipe_proto,81,戴森球组件,,戴森球组件,Assemble,4,480,,,,,,,,,,
+recipe:82,recipe_proto,82,垂直发射井,,垂直发射井,Assemble,4,1800,,,,,,,,,,
+recipe:83,recipe_proto,83,小型运载火箭,,小型运载火箭,Assemble,4,360,,,,,,,,,,
+recipe:84,recipe_proto,84,低速传送带,,低速传送带,Assemble,4,60,,,,,,,,,,
+recipe:85,recipe_proto,85,低速分拣器,,低速分拣器,Assemble,4,60,,,,,,,,,,
+recipe:86,recipe_proto,86,小型储物仓,,小型储物仓,Assemble,4,120,,,,,,,,,,
+recipe:87,recipe_proto,87,四向分流器,,四向分流器,Assemble,4,120,,,,,,,,,,
+recipe:88,recipe_proto,88,高速分拣器,,高速分拣器,Assemble,4,60,,,,,,,,,,
+recipe:89,recipe_proto,89,高速传送带,,高速传送带,Assemble,4,60,,,,,,,,,,
+recipe:90,recipe_proto,90,极速分拣器,,极速分拣器,Assemble,4,60,,,,,,,,,,
+recipe:91,recipe_proto,91,大型储物仓,,大型储物仓,Assemble,4,240,,,,,,,,,,
+recipe:92,recipe_proto,92,极速传送带,,极速传送带,Assemble,4,60,,,,,,,,,,
+recipe:93,recipe_proto,93,物流运输站,,物流运输站,Assemble,4,1200,,,,,,,,,,
+recipe:94,recipe_proto,94,物流运输机,,物流运输机,Assemble,4,240,,,,,,,,,,
+recipe:95,recipe_proto,95,星际物流运输站,,星际物流运输站,Assemble,4,1800,,,,,,,,,,
+recipe:96,recipe_proto,96,星际物流运输船,,星际物流运输船,Assemble,4,360,,,,,,,,,,
+recipe:97,recipe_proto,97,电动机,,电动机,Assemble,4,120,,,,,,,,,,
+recipe:98,recipe_proto,98,电磁涡轮,,电磁涡轮,Assemble,4,120,,,,,,,,,,
+recipe:99,recipe_proto,99,粒子容器,,粒子容器,Assemble,4,240,,,,,,,,,,
+recipe:100,recipe_proto,100,粒子容器（高效）,,粒子容器（高效）,Assemble,4,240,,,,,,,,,,
+recipe:101,recipe_proto,101,引力透镜,,引力透镜,Assemble,4,360,,,,,,,,,,
+recipe:102,recipe_proto,102,引力矩阵,,引力矩阵,Research,15,1440,,,,,,,,,,
+recipe:103,recipe_proto,103,超级磁场环,,超级磁场环,Assemble,4,180,,,,,,,,,,
+recipe:104,recipe_proto,104,奇异物质,,奇异物质,Particle,5,480,,,,,,,,,,
+recipe:106,recipe_proto,106,增产剂 Mk.I,,增产剂 Mk.I,Assemble,4,30,,,,,,,,,,
+recipe:107,recipe_proto,107,增产剂 Mk.II,,增产剂 Mk.II,Assemble,4,60,,,,,,,,,,
+recipe:108,recipe_proto,108,增产剂 Mk.III,,增产剂 Mk.III,Assemble,4,120,,,,,,,,,,
+recipe:109,recipe_proto,109,喷涂机,,喷涂机,Assemble,4,180,,,,,,,,,,
+recipe:110,recipe_proto,110,分馏塔,,分馏塔,Assemble,4,180,,,,,,,,,,
+recipe:111,recipe_proto,111,轨道采集器,,轨道采集器,Assemble,4,1800,,,,,,,,,,
+recipe:112,recipe_proto,112,地基,,地基,Assemble,4,60,,,,,,,,,,
+recipe:113,recipe_proto,113,微型聚变发电站,,微型聚变发电站,Assemble,4,600,,,,,,,,,,
+recipe:114,recipe_proto,114,储液罐,,储液罐,Assemble,4,120,,,,,,,,,,
+recipe:115,recipe_proto,115,重氢分馏,,重氢分馏,Fractionate,8,1,,,,,,,,,,
+recipe:116,recipe_proto,116,位面熔炉,,位面熔炉,Assemble,4,300,,,,,,,,,,
+recipe:117,recipe_proto,117,流速器,,流速器,Assemble,4,120,,,,,,,,,,
+recipe:118,recipe_proto,118,地热发电站,,地热发电站,Assemble,4,360,,,,,,,,,,
+recipe:119,recipe_proto,119,大型采矿机,,大型采矿机,Assemble,4,1200,,,,,,,,,,
+recipe:120,recipe_proto,120,自动集装机,,自动集装机,Assemble,4,240,,,,,,,,,,
+recipe:121,recipe_proto,121,重整精炼,,重整精炼,Refine,3,240,,,,,,,,,,
+recipe:122,recipe_proto,122,物流配送器,,物流配送器,Assemble,4,480,,,,,,,,,,
+recipe:123,recipe_proto,123,配送运输机,,配送运输机,Assemble,4,120,,,,,,,,,,
+recipe:124,recipe_proto,124,化工厂 Mk.II,,化工厂 Mk.II,Assemble,4,600,,,,,,,,,,
+recipe:125,recipe_proto,125,高斯机枪塔,,高斯机枪塔,Assemble,4,240,,,,,,,,,,
+recipe:126,recipe_proto,126,高频激光塔,,高频激光塔,Assemble,4,360,,,,,,,,,,
+recipe:127,recipe_proto,127,聚爆加农炮,,聚爆加农炮,Assemble,4,300,,,,,,,,,,
+recipe:128,recipe_proto,128,磁化电浆炮,,磁化电浆炮,Assemble,4,600,,,,,,,,,,
+recipe:129,recipe_proto,129,导弹防御塔,,导弹防御塔,Assemble,4,360,,,,,,,,,,
+recipe:130,recipe_proto,130,干扰塔,,干扰塔,Assemble,4,300,,,,,,,,,,
+recipe:131,recipe_proto,131,信标,,信标,Assemble,4,360,,,,,,,,,,
+recipe:132,recipe_proto,132,护盾发生器,,护盾发生器,Assemble,4,600,,,,,,,,,,
+recipe:133,recipe_proto,133,燃烧单元,,燃烧单元,Assemble,4,180,,,,,,,,,,
+recipe:134,recipe_proto,134,爆破单元,,爆破单元,Chemical,2,360,,,,,,,,,,
+recipe:135,recipe_proto,135,晶石爆破单元,,晶石爆破单元,Chemical,2,1440,,,,,,,,,,
+recipe:136,recipe_proto,136,机枪弹箱,,机枪弹箱,Assemble,4,60,,,,,,,,,,
+recipe:137,recipe_proto,137,钛化弹箱,,钛化弹箱,Assemble,4,120,,,,,,,,,,
+recipe:138,recipe_proto,138,超合金弹箱,,超合金弹箱,Assemble,4,180,,,,,,,,,,
+recipe:139,recipe_proto,139,炮弹组,,炮弹组,Assemble,4,90,,,,,,,,,,
+recipe:140,recipe_proto,140,高爆炮弹组,,高爆炮弹组,Assemble,4,180,,,,,,,,,,
+recipe:141,recipe_proto,141,晶石炮弹组,,晶石炮弹组,Assemble,4,360,,,,,,,,,,
+recipe:142,recipe_proto,142,等离子胶囊,,等离子胶囊,Assemble,4,120,,,,,,,,,,
+recipe:143,recipe_proto,143,反物质胶囊,,反物质胶囊,Assemble,4,120,,,,,,,,,,
+recipe:144,recipe_proto,144,导弹组,,导弹组,Assemble,4,120,,,,,,,,,,
+recipe:145,recipe_proto,145,超音速导弹组,,超音速导弹组,Assemble,4,240,,,,,,,,,,
+recipe:146,recipe_proto,146,引力导弹组,,引力导弹组,Assemble,4,360,,,,,,,,,,
+recipe:147,recipe_proto,147,地面战斗机-E型,,地面战斗机-E型,Assemble,4,120,,,,,,,,,,
+recipe:148,recipe_proto,148,地面战斗机-A型,,地面战斗机-A型,Assemble,4,240,,,,,,,,,,
+recipe:149,recipe_proto,149,地面战斗机-F型,,地面战斗机-F型,Assemble,4,240,,,,,,,,,,
+recipe:150,recipe_proto,150,太空战斗机-A型,,太空战斗机-A型,Assemble,4,300,,,,,,,,,,
+recipe:151,recipe_proto,151,太空战斗机-F型,,太空战斗机-F型,Assemble,4,480,,,,,,,,,,
+recipe:105,recipe_proto,105,动力引擎,,动力引擎,Assemble,4,180,,,,,,,,,,
+recipe:152,recipe_proto,152,战场分析基站,,战场分析基站,Assemble,4,360,,,,,,,,,,
+recipe:153,recipe_proto,153,矩阵研究站 Mk.II,,矩阵研究站 Mk.II,Assemble,4,240,,,,,,,,,,
+recipe:154,recipe_proto,154,制造台 Mk.IV,,制造台 Mk.IV,Assemble,4,300,,,,,,,,,,
+recipe:155,recipe_proto,155,熔炉 Mk.III,,熔炉 Mk.III,Assemble,4,360,,,,,,,,,,
+recipe:156,recipe_proto,156,金色燃料棒,,金色燃料棒,Assemble,4,1920,,,,,,,,,,
+recipe:157,recipe_proto,157,地面电浆炮,,地面电浆炮,Assemble,4,480,,,,,,,,,,
+recipe:158,recipe_proto,158,电磁干扰胶囊,,电磁干扰胶囊,Assemble,4,120,,,,,,,,,,
+recipe:159,recipe_proto,159,电磁压制胶囊,,电磁压制胶囊,Assemble,4,480,,,,,,,,,,
+recipe:160,recipe_proto,160,集装分拣器,,集装分拣器,Assemble,4,60,,,,,,,,,,
+recipe:161,recipe_proto,161,激光灯塔,,激光灯塔,Assemble,4,240,,,,,,,,,,
+item:1001,item_proto,1001,铁矿,,铁矿,,,,Resource,1,100,false,false,false,,,,
+item:1002,item_proto,1002,铜矿,,铜矿,,,,Resource,1,100,false,false,false,,,,
+item:1003,item_proto,1003,Silicon Ore,Silicon Ore,硅石,,,,Resource,1,100,false,false,false,,,,
+item:1004,item_proto,1004,Titanium Ore,Titanium Ore,钛石,,,,Resource,1,100,false,false,false,,,,
+item:1005,item_proto,1005,Stone,Stone,石矿,,,,Resource,1,100,false,false,false,,,,
+item:1006,item_proto,1006,煤矿,,煤矿,,,,Resource,1,100,false,false,false,,,,
+item:1030,item_proto,1030,木材,,木材,,,,Resource,1,100,false,false,false,,,,
+item:1031,item_proto,1031,植物燃料,,植物燃料,,,,Resource,1,500,false,false,false,,,,
+item:1011,item_proto,1011,可燃冰,,可燃冰,,,,Resource,1,50,false,false,false,,,,
+item:1012,item_proto,1012,金伯利矿石,,金伯利矿石,,,,Resource,1,50,false,false,false,,,,
+item:1013,item_proto,1013,分形硅石,,分形硅石,,,,Resource,1,50,false,false,false,,,,
+item:1014,item_proto,1014,光栅石,,光栅石,,,,Resource,1,50,false,false,false,,,,
+item:1015,item_proto,1015,刺笋结晶,,刺笋结晶,,,,Resource,1,50,false,false,false,,,,
+item:1016,item_proto,1016,单极磁石,,单极磁石,,,,Resource,1,50,false,false,false,,,,
+item:1101,item_proto,1101,铁块,,铁块,,,,Material,2,100,false,false,false,,,,
+item:1104,item_proto,1104,铜块,,铜块,,,,Material,2,100,false,false,false,,,,
+item:1105,item_proto,1105,High-Purity Silicon,High-Purity Silicon,高纯硅块,,,,Material,2,100,false,false,false,,,,
+item:1106,item_proto,1106,Titanium Ingot,Titanium Ingot,钛块,,,,Material,2,100,false,false,false,,,,
+item:1108,item_proto,1108,石材,,石材,,,,Material,2,100,false,false,false,,,,
+item:1109,item_proto,1109,高能石墨,,高能石墨,,,,Material,2,100,false,false,false,,,,
+item:1103,item_proto,1103,钢材,,钢材,,,,Material,2,100,false,false,false,,,,
+item:1107,item_proto,1107,钛合金,,钛合金,,,,Material,2,100,false,false,false,,,,
+item:1110,item_proto,1110,玻璃,,玻璃,,,,Material,2,100,false,false,false,,,,
+item:1119,item_proto,1119,钛化玻璃,,钛化玻璃,,,,Material,2,100,false,false,false,,,,
+item:1111,item_proto,1111,棱镜,,棱镜,,,,Material,2,100,false,false,false,,,,
+item:1112,item_proto,1112,金刚石,,金刚石,,,,Material,2,100,false,false,false,,,,
+item:1113,item_proto,1113,晶格硅,,晶格硅,,,,Material,2,100,false,false,false,,,,
+item:1201,item_proto,1201,齿轮,,齿轮,,,,Component,3,200,false,false,false,,,,
+item:1102,item_proto,1102,磁铁,,磁铁,,,,Material,2,200,false,false,false,,,,
+item:1202,item_proto,1202,磁线圈,,磁线圈,,,,Component,3,200,false,false,false,,,,
+item:1203,item_proto,1203,电动机,,电动机,,,,Component,3,100,false,false,false,,,,
+item:1204,item_proto,1204,电磁涡轮,,电磁涡轮,,,,Component,3,100,false,false,false,,,,
+item:1205,item_proto,1205,超级磁场环,,超级磁场环,,,,Component,3,100,false,false,false,,,,
+item:1206,item_proto,1206,粒子容器,,粒子容器,,,,Component,3,100,false,false,false,,,,
+item:1127,item_proto,1127,奇异物质,,奇异物质,,,,Material,2,100,false,false,false,,,,
+item:1301,item_proto,1301,电路板,,电路板,,,,Component,3,200,false,false,false,,,,
+item:1303,item_proto,1303,处理器,,处理器,,,,Component,3,200,false,false,false,,,,
+item:1305,item_proto,1305,量子芯片,,量子芯片,,,,Component,3,200,false,false,false,,,,
+item:1302,item_proto,1302,微晶元件,,微晶元件,,,,Component,3,200,false,false,false,,,,
+item:1304,item_proto,1304,位面过滤器,,位面过滤器,,,,Component,3,200,false,false,false,,,,
+item:1402,item_proto,1402,粒子宽带,,粒子宽带,,,,Component,3,200,false,false,false,,,,
+item:1401,item_proto,1401,电浆激发器,,电浆激发器,,,,Component,3,200,false,false,false,,,,
+item:1404,item_proto,1404,光子合并器,,光子合并器,,,,Component,3,200,false,false,false,,,,
+item:1501,item_proto,1501,太阳帆,,太阳帆,,,,Product,4,200,false,false,false,,,,
+item:1000,item_proto,1000,水,,水,,,,Resource,1,20,true,false,false,,,,
+item:1007,item_proto,1007,原油,,原油,,,,Resource,1,20,true,false,false,,,,
+item:1114,item_proto,1114,精炼油,,精炼油,,,,Material,2,20,true,false,false,,,,
+item:1116,item_proto,1116,硫酸,,硫酸,,,,Material,2,20,true,false,false,,,,
+item:1120,item_proto,1120,氢,,氢,,,,Material,2,20,true,false,false,,,,
+item:1121,item_proto,1121,重氢,,重氢,,,,Material,2,20,true,false,false,,,,
+item:1122,item_proto,1122,反物质,,反物质,,,,Material,2,20,false,false,false,,,,
+item:1208,item_proto,1208,临界光子,,临界光子,,,,Material,2,100,false,false,false,,,,
+item:1801,item_proto,1801,氢燃料棒,,氢燃料棒,,,,Product,4,30,false,false,false,,,,
+item:1802,item_proto,1802,氘核燃料棒,,氘核燃料棒,,,,Product,4,30,false,false,false,,,,
+item:1803,item_proto,1803,反物质燃料棒,,反物质燃料棒,,,,Product,4,30,false,false,false,,,,
+item:1804,item_proto,1804,金色燃料棒,,金色燃料棒,,,,Product,4,50,false,false,false,,,,
+item:1115,item_proto,1115,塑料,,塑料,,,,Material,2,100,false,false,false,,,,
+item:1123,item_proto,1123,石墨烯,,石墨烯,,,,Material,2,100,false,false,false,,,,
+item:1124,item_proto,1124,碳纳米管,,碳纳米管,,,,Material,2,100,false,false,false,,,,
+item:1117,item_proto,1117,Organic Crystal,Organic Crystal,有机晶体,,,,Material,2,100,false,false,false,,,,
+item:1118,item_proto,1118,Titanium Crystal,Titanium Crystal,钛晶石,,,,Material,2,100,false,false,false,,,,
+item:1126,item_proto,1126,卡西米尔晶体,,卡西米尔晶体,,,,Material,2,100,false,false,false,,,,
+item:1128,item_proto,1128,燃烧单元,,燃烧单元,,,,Component,3,100,false,false,false,,,,
+item:1129,item_proto,1129,爆破单元,,爆破单元,,,,Component,3,100,false,false,false,,,,
+item:1130,item_proto,1130,晶石爆破单元,,晶石爆破单元,,,,Component,3,100,false,false,false,,,,
+item:1209,item_proto,1209,引力透镜,,引力透镜,,,,Component,3,100,false,false,false,,,,
+item:1210,item_proto,1210,空间翘曲器,,空间翘曲器,,,,Component,3,100,false,false,false,,,,
+item:1403,item_proto,1403,湮灭约束球,,湮灭约束球,,,,Component,3,20,false,false,false,,,,
+item:1407,item_proto,1407,动力引擎,,动力引擎,,,,Component,3,200,false,false,false,,,,
+item:1405,item_proto,1405,推进器2,,推进器2,,,,Component,3,200,false,false,false,,,,
+item:1406,item_proto,1406,加力推进器,,加力推进器,,,,Component,3,100,false,false,false,,,,
+item:5003,item_proto,5003,配送运输机,,配送运输机,,,,Logistics,5,200,false,true,false,,,,
+item:5001,item_proto,5001,物流运输机,,物流运输机,,,,Logistics,5,200,false,true,false,,,,
+item:5002,item_proto,5002,星际物流运输船,,星际物流运输船,,,,Logistics,5,50,false,true,false,,,,
+item:1125,item_proto,1125,框架材料,,框架材料,,,,Material,2,100,false,false,false,,,,
+item:1502,item_proto,1502,戴森球组件,,戴森球组件,,,,Component,3,100,false,false,false,,,,
+item:1503,item_proto,1503,小型运载火箭,,小型运载火箭,,,,Product,4,20,false,true,false,,,,
+item:1131,item_proto,1131,地基,,地基,,,,Decoration,7,1000,false,false,true,,,,
+item:1141,item_proto,1141,增产剂 Mk.I,,增产剂 Mk.I,,,,Material,2,200,false,false,false,,,,
+item:1142,item_proto,1142,增产剂 Mk.II,,增产剂 Mk.II,,,,Material,2,200,false,false,false,,,,
+item:1143,item_proto,1143,增产剂 Mk.III,,增产剂 Mk.III,,,,Material,2,200,false,false,false,,,,
+item:1601,item_proto,1601,机枪弹箱,,机枪弹箱,,,,Product,4,100,false,false,false,,,,
+item:1602,item_proto,1602,钛化弹箱,,钛化弹箱,,,,Product,4,100,false,false,false,,,,
+item:1603,item_proto,1603,超合金弹箱,,超合金弹箱,,,,Product,4,100,false,false,false,,,,
+item:1604,item_proto,1604,炮弹组,,炮弹组,,,,Product,4,100,false,false,false,,,,
+item:1605,item_proto,1605,高爆炮弹组,,高爆炮弹组,,,,Product,4,100,false,false,false,,,,
+item:1606,item_proto,1606,晶石炮弹组,,晶石炮弹组,,,,Product,4,100,false,false,false,,,,
+item:1607,item_proto,1607,等离子胶囊,,等离子胶囊,,,,Product,4,100,false,false,false,,,,
+item:1608,item_proto,1608,反物质胶囊,,反物质胶囊,,,,Product,4,100,false,false,false,,,,
+item:1609,item_proto,1609,导弹组,,导弹组,,,,Product,4,100,false,false,false,,,,
+item:1610,item_proto,1610,超音速导弹组,,超音速导弹组,,,,Product,4,100,false,false,false,,,,
+item:1611,item_proto,1611,引力导弹组,,引力导弹组,,,,Product,4,100,false,false,false,,,,
+item:1612,item_proto,1612,电磁干扰胶囊,,电磁干扰胶囊,,,,Product,4,100,false,false,false,,,,
+item:1613,item_proto,1613,电磁压制胶囊,,电磁压制胶囊,,,,Product,4,100,false,false,false,,,,
+item:5101,item_proto,5101,地面战斗机-E型,,地面战斗机-E型,,,,Product,4,100,false,true,false,,,,
+item:5102,item_proto,5102,地面战斗机-A型,,地面战斗机-A型,,,,Product,4,100,false,true,false,,,,
+item:5103,item_proto,5103,地面战斗机-F型,,地面战斗机-F型,,,,Product,4,100,false,true,false,,,,
+item:5111,item_proto,5111,太空战斗机-A型,,太空战斗机-A型,,,,Product,4,50,false,true,false,,,,
+item:5112,item_proto,5112,太空战斗机-F型,,太空战斗机-F型,,,,Product,4,50,false,true,false,,,,
+item:5201,item_proto,5201,存储单元,,存储单元,,,,DarkFog,10,1000,false,false,false,,,,
+item:5202,item_proto,5202,硅基神经元,,硅基神经元,,,,DarkFog,10,500,false,false,false,,,,
+item:5203,item_proto,5203,物质重组器,,物质重组器,,,,DarkFog,10,500,false,false,false,,,,
+item:5204,item_proto,5204,负熵奇点,,负熵奇点,,,,DarkFog,10,500,false,false,false,,,,
+item:5205,item_proto,5205,虚粒子,,虚粒子,,,,DarkFog,10,500,false,false,false,,,,
+item:5206,item_proto,5206,能量碎片,,能量碎片,,,,DarkFog,10,2000,false,false,false,,,,
+item:2001,item_proto,2001,低速传送带,,低速传送带,,,,Logistics,5,300,false,true,true,,,,
+item:2002,item_proto,2002,高速传送带,,高速传送带,,,,Logistics,5,300,false,true,true,,,,
+item:2003,item_proto,2003,极速传送带,,极速传送带,,,,Logistics,5,300,false,true,true,,,,
+item:2011,item_proto,2011,低速分拣器,,低速分拣器,,,,Logistics,5,200,false,true,true,,,,
+item:2012,item_proto,2012,高速分拣器,,高速分拣器,,,,Logistics,5,200,false,true,true,,,,
+item:2013,item_proto,2013,极速分拣器,,极速分拣器,,,,Logistics,5,200,false,true,true,,,,
+item:2014,item_proto,2014,集装分拣器,,集装分拣器,,,,Logistics,5,200,false,true,true,,,,
+item:2020,item_proto,2020,四向分流器,,四向分流器,,,,Logistics,5,50,false,true,true,,,,
+item:2040,item_proto,2040,自动集装机,,自动集装机,,,,Logistics,5,50,false,true,true,,,,
+item:2030,item_proto,2030,流速器,,流速器,,,,Logistics,5,100,false,true,true,,,,
+item:2313,item_proto,2313,喷涂机,,喷涂机,,,,Production,6,50,false,true,true,,,,
+item:2107,item_proto,2107,物流配送器,,物流配送器,,,,Logistics,5,50,false,true,true,,,,
+item:2101,item_proto,2101,小型储物仓,,小型储物仓,,,,Logistics,5,50,false,true,true,,,,
+item:2102,item_proto,2102,大型储物仓,,大型储物仓,,,,Logistics,5,50,false,true,true,,,,
+item:2106,item_proto,2106,储液罐,,储液罐,,,,Logistics,5,50,false,true,true,,,,
+item:2303,item_proto,2303,制造台 Mk.I,,制造台 Mk.I,,,,Production,6,50,false,true,true,,,,
+item:2304,item_proto,2304,制造台 Mk.II,,制造台 Mk.II,,,,Production,6,50,false,true,true,,,,
+item:2305,item_proto,2305,制造台 Mk.III,,制造台 Mk.III,,,,Production,6,50,false,true,true,,,,
+item:2318,item_proto,2318,制造台 Mk.IV,,制造台 Mk.IV,,,,Production,6,50,false,true,true,,,,
+item:2201,item_proto,2201,电力感应塔,,电力感应塔,,,,Logistics,5,100,false,true,true,,,,
+item:2202,item_proto,2202,无线输电塔,,无线输电塔,,,,Logistics,5,100,false,true,true,,,,
+item:2212,item_proto,2212,卫星配电站,,卫星配电站,,,,Logistics,5,30,false,true,true,,,,
+item:2401,item_proto,2401,激光灯塔,,激光灯塔,,,,Decoration,7,50,false,true,true,,,,
+item:2203,item_proto,2203,风力涡轮机,,风力涡轮机,,,,Production,6,50,false,true,true,,,,
+item:2204,item_proto,2204,火力发电厂,,火力发电厂,,,,Production,6,50,false,true,true,,,,
+item:2211,item_proto,2211,微型聚变发电站,,微型聚变发电站,,,,Production,6,50,false,true,true,,,,
+item:2213,item_proto,2213,地热发电站,,地热发电站,,,,Production,6,50,false,true,true,,,,
+item:2301,item_proto,2301,采矿机,,采矿机,,,,Production,6,50,false,true,true,,,,
+item:2316,item_proto,2316,大型采矿机,,大型采矿机,,,,Production,6,30,false,true,true,,,,
+item:2306,item_proto,2306,抽水站,,抽水站,,,,Production,6,30,false,true,true,,,,
+item:2302,item_proto,2302,电弧熔炉,,电弧熔炉,,,,Production,6,50,false,true,true,,,,
+item:2315,item_proto,2315,位面熔炉,,位面熔炉,,,,Production,6,50,false,true,true,,,,
+item:2319,item_proto,2319,熔炉 Mk.III,,熔炉 Mk.III,,,,Production,6,50,false,true,true,,,,
+item:2307,item_proto,2307,原油萃取站,,原油萃取站,,,,Production,6,20,false,true,true,,,,
+item:2308,item_proto,2308,原油精炼厂,,原油精炼厂,,,,Production,6,30,false,true,true,,,,
+item:2309,item_proto,2309,化工厂,,化工厂,,,,Production,6,30,false,true,true,,,,
+item:2317,item_proto,2317,化工厂 Mk.II,,化工厂 Mk.II,,,,Production,6,30,false,true,true,,,,
+item:2314,item_proto,2314,分馏塔,,分馏塔,,,,Production,6,30,false,true,true,,,,
+item:2205,item_proto,2205,太阳能板,,太阳能板,,,,Production,6,50,false,true,true,,,,
+item:2206,item_proto,2206,蓄电器,,蓄电器,,,,Logistics,5,50,false,true,true,,,,
+item:2207,item_proto,2207,蓄电器（满）,,蓄电器（满）,,,,Logistics,5,50,false,true,true,,,,
+item:2311,item_proto,2311,电磁轨道弹射器,,电磁轨道弹射器,,,,Production,6,30,false,true,true,,,,
+item:2208,item_proto,2208,射线接收站,,射线接收站,,,,Production,6,30,false,true,true,,,,
+item:2312,item_proto,2312,垂直发射井,,垂直发射井,,,,Production,6,10,false,true,true,,,,
+item:2209,item_proto,2209,能量枢纽,,能量枢纽,,,,Logistics,5,20,false,true,true,,,,
+item:2310,item_proto,2310,微型粒子对撞机,,微型粒子对撞机,,,,Production,6,20,false,true,true,,,,
+item:2210,item_proto,2210,人造恒星,,人造恒星,,,,Production,6,20,false,true,true,,,,
+item:2103,item_proto,2103,物流运输站,,物流运输站,,,,Logistics,5,10,false,true,true,,,,
+item:2104,item_proto,2104,星际物流运输站,,星际物流运输站,,,,Logistics,5,10,false,true,true,,,,
+item:2105,item_proto,2105,轨道采集器,,轨道采集器,,,,Logistics,5,10,false,true,true,,,,
+item:2901,item_proto,2901,矩阵研究站,,矩阵研究站,,,,Production,6,50,false,true,true,,,,
+item:2902,item_proto,2902,矩阵研究站 Mk.II,,矩阵研究站 Mk.II,,,,Production,6,50,false,true,true,,,,
+item:3001,item_proto,3001,高斯机枪塔,,高斯机枪塔,,,,Turret,8,50,false,true,true,,,,
+item:3002,item_proto,3002,高频激光塔,,高频激光塔,,,,Turret,8,50,false,true,true,,,,
+item:3003,item_proto,3003,聚爆加农炮,,聚爆加农炮,,,,Turret,8,50,false,true,true,,,,
+item:3004,item_proto,3004,磁化电浆炮,,磁化电浆炮,,,,Turret,8,50,false,true,true,,,,
+item:3005,item_proto,3005,导弹防御塔,,导弹防御塔,,,,Turret,8,50,false,true,true,,,,
+item:3006,item_proto,3006,干扰塔,,干扰塔,,,,Turret,8,50,false,true,true,,,,
+item:3007,item_proto,3007,信标,,信标,,,,Defense,9,20,false,true,true,,,,
+item:3008,item_proto,3008,护盾发生器,,护盾发生器,,,,Defense,9,20,false,true,true,,,,
+item:3009,item_proto,3009,战场分析基站,,战场分析基站,,,,Defense,9,20,false,true,true,,,,
+item:3010,item_proto,3010,地面电浆炮,,地面电浆炮,,,,Turret,8,20,false,true,true,,,,
+item:6001,item_proto,6001,Electromagnetic Matrix,Electromagnetic Matrix,电磁矩阵,,,,Matrix,11,200,false,false,false,,,,
+item:6002,item_proto,6002,Energy Matrix,Energy Matrix,能量矩阵,,,,Matrix,11,200,false,false,false,,,,
+item:6003,item_proto,6003,Structure Matrix,Structure Matrix,结构矩阵,,,,Matrix,11,200,false,false,false,,,,
+item:6004,item_proto,6004,Information Matrix,Information Matrix,信息矩阵,,,,Matrix,11,200,false,false,false,,,,
+item:6005,item_proto,6005,Gravity Matrix,Gravity Matrix,引力矩阵,,,,Matrix,11,200,false,false,false,,,,
+item:6006,item_proto,6006,Universe Matrix,Universe Matrix,宇宙矩阵,,,,Matrix,11,200,false,false,false,,,,
+item:1099,item_proto,1099,沙土,,沙土,,,,Resource,1,1000000,false,false,false,,,,
+theme:1,theme_proto,1,Ocean 1,,Ocean 1,,,,,,,,,,,,,
+theme:2,theme_proto,2,Gas 1,,Gas 1,,,,,,,,,,,,,
+theme:3,theme_proto,3,Gas 2,,Gas 2,,,,,,,,,,,,,
+theme:4,theme_proto,4,Gas 3,,Gas 3,,,,,,,,,,,,,
+theme:5,theme_proto,5,Gas 4,,Gas 4,,,,,,,,,,,,,
+theme:6,theme_proto,6,Desert 1,,Desert 1,,,,,,,,,,,,,
+theme:7,theme_proto,7,Desert 2,,Desert 2,,,,,,,,,,,,,
+theme:8,theme_proto,8,Ocean 2,,Ocean 2,,,,,,,,,,,,,
+theme:9,theme_proto,9,Lava 1,,Lava 1,,,,,,,,,,,,,
+theme:10,theme_proto,10,Ice 1,,Ice 1,,,,,,,,,,,,,
+theme:11,theme_proto,11,Desert 3,,Desert 3,,,,,,,,,,,,,
+theme:12,theme_proto,12,Desert 4,,Desert 4,,,,,,,,,,,,,
+theme:13,theme_proto,13,Volcanic 1,,Volcanic 1,,,,,,,,,,,,,
+theme:14,theme_proto,14,Ocean 3,,Ocean 3,,,,,,,,,,,,,
+theme:15,theme_proto,15,Ocean 4,,Ocean 4,,,,,,,,,,,,,
+theme:16,theme_proto,16,Ocean 5,,Ocean 5,,,,,,,,,,,,,
+theme:17,theme_proto,17,Desert 5,,Desert 5,,,,,,,,,,,,,
+theme:18,theme_proto,18,Ocean 6,,Ocean 6,,,,,,,,,,,,,
+theme:19,theme_proto,19,Desert 6,,Desert 6,,,,,,,,,,,,,
+theme:20,theme_proto,20,Desert 7,,Desert 7,,,,,,,,,,,,,
+theme:21,theme_proto,21,Gas 5,,Gas 5,,,,,,,,,,,,,
+theme:22,theme_proto,22,Desert 8,,Desert 8,,,,,,,,,,,,,
+theme:23,theme_proto,23,Desert 9,,Desert 9,,,,,,,,,,,,,
+theme:24,theme_proto,24,Desert 10,,Desert 10,,,,,,,,,,,,,
+theme:25,theme_proto,25,Desert 11,,Desert 11,,,,,,,,,,,,,
+vein:1,vein_proto,1,铁矿脉,,铁矿脉,,,,,,,,,,,,,
+vein:2,vein_proto,2,铜矿脉,,铜矿脉,,,,,,,,,,,,,
+vein:3,vein_proto,3,硅矿脉,,硅矿脉,,,,,,,,,,,,,
+vein:4,vein_proto,4,钛矿脉,,钛矿脉,,,,,,,,,,,,,
+vein:5,vein_proto,5,石矿脉,,石矿脉,,,,,,,,,,,,,
+vein:6,vein_proto,6,煤矿脉,,煤矿脉,,,,,,,,,,,,,
+vein:7,vein_proto,7,原油涌泉,,原油涌泉,,,,,,,,,,,,,
+vein:8,vein_proto,8,可燃冰矿,,可燃冰矿,,,,,,,,,,,,,
+vein:9,vein_proto,9,金伯利矿,,金伯利矿,,,,,,,,,,,,,
+vein:10,vein_proto,10,分形硅矿,,分形硅矿,,,,,,,,,,,,,
+vein:11,vein_proto,11,有机晶体矿,,有机晶体矿,,,,,,,,,,,,,
+vein:12,vein_proto,12,光栅石矿,,光栅石矿,,,,,,,,,,,,,
+vein:13,vein_proto,13,刺笋矿脉,,刺笋矿脉,,,,,,,,,,,,,
+vein:14,vein_proto,14,单极磁矿,,单极磁矿,,,,,,,,,,,,,
+function:1,unlock_function,1,UnlockFunction 1,,UnlockFunction 1,,,,,,,,,,,,,
+function:2,unlock_function,2,UnlockFunction 2,,UnlockFunction 2,,,,,,,,,,,,,
+function:3,unlock_function,3,UnlockFunction 3,,UnlockFunction 3,,,,,,,,,,,,,
+function:4,unlock_function,4,UnlockFunction 4,,UnlockFunction 4,,,,,,,,,,,,,
+function:5,unlock_function,5,UnlockFunction 5,,UnlockFunction 5,,,,,,,,,,,,,
+function:6,unlock_function,6,UnlockFunction 6,,UnlockFunction 6,,,,,,,,,,,,,
+function:7,unlock_function,7,UnlockFunction 7,,UnlockFunction 7,,,,,,,,,,,,,
+function:8,unlock_function,8,UnlockFunction 8,,UnlockFunction 8,,,,,,,,,,,,,
+function:9,unlock_function,9,UnlockFunction 9,,UnlockFunction 9,,,,,,,,,,,,,
+function:10,unlock_function,10,UnlockFunction 10,,UnlockFunction 10,,,,,,,,,,,,,
+function:11,unlock_function,11,UnlockFunction 11,,UnlockFunction 11,,,,,,,,,,,,,
+function:12,unlock_function,12,UnlockFunction 12,,UnlockFunction 12,,,,,,,,,,,,,
+function:13,unlock_function,13,UnlockFunction 13,,UnlockFunction 13,,,,,,,,,,,,,
+function:14,unlock_function,14,UnlockFunction 14,,UnlockFunction 14,,,,,,,,,,,,,
+function:15,unlock_function,15,UnlockFunction 15,,UnlockFunction 15,,,,,,,,,,,,,
+function:16,unlock_function,16,UnlockFunction 16,,UnlockFunction 16,,,,,,,,,,,,,
+function:17,unlock_function,17,UnlockFunction 17,,UnlockFunction 17,,,,,,,,,,,,,
+function:18,unlock_function,18,UnlockFunction 18,,UnlockFunction 18,,,,,,,,,,,,,
+function:19,unlock_function,19,UnlockFunction 19,,UnlockFunction 19,,,,,,,,,,,,,
+function:20,unlock_function,20,UnlockFunction 20,,UnlockFunction 20,,,,,,,,,,,,,
+function:21,unlock_function,21,UnlockFunction 21,,UnlockFunction 21,,,,,,,,,,,,,
+function:22,unlock_function,22,UnlockFunction 22,,UnlockFunction 22,,,,,,,,,,,,,
+function:23,unlock_function,23,UnlockFunction 23,,UnlockFunction 23,,,,,,,,,,,,,
+function:24,unlock_function,24,UnlockFunction 24,,UnlockFunction 24,,,,,,,,,,,,,
+function:25,unlock_function,25,UnlockFunction 25,,UnlockFunction 25,,,,,,,,,,,,,
+function:26,unlock_function,26,UnlockFunction 26,,UnlockFunction 26,,,,,,,,,,,,,
+function:27,unlock_function,27,UnlockFunction 27,,UnlockFunction 27,,,,,,,,,,,,,
+function:28,unlock_function,28,UnlockFunction 28,,UnlockFunction 28,,,,,,,,,,,,,
+function:29,unlock_function,29,UnlockFunction 29,,UnlockFunction 29,,,,,,,,,,,,,
+function:30,unlock_function,30,UnlockFunction 30,,UnlockFunction 30,,,,,,,,,,,,,
+function:31,unlock_function,31,UnlockFunction 31,,UnlockFunction 31,,,,,,,,,,,,,
+function:32,unlock_function,32,UnlockFunction 32,,UnlockFunction 32,,,,,,,,,,,,,
+function:33,unlock_function,33,UnlockFunction 33,,UnlockFunction 33,,,,,,,,,,,,,
+function:34,unlock_function,34,UnlockFunction 34,,UnlockFunction 34,,,,,,,,,,,,,
+function:35,unlock_function,35,UnlockFunction 35,,UnlockFunction 35,,,,,,,,,,,,,
+function:36,unlock_function,36,UnlockFunction 36,,UnlockFunction 36,,,,,,,,,,,,,
+function:37,unlock_function,37,UnlockFunction 37,,UnlockFunction 37,,,,,,,,,,,,,
+function:38,unlock_function,38,UnlockFunction 38,,UnlockFunction 38,,,,,,,,,,,,,
+function:39,unlock_function,39,UnlockFunction 39,,UnlockFunction 39,,,,,,,,,,,,,
+function:40,unlock_function,40,UnlockFunction 40,,UnlockFunction 40,,,,,,,,,,,,,
+function:41,unlock_function,41,UnlockFunction 41,,UnlockFunction 41,,,,,,,,,,,,,
+function:42,unlock_function,42,UnlockFunction 42,,UnlockFunction 42,,,,,,,,,,,,,
+function:43,unlock_function,43,UnlockFunction 43,,UnlockFunction 43,,,,,,,,,,,,,
+function:44,unlock_function,44,UnlockFunction 44,,UnlockFunction 44,,,,,,,,,,,,,
+function:61,unlock_function,61,UnlockFunction 61,,UnlockFunction 61,,,,,,,,,,,,,
+function:62,unlock_function,62,UnlockFunction 62,,UnlockFunction 62,,,,,,,,,,,,,
+function:63,unlock_function,63,UnlockFunction 63,,UnlockFunction 63,,,,,,,,,,,,,
+function:64,unlock_function,64,UnlockFunction 64,,UnlockFunction 64,,,,,,,,,,,,,
+function:65,unlock_function,65,UnlockFunction 65,,UnlockFunction 65,,,,,,,,,,,,,
+function:66,unlock_function,66,UnlockFunction 66,,UnlockFunction 66,,,,,,,,,,,,,
+function:67,unlock_function,67,UnlockFunction 67,,UnlockFunction 67,,,,,,,,,,,,,
+function:68,unlock_function,68,UnlockFunction 68,,UnlockFunction 68,,,,,,,,,,,,,
+function:69,unlock_function,69,UnlockFunction 69,,UnlockFunction 69,,,,,,,,,,,,,
+function:71,unlock_function,71,UnlockFunction 71,,UnlockFunction 71,,,,,,,,,,,,,
+function:72,unlock_function,72,UnlockFunction 72,,UnlockFunction 72,,,,,,,,,,,,,
+function:73,unlock_function,73,UnlockFunction 73,,UnlockFunction 73,,,,,,,,,,,,,
+function:74,unlock_function,74,UnlockFunction 74,,UnlockFunction 74,,,,,,,,,,,,,
+function:75,unlock_function,75,UnlockFunction 75,,UnlockFunction 75,,,,,,,,,,,,,
+function:76,unlock_function,76,UnlockFunction 76,,UnlockFunction 76,,,,,,,,,,,,,
+function:77,unlock_function,77,UnlockFunction 77,,UnlockFunction 77,,,,,,,,,,,,,
+function:78,unlock_function,78,UnlockFunction 78,,UnlockFunction 78,,,,,,,,,,,,,
+function:79,unlock_function,79,UnlockFunction 79,,UnlockFunction 79,,,,,,,,,,,,,
+function:80,unlock_function,80,UnlockFunction 80,,UnlockFunction 80,,,,,,,,,,,,,
+function:81,unlock_function,81,UnlockFunction 81,,UnlockFunction 81,,,,,,,,,,,,,
+function:82,unlock_function,82,UnlockFunction 82,,UnlockFunction 82,,,,,,,,,,,,,
+function:83,unlock_function,83,UnlockFunction 83,,UnlockFunction 83,,,,,,,,,,,,,
+function:84,unlock_function,84,UnlockFunction 84,,UnlockFunction 84,,,,,,,,,,,,,
+function:85,unlock_function,85,UnlockFunction 85,,UnlockFunction 85,,,,,,,,,,,,,
+function:86,unlock_function,86,UnlockFunction 86,,UnlockFunction 86,,,,,,,,,,,,,
+function:99,unlock_function,99,UnlockFunction 99,,UnlockFunction 99,,,,,,,,,,,,,
+capability:manual_interplanetary_travel,capability,,Manual interplanetary travel,Manual interplanetary travel,Manual interplanetary travel,,,,,,,,,,,,,
+capability:sustained_titanium_access,capability,,Sustained titanium access,Sustained titanium access,Sustained titanium access,,,,,,,,,,,,,
+capability:efficient_bulk_silicon_access,capability,,Efficient bulk silicon access,Efficient bulk silicon access,Efficient bulk silicon access,,,,,,,,,,,,,
+capability:automated_planetary_logistics,capability,,Automated planetary logistics,Automated planetary logistics,Automated planetary logistics,,,,,,,,,,,,,
+capability:automated_interplanetary_logistics,capability,,Automated interplanetary logistics,Automated interplanetary logistics,Automated interplanetary logistics,,,,,,,,,,,,,
+capability:mecha_warp,capability,,Mecha warp,Mecha warp,Mecha warp,,,,,,,,,,,,,
+capability:vessel_warp,capability,,Logistics vessel warp,Logistics vessel warp,Logistics vessel warp,,,,,,,,,,,,,

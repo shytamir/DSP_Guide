@@ -1,0 +1,110 @@
+{
+  "package_name": "DSP Universal End-Product DAG v1.0",
+  "generated_at_utc": "2026-07-30T05:52:28.907Z",
+  "authority": {
+    "supplied_archive": "C:\\Users\\Usuario\\Downloads\\dsp_phase1_end_products_v1_0.zip",
+    "supplied_archive_sha256": "282720387DFFC1E5FEA4BFFD72F0AA405392C545C05989E554603059E45EE3AE",
+    "canonical_phase1_json_sha256": "B52DEFC068830F6F36433D8136EDEEAD05B52603BF46154E3EEB7D300BAA719D",
+    "assembly_sha256_recorded_by_phase1": "ae0ba95f75bd879a62aa4ce253b2ab78eaa4fb3c7c595f5e1fee75ebe0e0ef85"
+  },
+  "validation": {
+    "pass1_status": "PASS",
+    "pass1_checks": "26/26",
+    "pass2_status": "PASS",
+    "pass2_checks": "14/14",
+    "overall": "PASS"
+  },
+  "file_count_excluding_this_manifest": 18,
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 2991,
+      "sha256": "f215c49e03c136acc9fd1083ce0befb59fb4072979514a44406442577844341b"
+    },
+    {
+      "name": "dsp_guide_refactor_roadmap_preserved_v1_0.md",
+      "bytes": 2374,
+      "sha256": "03cfbead83197fee4fdeb6164709c10615c17d9e065d1321c5536a506da874c2"
+    },
+    {
+      "name": "dsp_universal_build_summary_v1_0.json",
+      "bytes": 2084,
+      "sha256": "b37b1ba27a713677f8774de7b0c9c73c10c064e2a216511008b8498a320d0745"
+    },
+    {
+      "name": "dsp_universal_condensation_dag_v1_0.graphml",
+      "bytes": 208835,
+      "sha256": "31f674f72e026c3add8beb6a44da06e9bea442eb74a1ab442a8fcbe74a3e7d0f"
+    },
+    {
+      "name": "dsp_universal_condensation_dag_v1_0.json",
+      "bytes": 2108963,
+      "sha256": "38c9458d0b70eafce66b0cc9276498b6620048779f05c4cdabd10556cc7ce502"
+    },
+    {
+      "name": "dsp_universal_condensation_edges_v1_0.csv",
+      "bytes": 425173,
+      "sha256": "be1618fc8cf99b6ad3cac5d98c1bafca0172f8d5207df83cb15d4ea963c57fda"
+    },
+    {
+      "name": "dsp_universal_dag_report_v1_0.md",
+      "bytes": 6724,
+      "sha256": "d298efb9fa431e512c353794a4ddda7349c60c6dacdcceec2f38a869b7469340"
+    },
+    {
+      "name": "dsp_universal_end_product_graph_v1_0.json",
+      "bytes": 1373775,
+      "sha256": "a4ab30b976005078464166cff6f1e48344c956bc6f75bcad90a6bd7c9b16b03f"
+    },
+    {
+      "name": "dsp_universal_formal_edges_v1_0.csv",
+      "bytes": 337806,
+      "sha256": "18411b0c9191dbc0a3b794c8a77213ddecaa8df36010fdc4c5d74edd8a0ad65b"
+    },
+    {
+      "name": "dsp_universal_nodes_v1_0.csv",
+      "bytes": 67677,
+      "sha256": "c655df238fb204b5d9863d37fcc37efd4f1625fad9195497475b5eb67c710458"
+    },
+    {
+      "name": "dsp_universal_practical_overlay_edges_v1_0.csv",
+      "bytes": 1833,
+      "sha256": "b878dc92909856308890063449f532084bb6e3d2e6e2b62cc0d479cf47b1af5c"
+    },
+    {
+      "name": "dsp_universal_product_closures_v1_0.json",
+      "bytes": 5429482,
+      "sha256": "97928a5c64846995845b0f0088ff42a481d919913bc4920bebb1944399f29537"
+    },
+    {
+      "name": "dsp_universal_product_index_v1_0.csv",
+      "bytes": 23632,
+      "sha256": "dcadc7f4587ea58dfd7c684c9f14c1fe8ea8b68cc825ed56e98ff5e195bf9041"
+    },
+    {
+      "name": "dsp_universal_recipe_hyperedges_v1_0.csv",
+      "bytes": 100817,
+      "sha256": "1c948fe22a301523e3e55de96cefa2ed3659dc98cb997fc2c8c23f81910b51c2"
+    },
+    {
+      "name": "dsp_universal_recipe_hyperedges_v1_0.json",
+      "bytes": 199681,
+      "sha256": "275da7014b63335f2a94953e1631e4a26c466986cf6c758501c8eb23ef77e5a7"
+    },
+    {
+      "name": "dsp_universal_scc_membership_v1_0.csv",
+      "bytes": 208908,
+      "sha256": "1e80bba76a179bd070430c81de47f4765d1045961005831984914ebabbfb8513"
+    },
+    {
+      "name": "dsp_universal_validation_pass1_v1_0.json",
+      "bytes": 4696,
+      "sha256": "850a8f0000fef1f299ce3fb9575dffc8a4c32dea6f52662f1676e1d866c293c6"
+    },
+    {
+      "name": "dsp_universal_validation_pass2_v1_0.json",
+      "bytes": 10606,
+      "sha256": "a01a9e97327854c5743d49089efc4d705e51d30a306acaad933e0f86a339f9e7"
+    }
+  ]
+}

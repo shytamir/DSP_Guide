@@ -1,0 +1,207 @@
+{
+  "validation_name": "DSP Universal DAG Validation Pass 1 — structural and losslessness",
+  "version": "1.0.0",
+  "generated_at_utc": "2026-07-30T05:52:28.710Z",
+  "source_file": "dsp_phase1_canonical_dataset_v1_0.json",
+  "source_sha256": "b52defc068830f6f36433d8136edeead05b52603bf46154e3eeb7d300baa719d",
+  "status": "PASS",
+  "check_count": 26,
+  "passed_count": 26,
+  "failed_count": 0,
+  "errors": [],
+  "checks": [
+    {
+      "name": "source_phase1_validation_passed",
+      "passed": true,
+      "details": {
+        "source_status": "PASS"
+      }
+    },
+    {
+      "name": "source_node_ids_unique",
+      "passed": true,
+      "details": {
+        "count": 765
+      }
+    },
+    {
+      "name": "source_edge_ids_unique",
+      "passed": true,
+      "details": {
+        "count": 2580
+      }
+    },
+    {
+      "name": "all_source_edge_references_resolve",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "universal_graph_preserves_all_nodes",
+      "passed": true,
+      "details": {
+        "source": 765,
+        "output": 765
+      }
+    },
+    {
+      "name": "universal_graph_preserves_all_edges_by_layer",
+      "passed": true,
+      "details": {
+        "source": 2580,
+        "formal": 2573,
+        "practical": 7
+      }
+    },
+    {
+      "name": "universal_graph_edges_are_byte_semantically_identical",
+      "passed": true,
+      "details": {
+        "compared": 2580
+      }
+    },
+    {
+      "name": "recipe_hyperedge_count_matches_source",
+      "passed": true,
+      "details": {
+        "source": 161,
+        "output": 161
+      }
+    },
+    {
+      "name": "recipe_hyperedges_preserve_every_input",
+      "passed": true,
+      "details": {
+        "count": 441
+      }
+    },
+    {
+      "name": "recipe_hyperedges_preserve_every_output",
+      "passed": true,
+      "details": {
+        "count": 165
+      }
+    },
+    {
+      "name": "every_recipe_has_input_and_output",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "every_item_has_one_product_closure",
+      "passed": true,
+      "details": {
+        "source_items": 174,
+        "closures": 174
+      }
+    },
+    {
+      "name": "product_closure_targets_unique_and_complete",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "all_174_material_closures_recomputed_exactly",
+      "passed": true,
+      "details": {
+        "mismatch_count": 0
+      }
+    },
+    {
+      "name": "all_exact_formal_game_data_partition_is_total_and_unique",
+      "passed": true,
+      "details": {
+        "source_nodes": 765,
+        "memberships": 765
+      }
+    },
+    {
+      "name": "all_exact_formal_game_data_condensation_edges_are_lossless",
+      "passed": true,
+      "details": {
+        "expected_edges": 2015,
+        "actual_edges": 2015
+      }
+    },
+    {
+      "name": "all_exact_formal_game_data_is_acyclic",
+      "passed": true,
+      "details": {
+        "visited": 680,
+        "components": 680
+      }
+    },
+    {
+      "name": "end_product_dependency_profile_partition_is_total_and_unique",
+      "passed": true,
+      "details": {
+        "source_nodes": 765,
+        "memberships": 765
+      }
+    },
+    {
+      "name": "end_product_dependency_profile_condensation_edges_are_lossless",
+      "passed": true,
+      "details": {
+        "expected_edges": 1674,
+        "actual_edges": 1674
+      }
+    },
+    {
+      "name": "end_product_dependency_profile_is_acyclic",
+      "passed": true,
+      "details": {
+        "visited": 680,
+        "components": 680
+      }
+    },
+    {
+      "name": "material_production_profile_partition_is_total_and_unique",
+      "passed": true,
+      "details": {
+        "source_nodes": 374,
+        "memberships": 374
+      }
+    },
+    {
+      "name": "material_production_profile_condensation_edges_are_lossless",
+      "passed": true,
+      "details": {
+        "expected_edges": 789,
+        "actual_edges": 789
+      }
+    },
+    {
+      "name": "material_production_profile_is_acyclic",
+      "passed": true,
+      "details": {
+        "visited": 371,
+        "components": 371
+      }
+    },
+    {
+      "name": "formal_research_prerequisite_profile_partition_is_total_and_unique",
+      "passed": true,
+      "details": {
+        "source_nodes": 314,
+        "memberships": 314
+      }
+    },
+    {
+      "name": "formal_research_prerequisite_profile_condensation_edges_are_lossless",
+      "passed": true,
+      "details": {
+        "expected_edges": 417,
+        "actual_edges": 417
+      }
+    },
+    {
+      "name": "formal_research_prerequisite_profile_is_acyclic",
+      "passed": true,
+      "details": {
+        "visited": 314,
+        "components": 314
+      }
+    }
+  ]
+}
