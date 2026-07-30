@@ -48,7 +48,7 @@ requires no framework, dependency installation, or build step.
 
 ## Phase 2 — Dependency-driven atomic card rebuild
 
-**Status: preserved for later review; not started**
+**Status: complete**
 
 Rebuild the affected card system from the universal DAG:
 
@@ -62,3 +62,8 @@ Rebuild the affected card system from the universal DAG:
 - apply the same reference system from the first repeated product onward so later cards remain readable.
 
 The guide's route choice, tone, phase structure, navigation, and numerical values remain editorial concerns for these later phases. Phase 0 supplies facts; it does not decide which valid route the guide should recommend.
+
+Implemented in the published `index.html`: reusable intermediate outputs now
+have stable linked cards; repeated production blocks are replaced by direct
+references; PURPLE and GREEN are decomposed into readable dependency chains;
+and rebuilt production cards end with a consistent exact draw/output summary.

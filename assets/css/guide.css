@@ -59,3 +59,7 @@ details.build-card>summary::-webkit-details-marker{display:none}details.build-ca
 .phase-section-logistics{--phase-rgb: 112,210,168;}
 .numeric{text-align:right}
 .tech-tooltip.is-hidden{display:none}
+
+/* Dependency-card totals footer */
+.card-stage-totals{border-top:3px solid #7f91aa;background:rgba(127,145,170,.055)}
+.card-stage-totals h4{color:#d7e1ed}
