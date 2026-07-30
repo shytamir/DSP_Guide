@@ -33,6 +33,12 @@ separate JSON file.
 Historical publication snapshots and the authoritative DAG research package
 remain in the repository for provenance. They are not loaded by `index.html`.
 
+## Project status
+
+The completed refactor phases and the next reader-facing user stories are
+tracked in
+[`dsp_guide_refactor_roadmap_preserved_v1_0.md`](dsp_universal_end_product_dag_v1_0/dsp_guide_refactor_roadmap_preserved_v1_0.md).
+
 ## Deployment
 
 Pushes to `main` run the GitHub Pages workflow. It validates and deploys the

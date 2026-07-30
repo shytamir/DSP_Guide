@@ -67,3 +67,44 @@ Implemented in the published `index.html`: reusable intermediate outputs now
 have stable linked cards; repeated production blocks are replaced by direct
 references; PURPLE and GREEN are decomposed into readable dependency chains;
 and rebuilt production cards end with a consistent exact draw/output summary.
+
+## Next user stories
+
+### 1. Bring WARP into the established guide contract
+
+**Status: complete**
+
+**User story:** As a curious new or returning player, I want WARP to explain
+personal travel, vessel logistics, and rare-resource shortcuts without treating
+the optional route as a progression gate, so I can choose how deeply to engage
+with interstellar expansion.
+
+**Acceptance focus:**
+
+- distinguish mecha warp from vessel warp and show their research breakpoints;
+- explain early manual scouting, pre-green vessel automation, and the cheaper
+  post-green warper route;
+- describe each rare resource's acquisition method and the standard production
+  chain its alternate recipe replaces;
+- use the same linked Input → Pipeline → Output card contract as the rest of the
+  guide;
+- keep one concise optional-route disclaimer and preserve player-owned phase
+  navigation.
+
+### 2. Validate the linked-card system during a complete playthrough
+
+**Status: pending**
+
+**User story:** As a player building directly from the cards, I want every
+linked input, scaling instruction, shared-capacity warning, and output buffer to
+remain understandable in play, so I can construct a line without reopening an
+obsolete monolithic recipe.
+
+**Acceptance focus:**
+
+- test card-to-card navigation at each production tier;
+- verify that reused surplus and newly dedicated capacity are distinguishable;
+- check fractional scaling and simultaneous shared-input demand in the game;
+- record any card whose construction still requires knowledge absent from its
+  linked dependency chain;
+- keep factual recipe corrections separate from later presentation polish.
