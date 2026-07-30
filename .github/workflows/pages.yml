@@ -1,0 +1,114 @@
+name: Build and deploy static guide
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      archive: ${{ steps.version.outputs.archive }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Resolve deployment version
+        id: version
+        shell: bash
+        run: |
+          set -euo pipefail
+          source VERSION
+
+          if [[ ! "$MAJOR" =~ ^[0-9]+$ || ! "$MINOR" =~ ^[0-9]+$ ]]; then
+            echo "VERSION must define numeric MAJOR and MINOR values." >&2
+            exit 1
+          fi
+
+          sequence=$((GITHUB_RUN_NUMBER - 1))
+          short_sha="$(git rev-parse --short=7 "$GITHUB_SHA")"
+          version="${MAJOR}.${MINOR}.${sequence}.${short_sha}"
+          archive="dsp-practical-progression-guide-${version}.zip"
+
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "archive=$archive" >> "$GITHUB_OUTPUT"
+          echo "DEPLOYMENT_VERSION=$version" >> "$GITHUB_ENV"
+          echo "DEPLOYMENT_ARCHIVE=$archive" >> "$GITHUB_ENV"
+
+      - name: Stage static website
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir _site
+          cp index.html _site/
+          cp -a assets _site/
+
+      - name: Validate staged website
+        run: node scripts/validate-deployment.mjs _site .
+
+      - name: Create deployment ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+          (
+            cd _site
+            zip -q -r "../${DEPLOYMENT_ARCHIVE}" .
+          )
+
+          mkdir _package-verification
+          unzip -q "$DEPLOYMENT_ARCHIVE" -d _package-verification
+          node scripts/validate-deployment.mjs _package-verification .
+
+      - name: Upload versioned deployment package
+        uses: actions/upload-artifact@v7
+        with:
+          name: dsp-practical-progression-guide-${{ steps.version.outputs.version }}
+          path: ${{ steps.version.outputs.archive }}
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+          retention-days: 1
+
+      - name: Summarize package
+        shell: bash
+        run: |
+          {
+            echo "### Static guide package"
+            echo
+            echo "- Version: \`${DEPLOYMENT_VERSION}\`"
+            echo "- ZIP: \`${DEPLOYMENT_ARCHIVE}\`"
+            echo "- Contents: \`index.html\` and \`assets/\` only"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

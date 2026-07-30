@@ -33,5 +33,15 @@ separate JSON file.
 Historical publication snapshots and the authoritative DAG research package
 remain in the repository for provenance. They are not loaded by `index.html`.
 
+## Deployment
+
+Pushes to `main` run the GitHub Pages workflow. It validates and deploys the
+static site while also producing one downloadable ZIP containing only
+`index.html` and `assets/`.
+
+`VERSION` stores the manually managed major and minor values. Deployment
+versions use `MAJOR.MINOR.RUN.SHA`, where `RUN` starts at zero and increases
+with each workflow run, and `SHA` is the short triggering commit hash.
+
 Please keep in mind that the game data and progression advice are only
 guaranteed to match the live game version at the time the guide was published.
