@@ -1,0 +1,4885 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Dyson Sphere Program",
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1001": {
+    "id": 1001,
+    "name": "Electromagnetism",
+    "required": [
+      {
+        "id": 1,
+        "name": "Dyson Sphere Program"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1002": {
+    "id": 1002,
+    "name": "Electromagnetic Matrix",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1101": {
+    "id": 1101,
+    "name": "High-Efficiency Plasma Control",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1102": {
+    "id": 1102,
+    "name": "Plasma Extract Refining",
+    "required": [
+      {
+        "id": 1120,
+        "name": "Fluid Storage Encapsulation"
+      },
+      {
+        "id": 1101,
+        "name": "High-Efficiency Plasma Control"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1103": {
+    "id": 1103,
+    "name": "X-Ray Cracking",
+    "required": [
+      {
+        "id": 1121,
+        "name": "Basic Chemical Engineering"
+      },
+      {
+        "id": 1102,
+        "name": "Plasma Extract Refining"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1104": {
+    "id": 1104,
+    "name": "Reformed Refinement",
+    "required": [
+      {
+        "id": 1103,
+        "name": "X-Ray Cracking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1105": {
+    "id": 1105,
+    "name": "Holo Beacon",
+    "required": [
+      {
+        "id": 1101,
+        "name": "High-Efficiency Plasma Control"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1111": {
+    "id": 1111,
+    "name": "Energy Matrix",
+    "required": [
+      {
+        "id": 1102,
+        "name": "Plasma Extract Refining"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Energy Matrix",
+    "pretechsMax": false
+  },
+  "1112": {
+    "id": 1112,
+    "name": "Hydrogen Fuel Rod",
+    "required": [
+      {
+        "id": 1111,
+        "name": "Energy Matrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1113": {
+    "id": 1113,
+    "name": "Thruster",
+    "required": [
+      {
+        "id": 1112,
+        "name": "Hydrogen Fuel Rod"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1114": {
+    "id": 1114,
+    "name": "Reinforced Thruster",
+    "required": [
+      {
+        "id": 1113,
+        "name": "Thruster"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1120": {
+    "id": 1120,
+    "name": "Fluid Storage Encapsulation",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1121": {
+    "id": 1121,
+    "name": "Basic Chemical Engineering",
+    "required": [
+      {
+        "id": 1120,
+        "name": "Fluid Storage Encapsulation"
+      },
+      {
+        "id": 1102,
+        "name": "Plasma Extract Refining"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1122": {
+    "id": 1122,
+    "name": "Polymer Chemical Engineering",
+    "required": [
+      {
+        "id": 1121,
+        "name": "Basic Chemical Engineering"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1123": {
+    "id": 1123,
+    "name": "High-Strength Crystal",
+    "required": [
+      {
+        "id": 1122,
+        "name": "Polymer Chemical Engineering"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1124": {
+    "id": 1124,
+    "name": "Structure Matrix",
+    "required": [
+      {
+        "id": 1123,
+        "name": "High-Strength Crystal"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Structure Matrix",
+    "pretechsMax": false
+  },
+  "1125": {
+    "id": 1125,
+    "name": "Casimir Crystal",
+    "required": [
+      {
+        "id": 1124,
+        "name": "Structure Matrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1126": {
+    "id": 1126,
+    "name": "High-Strength Glass",
+    "required": [
+      {
+        "id": 1132,
+        "name": "High-Strength Material"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1131": {
+    "id": 1131,
+    "name": "Applied Superconductor",
+    "required": [
+      {
+        "id": 1121,
+        "name": "Basic Chemical Engineering"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1132": {
+    "id": 1132,
+    "name": "High-Strength Material",
+    "required": [
+      {
+        "id": 1131,
+        "name": "Applied Superconductor"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1133": {
+    "id": 1133,
+    "name": "Particle Control",
+    "required": [
+      {
+        "id": 1132,
+        "name": "High-Strength Material"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1134": {
+    "id": 1134,
+    "name": "Deuterium Fractionation",
+    "required": [
+      {
+        "id": 1412,
+        "name": "Thermal Power"
+      },
+      {
+        "id": 1102,
+        "name": "Plasma Extract Refining"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1141": {
+    "id": 1141,
+    "name": "Wave Function Interference",
+    "required": [
+      {
+        "id": 1126,
+        "name": "High-Strength Glass"
+      },
+      {
+        "id": 1125,
+        "name": "Casimir Crystal"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1142": {
+    "id": 1142,
+    "name": "Miniature Particle Collider",
+    "required": [
+      {
+        "id": 1124,
+        "name": "Structure Matrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1143": {
+    "id": 1143,
+    "name": "Strange Matter",
+    "required": [
+      {
+        "id": 1142,
+        "name": "Miniature Particle Collider"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1144": {
+    "id": 1144,
+    "name": "Artificial Star",
+    "required": [
+      {
+        "id": 1145,
+        "name": "Controlled Annihilation Reaction"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1145": {
+    "id": 1145,
+    "name": "Controlled Annihilation Reaction",
+    "required": [
+      {
+        "id": 1506,
+        "name": "Dirac Inversion Mechanism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1151": {
+    "id": 1151,
+    "name": "Proliferator Mk.I",
+    "required": [
+      {
+        "id": 1311,
+        "name": "Semiconductor Material"
+      },
+      {
+        "id": 1101,
+        "name": "High-Efficiency Plasma Control"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1152": {
+    "id": 1152,
+    "name": "Proliferator Mk.II",
+    "required": [
+      {
+        "id": 1302,
+        "name": "Processor"
+      },
+      {
+        "id": 1151,
+        "name": "Proliferator Mk.I"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1153": {
+    "id": 1153,
+    "name": "Proliferator Mk.III",
+    "required": [
+      {
+        "id": 1152,
+        "name": "Proliferator Mk.II"
+      },
+      {
+        "id": 1132,
+        "name": "High-Strength Material"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1201": {
+    "id": 1201,
+    "name": "Basic Assembling",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1202": {
+    "id": 1202,
+    "name": "High-Speed Assembling",
+    "required": [
+      {
+        "id": 1201,
+        "name": "Basic Assembling"
+      },
+      {
+        "id": 1302,
+        "name": "Processor"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1203": {
+    "id": 1203,
+    "name": "Quantum Printing",
+    "required": [
+      {
+        "id": 1202,
+        "name": "High-Speed Assembling"
+      },
+      {
+        "id": 1303,
+        "name": "Quantum Chip"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1302": {
+    "id": 1302,
+    "name": "Processor",
+    "required": [
+      {
+        "id": 1311,
+        "name": "Semiconductor Material"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1303": {
+    "id": 1303,
+    "name": "Quantum Chip",
+    "required": [
+      {
+        "id": 1312,
+        "name": "Information Matrix"
+      },
+      {
+        "id": 1141,
+        "name": "Wave Function Interference"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1304": {
+    "id": 1304,
+    "name": "Photon Spotlight Mining",
+    "required": [
+      {
+        "id": 1303,
+        "name": "Quantum Chip"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1305": {
+    "id": 1305,
+    "name": "Mesoscopic Quantum Entanglement",
+    "required": [
+      {
+        "id": 1303,
+        "name": "Quantum Chip"
+      },
+      {
+        "id": 1143,
+        "name": "Strange Matter"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1311": {
+    "id": 1311,
+    "name": "Semiconductor Material",
+    "required": [
+      {
+        "id": 1201,
+        "name": "Basic Assembling"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1312": {
+    "id": 1312,
+    "name": "Information Matrix",
+    "required": [
+      {
+        "id": 1302,
+        "name": "Processor"
+      },
+      {
+        "id": 1133,
+        "name": "Particle Control"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Information Matrix",
+    "pretechsMax": false
+  },
+  "1401": {
+    "id": 1401,
+    "name": "Automatic Metallurgy",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1402": {
+    "id": 1402,
+    "name": "Smelting Purification",
+    "required": [
+      {
+        "id": 1401,
+        "name": "Automatic Metallurgy"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1403": {
+    "id": 1403,
+    "name": "Crystal Smelting",
+    "required": [
+      {
+        "id": 1402,
+        "name": "Smelting Purification"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1411": {
+    "id": 1411,
+    "name": "Steel Smelting",
+    "required": [
+      {
+        "id": 1401,
+        "name": "Automatic Metallurgy"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1412": {
+    "id": 1412,
+    "name": "Thermal Power",
+    "required": [
+      {
+        "id": 1201,
+        "name": "Basic Assembling"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1413": {
+    "id": 1413,
+    "name": "Titanium Smelting",
+    "required": [
+      {
+        "id": 1411,
+        "name": "Steel Smelting"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1414": {
+    "id": 1414,
+    "name": "High-Strength Titanium Alloy",
+    "required": [
+      {
+        "id": 1413,
+        "name": "Titanium Smelting"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1415": {
+    "id": 1415,
+    "name": "Reclamation",
+    "required": [
+      {
+        "id": 1411,
+        "name": "Steel Smelting"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1416": {
+    "id": 1416,
+    "name": "Mini Fusion Power Generation",
+    "required": [
+      {
+        "id": 1134,
+        "name": "Deuterium Fractionation"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "High-Strength Titanium Alloy"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1417": {
+    "id": 1417,
+    "name": "Plane-Filter Smelting",
+    "required": [
+      {
+        "id": 1141,
+        "name": "Wave Function Interference"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1403,
+        "name": "Crystal Smelting"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1501": {
+    "id": 1501,
+    "name": "Solar Collection",
+    "required": [
+      {
+        "id": 1402,
+        "name": "Smelting Purification"
+      },
+      {
+        "id": 1002,
+        "name": "Electromagnetic Matrix"
+      },
+      {
+        "id": 1201,
+        "name": "Basic Assembling"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1502": {
+    "id": 1502,
+    "name": "Photon Frequency Conversion",
+    "required": [
+      {
+        "id": 1501,
+        "name": "Solar Collection"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1503": {
+    "id": 1503,
+    "name": "Solar Sail Orbit System",
+    "required": [
+      {
+        "id": 1502,
+        "name": "Photon Frequency Conversion"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "Super Magnetic Field Generator"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1504": {
+    "id": 1504,
+    "name": "Ray Receiver",
+    "required": [
+      {
+        "id": 1503,
+        "name": "Solar Sail Orbit System"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1505": {
+    "id": 1505,
+    "name": "Planetary Ionosphere Utilization",
+    "required": [
+      {
+        "id": 1504,
+        "name": "Ray Receiver"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1704,
+        "name": "Gravitational Wave Refraction"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1506": {
+    "id": 1506,
+    "name": "Dirac Inversion Mechanism",
+    "required": [
+      {
+        "id": 1505,
+        "name": "Planetary Ionosphere Utilization"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1507": {
+    "id": 1507,
+    "name": "Universe Matrix",
+    "required": [
+      {
+        "id": 1506,
+        "name": "Dirac Inversion Mechanism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Universe Matrix",
+    "pretechsMax": false
+  },
+  "1508": {
+    "id": 1508,
+    "name": "Mission Completed!",
+    "required": [
+      {
+        "id": 1507,
+        "name": "Universe Matrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1511": {
+    "id": 1511,
+    "name": "Energy Storage",
+    "required": [
+      {
+        "id": 1403,
+        "name": "Crystal Smelting"
+      },
+      {
+        "id": 1501,
+        "name": "Solar Collection"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "Super Magnetic Field Generator"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1512": {
+    "id": 1512,
+    "name": "Interstellar Power Transmission",
+    "required": [
+      {
+        "id": 1414,
+        "name": "High-Strength Titanium Alloy"
+      },
+      {
+        "id": 1511,
+        "name": "Energy Storage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1513": {
+    "id": 1513,
+    "name": "Geothermal Extraction",
+    "required": [
+      {
+        "id": 1502,
+        "name": "Photon Frequency Conversion"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "Super Magnetic Field Generator"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1521": {
+    "id": 1521,
+    "name": "High-Strength Lightweight Structure",
+    "required": [
+      {
+        "id": 1503,
+        "name": "Solar Sail Orbit System"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1132,
+        "name": "High-Strength Material"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1522": {
+    "id": 1522,
+    "name": "Vertical Launching Silo",
+    "required": [
+      {
+        "id": 1521,
+        "name": "High-Strength Lightweight Structure"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1303,
+        "name": "Quantum Chip"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1523": {
+    "id": 1523,
+    "name": "Dyson Sphere Stress System",
+    "required": [
+      {
+        "id": 1522,
+        "name": "Vertical Launching Silo"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1601": {
+    "id": 1601,
+    "name": "Basic Logistics System",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1602": {
+    "id": 1602,
+    "name": "Upgraded Logistics System",
+    "required": [
+      {
+        "id": 1601,
+        "name": "Basic Logistics System"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1603": {
+    "id": 1603,
+    "name": "High-Efficiency Logistics System",
+    "required": [
+      {
+        "id": 1602,
+        "name": "Upgraded Logistics System"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "Magnetic Levitation"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1604": {
+    "id": 1604,
+    "name": "Planetary Logistics System",
+    "required": [
+      {
+        "id": 1603,
+        "name": "High-Efficiency Logistics System"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1113,
+        "name": "Thruster"
+      },
+      {
+        "id": 3701,
+        "name": "Vertical Construction Lv1"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Planetary Logistics System",
+    "pretechsMax": false
+  },
+  "1605": {
+    "id": 1605,
+    "name": "Interstellar Logistics System",
+    "required": [
+      {
+        "id": 1604,
+        "name": "Planetary Logistics System"
+      },
+      {
+        "id": 1414,
+        "name": "High-Strength Titanium Alloy"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1114,
+        "name": "Reinforced Thruster"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Interstellar Logistics System",
+    "pretechsMax": false
+  },
+  "1606": {
+    "id": 1606,
+    "name": "Gas Giants Exploitation",
+    "required": [
+      {
+        "id": 1605,
+        "name": "Interstellar Logistics System"
+      },
+      {
+        "id": 1512,
+        "name": "Interstellar Power Transmission"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1607": {
+    "id": 1607,
+    "name": "Integrated Logistics System",
+    "required": [
+      {
+        "id": 1603,
+        "name": "High-Efficiency Logistics System"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "Super Magnetic Field Generator"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1608": {
+    "id": 1608,
+    "name": "Distribution Logistics System",
+    "required": [
+      {
+        "id": 1602,
+        "name": "Upgraded Logistics System"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "Magnetic Levitation"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1701": {
+    "id": 1701,
+    "name": "Electromagnetic Drive",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1702": {
+    "id": 1702,
+    "name": "Magnetic Levitation",
+    "required": [
+      {
+        "id": 1701,
+        "name": "Electromagnetic Drive"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1703": {
+    "id": 1703,
+    "name": "Magnetic Particle Trap",
+    "required": [
+      {
+        "id": 1702,
+        "name": "Magnetic Levitation"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1704": {
+    "id": 1704,
+    "name": "Gravitational Wave Refraction",
+    "required": [
+      {
+        "id": 1143,
+        "name": "Strange Matter"
+      },
+      {
+        "id": 1703,
+        "name": "Magnetic Particle Trap"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1705": {
+    "id": 1705,
+    "name": "Gravity Matrix",
+    "required": [
+      {
+        "id": 1303,
+        "name": "Quantum Chip"
+      },
+      {
+        "id": 1704,
+        "name": "Gravitational Wave Refraction"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Gravity Matrix",
+    "pretechsMax": false
+  },
+  "1711": {
+    "id": 1711,
+    "name": "Super Magnetic Field Generator",
+    "required": [
+      {
+        "id": 1702,
+        "name": "Magnetic Levitation"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1712": {
+    "id": 1712,
+    "name": "Satellite Power Distribution System",
+    "required": [
+      {
+        "id": 1711,
+        "name": "Super Magnetic Field Generator"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1521,
+        "name": "High-Strength Lightweight Structure"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1801": {
+    "id": 1801,
+    "name": "Weapon System",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1401,
+        "name": "Automatic Metallurgy"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1802": {
+    "id": 1802,
+    "name": "Combustible Unit",
+    "required": [
+      {
+        "id": 1401,
+        "name": "Automatic Metallurgy"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1803": {
+    "id": 1803,
+    "name": "Explosive Unit",
+    "required": [
+      {
+        "id": 1123,
+        "name": "High-Strength Crystal"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1804": {
+    "id": 1804,
+    "name": "Crystal Explosive Unit",
+    "required": [
+      {
+        "id": 1125,
+        "name": "Casimir Crystal"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1805": {
+    "id": 1805,
+    "name": "Engine",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1806": {
+    "id": 1806,
+    "name": "Missile Turret",
+    "required": [
+      {
+        "id": 1805,
+        "name": "Engine"
+      },
+      {
+        "id": 1801,
+        "name": "Weapon System"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1802,
+        "name": "Combustible Unit"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1807": {
+    "id": 1807,
+    "name": "Implosion Cannon",
+    "required": [
+      {
+        "id": 1806,
+        "name": "Missile Turret"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "Magnetic Levitation"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1808": {
+    "id": 1808,
+    "name": "Signal Tower",
+    "required": [
+      {
+        "id": 1806,
+        "name": "Missile Turret"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1101,
+        "name": "High-Efficiency Plasma Control"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1809": {
+    "id": 1809,
+    "name": "Planetary Defense System",
+    "required": [
+      {
+        "id": 1807,
+        "name": "Implosion Cannon"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1703,
+        "name": "Magnetic Particle Trap"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1810": {
+    "id": 1810,
+    "name": "Jammer Tower",
+    "required": [
+      {
+        "id": 1806,
+        "name": "Missile Turret"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1302,
+        "name": "Processor"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1811": {
+    "id": 1811,
+    "name": "Plasma Turret",
+    "required": [
+      {
+        "id": 1809,
+        "name": "Planetary Defense System"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1126,
+        "name": "High-Strength Glass"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1812": {
+    "id": 1812,
+    "name": "Titanium Ammo Box",
+    "required": [
+      {
+        "id": 1801,
+        "name": "Weapon System"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1413,
+        "name": "Titanium Smelting"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1813": {
+    "id": 1813,
+    "name": "Superalloy Ammo Box",
+    "required": [
+      {
+        "id": 1812,
+        "name": "Titanium Ammo Box"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "High-Strength Titanium Alloy"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1814": {
+    "id": 1814,
+    "name": "High-Explosive Shell Set",
+    "required": [
+      {
+        "id": 1807,
+        "name": "Implosion Cannon"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1413,
+        "name": "Titanium Smelting"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1815": {
+    "id": 1815,
+    "name": "Supersonic Missile Set",
+    "required": [
+      {
+        "id": 1814,
+        "name": "High-Explosive Shell Set"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1113,
+        "name": "Thruster"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1816": {
+    "id": 1816,
+    "name": "Crystal Shell Set",
+    "required": [
+      {
+        "id": 1815,
+        "name": "Supersonic Missile Set"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "High-Strength Titanium Alloy"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1817": {
+    "id": 1817,
+    "name": "Gravity Missile Set",
+    "required": [
+      {
+        "id": 1816,
+        "name": "Crystal Shell Set"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1143,
+        "name": "Strange Matter"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1818": {
+    "id": 1818,
+    "name": "Antimatter Capsule",
+    "required": [
+      {
+        "id": 1145,
+        "name": "Controlled Annihilation Reaction"
+      },
+      {
+        "id": 1811,
+        "name": "Plasma Turret"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1819": {
+    "id": 1819,
+    "name": "Prototype",
+    "required": [
+      {
+        "id": 1826,
+        "name": "Battlefield Analysis Base"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1101,
+        "name": "High-Efficiency Plasma Control"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1820": {
+    "id": 1820,
+    "name": "Precision Drone",
+    "required": [
+      {
+        "id": 1819,
+        "name": "Prototype"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1502,
+        "name": "Photon Frequency Conversion"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1821": {
+    "id": 1821,
+    "name": "Attack Drone",
+    "required": [
+      {
+        "id": 1819,
+        "name": "Prototype"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1703,
+        "name": "Magnetic Particle Trap"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1822": {
+    "id": 1822,
+    "name": "Corvette",
+    "required": [
+      {
+        "id": 1809,
+        "name": "Planetary Defense System"
+      },
+      {
+        "id": 1820,
+        "name": "Precision Drone"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1823": {
+    "id": 1823,
+    "name": "Destroyer",
+    "required": [
+      {
+        "id": 1822,
+        "name": "Corvette"
+      },
+      {
+        "id": 1821,
+        "name": "Attack Drone"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1824": {
+    "id": 1824,
+    "name": "Suppressing Capsule",
+    "required": [
+      {
+        "id": 1810,
+        "name": "Jammer Tower"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1826": {
+    "id": 1826,
+    "name": "Battlefield Analysis Base",
+    "required": [
+      {
+        "id": 1801,
+        "name": "Weapon System"
+      },
+      {
+        "id": 1805,
+        "name": "Engine"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1901": {
+    "id": 1901,
+    "name": "Digital Analog Computation",
+    "required": [
+      {
+        "id": 1312,
+        "name": "Information Matrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1902": {
+    "id": 1902,
+    "name": "Matter Recombination",
+    "required": [
+      {
+        "id": 1203,
+        "name": "Quantum Printing"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1903": {
+    "id": 1903,
+    "name": "Negentropy Recursion",
+    "required": [
+      {
+        "id": 1417,
+        "name": "Plane-Filter Smelting"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "1904": {
+    "id": 1904,
+    "name": "High-Density Controlled Annihilation",
+    "required": [
+      {
+        "id": 1145,
+        "name": "Controlled Annihilation Reaction"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2101": {
+    "id": 2101,
+    "name": "Mecha Core Lv1",
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2102": {
+    "id": 2102,
+    "name": "Mecha Core Lv2",
+    "required": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2103": {
+    "id": 2103,
+    "name": "Mecha Core Lv3",
+    "required": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2104": {
+    "id": 2104,
+    "name": "Mecha Core Lv4",
+    "required": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2105": {
+    "id": 2105,
+    "name": "Mecha Core",
+    "required": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2106": {
+    "id": 2106,
+    "name": "Mecha Core",
+    "required": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2201": {
+    "id": 2201,
+    "name": "Mechanical Frame",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2202": {
+    "id": 2202,
+    "name": "Mechanical Frame",
+    "required": [
+      {
+        "id": 2201,
+        "name": "Mechanical Frame"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2203": {
+    "id": 2203,
+    "name": "Mechanical Frame",
+    "required": [
+      {
+        "id": 2202,
+        "name": "Mechanical Frame"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2204": {
+    "id": 2204,
+    "name": "Mechanical Frame",
+    "required": [
+      {
+        "id": 2203,
+        "name": "Mechanical Frame"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2205": {
+    "id": 2205,
+    "name": "Mechanical Frame",
+    "required": [
+      {
+        "id": 2204,
+        "name": "Mechanical Frame"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2206": {
+    "id": 2206,
+    "name": "Mechanical Frame",
+    "required": [
+      {
+        "id": 2205,
+        "name": "Mechanical Frame"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2207": {
+    "id": 2207,
+    "name": "Mechanical Frame",
+    "required": [
+      {
+        "id": 2206,
+        "name": "Mechanical Frame"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2208": {
+    "id": 2208,
+    "name": "Mechanical Frame",
+    "required": [
+      {
+        "id": 2207,
+        "name": "Mechanical Frame"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2301": {
+    "id": 2301,
+    "name": "Inventory Capacity",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2302": {
+    "id": 2302,
+    "name": "Inventory Capacity",
+    "required": [
+      {
+        "id": 2301,
+        "name": "Inventory Capacity"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2303": {
+    "id": 2303,
+    "name": "Inventory Capacity",
+    "required": [
+      {
+        "id": 2302,
+        "name": "Inventory Capacity"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2304": {
+    "id": 2304,
+    "name": "Inventory Capacity",
+    "required": [
+      {
+        "id": 2303,
+        "name": "Inventory Capacity"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2305": {
+    "id": 2305,
+    "name": "Inventory Capacity",
+    "required": [
+      {
+        "id": 2304,
+        "name": "Inventory Capacity"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2306": {
+    "id": 2306,
+    "name": "Inventory Capacity",
+    "required": [
+      {
+        "id": 2305,
+        "name": "Inventory Capacity"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2307": {
+    "id": 2307,
+    "name": "Inventory Capacity",
+    "required": [
+      {
+        "id": 2306,
+        "name": "Inventory Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2401": {
+    "id": 2401,
+    "name": "Communication Control",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2402": {
+    "id": 2402,
+    "name": "Communication Control",
+    "required": [
+      {
+        "id": 2401,
+        "name": "Communication Control"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2403": {
+    "id": 2403,
+    "name": "Communication Control",
+    "required": [
+      {
+        "id": 2402,
+        "name": "Communication Control"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2404": {
+    "id": 2404,
+    "name": "Communication Control",
+    "required": [
+      {
+        "id": 2403,
+        "name": "Communication Control"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2405": {
+    "id": 2405,
+    "name": "Communication Control",
+    "required": [
+      {
+        "id": 2404,
+        "name": "Communication Control"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2406": {
+    "id": 2406,
+    "name": "Communication Control",
+    "required": [
+      {
+        "id": 2405,
+        "name": "Communication Control"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2407": {
+    "id": 2407,
+    "name": "Communication Control",
+    "required": [
+      {
+        "id": 2406,
+        "name": "Communication Control"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2501": {
+    "id": 2501,
+    "name": "Energy Circuit",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2502": {
+    "id": 2502,
+    "name": "Energy Circuit",
+    "required": [
+      {
+        "id": 2501,
+        "name": "Energy Circuit"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2503": {
+    "id": 2503,
+    "name": "Energy Circuit",
+    "required": [
+      {
+        "id": 2502,
+        "name": "Energy Circuit"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2504": {
+    "id": 2504,
+    "name": "Energy Circuit",
+    "required": [
+      {
+        "id": 2503,
+        "name": "Energy Circuit"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2505": {
+    "id": 2505,
+    "name": "Energy Circuit",
+    "required": [
+      {
+        "id": 2504,
+        "name": "Energy Circuit"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2506": {
+    "id": 2506,
+    "name": "Energy Circuit",
+    "required": [
+      {
+        "id": 2505,
+        "name": "Energy Circuit"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2601": {
+    "id": 2601,
+    "name": "Drone Engine",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2602": {
+    "id": 2602,
+    "name": "Drone Engine",
+    "required": [
+      {
+        "id": 2601,
+        "name": "Drone Engine"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2603": {
+    "id": 2603,
+    "name": "Drone Engine",
+    "required": [
+      {
+        "id": 2602,
+        "name": "Drone Engine"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2604": {
+    "id": 2604,
+    "name": "Drone Engine",
+    "required": [
+      {
+        "id": 2603,
+        "name": "Drone Engine"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2605": {
+    "id": 2605,
+    "name": "Drone Engine",
+    "required": [
+      {
+        "id": 2604,
+        "name": "Drone Engine"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2606": {
+    "id": 2606,
+    "name": "Drone Engine",
+    "required": [
+      {
+        "id": 2605,
+        "name": "Drone Engine"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2701": {
+    "id": 2701,
+    "name": "Mass Construction",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2702": {
+    "id": 2702,
+    "name": "Mass Construction",
+    "required": [
+      {
+        "id": 2701,
+        "name": "Mass Construction"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2703": {
+    "id": 2703,
+    "name": "Mass Construction",
+    "required": [
+      {
+        "id": 2702,
+        "name": "Mass Construction"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2704": {
+    "id": 2704,
+    "name": "Mass Construction",
+    "required": [
+      {
+        "id": 2703,
+        "name": "Mass Construction"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2705": {
+    "id": 2705,
+    "name": "Mass Construction",
+    "required": [
+      {
+        "id": 2704,
+        "name": "Mass Construction"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2706": {
+    "id": 2706,
+    "name": "Mass Construction",
+    "required": [
+      {
+        "id": 2705,
+        "name": "Mass Construction"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2801": {
+    "id": 2801,
+    "name": "Energy Shield",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2802": {
+    "id": 2802,
+    "name": "Energy Shield",
+    "required": [
+      {
+        "id": 2801,
+        "name": "Energy Shield"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2803": {
+    "id": 2803,
+    "name": "Energy Shield",
+    "required": [
+      {
+        "id": 2802,
+        "name": "Energy Shield"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2804": {
+    "id": 2804,
+    "name": "Energy Shield",
+    "required": [
+      {
+        "id": 2803,
+        "name": "Energy Shield"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2805": {
+    "id": 2805,
+    "name": "Energy Shield",
+    "required": [
+      {
+        "id": 2804,
+        "name": "Energy Shield"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2806": {
+    "id": 2806,
+    "name": "Energy Shield",
+    "required": [
+      {
+        "id": 2805,
+        "name": "Energy Shield"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mecha Core"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2807": {
+    "id": 2807,
+    "name": "Energy Shield",
+    "required": [
+      {
+        "id": 2806,
+        "name": "Energy Shield"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true
+  },
+  "2901": {
+    "id": 2901,
+    "name": "Drive Engine Lv1",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2902": {
+    "id": 2902,
+    "name": "Drive Engine Lv2",
+    "required": [
+      {
+        "id": 2901,
+        "name": "Drive Engine Lv1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mecha Core Lv2"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Drive Engine Lv2 / leave starter planet",
+    "pretechsMax": false
+  },
+  "2903": {
+    "id": 2903,
+    "name": "Drive Engine Lv3",
+    "required": [
+      {
+        "id": 2902,
+        "name": "Drive Engine Lv2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mecha Core Lv3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2904": {
+    "id": 2904,
+    "name": "Drive Engine Lv4",
+    "required": [
+      {
+        "id": 2903,
+        "name": "Drive Engine Lv3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mecha Core Lv4"
+      },
+      {
+        "id": 1704,
+        "name": "Gravitational Wave Refraction"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Drive Engine Lv4 / mecha warp",
+    "pretechsMax": false
+  },
+  "2905": {
+    "id": 2905,
+    "name": "Drive Engine",
+    "required": [
+      {
+        "id": 2904,
+        "name": "Drive Engine Lv4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2906": {
+    "id": 2906,
+    "name": "Drive Engine",
+    "required": [
+      {
+        "id": 2905,
+        "name": "Drive Engine"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2951": {
+    "id": 2951,
+    "name": "Auto Reconstruction Marking",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2952": {
+    "id": 2952,
+    "name": "Auto Reconstruction Marking",
+    "required": [
+      {
+        "id": 2951,
+        "name": "Auto Reconstruction Marking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2953": {
+    "id": 2953,
+    "name": "Auto Reconstruction Marking",
+    "required": [
+      {
+        "id": 2952,
+        "name": "Auto Reconstruction Marking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2954": {
+    "id": 2954,
+    "name": "Auto Reconstruction Marking",
+    "required": [
+      {
+        "id": 2953,
+        "name": "Auto Reconstruction Marking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2955": {
+    "id": 2955,
+    "name": "Auto Reconstruction Marking",
+    "required": [
+      {
+        "id": 2954,
+        "name": "Auto Reconstruction Marking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "2956": {
+    "id": 2956,
+    "name": "Auto Reconstruction Marking",
+    "required": [
+      {
+        "id": 2955,
+        "name": "Auto Reconstruction Marking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3101": {
+    "id": 3101,
+    "name": "Solar Sail Life",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1503,
+        "name": "Solar Sail Orbit System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3102": {
+    "id": 3102,
+    "name": "Solar Sail Life",
+    "required": [
+      {
+        "id": 3101,
+        "name": "Solar Sail Life"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3103": {
+    "id": 3103,
+    "name": "Solar Sail Life",
+    "required": [
+      {
+        "id": 3102,
+        "name": "Solar Sail Life"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3104": {
+    "id": 3104,
+    "name": "Solar Sail Life",
+    "required": [
+      {
+        "id": 3103,
+        "name": "Solar Sail Life"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3105": {
+    "id": 3105,
+    "name": "Solar Sail Life",
+    "required": [
+      {
+        "id": 3104,
+        "name": "Solar Sail Life"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3106": {
+    "id": 3106,
+    "name": "Solar Sail Life",
+    "required": [
+      {
+        "id": 3105,
+        "name": "Solar Sail Life"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3201": {
+    "id": 3201,
+    "name": "Ray Transmission Efficiency",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1504,
+        "name": "Ray Receiver"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3202": {
+    "id": 3202,
+    "name": "Ray Transmission Efficiency",
+    "required": [
+      {
+        "id": 3201,
+        "name": "Ray Transmission Efficiency"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3203": {
+    "id": 3203,
+    "name": "Ray Transmission Efficiency",
+    "required": [
+      {
+        "id": 3202,
+        "name": "Ray Transmission Efficiency"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3204": {
+    "id": 3204,
+    "name": "Ray Transmission Efficiency",
+    "required": [
+      {
+        "id": 3203,
+        "name": "Ray Transmission Efficiency"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3205": {
+    "id": 3205,
+    "name": "Ray Transmission Efficiency",
+    "required": [
+      {
+        "id": 3204,
+        "name": "Ray Transmission Efficiency"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3206": {
+    "id": 3206,
+    "name": "Ray Transmission Efficiency",
+    "required": [
+      {
+        "id": 3205,
+        "name": "Ray Transmission Efficiency"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3207": {
+    "id": 3207,
+    "name": "Ray Transmission Efficiency",
+    "required": [
+      {
+        "id": 3206,
+        "name": "Ray Transmission Efficiency"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3208": {
+    "id": 3208,
+    "name": "Ray Transmission Efficiency",
+    "required": [
+      {
+        "id": 3207,
+        "name": "Ray Transmission Efficiency"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3301": {
+    "id": 3301,
+    "name": "Sorter Cargo Stacking",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "Integrated Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3302": {
+    "id": 3302,
+    "name": "Sorter Cargo Stacking",
+    "required": [
+      {
+        "id": 3301,
+        "name": "Sorter Cargo Stacking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3303": {
+    "id": 3303,
+    "name": "Sorter Cargo Stacking",
+    "required": [
+      {
+        "id": 3302,
+        "name": "Sorter Cargo Stacking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3304": {
+    "id": 3304,
+    "name": "Sorter Cargo Stacking",
+    "required": [
+      {
+        "id": 3303,
+        "name": "Sorter Cargo Stacking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3305": {
+    "id": 3305,
+    "name": "Sorter Cargo Stacking",
+    "required": [
+      {
+        "id": 3304,
+        "name": "Sorter Cargo Stacking"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3306": {
+    "id": 3306,
+    "name": "Sorter Cargo Integration",
+    "required": [
+      {
+        "id": 3305,
+        "name": "Sorter Cargo Stacking"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "Integrated Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3311": {
+    "id": 3311,
+    "name": "Pile Sorter Upgrade",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "Integrated Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3312": {
+    "id": 3312,
+    "name": "Pile Sorter Upgrade",
+    "required": [
+      {
+        "id": 3311,
+        "name": "Pile Sorter Upgrade"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3313": {
+    "id": 3313,
+    "name": "Pile Sorter Upgrade",
+    "required": [
+      {
+        "id": 3312,
+        "name": "Pile Sorter Upgrade"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3314": {
+    "id": 3314,
+    "name": "Pile Sorter Upgrade",
+    "required": [
+      {
+        "id": 3313,
+        "name": "Pile Sorter Upgrade"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3315": {
+    "id": 3315,
+    "name": "Pile Sorter Upgrade",
+    "required": [
+      {
+        "id": 3314,
+        "name": "Pile Sorter Upgrade"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3316": {
+    "id": 3316,
+    "name": "Pile Sorter Upgrade",
+    "required": [
+      {
+        "id": 3315,
+        "name": "Pile Sorter Upgrade"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "Integrated Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3401": {
+    "id": 3401,
+    "name": "Logistics Carrier Engine",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1604,
+        "name": "Planetary Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3402": {
+    "id": 3402,
+    "name": "Logistics Carrier Engine",
+    "required": [
+      {
+        "id": 3401,
+        "name": "Logistics Carrier Engine"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3403": {
+    "id": 3403,
+    "name": "Logistics Carrier Engine",
+    "required": [
+      {
+        "id": 3402,
+        "name": "Logistics Carrier Engine"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1605,
+        "name": "Interstellar Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3404": {
+    "id": 3404,
+    "name": "Logistics Carrier Engine Lv4",
+    "required": [
+      {
+        "id": 3403,
+        "name": "Logistics Carrier Engine"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2904,
+        "name": "Drive Engine Lv4"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Logistics Carrier Engine Lv4 / vessel warp",
+    "pretechsMax": false
+  },
+  "3405": {
+    "id": 3405,
+    "name": "Logistics Carrier Engine",
+    "required": [
+      {
+        "id": 3404,
+        "name": "Logistics Carrier Engine Lv4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3406": {
+    "id": 3406,
+    "name": "Logistics Carrier Engine",
+    "required": [
+      {
+        "id": 3405,
+        "name": "Logistics Carrier Engine"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3407": {
+    "id": 3407,
+    "name": "Logistics Carrier Engine",
+    "required": [
+      {
+        "id": 3406,
+        "name": "Logistics Carrier Engine"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3501": {
+    "id": 3501,
+    "name": "Logistics Carrier Capacity",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1604,
+        "name": "Planetary Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3502": {
+    "id": 3502,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3501,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3503": {
+    "id": 3503,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3502,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1605,
+        "name": "Interstellar Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3504": {
+    "id": 3504,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3503,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3505": {
+    "id": 3505,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3504,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3506": {
+    "id": 3506,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3505,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3507": {
+    "id": 3507,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3506,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3508": {
+    "id": 3508,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3507,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3509": {
+    "id": 3509,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3508,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3510": {
+    "id": 3510,
+    "name": "Logistics Carrier Capacity",
+    "required": [
+      {
+        "id": 3509,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true
+  },
+  "3601": {
+    "id": 3601,
+    "name": "Vein Utilization",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1001,
+        "name": "Electromagnetism"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3602": {
+    "id": 3602,
+    "name": "Vein Utilization",
+    "required": [
+      {
+        "id": 3601,
+        "name": "Vein Utilization"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3603": {
+    "id": 3603,
+    "name": "Vein Utilization",
+    "required": [
+      {
+        "id": 3602,
+        "name": "Vein Utilization"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3604": {
+    "id": 3604,
+    "name": "Vein Utilization",
+    "required": [
+      {
+        "id": 3603,
+        "name": "Vein Utilization"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3605": {
+    "id": 3605,
+    "name": "Vein Utilization",
+    "required": [
+      {
+        "id": 3604,
+        "name": "Vein Utilization"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3606": {
+    "id": 3606,
+    "name": "Vein Utilization",
+    "required": [
+      {
+        "id": 3605,
+        "name": "Vein Utilization"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3701": {
+    "id": 3701,
+    "name": "Vertical Construction Lv1",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1601,
+        "name": "Basic Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3702": {
+    "id": 3702,
+    "name": "Vertical Construction",
+    "required": [
+      {
+        "id": 3701,
+        "name": "Vertical Construction Lv1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3703": {
+    "id": 3703,
+    "name": "Vertical Construction",
+    "required": [
+      {
+        "id": 3702,
+        "name": "Vertical Construction"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3704": {
+    "id": 3704,
+    "name": "Vertical Construction",
+    "required": [
+      {
+        "id": 3703,
+        "name": "Vertical Construction"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3705": {
+    "id": 3705,
+    "name": "Vertical Construction",
+    "required": [
+      {
+        "id": 3704,
+        "name": "Vertical Construction"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3706": {
+    "id": 3706,
+    "name": "Vertical Construction",
+    "required": [
+      {
+        "id": 3705,
+        "name": "Vertical Construction"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3801": {
+    "id": 3801,
+    "name": "Station Integrated Logistics",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 3508,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3802": {
+    "id": 3802,
+    "name": "Station Integrated Logistics",
+    "required": [
+      {
+        "id": 3801,
+        "name": "Station Integrated Logistics"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 3509,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true
+  },
+  "3803": {
+    "id": 3803,
+    "name": "Station Integrated Logistics",
+    "required": [
+      {
+        "id": 3802,
+        "name": "Station Integrated Logistics"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 3510,
+        "name": "Logistics Carrier Capacity"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true
+  },
+  "3901": {
+    "id": 3901,
+    "name": "Research Speed",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1312,
+        "name": "Information Matrix"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3902": {
+    "id": 3902,
+    "name": "Research Speed",
+    "required": [
+      {
+        "id": 3901,
+        "name": "Research Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3903": {
+    "id": 3903,
+    "name": "Research Speed",
+    "required": [
+      {
+        "id": 3902,
+        "name": "Research Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "3904": {
+    "id": 3904,
+    "name": "Research Speed",
+    "required": [
+      {
+        "id": 3903,
+        "name": "Research Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4001": {
+    "id": 4001,
+    "name": "Distribution Range",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1608,
+        "name": "Distribution Logistics System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4002": {
+    "id": 4002,
+    "name": "Distribution Range",
+    "required": [
+      {
+        "id": 4001,
+        "name": "Distribution Range"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4003": {
+    "id": 4003,
+    "name": "Distribution Range",
+    "required": [
+      {
+        "id": 4002,
+        "name": "Distribution Range"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4004": {
+    "id": 4004,
+    "name": "Distribution Range",
+    "required": [
+      {
+        "id": 4003,
+        "name": "Distribution Range"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4005": {
+    "id": 4005,
+    "name": "Distribution Range",
+    "required": [
+      {
+        "id": 4004,
+        "name": "Distribution Range"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4101": {
+    "id": 4101,
+    "name": "Cosmic Exploration",
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4102": {
+    "id": 4102,
+    "name": "Cosmic Exploration",
+    "required": [
+      {
+        "id": 4101,
+        "name": "Cosmic Exploration"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4103": {
+    "id": 4103,
+    "name": "Universe Exploration Lv3",
+    "required": [
+      {
+        "id": 4102,
+        "name": "Cosmic Exploration"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2902,
+        "name": "Drive Engine Lv2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4104": {
+    "id": 4104,
+    "name": "Cosmic Exploration",
+    "required": [
+      {
+        "id": 4103,
+        "name": "Universe Exploration Lv3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4201": {
+    "id": 4201,
+    "name": "Solar Sail Attaching Speed",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1522,
+        "name": "Vertical Launching Silo"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4202": {
+    "id": 4202,
+    "name": "Solar Sail Attaching Speed",
+    "required": [
+      {
+        "id": 4201,
+        "name": "Solar Sail Attaching Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4203": {
+    "id": 4203,
+    "name": "Solar Sail Attaching Speed",
+    "required": [
+      {
+        "id": 4202,
+        "name": "Solar Sail Attaching Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4204": {
+    "id": 4204,
+    "name": "Solar Sail Attaching Speed",
+    "required": [
+      {
+        "id": 4203,
+        "name": "Solar Sail Attaching Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4205": {
+    "id": 4205,
+    "name": "Solar Sail Attaching Speed",
+    "required": [
+      {
+        "id": 4204,
+        "name": "Solar Sail Attaching Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "4206": {
+    "id": 4206,
+    "name": "Solar Sail Attaching Speed",
+    "required": [
+      {
+        "id": 4205,
+        "name": "Solar Sail Attaching Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5001": {
+    "id": 5001,
+    "name": "Kinetic Weapon Damage",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1801,
+        "name": "Weapon System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5002": {
+    "id": 5002,
+    "name": "Kinetic Weapon Damage",
+    "required": [
+      {
+        "id": 5001,
+        "name": "Kinetic Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5003": {
+    "id": 5003,
+    "name": "Kinetic Weapon Damage",
+    "required": [
+      {
+        "id": 5002,
+        "name": "Kinetic Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5004": {
+    "id": 5004,
+    "name": "Kinetic Weapon Damage",
+    "required": [
+      {
+        "id": 5003,
+        "name": "Kinetic Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5005": {
+    "id": 5005,
+    "name": "Kinetic Weapon Damage",
+    "required": [
+      {
+        "id": 5004,
+        "name": "Kinetic Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5006": {
+    "id": 5006,
+    "name": "Kinetic Weapon Damage",
+    "required": [
+      {
+        "id": 5005,
+        "name": "Kinetic Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5101": {
+    "id": 5101,
+    "name": "Energy Weapon Damage",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1801,
+        "name": "Weapon System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5102": {
+    "id": 5102,
+    "name": "Energy Weapon Damage",
+    "required": [
+      {
+        "id": 5101,
+        "name": "Energy Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5103": {
+    "id": 5103,
+    "name": "Energy Weapon Damage",
+    "required": [
+      {
+        "id": 5102,
+        "name": "Energy Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5104": {
+    "id": 5104,
+    "name": "Energy Weapon Damage",
+    "required": [
+      {
+        "id": 5103,
+        "name": "Energy Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5105": {
+    "id": 5105,
+    "name": "Energy Weapon Damage",
+    "required": [
+      {
+        "id": 5104,
+        "name": "Energy Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5106": {
+    "id": 5106,
+    "name": "Energy Weapon Damage",
+    "required": [
+      {
+        "id": 5105,
+        "name": "Energy Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5201": {
+    "id": 5201,
+    "name": "Explosive Weapon Damage",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1802,
+        "name": "Combustible Unit"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5202": {
+    "id": 5202,
+    "name": "Explosive Weapon Damage",
+    "required": [
+      {
+        "id": 5201,
+        "name": "Explosive Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5203": {
+    "id": 5203,
+    "name": "Explosive Weapon Damage",
+    "required": [
+      {
+        "id": 5202,
+        "name": "Explosive Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5204": {
+    "id": 5204,
+    "name": "Explosive Weapon Damage",
+    "required": [
+      {
+        "id": 5203,
+        "name": "Explosive Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5205": {
+    "id": 5205,
+    "name": "Explosive Weapon Damage",
+    "required": [
+      {
+        "id": 5204,
+        "name": "Explosive Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5206": {
+    "id": 5206,
+    "name": "Explosive Weapon Damage",
+    "required": [
+      {
+        "id": 5205,
+        "name": "Explosive Weapon Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5301": {
+    "id": 5301,
+    "name": "Combat Drone Damage",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "Prototype"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5302": {
+    "id": 5302,
+    "name": "Combat Drone Damage",
+    "required": [
+      {
+        "id": 5301,
+        "name": "Combat Drone Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5303": {
+    "id": 5303,
+    "name": "Combat Drone Damage",
+    "required": [
+      {
+        "id": 5302,
+        "name": "Combat Drone Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5304": {
+    "id": 5304,
+    "name": "Combat Drone Damage",
+    "required": [
+      {
+        "id": 5303,
+        "name": "Combat Drone Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5305": {
+    "id": 5305,
+    "name": "Combat Drone Damage",
+    "required": [
+      {
+        "id": 5304,
+        "name": "Combat Drone Damage"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5401": {
+    "id": 5401,
+    "name": "Combat Drone Attack Speed",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "Prototype"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5402": {
+    "id": 5402,
+    "name": "Combat Drone Attack Speed",
+    "required": [
+      {
+        "id": 5401,
+        "name": "Combat Drone Attack Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5403": {
+    "id": 5403,
+    "name": "Combat Drone Attack Speed",
+    "required": [
+      {
+        "id": 5402,
+        "name": "Combat Drone Attack Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5404": {
+    "id": 5404,
+    "name": "Combat Drone Attack Speed",
+    "required": [
+      {
+        "id": 5403,
+        "name": "Combat Drone Attack Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5405": {
+    "id": 5405,
+    "name": "Combat Drone Attack Speed",
+    "required": [
+      {
+        "id": 5404,
+        "name": "Combat Drone Attack Speed"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5601": {
+    "id": 5601,
+    "name": "Combat Drone Durability",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "Prototype"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5602": {
+    "id": 5602,
+    "name": "Combat Drone Durability",
+    "required": [
+      {
+        "id": 5601,
+        "name": "Combat Drone Durability"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5603": {
+    "id": 5603,
+    "name": "Combat Drone Durability",
+    "required": [
+      {
+        "id": 5602,
+        "name": "Combat Drone Durability"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5604": {
+    "id": 5604,
+    "name": "Combat Drone Durability",
+    "required": [
+      {
+        "id": 5603,
+        "name": "Combat Drone Durability"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5605": {
+    "id": 5605,
+    "name": "Combat Drone Durability",
+    "required": [
+      {
+        "id": 5604,
+        "name": "Combat Drone Durability"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5701": {
+    "id": 5701,
+    "name": "Planetary Shield",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1809,
+        "name": "Planetary Defense System"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5702": {
+    "id": 5702,
+    "name": "Planetary Shield",
+    "required": [
+      {
+        "id": 5701,
+        "name": "Planetary Shield"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5703": {
+    "id": 5703,
+    "name": "Planetary Shield",
+    "required": [
+      {
+        "id": 5702,
+        "name": "Planetary Shield"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5704": {
+    "id": 5704,
+    "name": "Planetary Shield",
+    "required": [
+      {
+        "id": 5703,
+        "name": "Planetary Shield"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5705": {
+    "id": 5705,
+    "name": "Planetary Shield",
+    "required": [
+      {
+        "id": 5704,
+        "name": "Planetary Shield"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5801": {
+    "id": 5801,
+    "name": "Ground Squadron Expansion",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "Prototype"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5802": {
+    "id": 5802,
+    "name": "Ground Squadron Expansion",
+    "required": [
+      {
+        "id": 5801,
+        "name": "Ground Squadron Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5803": {
+    "id": 5803,
+    "name": "Ground Squadron Expansion",
+    "required": [
+      {
+        "id": 5802,
+        "name": "Ground Squadron Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5804": {
+    "id": 5804,
+    "name": "Ground Squadron Expansion",
+    "required": [
+      {
+        "id": 5803,
+        "name": "Ground Squadron Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5805": {
+    "id": 5805,
+    "name": "Ground Squadron Expansion",
+    "required": [
+      {
+        "id": 5804,
+        "name": "Ground Squadron Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5806": {
+    "id": 5806,
+    "name": "Ground Squadron Expansion",
+    "required": [
+      {
+        "id": 5805,
+        "name": "Ground Squadron Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5807": {
+    "id": 5807,
+    "name": "Ground Squadron Expansion",
+    "required": [
+      {
+        "id": 5806,
+        "name": "Ground Squadron Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5901": {
+    "id": 5901,
+    "name": "Space Fleet Expansion",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1822,
+        "name": "Corvette"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5902": {
+    "id": 5902,
+    "name": "Space Fleet Expansion",
+    "required": [
+      {
+        "id": 5901,
+        "name": "Space Fleet Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5903": {
+    "id": 5903,
+    "name": "Space Fleet Expansion",
+    "required": [
+      {
+        "id": 5902,
+        "name": "Space Fleet Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5904": {
+    "id": 5904,
+    "name": "Space Fleet Expansion",
+    "required": [
+      {
+        "id": 5903,
+        "name": "Space Fleet Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5905": {
+    "id": 5905,
+    "name": "Space Fleet Expansion",
+    "required": [
+      {
+        "id": 5904,
+        "name": "Space Fleet Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5906": {
+    "id": 5906,
+    "name": "Space Fleet Expansion",
+    "required": [
+      {
+        "id": 5905,
+        "name": "Space Fleet Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "5907": {
+    "id": 5907,
+    "name": "Space Fleet Expansion",
+    "required": [
+      {
+        "id": 5906,
+        "name": "Space Fleet Expansion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6001": {
+    "id": 6001,
+    "name": "Enhanced Structure",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mecha Core Lv1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6002": {
+    "id": 6002,
+    "name": "Enhanced Structure",
+    "required": [
+      {
+        "id": 6001,
+        "name": "Enhanced Structure"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6003": {
+    "id": 6003,
+    "name": "Enhanced Structure",
+    "required": [
+      {
+        "id": 6002,
+        "name": "Enhanced Structure"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6004": {
+    "id": 6004,
+    "name": "Enhanced Structure",
+    "required": [
+      {
+        "id": 6003,
+        "name": "Enhanced Structure"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6005": {
+    "id": 6005,
+    "name": "Enhanced Structure",
+    "required": [
+      {
+        "id": 6004,
+        "name": "Enhanced Structure"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6006": {
+    "id": 6006,
+    "name": "Enhanced Structure",
+    "required": [
+      {
+        "id": 6005,
+        "name": "Enhanced Structure"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6101": {
+    "id": 6101,
+    "name": "EM Weapon Strength",
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1810,
+        "name": "Jammer Tower"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6102": {
+    "id": 6102,
+    "name": "EM Weapon Strength",
+    "required": [
+      {
+        "id": 6101,
+        "name": "EM Weapon Strength"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6103": {
+    "id": 6103,
+    "name": "EM Weapon Strength",
+    "required": [
+      {
+        "id": 6102,
+        "name": "EM Weapon Strength"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6104": {
+    "id": 6104,
+    "name": "EM Weapon Strength",
+    "required": [
+      {
+        "id": 6103,
+        "name": "EM Weapon Strength"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6105": {
+    "id": 6105,
+    "name": "EM Weapon Strength",
+    "required": [
+      {
+        "id": 6104,
+        "name": "EM Weapon Strength"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  },
+  "6106": {
+    "id": 6106,
+    "name": "EM Weapon Strength",
+    "required": [
+      {
+        "id": 6105,
+        "name": "EM Weapon Strength"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false
+  }
+}

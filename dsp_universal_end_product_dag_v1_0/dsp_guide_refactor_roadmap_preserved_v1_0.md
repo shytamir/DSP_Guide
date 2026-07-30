@@ -37,6 +37,15 @@ production unlocks for sustainable red science; FLIGHT owns flight and
 post-red preparation research; early shared refinery blocks are listed once;
 and every build card has a stable anchor that opens when linked.
 
+## Phase 1.5 — Static-site separation
+
+**Status: complete**
+
+The published guide remains `index.html`, but its presentation, behavior, and
+technology reference data now live in auditable static assets under `assets/`.
+The guide's reader-facing copy and presentation are unchanged. The repository
+requires no framework, dependency installation, or build step.
+
 ## Phase 2 — Dependency-driven atomic card rebuild
 
 **Status: preserved for later review; not started**
