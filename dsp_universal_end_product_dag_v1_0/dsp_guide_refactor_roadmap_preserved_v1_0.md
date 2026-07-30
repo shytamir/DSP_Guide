@@ -19,7 +19,7 @@ This phase replaces already-edited guide copy as the factual dependency source f
 
 ## Phase 1 — Foundation and progression-boundary repair
 
-**Status: preserved for later review; not started**
+**Status: complete**
 
 Repair the early guide's sequencing and scope before performing the larger card rebuild:
 
@@ -30,6 +30,12 @@ Repair the early guide's sequencing and scope before performing the larger card 
 - move flight research objectives into FLIGHT;
 - remove duplicated shared-facility descriptions such as one refinery block being listed once per output;
 - establish the final atomic-card/linking contract against the Phase 0 DAG.
+
+Implemented in the published `index.html`: BOOTSTRAP now clears affordable
+no-matrix groundwork while the mall develops; RED owns the blue-funded
+production unlocks for sustainable red science; FLIGHT owns flight and
+post-red preparation research; early shared refinery blocks are listed once;
+and every build card has a stable anchor that opens when linked.
 
 ## Phase 2 — Dependency-driven atomic card rebuild
 
