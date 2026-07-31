@@ -125,6 +125,76 @@ for (const retired of [
   if (html.includes(retired)) errors.push(`Retired card-system text remains: ${retired}`);
 }
 
+for (const required of [
+  "Organic Crystal (mined)",
+  "Sulfuric Acid ocean",
+  "Fire Ice",
+  "Kimberlite Ore",
+  "Fractal Silicon",
+  "Optical Grating Crystal",
+  "Spiniform Stalagmite Crystal",
+  "Unipolar Magnet",
+  "The finite 200-yellow-cube research batch is complete",
+  "Three Matrix Labs sustain 22.5 yellow cubes/min",
+  "Three Matrix Labs sustain 18 purple cubes/min",
+  "Two Matrix Labs sustain 10 green cubes/min",
+]) {
+  if (!html.includes(required)) errors.push(`Required consistency text is missing: ${required}`);
+}
+
+for (const stale of [
+  "six small mall blocks",
+  "Match the machine counts and input rates",
+  "Give the Collider a Hydrogen supply",
+  "Those four products converge into Small Carrier Rockets",
+  "810–860 ingot practical first-haul target",
+  "7.5/min minimum; ~15/min comfortable",
+  "12/min minimum; ~24/min comfortable",
+  "Cheap 8:1 Space Warpers available",
+  "Live swarm generation meets the DYSON phase target",
+]) {
+  if (html.includes(stale)) errors.push(`Stale consistency text remains: ${stale}`);
+}
+
+const redCard = cards.find(match => match[1] === "card-red-red-cubes")?.[2] || "";
+if (/card-stage-surplus[\s\S]*?<li>(?:Hydrogen|Energetic Graphite)\.<\/li>/.test(redCard)) {
+  errors.push("RED card labels an internally consumed ingredient as surplus");
+}
+
+const quantumCard = cards.find(match => match[1] === "card-green-quantum-chips")?.[2] || "";
+if (/card-stage-surplus[\s\S]*?<li>Hydrogen\.<\/li>/.test(quantumCard)) {
+  errors.push("GREEN Quantum Chip card labels its net Hydrogen input as surplus");
+}
+
+const checklist = html.slice(
+  html.indexOf('<h1 id="ref-checklist">'),
+  html.indexOf('<h1 id="ref-troubleshoot">'),
+);
+const checklistOrder = [
+  "#bootstrap",
+  "#blue",
+  "#red",
+  "#flight",
+  "#titanium",
+  "#ils",
+  "#yellow",
+  "#purple",
+  "#warp",
+  "#green",
+  "#dyson",
+  "#photon",
+  "#white",
+  "#logistics",
+];
+let previousChecklistPosition = -1;
+for (const anchor of checklistOrder) {
+  const position = checklist.indexOf(`href="${anchor}"`);
+  if (position <= previousChecklistPosition) {
+    errors.push(`Checklist phase is missing or out of order: ${anchor}`);
+  }
+  previousChecklistPosition = position;
+}
+
 const recipeOutputs = new Map([
   [84, 2001],
   [85, 2011],
