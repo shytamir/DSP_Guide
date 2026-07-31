@@ -1,8 +1,8 @@
 # Card System Reader-Value Review
 
-Status: analysis only. The published guide was not changed.
+Status: historical audit supporting the implemented card system.
 
-The revised 19-card proposal in `CARD_SYSTEM_PLAN.md` supersedes this review's
+The implemented 19-card system in `CARD_SYSTEM_PLAN.md` supersedes this review's
 earlier provisional size estimate.
 
 This document isolates the current card system from the rest of the guide and

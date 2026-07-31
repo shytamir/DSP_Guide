@@ -1,12 +1,13 @@
 # Proposed Companion Card System
 
-Status: revised proposal for inspection. The published guide is unchanged.
+Status: implemented in the published guide.
 
 This plan applies the findings in `CARD_SYSTEM_REVIEW.md` and the subsequent
 scope decisions. It defines what qualifies for a card, how technology-bound
 lines progress, and which guide objectives should remain prose.
 
-It does not rewrite card copy, change guide prose, or modify recipe values.
+The implementation replaces the former card layer while preserving the
+guide's progression structure and recipe values.
 
 ## Place in the guide
 
