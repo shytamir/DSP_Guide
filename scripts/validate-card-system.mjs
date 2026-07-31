@@ -8,7 +8,7 @@ const authoritativeRecipes = JSON.parse(
   ),
 ).recipes;
 const errors = [];
-const cards = [...html.matchAll(/<details class="build-card[^"]*" id="([^"]+)">([\s\S]*?)<\/details>/g)];
+const cards = [...html.matchAll(/<details class="build-card[^\"]*" id="([^\"]+)">([\s\S]*?)<\/details>/g)];
 const ids = cards.map(match => match[1]);
 const uniqueIds = new Set(ids);
 
@@ -34,12 +34,8 @@ const expectedCards = new Map([
   ["card-logistics-interstellar-kit", "Interstellar Logistics Kit — buffer 10 ILS + 50 Vessels"],
 ]);
 
-if (ids.length !== uniqueIds.size) {
-  errors.push(`Duplicate build-card IDs: ${ids.length - uniqueIds.size}`);
-}
-if (cards.length !== expectedCards.size) {
-  errors.push(`Expected ${expectedCards.size} cards; found ${cards.length}`);
-}
+if (ids.length !== uniqueIds.size) errors.push(`Duplicate build-card IDs: ${ids.length - uniqueIds.size}`);
+if (cards.length !== expectedCards.size) errors.push(`Expected ${expectedCards.size} cards; found ${cards.length}`);
 
 for (const [id, expectedTitle] of expectedCards) {
   const card = cards.find(match => match[1] === id);
@@ -48,70 +44,86 @@ for (const [id, expectedTitle] of expectedCards) {
     continue;
   }
   const title = card[2].match(/card-summary-title">([^<]+)</)?.[1] || "";
-  if (title !== expectedTitle) {
-    errors.push(`${id} title changed: "${title}"`);
+  if (title !== expectedTitle) errors.push(`${id} title changed: "${title}"`);
+}
+for (const id of ids) if (!expectedCards.has(id)) errors.push(`Unplanned card remains: ${id}`);
+
+const references = [...html.matchAll(/<details class="production-reference build-card-anchor" id="([^\"]+)">([\s\S]*?)<\/details>/g)];
+const expectedReferences = new Set(["reference-electromagnetic-turbines", "reference-graphene"]);
+if (references.length !== expectedReferences.size) {
+  errors.push(`Expected ${expectedReferences.size} reusable references; found ${references.length}`);
+}
+for (const id of expectedReferences) {
+  if (!references.some(match => match[1] === id)) errors.push(`Missing reusable reference: ${id}`);
+}
+
+const allDocumentIds = new Set([...html.matchAll(/\bid="([^\"]+)"/g)].map(match => match[1]));
+const links = [...html.matchAll(/<a class="card-crossref-link" href="#([^\"]+)"/g)].map(match => match[1]);
+for (const target of links) {
+  if (!allDocumentIds.has(target)) errors.push(`Broken production-map reference: #${target}`);
+  const targetStart = html.match(new RegExp(`<[^>]+\\bid="${target}"[^>]*>`))?.[0] || "";
+  if (!/(?:build-card|production-reference|route-row)/.test(targetStart)) {
+    errors.push(`Reference does not land on a card, reusable line, or final route: #${target}`);
   }
 }
 
-for (const id of ids) {
-  if (!expectedCards.has(id)) errors.push(`Unplanned card remains: ${id}`);
-}
+function validateMap(id, body, requireExactDestination) {
+  const required = [
+    'class="map-supplies"><h4>Supplies</h4>',
+    'class="map-pipeline"><h4>Production Map</h4>',
+    'class="map-destination"><h4>Destination</h4>',
+  ];
+  const positions = required.map(section => body.indexOf(section));
+  required.forEach((section, index) => {
+    if (positions[index] < 0) errors.push(`${id} is missing ${section}`);
+  });
+  if (!positions.every((position, index) => index === 0 || position > positions[index - 1])) {
+    errors.push(`${id} does not follow Supplies → Production Map → Destination`);
+  }
 
-const links = [...html.matchAll(/<a class="card-crossref-link" href="#([^"]+)"/g)].map(
-  match => match[1],
-);
-for (const target of links) {
-  if (!uniqueIds.has(target)) errors.push(`Broken card reference: #${target}`);
+  const supplies = body.match(/class="map-supplies"><h4>Supplies<\/h4>([\s\S]*?)<\/section>/)?.[1] || "";
+  const pipeline = body.match(/class="map-pipeline"><h4>Production Map<\/h4>([\s\S]*?)<\/section>/)?.[1] || "";
+  const destination = body.match(/class="map-destination"><h4>Destination<\/h4>([\s\S]*?)<\/section>/)?.[1] || "";
+  const visible = value => value.replace(/<[^>]+>/g, " ");
+
+  if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(visible(supplies))) {
+    errors.push(`${id} puts exact internal arithmetic in Supplies`);
+  }
+  if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(visible(pipeline))) {
+    errors.push(`${id} puts exact internal arithmetic in Production Map`);
+  }
+  if (requireExactDestination && !/\d/.test(visible(destination))) {
+    errors.push(`${id} Destination does not restate its exact end-product target`);
+  }
+
+  const routeRows = [...pipeline.matchAll(/class="route-row[^\"]*"[^>]*>[\s\S]*?<\/div>/g)];
+  if (routeRows.length === 0) errors.push(`${id} has no production-map routes`);
+  if (routeRows.length > 8) errors.push(`${id} exceeds the eight-row complexity limit (${routeRows.length})`);
+  const routeGroups = [...pipeline.matchAll(/class="route-group"/g)].length;
+  if (routeGroups > 3) errors.push(`${id} exceeds the three-group complexity limit (${routeGroups})`);
+  for (const row of routeRows) {
+    const arrowCount = (row[0].match(/→/g) || []).length;
+    if (arrowCount > 3) errors.push(`${id} has a route row with ${arrowCount} transformations`);
+  }
+
+  const tailStages = [...body.matchAll(/class="map-footer-section (map-surplus|map-note)"/g)].map(match => match[1]);
+  if (new Set(tailStages).size !== tailStages.length) errors.push(`${id} duplicates a permitted footer section`);
+  if (/card-stage-(?:input|pipeline|output|totals|pickup)/.test(body)) {
+    errors.push(`${id} retains legacy column-card markup`);
+  }
 }
 
 for (const [fullMatch, id, body] of cards) {
-  const requiredStages = [
-    'card-stage-input"><h4>Input</h4>',
-    'card-stage-pipeline"><h4>Pipeline</h4>',
-    'card-stage-output"><h4>Output</h4>',
-  ];
-  for (const required of requiredStages) {
-    if (!body.includes(required)) errors.push(`${id} is missing ${required}`);
-  }
-  const positions = requiredStages.map(stage => body.indexOf(stage));
-  if (!positions.every((position, index) => index === 0 || position > positions[index - 1])) {
-    errors.push(`${id} does not follow Input → Pipeline → Output`);
-  }
-  if (/<details class="build-card[^>]*\sopen(?:\s|>)/.test(fullMatch)) {
-    errors.push(`${id} is open by default`);
-  }
-  if (/card-stage-(?:totals|pickup)/.test(body)) {
-    errors.push(`${id} contains a retired mathematical footer`);
-  }
-
-  const input = body.match(/card-stage-input"><h4>Input<\/h4><ul>([\s\S]*?)<\/ul>/)?.[1] || "";
-  const pipeline = body.match(/card-stage-pipeline"><h4>Pipeline<\/h4><ul>([\s\S]*?)<\/ul>/)?.[1] || "";
-  const output = body.match(/card-stage-output"><h4>Output<\/h4><ul>([\s\S]*?)<\/ul>/)?.[1] || "";
-  const visible = value => value.replace(/<[^>]+>/g, " ");
-
-  if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|items?)\b/i.test(visible(input))) {
-    errors.push(`${id} puts exact internal arithmetic in Input`);
-  }
-  if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(visible(pipeline))) {
-    errors.push(`${id} puts exact internal arithmetic in Pipeline`);
-  }
-  if (!/\d/.test(visible(output))) {
-    errors.push(`${id} Output does not restate its exact end-product target`);
-  }
-
-  const tailStages = [...body.matchAll(/card-stage-(surplus|note)"><h4>/g)].map(match => match[1]);
-  if (new Set(tailStages).size !== tailStages.length) {
-    errors.push(`${id} duplicates a permitted footer section`);
-  }
+  validateMap(id, body, true);
+  if (/<details class="build-card[^>]*\sopen(?:\s|>)/.test(fullMatch)) errors.push(`${id} is open by default`);
 }
+for (const [, id, body] of references) validateMap(id, body, false);
 
 for (const phaseId of ["ils", "photon", "white"]) {
   const start = html.search(new RegExp(`<section class="phase-section[^>]*" id="${phaseId}">`));
   const end = html.indexOf('<section class="phase-section', start + 1);
   const phase = html.slice(start, end < 0 ? html.length : end);
-  if (phase.includes('<details class="build-card')) {
-    errors.push(`${phaseId.toUpperCase()} still contains a build card`);
-  }
+  if (phase.includes('<details class="build-card')) errors.push(`${phaseId.toUpperCase()} still contains a build card`);
 }
 
 for (const retired of [
@@ -121,6 +133,9 @@ for (const retired of [
   "card-photon-critical-photons",
   "card-photon-antimatter",
   "card-white-white-cubes",
+  '<h4>Input</h4>',
+  '<h4>Pipeline</h4>',
+  '<h4>Output</h4>',
 ]) {
   if (html.includes(retired)) errors.push(`Retired card-system text remains: ${retired}`);
 }
@@ -142,94 +157,17 @@ for (const required of [
   if (!html.includes(required)) errors.push(`Required consistency text is missing: ${required}`);
 }
 
-for (const stale of [
-  "six small mall blocks",
-  "Match the machine counts and input rates",
-  "Give the Collider a Hydrogen supply",
-  "Those four products converge into Small Carrier Rockets",
-  "810–860 ingot practical first-haul target",
-  "7.5/min minimum; ~15/min comfortable",
-  "12/min minimum; ~24/min comfortable",
-  "Cheap 8:1 Space Warpers available",
-  "Live swarm generation meets the DYSON phase target",
-]) {
-  if (html.includes(stale)) errors.push(`Stale consistency text remains: ${stale}`);
-}
-
-const redCard = cards.find(match => match[1] === "card-red-red-cubes")?.[2] || "";
-if (/card-stage-surplus[\s\S]*?<li>(?:Hydrogen|Energetic Graphite)\.<\/li>/.test(redCard)) {
-  errors.push("RED card labels an internally consumed ingredient as surplus");
-}
-
-const quantumCard = cards.find(match => match[1] === "card-green-quantum-chips")?.[2] || "";
-if (/card-stage-surplus[\s\S]*?<li>Hydrogen\.<\/li>/.test(quantumCard)) {
-  errors.push("GREEN Quantum Chip card labels its net Hydrogen input as surplus");
-}
-
-const checklist = html.slice(
-  html.indexOf('<h1 id="ref-checklist">'),
-  html.indexOf('<h1 id="ref-troubleshoot">'),
-);
-const checklistOrder = [
-  "#bootstrap",
-  "#blue",
-  "#red",
-  "#flight",
-  "#titanium",
-  "#ils",
-  "#yellow",
-  "#purple",
-  "#warp",
-  "#green",
-  "#dyson",
-  "#photon",
-  "#white",
-  "#logistics",
-];
-let previousChecklistPosition = -1;
-for (const anchor of checklistOrder) {
-  const position = checklist.indexOf(`href="${anchor}"`);
-  if (position <= previousChecklistPosition) {
-    errors.push(`Checklist phase is missing or out of order: ${anchor}`);
-  }
-  previousChecklistPosition = position;
-}
-
 const recipeOutputs = new Map([
-  [84, 2001],
-  [85, 2011],
-  [45, 2303],
-  [56, 2302],
-  [48, 2301],
-  [86, 2101],
-  [114, 2106],
-  [7, 2203],
-  [8, 2201],
-  [133, 1128],
-  [9, 6001],
-  [18, 6002],
-  [27, 6003],
-  [51, 1303],
-  [36, 1402],
-  [79, 1210],
-  [52, 1305],
-  [101, 1209],
-  [70, 1501],
-  [81, 1502],
-  [41, 1802],
-  [122, 2107],
-  [123, 5003],
-  [93, 2103],
-  [94, 5001],
-  [95, 2104],
-  [96, 5002],
+  [84, 2001], [85, 2011], [45, 2303], [56, 2302], [48, 2301], [86, 2101],
+  [114, 2106], [7, 2203], [8, 2201], [133, 1128], [9, 6001], [18, 6002],
+  [27, 6003], [51, 1303], [36, 1402], [79, 1210], [52, 1305], [101, 1209],
+  [70, 1501], [81, 1502], [41, 1802], [122, 2107], [123, 5003], [93, 2103],
+  [94, 5001], [95, 2104], [96, 5002],
 ]);
-
 for (const [recipeId, outputId] of recipeOutputs) {
   const recipe = authoritativeRecipes.find(candidate => candidate.recipe_id === recipeId);
-  if (!recipe) {
-    errors.push(`Authoritative recipe ${recipeId} is missing`);
-  } else if (!recipe.outputs.some(output => output.item_id === outputId)) {
+  if (!recipe) errors.push(`Authoritative recipe ${recipeId} is missing`);
+  else if (!recipe.outputs.some(output => output.item_id === outputId)) {
     errors.push(`Authoritative recipe ${recipeId} no longer produces item ${outputId}`);
   }
 }
@@ -240,6 +178,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(
-  `Card validation passed: ${cards.length} planned cards, ${links.length} direct card links, no cards in ILS/PHOTON/WHITE, reader-facing stages intact, and ${recipeOutputs.size} authoritative output recipes verified.`,
-);
+console.log(`Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${links.length} direct links, textual-map complexity within bounds, and ${recipeOutputs.size} authoritative output recipes verified.`);

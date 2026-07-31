@@ -13,12 +13,23 @@
     setCards(button, button.dataset.cardAction === "open");
   });
 
-  function openLinkedCard() {
+  function openLinkedTarget() {
     if (!location.hash) return;
     const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (target && target.matches("details.build-card")) target.open = true;
+    if (!target) return;
+
+    let parent = target.matches("details") ? target : target.closest("details");
+    while (parent) {
+      parent.open = true;
+      parent = parent.parentElement?.closest("details") || null;
+    }
+
+    requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
   }
 
-  window.addEventListener("hashchange", openLinkedCard);
-  openLinkedCard();
+  document.addEventListener("click", event => {
+    if (event.target.closest(".card-crossref-link")) setTimeout(openLinkedTarget, 0);
+  });
+  window.addEventListener("hashchange", openLinkedTarget);
+  openLinkedTarget();
 })();
