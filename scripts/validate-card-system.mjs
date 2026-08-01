@@ -13,14 +13,14 @@ const ids = cards.map(match => match[1]);
 const uniqueIds = new Set(ids);
 
 const expectedCards = new Map([
-  ["card-bootstrap-mall-logistics", "Mall Logistics — buffer 600 Belts + 400 Sorters"],
+  ["card-bootstrap-mall-logistics", "Mall Logistics — buffer 900 Belts + 400 Sorters"],
   ["card-bootstrap-mall-industry", "Mall Industry — buffer 50 Miners + 50 Smelters + 50 Mk.I Assemblers"],
   ["card-bootstrap-mall-storage", "Mall Storage — buffer 50 Storage Mk.I + 50 Storage Tanks"],
   ["card-bootstrap-mall-power", "Mall Power — buffer 50 Wind Turbines + 100 Tesla Towers + 200 Combustible Units"],
   ["card-blue-blue-cubes", "Blue Cubes — 40/min"],
   ["card-red-red-cubes", "Red Cubes — 20/min"],
   ["card-titanium-first-outpost", "First Off-World Smelting Outpost — 860 Titanium Ingots + 520 High-Purity Silicon"],
-  ["card-yellow-yellow-cubes", "Yellow Cubes — 22.5/min"],
+  ["card-yellow-yellow-cubes", "Yellow Cubes — three Labs’ worth"],
   ["card-purple-processors", "Processors — 45/min"],
   ["card-purple-particle-broadband", "Particle Broadband — 22.5/min"],
   ["card-warp-space-warpers", "Space Warpers — 36/min from green cubes"],
@@ -92,7 +92,7 @@ function validateMap(id, body, requireExactDestination) {
   if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(visible(pipeline))) {
     errors.push(`${id} puts exact internal arithmetic in Production Map`);
   }
-  if (requireExactDestination && !/\d/.test(visible(destination))) {
+  if (requireExactDestination && !/\d/.test(visible(destination)) && !/three Labs[’'] worth/i.test(visible(destination))) {
     errors.push(`${id} Destination does not restate its exact end-product target`);
   }
 
@@ -119,7 +119,7 @@ for (const [fullMatch, id, body] of cards) {
 }
 for (const [, id, body] of references) validateMap(id, body, false);
 
-for (const phaseId of ["ils", "photon", "white"]) {
+for (const phaseId of ["ils", "warp", "photon", "white"]) {
   const start = html.search(new RegExp(`<section class="phase-section[^>]*" id="${phaseId}">`));
   const end = html.indexOf('<section class="phase-section', start + 1);
   const phase = html.slice(start, end < 0 ? html.length : end);
@@ -150,11 +150,28 @@ for (const required of [
   "Spiniform Stalagmite Crystal",
   "Unipolar Magnet",
   "The finite 200-yellow-cube research batch is complete",
-  "Three Matrix Labs sustain 22.5 yellow cubes/min",
+  "Three yellow-cube Labs produce continuously",
   "Three Matrix Labs sustain 18 purple cubes/min",
   "Two Matrix Labs sustain 10 green cubes/min",
 ]) {
   if (!html.includes(required)) errors.push(`Required consistency text is missing: ${required}`);
+}
+
+for (const required of [
+  'class="producer-legend"',
+  "producer-smelting",
+  "producer-assembly",
+  "producer-processing",
+  'src="assets/js/producer-types.js"',
+]) {
+  if (!html.includes(required)) errors.push(`Producer-type presentation is missing: ${required}`);
+}
+
+const greenStart = html.indexOf('<section class="phase-section phase-section-green" id="green">');
+const greenEnd = html.indexOf('<section class="phase-section', greenStart + 1);
+const greenPhase = html.slice(greenStart, greenEnd);
+if (!greenPhase.includes('id="card-warp-space-warpers"')) {
+  errors.push("The Space Warper card is not housed in GREEN");
 }
 
 const recipeOutputs = new Map([

@@ -88,6 +88,19 @@ This optional footer contains only information that changes how the line is
 built or kept running, such as a blocking refinery outlet, a monitored tank,
 a feedback belt, a limited mall buffer, or a rare-resource shortcut.
 
+## Producer-type legend
+
+Production-map outputs use three runtime-derived visual categories:
+
+- **Smelting** for `Smelt` recipes;
+- **Assembly** for `Assemble` recipes;
+- **Processing** for `Refine`, `Chemical`, `Fractionate`, and `Particle`
+  recipes.
+
+Raw supplies, research endpoints, storage, and other exceptions remain
+neutral. Color is reinforced with a distinct underline style and an accessible
+tooltip so it is not the only carrier of meaning.
+
 ## Complexity boundary
 
 A phase card may contain at most:
@@ -141,8 +154,8 @@ The published guide contains exactly 19 phase cards:
 | ILS | None |
 | YELLOW | Yellow Cubes |
 | PURPLE | Processors; Particle Broadband |
-| WARP | Space Warpers |
-| GREEN | Quantum Chips; Graviton Lenses |
+| WARP | None |
+| GREEN | Quantum Chips; Graviton Lenses; Space Warpers |
 | DYSON | Solar Sails |
 | SPHERE | Dyson Sphere Components; Deuteron Fuel Rods |
 | PHOTON | None |
@@ -159,6 +172,7 @@ Automated checks enforce:
 
 - exactly 19 planned phase cards;
 - exactly two reusable references;
+- one authoritative three-type producer legend;
 - stable card IDs, titles, and output targets;
 - `Supplies → Production Map → Destination` ordering;
 - route-row and group complexity limits;
