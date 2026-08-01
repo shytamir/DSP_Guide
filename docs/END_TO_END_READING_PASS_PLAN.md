@@ -1,6 +1,6 @@
 # End-to-End Reading Pass Correction Plan
 
-Status: Phase A and the structural phase are implemented; editorial work remains pending review.
+Status: Phase A, structural work, and the approved editorial pass are implemented.
 
 ## Phase A — immediate corrections
 
@@ -27,13 +27,22 @@ could be reviewed coherently:
   checklist;
 - updated the card and structure validation contracts.
 
-## Editorial phase — deferred
+## Editorial phase — implemented
 
-The remaining work is editorial and was deliberately left out of the
-structural pass:
+The editorial pass completed the approved reader-facing work without changing
+the production cards:
 
-- rewrite the Goal and Research First sections using authoritative dependency
-  closures;
-- finish the broader phase-dashboard and late-game prose rewrites;
-- revisit the cube-target table, WARP prose, component icons, WHITE, and
-  LOGISTICS only in their separately approved scopes.
+- rewrote affected phase dashboards, Goal sections, Research First priorities,
+  and completion language around player decisions rather than production-map
+  narration;
+- rebuilt research ordering from the authoritative technology reference,
+  including implicit prerequisites where they affect the recommended route;
+- replaced the nested FLIGHT/TITANIUM/ILS phase templates with one concise ILS
+  expedition sequence while preserving the compatibility anchors and outpost
+  card;
+- clarified the YELLOW, PURPLE, GREEN, DYSON, SPHERE, and PHOTON transitions,
+  including the intended overlap between orbital construction and photon
+  production.
+
+The cube-target table, WARP prose, component icons, WHITE, and LOGISTICS remain
+separate scopes.
