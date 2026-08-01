@@ -142,16 +142,14 @@ one action. Link-to-link chains are invalid.
 
 ## Card inventory
 
-The published guide contains exactly 19 phase cards:
+The published guide contains exactly 20 phase cards:
 
 | Section | Cards |
 |---|---|
 | BOOTSTRAP | Mall Logistics; Mall Industry; Mall Storage; Mall Power |
 | BLUE | Blue Cubes |
-| RED | Red Cubes |
-| FLIGHT | None |
-| TITANIUM | First Off-World Smelting Outpost |
-| ILS | None |
+| RED | Red Cubes; Foundations |
+| ILS | First Off-World Smelting Outpost |
 | YELLOW | Yellow Cubes |
 | PURPLE | Processors; Particle Broadband |
 | WARP | None |
@@ -162,15 +160,17 @@ The published guide contains exactly 19 phase cards:
 | WHITE | None |
 | LOGISTICS | Distribution Logistics Kit; Planetary Logistics Kit; Interstellar Logistics Kit |
 
-ILS and PHOTON remain prose because they are focused procedures rather than
-permanent automated end-product lines. WHITE remains prose because its inputs
-already exist and its final Lab convergence is simple.
+The ILS bootstrap remains prose because it is a focused procedure rather than
+a permanent automated end-product line; its reusable off-world smelting
+outpost retains a card. PHOTON remains prose for the same procedural reason.
+WHITE remains prose because its inputs already exist and its final Lab
+convergence is simple.
 
 ## Validation contract
 
 Automated checks enforce:
 
-- exactly 19 planned phase cards;
+- exactly 20 planned phase cards;
 - exactly two reusable references;
 - one authoritative three-type producer legend;
 - stable card IDs, titles, and output targets;
@@ -178,7 +178,7 @@ Automated checks enforce:
 - route-row and group complexity limits;
 - absence of exact internal arithmetic;
 - no legacy column-card markup;
-- no cards in ILS, PHOTON, or WHITE;
+- no cards in WARP, PHOTON, or WHITE;
 - valid direct links to cards, reusable references, or named route rows;
 - all referenced authoritative output recipes still exist in the runtime DAG.
 

@@ -19,6 +19,7 @@ const expectedCards = new Map([
   ["card-bootstrap-mall-power", "Mall Power — buffer 50 Wind Turbines + 100 Tesla Towers + 200 Combustible Units"],
   ["card-blue-blue-cubes", "Blue Cubes — 40/min"],
   ["card-red-red-cubes", "Red Cubes — 20/min"],
+  ["card-red-foundations", "Foundations — buffer 200"],
   ["card-titanium-first-outpost", "First Off-World Smelting Outpost — 860 Titanium Ingots + 520 High-Purity Silicon"],
   ["card-yellow-yellow-cubes", "Yellow Cubes — three Labs’ worth"],
   ["card-purple-processors", "Processors — 45/min"],
@@ -119,7 +120,7 @@ for (const [fullMatch, id, body] of cards) {
 }
 for (const [, id, body] of references) validateMap(id, body, false);
 
-for (const phaseId of ["ils", "warp", "photon", "white"]) {
+for (const phaseId of ["warp", "photon", "white"]) {
   const start = html.search(new RegExp(`<section class="phase-section[^>]*" id="${phaseId}">`));
   const end = html.indexOf('<section class="phase-section', start + 1);
   const phase = html.slice(start, end < 0 ? html.length : end);
@@ -174,10 +175,34 @@ if (!greenPhase.includes('id="card-warp-space-warpers"')) {
   errors.push("The Space Warper card is not housed in GREEN");
 }
 
+const expectedPhaseIds = [
+  "bootstrap", "blue", "red", "ils", "yellow", "purple", "warp",
+  "green", "dyson", "sphere", "photon", "white", "logistics",
+];
+const phaseIds = [...html.matchAll(/<section class="phase-section[^>]*" id="([^"]+)">/g)]
+  .map(match => match[1]);
+if (JSON.stringify(phaseIds) !== JSON.stringify(expectedPhaseIds)) {
+  errors.push(`Unexpected phase structure: ${phaseIds.join(" → ")}`);
+}
+for (const legacyId of ["flight", "titanium"]) {
+  if (!html.includes(`class="phase-stage-heading" id="${legacyId}"`)) {
+    errors.push(`Missing compatibility stage anchor: #${legacyId}`);
+  }
+  if (html.includes(`phase-section-${legacyId}`)) {
+    errors.push(`Legacy ${legacyId.toUpperCase()} phase section remains`);
+  }
+}
+const ilsStart = html.indexOf('<section class="phase-section phase-section-ils" id="ils">');
+const ilsEnd = html.indexOf('<section class="phase-section', ilsStart + 1);
+const ilsPhase = html.slice(ilsStart, ilsEnd);
+if (!ilsPhase.includes('id="card-titanium-first-outpost"')) {
+  errors.push("The off-world smelting card is not housed in consolidated ILS");
+}
+
 const recipeOutputs = new Map([
   [84, 2001], [85, 2011], [45, 2303], [56, 2302], [48, 2301], [86, 2101],
   [114, 2106], [7, 2203], [8, 2201], [133, 1128], [9, 6001], [18, 6002],
-  [27, 6003], [51, 1303], [36, 1402], [79, 1210], [52, 1305], [101, 1209],
+  [27, 6003], [51, 1303], [36, 1402], [112, 1131], [79, 1210], [52, 1305], [101, 1209],
   [70, 1501], [81, 1502], [41, 1802], [122, 2107], [123, 5003], [93, 2103],
   [94, 5001], [95, 2104], [96, 5002],
 ]);

@@ -15,6 +15,7 @@
       "Quantum Chips", "Particle Containers", "Graviton Lenses", "Prisms",
       "Photon Combiners", "Solar Sails", "Frame Material",
       "Dyson Sphere Components", "Super-Magnetic Rings", "Deuteron Fuel Rods",
+      "Foundation", "Foundations",
       "Plasma Exciters", "Logistics Distributors", "Engines", "Logistics Bots",
       "Planetary Logistics Stations", "Thrusters", "Logistics Drones",
       "Interstellar Logistics Stations", "Reinforced Thrusters",

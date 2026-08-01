@@ -1,6 +1,6 @@
 # End-to-End Reading Pass Correction Plan
 
-Status: Phase A implemented; coordinated phase remains pending review.
+Status: Phase A and the structural phase are implemented; editorial work remains pending review.
 
 ## Phase A — immediate corrections
 
@@ -15,17 +15,25 @@ research closures:
 - preserve the current phase structure, navigation, output targets, and all
   sections that were explicitly left out of scope.
 
-## Coordinated phase — deferred
+## Structural phase — implemented
 
-The remaining work requires structural or editorial coordination and is not
-part of Phase A:
+The structural pass completed the changes that had to settle before prose
+could be reviewed coherently:
 
-- consolidate FLIGHT, TITANIUM, and ILS into one chronological ILS phase;
+- consolidated FLIGHT, TITANIUM, and ILS into one chronological ILS phase;
+- preserved `#flight` and `#titanium` as compatibility anchors inside ILS;
+- added the missing RED Foundation card;
+- updated phase numbering, navigation, the progress index, and the one-screen
+  checklist;
+- updated the card and structure validation contracts.
+
+## Editorial phase — deferred
+
+The remaining work is editorial and was deliberately left out of the
+structural pass:
+
 - rewrite the Goal and Research First sections using authoritative dependency
   closures;
-- add the missing RED Foundation card and update the planned card inventory;
 - finish the broader phase-dashboard and late-game prose rewrites;
-- update numbering, navigation, compatibility anchors, and the one-screen
-  checklist after the phase consolidation;
 - revisit the cube-target table, WARP prose, component icons, WHITE, and
   LOGISTICS only in their separately approved scopes.
