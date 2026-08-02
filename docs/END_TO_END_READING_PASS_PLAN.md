@@ -22,7 +22,8 @@ could be reviewed coherently:
 
 - consolidated FLIGHT, TITANIUM, and ILS into one chronological ILS phase;
 - preserved `#flight` and `#titanium` as compatibility anchors inside ILS;
-- added the missing RED Foundation card;
+- kept RED focused on its oil-and-graphite science line; Reclamation and the
+  simple Foundation buffer remain BLUE guidance without a dedicated card;
 - updated phase numbering, navigation, the progress index, and the one-screen
   checklist;
 - updated the card and structure validation contracts.
@@ -44,5 +45,10 @@ the production cards:
   including the intended overlap between orbital construction and photon
   production.
 
-The cube-target table, WARP prose, component icons, WHITE, and LOGISTICS remain
-separate scopes.
+The cube-target table, WARP prose, component icons, and WHITE remain separate
+scopes.
+
+## Deferred follow-up
+
+Technology hover links have regressed in the current static guide. Restoring
+their runtime behavior is deliberately deferred from this prose-and-card pass.

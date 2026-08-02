@@ -142,27 +142,27 @@ one action. Link-to-link chains are invalid.
 
 ## Card inventory
 
-The published guide contains exactly 20 phase cards:
+The published guide contains exactly 19 phase cards:
 
 | Section | Cards |
 |---|---|
 | BOOTSTRAP | Mall Logistics; Mall Industry; Mall Storage; Mall Power |
 | BLUE | Blue Cubes |
-| RED | Red Cubes; Foundations |
-| ILS | First Off-World Smelting Outpost |
+| RED | Red Cubes |
+| ILS | None |
 | YELLOW | Yellow Cubes |
 | PURPLE | Processors; Particle Broadband |
 | WARP | None |
 | GREEN | Quantum Chips; Graviton Lenses; Space Warpers |
-| DYSON | Solar Sails |
+| DYSON | Solar Sails; EM-Rail Ejectors |
 | SPHERE | Dyson Sphere Components; Deuteron Fuel Rods |
 | PHOTON | None |
 | WHITE | None |
-| LOGISTICS | Distribution Logistics Kit; Planetary Logistics Kit; Interstellar Logistics Kit |
+| LOGISTICS | Distribution Logistics Hardware; Planetary Logistics Hardware; Interstellar Logistics Hardware |
 
 The ILS bootstrap remains prose because it is a focused procedure rather than
-a permanent automated end-product line; its reusable off-world smelting
-outpost retains a card. PHOTON remains prose for the same procedural reason.
+a permanent automated end-product line; its off-world smelting instructions
+remain in the expedition text. PHOTON remains prose for the same procedural reason.
 WHITE remains prose because its inputs already exist and its final Lab
 convergence is simple.
 
@@ -170,7 +170,7 @@ convergence is simple.
 
 Automated checks enforce:
 
-- exactly 20 planned phase cards;
+- exactly 19 planned phase cards;
 - exactly two reusable references;
 - one authoritative three-type producer legend;
 - stable card IDs, titles, and output targets;

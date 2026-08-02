@@ -19,8 +19,6 @@ const expectedCards = new Map([
   ["card-bootstrap-mall-power", "Mall Power — buffer 50 Wind Turbines + 100 Tesla Towers + 200 Combustible Units"],
   ["card-blue-blue-cubes", "Blue Cubes — 40/min"],
   ["card-red-red-cubes", "Red Cubes — 20/min"],
-  ["card-red-foundations", "Foundations — buffer 200"],
-  ["card-titanium-first-outpost", "First Off-World Smelting Outpost — 860 Titanium Ingots + 520 High-Purity Silicon"],
   ["card-yellow-yellow-cubes", "Yellow Cubes — three Labs’ worth"],
   ["card-purple-processors", "Processors — 45/min"],
   ["card-purple-particle-broadband", "Particle Broadband — 22.5/min"],
@@ -28,11 +26,12 @@ const expectedCards = new Map([
   ["card-green-quantum-chips", "Quantum Chips — 7.5/min"],
   ["card-green-graviton-lenses", "Graviton Lenses — 7.5/min"],
   ["card-dyson-solar-sails", "Solar Sails — 517.5/min installed capacity"],
+  ["card-dyson-em-rail-ejectors", "EM-Rail Ejectors — buffer 80"],
   ["card-sphere-dyson-components", "Dyson Sphere Components — 16.875/min"],
   ["card-sphere-deuteron-fuel-rods", "Deuteron Fuel Rods — 30/min"],
-  ["card-logistics-distribution-kit", "Distribution Logistics Kit — buffer 50 Distributors + 200 Bots"],
-  ["card-logistics-planetary-kit", "Planetary Logistics Kit — buffer 10 PLS + 200 Drones"],
-  ["card-logistics-interstellar-kit", "Interstellar Logistics Kit — buffer 10 ILS + 50 Vessels"],
+  ["card-logistics-distribution-kit", "Distribution Logistics Hardware — buffer 50 Distributors + 200 Bots"],
+  ["card-logistics-planetary-kit", "Planetary Logistics Hardware — buffer 10 PLS + 200 Drones"],
+  ["card-logistics-interstellar-kit", "Interstellar Logistics Hardware — buffer 10 ILS + 50 Vessels"],
 ]);
 
 if (ids.length !== uniqueIds.size) errors.push(`Duplicate build-card IDs: ${ids.length - uniqueIds.size}`);
@@ -120,7 +119,7 @@ for (const [fullMatch, id, body] of cards) {
 }
 for (const [, id, body] of references) validateMap(id, body, false);
 
-for (const phaseId of ["warp", "photon", "white"]) {
+for (const phaseId of ["ils", "warp", "photon", "white"]) {
   const start = html.search(new RegExp(`<section class="phase-section[^>]*" id="${phaseId}">`));
   const end = html.indexOf('<section class="phase-section', start + 1);
   const phase = html.slice(start, end < 0 ? html.length : end);
@@ -192,18 +191,11 @@ for (const legacyId of ["flight", "titanium"]) {
     errors.push(`Legacy ${legacyId.toUpperCase()} phase section remains`);
   }
 }
-const ilsStart = html.indexOf('<section class="phase-section phase-section-ils" id="ils">');
-const ilsEnd = html.indexOf('<section class="phase-section', ilsStart + 1);
-const ilsPhase = html.slice(ilsStart, ilsEnd);
-if (!ilsPhase.includes('id="card-titanium-first-outpost"')) {
-  errors.push("The off-world smelting card is not housed in consolidated ILS");
-}
-
 const recipeOutputs = new Map([
   [84, 2001], [85, 2011], [45, 2303], [56, 2302], [48, 2301], [86, 2101],
   [114, 2106], [7, 2203], [8, 2201], [133, 1128], [9, 6001], [18, 6002],
   [27, 6003], [51, 1303], [36, 1402], [112, 1131], [79, 1210], [52, 1305], [101, 1209],
-  [70, 1501], [81, 1502], [41, 1802], [122, 2107], [123, 5003], [93, 2103],
+  [70, 1501], [71, 2311], [81, 1502], [41, 1802], [122, 2107], [123, 5003], [93, 2103],
   [94, 5001], [95, 2104], [96, 5002],
 ]);
 for (const [recipeId, outputId] of recipeOutputs) {
