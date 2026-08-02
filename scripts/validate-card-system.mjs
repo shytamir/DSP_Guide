@@ -22,7 +22,7 @@ const expectedCards = new Map([
   ["card-yellow-yellow-cubes", "Yellow Cubes — three Labs’ worth"],
   ["card-purple-processors", "Processors — 45/min"],
   ["card-purple-particle-broadband", "Particle Broadband — 22.5/min"],
-  ["card-warp-space-warpers", "Space Warpers — 36/min from green cubes"],
+  ["card-warp-space-warpers", "Pre-green Space Warpers — buffer 20"],
   ["card-green-quantum-chips", "Quantum Chips — 7.5/min"],
   ["card-green-graviton-lenses", "Graviton Lenses — 7.5/min"],
   ["card-dyson-solar-sails", "Solar Sails — 517.5/min installed capacity"],
@@ -119,7 +119,7 @@ for (const [fullMatch, id, body] of cards) {
 }
 for (const [, id, body] of references) validateMap(id, body, false);
 
-for (const phaseId of ["ils", "warp", "photon", "white"]) {
+for (const phaseId of ["ils", "photon", "white"]) {
   const start = html.search(new RegExp(`<section class="phase-section[^>]*" id="${phaseId}">`));
   const end = html.indexOf('<section class="phase-section', start + 1);
   const phase = html.slice(start, end < 0 ? html.length : end);
@@ -167,16 +167,16 @@ for (const required of [
   if (!html.includes(required)) errors.push(`Producer-type presentation is missing: ${required}`);
 }
 
-const greenStart = html.indexOf('<section class="phase-section phase-section-green" id="green">');
-const greenEnd = html.indexOf('<section class="phase-section', greenStart + 1);
-const greenPhase = html.slice(greenStart, greenEnd);
-if (!greenPhase.includes('id="card-warp-space-warpers"')) {
-  errors.push("The Space Warper card is not housed in GREEN");
+const warpStart = html.indexOf('<section class="phase-section phase-section-warp" id="warp">');
+const warpEnd = html.indexOf('<section class="phase-section', warpStart + 1);
+const warpPhase = html.slice(warpStart, warpEnd);
+if (!warpPhase.includes('id="card-warp-space-warpers"')) {
+  errors.push("The finite pre-green Space Warper card is not housed in WARP");
 }
 
 const expectedPhaseIds = [
-  "bootstrap", "blue", "red", "ils", "yellow", "purple", "warp",
-  "green", "dyson", "sphere", "photon", "white", "logistics",
+  "bootstrap", "blue", "red", "ils", "yellow", "purple", "green",
+  "dyson", "sphere", "photon", "white", "warp", "logistics",
 ];
 const phaseIds = [...html.matchAll(/<section class="phase-section[^>]*" id="([^"]+)">/g)]
   .map(match => match[1]);
@@ -194,7 +194,7 @@ for (const legacyId of ["flight", "titanium"]) {
 const recipeOutputs = new Map([
   [84, 2001], [85, 2011], [45, 2303], [56, 2302], [48, 2301], [86, 2101],
   [114, 2106], [7, 2203], [8, 2201], [133, 1128], [9, 6001], [18, 6002],
-  [27, 6003], [51, 1303], [36, 1402], [112, 1131], [79, 1210], [52, 1305], [101, 1209],
+  [27, 6003], [51, 1303], [36, 1402], [112, 1131], [78, 1210], [79, 1210], [52, 1305], [101, 1209],
   [70, 1501], [71, 2311], [81, 1502], [41, 1802], [122, 2107], [123, 5003], [93, 2103],
   [94, 5001], [95, 2104], [96, 5002],
 ]);
