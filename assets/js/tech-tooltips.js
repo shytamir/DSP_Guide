@@ -1,33 +1,51 @@
 (() => {
   const scriptUrl = document.currentScript && document.currentScript.src;
   const dataUrl = new URL("../data/tech-reference.json", scriptUrl || document.baseURI);
+  const detailsUrl = new URL("../data/tech-tooltip-details.json", scriptUrl || document.baseURI);
   const tip = document.getElementById("tech-tooltip");
   if (!tip) return;
 
-  const escapeHtml = value => String(value).replace(/[&<>\"']/g, character => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    "\"": "&quot;",
-    "'": "&#39;"
-  })[character]);
-  const names = values => values && values.length
-    ? values.map(value => escapeHtml(value.name)).join(", ")
-    : "None";
-
-  function attachTooltips(techData) {
+  function attachTooltips(techData, tooltipDetails) {
     let active = null;
 
     function render(reference) {
       const data = techData[reference.dataset.techId];
+      const details = tooltipDetails[reference.dataset.techId] || {};
       if (!data) return false;
-      tip.classList.toggle("milestone", Boolean(data.milestone));
-      tip.innerHTML = `${data.milestone ? '<div class="tech-tooltip-badge">MILESTONE</div>' : ""}` +
-        `<div class="tech-tooltip-name">${escapeHtml(data.name)}</div>` +
-        `<div class="tech-tooltip-row"><div class="tech-tooltip-label">Required</div><div>${names(data.required)}</div></div>` +
-        `<div class="tech-tooltip-row"><div class="tech-tooltip-label">Implicit required</div><div>${names(data.implicitRequired)}</div></div>` +
-        `${data.pretechsMax ? '<div class="tech-tooltip-row"><div class="tech-tooltip-label">Requirement note</div><div>Direct prerequisites must be completed to their maximum level.</div></div>' : ""}` +
-        `${data.milestone && data.milestoneLabel && data.milestoneLabel !== data.name ? `<div class="tech-tooltip-milestone">${escapeHtml(data.milestoneLabel)}</div>` : ""}`;
+
+      tip.replaceChildren();
+      const phase = reference.closest(".phase-section");
+      const phaseRgb = phase
+        ? getComputedStyle(phase).getPropertyValue("--phase-rgb").trim()
+        : "145,164,183";
+      tip.style.setProperty("--tooltip-phase-rgb", phaseRgb || "145,164,183");
+
+      const nameLine = document.createElement("div");
+      nameLine.className = "tech-tooltip-line tech-tooltip-name";
+      nameLine.append(document.createTextNode(data.name));
+      if (details.cube) {
+        const cube = document.createElement("span");
+        cube.className = "tech-tooltip-cube";
+        cube.style.color = details.cube.color;
+        cube.textContent = ` [${details.cube.label}]`;
+        nameLine.append(cube);
+      }
+      tip.append(nameLine);
+
+      const addLine = (label, values) => {
+        if (!values || !values.length) return;
+        const line = document.createElement("div");
+        line.className = "tech-tooltip-line";
+        const key = document.createElement("span");
+        key.className = "tech-tooltip-key";
+        key.textContent = `${label}:`;
+        line.append(key, document.createTextNode(values.join(", ")));
+        tip.append(line);
+      };
+
+      addLine("Required", data.required && data.required.map(value => value.name));
+      addLine("Implicit", data.implicitRequired && data.implicitRequired.map(value => value.name));
+      addLine("Unlocks", details.unlocks && details.unlocks.map(value => value.label));
       return true;
     }
 
@@ -35,10 +53,10 @@
       const referenceRect = reference.getBoundingClientRect();
       tip.classList.remove("is-hidden");
       const tooltipRect = tip.getBoundingClientRect();
-      const left = Math.min(window.innerWidth - tooltipRect.width - 12, Math.max(12, referenceRect.left));
-      let top = referenceRect.bottom + 10;
-      if (top + tooltipRect.height > window.innerHeight - 12) {
-        top = Math.max(12, referenceRect.top - tooltipRect.height - 10);
+      const left = Math.min(window.innerWidth - tooltipRect.width - 6, Math.max(6, referenceRect.left));
+      let top = referenceRect.bottom + 6;
+      if (top + tooltipRect.height > window.innerHeight - 6) {
+        top = Math.max(6, referenceRect.top - tooltipRect.height - 6);
       }
       tip.style.left = `${left}px`;
       tip.style.top = `${top}px`;
@@ -83,11 +101,10 @@
     });
   }
 
-  fetch(dataUrl)
-    .then(response => {
-      if (!response.ok) throw new Error(`Technology data request failed with status ${response.status}.`);
-      return response.json();
-    })
-    .then(attachTooltips)
+  Promise.all([dataUrl, detailsUrl].map(url => fetch(url).then(response => {
+    if (!response.ok) throw new Error(`Technology data request failed with status ${response.status}.`);
+    return response.json();
+  })))
+    .then(([techData, tooltipDetails]) => attachTooltips(techData, tooltipDetails))
     .catch(error => console.error("Technology reference data could not be loaded.", error));
 })();

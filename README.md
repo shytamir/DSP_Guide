@@ -15,6 +15,7 @@ index.html
 assets/
   css/guide.css
   data/tech-reference.json
+  data/tech-tooltip-details.json
   js/cards.js
   js/navigation.js
   js/tech-tooltips.js
@@ -23,7 +24,8 @@ assets/
 - `index.html` contains the guide's semantic content.
 - `assets/css/guide.css` contains all presentation rules.
 - `assets/js/` contains the small, independent interaction scripts.
-- `assets/data/tech-reference.json` contains the technology tooltip data.
+- `assets/data/tech-reference.json` contains runtime-derived technology names and prerequisites.
+- `assets/data/tech-tooltip-details.json` maps concise cube and recipe-unlock labels to their authoritative runtime item IDs.
 
 There is no build step. Serve the repository root with any ordinary static
 web server and open `index.html`. A local web server is required for technology

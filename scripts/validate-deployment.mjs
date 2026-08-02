@@ -79,12 +79,48 @@ for (const relative of actual.filter(file => file.endsWith(".js"))) {
 }
 
 const technologyDataPath = path.join(siteRoot, "assets", "data", "tech-reference.json");
+const tooltipDetailsPath = path.join(siteRoot, "assets", "data", "tech-tooltip-details.json");
 try {
   const technologyData = JSON.parse(fs.readFileSync(technologyDataPath, "utf8"));
+  const tooltipDetails = JSON.parse(fs.readFileSync(tooltipDetailsPath, "utf8"));
   check(Object.keys(technologyData).length === 314, "Technology reference data does not contain 314 records.");
   check([...html.matchAll(/data-tech-id="(\d+)"/g)].every(match => technologyData[match[1]]), "Unresolved technology reference found.");
+
+  const authoritativeRecipes = JSON.parse(fs.readFileSync(
+    path.join(sourceRoot, "dsp_universal_end_product_dag_v1_0", "dsp_universal_recipe_hyperedges_v1_0.json"),
+    "utf8"
+  )).recipes;
+  const unlockedItems = new Map();
+  for (const recipe of authoritativeRecipes) {
+    for (const technology of recipe.unlocking_technologies) {
+      const itemIds = unlockedItems.get(String(technology.tech_id)) || new Set();
+      recipe.outputs.forEach(output => itemIds.add(output.item_id));
+      unlockedItems.set(String(technology.tech_id), itemIds);
+    }
+  }
+
+  for (const [techId, details] of Object.entries(tooltipDetails)) {
+    check(Boolean(technologyData[techId]), `Tooltip details reference unknown technology ${techId}.`);
+    const itemIds = unlockedItems.get(techId) || new Set();
+    const unlocks = details.unlocks || [];
+    check(unlocks.every(unlock => /^\S+$/.test(unlock.label)), `Technology ${techId} has a non-atomic unlock label.`);
+    check(unlocks.every(unlock => itemIds.has(unlock.itemId)), `Technology ${techId} has an unlock not supported by runtime recipe data.`);
+    if (details.cube) {
+      check(/^(BLUE|RED|YELLOW|PURPLE|GREEN|WHITE) CUBE$/.test(details.cube.label), `Technology ${techId} has an invalid cube label.`);
+      check(itemIds.has(details.cube.itemId), `Technology ${techId} has a cube label not supported by runtime recipe data.`);
+    }
+  }
+  for (const techId of new Set([...html.matchAll(/data-tech-id="(\d+)"/g)].map(match => match[1]))) {
+    if ((unlockedItems.get(techId) || new Set()).size) {
+      check(Boolean(tooltipDetails[techId]), `Recipe-unlocking guide technology ${techId} has no tooltip details.`);
+    }
+  }
+  check(
+    JSON.stringify(tooltipDetails["1604"].unlocks.map(unlock => unlock.label)) === JSON.stringify(["belt3", "PLS", "Drone"]),
+    "Planetary Logistics System tooltip unlocks changed."
+  );
 } catch (error) {
-  failures.push(`Technology reference data is invalid: ${error.message}`);
+  failures.push(`Technology tooltip data is invalid: ${error.message}`);
 }
 
 const contentTypes = {
@@ -120,7 +156,7 @@ async function request(relative, port) {
 await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
 const port = server.address().port;
 try {
-  for (const relative of ["index.html", ...localAssets, "assets/data/tech-reference.json"]) {
+  for (const relative of ["index.html", ...localAssets, "assets/data/tech-reference.json", "assets/data/tech-tooltip-details.json"]) {
     check(await request(relative, port) === 200, `${relative} was not served successfully.`);
   }
 } finally {
