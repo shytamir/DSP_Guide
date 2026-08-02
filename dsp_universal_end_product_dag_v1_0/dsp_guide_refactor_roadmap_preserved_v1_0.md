@@ -108,3 +108,42 @@ obsolete monolithic recipe.
 - record any card whose construction still requires knowledge absent from its
   linked dependency chain;
 - keep factual recipe corrections separate from later presentation polish.
+
+### 3. Remember player-owned progress and explain guide vocabulary
+
+**Status: complete**
+
+**User story:** As a player who keeps the guide open across several sessions,
+I want my deliberate checklist marks to remain on this device and unfamiliar
+guide terms to have one compact explanation, so I can resume the run without an
+account, repeated rereading, or the guide pretending to know what I completed.
+
+**Hard scope limits:**
+
+- checklist state is changed only by the reader; no phase detection,
+  auto-completion, telemetry, alerts, or game-state integration;
+- persistence uses one namespaced browser `localStorage` record only—no
+  accounts, cookies, network requests, or external storage;
+- reset removes only this guide's checklist record and never other site data;
+- storage failure leaves checkboxes usable for the current page and fails
+  without blocking the guide;
+- the glossary is collapsed by default, contains at most ten guide-specific
+  terms, and sits inside “How to use this guide” immediately before the Quick
+  Progress Index;
+- no progression advice, cards, rates, troubleshooting, seed analysis,
+  navigation behavior, or accessibility redesign is included.
+
+**Definition of Done:**
+
+- every existing guide checklist becomes interactive after JavaScript loads;
+- checking and unchecking an item survives reloads on the same browser origin;
+- one visible reset control clears the saved guide state and unchecks every
+  guide checklist item;
+- local-storage denial does not throw, disable the guide, or imply that state
+  was saved;
+- each checklist item receives a deterministic phase-and-label key, with
+  duplicate labels disambiguated locally;
+- the glossary is semantic, keyboard-operable, concise, and collapsed on first
+  load;
+- the new static asset is documented, included in deployment, syntax-checked,
+  and covered by a focused persistence/reset behavior test.

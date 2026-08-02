@@ -16,6 +16,7 @@ assets/
   css/guide.css
   data/tech-reference.json
   data/tech-tooltip-details.json
+  js/checklists.js
   js/cards.js
   js/navigation.js
   js/tech-tooltips.js
@@ -26,6 +27,10 @@ assets/
 - `assets/js/` contains the small, independent interaction scripts.
 - `assets/data/tech-reference.json` contains runtime-derived technology names and prerequisites.
 - `assets/data/tech-tooltip-details.json` maps concise cube and recipe-unlock labels to their authoritative runtime item IDs.
+
+Checklist marks use one namespaced `localStorage` record in the reader's own
+browser. They are never transmitted, and the guide's reset control removes
+only that record.
 
 There is no build step. Serve the repository root with any ordinary static
 web server and open `index.html`. A local web server is required for technology
