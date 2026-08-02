@@ -22,7 +22,6 @@ const expectedCards = new Map([
   ["card-yellow-yellow-cubes", "Yellow Cubes — three Labs’ worth"],
   ["card-purple-processors", "Processors — 45/min"],
   ["card-purple-particle-broadband", "Particle Broadband — 22.5/min"],
-  ["card-warp-space-warpers", "Pre-green Space Warpers — buffer 20"],
   ["card-green-quantum-chips", "Quantum Chips — 7.5/min"],
   ["card-green-graviton-lenses", "Graviton Lenses — 7.5/min"],
   ["card-dyson-solar-sails", "Solar Sails — 517.5/min installed capacity"],
@@ -119,7 +118,7 @@ for (const [fullMatch, id, body] of cards) {
 }
 for (const [, id, body] of references) validateMap(id, body, false);
 
-for (const phaseId of ["ils", "photon", "white"]) {
+for (const phaseId of ["ils", "warp", "photon", "white"]) {
   const start = html.search(new RegExp(`<section class="phase-section[^>]*" id="${phaseId}">`));
   const end = html.indexOf('<section class="phase-section', start + 1);
   const phase = html.slice(start, end < 0 ? html.length : end);
@@ -165,13 +164,6 @@ for (const required of [
   'src="assets/js/producer-types.js"',
 ]) {
   if (!html.includes(required)) errors.push(`Producer-type presentation is missing: ${required}`);
-}
-
-const warpStart = html.indexOf('<section class="phase-section phase-section-warp" id="warp">');
-const warpEnd = html.indexOf('<section class="phase-section', warpStart + 1);
-const warpPhase = html.slice(warpStart, warpEnd);
-if (!warpPhase.includes('id="card-warp-space-warpers"')) {
-  errors.push("The finite pre-green Space Warper card is not housed in WARP");
 }
 
 const expectedPhaseIds = [
