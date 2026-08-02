@@ -86,6 +86,26 @@ try {
   check(Object.keys(technologyData).length === 314, "Technology reference data does not contain 314 records.");
   check([...html.matchAll(/data-tech-id="(\d+)"/g)].every(match => technologyData[match[1]]), "Unresolved technology reference found.");
 
+  const allowedTechnologyAliases = new Map([
+    ["1002", new Set(["blue cube"])],
+    ["1111", new Set(["red cube"])],
+    ["1124", new Set(["yellow cube"])],
+    ["1312", new Set(["purple cube"])],
+    ["1507", new Set(["white cube"])],
+    ["1705", new Set(["green cube"])],
+    ["1508", new Set(["Mission Completed"])],
+    ["1606", new Set(["Gas Giant Exploitation"])],
+  ]);
+  for (const match of html.matchAll(/<span\s+class="[^"]*\btech-ref\b[^"]*"\s+data-tech-id="(\d+)"[^>]*>([^<]+)<\/span>/g)) {
+    const [, techId, visibleLabel] = match;
+    const authoritativeName = technologyData[techId]?.name;
+    const aliases = allowedTechnologyAliases.get(techId) || new Set();
+    check(
+      visibleLabel === authoritativeName || aliases.has(visibleLabel),
+      `Technology label "${visibleLabel}" does not match runtime technology ${techId} (${authoritativeName}).`,
+    );
+  }
+
   const authoritativeRecipes = JSON.parse(fs.readFileSync(
     path.join(sourceRoot, "dsp_universal_end_product_dag_v1_0", "dsp_universal_recipe_hyperedges_v1_0.json"),
     "utf8"
