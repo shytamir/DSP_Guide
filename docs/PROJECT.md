@@ -37,7 +37,11 @@ data—not by a desire to make every valid factory route equally prominent.
 - Optional routes explain the opportunity and tradeoff without pretending to
   be mandatory progression.
 - Player-observable shortages decide what gets expanded.
-- Combat progression remains outside the guide's current industrial scope.
+- Dark Fog coverage is limited to practical RED-phase starter-planet defense:
+  automate the basic missile battery supplies and explain one simple
+  Signal-Tower-assisted base-clearing pattern.
+- Dark Fog levels, farming, drops, space combat, Relay Stations, hives, and
+  concealed technologies remain outside the guide and must not be mentioned.
 - Technology names, prerequisites, recipes, and item relationships come from
   runtime-derived source data rather than memory or community shorthand.
 
@@ -88,16 +92,20 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
 contains only the deployable static website.
 
-## Pending product decisions
+## Roadmap status
 
-1. **Science pace:** use further full-playthrough evidence to decide whether
-   the current minimum cube targets are merely sufficient or genuinely helpful
-   to a beginner.
-2. **Linked-card playtest:** complete a run using the current 18-card system as
-   the primary build reference and record missing context or unhelpful density.
-3. **Dark Fog scope:** either keep combat instruction explicitly outside this
-   industrial guide or authorize a separate companion scope; do not let it
-   enter piecemeal.
+- **Tabled — science pace:** further calibration of minimum cube targets is not
+  currently scheduled.
+- **Passed — linked-card playtest:** the ICQ full playthrough found the current
+  card system useful and complete throughout progression.
+
+## Current roadmap
+
+1. **RED defensive production:** add the bounded Missile Turret, Signal Tower,
+   and missile-set production guidance defined in
+   `docs/management/dark-fog-red-defense-user-stories.md`.
+2. **RED planetary base removal:** add the single eight-turret battery and
+   progressive Signal Tower procedure defined in the same management record.
 
 Narrow mobile layout is best-effort and is not a release gate for this
 PC-focused guide.

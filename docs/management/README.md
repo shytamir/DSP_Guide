@@ -14,6 +14,8 @@ what the project may publish.
   binding map remains external in the DSP Guide Check mod repository.
 - `asset-map-corrections-and-followups.md` records the exact upstream map
   corrections used by the guide; all guide-side follow-ups are complete.
+- `dark-fog-red-defense-user-stories.md` records the approved, tightly bounded
+  RED-phase defense guidance and its two active implementation stories.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.
