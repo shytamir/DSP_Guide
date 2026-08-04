@@ -12,6 +12,8 @@ what the project may publish.
 - `guide-icon-integration-plan.md` preserves the implemented scope and
   validation contract for the static prototype-icon pass. Its authoritative
   binding map remains external in the DSP Guide Check mod repository.
+- `asset-map-corrections-and-followups.md` records the exact upstream map
+  corrections used by the guide and the narrowly deferred icon/map work.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.

@@ -28,6 +28,11 @@ a second binding table, or committed to this repository. The implementation
 map defines 113 guide-facing item/building records and 80 technology records,
 together with approved aliases and explicit exclusions.
 
+Verified corrections and the one missing charged-Accumulator record are
+preserved in `asset-map-corrections-and-followups.md` until the external map is
+updated. The guide applies that narrow compatibility set rather than
+reproducing the source map.
+
 Rules:
 
 - IDs, display names, aliases, asset roots, and filenames come only from the

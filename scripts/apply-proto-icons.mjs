@@ -20,9 +20,27 @@ const recipes = JSON.parse(fs.readFileSync(recipesPath, "utf8")).recipes;
 
 if (map.schemaVersion !== 2) throw new Error(`Unsupported asset-map schema ${map.schemaVersion}.`);
 
-const itemById = new Map(map.items.map(item => [Number(item.id), item]));
+const itemAssetCorrections = new Map([
+  [6001, "t-matrix.png"],
+  [6002, "e-matrix.png"],
+  [6003, "c-matrix.png"],
+  [1105, "silicium-single-crystal.png"],
+  [1113, "silicium-high-purity.png"],
+  [1127, "strange-matter-generator.png"],
+  [1208, "photon-capacitor-full.png"],
+]);
+const mapAdditions = [
+  { id: 2207, name: "Accumulator (full)", asset: "accumulator-full.png", guideAliases: ["charged Accumulator", "charged Accumulators"] },
+];
+const effectiveItems = map.items
+  .map(item => itemAssetCorrections.has(Number(item.id))
+    ? { ...item, asset: itemAssetCorrections.get(Number(item.id)) }
+    : item)
+  .concat(mapAdditions.filter(addition => !map.items.some(item => Number(item.id) === addition.id)));
+
+const itemById = new Map(effectiveItems.map(item => [Number(item.id), item]));
 const technologyById = new Map(map.technologies.map(technology => [Number(technology.id), technology]));
-if (itemById.size !== map.items.length) throw new Error("Duplicate item ID in asset map.");
+if (itemById.size !== effectiveItems.length) throw new Error("Duplicate item ID in effective asset map.");
 if (technologyById.size !== map.technologies.length) throw new Error("Duplicate technology ID in asset map.");
 
 const toWebPath = value => value.replaceAll("\\", "/").replace(/^\.\//, "");
@@ -31,7 +49,7 @@ const technologyAsset = technology => toWebPath(`${map.assetRoots.technologies}/
 const escapeRegExp = value => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const escapeAttribute = value => value.replaceAll("&", "&amp;").replaceAll('"', "&quot;");
 
-for (const item of map.items) {
+for (const item of effectiveItems) {
   if (!fs.existsSync(path.join(root, itemAsset(item)))) throw new Error(`Missing mapped item asset: ${itemAsset(item)}`);
 }
 for (const technology of map.technologies) {
@@ -50,7 +68,7 @@ function pluralize(label) {
 }
 
 const itemLabels = new Map();
-for (const item of map.items) {
+for (const item of effectiveItems) {
   const labels = [item.name, ...(item.guideAliases || [])];
   const plural = pluralize(item.name);
   if (plural) labels.push(plural);
@@ -82,6 +100,29 @@ function itemIcon(item, classes = "proto-icon proto-icon-item", lazy = true) {
 
 function technologyIcon(technology) {
   return `<img class="proto-icon proto-icon-tech" src="${technologyAsset(technology)}" width="20" height="20" alt="" aria-hidden="true" loading="lazy"/>`;
+}
+
+function stripGeneratedMarkup(html) {
+  return html
+    .replace(/<span class="proto-ref" data-item-id="\d+"><img class="proto-icon proto-icon-item"[^>]*\/>([\s\S]*?)<\/span>/g, "$1")
+    .replace(/<img class="proto-icon proto-icon-tech"[^>]*\/>/g, "")
+    .replace(/<img class="phase-icon phase-icon-(?:rail|tag)"[^>]*\/>/g, "")
+    .replace(/<span class="production-arrow"[^>]*><img class="proto-icon proto-icon-producer"[^>]*\/><span class="production-arrow-glyph"[^>]*>→<\/span><\/span>/g, "→");
+}
+
+function ensureIconFreeRegions(html) {
+  let transformed = html.replace(
+    /<li class="task-list-item">(?=<input[^>]*data-checklist-key="bootstrap:(?:iron-copper-magnetic-coils-and-circuit-boards-arrive-continuously|belts-sorters-miners-smelters-assemblers-storage-mk-i-storage-tanks-wind-turbines-and-tesla-towers-replenish-automatically)")/g,
+    '<li class="task-list-item icon-free">',
+  );
+  const startMarker = "<h3>Choose a Deuterium supply</h3>";
+  const endMarker = '<h2 class="quick-ref-title">Quick reference — How much is enough</h2>';
+  const start = transformed.indexOf(startMarker);
+  const end = transformed.indexOf(endMarker, start);
+  if (start >= 0 && end > start && !transformed.slice(0, start).endsWith('<div class="icon-free">')) {
+    transformed = `${transformed.slice(0, start)}<div class="icon-free">${transformed.slice(start, end)}</div>${transformed.slice(end)}`;
+  }
+  return transformed;
 }
 
 function stripTags(value) {
@@ -126,6 +167,10 @@ const routeOverrides = new Map([
     recipeIds: [40],
   }],
   ["Gears + Magnetic Coils → Engines", {
+    text: "Copper Ingots + Magnetic Coils → Engines",
+    recipeIds: [105],
+  }],
+  ["Copper Ingots + Magnetic Coils → Engines", {
     text: "Copper Ingots + Magnetic Coils → Engines",
     recipeIds: [105],
   }],
@@ -209,10 +254,10 @@ const phaseBindings = new Map([
   ["green", { kind: "item", id: 6005 }],
   ["dyson", { kind: "item", id: 1501 }],
   ["sphere", { kind: "item", id: 1502 }],
-  ["photon", { kind: "item", id: 1122 }],
+  ["photon", { kind: "item", id: 1208 }],
   ["white", { kind: "item", id: 6006 }],
   ["warp", { kind: "item", id: 1210 }],
-  ["logistics", { kind: "item", id: 2103 }],
+  ["logistics", { kind: "item", id: 2104 }],
 ]);
 
 function phaseIcon(phase, variant) {
@@ -249,7 +294,7 @@ function addTechnologyIcons(html) {
 
 const voidElements = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
 const skippedTags = new Set(["script", "style", "title", "code", "pre", "textarea"]);
-const skippedClasses = new Set(["proto-ref", "tech-ref", "production-arrow"]);
+const skippedClasses = new Set(["proto-ref", "tech-ref", "production-arrow", "map-note", "icon-free"]);
 
 function transformVisibleText(html, callback) {
   const tokenPattern = /<!--[\s\S]*?-->|<![^>]*>|<\/?[A-Za-z][^>]*>/g;
@@ -292,11 +337,35 @@ function addItemIcons(html) {
   }));
 }
 
+function itemReference(itemId, label) {
+  const item = itemById.get(itemId);
+  if (!item) throw new Error(`Required contextual item ${itemId} is missing from the effective asset map.`);
+  return `<span class="proto-ref" data-item-id="${item.id}">${itemIcon(item)}${label}</span>`;
+}
+
+function addRequiredContextIcons(html) {
+  const plainTitle = '<span class="card-summary-title">Mall Industry — buffer 50 Miners + 50 Smelters + 50 Mk.I Assemblers</span>';
+  const iconTitle = `<span class="card-summary-title">Mall Industry — buffer 50 ${itemReference(2301, "Miners")} + 50 ${itemReference(2302, "Smelters")} + 50 ${itemReference(2303, "Mk.I Assemblers")}</span>`;
+  if (!html.includes(plainTitle)) throw new Error("Mall Industry title could not be normalized.");
+  return html.replace(plainTitle, iconTitle);
+}
+
+function addExternalToolsLogo(html) {
+  if (html.includes('class="game-logo section-logo"')) return html;
+  const marker = /<hr\/>\s*<h1 id="ref-tools">External Tools and Communities<\/h1>/;
+  const logo = '<img class="game-logo section-logo" src="assets/DSP_exported assets/Texture2D/dsp-logo-flat-en.png" width="1280" height="277" alt="Dyson Sphere Program: Rise of the Dark Fog"/>';
+  if (!marker.test(html)) throw new Error("External Tools and Communities divider was not found.");
+  return html.replace(marker, matched => `${logo}${matched}`);
+}
+
 function transform(html) {
-  const arrows = materializeProductionArrows(html);
+  const prepared = ensureIconFreeRegions(stripGeneratedMarkup(html));
+  const arrows = materializeProductionArrows(prepared);
   let transformed = addStructuralIcons(arrows.html);
   transformed = addTechnologyIcons(transformed);
   transformed = addItemIcons(transformed);
+  transformed = addRequiredContextIcons(transformed);
+  transformed = addExternalToolsLogo(transformed);
   return { html: transformed, arrows };
 }
 
@@ -364,8 +433,23 @@ function validate(html) {
 
   for (const [phase] of phaseBindings) {
     const rail = html.match(new RegExp(`<a(?=[^>]*class="[^"]*\\brail-tab\\b[^"]*")(?=[^>]*data-phase="${phase}")[^>]*>([\\s\\S]*?)<\\/a>`));
+    const binding = phaseBindings.get(phase);
+    const record = binding.kind === "item" ? itemById.get(binding.id) : technologyById.get(binding.id);
+    const expectedSource = binding.kind === "item" ? itemAsset(record) : technologyAsset(record);
     assert(Boolean(rail?.[1].includes('class="phase-icon phase-icon-rail"')), `Phase ${phase} rail icon is missing.`);
+    assert(Boolean(rail?.[1].includes(`src="${expectedSource}"`)), `Phase ${phase} rail icon is wrong.`);
+    const phaseLinks = [...html.matchAll(new RegExp(`<a(?=[^>]*class="[^"]*\\bphase-tag\\b[^"]*")(?=[^>]*href="#${phase}")[^>]*>([\\s\\S]*?)<\\/a>`, "g"))];
+    for (const link of phaseLinks) assert(link[1].includes(`src="${expectedSource}"`), `Phase ${phase} tag icon is wrong.`);
   }
+
+  const iconFreeRegions = [...html.matchAll(/<(?:div|li)[^>]*class="[^"]*\bicon-free\b[^"]*"[^>]*>([\s\S]*?)<\/(?:div|li)>/g)];
+  assert(iconFreeRegions.every(region => !region[1].includes("proto-icon")), "An icon-free guide region contains a prototype icon.");
+  const operatingNotes = [...html.matchAll(/<section class="map-footer-section map-note[^"]*">([\s\S]*?)<\/section>/g)];
+  assert(operatingNotes.every(note => !note[1].includes("proto-icon")), "A card Operating Note contains a prototype icon.");
+  const mallTitle = html.match(/<span class="card-summary-title">Mall Industry([\s\S]*?)<\/span><span class="card-summary-meta">/);
+  assert(Boolean(mallTitle), "Mall Industry card title is missing.");
+  for (const itemId of [2301, 2302, 2303]) assert(Boolean(mallTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Industry title is missing item ${itemId}.`);
+  assert(count(/class="game-logo(?: |")/g, html) === 2, "The guide must display the game logo at the title and External Tools sections.");
 
   const localImages = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(match => match[1]);
   for (const source of localImages) {

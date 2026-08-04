@@ -98,6 +98,9 @@ contains only the deployable static website.
 3. **Dark Fog scope:** either keep combat instruction explicitly outside this
    industrial guide or authorize a separate companion scope; do not let it
    enter piecemeal.
+4. **Deferred icon and ILS work:** complete only the scoped follow-ups recorded
+   in `docs/management/asset-map-corrections-and-followups.md` when their
+   approved assets or dedicated production-map pass are available.
 Narrow mobile layout is best-effort and is not a release gate for this
 PC-focused guide.
 

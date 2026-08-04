@@ -87,6 +87,42 @@ check(imageSources.every(source => source.startsWith("assets/DSP_exported assets
 
 const protoReferences = [...html.matchAll(/<span class="proto-ref" data-item-id="(\d+)">([\s\S]*?)<\/span>/g)];
 check(protoReferences.every(match => /class="proto-icon proto-icon-item"/.test(match[2])), "An item reference is missing its static icon.");
+const correctedItemAssets = new Map([
+  [6001, "t-matrix.png"],
+  [6002, "e-matrix.png"],
+  [6003, "c-matrix.png"],
+  [1105, "silicium-single-crystal.png"],
+  [1113, "silicium-high-purity.png"],
+  [1127, "strange-matter-generator.png"],
+  [1208, "photon-capacitor-full.png"],
+  [2207, "accumulator-full.png"],
+]);
+for (const [itemId, asset] of correctedItemAssets) {
+  const references = protoReferences.filter(reference => Number(reference[1]) === itemId);
+  check(references.length > 0, `Corrected item ${itemId} is not represented in the guide.`);
+  check(references.every(reference => reference[2].includes(`/${asset}"`)), `Corrected item ${itemId} uses the wrong asset.`);
+}
+const iconFreeRegions = [...html.matchAll(/<(?:div|li)[^>]*class="[^"]*\bicon-free\b[^"]*"[^>]*>([\s\S]*?)<\/(?:div|li)>/g)];
+check(iconFreeRegions.every(region => !region[1].includes("proto-icon")), "An icon-free guide region contains a prototype icon.");
+const operatingNotes = [...html.matchAll(/<section class="map-footer-section map-note[^"]*">([\s\S]*?)<\/section>/g)];
+check(operatingNotes.every(note => !note[1].includes("proto-icon")), "A card Operating Note contains a prototype icon.");
+const mallTitle = html.match(/<span class="card-summary-title">Mall Industry([\s\S]*?)<\/span><span class="card-summary-meta">/);
+for (const itemId of [2301, 2302, 2303]) check(Boolean(mallTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Industry title is missing item ${itemId}.`);
+check((html.match(/class="game-logo(?: |")/g) || []).length === 2, "The guide must display the game logo at the title and External Tools sections.");
+const correctedPhaseAssets = new Map([
+  ["blue", "t-matrix.png"],
+  ["red", "e-matrix.png"],
+  ["yellow", "c-matrix.png"],
+  ["photon", "photon-capacitor-full.png"],
+  ["logistics", "interstellar-logistic-station.png"],
+]);
+for (const [phase, asset] of correctedPhaseAssets) {
+  const rail = html.match(new RegExp(`<a(?=[^>]*class="[^"]*\\brail-tab\\b[^"]*")(?=[^>]*data-phase="${phase}")[^>]*>([\\s\\S]*?)<\\/a>`));
+  check(Boolean(rail?.[1].includes(`/${asset}"`)), `Phase ${phase} rail icon is wrong.`);
+  const tags = [...html.matchAll(new RegExp(`<a(?=[^>]*class="[^"]*\\bphase-tag\\b[^"]*")(?=[^>]*href="#${phase}")[^>]*>([\\s\\S]*?)<\\/a>`, "g"))];
+  check(tags.length > 0, `Phase ${phase} has no phase-tag references.`);
+  check(tags.every(tag => tag[1].includes(`/${asset}"`)), `Phase ${phase} tag icon is wrong.`);
+}
 const productionArrows = [...html.matchAll(/<span class="production-arrow" data-producer-item-id="(\d+)" data-producer-type="(smelting|assembly|processing)"[^>]*><img class="proto-icon proto-icon-producer"[^>]*><span class="production-arrow-glyph" aria-hidden="true">→<\/span><\/span>/g)];
 check(productionArrows.length > 0, "No static production arrows were found.");
 
