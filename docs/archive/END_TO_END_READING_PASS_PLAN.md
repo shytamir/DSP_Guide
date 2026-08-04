@@ -1,5 +1,9 @@
 # End-to-End Reading Pass Correction Plan
 
+> **Archived:** The correction phases described here are complete. Current
+> status and pending decisions are tracked in
+> [`../PROJECT.md`](../PROJECT.md).
+
 Status: Phase A, structural work, and the approved editorial pass are implemented.
 
 ## Phase A — immediate corrections
@@ -48,7 +52,7 @@ the production cards:
 The cube-target table, WARP prose, component icons, and WHITE remain separate
 scopes.
 
-## Deferred follow-up
+## Resolved follow-up
 
-Technology hover links have regressed in the current static guide. Restoring
-their runtime behavior is deliberately deferred from this prose-and-card pass.
+Technology hover behavior was restored after this pass and is now covered by
+the static deployment validator.

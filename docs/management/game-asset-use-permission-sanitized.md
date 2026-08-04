@@ -101,3 +101,7 @@ The raw email and any unsanitized copies must remain outside version control.
 Repository assets relying on this permission should remain unmodified game
 images used within the guide or related mod, and should not be packaged as a
 standalone asset collection.
+
+The guide's authorized exports are stored under
+`assets/DSP_exported assets/`. They are included only as supporting static-site
+assets and are not part of the runtime-derived data package.

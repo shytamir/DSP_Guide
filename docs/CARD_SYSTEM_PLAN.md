@@ -2,9 +2,10 @@
 
 Status: implemented in the published guide.
 
-This contract applies the findings in `CARD_SYSTEM_REVIEW.md`. It keeps cards
-subordinate to the progression guide and prevents the production DAG from
-expanding into dozens of reader-facing cards.
+This contract applies the findings preserved in
+`archive/CARD_SYSTEM_REVIEW.md`. It keeps cards subordinate to the progression
+guide and prevents the production DAG from expanding into dozens of
+reader-facing cards.
 
 ## Purpose
 
@@ -142,7 +143,7 @@ one action. Link-to-link chains are invalid.
 
 ## Card inventory
 
-The published guide contains exactly 19 phase cards:
+The published guide contains exactly 18 phase cards:
 
 | Section | Cards |
 |---|---|
@@ -153,7 +154,7 @@ The published guide contains exactly 19 phase cards:
 | YELLOW | Yellow Cubes |
 | PURPLE | Processors; Particle Broadband |
 | WARP | None |
-| GREEN | Quantum Chips; Graviton Lenses; Space Warpers |
+| GREEN | Quantum Chips; Graviton Lenses |
 | DYSON | Solar Sails; EM-Rail Ejectors |
 | SPHERE | Dyson Sphere Components; Deuteron Fuel Rods |
 | PHOTON | None |
@@ -170,7 +171,7 @@ convergence is simple.
 
 Automated checks enforce:
 
-- exactly 19 planned phase cards;
+- exactly 18 planned phase cards;
 - exactly two reusable references;
 - one authoritative three-type producer legend;
 - stable card IDs, titles, and output targets;
@@ -182,5 +183,6 @@ Automated checks enforce:
 - valid direct links to cards, reusable references, or named route rows;
 - all referenced authoritative output recipes still exist in the runtime DAG.
 
-Desktop, mobile, hash-navigation, collapsed-state, and print behavior require
-presentation validation in addition to the structural checks.
+Desktop, hash-navigation, collapsed-state, and print behavior require
+presentation validation in addition to the structural checks. Narrow mobile
+layout is best-effort rather than a release gate.

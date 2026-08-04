@@ -1,5 +1,9 @@
 # Card System Reader-Value Review
 
+> **Archived:** This review records the oversized legacy card system and the
+> reasoning used to replace it. The active contract is
+> [`../CARD_SYSTEM_PLAN.md`](../CARD_SYSTEM_PLAN.md).
+
 Status: historical audit supporting the implemented card system.
 
 The implemented 19-card system in `CARD_SYSTEM_PLAN.md` supersedes this review's

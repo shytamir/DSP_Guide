@@ -19,7 +19,9 @@ assets/
   js/checklists.js
   js/cards.js
   js/navigation.js
+  js/producer-types.js
   js/tech-tooltips.js
+  DSP_exported assets/
 ```
 
 - `index.html` contains the guide's semantic content.
@@ -27,6 +29,8 @@ assets/
 - `assets/js/` contains the small, independent interaction scripts.
 - `assets/data/tech-reference.json` contains runtime-derived technology names and prerequisites.
 - `assets/data/tech-tooltip-details.json` maps concise cube and recipe-unlock labels to their authoritative runtime item IDs.
+- `assets/DSP_exported assets/` contains authorized, unmodified game images used
+  by the guide.
 
 Checklist marks use one namespaced `localStorage` record in the reader's own
 browser. They are never transmitted, and the guide's reset control removes
@@ -42,9 +46,10 @@ remain in the repository for provenance. They are not loaded by `index.html`.
 
 ## Project status
 
-The completed refactor phases and the next reader-facing user stories are
-tracked in
-[`dsp_guide_refactor_roadmap_preserved_v1_0.md`](dsp_universal_end_product_dag_v1_0/dsp_guide_refactor_roadmap_preserved_v1_0.md).
+Current product boundaries, validation contracts, and pending decisions are
+tracked in [`docs/PROJECT.md`](docs/PROJECT.md). Completed and superseded plans
+are retained under `docs/archive/`; the runtime-derived DAG package remains
+unchanged as research provenance.
 
 ## Deployment
 
