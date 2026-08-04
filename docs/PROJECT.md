@@ -86,16 +86,12 @@ contains only the deployable static website.
 
 ## Pending product decisions
 
-1. **BLUE editorial unification:** the opening mall and first science line now
-   share one structural phase. Complete the approved editorial story recorded
-   in `docs/management/bootstrap-blue-unification-user-stories.md` after the
-   structural result is reviewed.
-2. **Science pace:** use further full-playthrough evidence to decide whether
+1. **Science pace:** use further full-playthrough evidence to decide whether
    the current minimum cube targets are merely sufficient or genuinely helpful
    to a beginner.
-3. **Linked-card playtest:** complete a run using the current 18-card system as
+2. **Linked-card playtest:** complete a run using the current 18-card system as
    the primary build reference and record missing context or unhelpful density.
-4. **Dark Fog scope:** either keep combat instruction explicitly outside this
+3. **Dark Fog scope:** either keep combat instruction explicitly outside this
    industrial guide or authorize a separate companion scope; do not let it
    enter piecemeal.
 

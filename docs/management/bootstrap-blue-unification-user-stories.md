@@ -2,7 +2,7 @@
 
 ## Story 1 — Structural consolidation
 
-**Status:** Implemented; editorial review remains separate.
+**Status:** Implemented and reviewed.
 
 As a new player, I want the mall and blue science presented as one opening
 BLUE phase so that the guide reflects their overlapping construction without
@@ -40,7 +40,7 @@ making me navigate two artificial phases.
 
 ## Story 2 — Editorial unification
 
-**Status:** Approved; implementation deferred until Story 1 is reviewed.
+**Status:** Implemented.
 
 As a new player, I want the opening BLUE phase to explain how the mall and
 first science line grow together so that I know blue cubes alone do not mean I

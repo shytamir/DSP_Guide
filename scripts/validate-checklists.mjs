@@ -29,6 +29,9 @@ const second = makeCheckbox("red", "Red runs continuously.");
 const duplicate = makeCheckbox("blue", "Blue runs continuously.");
 const stable = makeCheckbox("blue", "Relocated opening objective.");
 stable.dataset.checklistKey = "bootstrap:relocated-opening-objective";
+const aliased = makeCheckbox("blue", "Updated opening power objective.");
+aliased.dataset.checklistKey = "bootstrap:updated-opening-power-objective";
+aliased.dataset.checklistAliases = "blue:former-opening-power-objective";
 const resetListeners = {};
 const resetButton = {
   addEventListener(type, listener) {
@@ -43,6 +46,7 @@ const values = new Map([
   ["dsp-guide:checklist-state:v1", JSON.stringify({
     "blue:blue-runs-continuously": true,
     "bootstrap:relocated-opening-objective": true,
+    "blue:former-opening-power-objective": true,
   })],
 ]);
 const localStorage = {
@@ -63,7 +67,7 @@ const document = {
     return null;
   },
   querySelectorAll(selector) {
-    return selector === ".task-list-item-checkbox" ? [first, second, duplicate, stable] : [];
+    return selector === ".task-list-item-checkbox" ? [first, second, duplicate, stable, aliased] : [];
   },
 };
 
@@ -79,6 +83,7 @@ assert.equal(second.checked, false, "unsaved checklist should begin unchecked");
 assert.equal(duplicate.dataset.checklistKey, "blue:blue-runs-continuously:2", "duplicate key was not disambiguated");
 assert.equal(stable.checked, true, "explicit checklist identity was not restored after relocation");
 assert.equal(stable.dataset.checklistKey, "bootstrap:relocated-opening-objective", "explicit checklist identity changed");
+assert.equal(aliased.checked, true, "legacy checklist alias was not restored after editorial consolidation");
 
 second.checked = true;
 second.trigger("change");
@@ -90,11 +95,17 @@ first.trigger("change");
 saved = JSON.parse(values.get("dsp-guide:checklist-state:v1"));
 assert.equal("blue:blue-runs-continuously" in saved, false, "unchecked state was not removed");
 
+aliased.checked = false;
+aliased.trigger("change");
+saved = JSON.parse(values.get("dsp-guide:checklist-state:v1"));
+assert.equal("blue:former-opening-power-objective" in saved, false, "legacy checklist alias was not removed after an update");
+
 resetButton.trigger("click");
 assert.equal(first.checked, false, "reset did not clear the first checkbox");
 assert.equal(second.checked, false, "reset did not clear the second checkbox");
 assert.equal(duplicate.checked, false, "reset did not clear the duplicate checkbox");
 assert.equal(stable.checked, false, "reset did not clear the relocated checkbox");
+assert.equal(aliased.checked, false, "reset did not clear the aliased checkbox");
 assert.equal(values.has("dsp-guide:checklist-state:v1"), false, "reset did not remove saved guide state");
 assert.equal(status.textContent, "Checklist progress reset.");
 
@@ -140,7 +151,7 @@ const contextParagraph = html.indexOf("remember why half the belts exist.");
 const progressIndex = html.indexOf("<h1>Quick Progress Index</h1>");
 assert.ok(contextParagraph < glossaryStart && glossaryStart < progressIndex, "glossary is not in the required location");
 assert.equal((html.match(/<dt>/g) || []).length, 10, "glossary must contain exactly ten terms");
-assert.equal((html.match(/task-list-item-checkbox/g) || []).length, 84, "existing checklist coverage changed");
+assert.equal((html.match(/task-list-item-checkbox/g) || []).length, 83, "checklist coverage changed unexpectedly");
 assert.match(html, /assets\/js\/checklists\.js/, "checklist script is not referenced by the guide");
 
 console.log("Checklist validation passed: coverage, persistence, duplicate keys, reset, storage denial, and glossary placement verified.");

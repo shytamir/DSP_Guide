@@ -55,16 +55,18 @@
     const item = checkbox.closest(".task-list-item");
     const phase = checkbox.closest(".phase-section[id]")?.id || "reference";
     const baseKey = checkbox.dataset.checklistKey || `${phase}:${slug(item?.textContent || "item")}`;
+    const aliases = (checkbox.dataset.checklistAliases || "").split(/\s+/).filter(Boolean);
     const occurrence = (duplicates.get(baseKey) || 0) + 1;
     duplicates.set(baseKey, occurrence);
     const key = occurrence === 1 ? baseKey : `${baseKey}:${occurrence}`;
 
     checkbox.dataset.checklistKey = key;
     checkbox.disabled = false;
-    checkbox.checked = saved[key] === true;
+    checkbox.checked = saved[key] === true || aliases.some(alias => saved[alias] === true);
     checkbox.addEventListener("change", () => {
       if (checkbox.checked) saved[key] = true;
       else delete saved[key];
+      aliases.forEach(alias => delete saved[alias]);
       persist();
     });
   });
