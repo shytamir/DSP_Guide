@@ -98,8 +98,7 @@ contains only the deployable static website.
 3. **Dark Fog scope:** either keep combat instruction explicitly outside this
    industrial guide or authorize a separate companion scope; do not let it
    enter piecemeal.
-4. **Rare-resource node icons:** add only after their approved exports and
-   authoritative asset-map records are available.
+
 Narrow mobile layout is best-effort and is not a release gate for this
 PC-focused guide.
 

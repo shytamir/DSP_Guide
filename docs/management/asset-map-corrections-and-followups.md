@@ -1,9 +1,9 @@
-# Asset Map Corrections and Deferred Follow-ups
+# Asset Map Corrections
 
-Status: the guide-side corrections below are implemented. The external DSP
-Guide Check map remains the authority and is not copied into this repository;
-these are the exact upstream record edits needed to make it agree with the
-verified guide presentation.
+Status: the guide-side corrections and follow-ups are complete. The external
+DSP Guide Check map remains the authority and is not copied into this
+repository; these are the exact upstream record edits needed to make it agree
+with the verified guide presentation.
 
 ## Suggested `recognized-game-assets.json` record changes
 
@@ -28,8 +28,3 @@ Add the missing charged-Accumulator record:
 The guide's PHOTON phase now uses item `1208`; LOGISTICS uses the existing
 Interstellar Logistics Station item `2104`. These are guide phase bindings,
 not additional asset-map records.
-
-## Deferred work
-
-- **Rare resource nodes:** add vein/node icons after the corresponding approved
-  exports and authoritative map records are supplied.

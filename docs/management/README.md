@@ -13,7 +13,7 @@ what the project may publish.
   validation contract for the static prototype-icon pass. Its authoritative
   binding map remains external in the DSP Guide Check mod repository.
 - `asset-map-corrections-and-followups.md` records the exact upstream map
-  corrections used by the guide and the narrowly deferred icon/map work.
+  corrections used by the guide; all guide-side follow-ups are complete.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.
