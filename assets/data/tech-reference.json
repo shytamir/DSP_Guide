@@ -3871,7 +3871,7 @@
   },
   "4103": {
     "id": 4103,
-    "name": "Universe Exploration Lv3",
+    "name": "Cosmic Exploration Lv3",
     "required": [
       {
         "id": 4102,
@@ -3894,7 +3894,7 @@
     "required": [
       {
         "id": 4103,
-        "name": "Universe Exploration Lv3"
+        "name": "Cosmic Exploration Lv3"
       }
     ],
     "implicitRequired": [],
