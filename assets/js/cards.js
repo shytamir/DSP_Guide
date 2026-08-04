@@ -2,7 +2,12 @@
   function setCards(button, open) {
     const phase = button.closest(".phase-section");
     if (!phase) return;
-    phase.querySelectorAll("details.build-card").forEach(card => {
+    const scope = button.closest(".card-controls")?.dataset.cardScope;
+    const phaseCards = [...phase.querySelectorAll("details.build-card")];
+    const scopedCards = scope
+      ? phaseCards.filter(card => card.dataset.cardScope === scope)
+      : [];
+    (scopedCards.length ? scopedCards : phaseCards).forEach(card => {
       card.open = open;
     });
   }

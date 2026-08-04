@@ -54,7 +54,7 @@
   checkboxes.forEach(checkbox => {
     const item = checkbox.closest(".task-list-item");
     const phase = checkbox.closest(".phase-section[id]")?.id || "reference";
-    const baseKey = `${phase}:${slug(item?.textContent || "item")}`;
+    const baseKey = checkbox.dataset.checklistKey || `${phase}:${slug(item?.textContent || "item")}`;
     const occurrence = (duplicates.get(baseKey) || 0) + 1;
     duplicates.set(baseKey, occurrence);
     const key = occurrence === 1 ? baseKey : `${baseKey}:${occurrence}`;

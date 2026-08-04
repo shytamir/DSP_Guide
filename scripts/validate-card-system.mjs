@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import vm from "node:vm";
 
 const html = fs.readFileSync("index.html", "utf8");
 const authoritativeRecipes = JSON.parse(
@@ -8,7 +9,7 @@ const authoritativeRecipes = JSON.parse(
   ),
 ).recipes;
 const errors = [];
-const cards = [...html.matchAll(/<details class="build-card[^\"]*" id="([^\"]+)">([\s\S]*?)<\/details>/g)];
+const cards = [...html.matchAll(/<details class="build-card[^\"]*" id="([^\"]+)"[^>]*>([\s\S]*?)<\/details>/g)];
 const ids = cards.map(match => match[1]);
 const uniqueIds = new Set(ids);
 
@@ -167,7 +168,7 @@ for (const required of [
 }
 
 const expectedPhaseIds = [
-  "bootstrap", "blue", "red", "ils", "yellow", "purple", "green",
+  "blue", "red", "ils", "yellow", "purple", "green",
   "dyson", "sphere", "photon", "white", "warp", "logistics",
 ];
 const phaseIds = [...html.matchAll(/<section class="phase-section[^>]*" id="([^"]+)">/g)]
@@ -182,6 +183,77 @@ for (const legacyId of ["flight", "titanium"]) {
   if (html.includes(`phase-section-${legacyId}`)) {
     errors.push(`Legacy ${legacyId.toUpperCase()} phase section remains`);
   }
+}
+if (!html.includes('class="phase-stage-heading" id="bootstrap"')) {
+  errors.push("Missing compatibility stage anchor: #bootstrap");
+}
+if (html.includes("phase-section-bootstrap")) {
+  errors.push("Legacy BOOTSTRAP phase section remains");
+}
+
+const openingCardScopes = new Map([
+  ["card-bootstrap-mall-logistics", "bootstrap"],
+  ["card-bootstrap-mall-industry", "bootstrap"],
+  ["card-bootstrap-mall-storage", "bootstrap"],
+  ["card-bootstrap-mall-power", "bootstrap"],
+  ["card-blue-blue-cubes", "blue"],
+]);
+for (const [cardId, scope] of openingCardScopes) {
+  const marker = new RegExp(`<details class="build-card[^\"]*" id="${cardId}" data-card-scope="${scope}">`);
+  if (!marker.test(html)) errors.push(`${cardId} is missing its opening-phase card scope`);
+}
+
+const cardListeners = {};
+const bootstrapCard = { dataset: { cardScope: "bootstrap" }, open: false };
+const blueCard = { dataset: { cardScope: "blue" }, open: false };
+const openingPhase = {
+  querySelectorAll(selector) {
+    return selector === "details.build-card" ? [bootstrapCard, blueCard] : [];
+  },
+};
+function makeCardButton(scope) {
+  const controls = { dataset: { cardScope: scope } };
+  return {
+    dataset: { cardAction: "open" },
+    closest(selector) {
+      if (selector === ".phase-section") return openingPhase;
+      if (selector === ".card-controls") return controls;
+      return null;
+    },
+  };
+}
+const cardDocument = {
+  addEventListener(type, listener) {
+    (cardListeners[type] ||= []).push(listener);
+  },
+  getElementById() {
+    return null;
+  },
+};
+vm.runInNewContext(fs.readFileSync("assets/js/cards.js", "utf8"), {
+  document: cardDocument,
+  location: { hash: "" },
+  requestAnimationFrame() {},
+  setTimeout() {},
+  window: { addEventListener() {} },
+});
+function clickCardControl(button) {
+  const target = {
+    closest(selector) {
+      if (selector === ".card-control") return button;
+      return null;
+    },
+  };
+  cardListeners.click.forEach(listener => listener({ target }));
+}
+clickCardControl(makeCardButton("bootstrap"));
+if (!bootstrapCard.open || blueCard.open) {
+  errors.push("Mall card controls do not remain isolated inside the merged BLUE phase");
+}
+bootstrapCard.open = false;
+clickCardControl(makeCardButton("blue"));
+if (bootstrapCard.open || !blueCard.open) {
+  errors.push("Blue-science card controls do not remain isolated inside the merged BLUE phase");
 }
 const recipeOutputs = new Map([
   [84, 2001], [85, 2011], [45, 2303], [56, 2302], [48, 2301], [86, 2101],

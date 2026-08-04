@@ -147,8 +147,7 @@ The published guide contains exactly 18 phase cards:
 
 | Section | Cards |
 |---|---|
-| BOOTSTRAP | Mall Logistics; Mall Industry; Mall Storage; Mall Power |
-| BLUE | Blue Cubes |
+| BLUE | Mall Logistics; Mall Industry; Mall Storage; Mall Power; Blue Cubes |
 | RED | Red Cubes |
 | ILS | None |
 | YELLOW | Yellow Cubes |

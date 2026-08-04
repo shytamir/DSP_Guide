@@ -27,6 +27,8 @@ function makeCheckbox(phaseId, label) {
 const first = makeCheckbox("blue", "Blue runs continuously.");
 const second = makeCheckbox("red", "Red runs continuously.");
 const duplicate = makeCheckbox("blue", "Blue runs continuously.");
+const stable = makeCheckbox("blue", "Relocated opening objective.");
+stable.dataset.checklistKey = "bootstrap:relocated-opening-objective";
 const resetListeners = {};
 const resetButton = {
   addEventListener(type, listener) {
@@ -38,7 +40,10 @@ const resetButton = {
 };
 const status = { textContent: "" };
 const values = new Map([
-  ["dsp-guide:checklist-state:v1", JSON.stringify({ "blue:blue-runs-continuously": true })],
+  ["dsp-guide:checklist-state:v1", JSON.stringify({
+    "blue:blue-runs-continuously": true,
+    "bootstrap:relocated-opening-objective": true,
+  })],
 ]);
 const localStorage = {
   getItem(key) {
@@ -58,7 +63,7 @@ const document = {
     return null;
   },
   querySelectorAll(selector) {
-    return selector === ".task-list-item-checkbox" ? [first, second, duplicate] : [];
+    return selector === ".task-list-item-checkbox" ? [first, second, duplicate, stable] : [];
   },
 };
 
@@ -72,6 +77,8 @@ assert.equal(second.disabled, false, "new checklist was not enabled");
 assert.equal(first.checked, true, "saved checklist state was not restored");
 assert.equal(second.checked, false, "unsaved checklist should begin unchecked");
 assert.equal(duplicate.dataset.checklistKey, "blue:blue-runs-continuously:2", "duplicate key was not disambiguated");
+assert.equal(stable.checked, true, "explicit checklist identity was not restored after relocation");
+assert.equal(stable.dataset.checklistKey, "bootstrap:relocated-opening-objective", "explicit checklist identity changed");
 
 second.checked = true;
 second.trigger("change");
@@ -87,6 +94,7 @@ resetButton.trigger("click");
 assert.equal(first.checked, false, "reset did not clear the first checkbox");
 assert.equal(second.checked, false, "reset did not clear the second checkbox");
 assert.equal(duplicate.checked, false, "reset did not clear the duplicate checkbox");
+assert.equal(stable.checked, false, "reset did not clear the relocated checkbox");
 assert.equal(values.has("dsp-guide:checklist-state:v1"), false, "reset did not remove saved guide state");
 assert.equal(status.textContent, "Checklist progress reset.");
 

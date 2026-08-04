@@ -17,7 +17,7 @@ when local circumstances justify ignoring the default advice.
 The published static site is `index.html` with supporting files under
 `assets/`. It currently contains:
 
-- 13 navigable progression and optional-route sections;
+- 12 navigable progression and optional-route sections;
 - 18 phase-relevant production cards;
 - two reusable production-line references;
 - runtime-derived technology tooltips;
@@ -86,9 +86,10 @@ contains only the deployable static website.
 
 ## Pending product decisions
 
-1. **BOOTSTRAP and BLUE:** decide whether the opening mall and first science
-   line should become one phase. A merge must deliberately preserve anchors,
-   phase navigation, and saved checklist identity.
+1. **BLUE editorial unification:** the opening mall and first science line now
+   share one structural phase. Complete the approved editorial story recorded
+   in `docs/management/bootstrap-blue-unification-user-stories.md` after the
+   structural result is reviewed.
 2. **Science pace:** use further full-playthrough evidence to decide whether
    the current minimum cube targets are merely sufficient or genuinely helpful
    to a beginner.
