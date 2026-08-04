@@ -1,6 +1,7 @@
 # Guide Prototype Icon Integration Plan
 
-Status: planned only. No icon markup is part of this change.
+Status: planned only. The game logo is already present beneath the guide title;
+no prototype icon markup has been implemented.
 
 ## Reader outcome
 
@@ -74,12 +75,19 @@ ID for validation but adds no tooltip or link.
 ```
 
 The same compact format applies in prose, tables, checklists, card supplies,
-production routes, destinations, operating notes, and reference sections. A
-route remains textual and readable:
+production-route items, destinations, operating notes, and reference sections.
+A production route remains textual and readable, with its producing building
+attached to the transformation arrow as specified below.
 
 ```html
 <span class="proto-ref" data-item-id="1001"><img ...>Iron Ore</span>
-→ <span class="proto-ref" data-item-id="1101"><img ...>Iron Ingots</span>
+<span class="production-arrow" data-producer-item-id="2302"
+      aria-label="smelted in Arc Smelter">
+  <img class="proto-icon proto-icon-producer" src=".../smelter.png"
+       width="20" height="20" alt="" aria-hidden="true">
+  <span aria-hidden="true">→</span>
+</span>
+<span class="proto-ref" data-item-id="1101"><img ...>Iron Ingots</span>
 ```
 
 ### Phase navigation and headings
@@ -137,6 +145,44 @@ No icon is repeated inside a technology tooltip: the visible technology
 reference already carries it. No icon gets a `title` attribute that duplicates
 the adjacent label.
 
+### Production-map transformation arrows
+
+Every recipe-transformation arrow inside `.route-chain` receives the producing
+building icon directly above the arrow glyph. The producer icon uses the same
+20-pixel square size as the surrounding item icons; it is never placed to the
+left of the arrow or substituted for the arrow.
+
+Producer identity does not come from prose or filename inference. For each
+transformation:
+
+1. identify the output recipe in the runtime-derived universal recipe
+   hyperedges;
+2. use that recipe's facility relationship to select the guide's baseline
+   producing building for the phase;
+3. resolve that building ID and image through the supplied external asset map;
+4. record the binding as `data-producer-item-id` on the arrow wrapper.
+
+The result should read as a normal left-to-right pipeline while making the
+machine choice visible at a glance:
+
+```text
+               [Arc Smelter icon]
+[Iron Ore icon]        →         [Iron Ingot icon]
+```
+
+Multi-step routes receive one producer icon per arrow. For example, both
+smelting steps in `Iron Ore → Iron Ingots → Steel` carry their own Arc Smelter
+icon. A convergence such as `Iron Ingots + Gears → Conveyor Belt Mk.I` carries
+the Assembling Machine Mk.I icon above its single arrow.
+
+The current maps contain 115 arrow glyphs across 106 route chains. Some of
+those glyphs presently describe transport or storage rather than production,
+such as sending Solar Sails through storage to Ejectors. Those flows must be
+rewritten as concise buffer or destination wording before icons are applied.
+They must not receive a false "producing building" merely to preserve an arrow.
+After normalization, every arrow that remains in a production map represents
+one actual recipe transformation and carries exactly one producer icon.
+
 ## Known source-map gaps
 
 The current preflight found three technology references in the guide that are
@@ -157,6 +203,8 @@ substitute bindings.
   layout shift.
 - Default inline size is approximately `1.1em`; phase-heading and rail variants
   may be slightly larger within fixed bounds.
+- Producer arrows use an inline two-row layout: a 20-pixel producer icon above
+  the arrow glyph, centered as one compact transformation token.
 - Icons align to the text baseline, keep a small right gap, and never acquire
   padding, borders, filters, or altered artwork.
 - All icons use `alt=""` and `aria-hidden="true"` because the literal adjacent
@@ -176,6 +224,9 @@ substitute bindings.
 - Inventory exact canonical item names and approved aliases in visible guide
   text, excluding attributes, scripts, styles, generic prose, and already
   processed markup.
+- Inventory every `.route-chain` arrow, bind recipe arrows to their
+  runtime-derived producing facility, and identify non-production arrows that
+  need concise buffer or destination wording instead.
 - Produce a review report of resolved occurrences, ambiguous text, and genuine
   coverage gaps before editing the page.
 
@@ -189,6 +240,9 @@ left unadorned.
   writes literal `<img>` markup into `index.html`.
 - Add technology icons by ID first, then item/building icons by canonical name
   and approved alias.
+- Materialize each recipe transformation as a `.production-arrow` whose mapped
+  producer icon sits above its arrow glyph. Normalize transport and storage
+  wording so no bare non-production arrow remains.
 - Process reader-facing text nodes only. Do not alter technology labels,
   tooltip JSON, IDs, anchors, rates, or prose.
 - Keep the deployed page independent of the external map and JavaScript for
@@ -210,10 +264,15 @@ breaking heading wraps, or obscuring card and table text.
 
 ### 4. Extend validation and review the result
 
-- Replace the deployment validator's fixed count of six direct asset
+- Replace the deployment validator's fixed count of seven direct asset
   references with a complete existence and allowed-root check.
 - Validate every `data-tech-id` and `data-item-id` against the externally
   supplied map during the implementation run.
+- Validate every `.production-arrow[data-producer-item-id]` against both the
+  recipe facility relationship in the universal DAG and the producer image in
+  the external map.
+- Reject bare `→` glyphs inside `.route-chain`; each remaining arrow must be
+  wrapped once and contain exactly one producer icon above it.
 - Validate that every mapped image path exists under the map's declared asset
   root and that no image introduces an external URL or new link.
 - Confirm the external map itself is absent from Git status and the deployment
@@ -233,6 +292,8 @@ only the static site.
 - No new external links, wiki links, item tooltips, lightboxes, hover previews,
   filters, image editing, or dynamically injected icons.
 - No copy, number, card, phase, navigation, or technology-tooltip changes.
+- The only permitted route wording changes are concise replacements for
+  non-production arrows that currently describe storage or transport.
 - No inferred mappings and no second authoritative map in this repository.
 - No redistribution of anything beyond the already authorized unmodified game
   assets present under `assets/DSP_exported assets/`.
