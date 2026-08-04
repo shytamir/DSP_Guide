@@ -115,7 +115,8 @@ function validateMap(id, body, requireExactDestination) {
 
   const routeRows = [...pipeline.matchAll(/class="route-row[^\"]*"[^>]*>[\s\S]*?<\/div>/g)];
   if (routeRows.length === 0) errors.push(`${id} has no production-map routes`);
-  if (routeRows.length > 8) errors.push(`${id} exceeds the eight-row complexity limit (${routeRows.length})`);
+  const rowLimit = id === "card-red-security-mall" ? 12 : 8;
+  if (routeRows.length > rowLimit) errors.push(`${id} exceeds its ${rowLimit}-row complexity limit (${routeRows.length})`);
   const routeGroups = [...pipeline.matchAll(/class="route-group"/g)].length;
   if (routeGroups > 3) errors.push(`${id} exceeds the three-group complexity limit (${routeGroups})`);
   for (const row of routeRows) {
@@ -128,6 +129,14 @@ function validateMap(id, body, requireExactDestination) {
   if (/card-stage-(?:input|pipeline|output|totals|pickup)/.test(body)) {
     errors.push(`${id} retains legacy column-card markup`);
   }
+}
+
+const securityMall = cards.find(match => match[1] === "card-red-security-mall")?.[2] || "";
+if (securityMall.includes('href="#reference-electromagnetic-turbines"') || securityMall.includes('href="#card-bootstrap-mall-power"')) {
+  errors.push("Security Mall still outsources partial Motor or Wireless Power Tower branches.");
+}
+for (const requiredBranch of ["Motor branch", "Tower branch", "Exciter branch", "Wireless convergence"]) {
+  if (!securityMall.includes(requiredBranch)) errors.push(`Security Mall is missing its ${requiredBranch}.`);
 }
 
 for (const [fullMatch, id, body] of cards) {

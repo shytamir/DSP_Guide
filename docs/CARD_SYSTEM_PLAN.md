@@ -115,6 +115,10 @@ A phase card may contain at most:
 - three technology or construction groups;
 - three arrows in a single route row.
 
+The Security Mall is the sole twelve-row exception. Its three buffered combat
+outputs form one practical mall, while the technology-bound Motor and Wireless
+Power Tower branches must be visible rather than disguised as incomplete links.
+
 The number of direct ingredients in one recipe is not itself a complexity
 failure. Multi-output mall kits may retain shallow parallel endpoints when the
 paired outputs form one practical deployment unit.

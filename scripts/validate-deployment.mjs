@@ -75,6 +75,14 @@ const warpEnd = html.indexOf('<section class="phase-section', warpStart + 1);
 const warpSection = warpStart >= 0 && warpEnd > warpStart ? html.slice(warpStart, warpEnd) : "";
 check(redSection.includes('id="red-planetary-base-clearing"'), "The RED planetary-base-clearing procedure is missing.");
 check(redSection.includes("eight") && redSection.includes("Missile Turret") && redSection.includes("Signal Tower"), "The RED procedure lost its eight-turret or Signal Tower instructions.");
+const procedureStart = redSection.indexOf('<h2 id="red-planetary-base-clearing">');
+const procedureEnd = redSection.indexOf("</aside>", procedureStart);
+const procedureText = procedureStart >= 0 && procedureEnd > procedureStart
+  ? redSection.slice(procedureStart, procedureEnd).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ")
+  : "";
+for (const required of ["New Game → Start", "outside its aggro range", "first powered Signal Tower", "second powered tower", "far side"]) {
+  check(procedureText.includes(required), `The RED base-clearing procedure is missing: ${required}.`);
+}
 check((ilsSection.match(/href="#red-planetary-base-clearing"/g) || []).length === 1, "ILS must contain exactly one linked RED defense reminder.");
 check((warpSection.match(/href="#red-planetary-base-clearing"/g) || []).length === 1, "WARP must contain exactly one linked RED defense reminder.");
 check(!html.includes('id="ref-dark-fog"') && !html.includes('href="#ref-dark-fog"'), "The legacy Dark Fog industry reference remains in the guide.");
