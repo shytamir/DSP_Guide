@@ -108,6 +108,8 @@ const operatingNotes = [...html.matchAll(/<section class="map-footer-section map
 check(operatingNotes.every(note => !note[1].includes("proto-icon")), "A card Operating Note contains a prototype icon.");
 const mallTitle = html.match(/<span class="card-summary-title">Mall Industry([\s\S]*?)<\/span><span class="card-summary-meta">/);
 for (const itemId of [2301, 2302, 2303]) check(Boolean(mallTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Industry title is missing item ${itemId}.`);
+const logisticsTitle = html.match(/<span class="card-summary-title">Mall Logistics([\s\S]*?)<\/span><span class="card-summary-meta">/);
+for (const itemId of [2001, 2011]) check(Boolean(logisticsTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Logistics title is missing item ${itemId}.`);
 check((html.match(/class="game-logo(?: |")/g) || []).length === 2, "The guide must display the game logo at the title and External Tools sections.");
 const correctedPhaseAssets = new Map([
   ["blue", "t-matrix.png"],

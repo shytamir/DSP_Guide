@@ -344,10 +344,24 @@ function itemReference(itemId, label) {
 }
 
 function addRequiredContextIcons(html) {
-  const plainTitle = '<span class="card-summary-title">Mall Industry — buffer 50 Miners + 50 Smelters + 50 Mk.I Assemblers</span>';
-  const iconTitle = `<span class="card-summary-title">Mall Industry — buffer 50 ${itemReference(2301, "Miners")} + 50 ${itemReference(2302, "Smelters")} + 50 ${itemReference(2303, "Mk.I Assemblers")}</span>`;
-  if (!html.includes(plainTitle)) throw new Error("Mall Industry title could not be normalized.");
-  return html.replace(plainTitle, iconTitle);
+  const titles = [
+    {
+      plain: '<span class="card-summary-title">Mall Logistics — buffer 900 Belts + 400 Sorters</span>',
+      icon: `<span class="card-summary-title">Mall Logistics — buffer 900 ${itemReference(2001, "Belts")} + 400 ${itemReference(2011, "Sorters")}</span>`,
+      label: "Mall Logistics",
+    },
+    {
+      plain: '<span class="card-summary-title">Mall Industry — buffer 50 Miners + 50 Smelters + 50 Mk.I Assemblers</span>',
+      icon: `<span class="card-summary-title">Mall Industry — buffer 50 ${itemReference(2301, "Miners")} + 50 ${itemReference(2302, "Smelters")} + 50 ${itemReference(2303, "Mk.I Assemblers")}</span>`,
+      label: "Mall Industry",
+    },
+  ];
+  let transformed = html;
+  for (const title of titles) {
+    if (!transformed.includes(title.plain)) throw new Error(`${title.label} title could not be normalized.`);
+    transformed = transformed.replace(title.plain, title.icon);
+  }
+  return transformed;
 }
 
 function addExternalToolsLogo(html) {
@@ -449,6 +463,9 @@ function validate(html) {
   const mallTitle = html.match(/<span class="card-summary-title">Mall Industry([\s\S]*?)<\/span><span class="card-summary-meta">/);
   assert(Boolean(mallTitle), "Mall Industry card title is missing.");
   for (const itemId of [2301, 2302, 2303]) assert(Boolean(mallTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Industry title is missing item ${itemId}.`);
+  const logisticsTitle = html.match(/<span class="card-summary-title">Mall Logistics([\s\S]*?)<\/span><span class="card-summary-meta">/);
+  assert(Boolean(logisticsTitle), "Mall Logistics card title is missing.");
+  for (const itemId of [2001, 2011]) assert(Boolean(logisticsTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Logistics title is missing item ${itemId}.`);
   assert(count(/class="game-logo(?: |")/g, html) === 2, "The guide must display the game logo at the title and External Tools sections.");
 
   const localImages = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(match => match[1]);
