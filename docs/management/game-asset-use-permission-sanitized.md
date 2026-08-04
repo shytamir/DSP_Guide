@@ -26,9 +26,9 @@ projects.
 
 ## Sanitized correspondence
 
-**Date:** Mon, 03 Aug 2026 12:01:40 +0800  
-**Subject:** Re: Permission to Use Images  
-**From:** 客**持 `<s******************m>`  
+**Date:** Mon, 03 Aug 2026 12:01:40 +0800<br>
+**Subject:** Re: Permission to Use Images<br>
+**From:** 客**持 `<s******************m>`<br>
 **To:** a*****g `<s****************m>`
 
 ### Publisher response
@@ -55,15 +55,15 @@ projects.
 >
 > Best regards,
 >
-> F*******o  
-> Publishing Manager  
+> F*******o<br>
+> Publishing Manager<br>
 > Gamirror Games
 
 ### Original request quoted in the response
 
-**Date:** Mon, Aug 3, 2026, 08:58  
-**Subject:** Permission to Use Images  
-**From:** a*****g `<s****************m>`  
+**Date:** Mon, Aug 3, 2026, 08:58<br>
+**Subject:** Permission to Use Images<br>
+**From:** a*****g `<s****************m>`<br>
 **To:** `<s********************m>`
 
 > Hi,
