@@ -13,6 +13,22 @@ const cards = [...html.matchAll(/<details class="build-card[^\"]*" id="([^\"]+)"
 const ids = cards.map(match => match[1]);
 const uniqueIds = new Set(ids);
 
+function elementTextByClass(source, className) {
+  const openingPattern = new RegExp(`<span\\b[^>]*class="[^"]*\\b${className}\\b[^"]*"[^>]*>`);
+  const opening = openingPattern.exec(source);
+  if (!opening) return "";
+  const start = opening.index + opening[0].length;
+  const tokens = /<\/?span\b[^>]*>/g;
+  tokens.lastIndex = start;
+  let depth = 1;
+  for (const token of source.matchAll(tokens)) {
+    if (token.index < start) continue;
+    depth += /^<\/span/.test(token[0]) ? -1 : 1;
+    if (depth === 0) return source.slice(start, token.index).replace(/<[^>]+>/g, "").trim();
+  }
+  return "";
+}
+
 const expectedCards = new Map([
   ["card-bootstrap-mall-logistics", "Mall Logistics — buffer 900 Belts + 400 Sorters"],
   ["card-bootstrap-mall-industry", "Mall Industry — buffer 50 Miners + 50 Smelters + 50 Mk.I Assemblers"],
@@ -43,7 +59,7 @@ for (const [id, expectedTitle] of expectedCards) {
     errors.push(`Missing planned card: ${id}`);
     continue;
   }
-  const title = card[2].match(/card-summary-title">([^<]+)</)?.[1] || "";
+  const title = elementTextByClass(card[2], "card-summary-title");
   if (title !== expectedTitle) errors.push(`${id} title changed: "${title}"`);
 }
 for (const id of ids) if (!expectedCards.has(id)) errors.push(`Unplanned card remains: ${id}`);
@@ -140,6 +156,7 @@ for (const retired of [
   if (html.includes(retired)) errors.push(`Retired card-system text remains: ${retired}`);
 }
 
+const visibleDocument = html.replace(/<[^>]+>/g, "");
 for (const required of [
   "Organic Crystal (mined)",
   "Sulfuric Acid ocean",
@@ -154,7 +171,7 @@ for (const required of [
   "Three Matrix Labs sustain 18 purple cubes/min",
   "Two Matrix Labs sustain 10 green cubes/min",
 ]) {
-  if (!html.includes(required)) errors.push(`Required consistency text is missing: ${required}`);
+  if (!visibleDocument.includes(required)) errors.push(`Required consistency text is missing: ${required}`);
 }
 
 for (const required of [
@@ -163,6 +180,8 @@ for (const required of [
   "producer-assembly",
   "producer-processing",
   'src="assets/js/producer-types.js"',
+  'class="production-arrow"',
+  'class="proto-icon proto-icon-producer"',
 ]) {
   if (!html.includes(required)) errors.push(`Producer-type presentation is missing: ${required}`);
 }
@@ -260,7 +279,7 @@ const recipeOutputs = new Map([
   [114, 2106], [7, 2203], [8, 2201], [133, 1128], [9, 6001], [18, 6002],
   [27, 6003], [51, 1303], [36, 1402], [112, 1131], [78, 1210], [79, 1210], [52, 1305], [101, 1209],
   [70, 1501], [71, 2311], [81, 1502], [41, 1802], [122, 2107], [123, 5003], [93, 2103],
-  [94, 5001], [95, 2104], [96, 5002],
+  [94, 5001], [95, 2104], [96, 5002], [105, 1407],
 ]);
 for (const [recipeId, outputId] of recipeOutputs) {
   const recipe = authoritativeRecipes.find(candidate => candidate.recipe_id === recipeId);

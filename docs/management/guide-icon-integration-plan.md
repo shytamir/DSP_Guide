@@ -1,7 +1,7 @@
 # Guide Prototype Icon Integration Plan
 
-Status: planned only. The game logo is already present beneath the guide title;
-no prototype icon markup has been implemented.
+Status: implemented. The game logo and static prototype icons are present in
+the published guide, including producer icons above production-map arrows.
 
 ## Reader outcome
 
@@ -24,8 +24,8 @@ D:\Shy\dsp-beginner-guide\assets\recognized-game-assets.json
 ```
 
 The map must be read in place. It must not be copied, generated, summarized as
-a second binding table, or committed to this repository. The current map
-defines 113 guide-facing item/building records and 77 technology records,
+a second binding table, or committed to this repository. The implementation
+map defines 113 guide-facing item/building records and 80 technology records,
 together with approved aliases and explicit exclusions.
 
 Rules:
@@ -175,27 +175,12 @@ smelting steps in `Iron Ore → Iron Ingots → Steel` carry their own Arc Smelt
 icon. A convergence such as `Iron Ingots + Gears → Conveyor Belt Mk.I` carries
 the Assembling Machine Mk.I icon above its single arrow.
 
-The current maps contain 115 arrow glyphs across 106 route chains. Some of
-those glyphs presently describe transport or storage rather than production,
-such as sending Solar Sails through storage to Ejectors. Those flows must be
-rewritten as concise buffer or destination wording before icons are applied.
-They must not receive a false "producing building" merely to preserve an arrow.
-After normalization, every arrow that remains in a production map represents
-one actual recipe transformation and carries exactly one producer icon.
-
-## Known source-map gaps
-
-The current preflight found three technology references in the guide that are
-not yet represented by the supplied external map:
-
-- technology 3101 — Solar Sail Life;
-- technology 3102 — Solar Sail Life;
-- technology 4102 — Cosmic Exploration.
-
-Their asset bindings must be added to the authoritative mod-repository map
-before the icon pass can be exhaustive. Until then, these references remain
-plain text; this repository must not guess their filenames or create local
-substitute bindings.
+The source contained 115 arrow glyphs across 106 route chains. Four routes
+used arrows for transport or storage rather than production, so they were
+rewritten as concise buffer or destination wording. The final guide contains
+110 recipe transformations, each represented by exactly one producer icon
+above its arrow. The external map resolves every technology reference used by
+the guide; no local substitute bindings were created.
 
 ## Layout and accessibility
 
@@ -215,7 +200,7 @@ substitute bindings.
 - Existing PC layout is the release target. Narrow mobile behavior remains
   best-effort and must not distort desktop card or table layout.
 
-## Implementation sequence
+## Implementation record
 
 ### 1. Preflight and binding inventory
 
@@ -227,8 +212,8 @@ substitute bindings.
 - Inventory every `.route-chain` arrow, bind recipe arrows to their
   runtime-derived producing facility, and identify non-production arrows that
   need concise buffer or destination wording instead.
-- Produce a review report of resolved occurrences, ambiguous text, and genuine
-  coverage gaps before editing the page.
+- Confirm resolved occurrences and genuine coverage gaps before editing the
+  page.
 
 Done when every prospective icon has one explicit map record and every
 unresolved occurrence is either corrected in the source map or deliberately
@@ -264,8 +249,8 @@ breaking heading wraps, or obscuring card and table text.
 
 ### 4. Extend validation and review the result
 
-- Replace the deployment validator's fixed count of seven direct asset
-  references with a complete existence and allowed-root check.
+- Replace the deployment validator's fixed asset count with a complete
+  existence and allowed-root check.
 - Validate every `data-tech-id` and `data-item-id` against the externally
   supplied map during the implementation run.
 - Validate every `.production-arrow[data-producer-item-id]` against both the

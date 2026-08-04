@@ -21,6 +21,7 @@ The published static site is `index.html` with supporting files under
 - 18 phase-relevant production cards;
 - two reusable production-line references;
 - runtime-derived technology tooltips;
+- static runtime-bound prototype icons and producer-marked production maps;
 - player-owned persistent checklists and a compact glossary;
 - no server-side code, accounts, analytics, cookies, or remote dependencies.
 
@@ -80,6 +81,9 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   direct-link rules, complexity limits, and authoritative output recipes.
 - `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
   reset behavior, storage failure, and glossary placement.
+- `scripts/apply-proto-icons.mjs --check` validates the committed static icon
+  markup against the externally supplied authoritative asset map during an
+  authorized local icon pass.
 
 Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
 contains only the deployable static website.
@@ -94,10 +98,6 @@ contains only the deployable static website.
 3. **Dark Fog scope:** either keep combat instruction explicitly outside this
    industrial guide or authorize a separate companion scope; do not let it
    enter piecemeal.
-4. **Prototype icons:** implement the static icon pass preserved in
-   `docs/management/guide-icon-integration-plan.md`, using only the external
-   DSP Guide Check asset map and without changing guide copy or behavior.
-
 Narrow mobile layout is best-effort and is not a release gate for this
 PC-focused guide.
 

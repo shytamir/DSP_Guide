@@ -64,11 +64,59 @@ const anchors = [...html.matchAll(/href="#([^"]+)"/g)].map(match => match[1]);
 check(ids.length === new Set(ids).size, "Duplicate HTML id found.");
 check(anchors.every(anchor => ids.includes(anchor)), "Broken internal anchor found.");
 
-const localAssets = [
+const localAssetOccurrences = [
   ...html.matchAll(/(?:href|src)="(assets\/[^"]+)"/g)
 ].map(match => match[1]);
-check(localAssets.length === 7, `Expected seven directly referenced static assets; found ${localAssets.length}.`);
+const localAssets = [...new Set(localAssetOccurrences)];
+for (const required of [
+  "assets/css/guide.css",
+  "assets/js/navigation.js",
+  "assets/js/tech-tooltips.js",
+  "assets/js/producer-types.js",
+  "assets/js/cards.js",
+  "assets/js/checklists.js",
+  "assets/DSP_exported assets/Texture2D/dsp-logo-flat-en.png",
+]) {
+  check(localAssets.includes(required), `Required static asset is not referenced: ${required}`);
+}
 check(localAssets.every(asset => fs.existsSync(path.join(siteRoot, asset))), "A referenced static asset is missing.");
+check(!actual.some(file => /recognized-game-assets\.json$/i.test(file)), "The external authoritative asset map entered the deployment package.");
+
+const imageSources = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(match => match[1]);
+check(imageSources.every(source => source.startsWith("assets/DSP_exported assets/Texture2D/")), "An image source falls outside the authorized game-asset directory.");
+
+const protoReferences = [...html.matchAll(/<span class="proto-ref" data-item-id="(\d+)">([\s\S]*?)<\/span>/g)];
+check(protoReferences.every(match => /class="proto-icon proto-icon-item"/.test(match[2])), "An item reference is missing its static icon.");
+const productionArrows = [...html.matchAll(/<span class="production-arrow" data-producer-item-id="(\d+)" data-producer-type="(smelting|assembly|processing)"[^>]*><img class="proto-icon proto-icon-producer"[^>]*><span class="production-arrow-glyph" aria-hidden="true">→<\/span><\/span>/g)];
+check(productionArrows.length > 0, "No static production arrows were found.");
+
+function countRouteArrowText() {
+  const tokens = /<!--[\s\S]*?-->|<![^>]*>|<\/?[A-Za-z][^>]*>/g;
+  const stack = [];
+  let cursor = 0;
+  let total = 0;
+  for (const match of html.matchAll(tokens)) {
+    const text = html.slice(cursor, match.index);
+    if (stack.some(entry => entry.classes.includes("route-chain"))) total += (text.match(/→/g) || []).length;
+    const token = match[0];
+    if (/^<\//.test(token)) {
+      const closing = token.match(/^<\/([A-Za-z0-9]+)/)?.[1]?.toLowerCase();
+      for (let index = stack.length - 1; index >= 0; index -= 1) {
+        if (stack[index].tag === closing) {
+          stack.splice(index, 1);
+          break;
+        }
+      }
+    } else if (/^<[A-Za-z]/.test(token) && !/\/>$/.test(token)) {
+      const tag = token.match(/^<([A-Za-z0-9]+)/)?.[1]?.toLowerCase();
+      const classes = token.match(/\bclass="([^"]*)"/)?.[1]?.split(/\s+/).filter(Boolean) || [];
+      if (tag && !["br", "hr", "img", "input", "link", "meta"].includes(tag)) stack.push({ tag, classes });
+    }
+    cursor = match.index + token.length;
+  }
+  return total;
+}
+check(countRouteArrowText() === productionArrows.length, "A production-map arrow is bare or malformed.");
 
 for (const relative of actual.filter(file => file.endsWith(".js"))) {
   try {
@@ -96,8 +144,9 @@ try {
     ["1508", new Set(["Mission Completed"])],
     ["1606", new Set(["Gas Giant Exploitation"])],
   ]);
-  for (const match of html.matchAll(/<span\s+class="[^"]*\btech-ref\b[^"]*"\s+data-tech-id="(\d+)"[^>]*>([^<]+)<\/span>/g)) {
-    const [, techId, visibleLabel] = match;
+  for (const match of html.matchAll(/<span\s+class="[^"]*\btech-ref\b[^"]*"\s+data-tech-id="(\d+)"[^>]*>([\s\S]*?)<\/span>/g)) {
+    const [, techId, inner] = match;
+    const visibleLabel = inner.replace(/<[^>]+>/g, "").trim();
     const authoritativeName = technologyData[techId]?.name;
     const aliases = allowedTechnologyAliases.get(techId) || new Set();
     check(
@@ -191,7 +240,10 @@ if (failures.length) {
 console.log(JSON.stringify({
   status: "PASS",
   deployment_files: actual.length,
-  direct_asset_references: localAssets.length,
+  unique_direct_asset_references: localAssets.length,
+  image_reference_occurrences: imageSources.length,
+  item_references: protoReferences.length,
+  production_arrows: productionArrows.length,
   internal_anchors: anchors.length,
   technology_references: [...html.matchAll(/data-tech-id="(\d+)"/g)].length
 }, null, 2));
