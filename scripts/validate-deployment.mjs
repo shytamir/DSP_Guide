@@ -67,7 +67,7 @@ check(anchors.every(anchor => ids.includes(anchor)), "Broken internal anchor fou
 const localAssets = [
   ...html.matchAll(/(?:href|src)="(assets\/[^"]+)"/g)
 ].map(match => match[1]);
-check(localAssets.length === 6, `Expected six directly referenced static assets; found ${localAssets.length}.`);
+check(localAssets.length === 7, `Expected seven directly referenced static assets; found ${localAssets.length}.`);
 check(localAssets.every(asset => fs.existsSync(path.join(siteRoot, asset))), "A referenced static asset is missing.");
 
 for (const relative of actual.filter(file => file.endsWith(".js"))) {
