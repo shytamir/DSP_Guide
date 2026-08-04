@@ -143,12 +143,12 @@ one action. Link-to-link chains are invalid.
 
 ## Card inventory
 
-The published guide contains exactly 18 phase cards:
+The published guide contains exactly 19 phase cards:
 
 | Section | Cards |
 |---|---|
 | BLUE | Mall Logistics; Mall Industry; Mall Storage; Mall Power; Blue Cubes |
-| RED | Red Cubes |
+| RED | Red Cubes; Security Mall |
 | ILS | None |
 | YELLOW | Yellow Cubes |
 | PURPLE | Processors; Particle Broadband |
@@ -170,7 +170,7 @@ convergence is simple.
 
 Automated checks enforce:
 
-- exactly 18 planned phase cards;
+- exactly 19 planned phase cards;
 - exactly two reusable references;
 - one authoritative three-type producer legend;
 - stable card IDs, titles, and output targets;

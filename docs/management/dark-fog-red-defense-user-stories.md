@@ -11,9 +11,16 @@ must not cover or mention Dark Fog levels, farming, drops, space combat, Relay
 Stations, hives, or concealed technologies. Existing Dark Fog material outside
 this boundary must be removed when these stories are implemented.
 
+ILS and WARP are the only exceptions to RED-only placement. Each expedition
+section may contain one concise reminder linking back to the RED
+planetary-base-clearing procedure. Those reminders must not introduce any new
+Dark Fog instruction.
+
 ## Current roadmap
 
 ### 1. Automate the basic missile-defense supplies
+
+**Status:** implemented.
 
 **As a** new player using the default game settings,  
 **I want** RED-phase production guidance for Missile Turrets, Signal Towers,
@@ -45,6 +52,8 @@ the ILS rush.
 - No prohibited Dark Fog subject is introduced.
 
 ### 2. Explain the starter-planet base-clearing pattern
+
+**Status:** ready for implementation.
 
 **As a** new player with basic missile production established,  
 **I want** one concise procedure for using a fixed Missile Turret battery and

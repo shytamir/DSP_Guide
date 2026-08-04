@@ -18,7 +18,7 @@ The published static site is `index.html` with supporting files under
 `assets/`. It currently contains:
 
 - 12 navigable progression and optional-route sections;
-- 18 phase-relevant production cards;
+- 19 phase-relevant production cards;
 - two reusable production-line references;
 - runtime-derived technology tooltips;
 - static runtime-bound prototype icons and producer-marked production maps;
@@ -42,6 +42,8 @@ data—not by a desire to make every valid factory route equally prominent.
   Signal-Tower-assisted base-clearing pattern.
 - Dark Fog levels, farming, drops, space combat, Relay Stations, hives, and
   concealed technologies remain outside the guide and must not be mentioned.
+- ILS and WARP may each contain one linked reminder pointing back to the RED
+  planetary-base-clearing procedure; those reminders add no new combat advice.
 - Technology names, prerequisites, recipes, and item relationships come from
   runtime-derived source data rather than memory or community shorthand.
 
@@ -101,11 +103,9 @@ contains only the deployable static website.
 
 ## Current roadmap
 
-1. **RED defensive production:** add the bounded Missile Turret, Signal Tower,
-   and missile-set production guidance defined in
+1. **RED planetary base removal:** add the single eight-turret battery and
+   progressive Signal Tower procedure defined in
    `docs/management/dark-fog-red-defense-user-stories.md`.
-2. **RED planetary base removal:** add the single eight-turret battery and
-   progressive Signal Tower procedure defined in the same management record.
 
 Narrow mobile layout is best-effort and is not a release gate for this
 PC-focused guide.

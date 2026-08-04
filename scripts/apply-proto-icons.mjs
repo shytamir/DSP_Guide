@@ -31,6 +31,7 @@ const itemAssetCorrections = new Map([
 ]);
 const mapAdditions = [
   { id: 2207, name: "Accumulator (full)", asset: "accumulator-full.png", guideAliases: ["charged Accumulator", "charged Accumulators"] },
+  { id: 1407, name: "Engine", asset: "engine.png" },
 ];
 const effectiveItems = map.items
   .map(item => itemAssetCorrections.has(Number(item.id))
@@ -372,6 +373,28 @@ function addExternalToolsLogo(html) {
   return html.replace(marker, matched => `${logo}${matched}`);
 }
 
+function addRedSecurityMall(html) {
+  if (html.includes('id="card-red-security-mall"')) return html;
+
+  const redStart = html.indexOf('<section class="phase-section phase-section-red" id="red">');
+  const redEnd = html.indexOf('<section class="phase-section', redStart + 1);
+  if (redStart < 0 || redEnd < 0) throw new Error("RED phase could not be located for the security mall.");
+  let red = html.slice(redStart, redEnd);
+
+  const researchMarker = "<p>If BLUE already cleared the cheap prerequisites, RED becomes pleasantly direct: build the graphite and oil branches, unlock their convergence, and let the Labs run.</p>";
+  if (!red.includes(researchMarker)) throw new Error("RED research insertion point could not be located.");
+  const securityResearch = '<p>Once red science is stable, finish <span class="tech-ref" data-tech-id="1806" role="button" tabindex="0">Missile Turret</span> → <span class="tech-ref" data-tech-id="1808" role="button" tabindex="0">Signal Tower</span> and add the Security Mall below. Let its limited boxes fill before starting the ILS rush. This is a stocked tool rather than a new rate target; when the boxes are full, the lines sleep.</p>';
+  red = red.replace(researchMarker, `${researchMarker}${securityResearch}`);
+
+  const redCardStart = red.indexOf('<details class="build-card build-card-anchor" id="card-red-red-cubes">');
+  const redCardEnd = red.indexOf("</details>", redCardStart);
+  if (redCardStart < 0 || redCardEnd < 0) throw new Error("RED cube card could not be located.");
+  const insertionPoint = redCardEnd + "</details>".length;
+  const securityCard = '<details class="build-card build-card-anchor" id="card-red-security-mall"><summary><span class="card-summary-title">Security Mall — buffer 8 Missile Turrets + 20 Signal Towers + 200 Missile Sets</span><span class="card-summary-meta"><span class="card-badge">MANDATED</span><span class="card-badge">BUFFERED</span></span></summary><div class="card-body"><div class="production-map"><section class="map-supplies"><h4>Supplies</h4><ul><li>Iron Ore.</li><li>Copper Ore.</li><li>Coal.</li><li>Stone.</li><li><a class="card-crossref-link" href="#route-blue-magnetic-coils">Magnetic Coils from BLUE</a>.</li><li><a class="card-crossref-link" href="#route-blue-circuit-boards">Circuit Boards from BLUE</a>.</li><li><a class="card-crossref-link" href="#reference-electromagnetic-turbines">Electric Motors from the reusable Electromagnetic Turbine line</a>.</li><li><a class="card-crossref-link" href="#card-bootstrap-mall-power">Wireless Power Towers from the BLUE mall</a>.</li></ul></section><section class="map-pipeline"><h4>Production Map</h4><div class="route-group"><h5>SUPPORTING BRANCHES</h5><div class="route-map" role="list"><div class="route-row" role="listitem"><span class="route-label">Steel branch</span><span class="route-chain">Iron Ore → Iron Ingots → Steel</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Engine branch</span><span class="route-chain">Copper Ingots + Magnetic Coils → Engines</span></div><div class="route-row" role="listitem"><span class="route-label">Fuel branch</span><span class="route-chain">Coal → Combustible Units</span></div><div class="route-row" role="listitem"><span class="route-label">Crystal branch</span><span class="route-chain">Stone → Silicon Ore → High-Purity Silicon → Crystal Silicon</span></div></div></div><div class="route-group"><h5>BUFFERED OUTPUTS</h5><div class="route-map" role="list"><div class="route-row route-convergence" role="listitem"><span class="route-label">Turret convergence</span><span class="route-chain">Steel + Electric Motors + Circuit Boards + Engines → Missile Turrets</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Missile convergence</span><span class="route-chain">Copper Ingots + Circuit Boards + Combustible Units + Engines → Missile Sets</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Tower convergence</span><span class="route-chain">Wireless Power Towers + Steel + Crystal Silicon → Signal Towers</span></div></div></div></section><section class="map-destination"><h4>Destination</h4><ul><li>Storage Mk.I — Missile Turrets — limit the buffer to <span class="rate">8</span>.</li><li>Storage Mk.I — Signal Towers — limit the buffer to <span class="rate">20</span>.</li><li>Storage Mk.I — Missile Sets — limit the buffer to <span class="rate">200</span>.</li></ul></section><div class="map-footer"><section class="map-footer-section map-note"><h4>Operating Note</h4><ul><li>Fill these three limited boxes before the ILS rush. The mall can sleep afterward and wake whenever the starter planet needs another battery or tower advance.</li></ul></section></div></div></div></details>';
+  red = `${red.slice(0, insertionPoint)}${securityCard}${red.slice(insertionPoint)}`;
+  return `${html.slice(0, redStart)}${red}${html.slice(redEnd)}`;
+}
+
 function alignIlsBootstrapMap(html) {
   const start = html.indexOf(
     '<div class="inline-production-map',
@@ -386,7 +409,7 @@ function alignIlsBootstrapMap(html) {
 }
 
 function transform(html) {
-  const prepared = ensureIconFreeRegions(alignIlsBootstrapMap(stripGeneratedMarkup(html)));
+  const prepared = ensureIconFreeRegions(alignIlsBootstrapMap(addRedSecurityMall(stripGeneratedMarkup(html))));
   const arrows = materializeProductionArrows(prepared);
   let transformed = addStructuralIcons(arrows.html);
   transformed = addTechnologyIcons(transformed);

@@ -36,6 +36,7 @@ const expectedCards = new Map([
   ["card-bootstrap-mall-power", "Mall Power — buffer 50 Wind Turbines + 100 Tesla Towers + 200 Combustible Units"],
   ["card-blue-blue-cubes", "Blue Cubes — 40/min"],
   ["card-red-red-cubes", "Red Cubes — 20/min"],
+  ["card-red-security-mall", "Security Mall — buffer 8 Missile Turrets + 20 Signal Towers + 200 Missile Sets"],
   ["card-yellow-yellow-cubes", "Yellow Cubes — three Labs’ worth"],
   ["card-purple-processors", "Processors — 45/min"],
   ["card-purple-particle-broadband", "Particle Broadband — 22.5/min"],
@@ -277,6 +278,7 @@ if (bootstrapCard.open || !blueCard.open) {
 const recipeOutputs = new Map([
   [84, 2001], [85, 2011], [45, 2303], [56, 2302], [48, 2301], [86, 2101],
   [114, 2106], [7, 2203], [8, 2201], [133, 1128], [9, 6001], [18, 6002],
+  [129, 3005], [131, 3007], [144, 1609],
   [27, 6003], [51, 1303], [36, 1402], [112, 1131], [78, 1210], [79, 1210], [52, 1305], [101, 1209],
   [70, 1501], [71, 2311], [81, 1502], [41, 1802], [122, 2107], [123, 5003], [93, 2103],
   [94, 5001], [95, 2104], [96, 5002], [105, 1407],

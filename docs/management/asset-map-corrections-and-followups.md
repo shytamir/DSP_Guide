@@ -19,10 +19,11 @@ Replace the corresponding item records with these one-line entries:
 {"id":1208,"name":"Critical Photon","asset":"photon-capacitor-full.png"}
 ```
 
-Add the missing charged-Accumulator record:
+Add the missing guide item records:
 
 ```json
 {"id":2207,"name":"Accumulator (full)","asset":"accumulator-full.png","guideAliases":["charged Accumulator","charged Accumulators"]}
+{"id":1407,"name":"Engine","asset":"engine.png"}
 ```
 
 The guide's PHOTON phase now uses item `1208`; LOGISTICS uses the existing
