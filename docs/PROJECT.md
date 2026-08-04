@@ -94,6 +94,9 @@ contains only the deployable static website.
 3. **Dark Fog scope:** either keep combat instruction explicitly outside this
    industrial guide or authorize a separate companion scope; do not let it
    enter piecemeal.
+4. **Prototype icons:** implement the static icon pass preserved in
+   `docs/management/guide-icon-integration-plan.md`, using only the external
+   DSP Guide Check asset map and without changing guide copy or behavior.
 
 Narrow mobile layout is best-effort and is not a release gate for this
 PC-focused guide.
