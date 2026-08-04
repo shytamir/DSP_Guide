@@ -128,6 +128,20 @@ for (const [phase, asset] of correctedPhaseAssets) {
 const productionArrows = [...html.matchAll(/<span class="production-arrow" data-producer-item-id="(\d+)" data-producer-type="(smelting|assembly|processing)"[^>]*><img class="proto-icon proto-icon-producer"[^>]*><span class="production-arrow-glyph" aria-hidden="true">→<\/span><\/span>/g)];
 check(productionArrows.length > 0, "No static production arrows were found.");
 
+const ilsMapStart = html.indexOf('<div class="inline-production-map production-map" aria-label="ILS bootstrap production map">');
+const ilsMapEnd = html.indexOf("</div></li>", ilsMapStart);
+const ilsMap = ilsMapStart >= 0 && ilsMapEnd > ilsMapStart ? html.slice(ilsMapStart, ilsMapEnd) : "";
+const ilsMapText = ilsMap.replace(/<[^>]+>/g, "");
+check(Boolean(ilsMap), "The aligned ILS bootstrap production map is missing.");
+check((ilsMap.match(/class="route-group"/g) || []).length === 3, "The ILS bootstrap map must contain three focused groups.");
+check((ilsMap.match(/class="route-row/g) || []).length === 8, "The ILS bootstrap map must contain eight transformation rows.");
+for (const heading of ["TITANIUM ALLOY", "PROCESSORS", "SHARED TURBINE OUTPUTS"]) {
+  check(ilsMapText.includes(heading), `The ILS bootstrap map is missing its ${heading} group.`);
+}
+check(ilsMap.includes('href="#reference-electromagnetic-turbines"'), "The ILS bootstrap map lost its reusable turbine-line link.");
+check(ilsMap.includes('href="#reference-graphene"'), "The ILS bootstrap map lost its reusable Graphene-line link.");
+check(!ilsMap.includes('<span class="route-label">Turbines</span>'), "The ILS bootstrap map still contains the legacy prose-only Turbines row.");
+
 function countRouteArrowText() {
   const tokens = /<!--[\s\S]*?-->|<![^>]*>|<\/?[A-Za-z][^>]*>/g;
   const stack = [];

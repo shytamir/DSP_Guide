@@ -31,11 +31,5 @@ not additional asset-map records.
 
 ## Deferred work
 
-- **ILS stage 3 temporary component lines:** the inline map under “Build the
-  temporary component lines” needs a dedicated production-map contract pass.
-  It remains readable but is deliberately untouched by this correction pass.
-- **SPHERE phase icon:** replace the current Dyson Sphere Component phase icon
-  after the new approved asset is supplied.
 - **Rare resource nodes:** add vein/node icons after the corresponding approved
   exports and authoritative map records are supplied.
-

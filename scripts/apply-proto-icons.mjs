@@ -372,8 +372,21 @@ function addExternalToolsLogo(html) {
   return html.replace(marker, matched => `${logo}${matched}`);
 }
 
+function alignIlsBootstrapMap(html) {
+  const start = html.indexOf(
+    '<div class="inline-production-map',
+    html.indexOf("Build the temporary component lines."),
+  );
+  const closing = "</div></li>";
+  const end = html.indexOf(closing, start);
+  if (start < 0 || end < 0) throw new Error("ILS bootstrap production map could not be located.");
+
+  const map = '<div class="inline-production-map production-map" aria-label="ILS bootstrap production map"><p class="inline-map-intro">Use the reusable <a class="card-crossref-link" href="#reference-electromagnetic-turbines">Electromagnetic Turbine line</a> for the shared turbine supply, then split the protected batch between Particle Containers and Reinforced Thrusters as shown below.</p><div class="route-group"><h5>TITANIUM ALLOY</h5><div class="route-map" role="list"><div class="route-row" role="listitem"><span class="route-label">Acid branch</span><span class="route-chain">Crude Oil → Refined Oil; Refined Oil + Stone + Water → Sulfuric Acid</span></div><div class="route-row" role="listitem"><span class="route-label">Steel branch</span><span class="route-chain">Iron Ore → Iron Ingots → Steel</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Alloy convergence</span><span class="route-chain">Reserved Titanium Ingots + Steel + Sulfuric Acid → Titanium Alloy</span></div></div></div><div class="route-group"><h5>PROCESSORS</h5><div class="route-map" role="list"><div class="route-row" role="listitem"><span class="route-label">Microcrystalline branch</span><span class="route-chain">High-Purity Silicon + Copper Ingots → Microcrystalline Components</span></div><div class="route-row" role="listitem"><span class="route-label">Circuit branch</span><span class="route-chain">Iron Ingots + Copper Ingots → Circuit Boards</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Processor convergence</span><span class="route-chain">Microcrystalline Components + Circuit Boards → Processors</span></div></div></div><div class="route-group"><h5>SHARED TURBINE OUTPUTS</h5><div class="route-map" role="list"><div class="route-row route-convergence" role="listitem"><span class="route-label">Particle Containers</span><span class="route-chain">Electromagnetic Turbines + <a class="card-crossref-link" href="#reference-graphene">Graphene</a> → Particle Containers</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Reinforced Thrusters</span><span class="route-chain">Titanium Alloy + Electromagnetic Turbines → Reinforced Thrusters</span></div></div></div></div>';
+  return `${html.slice(0, start)}${map}</li>${html.slice(end + closing.length)}`;
+}
+
 function transform(html) {
-  const prepared = ensureIconFreeRegions(stripGeneratedMarkup(html));
+  const prepared = ensureIconFreeRegions(alignIlsBootstrapMap(stripGeneratedMarkup(html)));
   const arrows = materializeProductionArrows(prepared);
   let transformed = addStructuralIcons(arrows.html);
   transformed = addTechnologyIcons(transformed);
