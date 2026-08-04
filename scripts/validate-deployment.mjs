@@ -64,6 +64,24 @@ const anchors = [...html.matchAll(/href="#([^"]+)"/g)].map(match => match[1]);
 check(ids.length === new Set(ids).size, "Duplicate HTML id found.");
 check(anchors.every(anchor => ids.includes(anchor)), "Broken internal anchor found.");
 
+const redStart = html.indexOf('<section class="phase-section phase-section-red" id="red">');
+const redEnd = html.indexOf('<section class="phase-section', redStart + 1);
+const redSection = redStart >= 0 && redEnd > redStart ? html.slice(redStart, redEnd) : "";
+const ilsStart = html.indexOf('<section class="phase-section phase-section-ils" id="ils">');
+const ilsEnd = html.indexOf('<section class="phase-section', ilsStart + 1);
+const ilsSection = ilsStart >= 0 && ilsEnd > ilsStart ? html.slice(ilsStart, ilsEnd) : "";
+const warpStart = html.indexOf('<section class="phase-section phase-section-warp" id="warp">');
+const warpEnd = html.indexOf('<section class="phase-section', warpStart + 1);
+const warpSection = warpStart >= 0 && warpEnd > warpStart ? html.slice(warpStart, warpEnd) : "";
+check(redSection.includes('id="red-planetary-base-clearing"'), "The RED planetary-base-clearing procedure is missing.");
+check(redSection.includes("eight") && redSection.includes("Missile Turret") && redSection.includes("Signal Tower"), "The RED procedure lost its eight-turret or Signal Tower instructions.");
+check((ilsSection.match(/href="#red-planetary-base-clearing"/g) || []).length === 1, "ILS must contain exactly one linked RED defense reminder.");
+check((warpSection.match(/href="#red-planetary-base-clearing"/g) || []).length === 1, "WARP must contain exactly one linked RED defense reminder.");
+check(!html.includes('id="ref-dark-fog"') && !html.includes('href="#ref-dark-fog"'), "The legacy Dark Fog industry reference remains in the guide.");
+const outsideRed = redStart >= 0 && redEnd > redStart ? `${html.slice(0, redStart)}${html.slice(redEnd)}` : html;
+check(!/Dark Fog/i.test(outsideRed), "Dark Fog guidance appears outside RED.");
+check(!/(Dark Fog (?:levels?|farming|drops?|industry)|space combat|Relay Stations?|\bhives?\b|concealed technolog)/i.test(html), "Prohibited Dark Fog subject remains in the guide.");
+
 const localAssetOccurrences = [
   ...html.matchAll(/(?:href|src)="(assets\/[^"]+)"/g)
 ].map(match => match[1]);

@@ -151,7 +151,7 @@ const contextParagraph = html.indexOf("remember why half the belts exist.");
 const progressIndex = html.indexOf("<h1>Quick Progress Index</h1>");
 assert.ok(contextParagraph < glossaryStart && glossaryStart < progressIndex, "glossary is not in the required location");
 assert.equal((html.match(/<dt>/g) || []).length, 10, "glossary must contain exactly ten terms");
-assert.equal((html.match(/task-list-item-checkbox/g) || []).length, 83, "checklist coverage changed unexpectedly");
+assert.equal((html.match(/task-list-item-checkbox/g) || []).length, 82, "checklist coverage changed unexpectedly");
 assert.match(html, /assets\/js\/checklists\.js/, "checklist script is not referenced by the guide");
 
 console.log("Checklist validation passed: coverage, persistence, duplicate keys, reset, storage denial, and glossary placement verified.");

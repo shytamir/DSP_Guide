@@ -53,7 +53,7 @@ the ILS rush.
 
 ### 2. Explain the starter-planet base-clearing pattern
 
-**Status:** ready for implementation.
+**Status:** implemented.
 
 **As a** new player with basic missile production established,  
 **I want** one concise procedure for using a fixed Missile Turret battery and
@@ -80,3 +80,10 @@ combat guide.
 - The procedure remains entirely within planetary RED-phase defense.
 - No levels, farming, drops, space combat, Relay Stations, hives, or concealed
   technologies appear anywhere in the guide.
+
+## Implementation record
+
+Both stories are complete. RED now contains the stocked Security Mall and the
+single eight-turret, progressive-Signal-Tower procedure. ILS and WARP each
+contain one linked reminder, and the superseded hidden-industry reference has
+been removed.

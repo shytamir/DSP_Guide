@@ -103,9 +103,9 @@ contains only the deployable static website.
 
 ## Current roadmap
 
-1. **RED planetary base removal:** add the single eight-turret battery and
-   progressive Signal Tower procedure defined in
-   `docs/management/dark-fog-red-defense-user-stories.md`.
+No active implementation story is currently scheduled. The two approved
+RED-phase defense stories are complete and recorded in
+`docs/management/dark-fog-red-defense-user-stories.md`.
 
 Narrow mobile layout is best-effort and is not a release gate for this
 PC-focused guide.

@@ -368,7 +368,7 @@ function addRequiredContextIcons(html) {
 function addExternalToolsLogo(html) {
   if (html.includes('class="game-logo section-logo"')) return html;
   const marker = /<hr\/>\s*<h1 id="ref-tools">External Tools and Communities<\/h1>/;
-  const logo = '<img class="game-logo section-logo" src="assets/DSP_exported assets/Texture2D/dsp-logo-flat-en.png" width="1280" height="277" alt="Dyson Sphere Program: Rise of the Dark Fog"/>';
+  const logo = '<img class="game-logo section-logo" src="assets/DSP_exported assets/Texture2D/dsp-logo-flat-en.png" width="1280" height="277" alt="Dyson Sphere Program"/>';
   if (!marker.test(html)) throw new Error("External Tools and Communities divider was not found.");
   return html.replace(marker, matched => `${logo}${matched}`);
 }
@@ -443,6 +443,65 @@ function addRedSecurityMall(html) {
   return `${html.slice(0, redStart)}${red}${html.slice(redEnd)}`;
 }
 
+function applyRedPlanetaryBaseGuidance(html) {
+  html = html
+    .replace(/<span class="proto-ref" data-item-id="(?:3005|1609|3007)">([^<]+)<\/span>/g, "$1")
+    .replace('<a href="#ref-dark-fog">Dark Fog Industry</a>', "")
+    .replace(", interstellar power transmission, advanced mining, and Dark Fog industry are optional paths.", ", interstellar power transmission, and advanced mining are optional paths.")
+    .replace(/<p><strong>Combat scope:<\/strong>[\s\S]*?<\/p>/, "")
+    .replaceAll('alt="Dyson Sphere Program: Rise of the Dark Fog"', 'alt="Dyson Sphere Program"');
+
+  const referenceStart = html.indexOf('<h1 id="ref-dark-fog">');
+  if (referenceStart >= 0) {
+    const blockStart = html.lastIndexOf("<hr/>", referenceStart);
+    const blockEnd = html.indexOf('<img class="game-logo section-logo"', referenceStart);
+    if (blockStart < 0 || blockEnd < 0) throw new Error("Legacy Dark Fog reference boundaries could not be located.");
+    html = `${html.slice(0, blockStart)}${html.slice(blockEnd)}`;
+  }
+
+  const redStart = html.indexOf('<section class="phase-section phase-section-red" id="red">');
+  const redEnd = html.indexOf('<section class="phase-section', redStart + 1);
+  if (redStart < 0 || redEnd < 0) throw new Error("RED phase could not be located for planetary-base guidance.");
+  let red = html.slice(redStart, redEnd);
+  if (!red.includes('id="red-planetary-base-clearing"')) {
+    const cardStart = red.indexOf('<details class="build-card build-card-anchor" id="card-red-security-mall">');
+    const cardEnd = red.indexOf("</details>", cardStart);
+    if (cardStart < 0 || cardEnd < 0) throw new Error("Security Mall card could not be located for planetary-base guidance.");
+    const insertionPoint = cardEnd + "</details>".length;
+    const procedure = '<h2 id="red-planetary-base-clearing">Clear the starter planet\'s existing bases</h2><p>Default games begin with Dark Fog enabled. Once the Security Mall has stocked its first battery, one simple pattern is enough to remove the planetary bases already sharing your world.</p><ol class="diagnostic-steps"><li><strong>Build one fixed battery.</strong> Group eight Missile Turrets, power them, feed them Missile Sets, and confirm every turret is loaded.</li><li><strong>Put the first tower on cleared ground.</strong> Power a Signal Tower between the battery and the nearest planetary base. The tower moves the firing line; the missile battery stays home.</li><li><strong>Advance one tower at a time.</strong> Once the ground around the current tower is quiet, place the next powered tower closer to the base and let the battery clear its coverage before advancing again.</li><li><strong>Finish the job.</strong> Continue the same measured advance until the planetary base is eliminated, then recover any forward towers you no longer need.</li></ol><aside class="guide-warning"><strong>⚠ Keep the battery fed.</strong> If the turrets stop firing, check their power and Missile Set supply before changing the plan.</aside>';
+    red = `${red.slice(0, insertionPoint)}${procedure}${red.slice(insertionPoint)}`;
+  }
+  html = `${html.slice(0, redStart)}${red}${html.slice(redEnd)}`;
+
+  const ilsStart = html.indexOf('<section class="phase-section phase-section-ils" id="ils">');
+  const ilsEnd = html.indexOf('<section class="phase-section', ilsStart + 1);
+  if (ilsStart < 0 || ilsEnd < 0) throw new Error("ILS phase could not be located for the RED reminder.");
+  let ils = html.slice(ilsStart, ilsEnd);
+  ils = ils.replace(
+    "Add local defenses when Dark Fog makes an unattended mining world a bad neighborhood.",
+    'If the destination is occupied, reuse the <a href="#red-planetary-base-clearing">RED missile-battery and Signal Tower pattern</a> before leaving the outpost unattended.',
+  );
+  ils = ils.replace('<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"/>Dark Fog defenses, if needed, can protect the outpost without Icarus standing guard.</li>', "");
+  if ((ils.match(/href="#red-planetary-base-clearing"/g) || []).length !== 1) throw new Error("ILS must contain one RED defense reminder.");
+  html = `${html.slice(0, ilsStart)}${ils}${html.slice(ilsEnd)}`;
+
+  const warpStart = html.indexOf('<section class="phase-section phase-section-warp" id="warp">');
+  const warpEnd = html.indexOf('<section class="phase-section', warpStart + 1);
+  if (warpStart < 0 || warpEnd < 0) throw new Error("WARP phase could not be located for the RED reminder.");
+  let warp = html.slice(warpStart, warpEnd);
+  const legacySecurity = warp.indexOf("Basic outpost security;");
+  if (legacySecurity >= 0) {
+    const rowStart = warp.lastIndexOf("<tr>", legacySecurity);
+    const rowEnd = warp.indexOf("</tr>", legacySecurity);
+    if (rowStart < 0 || rowEnd < 0) throw new Error("WARP security row boundaries could not be located.");
+    const reminderRow = '<tr><td><strong>8 Missile Turrets + 200 Missile Sets + Signal Towers</strong></td><td>One carried copy of the <a href="#red-planetary-base-clearing">RED planetary-base-clearing setup</a> when the destination needs it</td></tr>';
+    warp = `${warp.slice(0, rowStart)}${reminderRow}${warp.slice(rowEnd + "</tr>".length)}`;
+  }
+  if ((warp.match(/href="#red-planetary-base-clearing"/g) || []).length !== 1) throw new Error("WARP must contain one RED defense reminder.");
+  html = `${html.slice(0, warpStart)}${warp}${html.slice(warpEnd)}`;
+  return html;
+}
+
 function alignIlsBootstrapMap(html) {
   const start = html.indexOf(
     '<div class="inline-production-map',
@@ -457,7 +516,7 @@ function alignIlsBootstrapMap(html) {
 }
 
 function transform(html) {
-  const prepared = ensureIconFreeRegions(alignIlsBootstrapMap(normalizeStorageBufferInstructions(addRedSecurityMall(stripGeneratedMarkup(html)))));
+  const prepared = ensureIconFreeRegions(alignIlsBootstrapMap(applyRedPlanetaryBaseGuidance(normalizeStorageBufferInstructions(addRedSecurityMall(stripGeneratedMarkup(html))))));
   const arrows = materializeProductionArrows(prepared);
   let transformed = addStructuralIcons(arrows.html);
   transformed = addTechnologyIcons(transformed);
