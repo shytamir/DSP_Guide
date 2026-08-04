@@ -80,7 +80,7 @@ const procedureEnd = redSection.indexOf("</aside>", procedureStart);
 const procedureText = procedureStart >= 0 && procedureEnd > procedureStart
   ? redSection.slice(procedureStart, procedureEnd).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ")
   : "";
-for (const required of ["New Game → Start", "outside its aggro range", "first powered Signal Tower", "second powered tower", "far side"]) {
+for (const required of ["New Game → Start", "outside its aggro range", "chasing units", "Tesla Tower inside aggro range", "first powered Signal Tower", "second powered tower", "far side", "Geothermal Power Station", "Foundation or Soil Pile tax"]) {
   check(procedureText.includes(required), `The RED base-clearing procedure is missing: ${required}.`);
 }
 check((ilsSection.match(/href="#red-planetary-base-clearing"/g) || []).length === 1, "ILS must contain exactly one linked RED defense reminder.");

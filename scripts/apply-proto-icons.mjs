@@ -32,6 +32,7 @@ const itemAssetCorrections = new Map([
 const mapAdditions = [
   { id: 2207, name: "Accumulator (full)", asset: "accumulator-full.png", guideAliases: ["charged Accumulator", "charged Accumulators"] },
   { id: 1407, name: "Engine", asset: "engine.png" },
+  { id: 2213, name: "Geothermal Power Station", asset: "geothermal-power-station.png" },
 ];
 const effectiveItems = map.items
   .map(item => itemAssetCorrections.has(Number(item.id))
@@ -484,6 +485,14 @@ function applyRedPlanetaryBaseGuidance(html) {
     const insertionPoint = cardEnd + "</details>".length;
     red = `${red.slice(0, insertionPoint)}${procedure}${red.slice(insertionPoint)}`;
   }
+  red = red.replace(
+    "If you pull aggro early, fall back and let the missile battery remove the structures that reacted before advancing again.",
+    "If you pull aggro early, fall back and shoot down any chasing units, then make sure you have not left a Tesla Tower inside aggro range.",
+  );
+  red = red.replace(
+    "then recover any forward towers you no longer need.</li></ol>",
+    "then recover any forward towers you no longer need.</li><li><strong>Claim the free power.</strong> Cap the exposed core-drill site with a Geothermal Power Station. It turns the cleared base into steady generation without paying a Foundation or Soil Pile tax.</li></ol>",
+  );
   html = `${html.slice(0, redStart)}${red}${html.slice(redEnd)}`;
 
   const ilsStart = html.indexOf('<section class="phase-section phase-section-ils" id="ils">');
