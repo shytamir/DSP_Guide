@@ -150,14 +150,18 @@ for (const retired of [
   "card-photon-critical-photons",
   "card-photon-antimatter",
   "card-white-white-cubes",
+  "limit the buffer to",
+  "limit the deployment buffer to",
   '<h4>Input</h4>',
   '<h4>Pipeline</h4>',
   '<h4>Output</h4>',
 ]) {
   if (html.includes(retired)) errors.push(`Retired card-system text remains: ${retired}`);
 }
-
 const visibleDocument = html.replace(/<[^>]+>/g, "");
+if (!visibleDocument.includes("Storage limits use slots:")) {
+  errors.push("Storage-slot guidance is missing from the build-card assumptions.");
+}
 for (const required of [
   "Organic Crystal (mined)",
   "Sulfuric Acid ocean",

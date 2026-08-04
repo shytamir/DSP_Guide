@@ -78,6 +78,11 @@ The map is a short set of labelled route rows.
 Destination identifies the final storage, research, launcher, or other named
 consumer and restates the exact target from the card title.
 
+Storage controls must be described in whole enabled slots with the resulting
+maximum item count. A target smaller than one stack must tell the reader to
+pause the producing machine; the guide must not imply an exact-count storage
+slider exists.
+
 ### Surplus Yield
 
 This optional footer names reusable or blocking byproduct types only. Unused

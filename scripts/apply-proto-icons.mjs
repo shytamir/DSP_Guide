@@ -373,6 +373,54 @@ function addExternalToolsLogo(html) {
   return html.replace(marker, matched => `${logo}${matched}`);
 }
 
+function normalizeStorageBufferInstructions(html) {
+  const bufferParagraph = '<p><strong>Buffer with a reason:</strong> mall products, expedition supplies, blocking byproducts, and deliberate phase batches benefit from visible limited storage. Giant buffers behind every line can hide a shortage until the whole factory fails at once; ordinary intermediates only need enough room to keep transport and production moving.</p>';
+  const slotParagraph = '<p><strong>Storage limits use slots:</strong> The storage slider enables whole stack slots, not an exact item count. Card destinations state the number of enabled slots and the resulting maximum. If a target is smaller than one stack, pause the producing machine when the target is reached.</p>';
+  if (!html.includes(slotParagraph)) {
+    if (!html.includes(bufferParagraph)) throw new Error("Build-card buffer guidance could not be located.");
+    html = html.replace(bufferParagraph, `${bufferParagraph}${slotParagraph}`);
+  }
+
+  const rules = [
+    ["Conveyor Belt Mk.I", "limit the buffer to <span class=\"rate\">900 Belts</span>", "enable <span class=\"rate\">3 storage slots</span> (up to 900 Belts)"],
+    ["Sorter Mk.I", "limit the buffer to <span class=\"rate\">400 Sorters</span>", "enable <span class=\"rate\">2 storage slots</span> (up to 400 Sorters)"],
+    ["Mining Machines", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
+    ["Arc Smelters", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
+    ["Assembling Machine Mk.I", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
+    ["Storage Mk.I", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
+    ["Storage Tanks", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
+    ["Wind Turbines", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
+    ["Tesla Towers", "limit the buffer to <span class=\"rate\">100</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 100)"],
+    ["Combustible Units", "limit the buffer to <span class=\"rate\">200</span>", "enable <span class=\"rate\">2 storage slots</span> (up to 200)"],
+    ["EM-Rail Ejectors", "limit the deployment buffer to <span class=\"rate\">60 Ejectors</span>", "enable <span class=\"rate\">2 storage slots</span> (up to 60 Ejectors)"],
+    ["Logistics Distributors", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
+    ["Logistics Bots", "limit the buffer to <span class=\"rate\">200</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 200)"],
+    ["Planetary Logistics Stations", "limit the buffer to <span class=\"rate\">10</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 10)"],
+    ["Logistics Drones", "limit the buffer to <span class=\"rate\">200</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 200)"],
+    ["Interstellar Logistics Stations", "limit the buffer to <span class=\"rate\">10</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 10)"],
+    ["Logistics Vessels", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
+  ];
+  for (const [label, oldInstruction, newInstruction] of rules) {
+    const oldText = `<span class="machine">Storage Mk.I — ${label}</span> — ${oldInstruction}.`;
+    const newText = `<span class="machine">Storage Mk.I — ${label}</span> — ${newInstruction}.`;
+    if (html.includes(oldText)) html = html.replace(oldText, newText);
+    else if (!html.includes(newText)) throw new Error(`Storage-slot instruction could not be verified for ${label}.`);
+  }
+
+  const securityRules = [
+    ["Missile Turrets", "limit the buffer to <span class=\"rate\">8</span>", "produce <span class=\"rate\">8</span>, then pause the Assembler; enable 1 storage slot only if you prefer automatic replenishment up to a full stack of 50"],
+    ["Signal Towers", "limit the buffer to <span class=\"rate\">20</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 20)"],
+    ["Missile Sets", "limit the buffer to <span class=\"rate\">200</span>", "enable <span class=\"rate\">2 storage slots</span> (up to 200)"],
+  ];
+  for (const [label, oldInstruction, newInstruction] of securityRules) {
+    const oldText = `Storage Mk.I — ${label} — ${oldInstruction}.`;
+    const newText = `Storage Mk.I — ${label} — ${newInstruction}.`;
+    if (html.includes(oldText)) html = html.replace(oldText, newText);
+    else if (!html.includes(newText)) throw new Error(`Security-mall storage instruction could not be verified for ${label}.`);
+  }
+  return html;
+}
+
 function addRedSecurityMall(html) {
   if (html.includes('id="card-red-security-mall"')) return html;
 
@@ -390,7 +438,7 @@ function addRedSecurityMall(html) {
   const redCardEnd = red.indexOf("</details>", redCardStart);
   if (redCardStart < 0 || redCardEnd < 0) throw new Error("RED cube card could not be located.");
   const insertionPoint = redCardEnd + "</details>".length;
-  const securityCard = '<details class="build-card build-card-anchor" id="card-red-security-mall"><summary><span class="card-summary-title">Security Mall — buffer 8 Missile Turrets + 20 Signal Towers + 200 Missile Sets</span><span class="card-summary-meta"><span class="card-badge">MANDATED</span><span class="card-badge">BUFFERED</span></span></summary><div class="card-body"><div class="production-map"><section class="map-supplies"><h4>Supplies</h4><ul><li>Iron Ore.</li><li>Copper Ore.</li><li>Coal.</li><li>Stone.</li><li><a class="card-crossref-link" href="#route-blue-magnetic-coils">Magnetic Coils from BLUE</a>.</li><li><a class="card-crossref-link" href="#route-blue-circuit-boards">Circuit Boards from BLUE</a>.</li><li><a class="card-crossref-link" href="#reference-electromagnetic-turbines">Electric Motors from the reusable Electromagnetic Turbine line</a>.</li><li><a class="card-crossref-link" href="#card-bootstrap-mall-power">Wireless Power Towers from the BLUE mall</a>.</li></ul></section><section class="map-pipeline"><h4>Production Map</h4><div class="route-group"><h5>SUPPORTING BRANCHES</h5><div class="route-map" role="list"><div class="route-row" role="listitem"><span class="route-label">Steel branch</span><span class="route-chain">Iron Ore → Iron Ingots → Steel</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Engine branch</span><span class="route-chain">Copper Ingots + Magnetic Coils → Engines</span></div><div class="route-row" role="listitem"><span class="route-label">Fuel branch</span><span class="route-chain">Coal → Combustible Units</span></div><div class="route-row" role="listitem"><span class="route-label">Crystal branch</span><span class="route-chain">Stone → Silicon Ore → High-Purity Silicon → Crystal Silicon</span></div></div></div><div class="route-group"><h5>BUFFERED OUTPUTS</h5><div class="route-map" role="list"><div class="route-row route-convergence" role="listitem"><span class="route-label">Turret convergence</span><span class="route-chain">Steel + Electric Motors + Circuit Boards + Engines → Missile Turrets</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Missile convergence</span><span class="route-chain">Copper Ingots + Circuit Boards + Combustible Units + Engines → Missile Sets</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Tower convergence</span><span class="route-chain">Wireless Power Towers + Steel + Crystal Silicon → Signal Towers</span></div></div></div></section><section class="map-destination"><h4>Destination</h4><ul><li>Storage Mk.I — Missile Turrets — limit the buffer to <span class="rate">8</span>.</li><li>Storage Mk.I — Signal Towers — limit the buffer to <span class="rate">20</span>.</li><li>Storage Mk.I — Missile Sets — limit the buffer to <span class="rate">200</span>.</li></ul></section><div class="map-footer"><section class="map-footer-section map-note"><h4>Operating Note</h4><ul><li>Fill these three limited boxes before the ILS rush. The mall can sleep afterward and wake whenever the starter planet needs another battery or tower advance.</li></ul></section></div></div></div></details>';
+  const securityCard = '<details class="build-card build-card-anchor" id="card-red-security-mall"><summary><span class="card-summary-title">Security Mall — buffer 8 Missile Turrets + 20 Signal Towers + 200 Missile Sets</span><span class="card-summary-meta"><span class="card-badge">MANDATED</span><span class="card-badge">BUFFERED</span></span></summary><div class="card-body"><div class="production-map"><section class="map-supplies"><h4>Supplies</h4><ul><li>Iron Ore.</li><li>Copper Ore.</li><li>Coal.</li><li>Stone.</li><li><a class="card-crossref-link" href="#route-blue-magnetic-coils">Magnetic Coils from BLUE</a>.</li><li><a class="card-crossref-link" href="#route-blue-circuit-boards">Circuit Boards from BLUE</a>.</li><li><a class="card-crossref-link" href="#reference-electromagnetic-turbines">Electric Motors from the reusable Electromagnetic Turbine line</a>.</li><li><a class="card-crossref-link" href="#card-bootstrap-mall-power">Wireless Power Towers from the BLUE mall</a>.</li></ul></section><section class="map-pipeline"><h4>Production Map</h4><div class="route-group"><h5>SUPPORTING BRANCHES</h5><div class="route-map" role="list"><div class="route-row" role="listitem"><span class="route-label">Steel branch</span><span class="route-chain">Iron Ore → Iron Ingots → Steel</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Engine branch</span><span class="route-chain">Copper Ingots + Magnetic Coils → Engines</span></div><div class="route-row" role="listitem"><span class="route-label">Fuel branch</span><span class="route-chain">Coal → Combustible Units</span></div><div class="route-row" role="listitem"><span class="route-label">Crystal branch</span><span class="route-chain">Stone → Silicon Ore → High-Purity Silicon → Crystal Silicon</span></div></div></div><div class="route-group"><h5>BUFFERED OUTPUTS</h5><div class="route-map" role="list"><div class="route-row route-convergence" role="listitem"><span class="route-label">Turret convergence</span><span class="route-chain">Steel + Electric Motors + Circuit Boards + Engines → Missile Turrets</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Missile convergence</span><span class="route-chain">Copper Ingots + Circuit Boards + Combustible Units + Engines → Missile Sets</span></div><div class="route-row route-convergence" role="listitem"><span class="route-label">Tower convergence</span><span class="route-chain">Wireless Power Towers + Steel + Crystal Silicon → Signal Towers</span></div></div></div></section><section class="map-destination"><h4>Destination</h4><ul><li>Storage Mk.I — Missile Turrets — produce <span class="rate">8</span>, then pause the Assembler; enable 1 storage slot only if you prefer automatic replenishment up to a full stack of 50.</li><li>Storage Mk.I — Signal Towers — enable <span class="rate">1 storage slot</span> (up to 20).</li><li>Storage Mk.I — Missile Sets — enable <span class="rate">2 storage slots</span> (up to 200).</li></ul></section><div class="map-footer"><section class="map-footer-section map-note"><h4>Operating Note</h4><ul><li>Fill these three limited boxes before the ILS rush. The mall can sleep afterward and wake whenever the starter planet needs another battery or tower advance.</li></ul></section></div></div></div></details>';
   red = `${red.slice(0, insertionPoint)}${securityCard}${red.slice(insertionPoint)}`;
   return `${html.slice(0, redStart)}${red}${html.slice(redEnd)}`;
 }
@@ -409,7 +457,7 @@ function alignIlsBootstrapMap(html) {
 }
 
 function transform(html) {
-  const prepared = ensureIconFreeRegions(alignIlsBootstrapMap(addRedSecurityMall(stripGeneratedMarkup(html))));
+  const prepared = ensureIconFreeRegions(alignIlsBootstrapMap(normalizeStorageBufferInstructions(addRedSecurityMall(stripGeneratedMarkup(html)))));
   const arrows = materializeProductionArrows(prepared);
   let transformed = addStructuralIcons(arrows.html);
   transformed = addTechnologyIcons(transformed);
