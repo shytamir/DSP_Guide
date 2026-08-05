@@ -53,15 +53,15 @@ Rules:
 Every mapped `.tech-ref[data-tech-id]` receives the mapped technology icon
 immediately before its visible in-game name. The image is decorative because
 the adjacent text already supplies the accessible name. It does not create a
-new link or control, and it does not change the existing tooltip trigger.
+new link or control, and it does not change the existing native tooltip trigger.
 
 ```html
-<span class="tech-ref" data-tech-id="1605" role="button" tabindex="0">
+<button type="button" class="tech-ref" data-tech-id="1605">
   <img class="proto-icon proto-icon-tech"
        src="assets/DSP_exported assets/Texture2D/Tech/1605.png"
        width="20" height="20" alt="" aria-hidden="true">
   Interstellar Logistics System
-</span>
+</button>
 ```
 
 ### Inline items, buildings, and recipe outputs
@@ -86,11 +86,11 @@ attached to the transformation arrow as specified below.
 
 ```html
 <span class="proto-ref" data-item-id="1001"><img ...>Iron Ore</span>
-<span class="production-arrow" data-producer-item-id="2302"
-      aria-label="smelted in Arc Smelter">
+<span class="production-arrow" data-producer-item-id="2302">
   <img class="proto-icon proto-icon-producer" src=".../smelter.png"
        width="20" height="20" alt="" aria-hidden="true">
-  <span aria-hidden="true">→</span>
+  <span class="production-arrow-glyph" aria-hidden="true">→</span>
+  <span class="visually-hidden">Produced in Arc Smelter</span>
 </span>
 <span class="proto-ref" data-item-id="1101"><img ...>Iron Ingots</span>
 ```

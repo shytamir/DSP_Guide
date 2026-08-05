@@ -113,7 +113,7 @@ function validateMap(id, body, requireExactDestination) {
     errors.push(`${id} Destination does not restate its exact end-product target`);
   }
 
-  const routeRows = [...pipeline.matchAll(/class="route-row[^\"]*"[^>]*>[\s\S]*?<\/div>/g)];
+  const routeRows = [...pipeline.matchAll(/<li class="route-row[^\"]*"[^>]*>[\s\S]*?<\/li>/g)];
   if (routeRows.length === 0) errors.push(`${id} has no production-map routes`);
   const rowLimit = id === "card-red-security-mall" ? 12 : 8;
   if (routeRows.length > rowLimit) errors.push(`${id} exceeds its ${rowLimit}-row complexity limit (${routeRows.length})`);

@@ -76,7 +76,7 @@ const warpSection = warpStart >= 0 && warpEnd > warpStart ? html.slice(warpStart
 check(redSection.includes('id="red-planetary-base-clearing"'), "The RED planetary-base-clearing procedure is missing.");
 check(redSection.includes("eight") && redSection.includes("Missile Turret") && redSection.includes("Signal Tower"), "The RED procedure lost its eight-turret or Signal Tower instructions.");
 const procedureStart = redSection.indexOf('<h2 id="red-planetary-base-clearing">');
-const procedureEnd = redSection.indexOf("</aside>", procedureStart);
+const procedureEnd = redSection.indexOf("</div>", procedureStart);
 const procedureText = procedureStart >= 0 && procedureEnd > procedureStart
   ? redSection.slice(procedureStart, procedureEnd).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ")
   : "";
@@ -151,10 +151,22 @@ for (const [phase, asset] of correctedPhaseAssets) {
   check(tags.length > 0, `Phase ${phase} has no phase-tag references.`);
   check(tags.every(tag => tag[1].includes(`/${asset}"`)), `Phase ${phase} tag icon is wrong.`);
 }
-const productionArrows = [...html.matchAll(/<span class="production-arrow" data-producer-item-id="(\d+)" data-producer-type="(smelting|assembly|processing)"[^>]*><img class="proto-icon proto-icon-producer"[^>]*><span class="production-arrow-glyph" aria-hidden="true">→<\/span><\/span>/g)];
+const productionArrows = [...html.matchAll(/<span class="production-arrow" data-producer-item-id="(\d+)" data-producer-type="(smelting|assembly|processing)"[^>]*><img class="proto-icon proto-icon-producer"[^>]*><span class="production-arrow-glyph" aria-hidden="true">→<\/span><span class="visually-hidden">Produced in [^<]+<\/span><\/span>/g)];
 check(productionArrows.length > 0, "No static production arrows were found.");
 
-const ilsMapStart = html.indexOf('<div class="inline-production-map production-map" aria-label="ILS bootstrap production map">');
+const technologyTriggers = [...html.matchAll(/<button(?=[^>]*\btype="button")(?=[^>]*\bclass="[^"]*\btech-ref\b[^"]*")(?=[^>]*\bdata-tech-id="(\d+)")[^>]*>([\s\S]*?)<\/button>/g)];
+check(technologyTriggers.length > 0, "No native technology triggers were found.");
+check(!/<span[^>]*\bclass="[^"]*\btech-ref\b/.test(html), "A technology trigger still uses a generic span.");
+check(!/<button[^>]*\bclass="[^"]*\btech-ref\b[^>]*(?:\brole=|\btabindex=)/.test(html), "A native technology trigger retains pseudo-button attributes.");
+check(!/<aside\b/.test(html), "A repeated callout still creates a complementary landmark.");
+check((html.match(/<ul class="route-map">/g) || []).length > 0, "No native production-map lists were found.");
+check((html.match(/<li class="route-row/g) || []).length > 0, "No native production-map list items were found.");
+check(!/class="route-map"[^>]*\brole="list"/.test(html), "A production map still emulates a list with ARIA.");
+check(!/class="route-row[^"]*"[^>]*\brole="listitem"/.test(html), "A production route still emulates a list item with ARIA.");
+const genericAriaLabels = [...html.matchAll(/<(div|span)\b([^>]*\baria-label="[^"]+"[^>]*)>/g)];
+check(genericAriaLabels.every(match => /\brole="(?:group|img)"/.test(match[2])), "A generic element uses aria-label without a nameable role.");
+
+const ilsMapStart = html.indexOf('<div class="inline-production-map production-map" role="group" aria-label="ILS bootstrap production map">');
 const ilsMapEnd = html.indexOf("</div></li>", ilsMapStart);
 const ilsMap = ilsMapStart >= 0 && ilsMapEnd > ilsMapStart ? html.slice(ilsMapStart, ilsMapEnd) : "";
 const ilsMapText = ilsMap.replace(/<[^>]+>/g, "");
@@ -222,7 +234,7 @@ try {
     ["1508", new Set(["Mission Completed"])],
     ["1606", new Set(["Gas Giant Exploitation"])],
   ]);
-  for (const match of html.matchAll(/<span\s+class="[^"]*\btech-ref\b[^"]*"\s+data-tech-id="(\d+)"[^>]*>([\s\S]*?)<\/span>/g)) {
+  for (const match of technologyTriggers) {
     const [, techId, inner] = match;
     const visibleLabel = inner.replace(/<[^>]+>/g, "").trim();
     const authoritativeName = technologyData[techId]?.name;

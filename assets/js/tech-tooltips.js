@@ -7,6 +7,7 @@
 
   function attachTooltips(techData, tooltipDetails) {
     let active = null;
+    let pinned = false;
 
     function render(reference) {
       const data = techData[reference.dataset.techId];
@@ -62,28 +63,37 @@
       tip.style.top = `${top}px`;
     }
 
-    function show(reference) {
+    function show(reference, shouldPin = false) {
       if (!render(reference)) return;
+      if (active && active !== reference) active.removeAttribute("aria-describedby");
       active = reference;
+      pinned = shouldPin;
+      reference.setAttribute("aria-describedby", tip.id);
       tip.classList.add("visible");
       place(reference);
     }
 
     function hide(reference) {
       if (reference && active !== reference) return;
+      if (active) active.removeAttribute("aria-describedby");
       active = null;
+      pinned = false;
       tip.classList.remove("visible");
       tip.classList.add("is-hidden");
     }
 
     document.querySelectorAll(".tech-ref").forEach(reference => {
       reference.addEventListener("mouseenter", () => show(reference));
-      reference.addEventListener("mouseleave", () => hide(reference));
+      reference.addEventListener("mouseleave", () => {
+        if (!pinned && document.activeElement !== reference) hide(reference);
+      });
       reference.addEventListener("focus", () => show(reference));
-      reference.addEventListener("blur", () => hide(reference));
+      reference.addEventListener("blur", () => {
+        if (!pinned) hide(reference);
+      });
       reference.addEventListener("click", event => {
         event.preventDefault();
-        active === reference ? hide(reference) : show(reference);
+        active === reference && pinned ? hide(reference) : show(reference, true);
       });
       reference.addEventListener("keydown", event => {
         if (event.key === "Escape") hide(reference);

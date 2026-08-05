@@ -295,6 +295,7 @@ publish flow.
 Check GitHub Actions only when the prompt requires CI results in the final
 report. Otherwise, do not poll CI or delay completion for it.
 When workflow validation is required, one 60-second wait is permitted before checking GitHub Actions results.
+Treat the Pages builder Node deprecation warning as accepted background noise, not a work item.
 
 Never expose tokens, credential-helper output, or secrets in logs or reports.
 
