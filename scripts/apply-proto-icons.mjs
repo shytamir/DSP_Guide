@@ -1,5 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
+import {
+  components,
+  elementTextByClass,
+  findElementsByClass,
+  getAttribute,
+  hasAttribute,
+  isNativeComponent,
+  replaceElementsByClass,
+} from "./lib/markup-contracts.mjs";
 
 const argumentsList = process.argv.slice(2);
 const mode = argumentsList.includes("--write") ? "write" : argumentsList.includes("--check") ? "check" : null;
@@ -105,11 +114,13 @@ function technologyIcon(technology) {
 }
 
 function stripGeneratedMarkup(html) {
-  return html
-    .replace(/<span class="proto-ref" data-item-id="\d+"><img class="proto-icon proto-icon-item"[^>]*\/>([\s\S]*?)<\/span>/g, "$1")
+  const withoutItemReferences = replaceElementsByClass(html, components.itemReference.className, reference =>
+    reference.inner.replace(/<img class="proto-icon proto-icon-item"[^>]*\/>/, ""),
+  );
+  const withoutProductionArrows = replaceElementsByClass(withoutItemReferences, components.productionArrow.className, () => "→");
+  return withoutProductionArrows
     .replace(/<img class="proto-icon proto-icon-tech"[^>]*\/>/g, "")
-    .replace(/<img class="phase-icon phase-icon-(?:rail|tag)"[^>]*\/>/g, "")
-    .replace(/<span class="production-arrow"[^>]*><img class="proto-icon proto-icon-producer"[^>]*\/><span class="production-arrow-glyph"[^>]*>→<\/span>(?:<span class="visually-hidden">[^<]*<\/span>)?<\/span>/g, "→");
+    .replace(/<img class="phase-icon phase-icon-(?:rail|tag)"[^>]*\/>/g, "");
 }
 
 function ensureIconFreeRegions(html) {
@@ -286,11 +297,12 @@ function addStructuralIcons(html) {
 }
 
 function addTechnologyIcons(html) {
-  return html.replace(/<button(?=[^>]*\bclass="[^"]*\btech-ref\b[^"]*")(?=[^>]*\bdata-tech-id="(\d+)")[^>]*>/g, (opening, id, offset, source) => {
+  return replaceElementsByClass(html, components.technologyReference.className, reference => {
+    const id = getAttribute(reference.openingTag, components.technologyReference.idAttribute);
     const technology = technologyById.get(Number(id));
     if (!technology) throw new Error(`Technology ${id} is missing from the external asset map.`);
-    if (source.slice(offset + opening.length).startsWith('<img class="proto-icon proto-icon-tech"')) return opening;
-    return `${opening}${technologyIcon(technology)}`;
+    if (reference.inner.startsWith('<img class="proto-icon proto-icon-tech"')) return reference.full;
+    return reference.full.replace(reference.openingTag, `${reference.openingTag}${technologyIcon(technology)}`);
   });
 }
 
@@ -374,171 +386,8 @@ function addExternalToolsLogo(html) {
   return html.replace(marker, matched => `${logo}${matched}`);
 }
 
-function normalizeStorageBufferInstructions(html) {
-  const bufferParagraph = '<p><strong>Buffer with a reason:</strong> mall products, expedition supplies, blocking byproducts, and deliberate phase batches benefit from visible limited storage. Giant buffers behind every line can hide a shortage until the whole factory fails at once; ordinary intermediates only need enough room to keep transport and production moving.</p>';
-  const slotParagraph = '<p><strong>Storage limits use slots:</strong> The storage slider enables whole stack slots, not an exact item count. Card destinations state the number of enabled slots and the resulting maximum. If a target is smaller than one stack, pause the producing machine when the target is reached.</p>';
-  if (!html.includes(slotParagraph)) {
-    if (!html.includes(bufferParagraph)) throw new Error("Build-card buffer guidance could not be located.");
-    html = html.replace(bufferParagraph, `${bufferParagraph}${slotParagraph}`);
-  }
-
-  const rules = [
-    ["Conveyor Belt Mk.I", "limit the buffer to <span class=\"rate\">900 Belts</span>", "enable <span class=\"rate\">3 storage slots</span> (up to 900 Belts)"],
-    ["Sorter Mk.I", "limit the buffer to <span class=\"rate\">400 Sorters</span>", "enable <span class=\"rate\">2 storage slots</span> (up to 400 Sorters)"],
-    ["Mining Machines", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
-    ["Arc Smelters", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
-    ["Assembling Machine Mk.I", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
-    ["Storage Mk.I", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
-    ["Storage Tanks", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
-    ["Wind Turbines", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
-    ["Tesla Towers", "limit the buffer to <span class=\"rate\">100</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 100)"],
-    ["Combustible Units", "limit the buffer to <span class=\"rate\">200</span>", "enable <span class=\"rate\">2 storage slots</span> (up to 200)"],
-    ["EM-Rail Ejectors", "limit the deployment buffer to <span class=\"rate\">60 Ejectors</span>", "enable <span class=\"rate\">2 storage slots</span> (up to 60 Ejectors)"],
-    ["Logistics Distributors", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
-    ["Logistics Bots", "limit the buffer to <span class=\"rate\">200</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 200)"],
-    ["Planetary Logistics Stations", "limit the buffer to <span class=\"rate\">10</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 10)"],
-    ["Logistics Drones", "limit the buffer to <span class=\"rate\">200</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 200)"],
-    ["Interstellar Logistics Stations", "limit the buffer to <span class=\"rate\">10</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 10)"],
-    ["Logistics Vessels", "limit the buffer to <span class=\"rate\">50</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 50)"],
-  ];
-  for (const [label, oldInstruction, newInstruction] of rules) {
-    const oldText = `<span class="machine">Storage Mk.I — ${label}</span> — ${oldInstruction}.`;
-    const newText = `<span class="machine">Storage Mk.I — ${label}</span> — ${newInstruction}.`;
-    if (html.includes(oldText)) html = html.replace(oldText, newText);
-    else if (!html.includes(newText)) throw new Error(`Storage-slot instruction could not be verified for ${label}.`);
-  }
-
-  const securityRules = [
-    ["Missile Turrets", "limit the buffer to <span class=\"rate\">8</span>", "produce <span class=\"rate\">8</span>, then pause the Assembler; enable 1 storage slot only if you prefer automatic replenishment up to a full stack of 50"],
-    ["Signal Towers", "limit the buffer to <span class=\"rate\">20</span>", "enable <span class=\"rate\">1 storage slot</span> (up to 20)"],
-    ["Missile Sets", "limit the buffer to <span class=\"rate\">200</span>", "enable <span class=\"rate\">2 storage slots</span> (up to 200)"],
-  ];
-  for (const [label, oldInstruction, newInstruction] of securityRules) {
-    const oldText = `Storage Mk.I — ${label} — ${oldInstruction}.`;
-    const newText = `Storage Mk.I — ${label} — ${newInstruction}.`;
-    if (html.includes(oldText)) html = html.replace(oldText, newText);
-    else if (!html.includes(newText)) throw new Error(`Security-mall storage instruction could not be verified for ${label}.`);
-  }
-  return html;
-}
-
-function addRedSecurityMall(html) {
-  if (html.includes('id="card-red-security-mall"')) return html;
-
-  const redStart = html.indexOf('<section class="phase-section phase-section-red" id="red">');
-  const redEnd = html.indexOf('<section class="phase-section', redStart + 1);
-  if (redStart < 0 || redEnd < 0) throw new Error("RED phase could not be located for the security mall.");
-  let red = html.slice(redStart, redEnd);
-
-  const researchMarker = "<p>If BLUE already cleared the cheap prerequisites, RED becomes pleasantly direct: build the graphite and oil branches, unlock their convergence, and let the Labs run.</p>";
-  if (!red.includes(researchMarker)) throw new Error("RED research insertion point could not be located.");
-  const securityResearch = '<p>Once red science is stable, finish <button type="button" class="tech-ref" data-tech-id="1806">Missile Turret</button> → <button type="button" class="tech-ref" data-tech-id="1808">Signal Tower</button> and add the Security Mall below. Let its limited boxes fill before starting the ILS rush. This is a stocked tool rather than a new rate target; when the boxes are full, the lines sleep.</p>';
-  red = red.replace(researchMarker, `${researchMarker}${securityResearch}`);
-
-  const redCardStart = red.indexOf('<details class="build-card build-card-anchor" id="card-red-red-cubes">');
-  const redCardEnd = red.indexOf("</details>", redCardStart);
-  if (redCardStart < 0 || redCardEnd < 0) throw new Error("RED cube card could not be located.");
-  const insertionPoint = redCardEnd + "</details>".length;
-  const securityCard = '<details class="build-card build-card-anchor" id="card-red-security-mall"><summary><span class="card-summary-title">Security Mall — buffer 8 Missile Turrets + 20 Signal Towers + 200 Missile Sets</span><span class="card-summary-meta"><span class="card-badge">MANDATED</span><span class="card-badge">BUFFERED</span></span></summary><div class="card-body"><div class="production-map"><section class="map-supplies"><h4>Supplies</h4><ul><li>Iron Ore.</li><li>Copper Ore.</li><li>Coal.</li><li>Stone.</li><li><a class="card-crossref-link" href="#route-blue-magnetic-coils">Magnetic Coils from BLUE</a>.</li><li><a class="card-crossref-link" href="#route-blue-circuit-boards">Circuit Boards from BLUE</a>.</li><li><a class="card-crossref-link" href="#reference-electromagnetic-turbines">Electric Motors from the reusable Electromagnetic Turbine line</a>.</li><li><a class="card-crossref-link" href="#card-bootstrap-mall-power">Wireless Power Towers from the BLUE mall</a>.</li></ul></section><section class="map-pipeline"><h4>Production Map</h4><div class="route-group"><h5>SUPPORTING BRANCHES</h5><ul class="route-map"><li class="route-row"><span class="route-label">Steel branch</span><span class="route-chain">Iron Ore → Iron Ingots → Steel</span></li><li class="route-row route-convergence"><span class="route-label">Engine branch</span><span class="route-chain">Copper Ingots + Magnetic Coils → Engines</span></li><li class="route-row"><span class="route-label">Fuel branch</span><span class="route-chain">Coal → Combustible Units</span></li><li class="route-row"><span class="route-label">Crystal branch</span><span class="route-chain">Stone → Silicon Ore → High-Purity Silicon → Crystal Silicon</span></li></ul></div><div class="route-group"><h5>BUFFERED OUTPUTS</h5><ul class="route-map"><li class="route-row route-convergence"><span class="route-label">Turret convergence</span><span class="route-chain">Steel + Electric Motors + Circuit Boards + Engines → Missile Turrets</span></li><li class="route-row route-convergence"><span class="route-label">Missile convergence</span><span class="route-chain">Copper Ingots + Circuit Boards + Combustible Units + Engines → Missile Sets</span></li><li class="route-row route-convergence"><span class="route-label">Tower convergence</span><span class="route-chain">Wireless Power Towers + Steel + Crystal Silicon → Signal Towers</span></li></ul></div></section><section class="map-destination"><h4>Destination</h4><ul><li>Storage Mk.I — Missile Turrets — produce <span class="rate">8</span>, then pause the Assembler; enable 1 storage slot only if you prefer automatic replenishment up to a full stack of 50.</li><li>Storage Mk.I — Signal Towers — enable <span class="rate">1 storage slot</span> (up to 20).</li><li>Storage Mk.I — Missile Sets — enable <span class="rate">2 storage slots</span> (up to 200).</li></ul></section><div class="map-footer"><section class="map-footer-section map-note"><h4>Operating Note</h4><ul><li>Fill these three limited boxes before the ILS rush. The mall can sleep afterward and wake whenever the starter planet needs another battery or tower advance.</li></ul></section></div></div></div></details>';
-  red = `${red.slice(0, insertionPoint)}${securityCard}${red.slice(insertionPoint)}`;
-  return `${html.slice(0, redStart)}${red}${html.slice(redEnd)}`;
-}
-
-function normalizeRedSecurityMallCard(html) {
-  const cardStart = html.indexOf('<details class="build-card build-card-anchor" id="card-red-security-mall">');
-  const cardEnd = html.indexOf("</details>", cardStart);
-  if (cardStart < 0 || cardEnd < 0) throw new Error("Security Mall card could not be normalized.");
-  const card = '<details class="build-card build-card-anchor" id="card-red-security-mall"><summary><span class="card-summary-title">Security Mall — buffer 8 Missile Turrets + 20 Signal Towers + 200 Missile Sets</span><span class="card-summary-meta"><span class="card-badge">MANDATED</span><span class="card-badge">BUFFERED</span></span></summary><div class="card-body"><div class="production-map"><section class="map-supplies"><h4>Supplies</h4><ul><li>Iron Ore.</li><li>Copper Ore.</li><li>Coal.</li><li>Stone.</li><li><a class="card-crossref-link" href="#route-blue-magnetic-coils">Magnetic Coils from BLUE</a>.</li><li><a class="card-crossref-link" href="#route-blue-circuit-boards">Circuit Boards from BLUE</a>.</li></ul></section><section class="map-pipeline"><h4>Production Map</h4><div class="route-group"><h5>FOUNDATIONS</h5><ul class="route-map"><li class="route-row"><span class="route-label">Steel branch</span><span class="route-chain">Iron Ore → Iron Ingots → Steel</span></li><li class="route-row"><span class="route-label">Copper branch</span><span class="route-chain">Copper Ore → Copper Ingots</span></li><li class="route-row route-convergence"><span class="route-label">Engine branch</span><span class="route-chain">Copper Ingots + Magnetic Coils → Engines</span></li><li class="route-row"><span class="route-label">Fuel branch</span><span class="route-chain">Coal → Combustible Units</span></li><li class="route-row"><span class="route-label">Crystal branch</span><span class="route-chain">Stone → Silicon Ore → High-Purity Silicon → Crystal Silicon</span></li></ul></div><div class="route-group"><h5>MOTORS AND POWER</h5><ul class="route-map"><li class="route-row route-convergence"><span class="route-label">Motor branch</span><span class="route-chain">Iron Ingots → Gears; Iron Ingots + Gears + Magnetic Coils → Electric Motors</span></li><li class="route-row route-convergence"><span class="route-label">Tower branch</span><span class="route-chain">Iron Ingots + Magnetic Coils → Tesla Towers</span></li><li class="route-row route-convergence"><span class="route-label">Exciter branch</span><span class="route-chain">Stone → Glass → Prisms; Magnetic Coils + Prisms → Plasma Exciters</span></li><li class="route-row route-convergence"><span class="route-label">Wireless convergence</span><span class="route-chain">Tesla Towers + Plasma Exciters → Wireless Power Towers</span></li></ul></div><div class="route-group"><h5>BUFFERED OUTPUTS</h5><ul class="route-map"><li class="route-row route-convergence"><span class="route-label">Turret convergence</span><span class="route-chain">Steel + Electric Motors + Circuit Boards + Engines → Missile Turrets</span></li><li class="route-row route-convergence"><span class="route-label">Missile convergence</span><span class="route-chain">Copper Ingots + Circuit Boards + Combustible Units + Engines → Missile Sets</span></li><li class="route-row route-convergence"><span class="route-label">Tower convergence</span><span class="route-chain">Wireless Power Towers + Steel + Crystal Silicon → Signal Towers</span></li></ul></div></section><section class="map-destination"><h4>Destination</h4><ul><li>Storage Mk.I — Missile Turrets — produce <span class="rate">8</span>, then pause the Assembler; enable 1 storage slot only if you prefer automatic replenishment up to a full stack of 50.</li><li>Storage Mk.I — Signal Towers — enable <span class="rate">1 storage slot</span> (up to 20).</li><li>Storage Mk.I — Missile Sets — enable <span class="rate">2 storage slots</span> (up to 200).</li></ul></section><div class="map-footer"><section class="map-footer-section map-note"><h4>Operating Note</h4><ul><li>Fill these three limited boxes before the ILS rush. The mall can sleep afterward and wake whenever the starter planet needs another battery or tower advance.</li></ul></section></div></div></div></details>';
-  return `${html.slice(0, cardStart)}${card}${html.slice(cardEnd + "</details>".length)}`;
-}
-
-function applyRedPlanetaryBaseGuidance(html) {
-  html = html
-    .replace(/<span class="proto-ref" data-item-id="(?:3005|1609|3007)">([^<]+)<\/span>/g, "$1")
-    .replace('<a href="#ref-dark-fog">Dark Fog Industry</a>', "")
-    .replace(", interstellar power transmission, advanced mining, and Dark Fog industry are optional paths.", ", interstellar power transmission, and advanced mining are optional paths.")
-    .replace(/<p><strong>Combat scope:<\/strong>[\s\S]*?<\/p>/, "")
-    .replaceAll('alt="Dyson Sphere Program: Rise of the Dark Fog"', 'alt="Dyson Sphere Program"');
-
-  const referenceStart = html.indexOf('<h1 id="ref-dark-fog">');
-  if (referenceStart >= 0) {
-    const blockStart = html.lastIndexOf("<hr/>", referenceStart);
-    const blockEnd = html.indexOf('<img class="game-logo section-logo"', referenceStart);
-    if (blockStart < 0 || blockEnd < 0) throw new Error("Legacy Dark Fog reference boundaries could not be located.");
-    html = `${html.slice(0, blockStart)}${html.slice(blockEnd)}`;
-  }
-
-  const redStart = html.indexOf('<section class="phase-section phase-section-red" id="red">');
-  const redEnd = html.indexOf('<section class="phase-section', redStart + 1);
-  if (redStart < 0 || redEnd < 0) throw new Error("RED phase could not be located for planetary-base guidance.");
-  let red = html.slice(redStart, redEnd);
-  const procedure = '<h2 id="red-planetary-base-clearing">Clear the starter planet\'s existing bases</h2><p>If you started a new game by selecting <strong>New Game → Start</strong>, you\'ve already met the neighbors. Here\'s how to get rid of them instead of letting them level up in peace.</p><p>Place one fixed battery of eight Missile Turrets on the established grid, feed it Missile Sets, and confirm every turret is loaded. Once the battery is ready:</p><ol class="diagnostic-steps"><li><strong>Bring power to the edge.</strong> Extend Tesla Towers toward the planetary base and stop just outside its aggro range. If you pull aggro early, fall back and let the missile battery remove the structures that reacted before advancing again.</li><li><strong>Start the barrage.</strong> Place the first powered Signal Tower inside aggro range, but not right on top of the base. Let it draw the response and give the battery time to start landing missiles.</li><li><strong>Move the coverage forward.</strong> While the first Signal Tower is taking the attention, place a second powered tower closer and try to cover the full base in its range.</li><li><strong>Reach the far side.</strong> If structures remain outside coverage, replace or advance the final Signal Tower until the battery can finish them, then recover any forward towers you no longer need.</li></ol><div class="guide-warning"><strong>⚠ Keep the battery fed.</strong> If the turrets stop firing, check their power and Missile Set supply before changing the plan.</div>';
-  const existingProcedure = red.indexOf('<h2 id="red-planetary-base-clearing">');
-  if (existingProcedure >= 0) {
-    const procedureEnd = red.indexOf("</div>", existingProcedure);
-    if (procedureEnd < 0) throw new Error("Existing RED planetary-base procedure could not be normalized.");
-    red = `${red.slice(0, existingProcedure)}${procedure}${red.slice(procedureEnd + "</div>".length)}`;
-  } else {
-    const cardStart = red.indexOf('<details class="build-card build-card-anchor" id="card-red-security-mall">');
-    const cardEnd = red.indexOf("</details>", cardStart);
-    if (cardStart < 0 || cardEnd < 0) throw new Error("Security Mall card could not be located for planetary-base guidance.");
-    const insertionPoint = cardEnd + "</details>".length;
-    red = `${red.slice(0, insertionPoint)}${procedure}${red.slice(insertionPoint)}`;
-  }
-  red = red.replace(
-    "If you pull aggro early, fall back and let the missile battery remove the structures that reacted before advancing again.",
-    "If you pull aggro early, fall back and shoot down any chasing units, then make sure you have not left a Tesla Tower inside aggro range.",
-  );
-  red = red.replace(
-    "then recover any forward towers you no longer need.</li></ol>",
-    "then recover any forward towers you no longer need.</li><li><strong>Claim the free power.</strong> Cap the exposed core-drill site with a Geothermal Power Station. It turns the cleared base into steady generation without paying a Foundation or Soil Pile tax.</li></ol>",
-  );
-  html = `${html.slice(0, redStart)}${red}${html.slice(redEnd)}`;
-
-  const ilsStart = html.indexOf('<section class="phase-section phase-section-ils" id="ils">');
-  const ilsEnd = html.indexOf('<section class="phase-section', ilsStart + 1);
-  if (ilsStart < 0 || ilsEnd < 0) throw new Error("ILS phase could not be located for the RED reminder.");
-  let ils = html.slice(ilsStart, ilsEnd);
-  ils = ils.replace(
-    "Add local defenses when Dark Fog makes an unattended mining world a bad neighborhood.",
-    'If the destination is occupied, reuse the <a href="#red-planetary-base-clearing">RED missile-battery and Signal Tower pattern</a> before leaving the outpost unattended.',
-  );
-  ils = ils.replace('<li class="task-list-item"><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"/>Dark Fog defenses, if needed, can protect the outpost without Icarus standing guard.</li>', "");
-  if ((ils.match(/href="#red-planetary-base-clearing"/g) || []).length !== 1) throw new Error("ILS must contain one RED defense reminder.");
-  html = `${html.slice(0, ilsStart)}${ils}${html.slice(ilsEnd)}`;
-
-  const warpStart = html.indexOf('<section class="phase-section phase-section-warp" id="warp">');
-  const warpEnd = html.indexOf('<section class="phase-section', warpStart + 1);
-  if (warpStart < 0 || warpEnd < 0) throw new Error("WARP phase could not be located for the RED reminder.");
-  let warp = html.slice(warpStart, warpEnd);
-  const legacySecurity = warp.indexOf("Basic outpost security;");
-  if (legacySecurity >= 0) {
-    const rowStart = warp.lastIndexOf("<tr>", legacySecurity);
-    const rowEnd = warp.indexOf("</tr>", legacySecurity);
-    if (rowStart < 0 || rowEnd < 0) throw new Error("WARP security row boundaries could not be located.");
-    const reminderRow = '<tr><td><strong>8 Missile Turrets + 200 Missile Sets + Signal Towers</strong></td><td>One carried copy of the <a href="#red-planetary-base-clearing">RED planetary-base-clearing setup</a> when the destination needs it</td></tr>';
-    warp = `${warp.slice(0, rowStart)}${reminderRow}${warp.slice(rowEnd + "</tr>".length)}`;
-  }
-  if ((warp.match(/href="#red-planetary-base-clearing"/g) || []).length !== 1) throw new Error("WARP must contain one RED defense reminder.");
-  html = `${html.slice(0, warpStart)}${warp}${html.slice(warpEnd)}`;
-  return html;
-}
-
-function alignIlsBootstrapMap(html) {
-  const start = html.indexOf(
-    '<div class="inline-production-map',
-    html.indexOf("Build the temporary component lines."),
-  );
-  const closing = "</div></li>";
-  const end = html.indexOf(closing, start);
-  if (start < 0 || end < 0) throw new Error("ILS bootstrap production map could not be located.");
-
-  const map = '<div class="inline-production-map production-map" role="group" aria-label="ILS bootstrap production map"><p class="inline-map-intro">Use the reusable <a class="card-crossref-link" href="#reference-electromagnetic-turbines">Electromagnetic Turbine line</a> for the shared turbine supply, then split the protected batch between Particle Containers and Reinforced Thrusters as shown below.</p><div class="route-group"><h5>TITANIUM ALLOY</h5><ul class="route-map"><li class="route-row"><span class="route-label">Acid branch</span><span class="route-chain">Crude Oil → Refined Oil; Refined Oil + Stone + Water → Sulfuric Acid</span></li><li class="route-row"><span class="route-label">Steel branch</span><span class="route-chain">Iron Ore → Iron Ingots → Steel</span></li><li class="route-row route-convergence"><span class="route-label">Alloy convergence</span><span class="route-chain">Reserved Titanium Ingots + Steel + Sulfuric Acid → Titanium Alloy</span></li></ul></div><div class="route-group"><h5>PROCESSORS</h5><ul class="route-map"><li class="route-row"><span class="route-label">Microcrystalline branch</span><span class="route-chain">High-Purity Silicon + Copper Ingots → Microcrystalline Components</span></li><li class="route-row"><span class="route-label">Circuit branch</span><span class="route-chain">Iron Ingots + Copper Ingots → Circuit Boards</span></li><li class="route-row route-convergence"><span class="route-label">Processor convergence</span><span class="route-chain">Microcrystalline Components + Circuit Boards → Processors</span></li></ul></div><div class="route-group"><h5>SHARED TURBINE OUTPUTS</h5><ul class="route-map"><li class="route-row route-convergence"><span class="route-label">Particle Containers</span><span class="route-chain">Electromagnetic Turbines + <a class="card-crossref-link" href="#reference-graphene">Graphene</a> → Particle Containers</span></li><li class="route-row route-convergence"><span class="route-label">Reinforced Thrusters</span><span class="route-chain">Titanium Alloy + Electromagnetic Turbines → Reinforced Thrusters</span></li></ul></div></div>';
-  return `${html.slice(0, start)}${map}</li>${html.slice(end + closing.length)}`;
-}
-
 function transform(html) {
-  const prepared = ensureIconFreeRegions(alignIlsBootstrapMap(applyRedPlanetaryBaseGuidance(normalizeStorageBufferInstructions(normalizeRedSecurityMallCard(addRedSecurityMall(stripGeneratedMarkup(html)))))));
+  const prepared = ensureIconFreeRegions(stripGeneratedMarkup(html));
   const arrows = materializeProductionArrows(prepared);
   let transformed = addStructuralIcons(arrows.html);
   transformed = addTechnologyIcons(transformed);
@@ -586,32 +435,40 @@ function bareRouteArrows(html) {
 function validate(html) {
   const failures = [];
   const assert = (condition, message) => { if (!condition) failures.push(message); };
-  const techRefs = [...html.matchAll(/<button(?=[^>]*\btype="button")(?=[^>]*\bclass="[^"]*\btech-ref\b[^"]*")(?=[^>]*\bdata-tech-id="(\d+)")[^>]*>([\s\S]*?)<\/button>/g)];
+  const techRefs = findElementsByClass(html, components.technologyReference.className);
   for (const reference of techRefs) {
-    const technology = technologyById.get(Number(reference[1]));
-    assert(Boolean(technology), `Technology ${reference[1]} is not mapped.`);
-    if (technology) assert(reference[2].includes(`src="${technologyAsset(technology)}"`), `Technology ${reference[1]} has the wrong icon.`);
+    const id = getAttribute(reference.openingTag, components.technologyReference.idAttribute);
+    const technology = technologyById.get(Number(id));
+    assert(Boolean(technology), `Technology ${id} is not mapped.`);
+    if (technology) assert(reference.inner.includes(`src="${technologyAsset(technology)}"`), `Technology ${id} has the wrong icon.`);
   }
 
-  const protoRefs = [...html.matchAll(/<span class="proto-ref" data-item-id="(\d+)">([\s\S]*?)<\/span>/g)];
+  const protoRefs = findElementsByClass(html, components.itemReference.className);
   for (const reference of protoRefs) {
-    const item = itemById.get(Number(reference[1]));
-    assert(Boolean(item), `Item ${reference[1]} is not mapped.`);
-    if (item) assert(reference[2].includes(`src="${itemAsset(item)}"`), `Item ${reference[1]} has the wrong icon.`);
+    const id = getAttribute(reference.openingTag, components.itemReference.idAttribute);
+    const item = itemById.get(Number(id));
+    assert(Boolean(item), `Item ${id} is not mapped.`);
+    if (item) assert(reference.inner.includes(`src="${itemAsset(item)}"`), `Item ${id} has the wrong icon.`);
   }
 
-  const arrows = [...html.matchAll(/<span class="production-arrow" data-producer-item-id="(\d+)" data-producer-type="([^"]+)"[^>]*>(<img[^>]+>)<span class="production-arrow-glyph" aria-hidden="true">→<\/span><span class="visually-hidden">([^<]+)<\/span><\/span>/g)];
+  const arrows = findElementsByClass(html, components.productionArrow.className);
   for (const arrow of arrows) {
-    const producer = itemById.get(Number(arrow[1]));
-    assert(Boolean(producer), `Producer ${arrow[1]} is not mapped.`);
+    const id = getAttribute(arrow.openingTag, components.productionArrow.idAttribute);
+    const producer = itemById.get(Number(id));
+    assert(Boolean(producer), `Producer ${id} is not mapped.`);
     if (producer) {
-      assert(arrow[3].includes(`src="${itemAsset(producer)}"`), `Producer ${arrow[1]} has the wrong icon.`);
-      assert(arrow[4] === `Produced in ${producer.name}`, `Producer ${arrow[1]} has the wrong accessible description.`);
+      assert(arrow.inner.includes(`src="${itemAsset(producer)}"`), `Producer ${id} has the wrong icon.`);
+      assert(elementTextByClass(arrow.inner, "visually-hidden") === `Produced in ${producer.name}`, `Producer ${id} has the wrong accessible description.`);
     }
   }
 
   const unwrappedArrows = bareRouteArrows(html);
   assert(unwrappedArrows.length === 0, `Bare production arrows remain in routes: ${unwrappedArrows.join(" | ")}`);
+
+  const routeMaps = findElementsByClass(html, components.routeMap.className);
+  const routeRows = findElementsByClass(html, components.routeRow.className);
+  assert(routeMaps.length > 0 && routeMaps.every(map => isNativeComponent(map, components.routeMap) && !hasAttribute(map.openingTag, "role")), "A production map is not a native list.");
+  assert(routeRows.length > 0 && routeRows.every(row => isNativeComponent(row, components.routeRow) && !hasAttribute(row.openingTag, "role")), "A production route is not a native list item.");
 
   for (const [phase] of phaseBindings) {
     const rail = html.match(new RegExp(`<a(?=[^>]*class="[^"]*\\brail-tab\\b[^"]*")(?=[^>]*data-phase="${phase}")[^>]*>([\\s\\S]*?)<\\/a>`));

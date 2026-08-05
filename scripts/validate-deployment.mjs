@@ -2,6 +2,14 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 import vm from "node:vm";
+import {
+  components,
+  findElementsByClass,
+  getAttribute,
+  hasAttribute,
+  isNativeComponent,
+  stripMarkup,
+} from "./lib/markup-contracts.mjs";
 
 const [siteArgument, sourceArgument = "."] = process.argv.slice(2);
 if (!siteArgument) {
@@ -111,8 +119,8 @@ check(!actual.some(file => /recognized-game-assets\.json$/i.test(file)), "The ex
 const imageSources = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(match => match[1]);
 check(imageSources.every(source => source.startsWith("assets/DSP_exported assets/Texture2D/")), "An image source falls outside the authorized game-asset directory.");
 
-const protoReferences = [...html.matchAll(/<span class="proto-ref" data-item-id="(\d+)">([\s\S]*?)<\/span>/g)];
-check(protoReferences.every(match => /class="proto-icon proto-icon-item"/.test(match[2])), "An item reference is missing its static icon.");
+const protoReferences = findElementsByClass(html, components.itemReference.className);
+check(protoReferences.every(reference => /class="proto-icon proto-icon-item"/.test(reference.inner)), "An item reference is missing its static icon.");
 const correctedItemAssets = new Map([
   [6001, "t-matrix.png"],
   [6002, "e-matrix.png"],
@@ -124,9 +132,9 @@ const correctedItemAssets = new Map([
   [2207, "accumulator-full.png"],
 ]);
 for (const [itemId, asset] of correctedItemAssets) {
-  const references = protoReferences.filter(reference => Number(reference[1]) === itemId);
+  const references = protoReferences.filter(reference => Number(getAttribute(reference.openingTag, components.itemReference.idAttribute)) === itemId);
   check(references.length > 0, `Corrected item ${itemId} is not represented in the guide.`);
-  check(references.every(reference => reference[2].includes(`/${asset}"`)), `Corrected item ${itemId} uses the wrong asset.`);
+  check(references.every(reference => reference.inner.includes(`/${asset}"`)), `Corrected item ${itemId} uses the wrong asset.`);
 }
 const iconFreeRegions = [...html.matchAll(/<(?:div|li)[^>]*class="[^"]*\bicon-free\b[^"]*"[^>]*>([\s\S]*?)<\/(?:div|li)>/g)];
 check(iconFreeRegions.every(region => !region[1].includes("proto-icon")), "An icon-free guide region contains a prototype icon.");
@@ -151,18 +159,33 @@ for (const [phase, asset] of correctedPhaseAssets) {
   check(tags.length > 0, `Phase ${phase} has no phase-tag references.`);
   check(tags.every(tag => tag[1].includes(`/${asset}"`)), `Phase ${phase} tag icon is wrong.`);
 }
-const productionArrows = [...html.matchAll(/<span class="production-arrow" data-producer-item-id="(\d+)" data-producer-type="(smelting|assembly|processing)"[^>]*><img class="proto-icon proto-icon-producer"[^>]*><span class="production-arrow-glyph" aria-hidden="true">→<\/span><span class="visually-hidden">Produced in [^<]+<\/span><\/span>/g)];
+const productionArrows = findElementsByClass(html, components.productionArrow.className);
 check(productionArrows.length > 0, "No static production arrows were found.");
+check(productionArrows.every(arrow => {
+  const type = getAttribute(arrow.openingTag, "data-producer-type");
+  const producerIcon = findElementsByClass(arrow.inner, "proto-icon-producer")[0];
+  const glyph = findElementsByClass(arrow.inner, "production-arrow-glyph")[0];
+  const description = findElementsByClass(arrow.inner, "visually-hidden")[0];
+  return /^\d+$/.test(getAttribute(arrow.openingTag, components.productionArrow.idAttribute) || "")
+    && ["smelting", "assembly", "processing"].includes(type)
+    && producerIcon?.tag === "img"
+    && getAttribute(glyph?.openingTag || "", "aria-hidden") === "true"
+    && stripMarkup(glyph?.inner || "") === "→"
+    && /^Produced in \S/.test(stripMarkup(description?.inner || ""));
+}), "A static production arrow is malformed.");
 
-const technologyTriggers = [...html.matchAll(/<button(?=[^>]*\btype="button")(?=[^>]*\bclass="[^"]*\btech-ref\b[^"]*")(?=[^>]*\bdata-tech-id="(\d+)")[^>]*>([\s\S]*?)<\/button>/g)];
+const technologyTriggers = findElementsByClass(html, components.technologyReference.className);
 check(technologyTriggers.length > 0, "No native technology triggers were found.");
-check(!/<span[^>]*\bclass="[^"]*\btech-ref\b/.test(html), "A technology trigger still uses a generic span.");
-check(!/<button[^>]*\bclass="[^"]*\btech-ref\b[^>]*(?:\brole=|\btabindex=)/.test(html), "A native technology trigger retains pseudo-button attributes.");
+check(technologyTriggers.every(trigger => isNativeComponent(trigger, components.technologyReference)), "A technology trigger does not use its native component element.");
+check(technologyTriggers.every(trigger => (getAttribute(trigger.openingTag, "type") || "button").toLowerCase() === "button"), "A technology trigger has a non-button type.");
+check(technologyTriggers.every(trigger => !hasAttribute(trigger.openingTag, "role") && !hasAttribute(trigger.openingTag, "tabindex")), "A native technology trigger retains pseudo-button attributes.");
 check(!/<aside\b/.test(html), "A repeated callout still creates a complementary landmark.");
-check((html.match(/<ul class="route-map">/g) || []).length > 0, "No native production-map lists were found.");
-check((html.match(/<li class="route-row/g) || []).length > 0, "No native production-map list items were found.");
-check(!/class="route-map"[^>]*\brole="list"/.test(html), "A production map still emulates a list with ARIA.");
-check(!/class="route-row[^"]*"[^>]*\brole="listitem"/.test(html), "A production route still emulates a list item with ARIA.");
+const routeMaps = findElementsByClass(html, components.routeMap.className);
+const routeRows = findElementsByClass(html, components.routeRow.className);
+check(routeMaps.length > 0 && routeMaps.every(map => isNativeComponent(map, components.routeMap)), "A production map does not use a native list.");
+check(routeRows.length > 0 && routeRows.every(row => isNativeComponent(row, components.routeRow)), "A production route does not use a native list item.");
+check(routeMaps.every(map => !hasAttribute(map.openingTag, "role")), "A native production map retains an ARIA list role.");
+check(routeRows.every(row => !hasAttribute(row.openingTag, "role")), "A native production route retains an ARIA list-item role.");
 const genericAriaLabels = [...html.matchAll(/<(div|span)\b([^>]*\baria-label="[^"]+"[^>]*)>/g)];
 check(genericAriaLabels.every(match => /\brole="(?:group|img)"/.test(match[2])), "A generic element uses aria-label without a nameable role.");
 
@@ -171,8 +194,8 @@ const ilsMapEnd = html.indexOf("</div></li>", ilsMapStart);
 const ilsMap = ilsMapStart >= 0 && ilsMapEnd > ilsMapStart ? html.slice(ilsMapStart, ilsMapEnd) : "";
 const ilsMapText = ilsMap.replace(/<[^>]+>/g, "");
 check(Boolean(ilsMap), "The aligned ILS bootstrap production map is missing.");
-check((ilsMap.match(/class="route-group"/g) || []).length === 3, "The ILS bootstrap map must contain three focused groups.");
-check((ilsMap.match(/class="route-row/g) || []).length === 8, "The ILS bootstrap map must contain eight transformation rows.");
+check(findElementsByClass(ilsMap, "route-group").length === 3, "The ILS bootstrap map must contain three focused groups.");
+check(findElementsByClass(ilsMap, components.routeRow.className).length === 8, "The ILS bootstrap map must contain eight transformation rows.");
 for (const heading of ["TITANIUM ALLOY", "PROCESSORS", "SHARED TURBINE OUTPUTS"]) {
   check(ilsMapText.includes(heading), `The ILS bootstrap map is missing its ${heading} group.`);
 }
@@ -234,9 +257,9 @@ try {
     ["1508", new Set(["Mission Completed"])],
     ["1606", new Set(["Gas Giant Exploitation"])],
   ]);
-  for (const match of technologyTriggers) {
-    const [, techId, inner] = match;
-    const visibleLabel = inner.replace(/<[^>]+>/g, "").trim();
+  for (const trigger of technologyTriggers) {
+    const techId = getAttribute(trigger.openingTag, components.technologyReference.idAttribute);
+    const visibleLabel = stripMarkup(trigger.inner);
     const authoritativeName = technologyData[techId]?.name;
     const aliases = allowedTechnologyAliases.get(techId) || new Set();
     check(

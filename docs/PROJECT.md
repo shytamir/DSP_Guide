@@ -72,6 +72,7 @@ assets/js/                     Navigation, cards, tooltips, checklists
 assets/data/                   Runtime-derived website data
 assets/DSP_exported assets/    Authorized unmodified game assets
 scripts/                       Deployment and guide-contract validation
+scripts/lib/markup-contracts.mjs  Shared static component recognition
 docs/                          Current project and card documentation
 docs/management/               Permission and governance records
 docs/archive/                  Superseded planning and review documents
@@ -89,7 +90,11 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   reset behavior, storage failure, and glossary placement.
 - `scripts/apply-proto-icons.mjs --check` validates the committed static icon
   markup against the externally supplied authoritative asset map during an
-  authorized local icon pass.
+  authorized local icon pass. It performs reusable icon and production-arrow
+  materialization only; completed editorial migrations are not part of the
+  recurring pass.
+- `scripts/lib/markup-contracts.mjs` is the shared structural contract used by
+  materialization, card validation, and deployment validation.
 
 Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
 contains only the deployable static website.

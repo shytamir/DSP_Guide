@@ -1,5 +1,12 @@
 import fs from "node:fs";
 import vm from "node:vm";
+import {
+  components,
+  elementTextByClass,
+  findElementsByClass,
+  getAttribute,
+  isNativeComponent,
+} from "./lib/markup-contracts.mjs";
 
 const html = fs.readFileSync("index.html", "utf8");
 const authoritativeRecipes = JSON.parse(
@@ -9,25 +16,11 @@ const authoritativeRecipes = JSON.parse(
   ),
 ).recipes;
 const errors = [];
-const cards = [...html.matchAll(/<details class="build-card[^\"]*" id="([^\"]+)"[^>]*>([\s\S]*?)<\/details>/g)];
-const ids = cards.map(match => match[1]);
+const cards = findElementsByClass(html, components.buildCard.className)
+  .filter(element => isNativeComponent(element, components.buildCard))
+  .map(element => ({ ...element, id: getAttribute(element.openingTag, "id") }));
+const ids = cards.map(card => card.id);
 const uniqueIds = new Set(ids);
-
-function elementTextByClass(source, className) {
-  const openingPattern = new RegExp(`<span\\b[^>]*class="[^"]*\\b${className}\\b[^"]*"[^>]*>`);
-  const opening = openingPattern.exec(source);
-  if (!opening) return "";
-  const start = opening.index + opening[0].length;
-  const tokens = /<\/?span\b[^>]*>/g;
-  tokens.lastIndex = start;
-  let depth = 1;
-  for (const token of source.matchAll(tokens)) {
-    if (token.index < start) continue;
-    depth += /^<\/span/.test(token[0]) ? -1 : 1;
-    if (depth === 0) return source.slice(start, token.index).replace(/<[^>]+>/g, "").trim();
-  }
-  return "";
-}
 
 const expectedCards = new Map([
   ["card-bootstrap-mall-logistics", "Mall Logistics — buffer 900 Belts + 400 Sorters"],
@@ -55,23 +48,25 @@ if (ids.length !== uniqueIds.size) errors.push(`Duplicate build-card IDs: ${ids.
 if (cards.length !== expectedCards.size) errors.push(`Expected ${expectedCards.size} cards; found ${cards.length}`);
 
 for (const [id, expectedTitle] of expectedCards) {
-  const card = cards.find(match => match[1] === id);
+  const card = cards.find(candidate => candidate.id === id);
   if (!card) {
     errors.push(`Missing planned card: ${id}`);
     continue;
   }
-  const title = elementTextByClass(card[2], "card-summary-title");
+  const title = elementTextByClass(card.inner, "card-summary-title");
   if (title !== expectedTitle) errors.push(`${id} title changed: "${title}"`);
 }
 for (const id of ids) if (!expectedCards.has(id)) errors.push(`Unplanned card remains: ${id}`);
 
-const references = [...html.matchAll(/<details class="production-reference build-card-anchor" id="([^\"]+)">([\s\S]*?)<\/details>/g)];
+const references = findElementsByClass(html, components.productionReference.className)
+  .filter(element => isNativeComponent(element, components.productionReference))
+  .map(element => ({ ...element, id: getAttribute(element.openingTag, "id") }));
 const expectedReferences = new Set(["reference-electromagnetic-turbines", "reference-graphene"]);
 if (references.length !== expectedReferences.size) {
   errors.push(`Expected ${expectedReferences.size} reusable references; found ${references.length}`);
 }
 for (const id of expectedReferences) {
-  if (!references.some(match => match[1] === id)) errors.push(`Missing reusable reference: ${id}`);
+  if (!references.some(reference => reference.id === id)) errors.push(`Missing reusable reference: ${id}`);
 }
 
 const allDocumentIds = new Set([...html.matchAll(/\bid="([^\"]+)"/g)].map(match => match[1]));
@@ -113,14 +108,17 @@ function validateMap(id, body, requireExactDestination) {
     errors.push(`${id} Destination does not restate its exact end-product target`);
   }
 
-  const routeRows = [...pipeline.matchAll(/<li class="route-row[^\"]*"[^>]*>[\s\S]*?<\/li>/g)];
+  const routeRows = findElementsByClass(pipeline, components.routeRow.className);
   if (routeRows.length === 0) errors.push(`${id} has no production-map routes`);
+  if (routeRows.some(row => !isNativeComponent(row, components.routeRow))) {
+    errors.push(`${id} contains a production-map route that is not a native list item`);
+  }
   const rowLimit = id === "card-red-security-mall" ? 12 : 8;
   if (routeRows.length > rowLimit) errors.push(`${id} exceeds its ${rowLimit}-row complexity limit (${routeRows.length})`);
   const routeGroups = [...pipeline.matchAll(/class="route-group"/g)].length;
   if (routeGroups > 3) errors.push(`${id} exceeds the three-group complexity limit (${routeGroups})`);
   for (const row of routeRows) {
-    const arrowCount = (row[0].match(/→/g) || []).length;
+    const arrowCount = (row.full.match(/→/g) || []).length;
     if (arrowCount > 3) errors.push(`${id} has a route row with ${arrowCount} transformations`);
   }
 
@@ -131,7 +129,7 @@ function validateMap(id, body, requireExactDestination) {
   }
 }
 
-const securityMall = cards.find(match => match[1] === "card-red-security-mall")?.[2] || "";
+const securityMall = cards.find(card => card.id === "card-red-security-mall")?.inner || "";
 if (securityMall.includes('href="#reference-electromagnetic-turbines"') || securityMall.includes('href="#card-bootstrap-mall-power"')) {
   errors.push("Security Mall still outsources partial Motor or Wireless Power Tower branches.");
 }
@@ -139,11 +137,11 @@ for (const requiredBranch of ["Motor branch", "Tower branch", "Exciter branch", 
   if (!securityMall.includes(requiredBranch)) errors.push(`Security Mall is missing its ${requiredBranch}.`);
 }
 
-for (const [fullMatch, id, body] of cards) {
-  validateMap(id, body, true);
-  if (/<details class="build-card[^>]*\sopen(?:\s|>)/.test(fullMatch)) errors.push(`${id} is open by default`);
+for (const card of cards) {
+  validateMap(card.id, card.inner, true);
+  if (/\sopen(?:\s|>)/.test(card.openingTag)) errors.push(`${card.id} is open by default`);
 }
-for (const [, id, body] of references) validateMap(id, body, false);
+for (const reference of references) validateMap(reference.id, reference.inner, false);
 
 for (const phaseId of ["ils", "warp", "photon", "white"]) {
   const start = html.search(new RegExp(`<section class="phase-section[^>]*" id="${phaseId}">`));
