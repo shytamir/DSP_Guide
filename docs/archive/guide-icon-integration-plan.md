@@ -1,23 +1,26 @@
 # Guide Prototype Icon Integration Plan
 
-Status: implemented. The game logo and static prototype icons are present in
-the published guide, including producer icons above production-map arrows.
+> **Archived:** This plan was implemented and its recurring structural checks
+> were moved into the repository validators.
+
+Status: the game logo and static prototype icons were added to the published
+guide, including producer icons above production-map arrows.
 
 ## Reader outcome
 
-Add the game's unmodified icons beside the technologies, items, buildings, and
-recipe outputs already named by the guide. The icons should help a player
-recognize an object in the game without turning the page into an icon catalog
-or creating another navigation system.
+The pass added the game's unmodified icons beside technologies, items,
+buildings, and recipe outputs already named by the guide. The icons helped a
+player recognize objects without turning the page into an icon catalog or
+creating another navigation system.
 
-This is a presentation pass. It must not change guide copy, rates, phase
+This was a presentation pass. It did not change guide copy, rates, phase
 ordering, cards, tooltips, anchors, or progression advice.
 
 ## Authoritative binding source
 
 The sole prototype-to-asset authority is the DSP Guide Check mod repository's
 external `assets/recognized-game-assets.json` file (schema version 2). During
-implementation it will be supplied from outside this repository, currently at:
+implementation it was supplied from outside this repository at:
 
 ```text
 D:\Shy\dsp-beginner-guide\assets\recognized-game-assets.json
@@ -28,10 +31,10 @@ a second binding table, or committed to this repository. The implementation
 map defines 113 guide-facing item/building records and 80 technology records,
 together with approved aliases and explicit exclusions.
 
-Verified corrections and the one missing charged-Accumulator record are
-preserved in `asset-map-corrections-and-followups.md` until the external map is
-updated. The guide applies that narrow compatibility set rather than
-reproducing the source map.
+Verified corrections and the missing charged-Accumulator record used during
+implementation were preserved in `asset-map-corrections-and-followups.md`.
+The guide applied that narrow compatibility set instead of reproducing the
+source map.
 
 Rules:
 

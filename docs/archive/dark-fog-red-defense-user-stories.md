@@ -1,26 +1,27 @@
 # RED-Phase Dark Fog Defense User Stories
 
+> **Archived:** Both stories were implemented. Current Dark Fog product
+> boundaries are recorded in [`../PROJECT.md`](../PROJECT.md).
+
 ## Product decision
 
-The default **New Game → Start** path enables Dark Fog, so the guide must give
-a new player enough practical help to clear starter-planet bases without
-pretending to be a combat or Dark Fog farming guide.
+The default **New Game → Start** path enabled Dark Fog, so the project decided
+that the guide needed enough practical help for a new player to clear
+starter-planet bases without becoming a combat or Dark Fog farming guide.
 
-Coverage is limited to the RED phase and to the two stories below. The guide
-must not cover or mention Dark Fog levels, farming, drops, space combat, Relay
-Stations, hives, or concealed technologies. Existing Dark Fog material outside
-this boundary must be removed when these stories are implemented.
+The approved coverage was limited to the RED phase and to the two stories
+below. The excluded Dark Fog subjects remained outside the product boundary.
 
-ILS and WARP are the only exceptions to RED-only placement. Each expedition
-section may contain one concise reminder linking back to the RED
-planetary-base-clearing procedure. Those reminders must not introduce any new
+ILS and WARP were the only exceptions to RED-only placement. Each expedition
+section received one concise reminder linking back to the RED
+planetary-base-clearing procedure. Those reminders introduced no additional
 Dark Fog instruction.
 
-## Current roadmap
+## Completed stories
 
 ### 1. Automate the basic missile-defense supplies
 
-**Status:** implemented.
+**Historical outcome:** The story was implemented.
 
 **As a** new player using the default game settings,  
 **I want** RED-phase production guidance for Missile Turrets, Signal Towers,
@@ -53,7 +54,7 @@ the ILS rush.
 
 ### 2. Explain the starter-planet base-clearing pattern
 
-**Status:** implemented.
+**Historical outcome:** The story was implemented.
 
 **As a** new player with basic missile production established,  
 **I want** one concise procedure for using a fixed Missile Turret battery and
@@ -83,7 +84,7 @@ combat guide.
 
 ## Implementation record
 
-Both stories are complete. RED now contains the stocked Security Mall and the
+Both stories were completed. RED gained the stocked Security Mall and the
 single eight-turret, progressive-Signal-Tower procedure. ILS and WARP each
-contain one linked reminder, and the superseded hidden-industry reference has
-been removed.
+gained one linked reminder, and the superseded hidden-industry reference was
+removed.

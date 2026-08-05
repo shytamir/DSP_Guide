@@ -1,10 +1,10 @@
 # End-to-End Reading Pass Correction Plan
 
-> **Archived:** The correction phases described here are complete. Current
-> status and pending decisions are tracked in
+> **Archived:** The correction phases described here were completed. Current
+> status and deferred maintenance are tracked in
 > [`../PROJECT.md`](../PROJECT.md).
 
-Status: Phase A, structural work, and the approved editorial pass are implemented.
+Status: Phase A, structural work, and the approved editorial pass were completed.
 
 ## Phase A — immediate corrections
 

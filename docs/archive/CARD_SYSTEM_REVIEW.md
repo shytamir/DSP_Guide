@@ -1,22 +1,22 @@
 # Card System Reader-Value Review
 
 > **Archived:** This review records the oversized legacy card system and the
-> reasoning used to replace it. The active contract is
-> [`../CARD_SYSTEM_PLAN.md`](../CARD_SYSTEM_PLAN.md).
+> reasoning used to replace it. The implemented contract is preserved in
+> [`CARD_SYSTEM_PLAN.md`](CARD_SYSTEM_PLAN.md).
 
 Status: historical audit supporting the implemented card system.
 
-The implemented 19-card system in `CARD_SYSTEM_PLAN.md` supersedes this review's
+The implemented 19-card system in `CARD_SYSTEM_PLAN.md` superseded this review's
 earlier provisional size estimate.
 
-This document isolates the current card system from the rest of the guide and
-reviews it as a player-facing tool. Phase prose, navigation, research advice,
-and the universal dependency DAG are deliberately outside this review except
-where a card has absorbed material that belongs in one of those places.
+This document isolated the former card system from the rest of the guide and
+reviewed it as a player-facing tool. Phase prose, navigation, research advice,
+and the universal dependency DAG were deliberately outside this review except
+where a card had absorbed material that belonged in one of those places.
 
-The current guide contains **63 cards**. That count is not evidence of
-completeness or quality. A recipe can be correct, fully linked, and still have
-no business occupying a card.
+At the time of this review, the guide contained **63 cards**. That count was
+not evidence of completeness or quality. A recipe can be correct, fully
+linked, and still have no business occupying a card.
 
 ## Reader contract
 
@@ -50,7 +50,7 @@ the moment they are likely to ask it.
 ## Verdicts
 
 - **KEEP** — the card answers a useful, distinct player question.
-- **SIMPLIFY** — the card deserves to exist, but the current implementation
+- **SIMPLIFY** — the card deserved to exist, but the reviewed implementation
   overbuilds, overexplains, or presents irrelevant precision.
 - **MERGE** — the information is useful, but not as an independent card.
 - **REJECT** — the card is primarily a DAG node, organizational artifact, or
@@ -70,7 +70,7 @@ does not claim that the underlying recipe or number is false.
 | 3 | **Mall logistics — 135 Belts/min + 45 Sorters/min** | Lets the player stop handcrafting the two things consumed continuously while building everything else. | Clear phase need, clear outputs, modest scope. This is what a mall card should feel like. | **KEEP** |
 | 4 | **Mall industry — Miners, Smelters & Mk.I Assemblers** | Automates the machines used to expand raw extraction and production. | The outputs belong together, but the present card builds a private 540-Iron/min support plant and two full Basic Component modules so three limited boxes can refill in roughly two to three minutes. That serves assembler-capacity math, not a beginner. | **SIMPLIFY** |
 | 5 | **Mall storage — Storage Mk.I + Storage Tanks** | Automates the containers needed for solids and early fluids. | The outputs are useful together. Dedicated mines and a full smelting block are disproportionate for a bursty mall line that should draw from shared Iron, Stone Brick, and Glass supplies. | **SIMPLIFY** |
-| 6 | **Mall power — Wind Turbines, Tesla Towers & Combustible Units** | Automates the first grid expansion hardware and a convenient mecha fuel. | Useful outputs, but the current self-sufficient upstream factory and “surplus capacity” bookkeeping are much larger than the practical decision. This should be a compact shared-bus mall block. | **SIMPLIFY** |
+| 6 | **Mall power — Wind Turbines, Tesla Towers & Combustible Units** | Automates the first grid expansion hardware and a convenient mecha fuel. | Useful outputs, but the reviewed self-sufficient upstream factory and “surplus capacity” bookkeeping were much larger than the practical decision. This should be a compact shared-bus mall block. | **SIMPLIFY** |
 | 7 | **Tech-bound mall — Steel + Foundations** | Handles outputs whose recipes arrive after the first mall pieces can be placed. | The timing warning is useful; Steel and Foundations are not one operational module. Steel already has a later dedicated card, while Foundation belongs with terrain preparation. This card exists to solve an editorial sequencing problem. | **MERGE** |
 | 8 | **Basic combat — 45 Magnum Ammo/min + 22.5 Missile Sets/min** | Provides early ammunition for a default-settings Dark Fog contingency. | Combat is outside the guide’s progression contract, and combining two unrelated ammunition chains does not create a progression build. Keep a concise defensive note or optional reference, not a mandated BOOTSTRAP card. | **REJECT** |
 
@@ -116,7 +116,7 @@ does not claim that the underlying recipe or number is false.
 | # | Current card | Why it exists and how the reader uses it | Reader-value assessment | Verdict |
 |---:|---|---|---|---|
 | 21 | **Carbon Nanotubes — 60/min** | Builds one of Particle Broadband’s three immediate inputs from the established Graphene line. | The standard Nanotube chain is operationally meaningful and is reused later. The link to the existing Graphene module prevents unnecessary repetition. | **KEEP** |
-| 22 | **Plastic — 40/min** | Scales the Plastic branch needed for Particle Broadband. | The output is useful, but the current card again exposes the shared-refinery accounting and byproduct capacity more prominently than the simple need: supply Refined Oil and Graphite, make Plastic, buffer it. | **SIMPLIFY** |
+| 22 | **Plastic — 40/min** | Scales the Plastic branch needed for Particle Broadband. | The output was useful, but the reviewed card exposed the shared-refinery accounting and byproduct capacity more prominently than the simple need: supply Refined Oil and Graphite, make Plastic, buffer it. | **SIMPLIFY** |
 | 23 | **Crystal Silicon — 90/min** | Provides Particle Broadband’s third immediate input. | This is one raw input, one Smelter step, and one box. It became a card because the DAG has a node, not because the player needs a separate operating module. Fold it into Particle Broadband. | **MERGE** |
 | 24 | **Particle Broadband — 22.5/min** | Converges Carbon Nanotubes, Plastic, and Crystal Silicon into the difficult purple-science component. | This is exactly where the separate upstream references help: the player can see the convergence without rereading three factories. | **KEEP** |
 | 25 | **Purple cubes — 18/min** | Combines Processors and Particle Broadband into the phase output. | Small, clear convergence card. | **KEEP** |
@@ -192,7 +192,7 @@ does not claim that the underlying recipe or number is false.
 | 60 | **Planetary Logistics Stations — 2.25/min installed capacity** | Automates the tower used by the local Drone network. | The station and its Drones are deployed together. A paired mall block better matches the reader’s expansion task than two saturated factory models. | **MERGE** |
 | 61 | **Logistics Drones — 11.25/min** | Automates the craft used by PLS and ILS for local movement. | Pair with PLS. Preserve separate output buffers inside the shared card. | **MERGE** |
 | 62 | **Interstellar Logistics Stations — 1.5/min installed capacity** | Automates the tower used for remote Vessel routes. | The player’s task is to stock an interplanetary expansion kit, not to sustain 1.5 towers/min. Pair with Vessels and size limited buffers. | **MERGE** |
-| 63 | **Logistics Vessels — 7.5/min** | Automates the craft that makes ILS routes work. | Pair with ILS. The current full-capacity upstream multiplication is mathematically valid but practically extravagant for a sleeping mall line. | **MERGE** |
+| 63 | **Logistics Vessels — 7.5/min** | Automates the craft that makes ILS routes work. | Pair with ILS. The reviewed full-capacity upstream multiplication was mathematically valid but practically extravagant for a sleeping mall line. | **MERGE** |
 
 ## First-pass result
 
@@ -205,7 +205,7 @@ does not claim that the underlying recipe or number is false.
 | **Total** | **63** | |
 
 This immediately answers the card-count question: **no, 63 independent cards
-were not required to keep the guide simple.** At least 21 current cards do not
+were not required to keep the guide simple.** At least 21 reviewed cards did not
 deserve independent status, and another seven are materially overbuilt.
 
 ## Second-pass challenge: where the first verdict is still too generous

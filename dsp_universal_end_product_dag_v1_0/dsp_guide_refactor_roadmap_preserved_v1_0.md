@@ -1,5 +1,9 @@
 # Preserved Guide Refactor Roadmap
 
+> **Historical record:** This roadmap was completed. Its phase and acceptance
+> language is preserved as implementation history; current project status is
+> maintained in `../docs/PROJECT.md`.
+
 No guide edits were made during Phase 0.
 
 ## Phase 0 — Universal source-of-truth DAG
@@ -68,7 +72,7 @@ have stable linked cards; repeated production blocks are replaced by direct
 references; PURPLE and GREEN are decomposed into readable dependency chains;
 and rebuilt production cards end with a consistent exact draw/output summary.
 
-## Next user stories
+## Historical user stories
 
 ### 1. Bring WARP into the established guide contract
 
@@ -93,7 +97,7 @@ with interstellar expansion.
 
 ### 2. Validate the linked-card system during a complete playthrough
 
-**Status: pending**
+**Status: completed after a full ICQ playthrough.**
 
 **User story:** As a player building directly from the cards, I want every
 linked input, scaling instruction, shared-capacity warning, and output buffer to

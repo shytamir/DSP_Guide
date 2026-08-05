@@ -1,11 +1,14 @@
 # Companion Card System
 
-Status: implemented in the published guide.
+> **Archived:** This contract was implemented in the published guide. Current
+> product principles are recorded in [`../PROJECT.md`](../PROJECT.md), and the
+> executable card contract is enforced by `scripts/validate-card-system.mjs`.
 
-This contract applies the findings preserved in
-`archive/CARD_SYSTEM_REVIEW.md`. It keeps cards subordinate to the progression
-guide and prevents the production DAG from expanding into dozens of
-reader-facing cards.
+Status: completed and archived.
+
+This contract applied the findings preserved in `CARD_SYSTEM_REVIEW.md`. It
+kept cards subordinate to the progression guide and prevented the production
+DAG from expanding into dozens of reader-facing cards.
 
 ## Purpose
 

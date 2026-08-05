@@ -1,8 +1,11 @@
 # BOOTSTRAP and BLUE Unification
 
+> **Archived:** Both stories were implemented and reviewed. The requirements
+> below record the completed consolidation rather than current work.
+
 ## Story 1 — Structural consolidation
 
-**Status:** Implemented and reviewed.
+**Historical outcome:** The story was implemented and reviewed.
 
 As a new player, I want the mall and blue science presented as one opening
 BLUE phase so that the guide reflects their overlapping construction without
@@ -40,7 +43,7 @@ making me navigate two artificial phases.
 
 ## Story 2 — Editorial unification
 
-**Status:** Implemented.
+**Historical outcome:** The story was implemented.
 
 As a new player, I want the opening BLUE phase to explain how the mall and
 first science line grow together so that I know blue cubes alone do not mean I

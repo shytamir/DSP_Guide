@@ -44,12 +44,13 @@ separate JSON file.
 Historical publication snapshots and the authoritative DAG research package
 remain in the repository for provenance. They are not loaded by `index.html`.
 
-## Project status
+## Maintenance status
 
-Current product boundaries, validation contracts, and pending decisions are
-tracked in [`docs/PROJECT.md`](docs/PROJECT.md). Completed and superseded plans
-are retained under `docs/archive/`; the runtime-derived DAG package remains
-unchanged as research provenance.
+Version 2.1 is published and the project is in maintenance mode. Current
+product boundaries, validation contracts, and deferred maintenance are tracked
+in [`docs/PROJECT.md`](docs/PROJECT.md). Completed and superseded plans are
+retained under `docs/archive/`; the runtime-derived DAG package is retained as
+research provenance.
 
 ## Deployment
 

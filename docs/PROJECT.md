@@ -1,5 +1,7 @@
 # DSP Practical Progression Guide
 
+**Status:** Maintenance mode. Version 2.1 is the current published minor line.
+
 ## Purpose
 
 This repository publishes a player-facing progression guide for *Dyson Sphere
@@ -73,9 +75,9 @@ assets/data/                   Runtime-derived website data
 assets/DSP_exported assets/    Authorized unmodified game assets
 scripts/                       Deployment and guide-contract validation
 scripts/lib/markup-contracts.mjs  Shared static component recognition
-docs/                          Current project and card documentation
-docs/management/               Permission and governance records
-docs/archive/                  Superseded planning and review documents
+docs/                          Current project documentation
+docs/management/               Active permission and governance records
+docs/archive/                  Completed and superseded project documents
 archive/                       Historical publication artifacts
 dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 ```
@@ -99,27 +101,28 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
 contains only the deployable static website.
 
-## Roadmap status
+## Maintenance status
+
+There is no active feature roadmap. Changes are accepted when they address a
+verified defect, authoritative game-data change, security or compatibility
+need, or a clearly articulated reader problem.
 
 - **Tabled — science pace:** further calibration of minimum cube targets is not
-  currently scheduled.
-- **Passed — linked-card playtest:** the ICQ full playthrough found the current
-  card system useful and complete throughout progression.
-
-## Current roadmap
-
-No active implementation story is currently scheduled. The two approved
-RED-phase defense stories are complete and recorded in
-`docs/management/dark-fog-red-defense-user-stories.md`.
-
-Narrow mobile layout is best-effort and is not a release gate for this
-PC-focused guide.
+  scheduled.
+- **Deferred — accessibility:** [Issue #5](https://github.com/shytamir/DSP_Guide/issues/5)
+  records the remaining checklist-label, document-structure, and navigation
+  accessibility work.
+- **Completed — linked-card playtest:** the ICQ full playthrough found the card
+  system useful and complete throughout progression.
+- **Completed — RED defense:** the two approved RED-phase defense stories were
+  implemented and archived in
+  `docs/archive/dark-fog-red-defense-user-stories.md`.
 
 ## Documentation roles
 
 - `README.md` explains how to use, inspect, and deploy the repository.
 - `docs/PROJECT.md` is the current project-status and decision record.
-- `docs/CARD_SYSTEM_PLAN.md` is the active reader-facing card contract.
-- `docs/management/` contains active governance records.
-- `docs/archive/` contains superseded plans retained for historical context;
-  archived statements are not current requirements.
+- `docs/management/` contains active permission and governance records.
+- `docs/archive/` contains completed and superseded plans, stories, analyses,
+  and reviews retained for historical context; archived statements are not
+  current requirements.
