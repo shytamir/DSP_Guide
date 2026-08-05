@@ -25,26 +25,26 @@ A specific instruction overrides a general one.
 
 ## 3. Product contract
 
-DSP Guide Check is a passive, on-demand companion to the DSP Practical
-Progression Guide.
+This repository publishes the DSP Practical Progression Guide as a
+framework-free static website.
 
 Preserve these invariants unless the task explicitly changes one:
 
-- phase and optional-route selection belong to the player;
-- runtime evidence evaluates the selected phase but never changes it;
-- objectives remain stable while a phase is selected;
-- hard objectives, reference paces, warnings, and optional choices remain
-  distinct;
-- Current Status communicates a useful conclusion rather than every available
-  rate;
-- the panel stays hidden until requested and produces no unsolicited alerts;
-- F8 never saves; `Save snapshot` is the deliberate forensic export;
-- the mod remains read-only with respect to game and save state;
-- missing or renamed runtime evidence fails softly;
-- combat guidance remains outside scope.
+- the guide remains useful with every production card collapsed;
+- cards explain production shape but do not create phase objectives or gates;
+- phase targets are reference points, not permission to ignore visible
+  shortages;
+- optional routes explain opportunity and tradeoff without becoming mandatory;
+- checklist state remains local to the reader's browser;
+- the deployed site has no server-side code, accounts, analytics, cookies, or
+  remote dependencies;
+- technology names, recipes, prerequisites, and item relationships come from
+  the retained runtime-derived data;
+- Dark Fog coverage stays within the bounded RED-phase contract in
+  `docs/PROJECT.md`.
 
-Read `docs/PROJECT.md` before changing progression, analysis, navigation,
-telemetry, or panel behavior.
+Read `docs/PROJECT.md` before changing progression, navigation, card behavior,
+guide data, or deployment behavior.
 
 ## 4. Scope
 
@@ -105,71 +105,57 @@ For non-mutating or `PLAN ONLY` tasks, do not modify, commit, or push.
 Keep these layers separate:
 
 ```text
-Live DSP runtime
-    |
-Collectors and rolling samplers
-    |
-Normalized ObservedGameState
-    |-- forensic JSON snapshot
-    `-- selected-phase analysis
-            |
-        GuidePanelModel
-            |
-        on-demand Unity panel
+index.html
+    |-- assets/css/guide.css
+    |-- assets/js/*.js
+    |-- assets/data/*.json
+    `-- assets/DSP_exported assets/
 ```
 
 Use the existing responsibilities:
 
-- `Plugin.cs`: lifecycle, export orchestration, reflection helpers, and
-  snapshot assembly;
-- `ObservedGameState.cs`: normalized evidence model;
-- telemetry classes: focused runtime collection and sampling;
-- `GuideAnalyzer.cs` and `GuideGateEngine.cs`: interpretation and stable
-  objective evaluation;
-- `ManualPhaseNavigation.cs`: player-owned phase selection;
-- `GuidePanelModel.cs`: presentation-ready model;
-- `GuidePanelController.cs`: Unity UI only.
+- `index.html`: semantic guide content and static references;
+- `assets/css/guide.css`: presentation and responsive layout;
+- `assets/js/`: independent navigation, card, tooltip, producer, and checklist
+  behavior;
+- `assets/data/`: runtime-derived technology and tooltip data used by the page;
+- `scripts/`: deployment and guide-contract validation;
+- `docs/`: current product, card, governance, and archived decision records;
+- `dsp_universal_end_product_dag_v1_0/`: retained research provenance, not a
+  deployed dependency.
 
-Do not bury guide rules in reflection code or runtime collection in UI code.
+Do not bury guide content in JavaScript, presentation rules in HTML, or
+deployment-only material in the published package.
 
-## 8. Toolchain and authoritative game evidence
+## 8. Toolchain and authoritative data
 
-The project uses:
+The project has no build step and no deployed package dependencies. Use Node.js
+to run the committed validation scripts and an ordinary static web server for
+browser testing.
 
-- C# 7.3;
-- .NET Framework 4.7.2 (`net472`);
-- BepInEx 5;
-- UnityEngine assemblies supplied by the installed game.
+Run the repository checks with:
 
-Build with:
-
-```text
-build.cmd
+```powershell
+node scripts/validate-card-system.mjs
+node scripts/validate-checklists.mjs
 ```
 
-or, for a nonstandard installation:
+For a release-equivalent deployment check, stage only `index.html` and
+`assets/`, then run `node scripts/validate-deployment.mjs <site-directory> .`.
 
-```text
-build.cmd "D:\Games\Dyson Sphere Program"
-```
+When authoritative game knowledge is required:
 
-The project resolves BepInEx and Unity references through the `GameRoot`
-property. Do not copy game assemblies into the repository.
+- prefer the retained DAG and website data over memory or community shorthand;
+- distinguish confirmed runtime-derived facts from practical interpretation;
+- preserve the research package as provenance rather than a deployed input;
+- use only authorized, unmodified game images covered by the management record;
+- record uncertainty instead of presenting inference as fact.
 
-When authoritative runtime knowledge is required:
+## Environment Bootstrap
 
-- inspect the installed `Assembly-CSharp.dll`, Unity assemblies, or actual
-  snapshot evidence as read-only inputs;
-- distinguish confirmed fields and methods from inference;
-- prefer dedicated component pools and game statistics over broad reflective
-  scans or inventory deltas;
-- preserve forgiving reflection behavior when members are missing or renamed;
-- never redistribute, modify, or commit game or Unity assemblies;
-- record uncertainty instead of presenting a proxy as fact.
-
-Do not introduce compile-time `Assembly-CSharp.dll` coupling without a
-task-specific reason. The existing plugin intentionally uses defensive
-reflection for most game-state access.
+- Location: `artifacts/.runtime-tools/Activate-DspGuideTools.ps1` is the local Git-ignored environment bootstrap script.
+- Purpose: dot-source the script to expose scoped safe-directory Git access plus the local runtimes, HTML authoring tools, validators, and Playwright browser cache without changing global configuration.
+- Verified tooling: Git 2.44, ripgrep 15.2, Node 24.14, Python 3.12, HTML Validate 11.6.1, Prettier 3.9.6, jsdom 30.0.1, Cheerio 1.2.0, Playwright 1.62, Chromium headless shell, Chrome 151, Edge 151, and ffmpeg.
 
 ## 9. Implementation discipline
 
@@ -177,9 +163,9 @@ Prefer:
 
 - minimal local patches;
 - existing abstractions and conventions;
-- direct, readable C# 7.3;
-- deterministic analysis;
-- guide-aware evidence policies;
+- semantic HTML, direct CSS, and small readable vanilla JavaScript;
+- deterministic static validation;
+- guide-aware data and content policies;
 - focused validation;
 - documentation that matches behavior.
 
@@ -188,53 +174,53 @@ Avoid:
 - speculative abstractions;
 - premature generalization;
 - broad refactors hidden inside feature work;
-- frame-by-frame allocations or factory-wide scans without measured need;
+- frameworks, bundlers, or remote runtime dependencies without a task-specific
+  need;
 - duplicate implementations;
 - unnecessary compatibility layers;
 - comments that merely restate code.
 
-Preserve public and snapshot contracts unless the task explicitly changes
-them.
+Preserve public anchors, card IDs, checklist storage keys, and deployed file
+contracts unless the task explicitly changes them.
 
-## 10. Runtime evidence and schema discipline
+## 10. Data and publication discipline
 
 Runtime-derived facts, practical interpretation, optional advice, and soft
 reference paces are different categories. Do not convert one into another for
 convenience.
 
-When changing exported data:
+When changing published data or contracts:
 
-- update the normalized model and analysis consumer deliberately;
-- retain diagnostic evidence needed to validate new collection;
-- bump the snapshot schema only for an actual contract change;
-- keep exporter, assembly, and BepInEx plugin versions synchronized;
-- update `README.md`, `CHANGELOG.md`, and `docs/PROJECT.md` when behavior or
-  contracts change.
+- update the website data and its JavaScript consumer deliberately;
+- retain research provenance needed to validate relationships;
+- update directly affected contract validators;
+- change `VERSION` only as an intentional release decision;
+- update `README.md`, `docs/PROJECT.md`, and the active card or management
+  record when behavior or contracts change.
 
-Production statistics are preferred for rates. Inventory changes are
-contaminated by consumption, transport, handcrafting, and stockpiling.
+Do not copy archived requirements into the active product contract or treat
+historical publication files as live website inputs.
 
 ## 11. Validation
 
 Run the narrowest relevant check first:
 
-1. build the affected project;
+1. run the directly affected contract validator;
 2. fix failures caused by the change;
 3. rerun the failed check;
-4. run broader validation only when justified;
+4. run staged deployment or browser validation when justified;
 5. review the final diff once.
 
-The release build must complete with zero errors. Do not claim in-game,
-performance, continuity, or presentation behavior from compilation alone.
+Release validation must complete with zero errors. Do not claim presentation,
+navigation, persistence, or responsive behavior from structural checks alone.
 
-Changes involving runtime evidence normally require a user-run DSP checkpoint
-and `Save snapshot` JSON. Presentation changes normally require an in-game
-screenshot. Keep runtime instructions limited to DSP with the mod installed
-through BepInEx unless the user explicitly requests another workflow.
+Presentation changes normally require headless Chromium validation and a
+reviewed desktop screenshot. Check a narrow viewport when responsive behavior
+is affected, while preserving the documented best-effort mobile policy.
 
-If a required tool or game state is unavailable, report the check as skipped
-or blocked. Do not call it passed. Allow at most two repair cycles for the same
-failure unless explicitly authorized.
+If a required tool or authoritative external data source is unavailable,
+report the check as skipped or blocked. Do not call it passed. Allow at most
+two repair cycles for the same failure unless explicitly authorized.
 
 ## 12. Tests and documentation
 
@@ -247,9 +233,8 @@ documentation changes settle.
 
 Do not commit:
 
-- `bin/` or `obj/`;
-- DLLs, PDBs, or copied game assemblies;
-- snapshots containing player save data;
+- files under `artifacts/` or generated ZIP packages;
+- raw correspondence, private player data, or unapproved assets;
 - temporary diagnostics;
 - editor, cache, or OS noise.
 
@@ -263,7 +248,7 @@ Before committing:
 2. inspect the final diff;
 3. confirm only intended files changed;
 4. run required validation;
-5. check for secrets, snapshots, temporary files, and generated output.
+5. check for secrets, private data, temporary files, and generated output.
 
 Create one coherent commit per requested task unless instructed otherwise. Use
 a concise commit message. Do not amend, rebase, reset, clean, stash,
@@ -340,8 +325,7 @@ Stop and report when:
 
 - completion requires changes outside scope;
 - the task conflicts with repository architecture or explicit instructions;
-- required credentials, services, dependencies, assemblies, or data are
-  unavailable;
+- required credentials, services, dependencies, or data are unavailable;
 - user changes prevent safe modification;
 - validation reveals an unrelated repository-wide failure;
 - two repair cycles fail to resolve the same blocker;
