@@ -19,6 +19,7 @@ if (!siteArgument) {
 
 const siteRoot = path.resolve(siteArgument);
 const sourceRoot = path.resolve(sourceArgument);
+const steamStoreUrl = "https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/";
 const failures = [];
 const check = (condition, message) => {
   if (!condition) failures.push(message);
@@ -144,7 +145,11 @@ const mallTitle = html.match(/<span class="card-summary-title">Mall Industry([\s
 for (const itemId of [2301, 2302, 2303]) check(Boolean(mallTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Industry title is missing item ${itemId}.`);
 const logisticsTitle = html.match(/<span class="card-summary-title">Mall Logistics([\s\S]*?)<\/span><span class="card-summary-meta">/);
 for (const itemId of [2001, 2011]) check(Boolean(logisticsTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Logistics title is missing item ${itemId}.`);
-check((html.match(/class="game-logo(?: |")/g) || []).length === 2, "The guide must display the game logo at the title and External Tools sections.");
+const gameLogos = findElementsByClass(html, "game-logo");
+check(gameLogos.length === 2, "The guide must display the game logo at the title and External Tools sections.");
+const escapedSteamStoreUrl = steamStoreUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const steamLogoLinks = [...html.matchAll(new RegExp(`<a\\b(?=[^>]*\\bhref="${escapedSteamStoreUrl}")[^>]*>([\\s\\S]*?)<\\/a>`, "g"))];
+check(steamLogoLinks.length === 2 && steamLogoLinks.every(link => findElementsByClass(link[1], "game-logo").length === 1), "Both game logos must link to the Dyson Sphere Program Steam store page.");
 const correctedPhaseAssets = new Map([
   ["blue", "t-matrix.png"],
   ["red", "e-matrix.png"],

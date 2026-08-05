@@ -23,6 +23,7 @@ if (!mode || !assetMapArgument) {
 const root = process.cwd();
 const htmlPath = path.join(root, "index.html");
 const assetMapPath = path.resolve(assetMapArgument);
+const steamStoreUrl = "https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/";
 const recipesPath = path.join(root, "dsp_universal_end_product_dag_v1_0", "dsp_universal_recipe_hyperedges_v1_0.json");
 const map = JSON.parse(fs.readFileSync(assetMapPath, "utf8"));
 const recipes = JSON.parse(fs.readFileSync(recipesPath, "utf8")).recipes;
@@ -381,7 +382,7 @@ function addRequiredContextIcons(html) {
 function addExternalToolsLogo(html) {
   if (html.includes('class="game-logo section-logo"')) return html;
   const marker = /<hr\/>\s*<h1 id="ref-tools">External Tools and Communities<\/h1>/;
-  const logo = '<img class="game-logo section-logo" src="assets/DSP_exported assets/Texture2D/dsp-logo-flat-en.png" width="1280" height="277" alt="Dyson Sphere Program"/>';
+  const logo = `<a href="${steamStoreUrl}"><img class="game-logo section-logo" src="assets/DSP_exported assets/Texture2D/dsp-logo-flat-en.png" width="1280" height="277" alt="Dyson Sphere Program"/></a>`;
   if (!marker.test(html)) throw new Error("External Tools and Communities divider was not found.");
   return html.replace(marker, matched => `${logo}${matched}`);
 }
@@ -491,7 +492,10 @@ function validate(html) {
   const logisticsTitle = html.match(/<span class="card-summary-title">Mall Logistics([\s\S]*?)<\/span><span class="card-summary-meta">/);
   assert(Boolean(logisticsTitle), "Mall Logistics card title is missing.");
   for (const itemId of [2001, 2011]) assert(Boolean(logisticsTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Logistics title is missing item ${itemId}.`);
-  assert(count(/class="game-logo(?: |")/g, html) === 2, "The guide must display the game logo at the title and External Tools sections.");
+  const gameLogos = findElementsByClass(html, "game-logo");
+  assert(gameLogos.length === 2, "The guide must display the game logo at the title and External Tools sections.");
+  const steamLogoLinks = [...html.matchAll(new RegExp(`<a\\b(?=[^>]*\\bhref="${escapeRegExp(steamStoreUrl)}")[^>]*>([\\s\\S]*?)<\\/a>`, "g"))];
+  assert(steamLogoLinks.length === 2 && steamLogoLinks.every(link => findElementsByClass(link[1], "game-logo").length === 1), "Both game logos must link to the Dyson Sphere Program Steam store page.");
 
   const localImages = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(match => match[1]);
   for (const source of localImages) {
