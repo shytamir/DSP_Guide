@@ -146,6 +146,42 @@ assert.equal(unavailableBox.checked, false, "session reset failed without storag
 assert.match(unavailableStatus.textContent, /local saving is unavailable/i);
 
 const html = fs.readFileSync("index.html", "utf8");
+const finiteBillMarker = html.lastIndexOf("<strong>First yellow batch</strong>");
+const finiteBillStart = html.lastIndexOf('<table class="allocation-table">', finiteBillMarker);
+const finiteBillEnd = html.indexOf("</table>", finiteBillMarker) + "</table>".length;
+assert.ok(finiteBillMarker >= 0 && finiteBillStart >= 0 && finiteBillEnd > finiteBillStart, "ILS finite production bill is missing");
+const finiteBill = html.slice(finiteBillStart, finiteBillEnd);
+const visibleText = value => value
+  .replace(/<[^>]+>/g, " ")
+  .replace(/\s+/g, " ")
+  .replace(/\s+([),.;:])/g, "$1")
+  .trim();
+function supportingReserve(label) {
+  const labelIndex = finiteBill.indexOf(`<strong>${label}</strong>`);
+  const rowStart = finiteBill.lastIndexOf("<tr>", labelIndex);
+  const rowEnd = finiteBill.indexOf("</tr>", labelIndex) + "</tr>".length;
+  assert.ok(labelIndex >= 0 && rowStart >= 0 && rowEnd > rowStart, `ILS finite production row is missing: ${label}`);
+  const cells = [...finiteBill.slice(rowStart, rowEnd).matchAll(/<td(?: [^>]*)?>([\s\S]*?)<\/td>/g)];
+  assert.equal(cells.length, 4, `ILS finite production row must have four cells: ${label}`);
+  return visibleText(cells[3][1]);
+}
+const expectedSupportingReserves = new Map([
+  ["First yellow batch", "600 Titanium Ingots for the 200 Titanium Crystals"],
+  ["ILS pair", "80 Steel + 160 Titanium Ingots (80 for the two embedded PLS components + 80 for the 80 Titanium Alloy) + 160 Electromagnetic Turbines for the Particle Containers"],
+  ["Vessel fleet", "100 Titanium Ingots for the 100 Titanium Alloy + 50 Electromagnetic Turbines for the Reinforced Thrusters"],
+  ["Protected total", "80 Steel + 860 Titanium Ingots (600 for Titanium Crystals + 180 for all Titanium Alloy + 80 for the two embedded PLS components) + 210 Electromagnetic Turbines"],
+]);
+for (const [label, expected] of expectedSupportingReserves) {
+  assert.equal(supportingReserve(label), expected, `ILS supporting reserve changed: ${label}`);
+}
+const returnChecklistStart = html.indexOf("<h3>Before flying home</h3>");
+const returnChecklistEnd = html.indexOf("</ul>", returnChecklistStart);
+assert.ok(returnChecklistStart >= 0 && returnChecklistEnd > returnChecklistStart, "ILS return checklist is missing");
+assert.match(
+  visibleText(html.slice(returnChecklistStart, returnChecklistEnd)),
+  /860 Titanium Ingots and 520 High-Purity Silicon/,
+  "ILS return checklist no longer matches the protected Titanium Ingot total",
+);
 const glossaryStart = html.indexOf('<details class="guide-glossary">');
 const contextParagraph = html.indexOf("remember why half the belts exist.");
 const progressIndex = html.indexOf("<h1>Quick Progress Index</h1>");
@@ -154,4 +190,4 @@ assert.equal((html.match(/<dt>/g) || []).length, 10, "glossary must contain exac
 assert.equal((html.match(/task-list-item-checkbox/g) || []).length, 82, "checklist coverage changed unexpectedly");
 assert.match(html, /assets\/js\/checklists\.js/, "checklist script is not referenced by the guide");
 
-console.log("Checklist validation passed: coverage, persistence, duplicate keys, reset, storage denial, and glossary placement verified.");
+console.log("Checklist validation passed: coverage, persistence, duplicate keys, reset, storage denial, glossary placement, and ILS reserve reconciliation verified.");

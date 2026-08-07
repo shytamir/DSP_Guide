@@ -69,6 +69,52 @@ for (const id of expectedReferences) {
   if (!references.some(reference => reference.id === id)) errors.push(`Missing reusable reference: ${id}`);
 }
 
+const turbineReference = references.find(reference => reference.id === "reference-electromagnetic-turbines");
+const turbinePipeline = turbineReference?.inner.match(
+  /class="map-pipeline"><h4>Production Map<\/h4>([\s\S]*?)<\/section>/,
+)?.[1] || "";
+const turbineGroups = findElementsByClass(turbinePipeline, "route-group");
+const expectedTurbineGroups = [
+  {
+    heading: "Magnetic Coil branch",
+    rows: [["1001", "1102"], ["1002", "1104"], ["1102", "1104", "1202"]],
+    producers: ["smelting", "smelting", "assembly"],
+  },
+  {
+    heading: "Electric Motor branch",
+    rows: [["1001", "1101"], ["1101", "1201"], ["1101", "1201", "1202", "1203"]],
+    producers: ["smelting", "assembly", "assembly"],
+  },
+  {
+    heading: "Final convergence",
+    rows: [["1203", "1202", "1204"]],
+    producers: ["assembly"],
+  },
+];
+if (turbineGroups.length !== expectedTurbineGroups.length) {
+  errors.push(`The reusable turbine map must contain three ordered groups; found ${turbineGroups.length}`);
+} else {
+  turbineGroups.forEach((group, groupIndex) => {
+    const expected = expectedTurbineGroups[groupIndex];
+    const heading = group.inner.match(/<h5>([\s\S]*?)<\/h5>/)?.[1]?.replace(/<[^>]+>/g, " ").trim() || "";
+    if (heading !== expected.heading) {
+      errors.push(`Reusable turbine group ${groupIndex + 1} changed heading from "${expected.heading}" to "${heading}"`);
+    }
+    const rows = findElementsByClass(group.inner, components.routeRow.className);
+    const itemSequences = rows.map(row => {
+      const chain = findElementsByClass(row.inner, "route-chain")[0]?.inner || "";
+      return [...chain.matchAll(/\bdata-item-id="(\d+)"/g)].map(match => match[1]);
+    });
+    const producerTypes = rows.map(row => row.full.match(/\bdata-producer-type="([^"]+)"/)?.[1] || "");
+    if (JSON.stringify(itemSequences) !== JSON.stringify(expected.rows)) {
+      errors.push(`Reusable turbine group "${expected.heading}" has an unexpected item sequence`);
+    }
+    if (JSON.stringify(producerTypes) !== JSON.stringify(expected.producers)) {
+      errors.push(`Reusable turbine group "${expected.heading}" has an unexpected producer sequence`);
+    }
+  });
+}
+
 const allDocumentIds = new Set([...html.matchAll(/\bid="([^\"]+)"/g)].map(match => match[1]));
 const links = [...html.matchAll(/<a class="card-crossref-link" href="#([^\"]+)"/g)].map(match => match[1]);
 for (const target of links) {

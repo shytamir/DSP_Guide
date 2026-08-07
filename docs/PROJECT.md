@@ -103,13 +103,14 @@ contains only the deployable static website.
 
 ## Maintenance status
 
-The next scheduled maintenance work is recorded in
-[`docs/management/maintenance-roadmap.md`](management/maintenance-roadmap.md).
-It contains two playtest-driven stories: clarify the reusable Electromagnetic
-Turbine production map, then reconcile the Titanium Ingot reserves in the ILS
-finite production bill. Other changes are accepted when they address a
-verified defect, authoritative game-data change, security or compatibility
-need, or a clearly articulated reader problem.
+No scheduled maintenance story is currently active. The latest playtest-driven
+maintenance pass clarified the reusable Electromagnetic Turbine production map
+and reconciled the Titanium Ingot reserves in the ILS finite production bill;
+its completed record is archived in
+[`docs/archive/maintenance-roadmap.md`](archive/maintenance-roadmap.md). Other
+changes are accepted when they address a verified defect, authoritative
+game-data change, security or compatibility need, or a clearly articulated
+reader problem.
 
 - **Tabled — science pace:** further calibration of minimum cube targets is not
   scheduled.
