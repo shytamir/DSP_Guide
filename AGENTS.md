@@ -153,9 +153,9 @@ When authoritative game knowledge is required:
 
 ## Environment Bootstrap
 
-- Location: `artifacts/.runtime-tools/Activate-DspGuideTools.ps1` is the local Git-ignored environment bootstrap script.
-- Purpose: dot-source the script to expose scoped safe-directory Git access plus the local runtimes, HTML authoring tools, validators, and Playwright browser cache without changing global configuration.
-- Verified tooling: Git 2.44, ripgrep 15.2, Node 24.14, Python 3.12, HTML Validate 11.6.1, Prettier 3.9.6, jsdom 30.0.1, Cheerio 1.2.0, Playwright 1.62, Chromium headless shell, Chrome 151, Edge 151, and ffmpeg.
+- Location: `scripts/Bootstrap-AgentEnvironment.ps1` installs the local environment and generates the Git-ignored `artifacts/.runtime-tools/Activate-DspGuideTools.ps1` activation helper.
+- Purpose: run the bootstrap idempotently, then dot-source its activation helper to expose scoped safe-directory Git access, local runtimes, HTML authoring tools, validators, and the Playwright browser cache without changing global configuration.
+- Verified tooling: Git, ripgrep, Node.js, Python, pnpm, HTML Validate 11.6.1, Prettier 3.9.6, jsdom 30.0.1, Cheerio 1.2.0, Playwright 1.62.0, Chromium, Chromium headless shell, Chrome, Edge, and ffmpeg, including functional DOM and browser-rendering smoke tests.
 
 ## 9. Implementation discipline
 

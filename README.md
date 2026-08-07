@@ -44,6 +44,25 @@ separate JSON file.
 Historical publication snapshots and the authoritative DAG research package
 remain in the repository for provenance. They are not loaded by `index.html`.
 
+## Agent environment bootstrap
+
+From a PowerShell shell with the standard agent runtime available, run:
+
+```powershell
+.\scripts\Bootstrap-AgentEnvironment.ps1
+. .\artifacts\.runtime-tools\Activate-DspGuideTools.ps1
+```
+
+The bootstrap installs the locked HTML authoring and Playwright dependencies
+under the Git-ignored `artifacts/.runtime-tools/` directory, installs the
+managed Chromium browsers, generates scoped command helpers, and runs a full
+inventory and rendering audit. It is safe to rerun; use `-ValidateOnly` to
+audit an existing installation without changing it. Any missing prerequisite,
+package, browser, helper, or failed functional check is reported before the
+script exits unsuccessfully. Git, ripgrep, Node.js, Python, pnpm, Chrome, and
+Edge are treated as supplied agent-runtime prerequisites; repository-local
+packages and Playwright-managed browser binaries are installed by the script.
+
 ## Maintenance status
 
 Version 2.1 is published and the project is in maintenance mode. Current
