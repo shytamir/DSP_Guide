@@ -71,8 +71,9 @@ in [`docs/PROJECT.md`](docs/PROJECT.md). Completed and superseded plans are
 retained under `docs/archive/`; the runtime-derived DAG package is retained as
 research provenance. The latest completed maintenance pass clarified the
 reusable Electromagnetic Turbine map and reconciled the first-ILS finite
-Titanium Ingot bill. The current reading-pane alignment story is implemented
-and awaiting owner validation.
+Titanium Ingot bill. The reading-pane alignment work, including centered game
+logos, is complete and retained with the other finished records under
+`docs/archive/`.
 
 ## Deployment
 

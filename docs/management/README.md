@@ -5,8 +5,6 @@ that affect the project's next validation work or what it may publish.
 
 ## Current records
 
-- `reading-pane-right-alignment-user-story.md` records the implemented
-  reading-pane alignment change that is awaiting owner validation.
 - `game-asset-use-permission-sanitized.md` preserves the limited permission to
   use unmodified in-game assets in the non-commercial guide and related mod.
 
@@ -14,6 +12,8 @@ that affect the project's next validation work or what it may publish.
 
 - [`../archive/maintenance-roadmap.md`](../archive/maintenance-roadmap.md)
   records the completed Electromagnetic Turbine map and ILS finite-bill work.
+- [`../archive/reading-pane-right-alignment-user-story.md`](../archive/reading-pane-right-alignment-user-story.md)
+  records the completed and owner-validated reading-pane alignment work.
 
 Other completed roadmaps, plans, correction records, and user stories are also
 stored under [`../archive/`](../archive/). Their preserved implementation

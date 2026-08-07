@@ -1,6 +1,6 @@
 # Reading-Pane Right-Edge Alignment
 
-**Status:** Implemented on 2026-08-07; awaiting owner validation.
+**Status:** Completed and owner-validated on 2026-08-07.
 
 ## User story
 
@@ -23,14 +23,15 @@ one stable document shape instead of a sequence of inconsistent widths.
   arbitrary narrower width.
 - Intentionally sized interface elements remain scoped out: game logos,
   navigation rails, reference controls, tooltips, icons, and numeric columns
-  retain their existing dimensions.
+  retain their existing dimensions; both game logos are centered within the
+  reading pane.
 - Desktop rendering shows one consistent right boundary without horizontal
   overflow.
 - Narrow rendering preserves readable indentation and introduces no horizontal
   page overflow; intrinsically wide table content may scroll within its own
   aligned table boundary.
-- Focused deployment validation protects the paragraph/list and compact-table
-  width contracts.
+- Focused deployment validation protects the logo-centering, paragraph/list,
+  and compact-table width contracts.
 - Card-system, checklist, and release-equivalent deployment validation pass.
 
 ## Implemented change
@@ -43,10 +44,12 @@ one stable document shape instead of a sequence of inconsistent widths.
   at desktop and narrow widths.
 - Contained intrinsically wide tables so they scroll internally instead of
   widening the page on narrow screens.
-- Added deterministic deployment checks for all four layout rules.
+- Centered both game logos without changing their dimensions.
+- Added deterministic deployment checks for the alignment and logo-centering
+  rules.
 
 ## Validation state
 
 Automated contract checks and desktop and narrow Chromium rendering reviews
-have passed. Owner validation of the guide's overall document shape remains
-pending.
+passed. The owner confirmed the guide's aligned document shape on 2026-08-07;
+the two game logos were then centered as the final accepted polish.

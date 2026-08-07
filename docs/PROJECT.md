@@ -103,9 +103,9 @@ contains only the deployable static website.
 
 ## Maintenance status
 
-The reading-pane right-edge alignment story is implemented and awaiting owner
-validation. Its active record is
-[`docs/management/reading-pane-right-alignment-user-story.md`](management/reading-pane-right-alignment-user-story.md).
+The reading-pane right-edge alignment story, including centered game logos,
+is complete and owner-validated. Its finished record is archived in
+[`docs/archive/reading-pane-right-alignment-user-story.md`](archive/reading-pane-right-alignment-user-story.md).
 
 The preceding playtest-driven maintenance pass clarified the reusable
 Electromagnetic Turbine production map and reconciled the Titanium Ingot

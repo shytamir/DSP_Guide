@@ -69,6 +69,10 @@ const guideCssPath = path.join(siteRoot, "assets", "css", "guide.css");
 const guideCss = fs.existsSync(guideCssPath) ? fs.readFileSync(guideCssPath, "utf8") : "";
 check(!/<style\b/.test(html), "Inline CSS found in index.html.");
 check(!/<script(?![^>]*\bsrc=)/.test(html), "Inline JavaScript or JSON found in index.html.");
+check(
+  /\.game-logo\{display:block;width:min\(100%,720px\);height:auto;margin:\.75rem auto 1\.75rem\}/.test(guideCss),
+  "The two game logos are not centered in the reading pane.",
+);
 check(/p,li\{max-width:none\}/.test(guideCss), "Paragraphs or list items retain a narrowed right edge.");
 check(
   /\.allocation-table-compact\{width:100%;max-width:none\}/.test(guideCss),
