@@ -65,8 +65,24 @@ for (const relative of expected) {
 const htmlPath = path.join(siteRoot, "index.html");
 check(fs.existsSync(htmlPath), "index.html is missing.");
 const html = fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, "utf8") : "";
+const guideCssPath = path.join(siteRoot, "assets", "css", "guide.css");
+const guideCss = fs.existsSync(guideCssPath) ? fs.readFileSync(guideCssPath, "utf8") : "";
 check(!/<style\b/.test(html), "Inline CSS found in index.html.");
 check(!/<script(?![^>]*\bsrc=)/.test(html), "Inline JavaScript or JSON found in index.html.");
+check(/p,li\{max-width:none\}/.test(guideCss), "Paragraphs or list items retain a narrowed right edge.");
+check(
+  /\.allocation-table-compact\{width:100%;max-width:none\}/.test(guideCss),
+  "The compact allocation table does not reach its container's right edge.",
+);
+check(
+  /\.production-reference\{margin:\.7rem 0 \.7rem \.9rem;/.test(guideCss)
+    && /\.production-reference\{margin:\.6rem 0 \.6rem \.6rem\}/.test(guideCss),
+  "Reusable reference cards do not preserve left-only indentation.",
+);
+check(
+  /table\{display:block;max-width:100%;overflow-x:auto\}/.test(guideCss),
+  "Wide tables can force narrow page overflow.",
+);
 
 const ids = [...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(match => match[1]);
 const anchors = [...html.matchAll(/href="#([^"]+)"/g)].map(match => match[1]);

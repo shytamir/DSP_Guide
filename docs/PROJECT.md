@@ -103,12 +103,15 @@ contains only the deployable static website.
 
 ## Maintenance status
 
-No scheduled maintenance story is currently active. The latest playtest-driven
-maintenance pass clarified the reusable Electromagnetic Turbine production map
-and reconciled the Titanium Ingot reserves in the ILS finite production bill;
-its completed record is archived in
-[`docs/archive/maintenance-roadmap.md`](archive/maintenance-roadmap.md). Other
-changes are accepted when they address a verified defect, authoritative
+The reading-pane right-edge alignment story is implemented and awaiting owner
+validation. Its active record is
+[`docs/management/reading-pane-right-alignment-user-story.md`](management/reading-pane-right-alignment-user-story.md).
+
+The preceding playtest-driven maintenance pass clarified the reusable
+Electromagnetic Turbine production map and reconciled the Titanium Ingot
+reserves in the ILS finite production bill. That work is complete and archived
+in [`docs/archive/maintenance-roadmap.md`](archive/maintenance-roadmap.md).
+Other changes are accepted when they address a verified defect, authoritative
 game-data change, security or compatibility need, or a clearly articulated
 reader problem.
 
