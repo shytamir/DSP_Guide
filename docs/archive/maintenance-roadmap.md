@@ -13,9 +13,10 @@ Production Map now contains three ordered, headlined groups: **Magnetic Coil
 branch**, **Electric Motor branch**, and **Final convergence**.
 
 The groups separate Iron Ore to Magnets, Copper Ore to Copper Ingots, and the
-Magnetic Coil convergence from the Iron Ingot, Gear, and Electric Motor
-branch. Electric Motors and Magnetic Coils then meet in the final
-Electromagnetic Turbine convergence. Existing item icons, producer
+Magnetic Coil convergence from the Electric Motor branch. In that branch,
+Iron Ore continues through Iron Ingots to Gears in one two-step row before
+the Electric Motor convergence. Electric Motors and Magnetic Coils meet in
+the final Electromagnetic Turbine convergence. Existing item icons, producer
 annotations, recipe information, and navigation behavior were retained.
 
 Focused card-system validation now protects the three group headings, their

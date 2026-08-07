@@ -78,17 +78,17 @@ const expectedTurbineGroups = [
   {
     heading: "Magnetic Coil branch",
     rows: [["1001", "1102"], ["1002", "1104"], ["1102", "1104", "1202"]],
-    producers: ["smelting", "smelting", "assembly"],
+    producers: [["smelting"], ["smelting"], ["assembly"]],
   },
   {
     heading: "Electric Motor branch",
-    rows: [["1001", "1101"], ["1101", "1201"], ["1101", "1201", "1202", "1203"]],
-    producers: ["smelting", "assembly", "assembly"],
+    rows: [["1001", "1101", "1201"], ["1101", "1201", "1202", "1203"]],
+    producers: [["smelting", "assembly"], ["assembly"]],
   },
   {
     heading: "Final convergence",
     rows: [["1203", "1202", "1204"]],
-    producers: ["assembly"],
+    producers: [["assembly"]],
   },
 ];
 if (turbineGroups.length !== expectedTurbineGroups.length) {
@@ -105,7 +105,9 @@ if (turbineGroups.length !== expectedTurbineGroups.length) {
       const chain = findElementsByClass(row.inner, "route-chain")[0]?.inner || "";
       return [...chain.matchAll(/\bdata-item-id="(\d+)"/g)].map(match => match[1]);
     });
-    const producerTypes = rows.map(row => row.full.match(/\bdata-producer-type="([^"]+)"/)?.[1] || "");
+    const producerTypes = rows.map(row => (
+      [...row.full.matchAll(/\bdata-producer-type="([^"]+)"/g)].map(match => match[1])
+    ));
     if (JSON.stringify(itemSequences) !== JSON.stringify(expected.rows)) {
       errors.push(`Reusable turbine group "${expected.heading}" has an unexpected item sequence`);
     }

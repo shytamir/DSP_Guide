@@ -174,6 +174,12 @@ const expectedSupportingReserves = new Map([
 for (const [label, expected] of expectedSupportingReserves) {
   assert.equal(supportingReserve(label), expected, `ILS supporting reserve changed: ${label}`);
 }
+assert.doesNotMatch(html, /Protect the Turbine reserve/, "ILS still warns about a nonexistent Turbine reserve");
+assert.match(
+  html,
+  /<strong>⚠ Watch the charging spike\.<\/strong>[\s\S]*?<strong>Lower its charging-power setting<\/strong>/,
+  "ILS charging-spike warning lost its emphasized corrective action",
+);
 const returnChecklistStart = html.indexOf("<h3>Before flying home</h3>");
 const returnChecklistEnd = html.indexOf("</ul>", returnChecklistStart);
 assert.ok(returnChecklistStart >= 0 && returnChecklistEnd > returnChecklistStart, "ILS return checklist is missing");
