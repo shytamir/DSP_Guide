@@ -103,7 +103,11 @@ contains only the deployable static website.
 
 ## Maintenance status
 
-There is no active feature roadmap. Changes are accepted when they address a
+The next scheduled maintenance work is recorded in
+[`docs/management/maintenance-roadmap.md`](management/maintenance-roadmap.md).
+It contains two playtest-driven stories: clarify the reusable Electromagnetic
+Turbine production map, then reconcile the Titanium Ingot reserves in the ILS
+finite production bill. Other changes are accepted when they address a
 verified defect, authoritative game-data change, security or compatibility
 need, or a clearly articulated reader problem.
 
@@ -122,7 +126,8 @@ need, or a clearly articulated reader problem.
 
 - `README.md` explains how to use, inspect, and deploy the repository.
 - `docs/PROJECT.md` is the current project-status and decision record.
-- `docs/management/` contains active permission and governance records.
+- `docs/management/` contains active roadmap, permission, and governance
+  records.
 - `docs/archive/` contains completed and superseded plans, stories, analyses,
   and reviews retained for historical context; archived statements are not
   current requirements.
