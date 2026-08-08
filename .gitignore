@@ -1,5 +1,6 @@
 .DS_Store
 Thumbs.db
+.vs/
 *.tmp
 *.swp
 artifacts/

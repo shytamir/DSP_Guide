@@ -67,6 +67,29 @@ check(fs.existsSync(htmlPath), "index.html is missing.");
 const html = fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, "utf8") : "";
 const guideCssPath = path.join(siteRoot, "assets", "css", "guide.css");
 const guideCss = fs.existsSync(guideCssPath) ? fs.readFileSync(guideCssPath, "utf8") : "";
+const hostedModReadmeImages = new Map([
+  ["assets/images/mod/see-the-problem-and-know-what-to-do-without-leaving-the-game.png", [2560, 1440]],
+  ["assets/images/mod/know-when-your-photon-array-is-truly-sustained.png", [2880, 1620]],
+]);
+for (const [relative, [expectedWidth, expectedHeight]] of hostedModReadmeImages) {
+  const source = path.join(sourceRoot, relative);
+  const deployed = path.join(siteRoot, relative);
+  check(fs.existsSync(source), `Required hosted mod README image is missing from the source package: ${relative}`);
+  check(actual.includes(relative) && fs.existsSync(deployed), `Required hosted mod README image is missing from deployment: ${relative}`);
+  if (fs.existsSync(source) && fs.existsSync(deployed)) {
+    const contents = fs.readFileSync(deployed);
+    const isPng = contents.length >= 24
+      && contents.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))
+      && contents.subarray(12, 16).toString("ascii") === "IHDR";
+    check(isPng, `Hosted mod README image is not a valid PNG: ${relative}`);
+    if (isPng) {
+      check(
+        contents.readUInt32BE(16) === expectedWidth && contents.readUInt32BE(20) === expectedHeight,
+        `Hosted mod README image has unexpected dimensions: ${relative}`,
+      );
+    }
+  }
+}
 check(!/<style\b/.test(html), "Inline CSS found in index.html.");
 check(!/<script(?![^>]*\bsrc=)/.test(html), "Inline JavaScript or JSON found in index.html.");
 check(
