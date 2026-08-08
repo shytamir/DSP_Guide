@@ -70,6 +70,11 @@ const guideCss = fs.existsSync(guideCssPath) ? fs.readFileSync(guideCssPath, "ut
 check(!/<style\b/.test(html), "Inline CSS found in index.html.");
 check(!/<script(?![^>]*\bsrc=)/.test(html), "Inline JavaScript or JSON found in index.html.");
 check(
+  /url\("\.\.\/images\/guide-space-background-v1\.png"\)/.test(guideCss)
+    && fs.existsSync(path.join(siteRoot, "assets", "images", "guide-space-background-v1.png")),
+  "The guide's space background is missing or not referenced by the stylesheet.",
+);
+check(
   /\.game-logo\{display:block;width:min\(100%,720px\);height:auto;margin:\.75rem auto 1\.75rem\}/.test(guideCss),
   "The two game logos are not centered in the reading pane.",
 );

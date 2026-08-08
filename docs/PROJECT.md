@@ -70,6 +70,7 @@ privacy-sanitized permission record at
 ```text
 index.html                     Published guide content
 assets/css/                    Presentation
+assets/images/                 Guide-original presentation artwork
 assets/js/                     Navigation, cards, tooltips, checklists
 assets/data/                   Runtime-derived website data
 assets/DSP_exported assets/    Authorized unmodified game assets
