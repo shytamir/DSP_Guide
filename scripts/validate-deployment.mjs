@@ -75,6 +75,12 @@ check(
   "The guide's space background is missing or not referenced by the stylesheet.",
 );
 check(
+  guideCss.includes("@media(min-width:1921px),(min-width:1200px) and (min-height:1081px),(min-width:1200px) and (min-resolution:1.5dppx)")
+    && /url\("\.\.\/images\/guide-space-background-4k\.webp"\)/.test(guideCss)
+    && fs.existsSync(path.join(siteRoot, "assets", "images", "guide-space-background-4k.webp")),
+  "The high-resolution space background is missing or not selected for high-resolution displays.",
+);
+check(
   /\.game-logo\{display:block;width:min\(100%,720px\);height:auto;margin:\.75rem auto 1\.75rem\}/.test(guideCss),
   "The two game logos are not centered in the reading pane.",
 );
