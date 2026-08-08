@@ -65,7 +65,8 @@ packages and Playwright-managed browser binaries are installed by the script.
 
 ## Maintenance status
 
-Version 2.1 is published and the project is in maintenance mode. Current
+Version 2.2 is published and the project is in maintenance mode. See
+[`CHANGELOG.md`](CHANGELOG.md) for the scope of the current minor line. Current
 product boundaries, validation contracts, and deferred maintenance are tracked
 in [`docs/PROJECT.md`](docs/PROJECT.md). Completed and superseded plans are
 retained under `docs/archive/`; the runtime-derived DAG package is retained as

@@ -1,6 +1,6 @@
 # DSP Practical Progression Guide
 
-**Status:** Maintenance mode. Version 2.1 is the current published minor line.
+**Status:** Maintenance mode. Version 2.2 is the current published minor line.
 
 ## Purpose
 
@@ -104,17 +104,12 @@ contains only the deployable static website.
 
 ## Maintenance status
 
-The reading-pane right-edge alignment story, including centered game logos,
-is complete and owner-validated. Its finished record is archived in
-[`docs/archive/reading-pane-right-alignment-user-story.md`](archive/reading-pane-right-alignment-user-story.md).
-
-The preceding playtest-driven maintenance pass clarified the reusable
-Electromagnetic Turbine production map and reconciled the Titanium Ingot
-reserves in the ILS finite production bill. That work is complete and archived
-in [`docs/archive/maintenance-roadmap.md`](archive/maintenance-roadmap.md).
-Other changes are accepted when they address a verified defect, authoritative
-game-data change, security or compatibility need, or a clearly articulated
-reader problem.
+The version 2.2 presentation and card-refinement work is complete,
+owner-validated, and archived in
+[`docs/archive/version-2.2-maintenance-release.md`](archive/version-2.2-maintenance-release.md).
+There is no active implementation roadmap. Further changes are accepted when
+they address a verified defect, authoritative game-data change, security or
+compatibility need, or a clearly articulated reader problem.
 
 - **Tabled — science pace:** further calibration of minimum cube targets is not
   scheduled.

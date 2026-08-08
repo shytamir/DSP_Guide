@@ -10,6 +10,9 @@ that affect the project's next validation work or what it may publish.
 
 ## Completed records
 
+- [`../archive/version-2.2-maintenance-release.md`](../archive/version-2.2-maintenance-release.md)
+  reconciles the completed post-2.1 presentation, high-resolution, card, and
+  release-management work.
 - [`../archive/maintenance-roadmap.md`](../archive/maintenance-roadmap.md)
   records the completed Electromagnetic Turbine map and ILS finite-bill work.
 - [`../archive/reading-pane-right-alignment-user-story.md`](../archive/reading-pane-right-alignment-user-story.md)
@@ -18,6 +21,9 @@ that affect the project's next validation work or what it may publish.
 Other completed roadmaps, plans, correction records, and user stories are also
 stored under [`../archive/`](../archive/). Their preserved implementation
 language is historical and does not define current work.
+
+There is no active implementation roadmap. The project is in maintenance
+mode.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.

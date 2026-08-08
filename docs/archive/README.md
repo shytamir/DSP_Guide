@@ -6,6 +6,8 @@ requirements and should not be used as the current project status.
 
 The archive includes:
 
+- `version-2.2-maintenance-release.md` for the reconciled post-2.1 maintenance
+  and presentation release;
 - `CARD_SYSTEM_PLAN.md` for the implemented production-card contract;
 - `CARD_SYSTEM_REVIEW.md` for the audit that preceded that contract;
 - `END_TO_END_READING_PASS_PLAN.md` for the completed structural and editorial
