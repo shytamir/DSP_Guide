@@ -1,6 +1,6 @@
 # ILS-to-GREEN Research Handoff
 
-**Status:** Approved user story; implementation pending.
+**Status:** Completed and archived on 2026-08-08.
 
 ## User story
 
@@ -129,3 +129,20 @@ The dependency presentation must make clear that:
 - No changes to runtime-derived data or research provenance.
 - No styling or layout redesign beyond accommodating the revised research
   text.
+
+## Implementation record
+
+- ILS now introduces Applied Superconductor before the linked standard
+  Graphene line and Particle Container assembly.
+- The Vessel fleet row identifies the protected 100 Titanium Alloy as 50 for
+  ten Reinforced Thrusters and 50 directly for five Logistics Vessels without
+  changing any established total.
+- PURPLE begins its two research summaries with High-Strength Material and
+  treats Applied Superconductor as completed ILS research.
+- Both GREEN research presentations use the Quantum, Frame, Gravity,
+  convergence order and identify the Frame Material requirement for Miniature
+  Particle Collider construction.
+- Focused deployment and checklist validation protect the corrected handoff,
+  allocation, labels, order, technology chains, and existing Graphene link.
+- Desktop browser review confirmed readable dashboard and expanded research
+  presentation without horizontal overflow or console errors.

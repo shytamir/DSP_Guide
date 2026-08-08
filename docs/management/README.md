@@ -5,9 +5,6 @@ that affect the project's next validation work or what it may publish.
 
 ## Current records
 
-- [`ils-purple-green-research-handoff-user-story.md`](ils-purple-green-research-handoff-user-story.md)
-  defines the approved research-sequencing and finite-allocation corrections
-  pending across ILS, PURPLE, and GREEN.
 - `game-asset-use-permission-sanitized.md` preserves the limited permission to
   use unmodified in-game assets in the non-commercial guide and related mod.
 
@@ -20,13 +17,16 @@ that affect the project's next validation work or what it may publish.
   records the completed Electromagnetic Turbine map and ILS finite-bill work.
 - [`../archive/reading-pane-right-alignment-user-story.md`](../archive/reading-pane-right-alignment-user-story.md)
   records the completed and owner-validated reading-pane alignment work.
+- [`../archive/ils-purple-green-research-handoff-user-story.md`](../archive/ils-purple-green-research-handoff-user-story.md)
+  records the completed ILS prerequisite, protected-allocation, PURPLE
+  handoff, and GREEN branch-order corrections.
 
 Other completed roadmaps, plans, correction records, and user stories are also
 stored under [`../archive/`](../archive/). Their preserved implementation
 language is historical and does not define current work.
 
-The project remains in maintenance mode with one approved, bounded user story
-pending implementation.
+There is no active implementation roadmap. The project is in maintenance
+mode.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.

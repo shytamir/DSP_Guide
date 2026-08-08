@@ -134,6 +134,12 @@ const redSection = redStart >= 0 && redEnd > redStart ? html.slice(redStart, red
 const ilsStart = html.indexOf('<section class="phase-section phase-section-ils" id="ils">');
 const ilsEnd = html.indexOf('<section class="phase-section', ilsStart + 1);
 const ilsSection = ilsStart >= 0 && ilsEnd > ilsStart ? html.slice(ilsStart, ilsEnd) : "";
+const purpleStart = html.indexOf('<section class="phase-section phase-section-purple" id="purple">');
+const purpleEnd = html.indexOf('<section class="phase-section', purpleStart + 1);
+const purpleSection = purpleStart >= 0 && purpleEnd > purpleStart ? html.slice(purpleStart, purpleEnd) : "";
+const greenStart = html.indexOf('<section class="phase-section phase-section-green" id="green">');
+const greenEnd = html.indexOf('<section class="phase-section', greenStart + 1);
+const greenSection = greenStart >= 0 && greenEnd > greenStart ? html.slice(greenStart, greenEnd) : "";
 const warpStart = html.indexOf('<section class="phase-section phase-section-warp" id="warp">');
 const warpEnd = html.indexOf('<section class="phase-section', warpStart + 1);
 const warpSection = warpStart >= 0 && warpEnd > warpStart ? html.slice(warpStart, warpEnd) : "";
@@ -153,6 +159,64 @@ check(!html.includes('id="ref-dark-fog"') && !html.includes('href="#ref-dark-fog
 const outsideRed = redStart >= 0 && redEnd > redStart ? `${html.slice(0, redStart)}${html.slice(redEnd)}` : html;
 check(!/Dark Fog/i.test(outsideRed), "Dark Fog guidance appears outside RED.");
 check(!/(Dark Fog (?:levels?|farming|drops?|industry)|space combat|Relay Stations?|\bhives?\b|concealed technolog)/i.test(html), "Prohibited Dark Fog subject remains in the guide.");
+
+const visiblePhaseText = value => value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+const ilsAppliedIndex = ilsSection.indexOf('data-tech-id="1131"');
+const ilsComponentBuildIndex = ilsSection.indexOf("Build the temporary component lines.");
+check(
+  ilsAppliedIndex >= 0 && ilsAppliedIndex < ilsComponentBuildIndex,
+  "ILS must introduce Applied Superconductor before the temporary Particle Container build.",
+);
+check(
+  visiblePhaseText(ilsSection).includes("Applied Superconductor so the standard Graphene line is ready before Particle Containers assembly"),
+  "ILS lost the reader-facing connection between Applied Superconductor, Graphene, and Particle Containers.",
+);
+check(
+  (purpleSection.match(/data-tech-id="1131"/g) || []).length === 1
+    && visiblePhaseText(purpleSection).includes("Applied Superconductor and its Basic Chemical Engineering prerequisite were cleared during the ILS bridge"),
+  "PURPLE must mention Applied Superconductor only as completed ILS research.",
+);
+check(
+  visiblePhaseText(purpleSection).split("High-Strength Material → Particle Control → Information Matrix").length - 1 === 2,
+  "PURPLE must begin both research summaries with High-Strength Material.",
+);
+
+const greenDashboardStart = greenSection.indexOf('<tr><td><strong>Research next</strong>');
+const greenDashboardEnd = greenSection.indexOf("</tr>", greenDashboardStart) + "</tr>".length;
+const greenBodyStart = greenSection.indexOf("<h2>Research first</h2>");
+const greenBodyEnd = greenSection.indexOf('<div class="icon-free">', greenBodyStart);
+const greenResearchBlocks = [
+  ["dashboard", greenDashboardStart >= 0 && greenDashboardEnd > greenDashboardStart ? greenSection.slice(greenDashboardStart, greenDashboardEnd) : ""],
+  ["expanded section", greenBodyStart >= 0 && greenBodyEnd > greenBodyStart ? greenSection.slice(greenBodyStart, greenBodyEnd) : ""],
+];
+for (const [label, block] of greenResearchBlocks) {
+  const text = visiblePhaseText(block);
+  const quantumIndex = text.indexOf("Quantum branch:");
+  const frameIndex = text.indexOf("Frame branch:");
+  const gravityIndex = text.indexOf("Gravity branch:");
+  const convergenceIndex = text.indexOf("Both branches → Gravity Matrix");
+  check(
+    quantumIndex >= 0 && quantumIndex < frameIndex && frameIndex < gravityIndex && gravityIndex < convergenceIndex,
+    `GREEN ${label} lost the Quantum, Frame, Gravity, convergence order.`,
+  );
+  check(
+    text.includes("Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function Interference → Quantum Chip"),
+    `GREEN ${label} lost the Quantum branch technology chain.`,
+  );
+  check(
+    text.includes("Frame branch: Solar Collection → Photon Frequency Conversion → Super Magnetic Field Generator → Solar Sail Orbit System → High-Strength Lightweight Structure"),
+    `GREEN ${label} lost the Frame branch technology chain.`,
+  );
+  check(
+    text.includes("Gravity branch: Miniature Particle Collider → Strange Matter → Gravitational Wave Refraction"),
+    `GREEN ${label} lost the Gravity branch technology chain.`,
+  );
+  const frameBranch = text.slice(frameIndex, gravityIndex);
+  check(
+    frameBranch.includes("Frame Material") && frameBranch.includes("Miniature Particle Collider"),
+    `GREEN ${label} no longer connects Frame Material to Miniature Particle Collider construction.`,
+  );
+}
 
 const localAssetOccurrences = [
   ...html.matchAll(/(?:href|src)="(assets\/[^"]+)"/g)

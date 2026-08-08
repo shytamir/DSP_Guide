@@ -1,7 +1,6 @@
 # DSP Practical Progression Guide
 
-**Status:** Maintenance mode. Version 2.2 is the current published minor line,
-with one approved user story pending implementation.
+**Status:** Maintenance mode. Version 2.2 is the current published minor line.
 
 ## Purpose
 
@@ -108,15 +107,16 @@ contains only the deployable static website.
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
 [`docs/archive/version-2.2-maintenance-release.md`](archive/version-2.2-maintenance-release.md).
-One bounded maintenance story is approved and pending implementation. Further
-changes are accepted when they address a verified defect, authoritative
-game-data change, security or compatibility need, or a clearly articulated
-reader problem.
+There is no active implementation roadmap. Further changes are accepted when
+they address a verified defect, authoritative game-data change, security or
+compatibility need, or a clearly articulated reader problem.
 
-- **Pending — ILS-to-GREEN research handoff:** the approved
-  [`ILS-to-GREEN Research Handoff`](management/ils-purple-green-research-handoff-user-story.md)
-  story corrects the Applied Superconductor handoff, protected Titanium Alloy
-  allocation, and GREEN branch ordering and prerequisite presentation.
+- **Completed — ILS-to-GREEN research handoff:** Applied Superconductor now
+  precedes the ILS Graphene requirement, the Vessel fleet exposes its 50/50
+  Titanium Alloy allocation, PURPLE recognizes the completed handoff, and
+  GREEN presents its Quantum, Frame, Gravity, and convergence order. The
+  completed story is archived in
+  [`docs/archive/ils-purple-green-research-handoff-user-story.md`](archive/ils-purple-green-research-handoff-user-story.md).
 
 - **Tabled — science pace:** further calibration of minimum cube targets is not
   scheduled.
