@@ -5,6 +5,9 @@ that affect the project's next validation work or what it may publish.
 
 ## Current records
 
+- [`ils-purple-green-research-handoff-user-story.md`](ils-purple-green-research-handoff-user-story.md)
+  defines the approved research-sequencing and finite-allocation corrections
+  pending across ILS, PURPLE, and GREEN.
 - `game-asset-use-permission-sanitized.md` preserves the limited permission to
   use unmodified in-game assets in the non-commercial guide and related mod.
 
@@ -22,8 +25,8 @@ Other completed roadmaps, plans, correction records, and user stories are also
 stored under [`../archive/`](../archive/). Their preserved implementation
 language is historical and does not define current work.
 
-There is no active implementation roadmap. The project is in maintenance
-mode.
+The project remains in maintenance mode with one approved, bounded user story
+pending implementation.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.
