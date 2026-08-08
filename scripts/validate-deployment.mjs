@@ -77,8 +77,9 @@ check(
 check(
   guideCss.includes("@media(min-width:1921px),(min-width:1200px) and (min-height:1081px),(min-width:1200px) and (min-resolution:1.5dppx)")
     && /url\("\.\.\/images\/guide-space-background-4k\.webp"\)/.test(guideCss)
+    && guideCss.includes(".phase-rail{transform:translateY(-50%) scale(2);transform-origin:right center}")
     && fs.existsSync(path.join(siteRoot, "assets", "images", "guide-space-background-4k.webp")),
-  "The high-resolution space background is missing or not selected for high-resolution displays.",
+  "The high-resolution background or doubled navigation rail is missing from the high-resolution display rule.",
 );
 check(
   /\.game-logo\{display:block;width:min\(100%,720px\);height:auto;margin:\.75rem auto 1\.75rem\}/.test(guideCss),
