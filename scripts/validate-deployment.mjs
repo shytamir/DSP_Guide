@@ -332,8 +332,69 @@ check(!actual.some(file => /recognized-game-assets\.json$/i.test(file)), "The ex
 const imageSources = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(match => match[1]);
 check(imageSources.every(source => source.startsWith("assets/DSP_exported assets/Texture2D/")), "An image source falls outside the authorized game-asset directory.");
 
+const itemIconReferenceTablePattern = /^(?:rate|allocation|rare-resource|reference|comparison)-table$/;
+const itemIconCalloutClassPattern = /(?:legend|callout|warning|choice|contract)$|^orbital-process$/;
+const itemIconVoidElements = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
+
+function itemIconAncestorStack(offset) {
+  const tokens = /<!--[\s\S]*?-->|<![^>]*>|<\/?[A-Za-z][^>]*>/g;
+  const stack = [];
+  for (const match of html.slice(0, offset).matchAll(tokens)) {
+    const token = match[0];
+    if (!/^<[A-Za-z/]/.test(token)) continue;
+    const tag = token.match(/^<\/?([A-Za-z0-9]+)/)?.[1]?.toLowerCase();
+    if (/^<\//.test(token)) {
+      for (let index = stack.length - 1; index >= 0; index -= 1) {
+        if (stack[index].tag === tag) {
+          stack.splice(index, 1);
+          break;
+        }
+      }
+    } else if (tag && !itemIconVoidElements.has(tag) && !/\/>$/.test(token)) {
+      const classes = token.match(/\bclass="([^"]*)"/)?.[1]?.split(/\s+/).filter(Boolean) || [];
+      stack.push({ tag, classes });
+    }
+  }
+  return stack;
+}
+
+const itemIconStackHasClass = (stack, className) =>
+  stack.some(entry => entry.classes.includes(className));
+const isItemIconCardOrMapSurface = stack => {
+  const inCard = stack.some(entry => entry.classes.some(className =>
+    ["build-card", "production-reference"].includes(className),
+  ));
+  return (inCard && stack.some(entry => entry.tag === "summary")) ||
+    stack.some(entry => entry.classes.some(className => [
+      "card-summary-title",
+      "production-map",
+      "map-supplies",
+      "route-chain",
+      "map-destination",
+      "map-surplus",
+    ].includes(className)));
+};
+const isItemIconReferenceTableSurface = stack =>
+  stack.some(entry => entry.tag === "table" && entry.classes.some(className => itemIconReferenceTablePattern.test(className)));
+const isItemIconDesignedCalloutSurface = stack =>
+  stack.some(entry => entry.tag === "blockquote" || entry.classes.some(className => itemIconCalloutClassPattern.test(className)));
+const allowsItemIcon = stack => {
+  if (itemIconStackHasClass(stack, "map-note")) return false;
+  if (stack.some(entry => /^h[1-6]$/.test(entry.tag))) return false;
+  return isItemIconCardOrMapSurface(stack) || isItemIconReferenceTableSurface(stack) || isItemIconDesignedCalloutSurface(stack);
+};
+const allowsRetainedItemIcon = stack =>
+  itemIconStackHasClass(stack, "map-note") || stack.some(entry => entry.tag === "nav");
+
 const protoReferences = findElementsByClass(html, components.itemReference.className);
-check(protoReferences.every(reference => /class="proto-icon proto-icon-item"/.test(reference.inner)), "An item reference is missing its static icon.");
+for (const reference of protoReferences) {
+  const itemId = getAttribute(reference.openingTag, components.itemReference.idAttribute);
+  const hasIcon = /class="proto-icon proto-icon-item"/.test(reference.inner);
+  const stack = itemIconAncestorStack(reference.index);
+  const requiresIcon = allowsItemIcon(stack);
+  check(!requiresIcon || hasIcon, `Item ${itemId} is missing an icon on an approved surface.`);
+  check(requiresIcon || allowsRetainedItemIcon(stack) || !hasIcon, `Item ${itemId} retains an icon outside approved surfaces.`);
+}
 const correctedItemAssets = new Map([
   [6001, "t-matrix.png"],
   [6002, "e-matrix.png"],
@@ -346,8 +407,9 @@ const correctedItemAssets = new Map([
 ]);
 for (const [itemId, asset] of correctedItemAssets) {
   const references = protoReferences.filter(reference => Number(getAttribute(reference.openingTag, components.itemReference.idAttribute)) === itemId);
+  const iconReferences = references.filter(reference => /class="proto-icon proto-icon-item"/.test(reference.inner));
   check(references.length > 0, `Corrected item ${itemId} is not represented in the guide.`);
-  check(references.every(reference => reference.inner.includes(`/${asset}"`)), `Corrected item ${itemId} uses the wrong asset.`);
+  check(iconReferences.every(reference => reference.inner.includes(`/${asset}"`)), `Corrected item ${itemId} uses the wrong asset.`);
 }
 const iconFreeRegions = [...html.matchAll(/<(?:div|li)[^>]*class="[^"]*\bicon-free\b[^"]*"[^>]*>([\s\S]*?)<\/(?:div|li)>/g)];
 check(iconFreeRegions.every(region => !region[1].includes("proto-icon")), "An icon-free guide region contains a prototype icon.");
