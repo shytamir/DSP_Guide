@@ -98,6 +98,9 @@ author, update, or deploy is implementation work:
 7. push only when explicitly requested;
 8. report after required Git operations succeed.
 
+Never mark a user story completed, accepted, owner-validated, or archived
+unless the current user explicitly instructs you to do so.
+
 For non-mutating or `PLAN ONLY` tasks, do not modify, commit, or push.
 
 ## 7. Repository architecture
