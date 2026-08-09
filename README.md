@@ -68,7 +68,8 @@ packages and Playwright-managed browser binaries are installed by the script.
 Version 2.2 is published, and both ordered guide-correction stories are
 owner-accepted and archived. All three icon stories are owner-accepted.
 Progression Entry Stories 1 and 2 are owner-accepted. Progression Entry Story
-3 is ready for implementation. The current boundary is recorded in
+3 is implemented, Tier 2 validated, and ready for owner acceptance. The
+current boundary is recorded in
 [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md). See
 [`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and
 [`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation

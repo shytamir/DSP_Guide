@@ -379,7 +379,15 @@ function phaseSlice(id, nextId) {
 const ilsPhase = phaseSlice("ils", "yellow");
 const purplePhase = phaseSlice("purple", "green");
 const greenPhase = phaseSlice("green", "dyson");
+const whitePhase = phaseSlice("white", "warp");
 const warpPhase = phaseSlice("warp", "logistics");
+const logisticsStart = html.indexOf(
+  '<section class="phase-section phase-section-logistics" id="logistics">',
+);
+const logisticsEnd = html.indexOf('<h1 id="ref-proliferation">', logisticsStart);
+const logisticsPhase = logisticsStart >= 0 && logisticsEnd > logisticsStart
+  ? html.slice(logisticsStart, logisticsEnd)
+  : "";
 const warpDestinations = (markup) => [
   ...markup.matchAll(/href="(#warp(?:-[^"]+)?)"/g),
 ].map((match) => match[1]);
@@ -431,6 +439,41 @@ if (
   !warpPhase.includes("Later and direct visitors have no fixed WARP exit")
 ) {
   errors.push("WARP does not distinguish the early GREEN continuation from later direct visits");
+}
+const logisticsDestinations = (markup) => [
+  ...markup.matchAll(/href="#logistics"/g),
+].length;
+if (
+  !progressIndexMarkup?.[1].includes("<th>Entry cue</th>") ||
+  !progressIndexMarkup?.[1].includes(
+    "Repeated expansion consumes handcrafted stations and carriers",
+  ) ||
+  progressIndexMarkup?.[1].includes("ILS onward")
+) {
+  errors.push("Quick Progress Index does not use the repeated-expansion LOGISTICS cue");
+}
+if (logisticsDestinations(ilsPhase) !== 0) {
+  errors.push("ILS must not create a LOGISTICS objective from technical availability alone");
+}
+if (
+  logisticsDestinations(greenPhase) !== 1 ||
+  !greenPhase.includes("repeated expansion has you handcrafting the same stations and carriers again")
+) {
+  errors.push("GREEN LOGISTICS guidance is not tied to repeated replacement builds");
+}
+if (
+  logisticsDestinations(whitePhase) !== 2 ||
+  (whitePhase.match(/repeated expansion/g) || []).length < 2
+) {
+  errors.push("Post-completion LOGISTICS cues are not consistently tied to repeated expansion");
+}
+if (
+  !logisticsPhase.includes("This section is useful whenever:") ||
+  !logisticsPhase.includes(
+    "Repeated expansion keeps sending you back to handcraft the same stations and carriers",
+  )
+) {
+  errors.push("Direct LOGISTICS visitors are missing the repeated-expansion orientation");
 }
 const defaultRoute = html.match(
   /<p>The default route is:<\/p>\s*<p><strong>([^<]+)<\/strong><\/p>/,

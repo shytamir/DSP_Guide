@@ -1,8 +1,8 @@
 # DSP Practical Progression Guide
 
-**Status:** Active optional-capability entry implementation. Version 2.2 is the
-current published minor line, and Progression Entry Story 3 is ready for
-implementation.
+**Status:** Active optional-capability entry acceptance. Version 2.2 is the
+current published minor line, and Progression Entry Story 3 is implemented,
+Tier 2 validated, and ready for owner acceptance.
 
 ## Purpose
 
@@ -94,7 +94,7 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   direct-link rules, complexity limits, icon-free Operating Notes, retained
   map icon treatments, authoritative output recipes, and the separation of
   optional capabilities from main-route numbering, including contextual WARP
-  entry destinations.
+  entry destinations and repeated-expansion LOGISTICS entry cues.
 - `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
   reset behavior, storage failure, glossary placement, and the one-screen
   route/optional-capability grouping.
@@ -130,8 +130,8 @@ The ordered guide-correction sequence is complete. Both stories are preserved
 in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now orders eight icon,
-progression-entry, and expedition-navigation stories; Story 5 is
-owner-accepted and Story 6 is ready for implementation.
+progression-entry, and expedition-navigation stories; Story 6 is implemented,
+Tier 2 validated, and ready for owner acceptance.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -143,8 +143,9 @@ owner-accepted and Story 6 is ready for implementation.
   narrative and Operating Note guidance now remains distinct from approved
   icon-rich identity, reference, and production-map surfaces.
 - **Active — navigation:** Progression Entry Stories 1 and 2 are
-  owner-accepted. The LOGISTICS entry refinement is ready for implementation
-  before the shared WARP and ILS three-stage navigation stories.
+  owner-accepted. The LOGISTICS entry refinement is implemented, Tier 2
+  validated, and ready for owner acceptance before the shared WARP and ILS
+  three-stage navigation stories.
 - **Planned — progressive disclosure:** the completed case inventory produced
   four approved, unscheduled stories covering the PHOTON dashboard, the global
   cube-target table, the ILS manifest, and the DYSON Ejector production map.

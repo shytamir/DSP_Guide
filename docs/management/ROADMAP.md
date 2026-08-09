@@ -1,7 +1,7 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Story 5 is completed
-and owner-accepted; Story 6 is ready for implementation.
+**Status:** Ordered implementation active on 2026-08-09. Story 6 is
+implemented, Tier 2 validated, and ready for owner acceptance.
 
 This roadmap implements eight approved stories in order across three records:
 
@@ -56,10 +56,11 @@ anchors while keeping the optional route stateless.
 
 ### 6. Align LOGISTICS entry cues with repeat expansion
 
-**State:** Ready for implementation after Story 5 owner acceptance.
+**State:** Implementation and Tier 2 validation complete; awaiting owner
+acceptance.
 
-Implement Progression Entry Story 3. Offer LOGISTICS in response to repeated
-expansion rather than technical availability alone.
+Progression Entry Story 3 offers LOGISTICS in response to repeated expansion
+rather than technical availability alone.
 
 ### 7. Prove the shared expedition stage rail with WARP
 
@@ -87,9 +88,9 @@ a structural problem shared with desktop.
 ## Parallel planning boundary
 
 All three icon stories and the first two progression-entry stories are
-owner-accepted. Progressive-disclosure planning has produced four unscheduled
-stories. Those records do not authorize implementation or alter this execution
-order.
+owner-accepted. The third progression-entry story awaits owner acceptance.
+Progressive-disclosure planning has produced four unscheduled stories. Those
+records do not authorize implementation or alter this execution order.
 
 ## Operating rules
 

@@ -2,7 +2,7 @@
 
 **Status:** Approved for ordered implementation under
 [`ROADMAP.md`](ROADMAP.md). Stories 1 and 2 are owner-accepted; Story 3 is
-ready for implementation.
+implemented, Tier 2 validated, and ready for owner acceptance.
 
 ## Corrected model
 
@@ -161,7 +161,7 @@ can use without displacing my main-route phase.
 
 **Class:** Editorial navigation refinement.
 
-**State:** Ready for implementation after Progression Entry Story 2 owner
+**State:** Implementation and Tier 2 validation complete; awaiting owner
 acceptance.
 
 As a reader repeatedly deploying logistics networks, I want LOGISTICS offered
