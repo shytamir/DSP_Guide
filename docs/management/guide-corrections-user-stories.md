@@ -44,14 +44,22 @@ generation, firing duty, storage trends, and Receiver output.
 
 ### Preserved contract
 
-The guide may retain accurate output targets and reference calculations. Card
-titles may expose final output rates while continuing to omit raw intake,
+The guide may retain accurate reference calculations. Exact baseline figures
+may appear in only two DYSON locations: production-card titles and the prose in
+the "How much is enough" section. Card titles continue to omit raw intake,
 intermediate rates, processing rates, and supporting machine counts.
+
+For this story, baseline figures are the exact targets, capacities,
+throughputs, ratios, and machine counts used to describe the planned DYSON
+reference build.
 
 ### Scope
 
 - Review the DYSON dashboard, quick references, and affected card summaries for
-  visual or editorial overstatement.
+  visual or editorial overstatement and remove exact baseline figures from
+  those surfaces.
+- Retain exact baseline figures only in production-card titles and the "How
+  much is enough" prose.
 - Keep the distinction between installed capacity and observed throughput.
 - Keep PHOTON entry available as soon as partial Dyson output is useful.
 - Update only directly affected validation and management documentation.
@@ -59,6 +67,8 @@ intermediate rates, processing rates, and supporting machine counts.
 ### Non-goals
 
 - Do not change the underlying calculations or authoritative game facts.
+- Do not change any guide surface outside the DYSON phase. The one-screen
+  checklist baseline correction is a separate, unscheduled story.
 - Do not redesign production cards or audit reference authority across every
   phase.
 - Do not change the SPHERE or PHOTON routes except for an existing direct
@@ -66,15 +76,18 @@ intermediate rates, processing rates, and supporting machine counts.
 
 ### Owner checkpoint
 
-Approve the revised information hierarchy or wording before exact editorial
-assertions become durable validator requirements.
+The information hierarchy is settled by the preserved contract above. Approve
+the revised wording before exact editorial assertions become durable validator
+requirements.
 
 ### Acceptance
 
-- Every retained figure remains accurate and clearly identified as a planning
-  reference.
-- The first presentation of the figures makes live player-observable evidence
-  at least as prominent as the numeric target.
+- Exact baseline figures appear only in production-card titles and the "How
+  much is enough" prose, where they remain accurate and clearly identified as
+  planning references.
+- No exact baseline figure appears elsewhere in the DYSON phase.
+- The "How much is enough" prose makes live player-observable evidence at least
+  as prominent as the numeric targets.
 - The dashboard and collapsed card layer do not imply that the reference swarm
   must be complete before PHOTON begins.
 - The guide remains useful with every production card collapsed.

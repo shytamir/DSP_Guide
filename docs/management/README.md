@@ -38,6 +38,9 @@ permissions. Start here before creating or changing a management record.
 - [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md)
   preserves input for the next roadmap update; it is not current
   implementation scope.
+- [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
+  tracks the approved DYSON checklist baseline correction; it is unscheduled
+  and is not part of the current roadmap.
 
 The project is in active roadmap implementation. Story 1 must be implemented
 and accepted before Story 2 begins.
