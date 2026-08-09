@@ -1,7 +1,7 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Story 6 is
-implemented, Tier 2 validated, and ready for owner acceptance.
+**Status:** Ordered implementation active on 2026-08-09. Story 7 is completed
+and owner-accepted; Story 8 is under implementation.
 
 This roadmap implements twelve approved stories in order across seven records:
 
@@ -64,23 +64,21 @@ anchors while keeping the optional route stateless.
 
 ### 6. Align LOGISTICS entry cues with repeat expansion
 
-**State:** Implementation and Tier 2 validation complete; awaiting owner
-acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 Progression Entry Story 3 offers LOGISTICS in response to repeated expansion
 rather than technical availability alone.
 
 ### 7. Prove the shared expedition stage rail with WARP
 
-**State:** Pending Story 6 owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
-Implement Expedition Intra-Navigation Story 1. Add the projecting `I / II /
-III` control and the shared three-stage behavior using the leaner WARP
-expedition.
+Expedition Intra-Navigation Story 1 adds the projecting `I / II / III` control
+and the shared three-stage behavior using the leaner WARP expedition.
 
 ### 8. Apply the shared expedition stage rail to mandatory ILS
 
-**State:** Pending Story 7 owner acceptance.
+**State:** Under implementation after Story 7 owner acceptance.
 
 Implement Expedition Intra-Navigation Story 2. Reuse the accepted WARP control
 while preserving ILS's compatibility anchors, haulback specification, finite
@@ -124,10 +122,10 @@ a structural problem shared with desktop.
 
 ## Parallel planning boundary
 
-All three icon stories and the first two progression-entry stories are
-owner-accepted. The third progression-entry story awaits owner acceptance.
+All three icon stories, all three progression-entry stories, and the first
+expedition-navigation story are owner-accepted. Story 8 is under implementation.
 The four completed planning records are now ordered as Stories 9–12. They do
-not bypass the owner-acceptance gates on Stories 6–8.
+not bypass the owner-acceptance gate on Story 8.
 
 ## Operating rules
 

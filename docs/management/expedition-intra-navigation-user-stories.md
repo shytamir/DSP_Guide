@@ -1,8 +1,8 @@
 # Expedition Intra-Navigation Stories
 
 **Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). WARP follows acceptance of all three progression
-entry stories.
+[`ROADMAP.md`](ROADMAP.md). WARP is owner-accepted; ILS is under
+implementation.
 
 ## Reader problem
 
@@ -56,7 +56,7 @@ entry story in
 
 **Class:** Structural navigation change.
 
-**State:** Pending Progression Entry Story 3 owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 As a reader pursuing the optional WARP expedition, I want its three major
 stages exposed beside the active WARP rail tab so that I can return to the
@@ -102,7 +102,8 @@ relevant deployment step without rereading the whole section.
 
 **Class:** Structural navigation change.
 
-**State:** Pending Expedition Intra-Navigation Story 1 owner acceptance.
+**State:** Under implementation after Expedition Intra-Navigation Story 1
+owner acceptance.
 
 As a reader completing the mandatory ILS transition, I want the same three-stage
 rail to distinguish departure, haulback, and automation so that I can resume

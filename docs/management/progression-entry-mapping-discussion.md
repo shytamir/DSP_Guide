@@ -1,8 +1,7 @@
 # ILS, WARP, and LOGISTICS Entry Mapping
 
-**Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). Stories 1 and 2 are owner-accepted; Story 3 is
-implemented, Tier 2 validated, and ready for owner acceptance.
+**Status:** Completed under [`ROADMAP.md`](ROADMAP.md). All three stories are
+owner-accepted.
 
 ## Corrected model
 
@@ -161,8 +160,7 @@ can use without displacing my main-route phase.
 
 **Class:** Editorial navigation refinement.
 
-**State:** Implementation and Tier 2 validation complete; awaiting owner
-acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 As a reader repeatedly deploying logistics networks, I want LOGISTICS offered
 when replacement hardware becomes useful so that technical availability is not

@@ -10,6 +10,8 @@ import {
 } from "./lib/markup-contracts.mjs";
 
 const html = fs.readFileSync("index.html", "utf8");
+const navigationScript = fs.readFileSync("assets/js/navigation.js", "utf8");
+const guideCss = fs.readFileSync("assets/css/guide.css", "utf8");
 const authoritativeRecipes = JSON.parse(
   fs.readFileSync(
     "dsp_universal_end_product_dag_v1_0/dsp_universal_recipe_hyperedges_v1_0.json",
@@ -428,6 +430,9 @@ if (
     '<h2 class="phase-stage-heading" id="warp-prepare">1. Prepare the expedition</h2>',
   ) ||
   !warpPhase.includes(
+    '<h2 class="phase-stage-heading" id="warp-outpost">2. Establish the source outpost</h2>',
+  ) ||
+  !warpPhase.includes(
     '<h2 class="phase-stage-heading" id="warp-automate">3. Automate the vessel route</h2>',
   )
 ) {
@@ -439,6 +444,55 @@ if (
   !warpPhase.includes("Later and direct visitors have no fixed WARP exit")
 ) {
   errors.push("WARP does not distinguish the early GREEN continuation from later direct visits");
+}
+const warpStageLinks = [
+  ["I", "warp-prepare", "Prepare the expedition"],
+  ["II", "warp-outpost", "Establish the source outpost"],
+  ["III", "warp-automate", "Automate the vessel route"],
+];
+if ((html.match(/class="stage-rail"/g) || []).length !== 1) {
+  errors.push("WARP must expose exactly one shared expedition stage rail");
+}
+for (const [roman, anchor, purpose] of warpStageLinks) {
+  const stageControl = `<a aria-label="WARP Stage ${roman}: ${purpose}" class="stage-tab" data-stage="${anchor}" href="#${anchor}" title="WARP Stage ${roman}: ${purpose}">${roman}</a>`;
+  if (!rail?.[1].includes(stageControl)) {
+    errors.push(`WARP stage ${roman} is missing its accessible #${anchor} control`);
+  }
+  if ((html.match(new RegExp(`id="${anchor}"`, "g")) || []).length !== 1) {
+    errors.push(`WARP stage anchor must appear exactly once: #${anchor}`);
+  }
+}
+if (
+  !rail?.[1].includes(
+    '<div aria-label="WARP expedition stages" class="stage-rail" data-stage-phase="warp" role="group">',
+  ) ||
+  rail?.[1].includes('data-stage-phase="ils"')
+) {
+  errors.push("The shared stage rail is not scoped to the active WARP proof");
+}
+if (
+  (warpPhase.match(/class="stage-cue"/g) || []).length !== 3 ||
+  !warpPhase.includes("A visible rare resource would remove work") ||
+  !warpPhase.includes("The remote source processes into an unpowered provider") ||
+  !warpPhase.includes("A powered home ILS uses Vessels and Warpers")
+) {
+  errors.push("WARP stages do not state their entry conditions and advance outcomes");
+}
+if (
+  !navigationScript.includes("stageGroups = new Map") ||
+  !navigationScript.includes('setAttribute("aria-current", "step")') ||
+  !navigationScript.includes("getBoundingClientRect().top") ||
+  !navigationScript.includes('window.addEventListener("scroll", requestStageUpdate') ||
+  !navigationScript.includes('window.addEventListener("hashchange", activateHashTarget)') ||
+  /(?:localStorage|sessionStorage|document\.cookie)/.test(navigationScript)
+) {
+  errors.push("Shared stage navigation does not track scroll without stored progress");
+}
+if (
+  !guideCss.includes(".rail-tab.active+.stage-rail{display:flex}") ||
+  !guideCss.includes("@media(max-width:900px){.rail-entry")
+) {
+  errors.push("Shared stage navigation is missing desktop projection or narrow access styling");
 }
 const logisticsDestinations = (markup) => [
   ...markup.matchAll(/href="#logistics"/g),
