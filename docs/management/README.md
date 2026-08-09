@@ -1,7 +1,8 @@
 # Management Records
 
-This directory contains active governance, approved work, and publication
-permissions. Start here before creating or changing a management record.
+This directory contains active governance, maintenance boundaries, standing
+references, and publication permissions. Start here before creating or
+changing a management record.
 
 ## Process index
 
@@ -29,43 +30,16 @@ permissions. Start here before creating or changing a management record.
   preserves the limited permission to use unmodified in-game assets in the
   non-commercial guide and related mod.
 
-## Roadmap state and tracked work
+## Maintenance state
 
-- [`ROADMAP.md`](ROADMAP.md) orders twelve approved icon, progression-entry,
-  expedition-navigation, and case-specific refinement stories; Stories 7
-  through 11 are owner-accepted and Story 12 is under implementation.
-- [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md)
-  records the completed progressive-disclosure inventory and its settled
-  outcomes.
-- [`photon-dashboard-progressive-disclosure-story.md`](photon-dashboard-progressive-disclosure-story.md),
-  [`cube-production-target-table-retirement-story.md`](cube-production-target-table-retirement-story.md),
-  [`ils-manifest-progressive-disclosure-story.md`](ils-manifest-progressive-disclosure-story.md),
-  and
-  [`dyson-ejector-production-map-condensation-story.md`](dyson-ejector-production-map-condensation-story.md)
-  are approved as Roadmap Stories 9–12.
+- [`ROADMAP.md`](ROADMAP.md) is the concise maintenance-mode record and
+  indicates no pending work.
+- The completed twelve-story roadmap, its seven supporting story records, and
+  the completed design-leftovers inventory are historical documents indexed in
+  [`../archive/README.md`](../archive/README.md).
 - [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
-  tracks the approved DYSON checklist baseline correction; it is unscheduled
-  and is not part of the current roadmap.
-- [`no-mobile-polish-story.md`](no-mobile-polish-story.md) records the settled
-  desktop-first scope guardrail as an inactive standing user story that does
-  not gate the roadmap.
-- [`prose-icon-placement-discussion.md`](prose-icon-placement-discussion.md)
-  records the approved icon-placement policy and the three active-roadmap
-  stories.
-- [`progression-entry-mapping-discussion.md`](progression-entry-mapping-discussion.md)
-  corrects the ILS/WARP/LOGISTICS classification and contains Roadmap Stories
-  4–6.
-- [`expedition-intra-navigation-user-stories.md`](expedition-intra-navigation-user-stories.md)
-  records the shared three-stage rail contract and contains Roadmap Stories 7
-  and 8.
-
-Both ordered guide-correction stories were owner-accepted on 2026-08-09 and
-archived. All three icon stories and all three Progression Entry stories are
-owner-accepted. Expedition Intra-Navigation Story 1 is implemented, Tier 2
-validated, and owner-accepted. Story 2 is also owner-accepted, and the ILS
-manifest refinement is owner-accepted. Global cube-target retirement is
-owner-accepted, PHOTON dashboard refinement is owner-accepted, and DYSON
-Ejector map condensation is under implementation.
+  is an inactive standing reference. It is not pending implementation or part
+  of an active roadmap; future work requires explicit owner reactivation.
 
 ## Historical records
 

@@ -1,6 +1,7 @@
 # ILS Manifest Progressive-Disclosure Story
 
-**Status:** Completed and owner-accepted as Roadmap Story 9 on 2026-08-09.
+**Status:** Archived historical record. Roadmap Story 9 was completed and
+owner-accepted on 2026-08-09.
 
 ## Let the ILS manifest orient while each stage owns its figures
 

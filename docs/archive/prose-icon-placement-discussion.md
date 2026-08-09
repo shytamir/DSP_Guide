@@ -1,8 +1,7 @@
 # Icon Placement Policy and Proposed Stories
 
-**Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). All three stories were completed and owner-accepted
-on 2026-08-09.
+**Status:** Archived historical record. All three stories were completed and
+owner-accepted under [`ROADMAP.md`](ROADMAP.md) on 2026-08-09.
 
 ## Problem
 

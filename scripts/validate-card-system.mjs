@@ -215,6 +215,72 @@ for (const card of cards) {
   validateMap(card.id, card.inner, !planningOnlyDestinationCards.has(card.id));
   if (/\sopen(?:\s|>)/.test(card.openingTag)) errors.push(`${card.id} is open by default`);
 }
+const ejectorCard = cards.find(card => card.id === "card-dyson-em-rail-ejectors")?.inner || "";
+const ejectorPipeline = ejectorCard.match(
+  /<section class="map-pipeline">[\s\S]*?<\/section>/,
+)?.[0] || "";
+const ejectorRows = findElementsByClass(
+  ejectorPipeline,
+  components.routeRow.className,
+);
+const ejectorLabels = ejectorRows.map(row =>
+  elementTextByClass(row.full, "route-label"),
+);
+const expectedEjectorLabels = [
+  "Gear branch",
+  "Steel branch",
+  "Magnet/graphite branch",
+  "Ring branch",
+  "Ejector convergence",
+];
+if (JSON.stringify(ejectorLabels) !== JSON.stringify(expectedEjectorLabels)) {
+  errors.push(`Ejector map rows are invalid: ${ejectorLabels.join(", ")}`);
+}
+const expectedEjectorItems = [
+  ["1001", "1101", "1201"],
+  ["1001", "1101", "1103"],
+  ["1001", "1102", "1006", "1109"],
+  ["1204", "1102", "1109", "1205"],
+  ["1103", "1201", "1303", "1205", "2311"],
+];
+const expectedEjectorProducers = [
+  ["2302", "2303"],
+  ["2302", "2302"],
+  ["2302", "2302"],
+  ["2303"],
+  ["2303"],
+];
+for (const [index, row] of ejectorRows.entries()) {
+  const routeChain = row.full.slice(row.full.indexOf('<span class="route-chain">'));
+  const itemIds = [...routeChain.matchAll(/\bdata-item-id="(\d+)"/g)].map(
+    match => match[1],
+  );
+  const producerIds = [
+    ...routeChain.matchAll(/data-producer-item-id="(\d+)"/g),
+  ].map(match => match[1]);
+  if (
+    JSON.stringify(itemIds) !== JSON.stringify(expectedEjectorItems[index]) ||
+    JSON.stringify(producerIds) !==
+      JSON.stringify(expectedEjectorProducers[index])
+  ) {
+    errors.push(`${expectedEjectorLabels[index] || "Ejector row"} lost its recipe chain`);
+  }
+}
+if (!/Magnets<\/span>; <span[^>]+data-item-id="1006"[^>]*>/.test(ejectorRows[2]?.full || "")) {
+  errors.push("The Ejector Magnet/graphite chains are not separated by a semicolon");
+}
+for (const retainedEjectorContract of [
+  'href="#card-purple-processors"',
+  'href="#reference-electromagnetic-turbines"',
+  "keep a small, limited buffer for staged deployment",
+  "Solar Sail Life Lv2",
+  "clear injection geometry",
+  "Each firing Ejector draws 1.8 MW",
+]) {
+  if (!ejectorCard.includes(retainedEjectorContract)) {
+    errors.push(`The Ejector card lost retained content: ${retainedEjectorContract}`);
+  }
+}
 for (const reference of references) validateMap(reference.id, reference.inner, false);
 
 for (const phaseId of ["ils", "warp", "photon", "white"]) {

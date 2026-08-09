@@ -1,7 +1,7 @@
 # Guide Correction Stories
 
 **Status:** Completed and owner-accepted on 2026-08-09 under
-[`ROADMAP.md`](../management/ROADMAP.md).
+[`ROADMAP.md`](ROADMAP.md).
 
 These bounded corrections were extracted from the 2026-08-09 guide review.
 Both were implemented and owner-accepted in roadmap order on 2026-08-09.

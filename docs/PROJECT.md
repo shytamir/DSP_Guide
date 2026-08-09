@@ -1,8 +1,8 @@
 # DSP Practical Progression Guide
 
-**Status:** Active DYSON Ejector map condensation. Version 2.2 is the current
-published minor line, Roadmap Story 11 is owner-accepted, and Roadmap Story 12
-is under implementation.
+**Status:** Maintenance mode. Version 2.2 is the current published minor line.
+All twelve roadmap stories were completed, owner-accepted, and archived on
+2026-08-09. No pending work is indicated at this time.
 
 ## Purpose
 
@@ -100,7 +100,8 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   and prevents the retired global cube-target table from displacing
   phase-local production guidance. It also keeps the PHOTON dashboard
   figure-free while preserving exact PHOTON planning figures in its detailed
-  reference layer.
+  reference layer, and fixes the DYSON Ejector map at four branch rows plus its
+  final convergence while retaining every recipe transformation.
 - `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
   reset behavior, storage failure, glossary placement, and the one-screen
   route/optional-capability grouping.
@@ -119,7 +120,7 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
 contains only the deployable static website.
 
-## Roadmap status
+## Maintenance status
 
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
@@ -134,10 +135,12 @@ preserve that work's historical implementation and correction record.
 
 The ordered guide-correction sequence is complete. Both stories are preserved
 in the
-[`archived story record`](archive/guide-corrections-user-stories.md). The
-current [`management roadmap`](management/ROADMAP.md) now orders twelve icon,
-progression-entry, expedition-navigation, and case-specific refinement stories;
-Stories 7 through 11 are owner-accepted, and Story 12 is under implementation.
+[`archived story record`](archive/guide-corrections-user-stories.md). The later
+twelve-story icon, progression-entry, expedition-navigation, and
+progressive-disclosure sequence was also completed and owner-accepted on
+2026-08-09. Its [`historical roadmap`](archive/ROADMAP.md) and supporting
+records are archived; the concise [`maintenance record`](management/ROADMAP.md)
+indicates no pending work.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -148,26 +151,27 @@ Stories 7 through 11 are owner-accepted, and Story 12 is under implementation.
 - **Completed — icon placement:** all three stories are owner-accepted. Plain
   narrative and Operating Note guidance now remains distinct from approved
   icon-rich identity, reference, and production-map surfaces.
-- **Active — navigation:** All three Progression Entry stories are
-  owner-accepted. The shared three-stage rail is owner-accepted for WARP and
-  mandatory ILS.
-- **Active — progressive disclosure:** the ILS manifest refinement is
-  owner-accepted as Story 9, and global cube-target retirement is
-  owner-accepted as Story 10. PHOTON dashboard refinement is owner-accepted as
-  Story 11, and DYSON Ejector map condensation is under implementation as Story
-  12. The checklist baseline correction remains unscheduled.
-- **Inactive — mobile priority:** the standing no-mobile-polish story remains
-  visible without becoming a roadmap step or gate.
+- **Completed — navigation:** all three Progression Entry stories and both
+  expedition-navigation stories were owner-accepted. The shared three-stage
+  rail remains the accepted WARP and ILS behavior.
+- **Completed — progressive disclosure:** ILS manifest refinement, global
+  cube-target retirement, PHOTON dashboard refinement, and DYSON Ejector map
+  condensation were owner-accepted as Stories 9–12.
+- **Standing references — not pending work:** the no-mobile-polish decision is
+  preserved with the archived roadmap. The one-screen-checklist record remains
+  inactive and requires a new explicit owner instruction before it can create
+  implementation work.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
   on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map
   refinements.
 
-- **Tabled — science pace:** further calibration of minimum cube targets is not
-  scheduled.
-- **Deferred — accessibility:** [Issue #5](https://github.com/shytamir/DSP_Guide/issues/5)
-  records the remaining checklist-label, document-structure, and navigation
-  accessibility work.
+- **Standing reference — science pace:** further calibration of minimum cube
+  targets was outside the completed roadmap and is not pending work.
+- **Standing reference — accessibility:** [Issue #5](https://github.com/shytamir/DSP_Guide/issues/5)
+  preserves earlier checklist-label, document-structure, and navigation
+  findings; it is not active or pending implementation without explicit owner
+  reactivation.
 - **Completed — linked-card playtest:** the ICQ full playthrough found the card
   system useful and complete throughout progression.
 - **Completed — RED defense:** the two approved RED-phase defense stories were
@@ -178,8 +182,8 @@ Stories 7 through 11 are owner-accepted, and Story 12 is under implementation.
 
 - `README.md` explains how to use, inspect, and deploy the repository.
 - `docs/PROJECT.md` is the current project-status and decision record.
-- `docs/management/` contains active roadmap, permission, and governance
-  records.
+- `docs/management/` contains the maintenance record, standing references,
+  permissions, and governance records.
 - `docs/archive/` contains completed and superseded plans, stories, analyses,
   and reviews retained for historical context; archived statements are not
   current requirements.

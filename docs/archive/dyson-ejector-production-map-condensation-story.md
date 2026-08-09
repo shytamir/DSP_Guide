@@ -1,7 +1,8 @@
 # DYSON Ejector Production-Map Condensation Story
 
-**Status:** Under implementation as Roadmap Story 12 after Roadmap Story 11
-owner acceptance.
+**Status:** Archived historical record. Roadmap Story 12 was completed and
+owner-accepted on 2026-08-09 after Tier 1 card validation and focused Tier 2
+desktop review.
 
 ## Reduce the Ejector map to four meaningful branch rows
 

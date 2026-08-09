@@ -6,6 +6,13 @@ requirements and should not be used as the current project status.
 
 The archive includes:
 
+- `ROADMAP.md` and its icon, progression-entry, expedition-navigation, ILS,
+  cube-target, PHOTON, and DYSON Ejector supporting records for the completed
+  twelve-story sequence owner-accepted on 2026-08-09;
+- `pending-guide-design-leftovers.md` for the completed inventory that produced
+  the final four stories in that roadmap;
+- `no-mobile-polish-story.md` for the inactive scope guardrail excluded from
+  roadmap execution and completion;
 - `version-2.2-maintenance-release.md` for the reconciled post-2.1 maintenance
   and presentation release;
 - `CARD_SYSTEM_PLAN.md` for the implemented production-card contract;
@@ -26,5 +33,5 @@ The archive includes:
 
 Current documentation lives in:
 
-- `../PROJECT.md` for project status and deferred maintenance;
+- `../PROJECT.md` for project status and maintenance boundaries;
 - `../management/` for current permission and governance records.

@@ -1,7 +1,7 @@
 # Expedition Intra-Navigation Stories
 
-**Status:** Completed under [`ROADMAP.md`](ROADMAP.md). Both stories are
-owner-accepted.
+**Status:** Archived historical record. Both stories were completed and
+owner-accepted under [`ROADMAP.md`](ROADMAP.md) on 2026-08-09.
 
 ## Reader problem
 

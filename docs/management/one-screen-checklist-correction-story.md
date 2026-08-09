@@ -1,7 +1,7 @@
 # One-Screen Checklist Baseline Correction
 
-**Status:** Tracked and unscheduled. This story is not part of the current
-roadmap state and is not authorized for implementation.
+**Status:** Inactive standing reference. It is not pending implementation and
+requires explicit owner reactivation before it can create work.
 
 ## Align the DYSON checklist with the technology-discounted baseline
 

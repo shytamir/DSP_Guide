@@ -1,7 +1,7 @@
 # ILS, WARP, and LOGISTICS Entry Mapping
 
-**Status:** Completed under [`ROADMAP.md`](ROADMAP.md). All three stories are
-owner-accepted.
+**Status:** Archived historical record. All three stories were completed and
+owner-accepted under [`ROADMAP.md`](ROADMAP.md) on 2026-08-09.
 
 ## Corrected model
 

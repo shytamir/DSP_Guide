@@ -65,16 +65,12 @@ packages and Playwright-managed browser binaries are installed by the script.
 
 ## Roadmap status
 
-Version 2.2 is published, and both ordered guide-correction stories are
-owner-accepted and archived. All three icon stories and all three Progression
-Entry stories are owner-accepted. Expedition Intra-Navigation Story 1 is
-owner-accepted. Expedition Intra-Navigation Story 2 is owner-accepted, and the
-ILS Manifest Progressive-Disclosure Story is owner-accepted, and the Cube
-Production Target Table Retirement Story is owner-accepted. The PHOTON
-Dashboard Progressive-Disclosure Story is owner-accepted, and the DYSON
-Ejector Production-Map Condensation Story is under implementation. The current
-boundary is recorded in
-[`docs/management/ROADMAP.md`](docs/management/ROADMAP.md). See
+Version 2.2 is published. The completed twelve-story roadmap and all of its
+supporting records were owner-accepted and archived on 2026-08-09. The project
+is in maintenance mode with no pending work indicated; the current boundary is
+recorded in [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md), and the
+historical roadmap is preserved in
+[`docs/archive/ROADMAP.md`](docs/archive/ROADMAP.md). See
 [`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and
 [`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation
 contracts. Completed and superseded work remains under `docs/archive/`; the
