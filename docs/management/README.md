@@ -31,7 +31,16 @@ permissions. Start here before creating or changing a management record.
 
 ## Active work
 
-None. The project is in maintenance mode with no active user story.
+- [`ROADMAP.md`](ROADMAP.md) defines the current ordered implementation and the
+  next-roadmap planning gate.
+- [`guide-corrections-user-stories.md`](guide-corrections-user-stories.md)
+  contains the two approved correction stories.
+- [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md)
+  preserves input for the next roadmap update; it is not current
+  implementation scope.
+
+The project is in active roadmap implementation. Story 1 must be implemented
+and accepted before Story 2 begins.
 
 ## Historical records
 

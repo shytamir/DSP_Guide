@@ -1,7 +1,7 @@
 # DSP Practical Progression Guide
 
-**Status:** Maintenance mode. Version 2.2 is the current published minor line,
-with no active user story.
+**Status:** Active roadmap implementation. Version 2.2 is the current
+published minor line.
 
 ## Purpose
 
@@ -103,7 +103,7 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
 contains only the deployable static website.
 
-## Maintenance status
+## Active roadmap
 
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
@@ -116,9 +116,22 @@ Matrix tooltip. The [`completed story`](archive/ils-purple-green-research-handof
 and [`first-pass audit`](archive/ils-purple-green-research-handoff-first-pass-audit.md)
 preserve that work's historical implementation and correction record.
 
-Further changes are accepted when they address a verified defect,
-authoritative game-data change, security or compatibility need, or a clearly
-articulated reader problem.
+Current implementation is governed by
+[`docs/management/ROADMAP.md`](management/ROADMAP.md). It activates two ordered
+guide-correction stories, followed by a planning pass that breaks the preserved
+design leftovers into the next roadmap update. Work outside that sequence
+requires a separate owner decision.
+
+- **Active — opening-route consistency:** align the introductory default route
+  with the unified BLUE phase while preserving the `#bootstrap` compatibility
+  anchor.
+- **Pending — DYSON reference authority:** after the opening correction is
+  accepted, refine the DYSON presentation so planning figures do not read as
+  permission gates.
+- **Next-roadmap input — guide design leftovers:** after both correction
+  stories are accepted, classify the remaining expedition-navigation,
+  progressive-disclosure, prose-icon, and mobile-priority concerns into the
+  next roadmap update.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
   on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map

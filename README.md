@@ -63,18 +63,15 @@ script exits unsuccessfully. Git, ripgrep, Node.js, Python, pnpm, Chrome, and
 Edge are treated as supplied agent-runtime prerequisites; repository-local
 packages and Playwright-managed browser binaries are installed by the script.
 
-## Maintenance status
+## Active roadmap
 
-Version 2.2 is published and the project is in maintenance mode. See
-[`CHANGELOG.md`](CHANGELOG.md) for the scope of the current minor line. Current
-product boundaries, validation contracts, and deferred maintenance are tracked
-in [`docs/PROJECT.md`](docs/PROJECT.md). Completed and superseded plans are
-retained under `docs/archive/`; the runtime-derived DAG package is retained as
-research provenance. The latest completed maintenance pass clarified the
-reusable Electromagnetic Turbine map and reconciled the first-ILS finite
-Titanium Ingot bill. The reading-pane alignment work, including centered game
-logos, is complete and retained with the other finished records under
-`docs/archive/`.
+Version 2.2 is published and the project has returned to active roadmap
+implementation. The ordered work is tracked in
+[`docs/management/ROADMAP.md`](docs/management/ROADMAP.md). See
+[`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and
+[`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation
+contracts. Completed and superseded work remains under `docs/archive/`; the
+runtime-derived DAG package remains research provenance.
 
 ## Deployment
 
