@@ -17,6 +17,8 @@ The archive includes:
 - `bootstrap-blue-unification-user-stories.md` for the completed opening-phase
   consolidation;
 - `dark-fog-red-defense-user-stories.md` for the completed RED defense scope;
+- `ils-purple-green-research-handoff-user-story.md` and its first-pass audit
+  for the completed ILS, PURPLE, and GREEN research-handoff refinement;
 - `guide-icon-integration-plan.md` and
   `asset-map-corrections-and-followups.md` for the completed static-icon pass.
 

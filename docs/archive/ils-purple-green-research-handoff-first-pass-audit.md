@@ -5,7 +5,7 @@
 ## Purpose
 
 This record preserves the audit of commit `97bcd2b` against its parent, the
-active user story, and the retained runtime-derived technology data. It is a
+then-active user story, and the retained runtime-derived technology data. It is a
 management record, not reader-facing guide content and not authorization to
 begin the corrective implementation pass.
 
@@ -157,16 +157,17 @@ The audit does not reject these approved outcomes:
 - Every branch uses its required descriptor.
 - Quantum and Gravity are the branches that converge on Gravity Matrix.
 
-## Next state
+## Next state at the time of the audit
 
-The story remains active after its first implementation pass. Refinement is
-indicated, but no corrective implementation pass is authorized by this audit
-record. Owner validation resumes only after that pass is completed and its
-result is presented for review.
+The story remained active after its first implementation pass. Refinement was
+indicated, but this audit record did not authorize a corrective implementation
+pass. Owner validation was to resume only after that pass was completed and its
+result was presented for review.
 
 ## Follow-up
 
 On 2026-08-09, the owner separately authorized the corrective implementation
-pass. The active story records the resulting changes and validation evidence.
-This first-pass audit remains the reference for the rejected implementation;
-the story remains active and awaits owner validation.
+pass. The user-story record preserves the resulting changes and validation
+evidence. This first-pass audit remains the reference for the rejected
+implementation; after the later refinements, the owner accepted and archived
+the completed story on 2026-08-09.

@@ -1,8 +1,7 @@
 # DSP Practical Progression Guide
 
 **Status:** Maintenance mode. Version 2.2 is the current published minor line,
-with one active user story whose ILS production-map refinement is implemented
-and awaiting owner validation.
+with no active user story.
 
 ## Purpose
 
@@ -109,28 +108,21 @@ contains only the deployable static website.
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
 [`docs/archive/version-2.2-maintenance-release.md`](archive/version-2.2-maintenance-release.md).
-One bounded user story remains active. Its first audit found material clarity,
-dependency-presentation, validation, and process defects; a corrective pass
-addressed those findings, and owner review then required a second GREEN
-refinement followed by fuller ILS research and production maps. The latest
-production-map refinement is implemented, and the focused, release-equivalent,
-desktop, and narrow-browser checks pass. Owner validation is the remaining
-gate, and the story is not completed or archived. Further
-changes are accepted when they address a verified defect, authoritative
-game-data change, security or compatibility need, or a clearly articulated
-reader problem.
+The ILS-to-GREEN research handoff is complete, owner-validated, and archived.
+Its final form exposes the complete practical ILS research queue, starts yellow
+science before the longer logistics work, provides the ordered temporary
+production reference, and preserves a condensed GREEN dashboard with a Gravity
+Matrix tooltip. The [`completed story`](archive/ils-purple-green-research-handoff-user-story.md)
+and [`first-pass audit`](archive/ils-purple-green-research-handoff-first-pass-audit.md)
+preserve that work's historical implementation and correction record.
 
-- **Owner validation pending — ILS-to-GREEN research handoff:** the latest ILS
-  pass exposes the complete practical research queue, starts yellow science
-  before the longer logistics work, and stages a complete temporary-production
-  reference ordered from Processors through transport hardware. Particle
-  Containers stand alone; compact PLS and ILS labels, Reinforced Thrusters, and
-  Vessels share one reference group without becoming automation requirements.
-  GREEN remains
-  condensed in the dashboard, with a Gravity Matrix tooltip. The
-  [`active story`](management/ils-purple-green-research-handoff-user-story.md)
-  and [`first-pass audit`](management/ils-purple-green-research-handoff-first-pass-audit.md)
-  define the current state. Owner acceptance has not been given.
+Further changes are accepted when they address a verified defect,
+authoritative game-data change, security or compatibility need, or a clearly
+articulated reader problem.
+
+- **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
+  on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map
+  refinements.
 
 - **Tabled — science pace:** further calibration of minimum cube targets is not
   scheduled.
