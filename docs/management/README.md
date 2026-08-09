@@ -1,36 +1,45 @@
 # Management Records
 
-This directory contains active planning, permission, and governance records
-that affect the project's next validation work or what it may publish.
+This directory contains active governance, approved work, and publication
+permissions. Start here before creating or changing a management record.
 
-## Current records
+## Process index
 
-- `game-asset-use-permission-sanitized.md` preserves the limited permission to
-  use unmodified in-game assets in the non-commercial guide and related mod.
+1. **Classify and scope the work.** Use
+   [`work-management.md`](work-management.md) to define the reader need,
+   evidence, decision surfaces, non-goals, and approval checkpoints.
+2. **Choose proportionate validation.** Use
+   [`validation-and-tooling.md`](validation-and-tooling.md) to select the
+   narrowest validation tier and keep runtime tools outside the product
+   contract unless they enforce a durable requirement.
+3. **Implement within the approved scope.** Passing checks establishes
+   technical consistency, not reader acceptance.
+4. **Obtain the required owner decision.** Only the owner can accept, complete,
+   or archive a story.
+5. **Close the record.** Update current project status at meaningful
+   milestones and move accepted or superseded records to `docs/archive/`.
 
-## Completed records
+## Active governance
 
-- [`../archive/version-2.2-maintenance-release.md`](../archive/version-2.2-maintenance-release.md)
-  reconciles the completed post-2.1 presentation, high-resolution, card, and
-  release-management work.
-- [`../archive/maintenance-roadmap.md`](../archive/maintenance-roadmap.md)
-  records the completed Electromagnetic Turbine map and ILS finite-bill work.
-- [`../archive/reading-pane-right-alignment-user-story.md`](../archive/reading-pane-right-alignment-user-story.md)
-  records the completed and owner-validated reading-pane alignment work.
-- [`../archive/ils-purple-green-research-handoff-user-story.md`](../archive/ils-purple-green-research-handoff-user-story.md)
-  records the completed and owner-validated ILS prerequisite, production-map,
-  PURPLE handoff, and GREEN branch-order work.
-- [`../archive/ils-purple-green-research-handoff-first-pass-audit.md`](../archive/ils-purple-green-research-handoff-first-pass-audit.md)
-  preserves the rejected first implementation audit and the refinement it
-  prompted.
-Other completed roadmaps, plans, correction records, and user stories are also
-stored under [`../archive/`](../archive/). Their preserved implementation
+- [`work-management.md`](work-management.md) defines work classes, approval
+  gates, and record lifecycle.
+- [`validation-and-tooling.md`](validation-and-tooling.md) defines validation
+  tiers and toolchain boundaries.
+- [`game-asset-use-permission-sanitized.md`](game-asset-use-permission-sanitized.md)
+  preserves the limited permission to use unmodified in-game assets in the
+  non-commercial guide and related mod.
+
+## Active work
+
+None. The project is in maintenance mode with no active user story.
+
+## Historical records
+
+Completed and superseded plans, stories, audits, and reviews are indexed in
+[`../archive/README.md`](../archive/README.md). Archived implementation
 language is historical and does not define current work.
 
-The project is in maintenance mode with no active user story. The ILS-to-GREEN
-research handoff was owner-validated on 2026-08-09 after its corrective GREEN,
-ILS research-map, and ILS production-map refinements, then archived with its
-first-pass audit.
-
-Raw correspondence, unsanitized personal information, player snapshots, and
-game assemblies must remain outside version control.
+Unsettled analysis may remain in an untracked working note until the owner
+approves it as active work. Raw correspondence, unsanitized personal
+information, player snapshots, and game assemblies must remain outside version
+control.
