@@ -13,6 +13,8 @@ The archive includes:
   the final four stories in that roadmap;
 - `no-mobile-polish-story.md` for the inactive scope guardrail excluded from
   roadmap execution and completion;
+- `version-2.3-navigation-and-progressive-disclosure-release.md` for the
+  completed twelve-story navigation and information-hierarchy release;
 - `version-2.2-maintenance-release.md` for the reconciled post-2.1 maintenance
   and presentation release;
 - `CARD_SYSTEM_PLAN.md` for the implemented production-card contract;

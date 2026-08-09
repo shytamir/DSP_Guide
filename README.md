@@ -65,7 +65,7 @@ packages and Playwright-managed browser binaries are installed by the script.
 
 ## Roadmap status
 
-Version 2.2 is published. The completed twelve-story roadmap and all of its
+Version 2.3 is published. The completed twelve-story roadmap and all of its
 supporting records were owner-accepted and archived on 2026-08-09. The project
 is in maintenance mode with no pending work indicated; the current boundary is
 recorded in [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md), and the

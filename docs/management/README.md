@@ -34,12 +34,16 @@ changing a management record.
 
 - [`ROADMAP.md`](ROADMAP.md) is the concise maintenance-mode record and
   indicates no pending work.
+- Version 2.3 is the current published minor line. Its completed release record
+  is preserved in
+  [`../archive/version-2.3-navigation-and-progressive-disclosure-release.md`](../archive/version-2.3-navigation-and-progressive-disclosure-release.md).
 - The completed twelve-story roadmap, its seven supporting story records, and
   the completed design-leftovers inventory are historical documents indexed in
   [`../archive/README.md`](../archive/README.md).
 - [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
   is an inactive standing reference. It is not pending implementation or part
-  of an active roadmap; future work requires explicit owner reactivation.
+  of an active roadmap, was explicitly deferred from version 2.3, and requires
+  explicit owner reactivation.
 
 ## Historical records
 

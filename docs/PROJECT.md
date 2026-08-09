@@ -1,8 +1,9 @@
 # DSP Practical Progression Guide
 
-**Status:** Maintenance mode. Version 2.2 is the current published minor line.
-All twelve roadmap stories were completed, owner-accepted, and archived on
-2026-08-09. No pending work is indicated at this time.
+**Status:** Maintenance mode. Version 2.3 is the current published minor line.
+All twelve roadmap stories and the resulting release were completed,
+owner-accepted, and archived on 2026-08-09. No pending work is indicated at
+this time.
 
 ## Purpose
 
@@ -115,6 +116,10 @@ contains only the deployable static website.
 
 ## Maintenance status
 
+The version 2.3 navigation and progressive-disclosure release is complete,
+owner-authorized, and archived in
+[`docs/archive/version-2.3-navigation-and-progressive-disclosure-release.md`](archive/version-2.3-navigation-and-progressive-disclosure-release.md).
+
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
 [`docs/archive/version-2.2-maintenance-release.md`](archive/version-2.2-maintenance-release.md).
@@ -152,8 +157,8 @@ indicates no pending work.
   condensation were owner-accepted as Stories 9–12.
 - **Standing references — not pending work:** the no-mobile-polish decision is
   preserved with the archived roadmap. The one-screen-checklist record remains
-  inactive and requires a new explicit owner instruction before it can create
-  implementation work.
+  inactive, was explicitly deferred from version 2.3, and requires a new
+  explicit owner instruction before it can create implementation work.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
   on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map
