@@ -255,6 +255,22 @@ const phaseIds = [...html.matchAll(/<section class="phase-section[^>]*" id="([^"
 if (JSON.stringify(phaseIds) !== JSON.stringify(expectedPhaseIds)) {
   errors.push(`Unexpected phase structure: ${phaseIds.join(" → ")}`);
 }
+const defaultRoute = html.match(
+  /<p>The default route is:<\/p>\s*<p><strong>([^<]+)<\/strong><\/p>/,
+);
+if (!defaultRoute) {
+  errors.push("The introductory default route is missing");
+} else {
+  const routePhases = defaultRoute[1].split(/\s*\u2192\s*/);
+  if (routePhases[0] !== "Blue" || routePhases[1] !== "Red") {
+    errors.push("The introductory default route must begin Blue → Red");
+  }
+  if (routePhases.includes("Bootstrap")) {
+    errors.push(
+      "The introductory default route still exposes Bootstrap as a separate phase",
+    );
+  }
+}
 for (const legacyId of ["flight", "titanium"]) {
   if (!html.includes(`class="phase-stage-heading" id="${legacyId}"`)) {
     errors.push(`Missing compatibility stage anchor: #${legacyId}`);
