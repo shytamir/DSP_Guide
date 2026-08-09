@@ -1,8 +1,8 @@
 # DSP Practical Progression Guide
 
 **Status:** Maintenance mode. Version 2.2 is the current published minor line,
-with one active user story in a staged ILS production-map refinement and
-awaiting owner validation.
+with one active user story whose ILS production-map refinement is implemented
+and awaiting owner validation.
 
 ## Purpose
 
@@ -113,7 +113,7 @@ One bounded user story remains active. Its first audit found material clarity,
 dependency-presentation, validation, and process defects; a corrective pass
 addressed those findings, and owner review then required a second GREEN
 refinement followed by fuller ILS research and production maps. The latest
-production-map refinement is staged, and the focused, release-equivalent,
+production-map refinement is implemented, and the focused, release-equivalent,
 desktop, and narrow-browser checks pass. Owner validation is the remaining
 gate, and the story is not completed or archived. Further
 changes are accepted when they address a verified defect, authoritative
@@ -124,8 +124,9 @@ reader problem.
   pass exposes the complete practical research queue, starts yellow science
   before the longer logistics work, and stages a complete temporary-production
   reference ordered from Processors through transport hardware. Particle
-  Containers stand alone; PLS, Reinforced Thrusters, ILS, and Vessels share one
-  reference group without becoming automation requirements. GREEN remains
+  Containers stand alone; compact PLS and ILS labels, Reinforced Thrusters, and
+  Vessels share one reference group without becoming automation requirements.
+  GREEN remains
   condensed in the dashboard, with a Gravity Matrix tooltip. The
   [`active story`](management/ils-purple-green-research-handoff-user-story.md)
   and [`first-pass audit`](management/ils-purple-green-research-handoff-first-pass-audit.md)

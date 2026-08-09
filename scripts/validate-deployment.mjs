@@ -429,9 +429,14 @@ check(
 check(ilsMap.includes('href="#reference-electromagnetic-turbines"'), "The ILS bootstrap map lost its reusable turbine-line link.");
 check(ilsMap.includes('href="#reference-graphene"'), "The ILS bootstrap map lost its reusable Graphene-line link.");
 check(!ilsMapText.includes("SHARED TURBINE OUTPUTS"), "The ILS bootstrap map still combines its Particle Container and Reinforced Thruster references.");
-for (const output of ["Planetary Logistics Stations", "Reinforced Thrusters", "Interstellar Logistics Stations", "Logistics Vessels"]) {
+for (const output of ["PLS", "Reinforced Thrusters", "ILS", "Logistics Vessels"]) {
   check(ilsMapText.includes(output), `The ILS transport-hardware group is missing ${output}.`);
 }
+check(
+  !ilsMapText.includes("Planetary Logistics Stations") &&
+    !ilsMapText.includes("Interstellar Logistics Stations"),
+  "The ILS transport-hardware group must use compact PLS and ILS labels.",
+);
 check(!ilsMap.includes('<span class="route-label">Turbines</span>'), "The ILS bootstrap map still contains the legacy prose-only Turbines row.");
 
 function countRouteArrowText() {

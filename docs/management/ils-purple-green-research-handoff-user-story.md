@@ -1,7 +1,7 @@
 # ILS-to-GREEN Research Handoff
 
-**Status:** Active; ILS production-map refinement staged and owner validation
-pending.
+**Status:** Active; ILS production-map refinement implemented and owner
+validation pending.
 
 ## User story
 
@@ -61,8 +61,8 @@ The guide will:
    - the Processor map appears before Titanium Alloy;
    - Particle Containers remain a standalone group with links to the reusable
      Turbine and Graphene references;
-   - the transport-hardware group contains PLS, Reinforced Thruster, ILS, and
-     Logistics Vessel production maps; and
+   - the transport-hardware group uses compact PLS and ILS labels and contains
+     Reinforced Thruster and Logistics Vessel production maps; and
    - the dense reference does not imply that any line must be automated.
 7. Clarify the Vessel fleet's protected 100 Titanium Alloy allocation:
    - 50 Titanium Alloy goes into ten Reinforced Thrusters;
@@ -274,10 +274,11 @@ Owner validation remains the final gate.
 - The Processor map precedes Titanium Alloy, and Particle Containers have a
   standalone group linked to the reusable Turbine and Graphene references.
 - A transport-hardware group now exposes the PLS, Reinforced Thruster, ILS, and
-  Logistics Vessel recipes together without requiring their automation.
+  Logistics Vessel recipes together without requiring their automation; the
+  station names use compact PLS and ILS labels in the dense map.
 - Focused card-system and release-equivalent deployment validation pass.
 - Reviewed desktop and narrow layouts remain readable without page overflow or
   console warnings.
 
-This staged evidence does not complete, accept, owner-validate, or archive the
-story. Owner validation remains the final gate.
+This implementation evidence does not complete, accept, owner-validate, or
+archive the story. Owner validation remains the final gate.
