@@ -1,7 +1,8 @@
 # Icon Placement Policy and Proposed Stories
 
 **Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). Story 3 is active and ready for owner acceptance.
+[`ROADMAP.md`](ROADMAP.md). All three stories were completed and owner-accepted
+on 2026-08-09.
 
 ## Problem
 
@@ -113,8 +114,7 @@ the reading rhythm.
 
 **Class:** Editorial refinement with presentation review.
 
-**State:** Active; implementation and Tier 2 validation complete, awaiting
-owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 As a reader opening a production card, I want its Operating Note to read as
 plain guidance so that the note is visually distinct from the icon-rich

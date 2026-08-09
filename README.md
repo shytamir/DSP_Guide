@@ -66,9 +66,9 @@ packages and Playwright-managed browser binaries are installed by the script.
 ## Roadmap status
 
 Version 2.2 is published, and both ordered guide-correction stories are
-owner-accepted and archived. Icon Stories 1 and 2 are owner-accepted, and Icon
-Story 3 has completed implementation and Tier 2 validation and is awaiting
-owner acceptance. The current boundary is recorded in
+owner-accepted and archived. All three icon stories are owner-accepted.
+Progression Entry Story 1 has completed implementation and Tier 2 validation
+and is awaiting owner acceptance. The current boundary is recorded in
 [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md). See
 [`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and
 [`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation

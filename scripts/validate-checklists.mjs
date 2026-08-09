@@ -196,6 +196,57 @@ const glossaryStart = html.indexOf('<details class="guide-glossary">');
 const contextParagraph = html.indexOf("remember why half the belts exist.");
 const progressIndex = html.indexOf("<h1>Quick Progress Index</h1>");
 assert.ok(contextParagraph < glossaryStart && glossaryStart < progressIndex, "glossary is not in the required location");
+const referenceChecklistStart = html.indexOf(
+  '<h1 id="ref-checklist">One-Screen Default Checklist</h1>',
+);
+const referenceChecklistEnd = html.indexOf(
+  '<h1 id="ref-troubleshoot">',
+  referenceChecklistStart,
+);
+assert.ok(
+  referenceChecklistStart >= 0 &&
+    referenceChecklistEnd > referenceChecklistStart,
+  "one-screen checklist is missing",
+);
+const referenceChecklist = html.slice(
+  referenceChecklistStart,
+  referenceChecklistEnd,
+);
+const checklistRoute = [
+  ...referenceChecklist.matchAll(/<h2><a[^>]+href="#([^"]+)"/g),
+].map((match) => match[1]);
+assert.deepEqual(
+  checklistRoute,
+  [
+    "blue",
+    "red",
+    "ils",
+    "yellow",
+    "purple",
+    "green",
+    "dyson",
+    "photon",
+    "white",
+    "warp",
+    "logistics",
+  ],
+  "one-screen checklist does not separate the numbered route from optional capabilities",
+);
+const optionalChecklist = referenceChecklist.match(
+  /<section aria-labelledby="checklist-optional-capabilities" class="checklist-optional-group">([\s\S]*?)<\/section>/,
+);
+assert.ok(optionalChecklist, "one-screen optional-capability group is missing");
+assert.match(
+  optionalChecklist[1],
+  /id="checklist-optional-capabilities">Optional capabilities<\/h2>/,
+);
+assert.match(optionalChecklist[1], /href="#warp"/);
+assert.match(optionalChecklist[1], /href="#logistics"/);
+assert.equal(
+  (optionalChecklist[1].match(/task-list-item-checkbox/g) || []).length,
+  8,
+  "optional-capability checklist coverage changed",
+);
 assert.equal((html.match(/<dt>/g) || []).length, 10, "glossary must contain exactly ten terms");
 assert.equal((html.match(/task-list-item-checkbox/g) || []).length, 82, "checklist coverage changed unexpectedly");
 assert.match(html, /assets\/js\/checklists\.js/, "checklist script is not referenced by the guide");

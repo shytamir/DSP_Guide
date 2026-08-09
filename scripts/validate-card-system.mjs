@@ -279,6 +279,93 @@ const phaseIds = [...html.matchAll(/<section class="phase-section[^>]*" id="([^"
 if (JSON.stringify(phaseIds) !== JSON.stringify(expectedPhaseIds)) {
   errors.push(`Unexpected phase structure: ${phaseIds.join(" → ")}`);
 }
+const rail = html.match(
+  /<nav aria-label="Route and optional capability navigation" class="phase-rail">([\s\S]*?)<\/nav>/,
+);
+if (!rail) {
+  errors.push("The route and optional-capability navigation rail is missing");
+} else {
+  const railMarkup = rail[1];
+  const railPhaseIds = [...railMarkup.matchAll(/data-phase="([^"]+)"/g)].map(
+    (match) => match[1],
+  );
+  if (JSON.stringify(railPhaseIds) !== JSON.stringify(expectedPhaseIds)) {
+    errors.push(`Unexpected navigation order: ${railPhaseIds.join(" → ")}`);
+  }
+  const dividerIndex = railMarkup.indexOf(">OPTIONAL</div>");
+  const whiteIndex = railMarkup.indexOf('data-phase="white"');
+  const warpIndex = railMarkup.indexOf('data-phase="warp"');
+  if (!(
+    whiteIndex >= 0 &&
+    whiteIndex < dividerIndex &&
+    dividerIndex < warpIndex
+  )) {
+    errors.push("Optional navigation is not grouped after the numbered route");
+  }
+  if (/title="(?:11|12)\. \[(?:WARP|LOGISTICS)\]/.test(railMarkup)) {
+    errors.push("Optional navigation still assigns mandatory stage numbers");
+  }
+  for (const capability of ["WARP", "LOGISTICS"]) {
+    if (
+      !railMarkup.includes(`aria-label="Optional capability: [${capability}]`)
+    ) {
+      errors.push(`Optional navigation label is missing for ${capability}`);
+    }
+  }
+}
+for (const [id, tag] of [
+  ["warp", "WARP"],
+  ["logistics", "LOGISTICS"],
+]) {
+  const heading = html.match(
+    new RegExp(
+      `<section class="phase-section phase-section-${id}" id="${id}"><h1[^>]*>([\\s\\S]*?)<\\/h1>`,
+    ),
+  );
+  if (
+    !heading ||
+    !heading[1].includes('class="capability-kicker">OPTIONAL CAPABILITY</span>')
+  ) {
+    errors.push(
+      `${tag} heading is not visibly labeled as an optional capability`,
+    );
+  } else if (/^\s*(?:11|12)\./.test(heading[1].replace(/<[^>]+>/g, ""))) {
+    errors.push(`${tag} heading still has a mandatory stage number`);
+  }
+}
+const progressIndexMarkup = html.match(
+  /<table class="progress-index">([\s\S]*?)<\/table>/,
+);
+if (!progressIndexMarkup) {
+  errors.push("Quick Progress Index is missing");
+} else {
+  const numberedRows = [
+    ...progressIndexMarkup[1].matchAll(/<tr><td>(\d+)<\/td>/g),
+  ].map((match) => Number(match[1]));
+  if (
+    JSON.stringify(numberedRows) !==
+    JSON.stringify([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+  ) {
+    errors.push(
+      `Quick Progress Index numbered route is invalid: ${numberedRows.join(", ")}`,
+    );
+  }
+  if (
+    !progressIndexMarkup[1].includes(
+      "Optional capabilities — direct reference, not mandatory stages",
+    )
+  ) {
+    errors.push("Quick Progress Index optional-capability group is missing");
+  }
+  if (
+    (progressIndexMarkup[1].match(/class="progress-optional-row"/g) || [])
+      .length !== 2
+  ) {
+    errors.push(
+      "Quick Progress Index must contain exactly two optional capability rows",
+    );
+  }
+}
 const defaultRoute = html.match(
   /<p>The default route is:<\/p>\s*<p><strong>([^<]+)<\/strong><\/p>/,
 );
@@ -288,6 +375,16 @@ if (!defaultRoute) {
   const routePhases = defaultRoute[1].split(/\s*\u2192\s*/);
   if (routePhases[0] !== "Blue" || routePhases[1] !== "Red") {
     errors.push("The introductory default route must begin Blue → Red");
+  }
+  if (routePhases[2] !== "ILS" || routePhases[3] !== "Yellow") {
+    errors.push(
+      "The introductory default route must keep ILS between Red and Yellow",
+    );
+  }
+  if (routePhases.includes("Warp") || routePhases.includes("Logistics")) {
+    errors.push(
+      "The introductory default route includes an optional capability",
+    );
   }
   if (routePhases.includes("Bootstrap")) {
     errors.push(

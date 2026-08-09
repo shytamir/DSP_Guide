@@ -1,7 +1,8 @@
 # DSP Practical Progression Guide
 
-**Status:** Active icon-placement roadmap implementation. Version 2.2 is the
-current published minor line, and Icon Story 3 is ready for owner acceptance.
+**Status:** Active optional-capability entry implementation. Version 2.2 is the
+current published minor line, and Progression Entry Story 1 is ready for owner
+acceptance.
 
 ## Purpose
 
@@ -20,7 +21,8 @@ when local circumstances justify ignoring the default advice.
 The published static site is `index.html` with supporting files under
 `assets/`. It currently contains:
 
-- 12 navigable progression and optional-route sections;
+- ten numbered route sections plus two directly navigable optional
+  capabilities;
 - 19 phase-relevant production cards;
 - two reusable production-line references;
 - runtime-derived technology tooltips;
@@ -90,9 +92,11 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   internal anchors, technology references, and asset boundaries.
 - `scripts/validate-card-system.mjs` enforces the current card inventory,
   direct-link rules, complexity limits, icon-free Operating Notes, retained
-  map icon treatments, and authoritative output recipes.
+  map icon treatments, authoritative output recipes, and the separation of
+  optional capabilities from main-route numbering.
 - `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
-  reset behavior, storage failure, and glossary placement.
+  reset behavior, storage failure, glossary placement, and the one-screen
+  route/optional-capability grouping.
 - `scripts/apply-proto-icons.mjs --check` validates the committed static icon
   markup against the externally supplied authoritative asset map during an
   authorized local icon pass. It performs reusable icon and production-arrow
@@ -125,7 +129,7 @@ The ordered guide-correction sequence is complete. Both stories are preserved
 in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now orders eight icon,
-progression-entry, and expedition-navigation stories; Story 3 is ready for
+progression-entry, and expedition-navigation stories; Story 4 is ready for
 owner acceptance.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
@@ -134,11 +138,13 @@ owner acceptance.
 - **Completed — DYSON reference authority:** owner-accepted on 2026-08-09. Live
   player-observable evidence now leads the DYSON decision layer, while exact
   planning figures remain confined to the approved reference locations.
-- **Active — icon placement:** Stories 1 and 2 are owner-accepted. Story 3
-  preserves plain Operating Note guidance alongside the icon-rich card map and
-  is ready for owner acceptance.
-- **Ordered — navigation:** three optional-capability entry stories are
-  followed by the shared WARP and ILS three-stage navigation stories.
+- **Completed — icon placement:** all three stories are owner-accepted. Plain
+  narrative and Operating Note guidance now remains distinct from approved
+  icon-rich identity, reference, and production-map surfaces.
+- **Active — navigation:** Progression Entry Story 1 separates WARP and
+  LOGISTICS from main-route numbering and is ready for owner acceptance. Its
+  two contextual-entry refinements remain ordered before the shared WARP and
+  ILS three-stage navigation stories.
 - **Planning eligible — remaining design concern:** case-specific progressive
   disclosure may now be investigated without authorizing implementation. The
   checklist baseline correction remains unscheduled.

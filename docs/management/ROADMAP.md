@@ -1,6 +1,6 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Story 3 is implemented
+**Status:** Ordered implementation active on 2026-08-09. Story 4 is implemented
 and ready for owner acceptance.
 
 This roadmap implements eight approved stories in order across three records:
@@ -33,20 +33,20 @@ checklist, and heading surfaces.
 
 ### 3. Remove icons from card Operating Note prose
 
-**State:** Implementation and Tier 2 validation complete; awaiting owner
-acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 All 19 Operating Notes are icon-free, while the approved card map treatments
-remain intact. The durable card contract and Tier 2 expanded-card evidence are
-ready for owner acceptance.
+remain intact. The durable card contract prevents icons from returning to
+Operating Note prose.
 
 ### 4. Separate optional capabilities from main-route numbering
 
-**State:** Pending Story 3 owner acceptance.
+**State:** Implementation and Tier 2 validation complete; awaiting owner
+acceptance.
 
-Implement Progression Entry Story 1. Preserve the mandatory route through
-WHITE while presenting WARP and LOGISTICS as directly navigable optional
-capabilities outside its numeric sequence.
+Progression Entry Story 1 preserves the mandatory route through WHITE while
+presenting WARP and LOGISTICS as directly navigable optional capabilities
+outside its numeric sequence.
 
 ### 5. Map WARP's two contextual entry stages
 
@@ -87,9 +87,9 @@ a structural problem shared with desktop.
 
 ## Parallel planning boundary
 
-Icon Story 2 is owner-accepted, so the remaining progressive-disclosure concern
-may now be investigated as planning input. That planning does not authorize
-implementation or alter this execution order.
+All three icon stories are owner-accepted. The remaining
+progressive-disclosure concern may be investigated as planning input, but that
+planning does not authorize implementation or alter this execution order.
 
 ## Operating rules
 
