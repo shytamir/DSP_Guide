@@ -218,53 +218,70 @@ const greenDashboardStart = greenSection.indexOf('<tr><td><strong>Research next<
 const greenDashboardEnd = greenSection.indexOf("</tr>", greenDashboardStart) + "</tr>".length;
 const greenBodyStart = greenSection.indexOf("<h2>Research first</h2>");
 const greenBodyEnd = greenSection.indexOf('<div class="icon-free">', greenBodyStart);
-const greenResearchBlocks = [
-  ["dashboard", greenDashboardStart >= 0 && greenDashboardEnd > greenDashboardStart ? greenSection.slice(greenDashboardStart, greenDashboardEnd) : ""],
-  ["expanded section", greenBodyStart >= 0 && greenBodyEnd > greenBodyStart ? greenSection.slice(greenBodyStart, greenBodyEnd) : ""],
-];
-for (const [label, block] of greenResearchBlocks) {
-  const text = visiblePhaseText(block);
-  const quantumIndex = text.indexOf("Quantum branch:");
-  const frameIndex = text.indexOf("Frame branch:");
-  const gravityIndex = text.indexOf("Gravity branch:");
-  const convergenceIndex = text.indexOf("Both branches (Quantum + Gravity) → Gravity Matrix");
-  const quantumBlockStart = block.indexOf("<strong>Quantum branch:</strong>");
-  const frameBlockStart = block.indexOf("<strong>Frame branch:</strong>");
-  const gravityBlockStart = block.indexOf("<strong>Gravity branch:</strong>");
-  const convergenceBlockStart = block.indexOf("<strong>Both branches (Quantum + Gravity)</strong>");
-  check(
-    quantumIndex >= 0 && quantumIndex < frameIndex && frameIndex < gravityIndex && gravityIndex < convergenceIndex,
-    `GREEN ${label} lost the Quantum, Frame, Gravity, convergence order.`,
-  );
-  check(
-    sameIds(techIds(block.slice(quantumBlockStart, frameBlockStart)), [1125, 1126, 1141, 1303]),
-    `GREEN ${label} lost the Quantum branch technology chain.`,
-  );
-  const frameBranch = visiblePhaseText(block.slice(frameBlockStart, gravityBlockStart));
-  check(
-    sameIds(techIds(block.slice(frameBlockStart, gravityBlockStart)), [1501, 1502, 1502, 1711, 1503, 1521])
-      && frameBranch.includes("Solar Collection → Photon Frequency Conversion then Photon Frequency Conversion + Super Magnetic Field Generator → Solar Sail Orbit System"),
-    `GREEN ${label} lost the Frame branch parallel-prerequisite structure.`,
-  );
-  check(
-    sameIds(techIds(block.slice(gravityBlockStart, convergenceBlockStart)), [1142, 1143, 1704]),
-    `GREEN ${label} lost the Gravity branch technology chain.`,
-  );
-  check(
-    frameBranch.indexOf("Frame Material") >= 0
-      && frameBranch.indexOf("Frame Material") < frameBranch.indexOf("→ build the Miniature Particle Collider")
-      && frameBranch.includes("used by the Gravity branch"),
-    `GREEN ${label} no longer distinguishes Frame Material construction support for the Gravity branch.`,
-  );
-  check(
-    text.slice(convergenceIndex).startsWith("Both branches (Quantum + Gravity) → Gravity Matrix")
-      && techIds(block.slice(convergenceBlockStart))[0] === 1705,
-    `GREEN ${label} no longer identifies Quantum and Gravity as the converging branches.`,
-  );
-}
+const greenDashboard = greenDashboardStart >= 0 && greenDashboardEnd > greenDashboardStart
+  ? greenSection.slice(greenDashboardStart, greenDashboardEnd)
+  : "";
+const greenBody = greenBodyStart >= 0 && greenBodyEnd > greenBodyStart
+  ? greenSection.slice(greenBodyStart, greenBodyEnd)
+  : "";
+const greenDashboardText = visiblePhaseText(greenDashboard);
 check(
-  visiblePhaseText(greenResearchBlocks[1][1]).includes("Research it after Quantum Chip and Gravitational Wave Refraction are complete"),
-  "GREEN expanded research lost the explicit Gravity Matrix completion condition.",
+  sameIds(techIds(greenDashboard), [1125, 1126, 1141, 1303])
+    && greenDashboardText.includes("Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function Interference → Quantum Chip → Frame branch → Gravity branch → Gravity Matrix"),
+  "GREEN dashboard must keep only the detailed Quantum chain before the condensed Frame, Gravity, and Gravity Matrix route.",
+);
+check(
+  !greenDashboard.includes('data-item-id="1125"')
+    && !greenDashboard.includes('data-item-id="2310"')
+    && !greenDashboard.includes('data-tech-id="1705"'),
+  "GREEN dashboard must not expand the condensed Frame, Gravity, or convergence entries.",
+);
+
+const greenBodyText = visiblePhaseText(greenBody);
+const quantumBlockStart = greenBody.indexOf("<strong>Quantum branch:</strong>");
+const frameBlockStart = greenBody.indexOf("<strong>Frame branch:</strong>");
+const gravityBlockStart = greenBody.indexOf("<strong>Gravity branch:</strong>");
+const convergenceBlockStart = greenBody.indexOf("<strong>Both branches (Quantum + Gravity)</strong>");
+const quantumIndex = greenBodyText.indexOf("Quantum branch:");
+const frameIndex = greenBodyText.indexOf("Frame branch:");
+const gravityIndex = greenBodyText.indexOf("Gravity branch:");
+const convergenceIndex = greenBodyText.indexOf("Both branches (Quantum + Gravity) → Gravity Matrix");
+check(
+  quantumIndex >= 0 && quantumIndex < frameIndex && frameIndex < gravityIndex && gravityIndex < convergenceIndex,
+  "GREEN expanded research lost the Quantum, Frame, Gravity, convergence order.",
+);
+check(
+  sameIds(techIds(greenBody.slice(quantumBlockStart, frameBlockStart)), [1125, 1126, 1141, 1303]),
+  "GREEN expanded research lost the Quantum branch technology chain.",
+);
+const frameBranch = greenBody.slice(frameBlockStart, gravityBlockStart);
+check(
+  sameIds(techIds(frameBranch), [1501, 1502, 1711, 1503, 1521])
+    && visiblePhaseText(frameBranch).includes("Solar Collection → Photon Frequency Conversion → Super Magnetic Field Generator → Solar Sail Orbit System → High-Strength Lightweight Structure → Frame Material")
+    && !visiblePhaseText(frameBranch).includes("build the Miniature Particle Collider"),
+  "GREEN expanded research must keep the Frame branch as one uninterrupted technology chain without a Collider construction step.",
+);
+check(
+  sameIds(techIds(greenBody.slice(gravityBlockStart, convergenceBlockStart)), [1142, 1143, 1704]),
+  "GREEN expanded research lost the Gravity branch technology chain.",
+);
+check(
+  techIds(greenBody.slice(convergenceBlockStart))[0] === 1705
+    && greenBodyText.slice(convergenceIndex).startsWith("Both branches (Quantum + Gravity) → Gravity Matrix"),
+  "GREEN expanded research no longer identifies Quantum and Gravity as the converging branches.",
+);
+check(
+  greenBody.includes('data-item-id="1125"')
+    && greenBody.includes('data-item-id="2310"')
+    && greenBodyText.includes("recipe component")
+    && greenBodyText.includes("unlocked by the Gravity branch's first technology"),
+  "GREEN expanded prose must explain how Frame Material supports Miniature Particle Collider construction.",
+);
+check(
+  greenBodyText.includes("Do the Quantum branch first")
+    && greenBodyText.includes("Quantum Chip buffer")
+    && greenBodyText.includes("Graviton Lenses"),
+  "GREEN expanded prose must explain the practical benefit of researching Quantum first.",
 );
 
 const localAssetOccurrences = [

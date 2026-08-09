@@ -1,6 +1,6 @@
 # ILS-to-GREEN Research Handoff
 
-**Status:** Active; corrective refinement pass complete and owner validation
+**Status:** Active; second GREEN refinement pass complete and owner validation
 pending.
 
 ## User story
@@ -18,7 +18,9 @@ The guide will:
 - clearly allocate the Vessel fleet's protected Titanium Alloy;
 - avoid repeating Applied Superconductor as new PURPLE research;
 - introduce Frame Material before GREEN asks the player to craft Miniature
-  Particle Colliders; and
+  Particle Colliders;
+- keep the GREEN dashboard concise while the expanded guide explains the
+  complete research route; and
 - present GREEN's Quantum, Frame, and Gravity technology branches in their
   practical order and relationship.
 
@@ -49,46 +51,39 @@ The guide will:
 
 ### GREEN
 
-Update both the phase-dashboard `Research next` section and the expanded
-`Research first` section.
+Update the phase-dashboard `Research next` row and the expanded `Research
+first` section for their different purposes.
 
-Both sections must use this order:
+The condensed dashboard must show only the detailed Quantum chain followed by
+plain representative text for the remaining route:
 
-1. Quantum branch;
-2. Frame branch;
-3. Gravity branch;
-4. Both branches convergence.
+`Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function
+Interference → Quantum Chip → Frame branch → Gravity branch → Gravity Matrix`.
 
-Every branch line must begin with its exact descriptor:
+The expanded section must show four uninterrupted lines in this order:
 
-- `Quantum branch`;
-- `Frame branch`;
-- `Gravity branch`.
+1. `Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function
+   Interference → Quantum Chip`;
+2. `Frame branch: Solar Collection → Photon Frequency Conversion → Super
+   Magnetic Field Generator → Solar Sail Orbit System → High-Strength
+   Lightweight Structure → Frame Material`;
+3. `Gravity branch: Miniature Particle Collider → Strange Matter →
+   Gravitational Wave Refraction`;
+4. `Both branches (Quantum + Gravity) → Gravity Matrix`.
 
-The convergence line must retain the `Both branches` descriptor and identify
-Quantum and Gravity as the two branches that feed Gravity Matrix.
+No construction instruction, prose, or additional title may interrupt a
+technology chain. In particular, neither presentation may append an
+instruction to build the Miniature Particle Collider to the Frame chain.
 
-The displayed technology content must communicate:
+Reader-facing prose after the expanded map must explain that:
 
-- `Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function
-  Interference → Quantum Chip`;
-- `Frame branch: Solar Collection → Photon Frequency Conversion; Photon
-  Frequency Conversion + Super Magnetic Field Generator → Solar Sail Orbit
-  System → High-Strength Lightweight Structure → Frame Material → build the
-  Miniature Particle Collider used by the Gravity branch`;
-- `Gravity branch: Miniature Particle Collider → Strange Matter →
-  Gravitational Wave Refraction`;
-- `Both branches (Quantum + Gravity) → Gravity Matrix`.
-
-The dependency presentation must make clear that:
-
-- the Frame branch unlocks Frame Material needed to craft Miniature Particle
-  Colliders;
-- only the Frame branch feeds forward into another branch;
-- the Quantum and Gravity branches are the two branches that converge on
-  Gravity Matrix; and
-- the Quantum branch appears first because the Gravity branch carries the
-  additional supporting Frame branch requirement.
+- the Frame branch unlocks Frame Material, a recipe component for the
+  Miniature Particle Collider building unlocked by the Gravity branch's first
+  technology;
+- researching Quantum first builds a useful Quantum Chip buffer while the
+  longer Frame and Gravity route is completed and before Graviton Lenses begin
+  reaching storage; and
+- Quantum and Gravity are the two branches that converge on Gravity Matrix.
 
 ## Acceptance criteria
 
@@ -98,12 +93,17 @@ The dependency presentation must make clear that:
 - The Vessel fleet allocation explicitly accounts for all 100 protected
   Titanium Alloy without changing any established totals.
 - PURPLE no longer presents Applied Superconductor as unfinished research.
-- Both GREEN research sections contain the same three exact branch descriptors
-  and the preserved `Both branches` convergence descriptor.
-- The GREEN order is Quantum, Frame, Gravity, convergence in both sections.
-- The corrected Frame presentation shows Photon Frequency Conversion and Super
-  Magnetic Field Generator as parallel prerequisites for Solar Sail Orbit
-  System.
+- The GREEN dashboard contains the detailed Quantum chain followed only by the
+  plain `Frame branch → Gravity branch → Gravity Matrix` summary.
+- The expanded GREEN map contains the exact Quantum, Frame, and Gravity branch
+  descriptors followed by the preserved `Both branches` convergence
+  descriptor, in that order.
+- The expanded Frame branch is one uninterrupted chain from Solar Collection
+  through Frame Material, with no prose or title inserted within it.
+- Neither GREEN research presentation describes building the Miniature
+  Particle Collider as a step in a technology chain.
+- The expanded prose explains the Frame Material recipe relationship, the
+  Collider unlock relationship, and the practical Quantum-first buffer.
 - The text distinguishes the Frame branch's supporting relationship from the
   Quantum/Gravity convergence.
 - Technology names and relationships agree with the retained runtime-derived
@@ -111,10 +111,11 @@ The dependency presentation must make clear that:
 - No authoring and non-reader-facing reasoning mentioned in this user story or
   thought up during implementation may appear in the guide's text.
 - Focused validation protects the ILS prerequisite, Alloy split, PURPLE
-  handoff, GREEN labels, order, chains, and Graphene link.
+  handoff, distinct GREEN dashboard and expanded-section contracts, and
+  Graphene link.
 - Card-system, checklist, and release-equivalent deployment validation pass.
-- Desktop rendering confirms that the expanded dashboard rows remain
-  readable.
+- Desktop and narrow rendering confirm that the dashboard and expanded GREEN
+  guidance remain readable.
 
 ## Out of scope
 
@@ -183,4 +184,24 @@ validators that protected them.
   horizontal overflow or console warnings.
 
 This evidence does not complete, accept, owner-validate, or archive the story.
-Owner validation is the remaining gate.
+The owner review that followed found the ILS restructure passable but required
+a second GREEN refinement.
+
+## Second GREEN refinement pass
+
+- The dashboard now keeps only the detailed Quantum technology chain, followed
+  by the plain `Frame branch → Gravity branch → Gravity Matrix` route summary.
+- The expanded Frame branch is one uninterrupted chain from Solar Collection
+  through Frame Material. The misplaced Collider construction instruction has
+  been removed from both presentations.
+- Reader-facing prose now explains the Frame Material recipe relationship, the
+  Gravity technology that unlocks the Miniature Particle Collider building,
+  and the practical Quantum Chip buffer gained by researching Quantum first.
+- Focused deployment validation independently protects the condensed dashboard
+  and expanded guide contracts. Card-system, checklist, and release-equivalent
+  deployment checks pass.
+- Reviewed desktop and narrow browser layouts remain readable without
+  horizontal overflow or console warnings.
+
+This evidence does not complete, accept, owner-validate, or archive the story.
+Owner validation remains the final gate.

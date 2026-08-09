@@ -110,18 +110,21 @@ The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
 [`docs/archive/version-2.2-maintenance-release.md`](archive/version-2.2-maintenance-release.md).
 One bounded user story remains active. Its first audit found material clarity,
-dependency-presentation, validation, and process defects; the corrective
-refinement pass has now addressed those findings. Focused, release-equivalent,
-desktop, and narrow-browser checks pass. Owner validation is the remaining
-gate, and the story is not completed or archived. Further changes are accepted
-when they address a verified defect, authoritative game-data change, security
-or compatibility need, or a clearly articulated reader problem.
+dependency-presentation, validation, and process defects; a corrective pass
+addressed those findings, and owner review then required a second GREEN
+refinement. That refinement is implemented and its focused,
+release-equivalent, desktop, and narrow-browser checks pass. Owner validation
+is the remaining gate, and the story is not completed or archived. Further
+changes are accepted when they address a verified defect, authoritative
+game-data change, security or compatibility need, or a clearly articulated
+reader problem.
 
-- **Owner validation pending — ILS-to-GREEN research handoff:** the corrective
-  pass separates the ILS Graphene prerequisite, exposes the Vessel fleet's
-  50/50 Titanium Alloy allocation, preserves the completed PURPLE handoff, and
-  presents GREEN's parallel Frame prerequisites and explicit Quantum/Gravity
-  convergence. The
+- **Owner validation pending — ILS-to-GREEN research handoff:** the passable
+  ILS restructure separates the Graphene prerequisite and exposes the Vessel
+  fleet's 50/50 Titanium Alloy allocation. The second GREEN refinement keeps
+  the dashboard condensed, unifies the detailed Frame chain, removes the
+  misplaced Collider construction step, and adds reader-facing dependency and
+  Quantum-first guidance. The
   [`active story`](management/ils-purple-green-research-handoff-user-story.md)
   and [`first-pass audit`](management/ils-purple-green-research-handoff-first-pass-audit.md)
   define the current state. Owner acceptance has not been given.
