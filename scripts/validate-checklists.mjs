@@ -168,12 +168,16 @@ function supportingReserve(label) {
 const expectedSupportingReserves = new Map([
   ["First yellow batch", "600 Titanium Ingots for the 200 Titanium Crystals"],
   ["ILS pair", "80 Steel + 160 Titanium Ingots (80 for the two embedded PLS components + 80 for the 80 Titanium Alloy) + 160 Electromagnetic Turbines for the Particle Containers"],
-  ["Vessel fleet", "100 Titanium Ingots for the 100 Titanium Alloy (50 for the 10 Reinforced Thrusters and 50 directly for the 5 Logistics Vessels) + 50 Electromagnetic Turbines for the Reinforced Thrusters"],
   ["Protected total", "80 Steel + 860 Titanium Ingots (600 for Titanium Crystals + 180 for all Titanium Alloy + 80 for the two embedded PLS components) + 210 Electromagnetic Turbines"],
 ]);
 for (const [label, expected] of expectedSupportingReserves) {
   assert.equal(supportingReserve(label), expected, `ILS supporting reserve changed: ${label}`);
 }
+const vesselReserve = supportingReserve("Vessel fleet");
+assert.match(vesselReserve, /100 Titanium Ingots for the 100 Titanium Alloy/, "Vessel fleet lost its 100-Alloy reserve");
+assert.match(vesselReserve, /50 Alloy for 10 Reinforced Thrusters/, "Vessel fleet lost the thruster Alloy allocation");
+assert.match(vesselReserve, /50 Alloy directly for 5 Logistics Vessels/, "Vessel fleet lost the direct Vessel Alloy allocation");
+assert.match(vesselReserve, /50 Electromagnetic Turbines for the Reinforced Thrusters/, "Vessel fleet lost the thruster Turbine reserve");
 assert.doesNotMatch(html, /Protect the Turbine reserve/, "ILS still warns about a nonexistent Turbine reserve");
 assert.match(
   html,

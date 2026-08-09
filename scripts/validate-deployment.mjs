@@ -161,24 +161,57 @@ check(!/Dark Fog/i.test(outsideRed), "Dark Fog guidance appears outside RED.");
 check(!/(Dark Fog (?:levels?|farming|drops?|industry)|space combat|Relay Stations?|\bhives?\b|concealed technolog)/i.test(html), "Prohibited Dark Fog subject remains in the guide.");
 
 const visiblePhaseText = value => value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-const ilsAppliedIndex = ilsSection.indexOf('data-tech-id="1131"');
+const techIds = value => [...value.matchAll(/data-tech-id="(\d+)"/g)].map(match => Number(match[1]));
+const sameIds = (actual, expected) => actual.length === expected.length && actual.every((id, index) => id === expected[index]);
+const ilsGrapheneStart = ilsSection.indexOf("Complete the Graphene prerequisite separately:");
+const ilsGrapheneEnd = ilsSection.indexOf("</p>", ilsGrapheneStart);
+const ilsGrapheneInstruction = ilsGrapheneStart >= 0 && ilsGrapheneEnd > ilsGrapheneStart
+  ? ilsSection.slice(ilsGrapheneStart, ilsGrapheneEnd)
+  : "";
 const ilsComponentBuildIndex = ilsSection.indexOf("Build the temporary component lines.");
 check(
-  ilsAppliedIndex >= 0 && ilsAppliedIndex < ilsComponentBuildIndex,
+  ilsGrapheneStart >= 0 && ilsGrapheneStart < ilsComponentBuildIndex,
   "ILS must introduce Applied Superconductor before the temporary Particle Container build.",
 );
 check(
-  visiblePhaseText(ilsSection).includes("Applied Superconductor so the standard Graphene line is ready before Particle Containers assembly"),
-  "ILS lost the reader-facing connection between Applied Superconductor, Graphene, and Particle Containers.",
+  techIds(ilsGrapheneInstruction).slice(0, 2).join(",") === "1121,1131",
+  "ILS must present Basic Chemical Engineering and Applied Superconductor as the separate Graphene prerequisite.",
 );
 check(
-  (purpleSection.match(/data-tech-id="1131"/g) || []).length === 1
-    && visiblePhaseText(purpleSection).includes("Applied Superconductor and its Basic Chemical Engineering prerequisite were cleared during the ILS bridge"),
-  "PURPLE must mention Applied Superconductor only as completed ILS research.",
+  /<a class="card-crossref-link" href="#reference-graphene">[\s\S]*?data-item-id="1123"[\s\S]*?<\/a>/.test(ilsGrapheneInstruction)
+    && ilsGrapheneInstruction.includes('data-item-id="1206"')
+    && visiblePhaseText(ilsGrapheneInstruction).includes("build the standard Graphene line before assembling Particle Containers"),
+  "ILS lost the linked standard Graphene instruction before Particle Container assembly.",
+);
+
+const purpleDashboardStart = purpleSection.indexOf('<tr><td><strong>Research first</strong>');
+const purpleDashboardEnd = purpleSection.indexOf("</tr>", purpleDashboardStart) + "</tr>".length;
+const purpleDashboard = purpleDashboardStart >= 0 && purpleDashboardEnd > purpleDashboardStart
+  ? purpleSection.slice(purpleDashboardStart, purpleDashboardEnd)
+  : "";
+const purpleBodyStart = purpleSection.indexOf("<h2>Research first</h2>");
+const purpleFirstParagraphStart = purpleSection.indexOf("<p>", purpleBodyStart);
+const purpleFirstParagraphEnd = purpleSection.indexOf("</p>", purpleFirstParagraphStart) + "</p>".length;
+const purpleFirstParagraph = purpleFirstParagraphStart >= 0 && purpleFirstParagraphEnd > purpleFirstParagraphStart
+  ? purpleSection.slice(purpleFirstParagraphStart, purpleFirstParagraphEnd)
+  : "";
+const purpleHandoffStart = purpleFirstParagraphEnd;
+const purpleHandoffEnd = purpleSection.indexOf("</p>", purpleHandoffStart) + "</p>".length;
+const purpleHandoff = purpleHandoffStart >= 0 && purpleHandoffEnd > purpleHandoffStart
+  ? purpleSection.slice(purpleHandoffStart, purpleHandoffEnd)
+  : "";
+check(
+  techIds(purpleDashboard).slice(0, 3).join(",") === "1132,1133,1312"
+    && purpleDashboard.indexOf('data-tech-id="1131"') > purpleDashboard.indexOf('data-tech-id="1312"')
+    && visiblePhaseText(purpleDashboard).includes("Already complete from ILS: Applied Superconductor"),
+  "PURPLE dashboard must begin with new research and identify Applied Superconductor as completed ILS work.",
 );
 check(
-  visiblePhaseText(purpleSection).split("High-Strength Material → Particle Control → Information Matrix").length - 1 === 2,
-  "PURPLE must begin both research summaries with High-Strength Material.",
+  sameIds(techIds(purpleFirstParagraph), [1132, 1133, 1312])
+    && techIds(purpleHandoff)[0] === 1131
+    && visiblePhaseText(purpleHandoff).includes("during the ILS bridge")
+    && visiblePhaseText(purpleHandoff).includes("begin PURPLE with High-Strength Material"),
+  "PURPLE expanded research must begin with High-Strength Material and explain the completed ILS handoff.",
 );
 
 const greenDashboardStart = greenSection.indexOf('<tr><td><strong>Research next</strong>');
@@ -194,29 +227,45 @@ for (const [label, block] of greenResearchBlocks) {
   const quantumIndex = text.indexOf("Quantum branch:");
   const frameIndex = text.indexOf("Frame branch:");
   const gravityIndex = text.indexOf("Gravity branch:");
-  const convergenceIndex = text.indexOf("Both branches → Gravity Matrix");
+  const convergenceIndex = text.indexOf("Both branches (Quantum + Gravity) → Gravity Matrix");
+  const quantumBlockStart = block.indexOf("<strong>Quantum branch:</strong>");
+  const frameBlockStart = block.indexOf("<strong>Frame branch:</strong>");
+  const gravityBlockStart = block.indexOf("<strong>Gravity branch:</strong>");
+  const convergenceBlockStart = block.indexOf("<strong>Both branches (Quantum + Gravity)</strong>");
   check(
     quantumIndex >= 0 && quantumIndex < frameIndex && frameIndex < gravityIndex && gravityIndex < convergenceIndex,
     `GREEN ${label} lost the Quantum, Frame, Gravity, convergence order.`,
   );
   check(
-    text.includes("Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function Interference → Quantum Chip"),
+    sameIds(techIds(block.slice(quantumBlockStart, frameBlockStart)), [1125, 1126, 1141, 1303]),
     `GREEN ${label} lost the Quantum branch technology chain.`,
   );
+  const frameBranch = visiblePhaseText(block.slice(frameBlockStart, gravityBlockStart));
   check(
-    text.includes("Frame branch: Solar Collection → Photon Frequency Conversion → Super Magnetic Field Generator → Solar Sail Orbit System → High-Strength Lightweight Structure"),
-    `GREEN ${label} lost the Frame branch technology chain.`,
+    sameIds(techIds(block.slice(frameBlockStart, gravityBlockStart)), [1501, 1502, 1502, 1711, 1503, 1521])
+      && frameBranch.includes("Solar Collection → Photon Frequency Conversion then Photon Frequency Conversion + Super Magnetic Field Generator → Solar Sail Orbit System"),
+    `GREEN ${label} lost the Frame branch parallel-prerequisite structure.`,
   );
   check(
-    text.includes("Gravity branch: Miniature Particle Collider → Strange Matter → Gravitational Wave Refraction"),
+    sameIds(techIds(block.slice(gravityBlockStart, convergenceBlockStart)), [1142, 1143, 1704]),
     `GREEN ${label} lost the Gravity branch technology chain.`,
   );
-  const frameBranch = text.slice(frameIndex, gravityIndex);
   check(
-    frameBranch.includes("Frame Material") && frameBranch.includes("Miniature Particle Collider"),
-    `GREEN ${label} no longer connects Frame Material to Miniature Particle Collider construction.`,
+    frameBranch.indexOf("Frame Material") >= 0
+      && frameBranch.indexOf("Frame Material") < frameBranch.indexOf("→ build the Miniature Particle Collider")
+      && frameBranch.includes("used by the Gravity branch"),
+    `GREEN ${label} no longer distinguishes Frame Material construction support for the Gravity branch.`,
+  );
+  check(
+    text.slice(convergenceIndex).startsWith("Both branches (Quantum + Gravity) → Gravity Matrix")
+      && techIds(block.slice(convergenceBlockStart))[0] === 1705,
+    `GREEN ${label} no longer identifies Quantum and Gravity as the converging branches.`,
   );
 }
+check(
+  visiblePhaseText(greenResearchBlocks[1][1]).includes("Research it after Quantum Chip and Gravitational Wave Refraction are complete"),
+  "GREEN expanded research lost the explicit Gravity Matrix completion condition.",
+);
 
 const localAssetOccurrences = [
   ...html.matchAll(/(?:href|src)="(assets\/[^"]+)"/g)

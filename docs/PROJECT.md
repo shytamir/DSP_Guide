@@ -1,8 +1,8 @@
 # DSP Practical Progression Guide
 
 **Status:** Maintenance mode. Version 2.2 is the current published minor line,
-with one active user story past its first implementation pass and awaiting
-refinement after an unsuccessful first audit.
+with one active user story past its corrective refinement pass and awaiting
+owner validation.
 
 ## Purpose
 
@@ -109,22 +109,22 @@ contains only the deployable static website.
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
 [`docs/archive/version-2.2-maintenance-release.md`](archive/version-2.2-maintenance-release.md).
-One bounded user story remains active. Its first implementation pass and
-automated checks are complete, but the first audit found material clarity,
-dependency-presentation, validation, and process defects. Refinement is the
-next project step; owner validation cannot resume until that corrective pass is
-complete. Further changes are accepted when they address a verified defect,
-authoritative game-data change, security or compatibility need, or a clearly
-articulated reader problem.
+One bounded user story remains active. Its first audit found material clarity,
+dependency-presentation, validation, and process defects; the corrective
+refinement pass has now addressed those findings. Focused, release-equivalent,
+desktop, and narrow-browser checks pass. Owner validation is the remaining
+gate, and the story is not completed or archived. Further changes are accepted
+when they address a verified defect, authoritative game-data change, security
+or compatibility need, or a clearly articulated reader problem.
 
-- **Active refinement — ILS-to-GREEN research handoff:** the first
-  implementation pass attempted the approved ILS prerequisite, protected
-  Titanium Alloy allocation, PURPLE handoff, and GREEN branch presentation.
-  Its first audit found that the reader-facing execution and focused validators
-  do not yet satisfy the story. The
+- **Owner validation pending — ILS-to-GREEN research handoff:** the corrective
+  pass separates the ILS Graphene prerequisite, exposes the Vessel fleet's
+  50/50 Titanium Alloy allocation, preserves the completed PURPLE handoff, and
+  presents GREEN's parallel Frame prerequisites and explicit Quantum/Gravity
+  convergence. The
   [`active story`](management/ils-purple-green-research-handoff-user-story.md)
   and [`first-pass audit`](management/ils-purple-green-research-handoff-first-pass-audit.md)
-  define the current state. No corrective implementation pass has started.
+  define the current state. Owner acceptance has not been given.
 
 - **Tabled — science pace:** further calibration of minimum cube targets is not
   scheduled.

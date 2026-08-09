@@ -163,3 +163,10 @@ The story remains active after its first implementation pass. Refinement is
 indicated, but no corrective implementation pass is authorized by this audit
 record. Owner validation resumes only after that pass is completed and its
 result is presented for review.
+
+## Follow-up
+
+On 2026-08-09, the owner separately authorized the corrective implementation
+pass. The active story records the resulting changes and validation evidence.
+This first-pass audit remains the reference for the rejected implementation;
+the story remains active and awaits owner validation.

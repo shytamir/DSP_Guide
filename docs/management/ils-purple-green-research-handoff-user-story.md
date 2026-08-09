@@ -1,7 +1,7 @@
 # ILS-to-GREEN Research Handoff
 
-**Status:** Active after first implementation pass; first audit unsuccessful
-and refinement required before validation resumes.
+**Status:** Active; corrective refinement pass complete and owner validation
+pending.
 
 ## User story
 
@@ -65,18 +65,20 @@ Every branch line must begin with its exact descriptor:
 - `Frame branch`;
 - `Gravity branch`.
 
-The convergence line must retain `Both branches → Gravity Matrix`.
+The convergence line must retain the `Both branches` descriptor and identify
+Quantum and Gravity as the two branches that feed Gravity Matrix.
 
 The displayed technology content must communicate:
 
 - `Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function
   Interference → Quantum Chip`;
-- `Frame branch: Solar Collection → Photon Frequency Conversion → Super
-  Magnetic Field Generator → Solar Sail Orbit System → High-Strength
-  Lightweight Structure`;
+- `Frame branch: Solar Collection → Photon Frequency Conversion; Photon
+  Frequency Conversion + Super Magnetic Field Generator → Solar Sail Orbit
+  System → High-Strength Lightweight Structure → Frame Material → build the
+  Miniature Particle Collider used by the Gravity branch`;
 - `Gravity branch: Miniature Particle Collider → Strange Matter →
   Gravitational Wave Refraction`;
-- `Both branches → Gravity Matrix`.
+- `Both branches (Quantum + Gravity) → Gravity Matrix`.
 
 The dependency presentation must make clear that:
 
@@ -99,7 +101,9 @@ The dependency presentation must make clear that:
 - Both GREEN research sections contain the same three exact branch descriptors
   and the preserved `Both branches` convergence descriptor.
 - The GREEN order is Quantum, Frame, Gravity, convergence in both sections.
-- The corrected Frame chain includes Super Magnetic Field Generator.
+- The corrected Frame presentation shows Photon Frequency Conversion and Super
+  Magnetic Field Generator as parallel prerequisites for Solar Sail Orbit
+  System.
 - The text distinguishes the Frame branch's supporting relationship from the
   Quantum/Gravity convergence.
 - Technology names and relationships agree with the retained runtime-derived
@@ -124,7 +128,7 @@ The dependency presentation must make clear that:
 - No broader audit or rewrite of research guidance outside ILS, PURPLE, and
   GREEN.
 - No changes to DYSON, SPHERE, WARP, optional routes, or Dark Fog coverage.
-- No removal of the `Both branches → Gravity Matrix` convergence line.
+- No removal of the `Both branches` Gravity Matrix convergence descriptor.
 - No implementation of the observation file's general "review later"
   remarks.
 - No changes to runtime-derived data or research provenance.
@@ -151,6 +155,32 @@ The dependency presentation must make clear that:
 These checks did not establish that the story was complete. The
 [`first-pass audit`](ils-purple-green-research-handoff-first-pass-audit.md)
 found material problems in the reader-facing changes and in the focused
-validators that protected them. The story remains active, with refinement as
-the next project step. Owner validation can resume only after the corrective
-pass is complete.
+validators that protected them.
+
+## Corrective refinement pass
+
+- ILS now presents `Basic Chemical Engineering → Applied Superconductor` as a
+  separate Graphene prerequisite and links the instruction itself to the
+  reusable standard Graphene line before Particle Container assembly.
+- The Vessel fleet reserve presents the two 50-Alloy destinations on separate
+  readable lines while preserving the 100-Alloy subtotal, 180-Alloy protected
+  total, and 860-Titanium-Ingot total.
+- PURPLE begins both research summaries with High-Strength Material and labels
+  Applied Superconductor as completed ILS work.
+- Both GREEN research presentations retain the Quantum, Frame, Gravity,
+  convergence order. They show Photon Frequency Conversion and Super Magnetic
+  Field Generator as parallel prerequisites for Solar Sail Orbit System,
+  connect Frame Material to building the Collider used by the Gravity branch,
+  and identify Quantum and Gravity as the branches converging on Gravity
+  Matrix.
+- Checklist validation protects the Alloy total and its two destinations
+  independently of the surrounding sentence. Deployment validation protects
+  structural placement, technology identities, the parallel Frame
+  prerequisites, the Frame-to-Gravity support relationship, and explicit
+  Quantum/Gravity convergence.
+- Card-system, checklist, and release-equivalent deployment validation pass.
+- Reviewed desktop and narrow browser layouts remain readable without
+  horizontal overflow or console warnings.
+
+This evidence does not complete, accept, owner-validate, or archive the story.
+Owner validation is the remaining gate.
