@@ -515,6 +515,62 @@ if (
 ) {
   errors.push("ILS stages do not preserve departure, haulback, and finite automation boundaries");
 }
+const ilsManifest = ilsPhase.match(
+  /<h2>Expedition manifest<\/h2><table class="phase-dashboard">([\s\S]*?)<\/table>/,
+);
+if (!ilsManifest) {
+  errors.push("The ILS expedition manifest is missing");
+} else {
+  const manifestText = stripMarkup(ilsManifest[1]);
+  if (
+    (ilsManifest[1].match(/<tr>/g) || []).length !== 4 ||
+    !manifestText.includes("Stage I — Departure") ||
+    !manifestText.includes("Stage II — Haulback") ||
+    !manifestText.includes("Stage III — Automation")
+  ) {
+    errors.push("The ILS manifest does not orient around the three stage outcomes");
+  }
+  if (
+    /\b(?:860|520|200|80|120)\b|two ILS|five (?:Logistics )?Vessels/i.test(
+      manifestText,
+    )
+  ) {
+    errors.push("The ILS manifest exposes a stage-owned exact figure");
+  }
+}
+const ilsFlightStart = ilsPhase.indexOf('id="flight"');
+const ilsHaulbackStart = ilsPhase.indexOf('id="titanium"');
+const ilsAutomationStart = ilsPhase.indexOf('id="ils-automate"');
+const ilsStageOneText = stripMarkup(
+  ilsPhase.slice(ilsFlightStart, ilsHaulbackStart),
+);
+const ilsStageTwoText = stripMarkup(
+  ilsPhase.slice(ilsHaulbackStart, ilsAutomationStart),
+);
+const ilsStageThreeText = stripMarkup(ilsPhase.slice(ilsAutomationStart));
+if (
+  !ilsStageOneText.includes("Drive Engine Lv2") ||
+  !ilsStageOneText.includes("Titanium Smelting") ||
+  !ilsStageOneText.includes("Launch when")
+) {
+  errors.push("ILS Stage I no longer owns the exact departure requirements");
+}
+if (
+  !/\b860\b/.test(ilsStageTwoText) ||
+  !/\b520\b/.test(ilsStageTwoText) ||
+  !ilsStageTwoText.includes("Before flying home")
+) {
+  errors.push("ILS Stage II no longer owns the protected haulback and return conditions");
+}
+if (
+  !/\b80\b/.test(ilsStageThreeText) ||
+  !/\b120\b/.test(ilsStageThreeText) ||
+  !/\b200\b/.test(ilsStageThreeText) ||
+  !ilsStageThreeText.includes("2 ILS") ||
+  !ilsStageThreeText.includes("5 Logistics Vessels")
+) {
+  errors.push("ILS Stage III no longer owns finite spending and hardware requirements");
+}
 if (
   !navigationScript.includes("stageGroups = new Map") ||
   !navigationScript.includes('setAttribute("aria-current", "step")') ||

@@ -1,7 +1,7 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Stories 7 and 8 are
-completed and owner-accepted; Story 9 is under implementation.
+**Status:** Ordered implementation active on 2026-08-09. Stories 7 through 9
+are completed and owner-accepted; Story 10 is under implementation.
 
 This roadmap implements twelve approved stories in order across seven records:
 
@@ -86,15 +86,14 @@ production instructions, and mandatory route position.
 
 ### 9. Reorganize the ILS manifest around stage outcomes
 
-**State:** Under implementation after Story 8 owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
-Implement the held ILS manifest progressive-disclosure story immediately
-after its accepted stage structure exists. Keep exact requirements in the
-stage where they become actionable.
+The ILS manifest now orients around three stage outcomes while exact
+requirements remain in the accepted stage where they become actionable.
 
 ### 10. Retire the global cube-production target table
 
-**State:** Pending Story 9 owner acceptance.
+**State:** Under implementation after Story 9 owner acceptance.
 
 Remove the low-utility global rate table without changing phase-local targets
 or replacing it with another global planning surface.
@@ -122,11 +121,10 @@ a structural problem shared with desktop.
 
 ## Parallel planning boundary
 
-All three icon stories, all three progression-entry stories, and both
-expedition-navigation stories are owner-accepted. Story 9 is under
-implementation.
-The four completed planning records are now ordered as Stories 9–12. They do
-not bypass the owner-acceptance gate on Story 9.
+All three icon stories, all three progression-entry stories, both
+expedition-navigation stories, and Story 9 are owner-accepted. Story 10 is
+under implementation. The remaining completed planning records are ordered as
+Stories 10–12. They do not bypass the owner-acceptance gate on Story 10.
 
 ## Operating rules
 

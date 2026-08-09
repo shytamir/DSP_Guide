@@ -1,8 +1,8 @@
 # DSP Practical Progression Guide
 
-**Status:** Active ILS manifest refinement. Version 2.2 is the current
-published minor line, both Expedition Intra-Navigation stories are
-owner-accepted, and Roadmap Story 9 is under implementation.
+**Status:** Active global cube-target retirement. Version 2.2 is the current
+published minor line, Roadmap Story 9 is owner-accepted, and Roadmap Story 10
+is under implementation.
 
 ## Purpose
 
@@ -95,7 +95,8 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   map icon treatments, authoritative output recipes, and the separation of
   optional capabilities from main-route numbering, including contextual WARP
   entry destinations, repeated-expansion LOGISTICS entry cues, and the shared
-  three-stage WARP and ILS expedition rails.
+  three-stage WARP and ILS expedition rails. It also keeps the ILS manifest
+  figure-free while each accepted stage retains its actionable requirements.
 - `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
   reset behavior, storage failure, glossary placement, and the one-screen
   route/optional-capability grouping.
@@ -132,7 +133,7 @@ in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now orders twelve icon,
 progression-entry, expedition-navigation, and case-specific refinement stories;
-Stories 7 and 8 are owner-accepted, and Story 9 is under implementation.
+Stories 7 through 9 are owner-accepted, and Story 10 is under implementation.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -146,10 +147,11 @@ Stories 7 and 8 are owner-accepted, and Story 9 is under implementation.
 - **Active — navigation:** All three Progression Entry stories are
   owner-accepted. The shared three-stage rail is owner-accepted for WARP and
   mandatory ILS.
-- **Active — progressive disclosure:** the ILS manifest refinement is under
-  implementation as Story 9. The global cube-target table, PHOTON dashboard,
-  and DYSON Ejector production map remain ordered as Stories 10–12. The
-  checklist baseline correction remains unscheduled.
+- **Active — progressive disclosure:** the ILS manifest refinement is
+  owner-accepted as Story 9. Global cube-target retirement is under
+  implementation as Story 10; the PHOTON dashboard and DYSON Ejector
+  production map remain ordered as Stories 11–12. The checklist baseline
+  correction remains unscheduled.
 - **Inactive — mobile priority:** the standing no-mobile-polish story remains
   visible without becoming a roadmap step or gate.
 

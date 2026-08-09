@@ -1,7 +1,7 @@
 # Cube Production Target Table Retirement Story
 
-**Status:** Approved as Roadmap Story 10. Pending Roadmap Story 9 owner
-acceptance.
+**Status:** Under implementation as Roadmap Story 10 after Roadmap Story 9
+owner acceptance.
 
 ## Retire the global cube-production target table
 
