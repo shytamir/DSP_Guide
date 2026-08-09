@@ -173,8 +173,7 @@ const ilsSupportChains = [...ilsSupport.matchAll(/<li>([\s\S]*?)<\/li>/g)].map(m
 const expectedIlsSupportChains = [
   [1311, 1302],
   [1122, 1123, 1124],
-  [1701, 1702],
-  [1703],
+  [1701, 1702, 1703],
   [1112, 1113, 1114],
   [1602, 1603, 3701, 1604],
   [1414, 1605],
@@ -183,7 +182,7 @@ check(
   sameIds(techIds(ilsSupport.slice(0, ilsSupportListStart)), [4102, 1131])
     && ilsSupportChains.length === expectedIlsSupportChains.length
     && ilsSupportChains.every((chain, index) => sameIds(chain, expectedIlsSupportChains[index])),
-  "ILS support research must keep the two standalone technologies before the seven ordered research queues.",
+  "ILS support research must keep the two standalone technologies before the six ordered research queues.",
 );
 const ilsSupportText = visiblePhaseText(ilsSupport);
 check(
