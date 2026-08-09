@@ -1,12 +1,12 @@
 # Pending Guide Design Leftovers
 
-**Status:** Scheduled for breakdown after the current roadmap stories. This
-record is not authorization to implement the concerns below.
+**Status:** Awaiting further roadmap specification. This record is not active
+planning and does not authorize implementation of the concerns below.
 
 These concerns were preserved from the 2026-08-09 guide review but are not yet
-bounded enough for implementation stories. Under
-[`ROADMAP.md`](ROADMAP.md), they become planning input only after both active
-correction stories are accepted.
+bounded enough for implementation stories. Both correction stories are now
+owner-accepted, so under [`ROADMAP.md`](ROADMAP.md) these concerns are eligible
+input only when the owner initiates the next roadmap specification.
 
 ## Expedition intra-navigation
 

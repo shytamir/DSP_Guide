@@ -16,6 +16,8 @@ The archive includes:
   of repeated markup and materialization-contract debt;
 - `bootstrap-blue-unification-user-stories.md` for the completed opening-phase
   consolidation;
+- `guide-corrections-user-stories.md` for the completed opening-route and
+  DYSON reference-authority corrections;
 - `dark-fog-red-defense-user-stories.md` for the completed RED defense scope;
 - `ils-purple-green-research-handoff-user-story.md` and its first-pass audit
   for the completed ILS, PURPLE, and GREEN research-handoff refinement;

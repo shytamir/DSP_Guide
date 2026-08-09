@@ -1,7 +1,7 @@
 # One-Screen Checklist Baseline Correction
 
-**Status:** Tracked and unscheduled. This story is not part of the active
-roadmap and is not authorized for implementation.
+**Status:** Tracked and unscheduled. This story is not part of the current
+roadmap state and is not authorized for implementation.
 
 ## Align the DYSON checklist with the technology-discounted baseline
 

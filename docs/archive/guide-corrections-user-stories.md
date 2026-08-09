@@ -1,11 +1,10 @@
 # Guide Correction Stories
 
-**Status:** Story 1 owner-accepted; Story 2 active under
-[`ROADMAP.md`](ROADMAP.md).
+**Status:** Completed and owner-accepted on 2026-08-09 under
+[`ROADMAP.md`](../management/ROADMAP.md).
 
 These bounded corrections were extracted from the 2026-08-09 guide review.
-Implement and obtain owner acceptance for each story before advancing to the
-next roadmap item.
+Both were implemented and owner-accepted in roadmap order on 2026-08-09.
 
 ## 1. Align the opening route with unified BLUE
 
@@ -18,9 +17,10 @@ to begin with BLUE so that it agrees with the guide's unified phase structure.
 
 ### Evidence
 
-The introduction still describes `Bootstrap -> Blue`, while the phase rail,
-Quick Progress Index, and published phase structure expose BLUE as the sole
-opening phase. `#bootstrap` remains a compatibility anchor inside BLUE.
+At story approval, the introduction still described `Bootstrap -> Blue`, while
+the phase rail, Quick Progress Index, and published phase structure exposed
+BLUE as the sole opening phase. `#bootstrap` remained a compatibility anchor
+inside BLUE.
 
 ### Scope
 
@@ -40,7 +40,7 @@ opening phase. `#bootstrap` remains a compatibility anchor inside BLUE.
 
 **Class:** Editorial refinement with presentation review.
 
-**State:** Active — awaiting its wording and presentation checkpoint.
+**State:** Owner-accepted on 2026-08-09.
 
 As a reader planning the photon swarm, I want DYSON reference figures to read
 as planning examples rather than permission gates so that I respond to live
@@ -78,11 +78,11 @@ reference build.
 - Do not change the SPHERE or PHOTON routes except for an existing direct
   handoff that must remain consistent.
 
-### Owner checkpoint
+### Owner decision
 
-The information hierarchy is settled by the preserved contract above. Approve
-the revised wording before exact editorial assertions become durable validator
-requirements.
+The owner approved the revised wording and presentation on 2026-08-09. The
+validator preserves the settled figure-location contract without freezing the
+approved prose as an exact editorial assertion.
 
 ### Acceptance
 

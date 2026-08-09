@@ -1,7 +1,7 @@
 # DSP Practical Progression Guide
 
-**Status:** Active roadmap implementation. Version 2.2 is the current
-published minor line.
+**Status:** Awaiting further roadmap specification. Version 2.2 is the current
+published minor line, and no implementation story is active.
 
 ## Purpose
 
@@ -103,7 +103,7 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
 contains only the deployable static website.
 
-## Active roadmap
+## Roadmap status
 
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
@@ -116,21 +116,23 @@ Matrix tooltip. The [`completed story`](archive/ils-purple-green-research-handof
 and [`first-pass audit`](archive/ils-purple-green-research-handoff-first-pass-audit.md)
 preserve that work's historical implementation and correction record.
 
-Current implementation is governed by
-[`docs/management/ROADMAP.md`](management/ROADMAP.md). It activates two ordered
-guide-correction stories, followed by a planning pass that breaks the preserved
-design leftovers into the next roadmap update. Work outside that sequence
-requires a separate owner decision.
+The ordered correction sequence governed by
+[`docs/management/ROADMAP.md`](management/ROADMAP.md) is complete. Both
+guide-correction stories are owner-accepted and preserved in the
+[`archived story record`](archive/guide-corrections-user-stories.md). No
+implementation or planning story is active; further work requires owner
+specification of the next roadmap.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
   `#bootstrap` compatibility anchor.
-- **Active — DYSON reference authority:** refine the DYSON presentation so
-  planning figures do not read as permission gates.
-- **Next-roadmap input — guide design leftovers:** after both correction
-  stories are accepted, classify the remaining expedition-navigation,
-  progressive-disclosure, prose-icon, and mobile-priority concerns into the
-  next roadmap update.
+- **Completed — DYSON reference authority:** owner-accepted on 2026-08-09. Live
+  player-observable evidence now leads the DYSON decision layer, while exact
+  planning figures remain confined to the approved reference locations.
+- **Awaiting specification — next roadmap:** the preserved
+  expedition-navigation, progressive-disclosure, prose-icon, and
+  mobile-priority concerns are inputs only; no planning or implementation is
+  active.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
   on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map

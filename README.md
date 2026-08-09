@@ -63,10 +63,12 @@ script exits unsuccessfully. Git, ripgrep, Node.js, Python, pnpm, Chrome, and
 Edge are treated as supplied agent-runtime prerequisites; repository-local
 packages and Playwright-managed browser binaries are installed by the script.
 
-## Active roadmap
+## Roadmap status
 
-Version 2.2 is published and the project has returned to active roadmap
-implementation. The ordered work is tracked in
+Version 2.2 is published, and both ordered guide-correction stories are
+owner-accepted and archived. No implementation story is currently active;
+further work awaits owner specification of the next roadmap. The current
+boundary is recorded in
 [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md). See
 [`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and
 [`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation
