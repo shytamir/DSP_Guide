@@ -1,6 +1,6 @@
 # ILS-to-GREEN Research Handoff
 
-**Status:** Active; ILS research-map refinement complete and owner validation
+**Status:** Active; ILS production-map refinement staged and owner validation
 pending.
 
 ## User story
@@ -17,6 +17,8 @@ The guide will:
 - introduce Applied Superconductor before the ILS Particle Container build;
 - expose the full practical ILS research queue and start yellow science before
   the longer logistics-support branches;
+- provide the complete temporary production reference in its practical build
+  order without making automation mandatory;
 - clearly allocate the Vessel fleet's protected Titanium Alloy;
 - avoid repeating Applied Superconductor as new PURPLE research;
 - introduce Frame Material before GREEN asks the player to craft Miniature
@@ -53,10 +55,19 @@ The guide will:
    reusable Graphene production reference.
 5. Remove the later repeated research unlock passage while retaining the
    actionable linked Graphene production instruction.
-6. Clarify the Vessel fleet's protected 100 Titanium Alloy allocation:
+6. Restructure the temporary production reference so that:
+   - a simple line states `Processors → yellow cubes → Particle Containers →
+     Titanium Alloy`;
+   - the Processor map appears before Titanium Alloy;
+   - Particle Containers remain a standalone group with links to the reusable
+     Turbine and Graphene references;
+   - the transport-hardware group contains PLS, Reinforced Thruster, ILS, and
+     Logistics Vessel production maps; and
+   - the dense reference does not imply that any line must be automated.
+7. Clarify the Vessel fleet's protected 100 Titanium Alloy allocation:
    - 50 Titanium Alloy goes into ten Reinforced Thrusters;
    - 50 Titanium Alloy goes directly into five Logistics Vessels.
-7. Preserve the existing 100-Alloy subtotal, 180-Alloy protected total, and
+8. Preserve the existing 100-Alloy subtotal, 180-Alloy protected total, and
    860-Titanium-Ingot total.
 
 ### PURPLE
@@ -115,6 +126,11 @@ Reader-facing prose after the expanded map must explain that:
 - The ILS Graphene input retains its direct reusable-reference link.
 - The later `Finish the unlock` repetition is removed without losing the
   actionable Graphene production instruction.
+- The temporary production reference states the approved production order and
+  presents Processors, standalone Particle Containers, Titanium Alloy, and
+  grouped transport hardware in that order.
+- PLS, Reinforced Thruster, ILS, and Logistics Vessel recipes are all available
+  in the ILS reference without becoming automation requirements.
 - The Vessel fleet allocation explicitly accounts for all 100 protected
   Titanium Alloy without changing any established totals.
 - PURPLE no longer presents Applied Superconductor as unfinished research.
@@ -250,3 +266,18 @@ ILS research map.
 
 This evidence does not complete, accept, owner-validate, or archive the story.
 Owner validation remains the final gate.
+
+## ILS production-map refinement
+
+- The temporary-production reference now begins with `Processors → yellow
+  cubes → Particle Containers → Titanium Alloy`.
+- The Processor map precedes Titanium Alloy, and Particle Containers have a
+  standalone group linked to the reusable Turbine and Graphene references.
+- A transport-hardware group now exposes the PLS, Reinforced Thruster, ILS, and
+  Logistics Vessel recipes together without requiring their automation.
+- Focused card-system and release-equivalent deployment validation pass.
+- Reviewed desktop and narrow layouts remain readable without page overflow or
+  console warnings.
+
+This staged evidence does not complete, accept, owner-validate, or archive the
+story. Owner validation remains the final gate.

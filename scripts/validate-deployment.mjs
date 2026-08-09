@@ -412,13 +412,26 @@ const ilsMapEnd = html.indexOf("</div></li>", ilsMapStart);
 const ilsMap = ilsMapStart >= 0 && ilsMapEnd > ilsMapStart ? html.slice(ilsMapStart, ilsMapEnd) : "";
 const ilsMapText = ilsMap.replace(/<[^>]+>/g, "");
 check(Boolean(ilsMap), "The aligned ILS bootstrap production map is missing.");
-check(findElementsByClass(ilsMap, "route-group").length === 3, "The ILS bootstrap map must contain three focused groups.");
-check(findElementsByClass(ilsMap, components.routeRow.className).length === 8, "The ILS bootstrap map must contain eight transformation rows.");
-for (const heading of ["TITANIUM ALLOY", "PROCESSORS", "SHARED TURBINE OUTPUTS"]) {
+check(findElementsByClass(ilsMap, "route-group").length === 4, "The ILS bootstrap map must contain four focused groups.");
+check(findElementsByClass(ilsMap, components.routeRow.className).length === 11, "The ILS bootstrap map must contain eleven transformation rows.");
+const ilsMapHeadings = ["PROCESSORS", "PARTICLE CONTAINERS", "TITANIUM ALLOY", "TRANSPORT HARDWARE"];
+for (const heading of ilsMapHeadings) {
   check(ilsMapText.includes(heading), `The ILS bootstrap map is missing its ${heading} group.`);
 }
+check(
+  ilsMapHeadings.every((heading, index) => index === 0 || ilsMapText.indexOf(ilsMapHeadings[index - 1]) < ilsMapText.indexOf(heading)),
+  "The ILS bootstrap production groups are out of order.",
+);
+check(
+  ilsMapText.includes("Production order: Processors → yellow cubes → Particle Containers → Titanium Alloy."),
+  "The ILS bootstrap map lost its explicit production order.",
+);
 check(ilsMap.includes('href="#reference-electromagnetic-turbines"'), "The ILS bootstrap map lost its reusable turbine-line link.");
 check(ilsMap.includes('href="#reference-graphene"'), "The ILS bootstrap map lost its reusable Graphene-line link.");
+check(!ilsMapText.includes("SHARED TURBINE OUTPUTS"), "The ILS bootstrap map still combines its Particle Container and Reinforced Thruster references.");
+for (const output of ["Planetary Logistics Stations", "Reinforced Thrusters", "Interstellar Logistics Stations", "Logistics Vessels"]) {
+  check(ilsMapText.includes(output), `The ILS transport-hardware group is missing ${output}.`);
+}
 check(!ilsMap.includes('<span class="route-label">Turbines</span>'), "The ILS bootstrap map still contains the legacy prose-only Turbines row.");
 
 function countRouteArrowText() {
