@@ -163,24 +163,52 @@ check(!/(Dark Fog (?:levels?|farming|drops?|industry)|space combat|Relay Station
 const visiblePhaseText = value => value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 const techIds = value => [...value.matchAll(/data-tech-id="(\d+)"/g)].map(match => Number(match[1]));
 const sameIds = (actual, expected) => actual.length === expected.length && actual.every((id, index) => id === expected[index]);
-const ilsGrapheneStart = ilsSection.indexOf("Complete the Graphene prerequisite separately:");
+const ilsSupportStart = ilsSection.indexOf("<p><strong>Clear the support branches while the loadout is being packed:</strong>");
+const ilsSupportEnd = ilsSection.indexOf("<h3>Read the starter system</h3>", ilsSupportStart);
+const ilsSupport = ilsSupportStart >= 0 && ilsSupportEnd > ilsSupportStart
+  ? ilsSection.slice(ilsSupportStart, ilsSupportEnd)
+  : "";
+const ilsSupportListStart = ilsSupport.indexOf("<ul>");
+const ilsSupportChains = [...ilsSupport.matchAll(/<li>([\s\S]*?)<\/li>/g)].map(match => techIds(match[1]));
+const expectedIlsSupportChains = [
+  [1311, 1302],
+  [1122, 1123, 1124],
+  [1701, 1702],
+  [1703],
+  [1112, 1113, 1114],
+  [1602, 1603, 3701, 1604],
+  [1414, 1605],
+];
+check(
+  sameIds(techIds(ilsSupport.slice(0, ilsSupportListStart)), [4102, 1131])
+    && ilsSupportChains.length === expectedIlsSupportChains.length
+    && ilsSupportChains.every((chain, index) => sameIds(chain, expectedIlsSupportChains[index])),
+  "ILS support research must keep the two standalone technologies before the seven ordered research queues.",
+);
+const ilsSupportText = visiblePhaseText(ilsSupport);
+check(
+  ilsSupportText.includes("Cosmic Exploration Lv1 costs only 10 blue cubes")
+    && ilsSupportText.includes("Basic Chemical Engineering is assumed because RED is already behind you")
+    && ilsSupportText.includes("Processor unlocks the recipe needed by the logistics towers")
+    && ilsSupportText.includes("start making yellow cubes early")
+    && ilsSupportText.includes("yellow cubes should already be waiting")
+    && ilsSupportText.includes("Only two yellow-cube technologies remain"),
+  "ILS support research lost the prerequisite assumptions or practical yellow-science timing guidance.",
+);
+const ilsGrapheneStart = ilsSection.indexOf('Build the <a class="card-crossref-link" href="#reference-graphene">');
 const ilsGrapheneEnd = ilsSection.indexOf("</p>", ilsGrapheneStart);
 const ilsGrapheneInstruction = ilsGrapheneStart >= 0 && ilsGrapheneEnd > ilsGrapheneStart
   ? ilsSection.slice(ilsGrapheneStart, ilsGrapheneEnd)
   : "";
 const ilsComponentBuildIndex = ilsSection.indexOf("Build the temporary component lines.");
 check(
-  ilsGrapheneStart >= 0 && ilsGrapheneStart < ilsComponentBuildIndex,
+  ilsSupport.indexOf('data-tech-id="1131"') >= 0 && ilsSupportStart < ilsComponentBuildIndex,
   "ILS must introduce Applied Superconductor before the temporary Particle Container build.",
-);
-check(
-  techIds(ilsGrapheneInstruction).slice(0, 2).join(",") === "1121,1131",
-  "ILS must present Basic Chemical Engineering and Applied Superconductor as the separate Graphene prerequisite.",
 );
 check(
   /<a class="card-crossref-link" href="#reference-graphene">[\s\S]*?data-item-id="1123"[\s\S]*?<\/a>/.test(ilsGrapheneInstruction)
     && ilsGrapheneInstruction.includes('data-item-id="1206"')
-    && visiblePhaseText(ilsGrapheneInstruction).includes("build the standard Graphene line before assembling Particle Containers"),
+    && visiblePhaseText(ilsGrapheneInstruction).includes("standard Graphene line before assembling Particle Containers"),
   "ILS lost the linked standard Graphene instruction before Particle Container assembly.",
 );
 
@@ -226,15 +254,15 @@ const greenBody = greenBodyStart >= 0 && greenBodyEnd > greenBodyStart
   : "";
 const greenDashboardText = visiblePhaseText(greenDashboard);
 check(
-  sameIds(techIds(greenDashboard), [1125, 1126, 1141, 1303])
+  sameIds(techIds(greenDashboard), [1125, 1126, 1141, 1303, 1705])
     && greenDashboardText.includes("Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function Interference → Quantum Chip → Frame branch → Gravity branch → Gravity Matrix"),
-  "GREEN dashboard must keep only the detailed Quantum chain before the condensed Frame, Gravity, and Gravity Matrix route.",
+  "GREEN dashboard must keep the detailed Quantum chain, condensed Frame and Gravity labels, and the Gravity Matrix tooltip.",
 );
 check(
   !greenDashboard.includes('data-item-id="1125"')
     && !greenDashboard.includes('data-item-id="2310"')
-    && !greenDashboard.includes('data-tech-id="1705"'),
-  "GREEN dashboard must not expand the condensed Frame, Gravity, or convergence entries.",
+    && greenDashboard.includes('class="tech-ref tech-milestone" data-tech-id="1705"'),
+  "GREEN dashboard must not expand the condensed Frame or Gravity entries and must retain the Gravity Matrix milestone tooltip.",
 );
 
 const greenBodyText = visiblePhaseText(greenBody);

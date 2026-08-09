@@ -9,7 +9,7 @@ that affect the project's next validation work or what it may publish.
   use unmodified in-game assets in the non-commercial guide and related mod.
 - [`ils-purple-green-research-handoff-user-story.md`](ils-purple-green-research-handoff-user-story.md)
   defines the active ILS prerequisite, protected-allocation, PURPLE handoff,
-  and GREEN branch-order work. Its second GREEN refinement pass and automated
+  and GREEN branch-order work. Its ILS research-map refinement and automated
   and browser checks are complete; owner validation is pending.
 - [`ils-purple-green-research-handoff-first-pass-audit.md`](ils-purple-green-research-handoff-first-pass-audit.md)
   records the unsuccessful first audit, including every reader-facing change,
@@ -30,9 +30,10 @@ language is historical and does not define current work.
 
 The project is in maintenance mode with one active user story. After the first
 corrective pass, owner review found the ILS restructure passable and required
-another GREEN refinement. That pass is implemented and has passed focused,
-release-equivalent, desktop, and narrow-browser checks. Owner validation is
-pending; the story is not completed or archived.
+another GREEN refinement followed by a fuller ILS research map. Both passes
+are implemented and have passed focused, release-equivalent, desktop, and
+narrow-browser checks. Owner validation is pending; the story is not completed
+or archived.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.

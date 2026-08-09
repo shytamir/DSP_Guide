@@ -1,6 +1,6 @@
 # ILS-to-GREEN Research Handoff
 
-**Status:** Active; second GREEN refinement pass complete and owner validation
+**Status:** Active; ILS research-map refinement complete and owner validation
 pending.
 
 ## User story
@@ -15,6 +15,8 @@ an unstated prerequisite or accidentally consuming protected materials.
 The guide will:
 
 - introduce Applied Superconductor before the ILS Particle Container build;
+- expose the full practical ILS research queue and start yellow science before
+  the longer logistics-support branches;
 - clearly allocate the Vessel fleet's protected Titanium Alloy;
 - avoid repeating Applied Superconductor as new PURPLE research;
 - introduce Frame Material before GREEN asks the player to craft Miniature
@@ -28,16 +30,33 @@ The guide will:
 
 ### ILS
 
-1. Add Applied Superconductor to the ILS research sequence before the
-   temporary Graphene and Particle Container production work.
-2. Explain that Applied Superconductor unlocks the standard Graphene recipe
-   required by Particle Containers.
-3. Preserve the existing direct link to the reusable Graphene production
-   reference.
-4. Clarify the Vessel fleet's protected 100 Titanium Alloy allocation:
+1. Present Cosmic Exploration Lv2 and Applied Superconductor as standalone
+   technologies before the displayed research queues. Cosmic Exploration Lv1
+   and Basic Chemical Engineering remain inexpensive or phase-gated assumed
+   prerequisites explained in reader-facing prose.
+2. Present these seven research queues in this practical order:
+   - `Semiconductor Material → Processor`;
+   - `Polymer Chemical Engineering → High-Strength Crystal → Structure
+     Matrix`;
+   - `Electromagnetic Drive → Magnetic Levitation`;
+   - `Magnetic Particle Trap`;
+   - `Hydrogen Fuel Rod → Thruster → Reinforced Thruster`;
+   - `Upgraded Logistics System → High-Efficiency Logistics System → Vertical
+     Construction Lv1 → Planetary Logistics System`;
+   - `High-Strength Titanium Alloy → Interstellar Logistics System`.
+3. Explain that the Processor recipe supports the logistics towers, that early
+   Structure Matrix research lets yellow cubes accumulate during the longer
+   support work, and that the rush then finishes with two yellow-cube
+   technologies before building the ILS pair.
+4. Explain that Applied Superconductor unlocks the standard Graphene recipe
+   required by Particle Containers, and preserve the direct link to the
+   reusable Graphene production reference.
+5. Remove the later repeated research unlock passage while retaining the
+   actionable linked Graphene production instruction.
+6. Clarify the Vessel fleet's protected 100 Titanium Alloy allocation:
    - 50 Titanium Alloy goes into ten Reinforced Thrusters;
    - 50 Titanium Alloy goes directly into five Logistics Vessels.
-5. Preserve the existing 100-Alloy subtotal, 180-Alloy protected total, and
+7. Preserve the existing 100-Alloy subtotal, 180-Alloy protected total, and
    860-Titanium-Ingot total.
 
 ### PURPLE
@@ -55,7 +74,7 @@ Update the phase-dashboard `Research next` row and the expanded `Research
 first` section for their different purposes.
 
 The condensed dashboard must show only the detailed Quantum chain followed by
-plain representative text for the remaining route:
+plain Frame and Gravity branch labels and a Gravity Matrix technology tooltip:
 
 `Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function
 Interference → Quantum Chip → Frame branch → Gravity branch → Gravity Matrix`.
@@ -89,12 +108,18 @@ Reader-facing prose after the expanded map must explain that:
 
 - A player reaches the ILS Particle Container step only after being told to
   research Applied Superconductor.
+- The ILS support map contains the two standalone technologies followed by the
+  seven exact research queues in the approved practical order.
+- Reader-facing ILS prose explains the assumed prerequisites, Processor recipe,
+  early yellow-cube buffer, and final two-technology ILS finish.
 - The ILS Graphene input retains its direct reusable-reference link.
+- The later `Finish the unlock` repetition is removed without losing the
+  actionable Graphene production instruction.
 - The Vessel fleet allocation explicitly accounts for all 100 protected
   Titanium Alloy without changing any established totals.
 - PURPLE no longer presents Applied Superconductor as unfinished research.
-- The GREEN dashboard contains the detailed Quantum chain followed only by the
-  plain `Frame branch → Gravity branch → Gravity Matrix` summary.
+- The GREEN dashboard contains the detailed Quantum chain, plain `Frame branch
+  → Gravity branch` labels, and a Gravity Matrix milestone tooltip.
 - The expanded GREEN map contains the exact Quantum, Frame, and Gravity branch
   descriptors followed by the preserved `Both branches` convergence
   descriptor, in that order.
@@ -111,11 +136,11 @@ Reader-facing prose after the expanded map must explain that:
 - No authoring and non-reader-facing reasoning mentioned in this user story or
   thought up during implementation may appear in the guide's text.
 - Focused validation protects the ILS prerequisite, Alloy split, PURPLE
-  handoff, distinct GREEN dashboard and expanded-section contracts, and
-  Graphene link.
+  handoff, ordered ILS research map, practical timing prose, distinct GREEN
+  dashboard and expanded-section contracts, and Graphene link.
 - Card-system, checklist, and release-equivalent deployment validation pass.
-- Desktop and narrow rendering confirm that the dashboard and expanded GREEN
-  guidance remain readable.
+- Desktop and narrow rendering confirm that the ILS research map, dashboard,
+  and expanded GREEN guidance remain readable.
 
 ## Out of scope
 
@@ -202,6 +227,26 @@ a second GREEN refinement.
   deployment checks pass.
 - Reviewed desktop and narrow browser layouts remain readable without
   horizontal overflow or console warnings.
+
+This evidence does not complete, accept, owner-validate, or archive the story.
+Owner review accepted the revised GREEN presentation and requested a fuller
+ILS research map.
+
+## ILS research-map refinement
+
+- The flight-preparation section now presents the two standalone technologies
+  and seven ordered research queues, exposing the Processor, yellow-science,
+  magnetic, Particle Container, Thruster, PLS, and final ILS work separately.
+- Reader-facing prose explains the two assumed prerequisites, the Processor
+  recipe's role in station hardware, the early yellow-cube buffer, and the
+  clean two-technology finish before building the ILS pair.
+- The later repeated unlock paragraph is removed. Its actionable linked
+  Graphene production instruction remains before Particle Container assembly.
+- The condensed GREEN dashboard now renders Gravity Matrix as a milestone
+  technology tooltip while keeping the Frame and Gravity labels plain.
+- Card-system, checklist, and release-equivalent deployment validation pass.
+- Reviewed desktop and narrow layouts remain readable without horizontal
+  overflow or console warnings.
 
 This evidence does not complete, accept, owner-validate, or archive the story.
 Owner validation remains the final gate.
