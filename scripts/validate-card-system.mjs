@@ -366,6 +366,72 @@ if (!progressIndexMarkup) {
     );
   }
 }
+function phaseSlice(id, nextId) {
+  const start = html.indexOf(
+    `<section class="phase-section phase-section-${id}" id="${id}">`,
+  );
+  const end = html.indexOf(
+    `<section class="phase-section phase-section-${nextId}" id="${nextId}">`,
+    start,
+  );
+  return start >= 0 && end > start ? html.slice(start, end) : "";
+}
+const ilsPhase = phaseSlice("ils", "yellow");
+const purplePhase = phaseSlice("purple", "green");
+const greenPhase = phaseSlice("green", "dyson");
+const warpPhase = phaseSlice("warp", "logistics");
+const warpDestinations = (markup) => [
+  ...markup.matchAll(/href="(#warp(?:-[^"]+)?)"/g),
+].map((match) => match[1]);
+for (const anchor of ["warp-prepare", "warp-automate"]) {
+  if ((html.match(new RegExp(`id="${anchor}"`, "g")) || []).length !== 1) {
+    errors.push(`WARP contextual anchor must appear exactly once: #${anchor}`);
+  }
+}
+if (JSON.stringify(warpDestinations(ilsPhase)) !== JSON.stringify(["#warp"])) {
+  errors.push("ILS resource-pressure guidance must retain the WARP overview destination");
+}
+if (!ilsPhase.includes("before those reserves become painful")) {
+  errors.push("ILS WARP overview guidance no longer states the resource-pressure reason");
+}
+if (
+  JSON.stringify(warpDestinations(purplePhase)) !==
+  JSON.stringify(["#warp-prepare", "#warp-prepare"])
+) {
+  errors.push("PURPLE WARP cues must both target the preparation stage");
+}
+if ((purplePhase.match(/named rare resource/g) || []).length < 2) {
+  errors.push("Each PURPLE WARP cue must name the rare-resource reason for the detour");
+}
+if (
+  JSON.stringify(warpDestinations(greenPhase)) !==
+  JSON.stringify(["#warp-automate"])
+) {
+  errors.push("GREEN must expose the efficient-Warper automation stage");
+}
+if (
+  !greenPhase.includes("named rare-resource import should now run unattended") ||
+  !greenPhase.includes("green cubes now make")
+) {
+  errors.push("GREEN WARP automation guidance is missing its actionable context");
+}
+if (
+  !warpPhase.includes(
+    '<h2 class="phase-stage-heading" id="warp-prepare">1. Prepare the expedition</h2>',
+  ) ||
+  !warpPhase.includes(
+    '<h2 class="phase-stage-heading" id="warp-automate">3. Automate the vessel route</h2>',
+  )
+) {
+  errors.push("Approved WARP contextual destinations are not attached to their stage headings");
+}
+if (
+  !warpPhase.includes('href="#green"') ||
+  !warpPhase.includes("If you entered from PURPLE for an early deployment") ||
+  !warpPhase.includes("Later and direct visitors have no fixed WARP exit")
+) {
+  errors.push("WARP does not distinguish the early GREEN continuation from later direct visits");
+}
 const defaultRoute = html.match(
   /<p>The default route is:<\/p>\s*<p><strong>([^<]+)<\/strong><\/p>/,
 );

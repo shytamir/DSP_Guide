@@ -1,7 +1,7 @@
 # ILS, WARP, and LOGISTICS Entry Mapping
 
 **Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). Story 1 is active and ready for owner acceptance.
+[`ROADMAP.md`](ROADMAP.md). Story 2 is active and ready for owner acceptance.
 
 ## Corrected model
 
@@ -85,8 +85,7 @@ not a gate reached at one fixed phase.
 
 **Class:** Structural navigation change.
 
-**State:** Active; implementation and Tier 2 validation complete, awaiting
-owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 As a reader scanning the guide structure, I want WARP and LOGISTICS presented
 as optional capabilities rather than phases after completion so that their
@@ -123,7 +122,8 @@ numbering does not imply one mandatory entry time.
 
 **Class:** Structural navigation refinement.
 
-**State:** Pending Progression Entry Story 1 owner acceptance.
+**State:** Active; implementation and Tier 2 validation complete, awaiting
+owner acceptance.
 
 As a reader considering interstellar resources, I want WARP links to identify
 the relevant deployment stage so that an optional detour opens at the part I

@@ -1,7 +1,7 @@
 # DSP Practical Progression Guide
 
 **Status:** Active optional-capability entry implementation. Version 2.2 is the
-current published minor line, and Progression Entry Story 1 is ready for owner
+current published minor line, and Progression Entry Story 2 is ready for owner
 acceptance.
 
 ## Purpose
@@ -93,7 +93,8 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 - `scripts/validate-card-system.mjs` enforces the current card inventory,
   direct-link rules, complexity limits, icon-free Operating Notes, retained
   map icon treatments, authoritative output recipes, and the separation of
-  optional capabilities from main-route numbering.
+  optional capabilities from main-route numbering, including contextual WARP
+  entry destinations.
 - `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
   reset behavior, storage failure, glossary placement, and the one-screen
   route/optional-capability grouping.
@@ -129,7 +130,7 @@ The ordered guide-correction sequence is complete. Both stories are preserved
 in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now orders eight icon,
-progression-entry, and expedition-navigation stories; Story 4 is ready for
+progression-entry, and expedition-navigation stories; Story 5 is ready for
 owner acceptance.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
@@ -141,10 +142,11 @@ owner acceptance.
 - **Completed — icon placement:** all three stories are owner-accepted. Plain
   narrative and Operating Note guidance now remains distinct from approved
   icon-rich identity, reference, and production-map surfaces.
-- **Active — navigation:** Progression Entry Story 1 separates WARP and
-  LOGISTICS from main-route numbering and is ready for owner acceptance. Its
-  two contextual-entry refinements remain ordered before the shared WARP and
-  ILS three-stage navigation stories.
+- **Active — navigation:** Progression Entry Story 1 is owner-accepted.
+  Progression Entry Story 2 maps PURPLE and post-GREEN WARP cues to their
+  approved contextual stages and is ready for owner acceptance. The LOGISTICS
+  entry refinement remains ordered before the shared WARP and ILS three-stage
+  navigation stories.
 - **Planning eligible — remaining design concern:** case-specific progressive
   disclosure may now be investigated without authorizing implementation. The
   checklist baseline correction remains unscheduled.

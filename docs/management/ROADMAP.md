@@ -1,6 +1,6 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Story 4 is implemented
+**Status:** Ordered implementation active on 2026-08-09. Story 5 is implemented
 and ready for owner acceptance.
 
 This roadmap implements eight approved stories in order across three records:
@@ -41,8 +41,7 @@ Operating Note prose.
 
 ### 4. Separate optional capabilities from main-route numbering
 
-**State:** Implementation and Tier 2 validation complete; awaiting owner
-acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 Progression Entry Story 1 preserves the mandatory route through WHITE while
 presenting WARP and LOGISTICS as directly navigable optional capabilities
@@ -50,10 +49,11 @@ outside its numeric sequence.
 
 ### 5. Map WARP's two contextual entry stages
 
-**State:** Pending Story 4 owner acceptance.
+**State:** Implementation and Tier 2 validation complete; awaiting owner
+acceptance.
 
-Implement Progression Entry Story 2. Reuse the approved WARP stage anchors and
-keep the optional route stateless.
+Progression Entry Story 2 reuses the approved WARP preparation and automation
+anchors while keeping the optional route stateless.
 
 ### 6. Align LOGISTICS entry cues with repeat expansion
 
