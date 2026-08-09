@@ -1,8 +1,8 @@
 # DSP Practical Progression Guide
 
 **Status:** Active optional-capability entry implementation. Version 2.2 is the
-current published minor line, and Progression Entry Story 2 is ready for owner
-acceptance.
+current published minor line, and Progression Entry Story 3 is ready for
+implementation.
 
 ## Purpose
 
@@ -130,8 +130,8 @@ The ordered guide-correction sequence is complete. Both stories are preserved
 in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now orders eight icon,
-progression-entry, and expedition-navigation stories; Story 5 is ready for
-owner acceptance.
+progression-entry, and expedition-navigation stories; Story 5 is
+owner-accepted and Story 6 is ready for implementation.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -142,14 +142,13 @@ owner acceptance.
 - **Completed — icon placement:** all three stories are owner-accepted. Plain
   narrative and Operating Note guidance now remains distinct from approved
   icon-rich identity, reference, and production-map surfaces.
-- **Active — navigation:** Progression Entry Story 1 is owner-accepted.
-  Progression Entry Story 2 maps PURPLE and post-GREEN WARP cues to their
-  approved contextual stages and is ready for owner acceptance. The LOGISTICS
-  entry refinement remains ordered before the shared WARP and ILS three-stage
-  navigation stories.
-- **Planning eligible — remaining design concern:** case-specific progressive
-  disclosure may now be investigated without authorizing implementation. The
-  checklist baseline correction remains unscheduled.
+- **Active — navigation:** Progression Entry Stories 1 and 2 are
+  owner-accepted. The LOGISTICS entry refinement is ready for implementation
+  before the shared WARP and ILS three-stage navigation stories.
+- **Planned — progressive disclosure:** the completed case inventory produced
+  four approved, unscheduled stories covering the PHOTON dashboard, the global
+  cube-target table, the ILS manifest, and the DYSON Ejector production map.
+  The checklist baseline correction also remains unscheduled.
 - **Inactive — mobile priority:** the standing no-mobile-polish story remains
   visible without becoming a roadmap step or gate.
 

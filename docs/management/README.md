@@ -32,10 +32,17 @@ permissions. Start here before creating or changing a management record.
 ## Roadmap state and tracked work
 
 - [`ROADMAP.md`](ROADMAP.md) orders eight approved icon, progression-entry, and
-  expedition-navigation stories; Story 5 is ready for owner acceptance.
+  expedition-navigation stories; Story 5 is owner-accepted and Story 6 is
+  ready for implementation.
 - [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md)
-  preserves the remaining progressive-disclosure concern as planning input;
-  it does not authorize implementation.
+  records the completed progressive-disclosure inventory and its settled
+  outcomes.
+- [`photon-dashboard-progressive-disclosure-story.md`](photon-dashboard-progressive-disclosure-story.md),
+  [`cube-production-target-table-retirement-story.md`](cube-production-target-table-retirement-story.md),
+  [`ils-manifest-progressive-disclosure-story.md`](ils-manifest-progressive-disclosure-story.md),
+  and
+  [`dyson-ejector-production-map-condensation-story.md`](dyson-ejector-production-map-condensation-story.md)
+  are approved, unscheduled stories outside the roadmap.
 - [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
   tracks the approved DYSON checklist baseline correction; it is unscheduled
   and is not part of the current roadmap.
@@ -53,9 +60,8 @@ permissions. Start here before creating or changing a management record.
   and 8.
 
 Both ordered guide-correction stories were owner-accepted on 2026-08-09 and
-archived. All three icon stories are owner-accepted. Progression Entry Story 1
-is owner-accepted. Progression Entry Story 2 has completed implementation and
-Tier 2 validation and is ready for owner acceptance.
+archived. All three icon stories and Progression Entry Stories 1 and 2 are
+owner-accepted. Progression Entry Story 3 is ready for implementation.
 
 ## Historical records
 

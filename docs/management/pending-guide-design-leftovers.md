@@ -1,21 +1,30 @@
 # Pending Guide Design Leftovers
 
-**Status:** Eligible for planning investigation after Icon Story 2 owner
-acceptance. This record does not authorize implementation of the remaining
-concern.
+**Status:** Planning inventory complete. No unresolved design concern remains
+in this record, and none of its resulting stories is on the active roadmap.
 
 The expedition intra-navigation decisions now live in
 [`expedition-intra-navigation-user-stories.md`](expedition-intra-navigation-user-stories.md).
 Mobile, icon-placement, and optional-capability navigation decisions likewise
-live in their separate management records. Only the concern below remains
-unplanned.
+live in their separate management records.
 
 ## Complex-layer progressive disclosure
 
-Some complex areas allow explanation, research structure, and reference
-figures to enter the orientation layer. This is not one document-wide defect.
+The case inventory is complete:
 
-Inventory concrete reader failures first, then create separate case-specific
-stories. Do not authorize a broad simplification or dashboard rewrite from
-this observation alone. The Icon Story 2 gate has passed, so the inventory may
-now begin as planning work while its prose and dashboard cleanup is judged.
+- GREEN remains unchanged after review.
+- PHOTON dashboard figures are isolated in
+  [`photon-dashboard-progressive-disclosure-story.md`](photon-dashboard-progressive-disclosure-story.md).
+- The low-utility global cube-target table is retired by
+  [`cube-production-target-table-retirement-story.md`](cube-production-target-table-retirement-story.md).
+- ILS manifest reorganization is isolated in
+  [`ils-manifest-progressive-disclosure-story.md`](ils-manifest-progressive-disclosure-story.md)
+  and held until ILS intra-navigation is owner-accepted.
+- The Quick Progress Index's exact DYSON figure remains unchanged by owner
+  decision.
+- The EM-Rail Ejector production-map condensation is isolated in
+  [`dyson-ejector-production-map-condensation-story.md`](dyson-ejector-production-map-condensation-story.md).
+
+These are separate case-specific stories. This record authorizes no broad
+simplification or dashboard rewrite and does not place any story on the
+roadmap.

@@ -1,7 +1,7 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Story 5 is implemented
-and ready for owner acceptance.
+**Status:** Ordered implementation active on 2026-08-09. Story 5 is completed
+and owner-accepted; Story 6 is ready for implementation.
 
 This roadmap implements eight approved stories in order across three records:
 
@@ -49,15 +49,14 @@ outside its numeric sequence.
 
 ### 5. Map WARP's two contextual entry stages
 
-**State:** Implementation and Tier 2 validation complete; awaiting owner
-acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 Progression Entry Story 2 reuses the approved WARP preparation and automation
 anchors while keeping the optional route stateless.
 
 ### 6. Align LOGISTICS entry cues with repeat expansion
 
-**State:** Pending Story 5 owner acceptance.
+**State:** Ready for implementation after Story 5 owner acceptance.
 
 Implement Progression Entry Story 3. Offer LOGISTICS in response to repeated
 expansion rather than technical availability alone.
@@ -87,9 +86,10 @@ a structural problem shared with desktop.
 
 ## Parallel planning boundary
 
-All three icon stories are owner-accepted. The remaining
-progressive-disclosure concern may be investigated as planning input, but that
-planning does not authorize implementation or alter this execution order.
+All three icon stories and the first two progression-entry stories are
+owner-accepted. Progressive-disclosure planning has produced four unscheduled
+stories. Those records do not authorize implementation or alter this execution
+order.
 
 ## Operating rules
 
