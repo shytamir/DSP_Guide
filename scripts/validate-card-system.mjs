@@ -649,6 +649,42 @@ if (!defaultRoute) {
     );
   }
 }
+if (
+  html.includes("Quick reference — Cube production targets") ||
+  html.includes(
+    "Come back to this table when an older cube line starts holding up research",
+  ) ||
+  html.includes('class="rate-table"')
+) {
+  errors.push("The retired global cube-production target surface remains");
+}
+const phaseLocalCubeGuidance = [
+  [
+    "BLUE",
+    phaseSlice("blue", "red"),
+    /Good target[\s\S]*?40[\s\S]*?blue cubes/i,
+  ],
+  [
+    "RED",
+    phaseSlice("red", "ils"),
+    /Useful target[\s\S]*?20[\s\S]*?red cubes/i,
+  ],
+  [
+    "YELLOW",
+    phaseSlice("yellow", "purple"),
+    /Good target[\s\S]*?Three Labs/i,
+  ],
+  ["PURPLE", purplePhase, /Good target[\s\S]*?18[\s\S]*?purple/i],
+  ["GREEN", greenPhase, /Good target[\s\S]*?10[\s\S]*?green/i],
+];
+for (const [phaseName, phaseMarkup, guidancePattern] of phaseLocalCubeGuidance) {
+  const dashboard = phaseMarkup.match(
+    /<h3 class="dashboard-title">Phase dashboard<\/h3><table class="phase-dashboard">[\s\S]*?<\/table>/,
+  )?.[0];
+  if (!dashboard || !guidancePattern.test(stripMarkup(dashboard))) {
+    errors.push(`${phaseName} phase-local cube guidance is missing`);
+  }
+}
 for (const legacyId of ["flight", "titanium"]) {
   if (!html.includes(`class="phase-stage-heading" id="${legacyId}"`)) {
     errors.push(`Missing compatibility stage anchor: #${legacyId}`);

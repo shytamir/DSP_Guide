@@ -1,7 +1,7 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Stories 7 through 9
-are completed and owner-accepted; Story 10 is under implementation.
+**Status:** Ordered implementation active on 2026-08-09. Stories 7 through 10
+are completed and owner-accepted; Story 11 is under implementation.
 
 This roadmap implements twelve approved stories in order across seven records:
 
@@ -93,14 +93,14 @@ requirements remain in the accepted stage where they become actionable.
 
 ### 10. Retire the global cube-production target table
 
-**State:** Under implementation after Story 9 owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 Remove the low-utility global rate table without changing phase-local targets
 or replacing it with another global planning surface.
 
 ### 11. Describe the PHOTON dashboard state without exact figures
 
-**State:** Pending Story 10 owner acceptance.
+**State:** Under implementation after Story 10 owner acceptance.
 
 Keep the dashboard concise and observational while retaining accurate PHOTON
 figures in the detailed reference layer.
@@ -123,8 +123,9 @@ a structural problem shared with desktop.
 
 All three icon stories, all three progression-entry stories, both
 expedition-navigation stories, and Story 9 are owner-accepted. Story 10 is
-under implementation. The remaining completed planning records are ordered as
-Stories 10–12. They do not bypass the owner-acceptance gate on Story 10.
+also owner-accepted, and Story 11 is under implementation. The remaining
+completed planning records are ordered as Stories 11–12. They do not bypass
+the owner-acceptance gate on Story 11.
 
 ## Operating rules
 

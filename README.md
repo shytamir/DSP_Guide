@@ -70,7 +70,8 @@ owner-accepted and archived. All three icon stories and all three Progression
 Entry stories are owner-accepted. Expedition Intra-Navigation Story 1 is
 owner-accepted. Expedition Intra-Navigation Story 2 is owner-accepted, and the
 ILS Manifest Progressive-Disclosure Story is owner-accepted, and the Cube
-Production Target Table Retirement Story is under implementation. The current
+Production Target Table Retirement Story is owner-accepted. The PHOTON
+Dashboard Progressive-Disclosure Story is under implementation. The current
 boundary is recorded in
 [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md). See
 [`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and

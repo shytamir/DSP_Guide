@@ -1,7 +1,6 @@
 # Cube Production Target Table Retirement Story
 
-**Status:** Under implementation as Roadmap Story 10 after Roadmap Story 9
-owner acceptance.
+**Status:** Completed and owner-accepted as Roadmap Story 10 on 2026-08-09.
 
 ## Retire the global cube-production target table
 
