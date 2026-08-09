@@ -1,6 +1,6 @@
 # Guide Correction Stories
 
-**Status:** Approved for ordered implementation under
+**Status:** Story 1 owner-accepted; Story 2 active under
 [`ROADMAP.md`](ROADMAP.md).
 
 These bounded corrections were extracted from the 2026-08-09 guide review.
@@ -10,6 +10,8 @@ next roadmap item.
 ## 1. Align the opening route with unified BLUE
 
 **Class:** Bounded correction.
+
+**State:** Owner-accepted on 2026-08-09.
 
 As a reader using the opening route to locate my first phase, I want that route
 to begin with BLUE so that it agrees with the guide's unified phase structure.
@@ -37,6 +39,8 @@ opening phase. `#bootstrap` remains a compatibility anchor inside BLUE.
 ## 2. Reduce the perceived authority of DYSON planning figures
 
 **Class:** Editorial refinement with presentation review.
+
+**State:** Active — awaiting its wording and presentation checkpoint.
 
 As a reader planning the photon swarm, I want DYSON reference figures to read
 as planning examples rather than permission gates so that I respond to live

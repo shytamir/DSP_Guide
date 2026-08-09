@@ -42,8 +42,9 @@ permissions. Start here before creating or changing a management record.
   tracks the approved DYSON checklist baseline correction; it is unscheduled
   and is not part of the current roadmap.
 
-The project is in active roadmap implementation. Story 1 must be implemented
-and accepted before Story 2 begins.
+The project is in active roadmap implementation. Story 1 was owner-accepted on
+2026-08-09. Story 2 is active and must return to its owner checkpoint before
+completion or the next roadmap step.
 
 ## Historical records
 

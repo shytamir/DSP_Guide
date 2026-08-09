@@ -6,6 +6,7 @@ import {
   findElementsByClass,
   getAttribute,
   isNativeComponent,
+  stripMarkup,
 } from "./lib/markup-contracts.mjs";
 
 const html = fs.readFileSync("index.html", "utf8");
@@ -185,8 +186,12 @@ for (const requiredBranch of ["Motor branch", "Tower branch", "Exciter branch", 
   if (!securityMall.includes(requiredBranch)) errors.push(`Security Mall is missing its ${requiredBranch}.`);
 }
 
+const planningOnlyDestinationCards = new Set([
+  "card-dyson-solar-sails",
+  "card-dyson-em-rail-ejectors",
+]);
 for (const card of cards) {
-  validateMap(card.id, card.inner, true);
+  validateMap(card.id, card.inner, !planningOnlyDestinationCards.has(card.id));
   if (/\sopen(?:\s|>)/.test(card.openingTag)) errors.push(`${card.id} is open by default`);
 }
 for (const reference of references) validateMap(reference.id, reference.inner, false);
@@ -284,6 +289,49 @@ if (!html.includes('class="phase-stage-heading" id="bootstrap"')) {
 }
 if (html.includes("phase-section-bootstrap")) {
   errors.push("Legacy BOOTSTRAP phase section remains");
+}
+
+const dysonStart = html.indexOf(
+  '<section class="phase-section phase-section-dyson" id="dyson">',
+);
+const sphereStart = html.indexOf(
+  '<section class="phase-section phase-section-sphere" id="sphere">',
+);
+if (dysonStart < 0 || sphereStart <= dysonStart) {
+  errors.push("The DYSON phase boundaries are missing");
+} else {
+  let dysonOutsideAllowedFigures = html.slice(dysonStart, sphereStart);
+  const howMuchHeading =
+    '<h2 class="quick-ref-title">Quick reference — How much is enough</h2>';
+  const howMuchStart = dysonOutsideAllowedFigures.indexOf(howMuchHeading);
+  const howMuchEnd = dysonOutsideAllowedFigures.indexOf(
+    '<h2 class="quick-ref-title">',
+    howMuchStart + howMuchHeading.length,
+  );
+  if (howMuchStart < 0 || howMuchEnd <= howMuchStart) {
+    errors.push("The DYSON planning-reference section is missing");
+  } else {
+    dysonOutsideAllowedFigures =
+      dysonOutsideAllowedFigures.slice(0, howMuchStart) +
+      dysonOutsideAllowedFigures.slice(howMuchEnd);
+  }
+  for (const cardId of [
+    "card-dyson-solar-sails",
+    "card-dyson-em-rail-ejectors",
+  ]) {
+    const card = cards.find(candidate => candidate.id === cardId);
+    const summary = card?.inner.match(/^<summary>[\s\S]*?<\/summary>/)?.[0];
+    if (!summary) errors.push(`${cardId} is missing its planning-reference title`);
+    else dysonOutsideAllowedFigures = dysonOutsideAllowedFigures.replace(summary, "");
+  }
+  const disallowedFigure = stripMarkup(dysonOutsideAllowedFigures).match(
+    /\b(?:405|383|60|384|511|517\.5|80|108|4,000)\b|\b(?:four|48\/min)\b|1\.655(?:-GW|\s+GW)|32%/i,
+  );
+  if (disallowedFigure) {
+    errors.push(
+      `DYSON baseline figure appears outside its allowed reference locations: ${disallowedFigure[0]}`,
+    );
+  }
 }
 
 const openingCardScopes = new Map([

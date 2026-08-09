@@ -122,12 +122,11 @@ guide-correction stories, followed by a planning pass that breaks the preserved
 design leftovers into the next roadmap update. Work outside that sequence
 requires a separate owner decision.
 
-- **Active — opening-route consistency:** align the introductory default route
-  with the unified BLUE phase while preserving the `#bootstrap` compatibility
-  anchor.
-- **Pending — DYSON reference authority:** after the opening correction is
-  accepted, refine the DYSON presentation so planning figures do not read as
-  permission gates.
+- **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
+  introductory default route now begins with unified BLUE while preserving the
+  `#bootstrap` compatibility anchor.
+- **Active — DYSON reference authority:** refine the DYSON presentation so
+  planning figures do not read as permission gates.
 - **Next-roadmap input — guide design leftovers:** after both correction
   stories are accepted, classify the remaining expedition-navigation,
   progressive-disclosure, prose-icon, and mobile-priority concerns into the

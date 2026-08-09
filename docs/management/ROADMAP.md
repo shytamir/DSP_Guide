@@ -10,17 +10,18 @@ remaining design concerns into the next roadmap update.
 
 ### 1. Align the opening route with unified BLUE
 
-**State:** Ready for implementation.
+**State:** Owner-accepted on 2026-08-09.
 
-Implement Story 1 in
-[`guide-corrections-user-stories.md`](guide-corrections-user-stories.md), run
-its Tier 1 validation, and present the result for owner acceptance.
+Story 1 in
+[`guide-corrections-user-stories.md`](guide-corrections-user-stories.md) is
+implemented and accepted. The visible default route begins with BLUE, while
+the `#bootstrap` compatibility anchor remains in the unified opening phase.
 
-Do not begin Story 2 until Story 1 is explicitly accepted.
+Preserve that accepted result while later roadmap work proceeds.
 
 ### 2. Refine DYSON reference authority
 
-**State:** Pending Story 1 acceptance.
+**State:** Active — implementation review pending.
 
 Implement Story 2 in
 [`guide-corrections-user-stories.md`](guide-corrections-user-stories.md). Obtain
