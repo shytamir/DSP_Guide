@@ -1,7 +1,7 @@
 # DSP Practical Progression Guide
 
 **Status:** Active icon-placement roadmap implementation. Version 2.2 is the
-current published minor line, and Icon Story 1 is ready for owner acceptance.
+current published minor line, and Icon Story 2 is ready for owner acceptance.
 
 ## Purpose
 
@@ -98,7 +98,9 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   materialization only. Item references require explicit prototype bindings,
   and item and technology icons are added only on the semantic surfaces
   approved by the icon-placement policy. Existing markup is preserved;
-  completed editorial migrations are not part of the recurring pass.
+  completed editorial migrations are not part of the recurring pass. The
+  validator also enforces the completed Story 2 narrative/action cleanup while
+  leaving card Operating Notes to their separately gated story.
 - `scripts/lib/markup-contracts.mjs` is the shared structural contract used by
   materialization, card validation, and deployment validation.
 
@@ -122,7 +124,7 @@ The ordered guide-correction sequence is complete. Both stories are preserved
 in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now orders eight icon,
-progression-entry, and expedition-navigation stories; Story 1 is ready for
+progression-entry, and expedition-navigation stories; Story 2 is ready for
 owner acceptance.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
@@ -131,9 +133,9 @@ owner acceptance.
 - **Completed — DYSON reference authority:** owner-accepted on 2026-08-09. Live
   player-observable evidence now leads the DYSON decision layer, while exact
   planning figures remain confined to the approved reference locations.
-- **Active — icon placement:** Story 1 now prevents future materialization
-  outside approved surfaces and is ready for owner acceptance. The two bounded
-  presentation-cleanup stories remain gated by predecessor acceptance.
+- **Active — icon placement:** Story 1 is owner-accepted. Story 2 removes icons
+  from narrative and action surfaces and is ready for owner acceptance; the
+  Operating Note cleanup remains gated.
 - **Ordered — navigation:** three optional-capability entry stories are
   followed by the shared WARP and ILS three-stage navigation stories.
 - **Deferred — remaining design concern:** case-specific progressive

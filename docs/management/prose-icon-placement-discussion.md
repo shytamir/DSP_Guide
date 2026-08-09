@@ -1,7 +1,7 @@
 # Icon Placement Policy and Proposed Stories
 
 **Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). Story 1 is active and ready for owner acceptance.
+[`ROADMAP.md`](ROADMAP.md). Story 2 is active and ready for owner acceptance.
 
 ## Problem
 
@@ -38,8 +38,7 @@ text exceptions.
 
 **Class:** Tooling change.
 
-**State:** Active; implementation and Tier 1 validation complete, awaiting
-owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 As a maintainer running the authorized icon materializer, I want it to add
 icons only on approved surfaces so that later content edits cannot reintroduce
@@ -77,7 +76,8 @@ prose-icon saturation.
 
 **Class:** Editorial refinement with presentation review.
 
-**State:** Pending Story 1 owner acceptance.
+**State:** Active; implementation and Tier 2 validation complete, awaiting
+owner acceptance.
 
 As a reader following phase instructions, I want prose and action surfaces to
 read without repeated item artwork so that names, sentences, and decisions set

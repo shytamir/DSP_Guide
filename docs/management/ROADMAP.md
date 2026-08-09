@@ -1,6 +1,6 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Story 1 is implemented
+**Status:** Ordered implementation active on 2026-08-09. Story 2 is implemented
 and ready for owner acceptance.
 
 This roadmap implements eight approved stories in order across three records:
@@ -19,20 +19,19 @@ The earlier guide-correction sequence is complete and preserved in
 
 ### 1. Prevent icon growth outside approved surfaces
 
-**State:** Implementation and Tier 1 validation complete; awaiting owner
-acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
-The materializer now follows the settled semantic placement policy without
-removing existing icons or adding a dependency. Do not begin Story 2 before
-the owner accepts this result.
+The materializer follows the settled semantic placement policy without
+removing existing icons or adding a dependency.
 
 ### 2. Remove icons from narrative and action surfaces
 
-**State:** Pending Story 1 owner acceptance.
+**State:** Implementation and Tier 2 validation complete; awaiting owner
+acceptance.
 
-Implement Icon Story 2. Apply the settled placement policy only to its prose,
-dashboard, checklist, and heading surfaces, then complete its Tier 2
-presentation review.
+Icon Story 2 applies the settled placement policy only to its prose,
+dashboard, checklist, and heading surfaces. The cleanup and Tier 2 presentation
+evidence are ready for owner acceptance.
 
 ### 3. Remove icons from card Operating Note prose
 

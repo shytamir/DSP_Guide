@@ -364,6 +364,9 @@ function allowsTechnologyIcon(stack) {
     stack.some(entry => /^h[1-6]$/.test(entry.tag));
 }
 
+const isStory2DeferredSurface = stack =>
+  stackHasClass(stack, "map-note") || stack.some(entry => entry.tag === "nav");
+
 function addItemIcons(html) {
   return replaceElementsByClass(html, components.itemReference.className, reference => {
     const id = getAttribute(reference.openingTag, components.itemReference.idAttribute);
@@ -510,9 +513,12 @@ function validate(html) {
     if (technology) {
       const expectedSource = `src="${technologyAsset(technology)}"`;
       const hasIcon = reference.inner.includes('class="proto-icon proto-icon-tech"');
-      const requiresIcon = allowsTechnologyIcon(ancestorStackAtOffset(html, reference.index));
+      const stack = ancestorStackAtOffset(html, reference.index);
+      const requiresIcon = allowsTechnologyIcon(stack);
       assert(!requiresIcon || hasIcon, `Technology ${id} is missing an icon on an approved surface.`);
+      assert(requiresIcon || isStory2DeferredSurface(stack) || !hasIcon, `Technology ${id} retains an icon on a Story 2 cleanup surface.`);
       assert(!hasIcon || reference.inner.includes(expectedSource), `Technology ${id} has the wrong icon.`);
+      assert(stripTags(reference.inner).length > 0, `Technology ${id} has no visible label.`);
     }
   }
 
@@ -524,9 +530,12 @@ function validate(html) {
     if (item) {
       const expectedSource = `src="${itemAsset(item)}"`;
       const hasIcon = reference.inner.includes('class="proto-icon proto-icon-item"');
-      const requiresIcon = allowsItemIcon(ancestorStackAtOffset(html, reference.index));
+      const stack = ancestorStackAtOffset(html, reference.index);
+      const requiresIcon = allowsItemIcon(stack);
       assert(!requiresIcon || hasIcon, `Item ${id} is missing an icon on an approved surface.`);
+      assert(requiresIcon || isStory2DeferredSurface(stack) || !hasIcon, `Item ${id} retains an icon on a Story 2 cleanup surface.`);
       assert(!hasIcon || reference.inner.includes(expectedSource), `Item ${id} has the wrong icon.`);
+      assert(stripTags(reference.inner).length > 0, `Item ${id} has no visible label.`);
     }
   }
 
