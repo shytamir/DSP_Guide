@@ -121,8 +121,9 @@ preserve that work's historical implementation and correction record.
 The ordered guide-correction sequence is complete. Both stories are preserved
 in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
-current [`management roadmap`](management/ROADMAP.md) now activates three
-ordered icon-placement stories; Story 1 is ready for owner acceptance.
+current [`management roadmap`](management/ROADMAP.md) now orders eight icon,
+progression-entry, and expedition-navigation stories; Story 1 is ready for
+owner acceptance.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -133,12 +134,13 @@ ordered icon-placement stories; Story 1 is ready for owner acceptance.
 - **Active — icon placement:** Story 1 now prevents future materialization
   outside approved surfaces and is ready for owner acceptance. The two bounded
   presentation-cleanup stories remain gated by predecessor acceptance.
-- **Planning — remaining design concerns:** expedition intra-navigation and
-  case-specific progressive disclosure remain under analysis. The settled
-  optional-capability navigation stories and checklist baseline correction
-  are not part of the active roadmap.
-- **Settled — mobile priority:** desktop remains the target; no mobile-polish
-  implementation story is required.
+- **Ordered — navigation:** three optional-capability entry stories are
+  followed by the shared WARP and ILS three-stage navigation stories.
+- **Deferred — remaining design concern:** case-specific progressive
+  disclosure remains blocked until Icon Story 2 is owner-accepted. The
+  checklist baseline correction remains unscheduled.
+- **Inactive — mobile priority:** the standing no-mobile-polish story remains
+  visible without becoming a roadmap step or gate.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
   on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map

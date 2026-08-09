@@ -1,9 +1,11 @@
 # No Mobile Polish Work
 
-**Status:** Settled scope guardrail. This record authorizes no implementation
-and requires no roadmap item.
+**Status:** Inactive standing user story. Present in the active management set,
+but not scheduled as a roadmap step.
 
 **Class:** Scope guardrail.
+
+**State:** Inactive; does not gate roadmap execution.
 
 As the product owner, I want mobile-specific polish excluded from planned work
 so that effort remains focused on the desktop PC reading experience used while
@@ -27,3 +29,9 @@ playing DSP.
 - Mobile-only cosmetic defects are not promoted into planned work.
 - A qualifying defect becomes its own bounded story rather than reopening this
   decision.
+
+## Roadmap relationship
+
+This story remains linked from `ROADMAP.md` so its desktop-first boundary is
+visible to every implementing agent. It is not an execution stop, acceptance
+gate, or roadmap completion requirement.

@@ -1,7 +1,8 @@
 # ILS, WARP, and LOGISTICS Entry Mapping
 
-**Status:** Classification and evidence settled. The stories below are
-proposed planning records, not active roadmap work.
+**Status:** Approved for ordered implementation under
+[`ROADMAP.md`](ROADMAP.md). Story 1 follows acceptance of all three icon
+stories.
 
 ## Corrected model
 
@@ -72,6 +73,9 @@ not a gate reached at one fixed phase.
   continuations of the mandatory route.
 - Preserve `#warp`, `#logistics`, public phase links, and checklist storage
   keys.
+- Reuse the three WARP stage anchors approved in
+  [`expedition-intra-navigation-user-stories.md`](expedition-intra-navigation-user-stories.md);
+  do not create competing contextual destinations.
 - Keep navigation stateless. Do not record an originating phase or add saved
   branch state.
 - Use contextual entry links to state why the optional capability is useful.
@@ -81,6 +85,8 @@ not a gate reached at one fixed phase.
 ## Story 1 — Separate optional capabilities from main-route numbering
 
 **Class:** Structural navigation change.
+
+**State:** Pending Icon Story 3 owner acceptance.
 
 As a reader scanning the guide structure, I want WARP and LOGISTICS presented
 as optional capabilities rather than phases after completion so that their
@@ -117,6 +123,8 @@ numbering does not imply one mandatory entry time.
 
 **Class:** Structural navigation refinement.
 
+**State:** Pending Progression Entry Story 1 owner acceptance.
+
 As a reader considering interstellar resources, I want WARP links to identify
 the relevant deployment stage so that an optional detour opens at the part I
 can use without displacing my main-route phase.
@@ -125,8 +133,8 @@ can use without displacing my main-route phase.
 
 - Preserve the ILS resource-pressure reminder as advance guidance to the WARP
   overview.
-- Direct the PURPLE shortcut cue to the early preparation/deployment stage.
-- Expose the post-GREEN efficient-Warper context at the automation stage.
+- Direct the PURPLE shortcut cue to `#warp-prepare`.
+- Expose the post-GREEN efficient-Warper context at `#warp-automate`.
 - Add stable internal destinations only where needed for those two contexts.
 - Give early-route readers an explicit GREEN continuation without claiming a
   fixed return phase for later direct visitors.
@@ -136,6 +144,8 @@ can use without displacing my main-route phase.
 - Do not make WARP mandatory or insert it into the default route.
 - Do not move the Space Warper production card out of GREEN.
 - Do not add origin tracking, browser-history behavior, or saved state.
+- Do not create or rename WARP stage anchors; reuse the intra-navigation
+  contract.
 - Do not rewrite rare-resource or outpost guidance beyond affected handoffs.
 
 ### Acceptance
@@ -150,6 +160,8 @@ can use without displacing my main-route phase.
 ## Story 3 — Align LOGISTICS entry cues with repeat expansion
 
 **Class:** Editorial navigation refinement.
+
+**State:** Pending Progression Entry Story 2 owner acceptance.
 
 As a reader repeatedly deploying logistics networks, I want LOGISTICS offered
 when replacement hardware becomes useful so that technical availability is not
@@ -181,7 +193,7 @@ mistaken for a new phase objective.
 - Direct navigation remains complete and `#logistics` remains stable.
 - Tier 2 validation covers directly affected links and reviewed desktop flow.
 
-## Proposed order
+## Roadmap order
 
 Implement Story 1 before the two entry refinements. Stories 2 and 3 remain
 separate because WARP is a staged expedition while LOGISTICS is reusable

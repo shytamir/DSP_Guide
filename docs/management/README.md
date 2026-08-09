@@ -31,22 +31,26 @@ permissions. Start here before creating or changing a management record.
 
 ## Roadmap state and tracked work
 
-- [`ROADMAP.md`](ROADMAP.md) activates the three approved icon-placement
-  stories in order; Story 1 is ready for owner acceptance.
+- [`ROADMAP.md`](ROADMAP.md) orders eight approved icon, progression-entry, and
+  expedition-navigation stories; Story 1 is ready for owner acceptance.
 - [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md)
-  preserves the two remaining concerns as active planning input; it does not
-  authorize implementation.
+  preserves the remaining progressive-disclosure concern, deferred until Icon
+  Story 2 is accepted; it does not authorize implementation.
 - [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
   tracks the approved DYSON checklist baseline correction; it is unscheduled
   and is not part of the current roadmap.
 - [`no-mobile-polish-story.md`](no-mobile-polish-story.md) records the settled
-  desktop-first scope guardrail and requires no implementation story.
+  desktop-first scope guardrail as an inactive standing user story that does
+  not gate the roadmap.
 - [`prose-icon-placement-discussion.md`](prose-icon-placement-discussion.md)
   records the approved icon-placement policy and the three active-roadmap
   stories.
 - [`progression-entry-mapping-discussion.md`](progression-entry-mapping-discussion.md)
-  corrects the ILS/WARP/LOGISTICS classification and proposes three bounded
-  navigation stories.
+  corrects the ILS/WARP/LOGISTICS classification and contains Roadmap Stories
+  4–6.
+- [`expedition-intra-navigation-user-stories.md`](expedition-intra-navigation-user-stories.md)
+  records the shared three-stage rail contract and contains Roadmap Stories 7
+  and 8.
 
 Both ordered guide-correction stories were owner-accepted on 2026-08-09 and
 archived. Icon Story 1 has completed implementation and Tier 1 validation and
