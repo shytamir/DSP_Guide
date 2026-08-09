@@ -1,6 +1,7 @@
 # DSP Practical Progression Guide
 
-**Status:** Maintenance mode. Version 2.2 is the current published minor line.
+**Status:** Maintenance mode. Version 2.2 is the current published minor line,
+with one implemented user story in its validation gate pending owner review.
 
 ## Purpose
 
@@ -107,16 +108,19 @@ contains only the deployable static website.
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
 [`docs/archive/version-2.2-maintenance-release.md`](archive/version-2.2-maintenance-release.md).
-There is no active implementation roadmap. Further changes are accepted when
-they address a verified defect, authoritative game-data change, security or
+One bounded user story remains active in its validation gate. Its implementation
+and automated checks are complete, but owner review is the final gate before
+the story can be accepted and archived. Further changes are accepted when they
+address a verified defect, authoritative game-data change, security or
 compatibility need, or a clearly articulated reader problem.
 
-- **Completed — ILS-to-GREEN research handoff:** Applied Superconductor now
+- **Validation gate — ILS-to-GREEN research handoff:** Applied Superconductor now
   precedes the ILS Graphene requirement, the Vessel fleet exposes its 50/50
   Titanium Alloy allocation, PURPLE recognizes the completed handoff, and
-  GREEN presents its Quantum, Frame, Gravity, and convergence order. The
-  completed story is archived in
-  [`docs/archive/ils-purple-green-research-handoff-user-story.md`](archive/ils-purple-green-research-handoff-user-story.md).
+  GREEN presents its Quantum, Frame, Gravity, and convergence order. Automated
+  and browser checks have passed; owner review remains the final gate. The
+  active story is in
+  [`docs/management/ils-purple-green-research-handoff-user-story.md`](management/ils-purple-green-research-handoff-user-story.md).
 
 - **Tabled — science pace:** further calibration of minimum cube targets is not
   scheduled.

@@ -1,6 +1,7 @@
 # ILS-to-GREEN Research Handoff
 
-**Status:** Completed and archived on 2026-08-08.
+**Status:** In validation gate; implementation and automated checks are
+complete, with owner review pending.
 
 ## User story
 
@@ -130,7 +131,7 @@ The dependency presentation must make clear that:
 - No styling or layout redesign beyond accommodating the revised research
   text.
 
-## Implementation record
+## Implementation and validation evidence
 
 - ILS now introduces Applied Superconductor before the linked standard
   Graphene line and Particle Container assembly.
@@ -146,3 +147,6 @@ The dependency presentation must make clear that:
   allocation, labels, order, technology chains, and existing Graphene link.
 - Desktop browser review confirmed readable dashboard and expanded research
   presentation without horizontal overflow or console errors.
+
+This evidence does not close the story. Owner review and explicit acceptance
+are the final validation gate before completion and archival.

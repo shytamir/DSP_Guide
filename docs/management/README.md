@@ -7,6 +7,10 @@ that affect the project's next validation work or what it may publish.
 
 - `game-asset-use-permission-sanitized.md` preserves the limited permission to
   use unmodified in-game assets in the non-commercial guide and related mod.
+- [`ils-purple-green-research-handoff-user-story.md`](ils-purple-green-research-handoff-user-story.md)
+  records the implemented ILS prerequisite, protected-allocation, PURPLE
+  handoff, and GREEN branch-order corrections. It remains open in its
+  validation gate pending owner review.
 
 ## Completed records
 
@@ -17,16 +21,13 @@ that affect the project's next validation work or what it may publish.
   records the completed Electromagnetic Turbine map and ILS finite-bill work.
 - [`../archive/reading-pane-right-alignment-user-story.md`](../archive/reading-pane-right-alignment-user-story.md)
   records the completed and owner-validated reading-pane alignment work.
-- [`../archive/ils-purple-green-research-handoff-user-story.md`](../archive/ils-purple-green-research-handoff-user-story.md)
-  records the completed ILS prerequisite, protected-allocation, PURPLE
-  handoff, and GREEN branch-order corrections.
-
 Other completed roadmaps, plans, correction records, and user stories are also
 stored under [`../archive/`](../archive/). Their preserved implementation
 language is historical and does not define current work.
 
-There is no active implementation roadmap. The project is in maintenance
-mode.
+The project is in maintenance mode with one implemented user story in its
+validation gate. Automated and browser checks are evidence for that gate, but
+owner review is required before the story is completed and archived.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.
