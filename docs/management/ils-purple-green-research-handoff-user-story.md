@@ -1,7 +1,7 @@
 # ILS-to-GREEN Research Handoff
 
-**Status:** In validation gate; implementation and automated checks are
-complete, with owner review pending.
+**Status:** Active after first implementation pass; first audit unsuccessful
+and refinement required before validation resumes.
 
 ## User story
 
@@ -131,7 +131,7 @@ The dependency presentation must make clear that:
 - No styling or layout redesign beyond accommodating the revised research
   text.
 
-## Implementation and validation evidence
+## First implementation pass
 
 - ILS now introduces Applied Superconductor before the linked standard
   Graphene line and Particle Container assembly.
@@ -148,5 +148,9 @@ The dependency presentation must make clear that:
 - Desktop browser review confirmed readable dashboard and expanded research
   presentation without horizontal overflow or console errors.
 
-This evidence does not close the story. Owner review and explicit acceptance
-are the final validation gate before completion and archival.
+These checks did not establish that the story was complete. The
+[`first-pass audit`](ils-purple-green-research-handoff-first-pass-audit.md)
+found material problems in the reader-facing changes and in the focused
+validators that protected them. The story remains active, with refinement as
+the next project step. Owner validation can resume only after the corrective
+pass is complete.

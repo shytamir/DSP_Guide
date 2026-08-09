@@ -1,7 +1,8 @@
 # DSP Practical Progression Guide
 
 **Status:** Maintenance mode. Version 2.2 is the current published minor line,
-with one implemented user story in its validation gate pending owner review.
+with one active user story past its first implementation pass and awaiting
+refinement after an unsuccessful first audit.
 
 ## Purpose
 
@@ -108,19 +109,22 @@ contains only the deployable static website.
 The version 2.2 presentation and card-refinement work is complete,
 owner-validated, and archived in
 [`docs/archive/version-2.2-maintenance-release.md`](archive/version-2.2-maintenance-release.md).
-One bounded user story remains active in its validation gate. Its implementation
-and automated checks are complete, but owner review is the final gate before
-the story can be accepted and archived. Further changes are accepted when they
-address a verified defect, authoritative game-data change, security or
-compatibility need, or a clearly articulated reader problem.
+One bounded user story remains active. Its first implementation pass and
+automated checks are complete, but the first audit found material clarity,
+dependency-presentation, validation, and process defects. Refinement is the
+next project step; owner validation cannot resume until that corrective pass is
+complete. Further changes are accepted when they address a verified defect,
+authoritative game-data change, security or compatibility need, or a clearly
+articulated reader problem.
 
-- **Validation gate — ILS-to-GREEN research handoff:** Applied Superconductor now
-  precedes the ILS Graphene requirement, the Vessel fleet exposes its 50/50
-  Titanium Alloy allocation, PURPLE recognizes the completed handoff, and
-  GREEN presents its Quantum, Frame, Gravity, and convergence order. Automated
-  and browser checks have passed; owner review remains the final gate. The
-  active story is in
-  [`docs/management/ils-purple-green-research-handoff-user-story.md`](management/ils-purple-green-research-handoff-user-story.md).
+- **Active refinement — ILS-to-GREEN research handoff:** the first
+  implementation pass attempted the approved ILS prerequisite, protected
+  Titanium Alloy allocation, PURPLE handoff, and GREEN branch presentation.
+  Its first audit found that the reader-facing execution and focused validators
+  do not yet satisfy the story. The
+  [`active story`](management/ils-purple-green-research-handoff-user-story.md)
+  and [`first-pass audit`](management/ils-purple-green-research-handoff-first-pass-audit.md)
+  define the current state. No corrective implementation pass has started.
 
 - **Tabled — science pace:** further calibration of minimum cube targets is not
   scheduled.

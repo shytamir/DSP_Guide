@@ -8,9 +8,12 @@ that affect the project's next validation work or what it may publish.
 - `game-asset-use-permission-sanitized.md` preserves the limited permission to
   use unmodified in-game assets in the non-commercial guide and related mod.
 - [`ils-purple-green-research-handoff-user-story.md`](ils-purple-green-research-handoff-user-story.md)
-  records the implemented ILS prerequisite, protected-allocation, PURPLE
-  handoff, and GREEN branch-order corrections. It remains open in its
-  validation gate pending owner review.
+  defines the active ILS prerequisite, protected-allocation, PURPLE handoff,
+  and GREEN branch-order work. The story is past its first implementation pass
+  and requires refinement before validation can resume.
+- [`ils-purple-green-research-handoff-first-pass-audit.md`](ils-purple-green-research-handoff-first-pass-audit.md)
+  records the unsuccessful first audit, including every reader-facing change,
+  the validator defects, and the required refinement direction.
 
 ## Completed records
 
@@ -25,9 +28,10 @@ Other completed roadmaps, plans, correction records, and user stories are also
 stored under [`../archive/`](../archive/). Their preserved implementation
 language is historical and does not define current work.
 
-The project is in maintenance mode with one implemented user story in its
-validation gate. Automated and browser checks are evidence for that gate, but
-owner review is required before the story is completed and archived.
+The project is in maintenance mode with one active user story. Its first
+implementation pass and automated checks are complete, but the first audit
+found material defects. Refinement is pending; owner validation has not
+resumed, and the story is not ready for completion or archival.
 
 Raw correspondence, unsanitized personal information, player snapshots, and
 game assemblies must remain outside version control.
