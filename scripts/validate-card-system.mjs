@@ -381,6 +381,7 @@ function phaseSlice(id, nextId) {
 const ilsPhase = phaseSlice("ils", "yellow");
 const purplePhase = phaseSlice("purple", "green");
 const greenPhase = phaseSlice("green", "dyson");
+const photonPhase = phaseSlice("photon", "white");
 const whitePhase = phaseSlice("white", "warp");
 const warpPhase = phaseSlice("warp", "logistics");
 const logisticsStart = html.indexOf(
@@ -684,6 +685,36 @@ for (const [phaseName, phaseMarkup, guidancePattern] of phaseLocalCubeGuidance) 
   if (!dashboard || !guidancePattern.test(stripMarkup(dashboard))) {
     errors.push(`${phaseName} phase-local cube guidance is missing`);
   }
+}
+const photonDashboard = photonPhase.match(
+  /<h3 class="dashboard-title">Phase dashboard<\/h3><table class="phase-dashboard">[\s\S]*?<\/table>/,
+)?.[0];
+const photonDashboardText = stripMarkup(photonDashboard || "");
+if (
+  !photonDashboard ||
+  !photonDashboardText.includes("Main goal") ||
+  !photonDashboardText.includes("Desired state") ||
+  !photonDashboardText.includes("Keep an eye on") ||
+  !photonDashboardText.includes("Move on when")
+) {
+  errors.push("The PHOTON dashboard is missing its descriptive state contract");
+}
+if (
+  /\b\d[\d,.]*\b|\b(?:one|two|three|four|five|six|seven|eight|nine|ten)\b/i.test(
+    photonDashboardText,
+  )
+) {
+  errors.push("The PHOTON dashboard exposes an exact figure");
+}
+const photonDetailText = stripMarkup(
+  photonPhase.replace(photonDashboard || "", ""),
+);
+if (
+  !/Two lensed Receivers:\s*up to 24 photons\/min/i.test(photonDetailText) ||
+  !/Four:\s*up to 48\/min/i.test(photonDetailText) ||
+  !/2,000 Antimatter/i.test(photonDetailText)
+) {
+  errors.push("The PHOTON detailed reference no longer retains its exact figures");
 }
 for (const legacyId of ["flight", "titanium"]) {
   if (!html.includes(`class="phase-stage-heading" id="${legacyId}"`)) {

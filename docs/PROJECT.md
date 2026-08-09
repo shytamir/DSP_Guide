@@ -1,7 +1,7 @@
 # DSP Practical Progression Guide
 
-**Status:** Active PHOTON dashboard refinement. Version 2.2 is the current
-published minor line, Roadmap Story 10 is owner-accepted, and Roadmap Story 11
+**Status:** Active DYSON Ejector map condensation. Version 2.2 is the current
+published minor line, Roadmap Story 11 is owner-accepted, and Roadmap Story 12
 is under implementation.
 
 ## Purpose
@@ -98,7 +98,9 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   three-stage WARP and ILS expedition rails. It also keeps the ILS manifest
   figure-free while each accepted stage retains its actionable requirements,
   and prevents the retired global cube-target table from displacing
-  phase-local production guidance.
+  phase-local production guidance. It also keeps the PHOTON dashboard
+  figure-free while preserving exact PHOTON planning figures in its detailed
+  reference layer.
 - `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
   reset behavior, storage failure, glossary placement, and the one-screen
   route/optional-capability grouping.
@@ -135,7 +137,7 @@ in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now orders twelve icon,
 progression-entry, expedition-navigation, and case-specific refinement stories;
-Stories 7 through 10 are owner-accepted, and Story 11 is under implementation.
+Stories 7 through 11 are owner-accepted, and Story 12 is under implementation.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -151,8 +153,8 @@ Stories 7 through 10 are owner-accepted, and Story 11 is under implementation.
   mandatory ILS.
 - **Active — progressive disclosure:** the ILS manifest refinement is
   owner-accepted as Story 9, and global cube-target retirement is
-  owner-accepted as Story 10. PHOTON dashboard refinement is under
-  implementation as Story 11; the DYSON Ejector production map remains Story
+  owner-accepted as Story 10. PHOTON dashboard refinement is owner-accepted as
+  Story 11, and DYSON Ejector map condensation is under implementation as Story
   12. The checklist baseline correction remains unscheduled.
 - **Inactive — mobile priority:** the standing no-mobile-polish story remains
   visible without becoming a roadmap step or gate.

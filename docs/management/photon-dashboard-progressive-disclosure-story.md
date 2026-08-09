@@ -1,7 +1,6 @@
 # PHOTON Dashboard Progressive-Disclosure Story
 
-**Status:** Under implementation as Roadmap Story 11 after Roadmap Story 10
-owner acceptance.
+**Status:** Completed and owner-accepted as Roadmap Story 11 on 2026-08-09.
 
 ## Describe the PHOTON state without prescribing exact figures
 
