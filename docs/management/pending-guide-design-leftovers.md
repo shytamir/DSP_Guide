@@ -1,7 +1,7 @@
 # Pending Guide Design Leftovers
 
 **Status:** Planning inventory complete. No unresolved design concern remains
-in this record, and none of its resulting stories is on the active roadmap.
+in this record. Its four resulting stories are now Roadmap Stories 9–12.
 
 The expedition intra-navigation decisions now live in
 [`expedition-intra-navigation-user-stories.md`](expedition-intra-navigation-user-stories.md).
@@ -25,6 +25,6 @@ The case inventory is complete:
 - The EM-Rail Ejector production-map condensation is isolated in
   [`dyson-ejector-production-map-condensation-story.md`](dyson-ejector-production-map-condensation-story.md).
 
-These are separate case-specific stories. This record authorizes no broad
-simplification or dashboard rewrite and does not place any story on the
-roadmap.
+These remain separate case-specific stories. Their roadmap placement does not
+authorize a broad simplification or dashboard rewrite beyond their individual
+contracts.

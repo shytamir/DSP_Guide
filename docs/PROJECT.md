@@ -129,9 +129,9 @@ preserve that work's historical implementation and correction record.
 The ordered guide-correction sequence is complete. Both stories are preserved
 in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
-current [`management roadmap`](management/ROADMAP.md) now orders eight icon,
-progression-entry, and expedition-navigation stories; Story 6 is implemented,
-Tier 2 validated, and ready for owner acceptance.
+current [`management roadmap`](management/ROADMAP.md) now orders twelve icon,
+progression-entry, expedition-navigation, and case-specific refinement stories;
+Story 6 is implemented, Tier 2 validated, and ready for owner acceptance.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -147,9 +147,10 @@ Tier 2 validated, and ready for owner acceptance.
   validated, and ready for owner acceptance before the shared WARP and ILS
   three-stage navigation stories.
 - **Planned — progressive disclosure:** the completed case inventory produced
-  four approved, unscheduled stories covering the PHOTON dashboard, the global
-  cube-target table, the ILS manifest, and the DYSON Ejector production map.
-  The checklist baseline correction also remains unscheduled.
+  four approved stories covering the ILS manifest, the global cube-target
+  table, the PHOTON dashboard, and the DYSON Ejector production map. They are
+  ordered as Roadmap Stories 9–12. The checklist baseline correction remains
+  unscheduled.
 - **Inactive — mobile priority:** the standing no-mobile-polish story remains
   visible without becoming a roadmap step or gate.
 

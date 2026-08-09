@@ -1,8 +1,8 @@
 # ILS Manifest Progressive-Disclosure Story
 
-**Status:** Approved and tracked, but held. Implementation may begin only
-after ILS intra-navigation has been implemented and owner-accepted. This story
-is not part of the current roadmap.
+**Status:** Approved as Roadmap Story 9. Pending Roadmap Story 8 owner
+acceptance; implementation may begin only after ILS intra-navigation has been
+implemented and owner-accepted.
 
 ## Let the ILS manifest orient while each stage owns its figures
 
@@ -48,8 +48,7 @@ must define the final stage boundaries before the manifest is reorganized.
 - Do not change ILS's mandatory position between RED and YELLOW.
 - Do not redesign or reimplement the accepted expedition stage rail.
 - Do not add new stages, subordinate navigation, or persistence.
-- Do not include release work or add this story to the roadmap until the owner
-  schedules it after the dependency hold clears.
+- Do not include release work.
 
 ### Acceptance
 

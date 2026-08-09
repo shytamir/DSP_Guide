@@ -1,7 +1,7 @@
 # PHOTON Dashboard Progressive-Disclosure Story
 
-**Status:** Approved and tracked, but unscheduled. This story is not part of
-the current roadmap and is not authorized for implementation.
+**Status:** Approved as Roadmap Story 11. Pending Roadmap Story 10 owner
+acceptance.
 
 ## Describe the PHOTON state without prescribing exact figures
 
@@ -36,8 +36,7 @@ like a set of instructions.
   production cards, or WHITE requirements.
 - Do not turn the dashboard into a procedure or add a new disclosure control.
 - Do not perform a document-wide dashboard rewrite.
-- Do not include release work or add this story to the roadmap until the owner
-  schedules it.
+- Do not include release work.
 
 ### Acceptance
 

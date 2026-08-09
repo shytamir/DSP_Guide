@@ -3,14 +3,22 @@
 **Status:** Ordered implementation active on 2026-08-09. Story 6 is
 implemented, Tier 2 validated, and ready for owner acceptance.
 
-This roadmap implements eight approved stories in order across three records:
+This roadmap implements twelve approved stories in order across seven records:
 
 - icon placement in
   [`prose-icon-placement-discussion.md`](prose-icon-placement-discussion.md);
 - optional-capability entry mapping in
   [`progression-entry-mapping-discussion.md`](progression-entry-mapping-discussion.md);
 - expedition stage navigation in
-  [`expedition-intra-navigation-user-stories.md`](expedition-intra-navigation-user-stories.md).
+  [`expedition-intra-navigation-user-stories.md`](expedition-intra-navigation-user-stories.md);
+- ILS manifest progressive disclosure in
+  [`ils-manifest-progressive-disclosure-story.md`](ils-manifest-progressive-disclosure-story.md);
+- global cube-target retirement in
+  [`cube-production-target-table-retirement-story.md`](cube-production-target-table-retirement-story.md);
+- PHOTON dashboard progressive disclosure in
+  [`photon-dashboard-progressive-disclosure-story.md`](photon-dashboard-progressive-disclosure-story.md);
+- DYSON Ejector map condensation in
+  [`dyson-ejector-production-map-condensation-story.md`](dyson-ejector-production-map-condensation-story.md).
 
 The earlier guide-correction sequence is complete and preserved in
 [`docs/archive/guide-corrections-user-stories.md`](../archive/guide-corrections-user-stories.md).
@@ -78,6 +86,35 @@ Implement Expedition Intra-Navigation Story 2. Reuse the accepted WARP control
 while preserving ILS's compatibility anchors, haulback specification, finite
 production instructions, and mandatory route position.
 
+### 9. Reorganize the ILS manifest around stage outcomes
+
+**State:** Pending Story 8 owner acceptance.
+
+Implement the held ILS manifest progressive-disclosure story immediately
+after its accepted stage structure exists. Keep exact requirements in the
+stage where they become actionable.
+
+### 10. Retire the global cube-production target table
+
+**State:** Pending Story 9 owner acceptance.
+
+Remove the low-utility global rate table without changing phase-local targets
+or replacing it with another global planning surface.
+
+### 11. Describe the PHOTON dashboard state without exact figures
+
+**State:** Pending Story 10 owner acceptance.
+
+Keep the dashboard concise and observational while retaining accurate PHOTON
+figures in the detailed reference layer.
+
+### 12. Condense the DYSON Ejector production map
+
+**State:** Pending Story 11 owner acceptance.
+
+Reduce the map to four meaningful branch rows plus the final convergence while
+preserving every raw-to-output transformation.
+
 ## Inactive standing story
 
 [`no-mobile-polish-story.md`](no-mobile-polish-story.md) remains present as an
@@ -89,8 +126,8 @@ a structural problem shared with desktop.
 
 All three icon stories and the first two progression-entry stories are
 owner-accepted. The third progression-entry story awaits owner acceptance.
-Progressive-disclosure planning has produced four unscheduled stories. Those
-records do not authorize implementation or alter this execution order.
+The four completed planning records are now ordered as Stories 9–12. They do
+not bypass the owner-acceptance gates on Stories 6–8.
 
 ## Operating rules
 
@@ -104,6 +141,6 @@ records do not authorize implementation or alter this execution order.
 
 ## Completion
 
-This roadmap is complete when all eight ordered stories are owner-accepted.
+This roadmap is complete when all twelve ordered stories are owner-accepted.
 The inactive no-mobile story is not part of completion. Archive or replace the
 roadmap only after an explicit owner instruction.

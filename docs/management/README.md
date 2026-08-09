@@ -31,9 +31,9 @@ permissions. Start here before creating or changing a management record.
 
 ## Roadmap state and tracked work
 
-- [`ROADMAP.md`](ROADMAP.md) orders eight approved icon, progression-entry, and
-  expedition-navigation stories; Story 6 is implemented, Tier 2 validated,
-  and ready for owner acceptance.
+- [`ROADMAP.md`](ROADMAP.md) orders twelve approved icon, progression-entry,
+  expedition-navigation, and case-specific refinement stories; Story 6 is
+  implemented, Tier 2 validated, and ready for owner acceptance.
 - [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md)
   records the completed progressive-disclosure inventory and its settled
   outcomes.
@@ -42,7 +42,7 @@ permissions. Start here before creating or changing a management record.
   [`ils-manifest-progressive-disclosure-story.md`](ils-manifest-progressive-disclosure-story.md),
   and
   [`dyson-ejector-production-map-condensation-story.md`](dyson-ejector-production-map-condensation-story.md)
-  are approved, unscheduled stories outside the roadmap.
+  are approved as Roadmap Stories 9–12.
 - [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
   tracks the approved DYSON checklist baseline correction; it is unscheduled
   and is not part of the current roadmap.

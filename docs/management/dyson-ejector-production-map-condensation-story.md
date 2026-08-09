@@ -1,7 +1,7 @@
 # DYSON Ejector Production-Map Condensation Story
 
-**Status:** Approved and tracked, but unscheduled. This story is not part of
-the current roadmap and is not authorized for implementation.
+**Status:** Approved as Roadmap Story 12. Pending Roadmap Story 11 owner
+acceptance.
 
 ## Reduce the Ejector map to four meaningful branch rows
 
@@ -66,8 +66,7 @@ one recipe.
   cross-reference destinations.
 - Do not establish a new document-wide grammar for combining short branches.
 - Do not change any other production card.
-- Do not include release work or add this story to the roadmap until the owner
-  schedules it.
+- Do not include release work.
 
 ### Acceptance
 

@@ -1,7 +1,7 @@
 # Cube Production Target Table Retirement Story
 
-**Status:** Approved and tracked, but unscheduled. This story is not part of
-the current roadmap and is not authorized for implementation.
+**Status:** Approved as Roadmap Story 10. Pending Roadmap Story 9 owner
+acceptance.
 
 ## Retire the global cube-production target table
 
@@ -34,8 +34,7 @@ figures available in their relevant phase contexts.
   detailed phase prose, checklists, or production cards.
 - Do not replace the table with a new global dashboard, calculator, or summary.
 - Do not change the practical route or phase completion criteria.
-- Do not include release work or add this story to the roadmap until the owner
-  schedules it.
+- Do not include release work.
 
 ### Acceptance
 
