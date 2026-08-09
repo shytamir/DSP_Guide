@@ -128,6 +128,8 @@ for (const target of links) {
   }
 }
 
+let operatingNoteCount = 0;
+
 function validateMap(id, body, requireExactDestination) {
   const required = [
     'class="map-supplies"><h4>Supplies</h4>',
@@ -146,6 +148,23 @@ function validateMap(id, body, requireExactDestination) {
   const pipeline = body.match(/class="map-pipeline"><h4>Production Map<\/h4>([\s\S]*?)<\/section>/)?.[1] || "";
   const destination = body.match(/class="map-destination"><h4>Destination<\/h4>([\s\S]*?)<\/section>/)?.[1] || "";
   const visible = value => value.replace(/<[^>]+>/g, " ");
+
+  for (const [surface, markup] of [["Supplies", supplies], ["Production Map", pipeline], ["Destination", destination]]) {
+    if (!markup.includes('class="proto-icon proto-icon-item"')) {
+      errors.push(`${id} ${surface} lost its approved item icon treatment`);
+    }
+  }
+  if (!pipeline.includes('class="proto-icon proto-icon-producer"')) {
+    errors.push(`${id} Production Map lost its approved producer icons`);
+  }
+
+  const operatingNotes = findElementsByClass(body, "map-note");
+  operatingNoteCount += operatingNotes.length;
+  for (const note of operatingNotes) {
+    if (/<(?:img|svg)\b/i.test(note.inner)) {
+      errors.push(`${id} Operating Note contains an icon`);
+    }
+  }
 
   if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(visible(supplies))) {
     errors.push(`${id} puts exact internal arithmetic in Supplies`);
@@ -420,4 +439,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${links.length} direct links, textual-map complexity within bounds, and ${recipeOutputs.size} authoritative output recipes verified.`);
+console.log(`Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${operatingNoteCount} icon-free Operating Notes, ${links.length} direct links, textual-map complexity within bounds, and ${recipeOutputs.size} authoritative output recipes verified.`);

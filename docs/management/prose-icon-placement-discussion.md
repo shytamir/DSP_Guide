@@ -1,7 +1,7 @@
 # Icon Placement Policy and Proposed Stories
 
 **Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). Story 2 is active and ready for owner acceptance.
+[`ROADMAP.md`](ROADMAP.md). Story 3 is active and ready for owner acceptance.
 
 ## Problem
 
@@ -76,8 +76,7 @@ prose-icon saturation.
 
 **Class:** Editorial refinement with presentation review.
 
-**State:** Active; implementation and Tier 2 validation complete, awaiting
-owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 As a reader following phase instructions, I want prose and action surfaces to
 read without repeated item artwork so that names, sentences, and decisions set
@@ -114,7 +113,8 @@ the reading rhythm.
 
 **Class:** Editorial refinement with presentation review.
 
-**State:** Pending Story 2 owner acceptance.
+**State:** Active; implementation and Tier 2 validation complete, awaiting
+owner acceptance.
 
 As a reader opening a production card, I want its Operating Note to read as
 plain guidance so that the note is visually distinct from the icon-rich

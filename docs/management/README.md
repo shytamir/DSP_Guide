@@ -32,10 +32,10 @@ permissions. Start here before creating or changing a management record.
 ## Roadmap state and tracked work
 
 - [`ROADMAP.md`](ROADMAP.md) orders eight approved icon, progression-entry, and
-  expedition-navigation stories; Story 2 is ready for owner acceptance.
+  expedition-navigation stories; Story 3 is ready for owner acceptance.
 - [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md)
-  preserves the remaining progressive-disclosure concern, deferred until Icon
-  Story 2 is accepted; it does not authorize implementation.
+  preserves the remaining progressive-disclosure concern as planning input;
+  it does not authorize implementation.
 - [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
   tracks the approved DYSON checklist baseline correction; it is unscheduled
   and is not part of the current roadmap.
@@ -53,9 +53,8 @@ permissions. Start here before creating or changing a management record.
   and 8.
 
 Both ordered guide-correction stories were owner-accepted on 2026-08-09 and
-archived. Icon Story 1 is owner-accepted. Icon Story 2 has completed
-implementation and Tier 2 validation and is ready for owner acceptance; Story
-3 remains gated by that decision.
+archived. Icon Stories 1 and 2 are owner-accepted. Icon Story 3 has completed
+implementation and Tier 2 validation and is ready for owner acceptance.
 
 ## Historical records
 

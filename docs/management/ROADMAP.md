@@ -1,6 +1,6 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Story 2 is implemented
+**Status:** Ordered implementation active on 2026-08-09. Story 3 is implemented
 and ready for owner acceptance.
 
 This roadmap implements eight approved stories in order across three records:
@@ -26,19 +26,19 @@ removing existing icons or adding a dependency.
 
 ### 2. Remove icons from narrative and action surfaces
 
-**State:** Implementation and Tier 2 validation complete; awaiting owner
-acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
-Icon Story 2 applies the settled placement policy only to its prose,
-dashboard, checklist, and heading surfaces. The cleanup and Tier 2 presentation
-evidence are ready for owner acceptance.
+Icon Story 2 applies the settled placement policy to its prose, dashboard,
+checklist, and heading surfaces.
 
 ### 3. Remove icons from card Operating Note prose
 
-**State:** Pending Story 2 owner acceptance.
+**State:** Implementation and Tier 2 validation complete; awaiting owner
+acceptance.
 
-Implement Icon Story 3. Keep the rest of the approved card icon system
-unchanged, then complete its card contracts and Tier 2 expanded-card review.
+All 19 Operating Notes are icon-free, while the approved card map treatments
+remain intact. The durable card contract and Tier 2 expanded-card evidence are
+ready for owner acceptance.
 
 ### 4. Separate optional capabilities from main-route numbering
 
@@ -87,9 +87,9 @@ a structural problem shared with desktop.
 
 ## Parallel planning boundary
 
-The remaining progressive-disclosure concern may be investigated only after
-Icon Story 2 is owner-accepted. That planning does not authorize implementation
-or alter this execution order.
+Icon Story 2 is owner-accepted, so the remaining progressive-disclosure concern
+may now be investigated as planning input. That planning does not authorize
+implementation or alter this execution order.
 
 ## Operating rules
 
