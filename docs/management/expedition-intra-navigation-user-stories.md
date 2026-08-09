@@ -1,8 +1,7 @@
 # Expedition Intra-Navigation Stories
 
-**Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). WARP is owner-accepted; ILS is under
-implementation.
+**Status:** Completed under [`ROADMAP.md`](ROADMAP.md). Both stories are
+owner-accepted.
 
 ## Reader problem
 
@@ -102,8 +101,7 @@ relevant deployment step without rereading the whole section.
 
 **Class:** Structural navigation change.
 
-**State:** Under implementation after Expedition Intra-Navigation Story 1
-owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
 As a reader completing the mandatory ILS transition, I want the same three-stage
 rail to distinguish departure, haulback, and automation so that I can resume

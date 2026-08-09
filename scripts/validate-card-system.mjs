@@ -450,8 +450,8 @@ const warpStageLinks = [
   ["II", "warp-outpost", "Establish the source outpost"],
   ["III", "warp-automate", "Automate the vessel route"],
 ];
-if ((html.match(/class="stage-rail"/g) || []).length !== 1) {
-  errors.push("WARP must expose exactly one shared expedition stage rail");
+if ((html.match(/class="stage-rail"/g) || []).length !== 2) {
+  errors.push("WARP and ILS must each expose one shared expedition stage rail");
 }
 for (const [roman, anchor, purpose] of warpStageLinks) {
   const stageControl = `<a aria-label="WARP Stage ${roman}: ${purpose}" class="stage-tab" data-stage="${anchor}" href="#${anchor}" title="WARP Stage ${roman}: ${purpose}">${roman}</a>`;
@@ -465,10 +465,9 @@ for (const [roman, anchor, purpose] of warpStageLinks) {
 if (
   !rail?.[1].includes(
     '<div aria-label="WARP expedition stages" class="stage-rail" data-stage-phase="warp" role="group">',
-  ) ||
-  rail?.[1].includes('data-stage-phase="ils"')
+  )
 ) {
-  errors.push("The shared stage rail is not scoped to the active WARP proof");
+  errors.push("The accepted WARP stage rail is missing");
 }
 if (
   (warpPhase.match(/class="stage-cue"/g) || []).length !== 3 ||
@@ -477,6 +476,44 @@ if (
   !warpPhase.includes("A powered home ILS uses Vessels and Warpers")
 ) {
   errors.push("WARP stages do not state their entry conditions and advance outcomes");
+}
+const ilsStageLinks = [
+  ["I", "flight", "Get flight-ready"],
+  ["II", "titanium", "Build an outpost worth returning to"],
+  ["III", "ils-automate", "Make the route automatic"],
+];
+for (const [roman, anchor, purpose] of ilsStageLinks) {
+  const stageControl = `<a aria-label="ILS Stage ${roman}: ${purpose}" class="stage-tab" data-stage="${anchor}" href="#${anchor}" title="ILS Stage ${roman}: ${purpose}">${roman}</a>`;
+  if (!rail?.[1].includes(stageControl)) {
+    errors.push(`ILS stage ${roman} is missing its accessible #${anchor} control`);
+  }
+  if ((html.match(new RegExp(`id="${anchor}"`, "g")) || []).length !== 1) {
+    errors.push(`ILS stage anchor must appear exactly once: #${anchor}`);
+  }
+}
+if (
+  !rail?.[1].includes(
+    '<div aria-label="ILS expedition stages" class="stage-rail" data-stage-phase="ils" role="group">',
+  ) ||
+  !ilsPhase.includes(
+    '<h2 class="phase-stage-heading" id="flight">1. Get flight-ready</h2>',
+  ) ||
+  !ilsPhase.includes(
+    '<h2 class="phase-stage-heading" id="titanium">2. Build an outpost worth returning to</h2>',
+  ) ||
+  !ilsPhase.includes(
+    '<h2 class="phase-stage-heading" id="ils-automate">3. Make the route automatic</h2>',
+  )
+) {
+  errors.push("ILS stage controls are not attached to the three approved headings");
+}
+if (
+  (ilsPhase.match(/class="stage-cue"/g) || []).length !== 3 ||
+  !ilsPhase.includes("the ILS bridge is the next mandatory route job") ||
+  !ilsPhase.includes("protected haulback of 860 Titanium Ingots and 520 High-Purity Silicon") ||
+  !ilsPhase.includes("Two ILS towers and five Vessels deliver Titanium and Silicon home")
+) {
+  errors.push("ILS stages do not preserve departure, haulback, and finite automation boundaries");
 }
 if (
   !navigationScript.includes("stageGroups = new Map") ||
@@ -490,6 +527,7 @@ if (
 }
 if (
   !guideCss.includes(".rail-tab.active+.stage-rail{display:flex}") ||
+  !guideCss.includes(".rail-entry-ils{--stage:79,209,197}") ||
   !guideCss.includes("@media(max-width:900px){.rail-entry")
 ) {
   errors.push("Shared stage navigation is missing desktop projection or narrow access styling");

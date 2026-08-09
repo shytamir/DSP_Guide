@@ -1,8 +1,8 @@
 # DSP Practical Progression Guide
 
-**Status:** Active expedition-navigation implementation. Version 2.2 is the
-current published minor line, Expedition Intra-Navigation Story 1 is
-owner-accepted, and Story 2 is under implementation.
+**Status:** Active ILS manifest refinement. Version 2.2 is the current
+published minor line, both Expedition Intra-Navigation stories are
+owner-accepted, and Roadmap Story 9 is under implementation.
 
 ## Purpose
 
@@ -95,7 +95,7 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
   map icon treatments, authoritative output recipes, and the separation of
   optional capabilities from main-route numbering, including contextual WARP
   entry destinations, repeated-expansion LOGISTICS entry cues, and the shared
-  three-stage WARP expedition rail.
+  three-stage WARP and ILS expedition rails.
 - `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
   reset behavior, storage failure, glossary placement, and the one-screen
   route/optional-capability grouping.
@@ -132,7 +132,7 @@ in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now orders twelve icon,
 progression-entry, expedition-navigation, and case-specific refinement stories;
-Story 7 is owner-accepted and Story 8 is under implementation.
+Stories 7 and 8 are owner-accepted, and Story 9 is under implementation.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -145,12 +145,11 @@ Story 7 is owner-accepted and Story 8 is under implementation.
   icon-rich identity, reference, and production-map surfaces.
 - **Active — navigation:** All three Progression Entry stories are
   owner-accepted. The shared three-stage rail is owner-accepted for WARP and
-  is under implementation for mandatory ILS.
-- **Planned — progressive disclosure:** the completed case inventory produced
-  four approved stories covering the ILS manifest, the global cube-target
-  table, the PHOTON dashboard, and the DYSON Ejector production map. They are
-  ordered as Roadmap Stories 9–12. The checklist baseline correction remains
-  unscheduled.
+  mandatory ILS.
+- **Active — progressive disclosure:** the ILS manifest refinement is under
+  implementation as Story 9. The global cube-target table, PHOTON dashboard,
+  and DYSON Ejector production map remain ordered as Stories 10–12. The
+  checklist baseline correction remains unscheduled.
 - **Inactive — mobile priority:** the standing no-mobile-polish story remains
   visible without becoming a roadmap step or gate.
 

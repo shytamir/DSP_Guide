@@ -1,8 +1,7 @@
 # ILS Manifest Progressive-Disclosure Story
 
-**Status:** Approved as Roadmap Story 9. Pending Roadmap Story 8 owner
-acceptance; implementation may begin only after ILS intra-navigation has been
-implemented and owner-accepted.
+**Status:** Under implementation as Roadmap Story 9 after Roadmap Story 8 owner
+acceptance.
 
 ## Let the ILS manifest orient while each stage owns its figures
 

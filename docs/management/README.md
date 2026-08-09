@@ -32,8 +32,8 @@ permissions. Start here before creating or changing a management record.
 ## Roadmap state and tracked work
 
 - [`ROADMAP.md`](ROADMAP.md) orders twelve approved icon, progression-entry,
-  expedition-navigation, and case-specific refinement stories; Story 7 is
-  owner-accepted and Story 8 is under implementation.
+  expedition-navigation, and case-specific refinement stories; Stories 7 and
+  8 are owner-accepted and Story 9 is under implementation.
 - [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md)
   records the completed progressive-disclosure inventory and its settled
   outcomes.
@@ -62,7 +62,8 @@ permissions. Start here before creating or changing a management record.
 Both ordered guide-correction stories were owner-accepted on 2026-08-09 and
 archived. All three icon stories and all three Progression Entry stories are
 owner-accepted. Expedition Intra-Navigation Story 1 is implemented, Tier 2
-validated, and owner-accepted. Story 2 is under implementation.
+validated, and owner-accepted. Story 2 is also owner-accepted, and the ILS
+manifest refinement is under implementation.
 
 ## Historical records
 

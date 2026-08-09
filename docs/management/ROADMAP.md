@@ -1,7 +1,7 @@
 # Active Roadmap
 
-**Status:** Ordered implementation active on 2026-08-09. Story 7 is completed
-and owner-accepted; Story 8 is under implementation.
+**Status:** Ordered implementation active on 2026-08-09. Stories 7 and 8 are
+completed and owner-accepted; Story 9 is under implementation.
 
 This roadmap implements twelve approved stories in order across seven records:
 
@@ -78,15 +78,15 @@ and the shared three-stage behavior using the leaner WARP expedition.
 
 ### 8. Apply the shared expedition stage rail to mandatory ILS
 
-**State:** Under implementation after Story 7 owner acceptance.
+**State:** Completed and owner-accepted on 2026-08-09.
 
-Implement Expedition Intra-Navigation Story 2. Reuse the accepted WARP control
-while preserving ILS's compatibility anchors, haulback specification, finite
+Expedition Intra-Navigation Story 2 reuses the accepted WARP control while
+preserving ILS's compatibility anchors, haulback specification, finite
 production instructions, and mandatory route position.
 
 ### 9. Reorganize the ILS manifest around stage outcomes
 
-**State:** Pending Story 8 owner acceptance.
+**State:** Under implementation after Story 8 owner acceptance.
 
 Implement the held ILS manifest progressive-disclosure story immediately
 after its accepted stage structure exists. Keep exact requirements in the
@@ -122,10 +122,11 @@ a structural problem shared with desktop.
 
 ## Parallel planning boundary
 
-All three icon stories, all three progression-entry stories, and the first
-expedition-navigation story are owner-accepted. Story 8 is under implementation.
+All three icon stories, all three progression-entry stories, and both
+expedition-navigation stories are owner-accepted. Story 9 is under
+implementation.
 The four completed planning records are now ordered as Stories 9–12. They do
-not bypass the owner-acceptance gate on Story 8.
+not bypass the owner-acceptance gate on Story 9.
 
 ## Operating rules
 
