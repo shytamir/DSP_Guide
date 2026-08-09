@@ -1,7 +1,7 @@
 # DSP Practical Progression Guide
 
-**Status:** Awaiting further roadmap specification. Version 2.2 is the current
-published minor line, and no implementation story is active.
+**Status:** Active icon-placement roadmap implementation. Version 2.2 is the
+current published minor line, and Icon Story 1 is awaiting implementation.
 
 ## Purpose
 
@@ -116,12 +116,11 @@ Matrix tooltip. The [`completed story`](archive/ils-purple-green-research-handof
 and [`first-pass audit`](archive/ils-purple-green-research-handoff-first-pass-audit.md)
 preserve that work's historical implementation and correction record.
 
-The ordered correction sequence governed by
-[`docs/management/ROADMAP.md`](management/ROADMAP.md) is complete. Both
-guide-correction stories are owner-accepted and preserved in the
-[`archived story record`](archive/guide-corrections-user-stories.md). No
-implementation or planning story is active; further work requires owner
-specification of the next roadmap.
+The ordered guide-correction sequence is complete. Both stories are preserved
+in the
+[`archived story record`](archive/guide-corrections-user-stories.md). The
+current [`management roadmap`](management/ROADMAP.md) now activates three
+ordered icon-placement stories; Story 1 is awaiting implementation.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -129,10 +128,15 @@ specification of the next roadmap.
 - **Completed — DYSON reference authority:** owner-accepted on 2026-08-09. Live
   player-observable evidence now leads the DYSON decision layer, while exact
   planning figures remain confined to the approved reference locations.
-- **Awaiting specification — next roadmap:** the preserved
-  expedition-navigation, progressive-disclosure, prose-icon, and
-  mobile-priority concerns are inputs only; no planning or implementation is
-  active.
+- **Active — icon placement:** Story 1 prevents future materialization outside
+  approved surfaces. The two bounded presentation-cleanup stories remain
+  gated by predecessor acceptance.
+- **Planning — remaining design concerns:** expedition intra-navigation and
+  case-specific progressive disclosure remain under analysis. The settled
+  optional-capability navigation stories and checklist baseline correction
+  are not part of the active roadmap.
+- **Settled — mobile priority:** desktop remains the target; no mobile-polish
+  implementation story is required.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
   on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map

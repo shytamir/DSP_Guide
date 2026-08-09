@@ -1,65 +1,60 @@
-# Roadmap Status
+# Active Roadmap
 
-**Status:** Correction sequence complete; awaiting further roadmap
-specification. No story is currently active.
+**Status:** Icon-placement implementation active on 2026-08-09. Story 1 is
+awaiting implementation.
 
-This roadmap returned the project from maintenance mode to two ordered guide
-corrections. Both were implemented and owner-accepted on 2026-08-09. The
-remaining design concerns are preserved as possible inputs, but no planning or
-implementation work is active until the owner specifies the next roadmap.
+This roadmap implements the three approved stories in
+[`prose-icon-placement-discussion.md`](prose-icon-placement-discussion.md) in
+order. The earlier guide-correction sequence is complete and preserved in
+[`docs/archive/guide-corrections-user-stories.md`](../archive/guide-corrections-user-stories.md).
 
 ## Execution order
 
-### 1. Align the opening route with unified BLUE
+### 1. Prevent icon growth outside approved surfaces
 
-**State:** Owner-accepted on 2026-08-09.
+**State:** Active; awaiting implementation.
 
-Story 1 in the
-[`archived correction record`](../archive/guide-corrections-user-stories.md) is
-implemented and accepted. The visible default route begins with BLUE, while
-the `#bootstrap` compatibility anchor remains in the unified opening phase.
+Implement Story 1 in the icon-placement record. Constrain the existing
+materializer and the narrowest directly affected check without removing icons
+from `index.html` or adding a dependency.
 
-The accepted result remains a compatibility boundary for future work.
+Present the tooling result and Tier 1 evidence for owner acceptance before
+starting cleanup.
 
-### 2. Refine DYSON reference authority
+### 2. Remove icons from narrative and action surfaces
 
-**State:** Owner-accepted on 2026-08-09.
+**State:** Pending Story 1 owner acceptance.
 
-Story 2 in the
-[`archived correction record`](../archive/guide-corrections-user-stories.md) is
-implemented and accepted. Live factory evidence now leads the DYSON decision
-layer, exact planning figures remain in their approved reference locations,
-and the Tier 2 presentation review is complete.
+Implement Story 2 in the icon-placement record. Apply the settled placement
+policy only to its prose, dashboard, checklist, and heading surfaces, then
+complete its Tier 2 presentation review.
 
-### 3. Specify the next roadmap
+### 3. Remove icons from card Operating Note prose
 
-**State:** Pending further owner specification; not active work.
+**State:** Pending Story 2 owner acceptance.
 
-When the owner initiates the next roadmap specification, review
-[`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md) as
-input and:
+Implement Story 3 in the icon-placement record. Keep the rest of the approved
+card icon system unchanged, then complete its card contracts and Tier 2
+expanded-card presentation review.
 
-1. convert concerns with settled outcomes into bounded, ordered stories;
-2. retain unresolved product decisions in a separate leftovers record;
-3. update `ROADMAP.md` with the next proposed implementation sequence;
-4. present the next roadmap for owner approval before implementation.
+## Parallel planning boundary
 
-This section does not currently authorize planning or implementation of a
-leftover concern.
+Analysis and story preparation may continue in
+[`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md) and
+the proposed navigation record while the icon stories are implemented. That
+planning does not authorize implementation or alter this execution order.
 
 ## Operating rules
 
-- No roadmap story is active until the owner specifies and approves one.
-- Work on one roadmap story at a time after activation.
-- Preserve each story's scope, non-goals, and validation tier.
+- Work on one roadmap story at a time.
+- Obtain explicit owner acceptance before advancing to the next story.
+- Preserve each story's scope, non-goals, placement policy, and validation
+  tier.
 - Passing validation does not imply owner acceptance.
-- Update `docs/PROJECT.md` only at meaningful roadmap milestones.
-- Commit, push, release, complete, or archive work only when separately
-  authorized.
+- No release is included.
+- Commit, push, complete, or archive work only when separately authorized.
 
 ## Completion
 
-The approved correction sequence is complete. This record remains current only
-to state that no story is active and to identify the input boundary for future
-roadmap specification. Replace or archive it only after an explicit owner
-instruction.
+This roadmap is complete when all three icon stories are owner-accepted.
+Archive or replace it only after an explicit owner instruction.
