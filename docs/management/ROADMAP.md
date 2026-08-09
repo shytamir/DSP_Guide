@@ -1,7 +1,7 @@
 # Active Roadmap
 
 **Status:** Icon-placement implementation active on 2026-08-09. Story 1 is
-awaiting implementation.
+ready for owner acceptance.
 
 This roadmap implements the three approved stories in
 [`prose-icon-placement-discussion.md`](prose-icon-placement-discussion.md) in
@@ -12,14 +12,14 @@ order. The earlier guide-correction sequence is complete and preserved in
 
 ### 1. Prevent icon growth outside approved surfaces
 
-**State:** Active; awaiting implementation.
+**State:** Active; implementation and Tier 1 validation complete, awaiting
+owner acceptance.
 
-Implement Story 1 in the icon-placement record. Constrain the existing
-materializer and the narrowest directly affected check without removing icons
-from `index.html` or adding a dependency.
+Story 1 constrains the existing materializer and its directly affected check
+without removing icons from `index.html` or adding a dependency.
 
-Present the tooling result and Tier 1 evidence for owner acceptance before
-starting cleanup.
+The tooling result and Tier 1 evidence are ready for owner acceptance. Do not
+start cleanup before that decision.
 
 ### 2. Remove icons from narrative and action surfaces
 

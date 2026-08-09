@@ -114,31 +114,6 @@ function technologyIcon(technology) {
   return `<img class="proto-icon proto-icon-tech" src="${technologyAsset(technology)}" width="20" height="20" alt="" aria-hidden="true" loading="lazy"/>`;
 }
 
-function stripGeneratedMarkup(html) {
-  const withoutItemReferences = replaceElementsByClass(html, components.itemReference.className, reference =>
-    reference.inner.replace(/<img class="proto-icon proto-icon-item"[^>]*\/>/, ""),
-  );
-  const withoutProductionArrows = replaceElementsByClass(withoutItemReferences, components.productionArrow.className, () => "→");
-  return withoutProductionArrows
-    .replace(/<img class="proto-icon proto-icon-tech"[^>]*\/>/g, "")
-    .replace(/<img class="phase-icon phase-icon-(?:rail|tag)"[^>]*\/>/g, "");
-}
-
-function ensureIconFreeRegions(html) {
-  let transformed = html.replace(
-    /<li class="task-list-item">(?=<input[^>]*data-checklist-key="bootstrap:(?:iron-copper-magnetic-coils-and-circuit-boards-arrive-continuously|belts-sorters-miners-smelters-assemblers-storage-mk-i-storage-tanks-wind-turbines-and-tesla-towers-replenish-automatically)")/g,
-    '<li class="task-list-item icon-free">',
-  );
-  const startMarker = "<h3>Choose a Deuterium supply</h3>";
-  const endMarker = '<h2 class="quick-ref-title">Quick reference — How much is enough</h2>';
-  const start = transformed.indexOf(startMarker);
-  const end = transformed.indexOf(endMarker, start);
-  if (start >= 0 && end > start && !transformed.slice(0, start).endsWith('<div class="icon-free">')) {
-    transformed = `${transformed.slice(0, start)}<div class="icon-free">${transformed.slice(start, end)}</div>${transformed.slice(end)}`;
-  }
-  return transformed;
-}
-
 function stripTags(value) {
   return value.replace(/<[^>]+>/g, "").replaceAll("&nbsp;", " ").trim();
 }
@@ -303,53 +278,101 @@ function addTechnologyIcons(html) {
     const technology = technologyById.get(Number(id));
     if (!technology) throw new Error(`Technology ${id} is missing from the external asset map.`);
     if (reference.inner.startsWith('<img class="proto-icon proto-icon-tech"')) return reference.full;
+    if (!allowsTechnologyIcon(ancestorStackAtOffset(html, reference.index))) return reference.full;
     return reference.full.replace(reference.openingTag, `${reference.openingTag}${technologyIcon(technology)}`);
   });
 }
 
 const voidElements = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
-const skippedTags = new Set(["script", "style", "title", "code", "pre", "textarea"]);
-const skippedClasses = new Set(["proto-ref", "tech-ref", "production-arrow", "map-note", "icon-free"]);
 
-function transformVisibleText(html, callback) {
-  const tokenPattern = /<!--[\s\S]*?-->|<![^>]*>|<\/?[A-Za-z][^>]*>/g;
-  const stack = [];
-  let cursor = 0;
-  let output = "";
-  for (const match of html.matchAll(tokenPattern)) {
-    const text = html.slice(cursor, match.index);
-    const skip = stack.some(entry => skippedTags.has(entry.tag) || entry.classes.some(name => skippedClasses.has(name)));
-    output += skip ? text : callback(text);
-    const token = match[0];
-    output += token;
-    if (/^<\//.test(token)) {
-      const closing = token.match(/^<\/([A-Za-z0-9]+)/)?.[1]?.toLowerCase();
-      for (let index = stack.length - 1; index >= 0; index -= 1) {
-        if (stack[index].tag === closing) {
-          stack.splice(index, 1);
-          break;
-        }
-      }
-    } else if (/^<[A-Za-z]/.test(token)) {
-      const tag = token.match(/^<([A-Za-z0-9]+)/)?.[1]?.toLowerCase();
-      if (tag && !voidElements.has(tag) && !/\/>$/.test(token)) {
-        const classes = token.match(/\bclass="([^"]*)"/)?.[1]?.split(/\s+/).filter(Boolean) || [];
-        stack.push({ tag, classes });
+/*
+ * The materializer preserves existing markup and adds new prototype icons only
+ * to semantic presentation surfaces approved by the icon-placement policy.
+ * Item references must be explicitly bound with data-item-id; the tool never
+ * discovers item names in visible text.
+ * Item icons are limited to cards, production maps, reference/comparison
+ * tables, legends, and callouts. Technology icons additionally remain
+ * available in phase dashboards, checklists, headings, and the progress index.
+ * Ordinary prose, instructional lists, and card Operating Notes are never
+ * materialization targets; cleanup of legacy markup is a separate workflow.
+ */
+const referenceTablePattern = /^(?:rate|allocation|rare-resource|reference|comparison)-table$/;
+const calloutClassPattern = /(?:legend|callout|warning|choice|contract)$|^orbital-process$/;
+
+function parseElementToken(token) {
+  const tag = token.match(/^<\/?([A-Za-z0-9]+)/)?.[1]?.toLowerCase();
+  const classes = token.match(/\bclass="([^"]*)"/)?.[1]?.split(/\s+/).filter(Boolean) || [];
+  return { tag, classes };
+}
+
+function updateElementStack(stack, token) {
+  const { tag, classes } = parseElementToken(token);
+  if (/^<\//.test(token)) {
+    for (let index = stack.length - 1; index >= 0; index -= 1) {
+      if (stack[index].tag === tag) {
+        stack.splice(index, 1);
+        break;
       }
     }
-    cursor = match.index + token.length;
+  } else if (tag && !voidElements.has(tag) && !/\/>$/.test(token)) {
+    stack.push({ tag, classes });
   }
-  const tail = html.slice(cursor);
-  const skip = stack.some(entry => skippedTags.has(entry.tag) || entry.classes.some(name => skippedClasses.has(name)));
-  output += skip ? tail : callback(tail);
-  return output;
+}
+
+function ancestorStackAtOffset(html, offset) {
+  const tokenPattern = /<!--[\s\S]*?-->|<![^>]*>|<\/?[A-Za-z][^>]*>/g;
+  const stack = [];
+  for (const match of html.slice(0, offset).matchAll(tokenPattern)) {
+    if (/^<[A-Za-z/]/.test(match[0])) updateElementStack(stack, match[0]);
+  }
+  return stack;
+}
+
+const stackHasClass = (stack, className) =>
+  stack.some(entry => entry.classes.includes(className));
+const isCardOrMapSurface = stack => {
+  const inCard = stack.some(entry => entry.classes.some(className =>
+    ["build-card", "production-reference"].includes(className),
+  ));
+  return (inCard && stack.some(entry => entry.tag === "summary")) ||
+    stack.some(entry => entry.classes.some(className => [
+      "card-summary-title",
+      "production-map",
+      "map-supplies",
+      "route-chain",
+      "map-destination",
+      "map-surplus",
+    ].includes(className)));
+};
+const isReferenceTableSurface = stack =>
+  stack.some(entry => entry.tag === "table" && entry.classes.some(className => referenceTablePattern.test(className)));
+const isDesignedCalloutSurface = stack =>
+  stack.some(entry => entry.tag === "blockquote" || entry.classes.some(className => calloutClassPattern.test(className)));
+
+function allowsItemIcon(stack) {
+  if (stackHasClass(stack, "map-note")) return false;
+  if (stack.some(entry => /^h[1-6]$/.test(entry.tag))) return false;
+  return isCardOrMapSurface(stack) || isReferenceTableSurface(stack) || isDesignedCalloutSurface(stack);
+}
+
+function allowsTechnologyIcon(stack) {
+  if (stackHasClass(stack, "map-note")) return false;
+  return allowsItemIcon(stack) ||
+    stackHasClass(stack, "phase-dashboard") ||
+    stackHasClass(stack, "progress-index") ||
+    stackHasClass(stack, "task-list-item") ||
+    stack.some(entry => /^h[1-6]$/.test(entry.tag));
 }
 
 function addItemIcons(html) {
-  return transformVisibleText(html, text => text.replace(makeItemMatcher(), visibleLabel => {
-    const item = itemLabels.get(visibleLabel.toLocaleLowerCase("en-US"));
-    return `<span class="proto-ref" data-item-id="${item.id}">${itemIcon(item)}${visibleLabel}</span>`;
-  }));
+  return replaceElementsByClass(html, components.itemReference.className, reference => {
+    const id = getAttribute(reference.openingTag, components.itemReference.idAttribute);
+    const item = itemById.get(Number(id));
+    if (!item) throw new Error(`Item ${id} is missing from the external asset map.`);
+    if (reference.inner.startsWith('<img class="proto-icon proto-icon-item"')) return reference.full;
+    if (!allowsItemIcon(ancestorStackAtOffset(html, reference.index))) return reference.full;
+    return reference.full.replace(reference.openingTag, `${reference.openingTag}${itemIcon(item)}`);
+  });
 }
 
 function itemReference(itemId, label) {
@@ -373,7 +396,8 @@ function addRequiredContextIcons(html) {
   ];
   let transformed = html;
   for (const title of titles) {
-    if (!transformed.includes(title.plain)) throw new Error(`${title.label} title could not be normalized.`);
+    if (transformed.includes(title.icon)) continue;
+    if (!transformed.includes(title.plain)) throw new Error(`${title.label} title could not be materialized.`);
     transformed = transformed.replace(title.plain, title.icon);
   }
   return transformed;
@@ -388,14 +412,56 @@ function addExternalToolsLogo(html) {
 }
 
 function transform(html) {
-  const prepared = ensureIconFreeRegions(stripGeneratedMarkup(html));
-  const arrows = materializeProductionArrows(prepared);
+  const arrows = materializeProductionArrows(html);
   let transformed = addStructuralIcons(arrows.html);
   transformed = addTechnologyIcons(transformed);
   transformed = addItemIcons(transformed);
   transformed = addRequiredContextIcons(transformed);
   transformed = addExternalToolsLogo(transformed);
   return { html: transformed, arrows };
+}
+
+function validateMaterializationPolicy() {
+  const item = itemById.get(1001) || effectiveItems[0];
+  const technology = map.technologies[0];
+  if (!item || !technology) throw new Error("The icon policy fixture requires one item and one technology.");
+  const content = `<span class="proto-ref" data-item-id="${item.id}">${item.name}</span> <button type="button" class="tech-ref" data-tech-id="${technology.id}">${technology.name}</button>`;
+  const fixture = [
+    `<p class="policy-test-ordinary">${content}</p>`,
+    `<ul><li class="policy-test-instructional">${content}</li><li class="task-list-item policy-test-checklist">${content}</li></ul>`,
+    `<table class="phase-dashboard"><tbody><tr><td class="policy-test-dashboard">${content}</td></tr></tbody></table>`,
+    `<h2 class="policy-test-heading">${content}</h2>`,
+    `<details class="build-card"><summary><span class="card-summary-title policy-test-card">${content}</span></summary><section class="map-footer-section map-note policy-test-note">${content}</section></details>`,
+    `<div class="inline-production-map production-map"><p class="route-chain policy-test-map">${content}</p></div>`,
+    `<table class="rate-table"><tbody><tr><td class="policy-test-table">${content}</td></tr></tbody></table>`,
+    `<table class="progress-index"><tbody><tr><td class="policy-test-progress">${content}</td></tr></tbody></table>`,
+    `<div class="guide-warning policy-test-callout">${content}</div>`,
+  ].join("");
+  const materialized = addItemIcons(addTechnologyIcons(fixture));
+  const expected = new Map([
+    ["ordinary", [false, false]],
+    ["instructional", [false, false]],
+    ["dashboard", [false, true]],
+    ["checklist", [false, true]],
+    ["heading", [false, true]],
+    ["card", [true, true]],
+    ["note", [false, false]],
+    ["map", [true, true]],
+    ["table", [true, true]],
+    ["progress", [false, true]],
+    ["callout", [true, true]],
+  ]);
+  for (const [name, [expectsItem, expectsTechnology]] of expected) {
+    const region = findElementsByClass(materialized, `policy-test-${name}`)[0]?.inner || "";
+    const hasItem = region.includes('class="proto-icon proto-icon-item"');
+    const hasTechnology = region.includes('class="proto-icon proto-icon-tech"');
+    if (hasItem !== expectsItem || hasTechnology !== expectsTechnology) {
+      throw new Error(`Icon placement policy failed for ${name}.`);
+    }
+  }
+  const repeated = addItemIcons(addTechnologyIcons(materialized));
+  if (repeated !== materialized) throw new Error("Icon placement policy materialization is not deterministic.");
+  return expected.size;
 }
 
 function count(pattern, value) {
@@ -441,7 +507,13 @@ function validate(html) {
     const id = getAttribute(reference.openingTag, components.technologyReference.idAttribute);
     const technology = technologyById.get(Number(id));
     assert(Boolean(technology), `Technology ${id} is not mapped.`);
-    if (technology) assert(reference.inner.includes(`src="${technologyAsset(technology)}"`), `Technology ${id} has the wrong icon.`);
+    if (technology) {
+      const expectedSource = `src="${technologyAsset(technology)}"`;
+      const hasIcon = reference.inner.includes('class="proto-icon proto-icon-tech"');
+      const requiresIcon = allowsTechnologyIcon(ancestorStackAtOffset(html, reference.index));
+      assert(!requiresIcon || hasIcon, `Technology ${id} is missing an icon on an approved surface.`);
+      assert(!hasIcon || reference.inner.includes(expectedSource), `Technology ${id} has the wrong icon.`);
+    }
   }
 
   const protoRefs = findElementsByClass(html, components.itemReference.className);
@@ -449,7 +521,13 @@ function validate(html) {
     const id = getAttribute(reference.openingTag, components.itemReference.idAttribute);
     const item = itemById.get(Number(id));
     assert(Boolean(item), `Item ${id} is not mapped.`);
-    if (item) assert(reference.inner.includes(`src="${itemAsset(item)}"`), `Item ${id} has the wrong icon.`);
+    if (item) {
+      const expectedSource = `src="${itemAsset(item)}"`;
+      const hasIcon = reference.inner.includes('class="proto-icon proto-icon-item"');
+      const requiresIcon = allowsItemIcon(ancestorStackAtOffset(html, reference.index));
+      assert(!requiresIcon || hasIcon, `Item ${id} is missing an icon on an approved surface.`);
+      assert(!hasIcon || reference.inner.includes(expectedSource), `Item ${id} has the wrong icon.`);
+    }
   }
 
   const arrows = findElementsByClass(html, components.productionArrow.className);
@@ -514,6 +592,7 @@ function validate(html) {
 }
 
 const source = fs.readFileSync(htmlPath, "utf8");
+const policySurfaces = validateMaterializationPolicy();
 const result = transform(source);
 
 if (mode === "write") {
@@ -524,9 +603,13 @@ if (mode === "write") {
     sourceArrows: result.arrows.sourceArrows,
     producerArrows: result.arrows.outputArrows,
     normalizedRoutes: result.arrows.normalizedRoutes,
+    policySurfaces,
     ...summary,
   }, null, 2));
 } else {
-  if (result.html !== source) throw new Error("Prototype icon markup is incomplete or not idempotent. Run with --write.");
-  console.log(JSON.stringify({ status: "PASS", ...validate(source) }, null, 2));
+  if (result.html !== source) {
+    const difference = [...result.html].findIndex((character, index) => character !== source[index]);
+    throw new Error(`Prototype icon markup is incomplete or not idempotent near offset ${difference}. Run with --write.`);
+  }
+  console.log(JSON.stringify({ status: "PASS", policySurfaces, ...validate(source) }, null, 2));
 }

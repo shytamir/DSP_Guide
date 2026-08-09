@@ -1,7 +1,7 @@
 # Icon Placement Policy and Proposed Stories
 
 **Status:** Approved for ordered implementation under
-[`ROADMAP.md`](ROADMAP.md). Story 1 is active and awaiting implementation.
+[`ROADMAP.md`](ROADMAP.md). Story 1 is active and ready for owner acceptance.
 
 ## Problem
 
@@ -38,7 +38,8 @@ text exceptions.
 
 **Class:** Tooling change.
 
-**State:** Active; awaiting implementation.
+**State:** Active; implementation and Tier 1 validation complete, awaiting
+owner acceptance.
 
 As a maintainer running the authorized icon materializer, I want it to add
 icons only on approved surfaces so that later content edits cannot reintroduce

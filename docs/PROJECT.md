@@ -1,7 +1,7 @@
 # DSP Practical Progression Guide
 
 **Status:** Active icon-placement roadmap implementation. Version 2.2 is the
-current published minor line, and Icon Story 1 is awaiting implementation.
+current published minor line, and Icon Story 1 is ready for owner acceptance.
 
 ## Purpose
 
@@ -95,8 +95,10 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 - `scripts/apply-proto-icons.mjs --check` validates the committed static icon
   markup against the externally supplied authoritative asset map during an
   authorized local icon pass. It performs reusable icon and production-arrow
-  materialization only; completed editorial migrations are not part of the
-  recurring pass.
+  materialization only. Item references require explicit prototype bindings,
+  and item and technology icons are added only on the semantic surfaces
+  approved by the icon-placement policy. Existing markup is preserved;
+  completed editorial migrations are not part of the recurring pass.
 - `scripts/lib/markup-contracts.mjs` is the shared structural contract used by
   materialization, card validation, and deployment validation.
 
@@ -120,7 +122,7 @@ The ordered guide-correction sequence is complete. Both stories are preserved
 in the
 [`archived story record`](archive/guide-corrections-user-stories.md). The
 current [`management roadmap`](management/ROADMAP.md) now activates three
-ordered icon-placement stories; Story 1 is awaiting implementation.
+ordered icon-placement stories; Story 1 is ready for owner acceptance.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -128,9 +130,9 @@ ordered icon-placement stories; Story 1 is awaiting implementation.
 - **Completed — DYSON reference authority:** owner-accepted on 2026-08-09. Live
   player-observable evidence now leads the DYSON decision layer, while exact
   planning figures remain confined to the approved reference locations.
-- **Active — icon placement:** Story 1 prevents future materialization outside
-  approved surfaces. The two bounded presentation-cleanup stories remain
-  gated by predecessor acceptance.
+- **Active — icon placement:** Story 1 now prevents future materialization
+  outside approved surfaces and is ready for owner acceptance. The two bounded
+  presentation-cleanup stories remain gated by predecessor acceptance.
 - **Planning — remaining design concerns:** expedition intra-navigation and
   case-specific progressive disclosure remain under analysis. The settled
   optional-capability navigation stories and checklist baseline correction
