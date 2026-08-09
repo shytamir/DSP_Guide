@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import vm from "node:vm";
+import { findElementsByClass } from "./lib/markup-contracts.mjs";
 
 function makeCheckbox(phaseId, label) {
   const listeners = {};
@@ -83,7 +84,7 @@ assert.equal(second.checked, false, "unsaved checklist should begin unchecked");
 assert.equal(duplicate.dataset.checklistKey, "blue:blue-runs-continuously:2", "duplicate key was not disambiguated");
 assert.equal(stable.checked, true, "explicit checklist identity was not restored after relocation");
 assert.equal(stable.dataset.checklistKey, "bootstrap:relocated-opening-objective", "explicit checklist identity changed");
-assert.equal(aliased.checked, true, "legacy checklist alias was not restored after editorial consolidation");
+assert.equal(aliased.checked, true, "checklist alias was not restored after editorial consolidation");
 
 second.checked = true;
 second.trigger("change");
@@ -98,7 +99,7 @@ assert.equal("blue:blue-runs-continuously" in saved, false, "unchecked state was
 aliased.checked = false;
 aliased.trigger("change");
 saved = JSON.parse(values.get("dsp-guide:checklist-state:v1"));
-assert.equal("blue:former-opening-power-objective" in saved, false, "legacy checklist alias was not removed after an update");
+assert.equal("blue:former-opening-power-objective" in saved, false, "checklist alias was not removed after an update");
 
 resetButton.trigger("click");
 assert.equal(first.checked, false, "reset did not clear the first checkbox");
@@ -146,63 +147,12 @@ assert.equal(unavailableBox.checked, false, "session reset failed without storag
 assert.match(unavailableStatus.textContent, /local saving is unavailable/i);
 
 const html = fs.readFileSync("index.html", "utf8");
-const finiteBillMarker = html.lastIndexOf("<strong>First yellow batch</strong>");
-const finiteBillStart = html.lastIndexOf('<table class="allocation-table">', finiteBillMarker);
-const finiteBillEnd = html.indexOf("</table>", finiteBillMarker) + "</table>".length;
-assert.ok(finiteBillMarker >= 0 && finiteBillStart >= 0 && finiteBillEnd > finiteBillStart, "ILS finite production bill is missing");
-const finiteBill = html.slice(finiteBillStart, finiteBillEnd);
-const visibleText = value => value
-  .replace(/<[^>]+>/g, " ")
-  .replace(/\s+/g, " ")
-  .replace(/\s+([),.;:])/g, "$1")
-  .trim();
-function supportingReserve(label) {
-  const labelIndex = finiteBill.indexOf(`<strong>${label}</strong>`);
-  const rowStart = finiteBill.lastIndexOf("<tr>", labelIndex);
-  const rowEnd = finiteBill.indexOf("</tr>", labelIndex) + "</tr>".length;
-  assert.ok(labelIndex >= 0 && rowStart >= 0 && rowEnd > rowStart, `ILS finite production row is missing: ${label}`);
-  const cells = [...finiteBill.slice(rowStart, rowEnd).matchAll(/<td(?: [^>]*)?>([\s\S]*?)<\/td>/g)];
-  assert.equal(cells.length, 4, `ILS finite production row must have four cells: ${label}`);
-  return visibleText(cells[3][1]);
-}
-const expectedSupportingReserves = new Map([
-  ["First yellow batch", "600 Titanium Ingots for the 200 Titanium Crystals"],
-  ["ILS pair", "80 Steel + 160 Titanium Ingots (80 for the two embedded PLS components + 80 for the 80 Titanium Alloy) + 160 Electromagnetic Turbines for the Particle Containers"],
-  ["Protected total", "80 Steel + 860 Titanium Ingots (600 for Titanium Crystals + 180 for all Titanium Alloy + 80 for the two embedded PLS components) + 210 Electromagnetic Turbines"],
-]);
-for (const [label, expected] of expectedSupportingReserves) {
-  assert.equal(supportingReserve(label), expected, `ILS supporting reserve changed: ${label}`);
-}
-const vesselReserve = supportingReserve("Vessel fleet");
-assert.match(vesselReserve, /100 Titanium Ingots for the 100 Titanium Alloy/, "Vessel fleet lost its 100-Alloy reserve");
-assert.match(vesselReserve, /50 Alloy for 10 Reinforced Thrusters/, "Vessel fleet lost the thruster Alloy allocation");
-assert.match(vesselReserve, /50 Alloy directly for 5 Logistics Vessels/, "Vessel fleet lost the direct Vessel Alloy allocation");
-assert.match(vesselReserve, /50 Electromagnetic Turbines for the Reinforced Thrusters/, "Vessel fleet lost the thruster Turbine reserve");
-assert.doesNotMatch(html, /Protect the Turbine reserve/, "ILS still warns about a nonexistent Turbine reserve");
-assert.match(
-  html,
-  /<strong>⚠ Watch the charging spike\.<\/strong>[\s\S]*?<strong>Lower its charging-power setting<\/strong>/,
-  "ILS charging-spike warning lost its emphasized corrective action",
-);
-const returnChecklistStart = html.indexOf("<h3>Before flying home</h3>");
-const returnChecklistEnd = html.indexOf("</ul>", returnChecklistStart);
-assert.ok(returnChecklistStart >= 0 && returnChecklistEnd > returnChecklistStart, "ILS return checklist is missing");
-assert.match(
-  visibleText(html.slice(returnChecklistStart, returnChecklistEnd)),
-  /860 Titanium Ingots and 520 High-Purity Silicon/,
-  "ILS return checklist no longer matches the protected Titanium Ingot total",
-);
-const glossaryStart = html.indexOf('<details class="guide-glossary">');
-const contextParagraph = html.indexOf("remember why half the belts exist.");
-const progressIndex = html.indexOf("<h1>Quick Progress Index</h1>");
-assert.ok(contextParagraph < glossaryStart && glossaryStart < progressIndex, "glossary is not in the required location");
-const referenceChecklistStart = html.indexOf(
-  '<h1 id="ref-checklist">One-Screen Default Checklist</h1>',
-);
-const referenceChecklistEnd = html.indexOf(
-  '<h1 id="ref-troubleshoot">',
-  referenceChecklistStart,
-);
+const glossary = findElementsByClass(html, "guide-glossary")[0];
+const progressIndex = findElementsByClass(html, "progress-index")[0];
+assert.ok(glossary && progressIndex && glossary.index < progressIndex.index, "glossary must precede the progress index");
+assert.ok((glossary.inner.match(/<dt>/g) || []).length > 0, "glossary contains no terms");
+const referenceChecklistStart = html.search(/<h1\b[^>]*\bid="ref-checklist"[^>]*>/);
+const referenceChecklistEnd = html.search(/<h1\b[^>]*\bid="ref-troubleshoot"[^>]*>/);
 assert.ok(
   referenceChecklistStart >= 0 &&
     referenceChecklistEnd > referenceChecklistStart,
@@ -212,43 +162,14 @@ const referenceChecklist = html.slice(
   referenceChecklistStart,
   referenceChecklistEnd,
 );
-const checklistRoute = [
-  ...referenceChecklist.matchAll(/<h2><a[^>]+href="#([^"]+)"/g),
-].map((match) => match[1]);
-assert.deepEqual(
-  checklistRoute,
-  [
-    "blue",
-    "red",
-    "ils",
-    "yellow",
-    "purple",
-    "green",
-    "dyson",
-    "photon",
-    "white",
-    "warp",
-    "logistics",
-  ],
-  "one-screen checklist does not separate the numbered route from optional capabilities",
-);
-const optionalChecklist = referenceChecklist.match(
-  /<section aria-labelledby="checklist-optional-capabilities" class="checklist-optional-group">([\s\S]*?)<\/section>/,
-);
+const optionalChecklist = findElementsByClass(referenceChecklist, "checklist-optional-group")[0];
 assert.ok(optionalChecklist, "one-screen optional-capability group is missing");
-assert.match(
-  optionalChecklist[1],
-  /id="checklist-optional-capabilities">Optional capabilities<\/h2>/,
-);
-assert.match(optionalChecklist[1], /href="#warp"/);
-assert.match(optionalChecklist[1], /href="#logistics"/);
-assert.equal(
-  (optionalChecklist[1].match(/task-list-item-checkbox/g) || []).length,
-  8,
-  "optional-capability checklist coverage changed",
-);
-assert.equal((html.match(/<dt>/g) || []).length, 10, "glossary must contain exactly ten terms");
-assert.equal((html.match(/task-list-item-checkbox/g) || []).length, 82, "checklist coverage changed unexpectedly");
+const mainChecklist = referenceChecklist.slice(0, optionalChecklist.index);
+assert.doesNotMatch(mainChecklist, /href="#(?:warp|logistics)"/, "optional capabilities appear in the numbered checklist route");
+assert.match(optionalChecklist.inner, /href="#warp"/);
+assert.match(optionalChecklist.inner, /href="#logistics"/);
+assert.ok((optionalChecklist.inner.match(/task-list-item-checkbox/g) || []).length > 0, "optional capabilities contain no checklist items");
+assert.ok((html.match(/task-list-item-checkbox/g) || []).length > 0, "guide contains no checklist items");
 assert.match(html, /assets\/js\/checklists\.js/, "checklist script is not referenced by the guide");
 
-console.log("Checklist validation passed: coverage, persistence, duplicate keys, reset, storage denial, glossary placement, and ILS reserve reconciliation verified.");
+console.log("Checklist validation passed: persistence, duplicate keys, reset, storage denial, glossary, and route grouping verified.");

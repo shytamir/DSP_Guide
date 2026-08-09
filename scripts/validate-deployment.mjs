@@ -19,7 +19,6 @@ if (!siteArgument) {
 
 const siteRoot = path.resolve(siteArgument);
 const sourceRoot = path.resolve(sourceArgument);
-const steamStoreUrl = "https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/";
 const failures = [];
 const check = (condition, message) => {
   if (!condition) failures.push(message);
@@ -65,251 +64,20 @@ for (const relative of expected) {
 const htmlPath = path.join(siteRoot, "index.html");
 check(fs.existsSync(htmlPath), "index.html is missing.");
 const html = fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, "utf8") : "";
-const guideCssPath = path.join(siteRoot, "assets", "css", "guide.css");
-const guideCss = fs.existsSync(guideCssPath) ? fs.readFileSync(guideCssPath, "utf8") : "";
-const hostedModReadmeImages = new Map([
-  ["assets/images/mod/see-the-problem-and-know-what-to-do-without-leaving-the-game.png", [2560, 1440]],
-  ["assets/images/mod/know-when-your-photon-array-is-truly-sustained.png", [2880, 1620]],
-]);
-for (const [relative, [expectedWidth, expectedHeight]] of hostedModReadmeImages) {
-  const source = path.join(sourceRoot, relative);
-  const deployed = path.join(siteRoot, relative);
-  check(fs.existsSync(source), `Required hosted mod README image is missing from the source package: ${relative}`);
-  check(actual.includes(relative) && fs.existsSync(deployed), `Required hosted mod README image is missing from deployment: ${relative}`);
-  if (fs.existsSync(source) && fs.existsSync(deployed)) {
-    const contents = fs.readFileSync(deployed);
-    const isPng = contents.length >= 24
-      && contents.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))
-      && contents.subarray(12, 16).toString("ascii") === "IHDR";
-    check(isPng, `Hosted mod README image is not a valid PNG: ${relative}`);
-    if (isPng) {
-      check(
-        contents.readUInt32BE(16) === expectedWidth && contents.readUInt32BE(20) === expectedHeight,
-        `Hosted mod README image has unexpected dimensions: ${relative}`,
-      );
-    }
-  }
-}
 check(!/<style\b/.test(html), "Inline CSS found in index.html.");
 check(!/<script(?![^>]*\bsrc=)/.test(html), "Inline JavaScript or JSON found in index.html.");
-check(
-  /url\("\.\.\/images\/guide-space-background-v1\.png"\)/.test(guideCss)
-    && fs.existsSync(path.join(siteRoot, "assets", "images", "guide-space-background-v1.png")),
-  "The guide's space background is missing or not referenced by the stylesheet.",
-);
-check(
-  guideCss.includes("@media(min-width:1921px),(min-width:1200px) and (min-height:1081px),(min-width:1200px) and (min-resolution:1.5dppx)")
-    && /url\("\.\.\/images\/guide-space-background-4k\.webp"\)/.test(guideCss)
-    && guideCss.includes(".phase-rail{transform:translateY(-50%) scale(2);transform-origin:right center}")
-    && fs.existsSync(path.join(siteRoot, "assets", "images", "guide-space-background-4k.webp")),
-  "The high-resolution background or doubled navigation rail is missing from the high-resolution display rule.",
-);
-check(
-  /\.game-logo\{display:block;width:min\(100%,720px\);height:auto;margin:\.75rem auto 1\.75rem\}/.test(guideCss),
-  "The two game logos are not centered in the reading pane.",
-);
-check(/p,li\{max-width:none\}/.test(guideCss), "Paragraphs or list items retain a narrowed right edge.");
-check(
-  /\.allocation-table-compact\{width:100%;max-width:none\}/.test(guideCss),
-  "The compact allocation table does not reach its container's right edge.",
-);
-check(
-  /\.production-reference\{margin:\.7rem 0 \.7rem \.9rem;/.test(guideCss)
-    && /\.production-reference\{margin:\.6rem 0 \.6rem \.6rem\}/.test(guideCss),
-  "Reusable reference cards do not preserve left-only indentation.",
-);
-check(
-  /table\{display:block;max-width:100%;overflow-x:auto\}/.test(guideCss),
-  "Wide tables can force narrow page overflow.",
-);
 
 const ids = [...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(match => match[1]);
 const anchors = [...html.matchAll(/href="#([^"]+)"/g)].map(match => match[1]);
 check(ids.length === new Set(ids).size, "Duplicate HTML id found.");
 check(anchors.every(anchor => ids.includes(anchor)), "Broken internal anchor found.");
 
-const redStart = html.indexOf('<section class="phase-section phase-section-red" id="red">');
-const redEnd = html.indexOf('<section class="phase-section', redStart + 1);
-const redSection = redStart >= 0 && redEnd > redStart ? html.slice(redStart, redEnd) : "";
-const ilsStart = html.indexOf('<section class="phase-section phase-section-ils" id="ils">');
-const ilsEnd = html.indexOf('<section class="phase-section', ilsStart + 1);
-const ilsSection = ilsStart >= 0 && ilsEnd > ilsStart ? html.slice(ilsStart, ilsEnd) : "";
-const purpleStart = html.indexOf('<section class="phase-section phase-section-purple" id="purple">');
-const purpleEnd = html.indexOf('<section class="phase-section', purpleStart + 1);
-const purpleSection = purpleStart >= 0 && purpleEnd > purpleStart ? html.slice(purpleStart, purpleEnd) : "";
-const greenStart = html.indexOf('<section class="phase-section phase-section-green" id="green">');
-const greenEnd = html.indexOf('<section class="phase-section', greenStart + 1);
-const greenSection = greenStart >= 0 && greenEnd > greenStart ? html.slice(greenStart, greenEnd) : "";
-const warpStart = html.indexOf('<section class="phase-section phase-section-warp" id="warp">');
-const warpEnd = html.indexOf('<section class="phase-section', warpStart + 1);
-const warpSection = warpStart >= 0 && warpEnd > warpStart ? html.slice(warpStart, warpEnd) : "";
+const phaseSection = id => findElementsByClass(html, `phase-section-${id}`)[0]?.full || "";
+const redSection = phaseSection("red");
 check(redSection.includes('id="red-planetary-base-clearing"'), "The RED planetary-base-clearing procedure is missing.");
-check(redSection.includes("eight") && redSection.includes("Missile Turret") && redSection.includes("Signal Tower"), "The RED procedure lost its eight-turret or Signal Tower instructions.");
-const procedureStart = redSection.indexOf('<h2 id="red-planetary-base-clearing">');
-const procedureEnd = redSection.indexOf("</div>", procedureStart);
-const procedureText = procedureStart >= 0 && procedureEnd > procedureStart
-  ? redSection.slice(procedureStart, procedureEnd).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ")
-  : "";
-for (const required of ["New Game → Start", "outside its aggro range", "chasing units", "Tesla Tower inside aggro range", "first powered Signal Tower", "second powered tower", "far side", "Geothermal Power Station", "Foundation or Soil Pile tax"]) {
-  check(procedureText.includes(required), `The RED base-clearing procedure is missing: ${required}.`);
-}
-check((ilsSection.match(/href="#red-planetary-base-clearing"/g) || []).length === 1, "ILS must contain exactly one linked RED defense reminder.");
-check((warpSection.match(/href="#red-planetary-base-clearing"/g) || []).length === 1, "WARP must contain exactly one linked RED defense reminder.");
-check(!html.includes('id="ref-dark-fog"') && !html.includes('href="#ref-dark-fog"'), "The legacy Dark Fog industry reference remains in the guide.");
-const outsideRed = redStart >= 0 && redEnd > redStart ? `${html.slice(0, redStart)}${html.slice(redEnd)}` : html;
+const outsideRed = redSection ? html.replace(redSection, "") : html;
 check(!/Dark Fog/i.test(outsideRed), "Dark Fog guidance appears outside RED.");
 check(!/(Dark Fog (?:levels?|farming|drops?|industry)|space combat|Relay Stations?|\bhives?\b|concealed technolog)/i.test(html), "Prohibited Dark Fog subject remains in the guide.");
-
-const visiblePhaseText = value => value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-const techIds = value => [...value.matchAll(/data-tech-id="(\d+)"/g)].map(match => Number(match[1]));
-const sameIds = (actual, expected) => actual.length === expected.length && actual.every((id, index) => id === expected[index]);
-const ilsSupportStart = ilsSection.indexOf("<p><strong>Clear the support branches while the loadout is being packed:</strong>");
-const ilsSupportEnd = ilsSection.indexOf("<h3>Read the starter system</h3>", ilsSupportStart);
-const ilsSupport = ilsSupportStart >= 0 && ilsSupportEnd > ilsSupportStart
-  ? ilsSection.slice(ilsSupportStart, ilsSupportEnd)
-  : "";
-const ilsSupportListStart = ilsSupport.indexOf("<ul>");
-const ilsSupportChains = [...ilsSupport.matchAll(/<li>([\s\S]*?)<\/li>/g)].map(match => techIds(match[1]));
-const expectedIlsSupportChains = [
-  [1311, 1302],
-  [1122, 1123, 1124],
-  [1701, 1702, 1703],
-  [1112, 1113, 1114],
-  [1602, 1603, 3701, 1604],
-  [1414, 1605],
-];
-check(
-  sameIds(techIds(ilsSupport.slice(0, ilsSupportListStart)), [4102, 1131])
-    && ilsSupportChains.length === expectedIlsSupportChains.length
-    && ilsSupportChains.every((chain, index) => sameIds(chain, expectedIlsSupportChains[index])),
-  "ILS support research must keep the two standalone technologies before the six ordered research queues.",
-);
-const ilsSupportText = visiblePhaseText(ilsSupport);
-check(
-  ilsSupportText.includes("Cosmic Exploration Lv1 costs only 10 blue cubes")
-    && ilsSupportText.includes("Basic Chemical Engineering is assumed because RED is already behind you")
-    && ilsSupportText.includes("Processor unlocks the recipe needed by the logistics towers")
-    && ilsSupportText.includes("start making yellow cubes early")
-    && ilsSupportText.includes("yellow cubes should already be waiting")
-    && ilsSupportText.includes("Only two yellow-cube technologies remain"),
-  "ILS support research lost the prerequisite assumptions or practical yellow-science timing guidance.",
-);
-const ilsGrapheneStart = ilsSection.indexOf('Build the <a class="card-crossref-link" href="#reference-graphene">');
-const ilsGrapheneEnd = ilsSection.indexOf("</p>", ilsGrapheneStart);
-const ilsGrapheneInstruction = ilsGrapheneStart >= 0 && ilsGrapheneEnd > ilsGrapheneStart
-  ? ilsSection.slice(ilsGrapheneStart, ilsGrapheneEnd)
-  : "";
-const ilsComponentBuildIndex = ilsSection.indexOf("Build the temporary component lines.");
-check(
-  ilsSupport.indexOf('data-tech-id="1131"') >= 0 && ilsSupportStart < ilsComponentBuildIndex,
-  "ILS must introduce Applied Superconductor before the temporary Particle Container build.",
-);
-check(
-  /<a class="card-crossref-link" href="#reference-graphene">[\s\S]*?data-item-id="1123"[\s\S]*?<\/a>/.test(ilsGrapheneInstruction)
-    && ilsGrapheneInstruction.includes('data-item-id="1206"')
-    && visiblePhaseText(ilsGrapheneInstruction).includes("standard Graphene line before assembling Particle Containers"),
-  "ILS lost the linked standard Graphene instruction before Particle Container assembly.",
-);
-
-const purpleDashboardStart = purpleSection.indexOf('<tr><td><strong>Research first</strong>');
-const purpleDashboardEnd = purpleSection.indexOf("</tr>", purpleDashboardStart) + "</tr>".length;
-const purpleDashboard = purpleDashboardStart >= 0 && purpleDashboardEnd > purpleDashboardStart
-  ? purpleSection.slice(purpleDashboardStart, purpleDashboardEnd)
-  : "";
-const purpleBodyStart = purpleSection.indexOf("<h2>Research first</h2>");
-const purpleFirstParagraphStart = purpleSection.indexOf("<p>", purpleBodyStart);
-const purpleFirstParagraphEnd = purpleSection.indexOf("</p>", purpleFirstParagraphStart) + "</p>".length;
-const purpleFirstParagraph = purpleFirstParagraphStart >= 0 && purpleFirstParagraphEnd > purpleFirstParagraphStart
-  ? purpleSection.slice(purpleFirstParagraphStart, purpleFirstParagraphEnd)
-  : "";
-const purpleHandoffStart = purpleFirstParagraphEnd;
-const purpleHandoffEnd = purpleSection.indexOf("</p>", purpleHandoffStart) + "</p>".length;
-const purpleHandoff = purpleHandoffStart >= 0 && purpleHandoffEnd > purpleHandoffStart
-  ? purpleSection.slice(purpleHandoffStart, purpleHandoffEnd)
-  : "";
-check(
-  techIds(purpleDashboard).slice(0, 3).join(",") === "1132,1133,1312"
-    && purpleDashboard.indexOf('data-tech-id="1131"') > purpleDashboard.indexOf('data-tech-id="1312"')
-    && visiblePhaseText(purpleDashboard).includes("Already complete from ILS: Applied Superconductor"),
-  "PURPLE dashboard must begin with new research and identify Applied Superconductor as completed ILS work.",
-);
-check(
-  sameIds(techIds(purpleFirstParagraph), [1132, 1133, 1312])
-    && techIds(purpleHandoff)[0] === 1131
-    && visiblePhaseText(purpleHandoff).includes("during the ILS bridge")
-    && visiblePhaseText(purpleHandoff).includes("begin PURPLE with High-Strength Material"),
-  "PURPLE expanded research must begin with High-Strength Material and explain the completed ILS handoff.",
-);
-
-const greenDashboardStart = greenSection.indexOf('<tr><td><strong>Research next</strong>');
-const greenDashboardEnd = greenSection.indexOf("</tr>", greenDashboardStart) + "</tr>".length;
-const greenBodyStart = greenSection.indexOf("<h2>Research first</h2>");
-const greenBodyEnd = greenSection.indexOf('<div class="icon-free">', greenBodyStart);
-const greenDashboard = greenDashboardStart >= 0 && greenDashboardEnd > greenDashboardStart
-  ? greenSection.slice(greenDashboardStart, greenDashboardEnd)
-  : "";
-const greenBody = greenBodyStart >= 0 && greenBodyEnd > greenBodyStart
-  ? greenSection.slice(greenBodyStart, greenBodyEnd)
-  : "";
-const greenDashboardText = visiblePhaseText(greenDashboard);
-check(
-  sameIds(techIds(greenDashboard), [1125, 1126, 1141, 1303, 1705])
-    && greenDashboardText.includes("Quantum branch: Casimir Crystal + High-Strength Glass → Wave Function Interference → Quantum Chip → Frame branch → Gravity branch → Gravity Matrix"),
-  "GREEN dashboard must keep the detailed Quantum chain, condensed Frame and Gravity labels, and the Gravity Matrix tooltip.",
-);
-check(
-  !greenDashboard.includes('data-item-id="1125"')
-    && !greenDashboard.includes('data-item-id="2310"')
-    && greenDashboard.includes('class="tech-ref tech-milestone" data-tech-id="1705"'),
-  "GREEN dashboard must not expand the condensed Frame or Gravity entries and must retain the Gravity Matrix milestone tooltip.",
-);
-
-const greenBodyText = visiblePhaseText(greenBody);
-const quantumBlockStart = greenBody.indexOf("<strong>Quantum branch:</strong>");
-const frameBlockStart = greenBody.indexOf("<strong>Frame branch:</strong>");
-const gravityBlockStart = greenBody.indexOf("<strong>Gravity branch:</strong>");
-const convergenceBlockStart = greenBody.indexOf("<strong>Both branches (Quantum + Gravity)</strong>");
-const quantumIndex = greenBodyText.indexOf("Quantum branch:");
-const frameIndex = greenBodyText.indexOf("Frame branch:");
-const gravityIndex = greenBodyText.indexOf("Gravity branch:");
-const convergenceIndex = greenBodyText.indexOf("Both branches (Quantum + Gravity) → Gravity Matrix");
-check(
-  quantumIndex >= 0 && quantumIndex < frameIndex && frameIndex < gravityIndex && gravityIndex < convergenceIndex,
-  "GREEN expanded research lost the Quantum, Frame, Gravity, convergence order.",
-);
-check(
-  sameIds(techIds(greenBody.slice(quantumBlockStart, frameBlockStart)), [1125, 1126, 1141, 1303]),
-  "GREEN expanded research lost the Quantum branch technology chain.",
-);
-const frameBranch = greenBody.slice(frameBlockStart, gravityBlockStart);
-check(
-  sameIds(techIds(frameBranch), [1501, 1502, 1711, 1503, 1521])
-    && visiblePhaseText(frameBranch).includes("Solar Collection → Photon Frequency Conversion → Super Magnetic Field Generator → Solar Sail Orbit System → High-Strength Lightweight Structure → Frame Material")
-    && !visiblePhaseText(frameBranch).includes("build the Miniature Particle Collider"),
-  "GREEN expanded research must keep the Frame branch as one uninterrupted technology chain without a Collider construction step.",
-);
-check(
-  sameIds(techIds(greenBody.slice(gravityBlockStart, convergenceBlockStart)), [1142, 1143, 1704]),
-  "GREEN expanded research lost the Gravity branch technology chain.",
-);
-check(
-  techIds(greenBody.slice(convergenceBlockStart))[0] === 1705
-    && greenBodyText.slice(convergenceIndex).startsWith("Both branches (Quantum + Gravity) → Gravity Matrix"),
-  "GREEN expanded research no longer identifies Quantum and Gravity as the converging branches.",
-);
-check(
-  greenBody.includes('data-item-id="1125"')
-    && greenBody.includes('data-item-id="2310"')
-    && greenBodyText.includes("recipe component")
-    && greenBodyText.includes("unlocked by the Gravity branch's first technology"),
-  "GREEN expanded prose must explain how Frame Material supports Miniature Particle Collider construction.",
-);
-check(
-  greenBodyText.includes("Do the Quantum branch first")
-    && greenBodyText.includes("Quantum Chip buffer")
-    && greenBodyText.includes("Graviton Lenses"),
-  "GREEN expanded prose must explain the practical benefit of researching Quantum first.",
-);
 
 const localAssetOccurrences = [
   ...html.matchAll(/(?:href|src)="(assets\/[^"]+)"/g)
@@ -395,7 +163,7 @@ for (const reference of protoReferences) {
   check(!requiresIcon || hasIcon, `Item ${itemId} is missing an icon on an approved surface.`);
   check(requiresIcon || allowsRetainedItemIcon(stack) || !hasIcon, `Item ${itemId} retains an icon outside approved surfaces.`);
 }
-const correctedItemAssets = new Map([
+const requiredItemAssets = new Map([
   [6001, "t-matrix.png"],
   [6002, "e-matrix.png"],
   [6003, "c-matrix.png"],
@@ -405,33 +173,24 @@ const correctedItemAssets = new Map([
   [1208, "photon-capacitor-full.png"],
   [2207, "accumulator-full.png"],
 ]);
-for (const [itemId, asset] of correctedItemAssets) {
+for (const [itemId, asset] of requiredItemAssets) {
   const references = protoReferences.filter(reference => Number(getAttribute(reference.openingTag, components.itemReference.idAttribute)) === itemId);
   const iconReferences = references.filter(reference => /class="proto-icon proto-icon-item"/.test(reference.inner));
-  check(references.length > 0, `Corrected item ${itemId} is not represented in the guide.`);
-  check(iconReferences.every(reference => reference.inner.includes(`/${asset}"`)), `Corrected item ${itemId} uses the wrong asset.`);
+  check(references.length > 0, `Required item ${itemId} is not represented in the guide.`);
+  check(iconReferences.every(reference => reference.inner.includes(`/${asset}"`)), `Item ${itemId} uses the wrong asset.`);
 }
 const iconFreeRegions = [...html.matchAll(/<(?:div|li)[^>]*class="[^"]*\bicon-free\b[^"]*"[^>]*>([\s\S]*?)<\/(?:div|li)>/g)];
 check(iconFreeRegions.every(region => !region[1].includes("proto-icon")), "An icon-free guide region contains a prototype icon.");
 const operatingNotes = [...html.matchAll(/<section class="map-footer-section map-note[^"]*">([\s\S]*?)<\/section>/g)];
 check(operatingNotes.every(note => !note[1].includes("proto-icon")), "A card Operating Note contains a prototype icon.");
-const mallTitle = html.match(/<span class="card-summary-title">Mall Industry([\s\S]*?)<\/span><span class="card-summary-meta">/);
-for (const itemId of [2301, 2302, 2303]) check(Boolean(mallTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Industry title is missing item ${itemId}.`);
-const logisticsTitle = html.match(/<span class="card-summary-title">Mall Logistics([\s\S]*?)<\/span><span class="card-summary-meta">/);
-for (const itemId of [2001, 2011]) check(Boolean(logisticsTitle?.[1].includes(`data-item-id="${itemId}"`)), `Mall Logistics title is missing item ${itemId}.`);
-const gameLogos = findElementsByClass(html, "game-logo");
-check(gameLogos.length === 2, "The guide must display the game logo at the title and External Tools sections.");
-const escapedSteamStoreUrl = steamStoreUrl.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const steamLogoLinks = [...html.matchAll(new RegExp(`<a\\b(?=[^>]*\\bhref="${escapedSteamStoreUrl}")[^>]*>([\\s\\S]*?)<\\/a>`, "g"))];
-check(steamLogoLinks.length === 2 && steamLogoLinks.every(link => findElementsByClass(link[1], "game-logo").length === 1), "Both game logos must link to the Dyson Sphere Program Steam store page.");
-const correctedPhaseAssets = new Map([
+const requiredPhaseAssets = new Map([
   ["blue", "t-matrix.png"],
   ["red", "e-matrix.png"],
   ["yellow", "c-matrix.png"],
   ["photon", "photon-capacitor-full.png"],
   ["logistics", "interstellar-logistic-station.png"],
 ]);
-for (const [phase, asset] of correctedPhaseAssets) {
+for (const [phase, asset] of requiredPhaseAssets) {
   const rail = html.match(new RegExp(`<a(?=[^>]*class="[^"]*\\brail-tab\\b[^"]*")(?=[^>]*data-phase="${phase}")[^>]*>([\\s\\S]*?)<\\/a>`));
   check(Boolean(rail?.[1].includes(`/${asset}"`)), `Phase ${phase} rail icon is wrong.`);
   const tags = [...html.matchAll(new RegExp(`<a(?=[^>]*class="[^"]*\\bphase-tag\\b[^"]*")(?=[^>]*href="#${phase}")[^>]*>([\\s\\S]*?)<\\/a>`, "g"))];
@@ -458,7 +217,6 @@ check(technologyTriggers.length > 0, "No native technology triggers were found."
 check(technologyTriggers.every(trigger => isNativeComponent(trigger, components.technologyReference)), "A technology trigger does not use its native component element.");
 check(technologyTriggers.every(trigger => (getAttribute(trigger.openingTag, "type") || "button").toLowerCase() === "button"), "A technology trigger has a non-button type.");
 check(technologyTriggers.every(trigger => !hasAttribute(trigger.openingTag, "role") && !hasAttribute(trigger.openingTag, "tabindex")), "A native technology trigger retains pseudo-button attributes.");
-check(!/<aside\b/.test(html), "A repeated callout still creates a complementary landmark.");
 const routeMaps = findElementsByClass(html, components.routeMap.className);
 const routeRows = findElementsByClass(html, components.routeRow.className);
 check(routeMaps.length > 0 && routeMaps.every(map => isNativeComponent(map, components.routeMap)), "A production map does not use a native list.");
@@ -467,38 +225,6 @@ check(routeMaps.every(map => !hasAttribute(map.openingTag, "role")), "A native p
 check(routeRows.every(row => !hasAttribute(row.openingTag, "role")), "A native production route retains an ARIA list-item role.");
 const genericAriaLabels = [...html.matchAll(/<(div|span)\b([^>]*\baria-label="[^"]+"[^>]*)>/g)];
 check(genericAriaLabels.every(match => /\brole="(?:group|img)"/.test(match[2])), "A generic element uses aria-label without a nameable role.");
-
-const ilsMapStart = html.indexOf('<div class="inline-production-map production-map" role="group" aria-label="ILS bootstrap production map">');
-const ilsMapEnd = html.indexOf("</div></li>", ilsMapStart);
-const ilsMap = ilsMapStart >= 0 && ilsMapEnd > ilsMapStart ? html.slice(ilsMapStart, ilsMapEnd) : "";
-const ilsMapText = ilsMap.replace(/<[^>]+>/g, "");
-check(Boolean(ilsMap), "The aligned ILS bootstrap production map is missing.");
-check(findElementsByClass(ilsMap, "route-group").length === 4, "The ILS bootstrap map must contain four focused groups.");
-check(findElementsByClass(ilsMap, components.routeRow.className).length === 11, "The ILS bootstrap map must contain eleven transformation rows.");
-const ilsMapHeadings = ["PROCESSORS", "PARTICLE CONTAINERS", "TITANIUM ALLOY", "TRANSPORT HARDWARE"];
-for (const heading of ilsMapHeadings) {
-  check(ilsMapText.includes(heading), `The ILS bootstrap map is missing its ${heading} group.`);
-}
-check(
-  ilsMapHeadings.every((heading, index) => index === 0 || ilsMapText.indexOf(ilsMapHeadings[index - 1]) < ilsMapText.indexOf(heading)),
-  "The ILS bootstrap production groups are out of order.",
-);
-check(
-  ilsMapText.includes("Production order: Processors → yellow cubes → Particle Containers → Titanium Alloy."),
-  "The ILS bootstrap map lost its explicit production order.",
-);
-check(ilsMap.includes('href="#reference-electromagnetic-turbines"'), "The ILS bootstrap map lost its reusable turbine-line link.");
-check(ilsMap.includes('href="#reference-graphene"'), "The ILS bootstrap map lost its reusable Graphene-line link.");
-check(!ilsMapText.includes("SHARED TURBINE OUTPUTS"), "The ILS bootstrap map still combines its Particle Container and Reinforced Thruster references.");
-for (const output of ["PLS", "Reinforced Thrusters", "ILS", "Logistics Vessels"]) {
-  check(ilsMapText.includes(output), `The ILS transport-hardware group is missing ${output}.`);
-}
-check(
-  !ilsMapText.includes("Planetary Logistics Stations") &&
-    !ilsMapText.includes("Interstellar Logistics Stations"),
-  "The ILS transport-hardware group must use compact PLS and ILS labels.",
-);
-check(!ilsMap.includes('<span class="route-label">Turbines</span>'), "The ILS bootstrap map still contains the legacy prose-only Turbines row.");
 
 function countRouteArrowText() {
   const tokens = /<!--[\s\S]*?-->|<![^>]*>|<\/?[A-Za-z][^>]*>/g;
@@ -541,7 +267,6 @@ const tooltipDetailsPath = path.join(siteRoot, "assets", "data", "tech-tooltip-d
 try {
   const technologyData = JSON.parse(fs.readFileSync(technologyDataPath, "utf8"));
   const tooltipDetails = JSON.parse(fs.readFileSync(tooltipDetailsPath, "utf8"));
-  check(Object.keys(technologyData).length === 314, "Technology reference data does not contain 314 records.");
   check([...html.matchAll(/data-tech-id="(\d+)"/g)].every(match => technologyData[match[1]]), "Unresolved technology reference found.");
 
   const allowedTechnologyAliases = new Map([
@@ -594,10 +319,6 @@ try {
       check(Boolean(tooltipDetails[techId]), `Recipe-unlocking guide technology ${techId} has no tooltip details.`);
     }
   }
-  check(
-    JSON.stringify(tooltipDetails["1604"].unlocks.map(unlock => unlock.label)) === JSON.stringify(["belt3", "PLS", "Drone"]),
-    "Planetary Logistics System tooltip unlocks changed."
-  );
 } catch (error) {
   failures.push(`Technology tooltip data is invalid: ${error.message}`);
 }

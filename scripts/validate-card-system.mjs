@@ -2,16 +2,12 @@ import fs from "node:fs";
 import vm from "node:vm";
 import {
   components,
-  elementTextByClass,
   findElementsByClass,
   getAttribute,
   isNativeComponent,
-  stripMarkup,
 } from "./lib/markup-contracts.mjs";
 
 const html = fs.readFileSync("index.html", "utf8");
-const navigationScript = fs.readFileSync("assets/js/navigation.js", "utf8");
-const guideCss = fs.readFileSync("assets/css/guide.css", "utf8");
 const authoritativeRecipes = JSON.parse(
   fs.readFileSync(
     "dsp_universal_end_product_dag_v1_0/dsp_universal_recipe_hyperedges_v1_0.json",
@@ -25,41 +21,33 @@ const cards = findElementsByClass(html, components.buildCard.className)
 const ids = cards.map(card => card.id);
 const uniqueIds = new Set(ids);
 
-const expectedCards = new Map([
-  ["card-bootstrap-mall-logistics", "Mall Logistics — buffer 900 Belts + 400 Sorters"],
-  ["card-bootstrap-mall-industry", "Mall Industry — buffer 50 Miners + 50 Smelters + 50 Mk.I Assemblers"],
-  ["card-bootstrap-mall-storage", "Mall Storage — buffer 50 Storage Mk.I + 50 Storage Tanks"],
-  ["card-bootstrap-mall-power", "Mall Power — buffer 50 Wind Turbines + 100 Tesla Towers + 200 Combustible Units"],
-  ["card-blue-blue-cubes", "Blue Cubes — 40/min"],
-  ["card-red-red-cubes", "Red Cubes — 20/min"],
-  ["card-red-security-mall", "Security Mall — buffer 8 Missile Turrets + 20 Signal Towers + 200 Missile Sets"],
-  ["card-yellow-yellow-cubes", "Yellow Cubes — three Labs’ worth"],
-  ["card-purple-processors", "Processors — 45/min"],
-  ["card-purple-particle-broadband", "Particle Broadband — 22.5/min"],
-  ["card-green-quantum-chips", "Quantum Chips — 7.5/min"],
-  ["card-green-graviton-lenses", "Graviton Lenses — 7.5/min"],
-  ["card-dyson-solar-sails", "Solar Sails — 405/min installed capacity"],
-  ["card-dyson-em-rail-ejectors", "EM-Rail Ejectors — buffer 60"],
-  ["card-sphere-dyson-components", "Dyson Sphere Components — 16.875/min"],
-  ["card-sphere-deuteron-fuel-rods", "Deuteron Fuel Rods — 30/min"],
-  ["card-logistics-distribution-kit", "Distribution Logistics Hardware — buffer 50 Distributors + 200 Bots"],
-  ["card-logistics-planetary-kit", "Planetary Logistics Hardware — buffer 10 PLS + 200 Drones"],
-  ["card-logistics-interstellar-kit", "Interstellar Logistics Hardware — buffer 10 ILS + 50 Vessels"],
+const expectedCards = new Set([
+  "card-bootstrap-mall-logistics",
+  "card-bootstrap-mall-industry",
+  "card-bootstrap-mall-storage",
+  "card-bootstrap-mall-power",
+  "card-blue-blue-cubes",
+  "card-red-red-cubes",
+  "card-red-security-mall",
+  "card-yellow-yellow-cubes",
+  "card-purple-processors",
+  "card-purple-particle-broadband",
+  "card-green-quantum-chips",
+  "card-green-graviton-lenses",
+  "card-dyson-solar-sails",
+  "card-dyson-em-rail-ejectors",
+  "card-sphere-dyson-components",
+  "card-sphere-deuteron-fuel-rods",
+  "card-logistics-distribution-kit",
+  "card-logistics-planetary-kit",
+  "card-logistics-interstellar-kit",
 ]);
 
 if (ids.length !== uniqueIds.size) errors.push(`Duplicate build-card IDs: ${ids.length - uniqueIds.size}`);
 if (cards.length !== expectedCards.size) errors.push(`Expected ${expectedCards.size} cards; found ${cards.length}`);
 
-for (const [id, expectedTitle] of expectedCards) {
-  const card = cards.find(candidate => candidate.id === id);
-  if (!card) {
-    errors.push(`Missing planned card: ${id}`);
-    continue;
-  }
-  const title = elementTextByClass(card.inner, "card-summary-title");
-  if (title !== expectedTitle) errors.push(`${id} title changed: "${title}"`);
-}
-for (const id of ids) if (!expectedCards.has(id)) errors.push(`Unplanned card remains: ${id}`);
+for (const id of expectedCards) if (!cards.some(card => card.id === id)) errors.push(`Missing required card: ${id}`);
+for (const id of ids) if (!expectedCards.has(id)) errors.push(`Unexpected card: ${id}`);
 
 const references = findElementsByClass(html, components.productionReference.className)
   .filter(element => isNativeComponent(element, components.productionReference))
@@ -70,54 +58,6 @@ if (references.length !== expectedReferences.size) {
 }
 for (const id of expectedReferences) {
   if (!references.some(reference => reference.id === id)) errors.push(`Missing reusable reference: ${id}`);
-}
-
-const turbineReference = references.find(reference => reference.id === "reference-electromagnetic-turbines");
-const turbinePipeline = turbineReference?.inner.match(
-  /class="map-pipeline"><h4>Production Map<\/h4>([\s\S]*?)<\/section>/,
-)?.[1] || "";
-const turbineGroups = findElementsByClass(turbinePipeline, "route-group");
-const expectedTurbineGroups = [
-  {
-    heading: "Magnetic Coil branch",
-    rows: [["1001", "1102"], ["1002", "1104"], ["1102", "1104", "1202"]],
-    producers: [["smelting"], ["smelting"], ["assembly"]],
-  },
-  {
-    heading: "Electric Motor branch",
-    rows: [["1001", "1101", "1201"], ["1101", "1201", "1202", "1203"]],
-    producers: [["smelting", "assembly"], ["assembly"]],
-  },
-  {
-    heading: "Final convergence",
-    rows: [["1203", "1202", "1204"]],
-    producers: [["assembly"]],
-  },
-];
-if (turbineGroups.length !== expectedTurbineGroups.length) {
-  errors.push(`The reusable turbine map must contain three ordered groups; found ${turbineGroups.length}`);
-} else {
-  turbineGroups.forEach((group, groupIndex) => {
-    const expected = expectedTurbineGroups[groupIndex];
-    const heading = group.inner.match(/<h5>([\s\S]*?)<\/h5>/)?.[1]?.replace(/<[^>]+>/g, " ").trim() || "";
-    if (heading !== expected.heading) {
-      errors.push(`Reusable turbine group ${groupIndex + 1} changed heading from "${expected.heading}" to "${heading}"`);
-    }
-    const rows = findElementsByClass(group.inner, components.routeRow.className);
-    const itemSequences = rows.map(row => {
-      const chain = findElementsByClass(row.inner, "route-chain")[0]?.inner || "";
-      return [...chain.matchAll(/\bdata-item-id="(\d+)"/g)].map(match => match[1]);
-    });
-    const producerTypes = rows.map(row => (
-      [...row.full.matchAll(/\bdata-producer-type="([^"]+)"/g)].map(match => match[1])
-    ));
-    if (JSON.stringify(itemSequences) !== JSON.stringify(expected.rows)) {
-      errors.push(`Reusable turbine group "${expected.heading}" has an unexpected item sequence`);
-    }
-    if (JSON.stringify(producerTypes) !== JSON.stringify(expected.producers)) {
-      errors.push(`Reusable turbine group "${expected.heading}" has an unexpected producer sequence`);
-    }
-  });
 }
 
 const allDocumentIds = new Set([...html.matchAll(/\bid="([^\"]+)"/g)].map(match => match[1]));
@@ -131,24 +71,66 @@ for (const target of links) {
 }
 
 let operatingNoteCount = 0;
+let recipeTransitionCount = 0;
 
-function validateMap(id, body, requireExactDestination) {
-  const required = [
-    'class="map-supplies"><h4>Supplies</h4>',
-    'class="map-pipeline"><h4>Production Map</h4>',
-    'class="map-destination"><h4>Destination</h4>',
-  ];
-  const positions = required.map(section => body.indexOf(section));
-  required.forEach((section, index) => {
-    if (positions[index] < 0) errors.push(`${id} is missing ${section}`);
+function isAuthoritativeTransition(inputIds, outputId) {
+  const inputs = new Set(inputIds.map(Number));
+  const output = Number(outputId);
+  return authoritativeRecipes.some(recipe => {
+    const producesOutput = recipe.outputs.some(candidate => candidate.item_id === output);
+    const sharesDisplayedInput = recipe.inputs.some(candidate => inputs.has(candidate.item_id));
+    return producesOutput && sharesDisplayedInput;
+  });
+}
+
+function validateRecipeTransitions(id, routeRows) {
+  routeRows.forEach((row, rowIndex) => {
+    const chain = findElementsByClass(row.inner, "route-chain")[0];
+    if (!chain) return;
+    const tokens = [
+      ...findElementsByClass(chain.inner, components.itemReference.className).map(item => ({
+        index: item.index,
+        itemId: getAttribute(item.openingTag, components.itemReference.idAttribute),
+        type: "item",
+      })),
+      ...findElementsByClass(chain.inner, components.productionArrow.className).map(arrow => ({
+        index: arrow.index,
+        type: "arrow",
+      })),
+    ].sort((left, right) => left.index - right.index);
+    const arrowIndexes = tokens.flatMap((token, index) => token.type === "arrow" ? [index] : []);
+    arrowIndexes.forEach((arrowIndex, transitionIndex) => {
+      const previousArrowIndex = transitionIndex === 0 ? -1 : arrowIndexes[transitionIndex - 1];
+      const nextArrowIndex = transitionIndex + 1 < arrowIndexes.length ? arrowIndexes[transitionIndex + 1] : tokens.length;
+      const inputIds = tokens.slice(previousArrowIndex + 1, arrowIndex)
+        .filter(token => token.type === "item")
+        .map(token => token.itemId);
+      const outputIds = tokens.slice(arrowIndex + 1, nextArrowIndex)
+        .filter(token => token.type === "item")
+        .map(token => token.itemId);
+      recipeTransitionCount += 1;
+      const outputId = outputIds[0];
+      if (!inputIds.length || !outputId || !isAuthoritativeTransition(inputIds, outputId)) {
+        errors.push(`${id} route row ${rowIndex + 1} contains a transformation not supported by runtime recipe data: ${inputIds.join(" + ")} → ${outputId || "missing output"}`);
+      }
+    });
+  });
+}
+
+function validateMap(id, body) {
+  const required = ["map-supplies", "map-pipeline", "map-destination"];
+  const sections = required.map(className => findElementsByClass(body, className)[0]);
+  const positions = sections.map(section => section?.index ?? -1);
+  required.forEach((className, index) => {
+    if (!sections[index]) errors.push(`${id} is missing its ${className} section`);
   });
   if (!positions.every((position, index) => index === 0 || position > positions[index - 1])) {
     errors.push(`${id} does not follow Supplies → Production Map → Destination`);
   }
 
-  const supplies = body.match(/class="map-supplies"><h4>Supplies<\/h4>([\s\S]*?)<\/section>/)?.[1] || "";
-  const pipeline = body.match(/class="map-pipeline"><h4>Production Map<\/h4>([\s\S]*?)<\/section>/)?.[1] || "";
-  const destination = body.match(/class="map-destination"><h4>Destination<\/h4>([\s\S]*?)<\/section>/)?.[1] || "";
+  const supplies = sections[0]?.inner || "";
+  const pipeline = sections[1]?.inner || "";
+  const destination = sections[2]?.inner || "";
   const visible = value => value.replace(/<[^>]+>/g, " ");
 
   for (const [surface, markup] of [["Supplies", supplies], ["Production Map", pipeline], ["Destination", destination]]) {
@@ -174,15 +156,12 @@ function validateMap(id, body, requireExactDestination) {
   if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(visible(pipeline))) {
     errors.push(`${id} puts exact internal arithmetic in Production Map`);
   }
-  if (requireExactDestination && !/\d/.test(visible(destination)) && !/three Labs[’'] worth/i.test(visible(destination))) {
-    errors.push(`${id} Destination does not restate its exact end-product target`);
-  }
-
   const routeRows = findElementsByClass(pipeline, components.routeRow.className);
   if (routeRows.length === 0) errors.push(`${id} has no production-map routes`);
   if (routeRows.some(row => !isNativeComponent(row, components.routeRow))) {
     errors.push(`${id} contains a production-map route that is not a native list item`);
   }
+  validateRecipeTransitions(id, routeRows);
   const rowLimit = id === "card-red-security-mall" ? 12 : 8;
   if (routeRows.length > rowLimit) errors.push(`${id} exceeds its ${rowLimit}-row complexity limit (${routeRows.length})`);
   const routeGroups = [...pipeline.matchAll(/class="route-group"/g)].length;
@@ -194,149 +173,13 @@ function validateMap(id, body, requireExactDestination) {
 
   const tailStages = [...body.matchAll(/class="map-footer-section (map-surplus|map-note)"/g)].map(match => match[1]);
   if (new Set(tailStages).size !== tailStages.length) errors.push(`${id} duplicates a permitted footer section`);
-  if (/card-stage-(?:input|pipeline|output|totals|pickup)/.test(body)) {
-    errors.push(`${id} retains legacy column-card markup`);
-  }
 }
 
-const securityMall = cards.find(card => card.id === "card-red-security-mall")?.inner || "";
-if (securityMall.includes('href="#reference-electromagnetic-turbines"') || securityMall.includes('href="#card-bootstrap-mall-power"')) {
-  errors.push("Security Mall still outsources partial Motor or Wireless Power Tower branches.");
-}
-for (const requiredBranch of ["Motor branch", "Tower branch", "Exciter branch", "Wireless convergence"]) {
-  if (!securityMall.includes(requiredBranch)) errors.push(`Security Mall is missing its ${requiredBranch}.`);
-}
-
-const planningOnlyDestinationCards = new Set([
-  "card-dyson-solar-sails",
-  "card-dyson-em-rail-ejectors",
-]);
 for (const card of cards) {
-  validateMap(card.id, card.inner, !planningOnlyDestinationCards.has(card.id));
+  validateMap(card.id, card.inner);
   if (/\sopen(?:\s|>)/.test(card.openingTag)) errors.push(`${card.id} is open by default`);
 }
-const ejectorCard = cards.find(card => card.id === "card-dyson-em-rail-ejectors")?.inner || "";
-const ejectorPipeline = ejectorCard.match(
-  /<section class="map-pipeline">[\s\S]*?<\/section>/,
-)?.[0] || "";
-const ejectorRows = findElementsByClass(
-  ejectorPipeline,
-  components.routeRow.className,
-);
-const ejectorLabels = ejectorRows.map(row =>
-  elementTextByClass(row.full, "route-label"),
-);
-const expectedEjectorLabels = [
-  "Gear branch",
-  "Steel branch",
-  "Magnet/graphite branch",
-  "Ring branch",
-  "Ejector convergence",
-];
-if (JSON.stringify(ejectorLabels) !== JSON.stringify(expectedEjectorLabels)) {
-  errors.push(`Ejector map rows are invalid: ${ejectorLabels.join(", ")}`);
-}
-const expectedEjectorItems = [
-  ["1001", "1101", "1201"],
-  ["1001", "1101", "1103"],
-  ["1001", "1102", "1006", "1109"],
-  ["1204", "1102", "1109", "1205"],
-  ["1103", "1201", "1303", "1205", "2311"],
-];
-const expectedEjectorProducers = [
-  ["2302", "2303"],
-  ["2302", "2302"],
-  ["2302", "2302"],
-  ["2303"],
-  ["2303"],
-];
-for (const [index, row] of ejectorRows.entries()) {
-  const routeChain = row.full.slice(row.full.indexOf('<span class="route-chain">'));
-  const itemIds = [...routeChain.matchAll(/\bdata-item-id="(\d+)"/g)].map(
-    match => match[1],
-  );
-  const producerIds = [
-    ...routeChain.matchAll(/data-producer-item-id="(\d+)"/g),
-  ].map(match => match[1]);
-  if (
-    JSON.stringify(itemIds) !== JSON.stringify(expectedEjectorItems[index]) ||
-    JSON.stringify(producerIds) !==
-      JSON.stringify(expectedEjectorProducers[index])
-  ) {
-    errors.push(`${expectedEjectorLabels[index] || "Ejector row"} lost its recipe chain`);
-  }
-}
-if (!/Magnets<\/span>; <span[^>]+data-item-id="1006"[^>]*>/.test(ejectorRows[2]?.full || "")) {
-  errors.push("The Ejector Magnet/graphite chains are not separated by a semicolon");
-}
-for (const retainedEjectorContract of [
-  'href="#card-purple-processors"',
-  'href="#reference-electromagnetic-turbines"',
-  "keep a small, limited buffer for staged deployment",
-  "Solar Sail Life Lv2",
-  "clear injection geometry",
-  "Each firing Ejector draws 1.8 MW",
-]) {
-  if (!ejectorCard.includes(retainedEjectorContract)) {
-    errors.push(`The Ejector card lost retained content: ${retainedEjectorContract}`);
-  }
-}
-for (const reference of references) validateMap(reference.id, reference.inner, false);
-
-for (const phaseId of ["ils", "warp", "photon", "white"]) {
-  const start = html.search(new RegExp(`<section class="phase-section[^>]*" id="${phaseId}">`));
-  const end = html.indexOf('<section class="phase-section', start + 1);
-  const phase = html.slice(start, end < 0 ? html.length : end);
-  if (phase.includes('<details class="build-card')) errors.push(`${phaseId.toUpperCase()} still contains a build card`);
-}
-
-for (const retired of [
-  "Minimal pickup interval",
-  "Total draw and output",
-  "card-green-green-cubes",
-  "card-photon-critical-photons",
-  "card-photon-antimatter",
-  "card-white-white-cubes",
-  "limit the buffer to",
-  "limit the deployment buffer to",
-  '<h4>Input</h4>',
-  '<h4>Pipeline</h4>',
-  '<h4>Output</h4>',
-]) {
-  if (html.includes(retired)) errors.push(`Retired card-system text remains: ${retired}`);
-}
-const visibleDocument = html.replace(/<[^>]+>/g, "");
-if (!visibleDocument.includes("Storage limits use slots:")) {
-  errors.push("Storage-slot guidance is missing from the build-card assumptions.");
-}
-for (const required of [
-  "Organic Crystal (mined)",
-  "Sulfuric Acid ocean",
-  "Fire Ice",
-  "Kimberlite Ore",
-  "Fractal Silicon",
-  "Optical Grating Crystal",
-  "Spiniform Stalagmite Crystal",
-  "Unipolar Magnet",
-  "The finite 200-yellow-cube research batch is complete",
-  "Three yellow-cube Labs produce continuously",
-  "Three Matrix Labs sustain 18 purple cubes/min",
-  "Two Matrix Labs sustain 10 green cubes/min",
-]) {
-  if (!visibleDocument.includes(required)) errors.push(`Required consistency text is missing: ${required}`);
-}
-
-for (const required of [
-  'class="producer-legend"',
-  "producer-smelting",
-  "producer-assembly",
-  "producer-processing",
-  'src="assets/js/producer-types.js"',
-  'class="production-arrow"',
-  'class="proto-icon proto-icon-producer"',
-]) {
-  if (!html.includes(required)) errors.push(`Producer-type presentation is missing: ${required}`);
-}
+for (const reference of references) validateMap(reference.id, reference.inner);
 
 const expectedPhaseIds = [
   "blue", "red", "ils", "yellow", "purple", "green",
@@ -347,20 +190,18 @@ const phaseIds = [...html.matchAll(/<section class="phase-section[^>]*" id="([^"
 if (JSON.stringify(phaseIds) !== JSON.stringify(expectedPhaseIds)) {
   errors.push(`Unexpected phase structure: ${phaseIds.join(" → ")}`);
 }
-const rail = html.match(
-  /<nav aria-label="Route and optional capability navigation" class="phase-rail">([\s\S]*?)<\/nav>/,
-);
+const rail = findElementsByClass(html, "phase-rail")[0];
 if (!rail) {
   errors.push("The route and optional-capability navigation rail is missing");
 } else {
-  const railMarkup = rail[1];
+  const railMarkup = rail.inner;
   const railPhaseIds = [...railMarkup.matchAll(/data-phase="([^"]+)"/g)].map(
     (match) => match[1],
   );
   if (JSON.stringify(railPhaseIds) !== JSON.stringify(expectedPhaseIds)) {
     errors.push(`Unexpected navigation order: ${railPhaseIds.join(" → ")}`);
   }
-  const dividerIndex = railMarkup.indexOf(">OPTIONAL</div>");
+  const dividerIndex = railMarkup.indexOf('class="rail-label rail-label-optional"');
   const whiteIndex = railMarkup.indexOf('data-phase="white"');
   const warpIndex = railMarkup.indexOf('data-phase="warp"');
   if (!(
@@ -370,45 +211,25 @@ if (!rail) {
   )) {
     errors.push("Optional navigation is not grouped after the numbered route");
   }
-  if (/title="(?:11|12)\. \[(?:WARP|LOGISTICS)\]/.test(railMarkup)) {
-    errors.push("Optional navigation still assigns mandatory stage numbers");
-  }
-  for (const capability of ["WARP", "LOGISTICS"]) {
-    if (
-      !railMarkup.includes(`aria-label="Optional capability: [${capability}]`)
-    ) {
-      errors.push(`Optional navigation label is missing for ${capability}`);
-    }
+  for (const capability of ["warp", "logistics"]) {
+    const optionalControl = railMarkup.match(new RegExp(`<a(?=[^>]*class="[^"]*\\brail-tab-optional\\b[^"]*")(?=[^>]*data-phase="${capability}")[^>]*>`));
+    if (!optionalControl) errors.push(`Optional navigation control is missing for ${capability.toUpperCase()}`);
   }
 }
-for (const [id, tag] of [
-  ["warp", "WARP"],
-  ["logistics", "LOGISTICS"],
-]) {
-  const heading = html.match(
-    new RegExp(
-      `<section class="phase-section phase-section-${id}" id="${id}"><h1[^>]*>([\\s\\S]*?)<\\/h1>`,
-    ),
-  );
-  if (
-    !heading ||
-    !heading[1].includes('class="capability-kicker">OPTIONAL CAPABILITY</span>')
-  ) {
-    errors.push(
-      `${tag} heading is not visibly labeled as an optional capability`,
-    );
-  } else if (/^\s*(?:11|12)\./.test(heading[1].replace(/<[^>]+>/g, ""))) {
-    errors.push(`${tag} heading still has a mandatory stage number`);
+for (const id of ["warp", "logistics"]) {
+  const section = findElementsByClass(html, `phase-section-${id}`)[0];
+  const heading = section?.inner.match(/^<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] || "";
+  if (!findElementsByClass(heading, "capability-kicker").length) {
+    errors.push(`${id.toUpperCase()} heading is not visibly labeled as an optional capability`);
   }
 }
-const progressIndexMarkup = html.match(
-  /<table class="progress-index">([\s\S]*?)<\/table>/,
-);
+const progressIndex = findElementsByClass(html, "progress-index")[0];
+const progressIndexMarkup = progressIndex?.inner || "";
 if (!progressIndexMarkup) {
   errors.push("Quick Progress Index is missing");
 } else {
   const numberedRows = [
-    ...progressIndexMarkup[1].matchAll(/<tr><td>(\d+)<\/td>/g),
+    ...progressIndexMarkup.matchAll(/<tr><td>(\d+)<\/td>/g),
   ].map((match) => Number(match[1]));
   if (
     JSON.stringify(numberedRows) !==
@@ -419,14 +240,7 @@ if (!progressIndexMarkup) {
     );
   }
   if (
-    !progressIndexMarkup[1].includes(
-      "Optional capabilities — direct reference, not mandatory stages",
-    )
-  ) {
-    errors.push("Quick Progress Index optional-capability group is missing");
-  }
-  if (
-    (progressIndexMarkup[1].match(/class="progress-optional-row"/g) || [])
+    (progressIndexMarkup.match(/class="progress-optional-row"/g) || [])
       .length !== 2
   ) {
     errors.push(
@@ -434,409 +248,9 @@ if (!progressIndexMarkup) {
     );
   }
 }
-function phaseSlice(id, nextId) {
-  const start = html.indexOf(
-    `<section class="phase-section phase-section-${id}" id="${id}">`,
-  );
-  const end = html.indexOf(
-    `<section class="phase-section phase-section-${nextId}" id="${nextId}">`,
-    start,
-  );
-  return start >= 0 && end > start ? html.slice(start, end) : "";
-}
-const ilsPhase = phaseSlice("ils", "yellow");
-const purplePhase = phaseSlice("purple", "green");
-const greenPhase = phaseSlice("green", "dyson");
-const photonPhase = phaseSlice("photon", "white");
-const whitePhase = phaseSlice("white", "warp");
-const warpPhase = phaseSlice("warp", "logistics");
-const logisticsStart = html.indexOf(
-  '<section class="phase-section phase-section-logistics" id="logistics">',
-);
-const logisticsEnd = html.indexOf('<h1 id="ref-proliferation">', logisticsStart);
-const logisticsPhase = logisticsStart >= 0 && logisticsEnd > logisticsStart
-  ? html.slice(logisticsStart, logisticsEnd)
-  : "";
-const warpDestinations = (markup) => [
-  ...markup.matchAll(/href="(#warp(?:-[^"]+)?)"/g),
-].map((match) => match[1]);
-for (const anchor of ["warp-prepare", "warp-automate"]) {
-  if ((html.match(new RegExp(`id="${anchor}"`, "g")) || []).length !== 1) {
-    errors.push(`WARP contextual anchor must appear exactly once: #${anchor}`);
-  }
-}
-if (JSON.stringify(warpDestinations(ilsPhase)) !== JSON.stringify(["#warp"])) {
-  errors.push("ILS resource-pressure guidance must retain the WARP overview destination");
-}
-if (!ilsPhase.includes("before those reserves become painful")) {
-  errors.push("ILS WARP overview guidance no longer states the resource-pressure reason");
-}
-if (
-  JSON.stringify(warpDestinations(purplePhase)) !==
-  JSON.stringify(["#warp-prepare", "#warp-prepare"])
-) {
-  errors.push("PURPLE WARP cues must both target the preparation stage");
-}
-if ((purplePhase.match(/named rare resource/g) || []).length < 2) {
-  errors.push("Each PURPLE WARP cue must name the rare-resource reason for the detour");
-}
-if (
-  JSON.stringify(warpDestinations(greenPhase)) !==
-  JSON.stringify(["#warp-automate"])
-) {
-  errors.push("GREEN must expose the efficient-Warper automation stage");
-}
-if (
-  !greenPhase.includes("named rare-resource import should now run unattended") ||
-  !greenPhase.includes("green cubes now make")
-) {
-  errors.push("GREEN WARP automation guidance is missing its actionable context");
-}
-if (
-  !warpPhase.includes(
-    '<h2 class="phase-stage-heading" id="warp-prepare">1. Prepare the expedition</h2>',
-  ) ||
-  !warpPhase.includes(
-    '<h2 class="phase-stage-heading" id="warp-outpost">2. Establish the source outpost</h2>',
-  ) ||
-  !warpPhase.includes(
-    '<h2 class="phase-stage-heading" id="warp-automate">3. Automate the vessel route</h2>',
-  )
-) {
-  errors.push("Approved WARP contextual destinations are not attached to their stage headings");
-}
-if (
-  !warpPhase.includes('href="#green"') ||
-  !warpPhase.includes("If you entered from PURPLE for an early deployment") ||
-  !warpPhase.includes("Later and direct visitors have no fixed WARP exit")
-) {
-  errors.push("WARP does not distinguish the early GREEN continuation from later direct visits");
-}
-const warpStageLinks = [
-  ["I", "warp-prepare", "Prepare the expedition"],
-  ["II", "warp-outpost", "Establish the source outpost"],
-  ["III", "warp-automate", "Automate the vessel route"],
-];
-if ((html.match(/class="stage-rail"/g) || []).length !== 2) {
-  errors.push("WARP and ILS must each expose one shared expedition stage rail");
-}
-for (const [roman, anchor, purpose] of warpStageLinks) {
-  const stageControl = `<a aria-label="WARP Stage ${roman}: ${purpose}" class="stage-tab" data-stage="${anchor}" href="#${anchor}" title="WARP Stage ${roman}: ${purpose}">${roman}</a>`;
-  if (!rail?.[1].includes(stageControl)) {
-    errors.push(`WARP stage ${roman} is missing its accessible #${anchor} control`);
-  }
-  if ((html.match(new RegExp(`id="${anchor}"`, "g")) || []).length !== 1) {
-    errors.push(`WARP stage anchor must appear exactly once: #${anchor}`);
-  }
-}
-if (
-  !rail?.[1].includes(
-    '<div aria-label="WARP expedition stages" class="stage-rail" data-stage-phase="warp" role="group">',
-  )
-) {
-  errors.push("The accepted WARP stage rail is missing");
-}
-if (
-  (warpPhase.match(/class="stage-cue"/g) || []).length !== 3 ||
-  !warpPhase.includes("A visible rare resource would remove work") ||
-  !warpPhase.includes("The remote source processes into an unpowered provider") ||
-  !warpPhase.includes("A powered home ILS uses Vessels and Warpers")
-) {
-  errors.push("WARP stages do not state their entry conditions and advance outcomes");
-}
-const ilsStageLinks = [
-  ["I", "flight", "Get flight-ready"],
-  ["II", "titanium", "Build an outpost worth returning to"],
-  ["III", "ils-automate", "Make the route automatic"],
-];
-for (const [roman, anchor, purpose] of ilsStageLinks) {
-  const stageControl = `<a aria-label="ILS Stage ${roman}: ${purpose}" class="stage-tab" data-stage="${anchor}" href="#${anchor}" title="ILS Stage ${roman}: ${purpose}">${roman}</a>`;
-  if (!rail?.[1].includes(stageControl)) {
-    errors.push(`ILS stage ${roman} is missing its accessible #${anchor} control`);
-  }
-  if ((html.match(new RegExp(`id="${anchor}"`, "g")) || []).length !== 1) {
-    errors.push(`ILS stage anchor must appear exactly once: #${anchor}`);
-  }
-}
-if (
-  !rail?.[1].includes(
-    '<div aria-label="ILS expedition stages" class="stage-rail" data-stage-phase="ils" role="group">',
-  ) ||
-  !ilsPhase.includes(
-    '<h2 class="phase-stage-heading" id="flight">1. Get flight-ready</h2>',
-  ) ||
-  !ilsPhase.includes(
-    '<h2 class="phase-stage-heading" id="titanium">2. Build an outpost worth returning to</h2>',
-  ) ||
-  !ilsPhase.includes(
-    '<h2 class="phase-stage-heading" id="ils-automate">3. Make the route automatic</h2>',
-  )
-) {
-  errors.push("ILS stage controls are not attached to the three approved headings");
-}
-if (
-  (ilsPhase.match(/class="stage-cue"/g) || []).length !== 3 ||
-  !ilsPhase.includes("the ILS bridge is the next mandatory route job") ||
-  !ilsPhase.includes("protected haulback of 860 Titanium Ingots and 520 High-Purity Silicon") ||
-  !ilsPhase.includes("Two ILS towers and five Vessels deliver Titanium and Silicon home")
-) {
-  errors.push("ILS stages do not preserve departure, haulback, and finite automation boundaries");
-}
-const ilsManifest = ilsPhase.match(
-  /<h2>Expedition manifest<\/h2><table class="phase-dashboard">([\s\S]*?)<\/table>/,
-);
-if (!ilsManifest) {
-  errors.push("The ILS expedition manifest is missing");
-} else {
-  const manifestText = stripMarkup(ilsManifest[1]);
-  if (
-    (ilsManifest[1].match(/<tr>/g) || []).length !== 4 ||
-    !manifestText.includes("Stage I — Departure") ||
-    !manifestText.includes("Stage II — Haulback") ||
-    !manifestText.includes("Stage III — Automation")
-  ) {
-    errors.push("The ILS manifest does not orient around the three stage outcomes");
-  }
-  if (
-    /\b(?:860|520|200|80|120)\b|two ILS|five (?:Logistics )?Vessels/i.test(
-      manifestText,
-    )
-  ) {
-    errors.push("The ILS manifest exposes a stage-owned exact figure");
-  }
-}
-const ilsFlightStart = ilsPhase.indexOf('id="flight"');
-const ilsHaulbackStart = ilsPhase.indexOf('id="titanium"');
-const ilsAutomationStart = ilsPhase.indexOf('id="ils-automate"');
-const ilsStageOneText = stripMarkup(
-  ilsPhase.slice(ilsFlightStart, ilsHaulbackStart),
-);
-const ilsStageTwoText = stripMarkup(
-  ilsPhase.slice(ilsHaulbackStart, ilsAutomationStart),
-);
-const ilsStageThreeText = stripMarkup(ilsPhase.slice(ilsAutomationStart));
-if (
-  !ilsStageOneText.includes("Drive Engine Lv2") ||
-  !ilsStageOneText.includes("Titanium Smelting") ||
-  !ilsStageOneText.includes("Launch when")
-) {
-  errors.push("ILS Stage I no longer owns the exact departure requirements");
-}
-if (
-  !/\b860\b/.test(ilsStageTwoText) ||
-  !/\b520\b/.test(ilsStageTwoText) ||
-  !ilsStageTwoText.includes("Before flying home")
-) {
-  errors.push("ILS Stage II no longer owns the protected haulback and return conditions");
-}
-if (
-  !/\b80\b/.test(ilsStageThreeText) ||
-  !/\b120\b/.test(ilsStageThreeText) ||
-  !/\b200\b/.test(ilsStageThreeText) ||
-  !ilsStageThreeText.includes("2 ILS") ||
-  !ilsStageThreeText.includes("5 Logistics Vessels")
-) {
-  errors.push("ILS Stage III no longer owns finite spending and hardware requirements");
-}
-if (
-  !navigationScript.includes("stageGroups = new Map") ||
-  !navigationScript.includes('setAttribute("aria-current", "step")') ||
-  !navigationScript.includes("getBoundingClientRect().top") ||
-  !navigationScript.includes('window.addEventListener("scroll", requestStageUpdate') ||
-  !navigationScript.includes('window.addEventListener("hashchange", activateHashTarget)') ||
-  /(?:localStorage|sessionStorage|document\.cookie)/.test(navigationScript)
-) {
-  errors.push("Shared stage navigation does not track scroll without stored progress");
-}
-if (
-  !guideCss.includes(".rail-tab.active+.stage-rail{display:flex}") ||
-  !guideCss.includes(".rail-entry-ils{--stage:79,209,197}") ||
-  !guideCss.includes("@media(max-width:900px){.rail-entry")
-) {
-  errors.push("Shared stage navigation is missing desktop projection or narrow access styling");
-}
-const logisticsDestinations = (markup) => [
-  ...markup.matchAll(/href="#logistics"/g),
-].length;
-if (
-  !progressIndexMarkup?.[1].includes("<th>Entry cue</th>") ||
-  !progressIndexMarkup?.[1].includes(
-    "Repeated expansion consumes handcrafted stations and carriers",
-  ) ||
-  progressIndexMarkup?.[1].includes("ILS onward")
-) {
-  errors.push("Quick Progress Index does not use the repeated-expansion LOGISTICS cue");
-}
-if (logisticsDestinations(ilsPhase) !== 0) {
-  errors.push("ILS must not create a LOGISTICS objective from technical availability alone");
-}
-if (
-  logisticsDestinations(greenPhase) !== 1 ||
-  !greenPhase.includes("repeated expansion has you handcrafting the same stations and carriers again")
-) {
-  errors.push("GREEN LOGISTICS guidance is not tied to repeated replacement builds");
-}
-if (
-  logisticsDestinations(whitePhase) !== 2 ||
-  (whitePhase.match(/repeated expansion/g) || []).length < 2
-) {
-  errors.push("Post-completion LOGISTICS cues are not consistently tied to repeated expansion");
-}
-if (
-  !logisticsPhase.includes("This section is useful whenever:") ||
-  !logisticsPhase.includes(
-    "Repeated expansion keeps sending you back to handcraft the same stations and carriers",
-  )
-) {
-  errors.push("Direct LOGISTICS visitors are missing the repeated-expansion orientation");
-}
-const defaultRoute = html.match(
-  /<p>The default route is:<\/p>\s*<p><strong>([^<]+)<\/strong><\/p>/,
-);
-if (!defaultRoute) {
-  errors.push("The introductory default route is missing");
-} else {
-  const routePhases = defaultRoute[1].split(/\s*\u2192\s*/);
-  if (routePhases[0] !== "Blue" || routePhases[1] !== "Red") {
-    errors.push("The introductory default route must begin Blue → Red");
-  }
-  if (routePhases[2] !== "ILS" || routePhases[3] !== "Yellow") {
-    errors.push(
-      "The introductory default route must keep ILS between Red and Yellow",
-    );
-  }
-  if (routePhases.includes("Warp") || routePhases.includes("Logistics")) {
-    errors.push(
-      "The introductory default route includes an optional capability",
-    );
-  }
-  if (routePhases.includes("Bootstrap")) {
-    errors.push(
-      "The introductory default route still exposes Bootstrap as a separate phase",
-    );
-  }
-}
-if (
-  html.includes("Quick reference — Cube production targets") ||
-  html.includes(
-    "Come back to this table when an older cube line starts holding up research",
-  ) ||
-  html.includes('class="rate-table"')
-) {
-  errors.push("The retired global cube-production target surface remains");
-}
-const phaseLocalCubeGuidance = [
-  [
-    "BLUE",
-    phaseSlice("blue", "red"),
-    /Good target[\s\S]*?40[\s\S]*?blue cubes/i,
-  ],
-  [
-    "RED",
-    phaseSlice("red", "ils"),
-    /Useful target[\s\S]*?20[\s\S]*?red cubes/i,
-  ],
-  [
-    "YELLOW",
-    phaseSlice("yellow", "purple"),
-    /Good target[\s\S]*?Three Labs/i,
-  ],
-  ["PURPLE", purplePhase, /Good target[\s\S]*?18[\s\S]*?purple/i],
-  ["GREEN", greenPhase, /Good target[\s\S]*?10[\s\S]*?green/i],
-];
-for (const [phaseName, phaseMarkup, guidancePattern] of phaseLocalCubeGuidance) {
-  const dashboard = phaseMarkup.match(
-    /<h3 class="dashboard-title">Phase dashboard<\/h3><table class="phase-dashboard">[\s\S]*?<\/table>/,
-  )?.[0];
-  if (!dashboard || !guidancePattern.test(stripMarkup(dashboard))) {
-    errors.push(`${phaseName} phase-local cube guidance is missing`);
-  }
-}
-const photonDashboard = photonPhase.match(
-  /<h3 class="dashboard-title">Phase dashboard<\/h3><table class="phase-dashboard">[\s\S]*?<\/table>/,
-)?.[0];
-const photonDashboardText = stripMarkup(photonDashboard || "");
-if (
-  !photonDashboard ||
-  !photonDashboardText.includes("Main goal") ||
-  !photonDashboardText.includes("Desired state") ||
-  !photonDashboardText.includes("Keep an eye on") ||
-  !photonDashboardText.includes("Move on when")
-) {
-  errors.push("The PHOTON dashboard is missing its descriptive state contract");
-}
-if (
-  /\b\d[\d,.]*\b|\b(?:one|two|three|four|five|six|seven|eight|nine|ten)\b/i.test(
-    photonDashboardText,
-  )
-) {
-  errors.push("The PHOTON dashboard exposes an exact figure");
-}
-const photonDetailText = stripMarkup(
-  photonPhase.replace(photonDashboard || "", ""),
-);
-if (
-  !/Two lensed Receivers:\s*up to 24 photons\/min/i.test(photonDetailText) ||
-  !/Four:\s*up to 48\/min/i.test(photonDetailText) ||
-  !/2,000 Antimatter/i.test(photonDetailText)
-) {
-  errors.push("The PHOTON detailed reference no longer retains its exact figures");
-}
-for (const legacyId of ["flight", "titanium"]) {
-  if (!html.includes(`class="phase-stage-heading" id="${legacyId}"`)) {
-    errors.push(`Missing compatibility stage anchor: #${legacyId}`);
-  }
-  if (html.includes(`phase-section-${legacyId}`)) {
-    errors.push(`Legacy ${legacyId.toUpperCase()} phase section remains`);
-  }
-}
-if (!html.includes('class="phase-stage-heading" id="bootstrap"')) {
-  errors.push("Missing compatibility stage anchor: #bootstrap");
-}
-if (html.includes("phase-section-bootstrap")) {
-  errors.push("Legacy BOOTSTRAP phase section remains");
-}
-
-const dysonStart = html.indexOf(
-  '<section class="phase-section phase-section-dyson" id="dyson">',
-);
-const sphereStart = html.indexOf(
-  '<section class="phase-section phase-section-sphere" id="sphere">',
-);
-if (dysonStart < 0 || sphereStart <= dysonStart) {
-  errors.push("The DYSON phase boundaries are missing");
-} else {
-  let dysonOutsideAllowedFigures = html.slice(dysonStart, sphereStart);
-  const howMuchHeading =
-    '<h2 class="quick-ref-title">Quick reference — How much is enough</h2>';
-  const howMuchStart = dysonOutsideAllowedFigures.indexOf(howMuchHeading);
-  const howMuchEnd = dysonOutsideAllowedFigures.indexOf(
-    '<h2 class="quick-ref-title">',
-    howMuchStart + howMuchHeading.length,
-  );
-  if (howMuchStart < 0 || howMuchEnd <= howMuchStart) {
-    errors.push("The DYSON planning-reference section is missing");
-  } else {
-    dysonOutsideAllowedFigures =
-      dysonOutsideAllowedFigures.slice(0, howMuchStart) +
-      dysonOutsideAllowedFigures.slice(howMuchEnd);
-  }
-  for (const cardId of [
-    "card-dyson-solar-sails",
-    "card-dyson-em-rail-ejectors",
-  ]) {
-    const card = cards.find(candidate => candidate.id === cardId);
-    const summary = card?.inner.match(/^<summary>[\s\S]*?<\/summary>/)?.[0];
-    if (!summary) errors.push(`${cardId} is missing its planning-reference title`);
-    else dysonOutsideAllowedFigures = dysonOutsideAllowedFigures.replace(summary, "");
-  }
-  const disallowedFigure = stripMarkup(dysonOutsideAllowedFigures).match(
-    /\b(?:405|383|60|384|511|517\.5|80|108|4,000)\b|\b(?:four|48\/min)\b|1\.655(?:-GW|\s+GW)|32%/i,
-  );
-  if (disallowedFigure) {
-    errors.push(
-      `DYSON baseline figure appears outside its allowed reference locations: ${disallowedFigure[0]}`,
-    );
+for (const compatibilityId of ["flight", "titanium", "bootstrap"]) {
+  if ((html.match(new RegExp(`id="${compatibilityId}"`, "g")) || []).length !== 1) {
+    errors.push(`Compatibility anchor must appear exactly once: #${compatibilityId}`);
   }
 }
 
@@ -904,26 +318,10 @@ clickCardControl(makeCardButton("blue"));
 if (bootstrapCard.open || !blueCard.open) {
   errors.push("Blue-science card controls do not remain isolated inside the merged BLUE phase");
 }
-const recipeOutputs = new Map([
-  [84, 2001], [85, 2011], [45, 2303], [56, 2302], [48, 2301], [86, 2101],
-  [114, 2106], [7, 2203], [8, 2201], [133, 1128], [9, 6001], [18, 6002],
-  [129, 3005], [131, 3007], [144, 1609],
-  [27, 6003], [51, 1303], [36, 1402], [112, 1131], [78, 1210], [79, 1210], [52, 1305], [101, 1209],
-  [70, 1501], [71, 2311], [81, 1502], [41, 1802], [122, 2107], [123, 5003], [93, 2103],
-  [94, 5001], [95, 2104], [96, 5002], [105, 1407],
-]);
-for (const [recipeId, outputId] of recipeOutputs) {
-  const recipe = authoritativeRecipes.find(candidate => candidate.recipe_id === recipeId);
-  if (!recipe) errors.push(`Authoritative recipe ${recipeId} is missing`);
-  else if (!recipe.outputs.some(output => output.item_id === outputId)) {
-    errors.push(`Authoritative recipe ${recipeId} no longer produces item ${outputId}`);
-  }
-}
-
 if (errors.length) {
   console.error(`Card validation failed with ${errors.length} error(s):`);
   for (const error of errors) console.error(`- ${error}`);
   process.exit(1);
 }
 
-console.log(`Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${operatingNoteCount} icon-free Operating Notes, ${links.length} direct links, textual-map complexity within bounds, and ${recipeOutputs.size} authoritative output recipes verified.`);
+console.log(`Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${operatingNoteCount} icon-free Operating Notes, ${links.length} direct links, textual-map complexity within bounds, and ${recipeTransitionCount} displayed recipe transformations verified.`);

@@ -89,22 +89,15 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 ## Active validation contracts
 
 - `scripts/validate-deployment.mjs` checks the deployable static package,
-  internal anchors, technology references, and asset boundaries.
+  internal anchors, asset boundaries, the bounded Dark Fog placement contract,
+  semantic component markup, and runtime-derived technology relationships.
 - `scripts/validate-card-system.mjs` enforces the current card inventory,
-  direct-link rules, complexity limits, icon-free Operating Notes, retained
-  map icon treatments, authoritative output recipes, and the separation of
-  optional capabilities from main-route numbering, including contextual WARP
-  entry destinations, repeated-expansion LOGISTICS entry cues, and the shared
-  three-stage WARP and ILS expedition rails. It also keeps the ILS manifest
-  figure-free while each accepted stage retains its actionable requirements,
-  and prevents the retired global cube-target table from displacing
-  phase-local production guidance. It also keeps the PHOTON dashboard
-  figure-free while preserving exact PHOTON planning figures in its detailed
-  reference layer, and fixes the DYSON Ejector map at four branch rows plus its
-  final convergence while retaining every recipe transformation.
-- `scripts/validate-checklists.mjs` checks checklist coverage, persistence,
-  reset behavior, storage failure, glossary placement, and the one-screen
-  route/optional-capability grouping.
+  direct-link rules, structural complexity limits, icon-free Operating Notes,
+  map icon treatments, authoritative recipe relationships, phase and
+  navigation identity, compatibility anchors, and scoped card controls.
+- `scripts/validate-checklists.mjs` checks checklist identity and persistence,
+  reset behavior, storage failure, glossary presence, and separation of the
+  one-screen route from optional capabilities.
 - `scripts/apply-proto-icons.mjs --check` validates the committed static icon
   markup against the externally supplied authoritative asset map during an
   authorized local icon pass. It performs reusable icon and production-arrow
