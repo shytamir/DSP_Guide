@@ -80,7 +80,7 @@ check(!/Dark Fog/i.test(outsideRed), "Dark Fog guidance appears outside RED.");
 check(!/(Dark Fog (?:levels?|farming|drops?|industry)|space combat|Relay Stations?|\bhives?\b|concealed technolog)/i.test(html), "Prohibited Dark Fog subject remains in the guide.");
 
 const localAssetOccurrences = [
-  ...html.matchAll(/(?:href|src)="(assets\/[^"]+)"/g)
+  ...html.matchAll(/(?:href|src|srcset)="(assets\/[^"]+)"/g)
 ].map(match => match[1]);
 const localAssets = [...new Set(localAssetOccurrences)];
 for (const required of [
@@ -91,14 +91,20 @@ for (const required of [
   "assets/js/cards.js",
   "assets/js/checklists.js",
   "assets/DSP_exported assets/Texture2D/dsp-logo-flat-en.png",
+  "assets/images/guide-trademark-animated.png",
+  "assets/images/guide-trademark-static.png",
 ]) {
   check(localAssets.includes(required), `Required static asset is not referenced: ${required}`);
 }
 check(localAssets.every(asset => fs.existsSync(path.join(siteRoot, asset))), "A referenced static asset is missing.");
 check(!actual.some(file => /recognized-game-assets\.json$/i.test(file)), "The external authoritative asset map entered the deployment package.");
 
-const imageSources = [...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g)].map(match => match[1]);
-check(imageSources.every(source => source.startsWith("assets/DSP_exported assets/Texture2D/")), "An image source falls outside the authorized game-asset directory.");
+const imageSources = [
+  ...html.matchAll(/<img\b[^>]*\bsrc="([^"]+)"[^>]*>/g),
+  ...html.matchAll(/<source\b[^>]*\bsrcset="([^"]+)"[^>]*>/g),
+].map(match => match[1]);
+const approvedImageRoots = ["assets/DSP_exported assets/Texture2D/", "assets/images/"];
+check(imageSources.every(source => approvedImageRoots.some(root => source.startsWith(root))), "An image source falls outside the approved local image directories.");
 
 const itemIconReferenceTablePattern = /^(?:rate|allocation|rare-resource|reference|comparison)-table$/;
 const itemIconCalloutClassPattern = /(?:legend|callout|warning|choice|contract)$|^orbital-process$/;
