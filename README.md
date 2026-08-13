@@ -16,6 +16,7 @@ assets/
   css/guide.css
   data/tech-reference.json
   data/tech-tooltip-details.json
+  images/
   js/checklists.js
   js/cards.js
   js/navigation.js
@@ -29,6 +30,8 @@ assets/
 - `assets/js/` contains the small, independent interaction scripts.
 - `assets/data/tech-reference.json` contains runtime-derived technology names and prerequisites.
 - `assets/data/tech-tooltip-details.json` maps concise cube and recipe-unlock labels to their authoritative runtime item IDs.
+- `assets/images/` contains guide-original presentation art and locally hosted
+  companion-mod media.
 - `assets/DSP_exported assets/` contains authorized, unmodified game images used
   by the guide.
 

@@ -93,6 +93,7 @@ for (const required of [
   "assets/DSP_exported assets/Texture2D/dsp-logo-flat-en.png",
   "assets/images/guide-trademark-animated.png",
   "assets/images/guide-trademark-static.png",
+  "assets/images/mod/dsp-guide-check-icon.png",
 ]) {
   check(localAssets.includes(required), `Required static asset is not referenced: ${required}`);
 }
@@ -105,6 +106,29 @@ const imageSources = [
 ].map(match => match[1]);
 const approvedImageRoots = ["assets/DSP_exported assets/Texture2D/", "assets/images/"];
 check(imageSources.every(source => approvedImageRoots.some(root => source.startsWith(root))), "An image source falls outside the approved local image directories.");
+
+const companionDocks = findElementsByClass(html, "companion-dock");
+check(companionDocks.length === 1, "The guide must contain exactly one companion dock.");
+const companionDock = companionDocks[0];
+if (companionDock) {
+  check(companionDock.tag === "aside", "The companion dock must use semantic aside markup.");
+  check(getAttribute(companionDock.openingTag, "aria-labelledby") === "companion-dock-title", "The companion dock heading relationship is missing.");
+  check(/<h2\b[^>]*id="companion-dock-title"[^>]*>DSP Guide Check<\/h2>/.test(companionDock.inner), "The companion dock heading is malformed.");
+  check(companionDock.inner.includes("Optional companion"), "The companion dock does not identify the mod as optional.");
+  check(companionDock.inner.includes("Install with Mod Manager"), "The companion dock is missing the manager installation step.");
+  check(companionDock.inner.includes("press <strong>F8</strong>"), "The companion dock is missing the F8 setup step.");
+  const companionLinks = findElementsByClass(companionDock.inner, "companion-dock-link");
+  check(companionLinks.length === 1 && companionLinks[0].tag === "a", "The companion dock must contain one explicit link.");
+  check(getAttribute(companionLinks[0]?.openingTag || "", "href") === "https://thunderstore.io/c/dyson-sphere-program/p/DSPGuideCheckMod/DSPGuideCheck/", "The companion dock link does not use the canonical Thunderstore URL.");
+  check(!hasAttribute(companionLinks[0]?.openingTag || "", "target"), "The companion dock link must preserve normal same-tab navigation.");
+  check(/<img\b[^>]*src="assets\/images\/mod\/dsp-guide-check-icon\.png"[^>]*alt=""[^>]*aria-hidden="true"[^>]*>/.test(companionDock.inner), "The companion dock icon is missing or not decorative.");
+  check(!/<(?:iframe|script|video)\b/.test(companionDock.inner), "The companion dock contains prohibited embedded or active content.");
+}
+
+const guideCss = fs.readFileSync(path.join(siteRoot, "assets/css/guide.css"), "utf8");
+check(/\.companion-dock\{[^}]*z-index:19[^}]*display:none[^}]*width:216px[^}]*max-height:calc\(100vh - 32px\)[^}]*overflow-y:auto/.test(guideCss), "The companion dock base geometry or hidden state changed.");
+check(guideCss.includes("@media(min-width:1480px){.companion-dock{display:block}}"), "The companion dock activation boundary changed.");
+check(guideCss.includes("@media print{.companion-dock{display:none!important}}"), "The companion dock is not excluded from print.");
 
 const itemIconReferenceTablePattern = /^(?:rate|allocation|rare-resource|reference|comparison)-table$/;
 const itemIconCalloutClassPattern = /(?:legend|callout|warning|choice|contract)$|^orbital-process$/;

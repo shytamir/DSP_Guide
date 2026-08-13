@@ -29,6 +29,7 @@ The published static site is `index.html` with supporting files under
 - runtime-derived technology tooltips;
 - static runtime-bound prototype icons and producer-marked production maps;
 - player-owned persistent checklists and a compact glossary;
+- a wide-desktop companion dock linking to the optional DSP Guide Check mod;
 - no server-side code, accounts, analytics, cookies, or remote dependencies.
 
 The guide is considered deployable. Further changes should be driven by
