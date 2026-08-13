@@ -115,6 +115,9 @@ if (companionDock) {
   check(getAttribute(companionDock.openingTag, "aria-labelledby") === "companion-dock-title", "The companion dock heading relationship is missing.");
   check(/<h2\b[^>]*id="companion-dock-title"[^>]*>DSP Guide Check<\/h2>/.test(companionDock.inner), "The companion dock heading is malformed.");
   check(companionDock.inner.includes("Optional companion"), "The companion dock does not identify the mod as optional.");
+  check(/<details\b[^>]*class="companion-dock-setup"[^>]*>/.test(companionDock.inner), "The companion dock setup disclosure is missing.");
+  check(!/<details\b[^>]*class="companion-dock-setup"[^>]*\bopen\b/.test(companionDock.inner), "The companion dock setup disclosure must be closed by default.");
+  check(/<summary>How to install<\/summary>/.test(companionDock.inner), "The companion dock setup disclosure label is missing.");
   check(companionDock.inner.includes("Install with Mod Manager"), "The companion dock is missing the manager installation step.");
   check(companionDock.inner.includes("press <strong>F8</strong>"), "The companion dock is missing the F8 setup step.");
   const companionLinks = findElementsByClass(companionDock.inner, "companion-dock-link");
@@ -126,8 +129,9 @@ if (companionDock) {
 }
 
 const guideCss = fs.readFileSync(path.join(siteRoot, "assets/css/guide.css"), "utf8");
-check(/\.companion-dock\{[^}]*z-index:19[^}]*display:none[^}]*width:216px[^}]*max-height:calc\(100vh - 32px\)[^}]*overflow-y:auto/.test(guideCss), "The companion dock base geometry or hidden state changed.");
+check(/\.companion-dock\{[^}]*z-index:19[^}]*display:none[^}]*width:216px[^}]*max-height:calc\(100vh - 32px\)[^}]*overflow-y:auto[^}]*font-size:13px/.test(guideCss), "The companion dock compact geometry or hidden state changed.");
 check(guideCss.includes("@media(min-width:1480px){.companion-dock{display:block}}"), "The companion dock activation boundary changed.");
+check(/@media\(min-width:1920px\)\{\.companion-dock\{[^}]*width:288px[^}]*font-size:14\.5px/.test(guideCss), "The companion dock large-desktop scale is missing.");
 check(guideCss.includes("@media print{.companion-dock{display:none!important}}"), "The companion dock is not excluded from print.");
 
 const itemIconReferenceTablePattern = /^(?:rate|allocation|rare-resource|reference|comparison)-table$/;
