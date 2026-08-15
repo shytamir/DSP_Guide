@@ -67,6 +67,57 @@ const html = fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, "utf8") : "";
 check(!/<style\b/.test(html), "Inline CSS found in index.html.");
 check(!/<script(?![^>]*\bsrc=)/.test(html), "Inline JavaScript or JSON found in index.html.");
 
+const head = html.slice(0, html.indexOf("</head>"));
+const metaTags = [...head.matchAll(/<meta\b[^>]*>/g)].map(match => match[0]);
+const linkTags = [...head.matchAll(/<link\b[^>]*>/g)].map(match => match[0]);
+const findMeta = (attribute, value) => metaTags.filter(tag => getAttribute(tag, attribute) === value);
+const description = "One engineer, lost beneath an alien sun. His goal: build the Sphere. Fortunately, Dyson left directions.";
+const canonicalUrl = "https://dsp-beginner-guide.pages.dev/";
+const previewUrl = `${canonicalUrl}assets/images/link-preview.png`;
+const descriptions = findMeta("name", "description");
+check(descriptions.length === 1 && getAttribute(descriptions[0], "content") === description, "The page description metadata is missing or incorrect.");
+const canonicals = linkTags.filter(tag => getAttribute(tag, "rel") === "canonical");
+check(canonicals.length === 1 && getAttribute(canonicals[0], "href") === canonicalUrl, "The production canonical URL is missing or incorrect.");
+const expectedOpenGraph = new Map([
+  ["og:type", "website"],
+  ["og:site_name", "DSP Practical Progression Guide"],
+  ["og:title", "Dyson Sphere Program — Practical Progression Guide"],
+  ["og:description", description],
+  ["og:url", canonicalUrl],
+  ["og:image", previewUrl],
+  ["og:image:type", "image/png"],
+  ["og:image:width", "1200"],
+  ["og:image:height", "630"],
+  ["og:image:alt", "Dyson Sphere Program wordmark above ‘Practical Progression Guide’ and a six-color progression path on a dark space background."],
+]);
+for (const [property, content] of expectedOpenGraph) {
+  const matches = findMeta("property", property);
+  check(matches.length === 1 && getAttribute(matches[0], "content") === content, `${property} metadata is missing or incorrect.`);
+}
+const expectedTwitterCard = new Map([
+  ["twitter:card", "summary_large_image"],
+  ["twitter:creator", "@alex2ez_"],
+  ["twitter:title", "Dyson Sphere Program — Practical Progression Guide"],
+  ["twitter:description", description],
+  ["twitter:image", previewUrl],
+  ["twitter:image:alt", "Dyson Sphere Program wordmark above ‘Practical Progression Guide’ and a six-color progression path on a dark space background."],
+]);
+for (const [name, content] of expectedTwitterCard) {
+  const matches = findMeta("name", name);
+  check(matches.length === 1 && getAttribute(matches[0], "content") === content, `${name} metadata is missing or incorrect.`);
+}
+
+const previewPath = path.join(siteRoot, "assets/images/link-preview.png");
+check(fs.existsSync(previewPath), "The Open Graph preview image is missing.");
+if (fs.existsSync(previewPath)) {
+  const preview = fs.readFileSync(previewPath);
+  const isPng = preview.length >= 24 && preview.subarray(1, 4).toString("ascii") === "PNG";
+  check(isPng, "The Open Graph preview image is not a valid PNG.");
+  if (isPng) {
+    check(preview.readUInt32BE(16) === 1200 && preview.readUInt32BE(20) === 630, "The Open Graph preview image must be 1200 by 630 pixels.");
+  }
+}
+
 const ids = [...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(match => match[1]);
 const anchors = [...html.matchAll(/href="#([^"]+)"/g)].map(match => match[1]);
 check(ids.length === new Set(ids).size, "Duplicate HTML id found.");
