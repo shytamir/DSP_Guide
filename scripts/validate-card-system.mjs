@@ -20,6 +20,12 @@ const authoritativeFormalEdges = fs.readFileSync(
   "dsp_universal_end_product_dag_v1_0/dsp_universal_formal_edges_v1_0.csv",
   "utf8",
 );
+const authoritativeGraph = JSON.parse(
+  fs.readFileSync(
+    "dsp_universal_end_product_dag_v1_0/dsp_universal_end_product_graph_v1_0.json",
+    "utf8",
+  ),
+);
 const technologyReference = JSON.parse(
   fs.readFileSync("assets/data/tech-reference.json", "utf8"),
 );
@@ -725,6 +731,188 @@ for (const requiredStageThreeText of [
 ]) {
   if (!guideText.includes(requiredStageThreeText)) {
     errors.push(`ILS Stage III is missing: ${requiredStageThreeText}`);
+  }
+}
+
+const yellowSection = findElementsByClass(html, "phase-section-yellow")[0];
+const yellowResearchDashboard = findElementsByClass(
+  yellowSection?.inner || "",
+  "yellow-research-dashboard",
+)[0];
+const expectedYellowDashboardIds = [
+  "2203",
+  "2302",
+  "2403",
+  "2602",
+  "2703",
+  "1608",
+  "3601",
+];
+const yellowDashboardIds = [
+  ...(yellowResearchDashboard?.inner || "").matchAll(
+    /class="[^"]*\btech-ref\b[^"]*"[^>]*data-tech-id="(\d+)"/g,
+  ),
+].map((match) => match[1]);
+if (
+  JSON.stringify(yellowDashboardIds) !==
+  JSON.stringify(expectedYellowDashboardIds)
+) {
+  errors.push(
+    `YELLOW dashboard research groups are invalid: ${yellowDashboardIds.join(", ")}`,
+  );
+}
+const yellowDashboardText = stripMarkup(yellowResearchDashboard?.inner || "");
+const yellowDashboardGroupIndexes = [
+  "Buildout:",
+  "Mall access:",
+  "Resource horizon:",
+].map((label) => yellowDashboardText.indexOf(label));
+if (
+  yellowDashboardGroupIndexes.some((index) => index < 0) ||
+  yellowDashboardGroupIndexes.some(
+    (index, position) =>
+      position > 0 && index <= yellowDashboardGroupIndexes[position - 1],
+  )
+) {
+  errors.push("YELLOW dashboard research groups are missing or out of order");
+}
+if (/[→+]/.test(yellowDashboardText)) {
+  errors.push("YELLOW dashboard falsely joins independent research groups");
+}
+
+const yellowPrescription = findElementsByClass(
+  yellowSection?.inner || "",
+  "yellow-research-prescription",
+)[0];
+const yellowPrescriptionIds = [
+  ...(yellowPrescription?.inner || "").matchAll(
+    /class="[^"]*\btech-ref\b[^"]*"[^>]*data-tech-id="(\d+)"/g,
+  ),
+].map((match) => match[1]);
+if (
+  JSON.stringify(yellowPrescriptionIds) !==
+  JSON.stringify(["2102", ...expectedYellowDashboardIds])
+) {
+  errors.push(
+    `YELLOW prescribed stopping ranks are invalid: ${yellowPrescriptionIds.join(", ")}`,
+  );
+}
+const yellowFiller = findElementsByClass(
+  yellowSection?.inner || "",
+  "yellow-research-filler",
+)[0];
+const yellowFillerIds = [
+  ...(yellowFiller?.inner || "").matchAll(
+    /class="[^"]*\btech-ref\b[^"]*"[^>]*data-tech-id="(\d+)"/g,
+  ),
+].map((match) => match[1]);
+if (
+  JSON.stringify(yellowFillerIds) !== JSON.stringify(["1501", "1711", "1511"])
+) {
+  errors.push(`YELLOW filler chain is invalid: ${yellowFillerIds.join(", ")}`);
+}
+
+const expectedYellowPrerequisites = new Map([
+  ["2203", ["2202", "2102"]],
+  ["2302", ["2301", "2101"]],
+  ["2403", ["2402", "2102"]],
+  ["2602", ["2601", "2102"]],
+  ["2703", ["2702", "2102"]],
+  ["1608", ["1602", "1702"]],
+  ["3601", ["1001"]],
+  ["1511", ["1403", "1501", "1711"]],
+]);
+for (const [technologyId, prerequisiteIds] of expectedYellowPrerequisites) {
+  const technology = technologyReference[technologyId] || {};
+  const actualPrerequisiteIds = new Set(
+    [
+      ...(technology.required || []),
+      ...(technology.implicitRequired || []),
+    ].map(({ id }) => String(id)),
+  );
+  for (const prerequisiteId of prerequisiteIds) {
+    if (!actualPrerequisiteIds.has(prerequisiteId)) {
+      errors.push(
+        `YELLOW technology ${technologyId} is missing prerequisite ${prerequisiteId}`,
+      );
+    }
+  }
+}
+
+const researchInputPoints = new Map();
+for (const line of authoritativeFormalEdges.split(/\r?\n/)) {
+  const match = line.match(
+    /^\d+,item:(600[1-6]),tech:(\d+),research_input,[^,]+,[^,]+,exact,,(\d+),/,
+  );
+  if (!match) continue;
+  const [, itemId, technologyId, points] = match;
+  const inputs = researchInputPoints.get(technologyId) || [];
+  inputs.push({ itemId, points: Number(points) });
+  researchInputPoints.set(technologyId, inputs);
+}
+const graphTechnologyNodes = new Map(
+  authoritativeGraph.nodes
+    .filter(({ node_type: nodeType }) => nodeType === "tech_proto")
+    .map((node) => [String(node.game_id), node]),
+);
+const rejectedYellowStoppingIds = [
+  "2103",
+  "2204",
+  "2303",
+  "2404",
+  "2603",
+  "2704",
+];
+const rejectedYellowCubeTotal = rejectedYellowStoppingIds.reduce(
+  (total, technologyId) => {
+    const hashNeeded = graphTechnologyNodes.get(technologyId)?.hash_needed;
+    const inputPoints = researchInputPoints.get(technologyId) || [];
+    if (!Number.isFinite(hashNeeded) || !inputPoints.length) {
+      errors.push(
+        `YELLOW rejected-stop cost data is missing for technology ${technologyId}`,
+      );
+      return total;
+    }
+    return (
+      total +
+      inputPoints.reduce(
+        (technologyTotal, { points }) =>
+          technologyTotal + (hashNeeded * points) / 3600,
+        0,
+      )
+    );
+  },
+  0,
+);
+if (rejectedYellowCubeTotal !== 10500) {
+  errors.push(
+    `YELLOW rejected stopping point costs ${rejectedYellowCubeTotal} cubes instead of 10500`,
+  );
+}
+
+const yellowText = stripMarkup(yellowSection?.inner || "");
+for (const requiredYellowText of [
+  "The next shared stopping point, including Mecha Core Lv3, would consume 10,500 cubes in total, which is too expensive for a YELLOW buildout detour before PURPLE.",
+  "These are useful jobs for the research queue while yellow settles, not requirements for leaving the phase.",
+  "The only phase gate is three continuously supplied yellow-cube Labs.",
+  "As soon as the three-Lab gate is satisfied, abandon any unfinished recommendation—including the filler chain—and move to PURPLE.",
+  "Accumulators can absorb surplus generation and cushion the charging shock from logistics stations",
+]) {
+  if (!yellowText.includes(requiredYellowText)) {
+    errors.push(
+      `YELLOW bounded research guidance is missing: ${requiredYellowText}`,
+    );
+  }
+}
+for (const staleYellowText of [
+  "Integrated Logistics System",
+  "take every affordable rank",
+  "Take it when stacked-belt tools sound useful",
+]) {
+  if (yellowText.includes(staleYellowText)) {
+    errors.push(
+      `YELLOW still contains stale research guidance: ${staleYellowText}`,
+    );
   }
 }
 

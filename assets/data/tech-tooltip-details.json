@@ -43,6 +43,7 @@
   "1504": { "unlocks": [{ "label": "RayReceiver", "itemId": 2208 }] },
   "1506": { "unlocks": [{ "label": "Antimatter", "itemId": 1122 }, { "label": "Hydrogen", "itemId": 1120 }] },
   "1507": { "cube": { "label": "WHITE CUBE", "color": "#f4f7fb", "itemId": 6006 } },
+  "1511": { "unlocks": [{ "label": "Accumulator", "itemId": 2206 }] },
   "1521": { "unlocks": [{ "label": "FrameMaterial", "itemId": 1125 }, { "label": "DysonComponent", "itemId": 1502 }] },
   "1522": { "unlocks": [{ "label": "Silo", "itemId": 2312 }, { "label": "Rocket", "itemId": 1503 }] },
   "1601": { "unlocks": [{ "label": "belt1", "itemId": 2001 }, { "label": "sorter1", "itemId": 2011 }, { "label": "storage1", "itemId": 2101 }] },
