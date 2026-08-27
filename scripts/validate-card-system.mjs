@@ -1320,5 +1320,14 @@ if (errors.length) {
 }
 
 console.log(
-  `Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${operatingNoteCount} icon-free Operating Notes, ${links.length} direct links, ${upgradeTechnologyNodes.length} upgrade ranks including ${previouslyAmbiguousUpgradeNodes.length} rank-qualified tooltip records, textual-map complexity within bounds, and ${recipeTransitionCount} displayed recipe transformations verified.`,
+  [
+    `Card validation passed: ${cards.length} phase cards,`,
+    `${references.length} reusable references,`,
+    `${operatingNoteCount} icon-free Operating Notes,`,
+    `${links.length} direct links,`,
+    `${upgradeTechnologyNodes.length} upgrade ranks including`,
+    `${previouslyAmbiguousUpgradeNodes.length} rank-qualified tooltip records,`,
+    "textual-map complexity within bounds, and",
+    `${recipeTransitionCount} displayed recipe transformations verified.`,
+  ].join(" "),
 );
