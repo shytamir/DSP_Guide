@@ -1308,15 +1308,18 @@ if ((html.match(/id="receiver-antimatter-bridge"/g) || []).length !== 1) {
 }
 const oneScreenChecklist = html.slice(html.indexOf('id="ref-checklist"'));
 for (const chosenRouteChecklistText of [
-  "405/min installed capacity",
-  "60-Ejector deployment buffer",
+  "The chosen-route Solar Sail line is automated and operating",
+  "EM-Rail Ejector launch infrastructure is automated and operating",
+  "Live Dyson generation is useful enough to proceed to the Receiver bridge",
 ]) {
   if (!stripMarkup(oneScreenChecklist).includes(chosenRouteChecklistText)) {
     errors.push(`One-Screen Checklist is missing: ${chosenRouteChecklistText}`);
   }
 }
 for (const rejectedChecklistText of [
+  "405/min installed capacity",
   "517.5/min installed capacity",
+  "60-Ejector deployment buffer",
   "80-Ejector deployment buffer",
 ]) {
   if (stripMarkup(oneScreenChecklist).includes(rejectedChecklistText)) {

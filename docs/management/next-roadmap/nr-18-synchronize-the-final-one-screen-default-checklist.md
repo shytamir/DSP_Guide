@@ -1,7 +1,6 @@
 # NR-18 — Synchronize the final One-Screen Default Checklist
 
-**Status:** Owner-approved on 2026-08-27. Implementation-ready but inactive
-pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
 
 **Dependency group:** E — Final synchronization
 **Assessed workload:** Medium
@@ -53,7 +52,7 @@ Apply these synchronization rules:
 The restructured DYSON checklist must follow DYSON's transition outcomes, not
 its planning-reference figures. It should require that Solar Sail production
 and the Ejector launch infrastructure are automated and operating, and that
-  the resulting live Dyson generation is useful enough to proceed to the
+the resulting live Dyson generation is useful enough to proceed to the
 Receiver bridge. Do not place the `405/min` Solar Sail reference or the
 60-Ejector buffer reference in the One-Screen Default Checklist. Those figures
 remain reference material in their approved DYSON locations and are not phase

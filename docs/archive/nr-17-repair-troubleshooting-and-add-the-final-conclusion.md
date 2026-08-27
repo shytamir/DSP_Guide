@@ -1,6 +1,6 @@
 # NR-17 — Repair troubleshooting and add the final conclusion
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
+**Status:** Owner-accepted and archived on 2026-08-27.
 
 **Dependency group:** E — Final synchronization
 **Assessed workload:** Medium
@@ -124,4 +124,4 @@ site in desktop Chromium.
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.
