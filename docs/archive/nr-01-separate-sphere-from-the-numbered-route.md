@@ -1,7 +1,7 @@
 # NR-01 — Separate SPHERE from the numbered route
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner
-acceptance.
+**Status:** Completed and owner-accepted on 2026-08-27. Archived historical
+record; this file no longer defines active work.
 
 **Dependency group:** A — Route foundation
 **Assessed workload:** Medium
@@ -13,11 +13,14 @@ As a reader following the prescribed route, I want numbered progression to run d
 
 ## Authoritative evidence
 
-The current guide numbers SPHERE inside the main route while also calling it optional. The owner-approved roadmap establishes nine numbered phases and three optional entries.
+Before NR-01, the guide numbered SPHERE inside the main route while also
+calling it optional. The owner-approved roadmap established nine numbered
+phases and three optional entries.
 
 ## Intended outcome
 
-Reclassify SPHERE structurally as an optional entry without changing its detailed guidance yet.
+NR-01 reclassified SPHERE structurally as an optional entry without changing
+its detailed guidance.
 
 ## In-scope surfaces
 
@@ -47,12 +50,11 @@ Reclassify SPHERE structurally as an optional entry without changing its detaile
 - Do not change checklist storage identities or public anchors.
 - Do not change DSP Guide Check or any other mod.
 
-## Owner gates
+## Gates satisfied
 
-- The owner approves this bounded story draft before implementation begins.
-- Technical validation establishes consistency, not reader acceptance.
-- The owner separately accepts or requests refinement after reviewing the
-  reader-facing result.
+- The owner approved the bounded story before implementation began.
+- Technical validation established structural and presentation consistency.
+- The owner accepted the deployed reader-facing result on 2026-08-27.
 
 ## Acceptance evidence
 
@@ -65,12 +67,12 @@ Reclassify SPHERE structurally as an optional entry without changing its detaile
 
 **Tier:** 2 — Experience
 
-Run the directly affected structural validators, then review navigation,
-document order, direct links, and the optional-entry presentation on the
-deployed development Pages site in desktop Chromium.
+Technical validation covered the directly affected structural contracts,
+navigation, document order, direct links, and optional-entry presentation on
+the deployed development Pages site in desktop Chromium.
 
 ## Release
 
-Production release, version changes, and production publication are not
-included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+Production release, version changes, and production publication were not
+included. Development deployment for validation followed
+[`docs/PROJECT.md`](../PROJECT.md) and did not imply owner acceptance.

@@ -19,35 +19,48 @@ for visible labels, controls, calculations, tooltips, and scope behavior.
 
 ## Intended outcome
 
-Add a concise BLUE entry and one canonical collapsed troubleshooting walkthrough using the approved yellow-cube example.
+Keep BLUE's Statistics Panel treatment to concise discovery, introduce the full
+workflow from YELLOW when its example is actionable, and retain one canonical
+collapsed troubleshooting walkthrough using the approved yellow-cube example.
 
 ## In-scope surfaces
 
-- BLUE Small Tools Statistics Panel entry
+- BLUE Small Tools Statistics Panel discovery entry
+- YELLOW contextual introduction to the complete workflow
 - Canonical troubleshooting walkthrough and stable anchor
 - Scope, interval, rate, storage, import/export, and real-time explanations
-- Cross-links from BLUE and later guidance
+- Cross-links from BLUE, YELLOW, and later guidance
 
 ## Approved specification
 
-Introduce the Statistics Panel during BLUE, but place its full canonical
-walkthrough in the troubleshooting reference. The panel is a general
-diagnostic tool rather than a BLUE mechanic, and a useful example needs later
-scope, storage, and import behavior. Do not duplicate the tutorial.
+Introduce the Statistics Panel briefly during BLUE, but reserve the complete
+teaching moment for YELLOW, after Structure Matrix production, planetary
+imports, and ILS routes have become meaningful to the reader. Place the full
+canonical walkthrough in the troubleshooting reference. The panel is a general
+diagnostic tool rather than a BLUE or YELLOW mechanic. Do not duplicate the
+tutorial or teach interplanetary troubleshooting as a BLUE requirement.
 
 Add this concise entry to BLUE's **Small tools** table:
 
-> **Statistics Panel** — Press `P` to see what the factory is actually
-> producing, consuming, importing, and storing. Use the [Production Statistics
-> walkthrough](#production-statistics-walkthrough) when a line slows down and
-> the cause is not visible.
+> **Statistics Panel** — Press `P` to inspect what the factory is producing,
+> consuming, and storing. The [Production Statistics
+> walkthrough](#production-statistics-walkthrough) uses a later YELLOW line to
+> teach multi-planet scope and imports; return to it when those routes are
+> running.
+
+Add one concise contextual link from YELLOW after its multi-planet production
+and delivery context is established:
+
+> **Multi-planet line slowing down?** Use the [Production Statistics
+> walkthrough](#production-statistics-walkthrough) to distinguish a waiting
+> output, a weak input, and a delivery gap before rebuilding anything.
 
 Add one collapsed **Quick process — Find a shortage with Production
 Statistics** after the ordered troubleshooting questions. Give it the stable
 anchor `#production-statistics-walkthrough` so BLUE and later phase guidance
 can link to one source.
 
-Use the current installed-game investigation in
+Use the archived runtime investigation in
 [Statistics Panel runtime evidence](../../archive/statistics-panel-runtime-evidence.md) as
 the factual source for visible labels, controls, calculations, tooltips, and
 scope behavior. The investigation used an advanced save, so preserve its panel
@@ -136,6 +149,7 @@ later needs to confirm an exact spatial relationship.
 ## Non-goals and preserved contracts
 
 - Do not turn the Statistics Panel into a BLUE-only mechanic.
+- Do not make the YELLOW example or interplanetary scope a BLUE requirement.
 - Do not duplicate the tutorial.
 - Do not add a screenshot or permanent browser automation.
 - Do not claim that a Reference Rate gap proves a particular physical cause.
@@ -150,7 +164,10 @@ later needs to confirm an exact spatial relationship.
 
 ## Acceptance evidence
 
-- BLUE contains the approved concise entry and link.
+- BLUE discovers the panel and explicitly frames the linked example as later
+  YELLOW guidance.
+- YELLOW introduces the complete workflow after its multi-planet context is
+  established.
 - One collapsed walkthrough owns the complete diagnostic procedure at the stable anchor.
 - All labels and behavior remain faithful to the runtime evidence.
 - The example distinguishes waiting output, local imports, system scope, and persistent shortages.
@@ -160,9 +177,10 @@ later needs to confirm an exact spatial relationship.
 
 **Tier:** 2 — Experience
 
-Check links and semantic disclosure behavior, then review the full tutorial on
-the deployed development Pages site in desktop Chromium. Reverify runtime
-wording only if implementation encounters a factual conflict.
+Check links and semantic disclosure behavior, then review the BLUE discovery
+entry, YELLOW teaching handoff, and full tutorial on the deployed development
+Pages site in desktop Chromium. Reverify runtime wording only if implementation
+encounters a factual conflict.
 
 ## Release
 

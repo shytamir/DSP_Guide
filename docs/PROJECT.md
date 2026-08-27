@@ -3,15 +3,14 @@
 **Status:** Version 2.3 is the current published minor line. Its twelve-story
 roadmap and resulting release were completed, owner-accepted, and archived on
 2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
-workload. NR-01 through NR-10 were owner-approved on 2026-08-27; NR-01 is
-implemented and technically validated, pending owner acceptance. NR-02 through
-NR-10 remain inactive, and NR-11 through NR-18 remain drafts awaiting owner
-review.
+workload. NR-01 was owner-accepted and archived on 2026-08-27. NR-02 through
+NR-14 are owner-approved but remain inactive, and NR-15 through NR-18 remain
+drafts awaiting owner review.
 
 ## Purpose
 
-This repository publishes a player-facing progression guide for *Dyson Sphere
-Program*. It is written primarily for new and returning players who understand
+This repository publishes a player-facing progression guide for _Dyson Sphere
+Program_. It is written primarily for new and returning players who understand
 individual factory actions but can lose track of which progression problem
 matters next.
 
@@ -137,9 +136,11 @@ versioning of that record is required.
 
 The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
 sequence, dependencies, and lifecycle status. NR-01, the prerequisite SPHERE
-route-structure story, has reached owner review after technical validation.
-Story approval, activation, technical validation, owner acceptance, and
-release authorization remain separate decisions.
+route-structure story, was owner-accepted and archived on 2026-08-27. NR-02
+through NR-14 are approved planning records; none is active until separately
+activated after its prerequisites are satisfied. Story approval, activation,
+technical validation, owner acceptance, and release authorization remain
+separate decisions.
 
 YELLOW/PURPLE problem-resolver guidance and a Dark Fog COMBAT/PEACE control are
 named future work outside the active roadmap. They do not create current
