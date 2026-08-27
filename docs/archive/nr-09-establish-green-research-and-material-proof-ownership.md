@@ -1,6 +1,6 @@
 # NR-09 — Establish GREEN research and material-proof ownership
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
+**Historical status:** Owner-accepted and archived on 2026-08-27.
 
 **Dependency group:** C — Late-route progression
 **Assessed workload:** Medium
@@ -48,12 +48,13 @@ Gravity, and convergence explanations:
 > for fusion here; this guide still makes Deuterium with Colliders. Then continue
 > through **Strange Matter → Gravitational Wave Refraction**.
 
-The material chain is part of GREEN's proof, not optional future preparation.
+Treat the material chain as validation evidence, not reader-facing prose.
 Producing Strange Matter requires a Miniature Particle Collider. The Collider
 requires Frame Material and Super Magnetic Rings, which proves Solar
 Collection, Photon Frequency Conversion, Super Magnetic Field Generator,
 Solar Sail Orbit System, and High-Strength Lightweight Structure by the end of
-GREEN. Later phases must not present those technologies as new research.
+GREEN. Keep that proof in the contract validator and this management record.
+Later phases must not present those technologies as new research.
 
 GREEN owns the explicit fusion research chain and fuel-buffering instruction,
 even when the player's existing grid delays actual Fusion Plant deployment.
@@ -77,7 +78,7 @@ uses Deuteron Fuel Rods; it must not repeat or reclaim the research.
 ## Acceptance evidence
 
 - GREEN explicitly owns the approved fusion and Strange Matter research order.
-- The Collider material chain proves the complete approved solar-orbit and frame branch.
+- The contract validator proves the Collider material chain and complete approved solar-orbit and frame branch without exposing that governance rationale as reader-facing prose.
 - DYSON and SPHERE no longer need to present those technologies as new research.
 - The chosen Collider route is distinguished from alternatives without claiming universal efficiency.
 
@@ -91,4 +92,4 @@ Validate prerequisites, recipes, material proof, phase ownership, and tooltip re
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.

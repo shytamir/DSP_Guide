@@ -702,8 +702,6 @@ for (const requiredGreenText of [
   "This guide chooses Miniature Particle Colliders because they form a compact, deterministic, seed-independent line and use the same machine type required for Strange Matter.",
   "This is the simplest dependable first-completion route, not the most material- or power-efficient route.",
   "Begin buffering Deuterium and Deuteron Fuel Rods in GREEN even if the existing grid lets you delay actual Fusion Plant deployment.",
-  "This material chain is part of GREEN's proof, not optional future preparation.",
-  "DYSON and SPHERE inherit that completed research; neither phase starts it again.",
 ]) {
   if (!greenText.includes(requiredGreenText)) {
     errors.push(`GREEN research ownership is missing: ${requiredGreenText}`);
@@ -713,6 +711,8 @@ for (const staleGreenText of [
   "Choose a Deuterium supply",
   "If you choose Fractionators:",
   "Pick the one that fits the factory you built",
+  "This material chain is part of GREEN's proof",
+  "DYSON and SPHERE inherit that completed research",
 ]) {
   if (greenText.includes(staleGreenText)) {
     errors.push(
