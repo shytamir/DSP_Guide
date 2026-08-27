@@ -75,4 +75,4 @@ the deployed development Pages site in desktop Chromium.
 
 Production release, version changes, and production publication were not
 included. Development deployment for validation followed
-[`docs/PROJECT.md`](../PROJECT.md) and did not imply owner acceptance.
+[`docs/PROJECT.md`](../../PROJECT.md) and did not imply owner acceptance.

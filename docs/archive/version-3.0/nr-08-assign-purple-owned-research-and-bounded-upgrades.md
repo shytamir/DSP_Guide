@@ -154,4 +154,4 @@ set rather than relying on a rendering sample.
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../../PROJECT.md) and did not imply owner acceptance.

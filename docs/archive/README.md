@@ -1,51 +1,46 @@
 # Archived Project Documents
 
-This directory contains completed or superseded planning and review documents.
-They are preserved to explain how the guide evolved, but they are not active
-requirements and should not be used as the current project status.
+This directory contains completed, superseded, or indefinitely deferred
+project records. They explain how the guide evolved but do not define current
+status or authorize work.
 
-The archive includes:
+## Archive index
 
-- `ROADMAP.md` and its icon, progression-entry, expedition-navigation, ILS,
-  cube-target, PHOTON, and DYSON Ejector supporting records for the completed
-  twelve-story sequence owner-accepted on 2026-08-09;
-- `version-2.9-release-candidate-roadmap.md` for the completed 18-story
-  sequence, prerelease capability proof, editorial workshop, and owner decision
-  that established version 2.9 as the release candidate;
-- `pending-guide-design-leftovers.md` for the completed inventory that produced
-  the final four stories in that roadmap;
-- `no-mobile-polish-story.md` for the inactive scope guardrail excluded from
-  roadmap execution and completion;
-- `version-2.3-navigation-and-progressive-disclosure-release.md` for the
-  completed twelve-story navigation and information-hierarchy release;
-- `version-2.2-maintenance-release.md` for the reconciled post-2.1 maintenance
-  and presentation release;
-- `CARD_SYSTEM_PLAN.md` for the implemented production-card contract;
-- `CARD_SYSTEM_REVIEW.md` for the audit that preceded that contract;
-- `END_TO_END_READING_PASS_PLAN.md` for the completed structural and editorial
-  correction pass;
-- `REPETITIVE_MARKUP_REFACTORING_ANALYSIS.md` for the 2026-08-05 investigation
-  of repeated markup and materialization-contract debt;
-- `bootstrap-blue-unification-user-stories.md` for the completed opening-phase
-  consolidation;
-- `guide-corrections-user-stories.md` for the completed opening-route and
-  DYSON reference-authority corrections;
-- `one-screen-checklist-correction-story.md` for the superseded bounded
-  checklist-baseline proposal replaced by NR-18 in the completed 18-story
-  roadmap;
-- `next-roadmap-source-review-notes.md` for the playthrough findings and
-  original WIP mapping that produced the bounded roadmap story drafts;
-- `nr-01-*.md` through `nr-18-*.md` for the completed 18-story sequence
-  owner-accepted on 2026-08-27;
-- `statistics-panel-runtime-evidence.md` for the archived textual evidence
-  behind the planned Production Statistics walkthrough;
-- `dark-fog-red-defense-user-stories.md` for the completed RED defense scope;
-- `ils-purple-green-research-handoff-user-story.md` and its first-pass audit
-  for the completed ILS, PURPLE, and GREEN research-handoff refinement;
-- `guide-icon-integration-plan.md` and
-  `asset-map-corrections-and-followups.md` for the completed static-icon pass.
+- [`version-3.0/`](version-3.0/) contains the completed 18-story sequence, its
+  release-candidate roadmap, source review, and supporting evidence.
+- [`deferred-indefinitely/`](deferred-indefinitely/) contains named concepts
+  that were never planned and were explicitly deferred indefinitely.
+- [`ROADMAP.md`](ROADMAP.md) and the associated icon, progression-entry,
+  expedition-navigation, ILS, cube-target, PHOTON, and DYSON Ejector records
+  preserve the completed twelve-story sequence accepted on 2026-08-09.
+- [`version-2.3-navigation-and-progressive-disclosure-release.md`](version-2.3-navigation-and-progressive-disclosure-release.md)
+  preserves the completed navigation and information-hierarchy release.
+- [`version-2.2-maintenance-release.md`](version-2.2-maintenance-release.md)
+  preserves the reconciled post-2.1 maintenance and presentation release.
+- [`CARD_SYSTEM_PLAN.md`](CARD_SYSTEM_PLAN.md) and
+  [`CARD_SYSTEM_REVIEW.md`](CARD_SYSTEM_REVIEW.md) preserve the production-card
+  contract and the review that preceded it.
+- [`END_TO_END_READING_PASS_PLAN.md`](END_TO_END_READING_PASS_PLAN.md) preserves
+  the completed structural and editorial correction pass.
+- [`REPETITIVE_MARKUP_REFACTORING_ANALYSIS.md`](REPETITIVE_MARKUP_REFACTORING_ANALYSIS.md)
+  preserves the investigation of repeated markup and materialization debt.
+- [`maintenance-roadmap.md`](maintenance-roadmap.md),
+  [`bootstrap-blue-unification-user-stories.md`](bootstrap-blue-unification-user-stories.md),
+  and [`reading-pane-right-alignment-user-story.md`](reading-pane-right-alignment-user-story.md)
+  preserve earlier completed maintenance work.
+- [`guide-corrections-user-stories.md`](guide-corrections-user-stories.md),
+  [`dark-fog-red-defense-user-stories.md`](dark-fog-red-defense-user-stories.md),
+  and the ILS-to-GREEN handoff records preserve completed guide corrections.
+- [`pending-guide-design-leftovers.md`](pending-guide-design-leftovers.md) and
+  [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
+  preserve superseded planning inputs.
+- [`no-mobile-polish-story.md`](no-mobile-polish-story.md) preserves the
+  historical desktop-first scope exclusion.
 
-Current documentation lives in:
+## Current documentation
 
-- `../PROJECT.md` for project status and current planning boundaries;
-- `../management/` for current permission and governance records.
+- [`../PROJECT.md`](../PROJECT.md) defines the current product and maintenance
+  boundaries.
+- [`../ROADMAP.md`](../ROADMAP.md) is the sole current roadmap.
+- [`../management/`](../management/) contains durable governance, validation,
+  and permission records.
