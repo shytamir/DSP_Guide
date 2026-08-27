@@ -1527,9 +1527,9 @@ if (
 const statisticsLinks = [
   ...html.matchAll(/href="#production-statistics-walkthrough"/g),
 ];
-if (statisticsLinks.length !== 3) {
+if (statisticsLinks.length !== 4) {
   errors.push(
-    `Production Statistics walkthrough must have BLUE, YELLOW, and later cross-links; found ${statisticsLinks.length}`,
+    `Production Statistics walkthrough must have BLUE, YELLOW, PHOTON, and troubleshooting cross-links; found ${statisticsLinks.length}`,
   );
 }
 for (const [name, markup] of [
@@ -1542,6 +1542,112 @@ for (const [name, markup] of [
       .length !== 1
   ) {
     errors.push(`${name} does not contain one Statistics walkthrough link`);
+  }
+}
+
+const finalTroubleshootPosition = html.indexOf('<h1 id="ref-troubleshoot"');
+const troubleshootingEnd = html.indexOf("</main>", finalTroubleshootPosition);
+const troubleshootingMarkup = html.slice(
+  finalTroubleshootPosition,
+  troubleshootingEnd,
+);
+const troubleshootingQuestions =
+  troubleshootingMarkup.match(/<ol>([\s\S]*?)<\/ol>/)?.[1] || "";
+const troubleshootingQuestionText = stripMarkup(troubleshootingQuestions);
+const preservedTroubleshootingQuestions = [
+  "Can I research the technology? If not, check which earlier technology is still missing.",
+  "Can I build the recipe or machine? If not, check whether you're missing another technology or the machine that actually makes it.",
+  "Can I keep supplying every required material? If not, find the material you can't yet mine, make, or import reliably.",
+  "Does the line still depend on me carrying or hand-feeding materials? If yes, automate the missing transport or storage step.",
+];
+if ((troubleshootingQuestions.match(/<li\b/g) || []).length !== 5) {
+  errors.push("Final troubleshooting FAQ must retain exactly five questions");
+}
+for (const question of preservedTroubleshootingQuestions) {
+  if (!troubleshootingQuestionText.includes(question)) {
+    errors.push(`Final troubleshooting FAQ changed: ${question}`);
+  }
+}
+for (const requiredFinalQuestionText of [
+  "Can I find the first place the product stops moving?",
+  "Start with the item you need and follow its production backward.",
+  "Look for the first machine with a missing input, a full output, no power, or a transport connection that is not delivering.",
+  "when the factory is too spread out to follow by eye.",
+  "Fix that one problem, let the line run, then check again.",
+]) {
+  if (!troubleshootingQuestionText.includes(requiredFinalQuestionText)) {
+    errors.push(
+      `Final troubleshooting question is missing: ${requiredFinalQuestionText}`,
+    );
+  }
+}
+if (
+  (
+    troubleshootingQuestions.match(
+      /href="#production-statistics-walkthrough"/g,
+    ) || []
+  ).length !== 1
+) {
+  errors.push(
+    "Final troubleshooting question must link to one Statistics walkthrough",
+  );
+}
+
+const visibleStopRule = findElementsByClass(
+  troubleshootingMarkup,
+  "troubleshooting-visible-stop-rule",
+)[0];
+if (
+  stripMarkup(visibleStopRule?.inner || "") !==
+  "Fix one visible stop at a time. A quiet machine whose output is already full is waiting, not failing, and does not need to be expanded."
+) {
+  errors.push("Final troubleshooting visible-stop rule is missing or invalid");
+}
+for (const obsoleteRateStatement of [
+  "A line below the minimum for the phase",
+  "A line between minimum and comfortable",
+  "A line already above the comfortable target",
+]) {
+  if (troubleshootingMarkup.includes(obsoleteRateStatement)) {
+    errors.push(
+      `Final troubleshooting retains obsolete guidance: ${obsoleteRateStatement}`,
+    );
+  }
+}
+
+const guideConclusions = findElementsByClass(html, "guide-conclusion");
+const guideConclusion = guideConclusions[0];
+const guideConclusionText = stripMarkup(guideConclusion?.inner || "");
+const expectedConclusionText = [
+  "The road is yours",
+  "Mission Completed does not mean the factory is finished. It means you know how to finish one.",
+  "You began beneath an alien sun with Icarus, a Replicator, and more work than answers. You now have a factory that reaches across planets, five cube lines converging into white science, a working Dyson project, and Antimatter moving without you.",
+  "More importantly, you learned how to turn shortages into production lines, keep paired outputs moving, carry industry beyond the homeworld, grow power beside demand, and trace a stalled product back to its cause. Those skills will outlast every figure and factory layout in this guide.",
+  "Build a permanent Sphere, expand across the cluster, raise your own targets, or begin again with a better plan. Congratulations, engineer. Dyson left directions; you built the road.",
+].join(" ");
+if (
+  guideConclusions.length !== 1 ||
+  guideConclusionText !== expectedConclusionText
+) {
+  errors.push("Guide conclusion is missing or differs from the approved draft");
+} else {
+  if (guideConclusion.tag !== "section") {
+    errors.push("Guide conclusion is not a visible section");
+  }
+  if (/<(?:a|button|details|input|ol|ul)\b/.test(guideConclusion.inner)) {
+    errors.push("Guide conclusion contains a prohibited control or collection");
+  }
+  if (
+    html
+      .slice(
+        guideConclusion.index + guideConclusion.full.length,
+        troubleshootingEnd,
+      )
+      .trim()
+  ) {
+    errors.push(
+      "Guide conclusion is not the final reader-facing guide content",
+    );
   }
 }
 

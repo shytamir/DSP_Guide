@@ -1,7 +1,6 @@
 # NR-17 — Repair troubleshooting and add the final conclusion
 
-**Status:** Owner-approved on 2026-08-27. Implementation-ready but inactive
-pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
 
 **Dependency group:** E — Final synchronization
 **Assessed workload:** Medium

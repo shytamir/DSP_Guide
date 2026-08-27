@@ -1,10 +1,9 @@
 # Active Roadmap — Story Index
 
-**Status:** Active. NR-01 through NR-15 were owner-accepted and archived on
-2026-08-27. NR-16 is implemented and technically validated, pending owner
-acceptance. NR-17 and NR-18 are owner-approved and implementation-ready but
-remain inactive until separately activated after their prerequisites are
-satisfied.
+**Status:** Active. NR-01 through NR-16 were owner-accepted and archived on
+2026-08-27. NR-17 is implemented and technically validated, pending owner
+acceptance. NR-18 is owner-approved and implementation-ready but remains
+inactive until separately activated after its prerequisites are satisfied.
 
 ## Purpose
 
@@ -125,8 +124,8 @@ stop and split the affected draft before authorizing additional scope.
 | 13    | [NR-13 — Refocus PHOTON on stable WHITE readiness](../archive/nr-13-refocus-photon-on-stable-white-readiness.md)                               | Data or research change | NR-12                        | Owner-accepted — archived              |
 | 14    | [NR-14 — Refine WARP expedition framing and route support](../archive/nr-14-refine-warp-expedition-framing-and-route-support.md)               | Editorial refinement    | NR-01                        | Owner-accepted — archived              |
 | 15    | [NR-15 — Add one canonical Production Statistics walkthrough](../archive/nr-15-add-one-canonical-production-statistics-walkthrough.md)         | Editorial refinement    | NR-05, NR-07                 | Owner-accepted — archived              |
-| 16    | [NR-16 — Teach the LOGISTICS route model](next-roadmap/nr-16-teach-the-logistics-route-model.md)                                               | Editorial refinement    | NR-01                        | Implemented — pending owner acceptance |
-| 17    | [NR-17 — Repair troubleshooting and add the final conclusion](next-roadmap/nr-17-repair-troubleshooting-and-add-the-final-conclusion.md)       | Editorial refinement    | NR-03, NR-13, NR-15, NR-16   | Owner-approved — inactive              |
+| 16    | [NR-16 — Teach the LOGISTICS route model](../archive/nr-16-teach-the-logistics-route-model.md)                                                 | Editorial refinement    | NR-01                        | Owner-accepted — archived              |
+| 17    | [NR-17 — Repair troubleshooting and add the final conclusion](next-roadmap/nr-17-repair-troubleshooting-and-add-the-final-conclusion.md)       | Editorial refinement    | NR-03, NR-13, NR-15, NR-16   | Implemented — pending owner acceptance |
 | 18    | [NR-18 — Synchronize the final One-Screen Default Checklist](next-roadmap/nr-18-synchronize-the-final-one-screen-default-checklist.md)         | Structural change       | NR-01 through NR-17 accepted | Owner-approved — inactive              |
 
 ## Owner gates and lifecycle
