@@ -172,11 +172,6 @@ for (const node of previouslyAmbiguousUpgradeNodes) {
 
 const guideText = stripMarkup(html);
 for (const requiredOpeningText of [
-  "The route above is the simplest way through the game, but it isn't the only useful project this guide supports.",
-  "The default route uses a Solar Sail swarm to reach photon production and white science.",
-  "Permanent Sphere construction is an optional path you can open when you want a lasting structure; it is never required to move forward.",
-  "If you're playing with Dark Fog, RED shows you a simple way to defend your first planet and clear a Dark Fog base.",
-  "You don't need to understand or choose them now.",
   "Jump to where you are in the route.",
   "Scan the short summary.",
   "Open a build card only when you want to see how a useful product comes together.",
@@ -184,6 +179,29 @@ for (const requiredOpeningText of [
 ]) {
   if (!guideText.includes(requiredOpeningText)) {
     errors.push(`Approved opening guidance is missing: ${requiredOpeningText}`);
+  }
+}
+for (const [description, pattern] of [
+  ["simple default route", /route above[\s\S]*simplest way through the game/i],
+  [
+    "swarm route to white science",
+    /Solar Sail swarm[\s\S]*photon production[\s\S]*white science/i,
+  ],
+  [
+    "optional permanent Sphere",
+    /permanent Sphere[\s\S]*finish the route without one/i,
+  ],
+  [
+    "bounded opening Dark Fog guidance",
+    /playing with Dark Fog[\s\S]*RED[\s\S]*first planet[\s\S]*local base/i,
+  ],
+  [
+    "deferred side-project guidance",
+    /side projects[\s\S]*Ignore them[\s\S]*solves the problem/i,
+  ],
+]) {
+  if (!pattern.test(guideText)) {
+    errors.push(`Opening guidance is missing: ${description}`);
   }
 }
 const cards = findElementsByClass(html, components.buildCard.className)
@@ -635,7 +653,6 @@ if (!warpMarkup) {
 
   const requiredCatchUpLanguage = [
     "ILS already completed Cosmic Exploration Lv2. Continue through Cosmic Exploration Lv3",
-    "Gravitational Wave Refraction first if GREEN has not already completed it.",
     "continue Drive Engine through Drive Engine Lv4",
     "continue Logistics Carrier Engine through Logistics Carrier Engine Lv4",
     "you have continued Logistics Carrier Engine through Lv4.",
@@ -644,6 +661,13 @@ if (!warpMarkup) {
     if (!warpText.includes(language)) {
       errors.push(`WARP catch-up sequence is missing: ${language}`);
     }
+  }
+  if (
+    !/Gravitational Wave Refraction[\s\S]*first[\s\S]*GREEN[\s\S]*already completed it/i.test(
+      warpText,
+    )
+  ) {
+    errors.push("WARP GREEN catch-up condition is missing");
   }
 
   const warpFoundation = findElementsByClass(
@@ -698,8 +722,8 @@ if (!warpMarkup) {
     );
   }
   if (
-    !warpText.includes(
-      "add Vessels while station slots remain; improve Carrier Capacity when each long trip needs to accomplish more; expand the source only when the remote buffer cannot remain full.",
+    !/add Vessels\b[\s\S]*\bCarrier Capacity\b[\s\S]*\bexpand the source\b[\s\S]*\bremote buffer\b[\s\S]*\bremain full\b/i.test(
+      warpText,
     )
   ) {
     errors.push("WARP route-strengthening sequence is missing or out of order");
@@ -849,12 +873,24 @@ for (const [materialId, technologyId] of materialProofUnlocks) {
 
 const greenText = stripMarkup(greenSection?.inner || "");
 for (const requiredGreenText of [
-  "Deuterium Fractionation is only a prerequisite for fusion here; this guide still makes Deuterium with Colliders.",
-  "This guide uses Miniature Particle Colliders because they make Deuterium through one compact, predictable line.",
   "Colliders are the simplest route to build and understand. Their tradeoff is heavy Hydrogen and power use, so the line below turns its spare Deuterium into fuel for its own expansion.",
 ]) {
   if (!greenText.includes(requiredGreenText)) {
     errors.push(`GREEN research ownership is missing: ${requiredGreenText}`);
+  }
+}
+for (const [description, pattern] of [
+  [
+    "Collider Deuterium ownership",
+    /Deuterium Fractionation[\s\S]*unlocks fusion[\s\S]*making Deuterium with Colliders/i,
+  ],
+  [
+    "Deuterium route tradeoffs",
+    /Miniature Particle Colliders[\s\S]*compact[\s\S]*predictable[\s\S]*Fractionators[\s\S]*circulating belt[\s\S]*Orbital Collectors[\s\S]*gas giant[\s\S]*detour/i,
+  ],
+]) {
+  if (!pattern.test(greenText)) {
+    errors.push(`GREEN research ownership is missing: ${description}`);
   }
 }
 for (const staleGreenText of [
@@ -1030,19 +1066,37 @@ for (const [technologyId, expected] of expectedDysonPrerequisites) {
   }
 }
 for (const requiredDysonText of [
-  "This guide assumes Solar Sail Life Lv1 → Lv2 before the launch network reaches full scale.",
-  "You can skip them and compensate with more sail production and more successful launches, but this guide does not plan that route.",
   "With both Solar Sail Life upgrades, the reference swarm uses",
   "405 Solar Sails/min",
   "about 383 successful launches/min",
   "Sixty Ejectors averaging 32% firing time provide about 384 launches/min.",
   "This is a planning reference, not a finish line: placed Ejectors matter only when their orbit and firing window let them launch.",
   "Treat the reference as a starting point. The factory and star you actually built will decide what is enough.",
-  "Reaching 2,000 stored Antimatter later is the midpoint used to enter WHITE; it is not a requirement for leaving DYSON.",
 ]) {
   if (!dysonText.includes(requiredDysonText)) {
     errors.push(`DYSON chosen-route guidance is missing: ${requiredDysonText}`);
   }
+}
+for (const [description, pattern] of [
+  [
+    "Solar Sail Life stopping point",
+    /Solar Sail Life Lv1[\s\S]*Lv2[\s\S]*before the launch network reaches full scale/i,
+  ],
+  [
+    "Antimatter handoff",
+    /2,000 stored Antimatter[\s\S]*WHITE[\s\S]*wait[\s\S]*leaving DYSON/i,
+  ],
+]) {
+  if (!pattern.test(dysonText)) {
+    errors.push(`DYSON chosen-route guidance is missing: ${description}`);
+  }
+}
+if (
+  !/skip them[\s\S]*more sail production[\s\S]*more successful launches/i.test(
+    dysonText,
+  )
+) {
+  errors.push("DYSON chosen-route tradeoff is missing");
 }
 for (const rejectedDysonText of [
   "1.655 GW",
@@ -1600,9 +1654,14 @@ const visibleStopRule = findElementsByClass(
   troubleshootingMarkup,
   "troubleshooting-visible-stop-rule",
 )[0];
+const visibleStopText = stripMarkup(visibleStopRule?.inner || "");
 if (
-  stripMarkup(visibleStopRule?.inner || "") !==
-  "Fix one visible stop at a time. A quiet machine whose output is already full is waiting, not failing, and does not need to be expanded."
+  !visibleStopRule ||
+  !/visible stop/i.test(visibleStopText) ||
+  !/quiet machine/i.test(visibleStopText) ||
+  !/output[\s\S]*full/i.test(visibleStopText) ||
+  !/waiting[\s\S]*not failing/i.test(visibleStopText) ||
+  !/expanded/i.test(visibleStopText)
 ) {
   errors.push("Final troubleshooting visible-stop rule is missing or invalid");
 }
@@ -1780,11 +1839,17 @@ if (!logisticsMarkup) {
     "Remote settings control Vessel traffic between planets.",
     "Interstellar Vessel routes also need Warpers.",
     "confirm that one end supplies, the other demands, and the station operating the carriers has the required power and hardware.",
-    "The other endpoint does not also need power or carriers: a powered destination can collect from an unpowered provider.",
   ]) {
     if (!logisticsRouteText.includes(requiredRouteText)) {
       errors.push(`LOGISTICS route model is missing: ${requiredRouteText}`);
     }
+  }
+  if (
+    !/other endpoint[\s\S]*power or carriers[\s\S]*powered destination[\s\S]*collect[\s\S]*unpowered provider/i.test(
+      logisticsRouteText,
+    )
+  ) {
+    errors.push("LOGISTICS passive-endpoint route guidance is missing");
   }
 
   const logisticsResearch = findElementsByClass(
@@ -1807,8 +1872,8 @@ if (!logisticsMarkup) {
     !logisticsResearchText.includes(
       "If you skipped it in YELLOW, research Distribution Logistics System now; it unlocks Distributors and Bots.",
     ) ||
-    !logisticsResearchText.includes(
-      "ILS already proved Planetary Logistics System with PLS and Drones, and Interstellar Logistics System with ILS and Vessels.",
+    !/already put[\s\S]*Planetary Logistics System[\s\S]*to work with PLS and Drones[\s\S]*Interstellar Logistics System[\s\S]*ILS and Vessels/i.test(
+      logisticsResearchText,
     )
   ) {
     errors.push("LOGISTICS does not preserve explicit research ownership");
@@ -2441,7 +2506,6 @@ for (const requiredPurpleText of [
   "This three-technology unlock is the only research required before purple-cube production can begin.",
   "The upgrades below give the research queue useful work while the purple district settles. They are not requirements for leaving PURPLE.",
   "Catch up any YELLOW stopping ranks you discarded",
-  "Stop there. The next shared buildout stopping point would consume 20,800 cubes in total, including purple cubes needed by GREEN, so the guide rejects it.",
   "The next pair of carrier ranks would consume another 4,800 cubes in total without being required for PURPLE's starter-system routes.",
   "Stop there because the next rank begins consuming purple cubes.",
   "The only phase gate is three continuously supplied purple-cube Labs.",
@@ -2452,6 +2516,13 @@ for (const requiredPurpleText of [
       `PURPLE bounded research guidance is missing: ${requiredPurpleText}`,
     );
   }
+}
+if (
+  !/Stop there[\s\S]*20,800 cubes[\s\S]*purple cubes needed by GREEN[\s\S]*bad bargain[\s\S]*Leave it alone/i.test(
+    purpleText,
+  )
+) {
+  errors.push("PURPLE buildout stopping-point guidance is missing");
 }
 for (const stalePurpleText of [
   "Miniature Particle Collider",
