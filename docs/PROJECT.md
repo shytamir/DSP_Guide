@@ -4,7 +4,8 @@
 roadmap and resulting release were completed, owner-accepted, and archived on
 2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
 workload. NR-01 through NR-09 were owner-accepted and archived on 2026-08-27.
-NR-10 through NR-18 are owner-approved and remain inactive until separately
+NR-10 is implemented and technically validated, pending owner acceptance;
+NR-11 through NR-18 are owner-approved and remain inactive until separately
 activated after their prerequisites are satisfied.
 
 ## Purpose
@@ -149,7 +150,8 @@ not sufficient.
 
 The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
 sequence, dependencies, and lifecycle status. NR-01 through NR-09 were
-owner-accepted and archived on 2026-08-27. NR-10 through NR-18 are approved and
+owner-accepted and archived on 2026-08-27. NR-10 is implemented and technically
+validated, pending owner acceptance. NR-11 through NR-18 are approved and
 implementation-ready planning records, but remain inactive until separately
 activated after their prerequisites are satisfied. Story approval, activation,
 technical validation, owner acceptance, and release authorization remain

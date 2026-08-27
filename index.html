@@ -11954,33 +11954,307 @@
           products together at science.
         </p>
         <div class="icon-free green-deuterium-route">
-          <h3>Use Colliders for the first Deuterium supply</h3>
+          <h3>Choose a Deuterium supply</h3>
+          <table class="phase-dashboard green-deuterium-options">
+            <thead>
+              <tr>
+                <th>Route</th>
+                <th>What it offers</th>
+                <th>Tradeoff</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Miniature Particle Colliders — guide route</strong>
+                </td>
+                <td>Compact and predictable.</td>
+                <td>Consume more Hydrogen and power.</td>
+              </tr>
+              <tr>
+                <td><strong>Fractionators</strong></td>
+                <td>Use Hydrogen and power more efficiently.</td>
+                <td>
+                  Require a larger circulating-belt system whose flow and
+                  stacking need more attention.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Orbital Collectors</strong></td>
+                <td>Move supply away from the home factory.</td>
+                <td>
+                  Require a substantial Collector buildout and provide output
+                  that depends on the gas giant and the number deployed.
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <p>
-            This guide chooses Miniature Particle Colliders because they form a
-            compact, deterministic, seed-independent line and use the same
-            machine type required for Strange Matter. This is the simplest
-            dependable first-completion route, not the most material- or
-            power-efficient route.
+            This guide uses Miniature Particle Colliders because they make
+            Deuterium through one compact, predictable line. Fractionators use
+            less Hydrogen and power, but require a circulating belt that needs
+            more attention. Orbital Collectors can supply Deuterium from a gas
+            giant, but require a larger detour and their output depends on the
+            giant and the number deployed.
           </p>
           <p>
-            The tradeoff is heavy
-            <span class="proto-ref" data-item-id="1120">Hydrogen</span>
-            consumption, competition with
-            <span class="proto-ref" data-item-id="1126">Casimir Crystal</span>
-            production, and a large additional power load. Begin buffering
-            <span class="proto-ref" data-item-id="1121">Deuterium</span> and
-            <span class="proto-ref" data-item-id="1802"
-              >Deuteron Fuel Rods</span
-            >
-            in GREEN even if the existing grid lets you delay actual Fusion
-            Plant deployment.
-          </p>
-          <p>
-            Fractionators can convert Hydrogen more efficiently, and Orbital
-            Collectors can become a useful later supply. They are alternatives,
-            not coequal routes taught by this guide.
+            Colliders are the simplest route to build and understand. Their
+            tradeoff is heavy Hydrogen and power use, so the line below turns
+            its spare Deuterium into fuel for its own expansion.
           </p>
         </div>
+        <section class="green-fuel-loop">
+          <h2>Grow Deuterium, Strange Matter, and power together</h2>
+          <p>
+            Feed the Deuterium Colliders from a visible
+            <span class="proto-ref" data-item-id="2106">Hydrogen tank</span>.
+            They will draw heavily from it, especially while the Quantum Chip
+            line is also consuming Hydrogen. If the tank keeps falling,
+            strengthen the Hydrogen supply before adding more Colliders.
+          </p>
+          <p>
+            Send the produced Deuterium to Strange Matter first. Continue the
+            same belt into one Deuteron Fuel Rod line so only the leftovers
+            become fuel. Store the finished Fuel Rods where you can see them and
+            let a buffer build before relying on them for power.
+          </p>
+          <div
+            class="inline-production-map production-map green-fuel-map"
+            role="group"
+            aria-label="GREEN Deuterium, Strange Matter, and fuel production map"
+          >
+            <p class="inline-map-intro">
+              <strong>Operating priority:</strong> Feed Strange Matter first;
+              turn leftover Deuterium into visible buffered fuel.
+            </p>
+            <div class="route-group">
+              <h5>DEUTERIUM SUPPLY</h5>
+              <ul class="route-map">
+                <li class="route-row">
+                  <span class="route-label">Visible Hydrogen feed</span
+                  ><span class="route-chain"
+                    ><span class="proto-ref" data-item-id="1120"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/hydrogen.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Hydrogen</span
+                    >
+                    <span
+                      class="production-arrow"
+                      data-producer-item-id="2310"
+                      data-producer-type="processing"
+                      ><img
+                        class="proto-icon proto-icon-producer"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/hadron-collider.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      /><span class="production-arrow-glyph" aria-hidden="true"
+                        >→</span
+                      ><span class="visually-hidden"
+                        >Produced in Miniature Particle Collider</span
+                      ></span
+                    >
+                    <span class="proto-ref" data-item-id="1121"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/deuterium.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Deuterium</span
+                    ></span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="route-group">
+              <h5>PRIORITY SPLIT</h5>
+              <ul class="route-map">
+                <li class="route-row route-convergence">
+                  <span class="route-label">Priority: Strange Matter</span
+                  ><span class="route-chain"
+                    ><span class="proto-ref" data-item-id="1121"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/deuterium.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Deuterium</span
+                    >
+                    +
+                    <span class="proto-ref" data-item-id="1206"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/partical-capacitor.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Particle Containers</span
+                    >
+                    +
+                    <span class="proto-ref" data-item-id="1102"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/iron-plate.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Iron Ingots</span
+                    >
+                    <span
+                      class="production-arrow"
+                      data-producer-item-id="2310"
+                      data-producer-type="processing"
+                      ><img
+                        class="proto-icon proto-icon-producer"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/hadron-collider.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      /><span class="production-arrow-glyph" aria-hidden="true"
+                        >→</span
+                      ><span class="visually-hidden"
+                        >Produced in Miniature Particle Collider</span
+                      ></span
+                    >
+                    <span class="proto-ref" data-item-id="1127"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/strange-matter-generator.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Strange Matter</span
+                    ></span
+                  >
+                </li>
+                <li class="route-row route-convergence">
+                  <span class="route-label">Leftovers: buffered fuel</span
+                  ><span class="route-chain"
+                    ><span class="proto-ref" data-item-id="1121"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/deuterium.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Deuterium</span
+                    >
+                    +
+                    <span class="proto-ref" data-item-id="1107"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/titanium-alloy.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Titanium Alloy</span
+                    >
+                    +
+                    <span class="proto-ref" data-item-id="1205"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/hyper-magnetism-ring.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Super Magnetic Rings</span
+                    >
+                    <span
+                      class="production-arrow"
+                      data-producer-item-id="2303"
+                      data-producer-type="assembly"
+                      ><img
+                        class="proto-icon proto-icon-producer"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/assembler-1.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      /><span class="production-arrow-glyph" aria-hidden="true"
+                        >→</span
+                      ><span class="visually-hidden"
+                        >Produced in Assembling Machine Mk.I</span
+                      ></span
+                    >
+                    <span class="proto-ref" data-item-id="1802"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/deuterium-energy-fuel.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Deuteron Fuel Rods</span
+                    >, then a visible buffer feeding
+                    <span class="proto-ref" data-item-id="2211"
+                      ><img
+                        class="proto-icon proto-icon-item"
+                        src="assets/DSP_exported assets/Texture2D/Recipes (items)/fusion-power-station.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Mini Fusion Power Plants</span
+                    ></span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p>Then repeat this simple loop:</p>
+          <ol class="green-fuel-loop-steps">
+            <li>Add two Mini Fusion Power Plants.</li>
+            <li>Check the Fuel Rod buffer after they begin running.</li>
+            <li>If the buffer is falling, add more Deuterium production.</li>
+            <li>
+              If the buffer is growing quickly and you want more green
+              production, add another Strange Matter Collider.
+            </li>
+            <li>Repeat until power and Strange Matter are keeping up.</li>
+          </ol>
+          <p>
+            Once both are where you want them, return unused Deuterium to a
+            Storage Tank that feeds the line. The tank becomes a visible reserve
+            for later expansion instead of letting extra Deuterium stop
+            production.
+          </p>
+          <p>
+            Existing grid capacity may make immediate fusion construction
+            unnecessary, so let the Fuel Rod buffer accumulate until more
+            generation is actually needed.
+          </p>
+        </section>
         <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
         <p>
           Start with <strong>two green Labs</strong>. Watch

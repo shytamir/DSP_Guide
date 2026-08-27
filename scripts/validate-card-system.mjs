@@ -699,16 +699,14 @@ for (const [materialId, technologyId] of materialProofUnlocks) {
 const greenText = stripMarkup(greenSection?.inner || "");
 for (const requiredGreenText of [
   "Deuterium Fractionation is only a prerequisite for fusion here; this guide still makes Deuterium with Colliders.",
-  "This guide chooses Miniature Particle Colliders because they form a compact, deterministic, seed-independent line and use the same machine type required for Strange Matter.",
-  "This is the simplest dependable first-completion route, not the most material- or power-efficient route.",
-  "Begin buffering Deuterium and Deuteron Fuel Rods in GREEN even if the existing grid lets you delay actual Fusion Plant deployment.",
+  "This guide uses Miniature Particle Colliders because they make Deuterium through one compact, predictable line.",
+  "Colliders are the simplest route to build and understand. Their tradeoff is heavy Hydrogen and power use, so the line below turns its spare Deuterium into fuel for its own expansion.",
 ]) {
   if (!greenText.includes(requiredGreenText)) {
     errors.push(`GREEN research ownership is missing: ${requiredGreenText}`);
   }
 }
 for (const staleGreenText of [
-  "Choose a Deuterium supply",
   "If you choose Fractionators:",
   "Pick the one that fits the factory you built",
   "This material chain is part of GREEN's proof",
@@ -719,6 +717,121 @@ for (const staleGreenText of [
       `GREEN still contains coequal Deuterium routes: ${staleGreenText}`,
     );
   }
+}
+
+const greenDeuteriumOptions = findElementsByClass(
+  greenSection?.inner || "",
+  "green-deuterium-options",
+)[0];
+const greenDeuteriumOptionsText = stripMarkup(
+  greenDeuteriumOptions?.inner || "",
+);
+const greenDeuteriumOptionRows =
+  greenDeuteriumOptions?.inner.match(/<tr\b/g) || [];
+if (greenDeuteriumOptionRows.length !== 4) {
+  errors.push("GREEN Deuterium alternatives table must contain three routes");
+}
+for (const requiredOptionText of [
+  "Miniature Particle Colliders — guide route",
+  "Compact and predictable.",
+  "Consume more Hydrogen and power.",
+  "Use Hydrogen and power more efficiently.",
+  "Require a larger circulating-belt system whose flow and stacking need more attention.",
+  "Move supply away from the home factory.",
+  "Require a substantial Collector buildout and provide output that depends on the gas giant and the number deployed.",
+]) {
+  if (!greenDeuteriumOptionsText.includes(requiredOptionText)) {
+    errors.push(
+      `GREEN Deuterium alternatives are missing: ${requiredOptionText}`,
+    );
+  }
+}
+
+const greenFuelLoop = findElementsByClass(
+  greenSection?.inner || "",
+  "green-fuel-loop",
+)[0];
+const greenFuelLoopText = stripMarkup(greenFuelLoop?.inner || "");
+for (const requiredLoopText of [
+  "Grow Deuterium, Strange Matter, and power together",
+  "If the tank keeps falling, strengthen the Hydrogen supply before adding more Colliders.",
+  "Send the produced Deuterium to Strange Matter first.",
+  "Continue the same belt into one Deuteron Fuel Rod line so only the leftovers become fuel.",
+  "If the buffer is falling, add more Deuterium production.",
+  "If the buffer is growing quickly and you want more green production, add another Strange Matter Collider.",
+  "return unused Deuterium to a Storage Tank that feeds the line",
+  "Existing grid capacity may make immediate fusion construction unnecessary",
+]) {
+  if (!greenFuelLoopText.includes(requiredLoopText)) {
+    errors.push(`GREEN fuel loop is missing: ${requiredLoopText}`);
+  }
+}
+const greenFuelSteps = findElementsByClass(
+  greenFuelLoop?.inner || "",
+  "green-fuel-loop-steps",
+)[0];
+if ((greenFuelSteps?.inner.match(/<li\b/g) || []).length !== 5) {
+  errors.push(
+    "GREEN fuel loop must contain the approved five observable steps",
+  );
+}
+if (/\b(?:MW|GW|\/min|per minute)\b/i.test(greenFuelLoopText)) {
+  errors.push(
+    "GREEN fuel loop contains prohibited throughput or power calculations",
+  );
+}
+
+const greenFuelMap = findElementsByClass(
+  greenFuelLoop?.inner || "",
+  "green-fuel-map",
+)[0];
+const greenFuelMapItemIds = [
+  ...(greenFuelMap?.inner || "").matchAll(/data-item-id="(\d+)"/g),
+].map((match) => match[1]);
+if (
+  JSON.stringify(greenFuelMapItemIds) !==
+  JSON.stringify([
+    "1120",
+    "1121",
+    "1121",
+    "1206",
+    "1102",
+    "1127",
+    "1121",
+    "1107",
+    "1205",
+    "1802",
+    "2211",
+  ])
+) {
+  errors.push(
+    `GREEN fuel map item sequence is invalid: ${greenFuelMapItemIds.join(", ")}`,
+  );
+}
+const greenFuelMapProducerIds = [
+  ...(greenFuelMap?.inner || "").matchAll(/data-producer-item-id="(\d+)"/g),
+].map((match) => match[1]);
+if (
+  JSON.stringify(greenFuelMapProducerIds) !==
+  JSON.stringify(["2310", "2310", "2303"])
+) {
+  errors.push(
+    `GREEN fuel map producer sequence is invalid: ${greenFuelMapProducerIds.join(", ")}`,
+  );
+}
+
+const deuteronFuelRodRecipe = authoritativeRecipes.find(
+  (recipe) =>
+    recipe.outputs.some(({ item_id: itemId }) => itemId === 1802) &&
+    recipe.unlocking_technologies.some(
+      ({ tech_id: technologyId }) => technologyId === 1416,
+    ),
+);
+const deuteronFuelRodInputIds = (deuteronFuelRodRecipe?.inputs || []).map(
+  ({ item_id: itemId }) => itemId,
+);
+if (!sameIds(deuteronFuelRodInputIds, [1121, 1107, 1205])) {
+  errors.push("GREEN Deuteron Fuel Rod recipe inputs are not authoritative");
 }
 
 const inheritedDysonResearch = findElementsByClass(

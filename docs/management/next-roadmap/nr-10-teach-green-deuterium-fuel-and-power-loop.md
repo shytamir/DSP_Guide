@@ -1,6 +1,6 @@
 # NR-10 — Teach GREEN's Deuterium, fuel, and power loop
 
-**Status:** Owner-approved on 2026-08-27. Inactive pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
 
 **Dependency group:** C — Late-route progression
 **Assessed workload:** Medium
