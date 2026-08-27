@@ -298,7 +298,7 @@ foreach ($tool in @(
         Add-InventoryResult "Core" $tool.Name "Failed" "" "" "$($tool.Name) was not found in the supplied runtime."
     } else {
         try {
-            $version = (Invoke-External $tool.Path $tool.Arguments -split "`r?`n")[0]
+            $version = ((Invoke-External $tool.Path $tool.Arguments) -split "`r?`n")[0]
             Add-InventoryResult "Core" $tool.Name "Ready" ($version -replace "^ripgrep\s+", "" -replace "^v", "") $tool.Path
         } catch {
             Add-InventoryResult "Core" $tool.Name "Failed" "" $tool.Path $_.Exception.Message
