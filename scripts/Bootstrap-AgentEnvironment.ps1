@@ -144,10 +144,6 @@ function pnpm {
     & `$script:DspGuidePnpm @args
 }
 
-function html-validate {
-    & `$script:DspGuideNode (Join-Path `$script:DspGuideNodeModules 'html-validate\bin\html-validate.mjs') @args
-}
-
 function prettier {
     & `$script:DspGuideNode (Join-Path `$script:DspGuideNodeModules 'prettier\bin\prettier.cjs') @args
 }
@@ -268,7 +264,7 @@ foreach ($tool in @(
 }
 
 $expectedPackages = (Get-Content -LiteralPath (Join-Path $manifestRoot "package.json") -Raw | ConvertFrom-Json).dependencies
-foreach ($packageName in @("html-validate", "prettier", "jsdom", "cheerio", "playwright")) {
+foreach ($packageName in @("prettier", "jsdom", "cheerio", "playwright")) {
     $expectedVersion = $expectedPackages.$packageName
     $actualVersion = Get-PackageVersion $packageName
     if ([string]::IsNullOrWhiteSpace($actualVersion)) {
@@ -282,7 +278,6 @@ foreach ($packageName in @("html-validate", "prettier", "jsdom", "cheerio", "pla
 
 if (-not [string]::IsNullOrWhiteSpace($nodePath)) {
     foreach ($cli in @(
-        @{ Name = "HTML Validate CLI"; Script = "html-validate\bin\html-validate.mjs"; Arguments = @("--version") },
         @{ Name = "Prettier CLI"; Script = "prettier\bin\prettier.cjs"; Arguments = @("--version") }
     )) {
         $cliPath = Join-Path $nodeModules $cli.Script

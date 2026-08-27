@@ -34,17 +34,6 @@ async function check(name, packageName, operation) {
 }
 
 (async () => {
-  await check("HTML Validate engine", "html-validate", () => {
-    const { HtmlValidate } = localRequire("html-validate");
-    const report = new HtmlValidate().validateStringSync(
-      '<!DOCTYPE html><html lang="en"><head><title>DSP Guide</title></head><body><main><h1>DSP Guide</h1></main></body></html>',
-    );
-    if (!report.valid)
-      throw new Error(
-        `Valid HTML fixture was rejected: ${JSON.stringify(report.results)}`,
-      );
-  });
-
   await check("Prettier engine", "prettier", async () => {
     const prettier = localRequire("prettier");
     const formatted = await prettier.format("const answer={value:42}", {

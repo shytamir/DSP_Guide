@@ -158,7 +158,7 @@ When authoritative game knowledge is required:
 
 - Location: `scripts/Bootstrap-AgentEnvironment.ps1` installs the local environment and generates the Git-ignored `artifacts/.runtime-tools/Activate-DspGuideTools.ps1` activation helper.
 - Purpose: run the bootstrap idempotently, then dot-source its activation helper to expose scoped safe-directory Git access, local runtimes, HTML authoring tools, validators, and the Playwright browser cache without changing global configuration.
-- Verified tooling: Git, ripgrep, Node.js, Python, pnpm, HTML Validate 11.6.1, Prettier 3.9.6, jsdom 30.0.1, Cheerio 1.2.0, Playwright 1.62.0, Chromium, Chromium headless shell, Chrome, Edge, and ffmpeg, including functional DOM and browser-rendering smoke tests.
+- Verified tooling: Git, ripgrep, Node.js, Python, pnpm, Prettier 3.9.6, jsdom 30.0.1, Cheerio 1.2.0, Playwright 1.62.0, Chromium, Chromium headless shell, Chrome, Edge, and ffmpeg, including functional DOM and browser-rendering smoke tests.
 
 ## 9. Implementation discipline
 
