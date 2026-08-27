@@ -3,10 +3,10 @@
 **Status:** Version 2.3 is the current published minor line. Its twelve-story
 roadmap and resulting release were completed, owner-accepted, and archived on
 2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
-workload. NR-01 through NR-04 were owner-accepted and archived on 2026-08-27.
-NR-05 through NR-18 are owner-approved. NR-05 is implemented and technically
-validated, pending owner acceptance; NR-06 through NR-18 remain inactive until
-separately activated after their prerequisites are satisfied.
+workload. NR-01 through NR-05 were owner-accepted and archived on 2026-08-27.
+NR-06 is implemented and technically validated, pending owner acceptance;
+NR-07 through NR-18 are owner-approved and remain inactive until separately
+activated after their prerequisites are satisfied.
 
 ## Purpose
 

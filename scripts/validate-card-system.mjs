@@ -16,6 +16,10 @@ const authoritativeRecipes = JSON.parse(
     "utf8",
   ),
 ).recipes;
+const authoritativeFormalEdges = fs.readFileSync(
+  "dsp_universal_end_product_dag_v1_0/dsp_universal_formal_edges_v1_0.csv",
+  "utf8",
+);
 const technologyReference = JSON.parse(
   fs.readFileSync("assets/data/tech-reference.json", "utf8"),
 );
@@ -549,13 +553,178 @@ if (!progressIndexMarkup) {
     );
   }
 }
-for (const compatibilityId of ["flight", "titanium", "bootstrap"]) {
+for (const compatibilityId of [
+  "flight",
+  "titanium",
+  "ils-automate",
+  "bootstrap",
+]) {
   if (
     (html.match(new RegExp(`id="${compatibilityId}"`, "g")) || []).length !== 1
   ) {
     errors.push(
       `Compatibility anchor must appear exactly once: #${compatibilityId}`,
     );
+  }
+}
+
+const ilsSection = findElementsByClass(html, "phase-section-ils")[0];
+const ilsResearchBlocks = findElementsByClass(
+  ilsSection?.inner || "",
+  "stage-research",
+);
+const expectedIlsResearchIds = [
+  ["4101", "4102", "1805", "2901", "2102", "2902", "1413"],
+  [
+    "1121",
+    "1131",
+    "1311",
+    "1302",
+    "1122",
+    "1123",
+    "1124",
+    "1701",
+    "1702",
+    "1703",
+    "1112",
+    "1113",
+    "1114",
+    "1602",
+    "1603",
+    "3701",
+    "1604",
+  ],
+  ["1414", "1605"],
+];
+if (ilsResearchBlocks.length !== expectedIlsResearchIds.length) {
+  errors.push(
+    `ILS must contain exactly three chronological research blocks; found ${ilsResearchBlocks.length}`,
+  );
+}
+for (const [index, expectedIds] of expectedIlsResearchIds.entries()) {
+  const actualIds = [
+    ...(ilsResearchBlocks[index]?.inner || "").matchAll(
+      /class="[^"]*\btech-ref\b[^"]*"[^>]*data-tech-id="(\d+)"/g,
+    ),
+  ].map((match) => match[1]);
+  if (JSON.stringify(actualIds) !== JSON.stringify(expectedIds)) {
+    errors.push(
+      `ILS Stage ${index + 1} research ownership is invalid: ${actualIds.join(", ")}`,
+    );
+  }
+}
+
+const expectedIlsPrerequisiteEdges = new Map([
+  ["4102", ["4101"]],
+  ["2902", ["2102"]],
+  ["1131", ["1121"]],
+  ["1302", ["1311"]],
+  ["1123", ["1122"]],
+  ["1124", ["1123"]],
+  ["1702", ["1701"]],
+  ["1703", ["1702"]],
+  ["1113", ["1112"]],
+  ["1114", ["1113"]],
+  ["1603", ["1602"]],
+  ["1605", ["1414"]],
+]);
+for (const [technologyId, prerequisiteIds] of expectedIlsPrerequisiteEdges) {
+  const technology = technologyReference[technologyId] || {};
+  const actualPrerequisiteIds = new Set(
+    [
+      ...(technology.required || []),
+      ...(technology.implicitRequired || []),
+    ].map(({ id }) => String(id)),
+  );
+  for (const prerequisiteId of prerequisiteIds) {
+    if (!actualPrerequisiteIds.has(prerequisiteId)) {
+      errors.push(
+        `ILS prerequisite arrow ${prerequisiteId} -> ${technologyId} is not authoritative`,
+      );
+    }
+  }
+}
+if (
+  !authoritativeFormalEdges.includes(
+    ",item:1407,tech:2901,research_input,formal_game_data,runtime:LDB.techs,exact,",
+  )
+) {
+  errors.push(
+    "Drive Engine Lv1 is missing its authoritative Engine research input",
+  );
+}
+
+const redSection = findElementsByClass(html, "phase-section-red")[0];
+const redResearchMarkup =
+  redSection?.inner.match(/<h2>Research first<\/h2>([\s\S]*?)<h2[^>]*>/)?.[1] ||
+  "";
+const redSmeltingPurificationIndex = redResearchMarkup.indexOf(
+  'data-tech-id="1402"',
+);
+const redCrystalSmeltingIndex = redResearchMarkup.indexOf(
+  'data-tech-id="1403"',
+);
+const redSignalTowerIndex = redResearchMarkup.indexOf("Signal Towers");
+if (
+  redSmeltingPurificationIndex < 0 ||
+  redCrystalSmeltingIndex <= redSmeltingPurificationIndex ||
+  redSignalTowerIndex <= redCrystalSmeltingIndex
+) {
+  errors.push(
+    "RED does not assign Crystal Smelting after Smelting Purification and before Signal Tower guidance",
+  );
+}
+const crystalSmeltingPrerequisites = new Set(
+  (technologyReference["1403"]?.required || []).map(({ id }) => Number(id)),
+);
+if (!crystalSmeltingPrerequisites.has(1402)) {
+  errors.push(
+    "Crystal Smelting is not authoritatively gated by Smelting Purification",
+  );
+}
+const signalTowerRecipe = authoritativeRecipes.find((recipe) =>
+  recipe.outputs.some(({ item_id: itemId }) => itemId === 3007),
+);
+if (!signalTowerRecipe?.inputs.some(({ item_id: itemId }) => itemId === 1113)) {
+  errors.push(
+    "Signal Tower recipe is missing its authoritative Crystal Silicon input",
+  );
+}
+const standardCrystalSiliconRecipe = authoritativeRecipes.find(
+  (recipe) =>
+    recipe.outputs.some(({ item_id: itemId }) => itemId === 1113) &&
+    recipe.inputs.some(({ item_id: itemId }) => itemId === 1105),
+);
+if (
+  !standardCrystalSiliconRecipe?.unlocking_technologies.some(
+    ({ tech_id: techId }) => techId === 1403,
+  )
+) {
+  errors.push(
+    "Crystal Smelting does not unlock the standard Crystal Silicon recipe",
+  );
+}
+
+for (const staleIlsClaim of [
+  "Basic Chemical Engineering is assumed",
+  "start making yellow cubes early",
+  "They can pile up quietly",
+  "yellow cubes should already be waiting",
+]) {
+  if (guideText.includes(staleIlsClaim)) {
+    errors.push(
+      `ILS still contains pre-haulback research language: ${staleIlsClaim}`,
+    );
+  }
+}
+for (const requiredStageThreeText of [
+  "Build the transport package",
+  "Transport package checkpoint:",
+  "complete pair of ILS towers and all five Logistics Vessels",
+  "Put the route to work",
+]) {
+  if (!guideText.includes(requiredStageThreeText)) {
+    errors.push(`ILS Stage III is missing: ${requiredStageThreeText}`);
   }
 }
 

@@ -1,8 +1,8 @@
 # Active Roadmap — Story Index
 
-**Status:** Active. NR-01 through NR-04 were owner-accepted and archived on
-2026-08-27. NR-05 is implemented and technically validated, pending owner
-acceptance. NR-06 through NR-18 are owner-approved and implementation-ready but
+**Status:** Active. NR-01 through NR-05 were owner-accepted and archived on
+2026-08-27. NR-06 is implemented and technically validated, pending owner
+acceptance. NR-07 through NR-18 are owner-approved and implementation-ready but
 remain inactive until separately activated after their prerequisites are
 satisfied.
 
@@ -114,8 +114,8 @@ stop and split the affected draft before authorizing additional scope.
 | 2     | [NR-02 — Reframe SPHERE as optional guidance](../archive/nr-02-reframe-sphere-as-optional-guidance.md)                                           | Editorial refinement    | NR-01                        | Owner-accepted — archived              |
 | 3     | [NR-03 — Limit SPHERE research to route-specific ownership](../archive/nr-03-limit-sphere-research-to-route-specific-ownership.md)               | Data or research change | NR-01, NR-02                 | Owner-accepted — archived              |
 | 4     | [NR-04 — Clarify the opening orientation and BLUE goal](../archive/nr-04-clarify-the-opening-orientation-and-blue-goal.md)                       | Editorial refinement    | NR-02                        | Owner-accepted — archived              |
-| 5     | [NR-05 — Establish compact Quick processes for early controls](next-roadmap/nr-05-establish-compact-quick-processes-for-early-controls.md)       | Structural change       | NR-04                        | Implemented — pending owner acceptance |
-| 6     | [NR-06 — Assign ILS research chronologically across three stages](next-roadmap/nr-06-assign-ils-research-chronologically-across-three-stages.md) | Data or research change | NR-05                        | Owner-approved — inactive              |
+| 5     | [NR-05 — Establish compact Quick processes for early controls](../archive/nr-05-establish-compact-quick-processes-for-early-controls.md)         | Structural change       | NR-04                        | Owner-accepted — archived              |
+| 6     | [NR-06 — Assign ILS research chronologically across three stages](next-roadmap/nr-06-assign-ils-research-chronologically-across-three-stages.md) | Data or research change | NR-05                        | Implemented — pending owner acceptance |
 | 7     | [NR-07 — Replace YELLOW research with bounded buildout guidance](next-roadmap/nr-07-replace-yellow-research-with-bounded-buildout-guidance.md)   | Data or research change | NR-06                        | Owner-approved — inactive              |
 | 8     | [NR-08 — Assign PURPLE-owned research and bounded upgrades](next-roadmap/nr-08-assign-purple-owned-research-and-bounded-upgrades.md)             | Data or research change | NR-07                        | Owner-approved — inactive              |
 | 9     | [NR-09 — Establish GREEN research and material-proof ownership](next-roadmap/nr-09-establish-green-research-and-material-proof-ownership.md)     | Data or research change | NR-03, NR-08                 | Owner-approved — inactive              |
