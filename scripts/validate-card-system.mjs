@@ -1375,7 +1375,9 @@ for (const [index, expected] of expectedQuickProcesses.entries()) {
     errors.push(`${expected.summary} is outside its owning phase`);
   }
   const stepMarkup = expected.stepListClass
-    ? findElementsByClass(process.inner, expected.stepListClass)[0]?.inner || ""
+    ? findElementsByClass(process.inner, expected.stepListClass)
+        .map((list) => list.inner)
+        .join("")
     : process.inner;
   if ((stepMarkup.match(/<li\b/g) || []).length !== expected.steps) {
     errors.push(`${expected.summary} has an invalid step count`);
@@ -1408,6 +1410,72 @@ if (
       "Production Statistics walkthrough does not follow the ordered troubleshooting questions",
     );
   }
+}
+const statisticsReadingTable = findElementsByClass(
+  statisticsMarkup,
+  "statistics-reading-table",
+)[0];
+if (
+  !statisticsReadingTable ||
+  (statisticsReadingTable.inner.match(/<tr\b/g) || []).length !== 4
+) {
+  errors.push(
+    "Production Statistics walkthrough does not lead with three essential readings",
+  );
+}
+const expectedStatisticsStages = [
+  ["1 — Find the slowed output", "1", 4],
+  ["2 — Trace the missing supply", "5", 4],
+  ["3 — Confirm and repair", "9", 3],
+];
+const statisticsStages = findElementsByClass(
+  statisticsMarkup,
+  "statistics-stage",
+);
+if (statisticsStages.length !== expectedStatisticsStages.length) {
+  errors.push(
+    `Production Statistics workflow must contain three stages; found ${statisticsStages.length}`,
+  );
+} else {
+  for (const [
+    index,
+    [heading, start, steps],
+  ] of expectedStatisticsStages.entries()) {
+    const stage = statisticsStages[index];
+    const stageText = stripMarkup(stage.inner);
+    const stepList = findElementsByClass(
+      stage.inner,
+      "statistics-diagnostic-steps",
+    )[0];
+    if (!stageText.startsWith(heading)) {
+      errors.push(
+        `Production Statistics stage ${index + 1} has an invalid heading`,
+      );
+    }
+    if (getAttribute(stepList?.openingTag || "", "start") !== start) {
+      errors.push(
+        `Production Statistics stage ${index + 1} has an invalid start`,
+      );
+    }
+    if ((stepList?.inner.match(/<li\b/g) || []).length !== steps) {
+      errors.push(
+        `Production Statistics stage ${index + 1} has an invalid step count`,
+      );
+    }
+  }
+}
+const statisticsDetails = findElementsByClass(
+  statisticsMarkup,
+  "statistics-detail-list",
+)[0];
+if (
+  !statisticsDetails ||
+  (statisticsDetails.inner.match(/<dt\b/g) || []).length !== 7 ||
+  (statisticsDetails.inner.match(/<dd\b/g) || []).length !== 7
+) {
+  errors.push(
+    "Production Statistics secondary panel details are missing or malformed",
+  );
 }
 
 const blueStatisticsDiscovery = findElementsByClass(
@@ -1479,19 +1547,21 @@ for (const [name, markup] of [
 
 const requiredStatisticsFacts = [
   "Yellow research is running and yellow-cube storage is not full, but cube production has slowed.",
-  "Press P and select Production",
-  "Local planet for the factory in front of you",
-  "a named System when the work crosses planets in that system",
+  "Read these three numbers first",
+  "1 — Find the slowed output",
+  "2 — Trace the missing supply",
+  "3 — Confirm and repair",
+  "select Production",
+  "Choose Local planet for the factory in front of you",
+  "a named System when work crosses planets in that system",
   "Entire star cluster only for a later whole-factory view.",
   "Use 1 minute for a quick recent response and 10 minutes for a steadier short-term average.",
   "Historical interval figures are per-minute averages; Total reports cumulative counts instead.",
-  "actual production and consumption, separate production and consumption Reference Rates, import and export, related logistics storage, total Storage Amount, litter, a history graph, and buttons for direct raw-material and product navigation.",
-  "Imports and exports cross the selected scope boundary; they are distinct from production and consumption inside that boundary.",
-  "Reference Rate is the configured ideal capacity of applicable, grid-connected facilities in scope.",
+  "Each row includes production and consumption with separate Reference Rates, import and export, related logistics storage, total Storage Amount, litter, a history graph, and direct raw-material and product navigation.",
+  "Imports and exports cross the selected scope boundary. They are distinct from production and consumption inside that boundary.",
+  "This is the configured ideal capacity of applicable, grid-connected facilities in scope.",
   "It is not actual output, a historical average, or a target you set.",
-  "Hover Reference Rate to see its facility breakdown.",
-  "Hover Storage Amount to see where the items are held.",
-  "Hover the history graph to see its exact period and values.",
+  "Hover Reference Rate for its facility breakdown, Storage Amount for where items are held, and the history graph for its exact period and values.",
   "A full output means the line is waiting, not failing.",
   "the home planet imports Titanium Ingots rather than producing them locally.",
   "The planet view reports Titanium crossing its boundary as an import; the system view includes production on the source planet and treats movement between the system's planets as internal.",
@@ -1500,9 +1570,11 @@ const requiredStatisticsFacts = [
   "What the installed, grid-connected machinery could make under ideal conditions.",
   "What it actually made over the selected interval.",
   "Whether production may simply have stopped because there was nowhere for the output to go.",
+  "Panel details",
+  "What the panel proves:",
   "A Reference Rate gap alone does not prove whether the exact cause is missing inputs, blocked output, insufficient power, or another operating constraint.",
   "Inspect the implicated physical factory line before changing it.",
-  "Right-click either circular refresh arrow to enable continuous refresh of Reference Rates and current inventory snapshots.",
+  "Right-click either circular refresh arrow to continuously refresh Reference Rates and current inventory snapshots.",
   "This does not replace the selected historical interval or turn production and consumption into instantaneous rates.",
 ];
 for (const fact of requiredStatisticsFacts) {

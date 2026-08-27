@@ -1752,6 +1752,73 @@ details.build-card[open] > summary {
 .statistics-walkthrough:target {
   box-shadow: 0 0 0 2px rgba(var(--phase-rgb), 0.24);
 }
+.statistics-hypothetical,
+.statistics-diagnosis-limit {
+  padding: 0.75rem 0.85rem;
+  border-left: 4px solid rgb(var(--phase-rgb));
+  background: rgba(var(--phase-rgb), 0.08);
+}
+.statistics-essentials > h3,
+.statistics-panel-details > h3 {
+  margin-bottom: 0.55rem;
+}
+.statistics-reading-table {
+  margin-top: 0;
+}
+.statistics-workflow {
+  margin: 1.25rem 0;
+}
+.statistics-stage {
+  padding: 0.15rem 0 0.2rem 1rem;
+  border-left: 3px solid rgba(var(--phase-rgb), 0.58);
+}
+.statistics-stage + .statistics-stage {
+  margin-top: 1rem;
+}
+.statistics-stage > h3 {
+  margin: 0 0 0.45rem;
+  color: rgb(var(--phase-rgb));
+  font-size: 1rem;
+}
+.statistics-stage > ol {
+  margin: 0;
+}
+.statistics-panel-details {
+  margin: 1.25rem 0;
+  padding: 0.85rem;
+  border: 1px solid rgba(var(--phase-rgb), 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+.statistics-detail-list {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 0.22fr) 1fr;
+  margin: 0;
+}
+.statistics-detail-list dt,
+.statistics-detail-list dd {
+  padding: 0.55rem 0.65rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+.statistics-detail-list dt {
+  color: #f2f6fb;
+  font-weight: 800;
+}
+.statistics-detail-list dd {
+  margin: 0;
+}
+@media (max-width: 620px) {
+  .statistics-detail-list {
+    grid-template-columns: 1fr;
+  }
+  .statistics-detail-list dt {
+    padding-bottom: 0.1rem;
+  }
+  .statistics-detail-list dd {
+    padding-top: 0.1rem;
+    border-top: 0;
+  }
+}
 .quick-process > summary {
   cursor: pointer;
   list-style: none;
