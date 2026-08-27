@@ -1,30 +1,151 @@
-# Playthrough Observations — Working Record
+# Next Roadmap — Owner-Approved Plan
 
-**Status:** Provisional planning record. These observations are not approved
-requirements, user stories, roadmap work, or authorization to change the
-guide. Analyze and resolve them with the owner one topic at a time.
+**Status:** Owner-approved on 2026-08-27. It records the settled planning
+decisions and intended sequence of future guide work. Implementation remains
+paused until the owner explicitly authorizes the next story after this atomic
+governance transition is validated.
 
-## Review method
+## Implementation method
 
-- Preserve the distinction between an observed problem, a proposed direction,
-  and a settled decision.
-- Discuss topics in the numbered order below unless a dependency requires a
-  combined decision.
-- Do not implement, stage, commit, or publish from this record alone.
+- Preserve the distinction between a settled specification, a deferred design
+  decision, and a fact that still requires verification.
+- Decompose and authorize implementation one bounded story at a time while
+  preserving the approved sequence and cross-topic dependencies.
+- Do not implement, stage, commit, or publish guide changes from this record
+  alone.
 - Update the One-Screen Default Checklist only after all preceding guide
   changes have been decided and implemented.
 
-## Work in progress candidates
+### Research-proof rule
 
-These candidates preserve accepted discussion results but are not authorized
-guide changes.
+A later phase may treat a technology as completed only when an earlier phase:
+
+1. requires it formally for research that completes that phase;
+2. requires a recipe or building that cannot be produced without it; or
+3. names it as a non-optional instruction.
+
+Useful, optional, filler, and discardable recommendations are not proof. Check
+both technology prerequisites and material recipes before assigning research
+ownership. The retained runtime-derived
+[`dsp_universal_end_product_dag_v1_0`](../../dsp_universal_end_product_dag_v1_0/)
+package preserves the validated Bundle 1 recipe evidence; practical memory is
+not an evidence source.
+
+Reader-facing research recommendations prescribe stopping ranks without
+showing their individual cube costs. Cost appears only in a short explanation
+of why a rejected higher stopping point is prohibitively expensive, expressed
+as one aggregate total with no per-technology calculation.
+
+## Roadmap-wide out of scope
+
+- YELLOW/PURPLE problem-resolver guidance and related Quick processes remain
+  named future work. This roadmap does not decide their phase ownership,
+  teaching depth, placement, or implementation.
+- A Dark Fog COMBAT/PEACE control and reconciliation of conditional Dark Fog
+  guidance with RED's completion gate remain named future work. This roadmap
+  does not specify or implement either concept.
+- These concepts create no dependency for this roadmap and must not be linked
+  from its implementation stories.
+
+## Approved roadmap items
+
+These items define owner-approved future outcomes. Each still requires
+separate implementation authorization before guide changes begin.
+
+### Prerequisite story — Reclassify SPHERE as an optional path
+
+**Value:** As a reader following the guide's prescribed route, I want permanent
+Sphere construction clearly separated from mandatory progression so I can
+continue through DYSON → PHOTON → WHITE without mistaking it for a required
+phase, while retaining enough guidance to pursue the permanent path when I
+choose.
+
+The current guide calls SPHERE optional but numbers it inside the main route,
+gives it the same Antimatter transition gate as DYSON, and presents it as both
+a successor to and a substitute for DYSON. Resolve those conflicting roles.
+
+#### Scope
+
+- Make the numbered route **BLUE → RED → ILS → YELLOW → PURPLE → GREEN →
+  DYSON → PHOTON → WHITE**.
+- Remove SPHERE from the numbered route and Quick Progress Index sequence.
+  Place its navigation entry with the optional paths and label it visibly as
+  an **OPTIONAL PATH**. Move its section after numbered WHITE and before WARP
+  so document order matches optional navigation order; this placement does not
+  prescribe when the reader enters it. Preserve the public `#sphere` anchor.
+- Renumber only the displayed PHOTON and WHITE phase numbers needed to close
+  the numbered sequence. Preserve their public anchors, checklist identities,
+  and progression responsibilities.
+- Present DYSON as the guide's prescribed orbital-power route. DYSON may link
+  once to SPHERE with a concise explanation that permanent construction trades
+  faster swarm growth for a lasting structure; do not place parallel Sphere
+  instructions or calculations inside DYSON.
+- Reframe the SPHERE section as optional guidance rather than a critical-path
+  phase. Replace phase-gate language with a short optional-path overview that
+  explains that the path is available after GREEN, its permanence tradeoff, the
+  route-specific research and production it uses, the basic Editor workflow,
+  and the operating conditions worth watching.
+- Remove **Move on when**, **Ready to move on when**, completion checklists, and
+  any equivalent requirement language from SPHERE. Provide a neutral **Return
+  to the route** link to the canonical Receiver and Antimatter bridge for a
+  reader who wants to resume prescribed progression; do not require the reader
+  to finish or reach a Sphere target first.
+- Remove Receiver setup, Antimatter conversion, and PHOTON gating from SPHERE.
+  The canonical bridge owns that procedure once. Optional permanent generation
+  may contribute to its live Dyson supply without becoming a second prescribed
+  transition.
+- Preserve the useful Sphere production shapes and Editor guidance, but remove
+  exact throughput, launch-count, and Dyson-power targets that existed only to
+  size the former PHOTON gate. Do not replace them with a new Sphere target.
+- Remove research already proved by GREEN from SPHERE's research list. Retain
+  only route-specific research supported by the retained technology and recipe
+  data, preserving technology hover behavior.
+- Update the directly affected structural validators, phase/icon mappings, and
+  optional-navigation contracts to recognize nine numbered phases and three
+  optional entries: SPHERE, WARP, and LOGISTICS.
+
+#### Non-goals
+
+- Do not change DSP Guide Check or any other mod.
+- Do not define a SPHERE completion condition, capstone, phase gate, mandatory
+  build size, preferred Sphere design, or target power output.
+- Do not expand into a comprehensive Sphere Editor tutorial, blueprint, shell
+  design, production calculator, or comparison of multiple permanent-Sphere
+  strategies.
+- Do not change WARP or LOGISTICS beyond the shared optional-navigation
+  structure directly required by SPHERE's reclassification.
+- Do not change the prescribed DYSON build strategy, Receiver procedure,
+  PHOTON stabilization targets, WHITE requirements, site metadata, or product
+  branding except where a direct transition or displayed phase number must be
+  corrected.
+- Playtest validation is outside this planning story.
+
+#### Acceptance
+
+- A new reader sees one uninterrupted nine-phase route from BLUE through
+  WHITE; SPHERE is never numbered or presented as required progression.
+- SPHERE appears with WARP and LOGISTICS as a visibly optional path while
+  `#sphere` remains valid.
+- The optional section contains enough information to begin permanent
+  construction: its tradeoff, route-specific research, production shapes,
+  basic Editor operation, and operating cautions remain available.
+- SPHERE contains no completion gate, mandatory checklist, required build
+  target, Receiver procedure, Antimatter gate, or PHOTON-sized exact figures.
+- DYSON remains the prescribed orbital route, and the Receiver bridge remains
+  the single source for returning either default or optional Dyson output to
+  PHOTON progression.
+- PHOTON and WHITE retain their existing responsibilities after display-number
+  correction, and the default One-Screen Checklist remains free of SPHERE.
+- Directly affected static validators and a desktop navigation/rendering check
+  pass after implementation.
 
 ### WIP-1 — Introduction scope and closing line
 
 > The route above is the simplest way through the game, but it isn't the only
-> path this guide supports. You can choose to build a permanent Dyson Sphere
-> before the final stretch. Everything leading up to that choice works for
-> either route, so you don't need to decide now.
+> useful project this guide supports. The default route uses a Solar Sail swarm
+> to reach photon production and white science. Permanent Sphere construction
+> is an optional path you can open when you want a lasting structure; it is
+> never required to move forward.
 >
 > If you're playing with Dark Fog, RED shows you a simple way to defend your
 > first planet and clear a Dark Fog base. The guide doesn't try to cover the
@@ -108,7 +229,7 @@ the guide requires but that would interrupt the main prose. Each procedure is
 collapsed by default and placed beside the instruction it supports. RED's
 sorter-filter procedure is the next intended use. The existing Dark Fog
 procedure is a future candidate for the same treatment and is not changed by
-this WiP item.
+this WIP item.
 
 ### WIP-5 — RED refinery-output Quick process
 
@@ -124,32 +245,23 @@ refinery product its own belt:
 > 4. Repeat for the second belt and select the other product.
 
 This procedure explains the omitted control without expanding into a general
-Sorter tutorial. RED's broader phase purpose remains under discussion and is
-not settled by this item.
+Sorter tutorial. It does not authorize a broader RED Goal rewrite.
 
 RED's broader purpose is not limited to refinery-output management. Its
 universal outcome is sustainable red research; managing Hydrogen and Refined
 Oil is the phase's defining operating lesson, and storing Refined Oil prepares
 later chemistry.
 
-Preserve a separate future-development concept for Dark Fog guidance: consider
-an enabled-by-default COMBAT/PEACE control, possibly attached to the navigation
-strip, that can show or hide the guide's Dark Fog recommendations. This is not
-an authorized design or implementation specification. Its placement, labels,
-state behavior, affected content, accessibility, and relationship to phase
-completion gates all require a separately scoped story and owner decisions.
-Until then, leave the current mismatch unchanged: RED's Security Mall is marked
-MANDATED and its prose requests completion before ILS, while the dashboard and
-move-on checklist do not include Dark Fog preparation.
-
-### WIP-6 — Four-stage ILS rush and chronological research ownership
+### WIP-6 — Three-stage ILS rush and chronological research ownership
 
 The current Stage 1 statement that yellow cubes can begin accumulating before
 departure is incorrect. Their Titanium Crystal input depends on the protected
 Titanium haulback completed by the return trip in Stage 2. Yellow-cube
 production therefore begins only after the player returns home.
 
-Replace the current three-stage expedition structure with four stages:
+Keep the current three-stage navigation model. Give Stage III two clearly
+named parts so the finite build and route deployment remain distinct without
+adding another stage or navigation anchor:
 
 1. **Get flight-ready**
    - Research only what is required to inspect the system, fly, and smelt at
@@ -162,38 +274,49 @@ Replace the current three-stage expedition structure with four stages:
      needed after the return while the player builds the outpost.
    - Protect and carry home 860 Titanium Ingots and 520 High-Purity Silicon.
    - End when Icarus returns with the complete haulback.
-3. **Produce the ILS pair and vessels**
-   - Build the temporary Processor and yellow-cube lines.
-   - Produce the first 200 yellow cubes.
-   - Research High-Strength Titanium Alloy → Interstellar Logistics System.
-   - Produce the protected component bill, two ILS towers, and five Logistics
-     Vessels.
-   - End when the complete transport-hardware package is assembled and
-     protected.
-4. **Place and automate the route**
-   - Place the remote source station and connect the outpost smelters.
-   - Place and power the home receiver.
-   - Configure Remote Supply and Remote Demand, install the Vessels, filter the
-     outputs, and manage the charging spike.
+3. **Build and automate the route**
+   - **Build the transport package:** Build the temporary Processor and
+     yellow-cube lines, produce the first 200 yellow cubes, research
+     High-Strength Titanium Alloy → Interstellar Logistics System, and produce
+     the protected component bill, two ILS towers, and five Logistics Vessels.
+     Mark the assembled and protected package as a visible checkpoint.
+   - **Put the route to work:** Place the remote source station and connect the
+     outpost smelters. Place and power the home receiver. Configure Remote
+     Supply and Remote Demand, install the Vessels, filter the outputs, and
+     manage the charging spike.
    - End when Titanium and Silicon reach home without Icarus.
 
-The completed transport-hardware package is a substantive boundary: Stage 3
-is a finite production job with protected materials, while Stage 4 deploys and
-configures the permanent logistics system.
+The completed transport-hardware package remains a substantive checkpoint,
+not a fourth phase. The reader stays within Stage III while moving from a
+finite protected build into deployment and verification.
 
 Assign research recommendations chronologically:
 
-- **Stage 1:** flight, reconnaissance, and remote-smelting requirements.
-- **Stage 2:** blue- and red-cube support branches researched while the
-  expedition is underway.
-- **Stage 3:** yellow-cube production followed by the two yellow-gated
-  technologies.
-- **Stage 4:** no mandatory research; deployment and verification only.
+- **Stage I — flight and remote smelting:** Cosmic Exploration Lv1 → Lv2;
+  Engine → Drive Engine Lv1; Mecha Core Lv2 → Drive Engine Lv2; Titanium
+  Smelting. Do not repeat Steel Smelting: building RED's Oil Refineries already
+  proves it through their Steel material cost.
+- **Stage II — support research during the expedition:** Basic Chemical
+  Engineering → Applied Superconductor; Crystal Smelting; Semiconductor
+  Material → Processor; Polymer Chemical → High-Strength Crystal → Structure
+  Matrix; Electromagnetic Drive → Magnetic Levitation → Magnetic Particle
+  Trap; Hydrogen Fuel Rod → Thruster → Reinforced Thruster; Upgraded Logistics
+  → High-Efficiency Logistics; Vertical Construction Lv1; then Planetary
+  Logistics System after its branches converge.
+- **Stage III — yellow bridge and route:** Produce the first yellow batch, then
+  research High-Strength Titanium Alloy → Interstellar Logistics System. The
+  rest of the stage is production, deployment, and verification.
 
-The future story must verify the complete prerequisite order against retained
-technology data and preserve technology hover behavior. It must also update
-ILS intra-navigation from three stage anchors to four—**I, II, III, IV**—and
-align every resume target with the corresponding new stage heading.
+Use arrows only for actual prerequisite relationships. Do not falsely join
+independent branches merely because they converge later. Preserve technology
+hover behavior and the existing three anchors—**I, II, III**—with resume
+targets aligned to the three major stage headings.
+
+The order above is supported by both research and material proofs. RED proves
+Steel Smelting but not Basic Chemical Engineering. The first yellow batch
+requires Crystal Smelting as well as the chemistry chain. Building the ILS
+pair and Vessels proves the remaining Processor, Graphene, particle-container,
+thruster, alloy, and logistics branches for later phases.
 
 ### WIP-7 — YELLOW buildout research hierarchy
 
@@ -204,41 +327,48 @@ construction job. Preserve the existing dashboard/detail information split.
 The dashboard's **Research first** row should contain only three practical-path
 groups, in this order:
 
-1. **Buildout:** Mechanical Frame, Inventory Capacity, Communication Control,
-   and Drone Engine.
+1. **Buildout:** Mechanical Frame Lv3, Inventory Capacity Lv2, Communication
+   Control Lv3, Drone Engine Lv2, and Mass Construction Lv3.
 2. **Mall access:** Distribution Logistics System.
 3. **Resource horizon:** Vein Utilization Lv1.
 
 Use commas, semicolons, line breaks, or group labels rather than arrows or plus
-signs where technologies do not have a prerequisite relationship. The future
-story must verify and deliberately bound the recommended ranks for the four
-Icarus upgrade families; do not use an open-ended instruction such as “take
+signs where technologies do not have a prerequisite relationship. Mecha Core
+Lv2, completed during ILS, supports all five prescribed stopping points. Tell
+the reader to stop there; do not use an open-ended instruction such as “take
 every affordable rank.”
 
+Explain the rejected alternative in one short sentence without parallel
+instructions or per-technology math:
+
+> Stop there. The next shared stopping point, including Mecha Core Lv3, would
+> consume 10,500 cubes in total, which is too expensive for a YELLOW buildout
+> detour before PURPLE.
+
+Keep the research prescription, phase gate, and discard rule visibly distinct:
+
+- **Prescribed while yellow stabilizes:** work through the three dashboard
+  groups in order, observing the five exact buildout stopping points above.
+- **Required to leave YELLOW:** three yellow-cube Labs remain continuously
+  supplied. Filler research is not part of the phase gate.
+- **Discard rule:** as soon as the three-Lab gate is satisfied, abandon any
+  unfinished filler recommendation and move to PURPLE. Do not keep the player
+  in YELLOW merely to empty the suggested research queue.
+
+Place this concise player-facing clarification beside the dashboard guidance:
+
+> These are useful jobs for the research queue while yellow settles, not
+> requirements for leaving the phase. As soon as all three yellow Labs keep
+> running, stop wherever you are in this list and move to PURPLE.
+
 The visible **Research first** prose should explain the same three groups in
-short, player-facing language. Follow them with a visible Energy Storage
-recommendation: Accumulators can absorb surplus generation and cushion
-logistics-station charging shocks. Place this paragraph immediately before the
-optional disclosure so Energy Storage reads as prudent preparation rather than
-an afterthought or an equal dashboard priority.
-
-End the section with a collapsed element titled **Optional research — Solve a
-problem you can see**. Introduce these situational choices only inside it:
-
-- **Cleared Dark Fog bases:** Solar Collection → Photon Frequency Conversion →
-  Geothermal Extraction turns exposed core-drill sites into steady power.
-- **Crowded production lines:** High-Speed Assembling offers more throughput
-  per building at greater construction and power cost.
-- **Expensive inputs:** Proliferator Mk.I → Proliferator Mk.II can provide extra
-  products or faster production, but requires spray infrastructure and more
-  power.
-- **Weak carried fuel:** Combustible Unit → Explosive Unit provides a denser
-  fuel option for Icarus.
-
-This hierarchy means: the dashboard states the practical path; visible prose
-explains that path and adds accumulator preparation; collapsed content offers
-problem-specific tools without making them YELLOW gates. Geothermal remains
-conditional and does not resolve RED's separate Dark Fog gate mismatch.
+short, player-facing language. If yellow is still stabilizing after those
+groups, complete Solar Collection and Super Magnetic Field Generator, then
+Energy Storage as one final general-purpose filler chain. Explain that
+Accumulators can absorb surplus generation and cushion logistics-station
+charging shocks. Energy Storage should read as prudent preparation rather
+than an afterthought or an equal dashboard priority. The same discard rule
+applies: leave the chain unfinished when the three-Lab gate is satisfied.
 
 ### WIP-8 — PURPLE phase-owned research and buildout upgrades
 
@@ -251,10 +381,25 @@ Preserve the dashboard's three-group surface pattern:
 
 1. **Purple gate:** High-Strength Material → Particle Control → Information
    Matrix.
-2. **Buildout:** Mecha Core Lv3 plus deliberately bounded builder and energy
-   upgrades.
-3. **Logistics:** deliberately bounded Logistics Carrier Engine and Logistics
-   Carrier Capacity upgrades.
+2. **Buildout:** Mecha Core Lv3, Mechanical Frame Lv4, Communication Control
+   Lv4, Drone Engine Lv3, Energy Circuit Lv2, and Mass Construction Lv4.
+3. **Logistics:** Logistics Carrier Engine Lv2 and Logistics Carrier Capacity
+   Lv2.
+
+The three-technology purple unlock is the only research required before
+purple-cube production can begin. The prescribed buildout can catch up any
+YELLOW stopping ranks the player discarded, then stop at the ranks listed
+above. Explain the rejected higher point in one short sentence:
+
+> Stop there. The next shared buildout stopping point would consume 20,800
+> cubes in total, including purple cubes needed by GREEN, so the guide rejects
+> it.
+
+Stop Logistics Carrier Engine and Logistics Carrier Capacity at Lv2. Explain
+the rejected higher point in one short sentence:
+
+> The next pair of carrier ranks would consume another 4,800 cubes in total
+> without being required for PURPLE's starter-system routes.
 
 Do not add a fourth resource group to the dashboard. In the visible **Research
 first** prose:
@@ -267,18 +412,30 @@ first** prose:
   PURPLE's wide construction job;
 - explain how the selected carrier Engine and Capacity ranks support PURPLE's
   growing interplanetary supply; and
-- recommend the next deliberate Vein Utilization rank as a visible prose-only
-  resource-horizon improvement.
+- recommend continuing Vein Utilization through Lv2 as a visible prose-only
+  resource-horizon improvement. YELLOW may have discarded Lv1. Stop at Lv2
+  because the next rank begins consuming purple cubes.
 
-If optional problem-solvers are retained, place them in a collapsed element
-after the visible prose. Candidate topics are Research Speed when research
-Labs—not cube production—are the actual constraint, Integrated Logistics and
-cargo-stacking tools when transport throughput is visibly constrained, and
-useful YELLOW options the player previously deferred. Do not turn skipped
-options into new PURPLE requirements.
+Keep the research prescription, phase gate, and discard rule visibly distinct:
 
-The future story must verify exact costs, availability, and stopping ranks
-against retained technology data. Do not use vague or open-ended rank advice.
+- **Required to begin PURPLE:** complete the three-technology purple unlock.
+- **Prescribed while purple stabilizes:** work through the bounded buildout,
+  logistics, and Vein Utilization recommendations above.
+- **Required to leave PURPLE:** three purple-cube Labs remain continuously
+  supplied. No filler recommendation is part of the phase gate.
+- **Discard rule:** as soon as the three-Lab gate is satisfied, abandon any
+  unfinished filler recommendation and move to GREEN.
+
+Place this concise player-facing clarification beside the dashboard guidance:
+
+> The upgrades below give the research queue useful work while the purple
+> district settles. They are not requirements for leaving PURPLE. As soon as
+> all three purple Labs keep running, stop wherever you are in the list and
+> move to GREEN.
+
+The aggregate rejected-stop totals and the prescribed availability and ranks
+were checked against retained data. Do not expose individual recommended-tech
+costs or use vague, open-ended rank advice.
 
 ### WIP-9 — GREEN Collider route, fuel, and controlled power growth
 
@@ -376,12 +533,34 @@ means store the surplus. Existing grid capacity may make immediate fusion
 construction unnecessary, so let the Fuel Rod buffer accumulate until more
 generation is actually needed.
 
+The material chain is part of GREEN's proof, not optional future preparation.
+Producing Strange Matter requires a Miniature Particle Collider. The Collider
+requires Frame Material and Super Magnetic Rings, which proves Solar
+Collection, Photon Frequency Conversion, Super Magnetic Field Generator,
+Solar Sail Orbit System, and High-Strength Lightweight Structure by the end of
+GREEN. Later phases must not present those technologies as new research.
+
+GREEN owns the explicit fusion research chain and fuel-buffering instruction,
+even when the player's existing grid delays actual Fusion Plant deployment.
+Optional SPHERE guidance may refer back to this completed instruction when it
+uses Deuteron Fuel Rods; it must not repeat or reclaim the research.
+
 ### WIP-10 — DYSON chosen sail-life route and reference ownership
 
 Apply the same route-ownership rule used in GREEN. The guide chooses Solar Sail
 Life Lv1 → Solar Sail Life Lv2 before full launch-network scale, explains the
 tradeoff, and provides figures only for that chosen route. Alternatives may be
 mentioned but must not receive instructions or a precise parallel calculation.
+
+Treat Solar Collection, Photon Frequency Conversion, Super Magnetic Field
+Generator, Solar Sail Orbit System, and High-Strength Lightweight Structure as
+completed by GREEN's material chain. DYSON and optional SPHERE guidance must
+not repeat them as new research. DYSON owns only its chosen sail-life upgrades
+before the Receiver bridge.
+
+DYSON is the prescribed orbital-power route. It may include one concise link
+to optional SPHERE guidance that explains the permanence tradeoff, but it must
+not present SPHERE as a coequal phase, alternate gate, or parallel calculation.
 
 Preserve the opening live-behavior paragraph in **How much is enough**. Replace
 the dense calculation paragraph with the following chosen-route explanation:
@@ -408,8 +587,8 @@ Use this short general disclaimer:
 Remove the exact no-upgrade comparison. Do not include the Receiver-array
 power requirement in this clarification.
 
-Preserve the following Antimatter concept, with final wording and placement to
-be reviewed during the DYSON/SPHERE → PHOTON restructuring:
+Preserve the following Antimatter concept. WIP-11 owns its canonical bridge
+placement and WIP-12 owns its PHOTON follow-through:
 
 > The Receiver array will begin storing Antimatter before the reference swarm
 > is complete. Keep it running while the swarm grows and PHOTON strengthens the
@@ -418,11 +597,13 @@ be reviewed during the DYSON/SPHERE → PHOTON restructuring:
 
 The future restructuring must assign Receiver-power information as follows:
 
-- DYSON and SPHERE each teach the initial Receiver-array procedure needed to
-  complete their transition.
-- Each procedure preserves the unaltered baseline: four fully warmed, lensed
+- The canonical Receiver bridge teaches the initial Receiver-array procedure
+  once and preserves the unaltered baseline: four fully warmed, lensed
   Receivers at Ray Efficiency Lv0 require at least 1.655 GW of live Dyson
   generation.
+- DYSON links forward to that bridge as the prescribed route.
+- Optional SPHERE guidance may link back to the same bridge when the reader
+  wants to resume progression, without owning a separate Receiver target.
 - The baseline describes the initial array before later efficiency upgrades;
   it is not the future total power requirement.
 - PHOTON owns Ray Receiver Efficiency research, the resulting changed demand,
@@ -430,28 +611,29 @@ The future restructuring must assign Receiver-power information as follows:
 - Do not calculate or promise the upgraded PHOTON requirement until that
   design is settled.
 
-### WIP-11 — Shared Receiver bridge and PHOTON stabilization gate
+### WIP-11 — Receiver bridge and PHOTON stabilization gate
 
-Do not duplicate the required Receiver procedure inside DYSON and SPHERE.
-Create one canonical visible operational reference between SPHERE and PHOTON,
-with a stable anchor such as `#receiver-antimatter-bridge`:
+Do not duplicate the required Receiver procedure inside DYSON, optional
+SPHERE, or PHOTON. Create one canonical visible operational reference between
+DYSON and PHOTON, with a stable anchor such as
+`#receiver-antimatter-bridge`:
 
 ```text
-DYSON ──┐
-        ├── Receiver and Antimatter bridge ── PHOTON
-SPHERE ─┘
+DYSON ── Receiver and Antimatter bridge ── PHOTON
 ```
 
-Both orbital paths link to this same element from their gate and **Next**
-language. Use one semantic HTML source rather than cloned content or
-template-rendering JavaScript. Do not collapse it or present it as a production
-card because it contains required progression instructions.
+DYSON links to this element from its gate and **Next** language. Optional
+SPHERE may use a neutral **Return to the route** link to the same element. Use
+one semantic HTML source rather than cloned content or template-rendering
+JavaScript. Do not collapse it or present it as a production card because it
+contains required progression instructions.
 
-DYSON owns useful swarm generation. SPHERE owns useful permanent generation.
-The shared bridge converts either source into the common Antimatter line and
-owns:
+DYSON owns the prescribed useful swarm generation. SPHERE owns only optional
+permanent-construction guidance. The bridge accepts live Dyson generation from
+the prescribed swarm, including any optional permanent contribution the reader
+has chosen to add, and owns:
 
-- Planetary Ionosphere Utilization → Dirac Inversion Mechanism;
+- Ray Receiver → Planetary Ionosphere Utilization → Dirac Inversion Mechanism;
 - four Ray Receivers;
 - Graviton Lens supply;
 - Photon Generation mode and Receiver warm-up;
@@ -462,6 +644,10 @@ owns:
 - visible Antimatter storage; and
 - a clear returned-Hydrogen outlet.
 
+Ray Receiver belongs here because GREEN does not require its building or
+technology. The earlier prerequisites needed by this bridge are already proved
+by GREEN's Collider and green-cube material chains.
+
 The bridge completes when all four Receivers are configured and lensed,
 Critical Photons reach the Collider, Antimatter accumulates reliably, and the
 returned-Hydrogen outlet remains clear. It then directs the reader into PHOTON.
@@ -471,7 +657,7 @@ PHOTON recommends exactly:
 > Ray Transmission Efficiency Lv1 → Ray Transmission Efficiency Lv2
 
 Stop the guide's recommendation after two ranks. Do not mention or recommend
-further investment. The shared bridge's 1.655 GW figure remains the unaltered
+further investment. The canonical bridge's 1.655 GW figure remains the unaltered
 pre-upgrade comparison; do not promise an unsettled upgraded total-power
 requirement.
 
@@ -489,11 +675,11 @@ Use this player-facing direction:
 > Aim for the full 48/min array output, but proceed when Antimatter remains at
 > or above 40/min and the stored reserve continues growing.
 
-PHOTON's eventual checklist must require every colored Matrix to sustain at
+PHOTON's eventual checklist must require every colored cube to sustain at
 least 40/min, Antimatter to sustain at least 40/min, and at least 2,000
-Antimatter in storage before WHITE. The exact PHOTON prose and placement of its
-stabilization guidance remain for the PHOTON topic; the ownership, two-rank
-recommendation, shared reference, and gate semantics are settled here.
+Antimatter in storage before WHITE. WIP-12 preserves the exact PHOTON prose and
+placement. The ownership, two-rank recommendation, canonical reference, and gate
+semantics are settled here.
 
 ### WIP-12 — PHOTON stabilization and supporting research
 
@@ -504,21 +690,26 @@ these three visible groups:
 
 1. **Receiver efficiency:** Ray Transmission Efficiency Lv1 → Ray
    Transmission Efficiency Lv2.
-2. **Resource supply:** Vein Utilization Lv3, following the planned Lv1 in
-   YELLOW and Lv2 in PURPLE.
+2. **Resource supply:** continue Vein Utilization through Lv3. Do not assume
+   the discardable YELLOW or PURPLE recommendations were completed.
 3. **Faster production:** Plane-Filter Smelting; High-Speed Assembling →
    Quantum Printing.
 
 The faster production technologies give the player compact tools for a
 specific old line that cannot sustain WHITE's pace. Do not instruct the player
 to rebuild healthy production merely because faster machines are available.
-In the visible prose, conditionally recommend the next deliberately bounded
-Logistics Carrier Engine and Logistics Carrier Capacity ranks only when an
-imported material is arriving too slowly. Do not recommend Research Speed,
-Sorter Cargo Stacking, Controlled Annihilation Reaction, Artificial Star, or
-Universe Matrix here. The shared Receiver bridge already completes PHOTON's
-only implied WHITE prerequisite, Dirac Inversion Mechanism; WHITE retains
-ownership of Universe Matrix.
+Carrier upgrades are not part of PHOTON's phase gate. No exact target rank is
+selected; do not add a carrier-rank requirement or an ambiguous “next rank”
+instruction. The unresolved rank does not block this roadmap. Do not recommend
+Research Speed, Sorter Cargo Stacking, Controlled Annihilation Reaction,
+Artificial Star, or Universe Matrix here. The canonical Receiver bridge
+already completes PHOTON's only implied WHITE prerequisite, Dirac Inversion
+Mechanism; WHITE retains ownership of Universe Matrix.
+
+PHOTON follows the prescribed DYSON swarm route. Optional permanent
+construction may add live Dyson generation, but it does not change PHOTON's
+instructions, targets, or gate and must not be presented as a second path that
+PHOTON needs to reconcile.
 
 Use this reader-facing **Goal** treatment:
 
@@ -531,7 +722,7 @@ Use this reader-facing **Goal** treatment:
 >
 > PHOTON is complete when WHITE can begin without immediately starving.
 
-The shared Receiver bridge owns the required process explanation. Do not
+The canonical Receiver bridge owns the required process explanation. Do not
 repeat that procedure in PHOTON.
 
 Use this treatment for **Bring every cube line to WHITE pace**:
@@ -627,6 +818,12 @@ fleet instructions and before the existing route-scaling advice:
 Present route strengthening in this practical order: add Vessels while station
 slots remain; improve Carrier Capacity when each long trip needs to accomplish
 more; expand the source only when the remote buffer cannot remain full.
+
+Use catch-up wording for the named expedition technologies: ILS proves Cosmic
+Exploration Lv2, while GREEN proves Gravitational Wave Refraction. Stage
+requirements such as Cosmic Exploration Lv3, Drive Engine Lv4, and Logistics
+Carrier Engine Lv4 must say **continue through** the target rank so skipped
+optional upgrades cannot become hidden assumptions.
 
 ### WIP-14 — Statistics Panel introduction and canonical walkthrough
 
@@ -784,6 +981,11 @@ Do not imply that both route endpoints require power or carriers. Preserve the
 WARP-supported pattern in which a powered destination can collect from an
 unpowered provider.
 
+ILS materially proves PLS, ILS, Drones, and Vessels. It does not prove
+Distribution Logistics System because YELLOW treats that recommendation as
+discardable filler. LOGISTICS must therefore retain an explicit Distribution
+Logistics instruction instead of assuming it was completed earlier.
+
 The finished teaching order should be: why the hardware is automated; which
 transport layer fits the job; which settings create the route; existing cards
 for automating the hardware; existing troubleshooting for routes that still
@@ -803,13 +1005,12 @@ Apply these synchronization rules:
 - omit research recommendations, tutorials, troubleshooting steps, optional
   optimizations, and card reference targets unless they are themselves an
   accepted phase gate;
-- keep WARP, LOGISTICS, and the optional SPHERE route outside the default-route
-  checklist;
+- keep SPHERE, WARP, and LOGISTICS outside the default-route checklist;
 - use the fewest checks that prove each phase is complete;
 - use **cube** in reader-facing language and reserve **Matrix** for literal
   technology names;
-- represent the shared Receiver and Antimatter bridge exactly once at the
-  DYSON/SPHERE → PHOTON boundary;
+- represent the Receiver and Antimatter bridge exactly once at the DYSON →
+  PHOTON boundary;
 - audit every final checklist claim against the section that owns it; and
 - preserve existing browser checklist state with deliberate storage-key
   aliases where practical after final wording is known.
@@ -817,19 +1018,20 @@ Apply these synchronization rules:
 The restructured DYSON checklist must follow DYSON's transition outcomes, not
 its planning-reference figures. It should require that Solar Sail production
 and the Ejector launch infrastructure are automated and operating, and that
-the resulting live Dyson generation is useful enough to proceed to the shared
+  the resulting live Dyson generation is useful enough to proceed to the
 Receiver bridge. Do not place the `405/min` Solar Sail reference or the
 60-Ejector buffer reference in the One-Screen Default Checklist. Those figures
 remain reference material in their approved DYSON locations and are not phase
 gates.
 
-The existing inactive
-`one-screen-checklist-correction-story.md` preserves an earlier decision to
+The archived
+[`one-screen-checklist-correction-story.md`](../archive/one-screen-checklist-correction-story.md)
+preserves an earlier decision to
 replace obsolete `517.5/min` and 80-Ejector checklist figures with `405/min`
 and 60. The comprehensive synchronization supersedes that narrow correction:
 remove the obsolete exact figures without replacing them with new exact
-figures, then retire or supersede the inactive record when the comprehensive
-story is authorized. Do not schedule or implement both records separately.
+figures. The archived record remains decision history; do not schedule or
+implement it separately.
 
 The exact Receiver-bridge checklist placement may be selected after the
 canonical bridge exists. This is a final presentation decision, not a blocker
@@ -894,22 +1096,28 @@ Use this final draft:
 > beside demand, and trace a stalled product back to its cause. Those skills
 > will outlast every figure and factory layout in this guide.
 >
-> Build the permanent Sphere, expand across the cluster, raise your own
+> Build a permanent Sphere, expand across the cluster, raise your own
 > targets, or begin again with a better plan. Congratulations, engineer. Dyson
 > left directions; you built the road.
 
-Keep **working Dyson project** broad enough to include both the swarm and
-permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
+The **working Dyson project** is satisfied by the prescribed swarm route. The
+invitation to build a permanent Sphere remains optional and does not imply an
+unfinished requirement. Preserve the final sentence as the guide's actual end.
+
+## Source review notes
+
+The notes below preserve the playthrough findings that produced the roadmap.
+Where they conflict with a WIP item above, the WIP item controls. They are
+retained for traceability, not as a second implementation specification.
 
 ## 1. Introduction scope and closing line
 
 - The final introductory paragraph does not mention Dark Fog. A blanket scope
   exclusion would also be inaccurate because the guide already contains
   bounded Dark Fog advice and may later enhance it.
-- The prose excludes a permanent pre-photon Dyson sphere even though the guide
-  offers that route. The progression is deliberately planned so the reader can
-  choose it without wasting resources or research on the non-permanent sphere
-  path.
+- The prose does not clearly distinguish the prescribed Solar Sail swarm from
+  optional permanent Sphere construction. The prerequisite story now owns that
+  distinction and removes SPHERE from numbered progression.
 - The closing line asks the reader to select optional paths according to
   problems they can name. At this point, a new reader does not yet know which
   problems will arise or why an optional path would solve them. The finish does
@@ -917,9 +1125,10 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
 
 ### Discussion status
 
-- The scope distinction is accepted: the permanent Sphere is a supported route,
-  Dark Fog receives bounded practical coverage, and other capabilities are
-  introduced only when relevant.
+- The scope distinction is accepted: the default route uses a Solar Sail
+  swarm, permanent Sphere construction is a supported optional path, Dark Fog
+  receives bounded practical coverage, and other capabilities are introduced
+  only when relevant.
 - The first proposed wording was rejected as too abstract and technical for the
   guide's new-player audience.
 - The current player-facing candidate is preserved as WIP-1.
@@ -968,16 +1177,14 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
   It should remain collapsed by default and avoid interrupting prose flow.
 - Preserve the accepted refinery-output procedure and broader RED-purpose
   interpretation as WIP-5.
-- Defer reconciliation of conditional Dark Fog guidance and RED's completion
-  gate to a future story. Preserve only the COMBAT/PEACE visibility-control
-  concept; do not resolve or implement it in this pass.
 
 ## 6. ILS rush research order
 
-- The first research discussion mentions five technologies, assumes two
-  completed dependencies, and then presents the three minimum technologies
-  needed to fly and smelt titanium. The implied Steel Smelting dependency for
-  Titanium Smelting is not named.
+- The first research discussion mentions five technologies, assumes completed
+  dependencies, and then presents the minimum technologies needed to fly and
+  smelt titanium. Steel Smelting is a valid implicit dependency because RED's
+  required Oil Refineries consume Steel; Basic Chemical Engineering and
+  Crystal Smelting are not similarly proved and must be explicit in ILS.
 - The following section then acknowledges two prerequisite technologies,
   undermining the earlier presentation as the primary order.
 - The current detailed priority list is valuable, but it is presented in full
@@ -986,12 +1193,11 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
 - Later ILS stages do not revisit research, apart from the appropriately placed
   yellow-cube technologies at the rush's final bridge gate.
 
-### Proposed direction requiring decisions
+### Settled direction
 
-- Establish one correct, chronological priority recommendation for the full
-  ILS rush.
-- Replace the existing three-stage structure with the agreed four-stage
-  structure preserved as WIP-6, and segment the order accordingly.
+- Use the proof-checked chronological priority recommendation in WIP-6.
+- Keep three stages. Split Stage III internally into a transport-package
+  checkpoint followed by route deployment and verification.
 - Place each stage's recommendation consistently after that stage's Goal
   prose.
 - Preserve the current compact, ordered branch-chain pattern and its meaningful
@@ -999,8 +1205,8 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
 - Do not add explanatory flavor text for why each technology is selected.
 - Preserve technology hover-tooltip behavior.
 - Remove ILS-rush technologies from YELLOW's **Research first** material.
-- Treat the false pre-departure yellow-cube claim and the fourth
-  intra-navigation anchor as required parts of the future story.
+- Remove the false pre-departure yellow-cube claim. Preserve the three existing
+  intra-navigation anchors.
 
 ## 7. YELLOW Research first
 
@@ -1009,9 +1215,10 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
 - Design a genuine YELLOW-phase research-priority recommendation to replace it.
 - The remainder of YELLOW is considered straightforward, simple, and
   exemplary.
-- Preserve the agreed dashboard, visible-prose, accumulator, and collapsed
-  optional-research hierarchy as WIP-7. Exact Icarus upgrade stopping ranks
-  remain for prerequisite and cost verification in the future story.
+- Preserve the agreed dashboard, visible-prose, accumulator, stopping-rank,
+  gate, and discard-rule decisions as WIP-7.
+- Do not expose individual research costs. Preserve only WIP-7's short
+  aggregate-cost explanation for rejecting the higher stopping point.
 
 ## 8. PURPLE Research first
 
@@ -1025,9 +1232,11 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
   here.
 - The remainder of PURPLE is solid. The Processors card's presentation is
   especially effective and may be a reusable pattern for other key cards.
-- Preserve the agreed phase-owned three-group dashboard, detailed prose, and
-  prose-only resource-horizon recommendation as WIP-8. Exact upgrade ranks
-  remain for retained-data verification in the future story.
+- Preserve the agreed phase-owned three-group dashboard, detailed prose,
+  prose-only resource-horizon recommendation, stopping ranks, gate, and
+  discard rule as WIP-8.
+- Do not expose individual research costs. Preserve only WIP-8's short
+  aggregate-cost explanations for rejected higher stopping points.
 
 ## 9. GREEN section
 
@@ -1037,6 +1246,10 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
 - Add only the agreed Collider-route rationale, simplified alternatives,
   supporting fusion research order, and player-facing Deuterium–fuel–power
   loop preserved as WIP-9.
+- Treat the Collider's Frame Material and Super Magnetic Ring costs as material
+  proof of the complete solar-orbit and frame branch. Do not repeat that branch
+  later. GREEN owns the explicit Mini Fusion research and fuel instruction;
+  optional SPHERE guidance may refer back to it without repeating it.
 
 ## 10. DYSON — How much is enough
 
@@ -1057,45 +1270,41 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
   simplified disclaimer, Antimatter context, and future Receiver-baseline
   ownership as WIP-10.
 
-## 11. DYSON–SPHERE–PHOTON structure and early lensing
+## 11. DYSON–Receiver–PHOTON structure and optional SPHERE
 
 - Graviton-lens receiver operation can begin during DYSON, before PHOTON, and
   can materially increase antimatter production while continuous reception is
   still being established.
-- SPHERE can probably use the same early-lensing timing before its PHOTON
-  transition.
-- Review technology priorities across DYSON, SPHERE, and PHOTON before deciding
-  how to restructure these instructions.
-- Preserve the agreed single-source Receiver bridge, research ownership, and
-  transition structure as WIP-11.
+- Optional SPHERE construction may contribute live Dyson generation, but it
+  does not own a separate PHOTON transition or Receiver target.
+- Preserve the agreed single-source Receiver bridge, prescribed DYSON
+  transition, and research ownership as WIP-11.
+- The bridge must own Ray Receiver before Planetary Ionosphere Utilization and
+  Dirac Inversion Mechanism; GREEN does not prove Ray Receiver.
 
-## 12. SPHERE receiver-array preparation
+## 12. SPHERE optional-path boundary
 
-- SPHERE expects the reader to establish and lens the receiver array and begin
-  antimatter production.
-- The instructions and research needed to do so currently appear only in the
-  following PHOTON phase.
-- This concern is resolved structurally by WIP-11: DYSON and SPHERE converge on
-  one required Receiver and Antimatter bridge rather than duplicating the
-  procedure.
+- SPHERE must no longer establish, lens, or gate progression on a Receiver
+  array. It provides sufficient permanent-construction guidance without a
+  completion requirement.
+- A reader using optional permanent generation returns to the same canonical
+  Receiver and Antimatter bridge used by the prescribed DYSON route.
+- The prerequisite story above controls SPHERE's navigation, content boundary,
+  exact-figure retirement, and preserved `#sphere` anchor.
 
 ## 13. PHOTON purpose, research, and gate
 
-- Review the PHOTON research recommendation. Dirac Inversion Mechanism probably
-  belongs in the preceding mutually exclusive DYSON and SPHERE paths.
+- Review the PHOTON research recommendation. The canonical bridge owns Dirac
+  Inversion Mechanism before PHOTON stabilization begins.
 - The guide does not mention Ray Receiver Efficiency upgrades. These can reduce
   receiver-array power demand and help stabilize a 48/min antimatter rate
   sooner.
 - Ray receiver placement, graviton-lens supply, photon-generation mode, and
-  antimatter breakdown belong in DYSON and SPHERE because those procedures
-  prepare the conditions needed to complete the chosen preceding path.
-- The procedure may be duplicated between DYSON and SPHERE because those paths
-  are mutually exclusive for guide purposes. Do not repeat it verbatim again
-  in PHOTON.
-- Preserve the existing procedure's prose and presentation when relocating it;
-  decide where it belongs in each phase's current order.
-- Refocus PHOTON on stabilizing and strengthening the selected DYSON or SPHERE
-  path:
+  antimatter breakdown belong in the canonical bridge after DYSON.
+- Do not duplicate that procedure inside DYSON, optional SPHERE, or PHOTON.
+- Preserve the existing procedure's prose and presentation when relocating it
+  into the canonical bridge after DYSON.
+- Refocus PHOTON on stabilizing and strengthening the prescribed DYSON path:
   - expand and monitor earlier cube production so every cube sustains at least
     40/min;
   - establish reliable receiver-array antimatter output of 48/min;
@@ -1104,11 +1313,13 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
 - Move the split production-rate requirement into its own checklist item:
   verify at least 40/min across every cube and antimatter before entering WHITE
   comfortably.
-- WIP-11 settles the shared procedure ownership, exactly two Ray Transmission
+- WIP-11 settles the canonical procedure ownership, exactly two Ray Transmission
   Efficiency ranks, 48/min as design headroom, and a sustained 40/min
   Antimatter gate paired with 2,000 stored Antimatter and 40/min from every
-  colored Matrix. Exact PHOTON stabilization prose and its placement remain to
-  be reviewed.
+  colored cube. WIP-12 preserves the PHOTON stabilization prose and placement.
+- WIP-12 must use catch-up language for Vein Utilization because earlier ranks
+  are discardable. Carrier upgrades remain outside the PHOTON phase gate; no
+  exact target rank is selected.
 
 ## 14. WHITE
 
@@ -1158,10 +1369,10 @@ permanent-Sphere routes. Preserve the final sentence as the guide's actual end.
 
 ## Cross-topic dependencies
 
-- Resolve the ILS staged research order before rewriting YELLOW Research first.
-- Resolve receiver research and procedure ownership across DYSON and SPHERE
-  before refocusing PHOTON.
-- Decide whether the collapsed mini-tutorial pattern introduced for RED should
-  also carry the Small Tools Blueprint procedure.
+- The roadmap was owner-approved on 2026-08-27. Implementation stories still
+  require separate owner authorization.
+- Implement the SPHERE reclassification before finalizing WIP-1 and WIP-9
+  through WIP-12, WIP-16, or WIP-18; those items now depend on its route
+  boundary.
 - Revisit the One-Screen Default Checklist only after all accepted content and
   structural changes are complete.

@@ -1,9 +1,10 @@
 # DSP Practical Progression Guide
 
-**Status:** Maintenance mode. Version 2.3 is the current published minor line.
-All twelve roadmap stories and the resulting release were completed,
-owner-accepted, and archived on 2026-08-09. No pending work is indicated at
-this time.
+**Status:** Version 2.3 is the current published minor line. Its twelve roadmap
+stories and resulting release were completed, owner-accepted, and archived on
+2026-08-09. The owner approved the next roadmap on 2026-08-27; implementation
+has not begun and remains paused pending separate authorization of the next
+story.
 
 ## Purpose
 
@@ -115,7 +116,17 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
 contains only the deployable static website.
 
-## Maintenance status
+## Current management status
+
+The owner-approved [`next roadmap`](management/NEXT-ROADMAP.md) defines the
+future sequence. Its prerequisite SPHERE optional-path story is first.
+Approval of the roadmap does not by itself authorize guide implementation,
+publication, or a release; the owner will explicitly authorize the next story
+after reviewing the validated governance state.
+
+YELLOW/PURPLE problem-resolver guidance and a Dark Fog COMBAT/PEACE control are
+named future work outside the approved roadmap. They do not create current
+implementation requirements.
 
 The version 2.3 navigation and progressive-disclosure release is complete,
 owner-authorized, and archived in
@@ -138,8 +149,8 @@ in the
 twelve-story icon, progression-entry, expedition-navigation, and
 progressive-disclosure sequence was also completed and owner-accepted on
 2026-08-09. Its [`historical roadmap`](archive/ROADMAP.md) and supporting
-records are archived; the concise [`maintenance record`](management/ROADMAP.md)
-indicates no pending work.
+records are archived; the concise [`current roadmap record`](management/ROADMAP.md)
+describes the approved next plan and paused implementation state.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -157,9 +168,9 @@ indicates no pending work.
   cube-target retirement, PHOTON dashboard refinement, and DYSON Ejector map
   condensation were owner-accepted as Stories 9–12.
 - **Standing references — not pending work:** the no-mobile-polish decision is
-  preserved with the archived roadmap. The one-screen-checklist record remains
-  inactive, was explicitly deferred from version 2.3, and requires a new
-  explicit owner instruction before it can create implementation work.
+  preserved with the archived roadmap. The earlier one-screen checklist
+  correction is superseded and archived; WIP-16 in the approved next roadmap
+  owns final-checklist synchronization after preceding changes are accepted.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
   on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map

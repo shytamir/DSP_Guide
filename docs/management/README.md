@@ -30,20 +30,24 @@ changing a management record.
   preserves the limited permission to use unmodified in-game assets in the
   non-commercial guide and related mod.
 
-## Maintenance state
+## Current planning state
 
-- [`ROADMAP.md`](ROADMAP.md) is the concise maintenance-mode record and
-  indicates no pending work.
+- [`ROADMAP.md`](ROADMAP.md) is the concise current-status record.
+- [`NEXT-ROADMAP.md`](NEXT-ROADMAP.md) is the owner-approved plan for future
+  guide work. Implementation remains paused pending separate owner
+  authorization of the next story.
 - Version 2.3 is the current published minor line. Its completed release record
   is preserved in
   [`../archive/version-2.3-navigation-and-progressive-disclosure-release.md`](../archive/version-2.3-navigation-and-progressive-disclosure-release.md).
 - The completed twelve-story roadmap, its seven supporting story records, and
   the completed design-leftovers inventory are historical documents indexed in
   [`../archive/README.md`](../archive/README.md).
-- [`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
-  is an inactive standing reference. It is not pending implementation or part
-  of an active roadmap, was explicitly deferred from version 2.3, and requires
-  explicit owner reactivation.
+- [`dark-fog-control-future-work.md`](dark-fog-control-future-work.md) and
+  [`yellow-purple-problem-resolver-future-work.md`](yellow-purple-problem-resolver-future-work.md)
+  preserve named future-work concepts outside the approved roadmap. Neither
+  authorizes implementation.
+- The superseded one-screen checklist correction is archived. WIP-16 in the
+  approved roadmap owns the future final-checklist synchronization.
 
 ## Historical records
 

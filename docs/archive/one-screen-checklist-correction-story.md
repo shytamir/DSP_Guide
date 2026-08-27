@@ -1,9 +1,17 @@
 # One-Screen Checklist Baseline Correction
 
-**Status:** Inactive standing reference. It is not pending implementation and
-requires explicit owner reactivation before it can create work.
+**Status:** Archived superseded decision history. It is not pending
+implementation and must not be reactivated as a separate story.
 
-## Align the DYSON checklist with the technology-discounted baseline
+WIP-16 in
+[`NEXT-ROADMAP.md`](../management/NEXT-ROADMAP.md)
+supersedes this bounded correction with a comprehensive final-checklist
+synchronization. That future work removes the obsolete exact DYSON figures
+without replacing them with new reference figures because production-planning
+references are not phase gates. This record preserves only the earlier
+decision history.
+
+## Superseded proposal — Align the DYSON checklist with the technology-discounted baseline
 
 **Class:** Bounded correction.
 

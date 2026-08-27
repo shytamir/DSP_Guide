@@ -27,6 +27,9 @@ The archive includes:
   consolidation;
 - `guide-corrections-user-stories.md` for the completed opening-route and
   DYSON reference-authority corrections;
+- `one-screen-checklist-correction-story.md` for the superseded bounded
+  checklist-baseline proposal now replaced by WIP-16 in the approved next
+  roadmap;
 - `dark-fog-red-defense-user-stories.md` for the completed RED defense scope;
 - `ils-purple-green-research-handoff-user-story.md` and its first-pass audit
   for the completed ILS, PURPLE, and GREEN research-handoff refinement;
@@ -35,5 +38,5 @@ The archive includes:
 
 Current documentation lives in:
 
-- `../PROJECT.md` for project status and maintenance boundaries;
+- `../PROJECT.md` for project status and current planning boundaries;
 - `../management/` for current permission and governance records.
