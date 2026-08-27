@@ -2,8 +2,6 @@
   "name": "dsp-guide-agent-runtime-tools",
   "private": true,
   "dependencies": {
-    "cheerio": "1.2.0",
-    "jsdom": "30.0.1",
     "playwright": "1.62.0",
     "prettier": "3.9.6"
   }

@@ -56,15 +56,15 @@ From a PowerShell shell with the standard agent runtime available, run:
 . .\artifacts\.runtime-tools\Activate-DspGuideTools.ps1
 ```
 
-The bootstrap installs the locked HTML authoring and Playwright dependencies
-under the Git-ignored `artifacts/.runtime-tools/` directory, installs the
-managed Chromium browsers, generates scoped command helpers, and runs a full
-inventory and rendering audit. It is safe to rerun; use `-ValidateOnly` to
-audit an existing installation without changing it. Any missing prerequisite,
-package, browser, helper, or failed functional check is reported before the
-script exits unsuccessfully. Git, ripgrep, Node.js, Python, pnpm, Chrome, and
-Edge are treated as supplied agent-runtime prerequisites; repository-local
-packages and Playwright-managed browser binaries are installed by the script.
+The bootstrap installs only the locked Prettier and Playwright packages under
+the Git-ignored `artifacts/.runtime-tools/` directory. It records the manifest
+and lockfile fingerprint after a successful installation, skips pnpm while
+that fingerprint and both package entry points remain current, and installs
+Playwright's managed Chromium only when its required executable is missing.
+Command-helper generation and the lightweight inventory still run on every
+normal bootstrap. Use `-ValidateOnly` to audit an existing installation without
+changing it. Git, ripgrep, Node.js, Python, and pnpm are supplied agent-runtime
+prerequisites.
 
 ## Roadmap status
 

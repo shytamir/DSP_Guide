@@ -21,6 +21,10 @@ $nodeModules = Join-Path $nodeWorkspace "node_modules"
 $pnpmStore = Join-Path $ToolsRoot "pnpm-store"
 $browserRoot = Join-Path $ToolsRoot "browsers"
 $activationScript = Join-Path $ToolsRoot "Activate-DspGuideTools.ps1"
+$nodeInstallStamp = Join-Path $nodeWorkspace ".dependency-fingerprint"
+$runtimePackageFile = Join-Path $manifestRoot "package.json"
+$runtimeLockFile = Join-Path $manifestRoot "pnpm-lock.yaml"
+$expectedPackages = (Get-Content -LiteralPath $runtimePackageFile -Raw | ConvertFrom-Json).dependencies
 $results = New-Object System.Collections.Generic.List[object]
 $installationFailures = New-Object System.Collections.Generic.List[string]
 
@@ -79,27 +83,32 @@ function Find-BundledRuntimeExecutable {
     return $null
 }
 
-function Find-BrowserExecutable {
-    param([string[]]$Candidates)
-    foreach ($candidate in $Candidates) {
-        if (-not [string]::IsNullOrWhiteSpace($candidate) -and (Test-Path -LiteralPath $candidate -PathType Leaf)) {
-            return $candidate
-        }
-    }
-    return ""
-}
-
-function Get-FileProductVersion {
-    param([string]$Path)
-    if ([string]::IsNullOrWhiteSpace($Path) -or -not (Test-Path -LiteralPath $Path -PathType Leaf)) { return "" }
-    return (Get-Item -LiteralPath $Path).VersionInfo.ProductVersion
-}
-
 function Get-PackageVersion {
     param([string]$PackageName)
     $packageFile = Join-Path (Join-Path $nodeModules $PackageName) "package.json"
     if (-not (Test-Path -LiteralPath $packageFile -PathType Leaf)) { return "" }
     return (Get-Content -LiteralPath $packageFile -Raw | ConvertFrom-Json).version
+}
+
+function Get-DependencyFingerprint {
+    $manifestHash = (Get-FileHash -LiteralPath $runtimePackageFile -Algorithm SHA256).Hash
+    $lockHash = (Get-FileHash -LiteralPath $runtimeLockFile -Algorithm SHA256).Hash
+    return "$manifestHash`n$lockHash"
+}
+
+function Test-NodePackageFiles {
+    foreach ($packageName in @("prettier", "playwright")) {
+        if ((Get-PackageVersion $packageName) -ne $expectedPackages.$packageName) { return $false }
+    }
+    return (Test-Path -LiteralPath (Join-Path $nodeModules "prettier\bin\prettier.cjs") -PathType Leaf) -and
+        (Test-Path -LiteralPath (Join-Path $nodeModules "playwright\cli.js") -PathType Leaf)
+}
+
+function Test-NodeInstallation {
+    param([string]$ExpectedFingerprint)
+    if (-not (Test-Path -LiteralPath $nodeInstallStamp -PathType Leaf)) { return $false }
+    if ((Get-Content -LiteralPath $nodeInstallStamp -Raw).Trim() -ne $ExpectedFingerprint.Trim()) { return $false }
+    return (Test-NodePackageFiles)
 }
 
 function Write-ActivationScript {
@@ -176,18 +185,35 @@ if ([string]::IsNullOrWhiteSpace($pythonPath)) {
 }
 
 if (-not $ValidateOnly) {
-    New-Item -ItemType Directory -Path $nodeWorkspace, $browserRoot -Force | Out-Null
-    Copy-Item -LiteralPath (Join-Path $manifestRoot "package.json") -Destination (Join-Path $nodeWorkspace "package.json") -Force
-    Copy-Item -LiteralPath (Join-Path $manifestRoot "pnpm-lock.yaml") -Destination (Join-Path $nodeWorkspace "pnpm-lock.yaml") -Force
+    New-Item -ItemType Directory -Path $ToolsRoot, $browserRoot -Force | Out-Null
 
-    if ([string]::IsNullOrWhiteSpace($pnpmPath)) {
+    if ([string]::IsNullOrWhiteSpace($gitPath) -or [string]::IsNullOrWhiteSpace($nodePath) -or
+        [string]::IsNullOrWhiteSpace($pythonPath) -or [string]::IsNullOrWhiteSpace($pnpmPath)) {
+        $installationFailures.Add("Activation-script generation was blocked because Git, Node.js, Python, or pnpm was unavailable.")
+    } else {
+        try {
+            Write-ActivationScript $gitPath $nodePath $pythonPath $pnpmPath
+        } catch {
+            $installationFailures.Add("Activation-script generation failed: $($_.Exception.Message)")
+        }
+    }
+
+    $dependencyFingerprint = Get-DependencyFingerprint
+    if (Test-NodeInstallation $dependencyFingerprint) {
+        Write-Host "Node authoring packages are current; installation skipped."
+    } elseif ([string]::IsNullOrWhiteSpace($pnpmPath)) {
         $installationFailures.Add("Node package installation was blocked because pnpm.cmd was not found.")
     } else {
+        New-Item -ItemType Directory -Path $nodeWorkspace -Force | Out-Null
+        Copy-Item -LiteralPath $runtimePackageFile -Destination (Join-Path $nodeWorkspace "package.json") -Force
+        Copy-Item -LiteralPath $runtimeLockFile -Destination (Join-Path $nodeWorkspace "pnpm-lock.yaml") -Force
         try {
             $previousCi = $env:CI
             $env:CI = "true"
             $installOutput = Invoke-External $pnpmPath @("--dir", $nodeWorkspace, "install", "--frozen-lockfile", "--ignore-scripts", "--store-dir", $pnpmStore)
             Write-Host $installOutput
+            if (-not (Test-NodePackageFiles)) { throw "Installed package entry points or versions do not match the locked manifest." }
+            Set-Content -LiteralPath $nodeInstallStamp -Value $dependencyFingerprint -Encoding UTF8
         } catch {
             $installationFailures.Add("Node package installation failed: $($_.Exception.Message)")
         } finally {
@@ -200,14 +226,20 @@ if (-not $ValidateOnly) {
     }
 
     $playwrightCli = Join-Path $nodeModules "playwright\cli.js"
+    $browserProbe = Join-Path $manifestRoot "verify-browsers.cjs"
     if ([string]::IsNullOrWhiteSpace($nodePath) -or -not (Test-Path -LiteralPath $playwrightCli -PathType Leaf)) {
         $installationFailures.Add("Playwright browser installation was blocked because Node.js or the Playwright CLI was unavailable.")
     } else {
+        $previousBrowserPath = $env:PLAYWRIGHT_BROWSERS_PATH
+        $env:PLAYWRIGHT_BROWSERS_PATH = $browserRoot
         try {
-            $previousBrowserPath = $env:PLAYWRIGHT_BROWSERS_PATH
-            $env:PLAYWRIGHT_BROWSERS_PATH = $browserRoot
-            $browserOutput = Invoke-External $nodePath @($playwrightCli, "install", "chromium")
-            Write-Host $browserOutput
+            $requiredBrowserPath = Invoke-External $nodePath @($browserProbe, $nodeModules, "--executable-path")
+            if (Test-Path -LiteralPath $requiredBrowserPath -PathType Leaf) {
+                Write-Host "Playwright Chromium is current; browser installation skipped."
+            } else {
+                $browserOutput = Invoke-External $nodePath @($playwrightCli, "install", "chromium")
+                Write-Host $browserOutput
+            }
         } catch {
             $installationFailures.Add("Playwright browser installation failed: $($_.Exception.Message)")
         } finally {
@@ -216,17 +248,6 @@ if (-not $ValidateOnly) {
             } else {
                 $env:PLAYWRIGHT_BROWSERS_PATH = $previousBrowserPath
             }
-        }
-    }
-
-    if ([string]::IsNullOrWhiteSpace($gitPath) -or [string]::IsNullOrWhiteSpace($nodePath) -or
-        [string]::IsNullOrWhiteSpace($pythonPath) -or [string]::IsNullOrWhiteSpace($pnpmPath)) {
-        $installationFailures.Add("Activation-script generation was blocked because Git, Node.js, Python, or pnpm was unavailable.")
-    } else {
-        try {
-            Write-ActivationScript $gitPath $nodePath $pythonPath $pnpmPath
-        } catch {
-            $installationFailures.Add("Activation-script generation failed: $($_.Exception.Message)")
         }
     }
 }
@@ -263,8 +284,7 @@ foreach ($tool in @(
     }
 }
 
-$expectedPackages = (Get-Content -LiteralPath (Join-Path $manifestRoot "package.json") -Raw | ConvertFrom-Json).dependencies
-foreach ($packageName in @("prettier", "jsdom", "cheerio", "playwright")) {
+foreach ($packageName in @("prettier", "playwright")) {
     $expectedVersion = $expectedPackages.$packageName
     $actualVersion = Get-PackageVersion $packageName
     if ([string]::IsNullOrWhiteSpace($actualVersion)) {
@@ -304,47 +324,7 @@ if (-not [string]::IsNullOrWhiteSpace($nodePath)) {
         }
         if ($smokeExit -ne 0 -and $smokeResults.Count -eq 0) { throw "Node authoring smoke test exited $smokeExit without results." }
     } catch {
-        Add-InventoryResult "Authoring" "DOM tooling smoke tests" "Failed" "" $nodeSmoke $_.Exception.Message
-    }
-}
-
-$programFilesX86 = [Environment]::GetFolderPath([Environment+SpecialFolder]::ProgramFilesX86)
-$chromePath = Find-BrowserExecutable @(
-    (Join-Path $env:ProgramFiles "Google\Chrome\Application\chrome.exe"),
-    (Join-Path $programFilesX86 "Google\Chrome\Application\chrome.exe"),
-    (Join-Path $env:LOCALAPPDATA "Google\Chrome\Application\chrome.exe")
-)
-$edgePath = Find-BrowserExecutable @(
-    (Join-Path $env:ProgramFiles "Microsoft\Edge\Application\msedge.exe"),
-    (Join-Path $programFilesX86 "Microsoft\Edge\Application\msedge.exe"),
-    (Join-Path $env:LOCALAPPDATA "Microsoft\Edge\Application\msedge.exe")
-)
-
-$chromiumDirectory = Get-ChildItem -LiteralPath $browserRoot -Directory -ErrorAction SilentlyContinue |
-    Where-Object { $_.Name -match '^chromium-\d+$' } | Select-Object -First 1
-$headlessDirectory = Get-ChildItem -LiteralPath $browserRoot -Directory -ErrorAction SilentlyContinue |
-    Where-Object { $_.Name -match '^chromium_headless_shell-\d+$' } | Select-Object -First 1
-$ffmpegPath = Get-ChildItem -LiteralPath $browserRoot -Recurse -File -Filter "ffmpeg*.exe" -ErrorAction SilentlyContinue |
-    Select-Object -First 1 -ExpandProperty FullName
-
-foreach ($managed in @(
-    @{ Name = "Chromium files"; Item = $chromiumDirectory },
-    @{ Name = "Chromium headless shell files"; Item = $headlessDirectory }
-)) {
-    if ($null -eq $managed.Item) {
-        Add-InventoryResult "Rendering" $managed.Name "Failed" "" $browserRoot "Playwright-managed browser directory is missing."
-    } else {
-        Add-InventoryResult "Rendering" $managed.Name "Ready" ($managed.Item.Name -replace '^.*-', '') $managed.Item.FullName "Playwright-managed browser directory is installed."
-    }
-}
-if ([string]::IsNullOrWhiteSpace($ffmpegPath)) {
-    Add-InventoryResult "Rendering" "ffmpeg" "Failed" "" $browserRoot "Playwright-managed ffmpeg.exe is missing."
-} else {
-    try {
-        $ffmpegVersionOutput = Invoke-External $ffmpegPath @("-version")
-        Add-InventoryResult "Rendering" "ffmpeg" "Ready" (($ffmpegVersionOutput -split "`r?`n")[0] -replace '^ffmpeg version\s+', '') $ffmpegPath "Version command passed."
-    } catch {
-        Add-InventoryResult "Rendering" "ffmpeg" "Failed" "" $ffmpegPath $_.Exception.Message
+        Add-InventoryResult "Authoring" "Node authoring smoke tests" "Failed" "" $nodeSmoke $_.Exception.Message
     }
 }
 
@@ -353,21 +333,11 @@ if (-not [string]::IsNullOrWhiteSpace($nodePath) -and (Test-Path -LiteralPath (J
     $env:PLAYWRIGHT_BROWSERS_PATH = $browserRoot
     try {
         $browserSmoke = Join-Path $manifestRoot "verify-browsers.cjs"
-        $browserJson = & $nodePath $browserSmoke $nodeModules $chromePath $edgePath 2>&1 | Out-String
+        $browserJson = & $nodePath $browserSmoke $nodeModules 2>&1 | Out-String
         $browserExit = $LASTEXITCODE
         $browserResults = $browserJson.Trim() | ConvertFrom-Json
         foreach ($browser in $browserResults) {
-            $path = switch ($browser.name) {
-                "Chrome" { $chromePath }
-                "Edge" { $edgePath }
-                default { $browserRoot }
-            }
-            $version = switch ($browser.name) {
-                "Chrome" { Get-FileProductVersion $chromePath }
-                "Edge" { Get-FileProductVersion $edgePath }
-                default { Get-PackageVersion "playwright" }
-            }
-            Add-InventoryResult "Rendering" "$($browser.name) rendering" $browser.status $version $path $browser.details
+            Add-InventoryResult "Rendering" "$($browser.name) rendering" $browser.status (Get-PackageVersion "playwright") $browserRoot $browser.details
         }
         if ($browserExit -ne 0 -and $browserResults.Count -eq 0) { throw "Browser smoke test exited $browserExit without results." }
     } catch {

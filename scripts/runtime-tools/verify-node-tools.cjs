@@ -43,28 +43,6 @@ async function check(name, packageName, operation) {
       throw new Error(`Unexpected formatter output: ${formatted}`);
   });
 
-  await check("Cheerio", "cheerio", () => {
-    const { load } = localRequire("cheerio");
-    const $ = load("<main><h1>DSP Guide</h1></main>");
-    if ($("main > h1").text() !== "DSP Guide")
-      throw new Error("Cheerio selector result was incorrect.");
-  });
-
-  await check("jsdom", "jsdom", () => {
-    const { JSDOM } = localRequire("jsdom");
-    const dom = new JSDOM(
-      "<!doctype html><style>h1{color:rgb(12, 34, 56)}</style><h1>DSP Guide</h1>",
-    );
-    const heading = dom.window.document.querySelector("h1");
-    if (
-      !heading ||
-      dom.window.getComputedStyle(heading).color !== "rgb(12, 34, 56)"
-    ) {
-      throw new Error("jsdom DOM or computed-style result was incorrect.");
-    }
-    dom.window.close();
-  });
-
   process.stdout.write(JSON.stringify(results));
   if (results.some((result) => result.status !== "Ready")) process.exitCode = 1;
 })();
