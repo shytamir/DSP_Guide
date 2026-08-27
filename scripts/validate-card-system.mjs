@@ -842,16 +842,6 @@ const ownedDysonResearch = findElementsByClass(
   dysonSection?.inner || "",
   "dyson-owned-research",
 );
-for (const block of inheritedDysonResearch) {
-  const ids = [...block.inner.matchAll(/data-tech-id="(\d+)"/g)].map(
-    (match) => match[1],
-  );
-  if (
-    JSON.stringify(ids) !== JSON.stringify(["1501", "1502", "1711", "1503"])
-  ) {
-    errors.push(`DYSON inherited research is invalid: ${ids.join(", ")}`);
-  }
-}
 for (const block of ownedDysonResearch) {
   const ids = [...block.inner.matchAll(/data-tech-id="(\d+)"/g)].map(
     (match) => match[1],
@@ -860,16 +850,18 @@ for (const block of ownedDysonResearch) {
     errors.push(`DYSON-owned research is invalid: ${ids.join(", ")}`);
   }
 }
-if (inheritedDysonResearch.length !== 2 || ownedDysonResearch.length !== 2) {
-  errors.push(
-    "DYSON research ownership is not mirrored in dashboard and prose",
-  );
+if (inheritedDysonResearch.length !== 0 || ownedDysonResearch.length !== 2) {
+  errors.push("DYSON must show only its owned research in dashboard and prose");
 }
 const dysonText = stripMarkup(dysonSection?.inner || "");
-if (!dysonText.includes("DYSON does not research it again.")) {
-  errors.push(
-    "DYSON does not acknowledge GREEN's completed solar-orbit branch",
-  );
+for (const rejectedGreenRecap of [
+  "Completed in GREEN:",
+  "GREEN proved this solar-orbit branch",
+  "DYSON does not research it again.",
+]) {
+  if (dysonText.includes(rejectedGreenRecap)) {
+    errors.push(`DYSON repeats GREEN research: ${rejectedGreenRecap}`);
+  }
 }
 const expectedDysonPrerequisites = new Map([
   ["3101", { required: [], implicit: ["1503"] }],
