@@ -916,6 +916,194 @@ for (const staleYellowText of [
   }
 }
 
+const purpleSection = findElementsByClass(html, "phase-section-purple")[0];
+const purpleResearchDashboard = findElementsByClass(
+  purpleSection?.inner || "",
+  "purple-research-dashboard",
+)[0];
+const expectedPurpleDashboardIds = [
+  "1132",
+  "1133",
+  "1312",
+  "2103",
+  "2204",
+  "2404",
+  "2603",
+  "2502",
+  "2704",
+  "3402",
+  "3502",
+];
+const purpleDashboardIds = [
+  ...(purpleResearchDashboard?.inner || "").matchAll(
+    /class="[^"]*\btech-ref\b[^"]*"[^>]*data-tech-id="(\d+)"/g,
+  ),
+].map((match) => match[1]);
+if (
+  JSON.stringify(purpleDashboardIds) !==
+  JSON.stringify(expectedPurpleDashboardIds)
+) {
+  errors.push(
+    `PURPLE dashboard research groups are invalid: ${purpleDashboardIds.join(", ")}`,
+  );
+}
+const purpleDashboardText = stripMarkup(purpleResearchDashboard?.inner || "");
+const purpleDashboardGroupIndexes = [
+  "Purple gate:",
+  "Buildout:",
+  "Logistics:",
+].map((label) => purpleDashboardText.indexOf(label));
+if (
+  purpleDashboardGroupIndexes.some((index) => index < 0) ||
+  purpleDashboardGroupIndexes.some(
+    (index, position) =>
+      position > 0 && index <= purpleDashboardGroupIndexes[position - 1],
+  )
+) {
+  errors.push("PURPLE dashboard research groups are missing or out of order");
+}
+if (purpleDashboardText.includes("Resource horizon:")) {
+  errors.push("PURPLE dashboard has an unapproved fourth research group");
+}
+
+const purplePrescription = findElementsByClass(
+  purpleSection?.inner || "",
+  "purple-research-prescription",
+)[0];
+const purplePrescriptionIds = [
+  ...(purplePrescription?.inner || "").matchAll(
+    /class="[^"]*\btech-ref\b[^"]*"[^>]*data-tech-id="(\d+)"/g,
+  ),
+].map((match) => match[1]);
+if (
+  JSON.stringify(purplePrescriptionIds) !==
+  JSON.stringify([
+    "2103",
+    "2204",
+    "2404",
+    "2603",
+    "2502",
+    "2704",
+    "3402",
+    "3502",
+    "3601",
+    "3602",
+  ])
+) {
+  errors.push(
+    `PURPLE prescribed stopping ranks are invalid: ${purplePrescriptionIds.join(", ")}`,
+  );
+}
+
+const expectedPurplePrerequisites = new Map([
+  ["1132", ["1131"]],
+  ["1133", ["1132"]],
+  ["1312", ["1302", "1133"]],
+  ["2103", ["2102"]],
+  ["2204", ["2203", "2102"]],
+  ["2404", ["2403", "2103"]],
+  ["2603", ["2602", "2103"]],
+  ["2502", ["2501", "2102"]],
+  ["2704", ["2703", "2103"]],
+  ["3402", ["3401"]],
+  ["3502", ["3501"]],
+  ["3602", ["3601"]],
+]);
+for (const [technologyId, prerequisiteIds] of expectedPurplePrerequisites) {
+  const technology = technologyReference[technologyId] || {};
+  const actualPrerequisiteIds = new Set(
+    [
+      ...(technology.required || []),
+      ...(technology.implicitRequired || []),
+    ].map(({ id }) => String(id)),
+  );
+  for (const prerequisiteId of prerequisiteIds) {
+    if (!actualPrerequisiteIds.has(prerequisiteId)) {
+      errors.push(
+        `PURPLE technology ${technologyId} is missing prerequisite ${prerequisiteId}`,
+      );
+    }
+  }
+}
+
+function cubeCostForTechnology(technologyId, phase) {
+  const hashNeeded = graphTechnologyNodes.get(technologyId)?.hash_needed;
+  const inputPoints = researchInputPoints.get(technologyId) || [];
+  if (!Number.isFinite(hashNeeded) || !inputPoints.length) {
+    errors.push(`${phase} cost data is missing for technology ${technologyId}`);
+    return 0;
+  }
+  return inputPoints.reduce(
+    (total, { points }) => total + (hashNeeded * points) / 3600,
+    0,
+  );
+}
+const rejectedPurpleBuildoutTotal = [
+  "2104",
+  "2205",
+  "2405",
+  "2604",
+  "2503",
+  "2705",
+].reduce(
+  (total, technologyId) =>
+    total + cubeCostForTechnology(technologyId, "PURPLE rejected buildout"),
+  0,
+);
+if (rejectedPurpleBuildoutTotal !== 20800) {
+  errors.push(
+    `PURPLE rejected buildout costs ${rejectedPurpleBuildoutTotal} cubes instead of 20800`,
+  );
+}
+const rejectedPurpleCarrierTotal = ["3403", "3503"].reduce(
+  (total, technologyId) =>
+    total + cubeCostForTechnology(technologyId, "PURPLE rejected carrier"),
+  0,
+);
+if (rejectedPurpleCarrierTotal !== 4800) {
+  errors.push(
+    `PURPLE rejected carrier ranks cost ${rejectedPurpleCarrierTotal} cubes instead of 4800`,
+  );
+}
+if (
+  !(researchInputPoints.get("3603") || []).some(
+    ({ itemId }) => itemId === "6004",
+  )
+) {
+  errors.push(
+    "Vein Utilization Lv3 does not prove the stated purple-cube stop",
+  );
+}
+
+const purpleText = stripMarkup(purpleSection?.inner || "");
+for (const requiredPurpleText of [
+  "This three-technology unlock is the only research required before purple-cube production can begin.",
+  "The upgrades below give the research queue useful work while the purple district settles. They are not requirements for leaving PURPLE.",
+  "Catch up any YELLOW stopping ranks you discarded",
+  "Stop there. The next shared buildout stopping point would consume 20,800 cubes in total, including purple cubes needed by GREEN, so the guide rejects it.",
+  "The next pair of carrier ranks would consume another 4,800 cubes in total without being required for PURPLE's starter-system routes.",
+  "Stop there because the next rank begins consuming purple cubes.",
+  "The only phase gate is three continuously supplied purple-cube Labs.",
+  "As soon as the three-Lab gate is satisfied, abandon any unfinished filler recommendation and move to GREEN.",
+]) {
+  if (!purpleText.includes(requiredPurpleText)) {
+    errors.push(
+      `PURPLE bounded research guidance is missing: ${requiredPurpleText}`,
+    );
+  }
+}
+for (const stalePurpleText of [
+  "Miniature Particle Collider",
+  "fusion-power preparation",
+  "take every affordable rank",
+]) {
+  if (purpleText.includes(stalePurpleText)) {
+    errors.push(
+      `PURPLE still contains stale research guidance: ${stalePurpleText}`,
+    );
+  }
+}
+
 const openingCardScopes = new Map([
   ["card-bootstrap-mall-logistics", "bootstrap"],
   ["card-bootstrap-mall-industry", "bootstrap"],

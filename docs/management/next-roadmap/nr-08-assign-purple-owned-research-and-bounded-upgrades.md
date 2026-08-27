@@ -1,6 +1,6 @@
 # NR-08 — Assign PURPLE-owned research and bounded upgrades
 
-**Status:** Owner-approved on 2026-08-27. Inactive pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
 
 **Dependency group:** B — Early and mid-route guidance
 **Assessed workload:** Medium

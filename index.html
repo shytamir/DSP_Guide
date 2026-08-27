@@ -10419,9 +10419,10 @@
                 branches
               </td>
             </tr>
-            <tr>
+            <tr class="purple-research-dashboard">
               <td><strong>Research first</strong></td>
               <td>
+                <strong>Purple gate:</strong>
                 <button type="button" class="tech-ref" data-tech-id="1132">
                   <img
                     class="proto-icon proto-icon-tech"
@@ -10460,18 +10461,103 @@
                     aria-hidden="true"
                     loading="lazy"
                   />Information Matrix</button
-                ><br /><strong>Already complete from ILS:</strong>
-                <button type="button" class="tech-ref" data-tech-id="1131">
+                ><br /><strong>Buildout:</strong>
+                <button type="button" class="tech-ref" data-tech-id="2103">
                   <img
                     class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1131.png"
+                    src="assets/DSP_exported assets/Texture2D/Tech/2103.png"
                     width="20"
                     height="20"
                     alt=""
                     aria-hidden="true"
                     loading="lazy"
-                  />Applied Superconductor
+                  />Mecha Core Lv3
                 </button>
+                ,
+                <button type="button" class="tech-ref" data-tech-id="2204">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/2204.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Mechanical Frame
+                </button>
+                Lv4,
+                <button type="button" class="tech-ref" data-tech-id="2404">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/2404.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Communication Control
+                </button>
+                Lv4,
+                <button type="button" class="tech-ref" data-tech-id="2603">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/2603.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Drone Engine
+                </button>
+                Lv3,
+                <button type="button" class="tech-ref" data-tech-id="2502">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/2502.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Energy Circuit
+                </button>
+                Lv2, and
+                <button type="button" class="tech-ref" data-tech-id="2704">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/2704.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Mass Construction
+                </button>
+                Lv4.<br /><strong>Logistics:</strong>
+                <button type="button" class="tech-ref" data-tech-id="3402">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/3402.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Logistics Carrier Engine
+                </button>
+                Lv2 and
+                <button type="button" class="tech-ref" data-tech-id="3502">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/3502.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Logistics Carrier Capacity
+                </button>
+                Lv2.
               </td>
             </tr>
             <tr>
@@ -10489,6 +10575,12 @@
             </tr>
           </tbody>
         </table>
+        <blockquote>
+          The upgrades below give the research queue useful work while the
+          purple district settles. They are not requirements for leaving PURPLE.
+          As soon as all three purple Labs keep running, stop wherever you are
+          in the list and move to GREEN.
+        </blockquote>
         <h2>Goal</h2>
         <p>
           Purple is where DSP hands you two yellow-sized shopping lists at once.
@@ -10507,39 +10599,139 @@
           final heroic belt.
         </p>
         <h2>Research first</h2>
-        <p>
-          <strong
-            ><button type="button" class="tech-ref" data-tech-id="1132">
+        <div class="purple-research-unlock">
+          <h3>Required to begin PURPLE</h3>
+          <p>
+            Complete
+            <strong
+              ><button type="button" class="tech-ref" data-tech-id="1132">
+                High-Strength Material
+              </button>
+              →
+              <button type="button" class="tech-ref" data-tech-id="1133">
+                Particle Control
+              </button>
+              →
+              <button
+                type="button"
+                class="tech-ref tech-milestone"
+                data-tech-id="1312"
+              >
+                Information Matrix
+              </button></strong
+            >. This three-technology unlock is the only research required before
+            purple-cube production can begin.
+          </p>
+          <p>
+            <button type="button" class="tech-ref" data-tech-id="1131">
+              Applied Superconductor
+            </button>
+            was completed during the ILS bridge, so
+            <button type="button" class="tech-ref" data-tech-id="1132">
               High-Strength Material
             </button>
-            →
+            unlocks
+            <span class="proto-ref" data-item-id="1124">Carbon Nanotubes</span>,
+            and
             <button type="button" class="tech-ref" data-tech-id="1133">
               Particle Control
             </button>
-            →
+            unlocks
+            <span class="proto-ref" data-item-id="1402">Particle Broadband</span
+            >. The established
+            <button type="button" class="tech-ref" data-tech-id="1302">
+              Processor
+            </button>
+            branch completes the
             <button
               type="button"
               class="tech-ref tech-milestone"
               data-tech-id="1312"
             >
               Information Matrix
-            </button></strong
-          >
-        </p>
+            </button>
+            unlock.
+          </p>
+        </div>
+        <div class="purple-research-prescription">
+          <h3>Prescribed while purple stabilizes</h3>
+          <p>
+            Catch up any YELLOW stopping ranks you discarded, then work through
+            these bounded groups and stop at the named ranks:
+          </p>
+          <ol>
+            <li>
+              <strong>Buildout:</strong>
+              <button type="button" class="tech-ref" data-tech-id="2103">
+                Mecha Core Lv3
+              </button>
+              ,
+              <button type="button" class="tech-ref" data-tech-id="2204">
+                Mechanical Frame
+              </button>
+              Lv4,
+              <button type="button" class="tech-ref" data-tech-id="2404">
+                Communication Control
+              </button>
+              Lv4,
+              <button type="button" class="tech-ref" data-tech-id="2603">
+                Drone Engine
+              </button>
+              Lv3,
+              <button type="button" class="tech-ref" data-tech-id="2502">
+                Energy Circuit
+              </button>
+              Lv2, and
+              <button type="button" class="tech-ref" data-tech-id="2704">
+                Mass Construction
+              </button>
+              Lv4 support carrying, placing, and powering PURPLE's wide
+              construction job.
+            </li>
+            <li>
+              <strong>Logistics:</strong>
+              <button type="button" class="tech-ref" data-tech-id="3402">
+                Logistics Carrier Engine
+              </button>
+              Lv2 and
+              <button type="button" class="tech-ref" data-tech-id="3502">
+                Logistics Carrier Capacity
+              </button>
+              Lv2 support the growing interplanetary supply network.
+            </li>
+            <li>
+              <strong>Resource horizon:</strong> if YELLOW discarded
+              <button type="button" class="tech-ref" data-tech-id="3601">
+                Vein Utilization
+              </button>
+              Lv1, catch it up, then continue through
+              <button type="button" class="tech-ref" data-tech-id="3602">
+                Vein Utilization
+              </button>
+              Lv2. Stop there because the next rank begins consuming purple
+              cubes.
+            </li>
+          </ol>
+          <p>
+            <strong>Stop there.</strong> The next shared buildout stopping point
+            would consume 20,800 cubes in total, including purple cubes needed
+            by GREEN, so the guide rejects it.
+          </p>
+          <p>
+            The next pair of carrier ranks would consume another 4,800 cubes in
+            total without being required for PURPLE's starter-system routes.
+          </p>
+        </div>
+        <h3>Required to leave PURPLE</h3>
         <p>
-          You researched
-          <button type="button" class="tech-ref" data-tech-id="1131">
-            Applied Superconductor
-          </button>
-          during the ILS bridge, so begin PURPLE with
-          <button type="button" class="tech-ref" data-tech-id="1132">
-            High-Strength Material</button
-          >. The other purple requirement,
-          <button type="button" class="tech-ref" data-tech-id="1302">
-            Processor</button
-          >, was built there too. Follow the new chemical branch to
-          <span class="proto-ref" data-item-id="6004">Information Matrix</span>,
-          then let production lead the phase.
+          The only phase gate is three continuously supplied purple-cube Labs.
+          None of the buildout, logistics, or Vein Utilization recommendations
+          above are required to move on.
+        </p>
+        <h3>Discard rule</h3>
+        <p>
+          As soon as the three-Lab gate is satisfied, abandon any unfinished
+          filler recommendation and move to GREEN.
         </p>
         <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
         <p>

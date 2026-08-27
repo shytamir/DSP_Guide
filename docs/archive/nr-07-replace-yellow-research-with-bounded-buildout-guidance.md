@@ -1,7 +1,6 @@
 # NR-07 — Replace YELLOW research with bounded buildout guidance
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner
-acceptance.
+**Historical status:** Owner-accepted and archived on 2026-08-27.
 
 **Dependency group:** B — Early and mid-route guidance
 **Assessed workload:** Medium
@@ -109,4 +108,4 @@ Validate authoritative prerequisites, stopping ranks, aggregate cost, tooltip bi
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.
