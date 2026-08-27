@@ -2084,6 +2084,20 @@
                 overloaded route before the shortage reaches science.
               </td>
             </tr>
+            <tr class="blue-statistics-discovery">
+              <td><strong>Statistics Panel</strong></td>
+              <td>
+                Press <kbd>P</kbd> to inspect what the factory is producing,
+                consuming, and storing. The
+                <a
+                  class="card-crossref-link"
+                  href="#production-statistics-walkthrough"
+                  >Production Statistics walkthrough</a
+                >
+                uses a later YELLOW line to teach multi-planet scope and
+                imports; return to it when those routes are running.
+              </td>
+            </tr>
             <tr>
               <td>
                 <strong
@@ -9555,11 +9569,21 @@
         </p>
         <p>
           Give shared materials visible supply points, keep important liquids in
-          tanks you can glance at, and use the Statistics panel when something
-          stops instead of interrogating every
+          tanks you can glance at, and inspect the hungry line instead of
+          interrogating every
           <span class="proto-ref" data-item-id="2309">Chemical Plant</span> on
           the planet. You are still playing a factory game; the goal is to spot
           the hungry line quickly and get back to building.
+        </p>
+        <p class="yellow-statistics-handoff">
+          <strong>Multi-planet line slowing down?</strong> Use the
+          <a
+            class="card-crossref-link"
+            href="#production-statistics-walkthrough"
+            >Production Statistics walkthrough</a
+          >
+          to distinguish a waiting output, a weak input, and a delivery gap
+          before rebuilding anything.
         </p>
         <h2>Research first</h2>
         <div class="yellow-research-prescription">
@@ -15274,8 +15298,14 @@
         </div>
         <h2>Bring every cube line to WHITE pace</h2>
         <p>
-          Open the Statistics Panel and check blue, red, yellow, purple, and
-          green cubes. Each color must hold at least 40/min.
+          Open the
+          <a
+            class="card-crossref-link"
+            href="#production-statistics-walkthrough"
+            >Statistics Panel</a
+          >
+          and check blue, red, yellow, purple, and green cubes. Each color must
+          hold at least 40/min.
         </p>
         <p>
           Start with the first color below the target. Follow its production
@@ -20571,6 +20601,151 @@
           </p>
         </li>
       </ol>
+      <details
+        class="quick-process statistics-walkthrough"
+        id="production-statistics-walkthrough"
+      >
+        <summary>
+          Quick process — Find a shortage with Production Statistics
+        </summary>
+        <div class="quick-process-body">
+          <p class="statistics-hypothetical">
+            <strong>Example:</strong> Yellow research is running and yellow-cube
+            storage is not full, but cube production has slowed.
+          </p>
+          <p>
+            Press <kbd>P</kbd> and select <strong>Production</strong>. Choose
+            <strong>Local planet</strong> for the factory in front of you, a
+            named <strong>System</strong> when the work crosses planets in that
+            system, or <strong>Entire star cluster</strong> only for a later
+            whole-factory view.
+          </p>
+          <p>
+            Use <strong>1 minute</strong> for a quick recent response and
+            <strong>10 minutes</strong> for a steadier short-term average.
+            Historical interval figures are per-minute averages;
+            <strong>Total</strong> reports cumulative counts instead.
+          </p>
+          <p>
+            Each item row shows actual production and consumption, separate
+            production and consumption Reference Rates, import and export,
+            related logistics storage, total Storage Amount, litter, a history
+            graph, and buttons for direct raw-material and product navigation.
+            Imports and exports cross the selected scope boundary; they are
+            distinct from production and consumption inside that boundary.
+          </p>
+          <p>
+            <strong>Reference Rate</strong> is the configured ideal capacity of
+            applicable, grid-connected facilities in scope. It accounts for
+            recipes, machine speeds, proliferator mode, research modifiers, and
+            relevant facility behavior. It is not actual output, a historical
+            average, or a target you set.
+          </p>
+          <ul class="statistics-hover-notes">
+            <li>Hover Reference Rate to see its facility breakdown.</li>
+            <li>Hover Storage Amount to see where the items are held.</li>
+            <li>Hover the history graph to see its exact period and values.</li>
+          </ul>
+          <ol class="diagnostic-steps statistics-diagnostic-steps">
+            <li>
+              Press <kbd>P</kbd>, select <strong>Production</strong>, choose
+              <strong>Local planet</strong>, and select
+              <strong>1 minute</strong>.
+            </li>
+            <li>Search for <strong>Structure Matrix</strong>.</li>
+            <li>
+              Compare its <strong>Production Rate</strong> with its production
+              <strong>Reference Rate</strong>.
+            </li>
+            <li>
+              Hover <strong>Storage Amount</strong> before diagnosing a fault. A
+              full output means the line is waiting, not failing.
+            </li>
+            <li>
+              If storage is not full and research is consuming cubes, click
+              <strong>Raw Material Statistics</strong> and compare
+              <span class="proto-ref" data-item-id="1112">Diamond</span> with
+              <span class="proto-ref" data-item-id="1118">Titanium Crystal</span
+              >.
+            </li>
+            <li>
+              Follow a weak
+              <span class="proto-ref" data-item-id="1118"
+                >Titanium Crystal</span
+              >
+              row one step upstream to
+              <span class="proto-ref" data-item-id="1117">Organic Crystal</span>
+              and
+              <span class="proto-ref" data-item-id="1106">Titanium Ingots</span
+              >.
+            </li>
+            <li>
+              Observe that the home planet imports
+              <span class="proto-ref" data-item-id="1106">Titanium Ingots</span>
+              rather than producing them locally.
+            </li>
+            <li>
+              Switch from the home planet to the named home system. The planet
+              view reports Titanium crossing its boundary as an import; the
+              system view includes production on the source planet and treats
+              movement between the system's planets as internal.
+            </li>
+            <li>
+              Switch to <strong>10 minutes</strong> to decide whether the
+              shortage persists beyond one recent delivery gap.
+            </li>
+            <li>
+              Follow
+              <span class="proto-ref" data-item-id="1106">Titanium Ingots</span>
+              farther upstream or inspect the ILS route according to what the
+              rows show.
+            </li>
+            <li>Fix one cause, let the route run, and check again.</li>
+          </ol>
+          <table class="phase-dashboard statistics-reading-table">
+            <thead>
+              <tr>
+                <th>Read</th>
+                <th>Meaning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Reference Rate</strong></td>
+                <td>
+                  What the installed, grid-connected machinery could make under
+                  ideal conditions.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Production Rate</strong></td>
+                <td>What it actually made over the selected interval.</td>
+              </tr>
+              <tr>
+                <td><strong>Storage Amount</strong></td>
+                <td>
+                  Whether production may simply have stopped because there was
+                  nowhere for the output to go.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            The Statistics Panel identifies the underperforming stage. A
+            Reference Rate gap alone does not prove whether the exact cause is
+            missing inputs, blocked output, insufficient power, or another
+            operating constraint. Inspect the implicated physical factory line
+            before changing it.
+          </p>
+          <p class="statistics-realtime-note">
+            <strong>Real-time Statistics:</strong> Right-click either circular
+            refresh arrow to enable continuous refresh of Reference Rates and
+            current inventory snapshots. This does not replace the selected
+            historical interval or turn production and consumption into
+            instantaneous rates.
+          </p>
+        </div>
+      </details>
       <p>
         A line below the minimum for the phase is usually the first thing worth
         fixing.

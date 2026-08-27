@@ -1,7 +1,6 @@
 # NR-15 — Add one canonical Production Statistics walkthrough
 
-**Status:** Owner-approved on 2026-08-27. Implementation-ready but inactive
-pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
 
 **Dependency group:** D — Optional paths and support
 **Assessed workload:** Medium

@@ -1347,6 +1347,12 @@ const expectedQuickProcesses = [
     summary: "Quick process — Split refinery outputs",
     steps: 4,
   },
+  {
+    section: { full: html },
+    summary: "Quick process — Find a shortage with Production Statistics",
+    steps: 11,
+    stepListClass: "statistics-diagnostic-steps",
+  },
 ];
 if (quickProcesses.length !== expectedQuickProcesses.length) {
   errors.push(
@@ -1368,8 +1374,140 @@ for (const [index, expected] of expectedQuickProcesses.entries()) {
   if (!expected.section?.full.includes(process.full)) {
     errors.push(`${expected.summary} is outside its owning phase`);
   }
-  if ((process.inner.match(/<li\b/g) || []).length !== expected.steps) {
+  const stepMarkup = expected.stepListClass
+    ? findElementsByClass(process.inner, expected.stepListClass)[0]?.inner || ""
+    : process.inner;
+  if ((stepMarkup.match(/<li\b/g) || []).length !== expected.steps) {
     errors.push(`${expected.summary} has an invalid step count`);
+  }
+}
+const statisticsWalkthrough = findElementsByClass(
+  html,
+  "statistics-walkthrough",
+)[0];
+const statisticsMarkup = statisticsWalkthrough?.inner || "";
+const statisticsText = stripMarkup(statisticsMarkup);
+if (
+  !statisticsWalkthrough ||
+  statisticsWalkthrough.tag !== "details" ||
+  getAttribute(statisticsWalkthrough.openingTag, "id") !==
+    "production-statistics-walkthrough" ||
+  hasAttribute(statisticsWalkthrough.openingTag, "open")
+) {
+  errors.push(
+    "Production Statistics walkthrough is not one collapsed disclosure at its stable anchor",
+  );
+} else {
+  const troubleshootPosition = html.indexOf('<h1 id="ref-troubleshoot"');
+  const orderedQuestionsEnd = html.indexOf("</ol>", troubleshootPosition);
+  if (
+    statisticsWalkthrough.index <= orderedQuestionsEnd ||
+    statisticsWalkthrough.index <= troubleshootPosition
+  ) {
+    errors.push(
+      "Production Statistics walkthrough does not follow the ordered troubleshooting questions",
+    );
+  }
+}
+
+const blueStatisticsDiscovery = findElementsByClass(
+  blueSection?.inner || "",
+  "blue-statistics-discovery",
+)[0];
+const blueStatisticsText = stripMarkup(blueStatisticsDiscovery?.inner || "");
+for (const requiredBlueStatisticsText of [
+  "Statistics Panel",
+  "Press P to inspect what the factory is producing, consuming, and storing.",
+  "uses a later YELLOW line to teach multi-planet scope and imports; return to it when those routes are running.",
+]) {
+  if (!blueStatisticsText.includes(requiredBlueStatisticsText)) {
+    errors.push(
+      `BLUE Statistics discovery is missing: ${requiredBlueStatisticsText}`,
+    );
+  }
+}
+
+const statisticsYellowSection = findElementsByClass(
+  html,
+  "phase-section-yellow",
+)[0];
+const yellowStatisticsHandoff = findElementsByClass(
+  statisticsYellowSection?.inner || "",
+  "yellow-statistics-handoff",
+)[0];
+const yellowStatisticsText = stripMarkup(yellowStatisticsHandoff?.inner || "");
+if (
+  !yellowStatisticsText.includes("Multi-planet line slowing down?") ||
+  !yellowStatisticsText.includes(
+    "distinguish a waiting output, a weak input, and a delivery gap before rebuilding anything.",
+  )
+) {
+  errors.push("YELLOW Statistics handoff is missing or incomplete");
+}
+const yellowMarkup = statisticsYellowSection?.inner || "";
+if (
+  yellowStatisticsHandoff &&
+  (yellowStatisticsHandoff.index <= yellowMarkup.indexOf("<h2>Goal</h2>") ||
+    yellowStatisticsHandoff.index >=
+      yellowMarkup.indexOf("<h2>Research first</h2>"))
+) {
+  errors.push(
+    "YELLOW Statistics handoff is not placed after its multi-planet Goal context",
+  );
+}
+
+const statisticsLinks = [
+  ...html.matchAll(/href="#production-statistics-walkthrough"/g),
+];
+if (statisticsLinks.length !== 3) {
+  errors.push(
+    `Production Statistics walkthrough must have BLUE, YELLOW, and later cross-links; found ${statisticsLinks.length}`,
+  );
+}
+for (const [name, markup] of [
+  ["BLUE", blueSection?.inner || ""],
+  ["YELLOW", yellowMarkup],
+  ["PHOTON", photonMarkup],
+]) {
+  if (
+    (markup.match(/href="#production-statistics-walkthrough"/g) || [])
+      .length !== 1
+  ) {
+    errors.push(`${name} does not contain one Statistics walkthrough link`);
+  }
+}
+
+const requiredStatisticsFacts = [
+  "Yellow research is running and yellow-cube storage is not full, but cube production has slowed.",
+  "Press P and select Production",
+  "Local planet for the factory in front of you",
+  "a named System when the work crosses planets in that system",
+  "Entire star cluster only for a later whole-factory view.",
+  "Use 1 minute for a quick recent response and 10 minutes for a steadier short-term average.",
+  "Historical interval figures are per-minute averages; Total reports cumulative counts instead.",
+  "actual production and consumption, separate production and consumption Reference Rates, import and export, related logistics storage, total Storage Amount, litter, a history graph, and buttons for direct raw-material and product navigation.",
+  "Imports and exports cross the selected scope boundary; they are distinct from production and consumption inside that boundary.",
+  "Reference Rate is the configured ideal capacity of applicable, grid-connected facilities in scope.",
+  "It is not actual output, a historical average, or a target you set.",
+  "Hover Reference Rate to see its facility breakdown.",
+  "Hover Storage Amount to see where the items are held.",
+  "Hover the history graph to see its exact period and values.",
+  "A full output means the line is waiting, not failing.",
+  "the home planet imports Titanium Ingots rather than producing them locally.",
+  "The planet view reports Titanium crossing its boundary as an import; the system view includes production on the source planet and treats movement between the system's planets as internal.",
+  "shortage persists beyond one recent delivery gap.",
+  "Fix one cause, let the route run, and check again.",
+  "What the installed, grid-connected machinery could make under ideal conditions.",
+  "What it actually made over the selected interval.",
+  "Whether production may simply have stopped because there was nowhere for the output to go.",
+  "A Reference Rate gap alone does not prove whether the exact cause is missing inputs, blocked output, insufficient power, or another operating constraint.",
+  "Inspect the implicated physical factory line before changing it.",
+  "Right-click either circular refresh arrow to enable continuous refresh of Reference Rates and current inventory snapshots.",
+  "This does not replace the selected historical interval or turn production and consumption into instantaneous rates.",
+];
+for (const fact of requiredStatisticsFacts) {
+  if (!statisticsText.includes(fact)) {
+    errors.push(`Production Statistics walkthrough is missing: ${fact}`);
   }
 }
 const progressIndex = findElementsByClass(html, "progress-index")[0];

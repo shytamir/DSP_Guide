@@ -1,8 +1,8 @@
 # Active Roadmap — Story Index
 
-**Status:** Active. NR-01 through NR-13 were owner-accepted and archived on
-2026-08-27. NR-14 is implemented and technically validated, pending owner
-acceptance. NR-15 through NR-18 are owner-approved and implementation-ready but
+**Status:** Active. NR-01 through NR-14 were owner-accepted and archived on
+2026-08-27. NR-15 is implemented and technically validated, pending owner
+acceptance. NR-16 through NR-18 are owner-approved and implementation-ready but
 remain inactive until separately activated after their prerequisites are
 satisfied.
 
@@ -123,8 +123,8 @@ stop and split the affected draft before authorizing additional scope.
 | 11    | [NR-11 — Define DYSON's chosen Solar Sail route](../archive/nr-11-define-dyson-chosen-solar-sail-route.md)                                     | Data or research change | NR-03, NR-10                 | Owner-accepted — archived              |
 | 12    | [NR-12 — Create one Receiver and Antimatter bridge](../archive/nr-12-create-one-receiver-and-antimatter-bridge.md)                             | Structural change       | NR-03, NR-11                 | Owner-accepted — archived              |
 | 13    | [NR-13 — Refocus PHOTON on stable WHITE readiness](../archive/nr-13-refocus-photon-on-stable-white-readiness.md)                               | Data or research change | NR-12                        | Owner-accepted — archived              |
-| 14    | [NR-14 — Refine WARP expedition framing and route support](next-roadmap/nr-14-refine-warp-expedition-framing-and-route-support.md)             | Editorial refinement    | NR-01                        | Implemented — pending owner acceptance |
-| 15    | [NR-15 — Add one canonical Production Statistics walkthrough](next-roadmap/nr-15-add-one-canonical-production-statistics-walkthrough.md)       | Editorial refinement    | NR-05, NR-07                 | Owner-approved — inactive              |
+| 14    | [NR-14 — Refine WARP expedition framing and route support](../archive/nr-14-refine-warp-expedition-framing-and-route-support.md)               | Editorial refinement    | NR-01                        | Owner-accepted — archived              |
+| 15    | [NR-15 — Add one canonical Production Statistics walkthrough](next-roadmap/nr-15-add-one-canonical-production-statistics-walkthrough.md)       | Editorial refinement    | NR-05, NR-07                 | Implemented — pending owner acceptance |
 | 16    | [NR-16 — Teach the LOGISTICS route model](next-roadmap/nr-16-teach-the-logistics-route-model.md)                                               | Editorial refinement    | NR-01                        | Owner-approved — inactive              |
 | 17    | [NR-17 — Repair troubleshooting and add the final conclusion](next-roadmap/nr-17-repair-troubleshooting-and-add-the-final-conclusion.md)       | Editorial refinement    | NR-03, NR-13, NR-15, NR-16   | Owner-approved — inactive              |
 | 18    | [NR-18 — Synchronize the final One-Screen Default Checklist](next-roadmap/nr-18-synchronize-the-final-one-screen-default-checklist.md)         | Structural change       | NR-01 through NR-17 accepted | Owner-approved — inactive              |

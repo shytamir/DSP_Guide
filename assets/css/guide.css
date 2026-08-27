@@ -1745,6 +1745,13 @@ details.build-card[open] > summary {
   background: rgba(var(--phase-rgb), 0.065);
   overflow: hidden;
 }
+.statistics-walkthrough {
+  --phase-rgb: 255, 209, 102;
+  scroll-margin-top: 20px;
+}
+.statistics-walkthrough:target {
+  box-shadow: 0 0 0 2px rgba(var(--phase-rgb), 0.24);
+}
 .quick-process > summary {
   cursor: pointer;
   list-style: none;

@@ -1,6 +1,6 @@
 # NR-14 — Refine WARP expedition framing and route support
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
+**Status:** Owner-accepted and archived on 2026-08-27.
 
 **Dependency group:** D — Optional paths and support
 **Assessed workload:** Medium
@@ -115,4 +115,4 @@ desktop Chromium.
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.
