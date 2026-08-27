@@ -33,9 +33,11 @@ changing a management record.
 ## Current planning state
 
 - [`ROADMAP.md`](ROADMAP.md) is the concise current-status record.
-- [`NEXT-ROADMAP.md`](NEXT-ROADMAP.md) is the owner-approved plan for future
-  guide work. Implementation remains paused pending separate owner
-  authorization of the next story.
+- [`NEXT-ROADMAP.md`](NEXT-ROADMAP.md) is the sequence and dependency index for
+  the owner-approved plan. Its bounded drafts live under
+  [`next-roadmap/`](next-roadmap/). The decomposition awaits owner review, and
+  implementation remains paused pending separate authorization of one eligible
+  story.
 - Version 2.3 is the current published minor line. Its completed release record
   is preserved in
   [`../archive/version-2.3-navigation-and-progressive-disclosure-release.md`](../archive/version-2.3-navigation-and-progressive-disclosure-release.md).
@@ -46,7 +48,7 @@ changing a management record.
   [`yellow-purple-problem-resolver-future-work.md`](yellow-purple-problem-resolver-future-work.md)
   preserve named future-work concepts outside the approved roadmap. Neither
   authorizes implementation.
-- The superseded one-screen checklist correction is archived. WIP-16 in the
+- The superseded one-screen checklist correction is archived. NR-18 in the
   approved roadmap owns the future final-checklist synchronization.
 
 ## Historical records

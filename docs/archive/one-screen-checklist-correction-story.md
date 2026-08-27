@@ -3,8 +3,8 @@
 **Status:** Archived superseded decision history. It is not pending
 implementation and must not be reactivated as a separate story.
 
-WIP-16 in
-[`NEXT-ROADMAP.md`](../management/NEXT-ROADMAP.md)
+NR-18 in the
+[`next-roadmap story set`](../management/NEXT-ROADMAP.md)
 supersedes this bounded correction with a comprehensive final-checklist
 synchronization. That future work removes the obsolete exact DYSON figures
 without replacing them with new reference figures because production-planning

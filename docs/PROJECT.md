@@ -113,8 +113,23 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 - `scripts/lib/markup-contracts.mjs` is the shared structural contract used by
   materialization, card validation, and deployment validation.
 
-Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP that
-contains only the deployable static website.
+## Development validation and evidence decisions
+
+**Owner decision — 2026-08-27:** pushes to `main` run the GitHub Pages workflow
+and create a versioned ZIP containing only the deployable static website. The
+Pages site is a development deployment for reliable browser validation; it is
+not the production website, and a push does not constitute production
+publication.
+
+Use the deployed Pages site with Chromium when presentation, navigation,
+interaction, persistence, or responsive behavior requires real deployed
+evidence. Structural validation, deployed browser review, and owner acceptance
+remain separate gates; none implies either of the others.
+
+The archived Production Statistics runtime investigation retains its textual
+evidence after removal of dead local screenshot embeds. It is historical
+traceability rather than a maintained current-version contract, and no further
+versioning of that record is required.
 
 ## Current management status
 
@@ -169,7 +184,7 @@ describes the approved next plan and paused implementation state.
   condensation were owner-accepted as Stories 9–12.
 - **Standing references — not pending work:** the no-mobile-polish decision is
   preserved with the archived roadmap. The earlier one-screen checklist
-  correction is superseded and archived; WIP-16 in the approved next roadmap
+  correction is superseded and archived; NR-18 in the approved next roadmap
   owns final-checklist synchronization after preceding changes are accepted.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived

@@ -1,11 +1,18 @@
-Established against the currently installed build: Dyson Sphere Program Early Access `0.10.34.28529`, Steam build ID `23109513`, using Unity `2022.3.62f3c1`. The game was observed live, then closed. The repository remains clean on `main`; no repository, mod, or installed-game files were changed, committed, or pushed.
+# Production Statistics Runtime Evidence
+
+**Status:** Archived evidence trace. Retained for factual provenance; it is not
+an active requirement or maintained current-version contract.
+
+Established against Dyson Sphere Program Early Access `0.10.34.28529`, Steam
+build ID `23109513`, using Unity `2022.3.62f3c1`. The game was observed live,
+then closed.
 
 ## Evidence basis
 
 Primary evidence was:
 
-- Live observation of the installed game and its current UI.
-- Current English localization in [base.txt](<C:/Program Files (x86)/Steam/steamapps/common/Dyson Sphere Program/Locale/1033/base.txt:1864>) and [keys.txt](<C:/Program Files (x86)/Steam/steamapps/common/Dyson Sphere Program/Locale/1033/keys.txt:113>).
+- Live observation of the installed game and its observed UI.
+- English localization from the observed build in [base.txt](<C:/Program Files (x86)/Steam/steamapps/common/Dyson Sphere Program/Locale/1033/base.txt:1864>) and [keys.txt](<C:/Program Files (x86)/Steam/steamapps/common/Dyson Sphere Program/Locale/1033/keys.txt:113>).
 - Read-only decompilation of [Assembly-CSharp.dll](<C:/Program Files (x86)/Steam/steamapps/common/Dyson Sphere Program/DSPGAME_Data/Managed/Assembly-CSharp.dll>), principally:
   - `UIStatisticsWindow`
   - `UIProductEntry`
@@ -14,7 +21,8 @@ Primary evidence was:
   - `UIReferenceSpeedTip`
 - Installed-version records in [Versions.txt](<C:/Program Files (x86)/Steam/steamapps/common/Dyson Sphere Program/Updates/Versions.txt:148>) and [appmanifest_1366540.acf](<C:/Program Files (x86)/Steam/steamapps/appmanifest_1366540.acf>).
 
-Official patch notes were unnecessary because the current runtime and localization directly establish the behavior.
+Official patch notes were unnecessary because the observed runtime and
+localization directly established the behavior.
 
 ## Opening the panel
 
@@ -226,40 +234,6 @@ Production/consumption and import/export describe different events:
 - `Import Storage` and `Export Storage` are current ILS inventories assigned to Remote Demand/Supply; they are not traffic rates.
 - A planet can therefore have zero local production but substantial consumption supported by imports.
 - Conversely, production can exceed local consumption because goods are being exported or accumulated in storage.
-
-## Screenshot evidence
-
-Complete Production panel and controls:
-
-![Complete Production Statistics panel](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-production-panel-complete.jpg)
-
-Location and interval menus:
-
-![Location scope menu](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-location-scope-menu.jpg)
-
-![Time interval menu](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-time-interval-menu.jpg)
-
-Electromagnetic Matrix in historical 10-minute mode, with graph-period hover:
-
-![Electromagnetic Matrix historical row](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-blue-cube-historical-10-minutes-clean.jpg)
-
-The same item with continuous real-time refresh active while `10 minutes` remains selected:
-
-![Electromagnetic Matrix with real-time refresh](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-blue-cube-realtime-with-10-minute-selected-active.jpg)
-
-Reference Rate tooltips:
-
-![Production Reference Rate tooltip](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-production-reference-rate-tooltip-visible.jpg)
-
-![Consumption Reference Rate tooltip](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-consumption-reference-rate-tooltip.jpg)
-
-Storage, refresh, and graph tooltips:
-
-![Storage breakdown tooltip](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-storage-tooltip.jpg)
-
-![Refresh and real-time instruction tooltip](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-refresh-realtime-tooltip.jpg)
-
-![Graph hover tooltip](C:/Users/Usuario/.codex/visualizations/2026/08/17/01a01092-4e82-7971-8082-a516ee5ed016/dsp-graph-hover-tooltip.jpg)
 
 ## Compact factual inventory
 
