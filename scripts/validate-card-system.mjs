@@ -555,9 +555,6 @@ if (!sphereMarkup) {
   }
 
   const requiredTechnologyEdges = new Map([
-    ["1502", ["1501"]],
-    ["1503", ["1502"]],
-    ["1521", ["1503"]],
     ["1522", ["1521"]],
     ["1523", ["1522"]],
   ]);
@@ -575,39 +572,6 @@ if (!sphereMarkup) {
       }
     }
   }
-
-  const colliderRecipe = authoritativeRecipes.find((recipe) =>
-    recipe.outputs.some(({ item_id: itemId }) => itemId === 2310),
-  );
-  const colliderInputIds = new Set(
-    (colliderRecipe?.inputs || []).map(({ item_id: itemId }) => itemId),
-  );
-  for (const requiredMaterialId of [1125, 1205]) {
-    if (!colliderInputIds.has(requiredMaterialId)) {
-      errors.push(
-        `Miniature Particle Collider material proof is missing item ${requiredMaterialId}`,
-      );
-    }
-  }
-  const materialProofUnlocks = new Map([
-    [1125, 1521],
-    [1205, 1711],
-  ]);
-  for (const [materialId, technologyId] of materialProofUnlocks) {
-    const materialRecipe = authoritativeRecipes.find((recipe) =>
-      recipe.outputs.some(({ item_id: itemId }) => itemId === materialId),
-    );
-    const unlockingTechnologyIds = new Set(
-      (materialRecipe?.unlocking_technologies || []).map(
-        ({ tech_id: techId }) => techId,
-      ),
-    );
-    if (!unlockingTechnologyIds.has(technologyId)) {
-      errors.push(
-        `Material ${materialId} is not authoritatively unlocked by technology ${technologyId}`,
-      );
-    }
-  }
 }
 const dysonSection = findElementsByClass(html, "phase-section-dyson")[0];
 const dysonSphereLinks = dysonSection?.inner.match(/href="#sphere"/g) || [];
@@ -619,6 +583,180 @@ if (dysonSphereLinks.length !== 1) {
 const greenSection = findElementsByClass(html, "phase-section-green")[0];
 if (greenSection?.inner.includes('href="#sphere"')) {
   errors.push("GREEN bypasses DYSON with a coequal SPHERE handoff");
+}
+const greenSupportingResearch = findElementsByClass(
+  greenSection?.inner || "",
+  "green-supporting-research",
+)[0];
+const greenSupportingResearchIds = [
+  ...(greenSupportingResearch?.inner || "").matchAll(
+    /class="[^"]*\btech-ref\b[^"]*"[^>]*data-tech-id="(\d+)"/g,
+  ),
+].map((match) => match[1]);
+if (
+  JSON.stringify(greenSupportingResearchIds) !==
+  JSON.stringify(["1142", "1134", "1416", "1143", "1704"])
+) {
+  errors.push(
+    `GREEN supporting research order is invalid: ${greenSupportingResearchIds.join(", ")}`,
+  );
+}
+
+const expectedGreenPrerequisites = new Map([
+  ["1142", { required: ["1124"], implicit: [] }],
+  ["1134", { required: ["1412", "1102"], implicit: [] }],
+  ["1416", { required: ["1134"], implicit: ["1414"] }],
+  ["1143", { required: ["1142"], implicit: [] }],
+  ["1704", { required: ["1143", "1703"], implicit: [] }],
+  ["1502", { required: ["1501"], implicit: [] }],
+  ["1503", { required: ["1502"], implicit: ["1711"] }],
+  ["1521", { required: ["1503"], implicit: ["1132"] }],
+]);
+for (const [technologyId, expected] of expectedGreenPrerequisites) {
+  const technology = technologyReference[technologyId] || {};
+  const requiredIds = (technology.required || []).map(({ id }) => id);
+  const implicitIds = (technology.implicitRequired || []).map(({ id }) => id);
+  if (!sameIds(requiredIds, expected.required)) {
+    errors.push(`GREEN technology ${technologyId} has invalid required edges`);
+  }
+  if (!sameIds(implicitIds, expected.implicit)) {
+    errors.push(`GREEN technology ${technologyId} has invalid implicit edges`);
+  }
+}
+
+const colliderRecipe = authoritativeRecipes.find((recipe) =>
+  recipe.outputs.some(({ item_id: itemId }) => itemId === 2310),
+);
+const colliderInputIds = new Set(
+  (colliderRecipe?.inputs || []).map(({ item_id: itemId }) => itemId),
+);
+for (const requiredMaterialId of [1125, 1205]) {
+  if (!colliderInputIds.has(requiredMaterialId)) {
+    errors.push(
+      `Miniature Particle Collider material proof is missing item ${requiredMaterialId}`,
+    );
+  }
+}
+const colliderDeuteriumRecipe = authoritativeRecipes.find(
+  (recipe) =>
+    recipe.recipe_type === "Particle" &&
+    recipe.inputs.some(({ item_id: itemId }) => itemId === 1120) &&
+    recipe.outputs.some(({ item_id: itemId }) => itemId === 1121) &&
+    recipe.unlocking_technologies.some(
+      ({ tech_id: technologyId }) => technologyId === 1142,
+    ),
+);
+if (!colliderDeuteriumRecipe) {
+  errors.push("GREEN Collider route does not prove Hydrogen to Deuterium");
+}
+const strangeMatterRecipe = authoritativeRecipes.find(
+  (recipe) =>
+    recipe.recipe_type === "Particle" &&
+    recipe.outputs.some(({ item_id: itemId }) => itemId === 1127) &&
+    recipe.unlocking_technologies.some(
+      ({ tech_id: technologyId }) => technologyId === 1143,
+    ),
+);
+if (!strangeMatterRecipe) {
+  errors.push("GREEN Strange Matter does not prove Collider production");
+}
+const fusionUnlockOutputs = new Set(
+  authoritativeRecipes
+    .filter((recipe) =>
+      recipe.unlocking_technologies.some(
+        ({ tech_id: technologyId }) => technologyId === 1416,
+      ),
+    )
+    .flatMap((recipe) => recipe.outputs.map(({ item_id: itemId }) => itemId)),
+);
+for (const fusionOutputId of [1802, 2211]) {
+  if (!fusionUnlockOutputs.has(fusionOutputId)) {
+    errors.push(
+      `Mini Fusion Power Generation does not unlock item ${fusionOutputId}`,
+    );
+  }
+}
+const materialProofUnlocks = new Map([
+  [1125, 1521],
+  [1205, 1711],
+]);
+for (const [materialId, technologyId] of materialProofUnlocks) {
+  const materialRecipe = authoritativeRecipes.find((recipe) =>
+    recipe.outputs.some(({ item_id: itemId }) => itemId === materialId),
+  );
+  const unlockingTechnologyIds = new Set(
+    (materialRecipe?.unlocking_technologies || []).map(
+      ({ tech_id: techId }) => techId,
+    ),
+  );
+  if (!unlockingTechnologyIds.has(technologyId)) {
+    errors.push(
+      `Material ${materialId} is not authoritatively unlocked by technology ${technologyId}`,
+    );
+  }
+}
+
+const greenText = stripMarkup(greenSection?.inner || "");
+for (const requiredGreenText of [
+  "Deuterium Fractionation is only a prerequisite for fusion here; this guide still makes Deuterium with Colliders.",
+  "This guide chooses Miniature Particle Colliders because they form a compact, deterministic, seed-independent line and use the same machine type required for Strange Matter.",
+  "This is the simplest dependable first-completion route, not the most material- or power-efficient route.",
+  "Begin buffering Deuterium and Deuteron Fuel Rods in GREEN even if the existing grid lets you delay actual Fusion Plant deployment.",
+  "This material chain is part of GREEN's proof, not optional future preparation.",
+  "DYSON and SPHERE inherit that completed research; neither phase starts it again.",
+]) {
+  if (!greenText.includes(requiredGreenText)) {
+    errors.push(`GREEN research ownership is missing: ${requiredGreenText}`);
+  }
+}
+for (const staleGreenText of [
+  "Choose a Deuterium supply",
+  "If you choose Fractionators:",
+  "Pick the one that fits the factory you built",
+]) {
+  if (greenText.includes(staleGreenText)) {
+    errors.push(
+      `GREEN still contains coequal Deuterium routes: ${staleGreenText}`,
+    );
+  }
+}
+
+const inheritedDysonResearch = findElementsByClass(
+  dysonSection?.inner || "",
+  "dyson-inherited-research",
+);
+const ownedDysonResearch = findElementsByClass(
+  dysonSection?.inner || "",
+  "dyson-owned-research",
+);
+for (const block of inheritedDysonResearch) {
+  const ids = [...block.inner.matchAll(/data-tech-id="(\d+)"/g)].map(
+    (match) => match[1],
+  );
+  if (
+    JSON.stringify(ids) !== JSON.stringify(["1501", "1502", "1711", "1503"])
+  ) {
+    errors.push(`DYSON inherited research is invalid: ${ids.join(", ")}`);
+  }
+}
+for (const block of ownedDysonResearch) {
+  const ids = [...block.inner.matchAll(/data-tech-id="(\d+)"/g)].map(
+    (match) => match[1],
+  );
+  if (JSON.stringify(ids) !== JSON.stringify(["1504"])) {
+    errors.push(`DYSON-owned research is invalid: ${ids.join(", ")}`);
+  }
+}
+if (inheritedDysonResearch.length !== 2 || ownedDysonResearch.length !== 2) {
+  errors.push(
+    "DYSON research ownership is not mirrored in dashboard and prose",
+  );
+}
+const dysonText = stripMarkup(dysonSection?.inner || "");
+if (!dysonText.includes("DYSON does not research it again.")) {
+  errors.push(
+    "DYSON does not acknowledge GREEN's completed solar-orbit branch",
+  );
 }
 const blueSection = findElementsByClass(html, "phase-section-blue")[0];
 const blueText = stripMarkup(blueSection?.inner || "");

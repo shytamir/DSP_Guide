@@ -1,8 +1,8 @@
 # Active Roadmap — Story Index
 
-**Status:** Active. NR-01 through NR-07 were owner-accepted and archived on
-2026-08-27. NR-08 is implemented and technically validated, pending owner
-acceptance. NR-09 through NR-18 are owner-approved and implementation-ready but
+**Status:** Active. NR-01 through NR-08 were owner-accepted and archived on
+2026-08-27. NR-09 is implemented and technically validated, pending owner
+acceptance. NR-10 through NR-18 are owner-approved and implementation-ready but
 remain inactive until separately activated after their prerequisites are
 satisfied.
 
@@ -117,8 +117,8 @@ stop and split the affected draft before authorizing additional scope.
 | 5     | [NR-05 — Establish compact Quick processes for early controls](../archive/nr-05-establish-compact-quick-processes-for-early-controls.md)       | Structural change       | NR-04                        | Owner-accepted — archived              |
 | 6     | [NR-06 — Assign ILS research chronologically across three stages](../archive/nr-06-assign-ils-research-chronologically-across-three-stages.md) | Data or research change | NR-05                        | Owner-accepted — archived              |
 | 7     | [NR-07 — Replace YELLOW research with bounded buildout guidance](../archive/nr-07-replace-yellow-research-with-bounded-buildout-guidance.md)   | Data or research change | NR-06                        | Owner-accepted — archived              |
-| 8     | [NR-08 — Assign PURPLE-owned research and bounded upgrades](next-roadmap/nr-08-assign-purple-owned-research-and-bounded-upgrades.md)           | Data or research change | NR-07                        | Implemented — pending owner acceptance |
-| 9     | [NR-09 — Establish GREEN research and material-proof ownership](next-roadmap/nr-09-establish-green-research-and-material-proof-ownership.md)   | Data or research change | NR-03, NR-08                 | Owner-approved — inactive              |
+| 8     | [NR-08 — Assign PURPLE-owned research and bounded upgrades](../archive/nr-08-assign-purple-owned-research-and-bounded-upgrades.md)             | Data or research change | NR-07                        | Owner-accepted — archived              |
+| 9     | [NR-09 — Establish GREEN research and material-proof ownership](next-roadmap/nr-09-establish-green-research-and-material-proof-ownership.md)   | Data or research change | NR-03, NR-08                 | Implemented — pending owner acceptance |
 | 10    | [NR-10 — Teach GREEN's Deuterium, fuel, and power loop](next-roadmap/nr-10-teach-green-deuterium-fuel-and-power-loop.md)                       | Editorial refinement    | NR-09                        | Owner-approved — inactive              |
 | 11    | [NR-11 — Define DYSON's chosen Solar Sail route](next-roadmap/nr-11-define-dyson-chosen-solar-sail-route.md)                                   | Data or research change | NR-03, NR-10                 | Owner-approved — inactive              |
 | 12    | [NR-12 — Create one Receiver and Antimatter bridge](next-roadmap/nr-12-create-one-receiver-and-antimatter-bridge.md)                           | Structural change       | NR-03, NR-11                 | Owner-approved — inactive              |

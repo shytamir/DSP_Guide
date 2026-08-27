@@ -37,6 +37,7 @@
   "1413": { "unlocks": [{ "label": "TitaniumIngot", "itemId": 1106 }] },
   "1414": { "unlocks": [{ "label": "TitaniumAlloy", "itemId": 1107 }] },
   "1415": { "unlocks": [{ "label": "Foundation", "itemId": 1131 }] },
+  "1416": { "unlocks": [{ "label": "FusionPlant", "itemId": 2211 }, { "label": "DeuteronFuelRod", "itemId": 1802 }] },
   "1501": { "unlocks": [{ "label": "SolarPanel", "itemId": 2205 }] },
   "1502": { "unlocks": [{ "label": "PhotonCombiner", "itemId": 1404 }] },
   "1503": { "unlocks": [{ "label": "SolarSail", "itemId": 1501 }, { "label": "Ejector", "itemId": 2311 }] },

@@ -11916,6 +11916,27 @@
             Gravity Matrix</button
           >.
         </p>
+        <p class="green-supporting-research">
+          After
+          <button type="button" class="tech-ref" data-tech-id="1142">
+            Miniature Particle Collider</button
+          >, research
+          <button type="button" class="tech-ref" data-tech-id="1134">
+            Deuterium Fractionation
+          </button>
+          →
+          <button type="button" class="tech-ref" data-tech-id="1416">
+            Mini Fusion Power Generation</button
+          >. Deuterium Fractionation is only a prerequisite for fusion here;
+          this guide still makes Deuterium with Colliders. Then continue through
+          <button type="button" class="tech-ref" data-tech-id="1143">
+            Strange Matter
+          </button>
+          →
+          <button type="button" class="tech-ref" data-tech-id="1704">
+            Gravitational Wave Refraction</button
+          >.
+        </p>
         <p>
           Do the Quantum branch first and start storing
           <span class="proto-ref" data-item-id="1305">Quantum Chips</span> as
@@ -11924,16 +11945,34 @@
           already accumulating instead of waiting for every prerequisite at
           once.
         </p>
-        <p>
-          The Frame branch unlocks
-          <span class="proto-ref" data-item-id="1125">Frame Material</span>, a
-          recipe component for the
+        <p class="green-material-proof">
+          This material chain is part of GREEN's proof, not optional future
+          preparation. Producing
+          <span class="proto-ref" data-item-id="1127">Strange Matter</span>
+          requires a
           <span class="proto-ref" data-item-id="2310"
             >Miniature Particle Collider</span
-          >—the new processing facility unlocked by the Gravity branch's first
-          technology. Those Colliders carry the Gravity route through
-          <span class="proto-ref" data-item-id="1127">Strange Matter</span> to
-          Gravitational Wave Refraction.
+          >. Building that Collider requires
+          <span class="proto-ref" data-item-id="1125">Frame Material</span> and
+          <span class="proto-ref" data-item-id="1205">Super Magnetic Rings</span
+          >, proving
+          <button type="button" class="tech-ref" data-tech-id="1501">
+            Solar Collection</button
+          >,
+          <button type="button" class="tech-ref" data-tech-id="1502">
+            Photon Frequency Conversion</button
+          >,
+          <button type="button" class="tech-ref" data-tech-id="1711">
+            Super Magnetic Field Generator</button
+          >,
+          <button type="button" class="tech-ref" data-tech-id="1503">
+            Solar Sail Orbit System</button
+          >, and
+          <button type="button" class="tech-ref" data-tech-id="1521">
+            High-Strength Lightweight Structure
+          </button>
+          by the end of GREEN. DYSON and SPHERE inherit that completed research;
+          neither phase starts it again.
         </p>
         <p>
           By the time
@@ -11943,62 +11982,32 @@
           Gravitational Wave Refraction are complete, then bring the two stored
           products together at science.
         </p>
-        <div class="icon-free">
-          <h3>Choose a Deuterium supply</h3>
-          <table class="phase-dashboard">
-            <thead>
-              <tr>
-                <th>Route</th>
-                <th>Why choose it</th>
-                <th>Tradeoff</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Fractionators</strong></td>
-                <td>
-                  Material- and power-efficient conversion that scales well once
-                  you are comfortable building a circulating Hydrogen belt.
-                </td>
-                <td>
-                  The belt loop and its circulation need more layout attention
-                  than one compact machine.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Miniature Particle Colliders</strong></td>
-                <td>
-                  The guide's compact baseline: feed Hydrogen, receive
-                  Deuterium, and keep the branch visually simple.
-                </td>
-                <td>
-                  It spends considerably more power and Hydrogen for that
-                  simplicity.
-                </td>
-              </tr>
-              <tr>
-                <td><strong>Orbital Collectors</strong></td>
-                <td>
-                  A hands-off external supply once Gas Giant Exploitation and a
-                  useful giant are available.
-                </td>
-                <td>
-                  It is a later infrastructure detour whose yield depends on the
-                  giant you actually have.
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="icon-free green-deuterium-route">
+          <h3>Use Colliders for the first Deuterium supply</h3>
           <p>
-            <strong>If you choose Fractionators:</strong> Give the circulating
-            return belt priority, let fresh Hydrogen fill only the gaps, keep
-            the Deuterium output clear, and use Pile Sorters to restore full
-            stacks as the loop develops holes.
+            This guide chooses Miniature Particle Colliders because they form a
+            compact, deterministic, seed-independent line and use the same
+            machine type required for Strange Matter. This is the simplest
+            dependable first-completion route, not the most material- or
+            power-efficient route.
           </p>
           <p>
-            These are alternatives, not a three-step upgrade path. Pick the one
-            that fits the factory you built, and change only when Deuterium is
-            the visible constraint.
+            The tradeoff is heavy
+            <span class="proto-ref" data-item-id="1120">Hydrogen</span>
+            consumption, competition with
+            <span class="proto-ref" data-item-id="1126">Casimir Crystal</span>
+            production, and a large additional power load. Begin buffering
+            <span class="proto-ref" data-item-id="1121">Deuterium</span> and
+            <span class="proto-ref" data-item-id="1802"
+              >Deuteron Fuel Rods</span
+            >
+            in GREEN even if the existing grid lets you delay actual Fusion
+            Plant deployment.
+          </p>
+          <p>
+            Fractionators can convert Hydrogen more efficiently, and Orbital
+            Collectors can become a useful later supply. They are alternatives,
+            not coequal routes taught by this guide.
           </p>
         </div>
         <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
@@ -13320,69 +13329,73 @@
             <tr>
               <td><strong>Research first</strong></td>
               <td>
-                <button type="button" class="tech-ref" data-tech-id="1501">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1501.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Solar Collection
-                </button>
-                →
-                <button type="button" class="tech-ref" data-tech-id="1502">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1502.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Photon Frequency Conversion
-                </button>
-                →
-                <button type="button" class="tech-ref" data-tech-id="1711">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1711.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Super Magnetic Field Generator
-                </button>
-                →
-                <button type="button" class="tech-ref" data-tech-id="1503">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1503.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Solar Sail Orbit System
-                </button>
-                →
-                <button
-                  type="button"
-                  class="tech-ref tech-milestone"
-                  data-tech-id="1504"
-                >
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1504.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Ray Receiver</button
-                ><br />Recommended before launch scale-up:
+                <span class="dyson-inherited-research"
+                  ><strong>Completed in GREEN:</strong>
+                  <button type="button" class="tech-ref" data-tech-id="1501">
+                    <img
+                      class="proto-icon proto-icon-tech"
+                      src="assets/DSP_exported assets/Texture2D/Tech/1501.png"
+                      width="20"
+                      height="20"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                    />Solar Collection
+                  </button>
+                  →
+                  <button type="button" class="tech-ref" data-tech-id="1502">
+                    <img
+                      class="proto-icon proto-icon-tech"
+                      src="assets/DSP_exported assets/Texture2D/Tech/1502.png"
+                      width="20"
+                      height="20"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                    />Photon Frequency Conversion
+                  </button>
+                  →
+                  <button type="button" class="tech-ref" data-tech-id="1711">
+                    <img
+                      class="proto-icon proto-icon-tech"
+                      src="assets/DSP_exported assets/Texture2D/Tech/1711.png"
+                      width="20"
+                      height="20"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                    />Super Magnetic Field Generator
+                  </button>
+                  →
+                  <button type="button" class="tech-ref" data-tech-id="1503">
+                    <img
+                      class="proto-icon proto-icon-tech"
+                      src="assets/DSP_exported assets/Texture2D/Tech/1503.png"
+                      width="20"
+                      height="20"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                    />Solar Sail Orbit System
+                  </button></span
+                >.<br /><span class="dyson-owned-research"
+                  ><strong>Research for DYSON:</strong>
+                  <button
+                    type="button"
+                    class="tech-ref tech-milestone"
+                    data-tech-id="1504"
+                  >
+                    <img
+                      class="proto-icon proto-icon-tech"
+                      src="assets/DSP_exported assets/Texture2D/Tech/1504.png"
+                      width="20"
+                      height="20"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                    />Ray Receiver
+                  </button></span
+                >.<br />Recommended before launch scale-up:
                 <button type="button" class="tech-ref" data-tech-id="3101">
                   <img
                     class="proto-icon proto-icon-tech"
@@ -13451,32 +13464,34 @@
           advances underneath it.
         </p>
         <h2>Research first</h2>
-        <p>
-          <strong
-            ><button type="button" class="tech-ref" data-tech-id="1501">
-              Solar Collection
-            </button>
-            →
-            <button type="button" class="tech-ref" data-tech-id="1502">
-              Photon Frequency Conversion
-            </button>
-            →
-            <button type="button" class="tech-ref" data-tech-id="1711">
-              Super Magnetic Field Generator
-            </button>
-            →
-            <button type="button" class="tech-ref" data-tech-id="1503">
-              Solar Sail Orbit System
-            </button>
-            →
-            <button
-              type="button"
-              class="tech-ref tech-milestone"
-              data-tech-id="1504"
-            >
-              Ray Receiver
-            </button></strong
+        <p class="dyson-inherited-research">
+          <strong>Completed in GREEN:</strong>
+          <button type="button" class="tech-ref" data-tech-id="1501">
+            Solar Collection
+          </button>
+          →
+          <button type="button" class="tech-ref" data-tech-id="1502">
+            Photon Frequency Conversion
+          </button>
+          →
+          <button type="button" class="tech-ref" data-tech-id="1711">
+            Super Magnetic Field Generator
+          </button>
+          →
+          <button type="button" class="tech-ref" data-tech-id="1503">
+            Solar Sail Orbit System</button
+          >. GREEN proved this solar-orbit branch while building the Collider;
+          DYSON does not research it again.
+        </p>
+        <p class="dyson-owned-research">
+          <strong>Research for DYSON:</strong>
+          <button
+            type="button"
+            class="tech-ref tech-milestone"
+            data-tech-id="1504"
           >
+            Ray Receiver</button
+          >.
         </p>
         <p>
           Once the orbit system is available,

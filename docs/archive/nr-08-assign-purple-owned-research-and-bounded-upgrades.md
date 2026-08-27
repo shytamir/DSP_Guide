@@ -1,6 +1,6 @@
 # NR-08 — Assign PURPLE-owned research and bounded upgrades
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
+**Historical status:** Owner-accepted and archived on 2026-08-27.
 
 **Dependency group:** B — Early and mid-route guidance
 **Assessed workload:** Medium
@@ -154,4 +154,4 @@ set rather than relying on a rendering sample.
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.
