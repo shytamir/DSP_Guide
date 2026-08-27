@@ -3,9 +3,9 @@
 **Status:** Version 2.3 is the current published minor line. Its twelve-story
 roadmap and resulting release were completed, owner-accepted, and archived on
 2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
-workload. NR-01 and NR-02 were owner-accepted and archived on 2026-08-27.
-NR-03 through NR-18 are owner-approved. NR-03 is implemented and technically
-validated, pending owner acceptance; NR-04 through NR-18 remain inactive until
+workload. NR-01 through NR-03 were owner-accepted and archived on 2026-08-27.
+NR-04 through NR-18 are owner-approved. NR-04 is implemented and technically
+validated, pending owner acceptance; NR-05 through NR-18 remain inactive until
 separately activated after their prerequisites are satisfied.
 
 ## Purpose
@@ -142,10 +142,10 @@ that story.
 ## Current management status
 
 The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
-sequence, dependencies, and lifecycle status. NR-01 and NR-02, the completed
-SPHERE structure and editorial stories, were owner-accepted and archived on
-2026-08-27. NR-03 is implemented and technically validated, pending owner
-acceptance. NR-04 through NR-18 are approved and implementation-ready planning
+sequence, dependencies, and lifecycle status. NR-01 through NR-03, the
+completed SPHERE foundation group, were owner-accepted and archived on
+2026-08-27. NR-04 is implemented and technically validated, pending owner
+acceptance. NR-05 through NR-18 are approved and implementation-ready planning
 records, but remain inactive until separately activated after their
 prerequisites are satisfied. Story approval, activation, technical validation,
 owner acceptance, and release authorization remain separate decisions.

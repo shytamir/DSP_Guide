@@ -1,7 +1,7 @@
 # NR-03 — Limit SPHERE research to route-specific ownership
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner
-acceptance.
+**Status:** Completed and owner-accepted on 2026-08-27. Archived historical
+record; this file no longer defines active work.
 
 **Dependency group:** A — Route foundation
 **Assessed workload:** Medium
@@ -22,7 +22,8 @@ before the first shell.
 
 ## Intended outcome
 
-Derive and present only SPHERE-specific research after accounting for technology and material proof established by GREEN.
+NR-03 derived and presented only SPHERE-specific research after accounting for
+technology and material proof established by GREEN.
 
 ## In-scope surfaces
 
@@ -50,12 +51,11 @@ Derive and present only SPHERE-specific research after accounting for technology
 - Do not add unrelated Sphere technologies or broaden the optional path.
 - Do not prescribe a second or higher Dyson Sphere Stress System rank.
 
-## Owner gates
+## Gates satisfied
 
-- The owner approves this bounded story draft before implementation begins.
-- Technical validation establishes consistency, not reader acceptance.
-- The owner separately accepts or requests refinement after reviewing the
-  reader-facing result.
+- The owner approved the bounded story before implementation began.
+- Technical validation established contract and presentation consistency.
+- The owner accepted the deployed reader-facing result on 2026-08-27.
 
 ## Acceptance evidence
 
@@ -69,10 +69,11 @@ Derive and present only SPHERE-specific research after accounting for technology
 
 **Tier:** 1 — Contract
 
-Validate the affected technology relationships and tooltip bindings against retained runtime-derived data. Record any unresolved factual gap instead of guessing.
+Technical validation checked the affected technology relationships and tooltip
+bindings against retained runtime-derived data.
 
 ## Release
 
-Production release, version changes, and production publication are not
-included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+Production release, version changes, and production publication were not
+included. Development deployment for validation followed
+[`docs/PROJECT.md`](../PROJECT.md) and did not imply owner acceptance.

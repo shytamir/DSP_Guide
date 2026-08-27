@@ -5,6 +5,7 @@ import {
   findElementsByClass,
   getAttribute,
   isNativeComponent,
+  stripMarkup,
 } from "./lib/markup-contracts.mjs";
 
 const html = fs.readFileSync("index.html", "utf8");
@@ -18,6 +19,22 @@ const technologyReference = JSON.parse(
   fs.readFileSync("assets/data/tech-reference.json", "utf8"),
 );
 const errors = [];
+const guideText = stripMarkup(html);
+for (const requiredOpeningText of [
+  "The route above is the simplest way through the game, but it isn't the only useful project this guide supports.",
+  "The default route uses a Solar Sail swarm to reach photon production and white science.",
+  "Permanent Sphere construction is an optional path you can open when you want a lasting structure; it is never required to move forward.",
+  "If you're playing with Dark Fog, RED shows you a simple way to defend your first planet and clear a Dark Fog base.",
+  "You don't need to understand or choose them now.",
+  "Jump to where you are in the route.",
+  "Scan the short summary.",
+  "Open a build card only when you want to see how a useful product comes together.",
+  "You aren't expected to remember how every factory line fits together.",
+]) {
+  if (!guideText.includes(requiredOpeningText)) {
+    errors.push(`Approved opening guidance is missing: ${requiredOpeningText}`);
+  }
+}
 const cards = findElementsByClass(html, components.buildCard.className)
   .filter((element) => isNativeComponent(element, components.buildCard))
   .map((element) => ({
@@ -451,6 +468,18 @@ if (dysonSphereLinks.length !== 1) {
 const greenSection = findElementsByClass(html, "phase-section-green")[0];
 if (greenSection?.inner.includes('href="#sphere"')) {
   errors.push("GREEN bypasses DYSON with a coequal SPHERE handoff");
+}
+const blueSection = findElementsByClass(html, "phase-section-blue")[0];
+const blueText = stripMarkup(blueSection?.inner || "");
+for (const requiredBlueGoalText of [
+  "Your first proper phase has two jobs, and they belong together.",
+  "The mall already makes the blue cube ingredients so use the same growing factory to keep blue research running on its own.",
+  "You need both before you move on.",
+  "Don't get stuck in this phase for too long automating every recipe you have.",
+]) {
+  if (!blueText.includes(requiredBlueGoalText)) {
+    errors.push(`Approved BLUE Goal is missing: ${requiredBlueGoalText}`);
+  }
 }
 const progressIndex = findElementsByClass(html, "progress-index")[0];
 const progressIndexMarkup = progressIndex?.inner || "";

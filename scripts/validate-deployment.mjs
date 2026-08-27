@@ -186,7 +186,17 @@ check(
   "The RED planetary-base-clearing procedure is missing.",
 );
 const outsideRed = redSection ? html.replace(redSection, "") : html;
-check(!/Dark Fog/i.test(outsideRed), "Dark Fog guidance appears outside RED.");
+const approvedOpeningDarkFog =
+  /If you're playing with Dark Fog,\s*RED shows you a simple way to defend\s*your first planet and clear a Dark Fog base\. The guide doesn't try to\s*cover the rest of Dark Fog combat\./g;
+const openingDarkFogMatches = outsideRed.match(approvedOpeningDarkFog) || [];
+check(
+  openingDarkFogMatches.length === 1,
+  "The bounded opening Dark Fog orientation is missing or duplicated.",
+);
+check(
+  !/Dark Fog/i.test(outsideRed.replace(approvedOpeningDarkFog, "")),
+  "Dark Fog guidance appears outside RED and its bounded opening orientation.",
+);
 check(
   !/(Dark Fog (?:levels?|farming|drops?|industry)|space combat|Relay Stations?|\bhives?\b|concealed technolog)/i.test(
     html,
