@@ -1,6 +1,6 @@
 # NR-11 — Define DYSON's chosen Solar Sail route
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
+**Status:** Owner-accepted and archived on 2026-08-27.
 
 **Dependency group:** C — Late-route progression
 **Assessed workload:** Medium
@@ -123,4 +123,4 @@ Validate research ownership, reference figures, directly affected cards/maps, an
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.

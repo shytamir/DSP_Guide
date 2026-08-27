@@ -908,9 +908,9 @@ for (const rejectedDysonText of [
 }
 const dysonReceiverBridgeLinks =
   dysonSection?.inner.match(/href="#receiver-antimatter-bridge"/g) || [];
-if (dysonReceiverBridgeLinks.length !== 1) {
+if (dysonReceiverBridgeLinks.length < 2) {
   errors.push(
-    `DYSON must contain one prescribed Receiver bridge handoff; found ${dysonReceiverBridgeLinks.length}`,
+    `DYSON must link its gate and Next guidance to the Receiver bridge; found ${dysonReceiverBridgeLinks.length}`,
   );
 }
 const dysonAntimatterHandoff = findElementsByClass(
@@ -922,6 +922,145 @@ if (
     .length !== 1
 ) {
   errors.push("DYSON Antimatter midpoint is missing or duplicated");
+}
+const receiverBridge = findElementsByClass(html, "route-bridge")[0];
+const receiverBridgeMarkup = receiverBridge?.inner || "";
+const receiverBridgeText = stripMarkup(receiverBridgeMarkup);
+if (
+  !receiverBridge ||
+  getAttribute(receiverBridge.openingTag, "id") !== "receiver-antimatter-bridge"
+) {
+  errors.push("The canonical Receiver and Antimatter bridge is missing");
+}
+if (/<details\b/.test(receiverBridgeMarkup)) {
+  errors.push("The required Receiver bridge must not be collapsed");
+}
+const receiverBridgeResearch = findElementsByClass(
+  receiverBridgeMarkup,
+  "receiver-bridge-research",
+);
+const receiverBridgeResearchIds = receiverBridgeResearch.flatMap((block) =>
+  [...block.inner.matchAll(/data-tech-id="(\d+)"/g)].map((match) => match[1]),
+);
+if (
+  receiverBridgeResearch.length !== 1 ||
+  JSON.stringify(receiverBridgeResearchIds) !==
+    JSON.stringify(["1504", "1505", "1506"])
+) {
+  errors.push(
+    `Receiver bridge research order is invalid: ${receiverBridgeResearchIds.join(", ")}`,
+  );
+}
+const expectedReceiverBridgePrerequisites = new Map([
+  ["1504", { required: ["1503"], implicit: [] }],
+  ["1505", { required: ["1504"], implicit: ["1704"] }],
+  ["1506", { required: ["1505"], implicit: [] }],
+]);
+for (const [technologyId, expected] of expectedReceiverBridgePrerequisites) {
+  const technology = technologyReference[technologyId] || {};
+  const requiredIds = (technology.required || []).map(({ id }) => id);
+  const implicitIds = (technology.implicitRequired || []).map(({ id }) => id);
+  if (!sameIds(requiredIds, expected.required)) {
+    errors.push(
+      `Receiver bridge technology ${technologyId} has invalid required edges`,
+    );
+  }
+  if (!sameIds(implicitIds, expected.implicit)) {
+    errors.push(
+      `Receiver bridge technology ${technologyId} has invalid implicit edges`,
+    );
+  }
+}
+for (const requiredBridgeText of [
+  "four fully warmed, lensed Ray Receivers",
+  "Ray Transmission Efficiency Lv0",
+  "at least 1.655 GW",
+  "Photon Generation",
+  "Continuous Receiving and Receiver Strength",
+  "Photon Materialization",
+  "visible storage",
+  "outlet remains clear",
+]) {
+  if (!receiverBridgeText.includes(requiredBridgeText)) {
+    errors.push(`Receiver bridge is missing: ${requiredBridgeText}`);
+  }
+}
+if (
+  findElementsByClass(receiverBridgeMarkup, "receiver-bridge-procedure")
+    .length !== 1 ||
+  findElementsByClass(receiverBridgeMarkup, "receiver-bridge-completion")
+    .length !== 1
+) {
+  errors.push("Receiver bridge procedure or completion gate is missing");
+}
+const photonSection = findElementsByClass(html, "phase-section-photon").find(
+  (section) => getAttribute(section.openingTag, "id") === "photon",
+);
+const photonMarkup = photonSection?.inner || "";
+const photonText = stripMarkup(photonMarkup);
+const photonOwnedResearch = findElementsByClass(
+  photonMarkup,
+  "photon-owned-research",
+);
+for (const block of photonOwnedResearch) {
+  const ids = [...block.inner.matchAll(/data-tech-id="(\d+)"/g)].map(
+    (match) => match[1],
+  );
+  if (JSON.stringify(ids) !== JSON.stringify(["3201", "3202"])) {
+    errors.push(`PHOTON-owned research is invalid: ${ids.join(", ")}`);
+  }
+}
+if (photonOwnedResearch.length !== 2) {
+  errors.push("PHOTON research must be mirrored in dashboard and prose");
+}
+for (const higherRank of ["3203", "3204", "3205", "3206", "3207", "3208"]) {
+  if (photonMarkup.includes(`data-tech-id="${higherRank}"`)) {
+    errors.push(
+      `PHOTON exceeds the approved Ray Efficiency stopping rank: ${higherRank}`,
+    );
+  }
+}
+const expectedPhotonPrerequisites = new Map([
+  ["3201", { required: [], implicit: ["1504"] }],
+  ["3202", { required: ["3201"], implicit: [] }],
+]);
+for (const [technologyId, expected] of expectedPhotonPrerequisites) {
+  const technology = technologyReference[technologyId] || {};
+  const requiredIds = (technology.required || []).map(({ id }) => id);
+  const implicitIds = (technology.implicitRequired || []).map(({ id }) => id);
+  if (!sameIds(requiredIds, expected.required)) {
+    errors.push(`PHOTON technology ${technologyId} has invalid required edges`);
+  }
+  if (!sameIds(implicitIds, expected.implicit)) {
+    errors.push(`PHOTON technology ${technologyId} has invalid implicit edges`);
+  }
+}
+for (const requiredPhotonText of [
+  "Stop after these two ranks.",
+  "48 Antimatter/min",
+  "Aim for the full 48/min array output, but proceed when Antimatter remains at or above 40/min and the stored reserve continues growing.",
+]) {
+  if (!photonText.includes(requiredPhotonText)) {
+    errors.push(`PHOTON Receiver handoff is missing: ${requiredPhotonText}`);
+  }
+}
+for (const adjacentMarkup of [
+  dysonSection?.inner || "",
+  sphereMarkup,
+  photonMarkup,
+]) {
+  if (
+    /class="[^"]*\breceiver-bridge-(?:research|procedure|completion)\b/.test(
+      adjacentMarkup,
+    )
+  ) {
+    errors.push(
+      "Receiver bridge ownership is duplicated in an adjacent section",
+    );
+  }
+}
+if ((html.match(/id="receiver-antimatter-bridge"/g) || []).length !== 1) {
+  errors.push("Receiver bridge anchor is missing or duplicated");
 }
 const oneScreenChecklist = html.slice(html.indexOf('id="ref-checklist"'));
 for (const chosenRouteChecklistText of [

@@ -170,13 +170,7 @@ const ids = [...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(
 const anchors = [...html.matchAll(/href="#([^"]+)"/g)].map((match) => match[1]);
 check(ids.length === new Set(ids).size, "Duplicate HTML id found.");
 const missingAnchors = anchors.filter((anchor) => !ids.includes(anchor));
-const temporaryReceiverBridgeException =
-  missingAnchors.length === 3 &&
-  missingAnchors.every((anchor) => anchor === "receiver-antimatter-bridge");
-check(
-  missingAnchors.length === 0 || temporaryReceiverBridgeException,
-  "Broken internal anchor found.",
-);
+check(missingAnchors.length === 0, "Broken internal anchor found.");
 
 const phaseSection = (id) =>
   findElementsByClass(html, `phase-section-${id}`)[0]?.full || "";

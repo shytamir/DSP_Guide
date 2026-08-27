@@ -1,8 +1,8 @@
 # Active Roadmap — Story Index
 
-**Status:** Active. NR-01 through NR-10 were owner-accepted and archived on
-2026-08-27. NR-11 is implemented and technically validated, pending owner
-acceptance. NR-12 through NR-18 are owner-approved and implementation-ready but
+**Status:** Active. NR-01 through NR-11 were owner-accepted and archived on
+2026-08-27. NR-12 is implemented and technically validated, pending owner
+acceptance. NR-13 through NR-18 are owner-approved and implementation-ready but
 remain inactive until separately activated after their prerequisites are
 satisfied.
 
@@ -120,8 +120,8 @@ stop and split the affected draft before authorizing additional scope.
 | 8     | [NR-08 — Assign PURPLE-owned research and bounded upgrades](../archive/nr-08-assign-purple-owned-research-and-bounded-upgrades.md)             | Data or research change | NR-07                        | Owner-accepted — archived              |
 | 9     | [NR-09 — Establish GREEN research and material-proof ownership](../archive/nr-09-establish-green-research-and-material-proof-ownership.md)     | Data or research change | NR-03, NR-08                 | Owner-accepted — archived              |
 | 10    | [NR-10 — Teach GREEN's Deuterium, fuel, and power loop](../archive/nr-10-teach-green-deuterium-fuel-and-power-loop.md)                         | Editorial refinement    | NR-09                        | Owner-accepted — archived              |
-| 11    | [NR-11 — Define DYSON's chosen Solar Sail route](next-roadmap/nr-11-define-dyson-chosen-solar-sail-route.md)                                   | Data or research change | NR-03, NR-10                 | Implemented — pending owner acceptance |
-| 12    | [NR-12 — Create one Receiver and Antimatter bridge](next-roadmap/nr-12-create-one-receiver-and-antimatter-bridge.md)                           | Structural change       | NR-03, NR-11                 | Owner-approved — inactive              |
+| 11    | [NR-11 — Define DYSON's chosen Solar Sail route](../archive/nr-11-define-dyson-chosen-solar-sail-route.md)                                     | Data or research change | NR-03, NR-10                 | Owner-accepted — archived              |
+| 12    | [NR-12 — Create one Receiver and Antimatter bridge](next-roadmap/nr-12-create-one-receiver-and-antimatter-bridge.md)                           | Structural change       | NR-03, NR-11                 | Implemented — pending owner acceptance |
 | 13    | [NR-13 — Refocus PHOTON on stable WHITE readiness](next-roadmap/nr-13-refocus-photon-on-stable-white-readiness.md)                             | Data or research change | NR-12                        | Owner-approved — inactive              |
 | 14    | [NR-14 — Refine WARP expedition framing and route support](next-roadmap/nr-14-refine-warp-expedition-framing-and-route-support.md)             | Editorial refinement    | NR-01                        | Owner-approved — inactive              |
 | 15    | [NR-15 — Add one canonical Production Statistics walkthrough](next-roadmap/nr-15-add-one-canonical-production-statistics-walkthrough.md)       | Editorial refinement    | NR-05, NR-07                 | Owner-approved — inactive              |

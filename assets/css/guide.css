@@ -558,6 +558,36 @@ tr:nth-child(even) td {
   border-left-color: rgb(var(--phase-rgb));
   background: rgba(var(--phase-rgb), 0.09);
 }
+.route-bridge {
+  position: relative;
+  isolation: isolate;
+  scroll-margin-top: 1rem;
+  text-shadow: 0 0 12px rgba(var(--phase-rgb), 0.055);
+}
+.route-bridge h1,
+.route-bridge h2,
+.route-bridge strong {
+  text-shadow: 0 0 14px rgba(var(--phase-rgb), 0.16);
+}
+.route-bridge .phase-heading {
+  border-top-color: rgb(var(--phase-rgb));
+}
+.route-bridge .you-are-here {
+  border-color: rgb(var(--phase-rgb));
+  background: linear-gradient(
+    135deg,
+    rgba(var(--phase-rgb), 0.19),
+    rgba(20, 26, 36, 0.94) 46%,
+    rgba(var(--phase-rgb), 0.08)
+  );
+}
+.route-bridge .you-are-here h2 {
+  color: rgb(var(--phase-rgb));
+}
+.route-bridge .quick-ref-title {
+  border-left-color: rgb(var(--phase-rgb));
+  background: rgba(var(--phase-rgb), 0.09);
+}
 .build-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
