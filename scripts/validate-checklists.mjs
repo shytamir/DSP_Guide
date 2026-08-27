@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import vm from "node:vm";
-import { findElementsByClass } from "./lib/markup-contracts.mjs";
+import { findElementsByClass, stripMarkup } from "./lib/markup-contracts.mjs";
 
 function makeCheckbox(phaseId, label) {
   const listeners = {};
@@ -256,6 +256,40 @@ assert.ok(
   (html.match(/task-list-item-checkbox/g) || []).length > 0,
   "guide contains no checklist items",
 );
+const photonStart = html.indexOf(
+  '<section class="phase-section phase-section-photon" id="photon">',
+);
+const whiteStart = html.indexOf(
+  '<section class="phase-section phase-section-white" id="white">',
+);
+assert.ok(
+  photonStart >= 0 && whiteStart > photonStart,
+  "PHOTON checklist scope is missing",
+);
+const photonMarkup = html.slice(photonStart, whiteStart);
+for (const checklistClass of [
+  "photon-ready-checklist",
+  "photon-next-checklist",
+]) {
+  const checklist = findElementsByClass(photonMarkup, checklistClass)[0];
+  const text = stripMarkup(checklist?.inner || "");
+  assert.ok(checklist, `${checklistClass} is missing`);
+  assert.equal(
+    (checklist.inner.match(/task-list-item-checkbox/g) || []).length,
+    2,
+    `${checklistClass} must contain exactly two conditions`,
+  );
+  assert.match(
+    text,
+    /Blue, red, yellow, purple, green, and Antimatter each sustain at least 40\/min\./,
+    `${checklistClass} is missing the sustained-rate condition`,
+  );
+  assert.match(
+    text,
+    /At least 2,000 Antimatter is stored\./,
+    `${checklistClass} is missing the stored-reserve condition`,
+  );
+}
 assert.match(
   html,
   /assets\/js\/checklists\.js/,
@@ -263,5 +297,5 @@ assert.match(
 );
 
 console.log(
-  "Checklist validation passed: persistence, duplicate keys, reset, storage denial, glossary, and route grouping verified.",
+  "Checklist validation passed: persistence, duplicate keys, reset, storage denial, glossary, route grouping, and PHOTON gate synchronization verified.",
 );

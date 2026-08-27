@@ -1013,6 +1013,25 @@ for (const block of photonOwnedResearch) {
 if (photonOwnedResearch.length !== 2) {
   errors.push("PHOTON research must be mirrored in dashboard and prose");
 }
+for (const [className, expectedIds] of [
+  ["photon-receiver-research", ["3201", "3202"]],
+  ["photon-resource-research", ["3601", "3602", "3603"]],
+  ["photon-production-research", ["1417", "1202", "1203"]],
+]) {
+  const groups = findElementsByClass(photonMarkup, className);
+  if (groups.length !== 2) {
+    errors.push(`${className} must be mirrored in dashboard and prose`);
+    continue;
+  }
+  for (const group of groups) {
+    const ids = [...group.inner.matchAll(/data-tech-id="(\d+)"/g)].map(
+      (match) => match[1],
+    );
+    if (JSON.stringify(ids) !== JSON.stringify(expectedIds)) {
+      errors.push(`${className} has invalid research: ${ids.join(", ")}`);
+    }
+  }
+}
 for (const higherRank of ["3203", "3204", "3205", "3206", "3207", "3208"]) {
   if (photonMarkup.includes(`data-tech-id="${higherRank}"`)) {
     errors.push(
@@ -1023,6 +1042,12 @@ for (const higherRank of ["3203", "3204", "3205", "3206", "3207", "3208"]) {
 const expectedPhotonPrerequisites = new Map([
   ["3201", { required: [], implicit: ["1504"] }],
   ["3202", { required: ["3201"], implicit: [] }],
+  ["3601", { required: [], implicit: ["1001"] }],
+  ["3602", { required: ["3601"], implicit: [] }],
+  ["3603", { required: ["3602"], implicit: [] }],
+  ["1417", { required: ["1141"], implicit: ["1403"] }],
+  ["1202", { required: ["1201", "1302"], implicit: [] }],
+  ["1203", { required: ["1202", "1303"], implicit: [] }],
 ]);
 for (const [technologyId, expected] of expectedPhotonPrerequisites) {
   const technology = technologyReference[technologyId] || {};
@@ -1036,13 +1061,81 @@ for (const [technologyId, expected] of expectedPhotonPrerequisites) {
   }
 }
 for (const requiredPhotonText of [
+  "You have made Antimatter. Now make the whole finish dependable.",
+  "Bring every cube color and Antimatter to at least 40/min, then fix only the first supply line that falls behind.",
+  "PHOTON is complete when WHITE can begin without immediately starving.",
+  "Open the Statistics Panel and check blue, red, yellow, purple, and green cubes. Each color must hold at least 40/min.",
+  "Leave every line that already holds 40/min alone.",
   "Stop after these two ranks.",
   "48 Antimatter/min",
   "Aim for the full 48/min array output, but proceed when Antimatter remains at or above 40/min and the stored reserve continues growing.",
+  "A short burst can fool you.",
+  "Fix the first shortage you can see.",
+  "Do not chase every dip below 48 Antimatter/min.",
+  "Keep the returned Hydrogen moving.",
 ]) {
   if (!photonText.includes(requiredPhotonText)) {
     errors.push(`PHOTON Receiver handoff is missing: ${requiredPhotonText}`);
   }
+}
+for (const rejectedPhotonTechnologyId of [
+  "1144",
+  "1145",
+  "1507",
+  "3301",
+  "3302",
+  "3303",
+  "3304",
+  "3305",
+  "3401",
+  "3402",
+  "3403",
+  "3404",
+  "3405",
+  "3406",
+  "3407",
+  "3604",
+  "3605",
+  "3606",
+  "3901",
+  "3902",
+  "3903",
+  "3904",
+]) {
+  if (photonMarkup.includes(`data-tech-id="${rejectedPhotonTechnologyId}"`)) {
+    errors.push(
+      `PHOTON includes an excluded technology: ${rejectedPhotonTechnologyId}`,
+    );
+  }
+}
+if (/Logistics Carrier Engine|\bnext rank\b/i.test(photonText)) {
+  errors.push("PHOTON implies an unresolved Logistics Carrier rank");
+}
+for (const checklistClass of [
+  "photon-ready-checklist",
+  "photon-next-checklist",
+]) {
+  const checklist = findElementsByClass(photonMarkup, checklistClass)[0];
+  const checklistText = stripMarkup(checklist?.inner || "");
+  if (
+    !checklist ||
+    (checklist.inner.match(/task-list-item-checkbox/g) || []).length !== 2 ||
+    !checklistText.includes(
+      "Blue, red, yellow, purple, green, and Antimatter each sustain at least 40/min.",
+    ) ||
+    !checklistText.includes("At least 2,000 Antimatter is stored.")
+  ) {
+    errors.push(
+      `${checklistClass} does not contain the approved two conditions`,
+    );
+  }
+}
+if (
+  photonText.includes(
+    "Keep expanding the swarm or sphere in parallel when live demand shows",
+  )
+) {
+  errors.push("PHOTON retains the superfluous post-checklist instruction");
 }
 for (const adjacentMarkup of [
   dysonSection?.inner || "",

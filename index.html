@@ -15059,89 +15059,228 @@
             <tr>
               <td><strong>Main goal</strong></td>
               <td>
-                Stabilize the established
+                Bring blue, red, yellow, purple, and green cubes plus
                 <span class="proto-ref" data-item-id="1122">Antimatter</span>
-                supply and grow its stored reserve for WHITE
+                to a sustained 40/min, then bank 2,000 Antimatter for WHITE
               </td>
             </tr>
             <tr>
               <td><strong>Desired state</strong></td>
               <td>
-                <span class="proto-ref" data-item-id="1122">Antimatter</span>
-                remains at or above 40/min and storage continues growing toward
-                2,000
+                Every required input holds its target during a sustained run;
+                healthy lines are left alone while the first visible shortage is
+                repaired
               </td>
             </tr>
             <tr>
               <td><strong>Research next</strong></td>
               <td>
-                <span class="photon-owned-research"
-                  ><button type="button" class="tech-ref" data-tech-id="3201">
-                    <img
-                      class="proto-icon proto-icon-tech"
-                      src="assets/DSP_exported assets/Texture2D/Tech/3201.png"
-                      width="20"
-                      height="20"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                    />Ray Transmission Efficiency
-                  </button>
-                  Lv1 →
-                  <button type="button" class="tech-ref" data-tech-id="3202">
-                    <img
-                      class="proto-icon proto-icon-tech"
-                      src="assets/DSP_exported assets/Texture2D/Tech/3202.png"
-                      width="20"
-                      height="20"
-                      alt=""
-                      aria-hidden="true"
-                      loading="lazy"
-                    />Ray Transmission Efficiency
-                  </button>
-                  Lv2</span
-                >
+                <div class="photon-research-groups">
+                  <p
+                    class="photon-research-group photon-receiver-research photon-owned-research"
+                  >
+                    <strong>Receiver efficiency:</strong>
+                    <button type="button" class="tech-ref" data-tech-id="3201">
+                      <img
+                        class="proto-icon proto-icon-tech"
+                        src="assets/DSP_exported assets/Texture2D/Tech/3201.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Ray Transmission Efficiency
+                    </button>
+                    Lv1 →
+                    <button type="button" class="tech-ref" data-tech-id="3202">
+                      <img
+                        class="proto-icon proto-icon-tech"
+                        src="assets/DSP_exported assets/Texture2D/Tech/3202.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Ray Transmission Efficiency
+                    </button>
+                    Lv2
+                  </p>
+                  <p class="photon-research-group photon-resource-research">
+                    <strong>Resource supply:</strong> continue
+                    <button type="button" class="tech-ref" data-tech-id="3601">
+                      <img
+                        class="proto-icon proto-icon-tech"
+                        src="assets/DSP_exported assets/Texture2D/Tech/3601.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Vein Utilization
+                    </button>
+                    Lv1 →
+                    <button type="button" class="tech-ref" data-tech-id="3602">
+                      <img
+                        class="proto-icon proto-icon-tech"
+                        src="assets/DSP_exported assets/Texture2D/Tech/3602.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Vein Utilization
+                    </button>
+                    Lv2 →
+                    <button type="button" class="tech-ref" data-tech-id="3603">
+                      <img
+                        class="proto-icon proto-icon-tech"
+                        src="assets/DSP_exported assets/Texture2D/Tech/3603.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Vein Utilization
+                    </button>
+                    Lv3
+                  </p>
+                  <p class="photon-research-group photon-production-research">
+                    <strong>Faster production:</strong>
+                    <button type="button" class="tech-ref" data-tech-id="1417">
+                      <img
+                        class="proto-icon proto-icon-tech"
+                        src="assets/DSP_exported assets/Texture2D/Tech/1417.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Plane-Filter Smelting
+                    </button>
+                    ;
+                    <button type="button" class="tech-ref" data-tech-id="1202">
+                      <img
+                        class="proto-icon proto-icon-tech"
+                        src="assets/DSP_exported assets/Texture2D/Tech/1202.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />High-Speed Assembling
+                    </button>
+                    →
+                    <button type="button" class="tech-ref" data-tech-id="1203">
+                      <img
+                        class="proto-icon proto-icon-tech"
+                        src="assets/DSP_exported assets/Texture2D/Tech/1203.png"
+                        width="20"
+                        height="20"
+                        alt=""
+                        aria-hidden="true"
+                        loading="lazy"
+                      />Quantum Printing
+                    </button>
+                  </p>
+                </div>
               </td>
             </tr>
             <tr>
               <td><strong>Keep an eye on</strong></td>
               <td>
-                Sustained production rather than a short burst, the stored
-                reserve trend, and any visible shortage in the established
-                material line
+                Sustained rates in the Statistics Panel, the first cube line
+                below target, Antimatter storage growth, and the returned
+                Hydrogen outlet
               </td>
             </tr>
             <tr>
               <td><strong>Move on when</strong></td>
               <td>
-                <span class="proto-ref" data-item-id="1122">Antimatter</span>
-                remains at or above 40/min, at least 2,000 is stored, and the
-                reserve is still growing
+                Every colored cube and Antimatter sustains at least 40/min, and
+                at least 2,000 Antimatter is stored
               </td>
             </tr>
           </tbody>
         </table>
         <h2>Goal</h2>
         <p>
-          The required Receiver setup now has one home in the
+          <strong
+            >You have made Antimatter. Now make the whole finish
+            dependable.</strong
+          >
+        </p>
+        <p>
+          Keep the Receiver array working while you check the five cube lines
+          built during the earlier phases. Bring every cube color and
+          <span class="proto-ref" data-item-id="1122">Antimatter</span> to at
+          least 40/min, then fix only the first supply line that falls behind.
+          Let the Antimatter reserve grow to 2,000 while you work.
+        </p>
+        <p>
+          PHOTON is complete when WHITE can begin without immediately starving.
+          The required Receiver setup remains in the
           <a href="#receiver-antimatter-bridge"
             >Receiver and Antimatter bridge</a
-          >. PHOTON starts after that procedure works. Keep the line running,
-          improve its efficiency by two ranks, and use sustained output plus a
-          growing reserve to decide when it is ready to support WHITE.
+          >; do not rebuild it here.
         </p>
         <h2>Research first</h2>
-        <p class="photon-owned-research">
-          <button type="button" class="tech-ref" data-tech-id="3201">
-            Ray Transmission Efficiency
-          </button>
-          Lv1 →
-          <button type="button" class="tech-ref" data-tech-id="3202">
-            Ray Transmission Efficiency
-          </button>
-          Lv2. Stop after these two ranks. They reduce the Dyson power needed to
-          sustain the established output; this guide does not prescribe a
-          replacement total-power figure.
+        <div class="photon-research-plan">
+          <p
+            class="photon-research-group photon-receiver-research photon-owned-research"
+          >
+            <strong>Receiver efficiency:</strong>
+            <button type="button" class="tech-ref" data-tech-id="3201">
+              Ray Transmission Efficiency
+            </button>
+            Lv1 →
+            <button type="button" class="tech-ref" data-tech-id="3202">
+              Ray Transmission Efficiency
+            </button>
+            Lv2. Stop after these two ranks. The upgrades reduce the Dyson power
+            needed by the array. Give the Receivers time to settle after each
+            upgrade, then check whether Antimatter remains above 40/min.
+          </p>
+          <p class="photon-research-group photon-resource-research">
+            <strong>Resource supply:</strong> research any unfinished
+            <button type="button" class="tech-ref" data-tech-id="3601">
+              Vein Utilization
+            </button>
+            Lv1 →
+            <button type="button" class="tech-ref" data-tech-id="3602">
+              Vein Utilization
+            </button>
+            Lv2 →
+            <button type="button" class="tech-ref" data-tech-id="3603">
+              Vein Utilization
+            </button>
+            Lv3 ranks and stop at Lv3. Earlier optional recommendations may have
+            left some or all of this sequence unfinished.
+          </p>
+          <p class="photon-research-group photon-production-research">
+            <strong>Faster production:</strong>
+            <button type="button" class="tech-ref" data-tech-id="1417">
+              Plane-Filter Smelting
+            </button>
+            ;
+            <button type="button" class="tech-ref" data-tech-id="1202">
+              High-Speed Assembling
+            </button>
+            →
+            <button type="button" class="tech-ref" data-tech-id="1203">
+              Quantum Printing</button
+            >. Use these tools only where an old production line cannot sustain
+            WHITE's pace; leave every healthy line alone.
+          </p>
+        </div>
+        <h2>Bring every cube line to WHITE pace</h2>
+        <p>
+          Open the Statistics Panel and check blue, red, yellow, purple, and
+          green cubes. Each color must hold at least 40/min.
+        </p>
+        <p>
+          Start with the first color below the target. Follow its production
+          line backward until you find the missing material, then strengthen
+          that branch. Leave every line that already holds 40/min alone.
         </p>
         <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
         <p class="photon-output-direction">
@@ -15164,20 +15303,32 @@
         </p>
         <h2>Watch for</h2>
         <p>
-          <strong>Do not chase every brief dip below 48/min.</strong> The line
-          is doing its job when the sustained rate stays at or above 40/min and
-          storage continues growing. If either condition fails, return to the
-          bridge and follow the first visible shortage.
+          <strong>A short burst can fool you.</strong> Let the factory run for a
+          few minutes before trusting the displayed rate.
+        </p>
+        <p>
+          <strong>Fix the first shortage you can see.</strong> Follow the weak
+          cube line backward and strengthen only the branch holding it down.
+        </p>
+        <p>
+          <strong>Do not chase every dip below 48 Antimatter/min.</strong> The
+          line is ready when it stays at or above 40/min and storage keeps
+          growing.
+        </p>
+        <p>
+          <strong>Keep the returned Hydrogen moving.</strong> If its output
+          stops, Antimatter stops with it.
         </p>
         <h2>Ready to move on when</h2>
-        <ul>
+        <ul class="photon-ready-checklist">
           <li class="task-list-item">
             <input
               class="task-list-item-checkbox"
               disabled="disabled"
               type="checkbox"
-            /><span class="proto-ref" data-item-id="1122">Antimatter</span>
-            remains at or above 40/min and the stored reserve continues growing.
+            />Blue, red, yellow, purple, green, and
+            <span class="proto-ref" data-item-id="1122">Antimatter</span> each
+            sustain at least 40/min.
           </li>
           <li class="task-list-item">
             <input
@@ -15202,13 +15353,28 @@
               aria-hidden="true"
             />[WHITE]</a
           >
-          when the 2,000-<span class="proto-ref" data-item-id="1122"
-            >Antimatter</span
-          >
-          reserve is banked and the sustained rate remains at or above 40/min.
-          Keep expanding the swarm or sphere in parallel when live demand shows
-          that more generation would help.
+          when both conditions hold:
         </p>
+        <ul class="photon-next-checklist">
+          <li class="task-list-item">
+            <input
+              class="task-list-item-checkbox"
+              disabled="disabled"
+              type="checkbox"
+            />Blue, red, yellow, purple, green, and
+            <span class="proto-ref" data-item-id="1122">Antimatter</span> each
+            sustain at least 40/min.
+          </li>
+          <li class="task-list-item">
+            <input
+              class="task-list-item-checkbox"
+              disabled="disabled"
+              type="checkbox"
+            />At least 2,000
+            <span class="proto-ref" data-item-id="1122">Antimatter</span> is
+            stored.
+          </li>
+        </ul>
         <hr />
         <p></p>
       </section>

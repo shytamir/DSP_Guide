@@ -588,6 +588,19 @@ tr:nth-child(even) td {
   border-left-color: rgb(var(--phase-rgb));
   background: rgba(var(--phase-rgb), 0.09);
 }
+.photon-research-groups,
+.photon-research-plan {
+  display: grid;
+  gap: 0.65rem;
+}
+.photon-research-group {
+  margin: 0;
+}
+.photon-research-plan .photon-research-group {
+  padding: 0.72rem 0.82rem;
+  border-left: 3px solid rgba(var(--phase-rgb), 0.72);
+  background: rgba(var(--phase-rgb), 0.065);
+}
 .build-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
