@@ -610,6 +610,9 @@ if (!warpMarkup) {
       errors.push(`WARP mission framing is missing: ${language}`);
     }
   }
+  if (warpText.includes("Optional route disclaimer")) {
+    errors.push("WARP still exposes an authoring-process disclaimer label");
+  }
 
   const warpCapabilityTable = findElementsByClass(
     warpMarkup,
@@ -652,7 +655,6 @@ if (!warpMarkup) {
   }
 
   const requiredCatchUpLanguage = [
-    "ILS already completed Cosmic Exploration Lv2. Continue through Cosmic Exploration Lv3",
     "continue Drive Engine through Drive Engine Lv4",
     "continue Logistics Carrier Engine through Logistics Carrier Engine Lv4",
     "you have continued Logistics Carrier Engine through Lv4.",
@@ -661,6 +663,13 @@ if (!warpMarkup) {
     if (!warpText.includes(language)) {
       errors.push(`WARP catch-up sequence is missing: ${language}`);
     }
+  }
+  if (
+    !/ILS already completed Cosmic Exploration Lv2[\s\S]*Cosmic Exploration Lv3[\s\S]*reveals resource information/i.test(
+      warpText,
+    )
+  ) {
+    errors.push("WARP nearby-survey catch-up sequence is missing");
   }
   if (
     !/Gravitational Wave Refraction[\s\S]*first[\s\S]*GREEN[\s\S]*already completed it/i.test(
@@ -1680,6 +1689,11 @@ for (const obsoleteRateStatement of [
 const guideConclusions = findElementsByClass(html, "guide-conclusion");
 const guideConclusion = guideConclusions[0];
 const guideConclusionText = stripMarkup(guideConclusion?.inner || "");
+if (guideText.includes("Mission Completed!.")) {
+  errors.push(
+    "WHITE dashboard has doubled punctuation after Mission Completed!",
+  );
+}
 const expectedConclusionText = [
   "The road is yours",
   "Mission Completed does not mean the factory is finished. It means you know how to finish one.",
@@ -2318,16 +2332,34 @@ if (rejectedYellowCubeTotal !== 10500) {
 
 const yellowText = stripMarkup(yellowSection?.inner || "");
 for (const requiredYellowText of [
-  "The next shared stopping point, including Mecha Core Lv3, would consume 10,500 cubes in total, which is too expensive for a YELLOW buildout detour before PURPLE.",
-  "These are useful jobs for the research queue while yellow settles, not requirements for leaving the phase.",
-  "The only phase gate is three continuously supplied yellow-cube Labs.",
-  "As soon as the three-Lab gate is satisfied, abandon any unfinished recommendation—including the filler chain—and move to PURPLE.",
   "Accumulators can absorb surplus generation and cushion the charging shock from logistics stations",
 ]) {
   if (!yellowText.includes(requiredYellowText)) {
     errors.push(
       `YELLOW bounded research guidance is missing: ${requiredYellowText}`,
     );
+  }
+}
+for (const [description, pattern] of [
+  [
+    "research-queue handoff",
+    /research queue[\s\S]*three yellow Labs[\s\S]*leave the rest[\s\S]*move to PURPLE/i,
+  ],
+  [
+    "rejected buildout cost",
+    /Mecha Core Lv3[\s\S]*10,500 cubes[\s\S]*too expensive[\s\S]*before PURPLE/i,
+  ],
+  [
+    "three-Lab completion condition",
+    /three continuously supplied yellow-cube Labs[\s\S]*enough to move on[\s\S]*upgrades[\s\S]*can wait/i,
+  ],
+  [
+    "unfinished-work handoff",
+    /all three Labs keep running[\s\S]*unfinished work[\s\S]*filler chain[\s\S]*move to PURPLE/i,
+  ],
+]) {
+  if (!pattern.test(yellowText)) {
+    errors.push(`YELLOW bounded research guidance is missing: ${description}`);
   }
 }
 for (const staleYellowText of [
@@ -2504,12 +2536,8 @@ if (
 const purpleText = stripMarkup(purpleSection?.inner || "");
 for (const requiredPurpleText of [
   "This three-technology unlock is the only research required before purple-cube production can begin.",
-  "The upgrades below give the research queue useful work while the purple district settles. They are not requirements for leaving PURPLE.",
-  "Catch up any YELLOW stopping ranks you discarded",
   "The next pair of carrier ranks would consume another 4,800 cubes in total without being required for PURPLE's starter-system routes.",
   "Stop there because the next rank begins consuming purple cubes.",
-  "The only phase gate is three continuously supplied purple-cube Labs.",
-  "As soon as the three-Lab gate is satisfied, abandon any unfinished filler recommendation and move to GREEN.",
 ]) {
   if (!purpleText.includes(requiredPurpleText)) {
     errors.push(
@@ -2517,8 +2545,30 @@ for (const requiredPurpleText of [
     );
   }
 }
+for (const [description, pattern] of [
+  [
+    "research-queue handoff",
+    /research queue[\s\S]*three purple Labs[\s\S]*leave the rest[\s\S]*move to GREEN/i,
+  ],
+  [
+    "YELLOW rank catch-up",
+    /Catch up[\s\S]*YELLOW ranks[\s\S]*left unfinished[\s\S]*named rank/i,
+  ],
+  [
+    "three-Lab completion condition",
+    /three continuously supplied purple-cube Labs[\s\S]*enough to move on[\s\S]*upgrades[\s\S]*can wait/i,
+  ],
+  [
+    "unfinished-work handoff",
+    /all three Labs keep running[\s\S]*filler work[\s\S]*move to GREEN/i,
+  ],
+]) {
+  if (!pattern.test(purpleText)) {
+    errors.push(`PURPLE bounded research guidance is missing: ${description}`);
+  }
+}
 if (
-  !/Stop there[\s\S]*20,800 cubes[\s\S]*purple cubes needed by GREEN[\s\S]*bad bargain[\s\S]*Leave it alone/i.test(
+  !/Stop there[\s\S]*shared buildout[\s\S]*20,800 cubes[\s\S]*purple cubes needed by GREEN[\s\S]*bad bargain[\s\S]*Leave it alone/i.test(
     purpleText,
   )
 ) {
