@@ -1,8 +1,0 @@
-{
-  "name": "dsp-guide-agent-runtime-tools",
-  "private": true,
-  "dependencies": {
-    "playwright": "1.62.0",
-    "prettier": "3.9.6"
-  }
-}

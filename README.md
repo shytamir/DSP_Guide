@@ -56,15 +56,14 @@ From a PowerShell shell with the standard agent runtime available, run:
 . .\artifacts\.runtime-tools\Activate-DspGuideTools.ps1
 ```
 
-The bootstrap installs only the locked Prettier and Playwright packages under
-the Git-ignored `artifacts/.runtime-tools/` directory. It records the manifest
-and lockfile fingerprint after a successful installation, skips pnpm while
-that fingerprint and both package entry points remain current, and installs
-Playwright's managed Chromium only when its required executable is missing.
-Command-helper generation and the lightweight inventory still run on every
-normal bootstrap. Use `-ValidateOnly` to audit an existing installation without
-changing it. Git, ripgrep, Node.js, Python, and pnpm are supplied agent-runtime
-prerequisites.
+The ordinary bootstrap must be launched with npm-registry and Playwright-download
+access from the outset. Do not first run it under network restrictions and then
+retry. It streams installation progress, installs exact Prettier and Playwright
+versions plus managed Chromium only when missing, and reuses a matching existing
+installation. Its generated manifest, lockfile, fingerprint, packages, browser,
+and activation helper remain under the Git-ignored runtime-tools directory; none
+are product files. Use `-ValidateOnly` for a network-free check that makes no
+changes.
 
 ## Roadmap status
 

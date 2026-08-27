@@ -156,9 +156,10 @@ When authoritative game knowledge is required:
 
 ## Environment Bootstrap
 
-- Location: `scripts/Bootstrap-AgentEnvironment.ps1` installs the local environment and generates the Git-ignored `artifacts/.runtime-tools/Activate-DspGuideTools.ps1` activation helper.
-- Purpose: run the bootstrap idempotently, then dot-source its activation helper to expose scoped safe-directory Git access, local runtimes, HTML authoring tools, validators, and the Playwright browser cache without changing global configuration.
-- Verified tooling: Git, ripgrep, Node.js, Python, pnpm, Prettier 3.9.6, Playwright 1.62.0, and Playwright-managed Chromium, including formatter and browser-rendering smoke tests.
+- Location: `scripts/Bootstrap-AgentEnvironment.ps1` creates a Git-ignored tool workspace and activation helper under `artifacts/.runtime-tools/`.
+- Purpose: verify the supplied core runtime and install only the exact Prettier, Playwright, and managed Chromium versions required for HTML authoring and browser validation. Current installations are reused without contacting package registries.
+- Procedure: the ordinary bootstrap may need npm-registry and Playwright-download access. Run it with authorized network access from the outset; do not first run it in a network-restricted sandbox and retry. Its install output is streamed. `-ValidateOnly` performs no installation or network access.
+- Verified tooling: Git, ripgrep, Node.js, pnpm, Prettier 3.9.6, Playwright 1.62.0, and Playwright-managed Chromium, including formatter and browser-rendering smoke tests.
 
 ## 9. Implementation discipline
 
