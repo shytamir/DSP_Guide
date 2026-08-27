@@ -1767,6 +1767,7 @@
   "2101": {
     "id": 2101,
     "name": "Mecha Core Lv1",
+    "level": 1,
     "required": [],
     "implicitRequired": [],
     "milestone": false,
@@ -1776,6 +1777,7 @@
   "2102": {
     "id": 2102,
     "name": "Mecha Core Lv2",
+    "level": 2,
     "required": [
       {
         "id": 2101,
@@ -1790,6 +1792,7 @@
   "2103": {
     "id": 2103,
     "name": "Mecha Core Lv3",
+    "level": 3,
     "required": [
       {
         "id": 2102,
@@ -1804,6 +1807,7 @@
   "2104": {
     "id": 2104,
     "name": "Mecha Core Lv4",
+    "level": 4,
     "required": [
       {
         "id": 2103,
@@ -1818,6 +1822,7 @@
   "2105": {
     "id": 2105,
     "name": "Mecha Core",
+    "level": 5,
     "required": [
       {
         "id": 2104,
@@ -1832,6 +1837,7 @@
   "2106": {
     "id": 2106,
     "name": "Mecha Core",
+    "level": 6,
     "required": [
       {
         "id": 2105,
@@ -1846,6 +1852,7 @@
   "2201": {
     "id": 2201,
     "name": "Mechanical Frame",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -1860,6 +1867,7 @@
   "2202": {
     "id": 2202,
     "name": "Mechanical Frame",
+    "level": 2,
     "required": [
       {
         "id": 2201,
@@ -1879,6 +1887,7 @@
   "2203": {
     "id": 2203,
     "name": "Mechanical Frame",
+    "level": 3,
     "required": [
       {
         "id": 2202,
@@ -1898,6 +1907,7 @@
   "2204": {
     "id": 2204,
     "name": "Mechanical Frame",
+    "level": 4,
     "required": [
       {
         "id": 2203,
@@ -1917,6 +1927,7 @@
   "2205": {
     "id": 2205,
     "name": "Mechanical Frame",
+    "level": 5,
     "required": [
       {
         "id": 2204,
@@ -1936,6 +1947,7 @@
   "2206": {
     "id": 2206,
     "name": "Mechanical Frame",
+    "level": 6,
     "required": [
       {
         "id": 2205,
@@ -1955,6 +1967,7 @@
   "2207": {
     "id": 2207,
     "name": "Mechanical Frame",
+    "level": 7,
     "required": [
       {
         "id": 2206,
@@ -1974,6 +1987,7 @@
   "2208": {
     "id": 2208,
     "name": "Mechanical Frame",
+    "level": 8,
     "required": [
       {
         "id": 2207,
@@ -1993,6 +2007,7 @@
   "2301": {
     "id": 2301,
     "name": "Inventory Capacity",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2007,6 +2022,7 @@
   "2302": {
     "id": 2302,
     "name": "Inventory Capacity",
+    "level": 2,
     "required": [
       {
         "id": 2301,
@@ -2026,6 +2042,7 @@
   "2303": {
     "id": 2303,
     "name": "Inventory Capacity",
+    "level": 3,
     "required": [
       {
         "id": 2302,
@@ -2045,6 +2062,7 @@
   "2304": {
     "id": 2304,
     "name": "Inventory Capacity",
+    "level": 4,
     "required": [
       {
         "id": 2303,
@@ -2064,6 +2082,7 @@
   "2305": {
     "id": 2305,
     "name": "Inventory Capacity",
+    "level": 5,
     "required": [
       {
         "id": 2304,
@@ -2083,6 +2102,7 @@
   "2306": {
     "id": 2306,
     "name": "Inventory Capacity",
+    "level": 6,
     "required": [
       {
         "id": 2305,
@@ -2102,6 +2122,7 @@
   "2307": {
     "id": 2307,
     "name": "Inventory Capacity",
+    "level": 7,
     "required": [
       {
         "id": 2306,
@@ -2116,6 +2137,7 @@
   "2401": {
     "id": 2401,
     "name": "Communication Control",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2130,6 +2152,7 @@
   "2402": {
     "id": 2402,
     "name": "Communication Control",
+    "level": 2,
     "required": [
       {
         "id": 2401,
@@ -2149,6 +2172,7 @@
   "2403": {
     "id": 2403,
     "name": "Communication Control",
+    "level": 3,
     "required": [
       {
         "id": 2402,
@@ -2168,6 +2192,7 @@
   "2404": {
     "id": 2404,
     "name": "Communication Control",
+    "level": 4,
     "required": [
       {
         "id": 2403,
@@ -2187,6 +2212,7 @@
   "2405": {
     "id": 2405,
     "name": "Communication Control",
+    "level": 5,
     "required": [
       {
         "id": 2404,
@@ -2206,6 +2232,7 @@
   "2406": {
     "id": 2406,
     "name": "Communication Control",
+    "level": 6,
     "required": [
       {
         "id": 2405,
@@ -2225,6 +2252,7 @@
   "2407": {
     "id": 2407,
     "name": "Communication Control",
+    "level": 7,
     "required": [
       {
         "id": 2406,
@@ -2244,6 +2272,7 @@
   "2501": {
     "id": 2501,
     "name": "Energy Circuit",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2258,6 +2287,7 @@
   "2502": {
     "id": 2502,
     "name": "Energy Circuit",
+    "level": 2,
     "required": [
       {
         "id": 2501,
@@ -2277,6 +2307,7 @@
   "2503": {
     "id": 2503,
     "name": "Energy Circuit",
+    "level": 3,
     "required": [
       {
         "id": 2502,
@@ -2296,6 +2327,7 @@
   "2504": {
     "id": 2504,
     "name": "Energy Circuit",
+    "level": 4,
     "required": [
       {
         "id": 2503,
@@ -2315,6 +2347,7 @@
   "2505": {
     "id": 2505,
     "name": "Energy Circuit",
+    "level": 5,
     "required": [
       {
         "id": 2504,
@@ -2334,6 +2367,7 @@
   "2506": {
     "id": 2506,
     "name": "Energy Circuit",
+    "level": 6,
     "required": [
       {
         "id": 2505,
@@ -2353,6 +2387,7 @@
   "2601": {
     "id": 2601,
     "name": "Drone Engine",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2367,6 +2402,7 @@
   "2602": {
     "id": 2602,
     "name": "Drone Engine",
+    "level": 2,
     "required": [
       {
         "id": 2601,
@@ -2386,6 +2422,7 @@
   "2603": {
     "id": 2603,
     "name": "Drone Engine",
+    "level": 3,
     "required": [
       {
         "id": 2602,
@@ -2405,6 +2442,7 @@
   "2604": {
     "id": 2604,
     "name": "Drone Engine",
+    "level": 4,
     "required": [
       {
         "id": 2603,
@@ -2424,6 +2462,7 @@
   "2605": {
     "id": 2605,
     "name": "Drone Engine",
+    "level": 5,
     "required": [
       {
         "id": 2604,
@@ -2443,6 +2482,7 @@
   "2606": {
     "id": 2606,
     "name": "Drone Engine",
+    "level": 6,
     "required": [
       {
         "id": 2605,
@@ -2462,6 +2502,7 @@
   "2701": {
     "id": 2701,
     "name": "Mass Construction",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2476,6 +2517,7 @@
   "2702": {
     "id": 2702,
     "name": "Mass Construction",
+    "level": 2,
     "required": [
       {
         "id": 2701,
@@ -2495,6 +2537,7 @@
   "2703": {
     "id": 2703,
     "name": "Mass Construction",
+    "level": 3,
     "required": [
       {
         "id": 2702,
@@ -2514,6 +2557,7 @@
   "2704": {
     "id": 2704,
     "name": "Mass Construction",
+    "level": 4,
     "required": [
       {
         "id": 2703,
@@ -2533,6 +2577,7 @@
   "2705": {
     "id": 2705,
     "name": "Mass Construction",
+    "level": 5,
     "required": [
       {
         "id": 2704,
@@ -2552,6 +2597,7 @@
   "2706": {
     "id": 2706,
     "name": "Mass Construction",
+    "level": 6,
     "required": [
       {
         "id": 2705,
@@ -2571,6 +2617,7 @@
   "2801": {
     "id": 2801,
     "name": "Energy Shield",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2585,6 +2632,7 @@
   "2802": {
     "id": 2802,
     "name": "Energy Shield",
+    "level": 2,
     "required": [
       {
         "id": 2801,
@@ -2604,6 +2652,7 @@
   "2803": {
     "id": 2803,
     "name": "Energy Shield",
+    "level": 3,
     "required": [
       {
         "id": 2802,
@@ -2623,6 +2672,7 @@
   "2804": {
     "id": 2804,
     "name": "Energy Shield",
+    "level": 4,
     "required": [
       {
         "id": 2803,
@@ -2637,6 +2687,7 @@
   "2805": {
     "id": 2805,
     "name": "Energy Shield",
+    "level": 5,
     "required": [
       {
         "id": 2804,
@@ -2656,6 +2707,7 @@
   "2806": {
     "id": 2806,
     "name": "Energy Shield",
+    "level": 6,
     "required": [
       {
         "id": 2805,
@@ -2675,6 +2727,7 @@
   "2807": {
     "id": 2807,
     "name": "Energy Shield",
+    "level": 26,
     "required": [
       {
         "id": 2806,
@@ -2689,6 +2742,7 @@
   "2901": {
     "id": 2901,
     "name": "Drive Engine Lv1",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2703,6 +2757,7 @@
   "2902": {
     "id": 2902,
     "name": "Drive Engine Lv2",
+    "level": 2,
     "required": [
       {
         "id": 2901,
@@ -2722,6 +2777,7 @@
   "2903": {
     "id": 2903,
     "name": "Drive Engine Lv3",
+    "level": 3,
     "required": [
       {
         "id": 2902,
@@ -2741,6 +2797,7 @@
   "2904": {
     "id": 2904,
     "name": "Drive Engine Lv4",
+    "level": 4,
     "required": [
       {
         "id": 2903,
@@ -2764,6 +2821,7 @@
   "2905": {
     "id": 2905,
     "name": "Drive Engine",
+    "level": 5,
     "required": [
       {
         "id": 2904,
@@ -2778,6 +2836,7 @@
   "2906": {
     "id": 2906,
     "name": "Drive Engine",
+    "level": 6,
     "required": [
       {
         "id": 2905,
@@ -2792,6 +2851,7 @@
   "2951": {
     "id": 2951,
     "name": "Auto Reconstruction Marking",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2806,6 +2866,7 @@
   "2952": {
     "id": 2952,
     "name": "Auto Reconstruction Marking",
+    "level": 2,
     "required": [
       {
         "id": 2951,
@@ -2820,6 +2881,7 @@
   "2953": {
     "id": 2953,
     "name": "Auto Reconstruction Marking",
+    "level": 3,
     "required": [
       {
         "id": 2952,
@@ -2834,6 +2896,7 @@
   "2954": {
     "id": 2954,
     "name": "Auto Reconstruction Marking",
+    "level": 4,
     "required": [
       {
         "id": 2953,
@@ -2848,6 +2911,7 @@
   "2955": {
     "id": 2955,
     "name": "Auto Reconstruction Marking",
+    "level": 5,
     "required": [
       {
         "id": 2954,
@@ -2862,6 +2926,7 @@
   "2956": {
     "id": 2956,
     "name": "Auto Reconstruction Marking",
+    "level": 6,
     "required": [
       {
         "id": 2955,
@@ -2876,6 +2941,7 @@
   "3101": {
     "id": 3101,
     "name": "Solar Sail Life",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2890,6 +2956,7 @@
   "3102": {
     "id": 3102,
     "name": "Solar Sail Life",
+    "level": 2,
     "required": [
       {
         "id": 3101,
@@ -2904,6 +2971,7 @@
   "3103": {
     "id": 3103,
     "name": "Solar Sail Life",
+    "level": 3,
     "required": [
       {
         "id": 3102,
@@ -2918,6 +2986,7 @@
   "3104": {
     "id": 3104,
     "name": "Solar Sail Life",
+    "level": 4,
     "required": [
       {
         "id": 3103,
@@ -2932,6 +3001,7 @@
   "3105": {
     "id": 3105,
     "name": "Solar Sail Life",
+    "level": 5,
     "required": [
       {
         "id": 3104,
@@ -2946,6 +3016,7 @@
   "3106": {
     "id": 3106,
     "name": "Solar Sail Life",
+    "level": 6,
     "required": [
       {
         "id": 3105,
@@ -2960,6 +3031,7 @@
   "3201": {
     "id": 3201,
     "name": "Ray Transmission Efficiency",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -2974,6 +3046,7 @@
   "3202": {
     "id": 3202,
     "name": "Ray Transmission Efficiency",
+    "level": 2,
     "required": [
       {
         "id": 3201,
@@ -2988,6 +3061,7 @@
   "3203": {
     "id": 3203,
     "name": "Ray Transmission Efficiency",
+    "level": 3,
     "required": [
       {
         "id": 3202,
@@ -3002,6 +3076,7 @@
   "3204": {
     "id": 3204,
     "name": "Ray Transmission Efficiency",
+    "level": 4,
     "required": [
       {
         "id": 3203,
@@ -3016,6 +3091,7 @@
   "3205": {
     "id": 3205,
     "name": "Ray Transmission Efficiency",
+    "level": 5,
     "required": [
       {
         "id": 3204,
@@ -3030,6 +3106,7 @@
   "3206": {
     "id": 3206,
     "name": "Ray Transmission Efficiency",
+    "level": 6,
     "required": [
       {
         "id": 3205,
@@ -3044,6 +3121,7 @@
   "3207": {
     "id": 3207,
     "name": "Ray Transmission Efficiency",
+    "level": 7,
     "required": [
       {
         "id": 3206,
@@ -3058,6 +3136,7 @@
   "3208": {
     "id": 3208,
     "name": "Ray Transmission Efficiency",
+    "level": 8,
     "required": [
       {
         "id": 3207,
@@ -3072,6 +3151,7 @@
   "3301": {
     "id": 3301,
     "name": "Sorter Cargo Stacking",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3086,6 +3166,7 @@
   "3302": {
     "id": 3302,
     "name": "Sorter Cargo Stacking",
+    "level": 2,
     "required": [
       {
         "id": 3301,
@@ -3100,6 +3181,7 @@
   "3303": {
     "id": 3303,
     "name": "Sorter Cargo Stacking",
+    "level": 3,
     "required": [
       {
         "id": 3302,
@@ -3114,6 +3196,7 @@
   "3304": {
     "id": 3304,
     "name": "Sorter Cargo Stacking",
+    "level": 4,
     "required": [
       {
         "id": 3303,
@@ -3128,6 +3211,7 @@
   "3305": {
     "id": 3305,
     "name": "Sorter Cargo Stacking",
+    "level": 5,
     "required": [
       {
         "id": 3304,
@@ -3142,6 +3226,7 @@
   "3306": {
     "id": 3306,
     "name": "Sorter Cargo Integration",
+    "level": 1,
     "required": [
       {
         "id": 3305,
@@ -3161,6 +3246,7 @@
   "3311": {
     "id": 3311,
     "name": "Pile Sorter Upgrade",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3175,6 +3261,7 @@
   "3312": {
     "id": 3312,
     "name": "Pile Sorter Upgrade",
+    "level": 2,
     "required": [
       {
         "id": 3311,
@@ -3189,6 +3276,7 @@
   "3313": {
     "id": 3313,
     "name": "Pile Sorter Upgrade",
+    "level": 3,
     "required": [
       {
         "id": 3312,
@@ -3203,6 +3291,7 @@
   "3314": {
     "id": 3314,
     "name": "Pile Sorter Upgrade",
+    "level": 4,
     "required": [
       {
         "id": 3313,
@@ -3217,6 +3306,7 @@
   "3315": {
     "id": 3315,
     "name": "Pile Sorter Upgrade",
+    "level": 5,
     "required": [
       {
         "id": 3314,
@@ -3231,6 +3321,7 @@
   "3316": {
     "id": 3316,
     "name": "Pile Sorter Upgrade",
+    "level": 6,
     "required": [
       {
         "id": 3315,
@@ -3250,6 +3341,7 @@
   "3401": {
     "id": 3401,
     "name": "Logistics Carrier Engine",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3264,6 +3356,7 @@
   "3402": {
     "id": 3402,
     "name": "Logistics Carrier Engine",
+    "level": 2,
     "required": [
       {
         "id": 3401,
@@ -3278,6 +3371,7 @@
   "3403": {
     "id": 3403,
     "name": "Logistics Carrier Engine",
+    "level": 3,
     "required": [
       {
         "id": 3402,
@@ -3297,6 +3391,7 @@
   "3404": {
     "id": 3404,
     "name": "Logistics Carrier Engine Lv4",
+    "level": 4,
     "required": [
       {
         "id": 3403,
@@ -3316,6 +3411,7 @@
   "3405": {
     "id": 3405,
     "name": "Logistics Carrier Engine",
+    "level": 5,
     "required": [
       {
         "id": 3404,
@@ -3330,6 +3426,7 @@
   "3406": {
     "id": 3406,
     "name": "Logistics Carrier Engine",
+    "level": 6,
     "required": [
       {
         "id": 3405,
@@ -3344,6 +3441,7 @@
   "3407": {
     "id": 3407,
     "name": "Logistics Carrier Engine",
+    "level": 7,
     "required": [
       {
         "id": 3406,
@@ -3358,6 +3456,7 @@
   "3501": {
     "id": 3501,
     "name": "Logistics Carrier Capacity",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3372,6 +3471,7 @@
   "3502": {
     "id": 3502,
     "name": "Logistics Carrier Capacity",
+    "level": 2,
     "required": [
       {
         "id": 3501,
@@ -3386,6 +3486,7 @@
   "3503": {
     "id": 3503,
     "name": "Logistics Carrier Capacity",
+    "level": 3,
     "required": [
       {
         "id": 3502,
@@ -3405,6 +3506,7 @@
   "3504": {
     "id": 3504,
     "name": "Logistics Carrier Capacity",
+    "level": 4,
     "required": [
       {
         "id": 3503,
@@ -3419,6 +3521,7 @@
   "3505": {
     "id": 3505,
     "name": "Logistics Carrier Capacity",
+    "level": 5,
     "required": [
       {
         "id": 3504,
@@ -3433,6 +3536,7 @@
   "3506": {
     "id": 3506,
     "name": "Logistics Carrier Capacity",
+    "level": 6,
     "required": [
       {
         "id": 3505,
@@ -3447,6 +3551,7 @@
   "3507": {
     "id": 3507,
     "name": "Logistics Carrier Capacity",
+    "level": 7,
     "required": [
       {
         "id": 3506,
@@ -3461,6 +3566,7 @@
   "3508": {
     "id": 3508,
     "name": "Logistics Carrier Capacity",
+    "level": 8,
     "required": [
       {
         "id": 3507,
@@ -3475,6 +3581,7 @@
   "3509": {
     "id": 3509,
     "name": "Logistics Carrier Capacity",
+    "level": 9,
     "required": [
       {
         "id": 3508,
@@ -3489,6 +3596,7 @@
   "3510": {
     "id": 3510,
     "name": "Logistics Carrier Capacity",
+    "level": 12,
     "required": [
       {
         "id": 3509,
@@ -3503,6 +3611,7 @@
   "3601": {
     "id": 3601,
     "name": "Vein Utilization",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3517,6 +3626,7 @@
   "3602": {
     "id": 3602,
     "name": "Vein Utilization",
+    "level": 2,
     "required": [
       {
         "id": 3601,
@@ -3531,6 +3641,7 @@
   "3603": {
     "id": 3603,
     "name": "Vein Utilization",
+    "level": 3,
     "required": [
       {
         "id": 3602,
@@ -3545,6 +3656,7 @@
   "3604": {
     "id": 3604,
     "name": "Vein Utilization",
+    "level": 4,
     "required": [
       {
         "id": 3603,
@@ -3559,6 +3671,7 @@
   "3605": {
     "id": 3605,
     "name": "Vein Utilization",
+    "level": 5,
     "required": [
       {
         "id": 3604,
@@ -3573,6 +3686,7 @@
   "3606": {
     "id": 3606,
     "name": "Vein Utilization",
+    "level": 6,
     "required": [
       {
         "id": 3605,
@@ -3587,6 +3701,7 @@
   "3701": {
     "id": 3701,
     "name": "Vertical Construction Lv1",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3601,6 +3716,7 @@
   "3702": {
     "id": 3702,
     "name": "Vertical Construction",
+    "level": 2,
     "required": [
       {
         "id": 3701,
@@ -3615,6 +3731,7 @@
   "3703": {
     "id": 3703,
     "name": "Vertical Construction",
+    "level": 3,
     "required": [
       {
         "id": 3702,
@@ -3629,6 +3746,7 @@
   "3704": {
     "id": 3704,
     "name": "Vertical Construction",
+    "level": 4,
     "required": [
       {
         "id": 3703,
@@ -3643,6 +3761,7 @@
   "3705": {
     "id": 3705,
     "name": "Vertical Construction",
+    "level": 5,
     "required": [
       {
         "id": 3704,
@@ -3657,6 +3776,7 @@
   "3706": {
     "id": 3706,
     "name": "Vertical Construction",
+    "level": 6,
     "required": [
       {
         "id": 3705,
@@ -3671,6 +3791,7 @@
   "3801": {
     "id": 3801,
     "name": "Station Integrated Logistics",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3685,6 +3806,7 @@
   "3802": {
     "id": 3802,
     "name": "Station Integrated Logistics",
+    "level": 2,
     "required": [
       {
         "id": 3801,
@@ -3704,6 +3826,7 @@
   "3803": {
     "id": 3803,
     "name": "Station Integrated Logistics",
+    "level": 3,
     "required": [
       {
         "id": 3802,
@@ -3723,6 +3846,7 @@
   "3901": {
     "id": 3901,
     "name": "Research Speed",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3737,6 +3861,7 @@
   "3902": {
     "id": 3902,
     "name": "Research Speed",
+    "level": 2,
     "required": [
       {
         "id": 3901,
@@ -3751,6 +3876,7 @@
   "3903": {
     "id": 3903,
     "name": "Research Speed",
+    "level": 3,
     "required": [
       {
         "id": 3902,
@@ -3765,6 +3891,7 @@
   "3904": {
     "id": 3904,
     "name": "Research Speed",
+    "level": 4,
     "required": [
       {
         "id": 3903,
@@ -3779,6 +3906,7 @@
   "4001": {
     "id": 4001,
     "name": "Distribution Range",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3793,6 +3921,7 @@
   "4002": {
     "id": 4002,
     "name": "Distribution Range",
+    "level": 2,
     "required": [
       {
         "id": 4001,
@@ -3807,6 +3936,7 @@
   "4003": {
     "id": 4003,
     "name": "Distribution Range",
+    "level": 3,
     "required": [
       {
         "id": 4002,
@@ -3821,6 +3951,7 @@
   "4004": {
     "id": 4004,
     "name": "Distribution Range",
+    "level": 4,
     "required": [
       {
         "id": 4003,
@@ -3835,6 +3966,7 @@
   "4005": {
     "id": 4005,
     "name": "Distribution Range",
+    "level": 5,
     "required": [
       {
         "id": 4004,
@@ -3849,6 +3981,7 @@
   "4101": {
     "id": 4101,
     "name": "Cosmic Exploration",
+    "level": 1,
     "required": [],
     "implicitRequired": [],
     "milestone": false,
@@ -3858,6 +3991,7 @@
   "4102": {
     "id": 4102,
     "name": "Cosmic Exploration",
+    "level": 2,
     "required": [
       {
         "id": 4101,
@@ -3872,6 +4006,7 @@
   "4103": {
     "id": 4103,
     "name": "Cosmic Exploration Lv3",
+    "level": 3,
     "required": [
       {
         "id": 4102,
@@ -3891,6 +4026,7 @@
   "4104": {
     "id": 4104,
     "name": "Cosmic Exploration",
+    "level": 4,
     "required": [
       {
         "id": 4103,
@@ -3905,6 +4041,7 @@
   "4201": {
     "id": 4201,
     "name": "Solar Sail Attaching Speed",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -3919,6 +4056,7 @@
   "4202": {
     "id": 4202,
     "name": "Solar Sail Attaching Speed",
+    "level": 2,
     "required": [
       {
         "id": 4201,
@@ -3933,6 +4071,7 @@
   "4203": {
     "id": 4203,
     "name": "Solar Sail Attaching Speed",
+    "level": 3,
     "required": [
       {
         "id": 4202,
@@ -3947,6 +4086,7 @@
   "4204": {
     "id": 4204,
     "name": "Solar Sail Attaching Speed",
+    "level": 4,
     "required": [
       {
         "id": 4203,
@@ -3961,6 +4101,7 @@
   "4205": {
     "id": 4205,
     "name": "Solar Sail Attaching Speed",
+    "level": 5,
     "required": [
       {
         "id": 4204,
@@ -3975,6 +4116,7 @@
   "4206": {
     "id": 4206,
     "name": "Solar Sail Attaching Speed",
+    "level": 6,
     "required": [
       {
         "id": 4205,
@@ -3989,6 +4131,7 @@
   "5001": {
     "id": 5001,
     "name": "Kinetic Weapon Damage",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4003,6 +4146,7 @@
   "5002": {
     "id": 5002,
     "name": "Kinetic Weapon Damage",
+    "level": 2,
     "required": [
       {
         "id": 5001,
@@ -4017,6 +4161,7 @@
   "5003": {
     "id": 5003,
     "name": "Kinetic Weapon Damage",
+    "level": 3,
     "required": [
       {
         "id": 5002,
@@ -4031,6 +4176,7 @@
   "5004": {
     "id": 5004,
     "name": "Kinetic Weapon Damage",
+    "level": 4,
     "required": [
       {
         "id": 5003,
@@ -4045,6 +4191,7 @@
   "5005": {
     "id": 5005,
     "name": "Kinetic Weapon Damage",
+    "level": 5,
     "required": [
       {
         "id": 5004,
@@ -4059,6 +4206,7 @@
   "5006": {
     "id": 5006,
     "name": "Kinetic Weapon Damage",
+    "level": 6,
     "required": [
       {
         "id": 5005,
@@ -4073,6 +4221,7 @@
   "5101": {
     "id": 5101,
     "name": "Energy Weapon Damage",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4087,6 +4236,7 @@
   "5102": {
     "id": 5102,
     "name": "Energy Weapon Damage",
+    "level": 2,
     "required": [
       {
         "id": 5101,
@@ -4101,6 +4251,7 @@
   "5103": {
     "id": 5103,
     "name": "Energy Weapon Damage",
+    "level": 3,
     "required": [
       {
         "id": 5102,
@@ -4115,6 +4266,7 @@
   "5104": {
     "id": 5104,
     "name": "Energy Weapon Damage",
+    "level": 4,
     "required": [
       {
         "id": 5103,
@@ -4129,6 +4281,7 @@
   "5105": {
     "id": 5105,
     "name": "Energy Weapon Damage",
+    "level": 5,
     "required": [
       {
         "id": 5104,
@@ -4143,6 +4296,7 @@
   "5106": {
     "id": 5106,
     "name": "Energy Weapon Damage",
+    "level": 6,
     "required": [
       {
         "id": 5105,
@@ -4157,6 +4311,7 @@
   "5201": {
     "id": 5201,
     "name": "Explosive Weapon Damage",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4171,6 +4326,7 @@
   "5202": {
     "id": 5202,
     "name": "Explosive Weapon Damage",
+    "level": 2,
     "required": [
       {
         "id": 5201,
@@ -4185,6 +4341,7 @@
   "5203": {
     "id": 5203,
     "name": "Explosive Weapon Damage",
+    "level": 3,
     "required": [
       {
         "id": 5202,
@@ -4199,6 +4356,7 @@
   "5204": {
     "id": 5204,
     "name": "Explosive Weapon Damage",
+    "level": 4,
     "required": [
       {
         "id": 5203,
@@ -4213,6 +4371,7 @@
   "5205": {
     "id": 5205,
     "name": "Explosive Weapon Damage",
+    "level": 5,
     "required": [
       {
         "id": 5204,
@@ -4227,6 +4386,7 @@
   "5206": {
     "id": 5206,
     "name": "Explosive Weapon Damage",
+    "level": 6,
     "required": [
       {
         "id": 5205,
@@ -4241,6 +4401,7 @@
   "5301": {
     "id": 5301,
     "name": "Combat Drone Damage",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4255,6 +4416,7 @@
   "5302": {
     "id": 5302,
     "name": "Combat Drone Damage",
+    "level": 2,
     "required": [
       {
         "id": 5301,
@@ -4269,6 +4431,7 @@
   "5303": {
     "id": 5303,
     "name": "Combat Drone Damage",
+    "level": 3,
     "required": [
       {
         "id": 5302,
@@ -4283,6 +4446,7 @@
   "5304": {
     "id": 5304,
     "name": "Combat Drone Damage",
+    "level": 4,
     "required": [
       {
         "id": 5303,
@@ -4297,6 +4461,7 @@
   "5305": {
     "id": 5305,
     "name": "Combat Drone Damage",
+    "level": 5,
     "required": [
       {
         "id": 5304,
@@ -4311,6 +4476,7 @@
   "5401": {
     "id": 5401,
     "name": "Combat Drone Attack Speed",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4325,6 +4491,7 @@
   "5402": {
     "id": 5402,
     "name": "Combat Drone Attack Speed",
+    "level": 2,
     "required": [
       {
         "id": 5401,
@@ -4339,6 +4506,7 @@
   "5403": {
     "id": 5403,
     "name": "Combat Drone Attack Speed",
+    "level": 3,
     "required": [
       {
         "id": 5402,
@@ -4353,6 +4521,7 @@
   "5404": {
     "id": 5404,
     "name": "Combat Drone Attack Speed",
+    "level": 4,
     "required": [
       {
         "id": 5403,
@@ -4367,6 +4536,7 @@
   "5405": {
     "id": 5405,
     "name": "Combat Drone Attack Speed",
+    "level": 5,
     "required": [
       {
         "id": 5404,
@@ -4381,6 +4551,7 @@
   "5601": {
     "id": 5601,
     "name": "Combat Drone Durability",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4395,6 +4566,7 @@
   "5602": {
     "id": 5602,
     "name": "Combat Drone Durability",
+    "level": 2,
     "required": [
       {
         "id": 5601,
@@ -4409,6 +4581,7 @@
   "5603": {
     "id": 5603,
     "name": "Combat Drone Durability",
+    "level": 3,
     "required": [
       {
         "id": 5602,
@@ -4423,6 +4596,7 @@
   "5604": {
     "id": 5604,
     "name": "Combat Drone Durability",
+    "level": 4,
     "required": [
       {
         "id": 5603,
@@ -4437,6 +4611,7 @@
   "5605": {
     "id": 5605,
     "name": "Combat Drone Durability",
+    "level": 5,
     "required": [
       {
         "id": 5604,
@@ -4451,6 +4626,7 @@
   "5701": {
     "id": 5701,
     "name": "Planetary Shield",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4465,6 +4641,7 @@
   "5702": {
     "id": 5702,
     "name": "Planetary Shield",
+    "level": 2,
     "required": [
       {
         "id": 5701,
@@ -4479,6 +4656,7 @@
   "5703": {
     "id": 5703,
     "name": "Planetary Shield",
+    "level": 3,
     "required": [
       {
         "id": 5702,
@@ -4493,6 +4671,7 @@
   "5704": {
     "id": 5704,
     "name": "Planetary Shield",
+    "level": 4,
     "required": [
       {
         "id": 5703,
@@ -4507,6 +4686,7 @@
   "5705": {
     "id": 5705,
     "name": "Planetary Shield",
+    "level": 5,
     "required": [
       {
         "id": 5704,
@@ -4521,6 +4701,7 @@
   "5801": {
     "id": 5801,
     "name": "Ground Squadron Expansion",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4535,6 +4716,7 @@
   "5802": {
     "id": 5802,
     "name": "Ground Squadron Expansion",
+    "level": 2,
     "required": [
       {
         "id": 5801,
@@ -4549,6 +4731,7 @@
   "5803": {
     "id": 5803,
     "name": "Ground Squadron Expansion",
+    "level": 3,
     "required": [
       {
         "id": 5802,
@@ -4563,6 +4746,7 @@
   "5804": {
     "id": 5804,
     "name": "Ground Squadron Expansion",
+    "level": 4,
     "required": [
       {
         "id": 5803,
@@ -4577,6 +4761,7 @@
   "5805": {
     "id": 5805,
     "name": "Ground Squadron Expansion",
+    "level": 5,
     "required": [
       {
         "id": 5804,
@@ -4591,6 +4776,7 @@
   "5806": {
     "id": 5806,
     "name": "Ground Squadron Expansion",
+    "level": 6,
     "required": [
       {
         "id": 5805,
@@ -4605,6 +4791,7 @@
   "5807": {
     "id": 5807,
     "name": "Ground Squadron Expansion",
+    "level": 7,
     "required": [
       {
         "id": 5806,
@@ -4619,6 +4806,7 @@
   "5901": {
     "id": 5901,
     "name": "Space Fleet Expansion",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4633,6 +4821,7 @@
   "5902": {
     "id": 5902,
     "name": "Space Fleet Expansion",
+    "level": 2,
     "required": [
       {
         "id": 5901,
@@ -4647,6 +4836,7 @@
   "5903": {
     "id": 5903,
     "name": "Space Fleet Expansion",
+    "level": 3,
     "required": [
       {
         "id": 5902,
@@ -4661,6 +4851,7 @@
   "5904": {
     "id": 5904,
     "name": "Space Fleet Expansion",
+    "level": 4,
     "required": [
       {
         "id": 5903,
@@ -4675,6 +4866,7 @@
   "5905": {
     "id": 5905,
     "name": "Space Fleet Expansion",
+    "level": 5,
     "required": [
       {
         "id": 5904,
@@ -4689,6 +4881,7 @@
   "5906": {
     "id": 5906,
     "name": "Space Fleet Expansion",
+    "level": 6,
     "required": [
       {
         "id": 5905,
@@ -4703,6 +4896,7 @@
   "5907": {
     "id": 5907,
     "name": "Space Fleet Expansion",
+    "level": 7,
     "required": [
       {
         "id": 5906,
@@ -4717,6 +4911,7 @@
   "6001": {
     "id": 6001,
     "name": "Enhanced Structure",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4731,6 +4926,7 @@
   "6002": {
     "id": 6002,
     "name": "Enhanced Structure",
+    "level": 2,
     "required": [
       {
         "id": 6001,
@@ -4745,6 +4941,7 @@
   "6003": {
     "id": 6003,
     "name": "Enhanced Structure",
+    "level": 3,
     "required": [
       {
         "id": 6002,
@@ -4759,6 +4956,7 @@
   "6004": {
     "id": 6004,
     "name": "Enhanced Structure",
+    "level": 4,
     "required": [
       {
         "id": 6003,
@@ -4773,6 +4971,7 @@
   "6005": {
     "id": 6005,
     "name": "Enhanced Structure",
+    "level": 5,
     "required": [
       {
         "id": 6004,
@@ -4787,6 +4986,7 @@
   "6006": {
     "id": 6006,
     "name": "Enhanced Structure",
+    "level": 6,
     "required": [
       {
         "id": 6005,
@@ -4801,6 +5001,7 @@
   "6101": {
     "id": 6101,
     "name": "EM Weapon Strength",
+    "level": 1,
     "required": [],
     "implicitRequired": [
       {
@@ -4815,6 +5016,7 @@
   "6102": {
     "id": 6102,
     "name": "EM Weapon Strength",
+    "level": 2,
     "required": [
       {
         "id": 6101,
@@ -4829,6 +5031,7 @@
   "6103": {
     "id": 6103,
     "name": "EM Weapon Strength",
+    "level": 3,
     "required": [
       {
         "id": 6102,
@@ -4843,6 +5046,7 @@
   "6104": {
     "id": 6104,
     "name": "EM Weapon Strength",
+    "level": 4,
     "required": [
       {
         "id": 6103,
@@ -4857,6 +5061,7 @@
   "6105": {
     "id": 6105,
     "name": "EM Weapon Strength",
+    "level": 5,
     "required": [
       {
         "id": 6104,
@@ -4871,6 +5076,7 @@
   "6106": {
     "id": 6106,
     "name": "EM Weapon Strength",
+    "level": 6,
     "required": [
       {
         "id": 6105,

@@ -1,4 +1,13 @@
 (() => {
+  function displayName(technology) {
+    const name = technology && technology.name;
+    const level = technology && technology.level;
+    if (!name || !Number.isInteger(level) || level < 1) return name || "";
+    return /\bLv\d+\b/.test(name) ? name : `${name} Lv${level}`;
+  }
+
+  window.DspTechnologyLabels = Object.freeze({ displayName });
+
   const scriptUrl = document.currentScript && document.currentScript.src;
   const dataUrl = new URL(
     "../data/tech-reference.json",
@@ -29,7 +38,7 @@
 
       const nameLine = document.createElement("div");
       nameLine.className = "tech-tooltip-line tech-tooltip-name";
-      nameLine.append(document.createTextNode(data.name));
+      nameLine.append(document.createTextNode(displayName(data)));
       if (details.cube) {
         const cube = document.createElement("span");
         cube.className = "tech-tooltip-cube";
@@ -52,12 +61,17 @@
 
       addLine(
         "Required",
-        data.required && data.required.map((value) => value.name),
+        data.required &&
+          data.required.map((value) =>
+            displayName(techData[value.id] || value),
+          ),
       );
       addLine(
         "Implicit",
         data.implicitRequired &&
-          data.implicitRequired.map((value) => value.name),
+          data.implicitRequired.map((value) =>
+            displayName(techData[value.id] || value),
+          ),
       );
       addLine(
         "Unlocks",

@@ -16,7 +16,8 @@ Use retained prerequisites and costs. The three-technology purple unlock is the 
 
 ## Intended outcome
 
-Install the approved PURPLE gate, buildout, logistics, resource-horizon, stopping-rank, and discard guidance.
+Install the approved PURPLE gate, buildout, logistics, resource-horizon,
+stopping-rank, and discard guidance with rank-accurate technology tooltips.
 
 ## In-scope surfaces
 
@@ -24,6 +25,9 @@ Install the approved PURPLE gate, buildout, logistics, resource-horizon, stoppin
 - Visible PURPLE research explanation
 - Phase gate and discard-rule language
 - Directly affected technology tooltips and research contracts
+- The 163 retained higher-rank technology records whose base names previously
+  omitted their rank, plus starting-rank metadata required to label their
+  prerequisite edges accurately
 
 ## Approved specification
 
@@ -92,12 +96,34 @@ The aggregate rejected-stop totals and the prescribed availability and ranks
 were checked against retained data. Do not expose individual recommended-tech
 costs or use vague, open-ended rank advice.
 
+### Owner-approved tooltip acceptance refinement — 2026-08-27
+
+The initial implementation proved technology IDs and rendered a sample
+tooltip, but did not prove that levelled technology names conveyed their ranks.
+The retained graph identifies 206 upgrade-tree records. Of those, 163
+higher-rank records use a repeated base name that previously made the tooltip
+title and same-family prerequisite appear identical.
+
+Preserve the authoritative base technology name and add the retained graph's
+rank as structured website data for every upgrade-tree record. Use that rank
+to qualify the tooltip's current technology, required prerequisites, and
+implicit prerequisites. Existing names that already contain their correct
+`Lv#` suffix must not receive a duplicate suffix.
+
+The durable contract must validate all 206 upgrade records against retained
+rank and direct prerequisite data, explicitly prove that all 163 previously
+ambiguous higher-rank records render the correct rank, and prove that levelled
+prerequisite labels identify the actual predecessor rank. Rendering or opening
+a tooltip without verifying its conveyed information is insufficient.
+
 ## Non-goals and preserved contracts
 
 - Do not add problem-resolver guidance or Quick processes; they remain roadmap-wide out of scope.
 - Do not expose individual technology costs.
 - Do not retain Deuterium, Collider, or fusion preparation in PURPLE.
 - Do not make bounded upgrades part of the three-Lab phase gate.
+- Do not redesign the tooltip or add individual technology costs.
+- Do not deploy the retained research graph as a website dependency.
 
 ## Owner gates
 
@@ -112,12 +138,17 @@ costs or use vague, open-ended rank advice.
 - Vein Utilization uses catch-up language and stops at Lv2.
 - Aggregate rejected-stop explanations remain concise and accurate.
 - The unlock, recommendations, three-Lab gate, and discard rule remain distinct.
+- All 163 previously ambiguous higher-rank records display their authoritative
+  rank, and levelled prerequisite labels display the predecessor's actual rank.
 
 ## Validation
 
 **Tier:** 1 — Contract
 
-Validate technology prerequisites, phase ownership, stopping ranks, aggregate costs, tooltips, and gate separation against retained data.
+Validate technology prerequisites, phase ownership, stopping ranks, aggregate
+costs, tooltip content, and gate separation against retained data. The tooltip
+contract must compare all 206 upgrade-tree records and the 163-record ambiguity
+set rather than relying on a rendering sample.
 
 ## Release
 

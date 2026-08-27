@@ -30,6 +30,146 @@ const technologyReference = JSON.parse(
   fs.readFileSync("assets/data/tech-reference.json", "utf8"),
 );
 const errors = [];
+const tooltipLabelContext = {
+  URL,
+  document: {
+    baseURI: "http://localhost/index.html",
+    currentScript: null,
+    getElementById() {
+      return null;
+    },
+  },
+  window: {},
+};
+vm.runInNewContext(
+  fs.readFileSync("assets/js/tech-tooltips.js", "utf8"),
+  tooltipLabelContext,
+);
+const displayTechnologyName =
+  tooltipLabelContext.window.DspTechnologyLabels?.displayName;
+if (typeof displayTechnologyName !== "function") {
+  errors.push("Technology tooltip rank formatter is unavailable");
+}
+
+const authoritativeTechnologyNodes = new Map(
+  authoritativeGraph.nodes
+    .filter(({ node_type: nodeType }) => nodeType === "tech_proto")
+    .map((node) => [String(node.game_id), node]),
+);
+const upgradeTechnologyNodes = [
+  ...authoritativeTechnologyNodes.values(),
+].filter(
+  (node) =>
+    node.ui_partition_inferred === "upgrade_tree_inferred" &&
+    technologyReference[node.game_id],
+);
+const previouslyAmbiguousUpgradeNodes = upgradeTechnologyNodes.filter(
+  (node) =>
+    node.level > 1 &&
+    !new RegExp(`\\bLv${node.level}\\b`).test(
+      technologyReference[node.game_id].name,
+    ),
+);
+if (upgradeTechnologyNodes.length !== 206) {
+  errors.push(
+    `Retained upgrade inventory has ${upgradeTechnologyNodes.length} records instead of 206`,
+  );
+}
+if (previouslyAmbiguousUpgradeNodes.length !== 163) {
+  errors.push(
+    `Rank-qualification threshold covers ${previouslyAmbiguousUpgradeNodes.length} records instead of 163`,
+  );
+}
+
+const formalTechnologyPrerequisites = new Map();
+for (const line of authoritativeFormalEdges.split(/\r?\n/)) {
+  const match = line.match(
+    /^\d+,tech:(\d+),tech:(\d+),pretech_(explicit|implicit),/,
+  );
+  if (!match) continue;
+  const [, prerequisiteId, technologyId, kind] = match;
+  const prerequisites = formalTechnologyPrerequisites.get(technologyId) || {
+    explicit: [],
+    implicit: [],
+  };
+  prerequisites[kind].push(prerequisiteId);
+  formalTechnologyPrerequisites.set(technologyId, prerequisites);
+}
+const sortedIds = (values) =>
+  values.map(String).sort((left, right) => left - right);
+const sameIds = (left, right) =>
+  JSON.stringify(sortedIds(left)) === JSON.stringify(sortedIds(right));
+
+for (const node of upgradeTechnologyNodes) {
+  const technologyId = String(node.game_id);
+  const reference = technologyReference[technologyId];
+  if (reference.level !== node.level) {
+    errors.push(
+      `Upgrade technology ${technologyId} has level ${reference.level} instead of ${node.level}`,
+    );
+  }
+  const displayedName =
+    typeof displayTechnologyName === "function"
+      ? displayTechnologyName(reference)
+      : reference.name;
+  if (!new RegExp(`\\bLv${node.level}\\b`).test(displayedName)) {
+    errors.push(
+      `Upgrade technology ${technologyId} does not display its authoritative Lv${node.level} rank`,
+    );
+  }
+
+  const formalPrerequisites = formalTechnologyPrerequisites.get(
+    technologyId,
+  ) || {
+    explicit: [],
+    implicit: [],
+  };
+  const referenceExplicit = (reference.required || []).map(({ id }) => id);
+  const referenceImplicit = (reference.implicitRequired || []).map(
+    ({ id }) => id,
+  );
+  if (!sameIds(referenceExplicit, formalPrerequisites.explicit)) {
+    errors.push(
+      `Upgrade technology ${technologyId} has invalid required edges`,
+    );
+  }
+  if (!sameIds(referenceImplicit, formalPrerequisites.implicit)) {
+    errors.push(
+      `Upgrade technology ${technologyId} has invalid implicit edges`,
+    );
+  }
+
+  for (const prerequisiteId of [...referenceExplicit, ...referenceImplicit]) {
+    const prerequisite = technologyReference[prerequisiteId];
+    const prerequisiteNode = authoritativeTechnologyNodes.get(
+      String(prerequisiteId),
+    );
+    if (
+      prerequisiteNode?.ui_partition_inferred === "upgrade_tree_inferred" &&
+      typeof displayTechnologyName === "function" &&
+      !new RegExp(`\\bLv${prerequisiteNode.level}\\b`).test(
+        displayTechnologyName(prerequisite),
+      )
+    ) {
+      errors.push(
+        `Upgrade technology ${technologyId} mislabels prerequisite ${prerequisiteId}`,
+      );
+    }
+  }
+}
+
+for (const node of previouslyAmbiguousUpgradeNodes) {
+  const reference = technologyReference[node.game_id];
+  if (
+    typeof displayTechnologyName !== "function" ||
+    displayTechnologyName(reference) !== `${reference.name} Lv${node.level}`
+  ) {
+    errors.push(
+      `Previously ambiguous technology ${node.game_id} is not rank-qualified`,
+    );
+  }
+}
+
 const guideText = stripMarkup(html);
 for (const requiredOpeningText of [
   "The route above is the simplest way through the game, but it isn't the only useful project this guide supports.",
@@ -1180,5 +1320,5 @@ if (errors.length) {
 }
 
 console.log(
-  `Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${operatingNoteCount} icon-free Operating Notes, ${links.length} direct links, textual-map complexity within bounds, and ${recipeTransitionCount} displayed recipe transformations verified.`,
+  `Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${operatingNoteCount} icon-free Operating Notes, ${links.length} direct links, ${upgradeTechnologyNodes.length} upgrade ranks including ${previouslyAmbiguousUpgradeNodes.length} rank-qualified tooltip records, textual-map complexity within bounds, and ${recipeTransitionCount} displayed recipe transformations verified.`,
 );

@@ -28,7 +28,8 @@ assets/
 - `index.html` contains the guide's semantic content.
 - `assets/css/guide.css` contains all presentation rules.
 - `assets/js/` contains the small, independent interaction scripts.
-- `assets/data/tech-reference.json` contains runtime-derived technology names and prerequisites.
+- `assets/data/tech-reference.json` contains runtime-derived technology names,
+  upgrade ranks, and prerequisites.
 - `assets/data/tech-tooltip-details.json` maps concise cube and recipe-unlock labels to their authoritative runtime item IDs.
 - `assets/images/` contains guide-original presentation art and locally hosted
   companion-mod media.

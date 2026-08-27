@@ -99,7 +99,8 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 - `scripts/validate-card-system.mjs` enforces the current card inventory,
   direct-link rules, structural complexity limits, icon-free Operating Notes,
   map icon treatments, authoritative recipe relationships, phase and
-  navigation identity, compatibility anchors, and scoped card controls.
+  navigation identity, compatibility anchors, scoped card controls, and
+  rank-qualified technology-tooltip names and prerequisite labels.
 - `scripts/validate-checklists.mjs` checks checklist identity and persistence,
   reset behavior, storage failure, glossary presence, and separation of the
   one-screen route from optional capabilities.
@@ -140,6 +141,12 @@ story validation. NR-12 is incomplete if the target remains unresolved after
 that story.
 
 ## Current management status
+
+**Owner decision — 2026-08-27:** NR-08's acceptance gate includes the
+rank-label defect exposed by its levelled PURPLE recommendations. Technical
+validation must prove rank-accurate tooltip titles and prerequisite labels for
+the complete retained 163-record ambiguity set; successful rendering alone is
+not sufficient.
 
 The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
 sequence, dependencies, and lifecycle status. NR-01 through NR-07 were
