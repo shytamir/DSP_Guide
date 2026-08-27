@@ -1,11 +1,11 @@
 # DSP Practical Progression Guide
 
-**Status:** Version 2.3 remains the current published release. Version 2.9 is
-the active release candidate. NR-01 through NR-18 and all three prerelease
-milestones were completed on 2026-08-27, and the concluded
+**Status:** Version 3.0 is the release-ready repository state awaiting manual
+production publication and final cold verification. NR-01 through NR-18 and
+all three prerelease milestones were completed on 2026-08-27, and the concluded
 [`release-candidate roadmap`](archive/version-2.9-release-candidate-roadmap.md)
-is archived. Work is now limited to release-related finishing and sanitization;
-production publication remains a separate owner decision.
+is archived. Version 2.3 remains the current published release until manual
+publication succeeds.
 
 ## Purpose
 
@@ -93,8 +93,9 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 ## Active validation contracts
 
 - `scripts/validate-deployment.mjs` checks the deployable static package,
-  internal anchors, asset boundaries, the bounded Dark Fog placement contract,
-  semantic component markup, and runtime-derived technology relationships.
+  required sanitized licensing records, internal anchors, asset boundaries, the
+  bounded Dark Fog placement contract, semantic component markup, and
+  runtime-derived technology relationships.
 - `scripts/validate-card-system.mjs` enforces the current card inventory,
   direct-link rules, structural complexity limits, icon-free Operating Notes,
   map icon treatments, authoritative recipe relationships, phase and
@@ -150,10 +151,17 @@ capability-proof checkpoint and received Tier 3 validation against its pushed
 `main` state.
 
 **Owner decision — 2026-08-27:** The editorial refinement workshop is complete.
-Version 2.9 is the release candidate, the planned roadmap is concluded and
-archived, and further work is limited to release-related finishing and
-sanitization. Production publication remains separately authorized release
-work.
+Version 2.9 completed release-candidate review, and version 3.0 is the
+release-ready repository state. The planned roadmap is concluded and archived.
+The owner will publish 3.0 manually through the Cloudflare Pages web interface,
+then complete a final cold verification before publication is recorded as
+complete.
+
+**Owner decision — 2026-08-27:** Release packages include `LICENSE` and the
+privacy-sanitized game-asset permission record alongside `index.html` and
+`assets/`. There will be no release tag or durable release artifact. Mutable
+GitHub Action version tags are an accepted workflow risk, and the incomplete
+external icon map is not a release blocker.
 
 **Owner decision — 2026-08-27:** NR-08's acceptance gate includes the
 rank-label defect exposed by its levelled PURPLE recommendations. Technical

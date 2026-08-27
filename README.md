@@ -68,16 +68,15 @@ changes.
 
 ## Roadmap status
 
-Version 2.3 remains the current published release. Version 2.9 is the active
-release candidate. Its 18 reader-facing stories and three prerelease milestones
-were completed on 2026-08-27, and the concluded
+Version 3.0 is the release-ready repository state awaiting manual production
+publication and final cold verification. Its 18 reader-facing stories and three
+prerelease milestones were completed on 2026-08-27, and the concluded
 [`release-candidate roadmap`](docs/archive/version-2.9-release-candidate-roadmap.md)
-is archived. Work is now limited to release-related finishing and sanitization;
-production publication remains a separate owner decision. The historical
-version 2.3 roadmap is preserved in
+is archived. Version 2.3 remains the current published release until that
+manual publication succeeds. The historical version 2.3 roadmap is preserved in
 [`docs/archive/ROADMAP.md`](docs/archive/ROADMAP.md). See
-[`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and
-[`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation
+[`CHANGELOG.md`](CHANGELOG.md) for release history and the 3.0 release notes,
+and [`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation
 contracts. Completed and superseded work remains under `docs/archive/`; the
 runtime-derived DAG package remains research provenance.
 
@@ -86,7 +85,9 @@ runtime-derived DAG package remains research provenance.
 Pushes to `main` run the GitHub Pages workflow. It validates and deploys the
 static site to the development Pages environment for browser review; this is
 not production publication. The workflow also produces one downloadable ZIP
-containing only `index.html` and `assets/`.
+containing `index.html`, `assets/`, `LICENSE`, and the sanitized game-asset
+permission record at
+`docs/management/game-asset-use-permission-sanitized.md`.
 
 `VERSION` stores the manually managed major and minor values. Deployment
 versions use `MAJOR.MINOR.RUN.SHA`, where `RUN` starts at zero and increases

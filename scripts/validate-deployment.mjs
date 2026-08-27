@@ -51,6 +51,11 @@ function listFiles(root) {
 const sourceFiles = [
   path.join(sourceRoot, "index.html"),
   ...listFiles(path.join(sourceRoot, "assets")),
+  path.join(sourceRoot, "LICENSE"),
+  path.join(
+    sourceRoot,
+    "docs/management/game-asset-use-permission-sanitized.md",
+  ),
 ];
 const expected = sourceFiles
   .map((file) => toRelative({ root: sourceRoot, file }))
@@ -61,7 +66,7 @@ const actual = deployedFiles
   .sort();
 check(
   JSON.stringify(actual) === JSON.stringify(expected),
-  "Package contents differ from index.html plus assets/.",
+  "Package contents differ from the static site and sanitized licensing records.",
 );
 
 for (const relative of expected) {
@@ -75,6 +80,30 @@ for (const relative of expected) {
     );
   }
 }
+
+const licensePath = path.join(siteRoot, "LICENSE");
+const licenseText = fs.existsSync(licensePath)
+  ? fs.readFileSync(licensePath, "utf8")
+  : "";
+check(
+  /limited permission[\s\S]*non-commercial community project/i.test(
+    licenseText,
+  ),
+  "The packaged license does not preserve the limited game-asset permission boundary.",
+);
+const permissionPath = path.join(
+  siteRoot,
+  "docs/management/game-asset-use-permission-sanitized.md",
+);
+const permissionText = fs.existsSync(permissionPath)
+  ? fs.readFileSync(permissionPath, "utf8")
+  : "";
+check(
+  /privacy-sanitized record[\s\S]*unmodified in-game images[\s\S]*non-commercial community project/i.test(
+    permissionText,
+  ),
+  "The packaged game-asset permission record is missing or invalid.",
+);
 
 const htmlPath = path.join(siteRoot, "index.html");
 check(fs.existsSync(htmlPath), "index.html is missing.");

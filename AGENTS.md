@@ -143,8 +143,10 @@ node scripts/validate-card-system.mjs
 node scripts/validate-checklists.mjs
 ```
 
-For a release-equivalent deployment check, stage only `index.html` and
-`assets/`, then run `node scripts/validate-deployment.mjs <site-directory> .`.
+For a release-equivalent deployment check, stage `index.html`, `assets/`,
+`LICENSE`, and
+`docs/management/game-asset-use-permission-sanitized.md`, then run
+`node scripts/validate-deployment.mjs <site-directory> .`.
 
 When authoritative game knowledge is required:
 

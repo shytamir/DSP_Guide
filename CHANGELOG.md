@@ -1,10 +1,10 @@
 # Changelog
 
-## 3.0 — Release candidate
+## 3.0 — 2026-08-27
 
-Version 3.0 is the target stable release for the current 2.9 candidate. It
-rebuilds the guide's route guidance around explicit research ownership,
-practical handoffs, and a complete path from the opening mall to white science.
+Version 3.0 rebuilds the guide's route guidance around explicit research
+ownership, practical handoffs, and a complete path from the opening mall to
+white science.
 
 ### Added
 
@@ -14,6 +14,8 @@ practical handoffs, and a complete path from the opening mall to white science.
   PHOTON, plus a final troubleshooting sequence and conclusion.
 - Added bounded RED defense guidance and a reusable interstellar logistics
   route model without expanding either into a separate progression gate.
+- Added sanitized licensing and game-asset permission records to release
+  packages.
 
 ### Changed
 
@@ -48,8 +50,6 @@ practical handoffs, and a complete path from the opening mall to white science.
 
 - YELLOW/PURPLE problem-resolver guidance, expanded Dark Fog control, and a
   prescribed PHOTON carrier rank remain outside this release.
-- Production publication remains a separate owner decision after release
-  finishing and sanitization of the 2.9 candidate.
 
 ## 2.3 — 2026-08-09
 

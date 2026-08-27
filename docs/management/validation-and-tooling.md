@@ -10,12 +10,12 @@ implementation into a permanent global workflow.
 Run the narrowest relevant tier first. Higher tiers include only the additional
 evidence justified by the change.
 
-| Tier | Use when | Expected evidence |
-| --- | --- | --- |
-| 0 — Records | Management or documentation only | Relevant record review, affected-link check, final diff |
-| 1 — Contract | Guide content, data, cards, or checklists | Directly affected deterministic validator |
-| 2 — Experience | Presentation, navigation, interaction, or persistence | Tier 1 plus required desktop Chromium review; narrow viewport only when affected |
-| 3 — Release | Deployment behavior or publication candidate | All repository validators, release-equivalent package validation, and required browser review |
+| Tier           | Use when                                              | Expected evidence                                                                                                                   |
+| -------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| 0 — Records    | Management or documentation only                      | Relevant record review, affected-link check, final diff                                                                             |
+| 1 — Contract   | Guide content, data, cards, or checklists             | Directly affected deterministic validator                                                                                           |
+| 2 — Experience | Presentation, navigation, interaction, or persistence | Tier 1 plus required desktop Chromium review; narrow viewport only when affected                                                    |
+| 3 — Release    | Deployment behavior or publication candidate          | All repository validators, release-equivalent package validation including sanitized licensing records, and required browser review |
 
 Desktop PC is the presentation target. Mobile remains best-effort unless a
 story explicitly changes narrow behavior or exposes a shared structural defect.

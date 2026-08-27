@@ -35,10 +35,9 @@ changing a management record.
 - No product roadmap is active. The completed 18-story sequence and all three
   prerelease milestones are preserved in the archived
   [`version 2.9 release-candidate roadmap`](../archive/version-2.9-release-candidate-roadmap.md).
-- Version 2.3 remains the current published release. Version 2.9 is the active
-  release candidate. Work is limited to release-related finishing and
-  sanitization; production publication remains a separate owner decision. The
-  2.3 release record is preserved in
+- Version 3.0 is the release-ready repository state awaiting manual production
+  publication and final cold verification. Version 2.3 remains the current
+  published release until that succeeds. The 2.3 release record is preserved in
   [`../archive/version-2.3-navigation-and-progressive-disclosure-release.md`](../archive/version-2.3-navigation-and-progressive-disclosure-release.md).
 - The completed twelve-story roadmap, its seven supporting story records, and
   the completed design-leftovers inventory are historical documents indexed in
