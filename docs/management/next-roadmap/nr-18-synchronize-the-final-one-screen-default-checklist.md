@@ -1,7 +1,7 @@
 # NR-18 — Synchronize the final One-Screen Default Checklist
 
-**Status:** Draft for owner review. Listed in the active roadmap but not
-owner-approved or authorized for implementation.
+**Status:** Owner-approved on 2026-08-27. Implementation-ready but inactive
+pending separate activation.
 
 **Dependency group:** E — Final synchronization
 **Assessed workload:** Medium

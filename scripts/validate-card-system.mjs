@@ -345,6 +345,42 @@ for (const id of expectedOptionalPhaseIds) {
     errors.push("SPHERE heading is not visibly labeled as an optional path");
   }
 }
+const sphereSection = findElementsByClass(html, "phase-section-sphere")[0];
+const sphereMarkup = sphereSection?.inner || "";
+if (!sphereMarkup) {
+  errors.push("SPHERE optional-path guidance is missing");
+} else {
+  if (!sphereMarkup.includes('href="#receiver-antimatter-bridge"')) {
+    errors.push("SPHERE does not return to the Receiver and Antimatter bridge");
+  }
+  if (
+    /(?:Move on when|Ready to move on when|task-list-item-checkbox)/.test(
+      sphereMarkup,
+    )
+  ) {
+    errors.push(
+      "SPHERE still contains a progression gate or completion checklist",
+    );
+  }
+  if (
+    /(?:7\.5\/min|5 launches\/min|1\.655 GW|16\.875\/min|30\/min)/.test(
+      sphereMarkup,
+    )
+  ) {
+    errors.push("SPHERE still contains former PHOTON-gate sizing figures");
+  }
+}
+const dysonSection = findElementsByClass(html, "phase-section-dyson")[0];
+const dysonSphereLinks = dysonSection?.inner.match(/href="#sphere"/g) || [];
+if (dysonSphereLinks.length !== 1) {
+  errors.push(
+    `DYSON must contain one optional SPHERE handoff; found ${dysonSphereLinks.length}`,
+  );
+}
+const greenSection = findElementsByClass(html, "phase-section-green")[0];
+if (greenSection?.inner.includes('href="#sphere"')) {
+  errors.push("GREEN bypasses DYSON with a coequal SPHERE handoff");
+}
 const progressIndex = findElementsByClass(html, "progress-index")[0];
 const progressIndexMarkup = progressIndex?.inner || "";
 if (!progressIndexMarkup) {

@@ -1,6 +1,7 @@
 # NR-02 — Reframe SPHERE as optional guidance
 
-**Status:** Owner-approved on 2026-08-27. Inactive pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner
+acceptance.
 
 **Dependency group:** A — Route foundation
 **Assessed workload:** Medium
