@@ -45,6 +45,9 @@ jobs:
           echo "DEPLOYMENT_VERSION=$version" >> "$GITHUB_ENV"
           echo "DEPLOYMENT_ARCHIVE=$archive" >> "$GITHUB_ENV"
 
+      - name: Validate source readability
+        run: node scripts/validate-source-readability.mjs
+
       - name: Stage static website
         shell: bash
         run: |

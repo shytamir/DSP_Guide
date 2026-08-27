@@ -1,28 +1,74 @@
 export const components = Object.freeze({
-  buildCard: Object.freeze({ className: "build-card", nativeTags: Object.freeze(["details"]) }),
-  productionReference: Object.freeze({ className: "production-reference", nativeTags: Object.freeze(["details"]) }),
-  itemReference: Object.freeze({ className: "proto-ref", idAttribute: "data-item-id" }),
-  technologyReference: Object.freeze({ className: "tech-ref", idAttribute: "data-tech-id", nativeTags: Object.freeze(["button"]) }),
-  productionArrow: Object.freeze({ className: "production-arrow", idAttribute: "data-producer-item-id" }),
-  routeMap: Object.freeze({ className: "route-map", nativeTags: Object.freeze(["ul", "ol"]) }),
-  routeRow: Object.freeze({ className: "route-row", nativeTags: Object.freeze(["li"]) }),
+  buildCard: Object.freeze({
+    className: "build-card",
+    nativeTags: Object.freeze(["details"]),
+  }),
+  productionReference: Object.freeze({
+    className: "production-reference",
+    nativeTags: Object.freeze(["details"]),
+  }),
+  itemReference: Object.freeze({
+    className: "proto-ref",
+    idAttribute: "data-item-id",
+  }),
+  technologyReference: Object.freeze({
+    className: "tech-ref",
+    idAttribute: "data-tech-id",
+    nativeTags: Object.freeze(["button"]),
+  }),
+  productionArrow: Object.freeze({
+    className: "production-arrow",
+    idAttribute: "data-producer-item-id",
+  }),
+  routeMap: Object.freeze({
+    className: "route-map",
+    nativeTags: Object.freeze(["ul", "ol"]),
+  }),
+  routeRow: Object.freeze({
+    className: "route-row",
+    nativeTags: Object.freeze(["li"]),
+  }),
 });
 
-const voidElements = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
-const escapeRegExp = value => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const voidElements = new Set([
+  "area",
+  "base",
+  "br",
+  "col",
+  "embed",
+  "hr",
+  "img",
+  "input",
+  "link",
+  "meta",
+  "param",
+  "source",
+  "track",
+  "wbr",
+]);
+const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 export function getAttribute(openingTag, name) {
   const escapedName = escapeRegExp(name);
-  const match = openingTag.match(new RegExp(`(?:^|\\s)${escapedName}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s"'=<>]+))`, "i"));
-  return match ? match[1] ?? match[2] ?? match[3] : null;
+  const match = openingTag.match(
+    new RegExp(
+      `(?:^|\\s)${escapedName}\\s*=\\s*(?:"([^"]*)"|'([^']*)'|([^\\s"'=<>]+))`,
+      "i",
+    ),
+  );
+  return match ? (match[1] ?? match[2] ?? match[3]) : null;
 }
 
 export function hasAttribute(openingTag, name) {
-  return new RegExp(`(?:^|\\s)${escapeRegExp(name)}(?:\\s|=|/?>)`, "i").test(openingTag);
+  return new RegExp(`(?:^|\\s)${escapeRegExp(name)}(?:\\s|=|/?>)`, "i").test(
+    openingTag,
+  );
 }
 
 export function hasClass(openingTag, className) {
-  return (getAttribute(openingTag, "class") || "").split(/\s+/).includes(className);
+  return (getAttribute(openingTag, "class") || "")
+    .split(/\s+/)
+    .includes(className);
 }
 
 export function isNativeComponent(element, contract) {
@@ -38,7 +84,14 @@ export function findElementsByClass(source, className) {
     const tag = opening[1].toLowerCase();
     const contentStart = opening.index + openingTag.length;
     if (voidElements.has(tag) || /\/>$/.test(openingTag)) {
-      elements.push({ tag, openingTag, inner: "", full: openingTag, index: opening.index, end: contentStart });
+      elements.push({
+        tag,
+        openingTag,
+        inner: "",
+        full: openingTag,
+        index: opening.index,
+        end: contentStart,
+      });
       continue;
     }
 
@@ -84,5 +137,8 @@ export function elementTextByClass(source, className) {
 }
 
 export function stripMarkup(value) {
-  return value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return value
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }

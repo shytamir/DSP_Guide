@@ -16,9 +16,12 @@ const authoritativeRecipes = JSON.parse(
 ).recipes;
 const errors = [];
 const cards = findElementsByClass(html, components.buildCard.className)
-  .filter(element => isNativeComponent(element, components.buildCard))
-  .map(element => ({ ...element, id: getAttribute(element.openingTag, "id") }));
-const ids = cards.map(card => card.id);
+  .filter((element) => isNativeComponent(element, components.buildCard))
+  .map((element) => ({
+    ...element,
+    id: getAttribute(element.openingTag, "id"),
+  }));
+const ids = cards.map((card) => card.id);
 const uniqueIds = new Set(ids);
 
 const expectedCards = new Set([
@@ -43,30 +46,57 @@ const expectedCards = new Set([
   "card-logistics-interstellar-kit",
 ]);
 
-if (ids.length !== uniqueIds.size) errors.push(`Duplicate build-card IDs: ${ids.length - uniqueIds.size}`);
-if (cards.length !== expectedCards.size) errors.push(`Expected ${expectedCards.size} cards; found ${cards.length}`);
+if (ids.length !== uniqueIds.size)
+  errors.push(`Duplicate build-card IDs: ${ids.length - uniqueIds.size}`);
+if (cards.length !== expectedCards.size)
+  errors.push(`Expected ${expectedCards.size} cards; found ${cards.length}`);
 
-for (const id of expectedCards) if (!cards.some(card => card.id === id)) errors.push(`Missing required card: ${id}`);
-for (const id of ids) if (!expectedCards.has(id)) errors.push(`Unexpected card: ${id}`);
+for (const id of expectedCards)
+  if (!cards.some((card) => card.id === id))
+    errors.push(`Missing required card: ${id}`);
+for (const id of ids)
+  if (!expectedCards.has(id)) errors.push(`Unexpected card: ${id}`);
 
-const references = findElementsByClass(html, components.productionReference.className)
-  .filter(element => isNativeComponent(element, components.productionReference))
-  .map(element => ({ ...element, id: getAttribute(element.openingTag, "id") }));
-const expectedReferences = new Set(["reference-electromagnetic-turbines", "reference-graphene"]);
+const references = findElementsByClass(
+  html,
+  components.productionReference.className,
+)
+  .filter((element) =>
+    isNativeComponent(element, components.productionReference),
+  )
+  .map((element) => ({
+    ...element,
+    id: getAttribute(element.openingTag, "id"),
+  }));
+const expectedReferences = new Set([
+  "reference-electromagnetic-turbines",
+  "reference-graphene",
+]);
 if (references.length !== expectedReferences.size) {
-  errors.push(`Expected ${expectedReferences.size} reusable references; found ${references.length}`);
+  errors.push(
+    `Expected ${expectedReferences.size} reusable references; found ${references.length}`,
+  );
 }
 for (const id of expectedReferences) {
-  if (!references.some(reference => reference.id === id)) errors.push(`Missing reusable reference: ${id}`);
+  if (!references.some((reference) => reference.id === id))
+    errors.push(`Missing reusable reference: ${id}`);
 }
 
-const allDocumentIds = new Set([...html.matchAll(/\bid="([^\"]+)"/g)].map(match => match[1]));
-const links = [...html.matchAll(/<a class="card-crossref-link" href="#([^\"]+)"/g)].map(match => match[1]);
+const allDocumentIds = new Set(
+  [...html.matchAll(/\bid="([^\"]+)"/g)].map((match) => match[1]),
+);
+const links = [
+  ...html.matchAll(/<a class="card-crossref-link" href="#([^\"]+)"/g),
+].map((match) => match[1]);
 for (const target of links) {
-  if (!allDocumentIds.has(target)) errors.push(`Broken production-map reference: #${target}`);
-  const targetStart = html.match(new RegExp(`<[^>]+\\bid="${target}"[^>]*>`))?.[0] || "";
+  if (!allDocumentIds.has(target))
+    errors.push(`Broken production-map reference: #${target}`);
+  const targetStart =
+    html.match(new RegExp(`<[^>]+\\bid="${target}"[^>]*>`))?.[0] || "";
   if (!/(?:build-card|production-reference|route-row)/.test(targetStart)) {
-    errors.push(`Reference does not land on a card, reusable line, or final route: #${target}`);
+    errors.push(
+      `Reference does not land on a card, reusable line, or final route: #${target}`,
+    );
   }
 }
 
@@ -76,9 +106,13 @@ let recipeTransitionCount = 0;
 function isAuthoritativeTransition(inputIds, outputId) {
   const inputs = new Set(inputIds.map(Number));
   const output = Number(outputId);
-  return authoritativeRecipes.some(recipe => {
-    const producesOutput = recipe.outputs.some(candidate => candidate.item_id === output);
-    const sharesDisplayedInput = recipe.inputs.some(candidate => inputs.has(candidate.item_id));
+  return authoritativeRecipes.some((recipe) => {
+    const producesOutput = recipe.outputs.some(
+      (candidate) => candidate.item_id === output,
+    );
+    const sharesDisplayedInput = recipe.inputs.some((candidate) =>
+      inputs.has(candidate.item_id),
+    );
     return producesOutput && sharesDisplayedInput;
   });
 }
@@ -88,30 +122,53 @@ function validateRecipeTransitions(id, routeRows) {
     const chain = findElementsByClass(row.inner, "route-chain")[0];
     if (!chain) return;
     const tokens = [
-      ...findElementsByClass(chain.inner, components.itemReference.className).map(item => ({
+      ...findElementsByClass(
+        chain.inner,
+        components.itemReference.className,
+      ).map((item) => ({
         index: item.index,
-        itemId: getAttribute(item.openingTag, components.itemReference.idAttribute),
+        itemId: getAttribute(
+          item.openingTag,
+          components.itemReference.idAttribute,
+        ),
         type: "item",
       })),
-      ...findElementsByClass(chain.inner, components.productionArrow.className).map(arrow => ({
+      ...findElementsByClass(
+        chain.inner,
+        components.productionArrow.className,
+      ).map((arrow) => ({
         index: arrow.index,
         type: "arrow",
       })),
     ].sort((left, right) => left.index - right.index);
-    const arrowIndexes = tokens.flatMap((token, index) => token.type === "arrow" ? [index] : []);
+    const arrowIndexes = tokens.flatMap((token, index) =>
+      token.type === "arrow" ? [index] : [],
+    );
     arrowIndexes.forEach((arrowIndex, transitionIndex) => {
-      const previousArrowIndex = transitionIndex === 0 ? -1 : arrowIndexes[transitionIndex - 1];
-      const nextArrowIndex = transitionIndex + 1 < arrowIndexes.length ? arrowIndexes[transitionIndex + 1] : tokens.length;
-      const inputIds = tokens.slice(previousArrowIndex + 1, arrowIndex)
-        .filter(token => token.type === "item")
-        .map(token => token.itemId);
-      const outputIds = tokens.slice(arrowIndex + 1, nextArrowIndex)
-        .filter(token => token.type === "item")
-        .map(token => token.itemId);
+      const previousArrowIndex =
+        transitionIndex === 0 ? -1 : arrowIndexes[transitionIndex - 1];
+      const nextArrowIndex =
+        transitionIndex + 1 < arrowIndexes.length
+          ? arrowIndexes[transitionIndex + 1]
+          : tokens.length;
+      const inputIds = tokens
+        .slice(previousArrowIndex + 1, arrowIndex)
+        .filter((token) => token.type === "item")
+        .map((token) => token.itemId);
+      const outputIds = tokens
+        .slice(arrowIndex + 1, nextArrowIndex)
+        .filter((token) => token.type === "item")
+        .map((token) => token.itemId);
       recipeTransitionCount += 1;
       const outputId = outputIds[0];
-      if (!inputIds.length || !outputId || !isAuthoritativeTransition(inputIds, outputId)) {
-        errors.push(`${id} route row ${rowIndex + 1} contains a transformation not supported by runtime recipe data: ${inputIds.join(" + ")} → ${outputId || "missing output"}`);
+      if (
+        !inputIds.length ||
+        !outputId ||
+        !isAuthoritativeTransition(inputIds, outputId)
+      ) {
+        errors.push(
+          `${id} route row ${rowIndex + 1} contains a transformation not supported by runtime recipe data: ${inputIds.join(" + ")} → ${outputId || "missing output"}`,
+        );
       }
     });
   });
@@ -119,21 +176,34 @@ function validateRecipeTransitions(id, routeRows) {
 
 function validateMap(id, body) {
   const required = ["map-supplies", "map-pipeline", "map-destination"];
-  const sections = required.map(className => findElementsByClass(body, className)[0]);
-  const positions = sections.map(section => section?.index ?? -1);
+  const sections = required.map(
+    (className) => findElementsByClass(body, className)[0],
+  );
+  const positions = sections.map((section) => section?.index ?? -1);
   required.forEach((className, index) => {
-    if (!sections[index]) errors.push(`${id} is missing its ${className} section`);
+    if (!sections[index])
+      errors.push(`${id} is missing its ${className} section`);
   });
-  if (!positions.every((position, index) => index === 0 || position > positions[index - 1])) {
-    errors.push(`${id} does not follow Supplies → Production Map → Destination`);
+  if (
+    !positions.every(
+      (position, index) => index === 0 || position > positions[index - 1],
+    )
+  ) {
+    errors.push(
+      `${id} does not follow Supplies → Production Map → Destination`,
+    );
   }
 
   const supplies = sections[0]?.inner || "";
   const pipeline = sections[1]?.inner || "";
   const destination = sections[2]?.inner || "";
-  const visible = value => value.replace(/<[^>]+>/g, " ");
+  const visible = (value) => value.replace(/<[^>]+>/g, " ");
 
-  for (const [surface, markup] of [["Supplies", supplies], ["Production Map", pipeline], ["Destination", destination]]) {
+  for (const [surface, markup] of [
+    ["Supplies", supplies],
+    ["Production Map", pipeline],
+    ["Destination", destination],
+  ]) {
     if (!markup.includes('class="proto-icon proto-icon-item"')) {
       errors.push(`${id} ${surface} lost its approved item icon treatment`);
     }
@@ -150,43 +220,78 @@ function validateMap(id, body) {
     }
   }
 
-  if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(visible(supplies))) {
+  if (
+    /\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(
+      visible(supplies),
+    )
+  ) {
     errors.push(`${id} puts exact internal arithmetic in Supplies`);
   }
-  if (/\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(visible(pipeline))) {
+  if (
+    /\b\d+(?:\.\d+)?\s*(?:\/min|per minute|minutes?|hours?|machines?|assemblers?|smelters?|plants?|labs?|belts?)\b/i.test(
+      visible(pipeline),
+    )
+  ) {
     errors.push(`${id} puts exact internal arithmetic in Production Map`);
   }
-  const routeRows = findElementsByClass(pipeline, components.routeRow.className);
+  const routeRows = findElementsByClass(
+    pipeline,
+    components.routeRow.className,
+  );
   if (routeRows.length === 0) errors.push(`${id} has no production-map routes`);
-  if (routeRows.some(row => !isNativeComponent(row, components.routeRow))) {
-    errors.push(`${id} contains a production-map route that is not a native list item`);
+  if (routeRows.some((row) => !isNativeComponent(row, components.routeRow))) {
+    errors.push(
+      `${id} contains a production-map route that is not a native list item`,
+    );
   }
   validateRecipeTransitions(id, routeRows);
   const rowLimit = id === "card-red-security-mall" ? 12 : 8;
-  if (routeRows.length > rowLimit) errors.push(`${id} exceeds its ${rowLimit}-row complexity limit (${routeRows.length})`);
+  if (routeRows.length > rowLimit)
+    errors.push(
+      `${id} exceeds its ${rowLimit}-row complexity limit (${routeRows.length})`,
+    );
   const routeGroups = [...pipeline.matchAll(/class="route-group"/g)].length;
-  if (routeGroups > 3) errors.push(`${id} exceeds the three-group complexity limit (${routeGroups})`);
+  if (routeGroups > 3)
+    errors.push(
+      `${id} exceeds the three-group complexity limit (${routeGroups})`,
+    );
   for (const row of routeRows) {
     const arrowCount = (row.full.match(/→/g) || []).length;
-    if (arrowCount > 3) errors.push(`${id} has a route row with ${arrowCount} transformations`);
+    if (arrowCount > 3)
+      errors.push(`${id} has a route row with ${arrowCount} transformations`);
   }
 
-  const tailStages = [...body.matchAll(/class="map-footer-section (map-surplus|map-note)"/g)].map(match => match[1]);
-  if (new Set(tailStages).size !== tailStages.length) errors.push(`${id} duplicates a permitted footer section`);
+  const tailStages = [
+    ...body.matchAll(/class="map-footer-section (map-surplus|map-note)"/g),
+  ].map((match) => match[1]);
+  if (new Set(tailStages).size !== tailStages.length)
+    errors.push(`${id} duplicates a permitted footer section`);
 }
 
 for (const card of cards) {
   validateMap(card.id, card.inner);
-  if (/\sopen(?:\s|>)/.test(card.openingTag)) errors.push(`${card.id} is open by default`);
+  if (/\sopen(?:\s|>)/.test(card.openingTag))
+    errors.push(`${card.id} is open by default`);
 }
 for (const reference of references) validateMap(reference.id, reference.inner);
 
 const expectedPhaseIds = [
-  "blue", "red", "ils", "yellow", "purple", "green",
-  "dyson", "sphere", "photon", "white", "warp", "logistics",
+  "blue",
+  "red",
+  "ils",
+  "yellow",
+  "purple",
+  "green",
+  "dyson",
+  "sphere",
+  "photon",
+  "white",
+  "warp",
+  "logistics",
 ];
-const phaseIds = [...html.matchAll(/<section class="phase-section[^>]*" id="([^"]+)">/g)]
-  .map(match => match[1]);
+const phaseIds = [
+  ...html.matchAll(/<section class="phase-section[^>]*" id="([^"]+)">/g),
+].map((match) => match[1]);
 if (JSON.stringify(phaseIds) !== JSON.stringify(expectedPhaseIds)) {
   errors.push(`Unexpected phase structure: ${phaseIds.join(" → ")}`);
 }
@@ -201,7 +306,9 @@ if (!rail) {
   if (JSON.stringify(railPhaseIds) !== JSON.stringify(expectedPhaseIds)) {
     errors.push(`Unexpected navigation order: ${railPhaseIds.join(" → ")}`);
   }
-  const dividerIndex = railMarkup.indexOf('class="rail-label rail-label-optional"');
+  const dividerIndex = railMarkup.indexOf(
+    'class="rail-label rail-label-optional"',
+  );
   const whiteIndex = railMarkup.indexOf('data-phase="white"');
   const warpIndex = railMarkup.indexOf('data-phase="warp"');
   if (!(
@@ -212,15 +319,25 @@ if (!rail) {
     errors.push("Optional navigation is not grouped after the numbered route");
   }
   for (const capability of ["warp", "logistics"]) {
-    const optionalControl = railMarkup.match(new RegExp(`<a(?=[^>]*class="[^"]*\\brail-tab-optional\\b[^"]*")(?=[^>]*data-phase="${capability}")[^>]*>`));
-    if (!optionalControl) errors.push(`Optional navigation control is missing for ${capability.toUpperCase()}`);
+    const optionalControl = railMarkup.match(
+      new RegExp(
+        `<a(?=[^>]*class="[^"]*\\brail-tab-optional\\b[^"]*")(?=[^>]*data-phase="${capability}")[^>]*>`,
+      ),
+    );
+    if (!optionalControl)
+      errors.push(
+        `Optional navigation control is missing for ${capability.toUpperCase()}`,
+      );
   }
 }
 for (const id of ["warp", "logistics"]) {
   const section = findElementsByClass(html, `phase-section-${id}`)[0];
-  const heading = section?.inner.match(/^<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] || "";
+  const heading =
+    section?.inner.match(/^\s*<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] || "";
   if (!findElementsByClass(heading, "capability-kicker").length) {
-    errors.push(`${id.toUpperCase()} heading is not visibly labeled as an optional capability`);
+    errors.push(
+      `${id.toUpperCase()} heading is not visibly labeled as an optional capability`,
+    );
   }
 }
 const progressIndex = findElementsByClass(html, "progress-index")[0];
@@ -229,7 +346,7 @@ if (!progressIndexMarkup) {
   errors.push("Quick Progress Index is missing");
 } else {
   const numberedRows = [
-    ...progressIndexMarkup.matchAll(/<tr><td>(\d+)<\/td>/g),
+    ...progressIndexMarkup.matchAll(/<tr>\s*<td>\s*(\d+)\s*<\/td>/g),
   ].map((match) => Number(match[1]));
   if (
     JSON.stringify(numberedRows) !==
@@ -249,8 +366,12 @@ if (!progressIndexMarkup) {
   }
 }
 for (const compatibilityId of ["flight", "titanium", "bootstrap"]) {
-  if ((html.match(new RegExp(`id="${compatibilityId}"`, "g")) || []).length !== 1) {
-    errors.push(`Compatibility anchor must appear exactly once: #${compatibilityId}`);
+  if (
+    (html.match(new RegExp(`id="${compatibilityId}"`, "g")) || []).length !== 1
+  ) {
+    errors.push(
+      `Compatibility anchor must appear exactly once: #${compatibilityId}`,
+    );
   }
 }
 
@@ -262,8 +383,9 @@ const openingCardScopes = new Map([
   ["card-blue-blue-cubes", "blue"],
 ]);
 for (const [cardId, scope] of openingCardScopes) {
-  const marker = new RegExp(`<details class="build-card[^\"]*" id="${cardId}" data-card-scope="${scope}">`);
-  if (!marker.test(html)) errors.push(`${cardId} is missing its opening-phase card scope`);
+  const card = cards.find((candidate) => candidate.id === cardId);
+  if (!card || getAttribute(card.openingTag, "data-card-scope") !== scope)
+    errors.push(`${cardId} is missing its opening-phase card scope`);
 }
 
 const cardListeners = {};
@@ -307,16 +429,20 @@ function clickCardControl(button) {
       return null;
     },
   };
-  cardListeners.click.forEach(listener => listener({ target }));
+  cardListeners.click.forEach((listener) => listener({ target }));
 }
 clickCardControl(makeCardButton("bootstrap"));
 if (!bootstrapCard.open || blueCard.open) {
-  errors.push("Mall card controls do not remain isolated inside the merged BLUE phase");
+  errors.push(
+    "Mall card controls do not remain isolated inside the merged BLUE phase",
+  );
 }
 bootstrapCard.open = false;
 clickCardControl(makeCardButton("blue"));
 if (bootstrapCard.open || !blueCard.open) {
-  errors.push("Blue-science card controls do not remain isolated inside the merged BLUE phase");
+  errors.push(
+    "Blue-science card controls do not remain isolated inside the merged BLUE phase",
+  );
 }
 if (errors.length) {
   console.error(`Card validation failed with ${errors.length} error(s):`);
@@ -324,4 +450,6 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${operatingNoteCount} icon-free Operating Notes, ${links.length} direct links, textual-map complexity within bounds, and ${recipeTransitionCount} displayed recipe transformations verified.`);
+console.log(
+  `Card validation passed: ${cards.length} phase cards, ${references.length} reusable references, ${operatingNoteCount} icon-free Operating Notes, ${links.length} direct links, textual-map complexity within bounds, and ${recipeTransitionCount} displayed recipe transformations verified.`,
+);

@@ -1,24 +1,33 @@
 (() => {
   const tabs = [...document.querySelectorAll(".rail-tab")];
-  const sections = tabs.map(tab => document.getElementById(tab.dataset.phase)).filter(Boolean);
+  const sections = tabs
+    .map((tab) => document.getElementById(tab.dataset.phase))
+    .filter(Boolean);
   const stageGroups = new Map(
-    [...document.querySelectorAll(".stage-rail[data-stage-phase]")].map(group => [
-      group.dataset.stagePhase,
-      [...group.querySelectorAll(".stage-tab[data-stage]")]
-        .map(link => ({ link, heading: document.getElementById(link.dataset.stage) }))
-        .filter(stage => stage.heading),
-    ]),
+    [...document.querySelectorAll(".stage-rail[data-stage-phase]")].map(
+      (group) => [
+        group.dataset.stagePhase,
+        [...group.querySelectorAll(".stage-tab[data-stage]")]
+          .map((link) => ({
+            link,
+            heading: document.getElementById(link.dataset.stage),
+          }))
+          .filter((stage) => stage.heading),
+      ],
+    ),
   );
   let activePhase = null;
   let stageFrame = null;
 
   function setActiveStage(activeStage) {
-    stageGroups.forEach(stages => stages.forEach(({ link, heading }) => {
-      const isActive = heading.id === activeStage;
-      link.classList.toggle("active", isActive);
-      if (isActive) link.setAttribute("aria-current", "step");
-      else link.removeAttribute("aria-current");
-    }));
+    stageGroups.forEach((stages) =>
+      stages.forEach(({ link, heading }) => {
+        const isActive = heading.id === activeStage;
+        link.classList.toggle("active", isActive);
+        if (isActive) link.setAttribute("aria-current", "step");
+        else link.removeAttribute("aria-current");
+      }),
+    );
   }
 
   function updateActiveStage() {
@@ -45,7 +54,9 @@
 
   function setActive(id) {
     activePhase = id;
-    tabs.forEach(tab => tab.classList.toggle("active", tab.dataset.phase === id));
+    tabs.forEach((tab) =>
+      tab.classList.toggle("active", tab.dataset.phase === id),
+    );
     requestStageUpdate();
   }
 
@@ -58,23 +69,32 @@
     if (phase) setActive(phase.id);
   }
 
-  const observer = new IntersectionObserver(entries => {
-    const visible = entries
-      .filter(entry => entry.isIntersecting)
-      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-    if (visible.length) setActive(visible[0].target.id);
-  }, { rootMargin: "-12% 0px -72% 0px", threshold: 0 });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (visible.length) setActive(visible[0].target.id);
+    },
+    { rootMargin: "-12% 0px -72% 0px", threshold: 0 },
+  );
 
-  sections.forEach(section => observer.observe(section));
-  tabs.forEach(tab => tab.addEventListener("click", () => setActive(tab.dataset.phase)));
-  stageGroups.forEach((stages, phaseId) => stages.forEach(({ link }) => {
-    link.addEventListener("click", () => {
-      setActive(phaseId);
-      setActiveStage(link.dataset.stage);
-    });
-  }));
+  sections.forEach((section) => observer.observe(section));
+  tabs.forEach((tab) =>
+    tab.addEventListener("click", () => setActive(tab.dataset.phase)),
+  );
+  stageGroups.forEach((stages, phaseId) =>
+    stages.forEach(({ link }) => {
+      link.addEventListener("click", () => {
+        setActive(phaseId);
+        setActiveStage(link.dataset.stage);
+      });
+    }),
+  );
   window.addEventListener("scroll", requestStageUpdate, { passive: true });
   window.addEventListener("resize", requestStageUpdate);
   window.addEventListener("hashchange", activateHashTarget);
-  window.addEventListener("load", () => window.requestAnimationFrame(activateHashTarget));
+  window.addEventListener("load", () =>
+    window.requestAnimationFrame(activateHashTarget),
+  );
 })();

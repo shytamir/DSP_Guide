@@ -1,7 +1,13 @@
 (() => {
   const scriptUrl = document.currentScript && document.currentScript.src;
-  const dataUrl = new URL("../data/tech-reference.json", scriptUrl || document.baseURI);
-  const detailsUrl = new URL("../data/tech-tooltip-details.json", scriptUrl || document.baseURI);
+  const dataUrl = new URL(
+    "../data/tech-reference.json",
+    scriptUrl || document.baseURI,
+  );
+  const detailsUrl = new URL(
+    "../data/tech-tooltip-details.json",
+    scriptUrl || document.baseURI,
+  );
   const tip = document.getElementById("tech-tooltip");
   if (!tip) return;
 
@@ -44,9 +50,19 @@
         tip.append(line);
       };
 
-      addLine("Required", data.required && data.required.map(value => value.name));
-      addLine("Implicit", data.implicitRequired && data.implicitRequired.map(value => value.name));
-      addLine("Unlocks", details.unlocks && details.unlocks.map(value => value.label));
+      addLine(
+        "Required",
+        data.required && data.required.map((value) => value.name),
+      );
+      addLine(
+        "Implicit",
+        data.implicitRequired &&
+          data.implicitRequired.map((value) => value.name),
+      );
+      addLine(
+        "Unlocks",
+        details.unlocks && details.unlocks.map((value) => value.label),
+      );
       return true;
     }
 
@@ -54,7 +70,10 @@
       const referenceRect = reference.getBoundingClientRect();
       tip.classList.remove("is-hidden");
       const tooltipRect = tip.getBoundingClientRect();
-      const left = Math.min(window.innerWidth - tooltipRect.width - 6, Math.max(6, referenceRect.left));
+      const left = Math.min(
+        window.innerWidth - tooltipRect.width - 6,
+        Math.max(6, referenceRect.left),
+      );
       let top = referenceRect.bottom + 6;
       if (top + tooltipRect.height > window.innerHeight - 6) {
         top = Math.max(6, referenceRect.top - tooltipRect.height - 6);
@@ -65,7 +84,8 @@
 
     function show(reference, shouldPin = false) {
       if (!render(reference)) return;
-      if (active && active !== reference) active.removeAttribute("aria-describedby");
+      if (active && active !== reference)
+        active.removeAttribute("aria-describedby");
       active = reference;
       pinned = shouldPin;
       reference.setAttribute("aria-describedby", tip.id);
@@ -82,7 +102,7 @@
       tip.classList.add("is-hidden");
     }
 
-    document.querySelectorAll(".tech-ref").forEach(reference => {
+    document.querySelectorAll(".tech-ref").forEach((reference) => {
       reference.addEventListener("mouseenter", () => show(reference));
       reference.addEventListener("mouseleave", () => {
         if (!pinned && document.activeElement !== reference) hide(reference);
@@ -91,30 +111,47 @@
       reference.addEventListener("blur", () => {
         if (!pinned) hide(reference);
       });
-      reference.addEventListener("click", event => {
+      reference.addEventListener("click", (event) => {
         event.preventDefault();
-        active === reference && pinned ? hide(reference) : show(reference, true);
+        active === reference && pinned
+          ? hide(reference)
+          : show(reference, true);
       });
-      reference.addEventListener("keydown", event => {
+      reference.addEventListener("keydown", (event) => {
         if (event.key === "Escape") hide(reference);
       });
     });
 
-    window.addEventListener("scroll", () => {
-      if (active) place(active);
-    }, { passive: true });
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (active) place(active);
+      },
+      { passive: true },
+    );
     window.addEventListener("resize", () => {
       if (active) place(active);
     });
-    document.addEventListener("click", event => {
+    document.addEventListener("click", (event) => {
       if (active && !event.target.closest(".tech-ref")) hide(active);
     });
   }
 
-  Promise.all([dataUrl, detailsUrl].map(url => fetch(url).then(response => {
-    if (!response.ok) throw new Error(`Technology data request failed with status ${response.status}.`);
-    return response.json();
-  })))
-    .then(([techData, tooltipDetails]) => attachTooltips(techData, tooltipDetails))
-    .catch(error => console.error("Technology reference data could not be loaded.", error));
+  Promise.all(
+    [dataUrl, detailsUrl].map((url) =>
+      fetch(url).then((response) => {
+        if (!response.ok)
+          throw new Error(
+            `Technology data request failed with status ${response.status}.`,
+          );
+        return response.json();
+      }),
+    ),
+  )
+    .then(([techData, tooltipDetails]) =>
+      attachTooltips(techData, tooltipDetails),
+    )
+    .catch((error) =>
+      console.error("Technology reference data could not be loaded.", error),
+    );
 })();
