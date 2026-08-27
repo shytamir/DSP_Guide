@@ -16549,14 +16549,21 @@
           </p>
         </div>
         <h2>Mission brief</h2>
-        <p>
-          WARP is an optional deployment job, not a gate on the practical route.
-          First prepare Icarus and choose a target, then establish a defensible
-          source outpost, and finally replace personal hauling with a vessel
-          route when cheap
-          <span class="proto-ref" data-item-id="1210">Space Warpers</span> make
-          that sensible.
-        </p>
+        <div class="warp-mission-brief">
+          <p>
+            A useful rare resource is waiting beyond your home system. Choose
+            one that removes work from a factory line you already care about,
+            pack a small outpost, and fly there yourself. Build the source,
+            bring the first load home, then replace the personal cargo run with
+            <span class="proto-ref" data-item-id="5002">Logistics Vessels</span>
+            when green cubes make
+            <span class="proto-ref" data-item-id="1210">Warpers</span> cheap.
+          </p>
+          <p>
+            <strong>WARP is a shortcut, not a required detour.</strong> Make the
+            trip when you can name the problem it will solve.
+          </p>
+        </div>
         <blockquote>
           <strong>Optional route disclaimer:</strong> Interstellar expansion
           diverts research, cubes, buildings, fuel, and attention from the
@@ -16564,15 +16571,40 @@
           bottleneck you can name—not because the cluster map is sparkling at
           you.
         </blockquote>
-        <table class="phase-dashboard">
+        <table class="phase-dashboard warp-capability-table">
           <thead>
             <tr>
-              <th>Warp capability</th>
+              <th>Expedition capability</th>
               <th>What it is for</th>
               <th>Research breakpoint</th>
             </tr>
           </thead>
           <tbody>
+            <tr class="warp-capability-nearby-survey">
+              <td><strong>Nearby survey</strong></td>
+              <td>
+                Reveal nearby systems and their resources before choosing a
+                destination
+              </td>
+              <td>
+                Continue through
+                <button
+                  type="button"
+                  class="tech-ref tech-milestone"
+                  data-tech-id="4103"
+                >
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/4103.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Cosmic Exploration Lv3
+                </button>
+              </td>
+            </tr>
             <tr>
               <td><strong>Mecha warp</strong></td>
               <td>
@@ -16580,6 +16612,7 @@
                 first hand-loaded shipment home
               </td>
               <td>
+                Continue through
                 <button
                   type="button"
                   class="tech-ref tech-milestone"
@@ -16606,6 +16639,7 @@
                 replace that personal cargo run with continuous ILS traffic
               </td>
               <td>
+                Continue through
                 <button
                   type="button"
                   class="tech-ref tech-milestone"
@@ -16636,6 +16670,7 @@
         </p>
         <p>
           <strong>See what is worth visiting.</strong>
+          ILS already completed Cosmic Exploration Lv2. Continue through
           <button type="button" class="tech-ref" data-tech-id="4103">
             Cosmic Exploration Lv3
           </button>
@@ -16647,14 +16682,15 @@
         <p>
           <strong>Unlock personal warp.</strong> Complete
           <button type="button" class="tech-ref" data-tech-id="1704">
-            Gravitational Wave Refraction</button
-          >,
+            Gravitational Wave Refraction
+          </button>
+          first if GREEN has not already completed it. Then complete
           <button type="button" class="tech-ref" data-tech-id="2903">
             Drive Engine Lv3</button
           >,
           <button type="button" class="tech-ref" data-tech-id="2104">
             Mecha Core Lv4</button
-          >, and
+          >, and continue Drive Engine through
           <button
             type="button"
             class="tech-ref tech-milestone"
@@ -17538,7 +17574,7 @@
           <strong>Remote Supply / Provider</strong>. The station can wait for
           homeworld Vessels; it does not need to launch anything yet.
         </p>
-        <table class="phase-dashboard">
+        <table class="phase-dashboard warp-pack-table">
           <thead>
             <tr>
               <th>Pack</th>
@@ -17574,6 +17610,21 @@
               <td>
                 A real extraction field and the long runs that unfamiliar
                 terrain inevitably invents
+              </td>
+            </tr>
+            <tr class="warp-optional-foundation">
+              <td>
+                <strong
+                  >1,000
+                  <span class="proto-ref" data-item-id="1131"
+                    >Foundation</span
+                  ></strong
+                >
+              </td>
+              <td>
+                An optional stack for flattening awkward terrain around veins
+                and making room for the source outpost. Use only what the chosen
+                site needs; a resource world does not need to be paved.
               </td>
             </tr>
             <tr>
@@ -17640,7 +17691,7 @@
         </h2>
         <p class="stage-cue">
           <strong>Start when:</strong> Gravity Matrix supports efficient Warpers
-          and Logistics Carrier Engine Lv4 is available.
+          and you have continued Logistics Carrier Engine through Lv4.
           <strong>Complete when:</strong> A powered home ILS uses Vessels and
           Warpers to import from the remote provider without Icarus.
         </p>
@@ -17665,7 +17716,7 @@
           the first 50 into its dedicated Warper reserve automatically.
         </p>
         <p>
-          Then research
+          Then continue Logistics Carrier Engine through
           <button
             type="button"
             class="tech-ref tech-milestone"
@@ -17685,7 +17736,7 @@
           distance changes travel time and therefore cargo turnover; it does not
           change the two-Warper cost of a complete vessel round trip.
         </p>
-        <table class="allocation-table">
+        <table class="allocation-table warp-route-table">
           <thead>
             <tr>
               <th>Starting choice</th>
@@ -17743,11 +17794,19 @@
             </tr>
           </tbody>
         </table>
+        <p class="warp-carrier-capacity">
+          <strong>Long route still falling behind?</strong> Logistics Carrier
+          Capacity lets every Vessel bring more material home. It is a powerful
+          optional multiplier for a distant route, not a requirement for turning
+          the route on.
+        </p>
         <p>
-          Scale the fleet to the real route, not to the table. Longer trips
-          usually need more Vessels to sustain the same import rate; busier
-          networks need a larger shared Warper buffer. Expand the cheap line
-          only when its PLS stops recovering between departures.
+          Strengthen the real route in this order: add Vessels while station
+          slots remain; improve Carrier Capacity when each long trip needs to
+          accomplish more; expand the source only when the remote buffer cannot
+          remain full. Keep enough Warpers available for the busier fleet, and
+          expand the cheap Warper line only when its PLS stops recovering
+          between departures.
         </p>
         <h2>Done when</h2>
         <ul>

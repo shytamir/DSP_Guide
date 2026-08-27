@@ -1,6 +1,6 @@
 # NR-14 — Refine WARP expedition framing and route support
 
-**Status:** Owner-approved on 2026-08-27. Inactive pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
 
 **Dependency group:** D — Optional paths and support
 **Assessed workload:** Medium

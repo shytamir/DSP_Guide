@@ -573,6 +573,157 @@ if (!sphereMarkup) {
     }
   }
 }
+const warpSection = findElementsByClass(html, "phase-section-warp")[0];
+const warpMarkup = warpSection?.inner || "";
+const warpText = stripMarkup(warpMarkup);
+if (!warpMarkup) {
+  errors.push("WARP expedition guidance is missing");
+} else {
+  const requiredMissionLanguage = [
+    "A useful rare resource is waiting beyond your home system.",
+    "Choose one that removes work from a factory line you already care about",
+    "bring the first load home, then replace the personal cargo run with Logistics Vessels when green cubes make Warpers cheap.",
+    "WARP is a shortcut, not a required detour.",
+    "Make the trip when you can name the problem it will solve.",
+    "Take the shortcut because it removes a bottleneck you can name—not because the cluster map is sparkling at you.",
+  ];
+  for (const language of requiredMissionLanguage) {
+    if (!warpText.includes(language)) {
+      errors.push(`WARP mission framing is missing: ${language}`);
+    }
+  }
+
+  const warpCapabilityTable = findElementsByClass(
+    warpMarkup,
+    "warp-capability-table",
+  )[0];
+  const warpCapabilityMarkup = warpCapabilityTable?.inner || "";
+  const warpCapabilityText = stripMarkup(warpCapabilityMarkup);
+  if (!warpCapabilityMarkup.includes("<th>Expedition capability</th>")) {
+    errors.push("WARP capability table does not use the approved first column");
+  }
+  const expectedWarpCapabilities = [
+    "Nearby survey",
+    "Mecha warp",
+    "Vessel warp",
+  ];
+  const warpCapabilityPositions = expectedWarpCapabilities.map((capability) =>
+    warpCapabilityText.indexOf(capability),
+  );
+  if (
+    warpCapabilityPositions.some((position) => position < 0) ||
+    warpCapabilityPositions.some(
+      (position, index) =>
+        index > 0 && position <= warpCapabilityPositions[index - 1],
+    )
+  ) {
+    errors.push("WARP expedition capabilities are missing or out of order");
+  }
+  const warpCapabilityTechIds = [
+    ...warpCapabilityMarkup.matchAll(/data-tech-id="(\d+)"/g),
+  ].map((match) => match[1]);
+  if (!sameIds(warpCapabilityTechIds, ["4103", "2904", "3404"])) {
+    errors.push(
+      `WARP capability technology set is invalid: ${warpCapabilityTechIds.join(", ")}`,
+    );
+  }
+  if ((warpCapabilityText.match(/Continue through/g) || []).length !== 3) {
+    errors.push(
+      "WARP capability table must mark all three target ranks as catch-up work",
+    );
+  }
+
+  const requiredCatchUpLanguage = [
+    "ILS already completed Cosmic Exploration Lv2. Continue through Cosmic Exploration Lv3",
+    "Gravitational Wave Refraction first if GREEN has not already completed it.",
+    "continue Drive Engine through Drive Engine Lv4",
+    "continue Logistics Carrier Engine through Logistics Carrier Engine Lv4",
+    "you have continued Logistics Carrier Engine through Lv4.",
+  ];
+  for (const language of requiredCatchUpLanguage) {
+    if (!warpText.includes(language)) {
+      errors.push(`WARP catch-up sequence is missing: ${language}`);
+    }
+  }
+
+  const warpFoundation = findElementsByClass(
+    warpMarkup,
+    "warp-optional-foundation",
+  )[0];
+  const warpFoundationMarkup = warpFoundation?.inner || "";
+  const warpFoundationText = stripMarkup(warpFoundationMarkup);
+  if (
+    getAttribute(
+      warpFoundationMarkup.match(/<[^>]+data-item-id="1131"[^>]*>/)?.[0] || "",
+      "data-item-id",
+    ) !== "1131" ||
+    !warpFoundationText.includes("1,000 Foundation") ||
+    !warpFoundationText.includes("An optional stack") ||
+    !warpFoundationText.includes("does not need to be paved.")
+  ) {
+    errors.push(
+      "WARP pack does not preserve the bounded optional Foundation guidance",
+    );
+  }
+
+  const warpRouteTable = findElementsByClass(warpMarkup, "warp-route-table")[0];
+  const warpCarrierCapacity = findElementsByClass(
+    warpMarkup,
+    "warp-carrier-capacity",
+  )[0];
+  const warpCarrierCapacityText = stripMarkup(warpCarrierCapacity?.inner || "");
+  if (
+    !warpCarrierCapacityText.includes(
+      "Logistics Carrier Capacity lets every Vessel bring more material home.",
+    ) ||
+    !warpCarrierCapacityText.includes(
+      "It is a powerful optional multiplier for a distant route, not a requirement for turning the route on.",
+    )
+  ) {
+    errors.push(
+      "WARP route is missing the approved optional Carrier Capacity advice",
+    );
+  }
+  const routeStrengtheningPosition = warpMarkup.indexOf(
+    "Strengthen the real route in this order:",
+  );
+  if (
+    !warpRouteTable ||
+    !warpCarrierCapacity ||
+    warpCarrierCapacity.index <= warpRouteTable.index ||
+    routeStrengtheningPosition <= warpCarrierCapacity.index
+  ) {
+    errors.push(
+      "WARP Carrier Capacity advice is not placed after the fleet table and before route scaling",
+    );
+  }
+  if (
+    !warpText.includes(
+      "add Vessels while station slots remain; improve Carrier Capacity when each long trip needs to accomplish more; expand the source only when the remote buffer cannot remain full.",
+    )
+  ) {
+    errors.push("WARP route-strengthening sequence is missing or out of order");
+  }
+
+  const retainedWarpFacts = [
+    "20 Graviton Lenses",
+    "20 Space Warpers",
+    "one Lens for one Warper",
+    "one green cube into eight Space Warpers",
+    "three-light-year route",
+    "two-Warper cost",
+  ];
+  for (const fact of retainedWarpFacts) {
+    if (!warpText.includes(fact)) {
+      errors.push(`WARP retained route guidance is missing: ${fact}`);
+    }
+  }
+  if (findElementsByClass(warpMarkup, "task-list-item-checkbox").length !== 3) {
+    errors.push(
+      "WARP completion gate must retain exactly three checklist items",
+    );
+  }
+}
 const dysonSection = findElementsByClass(html, "phase-section-dyson")[0];
 const dysonSphereLinks = dysonSection?.inner.match(/href="#sphere"/g) || [];
 if (dysonSphereLinks.length !== 1) {

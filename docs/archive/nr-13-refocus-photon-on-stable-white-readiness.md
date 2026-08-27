@@ -1,6 +1,6 @@
 # NR-13 — Refocus PHOTON on stable WHITE readiness
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
+**Status:** Owner-accepted and archived on 2026-08-27.
 
 **Dependency group:** C — Late-route progression
 **Assessed workload:** Medium
@@ -150,4 +150,4 @@ the deployed development Pages site at desktop width.
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.
