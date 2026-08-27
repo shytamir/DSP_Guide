@@ -1,7 +1,7 @@
 # NR-04 — Clarify the opening orientation and BLUE goal
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner
-acceptance.
+**Status:** Completed and owner-accepted on 2026-08-27. Archived historical
+record; this file no longer defines active work.
 
 **Dependency group:** B — Early and mid-route guidance
 **Assessed workload:** Medium
@@ -17,7 +17,8 @@ The approved source review found unclear route scope, premature optional-path la
 
 ## Intended outcome
 
-Install the approved opening scope, usage guidance, and BLUE Goal copy while keeping the Glossary in place.
+NR-04 installed the approved opening scope, usage guidance, and BLUE Goal copy
+while keeping the Glossary in place.
 
 ## In-scope surfaces
 
@@ -101,12 +102,11 @@ Glossary remains immediately after the visible usage instructions.
 - Do not broaden Dark Fog beyond the bounded RED-phase contract.
 - Do not change optional-path structure; Group A owns it.
 
-## Owner gates
+## Gates satisfied
 
-- The owner approves this bounded story draft before implementation begins.
-- Technical validation establishes consistency, not reader acceptance.
-- The owner separately accepts or requests refinement after reviewing the
-  reader-facing result.
+- The owner approved the bounded story before implementation began.
+- Technical validation established contract and presentation consistency.
+- The owner accepted the deployed reader-facing result on 2026-08-27.
 
 ## Acceptance evidence
 
@@ -119,12 +119,12 @@ Glossary remains immediately after the visible usage instructions.
 
 **Tier:** 2 — Experience
 
-Run directly affected static checks, then review the complete opening and BLUE
-Goal on the deployed development Pages site at desktop width for flow,
-hierarchy, and new-reader clarity.
+Technical validation covered the directly affected static contracts and the
+complete opening and BLUE Goal on the deployed development Pages site at
+desktop width.
 
 ## Release
 
-Production release, version changes, and production publication are not
-included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+Production release, version changes, and production publication were not
+included. Development deployment for validation followed
+[`docs/PROJECT.md`](../PROJECT.md) and did not imply owner acceptance.

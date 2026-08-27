@@ -1695,6 +1695,48 @@ details.build-card[open] > summary {
   scroll-margin-top: 20px;
 }
 
+.quick-process {
+  margin: 1rem 0 1.5rem;
+  border: 1px solid rgba(var(--phase-rgb), 0.52);
+  border-radius: 10px;
+  background: rgba(var(--phase-rgb), 0.065);
+  overflow: hidden;
+}
+.quick-process > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.78rem 0.9rem;
+  color: #f2f6fb;
+  font-weight: 850;
+}
+.quick-process > summary::-webkit-details-marker {
+  display: none;
+}
+.quick-process > summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.25rem;
+  color: rgb(var(--phase-rgb));
+}
+.quick-process[open] > summary::before {
+  content: "−";
+}
+.quick-process > summary:focus-visible {
+  outline: 2px solid rgb(var(--phase-rgb));
+  outline-offset: -3px;
+}
+.quick-process-body {
+  padding: 0 1rem 0.9rem;
+  border-top: 1px solid rgba(var(--phase-rgb), 0.24);
+}
+.quick-process-body > p,
+.quick-process-body > ol {
+  max-width: none;
+}
+.quick-process-body > ol {
+  margin-bottom: 0;
+}
+
 /* Compact phase procedures and priority production references */
 .bridge-steps > li:first-child {
   padding: 0.8rem 0.9rem;

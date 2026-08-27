@@ -4,6 +4,7 @@ import {
   components,
   findElementsByClass,
   getAttribute,
+  hasAttribute,
   isNativeComponent,
   stripMarkup,
 } from "./lib/markup-contracts.mjs";
@@ -479,6 +480,43 @@ for (const requiredBlueGoalText of [
 ]) {
   if (!blueText.includes(requiredBlueGoalText)) {
     errors.push(`Approved BLUE Goal is missing: ${requiredBlueGoalText}`);
+  }
+}
+const quickProcesses = findElementsByClass(html, "quick-process");
+const expectedQuickProcesses = [
+  {
+    section: blueSection,
+    summary: "Quick process — Capture a reusable branch",
+    steps: 3,
+  },
+  {
+    section: findElementsByClass(html, "phase-section-red")[0],
+    summary: "Quick process — Split refinery outputs",
+    steps: 4,
+  },
+];
+if (quickProcesses.length !== expectedQuickProcesses.length) {
+  errors.push(
+    `Expected ${expectedQuickProcesses.length} Quick processes; found ${quickProcesses.length}`,
+  );
+}
+for (const [index, expected] of expectedQuickProcesses.entries()) {
+  const process = quickProcesses[index];
+  if (!process) continue;
+  const summary = stripMarkup(
+    process.inner.match(/<summary\b[^>]*>([\s\S]*?)<\/summary>/)?.[1] || "",
+  );
+  if (process.tag !== "details" || hasAttribute(process.openingTag, "open")) {
+    errors.push(`${expected.summary} is not a collapsed native disclosure`);
+  }
+  if (summary !== expected.summary) {
+    errors.push(`Quick-process summary is invalid: ${summary}`);
+  }
+  if (!expected.section?.full.includes(process.full)) {
+    errors.push(`${expected.summary} is outside its owning phase`);
+  }
+  if ((process.inner.match(/<li\b/g) || []).length !== expected.steps) {
+    errors.push(`${expected.summary} has an invalid step count`);
   }
 }
 const progressIndex = findElementsByClass(html, "progress-index")[0];
