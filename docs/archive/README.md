@@ -32,6 +32,8 @@ The archive includes:
   roadmap;
 - `next-roadmap-source-review-notes.md` for the playthrough findings and
   original WIP mapping that produced the bounded roadmap story drafts;
+- `nr-01-*.md` through `nr-18-*.md` for the completed 18-story sequence
+  owner-accepted on 2026-08-27;
 - `statistics-panel-runtime-evidence.md` for the archived textual evidence
   behind the planned Production Statistics walkthrough;
 - `dark-fog-red-defense-user-stories.md` for the completed RED defense scope;

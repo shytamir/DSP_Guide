@@ -241,6 +241,34 @@ const optionalChecklist = findElementsByClass(
 )[0];
 assert.ok(optionalChecklist, "one-screen optional-capability group is missing");
 const mainChecklist = referenceChecklist.slice(0, optionalChecklist.index);
+const checklistColumns = findElementsByClass(
+  mainChecklist,
+  "default-checklist-column",
+);
+assert.equal(
+  findElementsByClass(mainChecklist, "default-checklist-columns").length,
+  1,
+  "default checklist must use one responsive column grid",
+);
+assert.equal(
+  checklistColumns.length,
+  2,
+  "default checklist must use exactly two desktop columns",
+);
+const columnPhaseGroups = checklistColumns.map((column) =>
+  findElementsByClass(column.inner, "default-checklist-group").map(
+    (group) =>
+      group.openingTag.match(/data-checklist-phase="([^"]+)"/)?.[1] || "",
+  ),
+);
+assert.deepEqual(
+  columnPhaseGroups,
+  [
+    ["blue", "red", "ils", "yellow", "purple"],
+    ["green", "dyson", "receiver-bridge", "photon", "white"],
+  ],
+  "default checklist desktop columns do not preserve the approved route split",
+);
 assert.doesNotMatch(
   mainChecklist,
   /href="#(?:sphere|warp|logistics)"/,

@@ -1,9 +1,10 @@
 # Active Roadmap — Story Index
 
-**Status:** Active. NR-01 through NR-17 were owner-accepted and archived on
-2026-08-27. NR-18 is implemented and technically validated, pending owner
-acceptance. Owner acceptance of NR-18 and disposition of this roadmap remain
-separate decisions.
+**Status:** Active. NR-01 through NR-18 were owner-accepted and archived on
+2026-08-27. Version 2.8 is the current prerelease capability-proof milestone.
+The later editorial refinement workshop and version 2.9 prerelease update must
+also conclude before the owner separately decides whether to announce a
+release candidate or dispose of this roadmap.
 
 ## Purpose
 
@@ -107,26 +108,38 @@ The balance is deliberate:
 If implementation discovery exposes another independent decision surface,
 stop and split the affected draft before authorizing additional scope.
 
-| Order | Story                                                                                                                                          | Class                   | Requires                     | Status                                 |
-| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ---------------------------- | -------------------------------------- |
-| 1     | [NR-01 — Separate SPHERE from the numbered route](../archive/nr-01-separate-sphere-from-the-numbered-route.md)                                 | Structural change       | None                         | Owner-accepted — archived              |
-| 2     | [NR-02 — Reframe SPHERE as optional guidance](../archive/nr-02-reframe-sphere-as-optional-guidance.md)                                         | Editorial refinement    | NR-01                        | Owner-accepted — archived              |
-| 3     | [NR-03 — Limit SPHERE research to route-specific ownership](../archive/nr-03-limit-sphere-research-to-route-specific-ownership.md)             | Data or research change | NR-01, NR-02                 | Owner-accepted — archived              |
-| 4     | [NR-04 — Clarify the opening orientation and BLUE goal](../archive/nr-04-clarify-the-opening-orientation-and-blue-goal.md)                     | Editorial refinement    | NR-02                        | Owner-accepted — archived              |
-| 5     | [NR-05 — Establish compact Quick processes for early controls](../archive/nr-05-establish-compact-quick-processes-for-early-controls.md)       | Structural change       | NR-04                        | Owner-accepted — archived              |
-| 6     | [NR-06 — Assign ILS research chronologically across three stages](../archive/nr-06-assign-ils-research-chronologically-across-three-stages.md) | Data or research change | NR-05                        | Owner-accepted — archived              |
-| 7     | [NR-07 — Replace YELLOW research with bounded buildout guidance](../archive/nr-07-replace-yellow-research-with-bounded-buildout-guidance.md)   | Data or research change | NR-06                        | Owner-accepted — archived              |
-| 8     | [NR-08 — Assign PURPLE-owned research and bounded upgrades](../archive/nr-08-assign-purple-owned-research-and-bounded-upgrades.md)             | Data or research change | NR-07                        | Owner-accepted — archived              |
-| 9     | [NR-09 — Establish GREEN research and material-proof ownership](../archive/nr-09-establish-green-research-and-material-proof-ownership.md)     | Data or research change | NR-03, NR-08                 | Owner-accepted — archived              |
-| 10    | [NR-10 — Teach GREEN's Deuterium, fuel, and power loop](../archive/nr-10-teach-green-deuterium-fuel-and-power-loop.md)                         | Editorial refinement    | NR-09                        | Owner-accepted — archived              |
-| 11    | [NR-11 — Define DYSON's chosen Solar Sail route](../archive/nr-11-define-dyson-chosen-solar-sail-route.md)                                     | Data or research change | NR-03, NR-10                 | Owner-accepted — archived              |
-| 12    | [NR-12 — Create one Receiver and Antimatter bridge](../archive/nr-12-create-one-receiver-and-antimatter-bridge.md)                             | Structural change       | NR-03, NR-11                 | Owner-accepted — archived              |
-| 13    | [NR-13 — Refocus PHOTON on stable WHITE readiness](../archive/nr-13-refocus-photon-on-stable-white-readiness.md)                               | Data or research change | NR-12                        | Owner-accepted — archived              |
-| 14    | [NR-14 — Refine WARP expedition framing and route support](../archive/nr-14-refine-warp-expedition-framing-and-route-support.md)               | Editorial refinement    | NR-01                        | Owner-accepted — archived              |
-| 15    | [NR-15 — Add one canonical Production Statistics walkthrough](../archive/nr-15-add-one-canonical-production-statistics-walkthrough.md)         | Editorial refinement    | NR-05, NR-07                 | Owner-accepted — archived              |
-| 16    | [NR-16 — Teach the LOGISTICS route model](../archive/nr-16-teach-the-logistics-route-model.md)                                                 | Editorial refinement    | NR-01                        | Owner-accepted — archived              |
-| 17    | [NR-17 — Repair troubleshooting and add the final conclusion](../archive/nr-17-repair-troubleshooting-and-add-the-final-conclusion.md)         | Editorial refinement    | NR-03, NR-13, NR-15, NR-16   | Owner-accepted — archived              |
-| 18    | [NR-18 — Synchronize the final One-Screen Default Checklist](next-roadmap/nr-18-synchronize-the-final-one-screen-default-checklist.md)         | Structural change       | NR-01 through NR-17 accepted | Implemented — pending owner acceptance |
+| Order | Story                                                                                                                                          | Class                   | Requires                     | Status                    |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ---------------------------- | ------------------------- |
+| 1     | [NR-01 — Separate SPHERE from the numbered route](../archive/nr-01-separate-sphere-from-the-numbered-route.md)                                 | Structural change       | None                         | Owner-accepted — archived |
+| 2     | [NR-02 — Reframe SPHERE as optional guidance](../archive/nr-02-reframe-sphere-as-optional-guidance.md)                                         | Editorial refinement    | NR-01                        | Owner-accepted — archived |
+| 3     | [NR-03 — Limit SPHERE research to route-specific ownership](../archive/nr-03-limit-sphere-research-to-route-specific-ownership.md)             | Data or research change | NR-01, NR-02                 | Owner-accepted — archived |
+| 4     | [NR-04 — Clarify the opening orientation and BLUE goal](../archive/nr-04-clarify-the-opening-orientation-and-blue-goal.md)                     | Editorial refinement    | NR-02                        | Owner-accepted — archived |
+| 5     | [NR-05 — Establish compact Quick processes for early controls](../archive/nr-05-establish-compact-quick-processes-for-early-controls.md)       | Structural change       | NR-04                        | Owner-accepted — archived |
+| 6     | [NR-06 — Assign ILS research chronologically across three stages](../archive/nr-06-assign-ils-research-chronologically-across-three-stages.md) | Data or research change | NR-05                        | Owner-accepted — archived |
+| 7     | [NR-07 — Replace YELLOW research with bounded buildout guidance](../archive/nr-07-replace-yellow-research-with-bounded-buildout-guidance.md)   | Data or research change | NR-06                        | Owner-accepted — archived |
+| 8     | [NR-08 — Assign PURPLE-owned research and bounded upgrades](../archive/nr-08-assign-purple-owned-research-and-bounded-upgrades.md)             | Data or research change | NR-07                        | Owner-accepted — archived |
+| 9     | [NR-09 — Establish GREEN research and material-proof ownership](../archive/nr-09-establish-green-research-and-material-proof-ownership.md)     | Data or research change | NR-03, NR-08                 | Owner-accepted — archived |
+| 10    | [NR-10 — Teach GREEN's Deuterium, fuel, and power loop](../archive/nr-10-teach-green-deuterium-fuel-and-power-loop.md)                         | Editorial refinement    | NR-09                        | Owner-accepted — archived |
+| 11    | [NR-11 — Define DYSON's chosen Solar Sail route](../archive/nr-11-define-dyson-chosen-solar-sail-route.md)                                     | Data or research change | NR-03, NR-10                 | Owner-accepted — archived |
+| 12    | [NR-12 — Create one Receiver and Antimatter bridge](../archive/nr-12-create-one-receiver-and-antimatter-bridge.md)                             | Structural change       | NR-03, NR-11                 | Owner-accepted — archived |
+| 13    | [NR-13 — Refocus PHOTON on stable WHITE readiness](../archive/nr-13-refocus-photon-on-stable-white-readiness.md)                               | Data or research change | NR-12                        | Owner-accepted — archived |
+| 14    | [NR-14 — Refine WARP expedition framing and route support](../archive/nr-14-refine-warp-expedition-framing-and-route-support.md)               | Editorial refinement    | NR-01                        | Owner-accepted — archived |
+| 15    | [NR-15 — Add one canonical Production Statistics walkthrough](../archive/nr-15-add-one-canonical-production-statistics-walkthrough.md)         | Editorial refinement    | NR-05, NR-07                 | Owner-accepted — archived |
+| 16    | [NR-16 — Teach the LOGISTICS route model](../archive/nr-16-teach-the-logistics-route-model.md)                                                 | Editorial refinement    | NR-01                        | Owner-accepted — archived |
+| 17    | [NR-17 — Repair troubleshooting and add the final conclusion](../archive/nr-17-repair-troubleshooting-and-add-the-final-conclusion.md)         | Editorial refinement    | NR-03, NR-13, NR-15, NR-16   | Owner-accepted — archived |
+| 18    | [NR-18 — Synchronize the final One-Screen Default Checklist](../archive/nr-18-synchronize-the-final-one-screen-default-checklist.md)           | Structural change       | NR-01 through NR-17 accepted | Owner-accepted — archived |
+
+## Prerelease milestones
+
+| Order | Milestone                                                                                                            | Requires             | State                                           |
+| ----- | -------------------------------------------------------------------------------------------------------------------- | -------------------- | ----------------------------------------------- |
+| P1    | Establish version 2.8 as a prerelease capability proof and validate the pushed `main` state at Tier 3                | NR-18 owner-accepted | Active — owner review of proof remains separate |
+| P2    | Conduct the editorial refinement workshop and conclude it with a separately authorized version 2.9 prerelease update | P1                   | Pending owner activation                        |
+| P3    | Decide whether to announce a release candidate and dispose of this roadmap                                           | P2                   | Owner decision — not authorized                 |
+
+Version 2.3 remains the current published release. Versions 2.8 and 2.9 are
+development deployment lines until the owner explicitly announces a release
+candidate or authorizes production publication.
 
 ## Owner gates and lifecycle
 

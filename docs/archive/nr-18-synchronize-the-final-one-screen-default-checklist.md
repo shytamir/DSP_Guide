@@ -1,6 +1,8 @@
 # NR-18 — Synchronize the final One-Screen Default Checklist
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
+**Historical status:** Owner-accepted and archived on 2026-08-27 after Tier 2
+technical validation and owner review of the final two-column desktop
+presentation and narrow-width route-order stacking.
 
 **Dependency group:** E — Final synchronization
 **Assessed workload:** Medium
@@ -59,7 +61,7 @@ remain reference material in their approved DYSON locations and are not phase
 gates.
 
 The archived
-[`one-screen-checklist-correction-story.md`](../../archive/one-screen-checklist-correction-story.md)
+[`one-screen-checklist-correction-story.md`](one-screen-checklist-correction-story.md)
 preserves an earlier decision to
 replace obsolete `517.5/min` and 80-Ejector checklist figures with `405/min`
 and 60. The comprehensive synchronization supersedes that narrow correction:
@@ -107,4 +109,4 @@ presentation on the deployed development Pages site in Chromium.
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.

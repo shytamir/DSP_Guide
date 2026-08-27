@@ -68,11 +68,15 @@ changes.
 
 ## Roadmap status
 
-Version 2.3 is published. Its completed twelve-story roadmap and supporting
-records were owner-accepted and archived on 2026-08-09. New roadmap work is
-active under [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md), the
-sole authority for current sequence, dependencies, and story status. The
-historical version 2.3 roadmap is preserved in
+Version 2.3 remains the current published release. Version 2.8 is the active
+prerelease development line; it does not announce a release candidate. All 18
+reader-facing stories in the active roadmap were owner-accepted and archived
+on 2026-08-27. The roadmap remains active for the 2.8 capability proof, the
+future editorial refinement workshop ending in a 2.9 prerelease update, and a
+later separate owner decision on release-candidate readiness. The active
+[`docs/management/ROADMAP.md`](docs/management/ROADMAP.md) is the sole
+authority for that sequence and status. The historical version 2.3 roadmap is
+preserved in
 [`docs/archive/ROADMAP.md`](docs/archive/ROADMAP.md). See
 [`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and
 [`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation

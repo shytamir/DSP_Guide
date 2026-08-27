@@ -1,11 +1,11 @@
 # DSP Practical Progression Guide
 
-**Status:** Version 2.3 is the current published minor line. Its twelve-story
-roadmap and resulting release were completed, owner-accepted, and archived on
-2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
-workload. NR-01 through NR-17 were owner-accepted and archived on 2026-08-27.
-NR-18 is implemented and technically validated, pending owner acceptance. The
-roadmap remains active until the owner separately decides its disposition.
+**Status:** Version 2.3 remains the current published release. Version 2.8 is
+the active prerelease development line and does not announce a release
+candidate. NR-01 through NR-18 were owner-accepted and archived on 2026-08-27.
+The active [`ROADMAP.md`](management/ROADMAP.md) now governs the 2.8 capability
+proof, the future editorial refinement workshop ending in version 2.9, and the
+later separate owner decision on release-candidate readiness.
 
 ## Purpose
 
@@ -140,20 +140,30 @@ internal anchor to resolve.
 
 ## Current management status
 
+**Owner decision — 2026-08-27:** NR-18 was owner-accepted after its default
+checklist was synchronized and its final presentation was refined into a
+two-column desktop ledger that stacks in route order at narrow widths. All 18
+reader-facing stories are now owner-accepted and archived.
+
+**Owner decision — 2026-08-27:** Version 2.8 is a prerelease capability-proof
+checkpoint. It must receive Tier 3 release validation against the pushed
+`main` state, but neither the version update nor successful validation
+announces a release candidate. The remaining roadmap milestone is an editorial
+refinement workshop that will conclude with a separately authorized version
+2.9 prerelease update. Release-candidate readiness and roadmap disposition
+remain later owner decisions.
+
 **Owner decision — 2026-08-27:** NR-08's acceptance gate includes the
 rank-label defect exposed by its levelled PURPLE recommendations. Technical
 validation must prove rank-accurate tooltip titles and prerequisite labels for
 the complete retained 163-record ambiguity set; successful rendering alone is
 not sufficient.
 
-The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
-sequence, dependencies, and lifecycle status. NR-01 through NR-14 were
-owner-accepted and archived on 2026-08-27. NR-15 is implemented and technically
-validated, pending owner acceptance. NR-16 through NR-18 are approved and
-implementation-ready planning records, but remain inactive until separately
-activated after their prerequisites are satisfied. Story approval, activation,
-technical validation, owner acceptance, and release authorization remain
-separate decisions.
+The active [`roadmap`](management/ROADMAP.md) is the sole authority for
+sequence, dependencies, story lifecycle, and prerelease milestones. NR-01
+through NR-18 are owner-accepted and archived. Technical validation, owner
+acceptance, prerelease versioning, release-candidate announcement, and
+production publication remain separate decisions.
 
 YELLOW/PURPLE problem-resolver guidance and a Dark Fog COMBAT/PEACE control are
 named future work outside the active roadmap. They do not create current
@@ -200,8 +210,8 @@ governs the new sequence and its story lifecycle.
   condensation were owner-accepted as Stories 9–12.
 - **Standing references — not pending work:** the no-mobile-polish decision is
   preserved with the archived roadmap. The earlier one-screen checklist
-  correction is superseded and archived; NR-18 in the active roadmap
-  owns final-checklist synchronization after preceding changes are accepted.
+  correction is superseded and archived; the accepted NR-18 record preserves
+  the final checklist synchronization.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived
   on 2026-08-09 after the GREEN, ILS research-map, and ILS production-map

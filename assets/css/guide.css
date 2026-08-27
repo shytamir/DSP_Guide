@@ -2061,6 +2061,36 @@ details.build-card[open] > summary {
   cursor: pointer;
   accent-color: var(--accent2);
 }
+.default-checklist-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.default-checklist-column {
+  min-width: 0;
+}
+.default-checklist-column h2 {
+  margin: 0.85rem 0 0.35rem;
+  font-size: 1rem;
+}
+.default-checklist-column h2:first-child {
+  margin-top: 0;
+}
+.default-checklist-group {
+  margin: 0 0 0.7rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+.default-checklist-group .task-list-item {
+  margin: 0.22rem 0;
+}
+.default-checklist-group .task-list-item-checkbox {
+  margin: 0 0.32rem 0 0;
+}
 .guide-glossary {
   margin: 1.4rem 0 2rem;
   border: 1px solid #3e4b5f;
@@ -2116,6 +2146,12 @@ details.build-card[open] > summary {
   .checklist-controls {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .default-checklist-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
 @media print {

@@ -33,10 +33,14 @@ changing a management record.
 ## Current planning state
 
 - [`ROADMAP.md`](ROADMAP.md) is the sole active authority for sequence,
-  dependencies, and story lifecycle status. Its
-  [bounded story directory](next-roadmap/) holds the detailed specifications.
-- Version 2.3 is the current published minor line. Its completed release record
-  is preserved in
+  dependencies, story lifecycle, and prerelease milestone status. All 18
+  reader-facing stories were owner-accepted and archived on 2026-08-27. The
+  roadmap remains active for the version 2.8 capability proof, the future
+  editorial refinement workshop ending in version 2.9, and the later separate
+  release-candidate decision.
+- Version 2.3 remains the current published release. Version 2.8 is an active
+  prerelease development line, not a release-candidate announcement. The 2.3
+  release record is preserved in
   [`../archive/version-2.3-navigation-and-progressive-disclosure-release.md`](../archive/version-2.3-navigation-and-progressive-disclosure-release.md).
 - The completed twelve-story roadmap, its seven supporting story records, and
   the completed design-leftovers inventory are historical documents indexed in
@@ -45,8 +49,8 @@ changing a management record.
   [`yellow-purple-problem-resolver-future-work.md`](yellow-purple-problem-resolver-future-work.md)
   preserve named future-work concepts outside the active roadmap. Neither
   authorizes implementation.
-- The superseded one-screen checklist correction is archived. NR-18 in the
-  active roadmap owns the future final-checklist synchronization.
+- The superseded one-screen checklist correction and the owner-accepted NR-18
+  synchronization story are archived as historical records.
 
 ## Historical records
 
