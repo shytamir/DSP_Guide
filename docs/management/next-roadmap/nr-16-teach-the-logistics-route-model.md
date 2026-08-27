@@ -1,7 +1,6 @@
 # NR-16 — Teach the LOGISTICS route model
 
-**Status:** Owner-approved on 2026-08-27. Implementation-ready but inactive
-pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
 
 **Dependency group:** D — Optional paths and support
 **Assessed workload:** Medium
@@ -50,11 +49,11 @@ solution:
 
 Follow the Goal with a small **Choose the right logistics layer** table:
 
-| Use | Hardware | What it connects |
-| --- | --- | --- |
-| Nearby delivery | Distributor + Logistics Bots | Icarus and nearby storage boxes |
-| Planetary delivery | PLS + Logistics Drones | Two places on the same planet |
-| Planetary or stellar delivery | ILS + Drones/Vessels | Local routes with Drones; other planets or stars with Vessels |
+| Use                           | Hardware                     | What it connects                                              |
+| ----------------------------- | ---------------------------- | ------------------------------------------------------------- |
+| Nearby delivery               | Distributor + Logistics Bots | Icarus and nearby storage boxes                               |
+| Planetary delivery            | PLS + Logistics Drones       | Two places on the same planet                                 |
+| Planetary or stellar delivery | ILS + Drones/Vessels         | Local routes with Drones; other planets or stars with Vessels |
 
 Give the reader this practical selection rule:
 

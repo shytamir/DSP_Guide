@@ -17998,36 +17998,104 @@
           </tbody>
         </table>
         <h2>Goal</h2>
-        <p>
-          This is the point where a good blueprint can become a whole factory
-          district in a few clicks. Keep Distributors, towers, and their
-          carriers waiting in limited mall buffers; when a new line needs
-          supplies, paste the layout, place the transport hardware, choose the
-          requested items, and let the network do the walking.
-        </p>
-        <p>
-          Distributors and Bots handle the last few meters between storage and
-          Icarus or nearby boxes. PLS towers and Drones move bulk cargo around
-          one planet. ILS towers and Vessels cross the gap between planets—and,
-          with Warpers, between stars. Provider offers an item, Receiver asks
-          for it, and Depot simply stores it. Local settings control Drones;
-          Remote settings control Vessels.
-        </p>
+        <div class="logistics-goal">
+          <p>
+            Your factory already moves materials for you, but every expansion
+            still needs the same transport hardware. If each new district sends
+            you back to handcraft another tower and set of carriers, automate
+            them here.
+          </p>
+          <p>
+            Build limited buffers for Distributors, PLS, ILS, Bots, Drones, and
+            Vessels. Their production lines should refill after an expansion
+            project, then stop until you take the next batch.
+          </p>
+        </div>
+        <h2>Choose the right logistics layer</h2>
+        <table class="phase-dashboard logistics-layer-table">
+          <thead>
+            <tr>
+              <th>Use</th>
+              <th>Hardware</th>
+              <th>What it connects</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Nearby delivery</strong></td>
+              <td>
+                <span class="proto-ref" data-item-id="2107">Distributor</span>
+                +
+                <span class="proto-ref" data-item-id="5003"
+                  >Logistics Bots</span
+                >
+              </td>
+              <td>Icarus and nearby storage boxes</td>
+            </tr>
+            <tr>
+              <td><strong>Planetary delivery</strong></td>
+              <td>
+                <span class="proto-ref" data-item-id="2103">PLS</span> +
+                <span class="proto-ref" data-item-id="5001"
+                  >Logistics Drones</span
+                >
+              </td>
+              <td>Two places on the same planet</td>
+            </tr>
+            <tr>
+              <td><strong>Planetary or stellar delivery</strong></td>
+              <td>
+                <span class="proto-ref" data-item-id="2104">ILS</span> +
+                Drones/Vessels
+              </td>
+              <td>
+                Local routes with Drones; other planets or stars with Vessels
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <blockquote class="logistics-selection-rule">
+          <strong>Use the smallest layer that reaches the job.</strong> A nearby
+          box does not need a tower, and two factories on the same planet do not
+          need a Vessel route.
+        </blockquote>
+        <section class="logistics-route-model">
+          <h2>Set the route</h2>
+          <p>
+            Every route needs matching items at both ends.
+            <strong>Supply</strong> makes an item available,
+            <strong>Demand</strong> asks the network to deliver it, and
+            <strong>Storage</strong> keeps the item out of that network.
+          </p>
+          <p>
+            <strong>Local</strong> settings control Drone traffic on the same
+            planet. <strong>Remote</strong> settings control Vessel traffic
+            between planets. Interstellar Vessel routes also need Warpers.
+          </p>
+          <p>
+            Before troubleshooting anything complicated, confirm that one end
+            supplies, the other demands, and the station operating the carriers
+            has the required power and hardware. The other endpoint does not
+            also need power or carriers: a powered destination can collect from
+            an unpowered provider.
+          </p>
+        </section>
         <h2>Research first</h2>
-        <p>
+        <p class="logistics-research-recap">
+          If you skipped it in YELLOW, research
           <button type="button" class="tech-ref" data-tech-id="1608">
             Distribution Logistics System
           </button>
-          unlocks Distributors and Bots.
+          now; it unlocks Distributors and Bots. ILS already proved
           <button type="button" class="tech-ref" data-tech-id="1604">
             Planetary Logistics System
           </button>
-          unlocks PLS and Drones.
+          with PLS and Drones, and
           <button type="button" class="tech-ref" data-tech-id="1605">
             Interstellar Logistics System
           </button>
-          unlocks ILS and Vessels. You used the stations during progression;
-          this section makes their replacement stock refill itself.
+          with ILS and Vessels. You used those stations during progression; this
+          section makes their replacement stock refill itself.
         </p>
         <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
         <p>

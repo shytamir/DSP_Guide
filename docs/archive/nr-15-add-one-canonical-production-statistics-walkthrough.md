@@ -1,6 +1,6 @@
 # NR-15 — Add one canonical Production Statistics walkthrough
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
+**Status:** Owner-accepted and archived on 2026-08-27.
 
 **Dependency group:** D — Optional paths and support
 **Assessed workload:** Medium
@@ -13,7 +13,7 @@ As a reader facing a shortage, I want one accurate Statistics Panel workflow tha
 ## Authoritative evidence
 
 Use the archived runtime investigation in
-[Production Statistics runtime evidence](../../archive/statistics-panel-runtime-evidence.md)
+[Production Statistics runtime evidence](statistics-panel-runtime-evidence.md)
 for visible labels, controls, calculations, tooltips, and scope behavior.
 
 ## Intended outcome
@@ -60,7 +60,7 @@ anchor `#production-statistics-walkthrough` so BLUE and later phase guidance
 can link to one source.
 
 Use the archived runtime investigation in
-[Statistics Panel runtime evidence](../../archive/statistics-panel-runtime-evidence.md) as
+[Statistics Panel runtime evidence](statistics-panel-runtime-evidence.md) as
 the factual source for visible labels, controls, calculations, tooltips, and
 scope behavior. The investigation used an advanced save, so preserve its panel
 facts but do not copy its original blue-cube diagnostic proposal unchanged.
@@ -185,4 +185,4 @@ encounters a factual conflict.
 
 Production release, version changes, and production publication are not
 included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+[`docs/PROJECT.md`](../PROJECT.md) and does not imply owner acceptance.

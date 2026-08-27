@@ -1582,6 +1582,205 @@ for (const fact of requiredStatisticsFacts) {
     errors.push(`Production Statistics walkthrough is missing: ${fact}`);
   }
 }
+const logisticsSection = findElementsByClass(
+  html,
+  "phase-section-logistics",
+)[0];
+const logisticsMarkup = logisticsSection?.inner || "";
+const logisticsText = stripMarkup(logisticsMarkup);
+if (!logisticsMarkup) {
+  errors.push("LOGISTICS optional-capability guidance is missing");
+} else {
+  const logisticsGoal = findElementsByClass(
+    logisticsMarkup,
+    "logistics-goal",
+  )[0];
+  const logisticsGoalText = stripMarkup(logisticsGoal?.inner || "");
+  for (const requiredGoalText of [
+    "Your factory already moves materials for you, but every expansion still needs the same transport hardware.",
+    "If each new district sends you back to handcraft another tower and set of carriers, automate them here.",
+    "Build limited buffers for Distributors, PLS, ILS, Bots, Drones, and Vessels.",
+    "Their production lines should refill after an expansion project, then stop until you take the next batch.",
+  ]) {
+    if (!logisticsGoalText.includes(requiredGoalText)) {
+      errors.push(`LOGISTICS Goal is missing: ${requiredGoalText}`);
+    }
+  }
+  if (/blueprint can become a whole factory district/i.test(logisticsText)) {
+    errors.push("LOGISTICS retains the unsupported blueprint claim");
+  }
+
+  const logisticsLayerTable = findElementsByClass(
+    logisticsMarkup,
+    "logistics-layer-table",
+  )[0];
+  const logisticsLayerMarkup = logisticsLayerTable?.inner || "";
+  const logisticsLayerText = stripMarkup(logisticsLayerMarkup);
+  const expectedLayerRows = [
+    "Nearby delivery Distributor + Logistics Bots Icarus and nearby storage boxes",
+    "Planetary delivery PLS + Logistics Drones Two places on the same planet",
+    "Planetary or stellar delivery ILS + Drones/Vessels Local routes with Drones; other planets or stars with Vessels",
+  ];
+  if (!logisticsLayerText.startsWith("Use Hardware What it connects")) {
+    errors.push("LOGISTICS layer table headers are invalid");
+  }
+  for (const row of expectedLayerRows) {
+    if (!logisticsLayerText.includes(row)) {
+      errors.push(`LOGISTICS layer table is missing: ${row}`);
+    }
+  }
+  const logisticsLayerItemIds = [
+    ...logisticsLayerMarkup.matchAll(/data-item-id="(\d+)"/g),
+  ].map((match) => match[1]);
+  if (
+    JSON.stringify(logisticsLayerItemIds) !==
+    JSON.stringify(["2107", "5003", "2103", "5001", "2104"])
+  ) {
+    errors.push(
+      `LOGISTICS layer hardware is invalid: ${logisticsLayerItemIds.join(", ")}`,
+    );
+  }
+
+  const logisticsSelectionRule = findElementsByClass(
+    logisticsMarkup,
+    "logistics-selection-rule",
+  )[0];
+  const logisticsSelectionText = stripMarkup(
+    logisticsSelectionRule?.inner || "",
+  );
+  if (
+    !logisticsSelectionText.includes(
+      "Use the smallest layer that reaches the job.",
+    ) ||
+    !logisticsSelectionText.includes(
+      "A nearby box does not need a tower, and two factories on the same planet do not need a Vessel route.",
+    )
+  ) {
+    errors.push("LOGISTICS practical layer-selection rule is missing");
+  }
+
+  const logisticsRouteModel = findElementsByClass(
+    logisticsMarkup,
+    "logistics-route-model",
+  )[0];
+  const logisticsRouteText = stripMarkup(logisticsRouteModel?.inner || "");
+  for (const requiredRouteText of [
+    "Every route needs matching items at both ends.",
+    "Supply makes an item available, Demand asks the network to deliver it, and Storage keeps the item out of that network.",
+    "Local settings control Drone traffic on the same planet.",
+    "Remote settings control Vessel traffic between planets.",
+    "Interstellar Vessel routes also need Warpers.",
+    "confirm that one end supplies, the other demands, and the station operating the carriers has the required power and hardware.",
+    "The other endpoint does not also need power or carriers: a powered destination can collect from an unpowered provider.",
+  ]) {
+    if (!logisticsRouteText.includes(requiredRouteText)) {
+      errors.push(`LOGISTICS route model is missing: ${requiredRouteText}`);
+    }
+  }
+
+  const logisticsResearch = findElementsByClass(
+    logisticsMarkup,
+    "logistics-research-recap",
+  )[0];
+  const logisticsResearchText = stripMarkup(logisticsResearch?.inner || "");
+  const logisticsResearchIds = [
+    ...(logisticsResearch?.inner || "").matchAll(/data-tech-id="(\d+)"/g),
+  ].map((match) => match[1]);
+  if (
+    JSON.stringify(logisticsResearchIds) !==
+    JSON.stringify(["1608", "1604", "1605"])
+  ) {
+    errors.push(
+      `LOGISTICS research recap is invalid: ${logisticsResearchIds.join(", ")}`,
+    );
+  }
+  if (
+    !logisticsResearchText.includes(
+      "If you skipped it in YELLOW, research Distribution Logistics System now; it unlocks Distributors and Bots.",
+    ) ||
+    !logisticsResearchText.includes(
+      "ILS already proved Planetary Logistics System with PLS and Drones, and Interstellar Logistics System with ILS and Vessels.",
+    )
+  ) {
+    errors.push("LOGISTICS does not preserve explicit research ownership");
+  }
+
+  const teachingPositions = [
+    logisticsGoal?.index ?? -1,
+    logisticsLayerTable?.index ?? -1,
+    logisticsSelectionRule?.index ?? -1,
+    logisticsRouteModel?.index ?? -1,
+    logisticsResearch?.index ?? -1,
+    logisticsMarkup.indexOf("Quick reference — How much is enough"),
+  ];
+  if (
+    teachingPositions.some((position) => position < 0) ||
+    teachingPositions.some(
+      (position, index) =>
+        index > 0 && position <= teachingPositions[index - 1],
+    )
+  ) {
+    errors.push("LOGISTICS teaching sequence is missing or out of order");
+  }
+
+  const logisticsDashboard = findElementsByClass(
+    logisticsMarkup,
+    "phase-dashboard",
+  )[0];
+  const logisticsDashboardText = stripMarkup(logisticsDashboard?.inner || "");
+  for (const preservedDashboardText of [
+    "Build limited hardware buffers for distribution, planetary, and interstellar expansion",
+    "Limit every output box; these are bursty mall lines, not permanent megabase consumption targets",
+    "All six buffers refill without handcrafting and route settings make sense at a glance",
+  ]) {
+    if (!logisticsDashboardText.includes(preservedDashboardText)) {
+      errors.push(`LOGISTICS dashboard changed: ${preservedDashboardText}`);
+    }
+  }
+  for (const preservedBufferText of [
+    "50 Distributors + 200 Bots",
+    "10 PLS + 200 Drones",
+    "10 ILS + 50 Vessels",
+  ]) {
+    if (!logisticsText.includes(preservedBufferText)) {
+      errors.push(`LOGISTICS buffer target changed: ${preservedBufferText}`);
+    }
+  }
+  if (findElementsByClass(logisticsMarkup, "build-card").length !== 3) {
+    errors.push("LOGISTICS must retain exactly three production cards");
+  }
+  const logisticsDiagnostics = findElementsByClass(
+    logisticsMarkup,
+    "logistics-diagnostics",
+  )[0];
+  const logisticsDiagnosticsText = stripMarkup(
+    logisticsDiagnostics?.inner || "",
+  );
+  for (const preservedDiagnostic of [
+    "Local or Remote",
+    "Supply and Demand",
+    "Carrier ownership",
+    "An unpowered provider still works when a powered requesting station owns the Vessels.",
+    "Minimum load",
+    "Transport range",
+    "Warp controls",
+    "Station energy",
+  ]) {
+    if (!logisticsDiagnosticsText.includes(preservedDiagnostic)) {
+      errors.push(`LOGISTICS troubleshooting changed: ${preservedDiagnostic}`);
+    }
+  }
+  const logisticsDiagnosticSteps = findElementsByClass(
+    logisticsMarkup,
+    "diagnostic-steps",
+  );
+  if (
+    logisticsDiagnosticSteps.length !== 1 ||
+    (logisticsDiagnosticSteps[0].inner.match(/<li\b/g) || []).length !== 5
+  ) {
+    errors.push("LOGISTICS must retain its five-step route troubleshooting");
+  }
+}
 const progressIndex = findElementsByClass(html, "progress-index")[0];
 const progressIndexMarkup = progressIndex?.inner || "";
 if (!progressIndexMarkup) {
