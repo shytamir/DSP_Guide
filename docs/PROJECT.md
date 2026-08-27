@@ -3,10 +3,10 @@
 **Status:** Version 2.3 is the current published minor line. Its twelve-story
 roadmap and resulting release were completed, owner-accepted, and archived on
 2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
-workload. NR-01 was owner-accepted and archived on 2026-08-27. NR-02 through
-NR-18 are owner-approved. NR-02 is implemented and technically validated,
-pending owner acceptance; NR-03 through NR-18 remain inactive until separately
-activated after their prerequisites are satisfied.
+workload. NR-01 and NR-02 were owner-accepted and archived on 2026-08-27.
+NR-03 through NR-18 are owner-approved. NR-03 is implemented and technically
+validated, pending owner acceptance; NR-04 through NR-18 remain inactive until
+separately activated after their prerequisites are satisfied.
 
 ## Purpose
 
@@ -133,16 +133,22 @@ evidence after removal of dead local screenshot embeds. It is historical
 traceability rather than a maintained current-version contract, and no further
 versioning of that record is required.
 
+**Owner decision — 2026-08-27:** the two SPHERE links to
+`#receiver-antimatter-bridge` may remain unresolved background noise until
+NR-12 creates the canonical bridge. The exception does not block intermediate
+story validation. NR-12 is incomplete if the target remains unresolved after
+that story.
+
 ## Current management status
 
 The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
-sequence, dependencies, and lifecycle status. NR-01, the prerequisite SPHERE
-route-structure story, was owner-accepted and archived on 2026-08-27. NR-02
-is implemented and technically validated, pending owner acceptance. NR-03
-through NR-18 are approved and implementation-ready planning records, but
-remain inactive until separately activated after their prerequisites are
-satisfied. Story approval, activation, technical validation, owner acceptance,
-and release authorization remain separate decisions.
+sequence, dependencies, and lifecycle status. NR-01 and NR-02, the completed
+SPHERE structure and editorial stories, were owner-accepted and archived on
+2026-08-27. NR-03 is implemented and technically validated, pending owner
+acceptance. NR-04 through NR-18 are approved and implementation-ready planning
+records, but remain inactive until separately activated after their
+prerequisites are satisfied. Story approval, activation, technical validation,
+owner acceptance, and release authorization remain separate decisions.
 
 YELLOW/PURPLE problem-resolver guidance and a Dark Fog COMBAT/PEACE control are
 named future work outside the active roadmap. They do not create current

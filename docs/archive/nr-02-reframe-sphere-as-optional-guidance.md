@@ -1,7 +1,7 @@
 # NR-02 — Reframe SPHERE as optional guidance
 
-**Status:** Implemented and technically validated on 2026-08-27. Pending owner
-acceptance.
+**Status:** Completed and owner-accepted on 2026-08-27. Archived historical
+record; this file no longer defines active work.
 
 **Dependency group:** A — Route foundation
 **Assessed workload:** Medium
@@ -17,7 +17,8 @@ NR-01 supplies the optional route structure. The approved roadmap assigns Receiv
 
 ## Intended outcome
 
-Rewrite SPHERE as self-contained optional guidance and retire its former phase-gate behavior and sizing targets.
+NR-02 rewrote SPHERE as self-contained optional guidance and retired its former
+phase-gate behavior and sizing targets.
 
 ## In-scope surfaces
 
@@ -49,12 +50,11 @@ Rewrite SPHERE as self-contained optional guidance and retire its former phase-g
 - Do not duplicate Receiver or PHOTON instructions.
 - NR-03 owns the separate technology and research cleanup.
 
-## Owner gates
+## Gates satisfied
 
-- The owner approves this bounded story draft before implementation begins.
-- Technical validation establishes consistency, not reader acceptance.
-- The owner separately accepts or requests refinement after reviewing the
-  reader-facing result.
+- The owner approved the bounded story before implementation began.
+- Technical validation established contract and presentation consistency.
+- The owner accepted the deployed reader-facing result on 2026-08-27.
 
 ## Acceptance evidence
 
@@ -67,12 +67,12 @@ Rewrite SPHERE as self-contained optional guidance and retire its former phase-g
 
 **Tier:** 2 — Experience
 
-Run directly affected content and structural checks, then review the complete
-SPHERE section and its route handoffs on the deployed development Pages site in
-desktop Chromium.
+Technical validation covered the directly affected content and structural
+contracts and the complete SPHERE section and route handoffs on the deployed
+development Pages site in desktop Chromium.
 
 ## Release
 
-Production release, version changes, and production publication are not
-included. Development deployment for validation follows
-[`docs/PROJECT.md`](../../PROJECT.md) and does not imply owner acceptance.
+Production release, version changes, and production publication were not
+included. Development deployment for validation followed
+[`docs/PROJECT.md`](../PROJECT.md) and did not imply owner acceptance.

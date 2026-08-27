@@ -14,6 +14,9 @@ const authoritativeRecipes = JSON.parse(
     "utf8",
   ),
 ).recipes;
+const technologyReference = JSON.parse(
+  fs.readFileSync("assets/data/tech-reference.json", "utf8"),
+);
 const errors = [];
 const cards = findElementsByClass(html, components.buildCard.className)
   .filter((element) => isNativeComponent(element, components.buildCard))
@@ -368,6 +371,74 @@ if (!sphereMarkup) {
     )
   ) {
     errors.push("SPHERE still contains former PHOTON-gate sizing figures");
+  }
+  const sphereResearchIds = [
+    ...sphereMarkup.matchAll(
+      /class="[^"]*\btech-ref\b[^"]*"[^>]*data-tech-id="(\d+)"/g,
+    ),
+  ].map((match) => match[1]);
+  if (
+    JSON.stringify([...new Set(sphereResearchIds)]) !==
+    JSON.stringify(["1522", "1523"])
+  ) {
+    errors.push(
+      `SPHERE research ownership is invalid: ${[...new Set(sphereResearchIds)].join(", ")}`,
+    );
+  }
+
+  const requiredTechnologyEdges = new Map([
+    ["1502", ["1501"]],
+    ["1503", ["1502"]],
+    ["1521", ["1503"]],
+    ["1522", ["1521"]],
+    ["1523", ["1522"]],
+  ]);
+  for (const [technologyId, requiredIds] of requiredTechnologyEdges) {
+    const actualRequiredIds = new Set(
+      (technologyReference[technologyId]?.required || []).map(({ id }) =>
+        String(id),
+      ),
+    );
+    for (const requiredId of requiredIds) {
+      if (!actualRequiredIds.has(requiredId)) {
+        errors.push(
+          `Technology ${technologyId} is missing required prerequisite ${requiredId}`,
+        );
+      }
+    }
+  }
+
+  const colliderRecipe = authoritativeRecipes.find((recipe) =>
+    recipe.outputs.some(({ item_id: itemId }) => itemId === 2310),
+  );
+  const colliderInputIds = new Set(
+    (colliderRecipe?.inputs || []).map(({ item_id: itemId }) => itemId),
+  );
+  for (const requiredMaterialId of [1125, 1205]) {
+    if (!colliderInputIds.has(requiredMaterialId)) {
+      errors.push(
+        `Miniature Particle Collider material proof is missing item ${requiredMaterialId}`,
+      );
+    }
+  }
+  const materialProofUnlocks = new Map([
+    [1125, 1521],
+    [1205, 1711],
+  ]);
+  for (const [materialId, technologyId] of materialProofUnlocks) {
+    const materialRecipe = authoritativeRecipes.find((recipe) =>
+      recipe.outputs.some(({ item_id: itemId }) => itemId === materialId),
+    );
+    const unlockingTechnologyIds = new Set(
+      (materialRecipe?.unlocking_technologies || []).map(
+        ({ tech_id: techId }) => techId,
+      ),
+    );
+    if (!unlockingTechnologyIds.has(technologyId)) {
+      errors.push(
+        `Material ${materialId} is not authoritatively unlocked by technology ${technologyId}`,
+      );
+    }
   }
 }
 const dysonSection = findElementsByClass(html, "phase-section-dyson")[0];
