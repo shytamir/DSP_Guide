@@ -1758,7 +1758,7 @@
                 />[DYSON]</a
               >
             </td>
-            <td>Default swarm route to ≥1.655 GW Dyson generation</td>
+            <td>Default swarm route to useful Receiver output</td>
             <td>Green science</td>
           </tr>
           <tr>
@@ -13625,46 +13625,31 @@
                   </button></span
                 >.<br /><span class="dyson-owned-research"
                   ><strong>Research for DYSON:</strong>
-                  <button
-                    type="button"
-                    class="tech-ref tech-milestone"
-                    data-tech-id="1504"
-                  >
+                  <button type="button" class="tech-ref" data-tech-id="3101">
                     <img
                       class="proto-icon proto-icon-tech"
-                      src="assets/DSP_exported assets/Texture2D/Tech/1504.png"
+                      src="assets/DSP_exported assets/Texture2D/Tech/3101.png"
                       width="20"
                       height="20"
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
-                    />Ray Receiver
-                  </button></span
-                >.<br />Recommended before launch scale-up:
-                <button type="button" class="tech-ref" data-tech-id="3101">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/3101.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Solar Sail Life
-                </button>
-                Lv1 →
-                <button type="button" class="tech-ref" data-tech-id="3102">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/3102.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Solar Sail Life
-                </button>
-                Lv2
+                    />Solar Sail Life
+                  </button>
+                  Lv1 →
+                  <button type="button" class="tech-ref" data-tech-id="3102">
+                    <img
+                      class="proto-icon proto-icon-tech"
+                      src="assets/DSP_exported assets/Texture2D/Tech/3102.png"
+                      width="20"
+                      height="20"
+                      alt=""
+                      aria-hidden="true"
+                      loading="lazy"
+                    />Solar Sail Life
+                  </button>
+                  Lv2</span
+                >
               </td>
             </tr>
             <tr>
@@ -13730,16 +13715,6 @@
         </p>
         <p class="dyson-owned-research">
           <strong>Research for DYSON:</strong>
-          <button
-            type="button"
-            class="tech-ref tech-milestone"
-            data-tech-id="1504"
-          >
-            Ray Receiver</button
-          >.
-        </p>
-        <p>
-          Once the orbit system is available,
           <button type="button" class="tech-ref" data-tech-id="3101">
             Solar Sail Life
           </button>
@@ -13747,11 +13722,8 @@
           <button type="button" class="tech-ref" data-tech-id="3102">
             Solar Sail Life
           </button>
-          Lv2 is the guide's recommended pressure valve before the launch field
-          grows. It raises sail lifetime from 90 to 120 minutes and cuts the
-          steady replacement burden by one quarter. It is still your call: skip
-          it when the larger base-life sail and Ejector build suits the factory
-          you already have.
+          Lv2 before the launch network reaches full scale. These are DYSON's
+          only new research recommendations before the Receiver bridge.
         </p>
         <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
         <p>
@@ -13763,35 +13735,36 @@
           the Receivers are doing useful work, begin PHOTON; keep expanding only
           where launch duty, stored sails, or Receiver demand shows a shortage.
         </p>
-        <p>
-          <strong
-            >The reference calculation is an averaged planning example, not a
-            finish line.</strong
+        <p class="dyson-chosen-route">
+          This guide assumes Solar Sail Life Lv1 → Lv2 before the launch network
+          reaches full scale. The upgrades keep each sail in orbit longer,
+          reducing the number of replacements the factory and Ejectors must
+          provide. You can skip them and compensate with more sail production
+          and more successful launches, but this guide does not plan that route.
+        </p>
+        <p class="dyson-reference-calculation">
+          With both Solar Sail Life upgrades, the reference swarm uses
+          <strong>405 Solar Sails/min</strong> of installed production and needs
+          about <strong>383 successful launches/min</strong>. Sixty Ejectors
+          averaging 32% firing time provide about 384 launches/min. This is a
+          planning reference, not a finish line: placed Ejectors matter only
+          when their orbit and firing window let them launch.
+        </p>
+        <p class="dyson-reference-disclaimer">
+          Treat the reference as a starting point. The factory and star you
+          actually built will decide what is enough.
+        </p>
+        <p class="dyson-antimatter-handoff">
+          The Receiver array will begin storing
+          <span class="proto-ref" data-item-id="1122">Antimatter</span> before
+          the reference swarm is complete. Keep it running while the swarm grows
+          and PHOTON strengthens the system. Reaching 2,000 stored Antimatter
+          later is the midpoint used to enter WHITE; it is not a requirement for
+          leaving DYSON. Follow the prescribed
+          <a href="#receiver-antimatter-bridge"
+            >Receiver and Antimatter bridge</a
           >
-          With
-          <button type="button" class="tech-ref" data-tech-id="3102">
-            Solar Sail Life
-          </button>
-          Lv2, it uses
-          <strong
-            >405
-            <span class="proto-ref" data-item-id="1501">Solar Sails</span
-            >/min</strong
-          >
-          of installed production, approximately
-          <strong>383 launches/min</strong> to maintain the full swarm, and at
-          least <strong>1.655 GW</strong> of live Dyson generation to supply
-          four warmed, lensed Receivers at Ray Efficiency Lv0. An Ejector
-          launches 20 sails/min while firing, so
-          <strong>sixty Ejectors at 32% average duty</strong> produce about 384
-          launches/min; installed count is not throughput. If you skip the two
-          sail-life upgrades, the base-life comparison returns to roughly
-          <strong>511 launches/min</strong> and
-          <strong>517.5 sails/min</strong> of installed production. Orbit
-          geometry, firing duty, star luminosity, and later upgrades will move
-          the real result. The Receivers will begin banking the 4,000
-          <span class="proto-ref" data-item-id="1122">Antimatter</span> needed
-          for the finish well before the reference swarm reaches equilibrium.
+          to continue.
         </p>
         <h2 class="quick-ref-title">Quick reference — Build outlines</h2>
         <p class="card-use-contract">
@@ -14221,10 +14194,8 @@
                   <h4>Operating Note</h4>
                   <ul>
                     <li>
-                      The card title's installed-capacity reference assumes
-                      Solar Sail Life Lv2. If you skip those upgrades, use the
-                      base-life planning case above and scale from actual launch
-                      duty.
+                      The card title's installed-capacity reference assumes the
+                      guide's Solar Sail Life Lv1 → Lv2 route.
                     </li>
                     <li>
                       If the sail buffer empties, launch demand exceeds current
@@ -14809,9 +14780,8 @@
                   <h4>Operating Note</h4>
                   <ul>
                     <li>
-                      The card title's buffer reference assumes Solar Sail Life
-                      Lv2; skipping those upgrades calls for the base-life
-                      planning case above.
+                      The card title's buffer reference assumes the guide's
+                      Solar Sail Life Lv1 → Lv2 route.
                     </li>
                     <li>
                       Ejectors need clear injection geometry, and a
@@ -20062,16 +20032,16 @@
             class="task-list-item-checkbox"
             disabled="disabled"
             type="checkbox"
-          />The full standard
+          />The chosen-route
           <span class="proto-ref" data-item-id="1501">Solar Sail</span> line is
-          automated at 517.5/min installed capacity
+          automated at 405/min installed capacity
         </li>
         <li class="task-list-item">
           <input
             class="task-list-item-checkbox"
             disabled="disabled"
             type="checkbox"
-          />The 80-Ejector deployment buffer is automated and useful latitude
+          />The 60-Ejector deployment buffer is automated and useful latitude
           blocks are firing
         </li>
         <li class="task-list-item">

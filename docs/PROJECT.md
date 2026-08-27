@@ -3,9 +3,9 @@
 **Status:** Version 2.3 is the current published minor line. Its twelve-story
 roadmap and resulting release were completed, owner-accepted, and archived on
 2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
-workload. NR-01 through NR-09 were owner-accepted and archived on 2026-08-27.
-NR-10 is implemented and technically validated, pending owner acceptance;
-NR-11 through NR-18 are owner-approved and remain inactive until separately
+workload. NR-01 through NR-10 were owner-accepted and archived on 2026-08-27.
+NR-11 is implemented and technically validated, pending owner acceptance;
+NR-12 through NR-18 are owner-approved and remain inactive until separately
 activated after their prerequisites are satisfied.
 
 ## Purpose
@@ -134,7 +134,7 @@ evidence after removal of dead local screenshot embeds. It is historical
 traceability rather than a maintained current-version contract, and no further
 versioning of that record is required.
 
-**Owner decision — 2026-08-27:** the two SPHERE links to
+**Owner decision — 2026-08-27:** the links from DYSON and SPHERE to
 `#receiver-antimatter-bridge` may remain unresolved background noise until
 NR-12 creates the canonical bridge. The exception does not block intermediate
 story validation. NR-12 is incomplete if the target remains unresolved after
@@ -149,9 +149,9 @@ the complete retained 163-record ambiguity set; successful rendering alone is
 not sufficient.
 
 The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
-sequence, dependencies, and lifecycle status. NR-01 through NR-09 were
-owner-accepted and archived on 2026-08-27. NR-10 is implemented and technically
-validated, pending owner acceptance. NR-11 through NR-18 are approved and
+sequence, dependencies, and lifecycle status. NR-01 through NR-10 were
+owner-accepted and archived on 2026-08-27. NR-11 is implemented and technically
+validated, pending owner acceptance. NR-12 through NR-18 are approved and
 implementation-ready planning records, but remain inactive until separately
 activated after their prerequisites are satisfied. Story approval, activation,
 technical validation, owner acceptance, and release authorization remain

@@ -171,7 +171,7 @@ const anchors = [...html.matchAll(/href="#([^"]+)"/g)].map((match) => match[1]);
 check(ids.length === new Set(ids).size, "Duplicate HTML id found.");
 const missingAnchors = anchors.filter((anchor) => !ids.includes(anchor));
 const temporaryReceiverBridgeException =
-  missingAnchors.length === 2 &&
+  missingAnchors.length === 3 &&
   missingAnchors.every((anchor) => anchor === "receiver-antimatter-bridge");
 check(
   missingAnchors.length === 0 || temporaryReceiverBridgeException,

@@ -856,7 +856,7 @@ for (const block of ownedDysonResearch) {
   const ids = [...block.inner.matchAll(/data-tech-id="(\d+)"/g)].map(
     (match) => match[1],
   );
-  if (JSON.stringify(ids) !== JSON.stringify(["1504"])) {
+  if (JSON.stringify(ids) !== JSON.stringify(["3101", "3102"])) {
     errors.push(`DYSON-owned research is invalid: ${ids.join(", ")}`);
   }
 }
@@ -870,6 +870,83 @@ if (!dysonText.includes("DYSON does not research it again.")) {
   errors.push(
     "DYSON does not acknowledge GREEN's completed solar-orbit branch",
   );
+}
+const expectedDysonPrerequisites = new Map([
+  ["3101", { required: [], implicit: ["1503"] }],
+  ["3102", { required: ["3101"], implicit: [] }],
+]);
+for (const [technologyId, expected] of expectedDysonPrerequisites) {
+  const technology = technologyReference[technologyId] || {};
+  const requiredIds = (technology.required || []).map(({ id }) => id);
+  const implicitIds = (technology.implicitRequired || []).map(({ id }) => id);
+  if (!sameIds(requiredIds, expected.required)) {
+    errors.push(`DYSON technology ${technologyId} has invalid required edges`);
+  }
+  if (!sameIds(implicitIds, expected.implicit)) {
+    errors.push(`DYSON technology ${technologyId} has invalid implicit edges`);
+  }
+}
+for (const requiredDysonText of [
+  "This guide assumes Solar Sail Life Lv1 → Lv2 before the launch network reaches full scale.",
+  "You can skip them and compensate with more sail production and more successful launches, but this guide does not plan that route.",
+  "With both Solar Sail Life upgrades, the reference swarm uses",
+  "405 Solar Sails/min",
+  "about 383 successful launches/min",
+  "Sixty Ejectors averaging 32% firing time provide about 384 launches/min.",
+  "This is a planning reference, not a finish line: placed Ejectors matter only when their orbit and firing window let them launch.",
+  "Treat the reference as a starting point. The factory and star you actually built will decide what is enough.",
+  "Reaching 2,000 stored Antimatter later is the midpoint used to enter WHITE; it is not a requirement for leaving DYSON.",
+]) {
+  if (!dysonText.includes(requiredDysonText)) {
+    errors.push(`DYSON chosen-route guidance is missing: ${requiredDysonText}`);
+  }
+}
+for (const rejectedDysonText of [
+  "1.655 GW",
+  "511 launches/min",
+  "517.5 sails/min",
+  "base-life planning case",
+  "4,000 Antimatter",
+]) {
+  if (dysonText.includes(rejectedDysonText)) {
+    errors.push(
+      `DYSON retains rejected parallel guidance: ${rejectedDysonText}`,
+    );
+  }
+}
+const dysonReceiverBridgeLinks =
+  dysonSection?.inner.match(/href="#receiver-antimatter-bridge"/g) || [];
+if (dysonReceiverBridgeLinks.length !== 1) {
+  errors.push(
+    `DYSON must contain one prescribed Receiver bridge handoff; found ${dysonReceiverBridgeLinks.length}`,
+  );
+}
+const dysonAntimatterHandoff = findElementsByClass(
+  dysonSection?.inner || "",
+  "dyson-antimatter-handoff",
+)[0];
+if (
+  (stripMarkup(dysonAntimatterHandoff?.inner || "").match(/2,000/g) || [])
+    .length !== 1
+) {
+  errors.push("DYSON Antimatter midpoint is missing or duplicated");
+}
+const oneScreenChecklist = html.slice(html.indexOf('id="ref-checklist"'));
+for (const chosenRouteChecklistText of [
+  "405/min installed capacity",
+  "60-Ejector deployment buffer",
+]) {
+  if (!stripMarkup(oneScreenChecklist).includes(chosenRouteChecklistText)) {
+    errors.push(`One-Screen Checklist is missing: ${chosenRouteChecklistText}`);
+  }
+}
+for (const rejectedChecklistText of [
+  "517.5/min installed capacity",
+  "80-Ejector deployment buffer",
+]) {
+  if (stripMarkup(oneScreenChecklist).includes(rejectedChecklistText)) {
+    errors.push(`One-Screen Checklist retains: ${rejectedChecklistText}`);
+  }
 }
 const blueSection = findElementsByClass(html, "phase-section-blue")[0];
 const blueText = stripMarkup(blueSection?.inner || "");

@@ -1,6 +1,6 @@
 # NR-11 — Define DYSON's chosen Solar Sail route
 
-**Status:** Owner-approved on 2026-08-27. Inactive pending separate activation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner acceptance.
 
 **Dependency group:** C — Late-route progression
 **Assessed workload:** Medium
