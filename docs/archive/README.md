@@ -9,6 +9,9 @@ The archive includes:
 - `ROADMAP.md` and its icon, progression-entry, expedition-navigation, ILS,
   cube-target, PHOTON, and DYSON Ejector supporting records for the completed
   twelve-story sequence owner-accepted on 2026-08-09;
+- `version-2.9-release-candidate-roadmap.md` for the completed 18-story
+  sequence, prerelease capability proof, editorial workshop, and owner decision
+  that established version 2.9 as the release candidate;
 - `pending-guide-design-leftovers.md` for the completed inventory that produced
   the final four stories in that roadmap;
 - `no-mobile-polish-story.md` for the inactive scope guardrail excluded from
@@ -28,7 +31,7 @@ The archive includes:
 - `guide-corrections-user-stories.md` for the completed opening-route and
   DYSON reference-authority corrections;
 - `one-screen-checklist-correction-story.md` for the superseded bounded
-  checklist-baseline proposal now replaced by NR-18 in the approved next
+  checklist-baseline proposal replaced by NR-18 in the completed 18-story
   roadmap;
 - `next-roadmap-source-review-notes.md` for the playthrough findings and
   original WIP mapping that produced the bounded roadmap story drafts;

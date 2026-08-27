@@ -1,5 +1,56 @@
 # Changelog
 
+## 3.0 — Release candidate
+
+Version 3.0 is the target stable release for the current 2.9 candidate. It
+rebuilds the guide's route guidance around explicit research ownership,
+practical handoffs, and a complete path from the opening mall to white science.
+
+### Added
+
+- Added compact Quick processes for early controls and one canonical Production
+  Statistics walkthrough for diagnosing shortages.
+- Added a single Receiver-to-Antimatter bridge shared by DYSON, SPHERE, and
+  PHOTON, plus a final troubleshooting sequence and conclusion.
+- Added bounded RED defense guidance and a reusable interstellar logistics
+  route model without expanding either into a separate progression gate.
+
+### Changed
+
+- Separated optional permanent SPHERE construction from the numbered route and
+  limited its research guidance to the technology that route actually uses.
+- Reassigned research chronologically across ILS, YELLOW, PURPLE, and GREEN,
+  with runtime-derived prerequisites and explicit stopping ranks.
+- Reframed GREEN around visible Quantum and Gravity branches, a practical
+  Collider route, and a buffered Deuterium-fuel operating loop.
+- Reworked DYSON around a chosen Solar Sail swarm, live Ejector and Receiver
+  behavior, and a clear handoff into stable PHOTON and WHITE production.
+- Refined WARP as an optional expedition and LOGISTICS as support for repeated
+  expansion, then adapted the guide's prose for more natural reading.
+
+### Fixed
+
+- Corrected rank-specific technology tooltips and prerequisite labels across
+  all 163 previously ambiguous upgrade records.
+- Reconciled phase links, research ownership, RED's Crystal Smelting need, and
+  the final one-screen checklist with the completed route.
+- Replaced brittle final-copy assertions with semantic validation while keeping
+  route order, thresholds, and authoritative relationships protected.
+
+### Preserved
+
+- Preserved the BLUE-to-WHITE route, 19 production cards, two reusable
+  references, public anchors, and existing checklist storage keys.
+- Preserved the framework-free static site, local-only reader state,
+  desktop-first presentation, and runtime-derived game-data boundaries.
+
+### Deferred
+
+- YELLOW/PURPLE problem-resolver guidance, expanded Dark Fog control, and a
+  prescribed PHOTON carrier rank remain outside this release.
+- Production publication remains a separate owner decision after release
+  finishing and sanitization of the 2.9 candidate.
+
 ## 2.3 — 2026-08-09
 
 Version 2.3 is a navigation and progressive-disclosure release. It clarifies

@@ -1,11 +1,11 @@
 # DSP Practical Progression Guide
 
-**Status:** Version 2.3 remains the current published release. Version 2.8 is
-the active prerelease development line and does not announce a release
-candidate. NR-01 through NR-18 were owner-accepted and archived on 2026-08-27.
-The active [`ROADMAP.md`](management/ROADMAP.md) now governs the 2.8 capability
-proof, the future editorial refinement workshop ending in version 2.9, and the
-later separate owner decision on release-candidate readiness.
+**Status:** Version 2.3 remains the current published release. Version 2.9 is
+the active release candidate. NR-01 through NR-18 and all three prerelease
+milestones were completed on 2026-08-27, and the concluded
+[`release-candidate roadmap`](archive/version-2.9-release-candidate-roadmap.md)
+is archived. Work is now limited to release-related finishing and sanitization;
+production publication remains a separate owner decision.
 
 ## Purpose
 
@@ -145,13 +145,15 @@ checklist was synchronized and its final presentation was refined into a
 two-column desktop ledger that stacks in route order at narrow widths. All 18
 reader-facing stories are now owner-accepted and archived.
 
-**Owner decision — 2026-08-27:** Version 2.8 is a prerelease capability-proof
-checkpoint. It must receive Tier 3 release validation against the pushed
-`main` state, but neither the version update nor successful validation
-announces a release candidate. The remaining roadmap milestone is an editorial
-refinement workshop that will conclude with a separately authorized version
-2.9 prerelease update. Release-candidate readiness and roadmap disposition
-remain later owner decisions.
+**Owner decision — 2026-08-27:** Version 2.8 completed the prerelease
+capability-proof checkpoint and received Tier 3 validation against its pushed
+`main` state.
+
+**Owner decision — 2026-08-27:** The editorial refinement workshop is complete.
+Version 2.9 is the release candidate, the planned roadmap is concluded and
+archived, and further work is limited to release-related finishing and
+sanitization. Production publication remains separately authorized release
+work.
 
 **Owner decision — 2026-08-27:** NR-08's acceptance gate includes the
 rank-label defect exposed by its levelled PURPLE recommendations. Technical
@@ -159,14 +161,15 @@ validation must prove rank-accurate tooltip titles and prerequisite labels for
 the complete retained 163-record ambiguity set; successful rendering alone is
 not sufficient.
 
-The active [`roadmap`](management/ROADMAP.md) is the sole authority for
-sequence, dependencies, story lifecycle, and prerelease milestones. NR-01
-through NR-18 are owner-accepted and archived. Technical validation, owner
-acceptance, prerelease versioning, release-candidate announcement, and
+The concluded
+[`release-candidate roadmap`](archive/version-2.9-release-candidate-roadmap.md)
+preserves the completed sequence, dependencies, story lifecycle, and
+prerelease milestones. NR-01 through NR-18 are owner-accepted and archived.
+Technical validation, owner acceptance, release-candidate announcement, and
 production publication remain separate decisions.
 
 YELLOW/PURPLE problem-resolver guidance and a Dark Fog COMBAT/PEACE control are
-named future work outside the active roadmap. They do not create current
+named future work outside the completed roadmap. They do not create current
 implementation requirements.
 
 The version 2.3 navigation and progressive-disclosure release is complete,
@@ -190,8 +193,9 @@ in the
 twelve-story icon, progression-entry, expedition-navigation, and
 progressive-disclosure sequence was also completed and owner-accepted on
 2026-08-09. Its [`historical roadmap`](archive/ROADMAP.md) and supporting
-records are archived; the active [`current roadmap`](management/ROADMAP.md)
-governs the new sequence and its story lifecycle.
+records are archived; the later
+[`release-candidate roadmap`](archive/version-2.9-release-candidate-roadmap.md)
+preserves the completed 18-story sequence and its lifecycle.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
