@@ -1,7 +1,7 @@
 # Dark Fog Control and RED Gate — Named Future Work
 
-**Status:** Inactive standing reference. This concept is outside the approved
-next roadmap and does not authorize design or implementation.
+**Status:** Inactive standing reference. This concept is outside the active
+roadmap and does not authorize design or implementation.
 
 Future owner review may consider an enabled-by-default COMBAT/PEACE control
 that shows or hides the guide's bounded Dark Fog recommendations, together

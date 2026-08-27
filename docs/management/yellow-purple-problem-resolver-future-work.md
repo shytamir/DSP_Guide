@@ -1,7 +1,7 @@
 # YELLOW and PURPLE Problem Resolvers — Named Future Work
 
-**Status:** Inactive standing reference. This concept is outside the approved
-next roadmap and does not authorize design or implementation.
+**Status:** Inactive standing reference. This concept is outside the active
+roadmap and does not authorize design or implementation.
 
 Future owner review may consider optional problem-resolver guidance for the
 YELLOW and PURPLE phases. Candidate subjects retained for that later decision

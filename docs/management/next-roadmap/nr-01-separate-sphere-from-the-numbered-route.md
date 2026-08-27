@@ -1,7 +1,6 @@
 # NR-01 — Separate SPHERE from the numbered route
 
-**Status:** Draft for owner review. The outcome comes from the owner-approved
-next roadmap, but this decomposed story does not authorize implementation.
+**Status:** Owner-approved on 2026-08-27. Active and pending implementation.
 
 **Dependency group:** A — Route foundation
 **Assessed workload:** Medium

@@ -1,7 +1,7 @@
 # NR-13 — Refocus PHOTON on stable WHITE readiness
 
-**Status:** Draft for owner review. The outcome comes from the owner-approved
-next roadmap, but this decomposed story does not authorize implementation.
+**Status:** Draft for owner review. Listed in the active roadmap but not
+owner-approved or authorized for implementation.
 
 **Dependency group:** C — Late-route progression
 **Assessed workload:** Medium

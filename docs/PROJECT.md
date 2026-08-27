@@ -1,10 +1,11 @@
 # DSP Practical Progression Guide
 
-**Status:** Version 2.3 is the current published minor line. Its twelve roadmap
-stories and resulting release were completed, owner-accepted, and archived on
-2026-08-09. The owner approved the next roadmap on 2026-08-27; implementation
-has not begun and remains paused pending separate authorization of the next
-story.
+**Status:** Version 2.3 is the current published minor line. Its twelve-story
+roadmap and resulting release were completed, owner-accepted, and archived on
+2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
+workload. NR-01 through NR-10 were owner-approved on 2026-08-27; NR-01 is
+active and pending implementation, while NR-02 through NR-10 remain inactive
+and NR-11 through NR-18 remain drafts awaiting owner review.
 
 ## Purpose
 
@@ -133,14 +134,14 @@ versioning of that record is required.
 
 ## Current management status
 
-The owner-approved [`next roadmap`](management/NEXT-ROADMAP.md) defines the
-future sequence. Its prerequisite SPHERE optional-path story is first.
-Approval of the roadmap does not by itself authorize guide implementation,
-publication, or a release; the owner will explicitly authorize the next story
-after reviewing the validated governance state.
+The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
+sequence, dependencies, and lifecycle status. NR-01, the prerequisite SPHERE
+route-structure story, is active and pending implementation. Story approval,
+activation, technical validation, owner acceptance, and release authorization
+remain separate decisions.
 
 YELLOW/PURPLE problem-resolver guidance and a Dark Fog COMBAT/PEACE control are
-named future work outside the approved roadmap. They do not create current
+named future work outside the active roadmap. They do not create current
 implementation requirements.
 
 The version 2.3 navigation and progressive-disclosure release is complete,
@@ -164,8 +165,8 @@ in the
 twelve-story icon, progression-entry, expedition-navigation, and
 progressive-disclosure sequence was also completed and owner-accepted on
 2026-08-09. Its [`historical roadmap`](archive/ROADMAP.md) and supporting
-records are archived; the concise [`current roadmap record`](management/ROADMAP.md)
-describes the approved next plan and paused implementation state.
+records are archived; the active [`current roadmap`](management/ROADMAP.md)
+governs the new sequence and its story lifecycle.
 
 - **Completed — opening-route consistency:** owner-accepted on 2026-08-09. The
   introductory default route now begins with unified BLUE while preserving the
@@ -184,7 +185,7 @@ describes the approved next plan and paused implementation state.
   condensation were owner-accepted as Stories 9–12.
 - **Standing references — not pending work:** the no-mobile-polish decision is
   preserved with the archived roadmap. The earlier one-screen checklist
-  correction is superseded and archived; NR-18 in the approved next roadmap
+  correction is superseded and archived; NR-18 in the active roadmap
   owns final-checklist synchronization after preceding changes are accepted.
 
 - **Completed — ILS-to-GREEN research handoff:** owner-validated and archived

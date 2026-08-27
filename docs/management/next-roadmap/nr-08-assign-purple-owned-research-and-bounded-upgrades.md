@@ -1,7 +1,6 @@
 # NR-08 — Assign PURPLE-owned research and bounded upgrades
 
-**Status:** Draft for owner review. The outcome comes from the owner-approved
-next roadmap, but this decomposed story does not authorize implementation.
+**Status:** Owner-approved on 2026-08-27. Inactive pending separate activation.
 
 **Dependency group:** B — Early and mid-route guidance
 **Assessed workload:** Medium

@@ -1,7 +1,7 @@
 # NR-17 — Repair troubleshooting and add the final conclusion
 
-**Status:** Draft for owner review. The outcome comes from the owner-approved
-next roadmap, but this decomposed story does not authorize implementation.
+**Status:** Draft for owner review. Listed in the active roadmap but not
+owner-approved or authorized for implementation.
 
 **Dependency group:** E — Final synchronization
 **Assessed workload:** Medium

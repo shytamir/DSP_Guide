@@ -31,7 +31,7 @@ The archive includes:
   checklist-baseline proposal now replaced by NR-18 in the approved next
   roadmap;
 - `next-roadmap-source-review-notes.md` for the playthrough findings and
-  original WIP mapping that produced the bounded next-roadmap story drafts;
+  original WIP mapping that produced the bounded roadmap story drafts;
 - `statistics-panel-runtime-evidence.md` for the archived textual evidence
   behind the planned Production Statistics walkthrough;
 - `dark-fog-red-defense-user-stories.md` for the completed RED defense scope;

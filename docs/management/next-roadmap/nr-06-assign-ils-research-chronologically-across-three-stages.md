@@ -1,7 +1,6 @@
 # NR-06 — Assign ILS research chronologically across three stages
 
-**Status:** Draft for owner review. The outcome comes from the owner-approved
-next roadmap, but this decomposed story does not authorize implementation.
+**Status:** Owner-approved on 2026-08-27. Inactive pending separate activation.
 
 **Dependency group:** B — Early and mid-route guidance
 **Assessed workload:** Medium
@@ -13,7 +12,11 @@ As a reader rushing ILS, I want each technology recommendation at the stage wher
 
 ## Authoritative evidence
 
-Use retained technology prerequisites and material recipes. RED proves Steel Smelting through Oil Refinery material cost but does not prove Basic Chemical Engineering or Crystal Smelting.
+Use retained technology prerequisites and material recipes. RED proves Steel
+Smelting through Oil Refinery material cost. Its required Signal Towers consume
+Crystal Silicon, whose starter-route recipe requires Crystal Smelting, but RED
+currently omits the explicit research instruction. RED does not prove Basic
+Chemical Engineering.
 
 ## Intended outcome
 
@@ -23,6 +26,8 @@ Preserve the three-stage ILS navigation while assigning research and checkpoints
 
 - ILS stage Goals, research lists, and three navigation anchors
 - Stage III transport-package checkpoint and route deployment
+- RED's Research first sequence only where required to place Crystal Smelting
+  before its existing Signal Tower and Security Mall instructions
 - Technology tooltip and prerequisite relationships
 - False pre-departure yellow-cube statement
 
@@ -32,6 +37,13 @@ The current Stage 1 statement that yellow cubes can begin accumulating before
 departure is incorrect. Their Titanium Crystal input depends on the protected
 Titanium haulback completed by the return trip in Stage 2. Yellow-cube
 production therefore begins only after the player returns home.
+
+Repair the revealed prerequisite at its source. In RED's **Research first**
+sequence, explicitly assign Crystal Smelting after its prerequisite Smelting
+Purification and before the existing Signal Tower and Security Mall
+instructions. This establishes the technology required to make Crystal Silicon
+for RED's non-optional Signal Towers. Do not otherwise change RED or either
+Quick process established by NR-05.
 
 Keep the current three-stage navigation model. Give Stage III two clearly
 named parts so the finite build and route deployment remain distinct without
@@ -71,11 +83,11 @@ Assign research recommendations chronologically:
   Smelting. Do not repeat Steel Smelting: building RED's Oil Refineries already
   proves it through their Steel material cost.
 - **Stage II — support research during the expedition:** Basic Chemical
-  Engineering → Applied Superconductor; Crystal Smelting; Semiconductor
-  Material → Processor; Polymer Chemical → High-Strength Crystal → Structure
-  Matrix; Electromagnetic Drive → Magnetic Levitation → Magnetic Particle
-  Trap; Hydrogen Fuel Rod → Thruster → Reinforced Thruster; Upgraded Logistics
-  → High-Efficiency Logistics; Vertical Construction Lv1; then Planetary
+  Engineering → Applied Superconductor; Semiconductor Material → Processor;
+  Polymer Chemical → High-Strength Crystal → Structure Matrix;
+  Electromagnetic Drive → Magnetic Levitation → Magnetic Particle Trap;
+  Hydrogen Fuel Rod → Thruster → Reinforced Thruster; Upgraded Logistics →
+  High-Efficiency Logistics; Vertical Construction Lv1; then Planetary
   Logistics System after its branches converge.
 - **Stage III — yellow bridge and route:** Produce the first yellow batch, then
   research High-Strength Titanium Alloy → Interstellar Logistics System. The
@@ -86,17 +98,21 @@ independent branches merely because they converge later. Preserve technology
 hover behavior and the existing three anchors—**I, II, III**—with resume
 targets aligned to the three major stage headings.
 
-The order above is supported by both research and material proofs. RED proves
-Steel Smelting but not Basic Chemical Engineering. The first yellow batch
-requires Crystal Smelting as well as the chemistry chain. Building the ILS
-pair and Vessels proves the remaining Processor, Graphene, particle-container,
-thruster, alloy, and logistics branches for later phases.
+The order above is supported by both research and material proofs. After the
+bounded prerequisite repair, RED proves Steel Smelting and Crystal Smelting but
+not Basic Chemical Engineering. The first yellow batch therefore inherits
+Crystal Smelting from RED and still requires the chemistry chain assigned to
+ILS Stage II. Building the ILS pair and Vessels proves the remaining Processor,
+Graphene, particle-container, thruster, alloy, and logistics branches for later
+phases.
 
 ## Non-goals and preserved contracts
 
 - Do not add a fourth stage or navigation anchor.
 - Do not join independent research branches with false prerequisite arrows.
 - Do not add explanatory flavor text for every selected technology.
+- Do not change any NR-05 Quick process or otherwise expand RED beyond the one
+  missing Crystal Smelting instruction.
 - Do not change the established ILS material bill except where the approved chronology states it.
 
 ## Owner gates
@@ -109,6 +125,8 @@ thruster, alloy, and logistics branches for later phases.
 ## Acceptance evidence
 
 - The false pre-departure yellow-cube claim is removed.
+- RED explicitly assigns Crystal Smelting before requiring Signal Towers, and
+  ILS does not repeat that completed research.
 - Stages I, II, and III each own the approved research needed at that point.
 - Stage III visibly separates the finite transport package from deployment without becoming a fourth stage.
 - All arrows represent actual prerequisites and existing hover behavior is preserved.
@@ -117,7 +135,9 @@ thruster, alloy, and logistics branches for later phases.
 
 **Tier:** 1 — Contract
 
-Validate technology prerequisites, material proof, stage ownership, anchors, and tooltips with the directly affected deterministic contracts.
+Validate the RED Signal Tower material path, technology prerequisites, material
+proof, stage ownership, anchors, and tooltips with the directly affected
+deterministic contracts.
 
 ## Release
 

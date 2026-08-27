@@ -67,11 +67,11 @@ changes.
 
 ## Roadmap status
 
-Version 2.3 is published. The completed twelve-story roadmap and all of its
-supporting records were owner-accepted and archived on 2026-08-09. The project
-is in maintenance mode with no pending work indicated; the current boundary is
-recorded in [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md), and the
-historical roadmap is preserved in
+Version 2.3 is published. Its completed twelve-story roadmap and supporting
+records were owner-accepted and archived on 2026-08-09. New roadmap work is
+active under [`docs/management/ROADMAP.md`](docs/management/ROADMAP.md), the
+sole authority for current sequence, dependencies, and story status. The
+historical version 2.3 roadmap is preserved in
 [`docs/archive/ROADMAP.md`](docs/archive/ROADMAP.md). See
 [`CHANGELOG.md`](CHANGELOG.md) for the current published minor line and
 [`docs/PROJECT.md`](docs/PROJECT.md) for product boundaries and validation
@@ -81,8 +81,9 @@ runtime-derived DAG package remains research provenance.
 ## Deployment
 
 Pushes to `main` run the GitHub Pages workflow. It validates and deploys the
-static site while also producing one downloadable ZIP containing only
-`index.html` and `assets/`.
+static site to the development Pages environment for browser review; this is
+not production publication. The workflow also produces one downloadable ZIP
+containing only `index.html` and `assets/`.
 
 `VERSION` stores the manually managed major and minor values. Deployment
 versions use `MAJOR.MINOR.RUN.SHA`, where `RUN` starts at zero and increases

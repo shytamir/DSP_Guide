@@ -1,13 +1,13 @@
-# Next Roadmap Source Review Notes
+# Roadmap Source Review Notes
 
-**Status:** Archived traceability. These notes explain the review findings that
-produced the owner-approved roadmap. They are not active requirements or a
-second implementation specification.
+**Archived:** Converted into the bounded NR story set on 2026-08-27. These
+notes preserve the review findings and original WIP mapping that produced that
+decomposition.
 
 The WIP labels below identify the original planning headings as approved on
-2026-08-27. Current bounded-story mapping:
+2026-08-27. The decomposition mapped them as follows:
 
-| Original outcome | Current story |
+| Original outcome | Resulting story |
 | --- | --- |
 | SPHERE prerequisite | NR-01 through NR-03 |
 | WIP-1 through WIP-3 | NR-04 |
@@ -25,11 +25,9 @@ The WIP labels below identify the original planning headings as approved on
 | WIP-16 | NR-18 |
 | WIP-17 and WIP-18 | NR-17 |
 
-Where these notes differ from a current NR story, the NR story controls.
-
 The notes below preserve the playthrough findings that produced the roadmap.
-Historical WIP references use the mapping above. The notes remain traceability,
-not a second implementation specification.
+Historical WIP references use the mapping above. The resulting NR drafts
+replaced these notes as implementation specifications.
 
 ## 1. Introduction scope and closing line
 
@@ -37,22 +35,22 @@ not a second implementation specification.
   exclusion would also be inaccurate because the guide already contains
   bounded Dark Fog advice and may later enhance it.
 - The prose does not clearly distinguish the prescribed Solar Sail swarm from
-  optional permanent Sphere construction. The prerequisite story now owns that
-  distinction and removes SPHERE from numbered progression.
+  optional permanent Sphere construction. The prerequisite story was assigned
+  that distinction and removal of SPHERE from numbered progression.
 - The closing line asks the reader to select optional paths according to
   problems they can name. At this point, a new reader does not yet know which
   problems will arise or why an optional path would solve them. The finish does
   not match the substance of the introduction.
 
-### Discussion status
+### Planning resolution
 
-- The scope distinction is accepted: the default route uses a Solar Sail
+- The scope distinction was accepted: the default route uses a Solar Sail
   swarm, permanent Sphere construction is a supported optional path, Dark Fog
   receives bounded practical coverage, and other capabilities are introduced
   only when relevant.
 - The first proposed wording was rejected as too abstract and technical for the
   guide's new-player audience.
-- The current player-facing candidate is preserved as WIP-1.
+- The final player-facing candidate was preserved as WIP-1.
 
 ## 2. Introductory terminology and Glossary placement
 
@@ -68,7 +66,7 @@ not a second implementation specification.
   replace that sentence with two simpler sentences.
 - The entire second paragraph has the same problem: complex ideas are
   compressed into fragmented user-manual language. It faces the player but
-  does not currently deliver useful guidance.
+  did not deliver useful guidance at review time.
 - The desired style is concise, substantive, player-facing, and appropriate
   for a new or returning player.
 - Owner-authored final draft preserved as WIP-3.
@@ -104,11 +102,15 @@ not a second implementation specification.
 - The first research discussion mentions five technologies, assumes completed
   dependencies, and then presents the minimum technologies needed to fly and
   smelt titanium. Steel Smelting is a valid implicit dependency because RED's
-  required Oil Refineries consume Steel; Basic Chemical Engineering and
-  Crystal Smelting are not similarly proved and must be explicit in ILS.
+  required Oil Refineries consume Steel. Basic Chemical Engineering was not
+  similarly proved and had to be explicit in ILS. Later NR-06 review found
+  that RED's required Signal Towers also needed an omitted explicit Crystal
+  Smelting instruction; the approved NR-06 draft placed that prerequisite in
+  RED instead of ILS.
 - The following section then acknowledges two prerequisite technologies,
   undermining the earlier presentation as the primary order.
-- The current detailed priority list is valuable, but it is presented in full
+- The detailed priority list reviewed at the time was valuable, but it was
+  presented in full
   during pre-flight preparation even though different technologies gate
   different ILS stages.
 - Later ILS stages do not revisit research, apart from the appropriately placed
@@ -121,7 +123,7 @@ not a second implementation specification.
   checkpoint followed by route deployment and verification.
 - Place each stage's recommendation consistently after that stage's Goal
   prose.
-- Preserve the current compact, ordered branch-chain pattern and its meaningful
+- Preserve the then-current compact, ordered branch-chain pattern and its meaningful
   branch choices, limited to the relevant stage.
 - Do not add explanatory flavor text for why each technology is selected.
 - Preserve technology hover-tooltip behavior.
@@ -131,7 +133,7 @@ not a second implementation specification.
 
 ## 7. YELLOW Research first
 
-- The current prose names technologies already unlocked during the ILS rush
+- The reviewed prose named technologies already unlocked during the ILS rush
   and therefore does not serve its heading or purpose.
 - Design a genuine YELLOW-phase research-priority recommendation to replace it.
 - The remainder of YELLOW is considered straightforward, simple, and
@@ -283,7 +285,7 @@ not a second implementation specification.
 
 ## 19. Missing conclusion
 
-- The guide currently ends on troubleshooting, which is an unsatisfying final
+- The reviewed guide ended on troubleshooting, which was an unsatisfying final
   note.
 - Add a conclusion that congratulates the reader on what they have learned and
   recognizes the effort required to complete the game with the guide.

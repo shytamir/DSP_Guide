@@ -1,7 +1,7 @@
 # NR-15 — Add one canonical Production Statistics walkthrough
 
-**Status:** Draft for owner review. The outcome comes from the owner-approved
-next roadmap, but this decomposed story does not authorize implementation.
+**Status:** Draft for owner review. Listed in the active roadmap but not
+owner-approved or authorized for implementation.
 
 **Dependency group:** D — Optional paths and support
 **Assessed workload:** Medium

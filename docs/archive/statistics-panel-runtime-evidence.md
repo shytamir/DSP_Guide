@@ -1,7 +1,8 @@
 # Production Statistics Runtime Evidence
 
-**Status:** Archived evidence trace. Retained for factual provenance; it is not
-an active requirement or maintained current-version contract.
+**Archived:** Moved to historical evidence on 2026-08-27 after dead screenshot
+embeds and the stale Git-state claim were removed. The retained text records
+the observed runtime investigation.
 
 Established against Dyson Sphere Program Early Access `0.10.34.28529`, Steam
 build ID `23109513`, using Unity `2022.3.62f3c1`. The game was observed live,

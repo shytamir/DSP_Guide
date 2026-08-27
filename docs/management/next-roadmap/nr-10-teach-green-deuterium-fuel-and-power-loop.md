@@ -1,7 +1,6 @@
 # NR-10 — Teach GREEN's Deuterium, fuel, and power loop
 
-**Status:** Draft for owner review. The outcome comes from the owner-approved
-next roadmap, but this decomposed story does not authorize implementation.
+**Status:** Owner-approved on 2026-08-27. Inactive pending separate activation.
 
 **Dependency group:** C — Late-route progression
 **Assessed workload:** Medium

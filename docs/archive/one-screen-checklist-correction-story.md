@@ -1,31 +1,25 @@
 # One-Screen Checklist Baseline Correction
 
-**Status:** Archived superseded decision history. It is not pending
-implementation and must not be reactivated as a separate story.
-
-NR-18 in the
-[`next-roadmap story set`](../management/NEXT-ROADMAP.md)
-supersedes this bounded correction with a comprehensive final-checklist
-synchronization. That future work removes the obsolete exact DYSON figures
-without replacing them with new reference figures because production-planning
-references are not phase gates. This record preserves only the earlier
-decision history.
+**Archived:** Superseded on 2026-08-27 when the approved NR-18 specification
+absorbed this proposal into comprehensive final-checklist synchronization.
+This record preserves only the earlier decision history.
 
 ## Superseded proposal — Align the DYSON checklist with the technology-discounted baseline
 
 **Class:** Bounded correction.
 
 As a reader using the one-screen checklist for final verification, I want its
-DYSON Solar Sail and Ejector targets to match the current technology-discounted
-baseline so that the checklist does not preserve superseded planning figures.
+DYSON Solar Sail and Ejector targets to match the then-current
+technology-discounted baseline so that the checklist would not preserve
+superseded planning figures.
 
 ### Evidence
 
-The current DYSON phase and production-card contract use `405/min` installed
-Solar Sail capacity and a `60`-Ejector deployment buffer. The one-screen
-checklist still states `517.5/min` and `80` Ejectors.
+At the time of this proposal, the DYSON phase and production-card contract used
+`405/min` installed Solar Sail capacity and a `60`-Ejector deployment buffer.
+The one-screen checklist stated `517.5/min` and `80` Ejectors.
 
-The owner has selected the technology-discounted `405/min` and `60` figures as
+The owner selected the technology-discounted `405/min` and `60` figures as
 the baseline for the one-screen checklist.
 
 ### Scope
