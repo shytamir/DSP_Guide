@@ -1,6 +1,7 @@
 # NR-01 — Separate SPHERE from the numbered route
 
-**Status:** Owner-approved on 2026-08-27. Active and pending implementation.
+**Status:** Implemented and technically validated on 2026-08-27. Pending owner
+acceptance.
 
 **Dependency group:** A — Route foundation
 **Assessed workload:** Medium

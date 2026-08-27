@@ -275,7 +275,7 @@ for (const card of cards) {
 }
 for (const reference of references) validateMap(reference.id, reference.inner);
 
-const expectedPhaseIds = [
+const expectedNumberedPhaseIds = [
   "blue",
   "red",
   "ils",
@@ -283,11 +283,13 @@ const expectedPhaseIds = [
   "purple",
   "green",
   "dyson",
-  "sphere",
   "photon",
   "white",
-  "warp",
-  "logistics",
+];
+const expectedOptionalPhaseIds = ["sphere", "warp", "logistics"];
+const expectedPhaseIds = [
+  ...expectedNumberedPhaseIds,
+  ...expectedOptionalPhaseIds,
 ];
 const phaseIds = [
   ...html.matchAll(/<section class="phase-section[^>]*" id="([^"]+)">/g),
@@ -310,15 +312,15 @@ if (!rail) {
     'class="rail-label rail-label-optional"',
   );
   const whiteIndex = railMarkup.indexOf('data-phase="white"');
-  const warpIndex = railMarkup.indexOf('data-phase="warp"');
+  const sphereIndex = railMarkup.indexOf('data-phase="sphere"');
   if (!(
     whiteIndex >= 0 &&
     whiteIndex < dividerIndex &&
-    dividerIndex < warpIndex
+    dividerIndex < sphereIndex
   )) {
     errors.push("Optional navigation is not grouped after the numbered route");
   }
-  for (const capability of ["warp", "logistics"]) {
+  for (const capability of expectedOptionalPhaseIds) {
     const optionalControl = railMarkup.match(
       new RegExp(
         `<a(?=[^>]*class="[^"]*\\brail-tab-optional\\b[^"]*")(?=[^>]*data-phase="${capability}")[^>]*>`,
@@ -330,14 +332,17 @@ if (!rail) {
       );
   }
 }
-for (const id of ["warp", "logistics"]) {
+for (const id of expectedOptionalPhaseIds) {
   const section = findElementsByClass(html, `phase-section-${id}`)[0];
   const heading =
     section?.inner.match(/^\s*<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] || "";
   if (!findElementsByClass(heading, "capability-kicker").length) {
     errors.push(
-      `${id.toUpperCase()} heading is not visibly labeled as an optional capability`,
+      `${id.toUpperCase()} heading is not visibly labeled as an optional entry`,
     );
+  }
+  if (id === "sphere" && !heading.includes("OPTIONAL PATH")) {
+    errors.push("SPHERE heading is not visibly labeled as an optional path");
   }
 }
 const progressIndex = findElementsByClass(html, "progress-index")[0];
@@ -349,19 +354,24 @@ if (!progressIndexMarkup) {
     ...progressIndexMarkup.matchAll(/<tr>\s*<td>\s*(\d+)\s*<\/td>/g),
   ].map((match) => Number(match[1]));
   if (
-    JSON.stringify(numberedRows) !==
-    JSON.stringify([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+    JSON.stringify(numberedRows) !== JSON.stringify([1, 2, 3, 4, 5, 6, 7, 8, 9])
   ) {
     errors.push(
       `Quick Progress Index numbered route is invalid: ${numberedRows.join(", ")}`,
     );
   }
+  const optionalRows = findElementsByClass(
+    progressIndexMarkup,
+    "progress-optional-row",
+  );
+  const optionalIds = optionalRows.map(
+    (row) => row.inner.match(/href="#([^"]+)"/)?.[1] || "",
+  );
   if (
-    (progressIndexMarkup.match(/class="progress-optional-row"/g) || [])
-      .length !== 2
+    JSON.stringify(optionalIds) !== JSON.stringify(expectedOptionalPhaseIds)
   ) {
     errors.push(
-      "Quick Progress Index must contain exactly two optional capability rows",
+      `Quick Progress Index optional paths are invalid: ${optionalIds.join(", ")}`,
     );
   }
 }

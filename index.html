@@ -61,10 +61,7 @@
     <link href="assets/css/guide.css" rel="stylesheet" />
   </head>
   <body id="top">
-    <nav
-      aria-label="Route and optional capability navigation"
-      class="phase-rail"
-    >
+    <nav aria-label="Route and optional path navigation" class="phase-rail">
       <div class="rail-label">ROUTE</div>
       <a
         class="rail-tab tab-blue"
@@ -191,23 +188,10 @@
           aria-hidden="true"
         /><span>DYSON</span></a
       ><a
-        class="rail-tab tab-sphere"
-        data-phase="sphere"
-        href="#sphere"
-        title="8. [SPHERE] — Optional Permanent Dyson Sphere"
-        ><img
-          class="phase-icon phase-icon-rail"
-          src="assets/DSP_exported assets/Texture2D/Recipes (items)/dyson-sphere-component.png"
-          width="18"
-          height="18"
-          alt=""
-          aria-hidden="true"
-        /><span>SPHERE</span></a
-      ><a
         class="rail-tab tab-photon"
         data-phase="photon"
         href="#photon"
-        title="9. [PHOTON] — Critical Photons and Antimatter"
+        title="8. [PHOTON] — Critical Photons and Antimatter"
         ><img
           class="phase-icon phase-icon-rail"
           src="assets/DSP_exported assets/Texture2D/Recipes (items)/photon-capacitor-full.png"
@@ -220,7 +204,7 @@
         class="rail-tab tab-white"
         data-phase="white"
         href="#white"
-        title="10. [WHITE] — White Cubes and Mission Completed"
+        title="9. [WHITE] — White Cubes and Mission Completed"
         ><img
           class="phase-icon phase-icon-rail"
           src="assets/DSP_exported assets/Texture2D/Recipes (items)/u-matrix.png"
@@ -230,7 +214,22 @@
           aria-hidden="true"
         /><span>WHITE</span></a
       >
-      <div class="rail-label rail-label-optional">OPTIONAL</div>
+      <div class="rail-label rail-label-optional">OPTIONAL PATHS</div>
+      <a
+        aria-label="Optional path: [SPHERE] — Permanent Dyson Sphere"
+        class="rail-tab tab-sphere rail-tab-optional"
+        data-phase="sphere"
+        href="#sphere"
+        title="Optional path: [SPHERE] — Permanent Dyson Sphere"
+        ><img
+          class="phase-icon phase-icon-rail"
+          src="assets/DSP_exported assets/Texture2D/Recipes (items)/dyson-sphere-component.png"
+          width="18"
+          height="18"
+          alt=""
+          aria-hidden="true"
+        /><span>SPHERE</span></a
+      >
       <div class="rail-entry rail-entry-warp">
         <a
           aria-label="Optional capability: [WARP] — Interstellar Resource Deployment"
@@ -1754,23 +1753,6 @@
           <tr>
             <td>8</td>
             <td>
-              <a class="phase-tag phase-tag-sphere" href="#sphere"
-                ><img
-                  class="phase-icon phase-icon-tag"
-                  src="assets/DSP_exported assets/Texture2D/Recipes (items)/dyson-sphere-component.png"
-                  width="20"
-                  height="20"
-                  alt=""
-                  aria-hidden="true"
-                />[SPHERE]</a
-              >
-            </td>
-            <td>Optional slower permanent route to the photon-power target</td>
-            <td>Green science</td>
-          </tr>
-          <tr>
-            <td>9</td>
-            <td>
               <a class="phase-tag phase-tag-photon" href="#photon"
                 ><img
                   class="phase-icon phase-icon-tag"
@@ -1791,7 +1773,7 @@
             <td>Useful Dyson output</td>
           </tr>
           <tr>
-            <td>10</td>
+            <td>9</td>
             <td>
               <a class="phase-tag phase-tag-white" href="#white"
                 ><img
@@ -1829,8 +1811,25 @@
         <tbody class="progress-optional-body">
           <tr class="progress-group-label">
             <th colspan="4" scope="rowgroup">
-              Optional capabilities — direct reference, not mandatory stages
+              Optional paths — direct reference, not mandatory stages
             </th>
+          </tr>
+          <tr class="progress-optional-row">
+            <td>Optional</td>
+            <td>
+              <a class="phase-tag phase-tag-sphere" href="#sphere"
+                ><img
+                  class="phase-icon phase-icon-tag"
+                  src="assets/DSP_exported assets/Texture2D/Recipes (items)/dyson-sphere-component.png"
+                  width="20"
+                  height="20"
+                  alt=""
+                  aria-hidden="true"
+                />[SPHERE]</a
+              >
+            </td>
+            <td>Slower permanent route to the photon-power target</td>
+            <td>After GREEN</td>
           </tr>
           <tr class="progress-optional-row">
             <td>Optional</td>
@@ -14308,9 +14307,596 @@
         <hr />
         <p></p>
       </section>
+      <section class="phase-section phase-section-photon" id="photon">
+        <h1 class="phase-heading phase-photon">
+          8.
+          <a class="phase-tag phase-tag-photon" href="#photon"
+            ><img
+              class="phase-icon phase-icon-tag"
+              src="assets/DSP_exported assets/Texture2D/Recipes (items)/photon-capacitor-full.png"
+              width="20"
+              height="20"
+              alt=""
+              aria-hidden="true"
+            />[PHOTON]</a
+          >
+          —
+          <span class="proto-ref" data-item-id="1208">Critical Photons</span>
+          and <span class="proto-ref" data-item-id="1122">Antimatter</span>
+        </h1>
+        <div class="you-are-here">
+          <h2>▶▶ YOU ARE HERE</h2>
+          <p>
+            <strong>You just solved:</strong> A live Dyson power source, whether
+            partial or fully sized.<br /><strong>You're working on:</strong>
+            Turning that power into
+            <span class="proto-ref" data-item-id="1208">Critical Photons</span>
+            and then
+            <span class="proto-ref" data-item-id="1122">Antimatter</span
+            >.<br /><strong>This gets you:</strong> The final manufactured
+            ingredient for
+            <span class="proto-ref" data-item-id="6006">white cubes</span
+            >.<br /><strong>After this:</strong>
+            <a class="phase-tag phase-tag-white" href="#white"
+              ><img
+                class="phase-icon phase-icon-tag"
+                src="assets/DSP_exported assets/Texture2D/Recipes (items)/u-matrix.png"
+                width="20"
+                height="20"
+                alt=""
+                aria-hidden="true"
+              />[WHITE]</a
+            >.
+          </p>
+        </div>
+        <h3 class="dashboard-title">Phase dashboard</h3>
+        <table class="phase-dashboard">
+          <thead>
+            <tr>
+              <th>At a glance</th>
+              <th>What matters now</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Main goal</strong></td>
+              <td>
+                Turn growing Dyson output into a continuous supply of
+                <span class="proto-ref" data-item-id="1208"
+                  >Critical Photons</span
+                >
+                and
+                <span class="proto-ref" data-item-id="1122">Antimatter</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Desired state</strong></td>
+              <td>
+                Lensed
+                <span class="proto-ref" data-item-id="2208">Ray Receivers</span>
+                stay warm, Photon Materialization keeps running, and
+                <span class="proto-ref" data-item-id="1122">Antimatter</span>
+                accumulates without blocking returned
+                <span class="proto-ref" data-item-id="1120">Hydrogen</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Research next</strong></td>
+              <td>
+                <button type="button" class="tech-ref" data-tech-id="1505">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/1505.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Planetary Ionosphere Utilization
+                </button>
+                →
+                <button type="button" class="tech-ref" data-tech-id="1506">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/1506.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Dirac Inversion Mechanism
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Keep an eye on</strong></td>
+              <td>
+                Continuous Receiving, Receiver Strength, lens supply, live Dyson
+                supply, and the Collider's
+                <span class="proto-ref" data-item-id="1120">Hydrogen</span>
+                outlet
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Move on when</strong></td>
+              <td>
+                <span class="proto-ref" data-item-id="1122">Antimatter</span> is
+                accumulating reliably and the live production trend can support
+                WHITE while Dyson output continues growing
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Goal</h2>
+        <p>
+          The orbital project finally pays out as an ordinary factory item. The
+          chain is short, but every link matters:
+        </p>
+        <div
+          class="orbital-process"
+          role="img"
+          aria-label="Dyson power to Antimatter production flow"
+        >
+          <span>Live Dyson power</span><b>→</b
+          ><span
+            >Lensed
+            <span class="proto-ref" data-item-id="2208"
+              ><img
+                class="proto-icon proto-icon-item"
+                src="assets/DSP_exported assets/Texture2D/Recipes (items)/ray-receiver.png"
+                width="20"
+                height="20"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+              />Ray Receivers</span
+            ></span
+          ><b>→</b
+          ><span
+            ><span class="proto-ref" data-item-id="1208"
+              ><img
+                class="proto-icon proto-icon-item"
+                src="assets/DSP_exported assets/Texture2D/Recipes (items)/photon-capacitor-full.png"
+                width="20"
+                height="20"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+              />Critical Photons</span
+            ></span
+          ><b>→</b><span>Photon Materialization</span><b>→</b
+          ><span
+            ><span class="proto-ref" data-item-id="1122"
+              ><img
+                class="proto-icon proto-icon-item"
+                src="assets/DSP_exported assets/Texture2D/Recipes (items)/anti-matter.png"
+                width="20"
+                height="20"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+              />Antimatter</span
+            >
+            +
+            <span class="proto-ref" data-item-id="1120"
+              ><img
+                class="proto-icon proto-icon-item"
+                src="assets/DSP_exported assets/Texture2D/Recipes (items)/hydrogen.png"
+                width="20"
+                height="20"
+                alt=""
+                aria-hidden="true"
+                loading="lazy"
+              />Hydrogen</span
+            ></span
+          >
+        </div>
+        <p>
+          Receivers warm gradually and can only draw what the swarm or sphere
+          supplies. The Collider simply processes the
+          <span class="proto-ref" data-item-id="1208">Critical Photons</span>
+          that arrive, so this phase is mostly about keeping four Receivers
+          lensed, watching the orbital source grow, and refusing to let returned
+          <span class="proto-ref" data-item-id="1120">Hydrogen</span> block the
+          final conversion.
+        </p>
+        <p>
+          <button type="button" class="tech-ref" data-tech-id="1505">
+            Planetary Ionosphere Utilization
+          </button>
+          enables lens-assisted receiving.
+          <button type="button" class="tech-ref" data-tech-id="1506">
+            Dirac Inversion Mechanism
+          </button>
+          unlocks Photon Materialization and Photon Generation mode.
+          <button type="button" class="tech-ref" data-tech-id="1145">
+            Controlled Annihilation Reaction
+          </button>
+          is later fuel technology; it is not required to make
+          <span class="proto-ref" data-item-id="1122">Antimatter</span>.
+        </p>
+        <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
+        <p>
+          <strong>Two lensed Receivers:</strong> up to 24 photons/min.
+          <strong>Four:</strong> up to 48/min. Production ramps as Receivers
+          warm and orbital power grows, so judge the trend rather than demanding
+          an instant rate. Once at least
+          <strong
+            >2,000
+            <span class="proto-ref" data-item-id="1122"
+              >Antimatter</span
+            ></strong
+          >
+          is waiting in storage, half the final white-science supply is already
+          banked; decide whether the live rate is good enough to carry the rest
+          while WHITE begins.
+        </p>
+        <h2 class="quick-ref-title">
+          Quick reference — Receiver-to-<span
+            class="proto-ref"
+            data-item-id="1122"
+            >antimatter</span
+          >
+          procedure
+        </h2>
+        <div class="lens-callout">
+          <strong>Keep all four Receivers lensed.</strong> Automation is ideal,
+          but a manual visit is perfectly respectable while the orbital system
+          ramps. Sixty
+          <span class="proto-ref" data-item-id="1209"
+            ><img
+              class="proto-icon proto-icon-item"
+              src="assets/DSP_exported assets/Texture2D/Recipes (items)/gravity-lens.png"
+              width="20"
+              height="20"
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+            />Graviton Lenses</span
+          >
+          keep four Receivers supplied for about 2 hours 30 minutes; set
+          yourself a reminder, top them up together, and do not let one quietly
+          fall back to lensless operation.
+        </div>
+        <ol class="photon-steps">
+          <li>
+            Place four
+            <span class="proto-ref" data-item-id="2208">Ray Receivers</span>,
+            supply
+            <span class="proto-ref" data-item-id="1209">Graviton Lenses</span>,
+            and select <strong>Photon Generation</strong> on every building.
+          </li>
+          <li>
+            Let Continuous Receiving and Receiver Strength warm up while
+            checking whether live Dyson generation satisfies the array.
+          </li>
+          <li>
+            Belt
+            <span class="proto-ref" data-item-id="1208">Critical Photons</span>
+            into a
+            <span class="proto-ref" data-item-id="2310"
+              >Miniature Particle Collider</span
+            >
+            set to <strong>Photon Materialization</strong>.
+          </li>
+          <li>
+            Send
+            <span class="proto-ref" data-item-id="1122">Antimatter</span> toward
+            visible storage beside the white-science district and keep the
+            Collider's returned-<span class="proto-ref" data-item-id="1120"
+              >Hydrogen</span
+            >
+            outlet clear.
+          </li>
+          <li>
+            Keep tending the swarm or sphere while the
+            <span class="proto-ref" data-item-id="1122">Antimatter</span>
+            reserve grows; this is the rare late-game wait where checking four
+            lens slots is useful work.
+          </li>
+        </ol>
+        <h2>Watch for</h2>
+        <p>
+          <strong>Warm-up before diagnosis.</strong> A correctly configured
+          Receiver still underperforms until Continuous Receiving and Receiver
+          Strength settle.
+        </p>
+        <p>
+          <strong
+            >Returned
+            <span class="proto-ref" data-item-id="1120">Hydrogen</span>.</strong
+          >
+          Photon Materialization returns
+          <span class="proto-ref" data-item-id="1120">Hydrogen</span>
+          one-for-one. A blocked outlet stops
+          <span class="proto-ref" data-item-id="1122">Antimatter</span>.
+        </p>
+        <h2>Ready to move on when</h2>
+        <ul>
+          <li class="task-list-item">
+            <input
+              class="task-list-item-checkbox"
+              disabled="disabled"
+              type="checkbox"
+            />At least 2,000
+            <span class="proto-ref" data-item-id="1122">Antimatter</span> is
+            stored, and you are satisfied that the still-rising production rate
+            can supply the rest while WHITE runs.
+          </li>
+        </ul>
+        <h2>Next</h2>
+        <p>
+          Go to
+          <a class="phase-tag phase-tag-white" href="#white"
+            ><img
+              class="phase-icon phase-icon-tag"
+              src="assets/DSP_exported assets/Texture2D/Recipes (items)/u-matrix.png"
+              width="20"
+              height="20"
+              alt=""
+              aria-hidden="true"
+            />[WHITE]</a
+          >
+          when the 2,000-<span class="proto-ref" data-item-id="1122"
+            >Antimatter</span
+          >
+          reserve is banked and the live rate feels trustworthy. Keep expanding
+          the swarm or sphere in parallel.
+        </p>
+        <hr />
+        <p></p>
+      </section>
+      <section class="phase-section phase-section-white" id="white">
+        <h1 class="phase-heading phase-white">
+          9.
+          <a class="phase-tag phase-tag-white" href="#white"
+            ><img
+              class="phase-icon phase-icon-tag"
+              src="assets/DSP_exported assets/Texture2D/Recipes (items)/u-matrix.png"
+              width="20"
+              height="20"
+              alt=""
+              aria-hidden="true"
+            />[WHITE]</a
+          >
+          — <span class="proto-ref" data-item-id="6006">White Cubes</span> and
+          Mission Completed!
+        </h1>
+        <div class="you-are-here">
+          <h2>▶▶ YOU ARE HERE</h2>
+          <p>
+            <strong>You just solved:</strong> Continuous
+            <span class="proto-ref" data-item-id="1122">Antimatter</span>
+            production.<br /><strong>You're working on:</strong> Calling every
+            Matrix color back to work at the same time.<br /><strong
+              >This gets you:</strong
+            >
+            <button
+              type="button"
+              class="tech-ref tech-milestone"
+              data-tech-id="1508"
+            >
+              Mission Completed!</button
+            >.<br /><strong>After this:</strong> Choose whichever postgame
+            project sounds fun; use
+            <a class="phase-tag phase-tag-logistics" href="#logistics"
+              ><img
+                class="phase-icon phase-icon-tag"
+                src="assets/DSP_exported assets/Texture2D/Recipes (items)/interstellar-logistic-station.png"
+                width="20"
+                height="20"
+                alt=""
+                aria-hidden="true"
+              />[LOGISTICS]</a
+            >
+            when repeated expansion starts consuming handcrafted stations and
+            carriers.
+          </p>
+        </div>
+        <h3 class="dashboard-title">Phase dashboard</h3>
+        <table class="phase-dashboard">
+          <thead>
+            <tr>
+              <th>At a glance</th>
+              <th>What matters now</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Main goal</strong></td>
+              <td>
+                Research
+                <button type="button" class="tech-ref" data-tech-id="1507">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/1507.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Universe Matrix</button
+                >, sustain 40 white/min, and feed 4,000 into
+                <button
+                  type="button"
+                  class="tech-ref tech-milestone"
+                  data-tech-id="1508"
+                >
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/1508.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Mission Completed!
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Final convergence</strong></td>
+              <td>
+                10 production Labs supplied by the five established cube colors
+                and
+                <span class="proto-ref" data-item-id="1122">Antimatter</span>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Research next</strong></td>
+              <td>
+                <button type="button" class="tech-ref" data-tech-id="1507">
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/1507.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Universe Matrix
+                </button>
+                →
+                <button
+                  type="button"
+                  class="tech-ref tech-milestone"
+                  data-tech-id="1508"
+                >
+                  <img
+                    class="proto-icon proto-icon-tech"
+                    src="assets/DSP_exported assets/Texture2D/Tech/1508.png"
+                    width="20"
+                    height="20"
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                  />Mission Completed!
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Keep an eye on</strong></td>
+              <td>The first earlier cube color whose input belt empties</td>
+            </tr>
+            <tr>
+              <td><strong>Move on when</strong></td>
+              <td>Mission Completed finishes</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Goal</h2>
+        <p>
+          White science is a convergence test, not a mysterious new factory:
+          blue + red + yellow + purple + green +
+          <span class="proto-ref" data-item-id="1122">Antimatter</span> → ten
+          white-cube Labs → storage and research. Every feeder already has a
+          production history; bring the six products together, then follow the
+          first input that runs dry.
+        </p>
+        <p>
+          <button type="button" class="tech-ref" data-tech-id="1507">
+            Universe Matrix
+          </button>
+          costs 2,000 of every colored Matrix before white production can begin.
+          <button
+            type="button"
+            class="tech-ref tech-milestone"
+            data-tech-id="1508"
+          >
+            Mission Completed!
+          </button>
+          then consumes 4,000
+          <span class="proto-ref" data-item-id="6006">white cubes</span>. Build
+          the production line while the unlock research is running, and fix only
+          the feeder that actually starves.
+        </p>
+        <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
+        <p>
+          <strong>40 white/min:</strong> 10 production Labs and 40/min from all
+          six inputs. The 4,000-cube material batch takes 1 hour 40 minutes at
+          that rate.
+        </p>
+        <h2 class="quick-ref-title">Quick reference — Final convergence</h2>
+        <p>
+          Bring blue, red, yellow, purple, and
+          <span class="proto-ref" data-item-id="6005">green cubes</span> plus
+          <span class="proto-ref" data-item-id="1122">Antimatter</span> to the
+          white-science district. Feed all six inputs into ten
+          <span class="proto-ref" data-item-id="2901">Matrix Labs</span> for the
+          stated 40/min target, send the resulting
+          <span class="proto-ref" data-item-id="6006">white cubes</span> to
+          research, and expand only the feeder that actually starves.
+        </p>
+        <h2>Watch for</h2>
+        <p>
+          The newest line is rarely the bottleneck. White science often exposes
+          a tiny old red, yellow, or purple district that had enough buffer to
+          look healthy until every color was demanded continuously.
+        </p>
+        <h2>Ready to move on when</h2>
+        <ul>
+          <li class="task-list-item">
+            <input
+              class="task-list-item-checkbox"
+              disabled="disabled"
+              type="checkbox"
+            /><span class="proto-ref" data-item-id="6006">Universe Matrix</span>
+            research is complete.
+          </li>
+          <li class="task-list-item">
+            <input
+              class="task-list-item-checkbox"
+              disabled="disabled"
+              type="checkbox"
+            />All six inputs reach the white Labs continuously.
+          </li>
+          <li class="task-list-item">
+            <input
+              class="task-list-item-checkbox"
+              disabled="disabled"
+              type="checkbox"
+            />Ten Labs sustain 40
+            <span class="proto-ref" data-item-id="6006">white cubes</span>/min.
+          </li>
+          <li class="task-list-item">
+            <input
+              class="task-list-item-checkbox"
+              disabled="disabled"
+              type="checkbox"
+            />Mission Completed is consuming or has consumed 4,000
+            <span class="proto-ref" data-item-id="6006">white cubes</span>.
+          </li>
+        </ul>
+        <h2>Next</h2>
+        <p>
+          Finish
+          <button
+            type="button"
+            class="tech-ref tech-milestone"
+            data-tech-id="1508"
+          >
+            Mission Completed!
+          </button>
+          Then, if repeated expansion keeps consuming handcrafted stations and
+          carriers, use
+          <a class="phase-tag phase-tag-logistics" href="#logistics"
+            ><img
+              class="phase-icon phase-icon-tag"
+              src="assets/DSP_exported assets/Texture2D/Recipes (items)/interstellar-logistic-station.png"
+              width="20"
+              height="20"
+              alt=""
+              aria-hidden="true"
+            />[LOGISTICS]</a
+          >
+          to automate replacement hardware for whatever comes next.
+        </p>
+        <hr />
+        <p></p>
+      </section>
       <section class="phase-section phase-section-sphere" id="sphere">
         <h1 class="phase-heading phase-sphere">
-          8.
+          <span class="capability-kicker">OPTIONAL PATH</span>
           <a class="phase-tag phase-tag-sphere" href="#sphere"
             ><img
               class="phase-icon phase-icon-tag"
@@ -15388,593 +15974,6 @@
             />[PHOTON]</a
           >. Continue permanent construction in parallel until the Receiver
           array is fully supplied.
-        </p>
-        <hr />
-        <p></p>
-      </section>
-      <section class="phase-section phase-section-photon" id="photon">
-        <h1 class="phase-heading phase-photon">
-          9.
-          <a class="phase-tag phase-tag-photon" href="#photon"
-            ><img
-              class="phase-icon phase-icon-tag"
-              src="assets/DSP_exported assets/Texture2D/Recipes (items)/photon-capacitor-full.png"
-              width="20"
-              height="20"
-              alt=""
-              aria-hidden="true"
-            />[PHOTON]</a
-          >
-          —
-          <span class="proto-ref" data-item-id="1208">Critical Photons</span>
-          and <span class="proto-ref" data-item-id="1122">Antimatter</span>
-        </h1>
-        <div class="you-are-here">
-          <h2>▶▶ YOU ARE HERE</h2>
-          <p>
-            <strong>You just solved:</strong> A live Dyson power source, whether
-            partial or fully sized.<br /><strong>You're working on:</strong>
-            Turning that power into
-            <span class="proto-ref" data-item-id="1208">Critical Photons</span>
-            and then
-            <span class="proto-ref" data-item-id="1122">Antimatter</span
-            >.<br /><strong>This gets you:</strong> The final manufactured
-            ingredient for
-            <span class="proto-ref" data-item-id="6006">white cubes</span
-            >.<br /><strong>After this:</strong>
-            <a class="phase-tag phase-tag-white" href="#white"
-              ><img
-                class="phase-icon phase-icon-tag"
-                src="assets/DSP_exported assets/Texture2D/Recipes (items)/u-matrix.png"
-                width="20"
-                height="20"
-                alt=""
-                aria-hidden="true"
-              />[WHITE]</a
-            >.
-          </p>
-        </div>
-        <h3 class="dashboard-title">Phase dashboard</h3>
-        <table class="phase-dashboard">
-          <thead>
-            <tr>
-              <th>At a glance</th>
-              <th>What matters now</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Main goal</strong></td>
-              <td>
-                Turn growing Dyson output into a continuous supply of
-                <span class="proto-ref" data-item-id="1208"
-                  >Critical Photons</span
-                >
-                and
-                <span class="proto-ref" data-item-id="1122">Antimatter</span>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Desired state</strong></td>
-              <td>
-                Lensed
-                <span class="proto-ref" data-item-id="2208">Ray Receivers</span>
-                stay warm, Photon Materialization keeps running, and
-                <span class="proto-ref" data-item-id="1122">Antimatter</span>
-                accumulates without blocking returned
-                <span class="proto-ref" data-item-id="1120">Hydrogen</span>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Research next</strong></td>
-              <td>
-                <button type="button" class="tech-ref" data-tech-id="1505">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1505.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Planetary Ionosphere Utilization
-                </button>
-                →
-                <button type="button" class="tech-ref" data-tech-id="1506">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1506.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Dirac Inversion Mechanism
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Keep an eye on</strong></td>
-              <td>
-                Continuous Receiving, Receiver Strength, lens supply, live Dyson
-                supply, and the Collider's
-                <span class="proto-ref" data-item-id="1120">Hydrogen</span>
-                outlet
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Move on when</strong></td>
-              <td>
-                <span class="proto-ref" data-item-id="1122">Antimatter</span> is
-                accumulating reliably and the live production trend can support
-                WHITE while Dyson output continues growing
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <h2>Goal</h2>
-        <p>
-          The orbital project finally pays out as an ordinary factory item. The
-          chain is short, but every link matters:
-        </p>
-        <div
-          class="orbital-process"
-          role="img"
-          aria-label="Dyson power to Antimatter production flow"
-        >
-          <span>Live Dyson power</span><b>→</b
-          ><span
-            >Lensed
-            <span class="proto-ref" data-item-id="2208"
-              ><img
-                class="proto-icon proto-icon-item"
-                src="assets/DSP_exported assets/Texture2D/Recipes (items)/ray-receiver.png"
-                width="20"
-                height="20"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-              />Ray Receivers</span
-            ></span
-          ><b>→</b
-          ><span
-            ><span class="proto-ref" data-item-id="1208"
-              ><img
-                class="proto-icon proto-icon-item"
-                src="assets/DSP_exported assets/Texture2D/Recipes (items)/photon-capacitor-full.png"
-                width="20"
-                height="20"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-              />Critical Photons</span
-            ></span
-          ><b>→</b><span>Photon Materialization</span><b>→</b
-          ><span
-            ><span class="proto-ref" data-item-id="1122"
-              ><img
-                class="proto-icon proto-icon-item"
-                src="assets/DSP_exported assets/Texture2D/Recipes (items)/anti-matter.png"
-                width="20"
-                height="20"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-              />Antimatter</span
-            >
-            +
-            <span class="proto-ref" data-item-id="1120"
-              ><img
-                class="proto-icon proto-icon-item"
-                src="assets/DSP_exported assets/Texture2D/Recipes (items)/hydrogen.png"
-                width="20"
-                height="20"
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-              />Hydrogen</span
-            ></span
-          >
-        </div>
-        <p>
-          Receivers warm gradually and can only draw what the swarm or sphere
-          supplies. The Collider simply processes the
-          <span class="proto-ref" data-item-id="1208">Critical Photons</span>
-          that arrive, so this phase is mostly about keeping four Receivers
-          lensed, watching the orbital source grow, and refusing to let returned
-          <span class="proto-ref" data-item-id="1120">Hydrogen</span> block the
-          final conversion.
-        </p>
-        <p>
-          <button type="button" class="tech-ref" data-tech-id="1505">
-            Planetary Ionosphere Utilization
-          </button>
-          enables lens-assisted receiving.
-          <button type="button" class="tech-ref" data-tech-id="1506">
-            Dirac Inversion Mechanism
-          </button>
-          unlocks Photon Materialization and Photon Generation mode.
-          <button type="button" class="tech-ref" data-tech-id="1145">
-            Controlled Annihilation Reaction
-          </button>
-          is later fuel technology; it is not required to make
-          <span class="proto-ref" data-item-id="1122">Antimatter</span>.
-        </p>
-        <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
-        <p>
-          <strong>Two lensed Receivers:</strong> up to 24 photons/min.
-          <strong>Four:</strong> up to 48/min. Production ramps as Receivers
-          warm and orbital power grows, so judge the trend rather than demanding
-          an instant rate. Once at least
-          <strong
-            >2,000
-            <span class="proto-ref" data-item-id="1122"
-              >Antimatter</span
-            ></strong
-          >
-          is waiting in storage, half the final white-science supply is already
-          banked; decide whether the live rate is good enough to carry the rest
-          while WHITE begins.
-        </p>
-        <h2 class="quick-ref-title">
-          Quick reference — Receiver-to-<span
-            class="proto-ref"
-            data-item-id="1122"
-            >antimatter</span
-          >
-          procedure
-        </h2>
-        <div class="lens-callout">
-          <strong>Keep all four Receivers lensed.</strong> Automation is ideal,
-          but a manual visit is perfectly respectable while the orbital system
-          ramps. Sixty
-          <span class="proto-ref" data-item-id="1209"
-            ><img
-              class="proto-icon proto-icon-item"
-              src="assets/DSP_exported assets/Texture2D/Recipes (items)/gravity-lens.png"
-              width="20"
-              height="20"
-              alt=""
-              aria-hidden="true"
-              loading="lazy"
-            />Graviton Lenses</span
-          >
-          keep four Receivers supplied for about 2 hours 30 minutes; set
-          yourself a reminder, top them up together, and do not let one quietly
-          fall back to lensless operation.
-        </div>
-        <ol class="photon-steps">
-          <li>
-            Place four
-            <span class="proto-ref" data-item-id="2208">Ray Receivers</span>,
-            supply
-            <span class="proto-ref" data-item-id="1209">Graviton Lenses</span>,
-            and select <strong>Photon Generation</strong> on every building.
-          </li>
-          <li>
-            Let Continuous Receiving and Receiver Strength warm up while
-            checking whether live Dyson generation satisfies the array.
-          </li>
-          <li>
-            Belt
-            <span class="proto-ref" data-item-id="1208">Critical Photons</span>
-            into a
-            <span class="proto-ref" data-item-id="2310"
-              >Miniature Particle Collider</span
-            >
-            set to <strong>Photon Materialization</strong>.
-          </li>
-          <li>
-            Send
-            <span class="proto-ref" data-item-id="1122">Antimatter</span> toward
-            visible storage beside the white-science district and keep the
-            Collider's returned-<span class="proto-ref" data-item-id="1120"
-              >Hydrogen</span
-            >
-            outlet clear.
-          </li>
-          <li>
-            Keep tending the swarm or sphere while the
-            <span class="proto-ref" data-item-id="1122">Antimatter</span>
-            reserve grows; this is the rare late-game wait where checking four
-            lens slots is useful work.
-          </li>
-        </ol>
-        <h2>Watch for</h2>
-        <p>
-          <strong>Warm-up before diagnosis.</strong> A correctly configured
-          Receiver still underperforms until Continuous Receiving and Receiver
-          Strength settle.
-        </p>
-        <p>
-          <strong
-            >Returned
-            <span class="proto-ref" data-item-id="1120">Hydrogen</span>.</strong
-          >
-          Photon Materialization returns
-          <span class="proto-ref" data-item-id="1120">Hydrogen</span>
-          one-for-one. A blocked outlet stops
-          <span class="proto-ref" data-item-id="1122">Antimatter</span>.
-        </p>
-        <h2>Ready to move on when</h2>
-        <ul>
-          <li class="task-list-item">
-            <input
-              class="task-list-item-checkbox"
-              disabled="disabled"
-              type="checkbox"
-            />At least 2,000
-            <span class="proto-ref" data-item-id="1122">Antimatter</span> is
-            stored, and you are satisfied that the still-rising production rate
-            can supply the rest while WHITE runs.
-          </li>
-        </ul>
-        <h2>Next</h2>
-        <p>
-          Go to
-          <a class="phase-tag phase-tag-white" href="#white"
-            ><img
-              class="phase-icon phase-icon-tag"
-              src="assets/DSP_exported assets/Texture2D/Recipes (items)/u-matrix.png"
-              width="20"
-              height="20"
-              alt=""
-              aria-hidden="true"
-            />[WHITE]</a
-          >
-          when the 2,000-<span class="proto-ref" data-item-id="1122"
-            >Antimatter</span
-          >
-          reserve is banked and the live rate feels trustworthy. Keep expanding
-          the swarm or sphere in parallel.
-        </p>
-        <hr />
-        <p></p>
-      </section>
-      <section class="phase-section phase-section-white" id="white">
-        <h1 class="phase-heading phase-white">
-          10.
-          <a class="phase-tag phase-tag-white" href="#white"
-            ><img
-              class="phase-icon phase-icon-tag"
-              src="assets/DSP_exported assets/Texture2D/Recipes (items)/u-matrix.png"
-              width="20"
-              height="20"
-              alt=""
-              aria-hidden="true"
-            />[WHITE]</a
-          >
-          — <span class="proto-ref" data-item-id="6006">White Cubes</span> and
-          Mission Completed!
-        </h1>
-        <div class="you-are-here">
-          <h2>▶▶ YOU ARE HERE</h2>
-          <p>
-            <strong>You just solved:</strong> Continuous
-            <span class="proto-ref" data-item-id="1122">Antimatter</span>
-            production.<br /><strong>You're working on:</strong> Calling every
-            Matrix color back to work at the same time.<br /><strong
-              >This gets you:</strong
-            >
-            <button
-              type="button"
-              class="tech-ref tech-milestone"
-              data-tech-id="1508"
-            >
-              Mission Completed!</button
-            >.<br /><strong>After this:</strong> Choose whichever postgame
-            project sounds fun; use
-            <a class="phase-tag phase-tag-logistics" href="#logistics"
-              ><img
-                class="phase-icon phase-icon-tag"
-                src="assets/DSP_exported assets/Texture2D/Recipes (items)/interstellar-logistic-station.png"
-                width="20"
-                height="20"
-                alt=""
-                aria-hidden="true"
-              />[LOGISTICS]</a
-            >
-            when repeated expansion starts consuming handcrafted stations and
-            carriers.
-          </p>
-        </div>
-        <h3 class="dashboard-title">Phase dashboard</h3>
-        <table class="phase-dashboard">
-          <thead>
-            <tr>
-              <th>At a glance</th>
-              <th>What matters now</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Main goal</strong></td>
-              <td>
-                Research
-                <button type="button" class="tech-ref" data-tech-id="1507">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1507.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Universe Matrix</button
-                >, sustain 40 white/min, and feed 4,000 into
-                <button
-                  type="button"
-                  class="tech-ref tech-milestone"
-                  data-tech-id="1508"
-                >
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1508.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Mission Completed!
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Final convergence</strong></td>
-              <td>
-                10 production Labs supplied by the five established cube colors
-                and
-                <span class="proto-ref" data-item-id="1122">Antimatter</span>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Research next</strong></td>
-              <td>
-                <button type="button" class="tech-ref" data-tech-id="1507">
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1507.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Universe Matrix
-                </button>
-                →
-                <button
-                  type="button"
-                  class="tech-ref tech-milestone"
-                  data-tech-id="1508"
-                >
-                  <img
-                    class="proto-icon proto-icon-tech"
-                    src="assets/DSP_exported assets/Texture2D/Tech/1508.png"
-                    width="20"
-                    height="20"
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                  />Mission Completed!
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td><strong>Keep an eye on</strong></td>
-              <td>The first earlier cube color whose input belt empties</td>
-            </tr>
-            <tr>
-              <td><strong>Move on when</strong></td>
-              <td>Mission Completed finishes</td>
-            </tr>
-          </tbody>
-        </table>
-        <h2>Goal</h2>
-        <p>
-          White science is a convergence test, not a mysterious new factory:
-          blue + red + yellow + purple + green +
-          <span class="proto-ref" data-item-id="1122">Antimatter</span> → ten
-          white-cube Labs → storage and research. Every feeder already has a
-          production history; bring the six products together, then follow the
-          first input that runs dry.
-        </p>
-        <p>
-          <button type="button" class="tech-ref" data-tech-id="1507">
-            Universe Matrix
-          </button>
-          costs 2,000 of every colored Matrix before white production can begin.
-          <button
-            type="button"
-            class="tech-ref tech-milestone"
-            data-tech-id="1508"
-          >
-            Mission Completed!
-          </button>
-          then consumes 4,000
-          <span class="proto-ref" data-item-id="6006">white cubes</span>. Build
-          the production line while the unlock research is running, and fix only
-          the feeder that actually starves.
-        </p>
-        <h2 class="quick-ref-title">Quick reference — How much is enough</h2>
-        <p>
-          <strong>40 white/min:</strong> 10 production Labs and 40/min from all
-          six inputs. The 4,000-cube material batch takes 1 hour 40 minutes at
-          that rate.
-        </p>
-        <h2 class="quick-ref-title">Quick reference — Final convergence</h2>
-        <p>
-          Bring blue, red, yellow, purple, and
-          <span class="proto-ref" data-item-id="6005">green cubes</span> plus
-          <span class="proto-ref" data-item-id="1122">Antimatter</span> to the
-          white-science district. Feed all six inputs into ten
-          <span class="proto-ref" data-item-id="2901">Matrix Labs</span> for the
-          stated 40/min target, send the resulting
-          <span class="proto-ref" data-item-id="6006">white cubes</span> to
-          research, and expand only the feeder that actually starves.
-        </p>
-        <h2>Watch for</h2>
-        <p>
-          The newest line is rarely the bottleneck. White science often exposes
-          a tiny old red, yellow, or purple district that had enough buffer to
-          look healthy until every color was demanded continuously.
-        </p>
-        <h2>Ready to move on when</h2>
-        <ul>
-          <li class="task-list-item">
-            <input
-              class="task-list-item-checkbox"
-              disabled="disabled"
-              type="checkbox"
-            /><span class="proto-ref" data-item-id="6006">Universe Matrix</span>
-            research is complete.
-          </li>
-          <li class="task-list-item">
-            <input
-              class="task-list-item-checkbox"
-              disabled="disabled"
-              type="checkbox"
-            />All six inputs reach the white Labs continuously.
-          </li>
-          <li class="task-list-item">
-            <input
-              class="task-list-item-checkbox"
-              disabled="disabled"
-              type="checkbox"
-            />Ten Labs sustain 40
-            <span class="proto-ref" data-item-id="6006">white cubes</span>/min.
-          </li>
-          <li class="task-list-item">
-            <input
-              class="task-list-item-checkbox"
-              disabled="disabled"
-              type="checkbox"
-            />Mission Completed is consuming or has consumed 4,000
-            <span class="proto-ref" data-item-id="6006">white cubes</span>.
-          </li>
-        </ul>
-        <h2>Next</h2>
-        <p>
-          Finish
-          <button
-            type="button"
-            class="tech-ref tech-milestone"
-            data-tech-id="1508"
-          >
-            Mission Completed!
-          </button>
-          Then, if repeated expansion keeps consuming handcrafted stations and
-          carriers, use
-          <a class="phase-tag phase-tag-logistics" href="#logistics"
-            ><img
-              class="phase-icon phase-icon-tag"
-              src="assets/DSP_exported assets/Texture2D/Recipes (items)/interstellar-logistic-station.png"
-              width="20"
-              height="20"
-              alt=""
-              aria-hidden="true"
-            />[LOGISTICS]</a
-          >
-          to automate replacement hardware for whatever comes next.
         </p>
         <hr />
         <p></p>

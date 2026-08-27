@@ -1,9 +1,9 @@
 # Active Roadmap — Story Index
 
 **Status:** Active. NR-01 through NR-10 were owner-approved on 2026-08-27.
-NR-01 is active and pending implementation; NR-02 through NR-10 remain inactive
-until separately activated. NR-11 through NR-18 remain drafts awaiting owner
-review.
+NR-01 is implemented and technically validated, pending owner acceptance;
+NR-02 through NR-10 remain inactive until separately activated. NR-11 through
+NR-18 remain drafts awaiting owner review.
 
 ## Purpose
 
@@ -108,7 +108,7 @@ stop and split the affected draft before authorizing additional scope.
 
 | Order | Story | Class | Requires | Status |
 | --- | --- | --- | --- | --- |
-| 1 | [NR-01 — Separate SPHERE from the numbered route](next-roadmap/nr-01-separate-sphere-from-the-numbered-route.md) | Structural change | None | Active — pending implementation |
+| 1 | [NR-01 — Separate SPHERE from the numbered route](next-roadmap/nr-01-separate-sphere-from-the-numbered-route.md) | Structural change | None | Implemented — pending owner acceptance |
 | 2 | [NR-02 — Reframe SPHERE as optional guidance](next-roadmap/nr-02-reframe-sphere-as-optional-guidance.md) | Editorial refinement | NR-01 | Owner-approved — inactive |
 | 3 | [NR-03 — Limit SPHERE research to route-specific ownership](next-roadmap/nr-03-limit-sphere-research-to-route-specific-ownership.md) | Data or research change | NR-01, NR-02 | Owner-approved — inactive |
 | 4 | [NR-04 — Clarify the opening orientation and BLUE goal](next-roadmap/nr-04-clarify-the-opening-orientation-and-blue-goal.md) | Editorial refinement | NR-02 | Owner-approved — inactive |

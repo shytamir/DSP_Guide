@@ -4,8 +4,9 @@
 roadmap and resulting release were completed, owner-accepted, and archived on
 2026-08-09. The active [`ROADMAP.md`](management/ROADMAP.md) governs the next
 workload. NR-01 through NR-10 were owner-approved on 2026-08-27; NR-01 is
-active and pending implementation, while NR-02 through NR-10 remain inactive
-and NR-11 through NR-18 remain drafts awaiting owner review.
+implemented and technically validated, pending owner acceptance. NR-02 through
+NR-10 remain inactive, and NR-11 through NR-18 remain drafts awaiting owner
+review.
 
 ## Purpose
 
@@ -136,9 +137,9 @@ versioning of that record is required.
 
 The active [`roadmap`](management/ROADMAP.md) is the sole authority for story
 sequence, dependencies, and lifecycle status. NR-01, the prerequisite SPHERE
-route-structure story, is active and pending implementation. Story approval,
-activation, technical validation, owner acceptance, and release authorization
-remain separate decisions.
+route-structure story, has reached owner review after technical validation.
+Story approval, activation, technical validation, owner acceptance, and
+release authorization remain separate decisions.
 
 YELLOW/PURPLE problem-resolver guidance and a Dark Fog COMBAT/PEACE control are
 named future work outside the active roadmap. They do not create current
