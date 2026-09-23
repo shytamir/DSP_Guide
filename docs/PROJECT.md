@@ -40,6 +40,23 @@ Further changes require explicit owner direction supported by playtest
 evidence, a clearly articulated reader need, authoritative game data, or a
 bounded maintenance need.
 
+## Game compatibility
+
+The guide fully supports Dyson Sphere Program Early Access `0.10.35.29057`.
+On 2026-09-23, the project owner confirmed that all existing validations pass
+and the guide works unchanged after the game update.
+
+Verified installed build:
+
+- Steam build ID: `25482430`.
+- `Assembly-CSharp.dll` SHA-256:
+  `e75d3fe4b6a9ca822766189f826ba3a8348dfb7e301aa37ff6779db29a83fd8d`.
+
+Build identity comes from the installed game's `Updates/Versions.txt`, Steam's
+`appmanifest_1366540.acf`, and a SHA-256 calculation of `Assembly-CSharp.dll`.
+The retained research hashes and archived runtime observations identify their
+original sources and remain historical provenance.
+
 ## Product principles
 
 - The guide must remain useful with every production card collapsed.

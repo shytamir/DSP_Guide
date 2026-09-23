@@ -41,9 +41,11 @@ Serve the repository root with any ordinary static web server and open
 `index.html`. A local web server is required for technology tooltips because
 browsers do not allow a local `file://` page to fetch the separate JSON data.
 
-The progression advice and retained game data describe the game version
-against which the guide was last verified. Later game changes may require
-fresh verification.
+The guide fully supports Dyson Sphere Program Early Access `0.10.35.29057`.
+The project owner confirmed that all existing validations pass and the guide
+works unchanged after the update. See the
+[game compatibility record](docs/PROJECT.md#game-compatibility) for the build
+and assembly hash.
 
 ## Project documentation
 
