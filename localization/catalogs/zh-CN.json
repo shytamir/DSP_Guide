@@ -2349,6 +2349,1368 @@
       "text": "前往{{a_1}}{{img_1}}[红糖]{{end_a_1}}。建设石油工业时，超市可以继续补满各项库存。"
     },
     {
+      "id": "b.red.h1.001",
+      "sourceHash": "0a1472e82b6e6189e0ec7546942e8f0a934122060f024b171b5aa6443a774940",
+      "termHash": "c51f5292d8a6178311274a31e1125727264e186bfdae39d0b46424aea8d773f7",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[红糖]{{end_a_1}} — 建立石油工业，保持{{item_6002_1}}供应"
+    },
+    {
+      "id": "b.red.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "b.red.p.001",
+      "sourceHash": "6a7a8da8f1882cc12721db65001af06e3aa0f91f8238e848300460e4e4e1542c",
+      "termHash": "d3894712b80df8eed0a88b89242722329b0e2277d08502e4fc631864788635d1",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}蓝糖科研持续运行。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}建立一条以{{item_1006_1}}和原油为起点、最终产出{{item_6002_1}}的完整生产线。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}红糖科研稳定推进，并为后续化工储备{{item_1114_1}}。{{br_3}}{{strong_4}}下一步：{{end_strong_4}}{{a_1}}{{img_1}}[星际物流]{{end_a_1}}"
+    },
+    {
+      "id": "b.red.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段概览"
+    },
+    {
+      "id": "b.red.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "b.red.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "b.red.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主要目标{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.002",
+      "sourceHash": "d5e4d797423dc86b9c6589ab2d59ae663a923ba7d01bf1c29809401e53829cfe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "让两座红糖研究站持续生产，避免等离子精炼因产物堵塞而停工"
+    },
+    {
+      "id": "b.red.td.003",
+      "sourceHash": "1525a1b5d7aa1c14ee59314ac8fea4e879869d228306d4277779b630abf204f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}实用目标{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.004",
+      "sourceHash": "5a2b104b781bd665a9ffed1e6278bd3a5a034c91396ed200fbee97eb9ab39302",
+      "termHash": "c51f5292d8a6178311274a31e1125727264e186bfdae39d0b46424aea8d773f7",
+      "text": "{{item_6002_1}}产量为 {{fact_1}}{{fact_2}}"
+    },
+    {
+      "id": "b.red.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}优先研究{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.006",
+      "sourceHash": "05e545a25940ccb49865a51e692fa594d26f9078dfdbf48b07e639b7e6b4abdc",
+      "termHash": "24a83c255947d6b9f73a354700c05bc296b02ff4091484010465f7c36a80a150",
+      "text": "{{tech_1402_1}}{{br_1}}{{tech_1101_1}} + {{tech_1120_1}} {{fact_1}} {{tech_1102_1}} {{fact_2}} {{tech_1111_1}}"
+    },
+    {
+      "id": "b.red.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.008",
+      "sourceHash": "14f3a2463549c51ef223ec7af73700d49d5f82c249c386ccd2f3598f73d32c0c",
+      "termHash": "75530e8af4d044b2089742061bf8e7b09f73dda6676ce634d449b2b81dc909f2",
+      "text": "{{item_2308_1}}的两种产物都要保持输出；任何一侧装满，都会让另一侧也停产"
+    },
+    {
+      "id": "b.red.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时进入下一阶段{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.010",
+      "sourceHash": "8a0bd2f76214472b2bac5df89b6db6b5bd47065022e61f3437e8cecfa9dbc931",
+      "termHash": "a3c50d8d66303a34bd575b0f6bb0ac886b1d540e468725491f9b78d38ad599d5",
+      "text": "两座研究站持续生产红糖，产量为 {{fact_1}}{{fact_2}}，且{{item_1114_1}}有持续的输出去向"
+    },
+    {
+      "id": "b.red.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "b.red.p.002",
+      "sourceHash": "f734b4ecb8e37fd63f3b32b4e574b6edc664b156c7796cc3f1c5f333be8cdb5e",
+      "termHash": "185fc68bbc144d28279ae5d8c3acb255608343c241a538d958befffe0389cb63",
+      "text": "石油工业是 DSP 第一次要求你认真对待“本来没打算要”的产物。等离子精炼会同时产出{{item_1120_1}}和{{item_1114_1}}；其中任何一种的传送带或储液罐装满，{{item_2308_1}}就会同时停止生产两者。"
+    },
+    {
+      "id": "b.red.p.003",
+      "sourceHash": "b538c2517d665ca9a1926f2c6cc17e8883b539b40ea1514459d2cc80d32a2e3a",
+      "termHash": "89e8fcb8f1e3c68903af2123fb077c49995edfe4a34896e75af88105ca81e364",
+      "text": "{{item_1120_1}}现在用于红糖科研，后期还会再次成为重要原料。{{item_1114_1}}暂时没有迫切需求，但会用来启动{{item_1115_1}}、{{item_1117_1}}和{{item_1116_1}}的化工生产。每种产物都接独立传送带，经由{{item_2106_1}}输出，并留足周转空间。这里的要点不是“丢掉多余产物”，而是“别让将来有用的库存堵住眼下的工厂”。"
+    },
+    {
+      "id": "b.red.summary.001",
+      "sourceHash": "d1d6ee491f7052cda6b441c792a609160e5e422cd97fd72401dde3f9ecf50fe2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作速览 — 分开输出炼油产物"
+    },
+    {
+      "id": "b.red.li.001",
+      "sourceHash": "354457e95bb4c141d93ed8f58690b82f176f4367cb590694e8f364c18b84213b",
+      "termHash": "c28dcc38e41c6980883e0f8787af22ca3b25b5b1fda2e9184e9586c61f2f64a6",
+      "text": "一条传送带运{{item_1120_1}}，另一条运{{item_1114_1}}。"
+    },
+    {
+      "id": "b.red.li.002",
+      "sourceHash": "48ba05e439e08f9e4c75ef721412a63771e1a111a21951e999bc6f2d76c37d89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "从原油精炼厂向第一条传送带放置分拣器。"
+    },
+    {
+      "id": "b.red.li.003",
+      "sourceHash": "878d925c2fc975029c1d1340e6b2fde571ee69e888df3d51b02c44a6fac0de92",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "分拣器还在预览状态时，按 {{key_1}} 切换到所需产物，再确认放置。"
+    },
+    {
+      "id": "b.red.li.004",
+      "sourceHash": "0157333e75abf2e376a2e1e1e5191a87a63b10fed3374fc461c7fb46f86ed408",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "对第二条传送带重复操作，并选择另一种产物。"
+    },
+    {
+      "id": "b.red.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先研究"
+    },
+    {
+      "id": "b.red.p.004",
+      "sourceHash": "b141ab023a24b91e3be41d95f0443c31cbf323898f13f1dc43f2db0d7a13ae4e",
+      "termHash": "2d9812b29a78a1ce8a9ea62d8182db77de45dc45a32c0b2db9c9699878fee8fe",
+      "text": "{{tech_1402_1}}解锁产线中的{{item_1109_1}}支线。接着研究{{tech_1403_1}}，让超市能生产{{item_1113_1}}，用于红糖阶段清除行星基地所需的信号塔。如果蓝糖阶段已顺手研究了冶炼提纯，这里直接从晶体冶炼开始。"
+    },
+    {
+      "id": "b.red.p.005",
+      "sourceHash": "2e6024160eab73782f515277ed5d5088db824e3853be6a98795bb7b6b987bc4b",
+      "termHash": "ac008641cb24339bcf88f0b5cc0354ce7201747044e9b0d8806c7d1e0e5ba295",
+      "text": "{{strong_1}}石油支线：{{end_strong_1}}{{tech_1101_1}} + {{tech_1120_1}} {{fact_1}} {{tech_1102_1}} {{fact_2}} {{tech_1111_1}}。"
+    },
+    {
+      "id": "b.red.p.006",
+      "sourceHash": "f52ddd9900e06ab460bfd4326cb0873601887ff9d3e6164b6cb66d01ce80d496",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如果蓝糖阶段已研究完这些便宜的前置科技，红糖阶段就很直接：建好石墨和石油支线，解锁最终合成配方，让研究站开工。"
+    },
+    {
+      "id": "b.red.p.007",
+      "sourceHash": "a65ba4b3a15074079d352c4327597030d2217dcb009df4de36382d91c46d2987",
+      "termHash": "b337409a2bdb876a279f3389aececb384a4d92e06e692245a62ed6d376618712",
+      "text": "红糖科研稳定后，完成{{tech_1806_1}} {{fact_1}} {{tech_1808_1}}，再建下方的防御物资超市。先让限量仓储装满，再着手推进星际物流。这是备用物资，不是新的持续产量目标；箱子满后，产线就停工待命。"
+    },
+    {
+      "id": "b.red.div.001",
+      "sourceHash": "05b886fcdc5b1216f23d7e67b72b97ea0f56c744ed914ca30ee8c90d3dfc06b8",
+      "termHash": "afaf8bcaf06dad6b91c7dc1e893328c9b4b9efef743f49c6777d4b84ca9de92f",
+      "text": "{{strong_1}}可选的炼油调节手段：{{end_strong_1}}等离子精炼仍是基础方案。如果红糖科研缺料，可以用 X射线裂解把{{item_1114_1}}和{{item_1120_1}}转为更多{{item_1120_2}}及{{item_1109_1}}。后续化工更需要另一侧产物时，则可以用重整精炼将多余的{{item_1120_3}}与{{item_1006_1}}转为{{item_1114_2}}。只有看到了失衡问题，才把它们当作调节手段；运行正常的{{item_2308_1}}不必强制改造。"
+    },
+    {
+      "id": "b.red.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 多少才够用"
+    },
+    {
+      "id": "b.red.p.008",
+      "sourceHash": "a54504730a1578fae67fc6a4605c598d766e0dc6376caaec7b6d34d60bd9cbcd",
+      "termHash": "185fc68bbc144d28279ae5d8c3acb255608343c241a538d958befffe0389cb63",
+      "text": "这个阶段，{{strong_1}}红糖产量达到 {{fact_1}}{{fact_2}}{{end_strong_1}}就够了。更重要的是：离开石油区一段时间后再回来，红糖科研仍在运行，{{item_1120_1}}仍在流动，{{item_1114_1}}也在积累，却没有堵住{{item_2308_1}}。"
+    },
+    {
+      "id": "b.red.h2.005",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 必要建设"
+    },
+    {
+      "id": "b.red.p.009",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}每张卡片都概括一条实用产线，从最初原料一直到目标产品。{{end_strong_1}}想看清全貌时再展开；否则就保持折叠，继续建设。必需的信息不会藏在卡片里。"
+    },
+    {
+      "id": "b.red.div.002",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}展开全部卡片{{end_button_1}}{{button_2}}折叠全部卡片{{end_button_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.summary.001",
+      "sourceHash": "a29a92ea332d3ef9a31efc9f4b8c2e6c1ef2f1df758dcca27d49395f841578bb",
+      "termHash": "c51f5292d8a6178311274a31e1125727264e186bfdae39d0b46424aea8d773f7",
+      "text": "{{span_1}}{{item_6002_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.001",
+      "sourceHash": "ad3c2a09748a762a1463926559d78b1fb2dabbd11552f40fa8ff8ba6f0190866",
+      "termHash": "bc6ae910f80905c902f44bc607ae61be743be644d4a9b24b1b547227372bdb73",
+      "text": "{{item_1007_1}}。"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.002",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.003",
+      "sourceHash": "8624f4476924edf781ee264211f0a45d9fdfb5688cd3eac6f8039b66cd78affa",
+      "termHash": "e469d6738b89268d7c1e16f736ad19d67271265e23918e6ecc4b49794000da01",
+      "text": "{{span_1}}炼油支线{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由原油精炼厂生产{{end_span_5}}{{end_span_3}} {{item_1114_1}} + {{item_1120_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.004",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "24b338c5f3566282267888f6d8df55d1b58bb30c93f6f8e8de8950795f0abaec",
+      "text": "{{span_1}}高能石墨支线{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.005",
+      "sourceHash": "d421447d9ed3cedf4cddfc5c1accf5faa81a14103bbc2b6b49501f4c2e6bcfb3",
+      "termHash": "0ae314d21393468920dc0d77ce4becb6728f2855a198195d8704016800208d3a",
+      "text": "{{span_1}}矩阵合成{{end_span_1}}{{span_2}}{{item_1120_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6002_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.006",
+      "sourceHash": "e776aeef8abdc8fbe69c7440a29f9a2363ae7f8f0696c25211686b34845233b4",
+      "termHash": "c0031e47d338ba5552f4354890fdfdec259a5e9573e7a256ee8389d102080b83",
+      "text": "{{span_1}}{{item_2901_1}} — {{item_6002_1}}{{end_span_1}} — 持续向科研供应{{span_2}}{{item_6002_2}}，速率为 {{fact_1}}{{fact_2}}{{end_span_2}}；如有需要，可以加上溢出仓储。"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "副产物"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.007",
+      "sourceHash": "b7dd5e29cdc731e1112c8bcfcca03b3856c0d12dd1fc5813872f0cec06cca35b",
+      "termHash": "a3c50d8d66303a34bd575b0f6bb0ac886b1d540e468725491f9b78d38ad599d5",
+      "text": "{{item_1114_1}}。"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.005",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.008",
+      "sourceHash": "a6a9a393a06ece727dca3e80e4399c0ec0af147bf7ee7366fbec19d00c99c561",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "炼油厂的两种产物都必须保持输出。分别储存或消耗精炼油和氢，避免其中一种堵塞后，连带另一种停产。"
+    },
+    {
+      "id": "b.card-red-security-mall.summary.001",
+      "sourceHash": "44c38dca630e3c31e014cce1bcac993aa3e2bf30750aa8c5051715ab2fdaa406",
+      "termHash": "8e9b49482e0aae31ef8a90165780df3e1c96b14a667c167d471ffc4d91982c6b",
+      "text": "{{span_1}}防御物资超市 — 库存 {{fact_1}} {{item_3005_1}} + {{fact_2}} {{item_3007_1}} + {{fact_3}} {{item_1609_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{span_4}}限量备货{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "b.card-red-security-mall.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "504eddbcad1e2e956567c27eb9dcf895ccb6678cef05756d8a2ac91dcbb22bec",
+      "text": "{{item_1002_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.003",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.004",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "b89457a65b7615b6eca8df047136e35f38bc1a82c0eb2b19fe6830430ab7a9d5",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.005",
+      "sourceHash": "55c077673700a40b71fb5a7b5949166f33aefc3bfdc55f91d71f65b93f02ade5",
+      "termHash": "165a3ae9bc7336146c439354870eefa74532aa5f0208b64973329d3b01536e5c",
+      "text": "{{a_1}}蓝糖阶段产出的{{item_1202_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.006",
+      "sourceHash": "237d7729d381dfab9f0ff8510603e67b405837e8f9292d3c8d4c97953e4b712c",
+      "termHash": "959d63b638036c281c75654ba2300077ec9ae604372846f969e4a81b59ea7dbf",
+      "text": "{{a_1}}蓝糖阶段产出的{{item_1301_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.001",
+      "sourceHash": "d879b49ac8a334e956e63c66046c026fe9e70dd7408b7504f051b3844bea8cf1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "基础材料"
+    },
+    {
+      "id": "b.card-red-security-mall.li.007",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "7639364fd3975452345655c09c3433f01928eb86e6a5893358550014661cf9db",
+      "text": "{{span_1}}{{item_1103_1}}支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由电弧熔炉生产{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.008",
+      "sourceHash": "7bb207bd986dc93818e1e9c6eef9f8219d9fce517a662a3f64f8639a9d7fd23d",
+      "termHash": "003c3b734065d5faf760b648b87e23625f561eed712856269523cd9db0b71cb0",
+      "text": "{{span_1}}铜块支线{{end_span_1}}{{span_2}}{{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.009",
+      "sourceHash": "f970cd2ec7b81bfa8da830c6e956d60e0ef6707831a5c75398d613f27194d0e9",
+      "termHash": "35aad5a6495188374f748f3daa15920d53eaceeff6b537c40466d8e7cb24a141",
+      "text": "{{span_1}}{{item_1407_1}}支线{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1407_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.010",
+      "sourceHash": "3b5dafec8be17fe4c21c76874192fcf945d9c2cebdf7815cac791abcf4a4772f",
+      "termHash": "6a19ce626305f79361306cf4e373dc1cadcbfe1a91d6e43b34fbb0d47fe0a31c",
+      "text": "{{span_1}}燃烧单元支线{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1128_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.011",
+      "sourceHash": "90e8d9294094c7f5b41e90ba445fbd0344c736b1b6f02c6c52b45a80eedff0b2",
+      "termHash": "a3143fc179eb73ed07541f86d858545860b5e3eb29cf49abb6ced9f56487cdb0",
+      "text": "{{span_1}}晶格硅支线{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1003_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由电弧熔炉生产{{end_span_8}}{{end_span_6}} {{item_1105_1}} {{span_9}}{{img_3}}{{span_10}}{{fact_3}}{{end_span_10}}{{span_11}}由电弧熔炉生产{{end_span_11}}{{end_span_9}} {{item_1113_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.002",
+      "sourceHash": "2beb8e3acf2a673d347653920d6a5b19f8d4c174abecb45e789c4a099315f078",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "电动机与供电"
+    },
+    {
+      "id": "b.card-red-security-mall.li.012",
+      "sourceHash": "a40b4969454c2c5991b9ec1c754a0a4947d1b0076b64e06f7afd6c970a3050f0",
+      "termHash": "e728bd178f40ad8cb241edc588883d1f47b3ed0c14417e8091c326c0039c98d9",
+      "text": "{{span_1}}电动机支线{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1201_1}}; {{item_1101_2}} + {{item_1201_2}} + {{item_1202_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_3}}{{end_span_7}}{{span_8}}由制造台 {{fact_4}} 生产{{end_span_8}}{{end_span_6}} {{item_1203_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.013",
+      "sourceHash": "6b5d6974b95e97b8a236498ad4ae7b9fe5666cdf7bd1e053c65e3333e822ee48",
+      "termHash": "8a161812d949cb85341964fd5d039ee6c6cd1b0a3daef9f7aab79b0c87b7d15c",
+      "text": "{{span_1}}电力感应塔支线{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2201_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.014",
+      "sourceHash": "9ad0fa9c0da87752b99fd72b2a5e374bbd5c1809a7240bfde54ec2228852cc70",
+      "termHash": "02526c54a5c8938441325e16c1589cf47a2652fb3b59607f5ec92b2aefc28087",
+      "text": "{{span_1}}电浆激发器支线{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由制造台 {{fact_3}} 生产{{end_span_8}}{{end_span_6}} {{item_1111_1}}; {{item_1202_1}} + {{item_1111_2}} {{span_9}}{{img_3}}{{span_10}}{{fact_4}}{{end_span_10}}{{span_11}}由制造台 {{fact_5}} 生产{{end_span_11}}{{end_span_9}} {{item_1401_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.015",
+      "sourceHash": "43688dc73886538cb286167392c05c4705992c128910c272ad3ecb6b1cb14f76",
+      "termHash": "5813e5fe793aa34f963cef1c1cfd81111d6172cbef958781650a31da1871736b",
+      "text": "{{span_1}}无线输电塔合成{{end_span_1}}{{span_2}}{{item_2201_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2202_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.003",
+      "sourceHash": "4eb1b97baa317d5b4916d7d8e80e9ca1075e35420993b2c6387471a215192eb1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "限量成品库存"
+    },
+    {
+      "id": "b.card-red-security-mall.li.016",
+      "sourceHash": "34dbec8683d39f7723de9e7e6f72dd16aae4fe1031c4f374745a1096eed62d3c",
+      "termHash": "e10e88103b5508d34b524acfc8ff913b4a494f895ae4dabda38103610b56f699",
+      "text": "{{span_1}}导弹防御塔合成{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1203_1}} + {{item_1301_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_3005_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.017",
+      "sourceHash": "79b94287e9e88ab020a03cb4028f44596b6271c20d78058d6d80783c7a04a8b3",
+      "termHash": "4db486a369d6419466ac70a56c29733d3f9fccfeb4566392cbb8b19ea746985d",
+      "text": "{{span_1}}导弹组合成{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1301_1}} + {{item_1128_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1609_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.018",
+      "sourceHash": "a7fa289295dcc7490f7f1a69e6c9ad376503e18427497ef7e87576d798860a4c",
+      "termHash": "fafa81cb7d28b76607299787f35f68308cf2d408486b159740f6d86ad7654e54",
+      "text": "{{span_1}}信号塔合成{{end_span_1}}{{span_2}}{{item_2202_1}} + {{item_1103_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_3007_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "b.card-red-security-mall.li.019",
+      "sourceHash": "29477c0c73e665f3abb0bc02ad6c42e05e92da961b1ddc00eba660eeb52f2941",
+      "termHash": "4f6cc44c3560ec249dbdac0d362de812807ebef0c2b47c57a2bd4dc6a3e80fd0",
+      "text": "{{item_2101_1}} — {{item_3005_1}} — 生产{{span_1}}{{fact_1}}{{end_span_1}}个后暂停制造台；只有希望自动补货至整组 {{fact_3}} 个时，才开放 {{fact_2}} 个储物格。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.020",
+      "sourceHash": "de44a0c748a196045b291232fca3b71c29fff9a4cb3f64037ba615baf3baa316",
+      "termHash": "4557f201110e603e054f78c0b176cdacd29bca99d1c377828f1e45f28a6ce3a4",
+      "text": "{{item_2101_1}} — {{item_3007_1}} — 开放 {{span_1}}{{fact_1}} 个储物格{{end_span_1}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.021",
+      "sourceHash": "81258a2bfb384cea2eda1a0510f0f34d11644b203cf713bdbfc0342f2705eb45",
+      "termHash": "c36f85862901c9614cf46c4cf6857094dede0fd357af909bf6e230e3f670604c",
+      "text": "{{item_2101_1}} — {{item_1609_1}} — 开放 {{span_1}}{{fact_1}} 个储物格{{end_span_1}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "b.card-red-security-mall.li.022",
+      "sourceHash": "6f2f847acc5321bb41f8ca7521c4930ec36882fd52ec4a53e1a17a635dc45b21",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "推进星际物流前，先装满这三个限量箱。之后超市可以停工待命，等初始星球需要新的导弹阵地或信号塔推进时，再自动补货。"
+    },
+    {
+      "id": "b.red-planetary-base-clearing.h2.001",
+      "sourceHash": "73b512f0fb002db10e5a25b500cd49b52af77df8f836eb2db752abdffb33c739",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "清除初始星球已有的基地"
+    },
+    {
+      "id": "b.red.p.010",
+      "sourceHash": "28b971410c42e4d8c107d8c61b1f8670f26bd3c70d06b19835dd79ce2cf1caa9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如果通过{{strong_1}}新游戏 {{fact_1}} 开始{{end_strong_1}}创建了新存档，你应该已经见过这些邻居了。下面介绍如何把它们清走，免得它们安安稳稳地发展壮大。"
+    },
+    {
+      "id": "b.red.p.011",
+      "sourceHash": "9ccf847837e9c5fc9b5d2c9a20c148d1e337621ffbc04dc18d10a9f2cc47f475",
+      "termHash": "2d796aab22ef7e00a51a267f4a325174a04107a4e582b4206d57bcbb63ae658c",
+      "text": "在已有电网上固定部署八座{{item_3005_1}}，送入{{item_1609_1}}，确认每座塔都已装弹。阵地就绪后："
+    },
+    {
+      "id": "b.red.li.005",
+      "sourceHash": "b4aea25384e77e457b5635a0b270e85689fb21a0f9fc1da6c3d83b60f84b679d",
+      "termHash": "30af21a6f1c12d2555defe623e367fac551b3aa7047759298a2c74320992dc69",
+      "text": "{{strong_1}}把电送到边缘。{{end_strong_1}}向行星基地延伸{{item_2201_1}}，停在警戒范围之外。如果提前引来敌人，先撤退并击落追兵，再检查是否把{{item_2201_2}}留在了警戒范围内。"
+    },
+    {
+      "id": "b.red.li.006",
+      "sourceHash": "6ae5d78051bbf83d5147ccde685e2e7a3201b6f5803f84ce342a0766d71dfac5",
+      "termHash": "8a557a549a8c96ba2d9363415468fcc0241fb6668e06856cfbc766c3c21329f4",
+      "text": "{{strong_1}}开始轰击。{{end_strong_1}}在警戒范围内放置第一座已通电的{{item_3007_1}}，但不要紧贴基地。让它吸引敌方反应，给后方阵地留出时间，让{{item_1609_1}}开始命中目标。"
+    },
+    {
+      "id": "b.red.li.007",
+      "sourceHash": "44a13c2bcc6c0c4fc9a322eb8e726caa03921fcb2b88fbdaa01e74c5a30ee218",
+      "termHash": "d8c23bd2996e657830713c2cbeee5cb4856e8c7172d3cecfd87b2a5aeb7821cd",
+      "text": "{{strong_1}}向前推进覆盖范围。{{end_strong_1}}第一座{{item_3007_1}}吸引注意时，在更近处放置第二座通电的信号塔，尽量让范围覆盖整个基地。"
+    },
+    {
+      "id": "b.red.li.008",
+      "sourceHash": "ae059c97d16dbf68e4dab666af6d13a22e15ee80227dfe247ceda36ea1dead25",
+      "termHash": "d8c23bd2996e657830713c2cbeee5cb4856e8c7172d3cecfd87b2a5aeb7821cd",
+      "text": "{{strong_1}}覆盖基地远端。{{end_strong_1}}如果还有建筑位于范围外，就调整或前移最前方的{{item_3007_1}}，直到后方阵地能将其摧毁；之后回收不再需要的前沿信号塔。"
+    },
+    {
+      "id": "b.red.li.009",
+      "sourceHash": "ae7bdedf9653cd74f312e732a5729ab326c14c3022fe36c664cb69efbe5b9613",
+      "termHash": "efe4cbe11ee311fa8b1ec692e2524db2957612c5fce195def14b94ec3a98e7a7",
+      "text": "{{strong_1}}接收免费的电力。{{end_strong_1}}在暴露的钻孔位置盖上{{item_2213_1}}。这样既能将清理后的基地变成稳定电源，又不必消耗{{item_1131_1}}或沙土。"
+    },
+    {
+      "id": "b.red.div.003",
+      "sourceHash": "ed8803559996ae0e49942bc71dd361010764305027bf011d5de5f814295e0507",
+      "termHash": "a531f050839dbd202cf534643fa97aa3f9737ced7d219e833a2ace64efb03b89",
+      "text": "{{strong_1}}⚠ 保持阵地供给。{{end_strong_1}}如果防御塔停止开火，先检查电力和{{item_1609_1}}供应，再考虑调整方案。"
+    },
+    {
+      "id": "b.red.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足这些条件后，再进入下一阶段"
+    },
+    {
+      "id": "b.red.li.010",
+      "sourceHash": "6e70c89c858bf0e5e7c1a5a13341e822b1346e8e2e900ad011245724d627aa38",
+      "termHash": "56bc4e546a27962b2867fd353202d0f61b5eaf855f16e3fdce3d6a7e3cb575d3",
+      "text": "{{label_1}}{{input_1}}两座{{item_2901_1}}持续生产{{item_6002_1}}，产量为 {{fact_1}}{{fact_2}}；{{item_1120_1}}和{{item_1114_1}}均能持续离开{{item_2308_1}}。{{end_label_1}}"
+    },
+    {
+      "id": "b.red.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "b.red.p.012",
+      "sourceHash": "e836ad404bfaefa6d890766084d9fc9674ac02d0b2bdb754609ec4372005a44f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "前往{{a_1}}{{img_1}}[星际物流]{{end_a_1}}。"
+    },
+    {
+      "id": "b.ils.h1.001",
+      "sourceHash": "c4070f09aa3b851f80e00029a7bf31b547b53fca9cc3f3ccaa372488a8ddfa69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[星际物流]{{end_a_1}} — 飞离母星，将第一条行星间运输线自动化"
+    },
+    {
+      "id": "b.ils.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "b.ils.p.001",
+      "sourceHash": "8e587bcee40b90ae32437fb74732c38e35ebd9c91c532e548a186aeeecba3d71",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}红糖科研稳定运行。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}完成一次远征，最终让钛和硅无需亲自护送就能穿越太空。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}行星间物资自动供应，工厂不再受限于初始星球。{{br_3}}{{strong_4}}下一步：{{end_strong_4}}{{a_1}}{{img_1}}[黄糖]{{end_a_1}}"
+    },
+    {
+      "id": "b.ils.h2.002",
+      "sourceHash": "f9f1813928ae6ed79315d43c79bab163f1d82b7bd58b9043fe52d77d232ec91a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "任务简报"
+    },
+    {
+      "id": "b.ils.p.002",
+      "sourceHash": "b2734ddd69fc2d491e5057654ae78f742fad66e80e4de6922cee2d8ada61ee27",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "这是一项横跨三个地点的任务，不是三个独立阶段。带着计划出发，建起值得再去的前哨站，最后让伊卡洛斯卸下行星间货船的差事。"
+    },
+    {
+      "id": "b.ils.blockquote.001",
+      "sourceHash": "6e2f6bd3f676b67a8e819650ede9789e4de740d1ec67280321d8660aed2b4f7b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}完整路线：{{end_strong_1}}解锁飞行 {{fact_1}} 备齐前哨站物资 {{fact_2}} 在外星冶炼钛和硅 {{fact_3}} 带回启动所需的物资 {{fact_4}} 制作两座星际物流运输站（ILS）和五艘运输船 {{fact_5}} 配置自动运输。"
+    },
+    {
+      "id": "b.ils.h2.003",
+      "sourceHash": "f50bd8607bd36e6c83d5bfeee87e5ab25b9486e8f9def220c89edd5eda2e2ac7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "远征计划表"
+    },
+    {
+      "id": "b.ils.th.001",
+      "sourceHash": "ec0dab122f9a00f17aa4a44f52b2ba83ede6463b3a11bf8ae66cb35cbe961b39",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段"
+    },
+    {
+      "id": "b.ils.th.002",
+      "sourceHash": "e2a3cb870c86e0e0e0729e02258b023bb89cbf873606cb0b6f88007c47fc7f8a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段成果"
+    },
+    {
+      "id": "b.ils.td.001",
+      "sourceHash": "68fde42a847cba9720332f68efbdd45b681494adf78741ed905b653ea39c2b9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}阶段 I — 出发{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.002",
+      "sourceHash": "1baeb7e9561716c19567a1c7393bfc90405c061ad9c85b01f6a611dab01e2d4e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "具备飞行能力、选好目的地，并带齐建立通电前哨站所需的物资，再离开初始星球。"
+    },
+    {
+      "id": "b.ils.td.003",
+      "sourceHash": "5ef5d891b478a81f0470acde23bdb1497c9093ee01bdf57e60ac4f1f4feb6d25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}阶段 II — 运回物资{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.004",
+      "sourceHash": "1c140f082c0a95b3205e2ed407142361b8da949a015643a01d363e58c77a439c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "带回专门预留的钛和硅；远端熔炉继续供电，为未来的供给站做好准备。"
+    },
+    {
+      "id": "b.ils.td.005",
+      "sourceHash": "2ce624a72a8935c09e140ae819f24689eff94fb92eba9d7b21e3a034a5858715",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}阶段 III — 自动化{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.006",
+      "sourceHash": "c2bc82f1fefad3cc7179627153ac069de2dbe21572c3e9031f8db07f58afff4c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "将预留物资投入科研和运输设备，让钛和硅无需伊卡洛斯搬运就能到家。"
+    },
+    {
+      "id": "b.flight.h2.001",
+      "sourceHash": "6cf3a5a642f63b9e45c69d51b691756ccbebfd3212a0086c5eb735b414c2fb3c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 做好飞行准备"
+    },
+    {
+      "id": "b.ils.p.003",
+      "sourceHash": "a3122fef34fa2f792d5160c96a4661c96f7dec6fd016641debac3b1a76d291ab",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}开始条件：{{end_strong_1}}红糖科研已经稳定，星际物流过渡阶段是主线的下一项必做任务。{{strong_2}}进入下一步的条件：{{end_strong_2}}驱动引擎等级 {{fact_1}} 和钛矿冶炼已经研究完成，已了解目的地情况，所带物资足以在当地留下持续供电的工厂。"
+    },
+    {
+      "id": "b.ils.h3.001",
+      "sourceHash": "74ef41b00c02e3ad95018d8ac6c99615f747ba209161477cd5c915635805e681",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "出发前的研究"
+    },
+    {
+      "id": "b.ils.p.004",
+      "sourceHash": "a31403ddf73fa27256519071c0305e79d95e98f82f3303e8bf8c925642c2c862",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "准备前哨站物资时，保持蓝糖和红糖科研。起飞前只需完成飞行、勘测和外星冶炼所需的科技："
+    },
+    {
+      "id": "b.ils.li.001",
+      "sourceHash": "bff85898a50f1edfc01fc399b4b83a275d615cfe9509bc63cc99699c62cfdec9",
+      "termHash": "8004de5b862de236e9a1e8b959ade8d9d669def91d5fc817fc3f1d2319b1848d",
+      "text": "{{tech_4101_1}}等级 {{fact_1}} {{fact_2}} {{tech_4102_1}}等级 {{fact_3}}。"
+    },
+    {
+      "id": "b.ils.li.002",
+      "sourceHash": "1f0979f13c0dfa46c049307e7ce05855d820cb740a4599f2b83f1b0e78bc6c46",
+      "termHash": "dfd03c7d83b81bc69fe0039c08f8ced7c9b998c248dee50ce40b9d6e61f59018",
+      "text": "{{tech_1805_1}} {{fact_1}} {{tech_2901_1}}。这项升级直接消耗动力引擎，而不是矩阵。"
+    },
+    {
+      "id": "b.ils.li.003",
+      "sourceHash": "09e8d4ff0e99dca152aa55137c7c93f4ae2544e3c0599b460007f677619c7d97",
+      "termHash": "f59faa76734f8b83285517ca6b0d11ce85cc983b59171401944943a94f188dd9",
+      "text": "{{tech_2102_1}} {{fact_1}} {{tech_2902_1}}。"
+    },
+    {
+      "id": "b.ils.li.004",
+      "sourceHash": "4f4330342e939ebb1bad443d3ac589003a6e1babeeb14a2bcc397261b2af5c60",
+      "termHash": "9230ae4db456313541f51582aedcc95022bad6a419e93fc25caaf6fd98213b87",
+      "text": "研究{{tech_1413_1}}，让远端工厂运回成品，而非占空间的矿石。红糖阶段制造原油精炼厂时已经需要钢材冶炼，所以这里不再重复。"
+    },
+    {
+      "id": "b.ils.h3.002",
+      "sourceHash": "61501e086f6481c1bf37479dbd2adabadf34718545cd34288825b2aa5dedd72e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "了解初始恒星系"
+    },
+    {
+      "id": "b.ils.p.005",
+      "sourceHash": "53a2f4139544308256cbfb1fd0cb1d9348a43434dc4a8ab32b7350d34590f45b",
+      "termHash": "00fc5fc32d862ff91e73d2b4f1237e6b4491e734680cee95c7da0f5817c16093",
+      "text": "{{tech_4102_1}}等级 {{fact_1}} 会显示初始恒星系各处的资源总量。选前哨站之前先看星图；第一次勘测就能让你在短缺变成紧急问题前提早知道。"
+    },
+    {
+      "id": "b.ils.th.003",
+      "sourceHash": "eb0f9dc74a1285cf76c73aaae97276c2080a172094afcc373040349b9673e9f1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "现在检查"
+    },
+    {
+      "id": "b.ils.th.004",
+      "sourceHash": "e601052389ec7c14095b7b3cbb3f6a8b466c5ef9ddf3128f5a4853e8681ee00b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "能判断什么"
+    },
+    {
+      "id": "b.ils.td.007",
+      "sourceHash": "fc5a7ae62dafc1464029cb0a0b2a6ded4771189dd3ef128e84ff9d29b6f81ed6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}钛与硅的总量{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.008",
+      "sourceHash": "3604b604a8af525f38dbeac04eb94426ac8624ae9d768a7112a64fe1678dcf89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "邻近行星储量充足时，常规路线可以支撑很久。如果周边行星的这两种资源不能各提供大约一百万或更多，就要计划在储量告急前，至少进行一次有限规模的{{a_1}}{{img_1}}[曲速]{{end_a_1}}资源开发。"
+    },
+    {
+      "id": "b.ils.td.009",
+      "sourceHash": "e4c95cc67e77d75985a4f0baad92766b1aedd05359a893b0993202c2d077a239",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}稀有矿脉与实用海洋{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.010",
+      "sourceHash": "beba6164813c0596e41f05859050eb6ba024eb9ac6a7c970e51d53cd5b82dcf8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "记下恒星系内现有的捷径。以后它们可能省掉一条很长的常规配方链，而无需跨恒星旅行。"
+    },
+    {
+      "id": "b.ils.td.011",
+      "sourceHash": "c60a06c1281353624475806df3bf120e14038fb67780851ca6ea3c9f2383fef2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}气态巨星产出{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.012",
+      "sourceHash": "8c0eaf5fca8be475774fced02f3c73570edeb45fbfbe9f16e738d86557edcbd8",
+      "termHash": "c8f8078a2082c2f783a281e6bd2a637aaf0835c495945a2d9763328468fef88f",
+      "text": "如果{{item_1120_1}}、{{item_1121_1}}或{{item_1011_1}}产量可观，等这些材料成为瓶颈时，可选的气态巨星路线就更值得考虑。"
+    },
+    {
+      "id": "b.ils.td.013",
+      "sourceHash": "e5b0e6d57be83882fb925b72923536462f6006ef0d1e9c69ea22a40d8fe5c2dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}之后再看邻近恒星{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.014",
+      "sourceHash": "6d3d2f1a72b5afa3f3518a305f9d93a4a431e51cce63451359ee64e139b15ef8",
+      "termHash": "d5c5e7d886b87edc3c27457d17dc147e9ca343866f8c662c6ac294cf11096189",
+      "text": "等需要曲速航行时，{{tech_4103_1}}会将同样的资源比较扩展到六光年以内的恒星系。"
+    },
+    {
+      "id": "b.ils.p.006",
+      "sourceHash": "2e0a329aa5aec62c1909031a15bf6375f2462fff78de842d725d988203dfedc1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}这是侦察，不是新的进度门槛。{{end_strong_1}}先利用当前种子提供的资源，并记住将来哪些短缺可能值得让你离开本恒星系。"
+    },
+    {
+      "id": "b.ils.p.007",
+      "sourceHash": "deaaff39c0a5dd0f8594f3f93ffa29cb8251adb4a0cdab07dc7563205712ce6d",
+      "termHash": "c81529eacaed41d73d5de227a5673d0ba27028fd0a664ebebfd987ca402eb97b",
+      "text": "{{strong_1}}按建前哨站来打包，而不是去参观：{{end_strong_1}}带上采矿机、熔炉、传送带、分拣器、仓储、独立电源，以及适用时需要的{{item_1131_1}}；还要备足燃料，保留核心能量余量，应对不顺利的接近和降落。如果目的地已有敌方基地，先沿用{{a_1}}红糖阶段的导弹阵地配合{{item_3007_1}}方案{{end_a_1}}，再让前哨站无人值守。"
+    },
+    {
+      "id": "b.ils.blockquote.002",
+      "sourceHash": "b852fb26dea156e103f87e10ef4cf5985e90dc4c5f636233a8e76eb9fee21f08",
+      "termHash": "7c778c9cab84631877b78bc6256dff74ecd1d68dcbd1d553d6fb801599bd5e5b",
+      "text": "{{strong_1}}起飞条件：{{end_strong_1}}{{tech_2902_1}}和钛矿冶炼均已完成，已了解目的地情况，货舱里的物资足以在当地留下持续供电的工厂。"
+    },
+    {
+      "id": "b.titanium.h2.001",
+      "sourceHash": "afedbff86343c214b2d3519f6601acb8cecd0576e64f26c53b6d3b0274656fa4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 建立值得再次造访的前哨站"
+    },
+    {
+      "id": "b.ils.p.008",
+      "sourceHash": "c616050ee4f98d8bb72352021998aeb016445df8d0a0f79055aac9b3625c0c5f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}开始条件：{{end_strong_1}}飞行准备完成，建立通电前哨站所需的物资已备齐。{{strong_2}}进入下一步的条件：{{end_strong_2}}远端熔炉已经运行，伊卡洛斯带着专门预留的 {{fact_1}} 钛块和 {{fact_2}} 高纯硅块返回。"
+    },
+    {
+      "id": "b.ils.h3.003",
+      "sourceHash": "d81fd2491fe4add280ba8b19f521cdcbf21183f1d727e1b61b401498498f7d9e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "前哨站建设期间的研究"
+    },
+    {
+      "id": "b.ils.p.009",
+      "sourceHash": "627ba9548397b5cf4f8d96158e912c4aefacee9de6ef52b0cbc0848eec912ac6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "建设和运行远端前哨站时，继续供应蓝糖和红糖科研。回家前完成这些科技支线；黄糖生产要等预留的钛块运回后再开始。"
+    },
+    {
+      "id": "b.ils.li.005",
+      "sourceHash": "f380b47b977f51eac973618c32822dfb4d1ca7b7e32c42e43576f8511129a467",
+      "termHash": "fb0f9269f1c0f057966c97e726c4b4d03f34216b179ebe6cb5ad6d776df7c4b3",
+      "text": "{{tech_1121_1}} {{fact_1}} {{tech_1131_1}}。"
+    },
+    {
+      "id": "b.ils.li.006",
+      "sourceHash": "d5e43801b4b8873992a80e12d0648287b58964f6c3fa50ce0148ba2720eae130",
+      "termHash": "d2ff18693718232b0f30d63cd70ac84349753f8c38e26ff16df8166ee0ea45e8",
+      "text": "{{tech_1311_1}} {{fact_1}} {{tech_1302_1}}。"
+    },
+    {
+      "id": "b.ils.li.007",
+      "sourceHash": "3c12d7546f69f4210bfec90746909925f6e60d657ac2b85e1249b0d0cf7879c1",
+      "termHash": "4f4c0d34d6a9dd710f172784a2c7fd6779fa014efea359461150b45d8007cb35",
+      "text": "{{tech_1122_1}} {{fact_1}} {{tech_1123_1}} {{fact_2}} {{tech_1124_1}}。"
+    },
+    {
+      "id": "b.ils.li.008",
+      "sourceHash": "de776afc5de4b5354350a806548220b5d925daba67acfb6544fdfe333f59ffc5",
+      "termHash": "bbacaacb7a615fd8a507a2eb5e9d5fad751591d72f2f8c94c5e0471bc3eb6c82",
+      "text": "{{tech_1701_1}} {{fact_1}} {{tech_1702_1}} {{fact_2}} {{tech_1703_1}}。"
+    },
+    {
+      "id": "b.ils.li.009",
+      "sourceHash": "5358a3671791b4cffe2c45890c1325efce31a7f9d07c039bac22647f79e70ef2",
+      "termHash": "c71a02c9fc4b7fee4f063fc180ad5fc7c9d66fdae2b1095efe040b41adbc5e19",
+      "text": "{{tech_1112_1}} {{fact_1}} {{tech_1113_1}} {{fact_2}} {{tech_1114_1}}。"
+    },
+    {
+      "id": "b.ils.li.010",
+      "sourceHash": "54f6e4a1d91242d8c4434a553e5627cb83b21ea263f88045ae784acb5702cfca",
+      "termHash": "52b8e7fe8a3327995264789b89afbb84cad966dc8d39c1da5ae2d064499d2546",
+      "text": "{{tech_1602_1}} {{fact_1}} {{tech_1603_1}}。"
+    },
+    {
+      "id": "b.ils.li.011",
+      "sourceHash": "4ea926119aa37b36553fc1a6d1086103fc9d8b49347989398c9ff46d8116ccaf",
+      "termHash": "4a495e9c246eb93392c30392848260b37583daffe1297c9a4120cc8b899fb1e4",
+      "text": "{{tech_3701_1}}。"
+    },
+    {
+      "id": "b.ils.p.010",
+      "sourceHash": "5f562e7a65a9676fff019d5d7ee74a03991c6a5b20425e60cdc9383d9220c2c2",
+      "termHash": "04811f6d001a6e649aa501878c6f468537b8c9cc612321f2978c835d4bfb0381",
+      "text": "这些科技支线完成后，研究{{tech_1604_1}}。远端前哨站暂时不需要行星内物流运输站（PLS）；这项解锁是为运回物资后制作物流站部件做准备。"
+    },
+    {
+      "id": "b.ils.p.011",
+      "sourceHash": "b135155d88f8113d910e52fb0ce64698a13b6e7d7c383667e234146eaa656556",
+      "termHash": "d96f61fb1567aa52defdb44ea1b1340fa5611ca2f3bc3db491682c526d25ba7e",
+      "text": "初始星球没有普通{{item_1004_1}}矿脉，而用{{item_1005_1}}制硅只能应急起步。在目的地就把两种资源冶炼好：返航运成品更划算，同一批持续供电的产线以后也能给供给站供货。"
+    },
+    {
+      "id": "b.ils.p.012",
+      "sourceHash": "3a35741b1035a3724e417c1a0f3d1a776e0df4f986815c89520a5ffd984c0686",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "这批算好数量的货物要支撑整个过渡阶段。卸货时把分配表放在眼前，免得工厂悄悄吃掉本应用来结束手动运货的部件。"
+    },
+    {
+      "id": "b.ils.p.013",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横向滚动查看所有列 {{fact_1}}"
+    },
+    {
+      "id": "b.ils.attr.001.aria-label",
+      "sourceHash": "f48970e87123eb466235254fb5464c412d17d18be7d64705de5ae6937962f140",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "返航物资分配表"
+    },
+    {
+      "id": "b.ils.th.005",
+      "sourceHash": "d329374b7055f9c75c008742076e62040075924c709e522721baf1c67598f21d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "返航物资"
+    },
+    {
+      "id": "b.ils.th.006",
+      "sourceHash": "a6bb955de0020b42b63a8e8f3239bae1fb1a5c5b596013cd7c22287712914a11",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "预留数量"
+    },
+    {
+      "id": "b.ils.th.007",
+      "sourceHash": "677afe86aada9d7474f40cb7372cc6ce6ac2b4ee6a98c0d4894f08ab2452712d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "b.ils.td.015",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.016",
+      "sourceHash": "a28f5f760f34ca604f0576de17f16eaef6191c563522f9bc866130df0f1893d7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.017",
+      "sourceHash": "2400e6a2bc5feaecb3d3322756df8cf52460491b5b2cfa67505dc2b6784135ea",
+      "termHash": "a18fb9ebc39353f04d3eb10098454c362d6a0a3b1601aa3d015000c4ad11c2cc",
+      "text": "首批 {{fact_1}} {{item_6003_1}}"
+    },
+    {
+      "id": "b.ils.td.018",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.019",
+      "sourceHash": "3f06ba198c33c66a692fefe765622f4174bd264fadb9e9870b5f528800e8a0b8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.020",
+      "sourceHash": "12bb6995c85fedee6228a7944276504833823d383e73a61b5ebaca8cecefd4af",
+      "termHash": "5fc715fe6042bd8cf47a388bb650242ede76f5ae8962ba39b8e1e7909aed0e98",
+      "text": "星际物流过渡阶段所需的{{item_1107_1}}"
+    },
+    {
+      "id": "b.ils.td.021",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.022",
+      "sourceHash": "d865e709dd69c1deeb2c8d66e8689d5f3da8a5b9597d3599b04ab9dcc6da7cc6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.023",
+      "sourceHash": "3732dee9cf264aa4f140b7e1b15881d1ed50793f05a6d97945cff8f863543f36",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "两座星际物流运输站中包含的两座行星内物流运输站部件"
+    },
+    {
+      "id": "b.ils.td.024",
+      "sourceHash": "8506ed84aac1e0340a42643493fc189b22c2abdd0141ae3f75c7943af90df2b3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}钛块总计{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.025",
+      "sourceHash": "2c20c2e5a92e22565ecec5c2b1d6b9a9600d29e93e7df34bf01295c53b7b7f47",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}{{fact_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.026",
+      "sourceHash": "32926903765e2d4cfeb8c41f889c7908c3c6e2a2334c4470c3124a96bde1ccc8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "物流运输线建成前，不得挪用这部分储备"
+    },
+    {
+      "id": "b.ils.td.027",
+      "sourceHash": "5a6cc915ba2c3cbb972a9021475de2ba07934e56833ac4c461a7168acb0a4879",
+      "termHash": "db75cc9b2d6a15f1c14e25dc0997c4673c938ff4518eec4cf06b218dacaf82bb",
+      "text": "{{item_1105_1}}"
+    },
+    {
+      "id": "b.ils.td.028",
+      "sourceHash": "7d17dc550626fe88258152914cfdfeeb2838069509e256a75e1a4140d0ea6fa7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.029",
+      "sourceHash": "273ed0e41948b9f764371e873fa272e57745512240f4297cb614e28c1515acc7",
+      "termHash": "95d0ddef86af966549a46b2ac205d6dc4743276364840ef593cfee52a4e799af",
+      "text": "供两座物流站和五艘{{item_5002_1}}使用的 {{fact_1}} {{item_1303_1}}"
+    },
+    {
+      "id": "b.ils.h3.004",
+      "sourceHash": "836829d63f5fc0146adb3699cf592b97db1a134d3214fb4d141c128ee091ad5d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "返航前确认"
+    },
+    {
+      "id": "b.ils.li.012",
+      "sourceHash": "cb7ea4e16ce4bc09249dac322288b2800945cbbf497519206f97dd64e155e55b",
+      "termHash": "bf5ec0106b3327c0cb13433a38f8b59da092ab7a6c464e4469fd271c7529e611",
+      "text": "{{label_1}}{{input_1}}已装载 {{fact_1}} {{item_1106_1}}和 {{fact_2}} {{item_1105_1}}。{{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.013",
+      "sourceHash": "d77cb3b1720e256adfd0f010321dccb9f5672f8c5ba91711b74c643d82ba74bc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}两条冶炼线仍有电力供应，并连接到仓储。{{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.014",
+      "sourceHash": "fc239a69b6a00263b97edb513ff9bd7b12d7cd331a3ec950e69758bcf06f4525",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}产出区已为供给端的星际物流运输站留出位置。{{end_label_1}}"
+    },
+    {
+      "id": "b.ils-automate.h2.001",
+      "sourceHash": "c8574542c80dd14e80b33a6b903ec56874ff95cd5b563d1431bd1ca12aecaaf2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 建好运输线并实现自动化"
+    },
+    {
+      "id": "b.ils.p.014",
+      "sourceHash": "1f62b81ee3640b9ce0505d555b29a43a3cd1dc472cfc44d1a734d4cafe737238",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}开始条件：{{end_strong_1}}预留的钛和硅已安全运回母星。{{strong_2}}完成条件：{{end_strong_2}}两座星际物流运输站和五艘运输船，无需伊卡洛斯参与，就能把钛和硅运回家。"
+    },
+    {
+      "id": "b.ils.h3.005",
+      "sourceHash": "7fcfa8a2cc8094334bca2cf8a2afb17f6db19c368e6791557de11e0843ea9fdd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "制作整套运输设备"
+    },
+    {
+      "id": "b.ils.p.015",
+      "sourceHash": "a0a5d994df0829ac9b6a6a959364ece497a848e951fb0b4e2fbd11a11f55efe2",
+      "termHash": "027b2dc47379e6953cb0f04ea20b458ebe8124a469da655b4aa80fb4dcc53a7c",
+      "text": "使用预留的返航物资，生产首批 {{fact_1}} 个黄糖。把这一批全部用于{{tech_1414_1}} {{fact_2}} {{tech_1605_1}}。"
+    },
+    {
+      "id": "b.ils.p.016",
+      "sourceHash": "fb48c405b3451b3b91132ad48b2bf6d05cb31def037c840d4d45c9e269ee0797",
+      "termHash": "fd92469c5a482a7c74f58fa7fb4f17776066b8a63e864b2fe86456874b803cba",
+      "text": "先建立{{a_1}}{{item_1123_1}}产线{{end_a_1}}，再制造{{item_1206_1}}。"
+    },
+    {
+      "id": "b.ils.h3.006",
+      "sourceHash": "a9ab808a194f9ad93e4ccd1eedb545c2f02d87bf026cef894a1923250829d118",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "专用物资生产清单"
+    },
+    {
+      "id": "b.ils.p.017",
+      "sourceHash": "f1c3af29c9d1fcbeb59d190b3d515c01bf217360310d952152bf1e909616422a",
+      "termHash": "2b31d1f5015c5d5a56c5d9f318fdc25cce3e9d9c3daa61f8580265636447f8a0",
+      "text": "下表是展开计算后的小计：星际物流运输站一行已包含两座行星内物流运输站部件；运输船一行已包含制造{{item_1406_1}}消耗的钛合金和电磁涡轮。不要再重复加算这些内含部件。"
+    },
+    {
+      "id": "b.ils.p.018",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横向滚动查看所有列 {{fact_1}}"
+    },
+    {
+      "id": "b.ils.attr.002.aria-label",
+      "sourceHash": "9be5555da16113d828fbba03724fd27307ee0b1bb2c784543cc0bd564b5c2b87",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "部件预算"
+    },
+    {
+      "id": "b.ils.th.008",
+      "sourceHash": "ecd41ae15769b5b863c63275997acf41d296bef0c6c23523d3b44486404aab60",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "有限批次任务"
+    },
+    {
+      "id": "b.ils.th.009",
+      "sourceHash": "67ea23d8bf467e0de321f0de104e14639cf15fa99b6ec86c4fff4d3ba3da77d6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "成品目标"
+    },
+    {
+      "id": "b.ils.th.010",
+      "sourceHash": "de157b9f5a8b126e5a19312cc7e163491755869fb0ee22bb93c3303dc16f2853",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "主要部件小计"
+    },
+    {
+      "id": "b.ils.th.011",
+      "sourceHash": "a366b624e33f9410b9af334ea9d0d07992bcec5f82fbda844315e25583a78894",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "配套储备"
+    },
+    {
+      "id": "b.ils.td.030",
+      "sourceHash": "6b63ffa097a7918f4248b2a211f1e864cf794eca73fbd570a189544b2f8931bb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}首批黄糖{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.031",
+      "sourceHash": "144781ab1d5b0222833f3c1bc1b47a29b5521c507db580cf842d009e3487d3ec",
+      "termHash": "a18fb9ebc39353f04d3eb10098454c362d6a0a3b1601aa3d015000c4ad11c2cc",
+      "text": "{{fact_1}} {{item_6003_1}}"
+    },
+    {
+      "id": "b.ils.td.032",
+      "sourceHash": "0bb56fe821e0058c3b12df30c23ba2abb28c82d3fb3a08a25eebc2745a31115d",
+      "termHash": "f874d6b7a73c9b9cc336764fdbe67bd8484c9514af6038fa881bcb3d1d1cd70e",
+      "text": "{{fact_1}} {{item_1118_1}} + {{fact_2}} {{item_1112_1}}"
+    },
+    {
+      "id": "b.ils.td.033",
+      "sourceHash": "59cd62996ab1696f7b1709b9a26f113bf0217ac362368db8bc10942c19405b30",
+      "termHash": "0bdd6c4015da2ca1809b9934864816d02a5d143f2370e92685e2bcd7d9d3fd9c",
+      "text": "为 {{fact_2}} {{item_1118_1}}预留的 {{fact_1}} {{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.034",
+      "sourceHash": "111c2c8be1a6e8fec7a1d1b1d34e36e60ce3235106e1c34fb17fe1c39c12d2a3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}一对星际物流运输站{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.035",
+      "sourceHash": "b2fd546fc2d0a59fe9324ad2172cf881c5c4a2892bc64f59275c35bcf4830dab",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} 座星际物流运输站，包含作为部件的 {{fact_2}} 座行星内物流运输站"
+    },
+    {
+      "id": "b.ils.td.036",
+      "sourceHash": "85eb58222e93563b77b3d47fc051a474943757c06d9d892a1f71b8766e6cd6b6",
+      "termHash": "7e3e5cd2a7a0a7a5ce0452dbeb79afd3119f807f0d253cb1e4e8e531d3c3176c",
+      "text": "{{fact_1}} {{item_1107_1}} + {{fact_2}} {{item_1303_1}} + {{fact_3}} {{item_1206_1}}"
+    },
+    {
+      "id": "b.ils.td.037",
+      "sourceHash": "f88e5864955f8d7bead2e6dee99089a087510c4c2154e35302b3ee178ad7eeee",
+      "termHash": "c670400be99e1fde3c0aa327ce7c6bc6e9e38cb9c2524c1d12a78c25d87ae6bd",
+      "text": "{{fact_1}} {{item_1103_1}} + {{fact_2}} {{item_1106_1}}（其中 {{fact_3}} 用于两座内含的行星内物流运输站，{{fact_4}} 用于 {{fact_5}} {{item_1107_1}}）+ 制造{{item_1206_1}}所需的 {{fact_6}} {{item_1204_1}}"
+    },
+    {
+      "id": "b.ils.td.038",
+      "sourceHash": "6a6e5cbfaa7db57a6629a9548c617f92ece21ce01421e48d21cdbe5ee0ded046",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}运输船队{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.039",
+      "sourceHash": "62da2eacc5a4aaa0012ecab0976d59832692a4250d2552b3c53ec4283c5de28c",
+      "termHash": "8fd4ece934ef0a05f6e6801edcaf8183e0cfc6cb273546eb951e7900f05725c7",
+      "text": "{{fact_1}} 艘{{item_5002_1}}，包含 {{fact_2}} {{item_1406_1}}"
+    },
+    {
+      "id": "b.ils.td.040",
+      "sourceHash": "605bfcfae32f150a182f1789e7570280b7c48e667e4eb10abf33ffa9fbbaeb40",
+      "termHash": "142956696933ba365e1716c5f7746da17f30129a52507a20eb5760f316b7bb4c",
+      "text": "{{fact_1}} {{item_1107_1}} + {{fact_2}} {{item_1303_1}} + {{fact_3}} {{item_1406_1}}"
+    },
+    {
+      "id": "b.ils.td.041",
+      "sourceHash": "46da36c4cb43bfed0618741fbddf18d04d8bde110960ec927f7f7ac26f09d7ee",
+      "termHash": "c19895350e2c21e954aeeb45f075f168de1eddf22cfc21ef37d1cebe9b69b3a2",
+      "text": "制造 {{fact_2}} {{item_1107_1}}所需的 {{fact_1}} {{item_1106_1}}：{{br_1}}{{fact_3}} 钛合金用于 {{fact_4}} {{item_1406_1}}；{{fact_5}} 钛合金直接用于 {{fact_6}} 艘{{item_5002_1}}。{{br_2}}另需 {{fact_7}} {{item_1204_1}}用于加力推进器"
+    },
+    {
+      "id": "b.ils.td.042",
+      "sourceHash": "3f21d21cf7333f8ed5fa95117b5b4cc616247207bbf9f477a0a33f025cac1ac1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}专用物资总计{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.043",
+      "sourceHash": "f4cf10e2002d05bb6b0ac0f98d4ea1012196c27622364fd3fd09535e4763775d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}{{fact_1}} 个矩阵 + {{fact_2}} 座星际物流运输站 + {{fact_3}} 艘运输船{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.044",
+      "sourceHash": "ad5baa6ae96edfa080ff1aee322141a9a6126d4ab8920d94db5177309436b89c",
+      "termHash": "0f39f815316a5857c1fb19130b8f024c0e9db207097503684888c6d8d57b3b4f",
+      "text": "{{strong_1}}{{fact_1}} {{item_1118_1}} + {{fact_2}} {{item_1112_1}} + {{fact_3}} {{item_1107_1}} + {{fact_4}} {{item_1303_1}} + {{fact_5}} {{item_1206_1}} + {{fact_6}} {{item_1406_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.045",
+      "sourceHash": "e140b9fc0c8b865d6fef38d25396ff0010be2054f7cca0d4beadf6c3270b9612",
+      "termHash": "757e35caa06d94f194f55b0beb7cbfe47ecc2f505059f794f0717746035364c8",
+      "text": "{{strong_1}}{{fact_1}} {{item_1103_1}} + {{fact_2}} {{item_1106_1}}（{{fact_3}} 用于{{item_1118_1}}，{{fact_4}} 用于全部{{item_1107_1}}，{{fact_5}} 用于两座内含的行星内物流运输站）+ {{fact_6}} {{item_1204_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.li.015",
+      "sourceHash": "7b1286fb547161a5cf6f2edc4de5f80b6d8034ec9824f0dfd51637261a1ba219",
+      "termHash": "640c03405dfa7ae5bd93aaa67ff1d8166ba4d3624a653ee2bf0439aca0ac419d",
+      "text": "{{strong_1}}先保护好制作设备所需的部件。{{end_strong_1}}在临时制造区旁放一座{{item_2101_1}}。专用物资清单中的每批部件完成后，立即放进去，不要让日常生产从这里借料。按表生产，够数就停：多造一座站或一艘船，都可能悄悄吃掉下一步预留的{{item_1303_1}}、钛合金或{{item_1206_1}}。"
+    },
+    {
+      "id": "b.ils.strong.001",
+      "sourceHash": "e532002471db22f3f6a2b5bc8c6d93592ecf41d5afd4879b28d182aeb2a17793",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "建设临时部件产线。"
+    },
+    {
+      "id": "b.ils.attr.003.aria-label",
+      "sourceHash": "e06f9dd695071e3940ecc8805a4834a108fc59544d12fd602956fd857108ffac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流启动生产流程"
+    },
+    {
+      "id": "b.ils.p.019",
+      "sourceHash": "f3de7c7076494cfb5cc792e99b91cfe79e30847f6769000cd04ece5dd9693c9d",
+      "termHash": "a2d50d09b39e1b6dbdecc2188c1978bfad0d0a0b86eee17858d3a42cdee8b431",
+      "text": "{{strong_1}}生产顺序：{{end_strong_1}}{{item_1303_1}} {{fact_1}} {{item_6003_1}} {{fact_2}} {{item_1206_1}} {{fact_3}} {{item_1107_1}}。"
+    },
+    {
+      "id": "b.ils.h5.001",
+      "sourceHash": "15f6fdec1c3bbb363eaf9002eee9af2bb76d5eede21b413a16e50c9985112ee3",
+      "termHash": "0d7f1dbf29f18ced00e61e2c03de98a17b76a0d9de49a0ba807d6fbd077ea70f",
+      "text": "{{item_1303_1}}"
+    },
+    {
+      "id": "b.ils.li.016",
+      "sourceHash": "2af9208a730b2d37a123c03496c1d26bc3233d8346ff215e19fb36b6a5900a05",
+      "termHash": "9ac821e40bcd01430c0f9c40facb94bf66270c14b175f7f3fdf992809f2d751a",
+      "text": "{{span_1}}微晶元件支线{{end_span_1}}{{span_2}}{{item_1105_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1302_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.017",
+      "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
+      "termHash": "c1f12c86539959478642edcb92dd43993b5b2da4cb341ce1859e8b8e9c20a43e",
+      "text": "{{span_1}}电路板支线{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.018",
+      "sourceHash": "bf1562fcec31e82e2223fe509e3184c81379170333c1433ae786ed5120a7f420",
+      "termHash": "a63e87bd9c8533e87adfd761bce274db1d2655b21bd341de589cfe5f456ab778",
+      "text": "{{span_1}}{{item_1303_1}}合成{{end_span_1}}{{span_2}}{{item_1302_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.002",
+      "sourceHash": "0d9613b44ef65ee3b278607ee1dd931a2c1789f1f5ae72f7fa7fb288fbd13011",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "粒子容器"
+    },
+    {
+      "id": "b.ils.li.019",
+      "sourceHash": "dd2ccffd3b08393e61f4076bda1fa7d05357f349ba64ac28375b4ff12f89518c",
+      "termHash": "3a393d37f37bd168b22957b141e6543689ee0c91895c2fc673f61f61b25b092e",
+      "text": "{{span_1}}{{item_1206_1}}{{end_span_1}}{{span_2}}{{a_1}}{{item_1204_1}}{{end_a_1}} + {{a_2}}{{item_1123_1}}{{end_a_2}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1206_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.003",
+      "sourceHash": "0f9eef103a498692fe8062076a49bb7736f7b229a1326f9e7584e2f8219c3e69",
+      "termHash": "5fc715fe6042bd8cf47a388bb650242ede76f5ae8962ba39b8e1e7909aed0e98",
+      "text": "{{item_1107_1}}"
+    },
+    {
+      "id": "b.ils.li.020",
+      "sourceHash": "f0477f7b39cff517a591fda7958fa5a7db28a4bfa22de9e3f8d53fc0060fa1f8",
+      "termHash": "4420406d583aa98404eb701e8380785f205fd0f22870e654682c7688e01d0113",
+      "text": "{{span_1}}硫酸支线{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由原油精炼厂生产{{end_span_5}}{{end_span_3}} {{item_1114_1}}; {{item_1114_2}} + {{item_1005_1}} + {{item_1000_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由化工厂生产{{end_span_8}}{{end_span_6}} {{item_1116_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.021",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "7639364fd3975452345655c09c3433f01928eb86e6a5893358550014661cf9db",
+      "text": "{{span_1}}{{item_1103_1}}支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由电弧熔炉生产{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.022",
+      "sourceHash": "4076b5c669afdf90e059aa82517e1ccf5ea8054a9ebf48e9ac579fd639570d88",
+      "termHash": "6ab5751acaf2083db8e03ea0bd4201c4cfa239650ce615e90567db052f964549",
+      "text": "{{span_1}}钛合金合成{{end_span_1}}{{span_2}}{{item_1106_1}} + {{item_1103_1}} + {{item_1116_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1107_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.004",
+      "sourceHash": "0376f27ea3d1532a48f8703e6f40c669ef4a057a71a5c0bb66ac7c25381cc63e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "运输设备"
+    },
+    {
+      "id": "b.ils.li.023",
+      "sourceHash": "c02f5ef21232a983668d1396db0e6265a42821ed4a1975b6c6e9ba1deb6409c6",
+      "termHash": "62734c533d62aff9f347ec63b9d3baf202fda042eb4802aef4a7d5886746602e",
+      "text": "{{span_1}}行星内物流运输站合成{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.024",
+      "sourceHash": "8c65397affd9fb53c6e2965614b50f7442c1fabf121f74e33a46bc4264ca2e3d",
+      "termHash": "ce67e7a39181aadd5e75db8c450d105e73b21b24ee11428484c6aaed4af057ac",
+      "text": "{{span_1}}{{item_1405_1}}支线{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1204_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1406_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.025",
+      "sourceHash": "2491e822b8ddd246f94ed02224bf017b9c219837ea2c449b7930430f279a2da0",
+      "termHash": "1987794d91cda8ffa3be1f54fad7876b87e3aa5b1c9eab5218e010ce954db776",
+      "text": "{{span_1}}星际物流运输站合成{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.026",
+      "sourceHash": "dc03258c1de18cf434e028fac8f15fa5e1d7e6eb2e0d86ae11676f0ace87b2a0",
+      "termHash": "8af24086488eea6fb9036c799e2c07dd92ad2463bf59f333ef9fefff258bc258",
+      "text": "{{span_1}}星际物流运输船合成{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.027",
+      "sourceHash": "ed13fc37b8ec128948b82d48151a7ff6bb2ddf801817d54ccc55b92bef1c22ce",
+      "termHash": "180c1bd6b94a01172147862d5010a2949c4bd81aad8d66d9fd0a4dbedb0d65bd",
+      "text": "{{strong_1}}组装运输设备。{{end_strong_1}}用制造面板或临时制造台，将{{item_1103_1}}、{{item_1106_1}}、{{item_1303_1}}和{{item_1206_1}}制成两座行星内物流运输站部件；再用{{item_1107_1}}和{{item_1206_2}}将其升级为两座星际物流运输站；最后用{{item_1107_2}}、{{item_1303_2}}和{{item_1406_1}}制造五艘{{item_5002_1}}。每件成品都放回专用箱，直到整套物资齐全。"
+    },
+    {
+      "id": "b.ils.blockquote.003",
+      "sourceHash": "c6f7f997b5c85714172362f4d1ee1d1072810295938e58c54cc6909cedc8d53a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}运输设备检查点：{{end_strong_1}}专用箱中必须备齐一对星际物流运输站和全部五艘星际物流运输船，才能开始部署。"
+    },
+    {
+      "id": "b.ils.h3.007",
+      "sourceHash": "8ad1441d0d55f17e5aaf102e82f9e44b4e649e651020da1bdb2442fa1ab3bbc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "让运输线开始工作"
+    },
+    {
+      "id": "b.ils.li.028",
+      "sourceHash": "809511054092102ef1bf3e0f8b601581f6933b6a24473dcc801e8a514eea18f6",
+      "termHash": "bf5ec0106b3327c0cb13433a38f8b59da092ab7a6c464e4469fd271c7529e611",
+      "text": "{{strong_1}}配置远端供给站。{{end_strong_1}}在前哨站仓储旁放置一座不通电的星际物流运输站。添加{{item_1106_1}}和{{item_1105_1}}，两者都设为蓝色的{{strong_2}}星际供应{{end_strong_2}}。把两条冶炼线的产物送入物流站各自指定的物品栏。"
+    },
+    {
+      "id": "b.ils.li.029",
+      "sourceHash": "8a6152ae942bb2cf8fe499d32095514bb597a92e895af6e014ce58e393964258",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}配置母星接收站。{{end_strong_1}}在母星放置另一座星际物流运输站并通电，添加相同的两种材料，都设为橙色的{{strong_2}}星际需求{{end_strong_2}}，再装入全部五艘运输船。为出站传送带设置物品过滤，并接往工厂。第一艘船起飞后，伊卡洛斯的最后一次手动运货就结束了。"
+    },
+    {
+      "id": "b.ils.div.001",
+      "sourceHash": "29c57bc2175ebfacc5f5d5fb7659db628beedc3c6c1bd4f64ac499fa0f7f09e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ 留意充电尖峰。{{end_strong_1}}刚通电的物流站可能在短时间内压垮原本正常的电网。{{strong_2}}调低它的充电功率{{end_strong_2}}，或分阶段充电，不必为了临时负荷重建全星球的电网。"
+    },
+    {
+      "id": "b.ils.h2.004",
+      "sourceHash": "5ac177bf37bc69fae8e24196927f5fefb145abf39ad93db15f05696a92965672",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "完成条件"
+    },
+    {
+      "id": "b.ils.li.030",
+      "sourceHash": "2f289afab188aafc5f719c999bc1993252f41720deb779ad914a15b83adb1369",
+      "termHash": "f1a8510f01df3b6bf44b8ef78edabc43b9f5bec58b63de452b48166276cdd601",
+      "text": "{{label_1}}{{input_1}}已部署两座星际物流运输站和五艘{{item_5002_1}}。{{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.031",
+      "sourceHash": "71737f8cbf1ed24478002de9fd30fa2bdb8e31eb7563049210b19604d4d9169e",
+      "termHash": "bf5ec0106b3327c0cb13433a38f8b59da092ab7a6c464e4469fd271c7529e611",
+      "text": "{{label_1}}{{input_1}}{{item_1106_1}}和{{item_1105_1}}无需伊卡洛斯搬运即可到家。{{end_label_1}}"
+    },
+    {
+      "id": "b.ils.h2.005",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "b.ils.p.020",
+      "sourceHash": "f1f20eb83d00d23c1d88d7bd8c96e902ab727524b88ab778ca2ddacf517824cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "前往{{a_1}}{{img_1}}[黄糖]{{end_a_1}}，把一次性的科研批次改为可持续生产。"
+    },
+    {
       "id": "a.tech-sheet-title.h2.001",
       "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",

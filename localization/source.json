@@ -5560,13 +5560,9 @@
     {
       "id": "b.card-red-security-mall.h5.001",
       "segment": "B",
-      "source": "{{item_1131_1}}",
-      "sourceHash": "fe85eb18b47d2b1970565830713fd7e922a2c8b9f12bb604d60f455b4e37cc7f",
-      "placeholders": {
-        "item_1131_1": {
-          "term": "item:1131"
-        }
-      }
+      "source": "FOUNDATIONS",
+      "sourceHash": "d879b49ac8a334e956e63c66046c026fe9e70dd7408b7504f051b3844bea8cf1",
+      "placeholders": {}
     },
     {
       "id": "b.card-red-security-mall.li.007",
@@ -6668,15 +6664,15 @@
     {
       "id": "b.ils.blockquote.002",
       "segment": "B",
-      "source": "{{strong_1}}Launch when:{{end_strong_1}} Drive {{item_1407_1}} Lv{{fact_1}} and Titanium Smelting are complete, the destination is understood, and the cargo can leave a powered factory behind.",
-      "sourceHash": "0cb765134d5e3fa487b06d62846152ccea4a714de4927236ac5a21fcb1bef0ea",
+      "source": "{{strong_1}}Launch when:{{end_strong_1}} {{tech_2902_1}} and Titanium Smelting are complete, the destination is understood, and the cargo can leave a powered factory behind.",
+      "sourceHash": "b852fb26dea156e103f87e10ef4cf5985e90dc4c5f636233a8e76eb9fee21f08",
       "placeholders": {
         "strong_1": "open",
         "end_strong_1": "close",
-        "item_1407_1": {
-          "term": "item:1407"
-        },
-        "fact_1": "2"
+        "tech_2902_1": {
+          "term": "tech:2902",
+          "rankInside": true
+        }
       }
     },
     {
