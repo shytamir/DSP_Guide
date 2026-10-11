@@ -5253,6 +5253,1374 @@
       "text": "Als Nächstes zu {{a_1}}{{img_1}}[DYSON]{{end_a_1}}. Soll ein konkret gewählter seltener Rohstoff jetzt unbeaufsichtigt importiert werden, springe zur Automatisierung unter {{a_2}}{{img_2}}[WARP]{{end_a_2}}. Grüne Würfel machen {{item_1210_1}} nun günstig."
     },
     {
+      "id": "d.dyson.h1.001",
+      "sourceHash": "ccf17766074cc648fadaf11e06a6aec5818ed8794b537cf7253674aac6c7ba84",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[DYSON]{{end_a_1}} — Den Schwarm für die Photonenproduktion aufbauen"
+    },
+    {
+      "id": "d.dyson.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "d.dyson.p.001",
+      "sourceHash": "e44031d80f705bd050b8d858607a3cbedaccbf2de3b9885240c61bf08e492916",
+      "termHash": "cae6f33fb61f62debde3fc0b4fc826d738236ceb05100ed38568d2386d7549ff",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Grüne Forschung und beide Zutatenzweige für das späte Spiel.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Einen stetig wachsenden Schwarm starten, mit dem ein {{item_2208_1}} nutzbare Leistung liefert.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Eine vom Schwarm versorgte Linie für {{item_1122_1}} — die letzte Zutat vor der weißen Forschung.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} Der {{a_1}}Übergang von Receivern zu Antimaterie{{end_a_1}}. Oder wähle zuerst den optionalen Weg {{a_2}}{{img_1}}[SPHÄRE]{{end_a_2}}, wenn du statt eines schnell wachsenden, vergänglichen Schwarms lieber eine dauerhafte Struktur am Stern bauen möchtest."
+    },
+    {
+      "id": "d.dyson.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Phasenübersicht"
+    },
+    {
+      "id": "d.dyson.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auf einen Blick"
+    },
+    {
+      "id": "d.dyson.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was jetzt zählt"
+    },
+    {
+      "id": "d.dyson.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hauptziel{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.002",
+      "sourceHash": "622549060ff7fb659b8610607e203ed0ec933896097528f3e0ae94b6fc952fc9",
+      "termHash": "8e751bd106cfd8495b15d0815bcb2e8485f5d08dc87b8597397bf482f445cff5",
+      "text": "Die Produktion von {{item_1501_1}} automatisieren und ein funktionierendes EM-Werfer-Netz versorgen"
+    },
+    {
+      "id": "d.dyson.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Guter Richtwert{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.004",
+      "sourceHash": "a33a3dc321e25215a163375c02e4c236ea81027e9816300d45e5f2d727c35189",
+      "termHash": "d1d8ffa86759fcc5f08fc360af6e2e2d2ce41702b636770ee26581c7f7a605dd",
+      "text": "Ein Teilschwarm, mit dem ein {{item_2208_1}} bereits nutzbare Leistung liefert; während PHOTON weiter ausbauen"
+    },
+    {
+      "id": "d.dyson.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Zuerst erforschen{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.006",
+      "sourceHash": "57d5e6822ba233d4edcf65ee916275c89d47c36c5f4dc621ed84878b5a4a6c74",
+      "termHash": "e9aac68328bb7b4df1aa1eaca514976dc0c91a12b59784039ef5ac8912568827",
+      "text": "{{span_1}}{{strong_1}}Forschung für DYSON:{{end_strong_1}} {{tech_3101_1}} Stufe {{fact_1}} {{fact_2}} {{tech_3102_1}} Stufe {{fact_3}}{{end_span_1}}"
+    },
+    {
+      "id": "d.dyson.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Im Blick behalten{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.008",
+      "sourceHash": "a091efc00ba1a65ed7f39f906c3a9ebe8b9254b5f35cb579164618154f0b54cf",
+      "termHash": "8e751bd106cfd8495b15d0815bcb2e8485f5d08dc87b8597397bf482f445cff5",
+      "text": "Gemessene Schussauslastung, Lagerentwicklung bei {{item_1501_1}}, Sternleuchtkraft, Segellebensdauer und aktuelle Dyson-Erzeugung"
+    },
+    {
+      "id": "d.dyson.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Weiter, sobald{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.010",
+      "sourceHash": "d2a0b1b0b16ac980d208e20663777db284dd05afae457c3973c4a880c5bebd4d",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{item_1122_1}} zuverlässig produziert wird und die Ausgabe den Forschungsbezirk erreichen kann"
+    },
+    {
+      "id": "d.dyson.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.dyson.p.002",
+      "sourceHash": "9b6dd30b5474dab6da4d25b3fe65ee303c5ce8a2ed95efde0412b5929eb5cbc3",
+      "termHash": "36d53fd5b2c87d874fd573aba730f656d024eb8c7a6ba81757834f802b8a0f4d",
+      "text": "Die Fabrik ist so weit, dass das nächste Kraftwerk ins All gehört. Die Segel vom Typ {{item_1501_1}} verlassen den Planeten, nehmen ihre Umlaufbahn ein und bilden die Megastruktur, die diesen Durchlauf über {{item_1122_1}} und weiße Forschung zum Sieg trägt. Jeder arbeitende Werfer bringt den Abschluss ein Stück näher."
+    },
+    {
+      "id": "d.dyson.p.003",
+      "sourceHash": "ea492f81a83a038875bd065c4f4801d580d984eb800a774df9387b2f3df9f72a",
+      "termHash": "207442b6e2030876a22aac4f09df107426fcafd70d7e8cf13b7fcffe8acb9cdf",
+      "text": "Baue die Segellinie, verteile die Werfer auf brauchbare Schusszonen und beobachte die steigende Dyson-Erzeugung. Der vollständige Referenzschwarm ist ein Planungsziel, keine Zugangssperre: Receiver vom Typ {{item_2208_1}} mit Linsen können das Produkt {{item_1208_1}} schon lange erzeugen, bevor der Himmel voll ist. Beginne PHOTON, sobald der Teilschwarm verlässlich nutzbare Leistung liefert, und starte weiter Segel, während das Endspiel voranschreitet."
+    },
+    {
+      "id": "d.dyson.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zuerst erforschen"
+    },
+    {
+      "id": "d.dyson.p.004",
+      "sourceHash": "58252f5e0d3a5b619bb74ac4b85e0e93b93899c23ddb7eeb43cc026c9cec6f89",
+      "termHash": "e9aac68328bb7b4df1aa1eaca514976dc0c91a12b59784039ef5ac8912568827",
+      "text": "{{strong_1}}Forschung für DYSON:{{end_strong_1}} {{tech_3101_1}} Stufe {{fact_1}} {{fact_2}} {{tech_3102_1}} Stufe {{fact_3}}, bevor das Startnetz seine volle Größe erreicht. Nach Stufe {{fact_4}} steht vor dem Receiver-Übergang keine weitere Forschungsaufgabe an."
+    },
+    {
+      "id": "d.dyson.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Wie viel reicht?"
+    },
+    {
+      "id": "d.dyson.p.005",
+      "sourceHash": "e1fde5f2e932c72dd7750ab785b964923d0841c38b98f53ca7d2c1dfba0e4909",
+      "termHash": "115f3c199554cb4ad164de0f702a3dbda85b22a89c21f7e5cc7fe6896bf1a2bc",
+      "text": "{{strong_1}}Entscheide anhand des laufenden Betriebs, wann du ausbaust oder weitergehst.{{end_strong_1}} Beobachte die gemessene Schussauslastung, steigende oder fallende Vorräte von {{item_1501_1}}, die aktuelle Dyson-Erzeugung und die tatsächliche Ausgabe deiner Receiver ({{item_2208_1}}). Wenn die Receiver nützlich arbeiten, beginne PHOTON. Erweitere nur dort weiter, wo Schussauslastung, Segelvorrat oder Receiver-Bedarf einen Engpass zeigen."
+    },
+    {
+      "id": "d.dyson.p.006",
+      "sourceHash": "e4422c0d059720e9fde7899f86955397b10064e1a41fa4876d0b08d129e444e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Erforsche Solarsegel-Lebensdauer Stufe {{fact_1}} {{fact_2}} Stufe {{fact_3}}, bevor das Startnetz seine volle Größe erreicht. Die Verbesserungen halten jedes Segel länger im Orbit und verringern den Ersatzbedarf für Fabrik und Werfer. Du kannst sie auslassen und stattdessen mehr Segel produzieren und erfolgreich starten. Das ist ein vertretbarer Tausch; die Rechnung kannst du selbst machen."
+    },
+    {
+      "id": "d.dyson.p.007",
+      "sourceHash": "ec94d09e06fc3c4b2fb6e47996b39ef0cafb7c0332144e67f131fb52efbacdcc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Mit beiden Verbesserungen der Solarsegel-Lebensdauer setzt der Referenzschwarm eine installierte Produktionskapazität von {{strong_1}}{{fact_1}} Solarsegeln{{fact_2}}{{end_strong_1}} voraus und benötigt ungefähr {{strong_2}}{{fact_3}} erfolgreiche Starts{{fact_4}}{{end_strong_2}}. Sechzig Werfer mit durchschnittlich {{fact_5}} Schussauslastung erreichen etwa {{fact_6}} Starts{{fact_7}}. Das ist eine Planungsreferenz, keine Ziellinie: Aufgestellte Werfer zählen nur, wenn Orbit und Schussfenster tatsächlich Starts erlauben."
+    },
+    {
+      "id": "d.dyson.p.008",
+      "sourceHash": "554fdf27fa52f127c9ff14390c98923229179cebefb60b04b252ae963c7d878f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nimm die Referenz als Ausgangspunkt. Deine wirkliche Fabrik und dein Stern bestimmen, was ausreicht."
+    },
+    {
+      "id": "d.dyson.p.009",
+      "sourceHash": "9172e0f432c1a67f16c120b9de8da169d8efca4c605d819ab1e1e4d49a604f25",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "Die Receiver-Anlage beginnt schon vor Fertigstellung des Referenzschwarms, {{item_1122_1}} einzulagern. Lass sie weiterlaufen, während der Schwarm wächst und PHOTON das System stärkt. Später öffnen {{fact_1}} gelagerte Einheiten Antimaterie den Weg zu WEISS. Warte nicht auf diese Reserve, bevor du DYSON verlässt. Nutze für den nächsten Schritt den {{a_1}}Übergang von Receivern zu Antimaterie{{end_a_1}}."
+    },
+    {
+      "id": "d.dyson.h2.005",
+      "sourceHash": "9101e3c550c0ac28f6def8ce3c6827b7e44f596c4b1a342052100926e1e76083",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Bauübersichten"
+    },
+    {
+      "id": "d.dyson.p.010",
+      "sourceHash": "b9ae5edda6a1462ee2e40d4823adff9b90616c833672aec796da07c740c49d3b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Diese Karten helfen beim Planen; sie sind keine Ziellinien.{{end_strong_1}} Öffne eine für den Gesamtüberblick. Gehe zu PHOTON über, sobald der Teilschwarm nutzbare Receiver-Ausgabe ermöglicht, und erweitere das Startsystem parallel."
+    },
+    {
+      "id": "d.dyson.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}} Alle Karten aufklappen{{end_button_1}}{{button_2}} Alle Karten zuklappen {{end_button_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.summary.001",
+      "sourceHash": "61f5390c06aa52cfe52c5968279f9d871f160df8a662003242ad2c821195865a",
+      "termHash": "8e751bd106cfd8495b15d0815bcb2e8485f5d08dc87b8597397bf482f445cff5",
+      "text": "{{span_1}}{{item_1501_1}} — {{fact_1}} installierte Kapazität{{end_span_1}}{{span_2}}{{span_3}}RICHTWERT{{end_span_3}}{{span_4}}ETAPPENWEISE{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.001",
+      "sourceHash": "1a7c97b7cdbf2d7b15266b5586ba0c2184a9462cd5afc09a5055b27eee9f4239",
+      "termHash": "c49f5b75a1c3bf96a4b9ad2304afafd0cf88623416380d4979fd731741dd3d6f",
+      "text": "{{a_1}}{{item_1301_1}} aus dem BLAU-Zweig{{end_a_1}}."
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.002",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "a2e551e0377f89cec42962deee52462dc57970fd5150a55febd82a1d0b358ade",
+      "text": "{{a_1}}{{item_1123_1}} aus der wiederverwendbaren Standardlinie{{end_a_1}}."
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.003",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "af76fd18d9b862988c6e5483c1eb16666a6caa5da66f87ff913905ac1b614221",
+      "text": "{{item_1005_1}}."
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h5.001",
+      "sourceHash": "f1e5274735ecd9240785d872cb0b405692bd9764d9d00faca73f5d92dcc4dd9c",
+      "termHash": "8b322b21f478a77d15e65c71a2814898d56c04e6959fabd61493c95dc4d1ca60",
+      "text": "ERGÄNZEN NACH {{tech_1502_1}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.004",
+      "sourceHash": "06c426c482d1939b31f146b6aca9f38de5f37f9ced06abcee89179681ca18d33",
+      "termHash": "f13de247699b0d7832aa01d9713188cf77923f6960dca23f3146308579f6a6b5",
+      "text": "{{span_1}}{{item_1111_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.005",
+      "sourceHash": "bdcda2723f589d0d94fd26c292f76739b1d3e992b2cdf62e760fee04fbe44bae",
+      "termHash": "d3470af7727bd0f83f4579c7d29aaa82c6b9db0f183687e980af7543f416f5c0",
+      "text": "{{span_1}}Kombinator-Zweig{{end_span_1}}{{span_2}}{{item_1111_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1404_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.006",
+      "sourceHash": "3730b7dc6bbd69b0a22629547add46dc3844f4469008bce2c8844d9b0af386cc",
+      "termHash": "bfbb94fa66f41bae385059c033e4d448b5ab724686b4c6b08e17e1cb189f9fb2",
+      "text": "{{span_1}}Segel-Endfertigung{{end_span_1}}{{span_2}}{{item_1404_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1501_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h5.002",
+      "sourceHash": "98578106736b3314d26097e171d3337107d99058138c50f30db2f8ba9cac304b",
+      "termHash": "f5604c6528827e826416e08584a58d9c9031227da35103e447c4cf2548db6dca",
+      "text": "ERGÄNZEN NACH {{tech_1503_1}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.007",
+      "sourceHash": "eb766f41aa1996086fd876ac9af8818d1efaf64cc675b74fbe747c9976b3e458",
+      "termHash": "5bc1d646f5422024ac838efb6e53f4b2aa1a76880d8d15a6f3f47c86d0b41ec7",
+      "text": "{{span_1}}Zufuhr zum Start{{end_span_1}}{{span_2}}{{item_1501_1}} · Puffer in {{item_2101_1}} · Zufuhr zu {{item_2311_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.008",
+      "sourceHash": "de02eb4b2d310e6d975114e5b68d9e78429313186d005b7ba3fd886474399d26",
+      "termHash": "aca871b3c4158245dd51ba80ce2375033f15ccdd181fc6a254dd9f89f90aa92b",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1501_1}}{{end_span_1}} — die geplante Produktion von {{item_1501_2}} vor der Werferzufuhr aufnehmen."
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.009",
+      "sourceHash": "c793ae5bc2d61924707011d142df3427b89c4cfb24d462ce7325559ba87701a1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die im Kartentitel genannte installierte Kapazität setzt die Leitfadenroute Solarsegel-Lebensdauer Stufe {{fact_1}} {{fact_2}} Stufe {{fact_3}} voraus."
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.010",
+      "sourceHash": "b366141195f805e57b4b2c01900c16ed858fb86819f7db890bdb0a7d6e3e252f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Leert sich der Segelpuffer, übersteigt der Startbedarf die aktuelle Produktion — auch wenn die Zahl aufgestellter Montagemaschinen ausreichend wirkte."
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.summary.001",
+      "sourceHash": "41808075fb6a1a3c6708bd09d77b1d0567a92d985accaba3bee9f41488fd7456",
+      "termHash": "bbb0acff0e91a44c81fdaf638f75a47cca6162871e7057f1902de7ff73a90fe1",
+      "text": "{{span_1}}{{item_2311_1}} — Vorrat: {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}RICHTWERT{{end_span_3}}{{span_4}}ETAPPENWEISE{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "e10560272a87fadb357239577ce8d2ce14c27775a607d8dee1a28f8da057fcd2",
+      "text": "{{item_1001_1}}."
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.002",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "81f01fd02c8e7cc2b4d9f6ce0dd76fb9a13e5b0da9a8a5e4694b9d56764a8982",
+      "text": "{{item_1006_1}}."
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.003",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "6813531c80882aa0fe139e1d3e2843ce33d408a828e419aeed5573fe0f6722b7",
+      "text": "{{a_1}}{{item_1303_1}} aus VIOLETT{{end_a_1}}."
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.004",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "83a34697d74a7ba83985d4ecee367973f1c9879bcaa2bcc6cb70b2eb4cb005cb",
+      "text": "{{a_1}}{{item_1204_1}} aus der wiederverwendbaren Linie{{end_a_1}}."
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h5.001",
+      "sourceHash": "98578106736b3314d26097e171d3337107d99058138c50f30db2f8ba9cac304b",
+      "termHash": "f5604c6528827e826416e08584a58d9c9031227da35103e447c4cf2548db6dca",
+      "text": "ERGÄNZEN NACH {{tech_1503_1}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.005",
+      "sourceHash": "19076d3a5443196c74ce7f148442d45eda92ce59a31d925220549bf3d8cdafc9",
+      "termHash": "4b56f42be09e19e130c2649a310224c31328a71177e961c794f653683f3dc479",
+      "text": "{{span_1}}{{item_1201_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1201_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.006",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "3e3211033f7a4cf7bc39a6a2d758863643c261e8bdb7d1f0d4d73680511b81fd",
+      "text": "{{span_1}}{{item_1103_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Lichtbogen-Schmelzofen{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.007",
+      "sourceHash": "f7d13a7cbb66a6f57ba505409cba35650cfc8ccc07381d01bcbf6d5c0cd9169b",
+      "termHash": "913adb4e2fe2c49143c08071dc52205e0b1a89750b0866bb8a0137cb1d594fdd",
+      "text": "{{span_1}}Magnet-/Graphit-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1102_1}}; {{item_1006_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Lichtbogen-Schmelzofen{{end_span_8}}{{end_span_6}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.008",
+      "sourceHash": "e993ea8c08c43a17fdc3cf73b1500d2cfb263297ae169f9984ce173d5465eaa6",
+      "termHash": "c3ace52dcb53795d4ef2d674b81150c498ada562578e5d04c7df816ea39d37fb",
+      "text": "{{span_1}}Ring-Zweig{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.009",
+      "sourceHash": "58cf864e177dc67419d36700af0c376d27ed5726c2346501c0720f4a6d623963",
+      "termHash": "b72a04bc392b4376fc2dbc90bd09f9c2548a6188a1986f2d2e7f897f54cd0316",
+      "text": "{{span_1}}Werfer-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1201_1}} + {{item_1303_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2311_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.010",
+      "sourceHash": "2249df619f8d609491542c177d65c6f03dd8f82a5374ba23af5cb169b5408b4e",
+      "termHash": "af412fe7b6d49ef67996f057c24d2c03942c07ff9be49c0ee9f7f346abf1d746",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2311_1}}{{end_span_1}} — einen kleinen, begrenzten Vorrat für den schrittweisen Aufbau bereithalten."
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.011",
+      "sourceHash": "c574474433bbd1f78609760ed93c43a95a153575b1a9d818d67513dc169147bd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Der Vorratsrichtwert im Kartentitel setzt die Leitfadenroute Solarsegel-Lebensdauer Stufe {{fact_1}} {{fact_2}} Stufe {{fact_3}} voraus."
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.012",
+      "sourceHash": "b0f1f11c06a1b3977e8ed97709e00bc2ec06bb19d1e7ee0b81c038983c03d8de",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Werfer brauchen eine freie Einschussgeometrie. Auch ein Feld in Referenzgröße belegt viel Fläche. Baue getrennte Blöcke in unterschiedlichen Breitenlagen, beobachte, welche Zonen wirklich schießen, und erweitere die brauchbaren Bänder, statt alle Maschinen dicht zusammenzustellen."
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.013",
+      "sourceHash": "dccc633db0972c2b4b42deb6a58f5279de5eb4a268bdba30a3eb7934018c37ce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Jeder feuernde Werfer benötigt {{fact_1}}. Ein großes Feld kann bei passender Geometrie plötzlich von Ruhe auf hohe Last wechseln. Baue deshalb schrittweise und beobachte die Stromkurve, wenn jeder Block in Betrieb geht."
+    },
+    {
+      "id": "d.dyson.h2.006",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Achte auf"
+    },
+    {
+      "id": "d.dyson.p.011",
+      "sourceHash": "4ece2531903fb9a06b78e538fb4b5879a2f86a2fd14bc3ab4141cc064c29f861",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Orbitverwaltung.{{end_strong_1}} „Aut. Umlaufbahn“ lässt Werfer einen gerade nutzbaren Orbit wählen, statt endlos auf einen ungeeigneten Einschusspunkt zu warten. Sie behalten diese Wahl bei, bis der Orbit nicht mehr nutzbar ist. Der Modus verteilt keine Werfer gleichmäßig und kehrt nicht zu einem bevorzugten Orbit zurück. Die Geometrie bleibt entscheidend: Beobachte die gemessene Schussauslastung und versorge brauchbare Breitenbänder."
+    },
+    {
+      "id": "d.dyson.p.012",
+      "sourceHash": "e58cf25134fa5ce49a8a6bd6554aa4705098ce406a5d985583d6d81389cfc572",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Gleichzeitige Stromlast.{{end_strong_1}} Ein großer Werferblock kann geschlossen anlaufen, sobald der Einschusspunkt sichtbar wird. Baue schrittweise und beobachte die Stromkurve."
+    },
+    {
+      "id": "d.dyson.p.013",
+      "sourceHash": "cb97aba9371735295e9228388b277050e354ba30f58787cbc7f016144b62930d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Überlappende Phasen.{{end_strong_1}} Nutze den {{a_1}}Übergang von Receivern zu Antimaterie{{end_a_1}}, sobald der Teilschwarm nutzbare Receiver-Ausgabe trägt. Erweitere den Schwarm parallel weiter, wenn aktuelle Erzeugung oder Receiver-Bedarf zeigen, dass mehr Orbitalleistung hilft."
+    },
+    {
+      "id": "d.dyson.h2.007",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bereit für den nächsten Schritt, wenn"
+    },
+    {
+      "id": "d.dyson.li.001",
+      "sourceHash": "1b6c4dff19702841c2e50e30ac8d9dcbf9eda5808c946ad1d765516e620f776f",
+      "termHash": "11167cc951cdf0d45a90dc82d1aa66ce5e7737772a2b722aea1d56b6e51b0da3",
+      "text": "{{label_1}} {{input_1}}das Produkt {{item_1208_1}} zuverlässig in {{item_1122_1}} umgewandelt wird und diese {{item_1122_2}} ohne manuellen Transport durch Icarus den Forschungsbezirk erreichen kann. {{end_label_1}}"
+    },
+    {
+      "id": "d.dyson.h2.008",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "d.dyson.p.014",
+      "sourceHash": "8366252b2971d9401d97622506213971d514af0438c025e99a4b6be99e7960d2",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "Nutze den {{a_1}}Übergang von Receivern zu Antimaterie{{end_a_1}}, sobald der Schwarm nutzbare Receiver-Ausgabe ermöglicht. Lass die Werfer parallel weiter schießen, bis die Produktion von {{item_1122_1}} den Abschluss bequem versorgt."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge-title.h1.001",
+      "sourceHash": "1c7ea7e4483b2167d812ee396901c275025c3cff7e2ad564f9fbaaa2e06a69ce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}ERFORDERLICHER ÜBERGANG{{end_span_1}} Von Receivern zu Antimaterie"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.001",
+      "sourceHash": "8635d0417e5e6e93edcfd18ab2ec1e4a208901e0f79fbf25d6d0566132769fb3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DIE ROUTE VERBINDEN"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.001",
+      "sourceHash": "cb1f77e2821860d1bd57792280efa4393e680e2dae0383020039877d0efb1993",
+      "termHash": "44b5716f7bf0fd7cbd835caf7518fe564c5e9c655771d9047e6fc3d310ca6aa6",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Nutzbare Dyson-Erzeugung aus dem arbeitenden Schwarm, ergänzt um eventuell gebaute dauerhafte Strukturen.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Diese Energie erst in das Produkt {{item_1208_1}} und dann in {{item_1122_1}} umwandeln.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Eine zuverlässige Materiallinie, die PHOTON stärken und in WEISS weiterführen kann."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.002",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zuerst erforschen"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.002",
+      "sourceHash": "646426debf8bbea1935644dfdbc6e0d66ecfc0435e4a198832c24d3ee84f32d3",
+      "termHash": "e54510924b90619f74d3d6670267f142485a809de0e810bf02bdbb46c74cee82",
+      "text": "{{tech_1504_1}} {{fact_1}} {{tech_1505_1}} {{fact_2}} {{tech_1506_1}}. Das schaltet Receiver, linsengestützten Empfang, Photonenerzeugung und das Rezept Masse-Energiespeicher in der benötigten Reihenfolge frei."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.003",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.003",
+      "sourceHash": "98d0aff97f3038931675125904af5b2c888449e2c51f0288dfdfbd82c6537f0c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Baue eine sichtbare, durchgehende Route von der Orbitalleistung bis zur gelagerten Antimaterie. Der Beschleuniger und die Materiallinien für grüne Würfel aus GRÜN liefern bereits die teuren Teile für dieses Verfahren."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.div.001",
+      "sourceHash": "68615d2aecce7750775908e70e0254f1cf0a780365438e8199fe64073932cc08",
+      "termHash": "eb00c38c42e61c6b8b679a89e5fb3374fc8049a9200f2e21ae344b45cbfbbbee",
+      "text": "{{span_1}}Aktuelle Dyson-Leistung{{end_span_1}}{{b_1}}{{fact_1}}{{end_b_1}}{{span_2}}{{item_2208_1}} mit Linsen{{end_span_2}}{{b_2}}{{fact_2}}{{end_b_2}}{{span_3}}{{item_1208_1}}{{end_span_3}}{{b_3}}{{fact_3}}{{end_b_3}}{{span_4}}Masse-Energiespeicher{{end_span_4}}{{b_4}}{{fact_4}}{{end_b_4}}{{span_5}}{{item_1122_1}} + {{item_1120_1}}{{end_span_5}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.attr.001.aria-label",
+      "sourceHash": "9b80f25aa4705f930f342b35a3cc36593b5073276e016fd38aa48508e1b27b4f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsfluss von Dyson-Leistung zu Antimaterie"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.004",
+      "sourceHash": "498d4dd75fb4a74445d38256a7e466f0e8e27efdee7a1dc48f28cb0b01548ef8",
+      "termHash": "d1d8ffa86759fcc5f08fc360af6e2e2d2ce41702b636770ee26581c7f7a605dd",
+      "text": "Beginne mit vier vollständig eingelaufenen Receivern vom Typ {{item_2208_1}} mit Linsen im Modus Photonenerzeugung. Bei Strahlenübertragungs-Effizienz Stufe {{fact_1}} braucht diese Anlage mindestens {{strong_1}}{{fact_2}}{{end_strong_1}} aktuelle Dyson-Erzeugung. Das ist der Ausgangsvergleich vor den Effizienzverbesserungen in PHOTON, keine Zusage über den späteren Leistungsbedarf."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.004",
+      "sourceHash": "d603361b2bc99a3dd6592ce9105a119722d59032580e17077bc3356ea7a1009a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzablauf — Von Receivern zu Antimaterie"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.div.002",
+      "sourceHash": "c5515d54764f3878c0754f5c5e3f1db1a11ac4320c68bf94adda7b2f4b747024",
+      "termHash": "a26f5bfedbb4a1044ab2e4ca3d76c667b4e313b1c662727cf9e6e15c2ce290d1",
+      "text": "{{strong_1}}Alle vier Receiver mit Linsen versorgen.{{end_strong_1}} Automatisierung ist ideal, aber gelegentliches manuelles Nachfüllen ist während des Aufbaus völlig in Ordnung. Sechzig Linsen vom Typ {{item_1209_1}} versorgen vier Receiver etwa {{fact_1}} Stunden und {{fact_2}} Minuten lang. Setze dir eine Erinnerung und fülle alle zusammen nach."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.001",
+      "sourceHash": "2d95be8a3b0bb161d12848b44993a35979e72325c98a1b3db67befca051a265b",
+      "termHash": "ce4427f2fc5fdd668319a44110a026d9c9de310f1fbd053845a761c2a47c7782",
+      "text": "Platziere vier Receiver vom Typ {{item_2208_1}}, führe Linsen vom Typ {{item_1209_1}} zu und wähle an jedem Gebäude {{strong_1}}Photonenerzeugung{{end_strong_1}}."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.002",
+      "sourceHash": "fa901d7c253fedbc2351238ba16a1eefa51698bee632ed0a7f7dd6e7803e1697",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Lass „Fortlaufender Empfang“ und die Empfangsleistung ansteigen. Prüfe dabei, ob die aktuelle Dyson-Erzeugung für die Anlage ausreicht."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.003",
+      "sourceHash": "03234e6418bfcf85f9ed0d9c3d9030c368c57b8003015286cd5e373d88e9864d",
+      "termHash": "1dfdf2d3d9264a7f0a0416a2916ddf91993d78d6f513e3eabe1786754ecf2c93",
+      "text": "Führe das Produkt {{item_1208_1}} über ein Band zu einem {{item_2310_1}} mit dem Rezept {{strong_1}}Masse-Energiespeicher{{end_strong_1}}."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.004",
+      "sourceHash": "452964f77a27ead5c602bb3e6e57a6f41770d8138e379387aa2917512b5c88e0",
+      "termHash": "210538b705e7cfa58b104a59076099542b929569f436bb5b40823a991e6745a7",
+      "text": "Leite {{item_1122_1}} in ein sichtbares Lager neben der weißen Forschung. Halte den Ausgang für zurückgewonnenen {{item_1120_1}} am Beschleuniger frei. Ein blockierter Ausgang stoppt beide Produkte."
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.005",
+      "sourceHash": "fd32f1f59e97307a39830bed480ad46036019f7a1b8eb1b3b5cbd1aef2ea7336",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Weiter, wenn"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.005",
+      "sourceHash": "21bd4fd9134fcf0654154b75fe445b93cb70fbb9e6fb5474aa75cd9f98ad95d0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}alle vier Receiver auf Photonenerzeugung eingestellt sind, weiter Linsen erhalten und vollständig eingelaufen sind. {{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.006",
+      "sourceHash": "a651ba894a6232769bfd2c6e55a8d3dc6018f398e0b1404996596d14895d5c98",
+      "termHash": "8dec985373d8e5418a7fa0af0b2bd76d1f90a9a498e9174b9c50765ecd4f90b5",
+      "text": "{{label_1}} {{input_1}}das Produkt {{item_1208_1}} kontinuierlich den Beschleuniger erreicht. {{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.007",
+      "sourceHash": "bd815c4f3b4931226bdc121a361a0bf7b2ae34fedebbc6f0c7fd9aa845444169",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{label_1}} {{input_1}}{{item_1122_1}} zuverlässig im sichtbaren Lager zunimmt. {{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.008",
+      "sourceHash": "045caafd357842c86206f7bba560e676e25ed2090322162f0a40856a0c531ae3",
+      "termHash": "c4297ad9281874bde9f5653bfadfb8f6510b8c676e9dcba57214631c71b14dec",
+      "text": "{{label_1}} {{input_1}}der Ausgang für zurückgewonnenen {{item_1120_1}} frei bleibt. {{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.006",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.005",
+      "sourceHash": "3c7b83d05f334b6136ea5eff3247c8e58574c30e2d8a32843536c974228109d4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Weiter zu {{a_1}}{{img_1}}[PHOTON]{{end_a_1}}, sobald sich Antimaterie zuverlässig ansammelt und der Ausgang für zurückgewonnenen Wasserstoff frei bleibt."
+    },
+    {
+      "id": "d.photon.h1.001",
+      "sourceHash": "a016c5147d5def483c0ed87bdaf6f8ef6e99ca7fbdb68f76ea0ba068c68c2e30",
+      "termHash": "44b5716f7bf0fd7cbd835caf7518fe564c5e9c655771d9047e6fc3d310ca6aa6",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[PHOTON]{{end_a_1}} — {{item_1208_1}} und {{item_1122_1}}"
+    },
+    {
+      "id": "d.photon.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "d.photon.p.001",
+      "sourceHash": "aa4f83dad4592fa74efd779f02d51a1766c10383f7ec5f56de7333f3eb825458",
+      "termHash": "6461a2f794f6df446b6be68ae2ee7df3625ace0add8345b8558943d2bd203b9e",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Eine zuverlässige Linie über den {{a_1}}Übergang von Receivern zu Antimaterie{{end_a_1}}.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Diese Linie stärken und ihre Ausgabe ansparen, während die übrige Fabrik sich auf WEISS vorbereitet.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Die letzte hergestellte Zutat und eine Reserve für {{item_6006_1}}.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} {{a_2}}{{img_1}}[WEISS]{{end_a_2}}."
+    },
+    {
+      "id": "d.photon.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Phasenübersicht"
+    },
+    {
+      "id": "d.photon.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auf einen Blick"
+    },
+    {
+      "id": "d.photon.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was jetzt zählt"
+    },
+    {
+      "id": "d.photon.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hauptziel{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.002",
+      "sourceHash": "cdf659bae81db638e751034da2d61ea1021d4e5a87af506be7c2c8f13bcd7679",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "Blaue, rote, gelbe, violette und grüne Würfel sowie {{item_1122_1}} auf dauerhaft {{fact_1}} bringen, dann {{fact_2}} Einheiten Antimaterie für WEISS ansparen"
+    },
+    {
+      "id": "d.photon.td.003",
+      "sourceHash": "39c88b50e223434222b66ebe6a68fb6c12a6bbbfcb0db059e38dc0c95495bfce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Gewünschter Zustand{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.004",
+      "sourceHash": "c94469d80223166c3d3c973e9441a2269f194f24847ff9a9a84d683086e9dc33",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Alle benötigten Eingänge halten im Dauerbetrieb ihr Ziel; gesunde Linien bleiben unverändert, während du den ersten sichtbaren Engpass behebst"
+    },
+    {
+      "id": "d.photon.td.005",
+      "sourceHash": "7a3be468e528aeabeccf0f0ed7a7178b28fc57abfe9465ecfba1c2ecef353687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Als Nächstes erforschen{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.p.002",
+      "sourceHash": "ddc2b44cefa3dbabe824f0d7763ba28b78a6457f2013f35810d23b69acf98146",
+      "termHash": "c4645d85633b2a2ce9f75cc8a34f08bf54cf4d330e56c6fcf0a4705a6638e41a",
+      "text": "{{strong_1}}Receiver-Effizienz:{{end_strong_1}} {{tech_3201_1}} Stufe {{fact_1}} {{fact_2}} {{tech_3202_1}} Stufe {{fact_3}}"
+    },
+    {
+      "id": "d.photon.p.003",
+      "sourceHash": "294be42a8a73e8584499003d3f4775df74d3353c7e652cb21be2e95e0edee05e",
+      "termHash": "dd0d5b89c7e26f147c66d10c5e3ca9a07396753e0da5aa14b9e3d7ac988bbabf",
+      "text": "{{strong_1}}Rohstoffversorgung:{{end_strong_1}} weiter mit {{tech_3601_1}} Stufe {{fact_1}} {{fact_2}} {{tech_3602_1}} Stufe {{fact_3}} {{fact_4}} {{tech_3603_1}} Stufe {{fact_5}}"
+    },
+    {
+      "id": "d.photon.p.004",
+      "sourceHash": "9a6a029d791a324427e131aa7072b74df2dc04a81cf67f9aca864fd8bc8312d1",
+      "termHash": "a3028757672d9d917ca50d0ce60d72e0a88a352285f7aaa6ad28b3be00853e59",
+      "text": "{{strong_1}}Schnellere Produktion:{{end_strong_1}} {{tech_1417_1}}; {{tech_1202_1}} {{fact_1}} {{tech_1203_1}}"
+    },
+    {
+      "id": "d.photon.td.006",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Im Blick behalten{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.007",
+      "sourceHash": "b5f7350be33e06fe1ba30d6124c6fa04e323e47746df75cc9aa2cdd04b1418cc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Dauerhafte Raten im Statistikfenster, die erste Würfellinie unter dem Zielwert, wachsender Antimaterievorrat und der Ausgang für zurückgewonnenen Wasserstoff"
+    },
+    {
+      "id": "d.photon.td.008",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Weiter, sobald{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.009",
+      "sourceHash": "00bf5c91ee6bff41bf220218a193d7d9d466666fb2611ea4b66db0f6a34fb1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Jede Würfelfarbe und Antimaterie dauerhaft mindestens {{fact_1}} erreichen und mindestens {{fact_2}} Einheiten Antimaterie gelagert sind"
+    },
+    {
+      "id": "d.photon.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.photon.p.005",
+      "sourceHash": "2d941e1bff16bf98ebd924979346b6b59fd59eff1301849640a5478ff1ec44e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Du hast Antimaterie hergestellt. Jetzt muss der gesamte Abschluss zuverlässig laufen.{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.p.006",
+      "sourceHash": "4976452a7b0314ec25002c8e0a2557cd76ce235e30795f0b5497da6faa7cdf88",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "Lass die Receiver-Anlage weiterarbeiten, während du die fünf Würfellinien aus den früheren Phasen prüfst. Bringe jede Farbe und {{item_1122_1}} auf mindestens {{fact_1}}. Repariere dann nur die erste zurückfallende Versorgungslinie. Lass währenddessen die Antimateriereserve auf {{fact_2}} wachsen."
+    },
+    {
+      "id": "d.photon.p.007",
+      "sourceHash": "b8484b41057f0f5f5445e5d840cb7354d3edddd7df7b9ffed87bf62b2b03006c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "PHOTON ist abgeschlossen, wenn WEISS beginnen kann, ohne sofort zu verhungern. Die nötige Receiver-Einrichtung steht im {{a_1}}Übergang von Receivern zu Antimaterie{{end_a_1}}; baue sie hier nicht erneut."
+    },
+    {
+      "id": "d.photon.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zuerst erforschen"
+    },
+    {
+      "id": "d.photon.p.008",
+      "sourceHash": "099de228240bc8835ab6b42629101a5aeaa2f1dbde3aca15ac28445f45b699e0",
+      "termHash": "c4645d85633b2a2ce9f75cc8a34f08bf54cf4d330e56c6fcf0a4705a6638e41a",
+      "text": "{{strong_1}}Receiver-Effizienz:{{end_strong_1}} {{tech_3201_1}} Stufe {{fact_1}} {{fact_2}} {{tech_3202_1}} Stufe {{fact_3}}. Höre nach diesen beiden Stufen auf. Die Verbesserungen senken den Dyson-Leistungsbedarf der Anlage. Lass die Receiver nach jeder Verbesserung wieder einlaufen und prüfe dann, ob die Antimaterieproduktion über {{fact_4}} bleibt."
+    },
+    {
+      "id": "d.photon.p.009",
+      "sourceHash": "4354542922c74e9fdd8d1051a1ac97a659623a9601cc5124ac25ca27a101e2d0",
+      "termHash": "dd0d5b89c7e26f147c66d10c5e3ca9a07396753e0da5aa14b9e3d7ac988bbabf",
+      "text": "{{strong_1}}Rohstoffversorgung:{{end_strong_1}} Erforsche noch offene Stufen von {{tech_3601_1}} Stufe {{fact_1}} {{fact_2}} {{tech_3602_1}} Stufe {{fact_3}} {{fact_4}} {{tech_3603_1}} Stufe {{fact_5}} und höre bei Stufe {{fact_6}} auf. Frühere optionale Empfehlungen können diese Folge ganz oder teilweise offengelassen haben."
+    },
+    {
+      "id": "d.photon.p.010",
+      "sourceHash": "b2798fc08d155432be92f767071887fb36ca4d997346e389d4aa6d4da4fe450d",
+      "termHash": "a3028757672d9d917ca50d0ce60d72e0a88a352285f7aaa6ad28b3be00853e59",
+      "text": "{{strong_1}}Schnellere Produktion:{{end_strong_1}} {{tech_1417_1}}; {{tech_1202_1}} {{fact_1}} {{tech_1203_1}}. Nutze diese Mittel nur dort, wo eine alte Produktionslinie das Tempo von WEISS nicht hält. Lass jede gesunde Linie unverändert."
+    },
+    {
+      "id": "d.photon.h2.004",
+      "sourceHash": "19d1213fdc95b8034b0c067a706355571acaa10ad861bc405d79903d50fde08e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Jede Würfellinie auf das Tempo von WEISS bringen"
+    },
+    {
+      "id": "d.photon.p.011",
+      "sourceHash": "cb48e0f4ac96ae97c6df0152500130edd2406b8b22d748b1095ba43901e89f18",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Öffne das {{a_1}}Statistikfenster{{end_a_1}} und prüfe blaue, rote, gelbe, violette und grüne Würfel. Jede Farbe muss mindestens {{fact_1}} halten."
+    },
+    {
+      "id": "d.photon.p.012",
+      "sourceHash": "da92f01773e4d399ee7ad531f6e6717acd503a02dbc9e6aa5091b198ed5371c2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Beginne mit der ersten Farbe unter dem Zielwert. Verfolge ihre Produktionslinie rückwärts bis zum fehlenden Material und verstärke diesen Zweig. Lass jede Linie unverändert, die bereits {{fact_1}} hält."
+    },
+    {
+      "id": "d.photon.h2.005",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Wie viel reicht?"
+    },
+    {
+      "id": "d.photon.p.013",
+      "sourceHash": "af6438e00a62a0a96cc5844f5bb75ea7d90e331bd490149e41a2bc2b892c7231",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die volle Leistung der vier Receiver von {{strong_1}}{{fact_1}} Antimaterie{{fact_2}}{{end_strong_1}} bietet komfortable Reserve gegenüber der WEISS-Grundrate von {{fact_3}}. Ziele auf die volle Anlagenausgabe von {{fact_4}}, gehe aber weiter, sobald Antimaterie bei mindestens {{fact_5}} bleibt und der Vorrat weiter wächst."
+    },
+    {
+      "id": "d.photon.p.014",
+      "sourceHash": "167b5880594b6783204f8ade6785e7610659f75a9347ec69fc4f99e1a5cdaba0",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "Sobald mindestens {{strong_1}}{{fact_1}} Einheiten {{item_1122_1}}{{end_strong_1}} im Lager liegen, ist die Hälfte des abschließenden Antimateriebedarfs für die weiße Forschung bereits angespart. Baue die orbitale Quelle parallel weiter aus, wo der aktuelle Bedarf mehr Erzeugung sinnvoll macht."
+    },
+    {
+      "id": "d.photon.h2.006",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Achte auf"
+    },
+    {
+      "id": "d.photon.p.015",
+      "sourceHash": "2752ca5b9f183023df045f5b9d7e8ce4e1d3bfc0fa2c9b14919d5ae8649504d8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Eine kurze Spitze kann täuschen.{{end_strong_1}} Lass die Fabrik einige Minuten laufen, bevor du der angezeigten Rate vertraust."
+    },
+    {
+      "id": "d.photon.p.016",
+      "sourceHash": "922cd74d5b7ae1b94818d7dc7426c2b4cfa4592320553cdeb736a0e41680b4bc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Behebe den ersten sichtbaren Engpass.{{end_strong_1}} Verfolge die schwache Würfellinie rückwärts und verstärke nur den Zweig, der sie bremst."
+    },
+    {
+      "id": "d.photon.p.017",
+      "sourceHash": "a9e2663144aa70d2160b04c6e384714006c2b9cfcb8a8c9207547e31d74654e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Verfolge nicht jeden Einbruch unter {{fact_1}} Antimaterie{{fact_2}}.{{end_strong_1}} Die Linie ist bereit, wenn sie mindestens {{fact_3}} hält und der Lagerbestand weiter wächst."
+    },
+    {
+      "id": "d.photon.p.018",
+      "sourceHash": "8077427542116f5d4938b07f7f25474ef2e3c1a82c1fb1edb433d56bf1d0d48a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Zurückgewonnenen Wasserstoff abführen.{{end_strong_1}} Wenn sein Ausgang stoppt, stoppt auch die Antimaterie."
+    },
+    {
+      "id": "d.photon.h2.007",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bereit für den nächsten Schritt, wenn"
+    },
+    {
+      "id": "d.photon.li.001",
+      "sourceHash": "2718af465bc630620b729bc80620c3581369576c0bd8c3846ab0261df7f84460",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{label_1}} {{input_1}}Blau, Rot, Gelb, Violett, Grün und {{item_1122_1}} jeweils dauerhaft mindestens {{fact_1}} erreichen. {{end_label_1}}"
+    },
+    {
+      "id": "d.photon.li.002",
+      "sourceHash": "11e8d9137284aed1a17281e0988572cba72f12a2ac4836601ae6bd0a1fa78b1e",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{label_1}} {{input_1}}mindestens {{fact_1}} Einheiten {{item_1122_1}} gelagert sind. {{end_label_1}}"
+    },
+    {
+      "id": "d.photon.h2.008",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "d.photon.p.019",
+      "sourceHash": "0c6c9545aeafe64d3a884eb2bbc7d2e72d5a3415bb965d014ca5343a02e7bd88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Weiter zu {{a_1}}{{img_1}}[WEISS]{{end_a_1}}, wenn beide Bedingungen erfüllt sind:"
+    },
+    {
+      "id": "d.photon.li.003",
+      "sourceHash": "063f5b524c71e172fecfa2140b4e538a1994ffbd1c0ae3f5301e83fb3bdf5fca",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{label_1}} {{input_1}}Blau, Rot, Gelb, Violett, Grün und {{item_1122_1}} jeweils dauerhaft mindestens {{fact_1}} erreichen. {{end_label_1}}"
+    },
+    {
+      "id": "d.photon.li.004",
+      "sourceHash": "7a17d422654805331ad72284eda01f47d7aa69a03eebd0276aeb2b7608f7e994",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{label_1}} {{input_1}}mindestens {{fact_1}} Einheiten {{item_1122_1}} gelagert sind. {{end_label_1}}"
+    },
+    {
+      "id": "d.white.h1.001",
+      "sourceHash": "2f82231d6850d481aa1964c05121ed0e21de0eb6aa722016bac94bec95741eb5",
+      "termHash": "6461a2f794f6df446b6be68ae2ee7df3625ace0add8345b8558943d2bd203b9e",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[WEISS]{{end_a_1}} — {{item_6006_1}} und Missionsabschluss!"
+    },
+    {
+      "id": "d.white.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "d.white.p.001",
+      "sourceHash": "ec0bad3bad7c68f3865ad36ed5c4db537f635166be8de3cd3e90fcd434563ae3",
+      "termHash": "c17726875a312f415d2358b1dc810bebaa8f17efd459351a6a2774583f5071cf",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Durchgehende Produktion von {{item_1122_1}}.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Alle Matrixfarben gleichzeitig zur Arbeit rufen.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} {{tech_1508_1}}{{br_3}}{{strong_4}}Danach:{{end_strong_4}} Wähle ein beliebiges Projekt nach Spielabschluss, das dir Spaß macht. Nutze {{a_1}}{{img_1}}[LOGISTIK]{{end_a_1}}, wenn wiederholte Erweiterungen handgefertigte Stationen und Transportmittel aufbrauchen."
+    },
+    {
+      "id": "d.white.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Phasenübersicht"
+    },
+    {
+      "id": "d.white.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auf einen Blick"
+    },
+    {
+      "id": "d.white.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was jetzt zählt"
+    },
+    {
+      "id": "d.white.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hauptziel{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.002",
+      "sourceHash": "a2d04ee498c0df96e0536aa73956cc7db5d4d3a45c6afc6682f7357dc9962b9a",
+      "termHash": "05e26e497547b16fcf98a4f3c3c8346c81965e3acdcf433eeb1d175c71655987",
+      "text": "{{tech_1507_1}} erforschen, {{fact_1}} weiße Würfel{{fact_2}} halten und {{fact_3}} davon für „{{tech_1508_1}}“ bereitstellen"
+    },
+    {
+      "id": "d.white.td.003",
+      "sourceHash": "4ae8e0aa5c72dd067309c7140bc3e5855896b7533e556bb0f7a9db7895d9ea80",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Endfertigung{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.004",
+      "sourceHash": "e811682a416032c530e03e1fb43f871693057dbfd91f662e68570e3cd7204e90",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{fact_1}} Produktionslabore, versorgt mit den fünf vorhandenen Würfelfarben und {{item_1122_1}}"
+    },
+    {
+      "id": "d.white.td.005",
+      "sourceHash": "7a3be468e528aeabeccf0f0ed7a7178b28fc57abfe9465ecfba1c2ecef353687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Als Nächstes erforschen{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.006",
+      "sourceHash": "2005f0ff0e7b4c51b40ede0208ce1e9a064844677f940a317cbe76d4260ebad4",
+      "termHash": "05e26e497547b16fcf98a4f3c3c8346c81965e3acdcf433eeb1d175c71655987",
+      "text": "{{tech_1507_1}} {{fact_1}} {{tech_1508_1}}"
+    },
+    {
+      "id": "d.white.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Im Blick behalten{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.008",
+      "sourceHash": "d8333b1b6fdcf644ee3cd414d4015711802817a795ec75cc5ab76187e8e3bc6c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die erste ältere Würfelfarbe, deren Eingangsband leer wird"
+    },
+    {
+      "id": "d.white.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Weiter, sobald{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.010",
+      "sourceHash": "b77d0c998bb371ffc1802cde8dedce95705903b591622f1499c9fcb5947347a7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die Forschung „Mission abgeschlossen!“ fertig ist"
+    },
+    {
+      "id": "d.white.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.white.p.002",
+      "sourceHash": "3dabdd7ff2abd834023dc61dd630673525dd75134ed24cd3d0540495a8c3b78a",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "Weiße Forschung prüft das Zusammenspiel der vorhandenen Linien, statt eine rätselhafte neue Fabrik zu verlangen: Blau + Rot + Gelb + Violett + Grün + {{item_1122_1}} {{fact_1}} zehn Labore für weiße Würfel {{fact_2}} Lager und Forschung. Jeder Eingang hat bereits eine Produktionsgeschichte. Führe die sechs Produkte zusammen und verfolge dann den ersten leer werdenden Eingang."
+    },
+    {
+      "id": "d.white.p.003",
+      "sourceHash": "473ec2a14f9236eb14d1c5e54e8c1c49778729010690bcd9c659430d18f72350",
+      "termHash": "4dbd71f0d91bea209dbec5e341d90c8d03782786377364bddd3c4b60af718f69",
+      "text": "{{tech_1507_1}} kostet vor Produktionsbeginn {{fact_1}} von jeder farbigen Matrix. „{{tech_1508_1}}“ verbraucht anschließend {{fact_2}} Würfel des Typs {{item_6006_1}}. Baue die Produktionslinie, während die Freischaltung erforscht wird, und behebe nur den tatsächlich unterversorgten Zulieferzweig."
+    },
+    {
+      "id": "d.white.h2.003",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Wie viel reicht?"
+    },
+    {
+      "id": "d.white.p.004",
+      "sourceHash": "24b6c1cc0c9d1f4ce337bb93451bbf8ccd09b44b153cca814d5a9c43b734df91",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}{{fact_1}} weiße Würfel{{fact_2}}:{{end_strong_1}} {{fact_3}} Produktionslabore und {{fact_4}} aus jedem der sechs Eingänge. Die Materialcharge für {{fact_5}} Würfel dauert bei dieser Rate {{fact_6}} Stunde und {{fact_7}} Minuten."
+    },
+    {
+      "id": "d.white.h2.004",
+      "sourceHash": "52174fb5361df3ec38f9d87ddc828c33afa87b5ff8b4409c4ed3a3a6a7479137",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Endfertigung"
+    },
+    {
+      "id": "d.white.p.005",
+      "sourceHash": "8e0576b6b84e65d5d6a45bd40cd96fdf02abf6237c1531ea43a7004eb98304a3",
+      "termHash": "334732df5bf8047efc59bdefe59bc35ae48326253cb406f58e7ee153c13589a0",
+      "text": "Bringe blaue, rote, gelbe und violette Würfel sowie {{item_6005_1}} und {{item_1122_1}} in den weißen Forschungsbezirk. Versorge zehn Labore vom Typ {{item_2901_1}} mit allen sechs Zutaten für das genannte Ziel von {{fact_1}}. Schicke die erzeugte {{item_6006_1}} zur Forschung und erweitere nur den Zulieferzweig, der wirklich zu wenig liefert."
+    },
+    {
+      "id": "d.white.h2.005",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Achte auf"
+    },
+    {
+      "id": "d.white.p.006",
+      "sourceHash": "b68e2675919445edc495f9212abbbc9e365481eac82e068f3666af79a2e90960",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die neueste Linie ist selten der Engpass. Weiße Forschung entlarvt oft einen kleinen alten roten, gelben oder violetten Bezirk, dessen Puffer ihn gesund wirken ließ, bis jede Farbe dauerhaft gebraucht wurde."
+    },
+    {
+      "id": "d.white.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bereit für den nächsten Schritt, wenn"
+    },
+    {
+      "id": "d.white.li.001",
+      "sourceHash": "fd5de5426b3f8c0fb7a5efb9167b281f7cff0c05d53c3fe5b9e1be1298dfae5a",
+      "termHash": "6461a2f794f6df446b6be68ae2ee7df3625ace0add8345b8558943d2bd203b9e",
+      "text": "{{label_1}} {{input_1}}die Forschung für {{item_6006_1}} abgeschlossen ist. {{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.002",
+      "sourceHash": "5f6a2db47d7946158d31b66f72b6f5a494fb38b8e53388b3a64d89541d2040c1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}alle sechs Zutaten die weißen Labore kontinuierlich erreichen. {{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.003",
+      "sourceHash": "698f0b3b3e9df839db66cac717bd6ea8b4c85b625219f1152a25ecd471c92a50",
+      "termHash": "6461a2f794f6df446b6be68ae2ee7df3625ace0add8345b8558943d2bd203b9e",
+      "text": "{{label_1}} {{input_1}}zehn Labore {{item_6006_1}} dauerhaft mit {{fact_1}}{{fact_2}} produzieren. {{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.004",
+      "sourceHash": "afc839aea2d7c81fd85c74ea277bee797856cd9e4209714141419e1abd7d5c6c",
+      "termHash": "6461a2f794f6df446b6be68ae2ee7df3625ace0add8345b8558943d2bd203b9e",
+      "text": "{{label_1}} {{input_1}}„Mission abgeschlossen!“ {{fact_1}} Würfel des Typs {{item_6006_1}} verbraucht oder bereits verbraucht hat. {{end_label_1}}"
+    },
+    {
+      "id": "d.white.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "d.white.p.007",
+      "sourceHash": "6d4832a5ddd4f9ed0182f6d3b38be166abb801482aa5cf5a84f47eae590e31ca",
+      "termHash": "ba21a855c05439f87d8b89d4518bf769a6ad6358f991d45634c7709b52a30541",
+      "text": "Schließe die Forschung „{{tech_1508_1}}“ ab. Wenn weitere Erweiterungen ständig handgefertigte Stationen und Transportmittel verbrauchen, automatisiere die Ersatzversorgung für deine nächsten Vorhaben unter {{a_1}}{{img_1}}[LOGISTIK]{{end_a_1}}."
+    },
+    {
+      "id": "d.sphere.h1.001",
+      "sourceHash": "fc71169c2e2beff5af38dfc9a9d78e3e232ef7050533f23ed7530ff9ed11d3b7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}OPTIONALER WEG{{end_span_1}} {{a_1}}{{img_1}}[SPHÄRE]{{end_a_1}} — Optionale dauerhafte Dyson-Sphäre"
+    },
+    {
+      "id": "d.sphere.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "d.sphere.p.001",
+      "sourceHash": "5d37d98106920424d102e83bf760071d30bd23a36a4f9694db5777a19e48e606",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Verfügbar nach:{{end_strong_1}} GRÜN hat die teuren, wiederverwendbaren Komponenten aufgebaut, die dieses Projekt benötigt.{{br_1}}{{strong_2}}Deine Wahl:{{end_strong_2}} Langsamer gebaute, dauerhafte Knoten, Rahmen und Schalenflächen, statt nur auf einen vergänglichen vollständigen Schwarm zu setzen.{{br_2}}{{strong_3}}Das bietet dir:{{end_strong_3}} Dauerhafte Orbitalerzeugung, die parallel zur Hauptroute weiterwachsen kann.{{br_3}}{{strong_4}}Zurück zur Route:{{end_strong_4}} {{a_1}}Übergang von Receivern zu Antimaterie{{end_a_1}}."
+    },
+    {
+      "id": "d.sphere.h3.001",
+      "sourceHash": "15b1942e90b5d6134dda5f4d47db12af8b398b97a0694a3e678ebfae8d1db5c1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Übersicht des optionalen Wegs"
+    },
+    {
+      "id": "d.sphere.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auf einen Blick"
+    },
+    {
+      "id": "d.sphere.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was jetzt zählt"
+    },
+    {
+      "id": "d.sphere.td.001",
+      "sourceHash": "8e4944938dcc900a5b6ffebd284a5e9f1e24c0ec228857c435e7820ba092c900",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Optionale Nutzung{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.002",
+      "sourceHash": "c33f09db54e7ebfa9c893e735c225a0f7fc83cf078b241dd7f3e8353bb2af8a8",
+      "termHash": "0b659a669dd9dd3cfa91b6b7cf21c3ace63c7c0536e4b4c55effc2b378a91f16",
+      "text": "Eine überschaubare Linie für „{{item_1503_1}}“ bauen und den Sphäreneditor kennenlernen, indem du in deinem Tempo eine kleine dauerhafte Struktur fertigstellst"
+    },
+    {
+      "id": "d.sphere.td.003",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Zuerst erforschen{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.004",
+      "sourceHash": "4f0eb36b2d088edc557c2339c591ee46a97b7c8a8952fa71cf219ab48b76d81b",
+      "termHash": "b4183c15bc75673601c028b584bb954fbb63c511c86807a2d0121be394b4433f",
+      "text": "{{tech_1522_1}} {{fact_1}} {{tech_1523_1}} Stufe {{fact_2}}"
+    },
+    {
+      "id": "d.sphere.td.005",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Im Blick behalten{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.006",
+      "sourceHash": "d44cd648d381a1aeb1500fdfea70bec2a5274d1ee8832dc99c2e74952ab57b37",
+      "termHash": "0b659a669dd9dd3cfa91b6b7cf21c3ace63c7c0536e4b4c55effc2b378a91f16",
+      "text": "Ob „{{item_1503_1}}“ einen unfertigen Knoten oder Rahmen erreichen kann, ob ein fertiger Rand eine Schale einschließt und welches vorhandene Komponentenlager zuerst leer wird"
+    },
+    {
+      "id": "d.sphere.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.sphere.p.002",
+      "sourceHash": "9ec3e27bed17652bef7dd3c7cf19cb77c1f2ff8871fd0914d12a0af073dc3492",
+      "termHash": "d6fe6b12d29e4528293cb70e572c55ad9f4cc1376eba3b0d84207b47f3bcbb08",
+      "text": "Nach GRÜN kannst du den DYSON-Schwarm um dauerhafte Bauten ergänzen. Die Sphäre tauscht schnellen Ausbau mit Verbrauchsmaterial gegen eine langsamere, materialintensivere Struktur, die am Stern bleibt. Raketen vom Typ {{item_1503_1}} bauen das Gerippe aus Knoten und verbindenden Rahmen. Die Segel vom Typ {{item_1501_1}} füllen Schalenflächen erst, wenn diese Rahmen einen gültigen Rand schließen."
+    },
+    {
+      "id": "d.sphere.p.003",
+      "sourceHash": "ecd6dd059d1c79fda49a7d1f837a8bf7b03cea21e0b8f6750b23e73a00947484",
+      "termHash": "0b659a669dd9dd3cfa91b6b7cf21c3ace63c7c0536e4b4c55effc2b378a91f16",
+      "text": "Beginne im Sphäreneditor klein. Zeichne etwas, das deine erste Linie für „{{item_1503_1}}“ fertigstellen kann, versorge den Silo und ergänze eine Schale im fertigen Rahmen, statt am ersten Tag das endgültige Monument zu entwerfen. Die Form bestimmt den gesamten Materialbedarf. Du schuldest der Sphäre keine bestimmte Größe, Form, Leistung oder Fertigstellung. Baue nur so viel dauerhafte Struktur, wie du nützlich findest."
+    },
+    {
+      "id": "d.sphere.h2.003",
+      "sourceHash": "f38b4e7de032132af450e0452ea9d88d75197e53fe9cd152ab0c9f66e3c55207",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Forschung für diesen Weg"
+    },
+    {
+      "id": "d.sphere.p.004",
+      "sourceHash": "8bba0cbf56c42ee4822e29644f10d193be5514ce249a802c6e506a500116689c",
+      "termHash": "b4183c15bc75673601c028b584bb954fbb63c511c86807a2d0121be394b4433f",
+      "text": "Die Materialkette des Beschleunigers in GRÜN hat die hier benötigte Forschung für Solarsegelorbits und Gerüstmaterial bereits erledigt. Dieser optionale Weg verlangt die Technologie {{tech_1522_1}}, danach {{tech_1523_1}} Stufe {{fact_1}}. Die erste Stufe des Belastungssystems reicht, um die erste Schale einzuschließen. Erforsche höhere Stufen nur, wenn eine größere Sphäre sie wirklich braucht. Hochleistungs-Leichtbau als Voraussetzung des Silos ist bereits abgeschlossen, und die Quantenchiplinie aus GRÜN versorgt das Raketenrezept."
+    },
+    {
+      "id": "d.sphere.h2.004",
+      "sourceHash": "1be2e889c36274abfe95a64024166131e270a92f8ecd9f87308505f179b016b1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Produktionsaufbau"
+    },
+    {
+      "id": "d.sphere.p.005",
+      "sourceHash": "b9d28898dce2d78347150b202953c3a01725cd93134a6c5952feb48817d78c2c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Jede Karte skizziert einen optionalen Produktionsaufbau von der Zufuhr bis zum Lager.{{end_strong_1}} Öffne sie für den Gesamtüberblick. Lass sie sonst geschlossen und baue weiter; darin ist nichts Unverzichtbares versteckt."
+    },
+    {
+      "id": "d.sphere.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}} Alle Karten aufklappen{{end_button_1}}{{button_2}} Alle Karten zuklappen {{end_button_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.summary.001",
+      "sourceHash": "487388a7455fae3cdcb0b1f68a403cc87454b55e402db512b8c1a99f5e7fef3e",
+      "termHash": "5ccd867e5ff21455ca74cd3fbf6eedf162d53e728f6be364a8acda5bea100355",
+      "text": "{{span_1}}{{item_1502_1}} {{end_span_1}}{{span_2}}{{span_3}}OPTIONAL{{end_span_3}}{{span_4}}ETAPPENWEISE{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.001",
+      "sourceHash": "9b41c0d0e260094a0c4ab9e9460c5405c0d7c4028e2a7d1bc32f1267b22019e9",
+      "termHash": "8e751bd106cfd8495b15d0815bcb2e8485f5d08dc87b8597397bf482f445cff5",
+      "text": "{{a_1}}{{item_1501_1}} aus DYSON{{end_a_1}}."
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.002",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "6813531c80882aa0fe139e1d3e2843ce33d408a828e419aeed5573fe0f6722b7",
+      "text": "{{a_1}}{{item_1303_1}} aus VIOLETT{{end_a_1}}."
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.003",
+      "sourceHash": "4dc5006cfae2e5e33a177b8644b1385363de6abe1677ce385b108979eaf22998",
+      "termHash": "a8f38ef1fb682e797aaeca77b76a2acee0e7272290d1e228272c0504b42105cf",
+      "text": "{{a_1}}{{item_1124_1}} aus dem VIOLETT-Zweig{{end_a_1}}."
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.004",
+      "sourceHash": "25c7dff4c831f7885f4432d6d6888c38457a636b60bfcaa3d2671f46b87ee04e",
+      "termHash": "6b8c7c08a3393d94c0f311103fb50532a59cc86bd79ed62afeca0d75268a4b47",
+      "text": "{{item_1107_1}}."
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.005",
+      "sourceHash": "c6fd3ae07a243086d1ddd21a601b2f615c97db05ee201b561c8edc82ac3d3afa",
+      "termHash": "cfe17d97876385ea4384fc20d861c83b5f8f2e826fefc95763a6bfd376bea6b2",
+      "text": "{{item_1105_1}}."
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.006",
+      "sourceHash": "41392ce829762406ba34f196380369ecf700e6a79ba1c4e1c919830581065fe6",
+      "termHash": "5488686763348a4f6aa3ae6475d41758d70775941c27a87b7caa195916079f21",
+      "text": "{{span_1}}Gerüst-Zweig{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1107_1}} + {{item_1105_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1125_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.007",
+      "sourceHash": "7ef4c34bd7fef734efc1d5e94a66158bd17f42ee5b2cb95072cb726f79ef550f",
+      "termHash": "b42121e9837866ec022b87bc23616fd3b54f6f1d0cc9b99748f48fd1dfcba753",
+      "text": "{{span_1}}Komponenten-Endfertigung{{end_span_1}}{{span_2}}{{item_1125_1}} + {{item_1501_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1502_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.008",
+      "sourceHash": "2dcbff2a6a03465519fc9b2395d6f14c6ca3a396ccc9392a57732cae5ba5b41e",
+      "termHash": "a28b72e748a9553b4862be753dd272593cbb77c04d5601367b6af0b2b1dfa7fd",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1502_1}}{{end_span_1}} — Komponenten vor der Fertigung von „{{item_1503_1}}“ puffern."
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.009",
+      "sourceHash": "989a2f44169c4c1d95e8838a66b9e3e0276e128146aa111aeac0a9fe39d487e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Halte Gerüstmaterial zwischen den Stufen sichtbar. Stoppt die Komponentenproduktion, zeigt die leere Zufuhr für Gerüst, Segel oder Prozessoren, welchen Zweig du erweitern musst."
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.summary.001",
+      "sourceHash": "08b625e73e5dd6cea911ba9a4f4842b17a7352ebae7eaf4af85bcfe9120420f9",
+      "termHash": "9a6eb5c9b3455bc3fcbebb426fc1f33d93dae870d05bbc6a985c02a6447c8f28",
+      "text": "{{span_1}}{{item_1802_1}} {{end_span_1}}{{span_2}}{{span_3}}OPTIONAL{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.001",
+      "sourceHash": "bde291e2a656f9738421534f7f7b5924f074f7d0c72a7d74947a4bc93114c59a",
+      "termHash": "0d4a87623c056dd9a5cae377cf7e96a7e64b4c49b8a4de04a34dfde0b122d466",
+      "text": "{{item_1121_1}}."
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.002",
+      "sourceHash": "25c7dff4c831f7885f4432d6d6888c38457a636b60bfcaa3d2671f46b87ee04e",
+      "termHash": "6b8c7c08a3393d94c0f311103fb50532a59cc86bd79ed62afeca0d75268a4b47",
+      "text": "{{item_1107_1}}."
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.003",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "e10560272a87fadb357239577ce8d2ce14c27775a607d8dee1a28f8da057fcd2",
+      "text": "{{item_1001_1}}."
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.004",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "81f01fd02c8e7cc2b4d9f6ce0dd76fb9a13e5b0da9a8a5e4694b9d56764a8982",
+      "text": "{{item_1006_1}}."
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.005",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "83a34697d74a7ba83985d4ecee367973f1c9879bcaa2bcc6cb70b2eb4cb005cb",
+      "text": "{{a_1}}{{item_1204_1}} aus der wiederverwendbaren Linie{{end_a_1}}."
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.006",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "1180c97681932fe4fe00e7d9295cf4924f14239eaa5c5607ca5a6bfcc080b486",
+      "text": "{{span_1}}Graphit-Zweig{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.007",
+      "sourceHash": "c7fab8edf9d5d6a037e121e994e522ecc01394b2e9819a1e4f894ec00f37f824",
+      "termHash": "30dc47c46b6ff521974b172c292e4617bff8c63d81008a742e26ec3393da2d94",
+      "text": "{{span_1}}{{item_1102_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1102_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.008",
+      "sourceHash": "b49b505589c902d23f5442673713253868dcb6e7769e39140c269c6b78f007ab",
+      "termHash": "c3ace52dcb53795d4ef2d674b81150c498ada562578e5d04c7df816ea39d37fb",
+      "text": "{{span_1}}Ring-Endfertigung{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.009",
+      "sourceHash": "fb3130e02f900774a375d3be936b430d45470de80f25494cdaa4fcceae0efe23",
+      "termHash": "86736b2557b6032d3e9be9aa17ad2b31d69ed0ff5e435ffe9d96d5323dba8bba",
+      "text": "{{span_1}}Brennstab-Endfertigung{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1802_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.010",
+      "sourceHash": "22feeaaf872042e37cc6256c146eedaf157403fc6a180af4e10eaf457a42b7a9",
+      "termHash": "29dc480190f5e218f98bd3fd6a790b76bfbb03e4c33770f3e9b4cda0d9616ba1",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1802_1}}{{end_span_1}} — Brennstäbe vor der Fertigung von „{{item_1503_1}}“ oder dem Einsatz in Fusionskraftwerken puffern."
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.011",
+      "sourceHash": "f1c7bfb4da8acef143dd2316cee321460e0b75b5a9a1e576e7e1d346cdd6d6ac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Dieser Zweig teilt sich Deuterium und magnetische Komponenten mit der übrigen späten Produktion. Verfolge den ersten leeren Eingang, statt die Brennstab-Montagemaschine ungeprüft für den Engpass zu halten."
+    },
+    {
+      "id": "d.sphere.h2.005",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Achte auf"
+    },
+    {
+      "id": "d.sphere.p.006",
+      "sourceHash": "1701c34488608d10a782cce21d1012501a5862379d9c68db167b4e82472d9506",
+      "termHash": "0b659a669dd9dd3cfa91b6b7cf21c3ace63c7c0536e4b4c55effc2b378a91f16",
+      "text": "{{strong_1}}Editorzustand.{{end_strong_1}} Raketen vom Typ {{item_1503_1}} brauchen unfertige Knoten oder Rahmen als Bauziele. Segel werden erst dauerhaft, wenn fertige Rahmen eine ausgewiesene Schalenfläche einschließen."
+    },
+    {
+      "id": "d.sphere.p.007",
+      "sourceHash": "30dc24443ee2ef8d4c56c7fe74887b887c21eadd6871bc68541cf6ab275e0d86",
+      "termHash": "0b659a669dd9dd3cfa91b6b7cf21c3ace63c7c0536e4b4c55effc2b378a91f16",
+      "text": "{{strong_1}}Unterversorgte Zulieferlinien.{{end_strong_1}} Verfolge das erste leere Komponentenlager rückwärts, statt weitere Montagemaschinen für „{{item_1503_1}}“ aufzustellen. Der dauerhafte Weg nutzt mehrere etablierte Zweige zugleich."
+    },
+    {
+      "id": "d.sphere.h2.006",
+      "sourceHash": "362aebe76071982591c85032bf71815323dc5045caa32b51941760408edf4624",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zurück zur Route"
+    },
+    {
+      "id": "d.sphere.p.008",
+      "sourceHash": "d2c779acd6d6ba20dfdf0f1694783252cb440b816540813b35113dea98eca034",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Setze die Route über den {{a_1}}Übergang von Receivern zu Antimaterie{{end_a_1}} fort, sobald du bereit bist. Dauerhafte Bauten dürfen in beliebiger Größe parallel weiterwachsen. Dieser Übergang legt keine Fertigstellungsbedingung für die Sphäre fest."
+    },
+    {
       "id": "a.tech-sheet-title.h2.001",
       "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",

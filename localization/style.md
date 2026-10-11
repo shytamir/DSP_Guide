@@ -112,6 +112,12 @@ Interstellare Logistikstation and PLS as Planetare Logistikstation on first
 relevant use. Quote protected adjective-bearing names when case would otherwise
 require changing the native label; distinguish Motor from Elektromotor.
 
+Receiver/orbit labels verified in the same German tables are Photonenerzeugung,
+Fortlaufender Empfang and Aut. Umlaufbahn. The photon-conversion recipe is
+Masse-Energiespeicher, not a literal translation of Photon Materialization.
+Source-owned numbers retain English separators; the German build-card assumptions
+explain that commas group thousands and points mark decimals.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 
