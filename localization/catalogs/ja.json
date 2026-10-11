@@ -6621,6 +6621,1506 @@
       "text": "準備ができたら、{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}へ進みます。常設構造はどの規模でも並行して造り続けられます。この戻り先は、スフィアの完成条件を定めるものではありません。"
     },
     {
+      "id": "e.warp.h1.001",
+      "sourceHash": "2d93621b8a2162c2b14c9ef13a0eacf5521e6d8f01f70193f86d33f75b15d595",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}任意の機能{{end_span_1}} {{a_1}}{{img_1}}[ワープ]{{end_a_1}} — 他恒星系の資源拠点を造る"
+    },
+    {
+      "id": "e.warp.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 現在地"
+    },
+    {
+      "id": "e.warp.p.001",
+      "sourceHash": "2a3b191ed48a103787ea4a5da64168e4e0980099ef5128ba6267efe8eaa9f436",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}この節が役立つとき：{{end_strong_1}}見つかった希少資源で、今取り組んでいる作業を簡略化できるとき。{{br_1}}{{strong_2}}今取り組むこと：{{end_strong_2}}有用な希少鉱床を一つ、安定した星間輸入につなげる。{{br_2}}{{strong_3}}これでできること：{{end_strong_3}}今の生産工程を短くし、後の遠隔拠点にも使える手順を身に付ける。"
+    },
+    {
+      "id": "e.warp.h2.002",
+      "sourceHash": "f9f1813928ae6ed79315d43c79bab163f1d82b7bd58b9043fe52d77d232ec91a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "遠征の概要"
+    },
+    {
+      "id": "e.warp.p.002",
+      "sourceHash": "34abd71cfb17b184535c462a4e48c54e9cada691b0adbc276d05419339456255",
+      "termHash": "2ebd86e4ca604b1c66affeaf62e6e205c93d5971054ff55d2d685a423abccf2d",
+      "text": "本拠地の恒星系の外には、役立つ希少資源が待っています。今必要な生産ラインの手間を減らせる資源を選び、小さな拠点用の荷物を積んで、自分で向かいましょう。供給元を造り、最初の荷物を持ち帰ります。その後、緑マトリクスで{{item_1210_1}}を安く作れるようになったら、手運びを{{item_5002_1}}に置き換えます。"
+    },
+    {
+      "id": "e.warp.p.003",
+      "sourceHash": "024e0d0a26042b3ecbfbd67f66b9c903e2873cfc1e75f9156e2ecb8ed00dbd73",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ワープは近道であり、必須の寄り道ではありません。{{end_strong_1}}解決する問題を具体的に挙げられるときに出発しましょう。"
+    },
+    {
+      "id": "e.warp.blockquote.001",
+      "sourceHash": "25fc990fe5edaf9437b86cb568d93e45b5d8ac8a8be374c6b973d9b8143f3c62",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}費用にも注意してください。{{end_strong_1}}星間拡張は、実用的なクリアルートから研究、マトリクス、建物、燃料、注意を振り向ける作業です。星図が魅力的だからではなく、具体的なボトルネックを取り除けるからこそ、この近道を選びましょう。"
+    },
+    {
+      "id": "e.warp.p.004",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横にスクロールすると全列を読めます {{fact_1}}"
+    },
+    {
+      "id": "e.warp.attr.001.aria-label",
+      "sourceHash": "8ee4b6cb92ebea401e82ec83c37ab8e6352e63e10f5ab79ed7a91ae1cb9fe5c8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "遠征に必要な能力"
+    },
+    {
+      "id": "e.warp.th.001",
+      "sourceHash": "bac2b687eff5f08bac8e1dd382087da7c8570865c2ae5174740ed46f6c4a3e3e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "遠征能力"
+    },
+    {
+      "id": "e.warp.th.002",
+      "sourceHash": "8206aaaa1d9523f5308bbf61dc357df7807f8e0ba702b0c0a774abb513f30bac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "e.warp.th.003",
+      "sourceHash": "08c1fbe7dfbcc394f75c678ae394be9e4a034865f9fa34d3a1c3a10a0ae19365",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "研究の到達点"
+    },
+    {
+      "id": "e.warp.td.001",
+      "sourceHash": "af18749ffe7d8d9031c21f6e74fd2ff07f4c320bb35302468df6c7ccded0fd63",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}近隣の調査{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.002",
+      "sourceHash": "2d333c74b637b7bb7dab418a714763075a37949e946310ea8192604e7220f5f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目的地を選ぶ前に、近隣恒星系とその資源を調べる"
+    },
+    {
+      "id": "e.warp.td.003",
+      "sourceHash": "a1d77803c8b0dbcb432231599685cc526a609ae1a12b8243f981c59153af50d4",
+      "termHash": "e2427b5948c9051ad7843121f5d2c2f6735852edf241e0626b152a739ef25bce",
+      "text": "{{tech_4103_1}}まで進める"
+    },
+    {
+      "id": "e.warp.td.004",
+      "sourceHash": "57191d12c1d84012e415a57e87857e685685e302a64c326613c704af4bd155fb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}メカのワープ{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.005",
+      "sourceHash": "fbe91b033f5c0d2e99af4a3436979fa1891db6848dc3f382b862aa5ccfeff284",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "イカロスが目的地を調査し、拠点を造り、最初の積み荷を手運びで持ち帰る"
+    },
+    {
+      "id": "e.warp.td.006",
+      "sourceHash": "fd78fcf279e756870656fbb8b8978892d468ecf03ebf1d1c83b8db7e0129cb86",
+      "termHash": "8db693a3c2fc9504a1630120571e31c511663a8fa424d5aca5585bf90c5a0e39",
+      "text": "{{tech_2904_1}}まで進める"
+    },
+    {
+      "id": "e.warp.td.007",
+      "sourceHash": "af0577eb582785ef2fa45051b4f96ac976f5abe77026db7ae55d001b05af51dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}輸送船のワープ{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.008",
+      "sourceHash": "517424727f0cc99102962ced7a5930ee83a946593900468b408c8c53a0e81df4",
+      "termHash": "a2ce7fa41d3f2de1f9f95cd21cfe346affb8759af36ad2adece836bfd73fc552",
+      "text": "{{item_5002_1}}が手運びを代行し、ILS 間で継続的に輸送する"
+    },
+    {
+      "id": "e.warp.td.009",
+      "sourceHash": "613d6afaf0679f0a206c819fbb96078f1fbd52da3628307fd01eda498d74df91",
+      "termHash": "9f5ee5e21df1eeae61e45cc5ba7a8cfbbb6e3198d60ddb5e5eb7644be34b7850",
+      "text": "{{tech_3404_1}}まで進める"
+    },
+    {
+      "id": "e.warp-prepare.h2.001",
+      "sourceHash": "4880a75205bec0de8e97be7e1bd5cb8bd10a42914bc599fefde5987e6da42067",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 遠征を準備する"
+    },
+    {
+      "id": "e.warp.p.005",
+      "sourceHash": "4233c0f74ab10267f4c06356aff58c03eed8a5436383c55fc1980a182b2a1fc1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}開始条件：{{end_strong_1}}見つかった希少資源で、今必要なラインの手間を減らせること。{{strong_2}}次へ進む条件：{{end_strong_2}}目的地を選び、メカのワープを解放し、必要数だけの空間歪曲器と拠点用の荷物をそろえたこと。"
+    },
+    {
+      "id": "e.warp.p.006",
+      "sourceHash": "c44c0dd2e7d249692d1163e9d00d772b49f8059e2b1685337b248634515378f4",
+      "termHash": "e2427b5948c9051ad7843121f5d2c2f6735852edf241e0626b152a739ef25bce",
+      "text": "{{strong_1}}訪れる価値のある場所を調べます。{{end_strong_1}}宇宙探索 レベル {{fact_1}}は ILS で完了しています。次は{{tech_4103_1}}を研究し、六光年以内の近隣恒星の資源情報を確認します。荷物を造る前に候補を比較しましょう。最初の目的地には、今必要なラインの手間を減らせる希少資源が最適です。"
+    },
+    {
+      "id": "e.warp.p.007",
+      "sourceHash": "11559a6feb3cbaa667cab01938007d3905b180fb899f5185ea61d7c551ca8790",
+      "termHash": "f1d9a61d96d381b19716c2677a6f77b86e9ceec52054783884f7ade99ee31dbb",
+      "text": "{{strong_1}}メカのワープを解放します。{{end_strong_1}}緑で{{tech_1704_1}}を済ませていなければ、先に完了します。続いて{{tech_2903_1}}、{{tech_2104_1}}を完了し、{{tech_2904_1}}まで研究を進めます。遠征の準備中に、実用的な{{tech_2304_1}}のアップグレードも進めましょう。収納列が増えるほど、見学だけで終わらず最初の持ち帰り量を増やせます。"
+    },
+    {
+      "id": "e.warp.p.008",
+      "sourceHash": "4aa9dfaa3edcd4b61fc2f454e64104cb29de082a2e0d5580d9aeec64061b4245",
+      "termHash": "90bc509f868e5bffb4ce6347dc5513aabb4b477dae7a62b466568a1e97464a4e",
+      "text": "{{strong_1}}出発用の建設用品工場を広げます。{{end_strong_1}}{{item_2309_1}}を追加し、{{item_3005_1}}、{{item_1609_1}}、{{item_3007_1}}の在庫を保ちます。拠点には、選んだ資源を加工し、自動輸送が役立つようになるまで持ちこたえる能力が必要です。"
+    },
+    {
+      "id": "e.warp.p.009",
+      "sourceHash": "fed8a17b7990e2b794375ad956d2586ddb9b20efe60000a528480e0adb887bec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}宇宙で高速移動を始める前に操作を確認します。{{end_strong_1}}星図で目的地を指定し、マーカーを照準付近に保ち、ワープ中は {{key_1}} で進路を修正します。{{key_2}} でワープを開始・終了します。目的の恒星系に近づくとゲームがイカロスを減速させるため、早めに進路を合わせて接近しましょう。通り過ぎてから慌てて修正する必要はありません。"
+    },
+    {
+      "id": "e.warp.h3.001",
+      "sourceHash": "0815d7262ba72b8d02ecc68ce9f39ef8e180c42ad0097c2e78b709ed4b597716",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "近道を選ぶ"
+    },
+    {
+      "id": "e.warp.p.010",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横にスクロールすると全列を読めます {{fact_1}}"
+    },
+    {
+      "id": "e.warp.attr.002.aria-label",
+      "sourceHash": "fef3f51e1bfb6c060a9e2d124617a4b95b0a5e0655cc9142021b8f0d1f92dc27",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "希少資源"
+    },
+    {
+      "id": "e.warp.th.004",
+      "sourceHash": "1aea517dad412f3850da182509d6bbe0c11fe075c3b162575639fb90a4d5f82f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "資源"
+    },
+    {
+      "id": "e.warp.th.005",
+      "sourceHash": "ac138e9c7cf7182f3cd863aa437e94f27c26a214f99b23ca9794b6167e3f4b4b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "得られるもの"
+    },
+    {
+      "id": "e.warp.th.006",
+      "sourceHash": "1bbc5f3e32018fefa98fdedad224a44dcd2915e001621a670f2660e5b3b57103",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "狙う主な理由"
+    },
+    {
+      "id": "e.warp.th.007",
+      "sourceHash": "101370002885b51149e756fd484cd99402c1a0d91c86160f1ab3775171467d24",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "入手方法"
+    },
+    {
+      "id": "e.warp.th.008",
+      "sourceHash": "f15467bb153c9ad2625a3b3acc31ff1458a94c58c09c064c77b885daf8ea6584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "省ける工程・変わること"
+    },
+    {
+      "id": "e.warp.td.010",
+      "sourceHash": "006e1c7481c822e3ada77a068d671e75430415b38f1cccf54b2afb259b88256a",
+      "termHash": "e8d6fc058fe7ca41291ca201294033fb18e6b59b113458073d5b188eaf77122c",
+      "text": "{{strong_1}}{{item_1117_1}}（採掘）{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.011",
+      "sourceHash": "9c578fc240a52816515a2c02987f89353fb1c75a2ef907e6a0673895437cdb6e",
+      "termHash": "b8f8adfb6ee1c30c45c52fa14b8284b50d908aa6440a0fbba1da0dcc78811163",
+      "text": "{{strong_1}}{{item_1118_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.012",
+      "sourceHash": "2e2905aec933392aa04d11b77915f53bd0f69e9a78b99afe28976e2b2bba14a4",
+      "termHash": "e8d6fc058fe7ca41291ca201294033fb18e6b59b113458073d5b188eaf77122c",
+      "text": "{{strong_1}}序盤の有力候補：{{end_strong_1}}{{item_1117_1}}の合成で最も長い工程を省けます。"
+    },
+    {
+      "id": "e.warp.td.013",
+      "sourceHash": "396a3fc84ef5fd428f96068cc5e37db07f1b3da6e1a864627a2e24940efd1f6d",
+      "termHash": "e8d6fc058fe7ca41291ca201294033fb18e6b59b113458073d5b188eaf77122c",
+      "text": "{{item_1117_1}}の鉱脈を採掘"
+    },
+    {
+      "id": "e.warp.td.014",
+      "sourceHash": "328c84bfb6b6dc0f4b31726d8abd8fe297aae19d164a0d87f1f1f0ea8b3e58c5",
+      "termHash": "ecd0bbe09f92aeec571d5418353bec90ffd2455269c44238088fbf8303a10203",
+      "text": "{{item_1118_1}}に直接供給し、{{item_1115_1}} + {{item_1114_1}} + {{item_1000_1}}の工程を省きます。"
+    },
+    {
+      "id": "e.warp.td.015",
+      "sourceHash": "57e3ca20463c497f1620c6125bc69ba1608f3270c506c7a7156e47d15916a053",
+      "termHash": "5e6be1483b380c2bbfeb1581ba590ef3a75820d438a3624483a55e39961617a4",
+      "text": "{{strong_1}}{{item_1116_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.016",
+      "sourceHash": "3b0f1332f562ffe4c45fd4530fa9520b93f1ab21bde55aa72324d5f495981ce6",
+      "termHash": "1e5097750dc4edace401f59fd1bd3bae0136e1dabccacef9477e8daece44fb65",
+      "text": "{{strong_1}}{{item_1107_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.017",
+      "sourceHash": "852d37b851ce58aff8f859e8feebdb0458c3a7fbce7f06384683cd176ca718b3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}序盤の有力候補：{{end_strong_1}}化学系統一つを、汲み上げと輸送だけに置き換えます。"
+    },
+    {
+      "id": "e.warp.td.018",
+      "sourceHash": "67b1ef2ca29c0eac08e0c25f976b6fae2b7785e6561efc567deccef40cb9bb70",
+      "termHash": "f9b038a4acf62a283aa907e311e793cdb10a376cf88b74cfcc74974fc8b51d06",
+      "text": "{{item_1116_1}}の海に{{item_2306_1}}を設置"
+    },
+    {
+      "id": "e.warp.td.019",
+      "sourceHash": "a23880ab61360325da451e152d11db549bd1e5b6da6a22eaeaa2910738892a9c",
+      "termHash": "c507a3e607ce887ffa5d7a2c7f0fcff4131b475bbb0fe73880b797db3198a2c5",
+      "text": "輸入した硫酸を使う箇所では、{{item_1114_1}} + {{item_1005_1}} + {{item_1000_1}}による硫酸の生産を省けます。"
+    },
+    {
+      "id": "e.warp.td.020",
+      "sourceHash": "f889553438b052260af15aa57ab6310fb543b5c3276c1c378fcc4f307dc75ca7",
+      "termHash": "41be26d124c14fd2dbae109c06e399d98339c1c3b6cc54000f0301a16cea6e33",
+      "text": "{{strong_1}}{{item_1011_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.021",
+      "sourceHash": "4a081285e0d65204dacbb2aab814dc5fb0759c1e294d61d4df69778ad38beba5",
+      "termHash": "e9757b2b3d05740269dbd82785d3dfd9118b45e5e698039b0fa74c232c05f278",
+      "text": "{{strong_1}}{{item_1123_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.022",
+      "sourceHash": "71543e70bec55412f3d9d7a7097234151a4b3b2d8871527c51ba29fc8f9b76eb",
+      "termHash": "e9757b2b3d05740269dbd82785d3dfd9118b45e5e698039b0fa74c232c05f278",
+      "text": "{{strong_1}}{{item_1123_1}}不足に有効：{{end_strong_1}}特にセイルと終盤の研究で取り合いになるときに役立ちます。"
+    },
+    {
+      "id": "e.warp.td.023",
+      "sourceHash": "e9ca26cda346e2d89d6ea3b99b7ef18277da9d1594cd2eeb0727e634c261f9b8",
+      "termHash": "fe3aa6b8aa0f3a629f691ee0f48e8f530c69886e628a99fe521754537f46e033",
+      "text": "{{item_1011_1}}の鉱脈を採掘するか、{{item_2105_1}}から輸入"
+    },
+    {
+      "id": "e.warp.td.024",
+      "sourceHash": "36b6b6ec6b710519643e4d798689c6f638e534a85aceeb95840f94f0454642c1",
+      "termHash": "ad76249c6764ddc85e294322d9f21cf7d1ffa3cdfcf6b6524fc58f149aea4996",
+      "text": "{{item_1123_1}}を直接作り、同時に{{item_1120_1}}も出力します。"
+    },
+    {
+      "id": "e.warp.td.025",
+      "sourceHash": "e5940a02de6a082ec2e9cae693b94ea97d6eb55c93add66165aab72859134b2a",
+      "termHash": "af4ddf0382df0adb2afe1b55c6ade6ae8991c81583cea0d4aa0d929d1f2eb7b1",
+      "text": "{{strong_1}}{{item_1012_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.026",
+      "sourceHash": "a7bc142a57081f0704a7a11a94b64c35911bd1ac2f736f944429553bcbe9d959",
+      "termHash": "c12fe0c4c03bdb7ef1f396f3fd43c8ebd416cf52071a5dde7266ea3bc50bde69",
+      "text": "{{strong_1}}{{item_1112_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.027",
+      "sourceHash": "ec6f8b81071d68bf752855a1fa25d6e3f7261d2eb53665738a78670d48fbfd09",
+      "termHash": "c12fe0c4c03bdb7ef1f396f3fd43c8ebd416cf52071a5dde7266ea3bc50bde69",
+      "text": "{{strong_1}}便利な短縮：{{end_strong_1}}実際に{{item_1112_1}}の需要があるときに、工程をすっきり省けます。"
+    },
+    {
+      "id": "e.warp.td.028",
+      "sourceHash": "b248ed4709d5add9f581237f13ee820b593dc24752476bef4758b04f562239b3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "キンバーライトの鉱脈を採掘"
+    },
+    {
+      "id": "e.warp.td.029",
+      "sourceHash": "e49c4077e11f3c3e6441af21405b9a8025abf8035e884f8d9afccb79d55080a6",
+      "termHash": "4242b601297d8c11dbac8f7cb41195986b89bd4191903fe584571328d8a7fc9d",
+      "text": "鉱石一個を精錬して{{item_1112_1}}二個を作り、{{item_1109_1}}を省きます。"
+    },
+    {
+      "id": "e.warp.td.030",
+      "sourceHash": "ed30a78975752a47ab9c28094acedf389b82493e308748579e054624ad3a2f23",
+      "termHash": "91c2a0b1aa28d83d0288e7ee75e46af3c83a385acf9b3ccefb26114d5b2c7db0",
+      "text": "{{strong_1}}{{item_1013_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.031",
+      "sourceHash": "fd4c7cb85ae18986e1591fcbbb05a6893da638b5b86468037e24838906f28dc1",
+      "termHash": "a6bfbae9e329497cfca880f8805287dbcb36376b398fdd26d51797cdc588c4f7",
+      "text": "{{strong_1}}{{item_1113_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.032",
+      "sourceHash": "0bae64d40daad0ee0484daf4ff637ece8c804f020db9d38164c6ba65ed06ebe1",
+      "termHash": "a6bfbae9e329497cfca880f8805287dbcb36376b398fdd26d51797cdc588c4f7",
+      "text": "{{strong_1}}便利な短縮：{{end_strong_1}}{{item_1113_1}}を多く使う生産で、シリコン加工の手間を省けます。"
+    },
+    {
+      "id": "e.warp.td.033",
+      "sourceHash": "735f8b288c144f2344e9ddd5251fc12fd1039ba50e3d74b847447ae91205d10d",
+      "termHash": "91c2a0b1aa28d83d0288e7ee75e46af3c83a385acf9b3ccefb26114d5b2c7db0",
+      "text": "{{item_1013_1}}の鉱脈を採掘"
+    },
+    {
+      "id": "e.warp.td.034",
+      "sourceHash": "6037d316e95ca8156b7b53f2712f14f772606c8b8eeb6c32edf68673ab214a3e",
+      "termHash": "9974796d191bf101dedc4a84ae0099c23079bb110b9c251c38d2f4985d780855",
+      "text": "組立機で鉱石一個から{{item_1113_1}}二個を作り、{{item_1105_1}}を省きます。"
+    },
+    {
+      "id": "e.warp.td.035",
+      "sourceHash": "b2c63207192023f7e619a12dc88e1f5a91eaba0f735c7b5fafd7ae2d0c61d7ad",
+      "termHash": "76ea98c635a0bd68b025e6587438ef8c521454017769178d110be2d796e199f5",
+      "text": "{{strong_1}}{{item_1014_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.036",
+      "sourceHash": "334545fb31c84c3a720e5a65977b356e05faa3b385ebbb0e1e50a02678d28bac",
+      "termHash": "aa41eabe90ae3e3c329a174c4a9351c19054ad3f920cfbda28a8ea4eaad9ec16",
+      "text": "{{strong_1}}{{item_2316_1}} / {{item_1126_1}} / {{item_1404_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.037",
+      "sourceHash": "1a18129f717a2bcd15ee4e4311594dfa0096a45f78eb2b58fe89ccce331f52d3",
+      "termHash": "9e1374c3f872db8e2eab3b2da4b22fa117a67f3269b41843a4d9c0c326d9abfb",
+      "text": "{{strong_1}}今後の拡張に有効：{{end_strong_1}}{{item_2316_1}}で、その後の資源惑星の開発が大幅に速くなります。"
+    },
+    {
+      "id": "e.warp.td.038",
+      "sourceHash": "a72376469021d92af004e3aa34e142f3f21087d5023a866b5c88f6898fbabd21",
+      "termHash": "76ea98c635a0bd68b025e6587438ef8c521454017769178d110be2d796e199f5",
+      "text": "{{item_1014_1}}の鉱脈を採掘"
+    },
+    {
+      "id": "e.warp.td.039",
+      "sourceHash": "039daad09dbc6be6976223919e4452129a1345a24d8365ba8501f943a4ff956f",
+      "termHash": "790ec55dcbef2ff74d52ef4972b094a70b3e23a8865f97736274c11b65200a68",
+      "text": "高度な採掘設備に使えるほか、{{item_1126_1}}の{{item_1118_1}}や、{{item_1404_1}}の{{item_1111_1}}を置き換えられます。"
+    },
+    {
+      "id": "e.warp.td.040",
+      "sourceHash": "6b5e8bdf76c1a535894fc01a103abdb4153f4bd157c811a2cf0c7dc973a09383",
+      "termHash": "7b55fbbbad92b3dd0bed0696236e590abc9cd424d0848774299dba964f042baf",
+      "text": "{{strong_1}}{{item_1015_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.041",
+      "sourceHash": "d82e2aa3bbac9e35032f44bd4a98cb01e22b006bfb0b2d3df34cd4d9648b8e1e",
+      "termHash": "c8c54b37399e608bfcdfb351491c1aacdf42cce7e2ae12634d5a62e3d295e1e3",
+      "text": "{{strong_1}}{{item_1124_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.042",
+      "sourceHash": "ec505de15a2cdeb7dc9e6ff4d2a89c2b42d5b4e1ecc5925c8c3b3989d1a32000",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}終盤の有力な近道：{{end_strong_1}}幅広く使う中間製品から、従来の二つの入力を省けます。"
+    },
+    {
+      "id": "e.warp.td.043",
+      "sourceHash": "16100100a5db0260177eb6cfc012f6412496373552778906d6a21d1a1efa9701",
+      "termHash": "7b55fbbbad92b3dd0bed0696236e590abc9cd424d0848774299dba964f042baf",
+      "text": "{{item_1015_1}}の鉱脈を採掘"
+    },
+    {
+      "id": "e.warp.td.044",
+      "sourceHash": "4eb241badc2986248f94d3e7d2f3dc7421239a4fe182c1d0beb3b17b6b76e886",
+      "termHash": "9b88a1676893b054d45f13171f2b810aff828940b33ae3fe24ad807e0277ac66",
+      "text": "{{item_1123_1}}も{{item_1106_1}}も使わずに{{item_1124_1}}を作れます。"
+    },
+    {
+      "id": "e.warp.td.045",
+      "sourceHash": "7333395f12f6517523f121b9d2eef00b8818e9f3efba3878aabb5758d20cced6",
+      "termHash": "f65037a82fa35d28481a5d69ed507453806a0089a389ef44a8b23f026e86aa88",
+      "text": "{{strong_1}}{{item_1016_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.046",
+      "sourceHash": "c8a1a36ca033d2462daf3cda25f3322f86182368fd28da27cc44bc902f789a83",
+      "termHash": "a8e256b7e6902c9ad67a1c928658810b9dbaf12a22194fe5062b713557c170c3",
+      "text": "{{strong_1}}{{item_1206_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.047",
+      "sourceHash": "a28e7e259005aa6c77bc8f42a4cfb088cbe2b786503587b31e73feba5df70345",
+      "termHash": "5743e2b63fcb04c5925e50b3751952d66f21308e9e9fd234bd0cf60e75880d3e",
+      "text": "{{strong_1}}まず温存：{{end_strong_1}}埋蔵量が特に少なく、{{item_2315_1}}や他の高度な建物でも使います。"
+    },
+    {
+      "id": "e.warp.td.048",
+      "sourceHash": "7bb5489a9513b4f8330d77e5ef60d0059183cfdee711bd1eda75f3f5e709b5d4",
+      "termHash": "f65037a82fa35d28481a5d69ed507453806a0089a389ef44a8b23f026e86aa88",
+      "text": "鉱床を見つけて{{item_1016_1}}の鉱脈を採掘"
+    },
+    {
+      "id": "e.warp.td.049",
+      "sourceHash": "2b0ec52abdea521b2bde920e35ba2c9661dd5db42b28e0be22e2527baa63b936",
+      "termHash": "bb74f2eb9b3742571b38d3bf898c89b003008e6f35d42d0989c959f4221a0460",
+      "text": "{{item_1204_1}}や{{item_1123_1}}を使わずに{{item_1206_1}}を作れます。大量生産に回す前に、用途を決めて在庫を確保してください。"
+    },
+    {
+      "id": "e.warp.h3.002",
+      "sourceHash": "bd884b05b0e223c1921f67081d9e12479e3dc7d0e3882c62cf6a52872d60c303",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "空間歪曲器を必要数だけ作る"
+    },
+    {
+      "id": "e.warp.p.011",
+      "sourceHash": "895aea7263f81cd0e56c341660f96ca26c6951d6b0fb28b599eed8386f8cb36a",
+      "termHash": "22fbbba266c7d56d36c3fb6f4defd057cdaf813372ecf25c7ad2dec0be26ba91",
+      "text": "工場から{{item_1209_1}} {{fact_1}} 個を取り、合成機で{{item_1210_1}} {{fact_2}} 個に変えます。緑の研究前はレンズ一個から空間歪曲器一個なので、完成分をイカロスに積んだらそこで止めます。残りのレンズは研究と後の設備のために残してください。"
+    },
+    {
+      "id": "e.warp-outpost.h2.001",
+      "sourceHash": "155b509634b119b6c415b7598ca98df000ade6790e9eb9d7c701b4968ab75027",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 供給拠点を造る"
+    },
+    {
+      "id": "e.warp.p.012",
+      "sourceHash": "29018af0b96d89c2a47ba3a75117182f24692a4243a638a89d5f5bb5e4475537",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}開始条件：{{end_strong_1}}目的地、メカのワープ、必要数だけの空間歪曲器、拠点用の荷物がそろっていること。{{strong_2}}次へ進む条件：{{end_strong_2}}遠隔拠点で加工したものが無通電の供給側ステーションに入り、最初の有用な積み荷を本拠地に持ち帰って蓄えていること。"
+    },
+    {
+      "id": "e.warp.p.013",
+      "sourceHash": "caad7dde5f02ae502e50de0870ddf6b071d9f406b4c6c672957032b08d7a6f1d",
+      "termHash": "6a29b2a06cd887c8181fa8d1eddb9305d9766dc506fc8959d8ec0574925299ac",
+      "text": "現地へ飛び、建設と加工を整えて帰ります。選んだ鉱床に採鉱機を置き、希少資源のレシピが実際に必要とする場所に、溶鉱炉、組立機、{{item_2309_1}}、{{item_2306_1}}を使います。加工済みの出力を現地に蓄え、青色の{{strong_1}}星間供給{{end_strong_1}}に設定した無通電の ILS へベルトで入れます。本拠地の輸送船が来るのを待てるため、このステーションからはまだ何も出発させる必要はありません。"
+    },
+    {
+      "id": "e.warp.th.009",
+      "sourceHash": "44a424362ecfbd32f9c5cf03792f7312a947b7b55167219075fecfe4e26e9059",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "持ち物"
+    },
+    {
+      "id": "e.warp.th.010",
+      "sourceHash": "2abd1eb96a503ea81c797dfd836e6185be64afc99b759db69a32d3e34632c39c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目的"
+    },
+    {
+      "id": "e.warp.td.050",
+      "sourceHash": "735593817ab9a8efe820995fb2248cead553291325cefa077a63dffeb88ee6ca",
+      "termHash": "9c57b539fc4ee03b94a0ec6ff48979e5e0056d5d69a9a84c3b01260f0e318059",
+      "text": "{{strong_1}}{{fact_1}} {{item_1210_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.051",
+      "sourceHash": "395655c1bf9b4fcb12e1520378ca310cffa9023dc3d7b87b3f61dad4329c1082",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "六光年の調査範囲内での往復と、操作ミスや近隣への移動に備える余裕"
+    },
+    {
+      "id": "e.warp.td.052",
+      "sourceHash": "d501cbf342825b70f4ba1272dc8e7887ebf0a0dd31e51c42225cf7fd5dd17de0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}採鉱機と加工設備{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.053",
+      "sourceHash": "075418b5e9686693368c322926be07aed8c637a586bbe8688fee6856c1017355",
+      "termHash": "14b27247ed3c40d0a27a8a7daf0085f791f5ea09a690fd24a6665fe3e6071d03",
+      "text": "十分な採鉱機と、選んだ資源に必要な溶鉱炉、組立機、{{item_2309_1}}、抽水所"
+    },
+    {
+      "id": "e.warp.td.054",
+      "sourceHash": "51b8f3ac722f57f707f989af35d095a1bd1faa2a983ba0e93027b976baa42fb9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ベルト {{fact_1}} 個{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.055",
+      "sourceHash": "4df189d047e19b34546c074a065724a79a7844802e866a89598002722c32d908",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本格的な採掘場と、未知の地形で必要になる長い搬送経路"
+    },
+    {
+      "id": "e.warp.td.056",
+      "sourceHash": "1ac9dad13f6e6a6b72ef85075f3fda21d2d400ee9b8cbe91b81da6a577d1c25f",
+      "termHash": "6bb47a2f134f15c3979a2f25f1927854f0b207269f21b167f4e750d0740fe6a0",
+      "text": "{{strong_1}}{{fact_1}} {{item_1131_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.057",
+      "sourceHash": "459aca2a86b48d13d608ec628d42f6b3010ca2d88e8cbc642d4fdb4102e660a5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "鉱脈周辺の厄介な地形を平らにし、供給拠点の場所を確保するための任意の一スタックです。選んだ場所で必要な分だけ使います。資源惑星全体を舗装する必要はありません。"
+    },
+    {
+      "id": "e.warp.td.058",
+      "sourceHash": "bad029d925890ca8e02dc0f50f6fa1ee7c72908c92a2f549b0db90733df5644c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}バッファ在庫用の貯蔵設備{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.059",
+      "sourceHash": "c5aa0332f2c1aa9d71bc92d076d480a1d8d2bb82c7734a2f37f380e4ba4c22e3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "加工設備と供給側 ILS の間に置く、残量の見える予備在庫"
+    },
+    {
+      "id": "e.warp.td.060",
+      "sourceHash": "fbdeda7c2f5cb21f27a4ff9df55df1a6ca56fd7d2e3f94f5739ea59f26bc97bb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ILS 一基{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.061",
+      "sourceHash": "39bbceef1160f4833f6679ce179a6c4abf597809dfb9e83514232b071ff2c262",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "後の輸送船ルートに備える、電力を接続しない星間供給側"
+    },
+    {
+      "id": "e.warp.td.062",
+      "sourceHash": "426e0d9d073d7f571258c2faa7e2c9d1e2911934a6f8643a135c50cc23152cf7",
+      "termHash": "07efa289832e930815bff59c3f730ea1933c9d561bb049d6f2f5e8c233e1ee4e",
+      "text": "{{strong_1}}{{fact_1}} {{item_3005_1}} + {{fact_2}} {{item_1609_1}} + {{item_3007_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.063",
+      "sourceHash": "2443835bfd452e7f84cf40adfa9f66a3e970392dbe3e5f0e4ba2e182a903fbe1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目的地で必要なら、{{a_1}}赤の惑星基地掃討用の構成{{end_a_1}}を一式携行"
+    },
+    {
+      "id": "e.warp.td.064",
+      "sourceHash": "90d0578d9f9e00473adce1fe2370d284e785fffa229643491e81e598bf2047b7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}独立した電源{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.065",
+      "sourceHash": "17c1ca5ccc3e650643e70a53083dfa7dd47f557819454e9f2a0ebe3e92a40a49",
+      "termHash": "195fc4cb05ca9fb73d5e7857bacf9e5a3fbc1bfcaa40c19831e18a5fc6ccfedc",
+      "text": "風力比率が良ければ風力、日照を確保しやすければ{{item_2205_1}}、安定した燃料があれば火力、終盤の小さくまとまる構成ならミニ核融合発電"
+    },
+    {
+      "id": "e.warp.p.014",
+      "sourceHash": "79797eb8652babf1cd46911b8d5726436371b64fad653b22516b08b69ea4f0c8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最初に持ち帰る量に決まりはありません。研究で広げた所持品枠を満たして帰還し、この資源で短縮する標準ラインの脇に上限付きの在庫を設けます。そこへ積み荷を入れれば、一時的な手運びに合わせて既存工場を造り直さずに近道を使えます。"
+    },
+    {
+      "id": "e.warp.div.001",
+      "sourceHash": "0f174cb9fc7184c23ca1b5308897461a243515ba6bbc7b41de8e7695de7c3871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ 帰路で困らないようにします。{{end_strong_1}}予備の空間歪曲器と高性能な燃料をイカロスに残してください。最初の星間遠征で、非常時の計画が「しばらく漂うだけ」だったと気付くのは避けましょう。"
+    },
+    {
+      "id": "e.warp-automate.h2.001",
+      "sourceHash": "467caf5ca83290980610a496c4978e3bfb9fa5b5432f54e2fe0bbdd1b2086777",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 輸送船ルートを自動化する"
+    },
+    {
+      "id": "e.warp.p.015",
+      "sourceHash": "e40d73db14c13e2b05648f048deeaaeecd3e0d8d60733c46604f401931b03e2f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}開始条件：{{end_strong_1}}引力マトリクスで効率よく空間歪曲器を作れ、輸送船エンジンをレベル {{fact_1}}まで進めていること。{{strong_2}}完了条件：{{end_strong_2}}本拠地の通電した ILS が輸送船と空間歪曲器を使い、イカロスなしで遠隔の供給側から輸入できること。"
+    },
+    {
+      "id": "e.warp.p.016",
+      "sourceHash": "d0b2813934f6596dd409efb5fc58fbf5509115b770e77c066294e031cc8258a0",
+      "termHash": "feabd1522d416275dccd69cdad87180ca55c9b3166395e7319b1784d324e61a8",
+      "text": "{{tech_1705_1}}の研究後は、効率のよいレシピで{{item_6005_1}}一個から{{item_1210_1}}八個を作れます。{{item_6005_2}}をベルトで組立機一基へ送り、できた空間歪曲器を青色の{{strong_1}}現地供給{{end_strong_1}}に設定した PLS へ入れます。{{item_5001_1}}を配備し、本拠地の ILS のオレンジ色の{{strong_2}}現地要求{{end_strong_2}}枠へ届けさせます。ステーションは最初の {{fact_1}} 個を専用の空間歪曲器予備枠へ自動で移します。"
+    },
+    {
+      "id": "e.warp.p.017",
+      "sourceHash": "7a3d00de88a646a3f710b9141eb8e2620f9c26306fd4279ca9b6eaadef4c3ef7",
+      "termHash": "9f5ee5e21df1eeae61e45cc5ba7a8cfbbb6e3198d60ddb5e5eb7644be34b7850",
+      "text": "続いて{{tech_3404_1}}まで研究を進めます。遠隔の ILS は無通電のまま、希少資源を星間供給に設定します。本拠地では同じ資源を星間要求にし、輸送船を配備して、その通電したステーションへ空間歪曲器を供給します。本拠地の船隊が往復して資源を持ち帰るため、拠点側から船を出す必要はありません。"
+    },
+    {
+      "id": "e.warp.h3.003",
+      "sourceHash": "0c51881e9ea599012883547038d4fbc38398a7bd96767ec9315212e9631f4ec6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "三光年ルートの計画上の目安"
+    },
+    {
+      "id": "e.warp.p.018",
+      "sourceHash": "31ece1c29d2b7342dfa7934806992ab8b4612d793e29404beb18b44a59bb152e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "以下の数値は、最初の六光年の調査範囲の半分に当たる、三光年ルートを出発点にしています。実際の距離によって移動時間と貨物の回転は変わりますが、輸送船が一往復に使う空間歪曲器二個は変わりません。"
+    },
+    {
+      "id": "e.warp.th.011",
+      "sourceHash": "f64efd050731027e481c5d129fe13f29a9ff9739fb181c6b1e7036ab6a44463e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最初の構成"
+    },
+    {
+      "id": "e.warp.th.012",
+      "sourceHash": "c14df8d5395f6f9da7fe102d28f5978a86ecc9c19c9fd9963362ba64592a8b1b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "意味"
+    },
+    {
+      "id": "e.warp.td.066",
+      "sourceHash": "625e8aa2812b0e55c092322de4e38b8cbdf77b2bbff55e7ef28d5cc87a4b24cb",
+      "termHash": "a2ce7fa41d3f2de1f9f95cd21cfe346affb8759af36ad2adece836bfd73fc552",
+      "text": "{{strong_1}}{{fact_1}} {{item_5002_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.067",
+      "sourceHash": "11981c959e818e448d9ec9657c82177c927a70e27acb86d869d29fe04b066be1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "平均的な距離の輸入一系統を始めるのに適した船隊です。供給側の在庫が満杯なのに本拠地で不足するなら、ステーションの上限まで輸送船を追加します。"
+    },
+    {
+      "id": "e.warp.td.068",
+      "sourceHash": "b88796b29422fdbfa2ff8df54f5e30b7cc35ca6b888e9fd65278da562ca38b6f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}本拠地の ILS に空間歪曲器 {{fact_1}} 個{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.069",
+      "sourceHash": "4a96d263cb28c89b4dcc083b5e3130dad76f5dee2130fffb1aff211a67837003",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "補充なしで輸送船が二十五往復できます。"
+    },
+    {
+      "id": "e.warp.td.070",
+      "sourceHash": "55664da9951d252342cce8b6b8b7651ddc951c70140be50144362944f50f6fc8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}組立機 {{fact_2}} {{fact_1}} 基{{end_strong_1}}"
+    },
+    {
+      "id": "e.warp.td.071",
+      "sourceHash": "aa3b14a675a806bf2a8170e328edd5007156bf882fd4b1baa107e0b97dc49147",
+      "termHash": "fc8fd10584a77796b792d1b6dbbeb858b74216841e5a9e2e1027e2c533cc2f5f",
+      "text": "稼働中は空間歪曲器を {{fact_1}}{{fact_2}} 生産し、{{item_6005_1}}を {{fact_3}}{{fact_4}} 消費します。PLS の在庫に上限を設け、この便利なラインが緑の研究用材料を奪い続けず、必要量で休止するようにします。"
+    },
+    {
+      "id": "e.warp.p.019",
+      "sourceHash": "446cbcd0c47d2b59d4d5c1012161e5b15b59b0b90372eb9e6203236155118e44",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}長距離ルートがまだ追い付かないなら：{{end_strong_1}}輸送船ハンガー拡張で一隻あたりの持ち帰り量を増やせます。遠距離ルートには強力な任意の増強策ですが、ルートを動かすための条件ではありません。"
+    },
+    {
+      "id": "e.warp.p.020",
+      "sourceHash": "ae530583f181e11f5916a3ab5995ddce62eb9b89e75f25105f833a1bbae15f8c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "実際のルートは、次の順で強化します。ステーションに空きがある間は輸送船を追加し、長い一往復でより多く運びたいときは積載量を増やします。供給元を増設するのは、遠隔拠点の在庫を満たせなくなった場合だけです。増えた船隊に十分な空間歪曲器を供給し、安価な空間歪曲器ラインを増設するのは、出発の合間に PLS の在庫が回復しなくなった場合だけにします。"
+    },
+    {
+      "id": "e.warp.h2.003",
+      "sourceHash": "5ac177bf37bc69fae8e24196927f5fefb145abf39ad93db15f05696a92965672",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "完了条件"
+    },
+    {
+      "id": "e.warp.li.001",
+      "sourceHash": "80ef0d23f6fd2d588a89e6063c2ddc68d1743d220d9d53d21aabc10c4a9a46e7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}選んだ希少資源が、イカロスなしで ILS 経由で届く。 {{end_label_1}}"
+    },
+    {
+      "id": "e.warp.li.002",
+      "sourceHash": "0a8a746ad8efc755b902843309306cc94914efff8499a9eedb69dcc171288b53",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}ルートの稼働中も空間歪曲器の PLS が補充され、緑の研究への供給も続いている。 {{end_label_1}}"
+    },
+    {
+      "id": "e.warp.li.003",
+      "sourceHash": "3fa52c8f07928931102175aeb108de211fd24a8e3ad09cbb4cde2153e3560b14",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}輸入した近道用の資材が、置き換える生産ラインの脇にある、残量の見える在庫へ入る。 {{end_label_1}}"
+    },
+    {
+      "id": "e.warp.h2.004",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次の行き先"
+    },
+    {
+      "id": "e.warp.p.021",
+      "sourceHash": "c1029c9e756f804be5eed0d00593dc840347c6adb9064e58ca089320778c26c1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "紫から早期の拠点開発に来た場合は、目的の近道が動き始めたら{{a_1}}{{img_1}}[緑]{{end_a_1}}へ進みます。後の段階から、または直接来た場合は、ワープの決まった戻り先はありません。今の作業に合う節へ戻ってください。"
+    },
+    {
+      "id": "e.logistics.h1.001",
+      "sourceHash": "ce293b357f481a7bb5994baefffca626f9911b892bd7b8b619d24f5ac6c120a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}任意の機能{{end_span_1}} {{a_1}}{{img_1}}[物流]{{end_a_1}} — すべてを運ぶ物流設備を自動生産する"
+    },
+    {
+      "id": "e.logistics.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 現在地"
+    },
+    {
+      "id": "e.logistics.p.001",
+      "sourceHash": "915210556b9955084d717bc41938957e25df9c5bbedd1ec87b1e2a81993aa96e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}この節が役立つとき：{{end_strong_1}}拡張のたびに、同じステーションや輸送機を手作りしに戻っているとき。{{br_1}}{{strong_2}}今取り組むこと：{{end_strong_2}}新しい物流網を簡単に設置できるよう、配送機、ステーション、ボット、ドローン、輸送船の生産を自動化する。{{br_2}}{{strong_3}}これでできること：{{end_strong_3}}毎回輸送設備を手作りせずに、繰り返し拡張できる。"
+    },
+    {
+      "id": "e.logistics.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "この段階の概要"
+    },
+    {
+      "id": "e.logistics.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確認項目"
+    },
+    {
+      "id": "e.logistics.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "今の要点"
+    },
+    {
+      "id": "e.logistics.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主な目標{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.002",
+      "sourceHash": "ed6ff7f03b6d0cbcfef946f50e9e9446087f4295462facccbe66d51658d002cc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "近距離配送、惑星内、星間の拡張用に、設備の上限付き在庫を造る"
+    },
+    {
+      "id": "e.logistics.td.003",
+      "sourceHash": "7fa28d7831806b28b868261c098fce00e3baec522892b7d68848ad4898b5179d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}在庫の原則{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.004",
+      "sourceHash": "523f94f39bccb1f9fdc8596b57ea02e8921d76ce405d50caa9bbbd8e5100af34",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "すべての搬出先の貯蔵庫に上限を設ける。一時的に補充する建設用品のラインであり、巨大工場の恒常的な消費目標ではない"
+    },
+    {
+      "id": "e.logistics.td.005",
+      "sourceHash": "2f4c145b97121dc5dd711d42701658ff39b62c76c8e7061d981802041638efc6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}研究の確認{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.006",
+      "sourceHash": "47935f40ba70337dd0c31dfcd1378667787a788c5cc558126cf1cf36b6de7131",
+      "termHash": "5ffaeccae944fa830a9dc1ab66b1ea68d623dd10be9f7bf441b37315f9ffe970",
+      "text": "{{tech_1608_1}} · {{tech_1604_1}} · {{tech_1605_1}}"
+    },
+    {
+      "id": "e.logistics.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}注意する点{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.008",
+      "sourceHash": "6385bd78a2eb0673a8f7ce36df34e83d397348855f092a1f53510b8e3a473bc6",
+      "termHash": "8b0eeabcaa04a15a932388ed28903aa1b880b7bf8f2a6f01353909c48cd7142c",
+      "text": "複数の貯蔵庫が同時に補充されるときの、共用の{{item_1303_1}}、{{item_1206_1}}、{{item_1107_1}}、タービンの供給"
+    },
+    {
+      "id": "e.logistics.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}次へ進む条件{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.010",
+      "sourceHash": "1963f6072ad7f31ece509d6ecf1d5944982a6c83dc1d7c1398b45743c7ea9c47",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "六つの在庫が手作りなしで補充され、ルートの設定を一目で把握できる"
+    },
+    {
+      "id": "e.logistics.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目標"
+    },
+    {
+      "id": "e.logistics.p.002",
+      "sourceHash": "452b2b493b64fc98280af34deb989f3a7842a1d1ccf7e68ab2a21ee848bc507a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "工場はすでに材料を運んでくれますが、拡張のたびに同じ輸送設備が必要です。新しい地区を造るたびにステーションや輸送機一式を手作りしているなら、ここで自動化しましょう。"
+    },
+    {
+      "id": "e.logistics.p.003",
+      "sourceHash": "31e672c07f67f6e95877d5cda9950984c667ce82cbbec18c77fb7184ef7679e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "配送機、PLS、ILS、ボット、ドローン、輸送船に上限付きの在庫を設けます。生産ラインは拡張後に補充し、次の一式を取り出すまで止まるようにします。"
+    },
+    {
+      "id": "e.logistics.h2.003",
+      "sourceHash": "bbcb9401d13948fa13ed723b0ce6a7c17ded845a3cf94bb21c8ea08b2693d6cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途に合う物流を選ぶ"
+    },
+    {
+      "id": "e.logistics.p.004",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横にスクロールすると全列を読めます {{fact_1}}"
+    },
+    {
+      "id": "e.logistics.attr.001.aria-label",
+      "sourceHash": "304680e7dae59e72f58d7410ebc1821a31888c599bef306da1597acb93e2b8c2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "物流の種類"
+    },
+    {
+      "id": "e.logistics.th.003",
+      "sourceHash": "8a24a7a3bfce5b29fe0eb1adaac80fd94af591b2fb98b4491cc4987e94099a6e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "e.logistics.th.004",
+      "sourceHash": "c0535220299008f519fca49db6f0cde07dea1fe6026fcc7f82d97e35ae07f2bd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "設備"
+    },
+    {
+      "id": "e.logistics.th.005",
+      "sourceHash": "389f47708769d2361a3c722468478ea0fcb5a9aeab355f8e1158debdec96324b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "つなぐもの"
+    },
+    {
+      "id": "e.logistics.td.011",
+      "sourceHash": "48028c0ec0b31a01681fb84081b641c834873fb3b4090d572c92b91a8415db2f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}近距離配送{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.012",
+      "sourceHash": "9ebe29195f2b001d686e389c92be7cc17424e67cfef3a24009106c700ebfb11c",
+      "termHash": "e2994180bee23ba9b9bf70441014a720e40cea709da1d0c6a2a07f66f7107765",
+      "text": "{{item_2107_1}} + {{item_5003_1}}"
+    },
+    {
+      "id": "e.logistics.td.013",
+      "sourceHash": "46d10ffd32186dd91a596795f749f3d57f1bab979397c4aa3f8e02c1fc8916dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "イカロスと近くの貯蔵庫"
+    },
+    {
+      "id": "e.logistics.td.014",
+      "sourceHash": "d0a0376429897d8025bee0419b5b17366ae475e13e89e1028029a585c24cd049",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}惑星内配送{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.015",
+      "sourceHash": "52a5ac56d889e5f52395b9aff35f6bf950cf37c72e86e75315a440ac08b8b878",
+      "termHash": "9d1ab1e68ae9a0f3aeb1cdee4a08aaf530b2f9db07835476a445a0abfc9fe5a1",
+      "text": "{{item_2103_1}} + {{item_5001_1}}"
+    },
+    {
+      "id": "e.logistics.td.016",
+      "sourceHash": "11d2567e2577acbca00565520065c9c51ddc749f4af8cc841f7469baea1c584d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "同じ惑星上の二か所"
+    },
+    {
+      "id": "e.logistics.td.017",
+      "sourceHash": "dc13c6a61647d3d34bbb6627536347ba45d480996a825c5c06f750a3368ed64d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}惑星内・惑星間・星間配送{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.018",
+      "sourceHash": "a635622af55119b5821c0a2b2c790ab83861983341808befa1aac462abbc1d1b",
+      "termHash": "f1a131d628fffaf9a09d66aa9e13b7a9350541eb1680e591493eba9b31026d6d",
+      "text": "{{item_2104_1}} + ドローン／輸送船"
+    },
+    {
+      "id": "e.logistics.td.019",
+      "sourceHash": "72d56255e3d84d062b0a30dce8ff5afb88efa04cda795ed2598d21ad417c3b5b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "同じ惑星内はドローン、他惑星や他恒星系へは輸送船"
+    },
+    {
+      "id": "e.logistics.blockquote.001",
+      "sourceHash": "97ab54ba22344ba5cc7a693d0c7cd14b2a91acd3ffbcf791b60dc675eecfe1fe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}目的を果たせる最小の物流を使います。{{end_strong_1}}近くの貯蔵庫にステーションは不要で、同じ惑星の二工場に輸送船ルートは不要です。"
+    },
+    {
+      "id": "e.logistics.h2.004",
+      "sourceHash": "527d28077e3014b8eee5661481ebf961f58b9819f8d237e358373b14e00dcdf1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ルートを設定する"
+    },
+    {
+      "id": "e.logistics.p.005",
+      "sourceHash": "3245bf619fb1ec2f3a83f06b6078db7dee88cae2960a496627839b3a7e4e21bf",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "どのルートも両端で同じ品目を設定します。{{strong_1}}供給{{end_strong_1}}はその品目を提供し、{{strong_2}}要求{{end_strong_2}}は物流網に配送を求め、{{strong_3}}貯蔵{{end_strong_3}}はその物流網での輸送対象から外します。"
+    },
+    {
+      "id": "e.logistics.p.006",
+      "sourceHash": "c380c3db318a8bbda215a184aceaf7d023b547154c7cc9cea54f3db212883771",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}現地{{end_strong_1}}の設定は同じ惑星のドローン輸送、{{strong_2}}星間{{end_strong_2}}の設定は惑星間の輸送船を制御します。他の恒星系へ向かう輸送船には空間歪曲器も必要です。"
+    },
+    {
+      "id": "e.logistics.p.007",
+      "sourceHash": "2dad42a3cbd04fb50fc7b914c839304d2bfa1012d5424daa0434dd2af0e626e1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "複雑な原因を探す前に、一方が供給、もう一方が要求になっていることと、輸送機を運用するステーションに必要な電力と設備があることを確認します。反対側にも電力や輸送機が必要なわけではありません。通電した要求側が、無通電の供給側から回収できます。"
+    },
+    {
+      "id": "e.logistics.h2.005",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先に研究するもの"
+    },
+    {
+      "id": "e.logistics.p.008",
+      "sourceHash": "184fefccae7787be765dafe82efb848f0af73037e3a6da26fc4dca6d50ceea5e",
+      "termHash": "5ffaeccae944fa830a9dc1ab66b1ea68d623dd10be9f7bf441b37315f9ffe970",
+      "text": "黄で後回しにしたなら、今{{tech_1608_1}}を研究し、配送機とボットを解放します。{{tech_1604_1}}は PLS とドローン、{{tech_1605_1}}は ILS と輸送船ですでに使ってきました。進行を支えたステーションの補充用在庫を、今度は自動で満たせるようにします。"
+    },
+    {
+      "id": "e.logistics.h2.006",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — どれだけあれば十分か"
+    },
+    {
+      "id": "e.logistics.p.009",
+      "sourceHash": "b07c8e030b4a69bcc6eae46c64829303713e4f957bdfa5dc2a1f663f0a5f6f3f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "上限付き在庫として、{{strong_1}}配送機 {{fact_1}} 基 + ボット {{fact_2}} 機{{end_strong_1}}、{{strong_2}}PLS {{fact_3}} 基 + ドローン {{fact_4}} 機{{end_strong_2}}、{{strong_3}}ILS {{fact_5}} 基 + 輸送船 {{fact_6}} 隻{{end_strong_3}}を保ちます。出力の仕分機をつなぐ前に貯蔵枠を制限し、拡張作業の合間はラインを休止させます。"
+    },
+    {
+      "id": "e.logistics.h2.007",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — 必要な生産設備"
+    },
+    {
+      "id": "e.logistics.p.010",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}各カードは、最初の供給元から目的の製品まで、一つの有用なラインを示します。{{end_strong_1}}全体像を見たいときに開いてください。それ以外は閉じたまま建設を進めて構いません。必須の手順がカードの中だけに隠れていることはありません。"
+    },
+    {
+      "id": "e.logistics.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}すべてのカードを開く{{end_button_1}}{{button_2}}すべてのカードを閉じる{{end_button_2}}"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.summary.001",
+      "sourceHash": "b2f8df362d5a5b5f5bf14db6aa9bca4f5a92ee08ebea63f2512eb5cb278f219d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}近距離配送用の設備 — 在庫：配送機 {{fact_1}} 基 + ボット {{fact_2}} 機{{end_span_1}}{{span_2}}{{span_3}}必須{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.001",
+      "sourceHash": "d2403d652bcad8a94e68176d3f544a33bae6e0e444671fd94002c1287814946d",
+      "termHash": "483537316c585f1c0fffc423ed775d1f1989a68b2d70ec5a3346fea54834cee5",
+      "text": "{{item_1101_1}}。"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.002",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "c17ef55a9c8543214f0579d1c85d7aad7fe2a61bf15bec4533ff9e8a14e44fbc",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.003",
+      "sourceHash": "9270bd50710bd3eab6fd96df42c82f4a0929f35484b37c285a1d0888590e81e4",
+      "termHash": "3317d53f0b1d5b0277cace6172514c506f525807ad3f8bd0295aa064a0855dfc",
+      "text": "{{a_1}}建設用品・物流の{{item_1201_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.004",
+      "sourceHash": "55c077673700a40b71fb5a7b5949166f33aefc3bfdc55f91d71f65b93f02ade5",
+      "termHash": "58695e89097b3e707ece0c7ac828b6b3de20cd9746fe88649257938a1459f3e0",
+      "text": "{{a_1}}青で作った{{item_1202_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.005",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "3a08f74e1e4e60cca92668aee06a6025d1bd1366c01f775dd4d4c685615b5969",
+      "text": "{{a_1}}紫で作った{{item_1303_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.006",
+      "sourceHash": "06c426c482d1939b31f146b6aca9f38de5f37f9ced06abcee89179681ca18d33",
+      "termHash": "803b3caa949f1c8f977367772cc0fd15cf77e01e54b38ee9d68f5c50ccff524c",
+      "text": "{{span_1}}{{item_1111_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：組立機 {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_2}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.007",
+      "sourceHash": "4282377e98b4ea5593e122df684c298116aaf9bf90a96763f0323919808e80bf",
+      "termHash": "cbc3ae0a20907c34d39f1fffd9e6dafc96ada6af2b8baf54fdd0e9c6f2430dcb",
+      "text": "{{span_1}}励振器の枝ライン{{end_span_1}}{{span_2}}{{item_1111_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1401_1}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.008",
+      "sourceHash": "155e985edc4b7ece956f133f086b88c39083c226d69c7b20ad5e7165f3467a26",
+      "termHash": "cfee2e4555f54d73a9c1a420bcac8aaeddd362af2daff8a1bae0ebb6bd7da7d7",
+      "text": "{{span_1}}配送機の組み立て{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2107_1}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.009",
+      "sourceHash": "f970cd2ec7b81bfa8da830c6e956d60e0ef6707831a5c75398d613f27194d0e9",
+      "termHash": "736e547d2c6c8f7a16b3aa328604f23edb2070af5ac9638fefdbfd590ed5851e",
+      "text": "{{span_1}}{{item_1407_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1407_2}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.010",
+      "sourceHash": "20b9f466671782642d98b7be38d10fc155bda23ab77e0cf2412e11af8e3e9c30",
+      "termHash": "9859cc6b2268e50f8e10b82048002f63370c109227eb413588b2ea9b8f0f164e",
+      "text": "{{span_1}}ボットの組み立て{{end_span_1}}{{span_2}}{{item_1407_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5003_1}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.011",
+      "sourceHash": "dfdd60c9b35d13603da1259bef6451c9c4ec39ecfe1de657a3e4cb98af2c5dda",
+      "termHash": "b8216c456baa8e0e802b305c7e662372419fad46b37e576376615e938073d62b",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2107_1}}{{end_span_1}} — 使用枠：{{span_2}}{{fact_1}} 枠{{end_span_2}}（最大 {{fact_2}}）。"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.012",
+      "sourceHash": "96c4aa5c5353145373911fc0489bf3f521f8b2b8ef606309b47fdf3108047cd8",
+      "termHash": "dcf51dd785a763fb6ca254f95b14fe3c0a8fb9edc47dda71efccfa2f7f0c1ee8",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_5003_1}}{{end_span_1}} — 使用枠：{{span_2}}{{fact_1}} 枠{{end_span_2}}（最大 {{fact_2}}）。"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "e.card-logistics-distribution-kit.li.013",
+      "sourceHash": "d7b0435c1b9a473a80418e48f3f57919c0396d84fce3f2c4ba430158bb7ee401",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "必要なときだけ動く建設用品のラインです。両方の貯蔵庫が満杯になったら生産を止め、近くの貯蔵庫への配送やイカロスへの補給を整える際に取り出します。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.summary.001",
+      "sourceHash": "8fe2b7b86ba66b4dd960c3aaaf08d6c4b3436e1648fbe958ead800dd5bef2168",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}惑星内物流用の設備 — 在庫：PLS {{fact_1}} 基 + ドローン {{fact_2}} 機{{end_span_1}}{{span_2}}{{span_3}}必須{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.001",
+      "sourceHash": "d2403d652bcad8a94e68176d3f544a33bae6e0e444671fd94002c1287814946d",
+      "termHash": "483537316c585f1c0fffc423ed775d1f1989a68b2d70ec5a3346fea54834cee5",
+      "text": "{{item_1101_1}}。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.002",
+      "sourceHash": "0c49d93d2876e108b487e6073295fa5979c73fd2d22b8a4c6fc87c6bec577a2e",
+      "termHash": "6e15ee46fb5953c071f46a0db4909fa2803c88bf221bc2bd48dd429b53a8a631",
+      "text": "{{item_1104_1}}。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.003",
+      "sourceHash": "b551693092cf53eded0ab140dc66253c14dafd49ea4dffabe97b05646d7cf574",
+      "termHash": "916a0ec52b2574cc9399141fd00fa0e462c4b9d2f10602a2f8ebb320f8015c30",
+      "text": "{{item_1103_1}}。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.004",
+      "sourceHash": "0d400ff0d1ada7ceefc6b4e3ada0b0d708002596e114475f8e16de266e765948",
+      "termHash": "72c09d400d2fc1d44ddd3d02d1f1c035c3c6834388b61f76df09eeee39627604",
+      "text": "{{item_1106_1}}。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.005",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "3a08f74e1e4e60cca92668aee06a6025d1bd1366c01f775dd4d4c685615b5969",
+      "text": "{{a_1}}紫で作った{{item_1303_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.006",
+      "sourceHash": "4058a2ec21bd9cd6ce1d6123497648a175be60238793616aab463e5393689575",
+      "termHash": "a8e256b7e6902c9ad67a1c928658810b9dbaf12a22194fe5062b713557c170c3",
+      "text": "{{a_1}}緑で作った{{item_1206_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.007",
+      "sourceHash": "1e87d7cecf20b49b1e73f5c34b32bb4bb50241e0c65b028785be69b59dbb764f",
+      "termHash": "9e09ad2fb4f3f263c35b5d6b3a2b214a608feb9d5ee927d75d5359a54c12366a",
+      "text": "{{span_1}}PLS の組み立て{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.008",
+      "sourceHash": "3254c3ab771d57194937b91aeb234730a925b9947464ce2219394d48d4800920",
+      "termHash": "1397c0c3f3578f5dafba8826bd330688bce64a6695479f7ee29123665e388a5a",
+      "text": "{{span_1}}{{item_1405_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1405_2}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.009",
+      "sourceHash": "b859e031fc5bfaa1c1554115652a5708016222aaf92257abe3e84dcc71130abb",
+      "termHash": "d9a77a4c21f2a4167fd814cc3a62ab5a379cedeca2225b50d418aeb30da07a17",
+      "text": "{{span_1}}ドローンの組み立て{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1405_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5001_1}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.010",
+      "sourceHash": "87b38aaa17a531483a247d086385edcb73c54be9a084ab3294ff03bfaba76182",
+      "termHash": "7f32b4ff61e0bd28acf859903c44af70cf975cf5d51bea3ed06f555f9d995767",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2103_1}}{{end_span_1}} — 使用枠：{{span_2}}{{fact_1}} 枠{{end_span_2}}（最大 {{fact_2}}）。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.011",
+      "sourceHash": "e1e3260c43648a7cdfb24cc50f17348e89d52208727dada308b42da0d9f8c8bf",
+      "termHash": "da8963d036bf4553eebbc528a562b706352483db648222ccf401d1005164612a",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_5001_1}}{{end_span_1}} — 使用枠：{{span_2}}{{fact_1}} 枠{{end_span_2}}（最大 {{fact_2}}）。"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "e.card-logistics-planetary-kit.li.012",
+      "sourceHash": "fca8b8db5bc9d3d88dad31edf1e9ee87e5947a6676076376ca28cac8c5c3337e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ステーションとドローンを一緒に備蓄します。輸送機のない PLS は貯蔵場所です。両方を用意しておけば、新しい惑星内物流網をすぐに役立てられます。"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.summary.001",
+      "sourceHash": "d518deae453bfc7e9aecb00f561032a5f36fe734c7b9e09de70cce0c38f1b233",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}星間物流用の設備 — 在庫：ILS {{fact_1}} 基 + 輸送船 {{fact_2}} 隻{{end_span_1}}{{span_2}}{{span_3}}必須{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.001",
+      "sourceHash": "8f4ed6928d886cf474404c36da9e8b3a82a22f6d3d8a1cdbde60fcad176bbc28",
+      "termHash": "486fe29f5cfb1e993e6d992a385697ac6e86e126f685ea8565663c59848f6c5f",
+      "text": "{{a_1}}惑星内物流用の設備カードの{{item_2103_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.002",
+      "sourceHash": "25c7dff4c831f7885f4432d6d6888c38457a636b60bfcaa3d2671f46b87ee04e",
+      "termHash": "1e5097750dc4edace401f59fd1bd3bae0136e1dabccacef9477e8daece44fb65",
+      "text": "{{item_1107_1}}。"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.003",
+      "sourceHash": "4058a2ec21bd9cd6ce1d6123497648a175be60238793616aab463e5393689575",
+      "termHash": "a8e256b7e6902c9ad67a1c928658810b9dbaf12a22194fe5062b713557c170c3",
+      "text": "{{a_1}}緑で作った{{item_1206_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.004",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "3a08f74e1e4e60cca92668aee06a6025d1bd1366c01f775dd4d4c685615b5969",
+      "text": "{{a_1}}紫で作った{{item_1303_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.005",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "0b86faafb033963a9066cb89909f152ff75f9773cdc161686b6363b3cab5db2f",
+      "text": "{{a_1}}共用ラインの{{item_1204_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.006",
+      "sourceHash": "e1d20feb2cb7f6adc627beff5fcdc1752816ea1493785876514e859eb2e96426",
+      "termHash": "689cac00f535987bd62ba4df44c5b6514a7d6bf1eb9f476dfa54dcf34e0dc6b4",
+      "text": "{{span_1}}ILS の組み立て{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.007",
+      "sourceHash": "8c65397affd9fb53c6e2965614b50f7442c1fabf121f74e33a46bc4264ca2e3d",
+      "termHash": "44eddbb03e79f721015c23f7f2ed9e52dd800c952e563456ff01ba1ed385f15a",
+      "text": "{{span_1}}{{item_1405_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1204_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1406_1}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.008",
+      "sourceHash": "dc03258c1de18cf434e028fac8f15fa5e1d7e6eb2e0d86ae11676f0ace87b2a0",
+      "termHash": "01241d5ce752e6fb1954934805328fd6eeef6573a8b7fb4231e2b06423a07728",
+      "text": "{{span_1}}輸送船の組み立て{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.009",
+      "sourceHash": "440e3ce19408c4b7177483263e8880ebacff99330b025dc7806a2e2557a74ea2",
+      "termHash": "3bab3c7c8ab5d4fd663ce924edc6be119b41b695d1913ad4b161619c327b6df8",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2104_1}}{{end_span_1}} — 使用枠：{{span_2}}{{fact_1}} 枠{{end_span_2}}（最大 {{fact_2}}）。"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.010",
+      "sourceHash": "845c3b871c7bf1f2c84d157f97cbf1a7c0fdc399b3feaf1db31d1f12f4fab246",
+      "termHash": "f61f8d2aa7c00729904f0c26bd8152909b08cc442fa0d9e93bc07873e96f6159",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_5002_1}}{{end_span_1}} — 使用枠：{{span_2}}{{fact_1}} 枠{{end_span_2}}（最大 {{fact_2}}）。"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "e.card-logistics-interstellar-kit.li.011",
+      "sourceHash": "91a250f1d683765c9556c53dd28c7eee9437c48cc3b91626b9ec1de5565a72d6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ステーションと輸送船を一緒に備蓄します。空間歪曲器を追加するのは、配備したルートが実際に恒星間を渡る場合だけです。"
+    },
+    {
+      "id": "e.logistics.h2.008",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意する点"
+    },
+    {
+      "id": "e.logistics.p.011",
+      "sourceHash": "08e1ed37b2cebe88b6ae826e496b67f1259b2cccc1bedb0a56cfa6325eea6e63",
+      "termHash": "14b5fd69f6b4cdd25831f6a8be36dbf74c13402e513595a0cfd7d94ec194e53d",
+      "text": "{{strong_1}}共用の供給。{{end_strong_1}}複数の設備ラインが{{item_1303_1}}、{{item_1206_1}}、{{item_1107_1}}、{{item_1204_1}}を使います。同時に複数の在庫を補充するときは、実際に空になる既存の供給元だけを増設します。"
+    },
+    {
+      "id": "e.logistics.p.012",
+      "sourceHash": "3b7ea6b383ce367e12451edaf7ffbb099988c91596500df503e9bf929f9e7740",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ステーションの充電。{{end_strong_1}}新設した物流ステーションは、充電中に一時的な電力負荷を発生させます。一時的な負荷のために順調な電力網を造り直すより、充電電力を下げるか段階的に設置します。"
+    },
+    {
+      "id": "e.logistics.h2.009",
+      "sourceHash": "851108fe19155e7e8b16186d4cd7db5faa144820042ccf74a2676215e213cc8c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ルートが動かないとき"
+    },
+    {
+      "id": "e.logistics.th.006",
+      "sourceHash": "f13099fa4ad786fae91f11ffa3fb1ca5d65f23e9877c64bfaff572f6703483fe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確認項目"
+    },
+    {
+      "id": "e.logistics.th.007",
+      "sourceHash": "dab36691f4715e95cbbcd1192f62e507d0c3ea0dfd3cd40f62dc9c95cd32db90",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "制御するもの"
+    },
+    {
+      "id": "e.logistics.td.020",
+      "sourceHash": "06839a9dff2eb169984a9eb31d697c1b21b9dc85c9775b065e00369d51d1d597",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}現地と星間{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.021",
+      "sourceHash": "0230057fa57ae2107c331147f1c955df113ea659c8276e09eecab2e2f927daa4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ドローンは同一惑星の現地設定に従います。輸送船は惑星間・恒星間の星間設定に従います。"
+    },
+    {
+      "id": "e.logistics.td.022",
+      "sourceHash": "b297bd389c87aabd6ccf421b8e4102c580041e2a285a477d99d7338a8d925522",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}供給と要求{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.023",
+      "sourceHash": "06ceddd2bda575a1adfb3fd0a768237f2e7d8bb4ede97d8ad0df22c2879cc9c8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元の品目は青色の供給、搬送先はオレンジ色の要求にします。貯蔵は貨物を保持しますが、輸送を要求しません。"
+    },
+    {
+      "id": "e.logistics.td.024",
+      "sourceHash": "6a6642be090a162972c567eacbd4ca47af3d2596af1e710cbbeefb466cd49ed5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}輸送機の配備先{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.025",
+      "sourceHash": "d52bd93300aeb361dcfa154e4c6ffaf0d5c29461eab97ecceee2130d18df49f1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "出発できるステーションに適切な輸送機を配備します。通電した要求側に輸送船があれば、無通電の供給側も機能します。輸送を決めるのは、出発側の最小輸送量、範囲、ワープ設定、蓄電量、輸送機の配備です。輸送機のない受動的な相手側からは出発しません。"
+    },
+    {
+      "id": "e.logistics.td.026",
+      "sourceHash": "04b6769b0163e8bae7239d0e72fa3ae9e92e257d492e74649c28e05e311cbb7c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}最小輸送量{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.027",
+      "sourceHash": "e70be8a5c10f3eef01252cdf09f002c74a4a999f29e7331af01666242d2499bc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "輸送機は、設定した積載率に達する量がそろうまで待機します。供給の遅い拠点を立ち上げる間は下げ、迅速な応答より満載の輸送を重視するようになったら上げます。"
+    },
+    {
+      "id": "e.logistics.td.028",
+      "sourceHash": "9c552e3889e9e3a3aac05a94d6afb7aa63ed078f989a6ef82144e8f23ef80f18",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}輸送範囲{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.029",
+      "sourceHash": "f76e4bc3846cc052d164f38185b77172dcdabe6f46155632c783a11afcf39a1a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "実際の目的地が、出発側ステーションに設定したドローンまたは輸送船の範囲内にある必要があります。"
+    },
+    {
+      "id": "e.logistics.td.030",
+      "sourceHash": "2cf399c8bf51b569fe9ac44eb1f066b9d8eaf1df15e682bbb44d07fad4affe08",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ワープ設定{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.031",
+      "sourceHash": "7605ec44fd8f6ca312df2c55e0afc966f659577eaa5f2222ad8a655d69ca40d5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "恒星間のルートでは、ワープ起動距離、「歪曲器搭載」（空間歪曲器を必須とする設定）、ステーションの空間歪曲器の予備在庫を確認します。"
+    },
+    {
+      "id": "e.logistics.td.032",
+      "sourceHash": "e50ad0533a038f487cbc9187d60da74f831fce2fb98d39e3d7a11e571168636f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ステーションの蓄電量{{end_strong_1}}"
+    },
+    {
+      "id": "e.logistics.td.033",
+      "sourceHash": "c929680bf8af084937869beeb129079c131d22d0fe27ad9f62a6de8ef47806ca",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "出発側には十分な蓄電量が必要です。充電電力は回復の速さを変えますが、誤ったルート設定は直せません。"
+    },
+    {
+      "id": "e.logistics.li.001",
+      "sourceHash": "fd001ddaf88c22e2a2d5454594185c02036bc88cea0eae69d5e58ee261595d50",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "正しい現地または星間の行で、供給元が供給、搬送先が要求になっているか確認します。"
+    },
+    {
+      "id": "e.logistics.li.002",
+      "sourceHash": "82e483734484b55445126a064a091fcae6eda0f2b2842049fc4ed4103a03f868",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "出発側に適切な輸送機と蓄電量があり、目的地が到達範囲内か確認します。"
+    },
+    {
+      "id": "e.logistics.li.003",
+      "sourceHash": "bb102009a84a03e7d04c0336c9d268f6dd0fcabe8b6cc34b8a237e85f35b3c73",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元の貨物がまだ十分に貯まっていなければ、一時的に最小輸送量を下げます。"
+    },
+    {
+      "id": "e.logistics.li.004",
+      "sourceHash": "05ecc1aaa84f6c6a95de0f97930c39e20c1ead1f4fd491eee70f0f9ffe507843",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ステーションや輸送機を増やす前に、範囲とワープの設定を確認します。"
+    },
+    {
+      "id": "e.logistics.li.005",
+      "sourceHash": "c4a719f2189b2d7703b25480fd214f5d1e46c5bea5be27abfb08e53d032cc45a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最初の輸送が成功してから、輸送能力を増やします。"
+    },
+    {
+      "id": "e.logistics.h2.010",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次へ進む条件"
+    },
+    {
+      "id": "e.logistics.li.006",
+      "sourceHash": "4d6a22e9ca763c2c8dd26df06f2773e2013ab9b701a7fae049bb57064dc9d8cd",
+      "termHash": "9c680347c054493b61189fb8657ade8aaa2ea005405ac9f3f7f3eba79e2f3308",
+      "text": "{{label_1}} {{input_1}}配送機と{{item_5003_1}}の上限付き在庫が補充される。 {{end_label_1}}"
+    },
+    {
+      "id": "e.logistics.li.007",
+      "sourceHash": "222a95b7b9372a6cd6b43082e721fda72d0344394fc26dbed9d4b7e24211b12d",
+      "termHash": "4dc4d18382e1d0d835cc7a1586dfe9f17ce6a1f9978f533233cddebac888225f",
+      "text": "{{label_1}} {{input_1}}PLS と{{item_5001_1}}の上限付き在庫が補充される。 {{end_label_1}}"
+    },
+    {
+      "id": "e.logistics.li.008",
+      "sourceHash": "fab9288a4aa7cb45ab5370fe5d3b9d1b9a3b366a7ff6a28a12dbefb0b60a7533",
+      "termHash": "a2ce7fa41d3f2de1f9f95cd21cfe346affb8759af36ad2adece836bfd73fc552",
+      "text": "{{label_1}} {{input_1}}ILS と{{item_5002_1}}の上限付き在庫が補充される。 {{end_label_1}}"
+    },
+    {
+      "id": "e.logistics.li.009",
+      "sourceHash": "821e9b42c84382aabe1ae50a2e4bb317182224ba88820118a5325f21532a83c2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}星間供給 {{fact_1}} 輸送船 {{fact_2}} 星間要求のルートを、当てずっぽうでなく設定できる。 {{end_label_1}}"
+    },
+    {
+      "id": "e.logistics.li.010",
+      "sourceHash": "4f07de3bf7d512f2532f3ffd807a9bd46525cf7e54743a5b32b8175090a7275d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}現地供給 {{fact_1}} ドローン {{fact_2}} 現地要求のルートを、当てずっぽうでなく設定できる。 {{end_label_1}}"
+    },
+    {
       "id": "a.tech-sheet-title.h2.001",
       "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",

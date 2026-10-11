@@ -161,6 +161,11 @@ the same tables. The photon-conversion recipe is 質量エネルギー貯蔵. Us
 ダイソンクラウド and ダイソンスワーム; use ダイソンクラウド consistently in
 guide prose, matching the primary mode label, and クラウド once established.
 
+Other station labels confirmed read-only are ワープ起動距離、歪曲器搭載、
+ドローン最小輸送量、輸送船最小輸送量、現地貯蔵 and 星間貯蔵. Explain
+歪曲器搭載 as the requirement setting, not merely available stock. Distinguish
+蓄電量 from cargo and keep 配送ボット、物流ドローン and 星間輸送船 distinct.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 
