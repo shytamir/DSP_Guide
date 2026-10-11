@@ -93,6 +93,8 @@ Use a new or empty ignored output directory:
 
 ```text
 node scripts/build-site.mjs artifacts/site
+node scripts/sync-static-editions.mjs --write
+node scripts/sync-static-editions.mjs --stage artifacts/committed-site
 node scripts/validate-localization.mjs artifacts/site
 node scripts/test-localization.mjs
 node scripts/build-site.mjs artifacts/preview-ja --preview ja --segment A
@@ -120,8 +122,20 @@ UI prevents dependent behavior rather than requesting English fallback data.
 the same URL as the final argument to both output validators. The development
 Pages deployment intentionally keeps production canonical metadata; relative
 navigation/assets work under `/DSP_Guide/`. Only enabled locales appear in
-selectors and alternate metadata. CI installs the exact lockfile, generates,
-validates, packages, extracts and validates again.
+selectors and alternate metadata. The English `index.html` contains the static
+selector and alternate links; changing enabled locales also requires updating
+those links. The manifest validator checks their labels, destinations and state.
+
+`sync-static-editions.mjs --write` regenerates the three translated HTML files
+and nine locale-data files in the repository. Commit them with their source
+changes. Without arguments it checks freshness, missing files and unexpected
+edition files. `--stage <empty-directory>` checks the same contract and copies
+the committed 551-file publication set. CI installs the exact lockfile, checks
+source contracts and generated freshness, stages those committed bytes, then
+packages, extracts and validates again. It does not deploy a competing artifact.
+GitHub Pages keeps branch publishing from `main`; `_config.yml` excludes
+authoring/research/management inputs while retaining the sanitized permission.
+Serving the repository root therefore provides all four editions directly.
 
 Run `node scripts/validate-localization-browser.mjs artifacts/localization/check`
 for complete synthetic root/prefix switching, no-JS, localized tooltips/status,
@@ -156,9 +170,11 @@ target-language read, and rendered inspection of the entire segment.
    reviewed source/term hashes. Never refresh hashes solely to silence a failure.
 3. For dynamic UI changes, update all eight-string UI catalogs and their reviewed
    English hash. Refresh native terminology only from authorized read-only data.
-4. Run the affected deterministic checks, generate a fresh site, then run both
-   package validators. Generation rejects missing/stale enabled translations
-   before writing output. Do not disable an edition merely to bypass that gate.
+4. Run the affected deterministic checks and `sync-static-editions.mjs --write`.
+   Stage with `sync-static-editions.mjs --stage <empty-directory>`, then run both
+   package validators. Commit refreshed editions/data alongside their inputs.
+   Generation rejects missing/stale enabled translations before writing output;
+   CI rejects stale committed output. Do not disable an edition to bypass a gate.
 5. Inspect changed prose and controls in both phone engines and desktop. Run the
    candidate switching checks for delivery/UI changes and the full four-locale
    matrix for a release candidate. Preserve the emulation/self-review limits.

@@ -1,0 +1,704 @@
+{
+  "1001": {
+    "unlocks": [
+      {
+        "label": "Windkraftwerk",
+        "itemId": 2203
+      },
+      {
+        "label": "Tesla-Turm",
+        "itemId": 2201
+      },
+      {
+        "label": "Bergbaumaschine",
+        "itemId": 2301
+      }
+    ]
+  },
+  "1002": {
+    "cube": {
+      "label": "Elektromagnetische Matrix",
+      "color": "#56b9ff",
+      "itemId": 6001
+    },
+    "unlocks": [
+      {
+        "label": "Matrix-Labor",
+        "itemId": 2901
+      }
+    ]
+  },
+  "1101": {
+    "unlocks": [
+      {
+        "label": "Prisma",
+        "itemId": 1111
+      },
+      {
+        "label": "Plasma-Erregermaschine",
+        "itemId": 1401
+      },
+      {
+        "label": "Kabelloser Energieturm",
+        "itemId": 2202
+      }
+    ]
+  },
+  "1102": {
+    "unlocks": [
+      {
+        "label": "Ölextraktion",
+        "itemId": 2307
+      },
+      {
+        "label": "Ölraffinerie",
+        "itemId": 2308
+      },
+      {
+        "label": "Wasserstoff",
+        "itemId": 1120
+      },
+      {
+        "label": "Raffiniertes Öl",
+        "itemId": 1114
+      }
+    ]
+  },
+  "1111": {
+    "cube": {
+      "label": "Energiematrix",
+      "color": "#ff6f6f",
+      "itemId": 6002
+    }
+  },
+  "1112": {
+    "unlocks": [
+      {
+        "label": "Wasserstoff-Brennstab",
+        "itemId": 1801
+      }
+    ]
+  },
+  "1113": {
+    "unlocks": [
+      {
+        "label": "Triebwerk",
+        "itemId": 1405
+      }
+    ]
+  },
+  "1114": {
+    "unlocks": [
+      {
+        "label": "Verstärktes Triebwerk",
+        "itemId": 1406
+      }
+    ]
+  },
+  "1120": {
+    "unlocks": [
+      {
+        "label": "Lagerbehälter",
+        "itemId": 2106
+      },
+      {
+        "label": "Wasserpumpe",
+        "itemId": 2306
+      }
+    ]
+  },
+  "1121": {
+    "unlocks": [
+      {
+        "label": "Chemiefabrik",
+        "itemId": 2309
+      },
+      {
+        "label": "Plastik",
+        "itemId": 1115
+      },
+      {
+        "label": "Schwefelsäure",
+        "itemId": 1116
+      }
+    ]
+  },
+  "1122": {
+    "unlocks": [
+      {
+        "label": "Organischer Kristall",
+        "itemId": 1117
+      }
+    ]
+  },
+  "1123": {
+    "unlocks": [
+      {
+        "label": "Titankristall",
+        "itemId": 1118
+      }
+    ]
+  },
+  "1124": {
+    "cube": {
+      "label": "Strukturmatrix",
+      "color": "#ffd166",
+      "itemId": 6003
+    }
+  },
+  "1125": {
+    "unlocks": [
+      {
+        "label": "Casimir-Kristall",
+        "itemId": 1126
+      }
+    ]
+  },
+  "1126": {
+    "unlocks": [
+      {
+        "label": "Titanglas",
+        "itemId": 1119
+      }
+    ]
+  },
+  "1131": {
+    "unlocks": [
+      {
+        "label": "Graphen",
+        "itemId": 1123
+      }
+    ]
+  },
+  "1132": {
+    "unlocks": [
+      {
+        "label": "Kohlenstoffnanoröhren",
+        "itemId": 1124
+      }
+    ]
+  },
+  "1133": {
+    "unlocks": [
+      {
+        "label": "Partikel-Breitband",
+        "itemId": 1402
+      }
+    ]
+  },
+  "1134": {
+    "unlocks": [
+      {
+        "label": "Fraktionierer",
+        "itemId": 2314
+      },
+      {
+        "label": "Deuterium",
+        "itemId": 1121
+      }
+    ]
+  },
+  "1141": {
+    "unlocks": [
+      {
+        "label": "Planarenfilter",
+        "itemId": 1304
+      }
+    ]
+  },
+  "1142": {
+    "unlocks": [
+      {
+        "label": "Mikro-Beschleuniger",
+        "itemId": 2310
+      },
+      {
+        "label": "Deuterium",
+        "itemId": 1121
+      }
+    ]
+  },
+  "1143": {
+    "unlocks": [
+      {
+        "label": "Seltsame Materie",
+        "itemId": 1127
+      }
+    ]
+  },
+  "1145": {
+    "unlocks": [
+      {
+        "label": "Annihilations-Sphärenbereich",
+        "itemId": 1403
+      },
+      {
+        "label": "Antimaterie-Brennstab",
+        "itemId": 1803
+      }
+    ]
+  },
+  "1201": {
+    "unlocks": [
+      {
+        "label": "Zusammens.-Masch. Typ I",
+        "itemId": 2303
+      }
+    ]
+  },
+  "1202": {
+    "unlocks": [
+      {
+        "label": "Zusammens.-Masch. Typ II",
+        "itemId": 2304
+      }
+    ]
+  },
+  "1203": {
+    "unlocks": [
+      {
+        "label": "Zusammens.-Masch. Typ III",
+        "itemId": 2305
+      }
+    ]
+  },
+  "1302": {
+    "unlocks": [
+      {
+        "label": "Prozessor",
+        "itemId": 1303
+      }
+    ]
+  },
+  "1303": {
+    "unlocks": [
+      {
+        "label": "Quantenchip",
+        "itemId": 1305
+      }
+    ]
+  },
+  "1304": {
+    "unlocks": [
+      {
+        "label": "Große Bergbaumaschine",
+        "itemId": 2316
+      }
+    ]
+  },
+  "1305": {
+    "unlocks": [
+      {
+        "label": "Quanten-Chemiefabrik",
+        "itemId": 2317
+      }
+    ]
+  },
+  "1311": {
+    "unlocks": [
+      {
+        "label": "Mikrokristall-Komponente",
+        "itemId": 1302
+      }
+    ]
+  },
+  "1312": {
+    "cube": {
+      "label": "Informationsmatrix",
+      "color": "#cf8cff",
+      "itemId": 6004
+    }
+  },
+  "1401": {
+    "unlocks": [
+      {
+        "label": "Lichtbogen-Schmelzofen",
+        "itemId": 2302
+      },
+      {
+        "label": "Glas",
+        "itemId": 1110
+      }
+    ]
+  },
+  "1402": {
+    "unlocks": [
+      {
+        "label": "Siliziumerz",
+        "itemId": 1003
+      },
+      {
+        "label": "Energie-Graphit",
+        "itemId": 1109
+      },
+      {
+        "label": "Hochreines Silizium",
+        "itemId": 1105
+      }
+    ]
+  },
+  "1403": {
+    "unlocks": [
+      {
+        "label": "Diamant",
+        "itemId": 1112
+      },
+      {
+        "label": "KristallSilizium",
+        "itemId": 1113
+      }
+    ]
+  },
+  "1411": {
+    "unlocks": [
+      {
+        "label": "Stahl",
+        "itemId": 1103
+      }
+    ]
+  },
+  "1412": {
+    "unlocks": [
+      {
+        "label": "Wärmekraftwerk",
+        "itemId": 2204
+      }
+    ]
+  },
+  "1413": {
+    "unlocks": [
+      {
+        "label": "Titanbarren",
+        "itemId": 1106
+      }
+    ]
+  },
+  "1414": {
+    "unlocks": [
+      {
+        "label": "Titanlegierung",
+        "itemId": 1107
+      }
+    ]
+  },
+  "1415": {
+    "unlocks": [
+      {
+        "label": "Fundament",
+        "itemId": 1131
+      }
+    ]
+  },
+  "1416": {
+    "unlocks": [
+      {
+        "label": "Miniatur-Fusionskraftwerk",
+        "itemId": 2211
+      },
+      {
+        "label": "Deuterium-Brennstab",
+        "itemId": 1802
+      }
+    ]
+  },
+  "1417": {
+    "unlocks": [
+      {
+        "label": "Planaren-Schmelzofen",
+        "itemId": 2315
+      }
+    ]
+  },
+  "1501": {
+    "unlocks": [
+      {
+        "label": "Solarmodul",
+        "itemId": 2205
+      }
+    ]
+  },
+  "1502": {
+    "unlocks": [
+      {
+        "label": "Photonenkombinator",
+        "itemId": 1404
+      }
+    ]
+  },
+  "1503": {
+    "unlocks": [
+      {
+        "label": "Solarsegel",
+        "itemId": 1501
+      },
+      {
+        "label": "EM-Werfer",
+        "itemId": 2311
+      }
+    ]
+  },
+  "1504": {
+    "unlocks": [
+      {
+        "label": "Strahlen-Receiver",
+        "itemId": 2208
+      }
+    ]
+  },
+  "1506": {
+    "unlocks": [
+      {
+        "label": "Antimaterie",
+        "itemId": 1122
+      },
+      {
+        "label": "Wasserstoff",
+        "itemId": 1120
+      }
+    ]
+  },
+  "1507": {
+    "cube": {
+      "label": "Universumsmatrix",
+      "color": "#f4f7fb",
+      "itemId": 6006
+    }
+  },
+  "1511": {
+    "unlocks": [
+      {
+        "label": "Akkumulator",
+        "itemId": 2206
+      }
+    ]
+  },
+  "1521": {
+    "unlocks": [
+      {
+        "label": "Gerüstmaterial",
+        "itemId": 1125
+      },
+      {
+        "label": "Dyson-Sphäre-Komponente",
+        "itemId": 1502
+      }
+    ]
+  },
+  "1522": {
+    "unlocks": [
+      {
+        "label": "Vertikaler Abschusssilo",
+        "itemId": 2312
+      },
+      {
+        "label": "Kleine Trägerrakete",
+        "itemId": 1503
+      }
+    ]
+  },
+  "1601": {
+    "unlocks": [
+      {
+        "label": "Fließband Typ I",
+        "itemId": 2001
+      },
+      {
+        "label": "Sorter Typ I",
+        "itemId": 2011
+      },
+      {
+        "label": "Depot Typ I",
+        "itemId": 2101
+      }
+    ]
+  },
+  "1602": {
+    "unlocks": [
+      {
+        "label": "Teiler",
+        "itemId": 2020
+      },
+      {
+        "label": "Sorter Typ II",
+        "itemId": 2012
+      },
+      {
+        "label": "Verkehrsmonitor",
+        "itemId": 2030
+      }
+    ]
+  },
+  "1603": {
+    "unlocks": [
+      {
+        "label": "Fließband Typ II",
+        "itemId": 2002
+      },
+      {
+        "label": "Sorter Typ III",
+        "itemId": 2013
+      },
+      {
+        "label": "Depot Typ II",
+        "itemId": 2102
+      }
+    ]
+  },
+  "1604": {
+    "unlocks": [
+      {
+        "label": "Fließband Typ III",
+        "itemId": 2003
+      },
+      {
+        "label": "Planetare Logistikstation",
+        "itemId": 2103
+      },
+      {
+        "label": "Frachtdrohne",
+        "itemId": 5001
+      }
+    ]
+  },
+  "1605": {
+    "unlocks": [
+      {
+        "label": "Interstellare Logistikstation",
+        "itemId": 2104
+      },
+      {
+        "label": "Interstellares Frachtschiff",
+        "itemId": 5002
+      }
+    ]
+  },
+  "1606": {
+    "unlocks": [
+      {
+        "label": "Orbitalkollektor",
+        "itemId": 2105
+      }
+    ]
+  },
+  "1607": {
+    "unlocks": [
+      {
+        "label": "Automatischer Frachtstapler",
+        "itemId": 2040
+      },
+      {
+        "label": "Stapel-Sorter",
+        "itemId": 2014
+      }
+    ]
+  },
+  "1608": {
+    "unlocks": [
+      {
+        "label": "Frachtverteiler",
+        "itemId": 2107
+      },
+      {
+        "label": "Fracht-Bot",
+        "itemId": 5003
+      }
+    ]
+  },
+  "1701": {
+    "unlocks": [
+      {
+        "label": "Elektromotor",
+        "itemId": 1203
+      }
+    ]
+  },
+  "1702": {
+    "unlocks": [
+      {
+        "label": "Elektromagnetische Turbine",
+        "itemId": 1204
+      }
+    ]
+  },
+  "1703": {
+    "unlocks": [
+      {
+        "label": "Partikelcontainer",
+        "itemId": 1206
+      }
+    ]
+  },
+  "1704": {
+    "unlocks": [
+      {
+        "label": "Gravitationslinse",
+        "itemId": 1209
+      },
+      {
+        "label": "Raum-Warper",
+        "itemId": 1210
+      }
+    ]
+  },
+  "1705": {
+    "cube": {
+      "label": "Gravitationsmatrix",
+      "color": "#57e389",
+      "itemId": 6005
+    },
+    "unlocks": [
+      {
+        "label": "Raum-Warper",
+        "itemId": 1210
+      }
+    ]
+  },
+  "1711": {
+    "unlocks": [
+      {
+        "label": "Supermagnetischer Ring",
+        "itemId": 1205
+      }
+    ]
+  },
+  "1801": {
+    "unlocks": [
+      {
+        "label": "Gaußgeschütz",
+        "itemId": 3001
+      },
+      {
+        "label": "Maschinengewehr-Magazin",
+        "itemId": 1601
+      }
+    ]
+  },
+  "1805": {
+    "unlocks": [
+      {
+        "label": "Motor",
+        "itemId": 1407
+      }
+    ]
+  },
+  "1806": {
+    "unlocks": [
+      {
+        "label": "Raketengeschütz",
+        "itemId": 3005
+      },
+      {
+        "label": "Raketensatz",
+        "itemId": 1609
+      }
+    ]
+  },
+  "1808": {
+    "unlocks": [
+      {
+        "label": "Signalturm",
+        "itemId": 3007
+      }
+    ]
+  }
+}

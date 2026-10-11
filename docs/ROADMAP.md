@@ -333,7 +333,10 @@ generation, staged/extracted-ZIP validation, the full four-edition phone/desktop
 matrix and real-catalog switching at root/prefix URLs. After an authorized
 product push, inspect its CI result, download that exact ZIP, verify its
 contents/checksum and compare development deployment bytes and representative
-browser behavior. Do not substitute a later docs-only build.
+browser behavior. Do not substitute a later docs-only build. The owner-directed
+delivery correction preserves branch publishing: commit generated editions/data,
+validate their freshness and package those source bytes; remove the competing
+artifact deployment. Do not change the repository's Pages source setting.
 
 **Out of scope:** Production publication, tags/releases, new device support,
 physical-device/native-speaker certification, optional polish, unrelated
@@ -391,7 +394,7 @@ publication remains the owner's action.
 | LC-04 | Agent-validated | Reviewed all 123 convergence occurrences: zh-CN 35 corrected / 6 retained, ja 34 / 7, de 36 / 5. Glossary connections restored without changing recipes or specific smelting processes. Catalog, staged 551-file localization/deployment and card checks passed; all nine desktop/Android/iPhone cases passed, including enlarged text and reviewed screenshots. Evidence: `artifacts/lc/LC04-*`. | LC-05 |
 | LC-05 | Agent-validated | Reviewed 168 A–C grammar candidates plus 17 overlapping colon-label entries (181 distinct); corrected 24, retained 157. Preserved valid supply lists, technology chains and quantity tables; revised the German grammar rule. Bilingual and target-only review, catalog/staged 551-file deployment/checklist checks and desktop/Android/iPhone rendered review passed. Evidence: `artifacts/lc/LC05-*`. | LC-06; apply the same constructions to late-guide and closing checklists |
 | LC-06 | Agent-validated; LC-G2 / LC-M2 reached | Reviewed 149 D–F grammar candidates and five further colon labels; corrected 48 / retained 106. Read affected sections and reconciled early/closing checklists. Catalog, staged 551-file localization/deployment and checklist checks passed; 154 messages inspected on desktop/Android/iPhone with 200% text and reviewed screenshots. Evidence: `artifacts/lc/LC06-*`. | LC-E2 handoff recorded; continue LC-07 |
-| LC-07 | Authorized — not started | Pending implementation | LC-M3 / final handoff |
+| LC-07 | In progress — delivery correction | Full 152-case local matrix, 96 switching paths and original exact CI ZIP passed. Development comparison exposed a competing branch publisher serving raw source. Owner directs preserving branch publishing: materialize/commit static editions, validate their freshness and package source; remove the competing artifact deployment. All four revised editions have identical semantic DOM to the tested candidate. | Push delivery correction, verify its exact CI ZIP and development site, then LC-M3 handoff |
 
 Draft preparation checked complete-edition pattern inventories, native
 exceptions, source/renderer constraints, weights, sequence, exclusions and exit

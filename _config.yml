@@ -1,0 +1,20 @@
+# GitHub Pages serves the committed static editions through branch publishing.
+# Keep authoring, research and management inputs out of that development site.
+exclude:
+  - AGENTS.md
+  - CHANGELOG.md
+  - README.md
+  - VERSION
+  - package.json
+  - pnpm-lock.yaml
+  - archive
+  - artifacts
+  - dsp_universal_end_product_dag_v1_0
+  - localization
+  - node_modules
+  - scripts
+  - docs/archive
+  - docs/*.md
+  - docs/management/README.md
+  - docs/management/work-management.md
+  - docs/management/validation-and-tooling.md

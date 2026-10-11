@@ -145,6 +145,9 @@ export function decorateEdition(
   const prefix = locale.id === "en" ? "" : "../";
   const nodes = walk(document);
   const head = nodes.find((n) => n.tagName === "head");
+  head.childNodes = head.childNodes.filter(
+    (n) => attr(n, "rel") !== "alternate",
+  );
   const absolute = new URL(locale.path, baseUrl).href;
   for (const node of nodes) {
     for (const key of ["src", "href"]) {
@@ -195,6 +198,8 @@ export function decorateEdition(
       );
   const selector = nodes.find((n) => attr(n, "id") === "language-selector");
   assert.ok(selector, "Missing language selector host");
+  selector.childNodes = [];
+  setAttr(selector, "hidden", "");
   if (!preview && editions.length > 1) {
     selector.attrs = selector.attrs.filter((a) => a.name !== "hidden");
     for (const edition of editions)
@@ -239,6 +244,27 @@ export function validateEditions(files, manifest, baseUrl) {
       walk(selector).filter((n) => n.tagName === "a").length,
       editions.length > 1 ? editions.length : 0,
     );
+    const links = walk(selector).filter((n) => n.tagName === "a");
+    assert.deepEqual(
+      links.map((n) => [
+        attr(n, "hreflang"),
+        attr(n, "lang"),
+        n.childNodes.map((child) => child.value || "").join(""),
+        new URL(attr(n, "href"), pageUrl).href,
+        attr(n, "aria-current"),
+      ]),
+      editions.length > 1
+        ? editions.map((l) => [
+            l.id,
+            l.id,
+            l.label,
+            new URL(l.path, base).href,
+            l.id === edition.id ? "page" : undefined,
+          ])
+        : [],
+      "Language selector must match the enabled editions",
+    );
+    if (editions.length > 1) assert.equal(attr(selector, "hidden"), undefined);
     for (const node of nodes) {
       assert.ok(
         !(node.tagName === "script" && !attr(node, "src")),

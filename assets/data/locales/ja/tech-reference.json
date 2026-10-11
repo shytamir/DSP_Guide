@@ -1,0 +1,5822 @@
+{
+  "1": {
+    "id": 1,
+    "name": "ダイソンスフィアプログラム",
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ダイソンスフィアプログラム"
+  },
+  "1001": {
+    "id": 1001,
+    "name": "電磁学",
+    "required": [
+      {
+        "id": 1,
+        "name": "ダイソンスフィアプログラム",
+        "displayName": "ダイソンスフィアプログラム"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "電磁学"
+  },
+  "1002": {
+    "id": 1002,
+    "name": "電磁マトリクス",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "電磁マトリクス"
+  },
+  "1101": {
+    "id": 1101,
+    "name": "高効率プラズマ制御",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "高効率プラズマ制御"
+  },
+  "1102": {
+    "id": 1102,
+    "name": "プラズマ抽出精製",
+    "required": [
+      {
+        "id": 1120,
+        "name": "液体貯蔵パッケージ",
+        "displayName": "液体貯蔵パッケージ"
+      },
+      {
+        "id": 1101,
+        "name": "高効率プラズマ制御",
+        "displayName": "高効率プラズマ制御"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "プラズマ抽出精製"
+  },
+  "1103": {
+    "id": 1103,
+    "name": "X線崩壊",
+    "required": [
+      {
+        "id": 1121,
+        "name": "基礎化学",
+        "displayName": "基礎化学"
+      },
+      {
+        "id": 1102,
+        "name": "プラズマ抽出精製",
+        "displayName": "プラズマ抽出精製"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "X線崩壊"
+  },
+  "1104": {
+    "id": 1104,
+    "name": "改質精製",
+    "required": [
+      {
+        "id": 1103,
+        "name": "X線崩壊",
+        "displayName": "X線崩壊"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "改質精製"
+  },
+  "1105": {
+    "id": 1105,
+    "name": "ホログラフィックビーコン",
+    "required": [
+      {
+        "id": 1101,
+        "name": "高効率プラズマ制御",
+        "displayName": "高効率プラズマ制御"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ホログラフィックビーコン"
+  },
+  "1111": {
+    "id": 1111,
+    "name": "エネルギーマトリクス",
+    "required": [
+      {
+        "id": 1102,
+        "name": "プラズマ抽出精製",
+        "displayName": "プラズマ抽出精製"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Energy Matrix",
+    "pretechsMax": false,
+    "displayName": "エネルギーマトリクス"
+  },
+  "1112": {
+    "id": 1112,
+    "name": "水素燃料棒",
+    "required": [
+      {
+        "id": 1111,
+        "name": "エネルギーマトリクス",
+        "displayName": "エネルギーマトリクス"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "水素燃料棒"
+  },
+  "1113": {
+    "id": 1113,
+    "name": "スラスター",
+    "required": [
+      {
+        "id": 1112,
+        "name": "水素燃料棒",
+        "displayName": "水素燃料棒"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "スラスター"
+  },
+  "1114": {
+    "id": 1114,
+    "name": "強化スラスター",
+    "required": [
+      {
+        "id": 1113,
+        "name": "スラスター",
+        "displayName": "スラスター"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "強化スラスター"
+  },
+  "1120": {
+    "id": 1120,
+    "name": "液体貯蔵パッケージ",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "液体貯蔵パッケージ"
+  },
+  "1121": {
+    "id": 1121,
+    "name": "基礎化学",
+    "required": [
+      {
+        "id": 1120,
+        "name": "液体貯蔵パッケージ",
+        "displayName": "液体貯蔵パッケージ"
+      },
+      {
+        "id": 1102,
+        "name": "プラズマ抽出精製",
+        "displayName": "プラズマ抽出精製"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "基礎化学"
+  },
+  "1122": {
+    "id": 1122,
+    "name": "高分子化学",
+    "required": [
+      {
+        "id": 1121,
+        "name": "基礎化学",
+        "displayName": "基礎化学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "高分子化学"
+  },
+  "1123": {
+    "id": 1123,
+    "name": "強化結晶体",
+    "required": [
+      {
+        "id": 1122,
+        "name": "高分子化学",
+        "displayName": "高分子化学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "強化結晶体"
+  },
+  "1124": {
+    "id": 1124,
+    "name": "構造マトリクス",
+    "required": [
+      {
+        "id": 1123,
+        "name": "強化結晶体",
+        "displayName": "強化結晶体"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Structure Matrix",
+    "pretechsMax": false,
+    "displayName": "構造マトリクス"
+  },
+  "1125": {
+    "id": 1125,
+    "name": "カシミール結晶",
+    "required": [
+      {
+        "id": 1124,
+        "name": "構造マトリクス",
+        "displayName": "構造マトリクス"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "カシミール結晶"
+  },
+  "1126": {
+    "id": 1126,
+    "name": "強化ガラス",
+    "required": [
+      {
+        "id": 1132,
+        "name": "強化材料",
+        "displayName": "強化材料"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "強化ガラス"
+  },
+  "1131": {
+    "id": 1131,
+    "name": "応用超伝導体",
+    "required": [
+      {
+        "id": 1121,
+        "name": "基礎化学",
+        "displayName": "基礎化学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "応用超伝導体"
+  },
+  "1132": {
+    "id": 1132,
+    "name": "強化材料",
+    "required": [
+      {
+        "id": 1131,
+        "name": "応用超伝導体",
+        "displayName": "応用超伝導体"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "強化材料"
+  },
+  "1133": {
+    "id": 1133,
+    "name": "粒子制御",
+    "required": [
+      {
+        "id": 1132,
+        "name": "強化材料",
+        "displayName": "強化材料"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "粒子制御"
+  },
+  "1134": {
+    "id": 1134,
+    "name": "重水素分留",
+    "required": [
+      {
+        "id": 1412,
+        "name": "火力発電",
+        "displayName": "火力発電"
+      },
+      {
+        "id": 1102,
+        "name": "プラズマ抽出精製",
+        "displayName": "プラズマ抽出精製"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "重水素分留"
+  },
+  "1141": {
+    "id": 1141,
+    "name": "波動関数干渉",
+    "required": [
+      {
+        "id": 1126,
+        "name": "強化ガラス",
+        "displayName": "強化ガラス"
+      },
+      {
+        "id": 1125,
+        "name": "カシミール結晶",
+        "displayName": "カシミール結晶"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "波動関数干渉"
+  },
+  "1142": {
+    "id": 1142,
+    "name": "ミニ粒子衝突型加速機",
+    "required": [
+      {
+        "id": 1124,
+        "name": "構造マトリクス",
+        "displayName": "構造マトリクス"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ミニ粒子衝突型加速機"
+  },
+  "1143": {
+    "id": 1143,
+    "name": "ストレンジ物質",
+    "required": [
+      {
+        "id": 1142,
+        "name": "ミニ粒子衝突型加速機",
+        "displayName": "ミニ粒子衝突型加速機"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ストレンジ物質"
+  },
+  "1144": {
+    "id": 1144,
+    "name": "人造恒星",
+    "required": [
+      {
+        "id": 1145,
+        "name": "制御された対消滅反応",
+        "displayName": "制御された対消滅反応"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "人造恒星"
+  },
+  "1145": {
+    "id": 1145,
+    "name": "制御された対消滅反応",
+    "required": [
+      {
+        "id": 1506,
+        "name": "ディラック反転メカニズム",
+        "displayName": "ディラック反転メカニズム"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "制御された対消滅反応"
+  },
+  "1151": {
+    "id": 1151,
+    "name": "増産剤 Mk.I",
+    "required": [
+      {
+        "id": 1311,
+        "name": "半導体材料",
+        "displayName": "半導体材料"
+      },
+      {
+        "id": 1101,
+        "name": "高効率プラズマ制御",
+        "displayName": "高効率プラズマ制御"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "増産剤 Mk.I"
+  },
+  "1152": {
+    "id": 1152,
+    "name": "増産剤 Mk.II",
+    "required": [
+      {
+        "id": 1302,
+        "name": "プロセッサー",
+        "displayName": "プロセッサー"
+      },
+      {
+        "id": 1151,
+        "name": "増産剤 Mk.I",
+        "displayName": "増産剤 Mk.I"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "増産剤 Mk.II"
+  },
+  "1153": {
+    "id": 1153,
+    "name": "増産剤 Mk.III",
+    "required": [
+      {
+        "id": 1152,
+        "name": "増産剤 Mk.II",
+        "displayName": "増産剤 Mk.II"
+      },
+      {
+        "id": 1132,
+        "name": "強化材料",
+        "displayName": "強化材料"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "増産剤 Mk.III"
+  },
+  "1201": {
+    "id": 1201,
+    "name": "基本製造",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "基本製造"
+  },
+  "1202": {
+    "id": 1202,
+    "name": "高速製造",
+    "required": [
+      {
+        "id": 1201,
+        "name": "基本製造",
+        "displayName": "基本製造"
+      },
+      {
+        "id": 1302,
+        "name": "プロセッサー",
+        "displayName": "プロセッサー"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "高速製造"
+  },
+  "1203": {
+    "id": 1203,
+    "name": "量子プリント",
+    "required": [
+      {
+        "id": 1202,
+        "name": "高速製造",
+        "displayName": "高速製造"
+      },
+      {
+        "id": 1303,
+        "name": "量子チップ",
+        "displayName": "量子チップ"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "量子プリント"
+  },
+  "1302": {
+    "id": 1302,
+    "name": "プロセッサー",
+    "required": [
+      {
+        "id": 1311,
+        "name": "半導体材料",
+        "displayName": "半導体材料"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "プロセッサー"
+  },
+  "1303": {
+    "id": 1303,
+    "name": "量子チップ",
+    "required": [
+      {
+        "id": 1312,
+        "name": "情報マトリクス",
+        "displayName": "情報マトリクス"
+      },
+      {
+        "id": 1141,
+        "name": "波動関数干渉",
+        "displayName": "波動関数干渉"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "量子チップ"
+  },
+  "1304": {
+    "id": 1304,
+    "name": "光子レーザー採掘",
+    "required": [
+      {
+        "id": 1303,
+        "name": "量子チップ",
+        "displayName": "量子チップ"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "光子レーザー採掘"
+  },
+  "1305": {
+    "id": 1305,
+    "name": "超微視的量子もつれ",
+    "required": [
+      {
+        "id": 1303,
+        "name": "量子チップ",
+        "displayName": "量子チップ"
+      },
+      {
+        "id": 1143,
+        "name": "ストレンジ物質",
+        "displayName": "ストレンジ物質"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "超微視的量子もつれ"
+  },
+  "1311": {
+    "id": 1311,
+    "name": "半導体材料",
+    "required": [
+      {
+        "id": 1201,
+        "name": "基本製造",
+        "displayName": "基本製造"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "半導体材料"
+  },
+  "1312": {
+    "id": 1312,
+    "name": "情報マトリクス",
+    "required": [
+      {
+        "id": 1302,
+        "name": "プロセッサー",
+        "displayName": "プロセッサー"
+      },
+      {
+        "id": 1133,
+        "name": "粒子制御",
+        "displayName": "粒子制御"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Information Matrix",
+    "pretechsMax": false,
+    "displayName": "情報マトリクス"
+  },
+  "1401": {
+    "id": 1401,
+    "name": "精錬自動化",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "精錬自動化"
+  },
+  "1402": {
+    "id": 1402,
+    "name": "精錬純化",
+    "required": [
+      {
+        "id": 1401,
+        "name": "精錬自動化",
+        "displayName": "精錬自動化"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "精錬純化"
+  },
+  "1403": {
+    "id": 1403,
+    "name": "結晶体精錬",
+    "required": [
+      {
+        "id": 1402,
+        "name": "精錬純化",
+        "displayName": "精錬純化"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "結晶体精錬"
+  },
+  "1411": {
+    "id": 1411,
+    "name": "鋼材精錬",
+    "required": [
+      {
+        "id": 1401,
+        "name": "精錬自動化",
+        "displayName": "精錬自動化"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "鋼材精錬"
+  },
+  "1412": {
+    "id": 1412,
+    "name": "火力発電",
+    "required": [
+      {
+        "id": 1201,
+        "name": "基本製造",
+        "displayName": "基本製造"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "火力発電"
+  },
+  "1413": {
+    "id": 1413,
+    "name": "チタン精錬",
+    "required": [
+      {
+        "id": 1411,
+        "name": "鋼材精錬",
+        "displayName": "鋼材精錬"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "チタン精錬"
+  },
+  "1414": {
+    "id": 1414,
+    "name": "強化チタン合金",
+    "required": [
+      {
+        "id": 1413,
+        "name": "チタン精錬",
+        "displayName": "チタン精錬"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "強化チタン合金"
+  },
+  "1415": {
+    "id": 1415,
+    "name": "埋め立て",
+    "required": [
+      {
+        "id": 1411,
+        "name": "鋼材精錬",
+        "displayName": "鋼材精錬"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "埋め立て"
+  },
+  "1416": {
+    "id": 1416,
+    "name": "ミニ核融合発電",
+    "required": [
+      {
+        "id": 1134,
+        "name": "重水素分留",
+        "displayName": "重水素分留"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "強化チタン合金",
+        "displayName": "強化チタン合金"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ミニ核融合発電"
+  },
+  "1417": {
+    "id": 1417,
+    "name": "プレーン精錬",
+    "required": [
+      {
+        "id": 1141,
+        "name": "波動関数干渉",
+        "displayName": "波動関数干渉"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1403,
+        "name": "結晶体精錬",
+        "displayName": "結晶体精錬"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "プレーン精錬"
+  },
+  "1501": {
+    "id": 1501,
+    "name": "恒星エネルギー収集",
+    "required": [
+      {
+        "id": 1402,
+        "name": "精錬純化",
+        "displayName": "精錬純化"
+      },
+      {
+        "id": 1002,
+        "name": "電磁マトリクス",
+        "displayName": "電磁マトリクス"
+      },
+      {
+        "id": 1201,
+        "name": "基本製造",
+        "displayName": "基本製造"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "恒星エネルギー収集"
+  },
+  "1502": {
+    "id": 1502,
+    "name": "光子周波数変化",
+    "required": [
+      {
+        "id": 1501,
+        "name": "恒星エネルギー収集",
+        "displayName": "恒星エネルギー収集"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "光子周波数変化"
+  },
+  "1503": {
+    "id": 1503,
+    "name": "ソーラーセイル軌道システム",
+    "required": [
+      {
+        "id": 1502,
+        "name": "光子周波数変化",
+        "displayName": "光子周波数変化"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "超磁場発生機",
+        "displayName": "超磁場発生機"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル軌道システム"
+  },
+  "1504": {
+    "id": 1504,
+    "name": "放射線レシーバー",
+    "required": [
+      {
+        "id": 1503,
+        "name": "ソーラーセイル軌道システム",
+        "displayName": "ソーラーセイル軌道システム"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線レシーバー"
+  },
+  "1505": {
+    "id": 1505,
+    "name": "惑星電離層利用",
+    "required": [
+      {
+        "id": 1504,
+        "name": "放射線レシーバー",
+        "displayName": "放射線レシーバー"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1704,
+        "name": "引力波屈折",
+        "displayName": "引力波屈折"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "惑星電離層利用"
+  },
+  "1506": {
+    "id": 1506,
+    "name": "ディラック反転メカニズム",
+    "required": [
+      {
+        "id": 1505,
+        "name": "惑星電離層利用",
+        "displayName": "惑星電離層利用"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ディラック反転メカニズム"
+  },
+  "1507": {
+    "id": 1507,
+    "name": "宇宙マトリクス",
+    "required": [
+      {
+        "id": 1506,
+        "name": "ディラック反転メカニズム",
+        "displayName": "ディラック反転メカニズム"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Universe Matrix",
+    "pretechsMax": false,
+    "displayName": "宇宙マトリクス"
+  },
+  "1508": {
+    "id": 1508,
+    "name": "任務完了！",
+    "required": [
+      {
+        "id": 1507,
+        "name": "宇宙マトリクス",
+        "displayName": "宇宙マトリクス"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "任務完了！"
+  },
+  "1511": {
+    "id": 1511,
+    "name": "エネルギー貯蔵",
+    "required": [
+      {
+        "id": 1403,
+        "name": "結晶体精錬",
+        "displayName": "結晶体精錬"
+      },
+      {
+        "id": 1501,
+        "name": "恒星エネルギー収集",
+        "displayName": "恒星エネルギー収集"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "超磁場発生機",
+        "displayName": "超磁場発生機"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー貯蔵"
+  },
+  "1512": {
+    "id": 1512,
+    "name": "星間電力輸送",
+    "required": [
+      {
+        "id": 1414,
+        "name": "強化チタン合金",
+        "displayName": "強化チタン合金"
+      },
+      {
+        "id": 1511,
+        "name": "エネルギー貯蔵",
+        "displayName": "エネルギー貯蔵"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "星間電力輸送"
+  },
+  "1513": {
+    "id": 1513,
+    "name": "地熱採掘",
+    "required": [
+      {
+        "id": 1502,
+        "name": "光子周波数変化",
+        "displayName": "光子周波数変化"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "超磁場発生機",
+        "displayName": "超磁場発生機"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "地熱採掘"
+  },
+  "1521": {
+    "id": 1521,
+    "name": "強化軽量構造物",
+    "required": [
+      {
+        "id": 1503,
+        "name": "ソーラーセイル軌道システム",
+        "displayName": "ソーラーセイル軌道システム"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1132,
+        "name": "強化材料",
+        "displayName": "強化材料"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "強化軽量構造物"
+  },
+  "1522": {
+    "id": 1522,
+    "name": "垂直発射サイロ",
+    "required": [
+      {
+        "id": 1521,
+        "name": "強化軽量構造物",
+        "displayName": "強化軽量構造物"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1303,
+        "name": "量子チップ",
+        "displayName": "量子チップ"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "垂直発射サイロ"
+  },
+  "1523": {
+    "id": 1523,
+    "name": "ダイソンスフィア応力システム",
+    "required": [
+      {
+        "id": 1522,
+        "name": "垂直発射サイロ",
+        "displayName": "垂直発射サイロ"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ダイソンスフィア応力システム"
+  },
+  "1601": {
+    "id": 1601,
+    "name": "基礎物流システム",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "基礎物流システム"
+  },
+  "1602": {
+    "id": 1602,
+    "name": "改良物流システム",
+    "required": [
+      {
+        "id": 1601,
+        "name": "基礎物流システム",
+        "displayName": "基礎物流システム"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "改良物流システム"
+  },
+  "1603": {
+    "id": 1603,
+    "name": "高効率物流システム",
+    "required": [
+      {
+        "id": 1602,
+        "name": "改良物流システム",
+        "displayName": "改良物流システム"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "磁力浮遊",
+        "displayName": "磁力浮遊"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "高効率物流システム"
+  },
+  "1604": {
+    "id": 1604,
+    "name": "惑星物流システム",
+    "required": [
+      {
+        "id": 1603,
+        "name": "高効率物流システム",
+        "displayName": "高効率物流システム"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1113,
+        "name": "スラスター",
+        "displayName": "スラスター"
+      },
+      {
+        "id": 3701,
+        "name": "垂直建設",
+        "displayName": "垂直建設 レベル 1"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Planetary Logistics System",
+    "pretechsMax": false,
+    "displayName": "惑星物流システム"
+  },
+  "1605": {
+    "id": 1605,
+    "name": "星間物流システム",
+    "required": [
+      {
+        "id": 1604,
+        "name": "惑星物流システム",
+        "displayName": "惑星物流システム"
+      },
+      {
+        "id": 1414,
+        "name": "強化チタン合金",
+        "displayName": "強化チタン合金"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1114,
+        "name": "強化スラスター",
+        "displayName": "強化スラスター"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Interstellar Logistics System",
+    "pretechsMax": false,
+    "displayName": "星間物流システム"
+  },
+  "1606": {
+    "id": 1606,
+    "name": "ガス惑星採掘",
+    "required": [
+      {
+        "id": 1605,
+        "name": "星間物流システム",
+        "displayName": "星間物流システム"
+      },
+      {
+        "id": 1512,
+        "name": "星間電力輸送",
+        "displayName": "星間電力輸送"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ガス惑星採掘"
+  },
+  "1607": {
+    "id": 1607,
+    "name": "集積物流システム",
+    "required": [
+      {
+        "id": 1603,
+        "name": "高効率物流システム",
+        "displayName": "高効率物流システム"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "超磁場発生機",
+        "displayName": "超磁場発生機"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "集積物流システム"
+  },
+  "1608": {
+    "id": 1608,
+    "name": "配送物流システム",
+    "required": [
+      {
+        "id": 1602,
+        "name": "改良物流システム",
+        "displayName": "改良物流システム"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "磁力浮遊",
+        "displayName": "磁力浮遊"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "配送物流システム"
+  },
+  "1701": {
+    "id": 1701,
+    "name": "電磁駆動",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "電磁駆動"
+  },
+  "1702": {
+    "id": 1702,
+    "name": "磁力浮遊",
+    "required": [
+      {
+        "id": 1701,
+        "name": "電磁駆動",
+        "displayName": "電磁駆動"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "磁力浮遊"
+  },
+  "1703": {
+    "id": 1703,
+    "name": "粒子磁力トラップ",
+    "required": [
+      {
+        "id": 1702,
+        "name": "磁力浮遊",
+        "displayName": "磁力浮遊"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "粒子磁力トラップ"
+  },
+  "1704": {
+    "id": 1704,
+    "name": "引力波屈折",
+    "required": [
+      {
+        "id": 1143,
+        "name": "ストレンジ物質",
+        "displayName": "ストレンジ物質"
+      },
+      {
+        "id": 1703,
+        "name": "粒子磁力トラップ",
+        "displayName": "粒子磁力トラップ"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "引力波屈折"
+  },
+  "1705": {
+    "id": 1705,
+    "name": "引力マトリクス",
+    "required": [
+      {
+        "id": 1303,
+        "name": "量子チップ",
+        "displayName": "量子チップ"
+      },
+      {
+        "id": 1704,
+        "name": "引力波屈折",
+        "displayName": "引力波屈折"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Gravity Matrix",
+    "pretechsMax": false,
+    "displayName": "引力マトリクス"
+  },
+  "1711": {
+    "id": 1711,
+    "name": "超磁場発生機",
+    "required": [
+      {
+        "id": 1702,
+        "name": "磁力浮遊",
+        "displayName": "磁力浮遊"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "超磁場発生機"
+  },
+  "1712": {
+    "id": 1712,
+    "name": "衛星配電システム",
+    "required": [
+      {
+        "id": 1711,
+        "name": "超磁場発生機",
+        "displayName": "超磁場発生機"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1521,
+        "name": "強化軽量構造物",
+        "displayName": "強化軽量構造物"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "衛星配電システム"
+  },
+  "1801": {
+    "id": 1801,
+    "name": "武器システム",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1401,
+        "name": "精錬自動化",
+        "displayName": "精錬自動化"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "武器システム"
+  },
+  "1802": {
+    "id": 1802,
+    "name": "燃焼ユニット",
+    "required": [
+      {
+        "id": 1401,
+        "name": "精錬自動化",
+        "displayName": "精錬自動化"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "燃焼ユニット"
+  },
+  "1803": {
+    "id": 1803,
+    "name": "爆発ユニット",
+    "required": [
+      {
+        "id": 1123,
+        "name": "強化結晶体",
+        "displayName": "強化結晶体"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "爆発ユニット"
+  },
+  "1804": {
+    "id": 1804,
+    "name": "クリスタル爆発ユニット",
+    "required": [
+      {
+        "id": 1125,
+        "name": "カシミール結晶",
+        "displayName": "カシミール結晶"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "クリスタル爆発ユニット"
+  },
+  "1805": {
+    "id": 1805,
+    "name": "エンジン",
+    "required": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エンジン"
+  },
+  "1806": {
+    "id": 1806,
+    "name": "ミサイル防衛タワー",
+    "required": [
+      {
+        "id": 1805,
+        "name": "エンジン",
+        "displayName": "エンジン"
+      },
+      {
+        "id": 1801,
+        "name": "武器システム",
+        "displayName": "武器システム"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1802,
+        "name": "燃焼ユニット",
+        "displayName": "燃焼ユニット"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ミサイル防衛タワー"
+  },
+  "1807": {
+    "id": 1807,
+    "name": "爆縮キャノン砲",
+    "required": [
+      {
+        "id": 1806,
+        "name": "ミサイル防衛タワー",
+        "displayName": "ミサイル防衛タワー"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "磁力浮遊",
+        "displayName": "磁力浮遊"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "爆縮キャノン砲"
+  },
+  "1808": {
+    "id": 1808,
+    "name": "シグナルタワー",
+    "required": [
+      {
+        "id": 1806,
+        "name": "ミサイル防衛タワー",
+        "displayName": "ミサイル防衛タワー"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1101,
+        "name": "高効率プラズマ制御",
+        "displayName": "高効率プラズマ制御"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "シグナルタワー"
+  },
+  "1809": {
+    "id": 1809,
+    "name": "惑星防衛システム",
+    "required": [
+      {
+        "id": 1807,
+        "name": "爆縮キャノン砲",
+        "displayName": "爆縮キャノン砲"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1703,
+        "name": "粒子磁力トラップ",
+        "displayName": "粒子磁力トラップ"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "惑星防衛システム"
+  },
+  "1810": {
+    "id": 1810,
+    "name": "ジャマータワー",
+    "required": [
+      {
+        "id": 1806,
+        "name": "ミサイル防衛タワー",
+        "displayName": "ミサイル防衛タワー"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1302,
+        "name": "プロセッサー",
+        "displayName": "プロセッサー"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ジャマータワー"
+  },
+  "1811": {
+    "id": 1811,
+    "name": "磁化プラズマ砲",
+    "required": [
+      {
+        "id": 1809,
+        "name": "惑星防衛システム",
+        "displayName": "惑星防衛システム"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1126,
+        "name": "強化ガラス",
+        "displayName": "強化ガラス"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "磁化プラズマ砲"
+  },
+  "1812": {
+    "id": 1812,
+    "name": "チタン弾薬箱",
+    "required": [
+      {
+        "id": 1801,
+        "name": "武器システム",
+        "displayName": "武器システム"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1413,
+        "name": "チタン精錬",
+        "displayName": "チタン精錬"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "チタン弾薬箱"
+  },
+  "1813": {
+    "id": 1813,
+    "name": "超合金弾薬箱",
+    "required": [
+      {
+        "id": 1812,
+        "name": "チタン弾薬箱",
+        "displayName": "チタン弾薬箱"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "強化チタン合金",
+        "displayName": "強化チタン合金"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "超合金弾薬箱"
+  },
+  "1814": {
+    "id": 1814,
+    "name": "高爆発砲弾セット",
+    "required": [
+      {
+        "id": 1807,
+        "name": "爆縮キャノン砲",
+        "displayName": "爆縮キャノン砲"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1413,
+        "name": "チタン精錬",
+        "displayName": "チタン精錬"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "高爆発砲弾セット"
+  },
+  "1815": {
+    "id": 1815,
+    "name": "超音速ミサイルセット",
+    "required": [
+      {
+        "id": 1814,
+        "name": "高爆発砲弾セット",
+        "displayName": "高爆発砲弾セット"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1113,
+        "name": "スラスター",
+        "displayName": "スラスター"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "超音速ミサイルセット"
+  },
+  "1816": {
+    "id": 1816,
+    "name": "結晶砲弾セット",
+    "required": [
+      {
+        "id": 1815,
+        "name": "超音速ミサイルセット",
+        "displayName": "超音速ミサイルセット"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "強化チタン合金",
+        "displayName": "強化チタン合金"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "結晶砲弾セット"
+  },
+  "1817": {
+    "id": 1817,
+    "name": "引力ミサイルセット",
+    "required": [
+      {
+        "id": 1816,
+        "name": "結晶砲弾セット",
+        "displayName": "結晶砲弾セット"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1143,
+        "name": "ストレンジ物質",
+        "displayName": "ストレンジ物質"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "引力ミサイルセット"
+  },
+  "1818": {
+    "id": 1818,
+    "name": "反物質カプセル",
+    "required": [
+      {
+        "id": 1145,
+        "name": "制御された対消滅反応",
+        "displayName": "制御された対消滅反応"
+      },
+      {
+        "id": 1811,
+        "name": "磁化プラズマ砲",
+        "displayName": "磁化プラズマ砲"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "反物質カプセル"
+  },
+  "1819": {
+    "id": 1819,
+    "name": "プロトタイプ",
+    "required": [
+      {
+        "id": 1826,
+        "name": "戦場解析基地",
+        "displayName": "戦場解析基地"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1101,
+        "name": "高効率プラズマ制御",
+        "displayName": "高効率プラズマ制御"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "プロトタイプ"
+  },
+  "1820": {
+    "id": 1820,
+    "name": "精密ドローン",
+    "required": [
+      {
+        "id": 1819,
+        "name": "プロトタイプ",
+        "displayName": "プロトタイプ"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1502,
+        "name": "光子周波数変化",
+        "displayName": "光子周波数変化"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "精密ドローン"
+  },
+  "1821": {
+    "id": 1821,
+    "name": "攻撃ドローン",
+    "required": [
+      {
+        "id": 1819,
+        "name": "プロトタイプ",
+        "displayName": "プロトタイプ"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1703,
+        "name": "粒子磁力トラップ",
+        "displayName": "粒子磁力トラップ"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "攻撃ドローン"
+  },
+  "1822": {
+    "id": 1822,
+    "name": "護衛艦",
+    "required": [
+      {
+        "id": 1809,
+        "name": "惑星防衛システム",
+        "displayName": "惑星防衛システム"
+      },
+      {
+        "id": 1820,
+        "name": "精密ドローン",
+        "displayName": "精密ドローン"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "護衛艦"
+  },
+  "1823": {
+    "id": 1823,
+    "name": "駆逐艦",
+    "required": [
+      {
+        "id": 1822,
+        "name": "護衛艦",
+        "displayName": "護衛艦"
+      },
+      {
+        "id": 1821,
+        "name": "攻撃ドローン",
+        "displayName": "攻撃ドローン"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "駆逐艦"
+  },
+  "1824": {
+    "id": 1824,
+    "name": "制圧カプセル",
+    "required": [
+      {
+        "id": 1810,
+        "name": "ジャマータワー",
+        "displayName": "ジャマータワー"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "制圧カプセル"
+  },
+  "1826": {
+    "id": 1826,
+    "name": "戦場解析基地",
+    "required": [
+      {
+        "id": 1801,
+        "name": "武器システム",
+        "displayName": "武器システム"
+      },
+      {
+        "id": 1805,
+        "name": "エンジン",
+        "displayName": "エンジン"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦場解析基地"
+  },
+  "1901": {
+    "id": 1901,
+    "name": "デジタルシミュレーション",
+    "required": [
+      {
+        "id": 1312,
+        "name": "情報マトリクス",
+        "displayName": "情報マトリクス"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "デジタルシミュレーション"
+  },
+  "1902": {
+    "id": 1902,
+    "name": "物質再構成",
+    "required": [
+      {
+        "id": 1203,
+        "name": "量子プリント",
+        "displayName": "量子プリント"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "物質再構成"
+  },
+  "1903": {
+    "id": 1903,
+    "name": "負エントロピー回帰",
+    "required": [
+      {
+        "id": 1417,
+        "name": "プレーン精錬",
+        "displayName": "プレーン精錬"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "負エントロピー回帰"
+  },
+  "1904": {
+    "id": 1904,
+    "name": "制御された高密度対消滅",
+    "required": [
+      {
+        "id": 1145,
+        "name": "制御された対消滅反応",
+        "displayName": "制御された対消滅反応"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "制御された高密度対消滅"
+  },
+  "2101": {
+    "id": 2101,
+    "name": "メカのコア",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカのコア レベル 1"
+  },
+  "2102": {
+    "id": 2102,
+    "name": "メカのコア",
+    "level": 2,
+    "required": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカのコア レベル 2"
+  },
+  "2103": {
+    "id": 2103,
+    "name": "メカのコア",
+    "level": 3,
+    "required": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカのコア レベル 3"
+  },
+  "2104": {
+    "id": 2104,
+    "name": "メカのコア",
+    "level": 4,
+    "required": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカのコア レベル 4"
+  },
+  "2105": {
+    "id": 2105,
+    "name": "メカのコア",
+    "level": 5,
+    "required": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカのコア レベル 5"
+  },
+  "2106": {
+    "id": 2106,
+    "name": "メカのコア",
+    "level": 6,
+    "required": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカのコア レベル 6"
+  },
+  "2201": {
+    "id": 2201,
+    "name": "メカ骨格",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカ骨格 レベル 1"
+  },
+  "2202": {
+    "id": 2202,
+    "name": "メカ骨格",
+    "level": 2,
+    "required": [
+      {
+        "id": 2201,
+        "name": "メカ骨格",
+        "displayName": "メカ骨格 レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカ骨格 レベル 2"
+  },
+  "2203": {
+    "id": 2203,
+    "name": "メカ骨格",
+    "level": 3,
+    "required": [
+      {
+        "id": 2202,
+        "name": "メカ骨格",
+        "displayName": "メカ骨格 レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカ骨格 レベル 3"
+  },
+  "2204": {
+    "id": 2204,
+    "name": "メカ骨格",
+    "level": 4,
+    "required": [
+      {
+        "id": 2203,
+        "name": "メカ骨格",
+        "displayName": "メカ骨格 レベル 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカ骨格 レベル 4"
+  },
+  "2205": {
+    "id": 2205,
+    "name": "メカ骨格",
+    "level": 5,
+    "required": [
+      {
+        "id": 2204,
+        "name": "メカ骨格",
+        "displayName": "メカ骨格 レベル 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカ骨格 レベル 5"
+  },
+  "2206": {
+    "id": 2206,
+    "name": "メカ骨格",
+    "level": 6,
+    "required": [
+      {
+        "id": 2205,
+        "name": "メカ骨格",
+        "displayName": "メカ骨格 レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカ骨格 レベル 6"
+  },
+  "2207": {
+    "id": 2207,
+    "name": "メカ骨格",
+    "level": 7,
+    "required": [
+      {
+        "id": 2206,
+        "name": "メカ骨格",
+        "displayName": "メカ骨格 レベル 6"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカ骨格 レベル 7"
+  },
+  "2208": {
+    "id": 2208,
+    "name": "メカ骨格",
+    "level": 8,
+    "required": [
+      {
+        "id": 2207,
+        "name": "メカ骨格",
+        "displayName": "メカ骨格 レベル 7"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "メカ骨格 レベル 8"
+  },
+  "2301": {
+    "id": 2301,
+    "name": "ハンガー容量",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ハンガー容量 レベル 1"
+  },
+  "2302": {
+    "id": 2302,
+    "name": "ハンガー容量",
+    "level": 2,
+    "required": [
+      {
+        "id": 2301,
+        "name": "ハンガー容量",
+        "displayName": "ハンガー容量 レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ハンガー容量 レベル 2"
+  },
+  "2303": {
+    "id": 2303,
+    "name": "ハンガー容量",
+    "level": 3,
+    "required": [
+      {
+        "id": 2302,
+        "name": "ハンガー容量",
+        "displayName": "ハンガー容量 レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ハンガー容量 レベル 3"
+  },
+  "2304": {
+    "id": 2304,
+    "name": "ハンガー容量",
+    "level": 4,
+    "required": [
+      {
+        "id": 2303,
+        "name": "ハンガー容量",
+        "displayName": "ハンガー容量 レベル 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ハンガー容量 レベル 4"
+  },
+  "2305": {
+    "id": 2305,
+    "name": "ハンガー容量",
+    "level": 5,
+    "required": [
+      {
+        "id": 2304,
+        "name": "ハンガー容量",
+        "displayName": "ハンガー容量 レベル 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ハンガー容量 レベル 5"
+  },
+  "2306": {
+    "id": 2306,
+    "name": "ハンガー容量",
+    "level": 6,
+    "required": [
+      {
+        "id": 2305,
+        "name": "ハンガー容量",
+        "displayName": "ハンガー容量 レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ハンガー容量 レベル 6"
+  },
+  "2307": {
+    "id": 2307,
+    "name": "ハンガー容量",
+    "level": 7,
+    "required": [
+      {
+        "id": 2306,
+        "name": "ハンガー容量",
+        "displayName": "ハンガー容量 レベル 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ハンガー容量 レベル 7"
+  },
+  "2401": {
+    "id": 2401,
+    "name": "通信コントロール",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "通信コントロール レベル 1"
+  },
+  "2402": {
+    "id": 2402,
+    "name": "通信コントロール",
+    "level": 2,
+    "required": [
+      {
+        "id": 2401,
+        "name": "通信コントロール",
+        "displayName": "通信コントロール レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "通信コントロール レベル 2"
+  },
+  "2403": {
+    "id": 2403,
+    "name": "通信コントロール",
+    "level": 3,
+    "required": [
+      {
+        "id": 2402,
+        "name": "通信コントロール",
+        "displayName": "通信コントロール レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "通信コントロール レベル 3"
+  },
+  "2404": {
+    "id": 2404,
+    "name": "通信コントロール",
+    "level": 4,
+    "required": [
+      {
+        "id": 2403,
+        "name": "通信コントロール",
+        "displayName": "通信コントロール レベル 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "通信コントロール レベル 4"
+  },
+  "2405": {
+    "id": 2405,
+    "name": "通信コントロール",
+    "level": 5,
+    "required": [
+      {
+        "id": 2404,
+        "name": "通信コントロール",
+        "displayName": "通信コントロール レベル 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "通信コントロール レベル 5"
+  },
+  "2406": {
+    "id": 2406,
+    "name": "通信コントロール",
+    "level": 6,
+    "required": [
+      {
+        "id": 2405,
+        "name": "通信コントロール",
+        "displayName": "通信コントロール レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "通信コントロール レベル 6"
+  },
+  "2407": {
+    "id": 2407,
+    "name": "通信コントロール",
+    "level": 7,
+    "required": [
+      {
+        "id": 2406,
+        "name": "通信コントロール",
+        "displayName": "通信コントロール レベル 6"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "通信コントロール レベル 7"
+  },
+  "2501": {
+    "id": 2501,
+    "name": "エネルギー回路",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー回路 レベル 1"
+  },
+  "2502": {
+    "id": 2502,
+    "name": "エネルギー回路",
+    "level": 2,
+    "required": [
+      {
+        "id": 2501,
+        "name": "エネルギー回路",
+        "displayName": "エネルギー回路 レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー回路 レベル 2"
+  },
+  "2503": {
+    "id": 2503,
+    "name": "エネルギー回路",
+    "level": 3,
+    "required": [
+      {
+        "id": 2502,
+        "name": "エネルギー回路",
+        "displayName": "エネルギー回路 レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー回路 レベル 3"
+  },
+  "2504": {
+    "id": 2504,
+    "name": "エネルギー回路",
+    "level": 4,
+    "required": [
+      {
+        "id": 2503,
+        "name": "エネルギー回路",
+        "displayName": "エネルギー回路 レベル 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー回路 レベル 4"
+  },
+  "2505": {
+    "id": 2505,
+    "name": "エネルギー回路",
+    "level": 5,
+    "required": [
+      {
+        "id": 2504,
+        "name": "エネルギー回路",
+        "displayName": "エネルギー回路 レベル 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー回路 レベル 5"
+  },
+  "2506": {
+    "id": 2506,
+    "name": "エネルギー回路",
+    "level": 6,
+    "required": [
+      {
+        "id": 2505,
+        "name": "エネルギー回路",
+        "displayName": "エネルギー回路 レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー回路 レベル 6"
+  },
+  "2601": {
+    "id": 2601,
+    "name": "ドローンエンジン",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドローンエンジン レベル 1"
+  },
+  "2602": {
+    "id": 2602,
+    "name": "ドローンエンジン",
+    "level": 2,
+    "required": [
+      {
+        "id": 2601,
+        "name": "ドローンエンジン",
+        "displayName": "ドローンエンジン レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドローンエンジン レベル 2"
+  },
+  "2603": {
+    "id": 2603,
+    "name": "ドローンエンジン",
+    "level": 3,
+    "required": [
+      {
+        "id": 2602,
+        "name": "ドローンエンジン",
+        "displayName": "ドローンエンジン レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドローンエンジン レベル 3"
+  },
+  "2604": {
+    "id": 2604,
+    "name": "ドローンエンジン",
+    "level": 4,
+    "required": [
+      {
+        "id": 2603,
+        "name": "ドローンエンジン",
+        "displayName": "ドローンエンジン レベル 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドローンエンジン レベル 4"
+  },
+  "2605": {
+    "id": 2605,
+    "name": "ドローンエンジン",
+    "level": 5,
+    "required": [
+      {
+        "id": 2604,
+        "name": "ドローンエンジン",
+        "displayName": "ドローンエンジン レベル 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドローンエンジン レベル 5"
+  },
+  "2606": {
+    "id": 2606,
+    "name": "ドローンエンジン",
+    "level": 6,
+    "required": [
+      {
+        "id": 2605,
+        "name": "ドローンエンジン",
+        "displayName": "ドローンエンジン レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドローンエンジン レベル 6"
+  },
+  "2701": {
+    "id": 2701,
+    "name": "一括建設",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "一括建設 レベル 1"
+  },
+  "2702": {
+    "id": 2702,
+    "name": "一括建設",
+    "level": 2,
+    "required": [
+      {
+        "id": 2701,
+        "name": "一括建設",
+        "displayName": "一括建設 レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "一括建設 レベル 2"
+  },
+  "2703": {
+    "id": 2703,
+    "name": "一括建設",
+    "level": 3,
+    "required": [
+      {
+        "id": 2702,
+        "name": "一括建設",
+        "displayName": "一括建設 レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "一括建設 レベル 3"
+  },
+  "2704": {
+    "id": 2704,
+    "name": "一括建設",
+    "level": 4,
+    "required": [
+      {
+        "id": 2703,
+        "name": "一括建設",
+        "displayName": "一括建設 レベル 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "一括建設 レベル 4"
+  },
+  "2705": {
+    "id": 2705,
+    "name": "一括建設",
+    "level": 5,
+    "required": [
+      {
+        "id": 2704,
+        "name": "一括建設",
+        "displayName": "一括建設 レベル 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "一括建設 レベル 5"
+  },
+  "2706": {
+    "id": 2706,
+    "name": "一括建設",
+    "level": 6,
+    "required": [
+      {
+        "id": 2705,
+        "name": "一括建設",
+        "displayName": "一括建設 レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "一括建設 レベル 6"
+  },
+  "2801": {
+    "id": 2801,
+    "name": "エネルギーシールド",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギーシールド レベル 1"
+  },
+  "2802": {
+    "id": 2802,
+    "name": "エネルギーシールド",
+    "level": 2,
+    "required": [
+      {
+        "id": 2801,
+        "name": "エネルギーシールド",
+        "displayName": "エネルギーシールド レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギーシールド レベル 2"
+  },
+  "2803": {
+    "id": 2803,
+    "name": "エネルギーシールド",
+    "level": 3,
+    "required": [
+      {
+        "id": 2802,
+        "name": "エネルギーシールド",
+        "displayName": "エネルギーシールド レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギーシールド レベル 3"
+  },
+  "2804": {
+    "id": 2804,
+    "name": "エネルギーシールド",
+    "level": 4,
+    "required": [
+      {
+        "id": 2803,
+        "name": "エネルギーシールド",
+        "displayName": "エネルギーシールド レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギーシールド レベル 4"
+  },
+  "2805": {
+    "id": 2805,
+    "name": "エネルギーシールド",
+    "level": 5,
+    "required": [
+      {
+        "id": 2804,
+        "name": "エネルギーシールド",
+        "displayName": "エネルギーシールド レベル 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギーシールド レベル 5"
+  },
+  "2806": {
+    "id": 2806,
+    "name": "エネルギーシールド",
+    "level": 6,
+    "required": [
+      {
+        "id": 2805,
+        "name": "エネルギーシールド",
+        "displayName": "エネルギーシールド レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギーシールド レベル 6"
+  },
+  "2807": {
+    "id": 2807,
+    "name": "エネルギーシールド",
+    "level": 26,
+    "required": [
+      {
+        "id": 2806,
+        "name": "エネルギーシールド",
+        "displayName": "エネルギーシールド レベル 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true,
+    "displayName": "エネルギーシールド レベル 26"
+  },
+  "2901": {
+    "id": 2901,
+    "name": "ドライブエンジン",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドライブエンジン レベル 1"
+  },
+  "2902": {
+    "id": 2902,
+    "name": "ドライブエンジン",
+    "level": 2,
+    "required": [
+      {
+        "id": 2901,
+        "name": "ドライブエンジン",
+        "displayName": "ドライブエンジン レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 2"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Drive Engine Lv2 / leave starter planet",
+    "pretechsMax": false,
+    "displayName": "ドライブエンジン レベル 2"
+  },
+  "2903": {
+    "id": 2903,
+    "name": "ドライブエンジン",
+    "level": 3,
+    "required": [
+      {
+        "id": 2902,
+        "name": "ドライブエンジン",
+        "displayName": "ドライブエンジン レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドライブエンジン レベル 3"
+  },
+  "2904": {
+    "id": 2904,
+    "name": "ドライブエンジン",
+    "level": 4,
+    "required": [
+      {
+        "id": 2903,
+        "name": "ドライブエンジン",
+        "displayName": "ドライブエンジン レベル 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 4"
+      },
+      {
+        "id": 1704,
+        "name": "引力波屈折",
+        "displayName": "引力波屈折"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Drive Engine Lv4 / mecha warp",
+    "pretechsMax": false,
+    "displayName": "ドライブエンジン レベル 4"
+  },
+  "2905": {
+    "id": 2905,
+    "name": "ドライブエンジン",
+    "level": 5,
+    "required": [
+      {
+        "id": 2904,
+        "name": "ドライブエンジン",
+        "displayName": "ドライブエンジン レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドライブエンジン レベル 5"
+  },
+  "2906": {
+    "id": 2906,
+    "name": "ドライブエンジン",
+    "level": 6,
+    "required": [
+      {
+        "id": 2905,
+        "name": "ドライブエンジン",
+        "displayName": "ドライブエンジン レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ドライブエンジン レベル 6"
+  },
+  "2951": {
+    "id": 2951,
+    "name": "自動再建マーク",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "自動再建マーク レベル 1"
+  },
+  "2952": {
+    "id": 2952,
+    "name": "自動再建マーク",
+    "level": 2,
+    "required": [
+      {
+        "id": 2951,
+        "name": "自動再建マーク",
+        "displayName": "自動再建マーク レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "自動再建マーク レベル 2"
+  },
+  "2953": {
+    "id": 2953,
+    "name": "自動再建マーク",
+    "level": 3,
+    "required": [
+      {
+        "id": 2952,
+        "name": "自動再建マーク",
+        "displayName": "自動再建マーク レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "自動再建マーク レベル 3"
+  },
+  "2954": {
+    "id": 2954,
+    "name": "自動再建マーク",
+    "level": 4,
+    "required": [
+      {
+        "id": 2953,
+        "name": "自動再建マーク",
+        "displayName": "自動再建マーク レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "自動再建マーク レベル 4"
+  },
+  "2955": {
+    "id": 2955,
+    "name": "自動再建マーク",
+    "level": 5,
+    "required": [
+      {
+        "id": 2954,
+        "name": "自動再建マーク",
+        "displayName": "自動再建マーク レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "自動再建マーク レベル 5"
+  },
+  "2956": {
+    "id": 2956,
+    "name": "自動再建マーク",
+    "level": 6,
+    "required": [
+      {
+        "id": 2955,
+        "name": "自動再建マーク",
+        "displayName": "自動再建マーク レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "自動再建マーク レベル 6"
+  },
+  "3101": {
+    "id": 3101,
+    "name": "ソーラーセイル寿命",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1503,
+        "name": "ソーラーセイル軌道システム",
+        "displayName": "ソーラーセイル軌道システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル寿命 レベル 1"
+  },
+  "3102": {
+    "id": 3102,
+    "name": "ソーラーセイル寿命",
+    "level": 2,
+    "required": [
+      {
+        "id": 3101,
+        "name": "ソーラーセイル寿命",
+        "displayName": "ソーラーセイル寿命 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル寿命 レベル 2"
+  },
+  "3103": {
+    "id": 3103,
+    "name": "ソーラーセイル寿命",
+    "level": 3,
+    "required": [
+      {
+        "id": 3102,
+        "name": "ソーラーセイル寿命",
+        "displayName": "ソーラーセイル寿命 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル寿命 レベル 3"
+  },
+  "3104": {
+    "id": 3104,
+    "name": "ソーラーセイル寿命",
+    "level": 4,
+    "required": [
+      {
+        "id": 3103,
+        "name": "ソーラーセイル寿命",
+        "displayName": "ソーラーセイル寿命 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル寿命 レベル 4"
+  },
+  "3105": {
+    "id": 3105,
+    "name": "ソーラーセイル寿命",
+    "level": 5,
+    "required": [
+      {
+        "id": 3104,
+        "name": "ソーラーセイル寿命",
+        "displayName": "ソーラーセイル寿命 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル寿命 レベル 5"
+  },
+  "3106": {
+    "id": 3106,
+    "name": "ソーラーセイル寿命",
+    "level": 6,
+    "required": [
+      {
+        "id": 3105,
+        "name": "ソーラーセイル寿命",
+        "displayName": "ソーラーセイル寿命 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル寿命 レベル 6"
+  },
+  "3201": {
+    "id": 3201,
+    "name": "放射線送信効率",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1504,
+        "name": "放射線レシーバー",
+        "displayName": "放射線レシーバー"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線送信効率 レベル 1"
+  },
+  "3202": {
+    "id": 3202,
+    "name": "放射線送信効率",
+    "level": 2,
+    "required": [
+      {
+        "id": 3201,
+        "name": "放射線送信効率",
+        "displayName": "放射線送信効率 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線送信効率 レベル 2"
+  },
+  "3203": {
+    "id": 3203,
+    "name": "放射線送信効率",
+    "level": 3,
+    "required": [
+      {
+        "id": 3202,
+        "name": "放射線送信効率",
+        "displayName": "放射線送信効率 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線送信効率 レベル 3"
+  },
+  "3204": {
+    "id": 3204,
+    "name": "放射線送信効率",
+    "level": 4,
+    "required": [
+      {
+        "id": 3203,
+        "name": "放射線送信効率",
+        "displayName": "放射線送信効率 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線送信効率 レベル 4"
+  },
+  "3205": {
+    "id": 3205,
+    "name": "放射線送信効率",
+    "level": 5,
+    "required": [
+      {
+        "id": 3204,
+        "name": "放射線送信効率",
+        "displayName": "放射線送信効率 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線送信効率 レベル 5"
+  },
+  "3206": {
+    "id": 3206,
+    "name": "放射線送信効率",
+    "level": 6,
+    "required": [
+      {
+        "id": 3205,
+        "name": "放射線送信効率",
+        "displayName": "放射線送信効率 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線送信効率 レベル 6"
+  },
+  "3207": {
+    "id": 3207,
+    "name": "放射線送信効率",
+    "level": 7,
+    "required": [
+      {
+        "id": 3206,
+        "name": "放射線送信効率",
+        "displayName": "放射線送信効率 レベル 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線送信効率 レベル 7"
+  },
+  "3208": {
+    "id": 3208,
+    "name": "放射線送信効率",
+    "level": 8,
+    "required": [
+      {
+        "id": 3207,
+        "name": "放射線送信効率",
+        "displayName": "放射線送信効率 レベル 7"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "放射線送信効率 レベル 8"
+  },
+  "3301": {
+    "id": 3301,
+    "name": "仕分機貨物スタック",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "集積物流システム",
+        "displayName": "集積物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "仕分機貨物スタック レベル 1"
+  },
+  "3302": {
+    "id": 3302,
+    "name": "仕分機貨物スタック",
+    "level": 2,
+    "required": [
+      {
+        "id": 3301,
+        "name": "仕分機貨物スタック",
+        "displayName": "仕分機貨物スタック レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "仕分機貨物スタック レベル 2"
+  },
+  "3303": {
+    "id": 3303,
+    "name": "仕分機貨物スタック",
+    "level": 3,
+    "required": [
+      {
+        "id": 3302,
+        "name": "仕分機貨物スタック",
+        "displayName": "仕分機貨物スタック レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "仕分機貨物スタック レベル 3"
+  },
+  "3304": {
+    "id": 3304,
+    "name": "仕分機貨物スタック",
+    "level": 4,
+    "required": [
+      {
+        "id": 3303,
+        "name": "仕分機貨物スタック",
+        "displayName": "仕分機貨物スタック レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "仕分機貨物スタック レベル 4"
+  },
+  "3305": {
+    "id": 3305,
+    "name": "仕分機貨物スタック",
+    "level": 5,
+    "required": [
+      {
+        "id": 3304,
+        "name": "仕分機貨物スタック",
+        "displayName": "仕分機貨物スタック レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "仕分機貨物スタック レベル 5"
+  },
+  "3306": {
+    "id": 3306,
+    "name": "仕分機貨物集積",
+    "level": 1,
+    "required": [
+      {
+        "id": 3305,
+        "name": "仕分機貨物スタック",
+        "displayName": "仕分機貨物スタック レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "集積物流システム",
+        "displayName": "集積物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "仕分機貨物集積 レベル 1"
+  },
+  "3311": {
+    "id": 3311,
+    "name": "集積仕分機アップグレード",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "集積物流システム",
+        "displayName": "集積物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "集積仕分機アップグレード レベル 1"
+  },
+  "3312": {
+    "id": 3312,
+    "name": "集積仕分機アップグレード",
+    "level": 2,
+    "required": [
+      {
+        "id": 3311,
+        "name": "集積仕分機アップグレード",
+        "displayName": "集積仕分機アップグレード レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "集積仕分機アップグレード レベル 2"
+  },
+  "3313": {
+    "id": 3313,
+    "name": "集積仕分機アップグレード",
+    "level": 3,
+    "required": [
+      {
+        "id": 3312,
+        "name": "集積仕分機アップグレード",
+        "displayName": "集積仕分機アップグレード レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "集積仕分機アップグレード レベル 3"
+  },
+  "3314": {
+    "id": 3314,
+    "name": "集積仕分機アップグレード",
+    "level": 4,
+    "required": [
+      {
+        "id": 3313,
+        "name": "集積仕分機アップグレード",
+        "displayName": "集積仕分機アップグレード レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "集積仕分機アップグレード レベル 4"
+  },
+  "3315": {
+    "id": 3315,
+    "name": "集積仕分機アップグレード",
+    "level": 5,
+    "required": [
+      {
+        "id": 3314,
+        "name": "集積仕分機アップグレード",
+        "displayName": "集積仕分機アップグレード レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "集積仕分機アップグレード レベル 5"
+  },
+  "3316": {
+    "id": 3316,
+    "name": "集積仕分機アップグレード",
+    "level": 6,
+    "required": [
+      {
+        "id": 3315,
+        "name": "集積仕分機アップグレード",
+        "displayName": "集積仕分機アップグレード レベル 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "集積物流システム",
+        "displayName": "集積物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "集積仕分機アップグレード レベル 6"
+  },
+  "3401": {
+    "id": 3401,
+    "name": "輸送船エンジン",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1604,
+        "name": "惑星物流システム",
+        "displayName": "惑星物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船エンジン レベル 1"
+  },
+  "3402": {
+    "id": 3402,
+    "name": "輸送船エンジン",
+    "level": 2,
+    "required": [
+      {
+        "id": 3401,
+        "name": "輸送船エンジン",
+        "displayName": "輸送船エンジン レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船エンジン レベル 2"
+  },
+  "3403": {
+    "id": 3403,
+    "name": "輸送船エンジン",
+    "level": 3,
+    "required": [
+      {
+        "id": 3402,
+        "name": "輸送船エンジン",
+        "displayName": "輸送船エンジン レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1605,
+        "name": "星間物流システム",
+        "displayName": "星間物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船エンジン レベル 3"
+  },
+  "3404": {
+    "id": 3404,
+    "name": "輸送船エンジン",
+    "level": 4,
+    "required": [
+      {
+        "id": 3403,
+        "name": "輸送船エンジン",
+        "displayName": "輸送船エンジン レベル 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2904,
+        "name": "ドライブエンジン",
+        "displayName": "ドライブエンジン レベル 4"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Logistics Carrier Engine Lv4 / vessel warp",
+    "pretechsMax": false,
+    "displayName": "輸送船エンジン レベル 4"
+  },
+  "3405": {
+    "id": 3405,
+    "name": "輸送船エンジン",
+    "level": 5,
+    "required": [
+      {
+        "id": 3404,
+        "name": "輸送船エンジン",
+        "displayName": "輸送船エンジン レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船エンジン レベル 5"
+  },
+  "3406": {
+    "id": 3406,
+    "name": "輸送船エンジン",
+    "level": 6,
+    "required": [
+      {
+        "id": 3405,
+        "name": "輸送船エンジン",
+        "displayName": "輸送船エンジン レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船エンジン レベル 6"
+  },
+  "3407": {
+    "id": 3407,
+    "name": "輸送船エンジン",
+    "level": 7,
+    "required": [
+      {
+        "id": 3406,
+        "name": "輸送船エンジン",
+        "displayName": "輸送船エンジン レベル 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船エンジン レベル 7"
+  },
+  "3501": {
+    "id": 3501,
+    "name": "輸送船ハンガー拡張",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1604,
+        "name": "惑星物流システム",
+        "displayName": "惑星物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 1"
+  },
+  "3502": {
+    "id": 3502,
+    "name": "輸送船ハンガー拡張",
+    "level": 2,
+    "required": [
+      {
+        "id": 3501,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 2"
+  },
+  "3503": {
+    "id": 3503,
+    "name": "輸送船ハンガー拡張",
+    "level": 3,
+    "required": [
+      {
+        "id": 3502,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1605,
+        "name": "星間物流システム",
+        "displayName": "星間物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 3"
+  },
+  "3504": {
+    "id": 3504,
+    "name": "輸送船ハンガー拡張",
+    "level": 4,
+    "required": [
+      {
+        "id": 3503,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 4"
+  },
+  "3505": {
+    "id": 3505,
+    "name": "輸送船ハンガー拡張",
+    "level": 5,
+    "required": [
+      {
+        "id": 3504,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 5"
+  },
+  "3506": {
+    "id": 3506,
+    "name": "輸送船ハンガー拡張",
+    "level": 6,
+    "required": [
+      {
+        "id": 3505,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 6"
+  },
+  "3507": {
+    "id": 3507,
+    "name": "輸送船ハンガー拡張",
+    "level": 7,
+    "required": [
+      {
+        "id": 3506,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 7"
+  },
+  "3508": {
+    "id": 3508,
+    "name": "輸送船ハンガー拡張",
+    "level": 8,
+    "required": [
+      {
+        "id": 3507,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 7"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 8"
+  },
+  "3509": {
+    "id": 3509,
+    "name": "輸送船ハンガー拡張",
+    "level": 9,
+    "required": [
+      {
+        "id": 3508,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 8"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "輸送船ハンガー拡張 レベル 9"
+  },
+  "3510": {
+    "id": 3510,
+    "name": "輸送船ハンガー拡張",
+    "level": 12,
+    "required": [
+      {
+        "id": 3509,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 9"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true,
+    "displayName": "輸送船ハンガー拡張 レベル 12"
+  },
+  "3601": {
+    "id": 3601,
+    "name": "鉱物利用",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1001,
+        "name": "電磁学",
+        "displayName": "電磁学"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "鉱物利用 レベル 1"
+  },
+  "3602": {
+    "id": 3602,
+    "name": "鉱物利用",
+    "level": 2,
+    "required": [
+      {
+        "id": 3601,
+        "name": "鉱物利用",
+        "displayName": "鉱物利用 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "鉱物利用 レベル 2"
+  },
+  "3603": {
+    "id": 3603,
+    "name": "鉱物利用",
+    "level": 3,
+    "required": [
+      {
+        "id": 3602,
+        "name": "鉱物利用",
+        "displayName": "鉱物利用 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "鉱物利用 レベル 3"
+  },
+  "3604": {
+    "id": 3604,
+    "name": "鉱物利用",
+    "level": 4,
+    "required": [
+      {
+        "id": 3603,
+        "name": "鉱物利用",
+        "displayName": "鉱物利用 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "鉱物利用 レベル 4"
+  },
+  "3605": {
+    "id": 3605,
+    "name": "鉱物利用",
+    "level": 5,
+    "required": [
+      {
+        "id": 3604,
+        "name": "鉱物利用",
+        "displayName": "鉱物利用 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "鉱物利用 レベル 5"
+  },
+  "3606": {
+    "id": 3606,
+    "name": "鉱物利用",
+    "level": 6,
+    "required": [
+      {
+        "id": 3605,
+        "name": "鉱物利用",
+        "displayName": "鉱物利用 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "鉱物利用 レベル 6"
+  },
+  "3701": {
+    "id": 3701,
+    "name": "垂直建設",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1601,
+        "name": "基礎物流システム",
+        "displayName": "基礎物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "垂直建設 レベル 1"
+  },
+  "3702": {
+    "id": 3702,
+    "name": "垂直建設",
+    "level": 2,
+    "required": [
+      {
+        "id": 3701,
+        "name": "垂直建設",
+        "displayName": "垂直建設 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "垂直建設 レベル 2"
+  },
+  "3703": {
+    "id": 3703,
+    "name": "垂直建設",
+    "level": 3,
+    "required": [
+      {
+        "id": 3702,
+        "name": "垂直建設",
+        "displayName": "垂直建設 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "垂直建設 レベル 3"
+  },
+  "3704": {
+    "id": 3704,
+    "name": "垂直建設",
+    "level": 4,
+    "required": [
+      {
+        "id": 3703,
+        "name": "垂直建設",
+        "displayName": "垂直建設 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "垂直建設 レベル 4"
+  },
+  "3705": {
+    "id": 3705,
+    "name": "垂直建設",
+    "level": 5,
+    "required": [
+      {
+        "id": 3704,
+        "name": "垂直建設",
+        "displayName": "垂直建設 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "垂直建設 レベル 5"
+  },
+  "3706": {
+    "id": 3706,
+    "name": "垂直建設",
+    "level": 6,
+    "required": [
+      {
+        "id": 3705,
+        "name": "垂直建設",
+        "displayName": "垂直建設 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "垂直建設 レベル 6"
+  },
+  "3801": {
+    "id": 3801,
+    "name": "ステーション集積物流",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 3508,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 8"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ステーション集積物流 レベル 1"
+  },
+  "3802": {
+    "id": 3802,
+    "name": "ステーション集積物流",
+    "level": 2,
+    "required": [
+      {
+        "id": 3801,
+        "name": "ステーション集積物流",
+        "displayName": "ステーション集積物流 レベル 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 3509,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 9"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true,
+    "displayName": "ステーション集積物流 レベル 2"
+  },
+  "3803": {
+    "id": 3803,
+    "name": "ステーション集積物流",
+    "level": 3,
+    "required": [
+      {
+        "id": 3802,
+        "name": "ステーション集積物流",
+        "displayName": "ステーション集積物流 レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 3510,
+        "name": "輸送船ハンガー拡張",
+        "displayName": "輸送船ハンガー拡張 レベル 12"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true,
+    "displayName": "ステーション集積物流 レベル 3"
+  },
+  "3901": {
+    "id": 3901,
+    "name": "研究速度",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1312,
+        "name": "情報マトリクス",
+        "displayName": "情報マトリクス"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "研究速度 レベル 1"
+  },
+  "3902": {
+    "id": 3902,
+    "name": "研究速度",
+    "level": 2,
+    "required": [
+      {
+        "id": 3901,
+        "name": "研究速度",
+        "displayName": "研究速度 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "研究速度 レベル 2"
+  },
+  "3903": {
+    "id": 3903,
+    "name": "研究速度",
+    "level": 3,
+    "required": [
+      {
+        "id": 3902,
+        "name": "研究速度",
+        "displayName": "研究速度 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "研究速度 レベル 3"
+  },
+  "3904": {
+    "id": 3904,
+    "name": "研究速度",
+    "level": 4,
+    "required": [
+      {
+        "id": 3903,
+        "name": "研究速度",
+        "displayName": "研究速度 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "研究速度 レベル 4"
+  },
+  "4001": {
+    "id": 4001,
+    "name": "配送範囲",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1608,
+        "name": "配送物流システム",
+        "displayName": "配送物流システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "配送範囲 レベル 1"
+  },
+  "4002": {
+    "id": 4002,
+    "name": "配送範囲",
+    "level": 2,
+    "required": [
+      {
+        "id": 4001,
+        "name": "配送範囲",
+        "displayName": "配送範囲 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "配送範囲 レベル 2"
+  },
+  "4003": {
+    "id": 4003,
+    "name": "配送範囲",
+    "level": 3,
+    "required": [
+      {
+        "id": 4002,
+        "name": "配送範囲",
+        "displayName": "配送範囲 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "配送範囲 レベル 3"
+  },
+  "4004": {
+    "id": 4004,
+    "name": "配送範囲",
+    "level": 4,
+    "required": [
+      {
+        "id": 4003,
+        "name": "配送範囲",
+        "displayName": "配送範囲 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "配送範囲 レベル 4"
+  },
+  "4005": {
+    "id": 4005,
+    "name": "配送範囲",
+    "level": 5,
+    "required": [
+      {
+        "id": 4004,
+        "name": "配送範囲",
+        "displayName": "配送範囲 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "配送範囲 レベル 5"
+  },
+  "4101": {
+    "id": 4101,
+    "name": "宇宙探索",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙探索 レベル 1"
+  },
+  "4102": {
+    "id": 4102,
+    "name": "宇宙探索",
+    "level": 2,
+    "required": [
+      {
+        "id": 4101,
+        "name": "宇宙探索",
+        "displayName": "宇宙探索 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙探索 レベル 2"
+  },
+  "4103": {
+    "id": 4103,
+    "name": "宇宙探索",
+    "level": 3,
+    "required": [
+      {
+        "id": 4102,
+        "name": "宇宙探索",
+        "displayName": "宇宙探索 レベル 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2902,
+        "name": "ドライブエンジン",
+        "displayName": "ドライブエンジン レベル 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙探索 レベル 3"
+  },
+  "4104": {
+    "id": 4104,
+    "name": "宇宙探索",
+    "level": 4,
+    "required": [
+      {
+        "id": 4103,
+        "name": "宇宙探索",
+        "displayName": "宇宙探索 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙探索 レベル 4"
+  },
+  "4201": {
+    "id": 4201,
+    "name": "ソーラーセイル吸着速度",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1522,
+        "name": "垂直発射サイロ",
+        "displayName": "垂直発射サイロ"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル吸着速度 レベル 1"
+  },
+  "4202": {
+    "id": 4202,
+    "name": "ソーラーセイル吸着速度",
+    "level": 2,
+    "required": [
+      {
+        "id": 4201,
+        "name": "ソーラーセイル吸着速度",
+        "displayName": "ソーラーセイル吸着速度 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル吸着速度 レベル 2"
+  },
+  "4203": {
+    "id": 4203,
+    "name": "ソーラーセイル吸着速度",
+    "level": 3,
+    "required": [
+      {
+        "id": 4202,
+        "name": "ソーラーセイル吸着速度",
+        "displayName": "ソーラーセイル吸着速度 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル吸着速度 レベル 3"
+  },
+  "4204": {
+    "id": 4204,
+    "name": "ソーラーセイル吸着速度",
+    "level": 4,
+    "required": [
+      {
+        "id": 4203,
+        "name": "ソーラーセイル吸着速度",
+        "displayName": "ソーラーセイル吸着速度 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル吸着速度 レベル 4"
+  },
+  "4205": {
+    "id": 4205,
+    "name": "ソーラーセイル吸着速度",
+    "level": 5,
+    "required": [
+      {
+        "id": 4204,
+        "name": "ソーラーセイル吸着速度",
+        "displayName": "ソーラーセイル吸着速度 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル吸着速度 レベル 5"
+  },
+  "4206": {
+    "id": 4206,
+    "name": "ソーラーセイル吸着速度",
+    "level": 6,
+    "required": [
+      {
+        "id": 4205,
+        "name": "ソーラーセイル吸着速度",
+        "displayName": "ソーラーセイル吸着速度 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "ソーラーセイル吸着速度 レベル 6"
+  },
+  "5001": {
+    "id": 5001,
+    "name": "キネシス武器ダメージ",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1801,
+        "name": "武器システム",
+        "displayName": "武器システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "キネシス武器ダメージ レベル 1"
+  },
+  "5002": {
+    "id": 5002,
+    "name": "キネシス武器ダメージ",
+    "level": 2,
+    "required": [
+      {
+        "id": 5001,
+        "name": "キネシス武器ダメージ",
+        "displayName": "キネシス武器ダメージ レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "キネシス武器ダメージ レベル 2"
+  },
+  "5003": {
+    "id": 5003,
+    "name": "キネシス武器ダメージ",
+    "level": 3,
+    "required": [
+      {
+        "id": 5002,
+        "name": "キネシス武器ダメージ",
+        "displayName": "キネシス武器ダメージ レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "キネシス武器ダメージ レベル 3"
+  },
+  "5004": {
+    "id": 5004,
+    "name": "キネシス武器ダメージ",
+    "level": 4,
+    "required": [
+      {
+        "id": 5003,
+        "name": "キネシス武器ダメージ",
+        "displayName": "キネシス武器ダメージ レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "キネシス武器ダメージ レベル 4"
+  },
+  "5005": {
+    "id": 5005,
+    "name": "キネシス武器ダメージ",
+    "level": 5,
+    "required": [
+      {
+        "id": 5004,
+        "name": "キネシス武器ダメージ",
+        "displayName": "キネシス武器ダメージ レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "キネシス武器ダメージ レベル 5"
+  },
+  "5006": {
+    "id": 5006,
+    "name": "キネシス武器ダメージ",
+    "level": 6,
+    "required": [
+      {
+        "id": 5005,
+        "name": "キネシス武器ダメージ",
+        "displayName": "キネシス武器ダメージ レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "キネシス武器ダメージ レベル 6"
+  },
+  "5101": {
+    "id": 5101,
+    "name": "エネルギー武器ダメージ",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1801,
+        "name": "武器システム",
+        "displayName": "武器システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー武器ダメージ レベル 1"
+  },
+  "5102": {
+    "id": 5102,
+    "name": "エネルギー武器ダメージ",
+    "level": 2,
+    "required": [
+      {
+        "id": 5101,
+        "name": "エネルギー武器ダメージ",
+        "displayName": "エネルギー武器ダメージ レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー武器ダメージ レベル 2"
+  },
+  "5103": {
+    "id": 5103,
+    "name": "エネルギー武器ダメージ",
+    "level": 3,
+    "required": [
+      {
+        "id": 5102,
+        "name": "エネルギー武器ダメージ",
+        "displayName": "エネルギー武器ダメージ レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー武器ダメージ レベル 3"
+  },
+  "5104": {
+    "id": 5104,
+    "name": "エネルギー武器ダメージ",
+    "level": 4,
+    "required": [
+      {
+        "id": 5103,
+        "name": "エネルギー武器ダメージ",
+        "displayName": "エネルギー武器ダメージ レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー武器ダメージ レベル 4"
+  },
+  "5105": {
+    "id": 5105,
+    "name": "エネルギー武器ダメージ",
+    "level": 5,
+    "required": [
+      {
+        "id": 5104,
+        "name": "エネルギー武器ダメージ",
+        "displayName": "エネルギー武器ダメージ レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー武器ダメージ レベル 5"
+  },
+  "5106": {
+    "id": 5106,
+    "name": "エネルギー武器ダメージ",
+    "level": 6,
+    "required": [
+      {
+        "id": 5105,
+        "name": "エネルギー武器ダメージ",
+        "displayName": "エネルギー武器ダメージ レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "エネルギー武器ダメージ レベル 6"
+  },
+  "5201": {
+    "id": 5201,
+    "name": "爆発武器ダメージ",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1802,
+        "name": "燃焼ユニット",
+        "displayName": "燃焼ユニット"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "爆発武器ダメージ レベル 1"
+  },
+  "5202": {
+    "id": 5202,
+    "name": "爆発武器ダメージ",
+    "level": 2,
+    "required": [
+      {
+        "id": 5201,
+        "name": "爆発武器ダメージ",
+        "displayName": "爆発武器ダメージ レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "爆発武器ダメージ レベル 2"
+  },
+  "5203": {
+    "id": 5203,
+    "name": "爆発武器ダメージ",
+    "level": 3,
+    "required": [
+      {
+        "id": 5202,
+        "name": "爆発武器ダメージ",
+        "displayName": "爆発武器ダメージ レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "爆発武器ダメージ レベル 3"
+  },
+  "5204": {
+    "id": 5204,
+    "name": "爆発武器ダメージ",
+    "level": 4,
+    "required": [
+      {
+        "id": 5203,
+        "name": "爆発武器ダメージ",
+        "displayName": "爆発武器ダメージ レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "爆発武器ダメージ レベル 4"
+  },
+  "5205": {
+    "id": 5205,
+    "name": "爆発武器ダメージ",
+    "level": 5,
+    "required": [
+      {
+        "id": 5204,
+        "name": "爆発武器ダメージ",
+        "displayName": "爆発武器ダメージ レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "爆発武器ダメージ レベル 5"
+  },
+  "5206": {
+    "id": 5206,
+    "name": "爆発武器ダメージ",
+    "level": 6,
+    "required": [
+      {
+        "id": 5205,
+        "name": "爆発武器ダメージ",
+        "displayName": "爆発武器ダメージ レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "爆発武器ダメージ レベル 6"
+  },
+  "5301": {
+    "id": 5301,
+    "name": "戦闘ドローンダメージ",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "プロトタイプ",
+        "displayName": "プロトタイプ"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローンダメージ レベル 1"
+  },
+  "5302": {
+    "id": 5302,
+    "name": "戦闘ドローンダメージ",
+    "level": 2,
+    "required": [
+      {
+        "id": 5301,
+        "name": "戦闘ドローンダメージ",
+        "displayName": "戦闘ドローンダメージ レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローンダメージ レベル 2"
+  },
+  "5303": {
+    "id": 5303,
+    "name": "戦闘ドローンダメージ",
+    "level": 3,
+    "required": [
+      {
+        "id": 5302,
+        "name": "戦闘ドローンダメージ",
+        "displayName": "戦闘ドローンダメージ レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローンダメージ レベル 3"
+  },
+  "5304": {
+    "id": 5304,
+    "name": "戦闘ドローンダメージ",
+    "level": 4,
+    "required": [
+      {
+        "id": 5303,
+        "name": "戦闘ドローンダメージ",
+        "displayName": "戦闘ドローンダメージ レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローンダメージ レベル 4"
+  },
+  "5305": {
+    "id": 5305,
+    "name": "戦闘ドローンダメージ",
+    "level": 5,
+    "required": [
+      {
+        "id": 5304,
+        "name": "戦闘ドローンダメージ",
+        "displayName": "戦闘ドローンダメージ レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローンダメージ レベル 5"
+  },
+  "5401": {
+    "id": 5401,
+    "name": "戦闘ドローン射速",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "プロトタイプ",
+        "displayName": "プロトタイプ"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン射速 レベル 1"
+  },
+  "5402": {
+    "id": 5402,
+    "name": "戦闘ドローン射速",
+    "level": 2,
+    "required": [
+      {
+        "id": 5401,
+        "name": "戦闘ドローン射速",
+        "displayName": "戦闘ドローン射速 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン射速 レベル 2"
+  },
+  "5403": {
+    "id": 5403,
+    "name": "戦闘ドローン射速",
+    "level": 3,
+    "required": [
+      {
+        "id": 5402,
+        "name": "戦闘ドローン射速",
+        "displayName": "戦闘ドローン射速 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン射速 レベル 3"
+  },
+  "5404": {
+    "id": 5404,
+    "name": "戦闘ドローン射速",
+    "level": 4,
+    "required": [
+      {
+        "id": 5403,
+        "name": "戦闘ドローン射速",
+        "displayName": "戦闘ドローン射速 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン射速 レベル 4"
+  },
+  "5405": {
+    "id": 5405,
+    "name": "戦闘ドローン射速",
+    "level": 5,
+    "required": [
+      {
+        "id": 5404,
+        "name": "戦闘ドローン射速",
+        "displayName": "戦闘ドローン射速 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン射速 レベル 5"
+  },
+  "5601": {
+    "id": 5601,
+    "name": "戦闘ドローン耐久度",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "プロトタイプ",
+        "displayName": "プロトタイプ"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン耐久度 レベル 1"
+  },
+  "5602": {
+    "id": 5602,
+    "name": "戦闘ドローン耐久度",
+    "level": 2,
+    "required": [
+      {
+        "id": 5601,
+        "name": "戦闘ドローン耐久度",
+        "displayName": "戦闘ドローン耐久度 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン耐久度 レベル 2"
+  },
+  "5603": {
+    "id": 5603,
+    "name": "戦闘ドローン耐久度",
+    "level": 3,
+    "required": [
+      {
+        "id": 5602,
+        "name": "戦闘ドローン耐久度",
+        "displayName": "戦闘ドローン耐久度 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン耐久度 レベル 3"
+  },
+  "5604": {
+    "id": 5604,
+    "name": "戦闘ドローン耐久度",
+    "level": 4,
+    "required": [
+      {
+        "id": 5603,
+        "name": "戦闘ドローン耐久度",
+        "displayName": "戦闘ドローン耐久度 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン耐久度 レベル 4"
+  },
+  "5605": {
+    "id": 5605,
+    "name": "戦闘ドローン耐久度",
+    "level": 5,
+    "required": [
+      {
+        "id": 5604,
+        "name": "戦闘ドローン耐久度",
+        "displayName": "戦闘ドローン耐久度 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "戦闘ドローン耐久度 レベル 5"
+  },
+  "5701": {
+    "id": 5701,
+    "name": "惑星シールド",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1809,
+        "name": "惑星防衛システム",
+        "displayName": "惑星防衛システム"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "惑星シールド レベル 1"
+  },
+  "5702": {
+    "id": 5702,
+    "name": "惑星シールド",
+    "level": 2,
+    "required": [
+      {
+        "id": 5701,
+        "name": "惑星シールド",
+        "displayName": "惑星シールド レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "惑星シールド レベル 2"
+  },
+  "5703": {
+    "id": 5703,
+    "name": "惑星シールド",
+    "level": 3,
+    "required": [
+      {
+        "id": 5702,
+        "name": "惑星シールド",
+        "displayName": "惑星シールド レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "惑星シールド レベル 3"
+  },
+  "5704": {
+    "id": 5704,
+    "name": "惑星シールド",
+    "level": 4,
+    "required": [
+      {
+        "id": 5703,
+        "name": "惑星シールド",
+        "displayName": "惑星シールド レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "惑星シールド レベル 4"
+  },
+  "5705": {
+    "id": 5705,
+    "name": "惑星シールド",
+    "level": 5,
+    "required": [
+      {
+        "id": 5704,
+        "name": "惑星シールド",
+        "displayName": "惑星シールド レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "惑星シールド レベル 5"
+  },
+  "5801": {
+    "id": 5801,
+    "name": "地上編隊拡張",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "プロトタイプ",
+        "displayName": "プロトタイプ"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "地上編隊拡張 レベル 1"
+  },
+  "5802": {
+    "id": 5802,
+    "name": "地上編隊拡張",
+    "level": 2,
+    "required": [
+      {
+        "id": 5801,
+        "name": "地上編隊拡張",
+        "displayName": "地上編隊拡張 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "地上編隊拡張 レベル 2"
+  },
+  "5803": {
+    "id": 5803,
+    "name": "地上編隊拡張",
+    "level": 3,
+    "required": [
+      {
+        "id": 5802,
+        "name": "地上編隊拡張",
+        "displayName": "地上編隊拡張 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "地上編隊拡張 レベル 3"
+  },
+  "5804": {
+    "id": 5804,
+    "name": "地上編隊拡張",
+    "level": 4,
+    "required": [
+      {
+        "id": 5803,
+        "name": "地上編隊拡張",
+        "displayName": "地上編隊拡張 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "地上編隊拡張 レベル 4"
+  },
+  "5805": {
+    "id": 5805,
+    "name": "地上編隊拡張",
+    "level": 5,
+    "required": [
+      {
+        "id": 5804,
+        "name": "地上編隊拡張",
+        "displayName": "地上編隊拡張 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "地上編隊拡張 レベル 5"
+  },
+  "5806": {
+    "id": 5806,
+    "name": "地上編隊拡張",
+    "level": 6,
+    "required": [
+      {
+        "id": 5805,
+        "name": "地上編隊拡張",
+        "displayName": "地上編隊拡張 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "地上編隊拡張 レベル 6"
+  },
+  "5807": {
+    "id": 5807,
+    "name": "地上編隊拡張",
+    "level": 7,
+    "required": [
+      {
+        "id": 5806,
+        "name": "地上編隊拡張",
+        "displayName": "地上編隊拡張 レベル 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "地上編隊拡張 レベル 7"
+  },
+  "5901": {
+    "id": 5901,
+    "name": "宇宙編隊拡張",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1822,
+        "name": "護衛艦",
+        "displayName": "護衛艦"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙編隊拡張 レベル 1"
+  },
+  "5902": {
+    "id": 5902,
+    "name": "宇宙編隊拡張",
+    "level": 2,
+    "required": [
+      {
+        "id": 5901,
+        "name": "宇宙編隊拡張",
+        "displayName": "宇宙編隊拡張 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙編隊拡張 レベル 2"
+  },
+  "5903": {
+    "id": 5903,
+    "name": "宇宙編隊拡張",
+    "level": 3,
+    "required": [
+      {
+        "id": 5902,
+        "name": "宇宙編隊拡張",
+        "displayName": "宇宙編隊拡張 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙編隊拡張 レベル 3"
+  },
+  "5904": {
+    "id": 5904,
+    "name": "宇宙編隊拡張",
+    "level": 4,
+    "required": [
+      {
+        "id": 5903,
+        "name": "宇宙編隊拡張",
+        "displayName": "宇宙編隊拡張 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙編隊拡張 レベル 4"
+  },
+  "5905": {
+    "id": 5905,
+    "name": "宇宙編隊拡張",
+    "level": 5,
+    "required": [
+      {
+        "id": 5904,
+        "name": "宇宙編隊拡張",
+        "displayName": "宇宙編隊拡張 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙編隊拡張 レベル 5"
+  },
+  "5906": {
+    "id": 5906,
+    "name": "宇宙編隊拡張",
+    "level": 6,
+    "required": [
+      {
+        "id": 5905,
+        "name": "宇宙編隊拡張",
+        "displayName": "宇宙編隊拡張 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙編隊拡張 レベル 6"
+  },
+  "5907": {
+    "id": 5907,
+    "name": "宇宙編隊拡張",
+    "level": 7,
+    "required": [
+      {
+        "id": 5906,
+        "name": "宇宙編隊拡張",
+        "displayName": "宇宙編隊拡張 レベル 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "宇宙編隊拡張 レベル 7"
+  },
+  "6001": {
+    "id": 6001,
+    "name": "構造物強化",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "メカのコア",
+        "displayName": "メカのコア レベル 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "構造物強化 レベル 1"
+  },
+  "6002": {
+    "id": 6002,
+    "name": "構造物強化",
+    "level": 2,
+    "required": [
+      {
+        "id": 6001,
+        "name": "構造物強化",
+        "displayName": "構造物強化 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "構造物強化 レベル 2"
+  },
+  "6003": {
+    "id": 6003,
+    "name": "構造物強化",
+    "level": 3,
+    "required": [
+      {
+        "id": 6002,
+        "name": "構造物強化",
+        "displayName": "構造物強化 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "構造物強化 レベル 3"
+  },
+  "6004": {
+    "id": 6004,
+    "name": "構造物強化",
+    "level": 4,
+    "required": [
+      {
+        "id": 6003,
+        "name": "構造物強化",
+        "displayName": "構造物強化 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "構造物強化 レベル 4"
+  },
+  "6005": {
+    "id": 6005,
+    "name": "構造物強化",
+    "level": 5,
+    "required": [
+      {
+        "id": 6004,
+        "name": "構造物強化",
+        "displayName": "構造物強化 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "構造物強化 レベル 5"
+  },
+  "6006": {
+    "id": 6006,
+    "name": "構造物強化",
+    "level": 6,
+    "required": [
+      {
+        "id": 6005,
+        "name": "構造物強化",
+        "displayName": "構造物強化 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "構造物強化 レベル 6"
+  },
+  "6101": {
+    "id": 6101,
+    "name": "EM武器効果",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1810,
+        "name": "ジャマータワー",
+        "displayName": "ジャマータワー"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM武器効果 レベル 1"
+  },
+  "6102": {
+    "id": 6102,
+    "name": "EM武器効果",
+    "level": 2,
+    "required": [
+      {
+        "id": 6101,
+        "name": "EM武器効果",
+        "displayName": "EM武器効果 レベル 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM武器効果 レベル 2"
+  },
+  "6103": {
+    "id": 6103,
+    "name": "EM武器効果",
+    "level": 3,
+    "required": [
+      {
+        "id": 6102,
+        "name": "EM武器効果",
+        "displayName": "EM武器効果 レベル 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM武器効果 レベル 3"
+  },
+  "6104": {
+    "id": 6104,
+    "name": "EM武器効果",
+    "level": 4,
+    "required": [
+      {
+        "id": 6103,
+        "name": "EM武器効果",
+        "displayName": "EM武器効果 レベル 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM武器効果 レベル 4"
+  },
+  "6105": {
+    "id": 6105,
+    "name": "EM武器効果",
+    "level": 5,
+    "required": [
+      {
+        "id": 6104,
+        "name": "EM武器効果",
+        "displayName": "EM武器効果 レベル 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM武器効果 レベル 5"
+  },
+  "6106": {
+    "id": 6106,
+    "name": "EM武器効果",
+    "level": 6,
+    "required": [
+      {
+        "id": 6105,
+        "name": "EM武器効果",
+        "displayName": "EM武器効果 レベル 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM武器効果 レベル 6"
+  }
+}

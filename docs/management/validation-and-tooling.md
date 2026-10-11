@@ -143,8 +143,16 @@ these on source/catalog edits; ML-09 connects generation to CI. They replace
 manual locale HTML copies and the disposable parser probe. Nothing under
 `localization/`, `scripts/` or `node_modules/` is a deployed dependency.
 
-ML-09 replaces manual staging with that generator. CI checks authoring contracts,
-the generated site and the extracted ZIP. The deployment validator compares all
+LC-07 corrects ML-09's delivery integration while retaining branch publication.
+The three generated HTML editions and nine locale-data files are committed with
+their inputs; English keeps static edition links in its editable `index.html`.
+`sync-static-editions.mjs` compares every committed publication file with fresh
+generation, rejecting missing/stale/unexpected edition files. `--write` refreshes
+the generated files; `--stage` copies verified committed bytes for packaging.
+This durable check prevents source/ZIP/development drift without adding deployed
+code or dependencies. The package workflow no longer publishes a competing Pages
+artifact. `_config.yml` excludes authoring inputs from the branch-built site.
+CI checks authoring contracts, the committed site and the extracted ZIP. The deployment validator compares all
 files against deterministic generation before retaining its English editorial,
 recipe, image, license and dependency checks. Localization validation adds
 enabled-locale metadata, root/prefix links and native-data factual parity.

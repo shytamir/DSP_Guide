@@ -1,0 +1,704 @@
+{
+  "1001": {
+    "unlocks": [
+      {
+        "label": "风力涡轮机",
+        "itemId": 2203
+      },
+      {
+        "label": "电力感应塔",
+        "itemId": 2201
+      },
+      {
+        "label": "采矿机",
+        "itemId": 2301
+      }
+    ]
+  },
+  "1002": {
+    "cube": {
+      "label": "电磁矩阵",
+      "color": "#56b9ff",
+      "itemId": 6001
+    },
+    "unlocks": [
+      {
+        "label": "矩阵研究站",
+        "itemId": 2901
+      }
+    ]
+  },
+  "1101": {
+    "unlocks": [
+      {
+        "label": "棱镜",
+        "itemId": 1111
+      },
+      {
+        "label": "电浆激发器",
+        "itemId": 1401
+      },
+      {
+        "label": "无线输电塔",
+        "itemId": 2202
+      }
+    ]
+  },
+  "1102": {
+    "unlocks": [
+      {
+        "label": "原油萃取站",
+        "itemId": 2307
+      },
+      {
+        "label": "原油精炼厂",
+        "itemId": 2308
+      },
+      {
+        "label": "氢",
+        "itemId": 1120
+      },
+      {
+        "label": "精炼油",
+        "itemId": 1114
+      }
+    ]
+  },
+  "1111": {
+    "cube": {
+      "label": "能量矩阵",
+      "color": "#ff6f6f",
+      "itemId": 6002
+    }
+  },
+  "1112": {
+    "unlocks": [
+      {
+        "label": "液氢燃料棒",
+        "itemId": 1801
+      }
+    ]
+  },
+  "1113": {
+    "unlocks": [
+      {
+        "label": "推进器",
+        "itemId": 1405
+      }
+    ]
+  },
+  "1114": {
+    "unlocks": [
+      {
+        "label": "加力推进器",
+        "itemId": 1406
+      }
+    ]
+  },
+  "1120": {
+    "unlocks": [
+      {
+        "label": "储液罐",
+        "itemId": 2106
+      },
+      {
+        "label": "抽水站",
+        "itemId": 2306
+      }
+    ]
+  },
+  "1121": {
+    "unlocks": [
+      {
+        "label": "化工厂",
+        "itemId": 2309
+      },
+      {
+        "label": "塑料",
+        "itemId": 1115
+      },
+      {
+        "label": "硫酸",
+        "itemId": 1116
+      }
+    ]
+  },
+  "1122": {
+    "unlocks": [
+      {
+        "label": "有机晶体",
+        "itemId": 1117
+      }
+    ]
+  },
+  "1123": {
+    "unlocks": [
+      {
+        "label": "钛晶石",
+        "itemId": 1118
+      }
+    ]
+  },
+  "1124": {
+    "cube": {
+      "label": "结构矩阵",
+      "color": "#ffd166",
+      "itemId": 6003
+    }
+  },
+  "1125": {
+    "unlocks": [
+      {
+        "label": "卡西米尔晶体",
+        "itemId": 1126
+      }
+    ]
+  },
+  "1126": {
+    "unlocks": [
+      {
+        "label": "钛化玻璃",
+        "itemId": 1119
+      }
+    ]
+  },
+  "1131": {
+    "unlocks": [
+      {
+        "label": "石墨烯",
+        "itemId": 1123
+      }
+    ]
+  },
+  "1132": {
+    "unlocks": [
+      {
+        "label": "碳纳米管",
+        "itemId": 1124
+      }
+    ]
+  },
+  "1133": {
+    "unlocks": [
+      {
+        "label": "粒子宽带",
+        "itemId": 1402
+      }
+    ]
+  },
+  "1134": {
+    "unlocks": [
+      {
+        "label": "分馏塔",
+        "itemId": 2314
+      },
+      {
+        "label": "重氢",
+        "itemId": 1121
+      }
+    ]
+  },
+  "1141": {
+    "unlocks": [
+      {
+        "label": "位面过滤器",
+        "itemId": 1304
+      }
+    ]
+  },
+  "1142": {
+    "unlocks": [
+      {
+        "label": "微型粒子对撞机",
+        "itemId": 2310
+      },
+      {
+        "label": "重氢",
+        "itemId": 1121
+      }
+    ]
+  },
+  "1143": {
+    "unlocks": [
+      {
+        "label": "奇异物质",
+        "itemId": 1127
+      }
+    ]
+  },
+  "1145": {
+    "unlocks": [
+      {
+        "label": "湮灭约束球",
+        "itemId": 1403
+      },
+      {
+        "label": "反物质燃料棒",
+        "itemId": 1803
+      }
+    ]
+  },
+  "1201": {
+    "unlocks": [
+      {
+        "label": "制造台 Mk.I",
+        "itemId": 2303
+      }
+    ]
+  },
+  "1202": {
+    "unlocks": [
+      {
+        "label": "制造台 Mk.II",
+        "itemId": 2304
+      }
+    ]
+  },
+  "1203": {
+    "unlocks": [
+      {
+        "label": "制造台 Mk.III",
+        "itemId": 2305
+      }
+    ]
+  },
+  "1302": {
+    "unlocks": [
+      {
+        "label": "处理器",
+        "itemId": 1303
+      }
+    ]
+  },
+  "1303": {
+    "unlocks": [
+      {
+        "label": "量子芯片",
+        "itemId": 1305
+      }
+    ]
+  },
+  "1304": {
+    "unlocks": [
+      {
+        "label": "大型采矿机",
+        "itemId": 2316
+      }
+    ]
+  },
+  "1305": {
+    "unlocks": [
+      {
+        "label": "量子化工厂",
+        "itemId": 2317
+      }
+    ]
+  },
+  "1311": {
+    "unlocks": [
+      {
+        "label": "微晶元件",
+        "itemId": 1302
+      }
+    ]
+  },
+  "1312": {
+    "cube": {
+      "label": "信息矩阵",
+      "color": "#cf8cff",
+      "itemId": 6004
+    }
+  },
+  "1401": {
+    "unlocks": [
+      {
+        "label": "电弧熔炉",
+        "itemId": 2302
+      },
+      {
+        "label": "玻璃",
+        "itemId": 1110
+      }
+    ]
+  },
+  "1402": {
+    "unlocks": [
+      {
+        "label": "硅石",
+        "itemId": 1003
+      },
+      {
+        "label": "高能石墨",
+        "itemId": 1109
+      },
+      {
+        "label": "高纯硅块",
+        "itemId": 1105
+      }
+    ]
+  },
+  "1403": {
+    "unlocks": [
+      {
+        "label": "金刚石",
+        "itemId": 1112
+      },
+      {
+        "label": "晶格硅",
+        "itemId": 1113
+      }
+    ]
+  },
+  "1411": {
+    "unlocks": [
+      {
+        "label": "钢材",
+        "itemId": 1103
+      }
+    ]
+  },
+  "1412": {
+    "unlocks": [
+      {
+        "label": "火力发电厂",
+        "itemId": 2204
+      }
+    ]
+  },
+  "1413": {
+    "unlocks": [
+      {
+        "label": "钛块",
+        "itemId": 1106
+      }
+    ]
+  },
+  "1414": {
+    "unlocks": [
+      {
+        "label": "钛合金",
+        "itemId": 1107
+      }
+    ]
+  },
+  "1415": {
+    "unlocks": [
+      {
+        "label": "地基",
+        "itemId": 1131
+      }
+    ]
+  },
+  "1416": {
+    "unlocks": [
+      {
+        "label": "微型聚变发电站",
+        "itemId": 2211
+      },
+      {
+        "label": "氘核燃料棒",
+        "itemId": 1802
+      }
+    ]
+  },
+  "1417": {
+    "unlocks": [
+      {
+        "label": "位面熔炉",
+        "itemId": 2315
+      }
+    ]
+  },
+  "1501": {
+    "unlocks": [
+      {
+        "label": "太阳能板",
+        "itemId": 2205
+      }
+    ]
+  },
+  "1502": {
+    "unlocks": [
+      {
+        "label": "光子合并器",
+        "itemId": 1404
+      }
+    ]
+  },
+  "1503": {
+    "unlocks": [
+      {
+        "label": "太阳帆",
+        "itemId": 1501
+      },
+      {
+        "label": "电磁轨道弹射器",
+        "itemId": 2311
+      }
+    ]
+  },
+  "1504": {
+    "unlocks": [
+      {
+        "label": "射线接收站",
+        "itemId": 2208
+      }
+    ]
+  },
+  "1506": {
+    "unlocks": [
+      {
+        "label": "反物质",
+        "itemId": 1122
+      },
+      {
+        "label": "氢",
+        "itemId": 1120
+      }
+    ]
+  },
+  "1507": {
+    "cube": {
+      "label": "宇宙矩阵",
+      "color": "#f4f7fb",
+      "itemId": 6006
+    }
+  },
+  "1511": {
+    "unlocks": [
+      {
+        "label": "蓄电器",
+        "itemId": 2206
+      }
+    ]
+  },
+  "1521": {
+    "unlocks": [
+      {
+        "label": "框架材料",
+        "itemId": 1125
+      },
+      {
+        "label": "戴森球组件",
+        "itemId": 1502
+      }
+    ]
+  },
+  "1522": {
+    "unlocks": [
+      {
+        "label": "垂直发射井",
+        "itemId": 2312
+      },
+      {
+        "label": "小型运载火箭",
+        "itemId": 1503
+      }
+    ]
+  },
+  "1601": {
+    "unlocks": [
+      {
+        "label": "传送带",
+        "itemId": 2001
+      },
+      {
+        "label": "分拣器",
+        "itemId": 2011
+      },
+      {
+        "label": "小型储物仓",
+        "itemId": 2101
+      }
+    ]
+  },
+  "1602": {
+    "unlocks": [
+      {
+        "label": "四向分流器",
+        "itemId": 2020
+      },
+      {
+        "label": "高速分拣器",
+        "itemId": 2012
+      },
+      {
+        "label": "流速监测器",
+        "itemId": 2030
+      }
+    ]
+  },
+  "1603": {
+    "unlocks": [
+      {
+        "label": "高速传送带",
+        "itemId": 2002
+      },
+      {
+        "label": "极速分拣器",
+        "itemId": 2013
+      },
+      {
+        "label": "大型储物仓",
+        "itemId": 2102
+      }
+    ]
+  },
+  "1604": {
+    "unlocks": [
+      {
+        "label": "极速传送带",
+        "itemId": 2003
+      },
+      {
+        "label": "行星内物流运输站",
+        "itemId": 2103
+      },
+      {
+        "label": "物流运输机",
+        "itemId": 5001
+      }
+    ]
+  },
+  "1605": {
+    "unlocks": [
+      {
+        "label": "星际物流运输站",
+        "itemId": 2104
+      },
+      {
+        "label": "星际物流运输船",
+        "itemId": 5002
+      }
+    ]
+  },
+  "1606": {
+    "unlocks": [
+      {
+        "label": "轨道采集器",
+        "itemId": 2105
+      }
+    ]
+  },
+  "1607": {
+    "unlocks": [
+      {
+        "label": "自动集装机",
+        "itemId": 2040
+      },
+      {
+        "label": "集装分拣器",
+        "itemId": 2014
+      }
+    ]
+  },
+  "1608": {
+    "unlocks": [
+      {
+        "label": "物流配送器",
+        "itemId": 2107
+      },
+      {
+        "label": "配送运输机",
+        "itemId": 5003
+      }
+    ]
+  },
+  "1701": {
+    "unlocks": [
+      {
+        "label": "电动机",
+        "itemId": 1203
+      }
+    ]
+  },
+  "1702": {
+    "unlocks": [
+      {
+        "label": "电磁涡轮",
+        "itemId": 1204
+      }
+    ]
+  },
+  "1703": {
+    "unlocks": [
+      {
+        "label": "粒子容器",
+        "itemId": 1206
+      }
+    ]
+  },
+  "1704": {
+    "unlocks": [
+      {
+        "label": "引力透镜",
+        "itemId": 1209
+      },
+      {
+        "label": "空间翘曲器",
+        "itemId": 1210
+      }
+    ]
+  },
+  "1705": {
+    "cube": {
+      "label": "引力矩阵",
+      "color": "#57e389",
+      "itemId": 6005
+    },
+    "unlocks": [
+      {
+        "label": "空间翘曲器",
+        "itemId": 1210
+      }
+    ]
+  },
+  "1711": {
+    "unlocks": [
+      {
+        "label": "超级磁场环",
+        "itemId": 1205
+      }
+    ]
+  },
+  "1801": {
+    "unlocks": [
+      {
+        "label": "高斯机枪塔",
+        "itemId": 3001
+      },
+      {
+        "label": "机枪弹箱",
+        "itemId": 1601
+      }
+    ]
+  },
+  "1805": {
+    "unlocks": [
+      {
+        "label": "动力引擎",
+        "itemId": 1407
+      }
+    ]
+  },
+  "1806": {
+    "unlocks": [
+      {
+        "label": "导弹防御塔",
+        "itemId": 3005
+      },
+      {
+        "label": "导弹组",
+        "itemId": 1609
+      }
+    ]
+  },
+  "1808": {
+    "unlocks": [
+      {
+        "label": "信号塔",
+        "itemId": 3007
+      }
+    ]
+  }
+}

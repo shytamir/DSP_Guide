@@ -1,0 +1,5822 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Dyson Sphere Program",
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Dyson Sphere Program"
+  },
+  "1001": {
+    "id": 1001,
+    "name": "Elektromagnetismus",
+    "required": [
+      {
+        "id": 1,
+        "name": "Dyson Sphere Program",
+        "displayName": "Dyson Sphere Program"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Elektromagnetismus"
+  },
+  "1002": {
+    "id": 1002,
+    "name": "Elektromagnetische Matrix",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Elektromagnetische Matrix"
+  },
+  "1101": {
+    "id": 1101,
+    "name": "Hocheffiziente Plasmasteuerung",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hocheffiziente Plasmasteuerung"
+  },
+  "1102": {
+    "id": 1102,
+    "name": "Plasmaextraktionsraffination",
+    "required": [
+      {
+        "id": 1120,
+        "name": "Flüssigspeicher-Kapselung",
+        "displayName": "Flüssigspeicher-Kapselung"
+      },
+      {
+        "id": 1101,
+        "name": "Hocheffiziente Plasmasteuerung",
+        "displayName": "Hocheffiziente Plasmasteuerung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Plasmaextraktionsraffination"
+  },
+  "1103": {
+    "id": 1103,
+    "name": "Röntgencracken",
+    "required": [
+      {
+        "id": 1121,
+        "name": "Grundchemie",
+        "displayName": "Grundchemie"
+      },
+      {
+        "id": 1102,
+        "name": "Plasmaextraktionsraffination",
+        "displayName": "Plasmaextraktionsraffination"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Röntgencracken"
+  },
+  "1104": {
+    "id": 1104,
+    "name": "Reformierung",
+    "required": [
+      {
+        "id": 1103,
+        "name": "Röntgencracken",
+        "displayName": "Röntgencracken"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Reformierung"
+  },
+  "1105": {
+    "id": 1105,
+    "name": "Holographisches Leuchtfeuer",
+    "required": [
+      {
+        "id": 1101,
+        "name": "Hocheffiziente Plasmasteuerung",
+        "displayName": "Hocheffiziente Plasmasteuerung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Holographisches Leuchtfeuer"
+  },
+  "1111": {
+    "id": 1111,
+    "name": "Energiematrix",
+    "required": [
+      {
+        "id": 1102,
+        "name": "Plasmaextraktionsraffination",
+        "displayName": "Plasmaextraktionsraffination"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Energy Matrix",
+    "pretechsMax": false,
+    "displayName": "Energiematrix"
+  },
+  "1112": {
+    "id": 1112,
+    "name": "Wasserstoff-Brennstab",
+    "required": [
+      {
+        "id": 1111,
+        "name": "Energiematrix",
+        "displayName": "Energiematrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Wasserstoff-Brennstab"
+  },
+  "1113": {
+    "id": 1113,
+    "name": "Triebwerk",
+    "required": [
+      {
+        "id": 1112,
+        "name": "Wasserstoff-Brennstab",
+        "displayName": "Wasserstoff-Brennstab"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Triebwerk"
+  },
+  "1114": {
+    "id": 1114,
+    "name": "Verstärktes Triebwerk",
+    "required": [
+      {
+        "id": 1113,
+        "name": "Triebwerk",
+        "displayName": "Triebwerk"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Verstärktes Triebwerk"
+  },
+  "1120": {
+    "id": 1120,
+    "name": "Flüssigspeicher-Kapselung",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Flüssigspeicher-Kapselung"
+  },
+  "1121": {
+    "id": 1121,
+    "name": "Grundchemie",
+    "required": [
+      {
+        "id": 1120,
+        "name": "Flüssigspeicher-Kapselung",
+        "displayName": "Flüssigspeicher-Kapselung"
+      },
+      {
+        "id": 1102,
+        "name": "Plasmaextraktionsraffination",
+        "displayName": "Plasmaextraktionsraffination"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Grundchemie"
+  },
+  "1122": {
+    "id": 1122,
+    "name": "Polymerchemie",
+    "required": [
+      {
+        "id": 1121,
+        "name": "Grundchemie",
+        "displayName": "Grundchemie"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Polymerchemie"
+  },
+  "1123": {
+    "id": 1123,
+    "name": "Hochleistungskristall",
+    "required": [
+      {
+        "id": 1122,
+        "name": "Polymerchemie",
+        "displayName": "Polymerchemie"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hochleistungskristall"
+  },
+  "1124": {
+    "id": 1124,
+    "name": "Strukturmatrix",
+    "required": [
+      {
+        "id": 1123,
+        "name": "Hochleistungskristall",
+        "displayName": "Hochleistungskristall"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Structure Matrix",
+    "pretechsMax": false,
+    "displayName": "Strukturmatrix"
+  },
+  "1125": {
+    "id": 1125,
+    "name": "Casimir-Kristall",
+    "required": [
+      {
+        "id": 1124,
+        "name": "Strukturmatrix",
+        "displayName": "Strukturmatrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Casimir-Kristall"
+  },
+  "1126": {
+    "id": 1126,
+    "name": "Hochleistungsglas",
+    "required": [
+      {
+        "id": 1132,
+        "name": "Hochleistungsmaterial",
+        "displayName": "Hochleistungsmaterial"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hochleistungsglas"
+  },
+  "1131": {
+    "id": 1131,
+    "name": "Angewandter Supraleiter",
+    "required": [
+      {
+        "id": 1121,
+        "name": "Grundchemie",
+        "displayName": "Grundchemie"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Angewandter Supraleiter"
+  },
+  "1132": {
+    "id": 1132,
+    "name": "Hochleistungsmaterial",
+    "required": [
+      {
+        "id": 1131,
+        "name": "Angewandter Supraleiter",
+        "displayName": "Angewandter Supraleiter"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hochleistungsmaterial"
+  },
+  "1133": {
+    "id": 1133,
+    "name": "Partikelsteuerung",
+    "required": [
+      {
+        "id": 1132,
+        "name": "Hochleistungsmaterial",
+        "displayName": "Hochleistungsmaterial"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Partikelsteuerung"
+  },
+  "1134": {
+    "id": 1134,
+    "name": "Deuterium-Fraktionierung",
+    "required": [
+      {
+        "id": 1412,
+        "name": "Wärmeenergie",
+        "displayName": "Wärmeenergie"
+      },
+      {
+        "id": 1102,
+        "name": "Plasmaextraktionsraffination",
+        "displayName": "Plasmaextraktionsraffination"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Deuterium-Fraktionierung"
+  },
+  "1141": {
+    "id": 1141,
+    "name": "Wellenfunktion-Interferenz",
+    "required": [
+      {
+        "id": 1126,
+        "name": "Hochleistungsglas",
+        "displayName": "Hochleistungsglas"
+      },
+      {
+        "id": 1125,
+        "name": "Casimir-Kristall",
+        "displayName": "Casimir-Kristall"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Wellenfunktion-Interferenz"
+  },
+  "1142": {
+    "id": 1142,
+    "name": "Mikro-Beschleuniger",
+    "required": [
+      {
+        "id": 1124,
+        "name": "Strukturmatrix",
+        "displayName": "Strukturmatrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Mikro-Beschleuniger"
+  },
+  "1143": {
+    "id": 1143,
+    "name": "Seltsame Materie",
+    "required": [
+      {
+        "id": 1142,
+        "name": "Mikro-Beschleuniger",
+        "displayName": "Mikro-Beschleuniger"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Seltsame Materie"
+  },
+  "1144": {
+    "id": 1144,
+    "name": "Künstlicher Stern",
+    "required": [
+      {
+        "id": 1145,
+        "name": "Kontrollierte Annihilationsreaktion",
+        "displayName": "Kontrollierte Annihilationsreaktion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Künstlicher Stern"
+  },
+  "1145": {
+    "id": 1145,
+    "name": "Kontrollierte Annihilationsreaktion",
+    "required": [
+      {
+        "id": 1506,
+        "name": "Dirac-Inversionsmechanismus",
+        "displayName": "Dirac-Inversionsmechanismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kontrollierte Annihilationsreaktion"
+  },
+  "1151": {
+    "id": 1151,
+    "name": "Proliferator Typ I",
+    "required": [
+      {
+        "id": 1311,
+        "name": "Halbleiter-Material",
+        "displayName": "Halbleiter-Material"
+      },
+      {
+        "id": 1101,
+        "name": "Hocheffiziente Plasmasteuerung",
+        "displayName": "Hocheffiziente Plasmasteuerung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Proliferator Typ I"
+  },
+  "1152": {
+    "id": 1152,
+    "name": "Proliferator Typ II",
+    "required": [
+      {
+        "id": 1302,
+        "name": "Prozessor",
+        "displayName": "Prozessor"
+      },
+      {
+        "id": 1151,
+        "name": "Proliferator Typ I",
+        "displayName": "Proliferator Typ I"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Proliferator Typ II"
+  },
+  "1153": {
+    "id": 1153,
+    "name": "Proliferator Typ III",
+    "required": [
+      {
+        "id": 1152,
+        "name": "Proliferator Typ II",
+        "displayName": "Proliferator Typ II"
+      },
+      {
+        "id": 1132,
+        "name": "Hochleistungsmaterial",
+        "displayName": "Hochleistungsmaterial"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Proliferator Typ III"
+  },
+  "1201": {
+    "id": 1201,
+    "name": "Standard-Zusammensetzung",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Standard-Zusammensetzung"
+  },
+  "1202": {
+    "id": 1202,
+    "name": "Hochgeschwindigkeits-Zusammensetzung",
+    "required": [
+      {
+        "id": 1201,
+        "name": "Standard-Zusammensetzung",
+        "displayName": "Standard-Zusammensetzung"
+      },
+      {
+        "id": 1302,
+        "name": "Prozessor",
+        "displayName": "Prozessor"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hochgeschwindigkeits-Zusammensetzung"
+  },
+  "1203": {
+    "id": 1203,
+    "name": "Quantendruck",
+    "required": [
+      {
+        "id": 1202,
+        "name": "Hochgeschwindigkeits-Zusammensetzung",
+        "displayName": "Hochgeschwindigkeits-Zusammensetzung"
+      },
+      {
+        "id": 1303,
+        "name": "Quantenchip",
+        "displayName": "Quantenchip"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Quantendruck"
+  },
+  "1302": {
+    "id": 1302,
+    "name": "Prozessor",
+    "required": [
+      {
+        "id": 1311,
+        "name": "Halbleiter-Material",
+        "displayName": "Halbleiter-Material"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Prozessor"
+  },
+  "1303": {
+    "id": 1303,
+    "name": "Quantenchip",
+    "required": [
+      {
+        "id": 1312,
+        "name": "Informationsmatrix",
+        "displayName": "Informationsmatrix"
+      },
+      {
+        "id": 1141,
+        "name": "Wellenfunktion-Interferenz",
+        "displayName": "Wellenfunktion-Interferenz"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Quantenchip"
+  },
+  "1304": {
+    "id": 1304,
+    "name": "Photonenfokussier-Bergbau",
+    "required": [
+      {
+        "id": 1303,
+        "name": "Quantenchip",
+        "displayName": "Quantenchip"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Photonenfokussier-Bergbau"
+  },
+  "1305": {
+    "id": 1305,
+    "name": "Submikro-Quantenverschränkung",
+    "required": [
+      {
+        "id": 1303,
+        "name": "Quantenchip",
+        "displayName": "Quantenchip"
+      },
+      {
+        "id": 1143,
+        "name": "Seltsame Materie",
+        "displayName": "Seltsame Materie"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Submikro-Quantenverschränkung"
+  },
+  "1311": {
+    "id": 1311,
+    "name": "Halbleiter-Material",
+    "required": [
+      {
+        "id": 1201,
+        "name": "Standard-Zusammensetzung",
+        "displayName": "Standard-Zusammensetzung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Halbleiter-Material"
+  },
+  "1312": {
+    "id": 1312,
+    "name": "Informationsmatrix",
+    "required": [
+      {
+        "id": 1302,
+        "name": "Prozessor",
+        "displayName": "Prozessor"
+      },
+      {
+        "id": 1133,
+        "name": "Partikelsteuerung",
+        "displayName": "Partikelsteuerung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Information Matrix",
+    "pretechsMax": false,
+    "displayName": "Informationsmatrix"
+  },
+  "1401": {
+    "id": 1401,
+    "name": "Automatisierte Metallurgie",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Automatisierte Metallurgie"
+  },
+  "1402": {
+    "id": 1402,
+    "name": "Schmelzreinigung",
+    "required": [
+      {
+        "id": 1401,
+        "name": "Automatisierte Metallurgie",
+        "displayName": "Automatisierte Metallurgie"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Schmelzreinigung"
+  },
+  "1403": {
+    "id": 1403,
+    "name": "Kristallschmelzen",
+    "required": [
+      {
+        "id": 1402,
+        "name": "Schmelzreinigung",
+        "displayName": "Schmelzreinigung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kristallschmelzen"
+  },
+  "1411": {
+    "id": 1411,
+    "name": "Stahlschmelzen",
+    "required": [
+      {
+        "id": 1401,
+        "name": "Automatisierte Metallurgie",
+        "displayName": "Automatisierte Metallurgie"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Stahlschmelzen"
+  },
+  "1412": {
+    "id": 1412,
+    "name": "Wärmeenergie",
+    "required": [
+      {
+        "id": 1201,
+        "name": "Standard-Zusammensetzung",
+        "displayName": "Standard-Zusammensetzung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Wärmeenergie"
+  },
+  "1413": {
+    "id": 1413,
+    "name": "Titanerzschmelzen",
+    "required": [
+      {
+        "id": 1411,
+        "name": "Stahlschmelzen",
+        "displayName": "Stahlschmelzen"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Titanerzschmelzen"
+  },
+  "1414": {
+    "id": 1414,
+    "name": "Hochleistungs-Titanlegierung",
+    "required": [
+      {
+        "id": 1413,
+        "name": "Titanerzschmelzen",
+        "displayName": "Titanerzschmelzen"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hochleistungs-Titanlegierung"
+  },
+  "1415": {
+    "id": 1415,
+    "name": "Rückgewinnung",
+    "required": [
+      {
+        "id": 1411,
+        "name": "Stahlschmelzen",
+        "displayName": "Stahlschmelzen"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Rückgewinnung"
+  },
+  "1416": {
+    "id": 1416,
+    "name": "Miniatur-Fusionskraftwerk",
+    "required": [
+      {
+        "id": 1134,
+        "name": "Deuterium-Fraktionierung",
+        "displayName": "Deuterium-Fraktionierung"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "Hochleistungs-Titanlegierung",
+        "displayName": "Hochleistungs-Titanlegierung"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Miniatur-Fusionskraftwerk"
+  },
+  "1417": {
+    "id": 1417,
+    "name": "Planare Metallurgie",
+    "required": [
+      {
+        "id": 1141,
+        "name": "Wellenfunktion-Interferenz",
+        "displayName": "Wellenfunktion-Interferenz"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1403,
+        "name": "Kristallschmelzen",
+        "displayName": "Kristallschmelzen"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Planare Metallurgie"
+  },
+  "1501": {
+    "id": 1501,
+    "name": "Solarenergiegewinnung",
+    "required": [
+      {
+        "id": 1402,
+        "name": "Schmelzreinigung",
+        "displayName": "Schmelzreinigung"
+      },
+      {
+        "id": 1002,
+        "name": "Elektromagnetische Matrix",
+        "displayName": "Elektromagnetische Matrix"
+      },
+      {
+        "id": 1201,
+        "name": "Standard-Zusammensetzung",
+        "displayName": "Standard-Zusammensetzung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarenergiegewinnung"
+  },
+  "1502": {
+    "id": 1502,
+    "name": "Photonen-Frequenzumwandlung",
+    "required": [
+      {
+        "id": 1501,
+        "name": "Solarenergiegewinnung",
+        "displayName": "Solarenergiegewinnung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Photonen-Frequenzumwandlung"
+  },
+  "1503": {
+    "id": 1503,
+    "name": "Solarsegel-Orbitalsystem",
+    "required": [
+      {
+        "id": 1502,
+        "name": "Photonen-Frequenzumwandlung",
+        "displayName": "Photonen-Frequenzumwandlung"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "Super-Magnetfeld-Generator",
+        "displayName": "Super-Magnetfeld-Generator"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Orbitalsystem"
+  },
+  "1504": {
+    "id": 1504,
+    "name": "Strahlen-Receiver",
+    "required": [
+      {
+        "id": 1503,
+        "name": "Solarsegel-Orbitalsystem",
+        "displayName": "Solarsegel-Orbitalsystem"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlen-Receiver"
+  },
+  "1505": {
+    "id": 1505,
+    "name": "Nutzung der Planetenionosphäre",
+    "required": [
+      {
+        "id": 1504,
+        "name": "Strahlen-Receiver",
+        "displayName": "Strahlen-Receiver"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1704,
+        "name": "Gravitationswellen-Brechung",
+        "displayName": "Gravitationswellen-Brechung"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Nutzung der Planetenionosphäre"
+  },
+  "1506": {
+    "id": 1506,
+    "name": "Dirac-Inversionsmechanismus",
+    "required": [
+      {
+        "id": 1505,
+        "name": "Nutzung der Planetenionosphäre",
+        "displayName": "Nutzung der Planetenionosphäre"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Dirac-Inversionsmechanismus"
+  },
+  "1507": {
+    "id": 1507,
+    "name": "Universumsmatrix",
+    "required": [
+      {
+        "id": 1506,
+        "name": "Dirac-Inversionsmechanismus",
+        "displayName": "Dirac-Inversionsmechanismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Universe Matrix",
+    "pretechsMax": false,
+    "displayName": "Universumsmatrix"
+  },
+  "1508": {
+    "id": 1508,
+    "name": "Mission abgeschlossen !",
+    "required": [
+      {
+        "id": 1507,
+        "name": "Universumsmatrix",
+        "displayName": "Universumsmatrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Mission abgeschlossen !"
+  },
+  "1511": {
+    "id": 1511,
+    "name": "Energiespeicher",
+    "required": [
+      {
+        "id": 1403,
+        "name": "Kristallschmelzen",
+        "displayName": "Kristallschmelzen"
+      },
+      {
+        "id": 1501,
+        "name": "Solarenergiegewinnung",
+        "displayName": "Solarenergiegewinnung"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "Super-Magnetfeld-Generator",
+        "displayName": "Super-Magnetfeld-Generator"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiespeicher"
+  },
+  "1512": {
+    "id": 1512,
+    "name": "Interstellare Energieübertragung",
+    "required": [
+      {
+        "id": 1414,
+        "name": "Hochleistungs-Titanlegierung",
+        "displayName": "Hochleistungs-Titanlegierung"
+      },
+      {
+        "id": 1511,
+        "name": "Energiespeicher",
+        "displayName": "Energiespeicher"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Interstellare Energieübertragung"
+  },
+  "1513": {
+    "id": 1513,
+    "name": "Geothermie-Erschließung",
+    "required": [
+      {
+        "id": 1502,
+        "name": "Photonen-Frequenzumwandlung",
+        "displayName": "Photonen-Frequenzumwandlung"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "Super-Magnetfeld-Generator",
+        "displayName": "Super-Magnetfeld-Generator"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Geothermie-Erschließung"
+  },
+  "1521": {
+    "id": 1521,
+    "name": "Hochleistungs-Leichtbau",
+    "required": [
+      {
+        "id": 1503,
+        "name": "Solarsegel-Orbitalsystem",
+        "displayName": "Solarsegel-Orbitalsystem"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1132,
+        "name": "Hochleistungsmaterial",
+        "displayName": "Hochleistungsmaterial"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hochleistungs-Leichtbau"
+  },
+  "1522": {
+    "id": 1522,
+    "name": "Vertikaler Abschusssilo",
+    "required": [
+      {
+        "id": 1521,
+        "name": "Hochleistungs-Leichtbau",
+        "displayName": "Hochleistungs-Leichtbau"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1303,
+        "name": "Quantenchip",
+        "displayName": "Quantenchip"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Vertikaler Abschusssilo"
+  },
+  "1523": {
+    "id": 1523,
+    "name": "Dyson-Sphären-Belastung",
+    "required": [
+      {
+        "id": 1522,
+        "name": "Vertikaler Abschusssilo",
+        "displayName": "Vertikaler Abschusssilo"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Dyson-Sphären-Belastung"
+  },
+  "1601": {
+    "id": 1601,
+    "name": "Standard-Logistiksystem",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Standard-Logistiksystem"
+  },
+  "1602": {
+    "id": 1602,
+    "name": "Verbessertes Logistiksystem",
+    "required": [
+      {
+        "id": 1601,
+        "name": "Standard-Logistiksystem",
+        "displayName": "Standard-Logistiksystem"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Verbessertes Logistiksystem"
+  },
+  "1603": {
+    "id": 1603,
+    "name": "Hocheffizientes Logistiksystem",
+    "required": [
+      {
+        "id": 1602,
+        "name": "Verbessertes Logistiksystem",
+        "displayName": "Verbessertes Logistiksystem"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "Magnetschwebetechnik",
+        "displayName": "Magnetschwebetechnik"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hocheffizientes Logistiksystem"
+  },
+  "1604": {
+    "id": 1604,
+    "name": "Planetares Logistiksystem",
+    "required": [
+      {
+        "id": 1603,
+        "name": "Hocheffizientes Logistiksystem",
+        "displayName": "Hocheffizientes Logistiksystem"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1113,
+        "name": "Triebwerk",
+        "displayName": "Triebwerk"
+      },
+      {
+        "id": 3701,
+        "name": "Vertikale Konstruktion",
+        "displayName": "Vertikale Konstruktion Stufe 1"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Planetary Logistics System",
+    "pretechsMax": false,
+    "displayName": "Planetares Logistiksystem"
+  },
+  "1605": {
+    "id": 1605,
+    "name": "Interstellares Logistiksystem",
+    "required": [
+      {
+        "id": 1604,
+        "name": "Planetares Logistiksystem",
+        "displayName": "Planetares Logistiksystem"
+      },
+      {
+        "id": 1414,
+        "name": "Hochleistungs-Titanlegierung",
+        "displayName": "Hochleistungs-Titanlegierung"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1114,
+        "name": "Verstärktes Triebwerk",
+        "displayName": "Verstärktes Triebwerk"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Interstellar Logistics System",
+    "pretechsMax": false,
+    "displayName": "Interstellares Logistiksystem"
+  },
+  "1606": {
+    "id": 1606,
+    "name": "Gasriesennutzung",
+    "required": [
+      {
+        "id": 1605,
+        "name": "Interstellares Logistiksystem",
+        "displayName": "Interstellares Logistiksystem"
+      },
+      {
+        "id": 1512,
+        "name": "Interstellare Energieübertragung",
+        "displayName": "Interstellare Energieübertragung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Gasriesennutzung"
+  },
+  "1607": {
+    "id": 1607,
+    "name": "Container-Logistiksystem",
+    "required": [
+      {
+        "id": 1603,
+        "name": "Hocheffizientes Logistiksystem",
+        "displayName": "Hocheffizientes Logistiksystem"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1711,
+        "name": "Super-Magnetfeld-Generator",
+        "displayName": "Super-Magnetfeld-Generator"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Container-Logistiksystem"
+  },
+  "1608": {
+    "id": 1608,
+    "name": "Verteilungs-Logistiksystem",
+    "required": [
+      {
+        "id": 1602,
+        "name": "Verbessertes Logistiksystem",
+        "displayName": "Verbessertes Logistiksystem"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "Magnetschwebetechnik",
+        "displayName": "Magnetschwebetechnik"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Verteilungs-Logistiksystem"
+  },
+  "1701": {
+    "id": 1701,
+    "name": "Elektromagnetischer Antrieb",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Elektromagnetischer Antrieb"
+  },
+  "1702": {
+    "id": 1702,
+    "name": "Magnetschwebetechnik",
+    "required": [
+      {
+        "id": 1701,
+        "name": "Elektromagnetischer Antrieb",
+        "displayName": "Elektromagnetischer Antrieb"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Magnetschwebetechnik"
+  },
+  "1703": {
+    "id": 1703,
+    "name": "Magnetische Partikelfalle",
+    "required": [
+      {
+        "id": 1702,
+        "name": "Magnetschwebetechnik",
+        "displayName": "Magnetschwebetechnik"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Magnetische Partikelfalle"
+  },
+  "1704": {
+    "id": 1704,
+    "name": "Gravitationswellen-Brechung",
+    "required": [
+      {
+        "id": 1143,
+        "name": "Seltsame Materie",
+        "displayName": "Seltsame Materie"
+      },
+      {
+        "id": 1703,
+        "name": "Magnetische Partikelfalle",
+        "displayName": "Magnetische Partikelfalle"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Gravitationswellen-Brechung"
+  },
+  "1705": {
+    "id": 1705,
+    "name": "Gravitationsmatrix",
+    "required": [
+      {
+        "id": 1303,
+        "name": "Quantenchip",
+        "displayName": "Quantenchip"
+      },
+      {
+        "id": 1704,
+        "name": "Gravitationswellen-Brechung",
+        "displayName": "Gravitationswellen-Brechung"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": true,
+    "milestoneLabel": "Gravity Matrix",
+    "pretechsMax": false,
+    "displayName": "Gravitationsmatrix"
+  },
+  "1711": {
+    "id": 1711,
+    "name": "Super-Magnetfeld-Generator",
+    "required": [
+      {
+        "id": 1702,
+        "name": "Magnetschwebetechnik",
+        "displayName": "Magnetschwebetechnik"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Super-Magnetfeld-Generator"
+  },
+  "1712": {
+    "id": 1712,
+    "name": "Satelliten-Energieverteilungssystem",
+    "required": [
+      {
+        "id": 1711,
+        "name": "Super-Magnetfeld-Generator",
+        "displayName": "Super-Magnetfeld-Generator"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1521,
+        "name": "Hochleistungs-Leichtbau",
+        "displayName": "Hochleistungs-Leichtbau"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Satelliten-Energieverteilungssystem"
+  },
+  "1801": {
+    "id": 1801,
+    "name": "Waffensystem",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1401,
+        "name": "Automatisierte Metallurgie",
+        "displayName": "Automatisierte Metallurgie"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Waffensystem"
+  },
+  "1802": {
+    "id": 1802,
+    "name": "Brenneinheit",
+    "required": [
+      {
+        "id": 1401,
+        "name": "Automatisierte Metallurgie",
+        "displayName": "Automatisierte Metallurgie"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Brenneinheit"
+  },
+  "1803": {
+    "id": 1803,
+    "name": "Sprengkörper",
+    "required": [
+      {
+        "id": 1123,
+        "name": "Hochleistungskristall",
+        "displayName": "Hochleistungskristall"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sprengkörper"
+  },
+  "1804": {
+    "id": 1804,
+    "name": "Kristalline Sprengkörper",
+    "required": [
+      {
+        "id": 1125,
+        "name": "Casimir-Kristall",
+        "displayName": "Casimir-Kristall"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kristalline Sprengkörper"
+  },
+  "1805": {
+    "id": 1805,
+    "name": "Motor",
+    "required": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Motor"
+  },
+  "1806": {
+    "id": 1806,
+    "name": "Raketengeschütz",
+    "required": [
+      {
+        "id": 1805,
+        "name": "Motor",
+        "displayName": "Motor"
+      },
+      {
+        "id": 1801,
+        "name": "Waffensystem",
+        "displayName": "Waffensystem"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1802,
+        "name": "Brenneinheit",
+        "displayName": "Brenneinheit"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Raketengeschütz"
+  },
+  "1807": {
+    "id": 1807,
+    "name": "Implosionskanone",
+    "required": [
+      {
+        "id": 1806,
+        "name": "Raketengeschütz",
+        "displayName": "Raketengeschütz"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1702,
+        "name": "Magnetschwebetechnik",
+        "displayName": "Magnetschwebetechnik"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Implosionskanone"
+  },
+  "1808": {
+    "id": 1808,
+    "name": "Signalturm",
+    "required": [
+      {
+        "id": 1806,
+        "name": "Raketengeschütz",
+        "displayName": "Raketengeschütz"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1101,
+        "name": "Hocheffiziente Plasmasteuerung",
+        "displayName": "Hocheffiziente Plasmasteuerung"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Signalturm"
+  },
+  "1809": {
+    "id": 1809,
+    "name": "Planetares Verteidigungssystem",
+    "required": [
+      {
+        "id": 1807,
+        "name": "Implosionskanone",
+        "displayName": "Implosionskanone"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1703,
+        "name": "Magnetische Partikelfalle",
+        "displayName": "Magnetische Partikelfalle"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Planetares Verteidigungssystem"
+  },
+  "1810": {
+    "id": 1810,
+    "name": "Störturm",
+    "required": [
+      {
+        "id": 1806,
+        "name": "Raketengeschütz",
+        "displayName": "Raketengeschütz"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1302,
+        "name": "Prozessor",
+        "displayName": "Prozessor"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Störturm"
+  },
+  "1811": {
+    "id": 1811,
+    "name": "Plasmageschütz",
+    "required": [
+      {
+        "id": 1809,
+        "name": "Planetares Verteidigungssystem",
+        "displayName": "Planetares Verteidigungssystem"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1126,
+        "name": "Hochleistungsglas",
+        "displayName": "Hochleistungsglas"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Plasmageschütz"
+  },
+  "1812": {
+    "id": 1812,
+    "name": "Titan-Magazin",
+    "required": [
+      {
+        "id": 1801,
+        "name": "Waffensystem",
+        "displayName": "Waffensystem"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1413,
+        "name": "Titanerzschmelzen",
+        "displayName": "Titanerzschmelzen"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Titan-Magazin"
+  },
+  "1813": {
+    "id": 1813,
+    "name": "Superlegierungs-Magazin",
+    "required": [
+      {
+        "id": 1812,
+        "name": "Titan-Magazin",
+        "displayName": "Titan-Magazin"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "Hochleistungs-Titanlegierung",
+        "displayName": "Hochleistungs-Titanlegierung"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Superlegierungs-Magazin"
+  },
+  "1814": {
+    "id": 1814,
+    "name": "Hochexplosiver Geschosssatz",
+    "required": [
+      {
+        "id": 1807,
+        "name": "Implosionskanone",
+        "displayName": "Implosionskanone"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1413,
+        "name": "Titanerzschmelzen",
+        "displayName": "Titanerzschmelzen"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hochexplosiver Geschosssatz"
+  },
+  "1815": {
+    "id": 1815,
+    "name": "Überschall-Raketensatz",
+    "required": [
+      {
+        "id": 1814,
+        "name": "Hochexplosiver Geschosssatz",
+        "displayName": "Hochexplosiver Geschosssatz"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1113,
+        "name": "Triebwerk",
+        "displayName": "Triebwerk"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Überschall-Raketensatz"
+  },
+  "1816": {
+    "id": 1816,
+    "name": "Kristallgeschosssatz",
+    "required": [
+      {
+        "id": 1815,
+        "name": "Überschall-Raketensatz",
+        "displayName": "Überschall-Raketensatz"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1414,
+        "name": "Hochleistungs-Titanlegierung",
+        "displayName": "Hochleistungs-Titanlegierung"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kristallgeschosssatz"
+  },
+  "1817": {
+    "id": 1817,
+    "name": "Gravitationsraketen-Satz",
+    "required": [
+      {
+        "id": 1816,
+        "name": "Kristallgeschosssatz",
+        "displayName": "Kristallgeschosssatz"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1143,
+        "name": "Seltsame Materie",
+        "displayName": "Seltsame Materie"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Gravitationsraketen-Satz"
+  },
+  "1818": {
+    "id": 1818,
+    "name": "Antimaterie-Kapsel",
+    "required": [
+      {
+        "id": 1145,
+        "name": "Kontrollierte Annihilationsreaktion",
+        "displayName": "Kontrollierte Annihilationsreaktion"
+      },
+      {
+        "id": 1811,
+        "name": "Plasmageschütz",
+        "displayName": "Plasmageschütz"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Antimaterie-Kapsel"
+  },
+  "1819": {
+    "id": 1819,
+    "name": "Prototyp",
+    "required": [
+      {
+        "id": 1826,
+        "name": "Schlachtfeldanalyse-Basis",
+        "displayName": "Schlachtfeldanalyse-Basis"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1101,
+        "name": "Hocheffiziente Plasmasteuerung",
+        "displayName": "Hocheffiziente Plasmasteuerung"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Prototyp"
+  },
+  "1820": {
+    "id": 1820,
+    "name": "Präzisionsdrohne",
+    "required": [
+      {
+        "id": 1819,
+        "name": "Prototyp",
+        "displayName": "Prototyp"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1502,
+        "name": "Photonen-Frequenzumwandlung",
+        "displayName": "Photonen-Frequenzumwandlung"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Präzisionsdrohne"
+  },
+  "1821": {
+    "id": 1821,
+    "name": "Angriffsdrohne",
+    "required": [
+      {
+        "id": 1819,
+        "name": "Prototyp",
+        "displayName": "Prototyp"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1703,
+        "name": "Magnetische Partikelfalle",
+        "displayName": "Magnetische Partikelfalle"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Angriffsdrohne"
+  },
+  "1822": {
+    "id": 1822,
+    "name": "Korvette",
+    "required": [
+      {
+        "id": 1809,
+        "name": "Planetares Verteidigungssystem",
+        "displayName": "Planetares Verteidigungssystem"
+      },
+      {
+        "id": 1820,
+        "name": "Präzisionsdrohne",
+        "displayName": "Präzisionsdrohne"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Korvette"
+  },
+  "1823": {
+    "id": 1823,
+    "name": "Zerstörer",
+    "required": [
+      {
+        "id": 1822,
+        "name": "Korvette",
+        "displayName": "Korvette"
+      },
+      {
+        "id": 1821,
+        "name": "Angriffsdrohne",
+        "displayName": "Angriffsdrohne"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Zerstörer"
+  },
+  "1824": {
+    "id": 1824,
+    "name": "Unterdrückungskapsel",
+    "required": [
+      {
+        "id": 1810,
+        "name": "Störturm",
+        "displayName": "Störturm"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Unterdrückungskapsel"
+  },
+  "1826": {
+    "id": 1826,
+    "name": "Schlachtfeldanalyse-Basis",
+    "required": [
+      {
+        "id": 1801,
+        "name": "Waffensystem",
+        "displayName": "Waffensystem"
+      },
+      {
+        "id": 1805,
+        "name": "Motor",
+        "displayName": "Motor"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Schlachtfeldanalyse-Basis"
+  },
+  "1901": {
+    "id": 1901,
+    "name": "Digital-Analog-Berechnung",
+    "required": [
+      {
+        "id": 1312,
+        "name": "Informationsmatrix",
+        "displayName": "Informationsmatrix"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Digital-Analog-Berechnung"
+  },
+  "1902": {
+    "id": 1902,
+    "name": "Materierekombination",
+    "required": [
+      {
+        "id": 1203,
+        "name": "Quantendruck",
+        "displayName": "Quantendruck"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Materierekombination"
+  },
+  "1903": {
+    "id": 1903,
+    "name": "Negentropie-Rekursion",
+    "required": [
+      {
+        "id": 1417,
+        "name": "Planare Metallurgie",
+        "displayName": "Planare Metallurgie"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Negentropie-Rekursion"
+  },
+  "1904": {
+    "id": 1904,
+    "name": "Hochdichte kontrollierte Annihilation",
+    "required": [
+      {
+        "id": 1145,
+        "name": "Kontrollierte Annihilationsreaktion",
+        "displayName": "Kontrollierte Annihilationsreaktion"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Hochdichte kontrollierte Annihilation"
+  },
+  "2101": {
+    "id": 2101,
+    "name": "Mech-Kern",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Mech-Kern Stufe 1"
+  },
+  "2102": {
+    "id": 2102,
+    "name": "Mech-Kern",
+    "level": 2,
+    "required": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Mech-Kern Stufe 2"
+  },
+  "2103": {
+    "id": 2103,
+    "name": "Mech-Kern",
+    "level": 3,
+    "required": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Mech-Kern Stufe 3"
+  },
+  "2104": {
+    "id": 2104,
+    "name": "Mech-Kern",
+    "level": 4,
+    "required": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Mech-Kern Stufe 4"
+  },
+  "2105": {
+    "id": 2105,
+    "name": "Mech-Kern",
+    "level": 5,
+    "required": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Mech-Kern Stufe 5"
+  },
+  "2106": {
+    "id": 2106,
+    "name": "Mech-Kern",
+    "level": 6,
+    "required": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Mech-Kern Stufe 6"
+  },
+  "2201": {
+    "id": 2201,
+    "name": "Roboter-Gestell",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Roboter-Gestell Stufe 1"
+  },
+  "2202": {
+    "id": 2202,
+    "name": "Roboter-Gestell",
+    "level": 2,
+    "required": [
+      {
+        "id": 2201,
+        "name": "Roboter-Gestell",
+        "displayName": "Roboter-Gestell Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Roboter-Gestell Stufe 2"
+  },
+  "2203": {
+    "id": 2203,
+    "name": "Roboter-Gestell",
+    "level": 3,
+    "required": [
+      {
+        "id": 2202,
+        "name": "Roboter-Gestell",
+        "displayName": "Roboter-Gestell Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Roboter-Gestell Stufe 3"
+  },
+  "2204": {
+    "id": 2204,
+    "name": "Roboter-Gestell",
+    "level": 4,
+    "required": [
+      {
+        "id": 2203,
+        "name": "Roboter-Gestell",
+        "displayName": "Roboter-Gestell Stufe 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Roboter-Gestell Stufe 4"
+  },
+  "2205": {
+    "id": 2205,
+    "name": "Roboter-Gestell",
+    "level": 5,
+    "required": [
+      {
+        "id": 2204,
+        "name": "Roboter-Gestell",
+        "displayName": "Roboter-Gestell Stufe 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Roboter-Gestell Stufe 5"
+  },
+  "2206": {
+    "id": 2206,
+    "name": "Roboter-Gestell",
+    "level": 6,
+    "required": [
+      {
+        "id": 2205,
+        "name": "Roboter-Gestell",
+        "displayName": "Roboter-Gestell Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Roboter-Gestell Stufe 6"
+  },
+  "2207": {
+    "id": 2207,
+    "name": "Roboter-Gestell",
+    "level": 7,
+    "required": [
+      {
+        "id": 2206,
+        "name": "Roboter-Gestell",
+        "displayName": "Roboter-Gestell Stufe 6"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Roboter-Gestell Stufe 7"
+  },
+  "2208": {
+    "id": 2208,
+    "name": "Roboter-Gestell",
+    "level": 8,
+    "required": [
+      {
+        "id": 2207,
+        "name": "Roboter-Gestell",
+        "displayName": "Roboter-Gestell Stufe 7"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Roboter-Gestell Stufe 8"
+  },
+  "2301": {
+    "id": 2301,
+    "name": "Inventarkapazität",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Inventarkapazität Stufe 1"
+  },
+  "2302": {
+    "id": 2302,
+    "name": "Inventarkapazität",
+    "level": 2,
+    "required": [
+      {
+        "id": 2301,
+        "name": "Inventarkapazität",
+        "displayName": "Inventarkapazität Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Inventarkapazität Stufe 2"
+  },
+  "2303": {
+    "id": 2303,
+    "name": "Inventarkapazität",
+    "level": 3,
+    "required": [
+      {
+        "id": 2302,
+        "name": "Inventarkapazität",
+        "displayName": "Inventarkapazität Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Inventarkapazität Stufe 3"
+  },
+  "2304": {
+    "id": 2304,
+    "name": "Inventarkapazität",
+    "level": 4,
+    "required": [
+      {
+        "id": 2303,
+        "name": "Inventarkapazität",
+        "displayName": "Inventarkapazität Stufe 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Inventarkapazität Stufe 4"
+  },
+  "2305": {
+    "id": 2305,
+    "name": "Inventarkapazität",
+    "level": 5,
+    "required": [
+      {
+        "id": 2304,
+        "name": "Inventarkapazität",
+        "displayName": "Inventarkapazität Stufe 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Inventarkapazität Stufe 5"
+  },
+  "2306": {
+    "id": 2306,
+    "name": "Inventarkapazität",
+    "level": 6,
+    "required": [
+      {
+        "id": 2305,
+        "name": "Inventarkapazität",
+        "displayName": "Inventarkapazität Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Inventarkapazität Stufe 6"
+  },
+  "2307": {
+    "id": 2307,
+    "name": "Inventarkapazität",
+    "level": 7,
+    "required": [
+      {
+        "id": 2306,
+        "name": "Inventarkapazität",
+        "displayName": "Inventarkapazität Stufe 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Inventarkapazität Stufe 7"
+  },
+  "2401": {
+    "id": 2401,
+    "name": "Kommunikationssteuerung",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kommunikationssteuerung Stufe 1"
+  },
+  "2402": {
+    "id": 2402,
+    "name": "Kommunikationssteuerung",
+    "level": 2,
+    "required": [
+      {
+        "id": 2401,
+        "name": "Kommunikationssteuerung",
+        "displayName": "Kommunikationssteuerung Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kommunikationssteuerung Stufe 2"
+  },
+  "2403": {
+    "id": 2403,
+    "name": "Kommunikationssteuerung",
+    "level": 3,
+    "required": [
+      {
+        "id": 2402,
+        "name": "Kommunikationssteuerung",
+        "displayName": "Kommunikationssteuerung Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kommunikationssteuerung Stufe 3"
+  },
+  "2404": {
+    "id": 2404,
+    "name": "Kommunikationssteuerung",
+    "level": 4,
+    "required": [
+      {
+        "id": 2403,
+        "name": "Kommunikationssteuerung",
+        "displayName": "Kommunikationssteuerung Stufe 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kommunikationssteuerung Stufe 4"
+  },
+  "2405": {
+    "id": 2405,
+    "name": "Kommunikationssteuerung",
+    "level": 5,
+    "required": [
+      {
+        "id": 2404,
+        "name": "Kommunikationssteuerung",
+        "displayName": "Kommunikationssteuerung Stufe 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kommunikationssteuerung Stufe 5"
+  },
+  "2406": {
+    "id": 2406,
+    "name": "Kommunikationssteuerung",
+    "level": 6,
+    "required": [
+      {
+        "id": 2405,
+        "name": "Kommunikationssteuerung",
+        "displayName": "Kommunikationssteuerung Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kommunikationssteuerung Stufe 6"
+  },
+  "2407": {
+    "id": 2407,
+    "name": "Kommunikationssteuerung",
+    "level": 7,
+    "required": [
+      {
+        "id": 2406,
+        "name": "Kommunikationssteuerung",
+        "displayName": "Kommunikationssteuerung Stufe 6"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kommunikationssteuerung Stufe 7"
+  },
+  "2501": {
+    "id": 2501,
+    "name": "Energiekreislauf",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiekreislauf Stufe 1"
+  },
+  "2502": {
+    "id": 2502,
+    "name": "Energiekreislauf",
+    "level": 2,
+    "required": [
+      {
+        "id": 2501,
+        "name": "Energiekreislauf",
+        "displayName": "Energiekreislauf Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiekreislauf Stufe 2"
+  },
+  "2503": {
+    "id": 2503,
+    "name": "Energiekreislauf",
+    "level": 3,
+    "required": [
+      {
+        "id": 2502,
+        "name": "Energiekreislauf",
+        "displayName": "Energiekreislauf Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiekreislauf Stufe 3"
+  },
+  "2504": {
+    "id": 2504,
+    "name": "Energiekreislauf",
+    "level": 4,
+    "required": [
+      {
+        "id": 2503,
+        "name": "Energiekreislauf",
+        "displayName": "Energiekreislauf Stufe 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiekreislauf Stufe 4"
+  },
+  "2505": {
+    "id": 2505,
+    "name": "Energiekreislauf",
+    "level": 5,
+    "required": [
+      {
+        "id": 2504,
+        "name": "Energiekreislauf",
+        "displayName": "Energiekreislauf Stufe 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiekreislauf Stufe 5"
+  },
+  "2506": {
+    "id": 2506,
+    "name": "Energiekreislauf",
+    "level": 6,
+    "required": [
+      {
+        "id": 2505,
+        "name": "Energiekreislauf",
+        "displayName": "Energiekreislauf Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiekreislauf Stufe 6"
+  },
+  "2601": {
+    "id": 2601,
+    "name": "Drohnenantrieb",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Drohnenantrieb Stufe 1"
+  },
+  "2602": {
+    "id": 2602,
+    "name": "Drohnenantrieb",
+    "level": 2,
+    "required": [
+      {
+        "id": 2601,
+        "name": "Drohnenantrieb",
+        "displayName": "Drohnenantrieb Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Drohnenantrieb Stufe 2"
+  },
+  "2603": {
+    "id": 2603,
+    "name": "Drohnenantrieb",
+    "level": 3,
+    "required": [
+      {
+        "id": 2602,
+        "name": "Drohnenantrieb",
+        "displayName": "Drohnenantrieb Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Drohnenantrieb Stufe 3"
+  },
+  "2604": {
+    "id": 2604,
+    "name": "Drohnenantrieb",
+    "level": 4,
+    "required": [
+      {
+        "id": 2603,
+        "name": "Drohnenantrieb",
+        "displayName": "Drohnenantrieb Stufe 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Drohnenantrieb Stufe 4"
+  },
+  "2605": {
+    "id": 2605,
+    "name": "Drohnenantrieb",
+    "level": 5,
+    "required": [
+      {
+        "id": 2604,
+        "name": "Drohnenantrieb",
+        "displayName": "Drohnenantrieb Stufe 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Drohnenantrieb Stufe 5"
+  },
+  "2606": {
+    "id": 2606,
+    "name": "Drohnenantrieb",
+    "level": 6,
+    "required": [
+      {
+        "id": 2605,
+        "name": "Drohnenantrieb",
+        "displayName": "Drohnenantrieb Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Drohnenantrieb Stufe 6"
+  },
+  "2701": {
+    "id": 2701,
+    "name": "Massenkonstruktion",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Massenkonstruktion Stufe 1"
+  },
+  "2702": {
+    "id": 2702,
+    "name": "Massenkonstruktion",
+    "level": 2,
+    "required": [
+      {
+        "id": 2701,
+        "name": "Massenkonstruktion",
+        "displayName": "Massenkonstruktion Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Massenkonstruktion Stufe 2"
+  },
+  "2703": {
+    "id": 2703,
+    "name": "Massenkonstruktion",
+    "level": 3,
+    "required": [
+      {
+        "id": 2702,
+        "name": "Massenkonstruktion",
+        "displayName": "Massenkonstruktion Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Massenkonstruktion Stufe 3"
+  },
+  "2704": {
+    "id": 2704,
+    "name": "Massenkonstruktion",
+    "level": 4,
+    "required": [
+      {
+        "id": 2703,
+        "name": "Massenkonstruktion",
+        "displayName": "Massenkonstruktion Stufe 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Massenkonstruktion Stufe 4"
+  },
+  "2705": {
+    "id": 2705,
+    "name": "Massenkonstruktion",
+    "level": 5,
+    "required": [
+      {
+        "id": 2704,
+        "name": "Massenkonstruktion",
+        "displayName": "Massenkonstruktion Stufe 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Massenkonstruktion Stufe 5"
+  },
+  "2706": {
+    "id": 2706,
+    "name": "Massenkonstruktion",
+    "level": 6,
+    "required": [
+      {
+        "id": 2705,
+        "name": "Massenkonstruktion",
+        "displayName": "Massenkonstruktion Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Massenkonstruktion Stufe 6"
+  },
+  "2801": {
+    "id": 2801,
+    "name": "Energieschild",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energieschild Stufe 1"
+  },
+  "2802": {
+    "id": 2802,
+    "name": "Energieschild",
+    "level": 2,
+    "required": [
+      {
+        "id": 2801,
+        "name": "Energieschild",
+        "displayName": "Energieschild Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energieschild Stufe 2"
+  },
+  "2803": {
+    "id": 2803,
+    "name": "Energieschild",
+    "level": 3,
+    "required": [
+      {
+        "id": 2802,
+        "name": "Energieschild",
+        "displayName": "Energieschild Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energieschild Stufe 3"
+  },
+  "2804": {
+    "id": 2804,
+    "name": "Energieschild",
+    "level": 4,
+    "required": [
+      {
+        "id": 2803,
+        "name": "Energieschild",
+        "displayName": "Energieschild Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energieschild Stufe 4"
+  },
+  "2805": {
+    "id": 2805,
+    "name": "Energieschild",
+    "level": 5,
+    "required": [
+      {
+        "id": 2804,
+        "name": "Energieschild",
+        "displayName": "Energieschild Stufe 4"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energieschild Stufe 5"
+  },
+  "2806": {
+    "id": 2806,
+    "name": "Energieschild",
+    "level": 6,
+    "required": [
+      {
+        "id": 2805,
+        "name": "Energieschild",
+        "displayName": "Energieschild Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2105,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 5"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energieschild Stufe 6"
+  },
+  "2807": {
+    "id": 2807,
+    "name": "Energieschild",
+    "level": 26,
+    "required": [
+      {
+        "id": 2806,
+        "name": "Energieschild",
+        "displayName": "Energieschild Stufe 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true,
+    "displayName": "Energieschild Stufe 26"
+  },
+  "2901": {
+    "id": 2901,
+    "name": "Antrieb",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Antrieb Stufe 1"
+  },
+  "2902": {
+    "id": 2902,
+    "name": "Antrieb",
+    "level": 2,
+    "required": [
+      {
+        "id": 2901,
+        "name": "Antrieb",
+        "displayName": "Antrieb Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2102,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 2"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Drive Engine Lv2 / leave starter planet",
+    "pretechsMax": false,
+    "displayName": "Antrieb Stufe 2"
+  },
+  "2903": {
+    "id": 2903,
+    "name": "Antrieb",
+    "level": 3,
+    "required": [
+      {
+        "id": 2902,
+        "name": "Antrieb",
+        "displayName": "Antrieb Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2103,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 3"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Antrieb Stufe 3"
+  },
+  "2904": {
+    "id": 2904,
+    "name": "Antrieb",
+    "level": 4,
+    "required": [
+      {
+        "id": 2903,
+        "name": "Antrieb",
+        "displayName": "Antrieb Stufe 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2104,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 4"
+      },
+      {
+        "id": 1704,
+        "name": "Gravitationswellen-Brechung",
+        "displayName": "Gravitationswellen-Brechung"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Drive Engine Lv4 / mecha warp",
+    "pretechsMax": false,
+    "displayName": "Antrieb Stufe 4"
+  },
+  "2905": {
+    "id": 2905,
+    "name": "Antrieb",
+    "level": 5,
+    "required": [
+      {
+        "id": 2904,
+        "name": "Antrieb",
+        "displayName": "Antrieb Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Antrieb Stufe 5"
+  },
+  "2906": {
+    "id": 2906,
+    "name": "Antrieb",
+    "level": 6,
+    "required": [
+      {
+        "id": 2905,
+        "name": "Antrieb",
+        "displayName": "Antrieb Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Antrieb Stufe 6"
+  },
+  "2951": {
+    "id": 2951,
+    "name": "Auto-Wiederaufbau-Mark.",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Auto-Wiederaufbau-Mark. Stufe 1"
+  },
+  "2952": {
+    "id": 2952,
+    "name": "Auto-Wiederaufbau-Mark.",
+    "level": 2,
+    "required": [
+      {
+        "id": 2951,
+        "name": "Auto-Wiederaufbau-Mark.",
+        "displayName": "Auto-Wiederaufbau-Mark. Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Auto-Wiederaufbau-Mark. Stufe 2"
+  },
+  "2953": {
+    "id": 2953,
+    "name": "Auto-Wiederaufbau-Mark.",
+    "level": 3,
+    "required": [
+      {
+        "id": 2952,
+        "name": "Auto-Wiederaufbau-Mark.",
+        "displayName": "Auto-Wiederaufbau-Mark. Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Auto-Wiederaufbau-Mark. Stufe 3"
+  },
+  "2954": {
+    "id": 2954,
+    "name": "Auto-Wiederaufbau-Mark.",
+    "level": 4,
+    "required": [
+      {
+        "id": 2953,
+        "name": "Auto-Wiederaufbau-Mark.",
+        "displayName": "Auto-Wiederaufbau-Mark. Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Auto-Wiederaufbau-Mark. Stufe 4"
+  },
+  "2955": {
+    "id": 2955,
+    "name": "Auto-Wiederaufbau-Mark.",
+    "level": 5,
+    "required": [
+      {
+        "id": 2954,
+        "name": "Auto-Wiederaufbau-Mark.",
+        "displayName": "Auto-Wiederaufbau-Mark. Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Auto-Wiederaufbau-Mark. Stufe 5"
+  },
+  "2956": {
+    "id": 2956,
+    "name": "Auto-Wiederaufbau-Mark.",
+    "level": 6,
+    "required": [
+      {
+        "id": 2955,
+        "name": "Auto-Wiederaufbau-Mark.",
+        "displayName": "Auto-Wiederaufbau-Mark. Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Auto-Wiederaufbau-Mark. Stufe 6"
+  },
+  "3101": {
+    "id": 3101,
+    "name": "Solarsegel-Lebensdauer",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1503,
+        "name": "Solarsegel-Orbitalsystem",
+        "displayName": "Solarsegel-Orbitalsystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Lebensdauer Stufe 1"
+  },
+  "3102": {
+    "id": 3102,
+    "name": "Solarsegel-Lebensdauer",
+    "level": 2,
+    "required": [
+      {
+        "id": 3101,
+        "name": "Solarsegel-Lebensdauer",
+        "displayName": "Solarsegel-Lebensdauer Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Lebensdauer Stufe 2"
+  },
+  "3103": {
+    "id": 3103,
+    "name": "Solarsegel-Lebensdauer",
+    "level": 3,
+    "required": [
+      {
+        "id": 3102,
+        "name": "Solarsegel-Lebensdauer",
+        "displayName": "Solarsegel-Lebensdauer Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Lebensdauer Stufe 3"
+  },
+  "3104": {
+    "id": 3104,
+    "name": "Solarsegel-Lebensdauer",
+    "level": 4,
+    "required": [
+      {
+        "id": 3103,
+        "name": "Solarsegel-Lebensdauer",
+        "displayName": "Solarsegel-Lebensdauer Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Lebensdauer Stufe 4"
+  },
+  "3105": {
+    "id": 3105,
+    "name": "Solarsegel-Lebensdauer",
+    "level": 5,
+    "required": [
+      {
+        "id": 3104,
+        "name": "Solarsegel-Lebensdauer",
+        "displayName": "Solarsegel-Lebensdauer Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Lebensdauer Stufe 5"
+  },
+  "3106": {
+    "id": 3106,
+    "name": "Solarsegel-Lebensdauer",
+    "level": 6,
+    "required": [
+      {
+        "id": 3105,
+        "name": "Solarsegel-Lebensdauer",
+        "displayName": "Solarsegel-Lebensdauer Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Lebensdauer Stufe 6"
+  },
+  "3201": {
+    "id": 3201,
+    "name": "Strahlenübertragungs-Effizienz",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1504,
+        "name": "Strahlen-Receiver",
+        "displayName": "Strahlen-Receiver"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlenübertragungs-Effizienz Stufe 1"
+  },
+  "3202": {
+    "id": 3202,
+    "name": "Strahlenübertragungs-Effizienz",
+    "level": 2,
+    "required": [
+      {
+        "id": 3201,
+        "name": "Strahlenübertragungs-Effizienz",
+        "displayName": "Strahlenübertragungs-Effizienz Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlenübertragungs-Effizienz Stufe 2"
+  },
+  "3203": {
+    "id": 3203,
+    "name": "Strahlenübertragungs-Effizienz",
+    "level": 3,
+    "required": [
+      {
+        "id": 3202,
+        "name": "Strahlenübertragungs-Effizienz",
+        "displayName": "Strahlenübertragungs-Effizienz Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlenübertragungs-Effizienz Stufe 3"
+  },
+  "3204": {
+    "id": 3204,
+    "name": "Strahlenübertragungs-Effizienz",
+    "level": 4,
+    "required": [
+      {
+        "id": 3203,
+        "name": "Strahlenübertragungs-Effizienz",
+        "displayName": "Strahlenübertragungs-Effizienz Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlenübertragungs-Effizienz Stufe 4"
+  },
+  "3205": {
+    "id": 3205,
+    "name": "Strahlenübertragungs-Effizienz",
+    "level": 5,
+    "required": [
+      {
+        "id": 3204,
+        "name": "Strahlenübertragungs-Effizienz",
+        "displayName": "Strahlenübertragungs-Effizienz Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlenübertragungs-Effizienz Stufe 5"
+  },
+  "3206": {
+    "id": 3206,
+    "name": "Strahlenübertragungs-Effizienz",
+    "level": 6,
+    "required": [
+      {
+        "id": 3205,
+        "name": "Strahlenübertragungs-Effizienz",
+        "displayName": "Strahlenübertragungs-Effizienz Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlenübertragungs-Effizienz Stufe 6"
+  },
+  "3207": {
+    "id": 3207,
+    "name": "Strahlenübertragungs-Effizienz",
+    "level": 7,
+    "required": [
+      {
+        "id": 3206,
+        "name": "Strahlenübertragungs-Effizienz",
+        "displayName": "Strahlenübertragungs-Effizienz Stufe 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlenübertragungs-Effizienz Stufe 7"
+  },
+  "3208": {
+    "id": 3208,
+    "name": "Strahlenübertragungs-Effizienz",
+    "level": 8,
+    "required": [
+      {
+        "id": 3207,
+        "name": "Strahlenübertragungs-Effizienz",
+        "displayName": "Strahlenübertragungs-Effizienz Stufe 7"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strahlenübertragungs-Effizienz Stufe 8"
+  },
+  "3301": {
+    "id": 3301,
+    "name": "Sorter-Frachtstapel",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "Container-Logistiksystem",
+        "displayName": "Container-Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sorter-Frachtstapel Stufe 1"
+  },
+  "3302": {
+    "id": 3302,
+    "name": "Sorter-Frachtstapel",
+    "level": 2,
+    "required": [
+      {
+        "id": 3301,
+        "name": "Sorter-Frachtstapel",
+        "displayName": "Sorter-Frachtstapel Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sorter-Frachtstapel Stufe 2"
+  },
+  "3303": {
+    "id": 3303,
+    "name": "Sorter-Frachtstapel",
+    "level": 3,
+    "required": [
+      {
+        "id": 3302,
+        "name": "Sorter-Frachtstapel",
+        "displayName": "Sorter-Frachtstapel Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sorter-Frachtstapel Stufe 3"
+  },
+  "3304": {
+    "id": 3304,
+    "name": "Sorter-Frachtstapel",
+    "level": 4,
+    "required": [
+      {
+        "id": 3303,
+        "name": "Sorter-Frachtstapel",
+        "displayName": "Sorter-Frachtstapel Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sorter-Frachtstapel Stufe 4"
+  },
+  "3305": {
+    "id": 3305,
+    "name": "Sorter-Frachtstapel",
+    "level": 5,
+    "required": [
+      {
+        "id": 3304,
+        "name": "Sorter-Frachtstapel",
+        "displayName": "Sorter-Frachtstapel Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sorter-Frachtstapel Stufe 5"
+  },
+  "3306": {
+    "id": 3306,
+    "name": "Sorter-Frachtstapelmenge",
+    "level": 1,
+    "required": [
+      {
+        "id": 3305,
+        "name": "Sorter-Frachtstapel",
+        "displayName": "Sorter-Frachtstapel Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "Container-Logistiksystem",
+        "displayName": "Container-Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sorter-Frachtstapelmenge Stufe 1"
+  },
+  "3311": {
+    "id": 3311,
+    "name": "Stapel-Sorter-Aufwertung",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "Container-Logistiksystem",
+        "displayName": "Container-Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Stapel-Sorter-Aufwertung Stufe 1"
+  },
+  "3312": {
+    "id": 3312,
+    "name": "Stapel-Sorter-Aufwertung",
+    "level": 2,
+    "required": [
+      {
+        "id": 3311,
+        "name": "Stapel-Sorter-Aufwertung",
+        "displayName": "Stapel-Sorter-Aufwertung Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Stapel-Sorter-Aufwertung Stufe 2"
+  },
+  "3313": {
+    "id": 3313,
+    "name": "Stapel-Sorter-Aufwertung",
+    "level": 3,
+    "required": [
+      {
+        "id": 3312,
+        "name": "Stapel-Sorter-Aufwertung",
+        "displayName": "Stapel-Sorter-Aufwertung Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Stapel-Sorter-Aufwertung Stufe 3"
+  },
+  "3314": {
+    "id": 3314,
+    "name": "Stapel-Sorter-Aufwertung",
+    "level": 4,
+    "required": [
+      {
+        "id": 3313,
+        "name": "Stapel-Sorter-Aufwertung",
+        "displayName": "Stapel-Sorter-Aufwertung Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Stapel-Sorter-Aufwertung Stufe 4"
+  },
+  "3315": {
+    "id": 3315,
+    "name": "Stapel-Sorter-Aufwertung",
+    "level": 5,
+    "required": [
+      {
+        "id": 3314,
+        "name": "Stapel-Sorter-Aufwertung",
+        "displayName": "Stapel-Sorter-Aufwertung Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Stapel-Sorter-Aufwertung Stufe 5"
+  },
+  "3316": {
+    "id": 3316,
+    "name": "Stapel-Sorter-Aufwertung",
+    "level": 6,
+    "required": [
+      {
+        "id": 3315,
+        "name": "Stapel-Sorter-Aufwertung",
+        "displayName": "Stapel-Sorter-Aufwertung Stufe 5"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1607,
+        "name": "Container-Logistiksystem",
+        "displayName": "Container-Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Stapel-Sorter-Aufwertung Stufe 6"
+  },
+  "3401": {
+    "id": 3401,
+    "name": "Frachtträger-Antrieb",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1604,
+        "name": "Planetares Logistiksystem",
+        "displayName": "Planetares Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Antrieb Stufe 1"
+  },
+  "3402": {
+    "id": 3402,
+    "name": "Frachtträger-Antrieb",
+    "level": 2,
+    "required": [
+      {
+        "id": 3401,
+        "name": "Frachtträger-Antrieb",
+        "displayName": "Frachtträger-Antrieb Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Antrieb Stufe 2"
+  },
+  "3403": {
+    "id": 3403,
+    "name": "Frachtträger-Antrieb",
+    "level": 3,
+    "required": [
+      {
+        "id": 3402,
+        "name": "Frachtträger-Antrieb",
+        "displayName": "Frachtträger-Antrieb Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1605,
+        "name": "Interstellares Logistiksystem",
+        "displayName": "Interstellares Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Antrieb Stufe 3"
+  },
+  "3404": {
+    "id": 3404,
+    "name": "Frachtträger-Antrieb",
+    "level": 4,
+    "required": [
+      {
+        "id": 3403,
+        "name": "Frachtträger-Antrieb",
+        "displayName": "Frachtträger-Antrieb Stufe 3"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2904,
+        "name": "Antrieb",
+        "displayName": "Antrieb Stufe 4"
+      }
+    ],
+    "milestone": true,
+    "milestoneLabel": "Logistics Carrier Engine Lv4 / vessel warp",
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Antrieb Stufe 4"
+  },
+  "3405": {
+    "id": 3405,
+    "name": "Frachtträger-Antrieb",
+    "level": 5,
+    "required": [
+      {
+        "id": 3404,
+        "name": "Frachtträger-Antrieb",
+        "displayName": "Frachtträger-Antrieb Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Antrieb Stufe 5"
+  },
+  "3406": {
+    "id": 3406,
+    "name": "Frachtträger-Antrieb",
+    "level": 6,
+    "required": [
+      {
+        "id": 3405,
+        "name": "Frachtträger-Antrieb",
+        "displayName": "Frachtträger-Antrieb Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Antrieb Stufe 6"
+  },
+  "3407": {
+    "id": 3407,
+    "name": "Frachtträger-Antrieb",
+    "level": 7,
+    "required": [
+      {
+        "id": 3406,
+        "name": "Frachtträger-Antrieb",
+        "displayName": "Frachtträger-Antrieb Stufe 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Antrieb Stufe 7"
+  },
+  "3501": {
+    "id": 3501,
+    "name": "Frachtträger-Kapazität",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1604,
+        "name": "Planetares Logistiksystem",
+        "displayName": "Planetares Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 1"
+  },
+  "3502": {
+    "id": 3502,
+    "name": "Frachtträger-Kapazität",
+    "level": 2,
+    "required": [
+      {
+        "id": 3501,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 2"
+  },
+  "3503": {
+    "id": 3503,
+    "name": "Frachtträger-Kapazität",
+    "level": 3,
+    "required": [
+      {
+        "id": 3502,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 1605,
+        "name": "Interstellares Logistiksystem",
+        "displayName": "Interstellares Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 3"
+  },
+  "3504": {
+    "id": 3504,
+    "name": "Frachtträger-Kapazität",
+    "level": 4,
+    "required": [
+      {
+        "id": 3503,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 4"
+  },
+  "3505": {
+    "id": 3505,
+    "name": "Frachtträger-Kapazität",
+    "level": 5,
+    "required": [
+      {
+        "id": 3504,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 5"
+  },
+  "3506": {
+    "id": 3506,
+    "name": "Frachtträger-Kapazität",
+    "level": 6,
+    "required": [
+      {
+        "id": 3505,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 6"
+  },
+  "3507": {
+    "id": 3507,
+    "name": "Frachtträger-Kapazität",
+    "level": 7,
+    "required": [
+      {
+        "id": 3506,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 7"
+  },
+  "3508": {
+    "id": 3508,
+    "name": "Frachtträger-Kapazität",
+    "level": 8,
+    "required": [
+      {
+        "id": 3507,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 7"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 8"
+  },
+  "3509": {
+    "id": 3509,
+    "name": "Frachtträger-Kapazität",
+    "level": 9,
+    "required": [
+      {
+        "id": 3508,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 8"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Frachtträger-Kapazität Stufe 9"
+  },
+  "3510": {
+    "id": 3510,
+    "name": "Frachtträger-Kapazität",
+    "level": 12,
+    "required": [
+      {
+        "id": 3509,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 9"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true,
+    "displayName": "Frachtträger-Kapazität Stufe 12"
+  },
+  "3601": {
+    "id": 3601,
+    "name": "Adernutzung",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1001,
+        "name": "Elektromagnetismus",
+        "displayName": "Elektromagnetismus"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Adernutzung Stufe 1"
+  },
+  "3602": {
+    "id": 3602,
+    "name": "Adernutzung",
+    "level": 2,
+    "required": [
+      {
+        "id": 3601,
+        "name": "Adernutzung",
+        "displayName": "Adernutzung Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Adernutzung Stufe 2"
+  },
+  "3603": {
+    "id": 3603,
+    "name": "Adernutzung",
+    "level": 3,
+    "required": [
+      {
+        "id": 3602,
+        "name": "Adernutzung",
+        "displayName": "Adernutzung Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Adernutzung Stufe 3"
+  },
+  "3604": {
+    "id": 3604,
+    "name": "Adernutzung",
+    "level": 4,
+    "required": [
+      {
+        "id": 3603,
+        "name": "Adernutzung",
+        "displayName": "Adernutzung Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Adernutzung Stufe 4"
+  },
+  "3605": {
+    "id": 3605,
+    "name": "Adernutzung",
+    "level": 5,
+    "required": [
+      {
+        "id": 3604,
+        "name": "Adernutzung",
+        "displayName": "Adernutzung Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Adernutzung Stufe 5"
+  },
+  "3606": {
+    "id": 3606,
+    "name": "Adernutzung",
+    "level": 6,
+    "required": [
+      {
+        "id": 3605,
+        "name": "Adernutzung",
+        "displayName": "Adernutzung Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Adernutzung Stufe 6"
+  },
+  "3701": {
+    "id": 3701,
+    "name": "Vertikale Konstruktion",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1601,
+        "name": "Standard-Logistiksystem",
+        "displayName": "Standard-Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Vertikale Konstruktion Stufe 1"
+  },
+  "3702": {
+    "id": 3702,
+    "name": "Vertikale Konstruktion",
+    "level": 2,
+    "required": [
+      {
+        "id": 3701,
+        "name": "Vertikale Konstruktion",
+        "displayName": "Vertikale Konstruktion Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Vertikale Konstruktion Stufe 2"
+  },
+  "3703": {
+    "id": 3703,
+    "name": "Vertikale Konstruktion",
+    "level": 3,
+    "required": [
+      {
+        "id": 3702,
+        "name": "Vertikale Konstruktion",
+        "displayName": "Vertikale Konstruktion Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Vertikale Konstruktion Stufe 3"
+  },
+  "3704": {
+    "id": 3704,
+    "name": "Vertikale Konstruktion",
+    "level": 4,
+    "required": [
+      {
+        "id": 3703,
+        "name": "Vertikale Konstruktion",
+        "displayName": "Vertikale Konstruktion Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Vertikale Konstruktion Stufe 4"
+  },
+  "3705": {
+    "id": 3705,
+    "name": "Vertikale Konstruktion",
+    "level": 5,
+    "required": [
+      {
+        "id": 3704,
+        "name": "Vertikale Konstruktion",
+        "displayName": "Vertikale Konstruktion Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Vertikale Konstruktion Stufe 5"
+  },
+  "3706": {
+    "id": 3706,
+    "name": "Vertikale Konstruktion",
+    "level": 6,
+    "required": [
+      {
+        "id": 3705,
+        "name": "Vertikale Konstruktion",
+        "displayName": "Vertikale Konstruktion Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Vertikale Konstruktion Stufe 6"
+  },
+  "3801": {
+    "id": 3801,
+    "name": "Integrierte Stationslogistik",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 3508,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 8"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Integrierte Stationslogistik Stufe 1"
+  },
+  "3802": {
+    "id": 3802,
+    "name": "Integrierte Stationslogistik",
+    "level": 2,
+    "required": [
+      {
+        "id": 3801,
+        "name": "Integrierte Stationslogistik",
+        "displayName": "Integrierte Stationslogistik Stufe 1"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 3509,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 9"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true,
+    "displayName": "Integrierte Stationslogistik Stufe 2"
+  },
+  "3803": {
+    "id": 3803,
+    "name": "Integrierte Stationslogistik",
+    "level": 3,
+    "required": [
+      {
+        "id": 3802,
+        "name": "Integrierte Stationslogistik",
+        "displayName": "Integrierte Stationslogistik Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 3510,
+        "name": "Frachtträger-Kapazität",
+        "displayName": "Frachtträger-Kapazität Stufe 12"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": true,
+    "displayName": "Integrierte Stationslogistik Stufe 3"
+  },
+  "3901": {
+    "id": 3901,
+    "name": "Forschungsgeschwindigkeit",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1312,
+        "name": "Informationsmatrix",
+        "displayName": "Informationsmatrix"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Forschungsgeschwindigkeit Stufe 1"
+  },
+  "3902": {
+    "id": 3902,
+    "name": "Forschungsgeschwindigkeit",
+    "level": 2,
+    "required": [
+      {
+        "id": 3901,
+        "name": "Forschungsgeschwindigkeit",
+        "displayName": "Forschungsgeschwindigkeit Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Forschungsgeschwindigkeit Stufe 2"
+  },
+  "3903": {
+    "id": 3903,
+    "name": "Forschungsgeschwindigkeit",
+    "level": 3,
+    "required": [
+      {
+        "id": 3902,
+        "name": "Forschungsgeschwindigkeit",
+        "displayName": "Forschungsgeschwindigkeit Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Forschungsgeschwindigkeit Stufe 3"
+  },
+  "3904": {
+    "id": 3904,
+    "name": "Forschungsgeschwindigkeit",
+    "level": 4,
+    "required": [
+      {
+        "id": 3903,
+        "name": "Forschungsgeschwindigkeit",
+        "displayName": "Forschungsgeschwindigkeit Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Forschungsgeschwindigkeit Stufe 4"
+  },
+  "4001": {
+    "id": 4001,
+    "name": "Verteilungsreichweite",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1608,
+        "name": "Verteilungs-Logistiksystem",
+        "displayName": "Verteilungs-Logistiksystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Verteilungsreichweite Stufe 1"
+  },
+  "4002": {
+    "id": 4002,
+    "name": "Verteilungsreichweite",
+    "level": 2,
+    "required": [
+      {
+        "id": 4001,
+        "name": "Verteilungsreichweite",
+        "displayName": "Verteilungsreichweite Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Verteilungsreichweite Stufe 2"
+  },
+  "4003": {
+    "id": 4003,
+    "name": "Verteilungsreichweite",
+    "level": 3,
+    "required": [
+      {
+        "id": 4002,
+        "name": "Verteilungsreichweite",
+        "displayName": "Verteilungsreichweite Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Verteilungsreichweite Stufe 3"
+  },
+  "4004": {
+    "id": 4004,
+    "name": "Verteilungsreichweite",
+    "level": 4,
+    "required": [
+      {
+        "id": 4003,
+        "name": "Verteilungsreichweite",
+        "displayName": "Verteilungsreichweite Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Verteilungsreichweite Stufe 4"
+  },
+  "4005": {
+    "id": 4005,
+    "name": "Verteilungsreichweite",
+    "level": 5,
+    "required": [
+      {
+        "id": 4004,
+        "name": "Verteilungsreichweite",
+        "displayName": "Verteilungsreichweite Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Verteilungsreichweite Stufe 5"
+  },
+  "4101": {
+    "id": 4101,
+    "name": "Universum-Erkundung",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Universum-Erkundung Stufe 1"
+  },
+  "4102": {
+    "id": 4102,
+    "name": "Universum-Erkundung",
+    "level": 2,
+    "required": [
+      {
+        "id": 4101,
+        "name": "Universum-Erkundung",
+        "displayName": "Universum-Erkundung Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Universum-Erkundung Stufe 2"
+  },
+  "4103": {
+    "id": 4103,
+    "name": "Universum-Erkundung",
+    "level": 3,
+    "required": [
+      {
+        "id": 4102,
+        "name": "Universum-Erkundung",
+        "displayName": "Universum-Erkundung Stufe 2"
+      }
+    ],
+    "implicitRequired": [
+      {
+        "id": 2902,
+        "name": "Antrieb",
+        "displayName": "Antrieb Stufe 2"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Universum-Erkundung Stufe 3"
+  },
+  "4104": {
+    "id": 4104,
+    "name": "Universum-Erkundung",
+    "level": 4,
+    "required": [
+      {
+        "id": 4103,
+        "name": "Universum-Erkundung",
+        "displayName": "Universum-Erkundung Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Universum-Erkundung Stufe 4"
+  },
+  "4201": {
+    "id": 4201,
+    "name": "Solarsegel-Adsorptionsrate",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1522,
+        "name": "Vertikaler Abschusssilo",
+        "displayName": "Vertikaler Abschusssilo"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Adsorptionsrate Stufe 1"
+  },
+  "4202": {
+    "id": 4202,
+    "name": "Solarsegel-Adsorptionsrate",
+    "level": 2,
+    "required": [
+      {
+        "id": 4201,
+        "name": "Solarsegel-Adsorptionsrate",
+        "displayName": "Solarsegel-Adsorptionsrate Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Adsorptionsrate Stufe 2"
+  },
+  "4203": {
+    "id": 4203,
+    "name": "Solarsegel-Adsorptionsrate",
+    "level": 3,
+    "required": [
+      {
+        "id": 4202,
+        "name": "Solarsegel-Adsorptionsrate",
+        "displayName": "Solarsegel-Adsorptionsrate Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Adsorptionsrate Stufe 3"
+  },
+  "4204": {
+    "id": 4204,
+    "name": "Solarsegel-Adsorptionsrate",
+    "level": 4,
+    "required": [
+      {
+        "id": 4203,
+        "name": "Solarsegel-Adsorptionsrate",
+        "displayName": "Solarsegel-Adsorptionsrate Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Adsorptionsrate Stufe 4"
+  },
+  "4205": {
+    "id": 4205,
+    "name": "Solarsegel-Adsorptionsrate",
+    "level": 5,
+    "required": [
+      {
+        "id": 4204,
+        "name": "Solarsegel-Adsorptionsrate",
+        "displayName": "Solarsegel-Adsorptionsrate Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Adsorptionsrate Stufe 5"
+  },
+  "4206": {
+    "id": 4206,
+    "name": "Solarsegel-Adsorptionsrate",
+    "level": 6,
+    "required": [
+      {
+        "id": 4205,
+        "name": "Solarsegel-Adsorptionsrate",
+        "displayName": "Solarsegel-Adsorptionsrate Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Solarsegel-Adsorptionsrate Stufe 6"
+  },
+  "5001": {
+    "id": 5001,
+    "name": "Kinetikwaffen-Schaden",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1801,
+        "name": "Waffensystem",
+        "displayName": "Waffensystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kinetikwaffen-Schaden Stufe 1"
+  },
+  "5002": {
+    "id": 5002,
+    "name": "Kinetikwaffen-Schaden",
+    "level": 2,
+    "required": [
+      {
+        "id": 5001,
+        "name": "Kinetikwaffen-Schaden",
+        "displayName": "Kinetikwaffen-Schaden Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kinetikwaffen-Schaden Stufe 2"
+  },
+  "5003": {
+    "id": 5003,
+    "name": "Kinetikwaffen-Schaden",
+    "level": 3,
+    "required": [
+      {
+        "id": 5002,
+        "name": "Kinetikwaffen-Schaden",
+        "displayName": "Kinetikwaffen-Schaden Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kinetikwaffen-Schaden Stufe 3"
+  },
+  "5004": {
+    "id": 5004,
+    "name": "Kinetikwaffen-Schaden",
+    "level": 4,
+    "required": [
+      {
+        "id": 5003,
+        "name": "Kinetikwaffen-Schaden",
+        "displayName": "Kinetikwaffen-Schaden Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kinetikwaffen-Schaden Stufe 4"
+  },
+  "5005": {
+    "id": 5005,
+    "name": "Kinetikwaffen-Schaden",
+    "level": 5,
+    "required": [
+      {
+        "id": 5004,
+        "name": "Kinetikwaffen-Schaden",
+        "displayName": "Kinetikwaffen-Schaden Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kinetikwaffen-Schaden Stufe 5"
+  },
+  "5006": {
+    "id": 5006,
+    "name": "Kinetikwaffen-Schaden",
+    "level": 6,
+    "required": [
+      {
+        "id": 5005,
+        "name": "Kinetikwaffen-Schaden",
+        "displayName": "Kinetikwaffen-Schaden Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kinetikwaffen-Schaden Stufe 6"
+  },
+  "5101": {
+    "id": 5101,
+    "name": "Energiewaffen-Schaden",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1801,
+        "name": "Waffensystem",
+        "displayName": "Waffensystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiewaffen-Schaden Stufe 1"
+  },
+  "5102": {
+    "id": 5102,
+    "name": "Energiewaffen-Schaden",
+    "level": 2,
+    "required": [
+      {
+        "id": 5101,
+        "name": "Energiewaffen-Schaden",
+        "displayName": "Energiewaffen-Schaden Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiewaffen-Schaden Stufe 2"
+  },
+  "5103": {
+    "id": 5103,
+    "name": "Energiewaffen-Schaden",
+    "level": 3,
+    "required": [
+      {
+        "id": 5102,
+        "name": "Energiewaffen-Schaden",
+        "displayName": "Energiewaffen-Schaden Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiewaffen-Schaden Stufe 3"
+  },
+  "5104": {
+    "id": 5104,
+    "name": "Energiewaffen-Schaden",
+    "level": 4,
+    "required": [
+      {
+        "id": 5103,
+        "name": "Energiewaffen-Schaden",
+        "displayName": "Energiewaffen-Schaden Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiewaffen-Schaden Stufe 4"
+  },
+  "5105": {
+    "id": 5105,
+    "name": "Energiewaffen-Schaden",
+    "level": 5,
+    "required": [
+      {
+        "id": 5104,
+        "name": "Energiewaffen-Schaden",
+        "displayName": "Energiewaffen-Schaden Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiewaffen-Schaden Stufe 5"
+  },
+  "5106": {
+    "id": 5106,
+    "name": "Energiewaffen-Schaden",
+    "level": 6,
+    "required": [
+      {
+        "id": 5105,
+        "name": "Energiewaffen-Schaden",
+        "displayName": "Energiewaffen-Schaden Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Energiewaffen-Schaden Stufe 6"
+  },
+  "5201": {
+    "id": 5201,
+    "name": "Sprengwaffen-Schaden",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1802,
+        "name": "Brenneinheit",
+        "displayName": "Brenneinheit"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sprengwaffen-Schaden Stufe 1"
+  },
+  "5202": {
+    "id": 5202,
+    "name": "Sprengwaffen-Schaden",
+    "level": 2,
+    "required": [
+      {
+        "id": 5201,
+        "name": "Sprengwaffen-Schaden",
+        "displayName": "Sprengwaffen-Schaden Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sprengwaffen-Schaden Stufe 2"
+  },
+  "5203": {
+    "id": 5203,
+    "name": "Sprengwaffen-Schaden",
+    "level": 3,
+    "required": [
+      {
+        "id": 5202,
+        "name": "Sprengwaffen-Schaden",
+        "displayName": "Sprengwaffen-Schaden Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sprengwaffen-Schaden Stufe 3"
+  },
+  "5204": {
+    "id": 5204,
+    "name": "Sprengwaffen-Schaden",
+    "level": 4,
+    "required": [
+      {
+        "id": 5203,
+        "name": "Sprengwaffen-Schaden",
+        "displayName": "Sprengwaffen-Schaden Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sprengwaffen-Schaden Stufe 4"
+  },
+  "5205": {
+    "id": 5205,
+    "name": "Sprengwaffen-Schaden",
+    "level": 5,
+    "required": [
+      {
+        "id": 5204,
+        "name": "Sprengwaffen-Schaden",
+        "displayName": "Sprengwaffen-Schaden Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sprengwaffen-Schaden Stufe 5"
+  },
+  "5206": {
+    "id": 5206,
+    "name": "Sprengwaffen-Schaden",
+    "level": 6,
+    "required": [
+      {
+        "id": 5205,
+        "name": "Sprengwaffen-Schaden",
+        "displayName": "Sprengwaffen-Schaden Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Sprengwaffen-Schaden Stufe 6"
+  },
+  "5301": {
+    "id": 5301,
+    "name": "Kampfdrohnen-Schaden",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "Prototyp",
+        "displayName": "Prototyp"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Schaden Stufe 1"
+  },
+  "5302": {
+    "id": 5302,
+    "name": "Kampfdrohnen-Schaden",
+    "level": 2,
+    "required": [
+      {
+        "id": 5301,
+        "name": "Kampfdrohnen-Schaden",
+        "displayName": "Kampfdrohnen-Schaden Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Schaden Stufe 2"
+  },
+  "5303": {
+    "id": 5303,
+    "name": "Kampfdrohnen-Schaden",
+    "level": 3,
+    "required": [
+      {
+        "id": 5302,
+        "name": "Kampfdrohnen-Schaden",
+        "displayName": "Kampfdrohnen-Schaden Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Schaden Stufe 3"
+  },
+  "5304": {
+    "id": 5304,
+    "name": "Kampfdrohnen-Schaden",
+    "level": 4,
+    "required": [
+      {
+        "id": 5303,
+        "name": "Kampfdrohnen-Schaden",
+        "displayName": "Kampfdrohnen-Schaden Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Schaden Stufe 4"
+  },
+  "5305": {
+    "id": 5305,
+    "name": "Kampfdrohnen-Schaden",
+    "level": 5,
+    "required": [
+      {
+        "id": 5304,
+        "name": "Kampfdrohnen-Schaden",
+        "displayName": "Kampfdrohnen-Schaden Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Schaden Stufe 5"
+  },
+  "5401": {
+    "id": 5401,
+    "name": "Kampfdrohnen-Angriffsgeschw.",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "Prototyp",
+        "displayName": "Prototyp"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 1"
+  },
+  "5402": {
+    "id": 5402,
+    "name": "Kampfdrohnen-Angriffsgeschw.",
+    "level": 2,
+    "required": [
+      {
+        "id": 5401,
+        "name": "Kampfdrohnen-Angriffsgeschw.",
+        "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 2"
+  },
+  "5403": {
+    "id": 5403,
+    "name": "Kampfdrohnen-Angriffsgeschw.",
+    "level": 3,
+    "required": [
+      {
+        "id": 5402,
+        "name": "Kampfdrohnen-Angriffsgeschw.",
+        "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 3"
+  },
+  "5404": {
+    "id": 5404,
+    "name": "Kampfdrohnen-Angriffsgeschw.",
+    "level": 4,
+    "required": [
+      {
+        "id": 5403,
+        "name": "Kampfdrohnen-Angriffsgeschw.",
+        "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 4"
+  },
+  "5405": {
+    "id": 5405,
+    "name": "Kampfdrohnen-Angriffsgeschw.",
+    "level": 5,
+    "required": [
+      {
+        "id": 5404,
+        "name": "Kampfdrohnen-Angriffsgeschw.",
+        "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Angriffsgeschw. Stufe 5"
+  },
+  "5601": {
+    "id": 5601,
+    "name": "Kampfdrohnen-Haltbarkeit",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "Prototyp",
+        "displayName": "Prototyp"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Haltbarkeit Stufe 1"
+  },
+  "5602": {
+    "id": 5602,
+    "name": "Kampfdrohnen-Haltbarkeit",
+    "level": 2,
+    "required": [
+      {
+        "id": 5601,
+        "name": "Kampfdrohnen-Haltbarkeit",
+        "displayName": "Kampfdrohnen-Haltbarkeit Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Haltbarkeit Stufe 2"
+  },
+  "5603": {
+    "id": 5603,
+    "name": "Kampfdrohnen-Haltbarkeit",
+    "level": 3,
+    "required": [
+      {
+        "id": 5602,
+        "name": "Kampfdrohnen-Haltbarkeit",
+        "displayName": "Kampfdrohnen-Haltbarkeit Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Haltbarkeit Stufe 3"
+  },
+  "5604": {
+    "id": 5604,
+    "name": "Kampfdrohnen-Haltbarkeit",
+    "level": 4,
+    "required": [
+      {
+        "id": 5603,
+        "name": "Kampfdrohnen-Haltbarkeit",
+        "displayName": "Kampfdrohnen-Haltbarkeit Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Haltbarkeit Stufe 4"
+  },
+  "5605": {
+    "id": 5605,
+    "name": "Kampfdrohnen-Haltbarkeit",
+    "level": 5,
+    "required": [
+      {
+        "id": 5604,
+        "name": "Kampfdrohnen-Haltbarkeit",
+        "displayName": "Kampfdrohnen-Haltbarkeit Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Kampfdrohnen-Haltbarkeit Stufe 5"
+  },
+  "5701": {
+    "id": 5701,
+    "name": "Planetenschild",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1809,
+        "name": "Planetares Verteidigungssystem",
+        "displayName": "Planetares Verteidigungssystem"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Planetenschild Stufe 1"
+  },
+  "5702": {
+    "id": 5702,
+    "name": "Planetenschild",
+    "level": 2,
+    "required": [
+      {
+        "id": 5701,
+        "name": "Planetenschild",
+        "displayName": "Planetenschild Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Planetenschild Stufe 2"
+  },
+  "5703": {
+    "id": 5703,
+    "name": "Planetenschild",
+    "level": 3,
+    "required": [
+      {
+        "id": 5702,
+        "name": "Planetenschild",
+        "displayName": "Planetenschild Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Planetenschild Stufe 3"
+  },
+  "5704": {
+    "id": 5704,
+    "name": "Planetenschild",
+    "level": 4,
+    "required": [
+      {
+        "id": 5703,
+        "name": "Planetenschild",
+        "displayName": "Planetenschild Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Planetenschild Stufe 4"
+  },
+  "5705": {
+    "id": 5705,
+    "name": "Planetenschild",
+    "level": 5,
+    "required": [
+      {
+        "id": 5704,
+        "name": "Planetenschild",
+        "displayName": "Planetenschild Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Planetenschild Stufe 5"
+  },
+  "5801": {
+    "id": 5801,
+    "name": "Bodentruppen-Kapazitätserw.",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1819,
+        "name": "Prototyp",
+        "displayName": "Prototyp"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Bodentruppen-Kapazitätserw. Stufe 1"
+  },
+  "5802": {
+    "id": 5802,
+    "name": "Bodentruppen-Kapazitätserw.",
+    "level": 2,
+    "required": [
+      {
+        "id": 5801,
+        "name": "Bodentruppen-Kapazitätserw.",
+        "displayName": "Bodentruppen-Kapazitätserw. Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Bodentruppen-Kapazitätserw. Stufe 2"
+  },
+  "5803": {
+    "id": 5803,
+    "name": "Bodentruppen-Kapazitätserw.",
+    "level": 3,
+    "required": [
+      {
+        "id": 5802,
+        "name": "Bodentruppen-Kapazitätserw.",
+        "displayName": "Bodentruppen-Kapazitätserw. Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Bodentruppen-Kapazitätserw. Stufe 3"
+  },
+  "5804": {
+    "id": 5804,
+    "name": "Bodentruppen-Kapazitätserw.",
+    "level": 4,
+    "required": [
+      {
+        "id": 5803,
+        "name": "Bodentruppen-Kapazitätserw.",
+        "displayName": "Bodentruppen-Kapazitätserw. Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Bodentruppen-Kapazitätserw. Stufe 4"
+  },
+  "5805": {
+    "id": 5805,
+    "name": "Bodentruppen-Kapazitätserw.",
+    "level": 5,
+    "required": [
+      {
+        "id": 5804,
+        "name": "Bodentruppen-Kapazitätserw.",
+        "displayName": "Bodentruppen-Kapazitätserw. Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Bodentruppen-Kapazitätserw. Stufe 5"
+  },
+  "5806": {
+    "id": 5806,
+    "name": "Bodentruppen-Kapazitätserw.",
+    "level": 6,
+    "required": [
+      {
+        "id": 5805,
+        "name": "Bodentruppen-Kapazitätserw.",
+        "displayName": "Bodentruppen-Kapazitätserw. Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Bodentruppen-Kapazitätserw. Stufe 6"
+  },
+  "5807": {
+    "id": 5807,
+    "name": "Bodentruppen-Kapazitätserw.",
+    "level": 7,
+    "required": [
+      {
+        "id": 5806,
+        "name": "Bodentruppen-Kapazitätserw.",
+        "displayName": "Bodentruppen-Kapazitätserw. Stufe 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Bodentruppen-Kapazitätserw. Stufe 7"
+  },
+  "5901": {
+    "id": 5901,
+    "name": "Weltraumflotten-Erweiterung",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1822,
+        "name": "Korvette",
+        "displayName": "Korvette"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Weltraumflotten-Erweiterung Stufe 1"
+  },
+  "5902": {
+    "id": 5902,
+    "name": "Weltraumflotten-Erweiterung",
+    "level": 2,
+    "required": [
+      {
+        "id": 5901,
+        "name": "Weltraumflotten-Erweiterung",
+        "displayName": "Weltraumflotten-Erweiterung Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Weltraumflotten-Erweiterung Stufe 2"
+  },
+  "5903": {
+    "id": 5903,
+    "name": "Weltraumflotten-Erweiterung",
+    "level": 3,
+    "required": [
+      {
+        "id": 5902,
+        "name": "Weltraumflotten-Erweiterung",
+        "displayName": "Weltraumflotten-Erweiterung Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Weltraumflotten-Erweiterung Stufe 3"
+  },
+  "5904": {
+    "id": 5904,
+    "name": "Weltraumflotten-Erweiterung",
+    "level": 4,
+    "required": [
+      {
+        "id": 5903,
+        "name": "Weltraumflotten-Erweiterung",
+        "displayName": "Weltraumflotten-Erweiterung Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Weltraumflotten-Erweiterung Stufe 4"
+  },
+  "5905": {
+    "id": 5905,
+    "name": "Weltraumflotten-Erweiterung",
+    "level": 5,
+    "required": [
+      {
+        "id": 5904,
+        "name": "Weltraumflotten-Erweiterung",
+        "displayName": "Weltraumflotten-Erweiterung Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Weltraumflotten-Erweiterung Stufe 5"
+  },
+  "5906": {
+    "id": 5906,
+    "name": "Weltraumflotten-Erweiterung",
+    "level": 6,
+    "required": [
+      {
+        "id": 5905,
+        "name": "Weltraumflotten-Erweiterung",
+        "displayName": "Weltraumflotten-Erweiterung Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Weltraumflotten-Erweiterung Stufe 6"
+  },
+  "5907": {
+    "id": 5907,
+    "name": "Weltraumflotten-Erweiterung",
+    "level": 7,
+    "required": [
+      {
+        "id": 5906,
+        "name": "Weltraumflotten-Erweiterung",
+        "displayName": "Weltraumflotten-Erweiterung Stufe 6"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Weltraumflotten-Erweiterung Stufe 7"
+  },
+  "6001": {
+    "id": 6001,
+    "name": "Strukturverstärkung",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 2101,
+        "name": "Mech-Kern",
+        "displayName": "Mech-Kern Stufe 1"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strukturverstärkung Stufe 1"
+  },
+  "6002": {
+    "id": 6002,
+    "name": "Strukturverstärkung",
+    "level": 2,
+    "required": [
+      {
+        "id": 6001,
+        "name": "Strukturverstärkung",
+        "displayName": "Strukturverstärkung Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strukturverstärkung Stufe 2"
+  },
+  "6003": {
+    "id": 6003,
+    "name": "Strukturverstärkung",
+    "level": 3,
+    "required": [
+      {
+        "id": 6002,
+        "name": "Strukturverstärkung",
+        "displayName": "Strukturverstärkung Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strukturverstärkung Stufe 3"
+  },
+  "6004": {
+    "id": 6004,
+    "name": "Strukturverstärkung",
+    "level": 4,
+    "required": [
+      {
+        "id": 6003,
+        "name": "Strukturverstärkung",
+        "displayName": "Strukturverstärkung Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strukturverstärkung Stufe 4"
+  },
+  "6005": {
+    "id": 6005,
+    "name": "Strukturverstärkung",
+    "level": 5,
+    "required": [
+      {
+        "id": 6004,
+        "name": "Strukturverstärkung",
+        "displayName": "Strukturverstärkung Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strukturverstärkung Stufe 5"
+  },
+  "6006": {
+    "id": 6006,
+    "name": "Strukturverstärkung",
+    "level": 6,
+    "required": [
+      {
+        "id": 6005,
+        "name": "Strukturverstärkung",
+        "displayName": "Strukturverstärkung Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "Strukturverstärkung Stufe 6"
+  },
+  "6101": {
+    "id": 6101,
+    "name": "EM-Waffenstärke",
+    "level": 1,
+    "required": [],
+    "implicitRequired": [
+      {
+        "id": 1810,
+        "name": "Störturm",
+        "displayName": "Störturm"
+      }
+    ],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM-Waffenstärke Stufe 1"
+  },
+  "6102": {
+    "id": 6102,
+    "name": "EM-Waffenstärke",
+    "level": 2,
+    "required": [
+      {
+        "id": 6101,
+        "name": "EM-Waffenstärke",
+        "displayName": "EM-Waffenstärke Stufe 1"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM-Waffenstärke Stufe 2"
+  },
+  "6103": {
+    "id": 6103,
+    "name": "EM-Waffenstärke",
+    "level": 3,
+    "required": [
+      {
+        "id": 6102,
+        "name": "EM-Waffenstärke",
+        "displayName": "EM-Waffenstärke Stufe 2"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM-Waffenstärke Stufe 3"
+  },
+  "6104": {
+    "id": 6104,
+    "name": "EM-Waffenstärke",
+    "level": 4,
+    "required": [
+      {
+        "id": 6103,
+        "name": "EM-Waffenstärke",
+        "displayName": "EM-Waffenstärke Stufe 3"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM-Waffenstärke Stufe 4"
+  },
+  "6105": {
+    "id": 6105,
+    "name": "EM-Waffenstärke",
+    "level": 5,
+    "required": [
+      {
+        "id": 6104,
+        "name": "EM-Waffenstärke",
+        "displayName": "EM-Waffenstärke Stufe 4"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM-Waffenstärke Stufe 5"
+  },
+  "6106": {
+    "id": 6106,
+    "name": "EM-Waffenstärke",
+    "level": 6,
+    "required": [
+      {
+        "id": 6105,
+        "name": "EM-Waffenstärke",
+        "displayName": "EM-Waffenstärke Stufe 5"
+      }
+    ],
+    "implicitRequired": [],
+    "milestone": false,
+    "milestoneLabel": null,
+    "pretechsMax": false,
+    "displayName": "EM-Waffenstärke Stufe 6"
+  }
+}

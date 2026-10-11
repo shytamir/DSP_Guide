@@ -156,6 +156,10 @@ Use Node.js for committed scripts and an ordinary static server for browser test
 `node scripts/build-site.mjs <empty-site-directory>` generates release output;
 `--preview <locale> --segment <A-F>` is private, incomplete output that must not
 deploy. See `localization/README.md` for the catalog and placeholder contract.
+Keep generated `zh-CN/index.html`, `de/index.html`, `ja/index.html` and their
+`assets/data/locales/` data committed. After catalog/source edits, run
+`node scripts/sync-static-editions.mjs --write` and include the refreshed files
+in the same commit. The English source contains its published language links.
 
 Run the repository checks with:
 
@@ -171,7 +175,12 @@ For a release-equivalent deployment check, run
 The manifest controls enabled editions; generation includes shared assets,
 `LICENSE` and the sanitized permission record. Partial previews never deploy.
 An explicit `--base-url` build override must also be passed as the final
-argument to both validators. CI packages the generated site and rechecks the ZIP.
+argument to both validators. CI uses
+`node scripts/sync-static-editions.mjs --stage <empty-site-directory>` to reject
+stale materialized files and package the committed site, then rechecks the ZIP.
+GitHub Pages retains branch publishing from `main`; the package workflow must
+not also deploy a competing Pages artifact. No Pages source-setting change is
+part of this delivery design.
 
 When authoritative game knowledge is required:
 

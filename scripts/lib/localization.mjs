@@ -307,6 +307,12 @@ export function sourceInventory(document) {
 export function checkCoverage(document) {
   for (const node of walk(document)) {
     if (node.nodeName === "#text" && normalize(node.value)) {
+      // Autonyms are fixed by the manifest and checked by validateEditions.
+      if (
+        node.parentNode?.tagName === "a" &&
+        attr(node.parentNode.parentNode, "id") === "language-selector"
+      )
+        continue;
       let parent = node.parentNode;
       while (
         parent &&

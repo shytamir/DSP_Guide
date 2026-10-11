@@ -58,7 +58,10 @@ and validation stories. LC-01 now provides German numeric display with exact
 canonical-value checks; LC-02 aligns native labels and German grade notation.
 LC-E1–E2 is agent-validated, including all scoped convention/convergence and
 German grammar corrections. LC-07 now validates the combined candidate and
-records exact CI/package/development evidence before the final handoff.
+records exact CI/package/development evidence before the final handoff. Its
+development check exposed source/artifact drift; the owner directs keeping branch
+publishing. The repair commits generated editions/data, packages verified source
+bytes and removes the competing artifact deployment. Pages settings stay unchanged.
 
 The published version 3.0 sequence is indexed under
 [`../archive/version-3.0/`](../archive/version-3.0/). The two previously named

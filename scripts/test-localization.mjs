@@ -15,7 +15,7 @@ import {
   checkFactDisplay,
 } from "./lib/localization.mjs";
 import { readJson } from "./lib/terminology.mjs";
-import { generateSite } from "./lib/site-builder.mjs";
+import { generateSite, sharedFiles } from "./lib/site-builder.mjs";
 import { completeFixtures } from "./lib/localization-fixtures.mjs";
 import {
   validateEditions,
@@ -146,6 +146,29 @@ for (const locale of ["zh-CN", "de", "ja"]) {
 }
 const first = generateSite();
 const second = generateSite();
+assert.equal(
+  first.get("index.html").toString(),
+  html,
+  "Publish English source bytes",
+);
+assert.ok(
+  ![...sharedFiles().keys()].some((p) =>
+    /^assets\/data\/locales\/(zh-CN|de|ja)\//.test(p),
+  ),
+  "Regenerate translated data from inputs",
+);
+const badSelector = new Map(first);
+badSelector.set(
+  "index.html",
+  Buffer.from(
+    html.replace('hreflang="de">Deutsch</a>', 'hreflang="de">German</a>'),
+  ),
+);
+const currentManifest = readJson("localization/manifest.json");
+assert.throws(
+  () => validateEditions(badSelector, currentManifest, currentManifest.baseUrl),
+  /Language selector must match/,
+);
 assert.deepEqual([...first.keys()], [...second.keys()]);
 for (const [file, bytes] of first)
   assert.ok(bytes.equals(second.get(file)), file);

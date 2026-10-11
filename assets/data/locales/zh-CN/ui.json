@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "locale": "zh-CN",
+  "strings": {
+    "saved": "清单进度仅保存在此浏览器中。",
+    "unavailable": "无法在本地保存；勾选状态仅在当前页面保持。",
+    "reset": "清单进度已重置。",
+    "resetUnavailable": "当前页面的勾选已清除；无法在本地保存。",
+    "required": "前置科技",
+    "implicit": "隐含前置科技",
+    "unlocks": "解锁",
+    "rank": "等级 {n}"
+  }
+}

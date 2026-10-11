@@ -16,6 +16,7 @@ import {
   localeUi,
   localeData,
   decorateEdition,
+  validateEditions,
 } from "./locale-delivery.mjs";
 
 export function sharedFiles() {
@@ -26,11 +27,13 @@ export function sharedFiles() {
       .sort((a, b) => a.name.localeCompare(b.name, "en"))) {
       const file = `${directory}/${entry.name}`;
       assert.ok(!entry.isSymbolicLink(), `Symlink forbidden: ${file}`);
+      // Regenerate translated data from authoritative inputs, never copy it back.
+      if (/^assets\/data\/locales\/(zh-CN|de|ja)$/.test(file)) continue;
       if (file.startsWith("assets/data/locales/") && !entry.isDirectory())
         assert.equal(
           file,
           "assets/data/locales/en/ui.json",
-          "Generated locale data must not be copied into source assets",
+          "Unexpected locale data",
         );
       if (entry.isDirectory()) visit(file);
       else files.set(file, fs.readFileSync(file));
@@ -103,7 +106,18 @@ export function generateSite({
       "Localized factual objects differ",
     );
     decorateEdition(document, edition, enabled, baseUrl, !!preview);
-    files.set(`${edition.path}index.html`, Buffer.from(serialize(document)));
+    const publishedManifest = readJson("localization/manifest.json");
+    const useEnglishSource =
+      edition.id === "en" &&
+      !preview &&
+      baseUrl === publishedManifest.baseUrl &&
+      JSON.stringify(manifest) === JSON.stringify(publishedManifest);
+    files.set(
+      `${edition.path}index.html`,
+      Buffer.from(
+        useEnglishSource ? html : serialize(document).replace(/^[ \t]+$/gm, ""),
+      ),
+    );
   }
   if (preview) {
     files.set(
@@ -112,6 +126,37 @@ export function generateSite({
         `PRIVATE ${preview} ${segment || "all"} preview; incomplete English text remains. Never package or publish.\n`,
       ),
     );
+  }
+  if (!preview) validateEditions(files, manifest, baseUrl);
+  return files;
+}
+
+export function committedSite() {
+  const expected = generateSite();
+  const files = new Map();
+  function checkDirectory(directory) {
+    if (!fs.existsSync(directory)) return;
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+      const file = `${directory}/${entry.name}`;
+      assert.ok(!entry.isSymbolicLink(), `Symlink forbidden: ${file}`);
+      if (entry.isDirectory()) checkDirectory(file);
+      else
+        assert.ok(
+          expected.has(file),
+          `Unexpected static edition file: ${file}`,
+        );
+    }
+  }
+  for (const directory of ["zh-CN", "de", "ja", "assets/data/locales"])
+    checkDirectory(directory);
+  for (const [file, bytes] of expected) {
+    assert.ok(fs.existsSync(file), `Missing committed edition file: ${file}`);
+    const committed = fs.readFileSync(file);
+    assert.ok(
+      committed.equals(bytes),
+      `Stale committed edition: ${file}; run node scripts/sync-static-editions.mjs --write`,
+    );
+    files.set(file, committed);
   }
   return files;
 }

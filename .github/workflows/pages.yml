@@ -1,4 +1,4 @@
-name: Build and deploy static guide
+name: Validate and package static guide
 
 on:
   push:
@@ -7,10 +7,6 @@ on:
 
 permissions:
   contents: read
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
 
 jobs:
   build:
@@ -62,11 +58,11 @@ jobs:
           node scripts/localization-source.mjs
           node scripts/test-localization.mjs
 
-      - name: Stage static website
+      - name: Validate and stage committed static website
         shell: bash
         run: |
           set -euo pipefail
-          node scripts/build-site.mjs _site --base-url https://dsp-beginner-guide.pages.dev/
+          node scripts/sync-static-editions.mjs --stage _site
 
       - name: Validate staged website
         run: |
@@ -96,15 +92,6 @@ jobs:
           compression-level: 0
           retention-days: 30
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: _site
-          retention-days: 1
-
       - name: Summarize package
         shell: bash
         run: |
@@ -115,18 +102,3 @@ jobs:
             echo "- ZIP: \`${DEPLOYMENT_ARCHIVE}\`"
             echo "- Contents: enabled static editions, local assets, LICENSE, and sanitized permission; private catalogs and authoring dependencies excluded"
           } >> "$GITHUB_STEP_SUMMARY"
-
-  deploy:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

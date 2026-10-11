@@ -1,9 +1,11 @@
 # DSP Practical Progression Guide
 
 **Status:** Localization corrections authorized through completion on 2026-10-11.
-LC-E1–E2 / LC-01–06 is agent-validated. LC-07 now validates the corrected
-combined candidate and records its exact package/development evidence before
-the final handoff. Story commits are pushed to `main`. Production publication
+LC-E1–E2 / LC-01–06 is agent-validated. LC-07 is correcting a delivery mismatch
+found during candidate validation: generated editions now live in the repository,
+and the existing branch publisher serves them. The competing artifact deployment
+is removed. Exact new CI ZIP/development checks precede the final handoff.
+Story commits are pushed to `main`. Production publication
 remains the owner's action.
 
 ML-01–28 and all six original epics remain complete and agent-validated. Their
@@ -159,8 +161,12 @@ dsp_universal_end_product_dag_v1_0/  Runtime-derived research package
 
 ## Deployment and evidence boundaries
 
-Pushes to `main` run the GitHub Pages workflow and create a versioned ZIP of the
-deployable static website. The GitHub Pages site is a development deployment
+Pushes to `main` run validation/packaging and the existing GitHub Pages branch
+publisher. English HTML, three generated translations and their locale data are
+committed together. CI rejects stale generated files and creates a versioned ZIP
+from those committed bytes; it does not run a competing artifact deployment.
+`_config.yml` excludes authoring/research/management inputs from branch publishing,
+retaining the sanitized game-asset permission. The GitHub Pages site is a development deployment
 for browser validation, not the production website, and a push does not itself
 constitute production publication.
 
