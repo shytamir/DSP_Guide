@@ -121,13 +121,12 @@ assert.ok(
 );
 assert.ok(generateSite({ preview: "ja" }).has("PREVIEW-ONLY.txt"));
 console.log(
-  `Deterministic generation passed: ${first.size} files; incomplete locales excluded`,
+  `Deterministic generation passed: ${first.size} files; disabled locales excluded`,
 );
 const fixtures = completeFixtures();
-assert.throws(
-  () => generateSite({ manifest: fixtures.manifest }),
-  /Missing message/,
-);
+const incomplete = structuredClone(fixtures);
+incomplete.catalogs.ja.messages.pop();
+assert.throws(() => generateSite(incomplete), /Missing message/);
 for (const baseUrl of [
   "https://example.test/",
   "https://example.test/guide/",
@@ -146,5 +145,5 @@ for (const baseUrl of [
   }
 }
 console.log(
-  "Delivery fixtures passed: disabled activation fails closed; complete four-edition root/prefix links, metadata, localized names/UI and factual parity",
+  "Delivery fixtures passed: incomplete activation fails closed; complete four-edition root/prefix links, metadata, localized names/UI and factual parity",
 );

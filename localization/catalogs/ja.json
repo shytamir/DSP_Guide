@@ -78,7 +78,7 @@
       "id": "a.top.attr.002.title",
       "sourceHash": "08d500e1da46a1b7dea131369d174e6648f861853d472c597864e5113a092d17",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{fact_1}}. [青] — 工場を整え、青キューブの生産を始める"
+      "text": "{{fact_1}}. [青] — 工場を整え、青マトリクスの生産を始める"
     },
     {
       "id": "a.top.a.002",
@@ -90,7 +90,7 @@
       "id": "a.top.attr.003.title",
       "sourceHash": "174d1ac4858967db29dad3f44ab4b3433fabbf01e3d87e36a78dc8c074b85b81",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{fact_1}}. [赤] — 石油産業を整え、赤キューブの生産を維持する"
+      "text": "{{fact_1}}. [赤] — 石油産業を整え、赤マトリクスの生産を維持する"
     },
     {
       "id": "a.top.a.003",
@@ -102,7 +102,7 @@
       "id": "a.top.attr.004.title",
       "sourceHash": "a133f61596f28a9b54076c70dd1badf54346c7297becf44f3890a0b05e9bd7e0",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{fact_1}}. [ILS] — 母星を離れ、最初の惑星間輸送を自動化する"
+      "text": "{{fact_1}}. [ILS] — 初期惑星を離れ、最初の惑星間輸送を自動化する"
     },
     {
       "id": "a.top.div.002",
@@ -132,13 +132,13 @@
       "id": "a.top.attr.007.title",
       "sourceHash": "2c60095350d9a0ec468509ee01f6a1690f823a1ff62802db67622ef8f9dd224c",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "ILS 段階 II：役に立つ前哨基地の建設"
+      "text": "ILS 段階 II：再訪する価値のある拠点の建設"
     },
     {
       "id": "a.top.attr.007.aria-label",
       "sourceHash": "2c60095350d9a0ec468509ee01f6a1690f823a1ff62802db67622ef8f9dd224c",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "ILS 段階 II：役に立つ前哨基地の建設"
+      "text": "ILS 段階 II：再訪する価値のある拠点の建設"
     },
     {
       "id": "a.top.attr.008.title",
@@ -198,7 +198,7 @@
       "id": "a.top.attr.012.title",
       "sourceHash": "f6165545b544197a5a3ab10316f954108aed0e60b8ef684aca2ac3635254aa01",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{fact_1}}. [ダイソン] — 光子生産を支えるスウォームを築く"
+      "text": "{{fact_1}}. [ダイソン] — 光子生産を支えるダイソンクラウドを築く"
     },
     {
       "id": "a.top.a.008",
@@ -222,7 +222,7 @@
       "id": "a.top.attr.014.title",
       "sourceHash": "94b4efb606fa08caa14682faa53594e7465391a02f1287f00d7723564454a6e1",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{fact_1}}. [白] — 白キューブと任務完了"
+      "text": "{{fact_1}}. [白] — 白マトリクスと任務完了"
     },
     {
       "id": "a.top.div.003",
@@ -240,13 +240,13 @@
       "id": "a.top.attr.015.title",
       "sourceHash": "74495e01aa4ae27ebe6798ea874cecc2b1310f13d69d2497a2598fcd4a68c558",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "任意ルート：[スフィア] — 恒久的なダイソンスフィア"
+      "text": "任意ルート：[スフィア] — 常設のダイソンスフィア"
     },
     {
       "id": "a.top.attr.015.aria-label",
       "sourceHash": "74495e01aa4ae27ebe6798ea874cecc2b1310f13d69d2497a2598fcd4a68c558",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "任意ルート：[スフィア] — 恒久的なダイソンスフィア"
+      "text": "任意ルート：[スフィア] — 常設のダイソンスフィア"
     },
     {
       "id": "a.top.a.011",
@@ -366,7 +366,7 @@
       "id": "a.top.nav.001",
       "sourceHash": "d6b6b693ce523e70707c21fd43e44a3f80a8b7a078bf4be4a7ec038530598cfd",
       "termHash": "fe93ce2fc02d95b9612369335024b8f1c4496f210efb92c276ef6cf7f17bf723",
-      "text": "{{a_1}}増産剤{{end_a_1}}{{a_2}}{{item_2014_1}}{{end_a_2}}{{a_3}}ガス惑星{{end_a_3}}{{a_4}}電力{{end_a_4}}{{a_5}}採掘{{end_a_5}}{{a_6}}ツール{{end_a_6}}{{a_7}}チェックリスト{{end_a_7}}{{a_8}}問題の切り分け{{end_a_8}}"
+      "text": "{{a_1}}増産剤{{end_a_1}}{{a_2}}{{item_2014_1}}{{end_a_2}}{{a_3}}ガス巨星{{end_a_3}}{{a_4}}電力{{end_a_4}}{{a_5}}採掘{{end_a_5}}{{a_6}}ツール{{end_a_6}}{{a_7}}チェックリスト{{end_a_7}}{{a_8}}問題の切り分け{{end_a_8}}"
     },
     {
       "id": "a.top.attr.023.aria-label",
@@ -426,13 +426,13 @@
       "id": "a.top.li.001",
       "sourceHash": "05892e745774485233db26f75430df03696c3bdbd8704ec7879a4e57f9a1bd39",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Thunderstore で {{strong_1}}Install with Mod Manager{{end_strong_1}}（Mod マネージャーでインストール）を選びます。"
+      "text": "Thunderstore で {{strong_1}}Install with Mod Manager{{end_strong_1}}（MOD マネージャーでインストール）を選びます。"
     },
     {
       "id": "a.top.li.002",
       "sourceHash": "bdd6f2de9ebe54e5ad8e66e6fa07d8428fdee998b66690f5a3319a4edb69893f",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "その Mod プロファイルから DSP を起動します。"
+      "text": "その MOD プロファイルから DSP を起動します。"
     },
     {
       "id": "a.top.li.003",
@@ -528,7 +528,7 @@
       "id": "a.top.p.012",
       "sourceHash": "66f76b8ef074d3f66116fcf489d1147a188584cb01dffc8060b4d484dcb59ee4",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "上のルートはゲームを進めるための手軽な道筋で、ほかの計画を否定するものではありません。ソーラーセイルのスウォームを使って光子生産と白色の研究に到達します。恒久的な建造物が欲しくなったらスフィアを造りましょう。スフィアがなくても標準ルートは完走できます。"
+      "text": "上のルートはゲームを進めるための手軽な道筋で、ほかの計画を否定するものではありません。ソーラーセイルのダイソンクラウドを使って光子生産と白色の研究に到達します。常設の建造物が欲しくなったらスフィアを造りましょう。スフィアがなくても標準ルートは完走できます。"
     },
     {
       "id": "a.top.p.013",
@@ -972,7 +972,7 @@
       "id": "a.top.dt.008",
       "sourceHash": "87186f6fb0a278dfce314f9fad4d242264132a22aecce9c662cdb11368210d47",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "需要側／需要"
+      "text": "要求側／要求"
     },
     {
       "id": "a.top.dd.008",
@@ -1116,7 +1116,7 @@
       "id": "a.top.td.011",
       "sourceHash": "e0f76548d2753d02d87e4efda9aef211edbf6eb4b6d272c3953ad9a2e3934fd5",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "母星を離れ、必要量の物資を持ち帰り、手運びを卒業する"
+      "text": "初期惑星を離れ、必要量の物資を持ち帰り、手運びを卒業する"
     },
     {
       "id": "a.top.td.012",
@@ -1212,7 +1212,7 @@
       "id": "a.top.td.027",
       "sourceHash": "73356990cd43d9c723df73b7ed0f9419e9c910760e41502d7f21acba6be10092",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "標準のスウォームルートで、実用的なレシーバー出力を得る"
+      "text": "標準のダイソンクラウドルートで、実用的なレシーバー出力を得る"
     },
     {
       "id": "a.top.td.028",
@@ -1290,7 +1290,7 @@
       "id": "a.top.td.039",
       "sourceHash": "55ab83f50e68b2dc994e437c6c51319205c818ccb16d651a3d2a29ec14481ef6",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "光子生産に必要な電力を、時間をかけて恒久的な構造物で確保する"
+      "text": "光子生産に必要な電力を、時間をかけて常設の構造物で確保する"
     },
     {
       "id": "a.top.td.040",
@@ -1428,7 +1428,7 @@
       "id": "a.blue.td.008",
       "sourceHash": "7b25e327fc4ba100e055ab059eb7d471924101b9f36c260ae45a8d90c1526d72",
       "termHash": "c144c1bb833bd671a05526761c2fbf638d88497e6ee3ca90b6374c03a88f5a18",
-      "text": "レシピ待ちの建設用品ライン、材料供給を上回る青キューブ生産、風力の予備がない{{item_1006_1}}頼みの電力網"
+      "text": "レシピ待ちの建設用品ライン、材料供給を上回る青マトリクス生産、風力の予備がない{{item_1006_1}}頼みの電力網"
     },
     {
       "id": "a.blue.td.009",
@@ -1452,7 +1452,7 @@
       "id": "a.blue.p.002",
       "sourceHash": "20805d65b4586c73c7cd182bd9b043d8a089ac9d1f7366d7f3c812c9e215017e",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "最初の本格的な段階には、切り離せない二つの仕事があります。建設用品工場を造り、基本物資が倉庫で待っている状態にしましょう。毎回手作りする時間を省けます。この工場は青キューブの材料も作るので、同じ生産基盤を使って青色の研究も自動で回します。次へ進むには、両方が必要です。"
+      "text": "最初の本格的な段階には、切り離せない二つの仕事があります。建設用品工場を造り、基本物資が倉庫で待っている状態にしましょう。毎回手作りする時間を省けます。この工場は青マトリクスの材料も作るので、同じ生産基盤を使って青色の研究も自動で回します。次へ進むには、両方が必要です。"
     },
     {
       "id": "a.blue.p.003",
@@ -1596,7 +1596,7 @@
       "id": "a.blue.p.008",
       "sourceHash": "6907e160f29c99a2bc535fb625146dfc364cbfcd4b1457c8e28d3e684445dcc1",
       "termHash": "bef9fc7ac444f15b2e1177381d6e840a8ab5426a34336321024842593e880fac",
-      "text": "次に{{tech_1002_1}}を解放して青キューブのラインを自動化し、最初のキューブを{{tech_1412_1}}に使います。{{item_1006_1}}に継続的な用途ができ、{{item_2203_1}}で別の大陸まで埋め尽くさずに電力網を拡張できます。"
+      "text": "次に{{tech_1002_1}}を解放して青マトリクスのラインを自動化し、最初のキューブを{{tech_1412_1}}に使います。{{item_1006_1}}に継続的な用途ができ、{{item_2203_1}}で別の大陸まで埋め尽くさずに電力網を拡張できます。"
     },
     {
       "id": "a.blue.p.009",
@@ -2022,7 +2022,7 @@
       "id": "a.card-bootstrap-mall-storage.li.010",
       "sourceHash": "b3b70d4e8713e69712d70ab23ec71f796dc3fca2efebf6f17576ccabff613137",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "貯蔵タンクの枝ラインは、技術を解放してからで構いません。貯蔵庫 {{fact_1}} のラインはすぐに役立ちます。"
+      "text": "貯蔵タンクの枝ラインは、技術を解放してからで構いません。小型貯蔵庫（{{fact_1}}）のラインはすぐに役立ちます。"
     },
     {
       "id": "a.card-bootstrap-mall-power.summary.001",
@@ -2298,7 +2298,7 @@
       "id": "a.blue.p.017",
       "sourceHash": "b8962c740d1ea649a290909259d779fe35f2c6f92a28ee1729d73077faac4a8c",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{strong_1}}青の過剰な拡張。{{end_strong_1}}青キューブは最後まで重要ですが、惑星最初の巨大工業地帯にする必要はありません。余裕のあるラインを造り、供給が続くことを確かめたら先へ進みます。"
+      "text": "{{strong_1}}青の過剰な拡張。{{end_strong_1}}青マトリクスは最後まで重要ですが、惑星最初の巨大工業地帯にする必要はありません。余裕のあるラインを造り、供給が続くことを確かめたら先へ進みます。"
     },
     {
       "id": "a.blue.h2.006",
@@ -2316,7 +2316,7 @@
       "id": "a.blue.li.005",
       "sourceHash": "bbf75cf16d05c60130998abb26be2658041de94549f33baf3582699b1ae1b917",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{label_1}} {{input_1}}ベルト、仕分機、採鉱機、溶鉱炉、組立機、貯蔵庫 {{fact_1}}、貯蔵タンク、風力タービン、テスラタワーが自動補充される。{{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}ベルト、仕分機、採鉱機、溶鉱炉、組立機、小型貯蔵庫（{{fact_1}}）、貯蔵タンク、風力タービン、テスラタワーが自動補充される。{{end_label_1}}"
     },
     {
       "id": "a.blue.li.006",
@@ -8119,6 +8119,1098 @@
       "sourceHash": "4f07de3bf7d512f2532f3ffd807a9bd46525cf7e54743a5b32b8175090a7275d",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "text": "{{label_1}} {{input_1}}現地供給 {{fact_1}} ドローン {{fact_2}} 現地要求のルートを、当てずっぽうでなく設定できる。 {{end_label_1}}"
+    },
+    {
+      "id": "f.optional-paths.h1.001",
+      "sourceHash": "5c7105839b696159cfe94e93b0f191ebd0d59763c4264f18fcd95febdf57eddd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "任意ルート"
+    },
+    {
+      "id": "f.top.p.001",
+      "sourceHash": "3f9118096249b61414b93c3e5ed962b4b7fd23804f7bea326afe999d082ff701",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "技術ツリーにあるからといって、すべてこなす必要はありません。目に見える問題を解決できるときだけ選び、それ以外はそのままにして先へ進みましょう。"
+    },
+    {
+      "id": "f.ref-proliferation.h1.001",
+      "sourceHash": "7404c3b9340add211c995e2deef6864766eccd20166f12549a686305eb2e1d89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "[増産剤] — 任意の生産強化"
+    },
+    {
+      "id": "f.top.h2.001",
+      "sourceHash": "8206aaaa1d9523f5308bbf61dc357df7807f8e0ba702b0c0a774abb513f30bac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.002",
+      "sourceHash": "1caf8e9e32560676055660d0815c7df05b8579c700d42f511ffd82fd810bcb2c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "増産剤は、塗布する薬剤、電力、ベルト、追加の生産ラインを使い、選んだレシピからより多くの成果を得る手段です。役立つ強化策ですが、工場の全品目に必ず塗るものではありません。"
+    },
+    {
+      "id": "f.top.h2.002",
+      "sourceHash": "cad17255c05372959d419822cb91f946a090a7ef31cd0754c63b430f3d17cfb1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "問題に合うモードを選ぶ"
+    },
+    {
+      "id": "f.top.p.003",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横にスクロールすると全列を読めます {{fact_1}}"
+    },
+    {
+      "id": "f.top.attr.001.aria-label",
+      "sourceHash": "642bd98facfe2a58e6354420f4bd255614c7592fdb105b7e1cbed19a3cc986f3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "増産剤のモード"
+    },
+    {
+      "id": "f.top.th.001",
+      "sourceHash": "6af4138b7cf3f4237d7291ad900bc40f55ecc595151ae258f9eae429668ea1be",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "モード"
+    },
+    {
+      "id": "f.top.th.002",
+      "sourceHash": "324d775defd97f6a31cf3d24fa9e8f6aba02cf71739c317aa735ab88f611f46f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使いどころ"
+    },
+    {
+      "id": "f.top.th.003",
+      "sourceHash": "2f8b77ccf0dca80c07042cbe02f1fe720b5a7d4172718e35c50fbd084fd19749",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意点"
+    },
+    {
+      "id": "f.top.td.001",
+      "sourceHash": "fd2b3b78648a556ec52ee578dd41b061bc2da04b67834bfa0c8633b1ab9f4ca4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}追加産出{{end_strong_1}}"
+    },
+    {
+      "id": "f.top.td.002",
+      "sourceHash": "d3606faa16695131f1d708b2497ce278ffe40a33fb919d8cb784dba29882153b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "対応するレシピが高価な材料を消費し、工場を小さくすることより産出量の増加を重視するとき。"
+    },
+    {
+      "id": "f.top.td.003",
+      "sourceHash": "740ee7588e92213f4c00889011fb138b9ab063a561666d6cadc29862d2e24e7b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "レシピのすべての入力に塗布が必要です。最も塗布が少ない材料によってボーナスが制限されます。"
+    },
+    {
+      "id": "f.top.td.004",
+      "sourceHash": "4e6c19729b0afd5ede2c80f54340f54cb207ebb94b4557fce59bb1011f6ca3c5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}生産加速{{end_strong_1}}"
+    },
+    {
+      "id": "f.top.td.005",
+      "sourceHash": "255c8e70ef4c6b35a7b9914518d34ef7fb670aa74bb7a37388b49119ba871792",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "場所や設備数が制約となり、電力網が増えた負荷を賄えるとき。"
+    },
+    {
+      "id": "f.top.td.006",
+      "sourceHash": "8e2c11b73be249f34035306489219e911c9a8a595ccfbd829cea4d00c7eddc18",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "同じラインを速く動かしますが、電力と入力の需要も増えます。"
+    },
+    {
+      "id": "f.top.h2.003",
+      "sourceHash": "1c400fe58e2897ecbb3e7347c18c42b9756c74bc6f590cdde5f5b2c6ba9516f1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最初に使いやすい対象"
+    },
+    {
+      "id": "f.top.p.004",
+      "sourceHash": "5f1fa150741ed43376107616607036bbabd6263cbb4134804dac6f67f5bd34ed",
+      "termHash": "c43b455bd6cb90e9cf328ee1bfcb4eb06e275b3d32e3f25ed8dd82ea7e1d3fed",
+      "text": "研究は効果を考えやすい対象です。マトリクスを作る前に材料へ塗布し、研究に使う前にマトリクスにも塗布します。終盤の高価な中間製品も、{{item_2313_1}}のラインを造るより入力の増産が難しいなら有力な候補です。"
+    },
+    {
+      "id": "f.top.p.005",
+      "sourceHash": "237a576c82869b0349cf502c6b11c61cc6918073d57fadde2f21d6eb67b23a3e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産カードは増産剤なしの基準です。工程はそのまま使えます。増産剤が変えるのは得られる生産能力であり、材料の順序ではありません。"
+    },
+    {
+      "id": "f.top.h2.004",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本筋へ戻るタイミング"
+    },
+    {
+      "id": "f.top.p.006",
+      "sourceHash": "f95682c70f83be3a5f74349910e7bba43b74138bf8761337e95730a1d6c37dc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "選んだボトルネックを解消したら、近くをベルトが通るというだけで新しい品目への塗布を増やすのはやめましょう。"
+    },
+    {
+      "id": "f.ref-pile-sorter.h1.001",
+      "sourceHash": "c868b24b03e767aa66e3f9887348bdbb44ef7d9643a6ab6d98d810d12d6c935e",
+      "termHash": "fe93ce2fc02d95b9612369335024b8f1c4496f210efb92c276ef6cf7f17bf723",
+      "text": "[{{item_2014_1}}] — 搬送と積載の効率化"
+    },
+    {
+      "id": "f.top.h2.005",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.007",
+      "sourceHash": "4a1906b1c544a9a91913d5ef444cdd792c7f1230aef2c4c5f82d7b85800cec44",
+      "termHash": "fe93ce2fc02d95b9612369335024b8f1c4496f210efb92c276ef6cf7f17bf723",
+      "text": "同じ貨物を素早く運んで積み重ね、ベルトや設備の入出力口がボトルネックにならないようにします。{{item_2014_1}}は輸送を改善しますが、設備内のレシピ時間を短くするものではありません。"
+    },
+    {
+      "id": "f.top.h2.006",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使うタイミング"
+    },
+    {
+      "id": "f.top.li.001",
+      "sourceHash": "a1198416bf34a9605f23ae008ac1f12b519deb61a6fe3699b358d12bc06db89a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産設備は十分なのに、密集した区画の入出力口で供給不足や詰まりが起きるとき。"
+    },
+    {
+      "id": "f.top.li.002",
+      "sourceHash": "63f766534f144bc58002c67bcb0d9c5d60f1ddb17f7526bc30c8924d1e95f751",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "積み重ねによって、ベルトの有効な輸送能力を増やせるとき。"
+    },
+    {
+      "id": "f.top.li.003",
+      "sourceHash": "6665788cedaddc6d9112b579f5d48fac921bc4f33229a0e1457874d882f4d4dc",
+      "termHash": "ff295784abdd2ef95b204eddf9cbcc8c2a9a8de5039ccea2e8daf591f24b963c",
+      "text": "{{item_2314_1}}の循環ラインなど、大量に流す循環系で同一品目を密に積むことが役立つとき。"
+    },
+    {
+      "id": "f.top.h2.007",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使い方"
+    },
+    {
+      "id": "f.top.p.008",
+      "sourceHash": "e20677173d47ab6b34bf64c7b73374deda877d0515cd2005d28b2496d84170c7",
+      "termHash": "fe93ce2fc02d95b9612369335024b8f1c4496f210efb92c276ef6cf7f17bf723",
+      "text": "実測した搬入量やベルト輸送量が制約になっている箇所に{{item_2014_1}}を使います。積めるのは一種類の品目であり、混載貨物ではありません。複数品目を流すベルトの構想とは分けて考えましょう。"
+    },
+    {
+      "id": "f.top.h2.008",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本筋へ戻るタイミング"
+    },
+    {
+      "id": "f.top.p.009",
+      "sourceHash": "2a57c1cc9e680529340b897eacb4f30ae7a1e51081edd7e88d3ca4aaea5acde7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "貨物の移動がラインを遅らせなくなったら、設備はそのままにして進行へ戻ります。"
+    },
+    {
+      "id": "f.ref-gas-giant.h1.001",
+      "sourceHash": "07b1e33ea4a3c4c5fba41a2dd072279e145228831bfcfd803f3420c779e1b43c",
+      "termHash": "56418ec2f9295485c6e9096d16537fd672f3ad55e4337703a9d04e00b78fd187",
+      "text": "[ガス巨星] — {{item_2105_1}}"
+    },
+    {
+      "id": "f.top.h2.009",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.010",
+      "sourceHash": "0ac0009603a5b43abb55b84b274dfe54a31677ce2ecc02d37c9a97911321bbf7",
+      "termHash": "979b02a1fdb4b4620bf12e01948a0348d5ab9c93fb534031d0e5e094e4d25118",
+      "text": "現地で十分な{{item_1120_1}}、{{item_1121_1}}、{{item_1011_1}}を用意する手間が大きくなったら、{{item_2105_1}}を使います。"
+    },
+    {
+      "id": "f.top.h2.010",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使うタイミング"
+    },
+    {
+      "id": "f.top.li.004",
+      "sourceHash": "ae03e1ecf54106f369325cd3f94b2e06c15834ff00e583f9903de43e0cc1cb8f",
+      "termHash": "6ddc9fc5577893922620b4b52384caafd9179b8cd1878a861793b0548da6f2ab",
+      "text": "{{item_1120_1}}の不足が、実際にカシミール結晶や緑の生産を妨げているとき。"
+    },
+    {
+      "id": "f.top.li.005",
+      "sourceHash": "ce69edb12552cc544c377c2f0cd495c5777e3abcfe497fa3221a622615c7bf27",
+      "termHash": "3cbea7713aadef148d0960c7c937ea4349d765a112d174619ad26105d2cbb4a8",
+      "text": "必要な{{item_1121_1}}を現地で作る設備が、工場の大きな部分を占めているとき。"
+    },
+    {
+      "id": "f.top.li.006",
+      "sourceHash": "727b73f51cb9c48869920fe74b877ebbeb37be1210afb0fa49b7af7532908ec4",
+      "termHash": "946b482b14aa19284be2a43add6e52863dfd6dc4440578a6f3dcbf1bb4d2d17d",
+      "text": "{{item_1011_1}}で{{item_1123_1}}の生産を大きく簡略化できるとき。"
+    },
+    {
+      "id": "f.top.li.007",
+      "sourceHash": "bfa025f4cad36f2a596ad5d18e8afa6750cb3728e3bec434becf41997bb931e7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "実際に到達できるガス巨星で、目的の資源を役立つ速度で採集できるとき。"
+    },
+    {
+      "id": "f.top.h2.011",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使い方"
+    },
+    {
+      "id": "f.top.p.011",
+      "sourceHash": "2ad14894787ca1179367e2d1803f4d43514e1bdb2d71b0fad383ee440f03e5bf",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "設備を用意する前に、巨星に表示される資源と採集速度を確認します。各採集機は、表示される資源をそれぞれ独立して採集します。鉱物利用の研究で、採集能力をさらに上げられます。"
+    },
+    {
+      "id": "f.top.p.012",
+      "sourceHash": "d4e194bc9052bca4d09facba5dd30e70d13a7cc1ae29187d7025e53e8f57d2da",
+      "termHash": "ccaea776dc6c587258a98daca4f2d4722ded5289ec5b944b2b91891772d6062f",
+      "text": "消費側の工場では、現地の副産物の{{item_1120_1}}を先に使い、{{item_2105_1}}を補助供給にします。簡単な構成は、{{item_2308_1}}、{{item_1011_1}}、{{item_1122_1}}の副産物用と、採集機からの輸入を有効にした経路の二つを設けることです。ベルトを合流させ、副産物側の入力を優先します。ILS の優先ペアやグループでも、惑星をまたいで同じ優先順位にできます。どの方法でも副産物の出口を見えるようにし、満杯のタンクで別のラインがひそかに止まらないようにします。"
+    },
+    {
+      "id": "f.top.div.001",
+      "sourceHash": "2fe6e4659995cd0304ac9e51340050bfda863c2e3706241ed53cb9f6a46cfc73",
+      "termHash": "6ddc9fc5577893922620b4b52384caafd9179b8cd1878a861793b0548da6f2ab",
+      "text": "{{strong_1}}⚠ ガスタンクが満杯でも、余裕があるとは限りません。{{end_strong_1}}輸入した{{item_1120_1}}が、現地の副産物の詰まりを隠している場合があります。採集を増やす前に、どの供給元が貯蔵先を満たしているかたどってください。"
+    },
+    {
+      "id": "f.top.h2.012",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本筋へ戻るタイミング"
+    },
+    {
+      "id": "f.top.p.013",
+      "sourceHash": "fc793a3f37ec61b704edfe1e03bf617672639872360c4af741cadd449da5e343",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ガス供給が緑以降の生産を遅らせなくなったら、本筋へ戻ります。"
+    },
+    {
+      "id": "f.ref-power.h1.001",
+      "sourceHash": "717e41f7607f75db2b693670a9e2577e3fc0cc18c57abc8a38238b56a4c1980d",
+      "termHash": "03710bec90f6da9ae4a74b3f7fb3ca4d4f9c781007f26363eccf614dead0623f",
+      "text": "[星間送電] — {{item_2209_1}}と{{item_2206_1}}の輸送"
+    },
+    {
+      "id": "f.top.h2.013",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.014",
+      "sourceHash": "7f4466417ef3bfa1a58629809ac934016d892cbcbd20d8a3d12fe9dd19a73239",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一方の惑星に余剰電力があり、もう一方では燃料系統を造るより物流で電力を届ける方が簡単な場合に使います。"
+    },
+    {
+      "id": "f.top.h2.014",
+      "sourceHash": "a54f7f1581d1e084a5b240158c6c5228d58509a3b11c0ee55937976894b09869",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "循環ルートを造る"
+    },
+    {
+      "id": "f.top.li.008",
+      "sourceHash": "0a7d907c72e0c0735c362e9546e650b02fe9f501f6f13274440710245a6dca41",
+      "termHash": "3e64cea2459aa6838e0cecc06218a35eea65761c3704739c42ff355338890d4b",
+      "text": "発電側の惑星で、空の{{item_2206_1}}を充電に設定した{{item_2209_1}}へ送ります。"
+    },
+    {
+      "id": "f.top.li.009",
+      "sourceHash": "25782d13bfd3ba52b77c955196c687a9ec10a2b810a76320ffd08ca69ed4de37",
+      "termHash": "1f5879072c6979450a1715dbf69572f1d87577e03a171b045176e4df1252ec49",
+      "text": "{{item_2207_1}}を ILS で輸出します。"
+    },
+    {
+      "id": "f.top.li.010",
+      "sourceHash": "517822a734c7a9c73bc2145b7011b41d6ef85a4419585f044c032432c141e21d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "遠隔の惑星で、放電に設定したエネルギー中枢へ送ります。"
+    },
+    {
+      "id": "f.top.li.011",
+      "sourceHash": "0137098cb7a7fb7a976004ff2300f5a23cd9fbbc9fadd3a54b703bb6284a9a67",
+      "termHash": "c6a5437a345550123d11686c198b1b6be411df17ad78a9133e2c5b312ccc2f6f",
+      "text": "空の{{item_2206_1}}を別の物流品目枠で返送し、同じ在庫を循環させます。"
+    },
+    {
+      "id": "f.top.div.002",
+      "sourceHash": "a53d1c81783dcb25a807b4fee6b505e14ee454709f5df2b02581f37ed6190d12",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ 放電は電力網で優先されます。{{end_strong_1}}現地の発電だけで負荷を賄える場合でも、放電中のエネルギー中枢は輸入電力を消費することがあります。搬送先で輸入電力と現地発電を併用するなら、放電設備と同じ規模の充電設備を組み合わせます。余った放電はすぐ空の蓄電器へ戻り、現地の実際の不足分だけが輸入した充電量を消費します。"
+    },
+    {
+      "id": "f.top.p.015",
+      "sourceHash": "b322c23ebd0baceb0d439f12782c1006805f2b5fbf10fb0ba2ac0deabf43788a",
+      "termHash": "c6a5437a345550123d11686c198b1b6be411df17ad78a9133e2c5b312ccc2f6f",
+      "text": "空の蓄電器の返送は片付けではなく、発電設備の一部です。充電側では、新しく製造した{{item_2206_1}}より返送されたものを優先します。どちらかの方向で満杯や供給切れが起きると、両惑星の在庫が豊富に見えていても、いずれ循環が止まります。"
+    },
+    {
+      "id": "f.top.h2.015",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使うタイミング"
+    },
+    {
+      "id": "f.top.li.012",
+      "sourceHash": "f343264688127afa19276280cf64975de6a5a7dad94ab5562ea259eaf5fbd34e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "遠隔の採掘惑星で、使いやすい現地電源が乏しいとき。"
+    },
+    {
+      "id": "f.top.li.013",
+      "sourceHash": "2ce35ccd4178a144a8a224c690ed5e1b8a6effa8482bcb0190bfe84a07b04310",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "集中して発電する場所に、すでに十分な余剰があるとき。"
+    },
+    {
+      "id": "f.top.li.014",
+      "sourceHash": "69515f13b869dcee9d7d53e1cf158e4c3b96db40eef1c067bd7ba4cff1ae9eac",
+      "termHash": "c6a5437a345550123d11686c198b1b6be411df17ad78a9133e2c5b312ccc2f6f",
+      "text": "燃料の輸送と発電機の維持より、{{item_2206_1}}の往復ルートの方が簡単なとき。"
+    },
+    {
+      "id": "f.top.h2.016",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本筋へ戻るタイミング"
+    },
+    {
+      "id": "f.top.p.016",
+      "sourceHash": "f6fe4115be5f26ae0a5d968e8fa042fee14f42d14414cba61a283c5062dacce7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "実際の惑星に合う、より簡単な方法を選びます。必要のなかった立派な星間蓄電器輸送網より、現地の発電機数基の方が適していることもあります。"
+    },
+    {
+      "id": "f.ref-mining.h1.001",
+      "sourceHash": "0ae54c990d7a2ea9072f8244e6eeed199a78d278eeda0bda2091bd348fcf1da1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "[高度な採掘] — 大規模な遠隔採掘網"
+    },
+    {
+      "id": "f.top.h2.017",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.017",
+      "sourceHash": "4ca47a714d91bcab3a1dd60a6b24938816596b1c83b3ac22b78d9816903a62cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "複数惑星に広がる大規模な採掘網を、より速く、手間を減らして造れます。"
+    },
+    {
+      "id": "f.top.h2.018",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使うタイミング"
+    },
+    {
+      "id": "f.top.li.015",
+      "sourceHash": "76018502174041ebb992a3432f9a94852c500dd155e51cd50215001a9d445c5a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "すでに多くの遠隔採掘惑星を運用しているとき。"
+    },
+    {
+      "id": "f.top.li.016",
+      "sourceHash": "d28bbae85220c984335bb2539e9dc58140953df6f70ad63287706d5ae485529f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "個々の採鉱機と回収ベルトの設置が、拠点建設時間の大半を占めるとき。"
+    },
+    {
+      "id": "f.top.li.017",
+      "sourceHash": "6f4b066509859d07f7e81ff1251c30d9cca1d9942eda7e90eba0bd43e7952ec3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ILS を使った採掘網がすでに十分に整っているとき。"
+    },
+    {
+      "id": "f.top.h2.019",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使い方"
+    },
+    {
+      "id": "f.top.p.018",
+      "sourceHash": "900d14c1faf10f4769c1a602fd1af8d0aba496cb04b46f58027837cc8aa807c2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "すでに多くの惑星へ広がった工場を便利にするアップグレードです。早すぎる拡張を勧めるものではありません。"
+    },
+    {
+      "id": "f.top.p.019",
+      "sourceHash": "32b910570a9caf3915263fe45d4b9ad90ad902dc4aa890724fa790a702795bd0",
+      "termHash": "9cfe81138b1e622f9e313789773f965cea8615ce397f1a9ffb0bf25aabf125b0",
+      "text": "効率よく研究「{{tech_1508_1}}」を終えるために必要なものではありません。"
+    },
+    {
+      "id": "f.top.h2.020",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本筋へ戻るタイミング"
+    },
+    {
+      "id": "f.top.p.020",
+      "sourceHash": "a38d7b154b1cd2c828e4140f7d70f7a67c3daf4d4b95467a2e55e139b44f329e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "採掘が拡張を遅らせていないなら、実際に原因となっている生産や物流の問題を直しに戻りましょう。"
+    },
+    {
+      "id": "f.top.attr.002.alt",
+      "sourceHash": "f5e071eb18aa1aa949236fdef831492642f7c4688715ddbac93c859f83d13793",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Dyson Sphere Program"
+    },
+    {
+      "id": "f.ref-tools.h1.001",
+      "sourceHash": "98e4ae6f6a2cebedfc0694aab585b0ff215a99911a6a6c809807d873b03d4b3d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "外部ツールとコミュニティ"
+    },
+    {
+      "id": "f.top.p.021",
+      "sourceHash": "9c96d3a0dcbd0172abeab702689281bfe006b1ac1e42433802eb7228a35cc6c4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "このガイドのルートは、意図的に単独で使えるようにしています。それでも、ブループリント、計算機、MOD、あるいは自分が考えている変わったものをすでに造った人たちを探すなら、以下の資料は役立ちます。"
+    },
+    {
+      "id": "f.top.li.018",
+      "sourceHash": "73e881a16afc29be32ff103faf13be9e47b4c03af537edc3884501b5545ed4d7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Dyson Sphere Blueprints{{end_a_1}} — 主な公開ブループリント共有サイト。"
+    },
+    {
+      "id": "f.top.li.019",
+      "sourceHash": "1de332ca778872758107861e0ec02e1b6a86cc0690a329a16b0badfbfba0585b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Nilaus DSP blueprints{{end_a_1}} — 選び抜かれた設計集。古い設計は現在のゲームより前の仕様かもしれません。"
+    },
+    {
+      "id": "f.top.li.020",
+      "sourceHash": "b49a07b18694818a5e15b636908c369ff0c48a3bac440c70789e8465063a5d7e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}FactorioLab for DSP{{end_a_1}} — 生産工程と生産速度の計画用。"
+    },
+    {
+      "id": "f.top.li.021",
+      "sourceHash": "5b610e251401b951c1bb5401ed8ba87c126cea9f02f2520415ba3830d081eedb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Thunderstore DSP mods{{end_a_1}} — 現在の公開 MOD カタログ。"
+    },
+    {
+      "id": "f.top.li.022",
+      "sourceHash": "f86115548adc9037e993c3313349780aa551737acc2188d435e4e3b75defd068",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}DSP 公式 Discord{{end_a_1}} — コミュニティの議論、ブループリント、現在のプレイヤーの知識を共有する場。"
+    },
+    {
+      "id": "f.top.div.003",
+      "sourceHash": "1219e7c49f2c69c2a28b9874078183428c936bc9218095c820edb21a39cf5fd9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ 貼り付ける前に確認します。{{end_strong_1}}ゲームのバージョン、必要な技術とアップグレード、前提の緯度、希少資源のレシピ、増産剤の使用、ダイソンの設計が一層だけか全体かを確認してください。見事な古い設計でも、他人の古くなった問題を効率よく持ち込むことがあります。"
+    },
+    {
+      "id": "f.ref-checklist.h1.001",
+      "sourceHash": "5f4d35ac59c6762d418e44492637ba7fcbce900560cc3d79154595e19041f262",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "基本ルートの簡易チェックリスト"
+    },
+    {
+      "id": "f.top.h2.021",
+      "sourceHash": "268caa296349283482325e8f9ef2f68c406eeb9653ad75c15ca039c330b6c8ee",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[青]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.023",
+      "sourceHash": "9c0ad21e65f01fa5625fa78c41a846b19d8a186c99341d2a14e0db0028f2fabb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}鉄、銅、コイル、回路基板が継続して届く {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.024",
+      "sourceHash": "7f7ab6295af803551555308043c9c44bfa5c55d0846bad1ab44aebe1e3075e0f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}ベルト、仕分機、採鉱機、溶鉱炉、組立機、小型貯蔵庫（{{fact_1}}）、貯蔵タンク、風力タービン、テスラタワーが自動補充される {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.025",
+      "sourceHash": "65d244499ae9bb87b8cb0f18dc7d728ef0a11f3c54071dba234782f214d90b69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}青マトリクスを {{fact_1}} 以上で継続生産している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.026",
+      "sourceHash": "3aaeaed19bce9e0fb9f12472d15aa244a57f92cf581bfd3cadeb07c5570dbd7d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}手動で材料を入れなくても研究が続く {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.027",
+      "sourceHash": "b2c19ca89c8990a440dd25d3c1d476d4627dcac88e7b5019cd0f7345a63c0547",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}建設用品工場、青の研究、これから造る石油地区に向けて、電力網が約 {{fact_1}} を供給できる {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.022",
+      "sourceHash": "aeaa47a50ef55170f5ed6da9394fbdd89dc92622399b27d158b735a58dc37d48",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[赤]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.028",
+      "sourceHash": "1f15b94d316c6d2af39190869e5bac474d5289cbc8cfbc3b246765c83436667f",
+      "termHash": "6c6f70d1b94bcf2b82ed88bf10c52e1eb1c936ffd6369e06fecd528987a81862",
+      "text": "{{label_1}} {{input_1}}{{item_2901_1}}二基で{{item_6002_1}} {{fact_1}}{{fact_2}} を維持し、{{item_1120_1}}と{{item_1114_1}}の両方を精製所から搬出できている {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.023",
+      "sourceHash": "0a7b775c6199305f6dd8ce045e627632a7a2b4f6a4036330ec67ecc66cacdc4f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[ILS]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.029",
+      "sourceHash": "b422144e9158c1414e52c9803a3ef1f6b6c81b304de66fd84e6d73cf917cd7d6",
+      "termHash": "a2ce7fa41d3f2de1f9f95cd21cfe346affb8759af36ad2adece836bfd73fc552",
+      "text": "{{label_1}} {{input_1}}ILS 二基と{{item_5002_1}}五隻を配備している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.030",
+      "sourceHash": "827a8db26d3445c8bc1b1d21dcbbdb1863277329fc7711d365fa95f86cdf5d61",
+      "termHash": "452f3b9ad318a605bc87a74da04fcc48871586202d897f4b77a0d6a6ba2b135d",
+      "text": "{{label_1}} {{input_1}}イカロスが運ばなくても、{{item_1106_1}}と{{item_1105_1}}が本拠地に届く {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.024",
+      "sourceHash": "8622e13a0e16fad1f03cb5ae5483e589de0e6512dcdfb92954aca97870b30a22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[黄]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.031",
+      "sourceHash": "f35da36749dafca6ac6d6ecafbad304d522557b79d755dd4bee94fd1c976eb80",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}黄マトリクスの研究所三基が継続して生産している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.025",
+      "sourceHash": "2113ec2853d3ee84978884f4e5f528a99c8da2780000b44027dbfe784487f685",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[紫]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.032",
+      "sourceHash": "d1af4e76d4a0dbb47c28b87432548e2c90fb202be8b0aded2965680678b516f6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}紫マトリクスの研究所三基が継続して生産している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.026",
+      "sourceHash": "59cdbb807cedea504baf4dc5cf493dba1d48b970763575c14d1cff1a8e371a50",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[緑]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.033",
+      "sourceHash": "43090effe2b7096d44b1231fe35a9adb8bf0a30f5691a596a2baa6fe4d426d8a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}緑マトリクスの研究所二基が継続して生産している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.034",
+      "sourceHash": "f3c067574b054fa396c65312b8c888cecab820ee32deb0ea976f082a044a66d7",
+      "termHash": "b525467cda11dacd864e45b49feba8e8e27cee78bde5b9452b3b77358e4e1fd1",
+      "text": "{{label_1}} {{input_1}}{{item_1305_1}}と{{item_1209_1}}に、それぞれ残量が見える貯蔵場所がある {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.027",
+      "sourceHash": "5979b6bd7879b73ec99b3bcb9b79bc690639980b6ede5c53f69d8ef68f77a624",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[ダイソン]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.035",
+      "sourceHash": "390e7d7aac1320da81c32376ab3f7860f668e4d483ef6033d5c1c1cd66f6d3fa",
+      "termHash": "aebe343e3515fdb0e38fb69b8ff9ab66652c05b0c31df36294cdd32e7e65fb00",
+      "text": "{{label_1}} {{input_1}}選んだルートの{{item_1501_1}}ラインが自動化され、稼働している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.036",
+      "sourceHash": "2d81e054ed98739a4b7069f08fbaba62653acb2c5bd831a2887d2b19d3133a56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}電磁軌道射出機による射出設備が自動化され、稼働している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.037",
+      "sourceHash": "c54b49aa744dda5d9159df0e02b6306b0990cd7583808e3db9666807a20c614a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}レシーバーの接続手順へ進めるだけの、実用的なダイソン発電量が得られている {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.028",
+      "sourceHash": "b91c50167c69217c6bf78dc71eefd38b34e03b6a208bb87ca5e0a087ead21311",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}[ダイソン {{fact_1}} 光子]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.038",
+      "sourceHash": "d97ac86497de2a1a89e671bdb539f7807fd5c0c6dcd8113aece2453dff460526",
+      "termHash": "8c0c15e57117bbe46416e119b6c301ca66998ab5c015b37ab360186acbf3d245",
+      "text": "{{label_1}} {{input_1}}{{item_1208_1}}が安定して{{item_1122_1}}になり、イカロスなしで研究地区へ届く {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.029",
+      "sourceHash": "53bd4b5a8ed531140ab5d99f6986f0320562bf7f854ce6bf7f13d140d61a6865",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[光子]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.039",
+      "sourceHash": "5b36c01d25c06996a96db304d3df9585f3f18355e2e057a71cae7b4da2d1c833",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "{{label_1}} {{input_1}}青、赤、黄、紫、緑と{{item_1122_1}}を、それぞれ少なくとも {{fact_1}} で継続生産している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.040",
+      "sourceHash": "47b97941c2b339b61bb629e1af49430f1242258e0a70384b6562937530faed5a",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "{{label_1}} {{input_1}}{{item_1122_1}}を少なくとも {{fact_1}} 個蓄えている {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.030",
+      "sourceHash": "acb73f34741052018f27328dbbc44d56ed6fbb30b97cecf0fc3d8227d598ea5d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[白]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.041",
+      "sourceHash": "2e55b59399c0aa64f08af64b0547d99ec5495d089ff53c8e80b73eae1fed51c6",
+      "termHash": "c9f883006c1b72249a67bea592069823753fa55d4854a3e3cdea1aab9222deaa",
+      "text": "{{input_1}}{{span_1}}{{tech_1507_1}}{{label_1}}の研究が完了している {{end_label_1}}{{end_span_1}}"
+    },
+    {
+      "id": "f.top.li.042",
+      "sourceHash": "12f56e24d621083c593935a22c3069aa191ebf959c5782cedca8d1e14ec922a8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}六つの入力すべてが、白の研究所へ継続して届く {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.043",
+      "sourceHash": "44495754e01b44ca51e703535a59eac3260278a630d065e08be3cd1a18fbd2f8",
+      "termHash": "68836c1b00adafc3fab7e6a7a9410e865cea7ef4363aa44729d29dd0211625d8",
+      "text": "{{label_1}} {{input_1}}{{item_2901_1}}十基で{{item_6006_1}} {{fact_1}}{{fact_2}} を維持している {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.044",
+      "sourceHash": "d5285a98c06e4f74a3b44ece29b5ba4bc8fc85621b3ae958fe79ad1b86eae12b",
+      "termHash": "8d022ba23cbaafd4748a3ce26724b01267c05fc3229138b7ad61c0cda7240c7c",
+      "text": "{{label_1}} {{input_1}}「任務完了！」で{{item_6006_1}} {{fact_1}} 個を消費中、または消費済みである {{end_label_1}}"
+    },
+    {
+      "id": "f.checklist-optional-capabilities.h2.001",
+      "sourceHash": "6604f6dace8a77ca3e16ef0ec213e9c57a218f6deb36de419706daba20f4f6ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "任意の機能"
+    },
+    {
+      "id": "f.top.h2.031",
+      "sourceHash": "f5ee0ddf1a0a74b923125fd2c4c04e7aaf30c13089b886e95a2d0739245740c9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[ワープ]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.045",
+      "sourceHash": "4a88b6825c8e33f0ac576dbd9a8f091e18d8b8531dba4a9fe50ded7588420bdb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}自分での調査や手運びが役立つときに、メカでワープできる {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.046",
+      "sourceHash": "7477299c48c16fb2767f2f64b050fc962576982adf36b096c81e713c65a46781",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}恒星間の ILS ルートを無人運用したいときに、輸送船でワープできる {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.047",
+      "sourceHash": "351911d98615f3442aff2ed2ff55b15e10ec9c0041a751698b71ac0131bbcd56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}輸入する各希少資源について、置き換える標準工程を具体的に決めている {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.048",
+      "sourceHash": "04fb7bfc79fdd54f8373a3f227fcb794e18b7999c40172f88ec24eb6c6cc31df",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}定期輸送の開始時に、緑マトリクスで作る空間歪曲器の在庫から ILS 網へ供給できる {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.032",
+      "sourceHash": "67d3e6b6464acdf57b1f6c38ff5aa0dc666b8e0b25bbbf96b8ede6b0d653ad92",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[物流]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.049",
+      "sourceHash": "d50c856208ad4094afb74e57308071e6a78474953e682e043b60bd24852c1d45",
+      "termHash": "039201ced8b92bcacb9ca05f91048e4bde4baa56231dee788b8e2b199c7f78ce",
+      "text": "{{label_1}} {{input_1}}{{item_2107_1}}とボットの上限付き在庫が補充される {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.050",
+      "sourceHash": "65555ae3eb681ac2598a42201eac97d7db53ffde5ab595e7973c3413fe7b6a56",
+      "termHash": "4dc4d18382e1d0d835cc7a1586dfe9f17ce6a1f9978f533233cddebac888225f",
+      "text": "{{label_1}} {{input_1}}PLS と{{item_5001_1}}の上限付き在庫が補充される {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.051",
+      "sourceHash": "a97eb2de888bc341cf8fa136437696a5ee296e7005da56a04c071f3f93d450cd",
+      "termHash": "a2ce7fa41d3f2de1f9f95cd21cfe346affb8759af36ad2adece836bfd73fc552",
+      "text": "{{label_1}} {{input_1}}ILS と{{item_5002_1}}の上限付き在庫が補充される {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.052",
+      "sourceHash": "9d726cbbb508a11276af16903d340153e1a2ea3b06e39f2f75d260437c05d826",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}供給、要求、貯蔵、現地、星間の設定を一目で把握できる {{end_label_1}}"
+    },
+    {
+      "id": "f.ref-troubleshoot.h1.001",
+      "sourceHash": "7df4aa47910f337e48cad90470eae5c7350ea45da63bec940494c784fd9879be",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "何が悪いのか分からないとき"
+    },
+    {
+      "id": "f.top.p.022",
+      "sourceHash": "a9c2a99fc791bc374522a59600e8fc6b86cb121db6cfb011071facfbcfae8804",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "工場の様子が分からなくなっても、勘で造り直したくなる気持ちを抑えましょう。次の順で確認します。"
+    },
+    {
+      "id": "f.top.p.023",
+      "sourceHash": "1e15e5664628abbc611da9043d1e6273b8c05d6cde6932506ab6eda0221f0250",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}その技術を研究できますか。{{end_strong_1}}{{br_1}}できなければ、未完了の前提技術を確認します。"
+    },
+    {
+      "id": "f.top.p.024",
+      "sourceHash": "1f83140cd4f84aa7c0781903a9fc724b7b8c774cb007bcd0e59f748ef4e875a6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}そのレシピや設備を作れますか。{{end_strong_1}}{{br_1}}できなければ、別の技術や、実際にそれを作る設備が不足していないか確認します。"
+    },
+    {
+      "id": "f.top.p.025",
+      "sourceHash": "f4d4fdade414c9c0ecae25eb855024f6b99c2860bafead75fae0827350a8ba43",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}必要なすべての材料を供給し続けられますか。{{end_strong_1}}{{br_1}}できなければ、まだ安定して採掘、製造、輸入できない材料を探します。"
+    },
+    {
+      "id": "f.top.p.026",
+      "sourceHash": "e821a3c1a1392bf5650f8827b955a1edfac54d8cb50b7f03811346ac2a13f40c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}まだ自分での運搬や手動補給に頼っていますか。{{end_strong_1}}{{br_1}}そうなら、欠けている輸送や貯蔵の工程を自動化します。"
+    },
+    {
+      "id": "f.top.p.027",
+      "sourceHash": "46374740d5c6cf0aaee62e0f06d997a773e2a16e0d25f1eced16fb52e8edaaec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}製品の流れが最初に止まる場所を見つけられますか。{{end_strong_1}}{{br_1}}必要な品目から生産を上流へたどります。入力不足、出力の満杯、電力不足、届かない輸送接続がある最初の設備を探します。工場が広すぎて目で追えないときは、{{a_1}}生産統計の手順{{end_a_1}}を使います。その問題一つを直し、ラインを動かしてから再確認します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.summary.001",
+      "sourceHash": "ba48a1a4880b3eb3dd399bc54a20acbc0e562492d8d5009e22da1bcd958dd5d5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作手順 — 生産統計で不足を見つける"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.p.001",
+      "sourceHash": "429f68d13a2b05c1fdb4361c546be927e4e2df7103840444a51fccbaba627bc7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}例：{{end_strong_1}}黄の研究は進み、黄マトリクスの貯蔵庫も満杯ではないのに、生産が遅くなっています。"
+    },
+    {
+      "id": "f.statistics-read-first.h3.001",
+      "sourceHash": "bf544e1deb06d6d37caaf0e755f17d253d4a3504c14d70cca12bd4844f9b381d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "まず三つの数値を見る"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.th.001",
+      "sourceHash": "dad50dab57c3ac040474886bf7fb7fb2c81b7a754de55bed9e9e784c6685b0da",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "見る項目"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.th.002",
+      "sourceHash": "2aebbfddfd6c9134f141ea8d8f23a1ab9b955df3e5d006fcce71c277478dd0dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "意味"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.001",
+      "sourceHash": "c081c96a4efa65ea56eae3865df309382bd2d2e411c005305688708201bc4d16",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}生産スピード{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.002",
+      "sourceHash": "8a4a1bd7054f9008a84e332b325d7603c2797c73135778969cc4d41dd454053c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "選んだ期間に実際に作った量を示します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.003",
+      "sourceHash": "77d1fd80dec840d1e760d9481d403e1827df4c2fac1a2be0a665494fc81d8b1a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}参考スピード{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.004",
+      "sourceHash": "072c4412182d9701cf6f22d27026127e5467976fa52efa10dd148ebba66ad2fe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "設置済みで電力網につながる設備が、理想条件で作れる量を示します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.005",
+      "sourceHash": "d149535ce648d7240eb5c56fe9f01547427602299826d9e2ced02235c4448210",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}貯蔵数{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.006",
+      "sourceHash": "706a25b1552668cccecd2af5d788c653a67d592a75d40e5d9a1063dabe8d01f0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "単に出力の行き場がなく、生産が止まっている可能性を判断できます。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.001",
+      "sourceHash": "d23db6f67918a3a8bdc8808608e07563b24da82ed0ab5264bad642c3668e8751",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — 遅くなった出力を見つける"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.001",
+      "sourceHash": "9c7315cf303448a42bdc33b27e584485ca2c7e32599367a044772de45a5a86a7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{key_1}} を押し、{{strong_1}}生産統計{{end_strong_1}}を選び、{{strong_2}}現在の惑星統計{{end_strong_2}}にして、{{strong_3}}{{fact_1}} 分{{end_strong_3}}を選びます。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.002",
+      "sourceHash": "97f41b0ecc46319ed3d28f346ba2884867406c8415dbd35fbdc71d37587fc418",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}構造マトリクス{{end_strong_1}}を検索します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.003",
+      "sourceHash": "5bb2c508747dde46f08e51a2c0d2a3a59f7759c04b49fa7a1c070e06e873f5e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}生産スピード{{end_strong_1}}を、生産側の{{strong_2}}参考スピード{{end_strong_2}}と比較します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.004",
+      "sourceHash": "bb32933e2810cf22715b1251fd355c9f24820f910e184dc5b51e6b5e089be194",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "故障と判断する前に、{{strong_1}}貯蔵数{{end_strong_1}}にマウスを合わせます。出力が満杯なら、ラインは故障ではなく待機しています。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.002",
+      "sourceHash": "8dbdf7cd93c985305ef5a12132a9a0fe1a1a7ef315dd5fbb754c8e5f0cd1f245",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — 足りない供給をたどる"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.005",
+      "sourceHash": "f7fe1e9793cb9f167b19ef13e795896ac933b16e5f8005b81683d47ea1171ca7",
+      "termHash": "b4c845cee74d35dc4540f6e239cf9063fb64ab2635f527a8e243651e0f991ff0",
+      "text": "貯蔵庫が満杯でなく、研究でマトリクスを消費しているなら、{{strong_1}}原材料生産統計{{end_strong_1}}をクリックし、{{item_1112_1}}と{{item_1118_1}}を比較します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.006",
+      "sourceHash": "61674e8467dd96d9ad06bd8fef883a59140faf5d0a3dd95e82e5f90bff90ccf4",
+      "termHash": "9ce658c52999191c8f0d9ba373bf6a39b871cf4563b41f5c505f324275c75d08",
+      "text": "不足している{{item_1118_1}}の行を一段上流へたどり、{{item_1117_1}}と{{item_1106_1}}を確認します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.007",
+      "sourceHash": "61a50a1ef3e959b5f544cc0dd39ec02a3389a0e5390c2f2f2e7d4556173014ea",
+      "termHash": "72c09d400d2fc1d44ddd3d02d1f1c035c3c6834388b61f76df09eeee39627604",
+      "text": "本拠地の惑星は、{{item_1106_1}}を現地生産せず輸入していることを確認します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.008",
+      "sourceHash": "4c7da4cc3fc9a5c8a99a3a30bca93915a481a471ff0fa86a3e2e4aa0c46fa9a6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本拠地の惑星から、その惑星が属する名前付きの恒星系へ切り替えます。惑星表示では、境界を越えて入るチタンを輸入として扱います。恒星系表示では、供給元の惑星の生産も含み、同じ恒星系の惑星間移動は内部の移動として扱います。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.003",
+      "sourceHash": "d2437ba0ee9b42f9c004b41f66d181e813402a50473925ce1d84fb8783a38a32",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — 確認して直す"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.009",
+      "sourceHash": "bf87e0bccfbebaa85dabab97065b42a32a5675f4f687fd674aa94bc9099ca95c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}{{fact_1}} 分{{end_strong_1}}に切り替え、直近の一回の配送の途切れだけでなく、不足が続いているかを判断します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.010",
+      "sourceHash": "9289d0869d6bc1f4402e7501c1ad084641a2339359a53201defd7dbfe3bf7bf6",
+      "termHash": "72c09d400d2fc1d44ddd3d02d1f1c035c3c6834388b61f76df09eeee39627604",
+      "text": "行の数値に応じて、{{item_1106_1}}をさらに上流へたどるか、ILS ルートを調べます。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.011",
+      "sourceHash": "940d24475f65f845f06b10590e75eddf8c2355103b85c09c9f5f72f49791c29f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原因を一つ直し、ルートを動かしてから再確認します。"
+    },
+    {
+      "id": "f.statistics-panel-details.h3.001",
+      "sourceHash": "01c2e91abc79b3ea017eb75594d1f409d173d63d64b94912da0e8916080b1608",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "パネルの詳細"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.001",
+      "sourceHash": "e0b177860d1a14cbcc93dee2652519b81e73667e1dab572064f13620a9fb1706",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "範囲"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.001",
+      "sourceHash": "ee98ca48fb6cc5776a046052e8c7b6f8145200e7a94bf9a99f7e5b4d85ccd801",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目の前の工場には{{strong_1}}現在の惑星統計{{end_strong_1}}、同じ恒星系の惑星をまたぐ作業には名前を指定した{{strong_2}}星系{{end_strong_2}}を選びます。{{strong_3}}全星区統計{{end_strong_3}}は、後で工場全体を見るときだけ使います。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.002",
+      "sourceHash": "2f17d363ee3fbb9b2c3fd3b5e79f8b170838161c8d23475137cf128a75237aa2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "期間"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.002",
+      "sourceHash": "8c713847eedafce6e427fdcda7b15b0c77043dc8448a754f96bc47173db3e280",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "直近の反応を素早く見るなら{{strong_1}}{{fact_1}} 分{{end_strong_1}}、安定した短期平均を見るなら{{strong_2}}{{fact_2}} 分{{end_strong_2}}を使います。過去の期間の数値は一分あたりの平均ですが、{{strong_3}}トータル{{end_strong_3}}は累積個数を示します。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.003",
+      "sourceHash": "29fb93d7304d429098d3b1258788da974484dd63c15de3362796884fd94d4348",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "品目の行"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.003",
+      "sourceHash": "e441ee0df54ec46a1c0cfd4d75f70ede4de714b66155c7ddb59671c2fe0e3110",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "各行には生産と消費、それぞれの参考スピード、輸入と輸出、関連する物流貯蔵、合計の貯蔵数、落ちている品目、履歴グラフ、原材料や製品への直接移動があります。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.004",
+      "sourceHash": "b2ddb67b4ea5c82f19141f084909e44342422f99200d5ee75a0ae5eb4cf04013",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "境界"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.004",
+      "sourceHash": "f22ed946f9da2b15c14e97f22418c6cbd06db03465110b307e9d10a41723ccb6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "輸入と輸出は、選んだ範囲の境界を越える移動です。範囲内での生産・消費とは別に扱われます。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.005",
+      "sourceHash": "162360372500f22c36442883a0753eebc926cfcf916bd7e477b58cbbebee41c6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "参考スピード"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.005",
+      "sourceHash": "b111f462c0ad4f68e1a29167051ce3059289c2a2c2905e03f4aa43ef582efa56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "選んだ範囲にある、電力網につながった対象設備の設定上の理想的な能力です。レシピ、設備の速度、増産剤のモード、研究による補正、設備ごとの動作を計算に含みます。実出力、過去の平均、自分で設定する目標ではありません。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.006",
+      "sourceHash": "6e4d69ec4c394a6377ff1555be6e559c6dbde81ab6b3463c5367c9e8d5e770af",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "マウスを合わせると分かること"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.006",
+      "sourceHash": "e37edf21f48f5560c1cb00942ade7ecaa0ba03854ddb0a46af25e67aecec8875",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "参考スピードでは設備の内訳、貯蔵数では保管場所、履歴グラフでは正確な期間と数値を確認できます。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.007",
+      "sourceHash": "a175338865c95bc347e6d37e35a65dc3ce6efcbf31546927f71219fa902a1104",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "リアルタイム"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.007",
+      "sourceHash": "821977536828b4f3d9c3f5b86766470efb29607fcec1803e88e1236af9f216a1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "どちらかの円形の更新矢印を右クリックすると、参考スピードと現在の在庫表示を継続更新できます。選んだ過去の集計期間を変えたり、生産・消費を瞬間的な速度に変えたりするものではありません。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.p.002",
+      "sourceHash": "d527ae831064b2051d32455396ee30b8774c0f7b4e63a13b196ead028fc322c4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}このパネルで分かること：{{end_strong_1}}能力を発揮できていない工程を特定できます。参考スピードとの差だけでは、入力不足、出力の詰まり、電力不足、その他の稼働条件のどれが原因かは断定できません。変更する前に、該当する工場のラインを実際に確認してください。"
+    },
+    {
+      "id": "f.top.p.028",
+      "sourceHash": "f5d0ebee35548ea230cb1c38f59a118e19674248fd5aaaa16c02fa650a76e6cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目に見える停止箇所を一つずつ直します。出力がすでに満杯で静かな設備は、故障ではなく待機しており、増設は不要です。"
+    },
+    {
+      "id": "f.top.h1.001",
+      "sourceHash": "3168b05da204e1feac07d1733f7075ba10b4e691537c791caffd74fe29314e29",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ここから先は、あなたの道"
+    },
+    {
+      "id": "f.top.p.029",
+      "sourceHash": "ce08010012288a3505af29656eed467da32308513e5f586b5482f27e9a2e6efb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "「任務完了！」は、工場が完成したという意味ではありません。一つのゴールまで工場を育てる方法を身に付けたということです。"
+    },
+    {
+      "id": "f.top.p.030",
+      "sourceHash": "17fc23ee4ada4bfa33574cb38d064e2e93c6e697f829b1e504a112281c6ac473",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "異星の太陽の下、イカロスと合成機、そして答えより多い課題から始めました。今は惑星をまたぐ工場があり、五色のマトリクスのラインが白の研究へ合流し、ダイソン計画が動き、反物質が自分で運ばなくても届いています。"
+    },
+    {
+      "id": "f.top.p.031",
+      "sourceHash": "a27935790590422d7a1bab5ac2d50d280f4185341e680fdf2f221c4ad8737bad",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "それ以上に、不足を生産ラインに変え、同時に生まれる二つの出力を流し続け、初期惑星の外へ産業を広げ、需要に合わせて電力を増やし、止まった製品から原因をたどる方法を学びました。その力は、このガイドのどの数値や工場配置よりも長く役立ちます。"
+    },
+    {
+      "id": "f.top.p.032",
+      "sourceHash": "9f4c56f2aa54ce9371cddd24bc9c4f9b7e5791deb2d08655ba7488bfa7169ce0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "常設のスフィアを造る、星団全体へ広がる、自分の目標を引き上げる、よりよい計画で初めからやり直す。どれを選んでも構いません。エンジニア、おめでとうございます。ダイソンが道筋を示し、あなたが道を造りました。"
     },
     {
       "id": "a.tech-sheet-title.h2.001",

@@ -1,9 +1,10 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-E1–E4 and the private Chinese/German milestones ML-M2/ML-M3
-are complete and agent-validated. ML-E5 is authorized through ML-27, with
-validation, management updates and a commit/push per story, then a handoff.
-Japanese segment A has 393 messages and eight UI strings agent-validated.
+**Status:** ML-E1–E5 and the private Chinese/German/Japanese milestones
+ML-M2/ML-M3/ML-M4 are complete and agent-validated. Each Japanese story through
+ML-27 has validation, a management update and its own commit/push to main.
+Japanese has all 1,537 messages and eight UI strings accepted privately.
+Work stops at ML-M4; ML-28 requires a new instruction.
 Version 3.1 remains English only.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
@@ -18,9 +19,9 @@ deferred concepts remain deferred indefinitely in the historical archive.
 
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
-Only English is deployable; the complete Chinese and German translations are
-accepted privately. Japanese authoring is underway, starting with orientation,
-BLUE and shared controls.
+Only English is deployable; the complete Chinese, German and Japanese
+translations are accepted privately after linguistic review, fact checks and
+their full browser matrices.
 Narrow main text can wrap long native names and German compounds at 200% text.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized

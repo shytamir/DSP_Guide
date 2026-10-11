@@ -166,6 +166,15 @@ Other station labels confirmed read-only are ワープ起動距離、歪曲器�
 歪曲器搭載 as the requirement setting, not merely available stock. Distinguish
 蓄電量 from cargo and keep 配送ボット、物流ドローン and 星間輸送船 distinct.
 
+Statistics labels confirmed read-only are 生産統計、現在の惑星統計、
+現在の星系統計、全星区統計、生産スピード、参考スピード、貯蔵数、
+原材料生産統計 and トータル. Proliferator modes are 追加産出 and 生産加速.
+Whole-edition review aligned the opening with ダイソンクラウド, 要求側／要求,
+color + マトリクス, 初期惑星, ガス巨星 and 小型貯蔵庫（Mk.I）. Source-owned
+numeric punctuation stays exact. All 1,537 Japanese messages and eight UI
+strings are accepted privately through ML-27; this is agent linguistic review,
+not independent native-speaker evidence.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 

@@ -1,10 +1,10 @@
 # Phone Support and Localization — Decisions and Investigation
 
-**Status:** Roadmap approved, 2026-10-11; ML-E1–E4 are complete.
-ML-E4 (ML-16–21) and ML-M3 are agent-validated. ML-E5 (ML-22–27) is authorized
-with per-story validation, management updates and commits/pushes, stopping at
-the Japanese-epic handoff. ML-22 is agent-validated; public activation needs
-a later instruction.
+**Status:** Roadmap approved, 2026-10-11; ML-E1–E5 are complete.
+ML-E5 (ML-22–27) and ML-M4 are agent-validated, with per-story validation,
+management updates and commits/pushes. Japanese joins Chinese and German as a
+complete private edition. Work stops at the Japanese-epic handoff; ML-28 and
+public activation need a later instruction.
 Early investigations and planning decisions are resolved below. Historical
 browser samples are disposable feasibility work, not product acceptance.
 Story scope, progress, and sequencing live only in the linked roadmap.

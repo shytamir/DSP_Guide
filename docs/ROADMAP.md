@@ -1,9 +1,10 @@
 # Roadmap — Phone Support and Localization
 
-**Status: ML-E5 in progress, 2026-10-11.**
-ML-01–26, ML-M1, ML-G2, ML-M2 and ML-M3 are agent-validated. The owner
-authorized ML-22–27 with validation, management updates and a commit/push per
-story to `main`, stopping at ML-M4. Public activation needs a later instruction;
+**Status: ML-E5 complete, 2026-10-11.**
+ML-01–27, ML-M1, ML-G2 and ML-M2–ML-M4 are agent-validated. Japanese joins
+Chinese and German as a complete private edition. Each ML-22–27 story has
+validation, a management update and its own commit/push to `main`.
+Work stops at ML-M4. ML-28 and public activation need a later instruction;
 all translations remain private.
 
 **Outcome:** make the complete guide practical on phones, then offer equivalent
@@ -444,6 +445,7 @@ the resulting hash and push outcome.
 | ML-24 — agent-validated | `node artifacts/ml-e5/catalog.mjs C`, `build-site.mjs artifacts/ml-e5/ML24-preview-accepted --preview ja`, `artifacts/ml-e5/browser.mjs ML24 C`, release generation to `ML24-release` and both output validators passed. | 257/257 entries; 877 cumulative. English comparison and separate Japanese revision preserved upgrade caps/discard rules, three/three/two Labs, conditional expansion, optional detours, net Hydrogen consumption and Strange-Matter-first fuel priority. Aligned the prose reference with native 引力波屈折 and improved the fuel-buffer instruction and YELLOW heading. Three browser cases covered 255 rendered nodes, all dashboards/cards and 200% phone text; screenshots reviewed. English-only output remains 539 files, with no source changes. | ML-25: DYSON, receiver bridge, PHOTON, WHITE and optional SPHERE; preserve power/photon/antimatter/completion distinctions. |
 | ML-25 — agent-validated | `node artifacts/ml-e5/catalog.mjs D`, `build-site.mjs artifacts/ml-e5/ML25-preview-accepted --preview ja`, `artifacts/ml-e5/browser.mjs ML25 D`, release generation to `ML25-release` and both output validators passed. | 228/228 entries; 1,105 cumulative. English comparison and Japanese-only revision retained swarm capacity as reference, early PHOTON overlap, receiver warm-up/blocking, 40/min baseline, 2,000 Antimatter reserve, 4,000-cube completion and optional permanent structure. Native read-only lookup confirmed 光子生成, 継続受取, 自動軌道, 質量エネルギー貯蔵 and the cloud naming variant. Revised 放射線送信効率, capacity wording and quoted completion labels. Three browser cases covered 227 rendered nodes, bridge, dashboards/cards and 200% text; screenshots reviewed. English-only release passes; no source edits or activation. | ML-26: optional WARP and LOGISTICS, preserving departure checks, scout-first progression and replacement-stock boundaries. |
 | ML-26 — agent-validated | `node artifacts/ml-e5/catalog.mjs E`, `build-site.mjs artifacts/ml-e5/ML26-preview-accepted --preview ja`, `artifacts/ml-e5/browser.mjs ML26 E`, release generation to `ML26-release` and both output validators passed. | 250/250 entries; 1,355 cumulative. English comparison and Japanese-only revision preserved eight rare-resource choices, optional departure, 20-Warper batch, return reserve, unpowered source/powered home fleet, two-Warper round trip, green-science protection, six limited equipment buffers and dispatch-station controls. Removed repeated native technology names and clarified 歪曲器搭載 with its exact native label and meaning. Read-only lookup also confirmed warp distance, minimum-load and storage labels. Three browser cases covered 247 rendered nodes, expedition stages, tables/cards and 200% text; screenshots reviewed. English-only release passes. | ML-27: remaining references, whole-edition consistency/completeness review, full private Japanese browser matrix and ML-M4 handoff. |
+| ML-27 — agent-validated; ML-M4 reached | `node artifacts/ml-e5/catalog.mjs F`, `finish-review.mjs`, `edition.mjs`, the six source/localization/terminology/card/checklist/readability checks, ML27 preview and segment browser checks, full private Japanese matrix, release generation and both output validators passed; details below. | 182/182 segment entries; all 1,537 messages and eight UI strings complete/current. English comparison, Japanese-only revision and whole-edition review preserved optional references, accumulator return/priority, checklist parity, statistics scope/rates and conclusion. Native statistics/proliferator labels checked read-only. Aligned opening cloud, matrix, station, storage and expedition terms with later sections. Repaired the negative test's obsolete assumption that a real catalog remains incomplete by removing a message from a disposable fixture. Three segment cases plus 38 full-matrix cases passed; screenshots reviewed. English-only release remains 539 files; no activation. | Stop after ML-E5. ML-M4 handoff below identifies ML-E6 / ML-28 as next, requiring a new instruction. |
 
 ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
 and uses a hoisted/copy install to avoid sandbox symlink requirements. The first
@@ -718,6 +720,84 @@ in a fresh ignored directory. Preserve all 66 checklist identities/aliases,
 anchors, native IDs, protected numeric punctuation and `rankInside` handling.
 Keep all three target locales disabled and `VERSION` at 3.1 until ML-28. The
 two earlier concepts remain deferred.
+
+## ML-M4 handoff — 2026-10-11
+
+**ML-E5 / ML-22–27 are agent-validated; stop here.** Japanese is complete and
+accepted privately: A 393, B 227, C 257, D 228, E 250 and F 182 messages
+(1,537 total), plus eight UI strings. Every segment received English comparison,
+a separate Japanese read/revision and rendered inspection. Whole-edition review
+reconciled native names/ranks, glossary/station terms, opening navigation,
+repeated messages, checklist conditions, negation, optionality, attributes and
+metadata. No missing/stale entry, untranslated guide prose or known linguistic
+defect remains. This is agent linguistic acceptance, not independent
+native-speaker evidence.
+
+Final verification:
+
+- `node artifacts/ml-e5/edition.mjs` enforced complete coverage without partial
+  fallback, current source/term hashes, protected objects/numbers, eight UI
+  strings and an exact English/Japanese fact signature. Repeated source messages
+  have consistent Japanese wording. The nine source-identical entries contain
+  ILS, expedition numerals, product/image names or legal credit. External-tool
+  names, the quoted image title and Install with Mod Manager remain deliberate
+  exceptions with Japanese explanations where needed.
+- `node scripts/localization-source.mjs`, `test-localization.mjs`,
+  `validate-terminology.mjs`, `validate-card-system.mjs`,
+  `validate-checklists.mjs` and `validate-source-readability.mjs` passed.
+  The first localization test failed because all real catalogs are now complete;
+  its incomplete-activation case now removes a Japanese message from a cloned
+  synthetic fixture. The repaired test and source-readability check passed.
+- `node scripts/build-site.mjs artifacts/ml-e5/ML27-preview-accepted --preview
+  ja` and `node artifacts/ml-e5/browser.mjs ML27 F` passed. Segment F has 180
+  rendered text nodes plus two attributes. All reference sections, dense tables,
+  checklist, statistics walkthrough/details and conclusion were inspected on
+  desktop and Chromium/WebKit phones, including 200% phone text. Final opening
+  and glossary terminology were also inspected; screenshots reviewed.
+- `node artifacts/ml-e5/validate-japanese-phone.mjs --site
+  artifacts/ml-e5/ML27-preview-accepted --mode <mode> --full --output
+  artifacts/ml-e5/ML27-<mode>` passed navigation, layout and interaction
+  (12 cases each), plus navigation-edges (2), with zero errors. This ignored copy
+  of `scripts/validate-phone.mjs` changes only the private URL, Japanese text
+  assertions/data paths and removes synthetic language-title substitutions.
+  Geometry/navigation/interaction assertions remain intact. Evidence covers
+  Chromium 156.0.8078.4, WebKit 27.2 and installed Chrome 155.0.8059.39;
+  320–480 px portrait, landscape, desktop, 200% text, scrolling, focus/dismissal,
+  native tooltips, storage denial, checklist reload/reset and no-JS links.
+  Reviewed screenshots include route sheets, expanded production cards,
+  long research labels, landscape and the 320 px stress viewport.
+- `node scripts/build-site.mjs artifacts/ml-e5/ML27-release`,
+  `node scripts/validate-localization.mjs artifacts/ml-e5/ML27-release` and
+  `node scripts/validate-deployment.mjs artifacts/ml-e5/ML27-release .` passed:
+  539 exact English-only files; all three complete catalogs stay private.
+- `node artifacts/mobile-localization-investigation/check-docs.mjs` and
+  `git diff --check` passed for the settled records.
+
+ML-27 aligned the opening with ダイソンクラウド, 要求側／要求, color +
+マトリクス, 初期惑星, ガス巨星 and 小型貯蔵庫（Mk.I）. Reference prose uses
+the native statistics and proliferator mode labels. Source-owned numbers and
+punctuation remain exact. No English progression, shared layout or runtime-data
+change was needed. Native UI/recipe labels were checked by reading installed
+locale text only; no game launch or game-file modification occurred.
+
+Each story has its own management-bearing commit and push to `main`; this final
+story contains the handoff. Prior commits are ML-22 `72399f2`, ML-23 `dd5558f`,
+ML-24 `0f06660`, ML-25 `49cb239` and ML-26 `6c52862`; Git history and the completion
+report identify ML-27. No version change, public locale activation, production
+publication or further epic was performed. Emulation is not physical-device,
+branded iOS Safari, OS-font or assistive-technology certification. CI ZIP and
+development checks were not repeated for this private milestone; ML-28 owns
+the combined candidate and its delivery evidence.
+
+**Next starting point, only after a new instruction: ML-E6 / ML-28, the combined
+four-language 3.2 candidate.** All three catalogs and UI sets are complete and
+current. Read ML-28 and the validation tiers, [authoring contract](../localization/README.md),
+[language rules](../localization/style.md) and prior ML-G2 delivery evidence.
+Enable all three locales together, validate switching/deep links/shared progress
+and stale-copy rejection, then establish exact candidate ZIP/development evidence
+using the roadmap's post-push follow-up rule. Preserve the 66 checklist identities,
+anchors, native IDs and protected facts. Production publication remains the
+owner's action. The two earlier concepts remain deferred.
 
 ## Draft review — 2026-10-11
 

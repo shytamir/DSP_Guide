@@ -121,12 +121,11 @@ for complete synthetic root/prefix switching, no-JS, localized tooltips/status,
 storage denial and fail-closed checks in desktop Chromium and both phone engines.
 An optional final argument (`android`, `iphone`, `desktop`) isolates one profile.
 Use a fresh output directory; fixtures carry `PREVIEW-ONLY.txt` and never deploy.
-Chinese and German each have all 1,537 HTML/attribute messages and eight UI
-strings reviewed and agent-validated privately through ML-15 and ML-21
-respectively. The manifest still disables both. Japanese segment A has 393
-messages and eight UI strings agent-validated privately through ML-22. The roadmap records
-coverage, corrections and the ML-M2/ML-M3 handoffs; ML-28 owns public activation
-of the three complete editions.
+Chinese, German and Japanese each have all 1,537 HTML/attribute messages and
+eight UI strings reviewed and agent-validated privately through ML-15, ML-21
+and ML-27 respectively. The manifest still disables all three. The roadmap
+records coverage, corrections and the ML-M2/ML-M3/ML-M4 handoffs; ML-28 owns
+public activation of the three complete editions after a new instruction.
 The original sample review covered the heading, intro/emphasis,
 and native-name/numeric dashboard example; the German rate example uses a label
 and colon to preserve the official name without an unnatural counted singular.
