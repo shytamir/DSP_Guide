@@ -419,6 +419,8 @@ the resulting hash and push outcome.
 | --- | --- | --- | --- |
 | ML-01 — agent-validated | `Bootstrap-AgentEnvironment.ps1 -ValidateOnly`; `node scripts/validate-phone.mjs --mode baseline --output artifacts/phone-validation/ml-01`; card, checklist, and source-readability validators; diff review. All passed. | Playwright 1.64.0; managed Chromium 156.0.8078.4 and WebKit 27.2; installed Chrome 155.0.8059.39. Six browser profiles passed inventory, hash, disclosure, tooltip, and persistence checks; desktop screenshot reviewed. No phone document overflow sampled. 35 px route tabs and non-interactive tooltip overflow remain baseline defects. | ML-02 owns route controls; ML-03 owns dense layout/header spacing; ML-04 owns touch details. Tooling is ready; no real-device claim. |
 
+| ML-02 — agent-validated | `node scripts/validate-phone.mjs --mode navigation --full --output artifacts/phone-validation/ml-02` (12 profiles); `--mode navigation-edges --output artifacts/phone-validation/ml-02-edges` (both engines); card and source-readability validators; links/diff review. All passed. | Every route/stage/reference link, Back, target size, keyboard/explicit/outside dismissal, focus return, landscape, breakpoint changes, safe-area simulation, and no-JS stage links verified. Android, WebKit portrait/landscape, and desktop screenshots reviewed. Explicit focus restoration fixes WebKit's click-to-dialog return behavior. | ML-03: retain this navigation while correcting dense layout and header spacing. |
+
 ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
 and uses a hoisted/copy install to avoid sandbox symlink requirements. The first
 upgrade failed on the old lockfile; a buffered browser download was interrupted

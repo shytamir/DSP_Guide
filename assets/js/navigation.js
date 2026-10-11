@@ -1,4 +1,12 @@
 (() => {
+  const rail = document.querySelector(".phase-rail");
+  const trigger = document.getElementById("phone-route-trigger");
+  const sheet = document.getElementById("route-sheet");
+  const current = document.getElementById("phone-current-phase");
+  const referenceMenu = document.querySelector(".reference-menu");
+  const narrow = window.matchMedia(
+    "(max-width: 900px), (max-height: 500px) and (pointer: coarse)",
+  );
   const tabs = [...document.querySelectorAll(".rail-tab")];
   const sections = tabs
     .map((tab) => document.getElementById(tab.dataset.phase))
@@ -18,6 +26,59 @@
   );
   let activePhase = null;
   let stageFrame = null;
+
+  function closeRoute() {
+    if (sheet.open) sheet.close();
+  }
+
+  function arrangeRoute() {
+    closeRoute();
+    if (narrow.matches) {
+      document.getElementById("phone-route-content").append(rail);
+      trigger.hidden = false;
+      document.documentElement.classList.add("phone-nav-ready");
+    } else {
+      trigger.before(rail);
+      trigger.hidden = true;
+      document.documentElement.classList.remove("phone-nav-ready");
+    }
+  }
+
+  trigger.addEventListener("click", () => {
+    referenceMenu.open = false;
+    sheet.showModal();
+  });
+  sheet
+    .querySelector(".phone-sheet-close")
+    .addEventListener("click", closeRoute);
+  sheet.addEventListener("close", () => {
+    if (narrow.matches) trigger.focus({ preventScroll: true });
+  });
+  sheet.addEventListener("click", (event) => {
+    const rect = sheet.getBoundingClientRect();
+    if (
+      event.target === sheet &&
+      (event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom)
+    )
+      closeRoute();
+  });
+  rail.addEventListener("click", (event) => {
+    if (event.target.closest("a[href]")) closeRoute();
+  });
+  referenceMenu.addEventListener("click", (event) => {
+    if (event.target.closest("a[href]")) referenceMenu.open = false;
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && referenceMenu.open) {
+      referenceMenu.open = false;
+      referenceMenu.querySelector("summary").focus();
+    }
+  });
+  narrow.addEventListener("change", arrangeRoute);
+  arrangeRoute();
 
   function setActiveStage(activeStage) {
     stageGroups.forEach((stages) =>
@@ -54,6 +115,9 @@
 
   function setActive(id) {
     activePhase = id;
+    current.textContent =
+      tabs.find((tab) => tab.dataset.phase === id)?.querySelector("span")
+        ?.textContent || "Start";
     tabs.forEach((tab) =>
       tab.classList.toggle("active", tab.dataset.phase === id),
     );
@@ -62,6 +126,7 @@
 
   function activateHashTarget() {
     if (!window.location.hash) return;
+    if (window.location.hash === "#top") setActive(null);
     const target = document.getElementById(window.location.hash.slice(1));
     const phase = target?.matches(".phase-section[id]")
       ? target

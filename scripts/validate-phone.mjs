@@ -14,6 +14,10 @@ if (args.includes("--help")) {
 const option = (name, fallback) =>
   args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
 const mode = option("--mode", "baseline");
+assert.ok(
+  ["baseline", "navigation", "navigation-edges"].includes(mode),
+  `Unknown mode: ${mode}`,
+);
 const root = path.resolve(import.meta.dirname, "..");
 const site = option("--site", root);
 const output = path.resolve(
@@ -97,8 +101,70 @@ const report = {
 async function screenshot(page, name) {
   await page.screenshot({ path: path.join(output, `${name}.png`) });
 }
+async function navigationChecks(page, name) {
+  const phone = await page.locator("#phone-route-trigger").isVisible();
+  const hashes = await page
+    .locator(".phase-rail a")
+    .evaluateAll((nodes) => nodes.map((n) => n.hash));
+  if (phone) {
+    await page.locator("#phone-route-trigger").click();
+    await screenshot(page, `${name}-route`);
+    const small = await page
+      .locator("#route-sheet a, #route-sheet button")
+      .evaluateAll((nodes) =>
+        nodes
+          .filter((n) => n.getBoundingClientRect().height < 44)
+          .map((n) => n.textContent),
+      );
+    assert.deepEqual(small, [], "Route controls smaller than 44px");
+    await page.keyboard.press("Escape");
+    await page.waitForFunction(
+      () => document.activeElement?.id === "phone-route-trigger",
+    );
+  }
+  for (const hash of hashes) {
+    if (phone) await page.locator("#phone-route-trigger").click();
+    else if (hash.startsWith("#warp-"))
+      await page.locator('[data-phase="warp"]').click();
+    else if (["#flight", "#titanium", "#ils-automate"].includes(hash))
+      await page.locator('[data-phase="ils"]').click();
+    await page.locator(`.phase-rail a[href="${hash}"]`).click();
+    await page.waitForFunction((hash) => location.hash === hash, hash);
+    if (phone)
+      assert.equal(
+        await page.locator("#route-sheet").evaluate((n) => n.open),
+        false,
+      );
+  }
+  await page.goBack();
+  await page.waitForFunction(() => location.hash === "#warp-automate");
+  for (const hash of await page
+    .locator(".reference-menu a")
+    .evaluateAll((ns) => ns.map((n) => n.hash))) {
+    await page.locator(".reference-menu > summary").click();
+    await page.locator(`.reference-menu a[href="${hash}"]`).click();
+    assert.equal(
+      await page.locator(".reference-menu").evaluate((n) => n.open),
+      false,
+    );
+  }
+  await page.locator(".back-top").click();
+  if (phone) {
+    await page.locator("#phone-route-trigger").focus();
+    await page.keyboard.press("Enter");
+    await page.locator("#route-sheet .phone-sheet-close").click();
+    await page.locator("#phone-route-trigger").click();
+    await page.mouse.click(2, 2);
+    assert.equal(
+      await page.locator("#route-sheet").evaluate((n) => n.open),
+      false,
+    );
+  }
+}
 try {
   for (const [name, engine, width, height, mobile, executablePath] of matrix) {
+    if (mode === "navigation-edges" && !["android", "iphone"].includes(name))
+      continue;
     const browser = await playwright[engine].launch({ executablePath });
     const entry = {
       name,
@@ -136,6 +202,48 @@ try {
         content:
           "html { scroll-behavior: auto !important; } * { animation: none !important; transition: none !important; }",
       });
+      if (mode === "navigation-edges") {
+        await page.locator("#phone-route-trigger").click();
+        await page.setViewportSize({ width: height, height: width });
+        await page.locator("#route-sheet .phone-sheet-close").click();
+        await page.setViewportSize({ width: 1280, height: 800 });
+        await page.waitForFunction(
+          () =>
+            document.querySelector(".phase-rail").parentElement ===
+            document.body,
+        );
+        await page.setViewportSize({ width, height });
+        await page.addStyleTag({
+          content: ":root { --phone-safe-bottom: 34px; }",
+        });
+        assert.ok(
+          await page
+            .locator("#phone-route-trigger")
+            .evaluate(
+              (n) => innerHeight - n.getBoundingClientRect().bottom >= 34,
+            ),
+        );
+        await screenshot(page, `${name}-safe-area`);
+        const plain = await browser.newContext({
+          viewport: { width, height },
+          javaScriptEnabled: false,
+          isMobile: true,
+          hasTouch: true,
+        });
+        const plainPage = await plain.newPage();
+        await plainPage.goto(base);
+        await plainPage.locator('.stage-tab[href="#warp-outpost"]').click();
+        assert.ok(plainPage.url().endsWith("#warp-outpost"));
+        await plain.close();
+        entry.checks = [
+          "orientation",
+          "desktop/phone transition",
+          "simulated safe area",
+          "no-JS stage links",
+        ];
+        console.log(`${name}: navigation edges passed`);
+        continue;
+      }
       entry.baseline = await page.evaluate(() => ({
         overflow: document.documentElement.scrollWidth > innerWidth,
         cards: document.querySelectorAll("details.build-card").length,
@@ -151,6 +259,7 @@ try {
       assert.equal(entry.baseline.cards, 19);
       assert.equal(entry.baseline.checklists, 66);
       await screenshot(page, `${name}-opening`);
+      if (mode !== "baseline") await navigationChecks(page, name);
       await page.goto(`${base}#yellow`);
       await page.waitForFunction(() =>
         document.querySelector('[data-phase="yellow"].active'),
@@ -184,7 +293,7 @@ try {
       ];
       console.log(`${name}: passed (${engine} ${entry.version})`);
     } catch (error) {
-      report.errors.push(`${name}: ${error.message}`);
+      report.errors.push(`${name}: ${error.stack}`);
       await screenshot(page, `${name}-failure`);
       console.error(`${name}: ${error.message}`);
     } finally {

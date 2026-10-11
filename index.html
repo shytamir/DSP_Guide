@@ -5,7 +5,10 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta charset="utf-8" />
     <meta name="guide-version" content="3.0" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      name="viewport"
+    />
     <meta
       name="description"
       content="One engineer, lost beneath an alien sun. His goal: build the Sphere. Fortunately, Dyson left directions."
@@ -292,6 +295,28 @@
         /><span>LOGI</span></a
       >
     </nav>
+    <button
+      class="phone-route-trigger"
+      id="phone-route-trigger"
+      type="button"
+      aria-haspopup="dialog"
+      aria-controls="route-sheet"
+      hidden
+    >
+      Route <span aria-hidden="true">·</span>
+      <span id="phone-current-phase">Start</span>
+    </button>
+    <dialog
+      class="phone-sheet route-sheet"
+      id="route-sheet"
+      aria-labelledby="route-sheet-title"
+    >
+      <header class="phone-sheet-header">
+        <h2 id="route-sheet-title">Route</h2>
+        <button class="phone-sheet-close" type="button" autofocus>Close</button>
+      </header>
+      <div id="phone-route-content"></div>
+    </dialog>
     <details class="reference-menu">
       <summary title="Reference sections">REF</summary>
       <nav aria-label="Reference navigation">

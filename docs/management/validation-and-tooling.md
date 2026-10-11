@@ -63,6 +63,11 @@ findings in the roadmap ledger. Baseline mode observes current defects without
 asserting that unimplemented phone behavior already passes. Subsequent stories
 add their acceptance scenarios to the same bounded check.
 
+`--mode navigation` checks every route/stage/reference link, Back, dismissal,
+focus return, and target sizing. `--mode navigation-edges` checks orientation,
+desktop/phone transitions, simulated safe-area padding, and no-JavaScript stage
+links in both engines.
+
 - Use browser review for claims about presentation, navigation, responsive
   behavior, focus, persistence, or interaction.
 - Review the reader-facing result before hardening editorial assertions.

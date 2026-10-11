@@ -8,6 +8,10 @@ from the first factory through Mission Completed, with optional paths,
 production references, technology tooltips, and local checklists for readers
 who want additional detail.
 
+On narrow screens, **Route** opens the phases and expedition stages in a
+scrollable sheet. **REF** opens references and **↑** returns to the top.
+The desktop phase rail and existing section links remain available.
+
 ## Privacy and dependencies
 
 The guide has no server-side code, accounts, cookies, or repository-supplied

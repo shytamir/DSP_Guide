@@ -33,6 +33,8 @@ The published static site is `index.html` with supporting files under
 - runtime-derived technology tooltips;
 - static runtime-bound prototype icons and producer-marked production maps;
 - player-owned persistent checklists and a compact glossary;
+- a narrow-screen route sheet with full expedition-stage labels and directly
+  reachable reference/top controls; desktop retains its phase rail;
 - a wide-desktop companion dock linking to the optional DSP Guide Check mod;
 - no server-side code, accounts, repository-supplied analytics, cookies, or
   repository-supplied remote dependencies.

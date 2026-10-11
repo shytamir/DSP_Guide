@@ -2417,3 +2417,190 @@ details.build-card[open] > summary {
     display: none !important;
   }
 }
+
+/* Phone route navigation: reuse the desktop links in a native modal sheet. */
+:root {
+  --phone-safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+.phone-route-trigger[hidden],
+.phone-sheet:not([open]) {
+  display: none;
+}
+.phone-sheet {
+  position: fixed;
+  inset: auto 0 0;
+  width: min(100% - 16px, 580px);
+  max-width: none;
+  max-height: calc(100dvh - 24px - env(safe-area-inset-top, 0px));
+  margin: auto auto 0;
+  padding: 0 16px calc(16px + var(--phone-safe-bottom));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid #526177;
+  border-radius: 16px 16px 0 0;
+  background: #111923;
+  color: var(--text);
+}
+.phone-sheet::backdrop {
+  background: rgb(0 0 0 / 70%);
+}
+.phone-sheet-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  background: #111923;
+}
+.phone-sheet-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.phone-sheet-close,
+.phone-route-trigger {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 9px 14px;
+  border: 1px solid #586d88;
+  border-radius: 10px;
+  background: #202d3e;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+.route-sheet .phase-rail {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  padding: 0;
+  gap: 6px;
+  border: 0;
+  background: none;
+  transform: none;
+  backdrop-filter: none;
+  overflow: visible;
+}
+.route-sheet .rail-label {
+  display: block;
+  padding: 12px 0 4px;
+  text-align: left;
+  font-size: 0.8rem;
+  color: #b5c5d8;
+}
+.route-sheet .rail-entry {
+  flex-direction: column;
+  width: 100%;
+}
+.route-sheet .rail-tab {
+  width: 100%;
+  min-height: 44px;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  border: 0;
+  border-left: 4px solid rgb(var(--tab));
+  border-radius: 6px;
+}
+.route-sheet .rail-tab::before {
+  display: none;
+}
+.route-sheet .rail-tab .phase-icon-rail {
+  position: static;
+}
+.route-sheet .stage-rail {
+  position: static;
+  display: grid;
+  gap: 4px;
+  padding: 6px 0 6px 16px;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  transform: none;
+}
+.route-sheet .stage-tab {
+  display: block;
+  width: auto;
+  height: auto;
+  min-height: 44px;
+  padding: 12px;
+  border: 1px solid rgba(var(--stage), 0.42);
+  border-radius: 6px;
+  font-size: 0;
+  line-height: 1.4;
+}
+.route-sheet .stage-tab::after {
+  content: attr(aria-label);
+  font-size: 0.9rem;
+}
+:is(.phone-route-trigger, .phone-sheet-close, .route-sheet a):focus-visible {
+  outline: 3px solid #8edcff;
+  outline-offset: 2px;
+}
+@media (max-width: 900px), (max-height: 500px) and (pointer: coarse) {
+  main {
+    padding-bottom: calc(140px + var(--phone-safe-bottom));
+  }
+  .phone-route-trigger {
+    position: fixed;
+    z-index: 22;
+    left: max(12px, env(safe-area-inset-left, 0px));
+    bottom: calc(12px + var(--phone-safe-bottom));
+    max-width: calc(100% - 168px);
+    box-shadow: 0 4px 20px #000;
+  }
+  .reference-menu,
+  .back-top {
+    bottom: calc(12px + var(--phone-safe-bottom));
+  }
+  .back-top {
+    right: max(12px, env(safe-area-inset-right, 0px));
+    width: 44px;
+    height: 44px;
+  }
+  .reference-menu {
+    right: calc(68px + env(safe-area-inset-right, 0px));
+  }
+  .reference-menu > summary {
+    width: 60px;
+    height: 44px;
+  }
+  .reference-menu nav {
+    max-height: calc(100dvh - 90px - var(--phone-safe-bottom));
+    overflow: auto;
+  }
+  .reference-menu nav a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 0.85rem;
+  }
+  html:not(.phone-nav-ready) .phase-rail {
+    position: static;
+    flex-wrap: wrap;
+    transform: none;
+  }
+  html:not(.phone-nav-ready) .rail-tab {
+    min-height: 44px;
+  }
+  html:not(.phone-nav-ready) .stage-rail {
+    position: static;
+    display: flex;
+    transform: none;
+  }
+  html:not(.phone-nav-ready) .stage-tab {
+    min-height: 44px;
+  }
+}
+@media print {
+  .phone-route-trigger,
+  .phone-sheet {
+    display: none !important;
+  }
+}
