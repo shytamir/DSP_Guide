@@ -6,7 +6,7 @@
       "id": "a.opening.attr.001.content",
       "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "異星の太陽の下に降り立った一人のエンジニア。目指すのはスフィアの建設。幸い、ダイソンは道しるべを残してくれました。"
+      "text": "異星の太陽の下、途方に暮れる一人のエンジニア。目指すのはスフィアの建設。幸い、ダイソンは道しるべを残してくれました。"
     },
     {
       "id": "a.opening.attr.002.content",
@@ -24,7 +24,7 @@
       "id": "a.opening.attr.004.content",
       "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "異星の太陽の下に降り立った一人のエンジニア。目指すのはスフィアの建設。幸い、ダイソンは道しるべを残してくれました。"
+      "text": "異星の太陽の下、途方に暮れる一人のエンジニア。目指すのはスフィアの建設。幸い、ダイソンは道しるべを残してくれました。"
     },
     {
       "id": "a.opening.attr.005.content",
@@ -42,7 +42,7 @@
       "id": "a.opening.attr.007.content",
       "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "異星の太陽の下に降り立った一人のエンジニア。目指すのはスフィアの建設。幸い、ダイソンは道しるべを残してくれました。"
+      "text": "異星の太陽の下、途方に暮れる一人のエンジニア。目指すのはスフィアの建設。幸い、ダイソンは道しるべを残してくれました。"
     },
     {
       "id": "a.opening.attr.008.content",
@@ -504,13 +504,13 @@
       "id": "a.top.h3.001",
       "sourceHash": "b8817ea2fb683194d5b1a7613161a2b55bcbca05bbdcef54fda5226047c9ff35",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "このガイドでのキューブの呼び方"
+      "text": "このガイドでのマトリクスの呼び方"
     },
     {
       "id": "a.top.p.009",
       "sourceHash": "c164dc2dd1e154a5abd7d62b3be0de0d7310d7f240a6a4230bf196b2735c298c",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "DSP のキューブにはそれぞれ正式名称がありますが、建設中は色で呼ぶほうが分かりやすいものです。本文では主に色を使い、下のリンクには技術の正式名称を表示します。"
+      "text": "DSP のマトリクスにはそれぞれ正式名称がありますが、建設中は色で呼ぶほうが分かりやすいものです。このガイドでは、本文中で「青マトリクス」などの呼び方を使います。"
     },
     {
       "id": "a.top.p.010",
@@ -522,7 +522,7 @@
       "id": "a.top.p.011",
       "sourceHash": "eb391dccfe4b3c1e1fa2ad75c0e25dc081a338e6734cddbbaa60727eba706f28",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "以降、マトリクスの正式名称は{{strong_1}}技術ツリーで選ぶ研究項目{{end_strong_1}}を指します。本文で生産物、速度、在庫、レシピを説明するときは、キューブの色を使います。"
+      "text": "{{strong_1}}技術ツリーで選ぶ研究項目{{end_strong_1}}や、カード・表などのアイテム表示には、ゲーム内の正式名称を使います。本文で生産物、生産速度、在庫、レシピを説明するときは、主に「青マトリクス」など色を添えた呼び方を使います。"
     },
     {
       "id": "a.top.p.012",
@@ -2958,7 +2958,7 @@
       "id": "b.ils.td.001",
       "sourceHash": "68fde42a847cba9720332f68efbdd45b681494adf78741ed905b653ea39c2b9b",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{strong_1}}工程 I — 出発{{end_strong_1}}"
+      "text": "{{strong_1}}段階 I — 出発{{end_strong_1}}"
     },
     {
       "id": "b.ils.td.002",
@@ -2970,7 +2970,7 @@
       "id": "b.ils.td.003",
       "sourceHash": "5ef5d891b478a81f0470acde23bdb1497c9093ee01bdf57e60ac4f1f4feb6d25",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{strong_1}}工程 II — 持ち帰り{{end_strong_1}}"
+      "text": "{{strong_1}}段階 II — 持ち帰り{{end_strong_1}}"
     },
     {
       "id": "b.ils.td.004",
@@ -2982,7 +2982,7 @@
       "id": "b.ils.td.005",
       "sourceHash": "2ce624a72a8935c09e140ae819f24689eff94fb92eba9d7b21e3a034a5858715",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{strong_1}}工程 III — 自動化{{end_strong_1}}"
+      "text": "{{strong_1}}段階 III — 自動化{{end_strong_1}}"
     },
     {
       "id": "b.ils.td.006",

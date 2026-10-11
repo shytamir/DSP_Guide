@@ -6,7 +6,7 @@
       "id": "a.opening.attr.001.content",
       "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Ein Ingenieur unter einer fremden Sonne. Sein Ziel: die Sphäre bauen. Zum Glück hat Dyson eine Anleitung hinterlassen."
+      "text": "Ein Ingenieur, verloren unter einer fremden Sonne. Sein Ziel: die Sphäre bauen. Zum Glück hat Dyson eine Anleitung hinterlassen."
     },
     {
       "id": "a.opening.attr.002.content",
@@ -24,7 +24,7 @@
       "id": "a.opening.attr.004.content",
       "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Ein Ingenieur unter einer fremden Sonne. Sein Ziel: die Sphäre bauen. Zum Glück hat Dyson eine Anleitung hinterlassen."
+      "text": "Ein Ingenieur, verloren unter einer fremden Sonne. Sein Ziel: die Sphäre bauen. Zum Glück hat Dyson eine Anleitung hinterlassen."
     },
     {
       "id": "a.opening.attr.005.content",
@@ -42,7 +42,7 @@
       "id": "a.opening.attr.007.content",
       "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Ein Ingenieur unter einer fremden Sonne. Sein Ziel: die Sphäre bauen. Zum Glück hat Dyson eine Anleitung hinterlassen."
+      "text": "Ein Ingenieur, verloren unter einer fremden Sonne. Sein Ziel: die Sphäre bauen. Zum Glück hat Dyson eine Anleitung hinterlassen."
     },
     {
       "id": "a.opening.attr.008.content",
@@ -510,7 +510,7 @@
       "id": "a.top.p.009",
       "sourceHash": "c164dc2dd1e154a5abd7d62b3be0de0d7310d7f240a6a4230bf196b2735c298c",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "DSP gibt jedem Würfel einen offiziellen Namen. Beim Bauen sind Farben aber leichter zu erkennen. Im Fließtext verwenden wir deshalb meist die Farben; die Verknüpfungen hier zeigen die offiziellen Technologienamen:"
+      "text": "DSP gibt jedem Würfel einen offiziellen Namen. Beim Bauen sind Farben aber leichter zu erkennen. Deshalb verwenden wir im Fließtext meist Farbnamen; die Übersicht zeigt auch die offiziellen Namen der Gegenstände und Technologien:"
     },
     {
       "id": "a.top.p.010",
@@ -522,7 +522,7 @@
       "id": "a.top.p.011",
       "sourceHash": "eb391dccfe4b3c1e1fa2ad75c0e25dc081a338e6734cddbbaa60727eba706f28",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Wenn später ein offizieller Matrixname erscheint, ist damit die {{strong_1}}Technologie im Forschungsbaum{{end_strong_1}} gemeint. Bei hergestellten Gegenständen, Raten, Vorräten und Rezepten verwenden wir im Fließtext die Würfelfarben."
+      "text": "Bei {{strong_1}}Technologien im Forschungsbaum{{end_strong_1}} verwenden wir die offiziellen Namen. Die Gegenstandslabels in Karten, Tabellen und neben den Symbolen zeigen ebenfalls die Namen aus dem Spiel. Im übrigen Text sprechen wir meist von blauen, roten oder anderen farbigen Würfeln, etwa bei Produktion, Raten, Vorräten und Rezepten."
     },
     {
       "id": "a.top.p.012",

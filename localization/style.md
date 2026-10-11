@@ -101,7 +101,7 @@ completion technology name in quotation marks when needed to avoid a repeated
 Use Mall (defined in the glossary), Puffer, Zweig, Zusammenführung and
 Reserveversorgung consistently. Color/route labels are BLAU, ROT, GELB, VIOLETT,
 GRÜN, DYSON, PHOTON, WEISS, SPHÄRE, WARP and LOGISTIK. Native matrix links retain
-the official names; the introduction distinguishes these from prose color names.
+the official names; the introduction distinguishes these item labels from color shorthand in prose.
 Producer labels use the exact native Zusammens.-Masch. Typ I; generic prose
 may use Montagemaschine. The generator displays the existing source Mk.I grade
 as Typ I in German, preserving its identity separately from number formatting.
@@ -146,7 +146,9 @@ Use 建設用品工場（モール） in the glossary, then 建設用品工場 i
 バッファ在庫, 枝ライン, 合流工程 and 補助供給 describe buffer, branch,
 convergence and backstop. Route/color labels are 青、赤、黄、紫、緑、ダイソン、
 光子、白、スフィア、ワープ and 物流. Native matrix links retain official names;
-the introduction distinguishes these from prose color names. Explanations use
+the introduction distinguishes item labels from color + マトリクス in prose.
+Use 段階 for numbered ILS/WARP expedition stages, including overview rows,
+navigation titles and accessible names; 工程 still describes production. Explanations use
 です・ます; checklist labels describe the state achieved. Native エンジン and
 モーター are distinct items. Place counts after protected names where natural,
 and quote the completion technology to avoid repeating its imperative wording.

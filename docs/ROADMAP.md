@@ -387,7 +387,7 @@ publication remains the owner's action.
 | --- | --- | --- | --- |
 | LC-01 | Agent-validated | Localization tests/terminology passed; staged 551-file localization/deployment checks passed. Only German HTML differs from the previous package. All 28 affected messages reviewed in Chromium desktop/Android and WebKit iPhone, including enlarged text; numeric/card/power/table screenshots reviewed. Evidence: `artifacts/lc/LC01-*`. | LC-02 |
 | LC-02 | Agent-validated; LC-G1 / LC-M1 reached | Native terminology and localization tests passed; 551-file staged deployment passed. Reviewed 76 German messages and all three Chinese Replicator references in desktop/Android Chromium and iPhone WebKit with 200% text. English/Japanese HTML byte-identical to LC-01. Evidence: `artifacts/lc/LC02-*`. | LC-E1 handoff recorded; continue LC-03 |
-| LC-03 | Authorized — not started | Pending implementation | LC-04 |
+| LC-03 | Agent-validated | Corrected 15 messages (de 5, ja 9, zh-CN 1); checked all 12 Japanese stage title/aria entries. Localization, staged deployment and checklist validators passed; nine desktop/Android/iPhone review cases passed with enlarged text and screenshots. All six metadata copies retain “lost”. Evidence: `artifacts/lc/LC03-*`. | LC-04 |
 | LC-04 | Authorized — not started | Pending implementation | LC-05 |
 | LC-05 | Authorized — not started | Pending implementation | LC-06 |
 | LC-06 | Authorized — not started | Pending implementation | LC-M2 / LC-E2 handoff |
