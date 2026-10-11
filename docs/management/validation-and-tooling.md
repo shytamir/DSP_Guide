@@ -68,6 +68,11 @@ focus return, and target sizing. `--mode navigation-edges` checks orientation,
 desktop/phone transitions, simulated safe-area padding, and no-JavaScript stage
 links in both engines.
 
+`--mode layout` checks collapsed/expanded geometry, all dashboards and 19 cards,
+independent table scrolling, sample German/Chinese/Japanese titles, and 200%
+text on the primary Android/iPhone profiles. Review its screenshots alongside
+the results. `--profile <name>` isolates a matrix case when diagnosing a failure.
+
 - Use browser review for claims about presentation, navigation, responsive
   behavior, focus, persistence, or interaction.
 - Review the reader-facing result before hardening editorial assertions.

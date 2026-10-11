@@ -7,7 +7,7 @@ import { createRequire } from "node:module";
 const args = process.argv.slice(2);
 if (args.includes("--help")) {
   console.log(
-    "Usage: node scripts/validate-phone.mjs [--mode baseline] [--site directory-or-URL] [--output directory] [--full]",
+    "Usage: node scripts/validate-phone.mjs [--mode baseline|navigation|navigation-edges|layout] [--site directory-or-URL] [--output directory] [--full] [--profile name]",
   );
   process.exit(0);
 }
@@ -15,7 +15,7 @@ const option = (name, fallback) =>
   args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
 const mode = option("--mode", "baseline");
 assert.ok(
-  ["baseline", "navigation", "navigation-edges"].includes(mode),
+  ["baseline", "navigation", "navigation-edges", "layout"].includes(mode),
   `Unknown mode: ${mode}`,
 );
 const root = path.resolve(import.meta.dirname, "..");
@@ -161,8 +161,128 @@ async function navigationChecks(page, name) {
     );
   }
 }
+async function layoutChecks(page, name, width) {
+  const scan = async () =>
+    page.evaluate(() => {
+      const overflow = [...document.querySelectorAll("main *")]
+        .filter((n) => {
+          const r = n.getBoundingClientRect();
+          return (
+            r.width &&
+            (r.right > innerWidth + 1 || r.left < -1) &&
+            !n.closest(".table-scroll, .guide-wordmark-crop")
+          );
+        })
+        .map(
+          (n) =>
+            `${n.tagName}.${n.className}: ${n.textContent.trim().slice(0, 80)}`,
+        )
+        .slice(0, 12);
+      return {
+        overflow,
+        document: document.documentElement.scrollWidth > innerWidth + 1,
+      };
+    });
+  assert.deepEqual(
+    await scan(),
+    { overflow: [], document: false },
+    "Collapsed page overflow",
+  );
+  await page
+    .locator("main details")
+    .evaluateAll((ns) => ns.forEach((n) => (n.open = true)));
+  assert.deepEqual(
+    await scan(),
+    { overflow: [], document: false },
+    "Expanded page overflow",
+  );
+  if (width <= 620) {
+    const cramped = await page
+      .locator(".phone-stack td")
+      .evaluateAll((ns) =>
+        ns
+          .filter(
+            (n) =>
+              n.getBoundingClientRect().width <
+              n.closest("table").getBoundingClientRect().width - 3,
+          )
+          .map((n) => n.textContent.slice(0, 30)),
+      );
+    assert.deepEqual(
+      cramped,
+      [],
+      "Dashboard fields must use the reading width",
+    );
+  }
+  for (const table of await page.locator(".table-scroll").all()) {
+    await table.evaluate((n) => (n.scrollLeft = n.scrollWidth));
+    assert.equal(
+      await table.evaluate(
+        (n) => n.scrollWidth <= n.clientWidth || n.scrollLeft > 0,
+      ),
+      true,
+    );
+    await table.evaluate((n) => (n.scrollLeft = 0));
+  }
+  for (const id of ["blue", "yellow", "purple", "logistics"]) {
+    await page.locator(`#${id} table`).first().scrollIntoViewIfNeeded();
+    await screenshot(page, `${name}-${id}-dashboard`);
+  }
+  const cards = [];
+  for (const card of await page.locator("details.build-card").all()) {
+    cards.push(
+      await card.evaluate((n) => ({
+        id: n.id,
+        width: n.getBoundingClientRect().width,
+        open: n.open,
+        clipped: [...n.querySelectorAll(".card-body, .route-chain")].some(
+          (x) => x.scrollWidth > x.clientWidth + 1,
+        ),
+      })),
+    );
+  }
+  assert.equal(cards.length, 19);
+  assert.ok(
+    cards.every((c) => c.open && !c.clipped),
+    "All expanded production cards must fit",
+  );
+  await page.locator("details.build-card").first().scrollIntoViewIfNeeded();
+  await screenshot(page, `${name}-production`);
+  if (["android", "iphone"].includes(name)) {
+    for (const [lang, title] of [
+      ["de", "Praktischer Leitfaden für deinen Spielfortschritt"],
+      ["zh-CN", "实用流程指南"],
+      ["ja", "実践的な進行ガイド"],
+    ]) {
+      await page.locator("html").evaluate((n, lang) => (n.lang = lang), lang);
+      await page
+        .locator(".guide-title-subtitle")
+        .evaluate((n, title) => (n.textContent = title), title);
+      await page.evaluate(() => scrollTo(0, 0));
+      await screenshot(page, `${name}-${lang}-sample`);
+      assert.deepEqual(await scan(), { overflow: [], document: false });
+    }
+    await page.addStyleTag({
+      content: "html { font-size: 200%; } body { font-size: 32px; }",
+    });
+    await page.locator("#yellow table").first().scrollIntoViewIfNeeded();
+    await screenshot(page, `${name}-text-200`);
+    assert.deepEqual(
+      await scan(),
+      { overflow: [], document: false },
+      "200% text overflow",
+    );
+  }
+  return {
+    cards,
+    tables: await page.locator("table").count(),
+    checks:
+      "collapsed/expanded geometry, dashboard width, table scrolling, language samples and 200% text",
+  };
+}
 try {
   for (const [name, engine, width, height, mobile, executablePath] of matrix) {
+    if (option("--profile", name) !== name) continue;
     if (mode === "navigation-edges" && !["android", "iphone"].includes(name))
       continue;
     const browser = await playwright[engine].launch({ executablePath });
@@ -259,7 +379,12 @@ try {
       assert.equal(entry.baseline.cards, 19);
       assert.equal(entry.baseline.checklists, 66);
       await screenshot(page, `${name}-opening`);
-      if (mode !== "baseline") await navigationChecks(page, name);
+      if (mode === "navigation") await navigationChecks(page, name);
+      if (mode === "layout") {
+        entry.layout = await layoutChecks(page, name, width);
+        console.log(`${name}: layout passed`);
+        continue;
+      }
       await page.goto(`${base}#yellow`);
       await page.waitForFunction(() =>
         document.querySelector('[data-phase="yellow"].active'),

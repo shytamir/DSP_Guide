@@ -11,6 +11,8 @@ who want additional detail.
 On narrow screens, **Route** opens the phases and expedition stages in a
 scrollable sheet. **REF** opens references and **↑** returns to the top.
 The desktop phase rail and existing section links remain available.
+Phone dashboards stack their fields; wider reference tables have labelled
+sideways scrolling. Production flows and headings wrap within the reading width.
 
 ## Privacy and dependencies
 

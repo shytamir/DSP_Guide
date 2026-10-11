@@ -1993,11 +1993,6 @@ details.build-card[open] > summary {
   .allocation-table .numeric {
     width: auto;
   }
-  table {
-    display: block;
-    max-width: 100%;
-    overflow-x: auto;
-  }
   .orbital-process {
     align-items: stretch;
     flex-direction: column;
@@ -2602,5 +2597,121 @@ details.build-card[open] > summary {
   .phone-route-trigger,
   .phone-sheet {
     display: none !important;
+  }
+}
+
+/* Preserve table relationships while giving narrow readers usable columns. */
+.table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+.table-scroll:focus-visible {
+  outline: 3px solid #8edcff;
+  outline-offset: 3px;
+}
+.table-scroll-hint {
+  display: none;
+}
+@media (max-width: 900px), (max-height: 500px) and (pointer: coarse) {
+  .asset-rights-notice {
+    margin: 0.75rem 0 1.55rem;
+    font-size: 0.75rem;
+  }
+  .table-scroll-hint {
+    display: block;
+    margin: 1rem 0 0.35rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .table-scroll > table {
+    min-width: 36rem;
+    margin-top: 0;
+  }
+  .card-badge {
+    white-space: normal;
+  }
+  .phase-tag {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 620px) {
+  main {
+    width: calc(100% - 32px);
+    padding-top: 20px;
+  }
+  .guide-title {
+    grid-template-columns: minmax(0, 1fr) 56px;
+    gap: 12px;
+    margin-top: 1.5rem;
+  }
+  .guide-title-subtitle {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+  .guide-trademark {
+    width: 56px;
+  }
+  .phone-stack,
+  .phone-stack tbody,
+  .phone-stack tr,
+  .phone-stack td {
+    display: block;
+    width: 100%;
+  }
+  .phone-stack thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .phone-stack tr {
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .phone-stack td,
+  .phase-dashboard.phone-stack td:first-child {
+    width: 100%;
+    border: 0;
+    padding: 0.2rem 0.8rem;
+  }
+  .phone-stack td:first-child {
+    color: #c8d6e7;
+    font-weight: 750;
+  }
+  .production-map .route-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+  }
+  .production-map .route-chain {
+    overflow-wrap: anywhere;
+  }
+  .card-body {
+    padding: 0.75rem;
+  }
+  .card-controls {
+    position: static;
+  }
+  .build-card,
+  main h1,
+  main h2,
+  main h3,
+  .you-are-here,
+  .statistics-detail-list,
+  .guide-glossary-list {
+    overflow-wrap: anywhere;
+  }
+  .production-reference {
+    margin-left: 0;
+  }
+}
+@media print {
+  .table-scroll-hint {
+    display: none;
   }
 }
