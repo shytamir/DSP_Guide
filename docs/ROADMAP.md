@@ -1,9 +1,9 @@
 # Roadmap — Phone Support and Localization
 
-**Status: executing ML-E2, 2026-10-11.** ML-E1 and ML-M1 are agent-validated.
-The owner authorized ML-06–09 with validation, management updates, and a
-commit/push per story to `main`, stopping after ML-E2 with a handoff.
-ML-E3–06 require a later execution instruction.
+**Status: ML-E2 complete, 2026-10-11.** ML-01–09, ML-M1 and ML-G2 are
+agent-validated. All four foundation stories were committed/pushed separately
+to `main`; exact ML-09 CI/package/development evidence and the handoff are below.
+Work stops here. ML-E3–06 require a later execution instruction.
 
 **Outcome:** make the complete guide practical on phones, then offer equivalent
 English, Simplified Chinese, German, and Japanese editions without losing
@@ -425,7 +425,7 @@ the resulting hash and push outcome.
 | ML-06 — agent-validated | `node scripts/validate-checklists.mjs`, `node scripts/validate-card-system.mjs`, `node scripts/validate-source-readability.mjs`, and `node artifacts/ml06-browser.mjs` passed; planning links and final diff reviewed. | All 66 keys and aliases match the pre-localization browser snapshot; the 41 derived keys are explicit. Fixtures restore every legacy/alias state with translated labels. Corrupt/array/null storage, isolated reset and denial pass. Chromium 156 at 1280×800 and WebKit 27.2 at 393×852 verified persistence/recovery and reviewed checklist screenshots. Full display-source inventory and stable-ID convention are in `localization/README.md`. | ML-07: retain the minimal all-consumer native terminology map; no bulk translation yet. |
 | ML-07 — agent-validated | `node scripts/extract-terminology.mjs <installed-game>/Locale 25599610`, `node scripts/validate-terminology.mjs`, and `node scripts/validate-source-readability.mjs` passed; source mappings, language rules/samples, links and final diff reviewed. | Three minimal snapshots resolve 444 records each (314 technologies, 130 items; 273 unique native keys), extending the 427-record probe by 17 tooltip/cube items. Zero missing/conflicting names; all 206 ranks compose exactly once. Source files were read only; no game launch/write. Native names, IDs and hashes are retained; full tables/descriptions are excluded. Offline checks require no game. | ML-08: annotate messages and build deterministic private/static editions using retained names and protected facts. |
 | ML-08 — agent-validated | `pnpm install --ignore-scripts --node-linker=hoisted --package-import-method=copy --store-dir artifacts/.pnpm-store`; `localization-source.mjs --write`; `test-localization.mjs`; `build-site.mjs artifacts/localization/ml08-final`; `validate-localization.mjs` and `validate-deployment.mjs` on that output; card, checklist and readability validators. All passed. Three `--preview <locale> --segment A` builds and `artifacts/ml08-browser.mjs` passed; the release validator rejected a preview as expected. | Pinned parse5 8.0.1/lockfile; 1,536 source messages; four private samples per locale. Complete synthetic catalogs preserve objects and allow grammatical reordering; negative fixtures reject stale/missing/duplicate/unknown/unsafe entries and changed numbers. Repeated release maps are byte-identical (536 files). Desktop Chromium and phone WebKit previews reviewed; German rate phrasing corrected and rechecked. English semantic contracts remain intact; automated checks do not establish linguistic equivalence. | ML-09: manifest/selector, dynamic UI, locale metadata and delivery integration; all non-English public editions remain disabled. |
-| ML-09 — local validation passed; remote delivery pending | `node scripts/test-localization.mjs`, `localization-source.mjs`, and card/checklist/terminology/readability validators passed. `build-site.mjs artifacts/localization/ml09-accepted`, `validate-localization.mjs` and `validate-deployment.mjs` passed; PowerShell `Compress-Archive`/`Expand-Archive` and both validators on `ml09-extracted` passed (539 exact files). `validate-phone.mjs --site artifacts/localization/ml09-accepted --mode <mode> --full --output artifacts/localization/ml09-<mode>` passed navigation/layout/interaction (12 each) and navigation-edges (2). `validate-localization-browser.mjs artifacts/localization/ml09-switching-<profile> <profile>` passed android/iphone/desktop (96 switching cases). | Manifest keeps all target locales disabled. Complete synthetic fixtures verify every locale pair at root/prefix paths, hash/progress retention, no-JS links, native tooltip names/ranks/unlocks, all four status messages, denied storage and fail-closed UI loading. Reviewed phone/desktop screenshots and eight UI strings per language. Integration fixed duplicate inline ranks and reduced-motion `srcset` paths; per-message number parity and srcset checks now guard them. Production remains unchanged; emulation/synthetic coverage is not full language acceptance. | Verify the exact pushed CI ZIP and development deployment, record ML-G2, then stop. ML-E3 / ML-10 requires a new instruction. |
+| ML-09 — agent-validated; ML-G2 reached | `node scripts/test-localization.mjs`, `localization-source.mjs`, and card/checklist/terminology/readability validators passed. `build-site.mjs artifacts/localization/ml09-accepted`, `validate-localization.mjs` and `validate-deployment.mjs` passed; PowerShell `Compress-Archive`/`Expand-Archive` and both validators on `ml09-extracted` passed (539 exact files). `validate-phone.mjs --site artifacts/localization/ml09-accepted --mode <mode> --full --output artifacts/localization/ml09-<mode>` passed navigation/layout/interaction (12 each) and navigation-edges (2). `validate-localization-browser.mjs artifacts/localization/ml09-switching-<profile> <profile>` passed android/iphone/desktop (96 switching cases). | Manifest keeps all target locales disabled. Complete synthetic fixtures verify every locale pair at root/prefix paths, hash/progress retention, no-JS links, native tooltip names/ranks/unlocks, all four status messages, denied storage and fail-closed UI loading. Reviewed phone/desktop screenshots and eight UI strings per language. Integration fixed duplicate inline ranks and reduced-motion `srcset` paths; per-message number parity and srcset checks now guard them. Production remains unchanged; emulation/synthetic coverage is not full language acceptance. | Exact CI ZIP and development checks passed as recorded below. Stop after ML-E2; ML-E3 / ML-10 requires a new instruction. |
 
 ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
 and uses a hoisted/copy install to avoid sandbox symlink requirements. The first
@@ -489,6 +489,66 @@ operable Universe Matrix details button and its associated checklist label.
 ML-07–09 then establish terminology, catalogs/generation, and package boundaries
 before any bulk translation. Do not treat the three typography samples as
 localized editions. The two earlier concepts remain deferred indefinitely.
+
+## ML-G2 evidence and handoff — 2026-10-11
+
+**Result: agent-validated, ML-E2 complete.** Candidate commit
+`db0ef6d595a8017ce26983f83145bea08a23a517` remains version 3.1, English only.
+The foundation is ready for bulk translation. Production publication remains
+the owner's action; no full translated segment or edition is accepted yet.
+
+- The four story commits are `fd213c9` (ML-06), `f904a27` (ML-07),
+  `f65ab37` (ML-08), and `db0ef6d` (ML-09), each pushed to `main` with its
+  management update.
+- [Build/deploy run 38146048439](https://github.com/shytamir/DSP_Guide/actions/runs/38146048439),
+  run number 172, succeeded for the exact candidate. Associated Pages run
+  38146048245 also succeeded.
+- CI artifact `11704303015` contains
+  `dsp-practical-progression-guide-3.1.171.db0ef6d.zip`. Downloaded the actual
+  artifact, verified its outer SHA-256 against GitHub's digest, and extracted
+  the inner package. All 539 files match deterministic generation, including
+  authorized assets, license and sanitized permission; authoring catalogs,
+  parser dependencies and test fixtures are excluded. Inner ZIP SHA-256:
+  `8e8759289f69f99ad624f7aed99898e4193dda034598df82f4bb24da5898e468`.
+- Exact package checks passed:
+  `node scripts/validate-localization.mjs artifacts/localization/ml09-ci-site`
+  and `node scripts/validate-deployment.mjs artifacts/localization/ml09-ci-site .`.
+- [Development deployment](https://shytamir.github.io/DSP_Guide/) matched all
+  539 package files byte for byte, with zero failures. Disabled `/zh-CN/`,
+  `/de/`, and `/ja/` paths each returned 404. The disposable audit command was
+  `node artifacts/localization/verify-ml09-development.mjs`; its report is
+  `artifacts/localization/ml09-remote-bytes.json`.
+- `node scripts/validate-phone.mjs --site https://shytamir.github.io/DSP_Guide/`
+  passed `--mode navigation` for six primary/desktop/stable-Chrome profiles and
+  `--mode interaction --profile android` / `iphone` for both primary phones.
+  Reports and reviewed remote screenshots are under ignored
+  `artifacts/localization/ml09-remote-*` paths. Local release, ZIP, 38 English
+  browser cases and 96 synthetic language-switching cases are
+  recorded in the ML-09 ledger row.
+
+No known blocking defect remains within this epic. Browser emulation does not
+certify physical phones, branded iOS Safari or OS fonts. Synthetic editions
+exercise delivery and interaction, not language quality; the four private HTML
+samples and eight self-reviewed UI strings per language are not bulk translation
+acceptance. No game launch or game-file modification occurred.
+
+**Next starting point, only after a new execution instruction: ML-E3 / ML-10,
+Simplified Chinese segment A.** Read the segment contract below the ML-09 story,
+[localization authoring guide](../localization/README.md), and
+[language rules](../localization/style.md). Segment A has 393 of the 1,537 HTML
+messages plus eight dynamic UI strings. Reconcile those existing UI strings
+and four samples with the complete segment; review each proposition against
+English, then independently read the target language and inspect its rendering.
+The remaining segments have B 227, C 257, D 228, E 250 and F 182 messages.
+
+Preserve all 66 checklist identities/aliases, public anchors, factual placeholders
+and native ID mappings (444 terms per target locale). Respect `rankInside` when
+translating an adjacent rank label; never duplicate or alter its numeric token.
+Use a fresh ignored output with
+`node scripts/build-site.mjs artifacts/preview-ml10 --preview zh-CN --segment A`
+for private inspection. All three non-English locales stay disabled and `VERSION`
+stays unchanged until ML-28. ML-10 has not started; the two earlier concepts
+remain deferred indefinitely.
 
 ## Draft review — 2026-10-11
 

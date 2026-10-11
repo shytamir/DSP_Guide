@@ -16,8 +16,8 @@ rename public anchors, change prototype/technology/card IDs, or change the
 `dsp-guide:checklist-state:v1` storage record. The fixture's historical wording
 is evidence, not a restriction on future editorial copy.
 
-The following inventory covers every display-text source. ML-08 will annotate
-individual messages and produce a machine-checkable source catalog.
+The following inventory covers every display-text source. Annotated individual
+messages are retained in the machine-checkable source catalog.
 
 | Source / surface | Translation treatment | Segment |
 | --- | --- | --- |
@@ -28,7 +28,7 @@ individual messages and produce a machine-checkable source catalog.
 | Table-scroll hints and region labels, image alternatives, other `title`/`aria-label` attributes | Translate non-empty human text; preserve decorative empty alternatives | A for shared controls; containing segment for contextual labels |
 | Document title, description, social metadata and image descriptions | Locale-specific message/attribute entries; version/URL fields remain structural | A |
 | `checklists.js` | Saved, unavailable, reset and page-only reset messages; static no-JS guidance remains in HTML | A |
-| `navigation.js` | Current-phase caption derives from translated rail text; opening `Start` is a UI message | A |
+| `navigation.js` | Current-phase caption derives from translated rail text; opening `Start` derives from its translated HTML control | A |
 | `tech-tooltips.js` and `assets/data/tech-*.json` | Required/Implicit/Unlocks labels, rank pattern, technology and prerequisite names, cube and compact unlock labels | A + native terminology snapshot |
 | Prototype icons / inline names and producer descriptions | Native ID-based names where a name is meant; translate surrounding prose and producer explanations as full messages | Containing segment |
 | Card/prototype scripts and CSS | Existing DOM labels supply prose; plus/minus/disclosure arrows are invariant symbols; generated `attr(aria-label)` uses the translated attribute | No separate prose catalog |

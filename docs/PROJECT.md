@@ -1,10 +1,10 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-E1 complete; version 3.1 English phone support is agent-validated.
-ML-E2 implementation and local validation are complete; ML-09's exact CI ZIP
-and development-deployment verification are pending before the epic handoff.
-ML-06–08 are committed/pushed. Work stops after the localization foundation;
-ML-E3 requires a new execution instruction.
+**Status:** ML-E1 and ML-E2 complete; ML-01–09, ML-M1 and ML-G2 are
+agent-validated. Version 3.1 remains English only, with the localization
+foundation ready for bulk translation. All four ML-E2 stories are committed
+and pushed; ML-09's exact CI ZIP and development deployment passed verification.
+Work stops at the recorded handoff. ML-E3 / ML-10 requires a new instruction.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and

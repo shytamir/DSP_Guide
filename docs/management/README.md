@@ -41,8 +41,9 @@ has 28 weighted stories with agent-owned gates: English phone support first,
 then Simplified Chinese, German, and Japanese together. The owner approved the
 roadmap and authorized ML-01–05, stopping after that epic. ML-E1 is complete:
 the 3.1 candidate, exact CI ZIP, and development deployment are agent-validated.
-ML-E2 (ML-06–09) has passed local validation; its exact ML-09 CI ZIP/development
-verification is pending before the stop and handoff ahead of ML-E3.
+ML-E2 (ML-06–09) and ML-G2 are also agent-validated, including the exact ML-09
+CI ZIP and development deployment. The epic handoff is recorded; ML-E3 / ML-10
+has not started and requires a new execution instruction.
 Each completed story includes a management update
 and commit/push to `main`; production publication remains with the owner.
 [`../ROADMAP.md`](../ROADMAP.md) remains the sole current roadmap.
