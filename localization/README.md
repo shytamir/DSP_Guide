@@ -44,8 +44,51 @@ and factual values stay intact. Native term placeholders carry numeric IDs.
 Numbers, rates, ranks and technical units remain source-owned. Catalog text
 cannot inject HTML or executable attributes.
 
-Bulk annotation and catalogs belong to ML-08. Runtime UI integration belongs
-to ML-09. The three private sample passages are tooling fixtures, not accepted
-translations of their segments. The agent performs translation, proposition
-comparison, an independent target-language edit, and browser inspection in
-each language story; no owner language or device gate applies.
+## Working with catalogs
+
+`source.json` inventories 1,536 annotated HTML messages and attributes:
+A 392, B 227, C 257, D 228, E 250, F 182. Dynamic UI is integrated in ML-09.
+The source remains readable English HTML. Add stable `data-i18n` IDs when adding
+text and `data-i18n-attrs` IDs for translated attributes; do not nest text-message
+annotations. Run `node scripts/localization-source.mjs --write` after a reviewed
+English edit. Without `--write`, that command detects a stale inventory.
+
+Each `catalogs/<locale>.json` has `schema`, `locale`, and a `messages` array. An
+entry has `id`, the reviewed `sourceHash`, `termHash` and translated `text`.
+Copy current hashes from the source model; never update hashes to hide an
+unreviewed source or term change. Duplicate/unknown IDs, missing enabled messages
+and stale source/term hashes fail validation. Native-term hashes cover the terms
+used by that message, including their provenance.
+
+`{{strong_1}}…{{end_strong_1}}` and similar paired placeholders preserve inline
+markup. Move the whole pair for grammar; nesting must remain valid. Atomic
+`{{item_1106_1}}` / `{{tech_2203_1}}` placeholders render official names and keep
+their original elements, IDs and icons. `{{fact_1}}` retains the exact numeric
+value, rate, unit or technical symbol shown in `source.json`. Keyboard commands
+are atomic objects too. Every placeholder must occur exactly once. Catalogs
+contain plain text, not HTML; quotes and ampersands are serialized safely.
+Spelled-out quantities and the meaning of advice still require the roadmap's
+proposition-by-proposition review; syntax checks cannot prove a translation.
+
+Install the pinned authoring dependencies with
+`pnpm install --frozen-lockfile --ignore-scripts`. On the Windows agent host,
+append `--node-linker=hoisted --package-import-method=copy --store-dir artifacts/.pnpm-store`.
+Use a new or empty ignored output directory:
+
+```text
+node scripts/build-site.mjs artifacts/site
+node scripts/validate-localization.mjs artifacts/site
+node scripts/test-localization.mjs
+node scripts/build-site.mjs artifacts/preview-ja --preview ja --segment A
+```
+
+Serve the preview folder and open `/ja/`. It intentionally mixes translated
+samples with English, contains `PREVIEW-ONLY.txt` and noindex metadata, and fails
+the release allowlist. Never package it. Ordinary release generation currently
+emits English only. ML-09 connects it to delivery and complete-locale switching.
+Only four messages per language are private tooling samples, not accepted
+translations of segment A. Browser review covered the heading, intro/emphasis,
+and native-name/numeric dashboard example; the German rate example uses a label
+and colon to preserve the official name without an unnatural counted singular.
+All language stories still require translation, semantic comparison, a separate
+target-language read, and rendered inspection of the entire segment.

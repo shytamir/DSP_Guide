@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "locale": "zh-CN",
+  "messages": [
+    {
+      "id": "a.top.h1.001",
+      "sourceHash": "d710b20213394f92fbe574bde8eaef22f1510fb7ff0c58f53e84645532896e69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{span_1}}{{img_1}}{{end_span_1}}{{end_a_1}}{{span_2}}实用流程指南{{end_span_2}}"
+    },
+    {
+      "id": "a.top.p.004",
+      "sourceHash": "813315787988eea76a872a7b93e66cd3cfc0aa4ef4cc7db7331434c357d693e9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "我是在学习 DSP 的过程中写下这份指南的。每次完成一项建设后，我常常不知道下一步该做什么。你可以{{strong_1}}一边玩一边查阅{{end_strong_1}}，不必从头读到尾，更不用把内容背下来。"
+    },
+    {
+      "id": "a.opening.title.001",
+      "sourceHash": "68bd10654308837aa0a20f75189327b9f3e2a773ae7ed4fbd5e3c994dc7a363d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Dyson Sphere Program — 实用流程指南"
+    },
+    {
+      "id": "a.blue.td.004",
+      "sourceHash": "70293f6fe41db4e8f4caac58d6d68370c4e820a7320a612b7d297a2cb2ee64e2",
+      "termHash": "49f13dc1d0f6311d360a8f27dcb8c4c428dfae6ce4f5864685fdce4b504f0ef3",
+      "text": "四组设有库存上限的建筑供应生产线；{{item_6001_1}}产量为 {{fact_1}}{{fact_2}}；可用电力约为 {{fact_3}}"
+    }
+  ]
+}

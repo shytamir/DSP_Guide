@@ -15,6 +15,12 @@ deferred concepts remain deferred indefinitely in the historical archive.
 
 ## Purpose
 
+Localization authoring now generates static editions from annotated English
+HTML, a keyed source inventory, and minimal native terminology snapshots.
+Only English is deployable; the three four-message samples remain private.
+The authoring-only parser and catalogs are not runtime dependencies. ML-09
+will connect generation to staging/CI and add the language/UI delivery contract.
+
 This repository publishes a player-facing progression guide for _Dyson Sphere
 Program_. It is written primarily for new and returning players who understand
 individual factory actions but can lose track of which progression problem

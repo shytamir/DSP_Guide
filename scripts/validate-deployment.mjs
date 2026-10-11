@@ -3,6 +3,7 @@ import http from "node:http";
 import path from "node:path";
 import vm from "node:vm";
 import {
+  withoutLocalizationAnnotations,
   components,
   findElementsByClass,
   getAttribute,
@@ -107,7 +108,9 @@ check(
 
 const htmlPath = path.join(siteRoot, "index.html");
 check(fs.existsSync(htmlPath), "index.html is missing.");
-const html = fs.existsSync(htmlPath) ? fs.readFileSync(htmlPath, "utf8") : "";
+const html = fs.existsSync(htmlPath)
+  ? withoutLocalizationAnnotations(fs.readFileSync(htmlPath, "utf8"))
+  : "";
 check(!/<style\b/.test(html), "Inline CSS found in index.html.");
 check(
   !/<script(?![^>]*\bsrc=)/.test(html),

@@ -1,7 +1,11 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import vm from "node:vm";
-import { findElementsByClass, stripMarkup } from "./lib/markup-contracts.mjs";
+import {
+  findElementsByClass,
+  stripMarkup,
+  withoutLocalizationAnnotations,
+} from "./lib/markup-contracts.mjs";
 
 function makeCheckbox(phaseId, label) {
   const listeners = {};
@@ -209,7 +213,9 @@ assert.equal(
 );
 assert.match(unavailableStatus.textContent, /local saving is unavailable/i);
 
-const html = fs.readFileSync("index.html", "utf8");
+const html = withoutLocalizationAnnotations(
+  fs.readFileSync("index.html", "utf8"),
+);
 const identity = JSON.parse(
   fs.readFileSync("scripts/fixtures/checklist-identity.json", "utf8"),
 );

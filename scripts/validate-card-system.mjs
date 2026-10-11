@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import vm from "node:vm";
 import {
+  withoutLocalizationAnnotations,
   components,
   findElementsByClass,
   getAttribute,
@@ -9,7 +10,9 @@ import {
   stripMarkup,
 } from "./lib/markup-contracts.mjs";
 
-const html = fs.readFileSync("index.html", "utf8");
+const html = withoutLocalizationAnnotations(
+  fs.readFileSync("index.html", "utf8"),
+);
 const authoritativeRecipes = JSON.parse(
   fs.readFileSync(
     "dsp_universal_end_product_dag_v1_0/dsp_universal_recipe_hyperedges_v1_0.json",

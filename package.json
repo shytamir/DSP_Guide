@@ -1,0 +1,9 @@
+{
+  "name": "dsp-guide-authoring",
+  "private": true,
+  "type": "module",
+  "description": "Authoring-only static localization; no deployed dependencies",
+  "dependencies": {
+    "parse5": "8.0.1"
+  }
+}

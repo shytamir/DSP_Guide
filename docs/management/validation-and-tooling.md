@@ -87,6 +87,15 @@ storage. Its enlarged landscape scenario exercises actual overflowing details.
 
 ## Toolchain budget
 
+ML-08 adds pinned `parse5` 8.0.1 and a pnpm lockfile solely for static authoring.
+`build-site.mjs` preserves source-owned markup/facts and emits complete editions;
+`localization-source.mjs` inventories annotated messages and
+`validate-localization.mjs`/`test-localization.mjs` enforce freshness, coverage,
+placeholders, escaping, factual identity and deterministic output. Authors run
+these on source/catalog edits; ML-09 connects generation to CI. They replace
+manual locale HTML copies and the disposable parser probe. Nothing under
+`localization/`, `scripts/` or `node_modules/` is a deployed dependency.
+
 `extract-terminology.mjs` is an explicitly invoked provenance refresh: it reads
 only requested native names and retains ID/key/hash mappings. Its companion
 `validate-terminology.mjs` verifies all consumed names and rank composition from

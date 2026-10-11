@@ -143,9 +143,14 @@ deployment-only material in the published package.
 
 ## 8. Toolchain and authoritative data
 
-The project has no build step and no deployed package dependencies. Use Node.js
-to run the committed validation scripts and an ordinary static web server for
-browser testing.
+The deployed site has no package dependencies. Authoring uses pinned `parse5`
+8.0.1 and the committed pnpm lockfile to generate static editions. Install with
+`pnpm install --frozen-lockfile --ignore-scripts`; on this Windows host also use
+`--node-linker=hoisted --package-import-method=copy --store-dir artifacts/.pnpm-store`.
+Use Node.js for committed scripts and an ordinary static server for browser tests.
+`node scripts/build-site.mjs <empty-site-directory>` generates release output;
+`--preview <locale> --segment <A-F>` is private, incomplete output that must not
+deploy. See `localization/README.md` for the catalog and placeholder contract.
 
 Run the repository checks with:
 

@@ -1,3 +1,7 @@
+// English editorial assertions ignore authoring metadata, not content or facts.
+export const withoutLocalizationAnnotations = (html) =>
+  html.replace(/\sdata-i18n(?:-attrs)?="[^"]*"/g, "");
+
 export const components = Object.freeze({
   buildCard: Object.freeze({
     className: "build-card",

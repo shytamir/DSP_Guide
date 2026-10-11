@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "locale": "ja",
+  "messages": [
+    {
+      "id": "a.top.h1.001",
+      "sourceHash": "d710b20213394f92fbe574bde8eaef22f1510fb7ff0c58f53e84645532896e69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{span_1}}{{img_1}}{{end_span_1}}{{end_a_1}}{{span_2}}実践的な進行ガイド{{end_span_2}}"
+    },
+    {
+      "id": "a.top.p.004",
+      "sourceHash": "813315787988eea76a872a7b93e66cd3cfc0aa4ef4cc7db7331434c357d693e9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "このガイドは、私自身が DSP を覚えながら書いたものです。ひとつの設備を作り終えるたびに、次に何をすればよいのか分からなくなることがありました。{{strong_1}}プレイ中に開いておき{{end_strong_1}}、必要なときに参照してください。最初から最後まで読んで覚える必要はありません。"
+    },
+    {
+      "id": "a.opening.title.001",
+      "sourceHash": "68bd10654308837aa0a20f75189327b9f3e2a773ae7ed4fbd5e3c994dc7a363d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Dyson Sphere Program — 実践的な進行ガイド"
+    },
+    {
+      "id": "a.blue.td.004",
+      "sourceHash": "70293f6fe41db4e8f4caac58d6d68370c4e820a7320a612b7d297a2cb2ee64e2",
+      "termHash": "dc04e432e986a1b9125d258580a743d00acbf40e9cdb9d8164be75154b4daeee",
+      "text": "在庫に上限を設けた建設用設備の生産区画を四つ用意し、{{item_6001_1}}を {{fact_1}}{{fact_2}} で生産します。使用できる電力は約 {{fact_3}} が目安です。"
+    }
+  ]
+}

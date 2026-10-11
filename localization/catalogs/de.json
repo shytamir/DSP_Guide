@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "locale": "de",
+  "messages": [
+    {
+      "id": "a.top.h1.001",
+      "sourceHash": "d710b20213394f92fbe574bde8eaef22f1510fb7ff0c58f53e84645532896e69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{span_1}}{{img_1}}{{end_span_1}}{{end_a_1}}{{span_2}}Praktischer Leitfaden für deinen Spielfortschritt{{end_span_2}}"
+    },
+    {
+      "id": "a.top.p.004",
+      "sourceHash": "813315787988eea76a872a7b93e66cd3cfc0aa4ef4cc7db7331434c357d693e9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ich habe diesen Leitfaden geschrieben, während ich selbst DSP gelernt habe. Nach einem erfolgreichen Bauprojekt wusste ich oft nicht, was als Nächstes sinnvoll war. Lass ihn {{strong_1}}beim Spielen{{end_strong_1}} geöffnet – du musst ihn nicht von Anfang bis Ende lesen und auswendig lernen."
+    },
+    {
+      "id": "a.opening.title.001",
+      "sourceHash": "68bd10654308837aa0a20f75189327b9f3e2a773ae7ed4fbd5e3c994dc7a363d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Dyson Sphere Program — Praktischer Leitfaden für deinen Spielfortschritt"
+    },
+    {
+      "id": "a.blue.td.004",
+      "sourceHash": "70293f6fe41db4e8f4caac58d6d68370c4e820a7320a612b7d297a2cb2ee64e2",
+      "termHash": "a88a75c2258f7ac3a60a1d215d3f0b0d56a9612f13afe90515b2a67b310d36d3",
+      "text": "Vier Mall-Bereiche mit begrenzten Vorräten; {{item_6001_1}}: {{fact_1}}{{fact_2}}; verfügbare Leistung: etwa {{fact_3}}"
+    }
+  ]
+}

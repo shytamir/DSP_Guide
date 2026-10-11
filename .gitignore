@@ -5,3 +5,4 @@ Thumbs.db
 *.swp
 artifacts/
 *.zip
+node_modules/
