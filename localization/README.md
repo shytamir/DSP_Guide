@@ -131,8 +131,9 @@ and never deploy. For each of `en`, `zh-CN`, `de` and `ja`, run
 layout, interaction and navigation-edges. Review the resulting screenshots.
 Chinese, German and Japanese each have all 1,537 HTML/attribute messages and
 eight UI strings reviewed and agent-validated privately through ML-15, ML-21
-and ML-27 respectively. The implementation record preserves coverage,
-corrections and the ML-M2/ML-M3/ML-M4 handoffs. ML-28 combines their delivery.
+and ML-27 respectively. The [completed implementation record](../docs/archive/version-3.2/ROADMAP.md)
+preserves coverage, corrections and the language handoffs. Its ML-M5 handoff
+records the accepted combined 3.2 candidate and exact package identity.
 The original sample review covered the heading, intro/emphasis,
 and native-name/numeric dashboard example; the German rate example uses a label
 and colon to preserve the official name without an unnatural counted singular.

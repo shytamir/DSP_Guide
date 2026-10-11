@@ -1,14 +1,15 @@
 # Phone Support and Localization — Decisions and Investigation
 
-**Status:** Roadmap approved, 2026-10-11; ML-E1–E5 are agent-validated.
-ML-E6 / ML-28 is authorized and in combined candidate validation. Version 3.2
-enables all four complete editions; exact CI/development evidence is required
-before ML-M5 closes. Production publication remains the owner's action.
+**Status:** Archived, 2026-10-11. ML-01–28 and ML-M5 are complete and
+agent-validated, including the exact combined 3.2 package and development site.
+Production publication remains the owner's action. This historical record
+preserves settled investigations and decisions; current support and upkeep
+requirements live in the active validation and localization authoring contracts.
 Early investigations and planning decisions are resolved below. Historical
 browser samples are disposable feasibility work, not product acceptance.
 Story scope, progress, and sequencing live only in the linked roadmap.
 
-**Roadmap:** [Current roadmap](../ROADMAP.md).
+**Roadmap:** [Completed implementation roadmap](ROADMAP.md).
 
 ## Owner direction and boundaries
 
@@ -19,7 +20,7 @@ Story scope, progress, and sequencing live only in the linked roadmap.
   Russian were removed from the initial scope by owner direction.
 - Conduct early investigations without launching the game or modifying its
   files. Inspect retained data and installed localization files read-only.
-- Keep the two [deferred concepts](../archive/deferred-indefinitely/) deferred.
+- Keep the two [deferred concepts](../deferred-indefinitely) deferred.
 - The owner delegates design decisions, language review, technical acceptance,
   and story closure to the agent. There will be no owner device-testing,
   native-speaker, or owner-acceptance gates during implementation. Each finished
@@ -29,7 +30,7 @@ Story scope, progress, and sequencing live only in the linked roadmap.
   three translation epics. Validate the combined 3.2 candidate, commit/push to
   main and stop with a handoff. Production publication is outside this run.
 
-The historical [no-mobile-polish record](../archive/no-mobile-polish-story.md)
+The historical [no-mobile-polish record](../no-mobile-polish-story.md)
 does not prohibit this newly authorized planning. The published site's
 best-effort mobile policy remains its current support statement until the new
 contract is agreed, implemented, and accepted.
@@ -56,7 +57,7 @@ source inspection and bounded local browser observations, not a full audit.
 
 ### Phone layout and interaction
 
-- [guide.css](../../assets/css/guide.css) already has 900 px and 620 px
+- [guide.css](../../../assets/css/guide.css) already has 900 px and 620 px
   responsive rules: a horizontally scrolling bottom phase rail, single-column
   card flows, scrolling tables, and stacked checklist/glossary layouts.
 - Integrated desktop Chromium was resized to 390 x 844 and 320 x 740. The
@@ -82,14 +83,14 @@ source inspection and bounded local browser observations, not a full audit.
   word count. The DOM contains 19 production cards, 25 tables, 218 technology
   references, 1,033 prototype references, and 66 checklist inputs.
 - Only 25 checklist inputs have explicit keys in source. The other 41 receive
-  keys derived from English text by [checklists.js](../../assets/js/checklists.js).
+  keys derived from English text by [checklists.js](../../../assets/js/checklists.js).
   Translating their text directly would change identity. Freeze existing keys
   and preserve saved-state compatibility before introducing translated copy.
 - Localization includes prose, phase labels, tooltips, producer descriptions,
   card controls, checklist messages, accessible names, titles, metadata, and
   short UI labels. Numeric IDs, recipes, prerequisites, rates, anchors, and
   checklist identity must remain separate from translated display text.
-- [tech-tooltips.js](../../assets/js/tech-tooltips.js) builds English labels
+- [tech-tooltips.js](../../../assets/js/tech-tooltips.js) builds English labels
   such as Required/Implicit/Unlocks and qualifies ranks with `Lv`. Its data also
   contains English cube labels and compact unlock labels. These are distinct
   translation surfaces, not just a paragraph translation task.
@@ -133,7 +134,7 @@ game compatibility or change the current compatibility declaration.
 
 - The current site has one English `index.html`, local JSON, shared CSS, and
   small independent scripts. There is no content-generation step.
-- [Deployment validation](../../scripts/validate-deployment.mjs) expects exactly
+- [Deployment validation](../../../scripts/validate-deployment.mjs) expects exactly
   `index.html`, `assets/`, and the licensing records. Locale directories would
   require deliberate staging, package, link, metadata, and serving changes.
 - Current card/deployment/checklist validators contain English-label and

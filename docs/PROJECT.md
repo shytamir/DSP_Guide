@@ -1,17 +1,15 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-E6 / ML-28 is authorized and in candidate validation. Version 3.2
-enables the complete English, Simplified Chinese, German and Japanese editions.
-ML-E1–E5 and their milestones are agent-validated; each translated catalog has
-1,537 messages and eight UI strings. Combined acceptance requires local browser
-checks, the exact CI ZIP and development deployment evidence before closure.
-Version 3.0 remains the published product and passed final cold verification on
-2026-08-27. On
-2026-10-11, the owner requested a complete roadmap draft for phones first and
-Simplified Chinese, German, and Japanese localization, approved the roadmap,
-and subsequently authorized execution through ML-28; production publication remains owner-controlled.
+**Status:** Maintenance; ML-01–28 and all six epics are complete and
+agent-validated as of 2026-10-11. The four-language 3.2 candidate passed the
+full local browser matrix, exact CI ZIP and development deployment checks.
+Each translated catalog has 1,537 messages and eight UI strings. The
+[ML-M5 handoff](archive/version-3.2/ROADMAP.md#ml-m5-handoff--2026-10-11)
+identifies the tested package and evidence limits. Production publication
+remains the owner's action. Version 3.0 is the last recorded published product
+and passed final cold verification on 2026-08-27.
 
-[`ROADMAP.md`](ROADMAP.md) is the sole active roadmap. The two previously
+[`ROADMAP.md`](ROADMAP.md) is the current maintenance placeholder. The two previously
 deferred concepts remain deferred indefinitely in the historical archive.
 
 ## Purpose
@@ -20,7 +18,7 @@ Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
 All four editions are enabled. Chinese, German and Japanese have completed
 linguistic review, fact checks and their private browser matrices; the combined
-candidate verifies delivery and shared behavior.
+candidate also passed delivery and shared-behavior validation.
 Narrow main text can wrap long native names and German compounds at 200% text.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized
@@ -169,11 +167,12 @@ cold verification. It is external to the repository-supplied static package.
 
 ## Planning state
 
-The active
-[`mobile and localization planning record`](management/mobile-localization-plan.md)
-contains completed early investigations and settled support, delivery, language,
-and quality decisions. The roadmap defines 28 weighted stories: an English phone
-candidate (3.1), then a four-language candidate (3.2). Phone targets are current
+The [archived phone/localization records](archive/version-3.2/)
+preserve the completed investigations, 28 stories, language reviews and exact
+3.1/3.2 candidate evidence. There is no active implementation epic. Current
+support checks are maintained in
+[validation and tooling](management/validation-and-tooling.md#phone-and-language-acceptance-contract).
+Phone targets are current
 Android Chrome on the S23 Ultra class and current iOS Safari, assessed through
 agent-operated browser emulation. Desktop behavior must be preserved. The
 published 3.0 product retains its best-effort mobile policy. The 3.2 candidate
@@ -182,14 +181,13 @@ contract; 320 px is a stress check. Physical devices, branded iOS Safari, OS
 fonts, and assistive technologies have not been certified. Spanish and Russian
 remain excluded.
 
-The roadmap is approved; execution is authorized through ML-28, then a handoff.
-There are no outstanding owner design, language-review, or device-testing
-decisions. Once implementation is instructed, the agent owns review, correction,
-acceptance, and closure, with a management update and commit/push to `main` after
-each story. No owner or native-speaker acceptance gate applies. Report results
-as agent-validated and preserve the limitations of emulation and self-review.
-Publication remains the owner's action. Investigations and implementation must
-not launch the game or alter its files; installed locale data may be read.
+The owner delegated decisions, linguistic review, acceptance and closure for
+ML-01–28. Every story has validation and a management-bearing commit/push;
+candidate stories retain their separate post-push evidence. No decision remains
+pending within that completed scope. Publication remains the owner's action.
+Later English edits must reconcile every affected enabled translation under the
+[authoring contract](../localization/README.md#maintaining-an-enabled-edition).
+No game launch or game-file modification is needed to build or validate.
 
 The YELLOW/PURPLE problem-resolver concept and Dark Fog COMBAT/PEACE control
 concept remain deferred indefinitely. Their historical records, including the

@@ -33,27 +33,20 @@ record.
 
 ## Planning state
 
-The project is delivering phone support and localization under
-[`mobile-localization-plan.md`](mobile-localization-plan.md).
-The owner requested a complete draft and delegated design, language review,
-technical acceptance, and eventual story closure on 2026-10-11. The final draft
-has 28 weighted stories with agent-owned gates: English phone support first,
-then Simplified Chinese, German, and Japanese together. The owner approved the
-roadmap and authorized ML-01–05, stopping after that epic. ML-E1 is complete:
-the 3.1 candidate, exact CI ZIP, and development deployment are agent-validated.
-ML-E2 (ML-06–09) and ML-G2 are also agent-validated, including the exact ML-09
-CI ZIP and development deployment. ML-E3 (ML-10–15) and ML-M2 are now
-agent-validated: the complete Chinese edition has passed its linguistic,
-factual and private browser checks. ML-E4 (ML-16–21) and ML-M3 are also
-agent-validated: German is complete privately, with whole-edition review and
-the full browser matrix passed. ML-E5 (ML-22–27) and ML-M4 are agent-validated:
-Japanese is complete privately, with whole-edition review and the full browser
-matrix passed. ML-E6 / ML-28 is now authorized and in combined 3.2 candidate
-validation, including exact CI ZIP and development-deployment evidence, then
-a handoff. Production publication remains the owner's action.
-Each completed story includes a management update
-and commit/push to `main`; production publication remains with the owner.
-[`../ROADMAP.md`](../ROADMAP.md) remains the sole current roadmap.
+The project is in maintenance with no active implementation roadmap. All
+ML-01–28 stories and six phone/localization epics are complete and agent-validated
+under the owner's delegated acceptance policy. Each story has validation,
+management updates and a commit/push to `main`; candidate delivery evidence is
+retained separately from publication.
+
+The [completed records](../archive/version-3.2/) preserve investigations and
+execution. The [ML-M5 handoff](../archive/version-3.2/ROADMAP.md#ml-m5-handoff--2026-10-11)
+identifies the four-language 3.2 package, exact CI/development checks and limits.
+Production publication remains the owner's action. The active
+[validation contract](validation-and-tooling.md#phone-and-language-acceptance-contract)
+and [localization authoring guide](../../localization/README.md) govern upkeep.
+[`../ROADMAP.md`](../ROADMAP.md) is the sole current maintenance placeholder;
+new implementation requires new direction.
 
 The published version 3.0 sequence is indexed under
 [`../archive/version-3.0/`](../archive/version-3.0/). The two previously named

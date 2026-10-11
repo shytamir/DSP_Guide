@@ -7,13 +7,14 @@ specific approved story may override this general process.
 
 **Phone/localization exception:** the owner's 2026-10-11 direction delegates
 design decisions, linguistic review, technical acceptance, and closure for
-ML-01–28 to the agent under [the roadmap](../ROADMAP.md). Once implementation
+ML-01–28 to the agent under the [completed roadmap](../archive/version-3.2/ROADMAP.md). Once implementation
 is instructed, review/correct and close each story as `agent-validated`, update
 its management ledger, and commit/push to `main` without an owner acceptance
 checkpoint. Candidate evidence may require the documented follow-up commit.
 The owner retains production publication. Draft preparation does not start
 implementation. This specific policy overrides owner-gate defaults below only
 for this initiative; required checks and explicit limitations remain mandatory.
+ML-01–28 is now complete. This historical exception does not authorize new work.
 
 ## Management principles
 

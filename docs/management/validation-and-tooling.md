@@ -20,14 +20,47 @@ evidence justified by the change.
 Desktop and the four-language 3.2 phone candidate are presentation targets.
 Production 3.0 retains its previous policy until the owner publishes a candidate.
 
-The [phone/localization roadmap](../ROADMAP.md) explicitly changes that target
-when its stories are implemented. Its
-[validation contract](mobile-localization-plan.md#validation-contract) adds
-mobile Chromium/WebKit emulation, per-locale linguistic/factual review, and
-candidate package checks. The owner delegates acceptance to the agent; no
-physical-device, native-speaker, or owner gate is required. Record emulator and
-self-review limitations without presenting them as physical-device or independent
-reader validation. Publication remains separate from candidate acceptance.
+The phone/localization acceptance contract uses mobile Chromium/WebKit emulation,
+per-locale linguistic/factual review and exact candidate package checks. The owner
+delegated acceptance of ML-01–28 to the agent without physical-device,
+native-speaker or owner gates. Record emulation and self-review limits without
+presenting them as physical-device or independent reader validation. Publication
+remains separate from candidate acceptance; new work still requires direction.
+
+### Phone and language acceptance contract
+
+| Surface | Required evidence |
+| --- | --- |
+| Android | Chromium mobile/touch at 412 × 915 and 360 × 800, scale factor 3; S23-class layout proxies. Record installed stable Chrome coverage when available. |
+| iOS | WebKit mobile/touch at 393 × 852 and 430 × 932, scale factor 3. Refresh the stable Safari/iOS target at candidate freeze and record pinned engine versions. |
+| Boundaries | 480 px portrait, 915 × 412 and 852 × 393 landscape, 200% text, 320 px stress and 768 px tablet smoke without tablet-specific support. |
+| Desktop | Chromium at 1280 × 800 and 1920 × 1080, including keyboard/focus and reviewed screenshots. |
+
+Check phases/stages/references, direct hashes/Back, cards, longest technology
+details, tables, checklists, save/reload/reset, denied storage, sheet dismissal
+and focus recovery. Review every section in each edition at primary widths and
+representative high-risk states at boundaries. At candidate freeze run all four
+editions and every language pair, preserving hashes and saved entries. Inspect
+screenshots as well as clipping/overflow results. Primary controls require
+44 × 44 CSS px targets; inline references remain individually operable without
+forcing every prose line to that height. Safe-area/viewport simulations do not
+certify physical devices, mobile browser chrome, OS fonts or assistive technology.
+
+For changed language content, translate against the native terminology map and
+complete source context; compare propositions, facts, negation, advice strength,
+default/optional routes and pace/gate distinctions; then read the target alone
+for natural phrasing, register, grammar, punctuation and justified transliteration.
+Review rendered output and recheck meaning after corrections. Whole-edition
+review catches segment drift. Follow the [language rules](../../localization/style.md)
+and [upkeep procedure](../../localization/README.md#maintaining-an-enabled-edition).
+No missing/stale entries, meaning or terminology errors, known unnatural phrasing
+or blocking readability defects may remain. Self-review is not independent
+native-speaker endorsement; real-user feedback remains future evidence.
+
+Tier 3 includes applicable source validators, deterministic generation, staged
+and extracted-ZIP validation, this browser matrix and exact commit/artifact-bound
+development checks. No game launch/write is required. Failed required checks
+block candidate acceptance; they cannot be deferred to readers.
 
 ## Durable and story-specific checks
 

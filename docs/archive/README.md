@@ -6,6 +6,9 @@ status or authorize work.
 
 ## Archive index
 
+- [`version-3.2/`](version-3.2/) preserves the completed 28-story phone and
+  localization initiative, investigations and exact 3.1/3.2 candidate evidence.
+  The 3.2 candidate is agent-validated; production publication remains pending.
 - [`version-3.0/`](version-3.0/) contains the completed 18-story sequence, its
   release-candidate roadmap, source review, and supporting evidence.
 - [`deferred-indefinitely/`](deferred-indefinitely/) contains named concepts
