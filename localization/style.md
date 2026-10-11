@@ -112,8 +112,13 @@ may use Montagemaschine. The generator displays the existing source Mk.I grade
 as Typ I in German, preserving its identity separately from number formatting.
 Use Depot Typ I consistently for that storage grade. Name the technology
 Wärmeenergie and the enemy Dunkelnebel; generic Wärmekraft remains suitable
-when describing generation. Preserve protected item names, quantities and units. Use a
-label plus quantity or “vom Typ” where a protected singular cannot be declined.
+when describing generation. Preserve protected item names, quantities and units.
+Recast sentences around actions, quantities, production or storage instead of
+forcing an invariant singular into ordinary case or plural syntax. A native
+label in parentheses or quotes can identify an otherwise natural description.
+Keep valid recipe/quantity lists; do not make “vom Typ” or “Produkt” a routine
+grammar workaround. Use those words only when an actual type distinction or
+product contrast matters.
 Keep the image's actual English title, external product names, the exact
 Install with Mod Manager action and legal credit; explain the install action
 in German. These are deliberate exceptions, not untranslated guide prose.

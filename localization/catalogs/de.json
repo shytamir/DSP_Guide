@@ -1596,7 +1596,7 @@
       "id": "a.blue.p.008",
       "sourceHash": "6907e160f29c99a2bc535fb625146dfc364cbfcd4b1457c8e28d3e684445dcc1",
       "termHash": "75d63c351094b20e74d99cba647ad8c764948832dbafb8284a3cba9424a6631b",
-      "text": "Schalte als Nächstes {{tech_1002_1}} frei und automatisiere die blaue Linie. Investiere ihre ersten Würfel in {{tech_1412_1}}. Damit wird {{item_1006_1}} dauerhaft gebraucht, und das Stromnetz kann wachsen, ohne einen weiteren Kontinent mit Gebäuden des Typs {{item_2203_1}} zu bedecken."
+      "text": "Schalte als Nächstes {{tech_1002_1}} frei und automatisiere die blaue Linie. Investiere ihre ersten Würfel in {{tech_1412_1}}. Damit wird {{item_1006_1}} dauerhaft gebraucht, und das Stromnetz kann wachsen, ohne einen weiteren Kontinent mit Windkraftanlagen ({{item_2203_1}}) zu bedecken."
     },
     {
       "id": "a.blue.p.009",
@@ -1626,7 +1626,7 @@
       "id": "a.blue.p.012",
       "sourceHash": "d8c15496c66ae2ace3db0155aea1a36282680d9ac623c3407ea25a994c201973",
       "termHash": "4836e03efbe06c5a02e0e9e129926bc08f63fbb708be170e0f90f494f7908d49",
-      "text": "{{strong_1}}{{item_6001_1}}: {{fact_1}}{{fact_2}}{{end_strong_1}} hält die frühe Forschung am Laufen; {{strong_2}}{{fact_3}}{{end_strong_2}} ist ein komfortabler Wert, den du einmal ordentlich aufbauen kannst. Ziele zunächst auf etwa {{strong_3}}{{fact_4}}{{end_strong_3}} Leistung. Acht Gebäude vom Typ {{item_2204_1}} bilden zusammen mit der vorhandenen Windkraft vom Typ {{item_2203_1}} ein praktisches Netz. Baue die Windkraft aus der Mall weiter aus: Kostenlose Grunderzeugung schafft Spielraum, wenn die Lieferung von {{item_1006_1}} einmal stockt."
+      "text": "{{strong_1}}{{item_6001_1}}: {{fact_1}}{{fact_2}}{{end_strong_1}} hält die frühe Forschung am Laufen; {{strong_2}}{{fact_3}}{{end_strong_2}} ist ein komfortabler Wert, den du einmal ordentlich aufbauen kannst. Ziele zunächst auf etwa {{strong_3}}{{fact_4}}{{end_strong_3}} Leistung. Mit acht Wärmekraftwerken ({{item_2204_1}}) und der vorhandenen Windkraft ({{item_2203_1}}) hast du ein praktisches Netz. Baue die Windkraft aus der Mall weiter aus: Kostenlose Grunderzeugung schafft Spielraum, wenn die Lieferung von {{item_1006_1}} einmal stockt."
     },
     {
       "id": "a.blue.h2.004",
@@ -2286,7 +2286,7 @@
       "id": "a.blue.p.015",
       "sourceHash": "6139cf10febb126833c333c54820ea57531c7891a559a5268ad36e05c408070a",
       "termHash": "94791ee6e71d75556e5a07893ab2ac18bb97e61b1acc4795f9ce0d633a1167cf",
-      "text": "{{strong_1}}Stromausfälle.{{end_strong_1}} Acht Gebäude vom Typ {{item_2204_1}} helfen nur, solange {{item_1006_1}} sie erreicht. Ergänze weiter Windkraft aus deiner Mall ({{item_2203_1}}), damit ein unterbrochenes Brennstoffband nicht Mall und Labore zugleich lahmlegt."
+      "text": "{{strong_1}}Stromausfälle.{{end_strong_1}} Die acht Wärmekraftwerke ({{item_2204_1}}) helfen nur, solange {{item_1006_1}} sie erreicht. Ergänze weiter Windkraft aus deiner Mall ({{item_2203_1}}), damit ein unterbrochenes Brennstoffband nicht Mall und Labore zugleich lahmlegt."
     },
     {
       "id": "a.blue.p.016",
@@ -2364,7 +2364,7 @@
       "id": "b.red.p.001",
       "sourceHash": "6a7a8da8f1882cc12721db65001af06e3aa0f91f8238e848300460e4e4e1542c",
       "termHash": "deca2e22fad50ee500271ed82f56003f9b75a56f18d3b0375d24aa70c3a8d952",
-      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Durchgehende blaue Forschung.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Eine vollständige Linie aus {{item_1006_1}} und Öl bis zum Endprodukt {{item_6002_1}}.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Dauerhafte rote Forschung und einen Vorrat des Produkts „{{item_1114_1}}“ für spätere Chemie.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} {{a_1}}{{img_1}}[ILS]{{end_a_1}}"
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Durchgehende blaue Forschung.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Eine vollständige Linie aus {{item_1006_1}} und Öl bis zum Endprodukt {{item_6002_1}}.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Dauerhafte rote Forschung und einen Vorrat an „{{item_1114_1}}“ für spätere Chemie.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} {{a_1}}{{img_1}}[ILS]{{end_a_1}}"
     },
     {
       "id": "b.red.h3.001",
@@ -2460,7 +2460,7 @@
       "id": "b.red.p.003",
       "sourceHash": "b538c2517d665ca9a1926f2c6cc17e8883b539b40ea1514459d2cc80d32a2e3a",
       "termHash": "11349b85b8be777c46c8be4ea928285b626cf40a6f07c5148a0b2c27609a5da5",
-      "text": "{{item_1120_1}} versorgt jetzt die rote Forschung und wird später erneut wertvoll. „{{item_1114_1}}“ hat noch keinen dringenden Abnehmer, erleichtert aber später den Einstieg in die Herstellung der Produkte {{item_1115_1}}, „{{item_1117_1}}“ und {{item_1116_1}}. Gib jedem Produkt ein eigenes Band mit angeschlossenem {{item_2106_1}} und genug Platz zum Weiterfließen. Es geht nicht darum, Überschüsse wegzuwerfen, sondern darum, dass nützliche Zukunftsvorräte die heutige Fabrik nicht lahmlegen."
+      "text": "{{item_1120_1}} versorgt jetzt die rote Forschung und wird später erneut wertvoll. „{{item_1114_1}}“ hat noch keinen dringenden Abnehmer, erleichtert aber später den Einstieg in weitere Chemiezweige: {{item_1115_1}}, „{{item_1117_1}}“ und {{item_1116_1}}. Gib jedem Produkt ein eigenes Band mit angeschlossenem {{item_2106_1}} und genug Platz zum Weiterfließen. Es geht nicht darum, Überschüsse wegzuwerfen, sondern darum, dass nützliche Zukunftsvorräte die heutige Fabrik nicht lahmlegen."
     },
     {
       "id": "b.red.summary.001",
@@ -2838,19 +2838,19 @@
       "id": "b.red.p.011",
       "sourceHash": "9ccf847837e9c5fc9b5d2c9a20c148d1e337621ffbc04dc18d10a9f2cc47f475",
       "termHash": "162999a1eaecac6da4a8d0661da973993f867c0962395fe02113557cf1258b09",
-      "text": "Baue eine feste Batterie aus acht Geschützen vom Typ {{item_3005_1}} am vorhandenen Stromnetz. Versorge sie mit Munition vom Typ {{item_1609_1}} und prüfe, ob jedes Geschütz geladen ist. Sobald die Batterie bereit ist:"
+      "text": "Baue eine feste Batterie aus acht Geschützen ({{item_3005_1}}) am vorhandenen Stromnetz. Lade die Geschütze mit Raketen ({{item_1609_1}}) und prüfe, ob jedes Geschütz geladen ist. Sobald die Batterie bereit ist:"
     },
     {
       "id": "b.red.li.005",
       "sourceHash": "b4aea25384e77e457b5635a0b270e85689fb21a0f9fc1da6c3d83b60f84b679d",
       "termHash": "5b0b34abd72a2622b38cffb0d0d35483c650859c8539e7d65b16c09ef38091d1",
-      "text": "{{strong_1}}Strom bis an den Rand bringen.{{end_strong_1}} Verlängere das Netz mit Türmen vom Typ {{item_2201_1}} in Richtung der planetaren Basis und halte knapp außerhalb ihrer Angriffsreichweite an. Wenn du sie zu früh provozierst, ziehe dich zurück und schieße Verfolger ab. Prüfe dann, ob du versehentlich ein Gebäude vom Typ {{item_2201_2}} innerhalb der Angriffsreichweite zurückgelassen hast."
+      "text": "{{strong_1}}Strom bis an den Rand bringen.{{end_strong_1}} Verlängere das Netz mit Strommasten ({{item_2201_1}}) in Richtung der planetaren Basis und halte knapp außerhalb ihrer Angriffsreichweite an. Wenn du sie zu früh provozierst, ziehe dich zurück und schieße Verfolger ab. Prüfe dann, ob du versehentlich einen {{item_2201_2}} innerhalb der Angriffsreichweite zurückgelassen hast."
     },
     {
       "id": "b.red.li.006",
       "sourceHash": "6ae5d78051bbf83d5147ccde685e2e7a3201b6f5803f84ce342a0766d71dfac5",
       "termHash": "2bd1cf7d11e2eb8dc2167c6e75dd9906a01c536671a2e1e5d8a34d6e2b502830",
-      "text": "{{strong_1}}Den Beschuss eröffnen.{{end_strong_1}} Platziere den ersten mit Strom versorgten {{item_3007_1}} innerhalb der Angriffsreichweite, aber nicht direkt an der Basis. Lass ihn die Aufmerksamkeit auf sich ziehen und gib der Batterie Zeit, Munition vom Typ {{item_1609_1}} ins Ziel zu bringen."
+      "text": "{{strong_1}}Den Beschuss eröffnen.{{end_strong_1}} Platziere den ersten mit Strom versorgten {{item_3007_1}} innerhalb der Angriffsreichweite, aber nicht direkt an der Basis. Lass ihn die Aufmerksamkeit auf sich ziehen und gib der Batterie Zeit, ihre Raketen ({{item_1609_1}}) ins Ziel zu bringen."
     },
     {
       "id": "b.red.li.007",
@@ -2874,7 +2874,7 @@
       "id": "b.red.div.003",
       "sourceHash": "ed8803559996ae0e49942bc71dd361010764305027bf011d5de5f814295e0507",
       "termHash": "69fe78a04bea4bef2deaa0c504167812053b55e8736d5c3e9330e374092dbe38",
-      "text": "{{strong_1}}⚠ Die Batterie weiter versorgen.{{end_strong_1}} Wenn die Geschütze nicht mehr feuern, prüfe Strom und Nachschub an Munition vom Typ {{item_1609_1}}, bevor du den Plan änderst."
+      "text": "{{strong_1}}⚠ Die Batterie weiter versorgen.{{end_strong_1}} Wenn die Geschütze nicht mehr feuern, prüfe Strom und Munitionsnachschub ({{item_1609_1}}), bevor du den Plan änderst."
     },
     {
       "id": "b.red.h2.006",
@@ -2886,7 +2886,7 @@
       "id": "b.red.li.010",
       "sourceHash": "6e70c89c858bf0e5e7c1a5a13341e822b1346e8e2e900ad011245724d627aa38",
       "termHash": "0bd3c2599b8f3d760603afbc6647be0dadbde67b0606a69dc4df6b45bf68663a",
-      "text": "{{label_1}} {{input_1}}Zwei Labore vom Typ {{item_2901_1}} dauerhaft {{item_6002_1}} mit {{fact_1}}{{fact_2}} erzeugen, während {{item_1120_1}} und {{item_1114_1}} weiter aus der {{item_2308_1}} abfließen. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}zwei Forschungslabore ({{item_2901_1}}) dauerhaft {{item_6002_1}} mit {{fact_1}}{{fact_2}} erzeugen, während {{item_1120_1}} und {{item_1114_1}} weiter aus der {{item_2308_1}} abfließen. {{end_label_1}}"
     },
     {
       "id": "b.red.h2.007",
@@ -3330,7 +3330,7 @@
       "id": "b.ils.td.029",
       "sourceHash": "273ed0e41948b9f764371e873fa272e57745512240f4297cb614e28c1515acc7",
       "termHash": "77959c130a32b7701296a9c547d33e435b6870bdb890dab6a163dce6b03e0a6a",
-      "text": "{{item_1303_1}}: {{fact_1}} Stück für zwei Stationen und fünf Schiffe vom Typ {{item_5002_1}}"
+      "text": "{{item_1303_1}}: {{fact_1}} Stück für zwei Stationen und fünf Frachtschiffe ({{item_5002_1}})"
     },
     {
       "id": "b.ils.h3.004",
@@ -3534,7 +3534,7 @@
       "id": "b.ils.li.015",
       "sourceHash": "7b1286fb547161a5cf6f2edc4de5f80b6d8034ec9824f0dfd51637261a1ba219",
       "termHash": "73c499a03a1bc489dc2af3aa9ad2c1a0d91826bfe8fd6a2fd7abeeaac87fe7ca",
-      "text": "{{strong_1}}Zuerst die Bauteile sichern.{{end_strong_1}} Stelle ein {{item_2101_1}} neben den vorübergehenden Montagebereich und lege jede fertige Komponentencharge aus der Bedarfstabelle sofort hinein. Die normale Produktion darf nichts aus dieser Kiste entnehmen. Baue genau nach Tabelle und höre dann auf: Eine zusätzliche Station oder ein Frachtschiff kann unbemerkt Vorräte der Typen {{item_1303_1}}, Legierung oder {{item_1206_1}} verbrauchen, die für den nächsten Schritt gedacht sind."
+      "text": "{{strong_1}}Zuerst die Bauteile sichern.{{end_strong_1}} Stelle ein {{item_2101_1}} neben den vorübergehenden Montagebereich und lege jede fertige Komponentencharge aus der Bedarfstabelle sofort hinein. Die normale Produktion darf nichts aus dieser Kiste entnehmen. Baue genau nach Tabelle und höre dann auf: Eine zusätzliche Station oder ein Frachtschiff kann unbemerkt die Vorräte für den nächsten Schritt aufbrauchen: {{item_1303_1}}, Legierung oder {{item_1206_1}}."
     },
     {
       "id": "b.ils.strong.001",
@@ -3648,7 +3648,7 @@
       "id": "b.ils.li.027",
       "sourceHash": "ed13fc37b8ec128948b82d48151a7ff6bb2ddf801817d54ccc55b92bef1c22ce",
       "termHash": "6a2fa0f9c53340e974b1123c3519eb32ab7a393824ac2b8f2ad84f9259ab22c9",
-      "text": "{{strong_1}}Die Transportausrüstung zusammensetzen.{{end_strong_1}} Stelle im Replikator oder in vorübergehenden Montagemaschinen aus {{item_1103_1}}, {{item_1106_1}}, {{item_1303_1}} und {{item_1206_1}} zwei PLS-Komponenten her. Baue diese mit {{item_1107_1}} und {{item_1206_2}} zu zwei ILS aus. Kombiniere danach {{item_1107_2}}, {{item_1303_2}} und „{{item_1406_1}}“ zu fünf Schiffen vom Typ {{item_5002_1}}. Lege jedes fertige Teil zurück in die reservierte Kiste, bis der ganze Satz vorliegt."
+      "text": "{{strong_1}}Die Transportausrüstung zusammensetzen.{{end_strong_1}} Stelle im Replikator oder in vorübergehenden Montagemaschinen zwei PLS-Komponenten her. Die benötigten Materialien sind {{item_1103_1}}, {{item_1106_1}}, {{item_1303_1}} und {{item_1206_1}}. Baue die beiden PLS-Komponenten zu zwei ILS aus; dafür brauchst du {{item_1107_1}} und {{item_1206_2}}. Mit den nächsten Komponenten — {{item_1107_2}}, {{item_1303_2}} und „{{item_1406_1}}“ — stellst du anschließend fünf Frachtschiffe ({{item_5002_1}}) her. Lege jedes fertige Teil zurück in die reservierte Kiste, bis der ganze Satz vorliegt."
     },
     {
       "id": "b.ils.blockquote.003",
@@ -3690,7 +3690,7 @@
       "id": "b.ils.li.030",
       "sourceHash": "2f289afab188aafc5f719c999bc1993252f41720deb779ad914a15b83adb1369",
       "termHash": "c4fe313cdb67b34d26757dd55441c272f615aa171146d71a2179cd3c31159f1c",
-      "text": "{{label_1}} {{input_1}}Zwei ILS und fünf Schiffe vom Typ {{item_5002_1}} im Einsatz sind. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}zwei ILS und fünf Frachtschiffe ({{item_5002_1}}) im Einsatz sind. {{end_label_1}}"
     },
     {
       "id": "b.ils.li.031",
@@ -3756,7 +3756,7 @@
       "id": "c.yellow.td.002",
       "sourceHash": "fc6884e69319250b68bb7d87f0973ee89a4395a33dd507a7746017c5e186a619",
       "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
-      "text": "Drei Labore für gelbe Würfel mit lokaler Chemie und Importen des Produkts {{item_1106_1}} versorgen"
+      "text": "Drei Labore für gelbe Würfel mit lokaler Chemie und importierten {{item_1106_1}} versorgen"
     },
     {
       "id": "c.yellow.td.003",
@@ -4122,7 +4122,7 @@
       "id": "c.purple.p.001",
       "sourceHash": "d629f92885efc4f38081e3e8c06dd1a94528465dc9426eef575f22bdd91422b8",
       "termHash": "9a47cbe87ba50d2fc342ec894d4a413619c4ba577d6251915bf74ec998143d0d",
-      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Dauerhafte interplanetare Versorgung und gelbe Forschung.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Die Produktion von {{item_1123_1}}, {{item_1303_1}}, {{item_1115_1}} und Silizium sowie die Chemiekapazität zu einem richtigen violetten Bezirk ausbauen.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Stabile violette Forschung und die beiden Technologiezweige, die bei Grün zusammenkommen.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} Normalerweise {{a_1}}{{img_1}}[GRÜN]{{end_a_1}}, oder {{a_2}}{{img_2}}[WARP]{{end_a_2}}, um eine Abkürzung mit einem konkret ausgewählten seltenen Rohstoff vorzubereiten."
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Dauerhafte interplanetare Versorgung und gelbe Forschung.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Die vorhandenen Linien — {{item_1123_1}}, {{item_1303_1}}, {{item_1115_1}} und Silizium — zusammen mit der Chemiekapazität zu einem richtigen violetten Bezirk ausbauen.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Stabile violette Forschung und die beiden Technologiezweige, die bei Grün zusammenkommen.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} Normalerweise {{a_1}}{{img_1}}[GRÜN]{{end_a_1}}, oder {{a_2}}{{img_2}}[WARP]{{end_a_2}}, um eine Abkürzung mit einem konkret ausgewählten seltenen Rohstoff vorzubereiten."
     },
     {
       "id": "c.purple.h3.001",
@@ -4218,7 +4218,7 @@
       "id": "c.purple.p.002",
       "sourceHash": "d3398da19cbdca1b5abd779867b2ca394e52a4f8cffd17d4125fcb3287827832",
       "termHash": "6715ea4f0bdcc115ac4cd4bc92689416fc0711a9fe297c2982efcf260b6df93e",
-      "text": "In Violett gibt dir DSP zwei Einkaufslisten vom Umfang der gelben Fabrik auf einmal. Eine endet beim Produkt {{item_1303_1}}, die andere führt durch eine lange Chemiekette zu {{item_1402_1}}. Baue sie als getrennte Bereiche, gib jedem Endprodukt einen sichtbaren Puffer und führe sie per Logistik im Forschungsbezirk zusammen."
+      "text": "In Violett gibt dir DSP zwei Einkaufslisten vom Umfang der gelben Fabrik auf einmal. Eine führt zur Prozessorfertigung ({{item_1303_1}}), die andere führt durch eine lange Chemiekette zu {{item_1402_1}}. Baue sie als getrennte Bereiche, gib jedem Endprodukt einen sichtbaren Puffer und führe sie per Logistik im Forschungsbezirk zusammen."
     },
     {
       "id": "c.purple.p.003",
@@ -4248,7 +4248,7 @@
       "id": "c.purple.p.005",
       "sourceHash": "d46a3b5c7920fabc86f90d77486f2d2c2c93d63af9afaf2d964d0ab412148cda",
       "termHash": "08e9ee569a0c375c2aac8466f4fc6e5515e5e1c6dbcf455c3ce8b8d91117d8c9",
-      "text": "{{tech_1131_1}} wurde bereits beim ILS-Übergang erforscht. Nun schaltet {{tech_1132_1}} das Produkt {{item_1124_1}} frei, und {{tech_1133_1}} erschließt {{item_1402_1}}. Der bereits vorhandene Zweig {{tech_1302_1}} vervollständigt die Voraussetzungen für {{tech_1312_1}}."
+      "text": "{{tech_1131_1}} wurde bereits beim ILS-Übergang erforscht. Nun schaltet {{tech_1132_1}} {{item_1124_1}} frei, und {{tech_1133_1}} erschließt {{item_1402_1}}. Der bereits vorhandene Zweig {{tech_1302_1}} vervollständigt die Voraussetzungen für {{tech_1312_1}}."
     },
     {
       "id": "c.purple.h3.003",
@@ -4326,7 +4326,7 @@
       "id": "c.purple.p.011",
       "sourceHash": "852824040a6ecce54f801fae9d76917607350b62763d8ae17f3929b6dbc56684",
       "termHash": "6715ea4f0bdcc115ac4cd4bc92689416fc0711a9fe297c2982efcf260b6df93e",
-      "text": "Beginne mit {{strong_1}}drei Laboren für violette Würfel{{end_strong_1}}. Lass sie laufen und beobachte die Lager für {{a_1}}{{item_1303_1}}{{end_a_1}} und {{a_2}}{{item_1402_1}}{{end_a_2}}. Leert sich eines fortlaufend, erweitere diese Linie. Füllen sich beide zwischen Forschungsaufträgen wieder, reicht die Produktion. Lass den Bezirk arbeiten und geh weiter."
+      "text": "Beginne mit {{strong_1}}drei Laboren für violette Würfel{{end_strong_1}}. Lass sie laufen und beobachte die beiden Vorräte: {{a_1}}{{item_1303_1}}{{end_a_1}} und {{a_2}}{{item_1402_1}}{{end_a_2}}. Leert sich eines fortlaufend, erweitere diese Linie. Füllen sich beide zwischen Forschungsaufträgen wieder, reicht die Produktion. Lass den Bezirk arbeiten und geh weiter."
     },
     {
       "id": "c.purple.h2.005",
@@ -4710,13 +4710,13 @@
       "id": "c.green.p.009",
       "sourceHash": "176f92e5e8fb7c6dae66ef83c0ded5081f74d3b8f8b0e4e70c6692667acfc9c0",
       "termHash": "2b9f0293735334fcdf462538c31fb988af5c9699e1662f994190ae07ff6488cc",
-      "text": "Erledige zuerst den Quanten-Zweig und beginne mit dem Einlagern des Produkts {{item_1305_1}}, sobald die Linie läuft. Während du die längere Gerüst- und Gravitationsroute bearbeitest, wächst dieser Puffer bereits. So sammelt sich eine Seite der grünen Forschung an, statt auf sämtliche Voraussetzungen zugleich zu warten."
+      "text": "Erledige zuerst den Quanten-Zweig ({{item_1305_1}}) und lege einen Vorrat an, sobald die Linie läuft. Während du die längere Gerüst- und Gravitationsroute bearbeitest, wächst dieser Puffer bereits. So sammelt sich eine Seite der grünen Forschung an, statt auf sämtliche Voraussetzungen zugleich zu warten."
     },
     {
       "id": "c.green.p.010",
       "sourceHash": "4b8ad926c1ac165362c07f43a9d666a0b6707fac7f347a41f1196f7ba9c9c677",
       "termHash": "a26f5bfedbb4a1044ab2e4ca3d76c667b4e313b1c662727cf9e6e15c2ce290d1",
-      "text": "Wenn die Produktion von {{item_1209_1}} das Lager erreicht, sollte der Quantenchippuffer bereits einen nützlichen Vorsprung haben. Erforsche die Gravitationsmatrix, sobald Quantenchip und Gravitationswellen-Brechung abgeschlossen sind, und führe die beiden gelagerten Produkte bei der Forschung zusammen."
+      "text": "Wenn die Linsenfertigung ({{item_1209_1}}) erstmals ins Lager liefert, sollte der Quantenchippuffer bereits einen nützlichen Vorsprung haben. Erforsche die Gravitationsmatrix, sobald Quantenchip und Gravitationswellen-Brechung abgeschlossen sind, und führe die beiden gelagerten Produkte bei der Forschung zusammen."
     },
     {
       "id": "c.green.h3.002",
@@ -4938,7 +4938,7 @@
       "id": "c.green.p.020",
       "sourceHash": "21d9917cf0545fe2228f3d2d3293eba6123fa641bd9762659e364bf71c5011c3",
       "termHash": "35ed47abde271fba9dfe9736bae25fef3d0a78e1dac075dd565ab8ececc4f7a9",
-      "text": "Beginne mit {{strong_1}}zwei Laboren für grüne Würfel{{end_strong_1}}. Beobachte {{a_1}}{{item_1305_1}}{{end_a_1}} und {{a_2}}{{item_1209_1}}{{end_a_2}}, während die Forschung läuft. Schrumpft ein Lager ständig, erweitere nur diesen Zweig. Erholen sich beide, sobald die Labore pausieren, hält die Fabrik mit."
+      "text": "Beginne mit {{strong_1}}zwei Laboren für grüne Würfel{{end_strong_1}}. Beobachte während der Forschung die beiden Vorräte: {{a_1}}{{item_1305_1}}{{end_a_1}} und {{a_2}}{{item_1209_1}}{{end_a_2}}. Schrumpft ein Lager ständig, erweitere nur diesen Zweig. Erholen sich beide, sobald die Labore pausieren, hält die Fabrik mit."
     },
     {
       "id": "c.green.h2.006",
@@ -5214,7 +5214,7 @@
       "id": "c.green.p.022",
       "sourceHash": "37cac9877fa09135f0d850bc227da347ff79cd6d5b666b1cd347712e7d99a727",
       "termHash": "1755618f505f5dd36e64ce1b1bec4d3e6877fa50f0b2b27cbc5091db4143b457",
-      "text": "{{strong_1}}Bilanz für {{item_1120_1}}.{{end_strong_1}} Die Casimir-Produktion verbraucht {{item_1120_2}} schnell. Versorge sie aus einem Lagerbehälter, beobachte dessen Füllstand und führe wiederverwendbare Nebenprodukte vom Typ {{item_1120_3}} derselben Versorgung zu, wenn deine gewählten Zweige sie erzeugen."
+      "text": "{{strong_1}}Bilanz für {{item_1120_1}}.{{end_strong_1}} Die Casimir-Produktion verbraucht {{item_1120_2}} schnell. Versorge sie aus einem Lagerbehälter, beobachte dessen Füllstand und führe {{item_1120_3}} derselben Versorgung wieder zu, wenn er in deinen gewählten Zweigen als Nebenprodukt anfällt."
     },
     {
       "id": "c.green.p.023",
@@ -5238,7 +5238,7 @@
       "id": "c.green.li.010",
       "sourceHash": "916856b8cf43bca9f86ef72e09856ecf7d085224f5f41e46e0d3d1a67f8104e7",
       "termHash": "35ed47abde271fba9dfe9736bae25fef3d0a78e1dac075dd565ab8ececc4f7a9",
-      "text": "{{label_1}} {{input_1}}für {{item_1305_1}} und {{item_1209_1}} jeweils ein sichtbares Lager vorhanden ist. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}beide Vorräte gut sichtbar gelagert werden: {{item_1305_1}} und {{item_1209_1}}. {{end_label_1}}"
     },
     {
       "id": "c.green.h2.009",
