@@ -1,15 +1,15 @@
 # DSP Practical Progression Guide
 
 **Status:** ML-E1–E4 and the private Chinese/German milestones ML-M2/ML-M3
-are complete and agent-validated. German has all 1,537 messages and eight UI
-strings reviewed, with its full private browser matrix passed. Each story
-includes validation, management updates and a commit/push. Work stops after
-ML-21; Japanese needs a new instruction. Version 3.1 remains English only.
+are complete and agent-validated. ML-E5 is authorized through ML-27, with
+validation, management updates and a commit/push per story, then a handoff.
+Japanese segment A has 393 messages and eight UI strings agent-validated.
+Version 3.1 remains English only.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
 Simplified Chinese, German, and Japanese localization, approved the roadmap,
-and subsequently authorized execution through ML-21; production publication remains owner-controlled.
+and subsequently authorized execution through ML-27; production publication remains owner-controlled.
 
 [`ROADMAP.md`](ROADMAP.md) is the sole active roadmap. The two previously
 deferred concepts remain deferred indefinitely in the historical archive.
@@ -19,7 +19,8 @@ deferred concepts remain deferred indefinitely in the historical archive.
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
 Only English is deployable; the complete Chinese and German translations are
-accepted privately. Japanese retains four tooling samples.
+accepted privately. Japanese authoring is underway, starting with orientation,
+BLUE and shared controls.
 Narrow main text can wrap long native names and German compounds at 200% text.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized

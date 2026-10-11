@@ -130,6 +130,24 @@ review reconciled these terms, protected-name grammar, repeated messages and
 checklist conditions; all 1,537 German entries and eight UI strings are accepted
 privately through ML-21.
 
+### Japanese edition conventions
+
+Use 建設用品工場（モール） in the glossary, then 建設用品工場 in prose;
+バッファ在庫, 枝ライン, 合流工程 and 補助供給 describe buffer, branch,
+convergence and backstop. Route/color labels are 青、赤、黄、紫、緑、ダイソン、
+光子、白、スフィア、ワープ and 物流. Native matrix links retain official names;
+the introduction distinguishes these from prose color names. Explanations use
+です・ます; checklist labels describe the state achieved. Native エンジン and
+モーター are distinct items. Place counts after protected names where natural,
+and quote the completion technology to avoid repeating its imperative wording.
+
+Keep source-owned units, Mk.I/II/III, keyboard keys, proper tool names, the
+image's actual English title and legal credit. Preserve the exact external
+Install with Mod Manager action beside a Japanese explanation. These are
+deliberate exceptions, not untranslated guide prose. Shared controls use
+はじめに、ルート、資料 and 閉じる; tooltip labels are 前提技術、
+間接的な前提技術 and 解放されるもの.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 

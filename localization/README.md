@@ -123,8 +123,8 @@ An optional final argument (`android`, `iphone`, `desktop`) isolates one profile
 Use a fresh output directory; fixtures carry `PREVIEW-ONLY.txt` and never deploy.
 Chinese and German each have all 1,537 HTML/attribute messages and eight UI
 strings reviewed and agent-validated privately through ML-15 and ML-21
-respectively. The manifest still disables both. Japanese retains four private
-tooling samples, not an accepted translation of segment A. The roadmap records
+respectively. The manifest still disables both. Japanese segment A has 393
+messages and eight UI strings agent-validated privately through ML-22. The roadmap records
 coverage, corrections and the ML-M2/ML-M3 handoffs; ML-28 owns public activation
 of the three complete editions.
 The original sample review covered the heading, intro/emphasis,
