@@ -87,6 +87,12 @@ storage. Its enlarged landscape scenario exercises actual overflowing details.
 
 ## Toolchain budget
 
+`extract-terminology.mjs` is an explicitly invoked provenance refresh: it reads
+only requested native names and retains ID/key/hash mappings. Its companion
+`validate-terminology.mjs` verifies all consumed names and rank composition from
+those snapshots without game access. These authoring-only tools replace the
+one-time locale join; no locale source files or extraction dependencies deploy.
+
 Before adding a committed script, dependency, materialization step, or global
 validator responsibility, record:
 

@@ -3,6 +3,10 @@
 Only English is currently deployable. Chinese (`zh-CN`), German (`de`), and
 Japanese (`ja`) stay private until ML-28. The roadmap owns story progress.
 
+Native ID mappings and language rules are in [style.md](style.md). Validate
+retained snapshots with `node scripts/validate-terminology.mjs`; extraction is
+an explicit read-only provenance refresh, never part of an ordinary build.
+
 ## Identity and message inventory
 
 `scripts/fixtures/checklist-identity.json` freezes the 66 pre-localization keys,
