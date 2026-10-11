@@ -5253,6 +5253,1374 @@
       "text": "次は{{a_1}}{{img_1}}[ダイソン]{{end_a_1}}へ進みます。特定の希少資源の輸入を無人で続けたいなら、{{a_2}}{{img_2}}[ワープ]{{end_a_2}}の自動化へ進みます。緑マトリクスがあれば{{item_1210_1}}を安く作れます。"
     },
     {
+      "id": "d.dyson.h1.001",
+      "sourceHash": "ccf17766074cc648fadaf11e06a6aec5818ed8794b537cf7253674aac6c7ba84",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[ダイソン]{{end_a_1}} — 光子生産を支えるダイソンクラウドを造る"
+    },
+    {
+      "id": "d.dyson.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 現在地"
+    },
+    {
+      "id": "d.dyson.p.001",
+      "sourceHash": "e44031d80f705bd050b8d858607a3cbedaccbf2de3b9885240c61bf08e492916",
+      "termHash": "6940d7df52ec6d8b2a40fcb7384af28b50513b88d68880c808c1cc685b073fe0",
+      "text": "{{strong_1}}ここまでにできたこと：{{end_strong_1}}緑の研究と終盤の二つの材料系統を整えた。{{br_1}}{{strong_2}}今取り組むこと：{{end_strong_2}}セイルを打ち上げ続け、{{item_2208_1}}で実用的な出力を得られるダイソンクラウドを拡大する。{{br_2}}{{strong_3}}これでできること：{{end_strong_3}}クラウドの電力で{{item_1122_1}}を作り、白の研究前の最後の材料をそろえる。{{br_3}}{{strong_4}}次の段階：{{end_strong_4}}{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}。寿命のあるクラウドを素早く増やす代わりに、恒星に残る構造物を造りたいなら、先に任意の常設{{a_2}}{{img_1}}[スフィア]{{end_a_2}}ルートを選べます。"
+    },
+    {
+      "id": "d.dyson.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "この段階の概要"
+    },
+    {
+      "id": "d.dyson.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確認項目"
+    },
+    {
+      "id": "d.dyson.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "今の要点"
+    },
+    {
+      "id": "d.dyson.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主な目標{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.002",
+      "sourceHash": "622549060ff7fb659b8610607e203ed0ec933896097528f3e0ae94b6fc952fc9",
+      "termHash": "aebe343e3515fdb0e38fb69b8ff9ab66652c05b0c31df36294cdd32e7e65fb00",
+      "text": "{{item_1501_1}}の生産を自動化し、稼働する電磁軌道射出機の網に供給し続ける"
+    },
+    {
+      "id": "d.dyson.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}目安{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.004",
+      "sourceHash": "a33a3dc321e25215a163375c02e4c236ea81027e9816300d45e5f2d727c35189",
+      "termHash": "c8a8f9e974220e9c4738680f935adcdad9a91c8010d93c390d13d50beeb89a72",
+      "text": "{{item_2208_1}}で実用的な出力を得られる規模のクラウド。「光子」の段階でも拡大を続ける"
+    },
+    {
+      "id": "d.dyson.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}先に研究するもの{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.006",
+      "sourceHash": "57d5e6822ba233d4edcf65ee916275c89d47c36c5f4dc621ed84878b5a4a6c74",
+      "termHash": "cc68a2cdfc226716df457d66dfc2ff8e7301ade438b1cad97bf42dd2c8c435e2",
+      "text": "{{span_1}}{{strong_1}}ダイソン用の研究：{{end_strong_1}}{{tech_3101_1}} レベル {{fact_1}} {{fact_2}} {{tech_3102_1}} レベル {{fact_3}}{{end_span_1}}"
+    },
+    {
+      "id": "d.dyson.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}注意する点{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.008",
+      "sourceHash": "a091efc00ba1a65ed7f39f906c3a9ebe8b9254b5f35cb579164618154f0b54cf",
+      "termHash": "aebe343e3515fdb0e38fb69b8ff9ab66652c05b0c31df36294cdd32e7e65fb00",
+      "text": "射出機の実測稼働率、{{item_1501_1}}の在庫の増減、恒星の光度、セイルの寿命、現在のダイソン発電量"
+    },
+    {
+      "id": "d.dyson.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}次へ進む条件{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.010",
+      "sourceHash": "d2a0b1b0b16ac980d208e20663777db284dd05afae457c3973c4a880c5bebd4d",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "{{item_1122_1}}を安定生産でき、研究地区へ届けられる"
+    },
+    {
+      "id": "d.dyson.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目標"
+    },
+    {
+      "id": "d.dyson.p.002",
+      "sourceHash": "9b6dd30b5474dab6da4d25b3fe65ee303c5ce8a2ed95efde0412b5929eb5cbc3",
+      "termHash": "5056a7bfa7cd880845cfef68f0b1b52f7a99059ce031146db96758c64a035a3a",
+      "text": "工場は、次の発電所を宇宙に造る段階に達しました。{{item_1501_1}}は惑星を離れて軌道に入り、{{item_1122_1}}、白の研究、そしてクリアまでを支える巨大構造物になります。射出機が動くたびに、そのゴールが少しずつ現実に近づきます。"
+    },
+    {
+      "id": "d.dyson.p.003",
+      "sourceHash": "ea492f81a83a038875bd065c4f4801d580d984eb800a774df9387b2f3df9f72a",
+      "termHash": "7662d8e2e2fe032598a92162f950ee5ec03fe75a2fdce9bf8fab1006332e2f7d",
+      "text": "セイルのラインを造り、射出機を有効な射出地点へ分散させ、現在のダイソン発電量が増える様子を見ましょう。参考規模のクラウドは計画の目安であり、先へ進むための条件ではありません。空が埋まるずっと前から、レンズを入れた{{item_2208_1}}で{{item_1208_1}}を作れます。まだ小規模でも安定して役立つ出力が得られたら「光子」へ進み、終盤の作業と並行して打ち上げを続けます。"
+    },
+    {
+      "id": "d.dyson.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先に研究するもの"
+    },
+    {
+      "id": "d.dyson.p.004",
+      "sourceHash": "58252f5e0d3a5b619bb74ac4b85e0e93b93899c23ddb7eeb43cc026c9cec6f89",
+      "termHash": "cc68a2cdfc226716df457d66dfc2ff8e7301ade438b1cad97bf42dd2c8c435e2",
+      "text": "{{strong_1}}ダイソン用の研究：{{end_strong_1}}射出網が本格的な規模になる前に、{{tech_3101_1}} レベル {{fact_1}} {{fact_2}} {{tech_3102_1}} レベル {{fact_3}}を研究します。レベル {{fact_4}}が終われば、レシーバーの接続手順までに追加の研究はありません。"
+    },
+    {
+      "id": "d.dyson.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — どれだけあれば十分か"
+    },
+    {
+      "id": "d.dyson.p.005",
+      "sourceHash": "e1fde5f2e932c72dd7750ab785b964923d0841c38b98f53ca7d2c1dfba0e4909",
+      "termHash": "3dcce47d953e1f1d92b0e5dac43565706fe3e4dab8eda876626fe8f816e77ce7",
+      "text": "{{strong_1}}増設や次への進行は、実際の稼働状況で判断します。{{end_strong_1}}射出機の実測稼働率、{{item_1501_1}}の在庫の増減、現在のダイソン発電量、{{item_2208_1}}の実出力を見ます。レシーバーが実用的に働いていれば「光子」を始めます。射出の稼働状況、セイル在庫、レシーバーの需要から不足が分かる箇所だけ増設を続けます。"
+    },
+    {
+      "id": "d.dyson.p.006",
+      "sourceHash": "e4422c0d059720e9fde7899f86955397b10064e1a41fa4876d0b08d129e444e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "射出網が本格的な規模になる前に、ソーラーセイル寿命 レベル {{fact_1}} {{fact_2}} レベル {{fact_3}}を研究します。セイルが長く軌道に残るため、工場と射出機が補充する数を減らせます。研究を省き、生産と打ち上げ成功数を増やして補うこともできます。それも有効な選択です。必要量を計算して選びましょう。"
+    },
+    {
+      "id": "d.dyson.p.007",
+      "sourceHash": "ec94d09e06fc3c4b2fb6e47996b39ef0cafb7c0332144e67f131fb52efbacdcc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ソーラーセイル寿命を両方研究した場合、参考規模のクラウドには{{strong_1}}ソーラーセイル {{fact_1}}{{fact_2}}{{end_strong_1}}の生産能力を用意し、およそ{{strong_2}}{{fact_3}} 回{{fact_4}}{{end_strong_2}}の打ち上げ成功が必要です。射出機六十基が平均 {{fact_5}} の時間射出できれば、およそ {{fact_6}} 回{{fact_7}}になります。これは計画上の目安であり、完了条件ではありません。設置した射出機は、軌道と射出可能な時間帯が合って初めて役立ちます。"
+    },
+    {
+      "id": "d.dyson.p.008",
+      "sourceHash": "554fdf27fa52f127c9ff14390c98923229179cebefb60b04b252ae963c7d878f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "この参考値を出発点にしてください。実際に造った工場と恒星の条件で、十分な規模は変わります。"
+    },
+    {
+      "id": "d.dyson.p.009",
+      "sourceHash": "9172e0f432c1a67f16c120b9de8da169d8efca4c605d819ab1e1e4d49a604f25",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "参考規模のクラウドが完成する前から、レシーバー群で{{item_1122_1}}を蓄え始められます。クラウドを増やし、「光子」で系統を強化する間も稼働を続けます。後で反物質の在庫が {{fact_1}} 個に達すれば「白」へ進めますが、それを待って「ダイソン」にとどまる必要はありません。{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}へ進んでください。"
+    },
+    {
+      "id": "d.dyson.h2.005",
+      "sourceHash": "9101e3c550c0ac28f6def8ce3c6827b7e44f596c4b1a342052100926e1e76083",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — 建設の概要"
+    },
+    {
+      "id": "d.dyson.p.010",
+      "sourceHash": "b9ae5edda6a1462ee2e40d4823adff9b90616c833672aec796da07c740c49d3b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}このカードは計画用であり、完了条件ではありません。{{end_strong_1}}ライン全体を見たいときに開きます。小規模なクラウドでもレシーバーから実用的な出力が得られたら「光子」へ進み、射出系統は並行して拡大します。"
+    },
+    {
+      "id": "d.dyson.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}すべてのカードを開く{{end_button_1}}{{button_2}}すべてのカードを閉じる{{end_button_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.summary.001",
+      "sourceHash": "61f5390c06aa52cfe52c5968279f9d871f160df8a662003242ad2c821195865a",
+      "termHash": "aebe343e3515fdb0e38fb69b8ff9ab66652c05b0c31df36294cdd32e7e65fb00",
+      "text": "{{span_1}}{{item_1501_1}} — 設備の生産能力 {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}参考{{end_span_3}}{{span_4}}段階的に建設{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.001",
+      "sourceHash": "1a7c97b7cdbf2d7b15266b5586ba0c2184a9462cd5afc09a5055b27eee9f4239",
+      "termHash": "00e5933ace0199c15904fac07c5f44f7b5579cd6f32d0af2b7324b01c7d3a772",
+      "text": "{{a_1}}青の枝ラインで作った{{item_1301_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.002",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "e9757b2b3d05740269dbd82785d3dfd9118b45e5e698039b0fa74c232c05f278",
+      "text": "{{a_1}}共用できる標準ラインの{{item_1123_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.003",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "c17ef55a9c8543214f0579d1c85d7aad7fe2a61bf15bec4533ff9e8a14e44fbc",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h5.001",
+      "sourceHash": "f1e5274735ecd9240785d872cb0b405692bd9764d9d00faca73f5d92dcc4dd9c",
+      "termHash": "f2c3499c4b3de7b34ee8f0637a6aaf0329bd8689f6b26945eea9e354bc198cc1",
+      "text": "{{tech_1502_1}}の研究後に追加"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.004",
+      "sourceHash": "06c426c482d1939b31f146b6aca9f38de5f37f9ced06abcee89179681ca18d33",
+      "termHash": "803b3caa949f1c8f977367772cc0fd15cf77e01e54b38ee9d68f5c50ccff524c",
+      "text": "{{span_1}}{{item_1111_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：組立機 {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.005",
+      "sourceHash": "bdcda2723f589d0d94fd26c292f76739b1d3e992b2cdf62e760fee04fbe44bae",
+      "termHash": "321523787a682d8782401879808d51643d6b99ae2b3f55e8d746715fa6a7c0ea",
+      "text": "{{span_1}}結合器の枝ライン{{end_span_1}}{{span_2}}{{item_1111_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1404_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.006",
+      "sourceHash": "3730b7dc6bbd69b0a22629547add46dc3844f4469008bce2c8844d9b0af386cc",
+      "termHash": "d0985b5121e85ed3e1aaf893150ceede87d448fb841f2359d0f21a129d3fb84c",
+      "text": "{{span_1}}セイルの組み立て{{end_span_1}}{{span_2}}{{item_1404_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1501_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h5.002",
+      "sourceHash": "98578106736b3314d26097e171d3337107d99058138c50f30db2f8ba9cac304b",
+      "termHash": "1fe6b8c40e68e563c2585a63fc7899365422f759aa59dfe58792f3ef36bb5cc1",
+      "text": "{{tech_1503_1}}の研究後に追加"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.007",
+      "sourceHash": "eb766f41aa1996086fd876ac9af8818d1efaf64cc675b74fbe747c9976b3e458",
+      "termHash": "0a8c693d8d8abca8561c23f3734cc58e7d7ff432c69fdb32e543333759ecafdd",
+      "text": "{{span_1}}射出機への供給{{end_span_1}}{{span_2}}{{item_1501_1}} · {{item_2101_1}}に備蓄 · {{item_2311_1}}へ供給{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.008",
+      "sourceHash": "de02eb4b2d310e6d975114e5b68d9e78429313186d005b7ba3fd886474399d26",
+      "termHash": "893cdd3d02e99620f1ec19884b4f29e13e6d5b3b3013de5865264cfcf2984efe",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1501_1}}{{end_span_1}} — 計画した生産量の{{item_1501_2}}を受け入れ、射出機へ送ります。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.009",
+      "sourceHash": "c793ae5bc2d61924707011d142df3427b89c4cfb24d462ce7325559ba87701a1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "カード名の生産能力の目安は、このガイドのソーラーセイル寿命 レベル {{fact_1}} {{fact_2}} レベル {{fact_3}}のルートを前提にしています。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.010",
+      "sourceHash": "b366141195f805e57b4b2c01900c16ed858fb86819f7db890bdb0a7d6e3e252f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "設置した組立機の数が十分に見えても、セイルの在庫が空になるなら、射出需要が現在の生産量を超えています。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.summary.001",
+      "sourceHash": "41808075fb6a1a3c6708bd09d77b1d0567a92d985accaba3bee9f41488fd7456",
+      "termHash": "77bb058a3ae05e6f08de69faf23e23d4da2af7b7c34e4b25cd381001f0799ae1",
+      "text": "{{span_1}}{{item_2311_1}} — 在庫 {{fact_1}} 基{{end_span_1}}{{span_2}}{{span_3}}参考{{end_span_3}}{{span_4}}段階的に建設{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "2c801abd839c4ac20c9263964ba5466f479a6e01614a548ec56bbb765588927b",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.002",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "c144c1bb833bd671a05526761c2fbf638d88497e6ee3ca90b6374c03a88f5a18",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.003",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "3a08f74e1e4e60cca92668aee06a6025d1bd1366c01f775dd4d4c685615b5969",
+      "text": "{{a_1}}紫で作った{{item_1303_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.004",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "0b86faafb033963a9066cb89909f152ff75f9773cdc161686b6363b3cab5db2f",
+      "text": "{{a_1}}共用ラインの{{item_1204_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h5.001",
+      "sourceHash": "98578106736b3314d26097e171d3337107d99058138c50f30db2f8ba9cac304b",
+      "termHash": "1fe6b8c40e68e563c2585a63fc7899365422f759aa59dfe58792f3ef36bb5cc1",
+      "text": "{{tech_1503_1}}の研究後に追加"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.005",
+      "sourceHash": "19076d3a5443196c74ce7f148442d45eda92ce59a31d925220549bf3d8cdafc9",
+      "termHash": "9e28a499b580936a7759f5f6f96db223e61d65847fbf0b62419d5938081cd436",
+      "text": "{{span_1}}{{item_1201_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：組立機 {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1201_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.006",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "ed38edb8796664eb99453ca3c9d4ba83fcbcedb3f2bc5d732f87c329c3ba859a",
+      "text": "{{span_1}}{{item_1103_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：アーク溶鉱炉{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.007",
+      "sourceHash": "f7d13a7cbb66a6f57ba505409cba35650cfc8ccc07381d01bcbf6d5c0cd9169b",
+      "termHash": "66e2034a40c1553c3a0498ff0ffb91f41a38cbe8de486336c2e7e169430e3c1d",
+      "text": "{{span_1}}磁石・グラファイトの枝ライン{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1102_1}}／ {{item_1006_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：アーク溶鉱炉{{end_span_8}}{{end_span_6}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.008",
+      "sourceHash": "e993ea8c08c43a17fdc3cf73b1500d2cfb263297ae169f9984ce173d5465eaa6",
+      "termHash": "c13a4a71f5324e7e63b577d5aad30fa03e8988e58efbdc04d4997e214737f058",
+      "text": "{{span_1}}リングの枝ライン{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.009",
+      "sourceHash": "58cf864e177dc67419d36700af0c376d27ed5726c2346501c0720f4a6d623963",
+      "termHash": "a4070986a61872cecd7936098a832bae35e28c2813933600f060bf38e4fb94b9",
+      "text": "{{span_1}}射出機の組み立て{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1201_1}} + {{item_1303_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2311_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.010",
+      "sourceHash": "2249df619f8d609491542c177d65c6f03dd8f82a5374ba23af5cb169b5408b4e",
+      "termHash": "ea2719cc6e3b42dcc1728fc12588115dbc0e24d7b0aa18e4394589608c849a49",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2311_1}}{{end_span_1}} — 段階的な配備用に、小さな上限付き在庫を保ちます。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.011",
+      "sourceHash": "c574474433bbd1f78609760ed93c43a95a153575b1a9d818d67513dc169147bd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "カード名の在庫の目安は、このガイドのソーラーセイル寿命 レベル {{fact_1}} {{fact_2}} レベル {{fact_3}}のルートを前提にしています。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.012",
+      "sourceHash": "b0f1f11c06a1b3977e8ed97709e00bc2ec06bb19d1e7ee0b81c038983c03d8de",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "射出機には射出点を狙える配置が必要で、参考規模でも広い土地を使います。緯度を分けた区画に配備し、実際に射出する場所を確認してください。一か所に詰め込むより、有効な緯度帯を広げましょう。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.013",
+      "sourceHash": "dccc633db0972c2b4b42deb6a58f5279de5eb4a268bdba30a3eb7934018c37ce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "射出中の射出機は一基あたり {{fact_1}} を消費します。大きな射出区画は、位置関係が合うと休止状態から一気に大きな負荷へ変わります。段階的に設置し、区画ごとの稼働開始時に電力グラフを確認しましょう。"
+    },
+    {
+      "id": "d.dyson.h2.006",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意する点"
+    },
+    {
+      "id": "d.dyson.p.011",
+      "sourceHash": "4ece2531903fb9a06b78e538fb4b5879a2f86a2fd14bc3ab4141cc064c29f861",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}軌道の管理。{{end_strong_1}}自動軌道を使うと、射出できない一点を待ち続ける代わりに、現在使える軌道を射出機が選べます。選んだ軌道が使えなくなるまでは維持されます。射出機を均等に振り分けたり、好みの軌道へ戻したりする機能ではありません。位置関係は依然として重要です。実測稼働率を見て、有効な緯度帯へ供給を続けてください。"
+    },
+    {
+      "id": "d.dyson.p.012",
+      "sourceHash": "e58cf25134fa5ce49a8a6bd6554aa4705098ce406a5d985583d6d81389cfc572",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}電力負荷の同時発生。{{end_strong_1}}射出点が見えるようになると、大きな射出区画が一斉に稼働することがあります。段階的に配備し、電力グラフを確認します。"
+    },
+    {
+      "id": "d.dyson.p.013",
+      "sourceHash": "cb97aba9371735295e9228388b277050e354ba30f58787cbc7f016144b62930d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}段階の並行作業。{{end_strong_1}}小規模なクラウドでもレシーバーに実用的な出力を供給できたら、{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}へ進みます。現在の発電量やレシーバーの需要から軌道上の発電を増やす価値があると分かれば、並行してクラウドを拡大します。"
+    },
+    {
+      "id": "d.dyson.h2.007",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次へ進む条件"
+    },
+    {
+      "id": "d.dyson.li.001",
+      "sourceHash": "1b6c4dff19702841c2e50e30ac8d9dcbf9eda5808c946ad1d765516e620f776f",
+      "termHash": "e4877028ea851dd1ae1e446b0603055396eea0e8f8ae926f2e0ee9c00bcfac0c",
+      "text": "{{label_1}} {{input_1}}{{item_1208_1}}を安定して{{item_1122_1}}に変換でき、イカロスが運ばなくても、その{{item_1122_2}}が研究地区に届く。 {{end_label_1}}"
+    },
+    {
+      "id": "d.dyson.h2.008",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次の行き先"
+    },
+    {
+      "id": "d.dyson.p.014",
+      "sourceHash": "8366252b2971d9401d97622506213971d514af0438c025e99a4b6be99e7960d2",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "クラウドがレシーバーに実用的な出力を供給できたら、{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}へ進みます。{{item_1122_1}}の生産が終盤の需要を余裕を持って支えられるまで、射出機を並行して稼働させます。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge-title.h1.001",
+      "sourceHash": "1c7ea7e4483b2167d812ee396901c275025c3cff7e2ad564f9fbaaa2e06a69ce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}必須の接続手順{{end_span_1}} レシーバーから反物質へ"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.001",
+      "sourceHash": "8635d0417e5e6e93edcfd18ab2ec1e4a208901e0f79fbf25d6d0566132769fb3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ ルートをつなぐ"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.001",
+      "sourceHash": "cb1f77e2821860d1bd57792280efa4393e680e2dae0383020039877d0efb1993",
+      "termHash": "8c0c15e57117bbe46416e119b6c301ca66998ab5c015b37ab360186acbf3d245",
+      "text": "{{strong_1}}ここまでにできたこと：{{end_strong_1}}稼働するクラウドから実用的なダイソン発電量を得た。任意で造った常設の発電も加わる。{{br_1}}{{strong_2}}今取り組むこと：{{end_strong_2}}その電力を{{item_1208_1}}、さらに{{item_1122_1}}へ変える。{{br_2}}{{strong_3}}これでできること：{{end_strong_3}}安定した材料ラインを一本整え、「光子」で強化して「白」につなぐ。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.002",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先に研究するもの"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.002",
+      "sourceHash": "646426debf8bbea1935644dfdbc6e0d66ecfc0435e4a198832c24d3ee84f32d3",
+      "termHash": "28edf07b916150c24d48446173349693994b5c5786974d9b3a4e6c558eb0403d",
+      "text": "{{tech_1504_1}} {{fact_1}} {{tech_1505_1}} {{fact_2}} {{tech_1506_1}}。必要な順に、レシーバー、レンズを使った受取、光子生成モード、質量エネルギー貯蔵のレシピを解放します。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.003",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目標"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.003",
+      "sourceHash": "98d0aff97f3038931675125904af5b2c888449e2c51f0288dfdfbd82c6537f0c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "軌道上の電力から反物質の在庫まで、状態を確認できる途切れないルートを一本造ります。緑で整えた加速機と緑マトリクスの材料ラインが、この手順で必要な高価な部品をすでに供給できます。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.div.001",
+      "sourceHash": "68615d2aecce7750775908e70e0254f1cf0a780365438e8199fe64073932cc08",
+      "termHash": "e4b7c91a013bcb200df7f758824f013cdd41ccb58937f901fc5e68b243ca18ea",
+      "text": "{{span_1}}現在のダイソン電力{{end_span_1}}{{b_1}}{{fact_1}}{{end_b_1}}{{span_2}}レンズを入れた{{item_2208_1}}{{end_span_2}}{{b_2}}{{fact_2}}{{end_b_2}}{{span_3}}{{item_1208_1}}{{end_span_3}}{{b_3}}{{fact_3}}{{end_b_3}}{{span_4}}質量エネルギー貯蔵{{end_span_4}}{{b_4}}{{fact_4}}{{end_b_4}}{{span_5}}{{item_1122_1}} + {{item_1120_1}}{{end_span_5}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.attr.001.aria-label",
+      "sourceHash": "9b80f25aa4705f930f342b35a3cc36593b5073276e016fd38aa48508e1b27b4f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ダイソン電力から反物質までの生産の流れ"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.004",
+      "sourceHash": "498d4dd75fb4a74445d38256a7e466f0e8e27efdee7a1dc48f28cb0b01548ef8",
+      "termHash": "c8a8f9e974220e9c4738680f935adcdad9a91c8010d93c390d13d50beeb89a72",
+      "text": "レンズを入れ、継続稼働で十分に出力が上がった{{item_2208_1}}四基を、光子生成モードで使います。放射線送信効率 レベル {{fact_1}}では、少なくとも{{strong_1}}{{fact_2}}{{end_strong_1}}のダイソン発電量が必要です。これは「光子」で効率を上げる前の比較基準であり、その後も同じ電力が必要という意味ではありません。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.004",
+      "sourceHash": "d603361b2bc99a3dd6592ce9105a119722d59032580e17077bc3356ea7a1009a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作手順 — レシーバーから反物質へ"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.div.002",
+      "sourceHash": "c5515d54764f3878c0754f5c5e3f1db1a11ac4320c68bf94adda7b2f4b747024",
+      "termHash": "760034c27b89b728db1d2da4c1cd4094e1c27d9de50365c950f430469d315d4f",
+      "text": "{{strong_1}}四基すべてでレンズを切らさないようにします。{{end_strong_1}}自動化が理想ですが、軌道上の設備を増やす間は手動補充でも構いません。{{item_1209_1}}六十個で四基を約 {{fact_1}} 時間 {{fact_2}} 分動かせます。補充時刻を忘れないようにし、まとめて補給しましょう。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.001",
+      "sourceHash": "2d95be8a3b0bb161d12848b44993a35979e72325c98a1b3db67befca051a265b",
+      "termHash": "94fa307f54dfe945f0c747ef7e5071da954615b44ce51dd23900152742132698",
+      "text": "{{item_2208_1}}を四基置き、{{item_1209_1}}を供給して、すべての建物で{{strong_1}}光子生成{{end_strong_1}}を選びます。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.002",
+      "sourceHash": "fa901d7c253fedbc2351238ba16a1eefa51698bee632ed0a7f7dd6e7803e1697",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "継続受取とレシーバーの出力が上がるのを待ちながら、現在のダイソン発電量が四基の需要を満たすか確認します。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.003",
+      "sourceHash": "03234e6418bfcf85f9ed0d9c3d9030c368c57b8003015286cd5e373d88e9864d",
+      "termHash": "f7c5ec3b51c6ae0f8e6ff0221bfa4772ff4ae4a0c19037dfb1361a40fbbbc6e4",
+      "text": "{{item_1208_1}}をベルトで{{item_2310_1}}へ送り、{{strong_1}}質量エネルギー貯蔵{{end_strong_1}}に設定します。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.004",
+      "sourceHash": "452964f77a27ead5c602bb3e6e57a6f41770d8138e379387aa2917512b5c88e0",
+      "termHash": "4410e78497e301693f841ea1ed3cbb661b9feed9ec912284457b326d8c9ed4f8",
+      "text": "{{item_1122_1}}を白の研究地区の脇にある、残量の見える貯蔵場所へ送ります。加速機から戻る{{item_1120_1}}の出口も空けておきます。出口が詰まると両方の生産物が止まります。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.005",
+      "sourceHash": "fd32f1f59e97307a39830bed480ad46036019f7a1b8eb1b3b5cbd1aef2ea7336",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先へ進む条件"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.005",
+      "sourceHash": "21bd4fd9134fcf0654154b75fe445b93cb70fbb9e6fb5474aa75cd9f98ad95d0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}四基すべてを光子生成に設定し、レンズを切らさず、継続稼働で出力が十分に上がっている。 {{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.006",
+      "sourceHash": "a651ba894a6232769bfd2c6e55a8d3dc6018f398e0b1404996596d14895d5c98",
+      "termHash": "7fdf05af0f8ef52bfd6e2d3a741c0155fde78b361d19b44e1479ad265a67763a",
+      "text": "{{label_1}} {{input_1}}{{item_1208_1}}が加速機へ継続して届いている。 {{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.007",
+      "sourceHash": "bd815c4f3b4931226bdc121a361a0bf7b2ae34fedebbc6f0c7fd9aa845444169",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "{{label_1}} {{input_1}}残量の見える貯蔵場所に{{item_1122_1}}が安定して蓄積している。 {{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.008",
+      "sourceHash": "045caafd357842c86206f7bba560e676e25ed2090322162f0a40856a0c531ae3",
+      "termHash": "6ddc9fc5577893922620b4b52384caafd9179b8cd1878a861793b0548da6f2ab",
+      "text": "{{label_1}} {{input_1}}戻りの{{item_1120_1}}の出口が詰まっていない。 {{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.006",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次の行き先"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.005",
+      "sourceHash": "3c7b83d05f334b6136ea5eff3247c8e58574c30e2d8a32843536c974228109d4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "反物質が安定して蓄積し、戻りの水素の出口が詰まらなくなったら、{{a_1}}{{img_1}}[光子]{{end_a_1}}へ進みます。"
+    },
+    {
+      "id": "d.photon.h1.001",
+      "sourceHash": "a016c5147d5def483c0ed87bdaf6f8ef6e99ca7fbdb68f76ea0ba068c68c2e30",
+      "termHash": "8c0c15e57117bbe46416e119b6c301ca66998ab5c015b37ab360186acbf3d245",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[光子]{{end_a_1}} — {{item_1208_1}}と{{item_1122_1}}"
+    },
+    {
+      "id": "d.photon.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 現在地"
+    },
+    {
+      "id": "d.photon.p.001",
+      "sourceHash": "aa4f83dad4592fa74efd779f02d51a1766c10383f7ec5f56de7333f3eb825458",
+      "termHash": "8d022ba23cbaafd4748a3ce26724b01267c05fc3229138b7ad61c0cda7240c7c",
+      "text": "{{strong_1}}ここまでにできたこと：{{end_strong_1}}{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}で、安定した生産ラインを造った。{{br_1}}{{strong_2}}今取り組むこと：{{end_strong_2}}そのラインを強化して出力を蓄え、工場の残りも「白」に備える。{{br_2}}{{strong_3}}これでできること：{{end_strong_3}}{{item_6006_1}}用の最後の材料と予備在庫を確保する。{{br_3}}{{strong_4}}次の段階：{{end_strong_4}}{{a_2}}{{img_1}}[白]{{end_a_2}}。"
+    },
+    {
+      "id": "d.photon.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "この段階の概要"
+    },
+    {
+      "id": "d.photon.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確認項目"
+    },
+    {
+      "id": "d.photon.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "今の要点"
+    },
+    {
+      "id": "d.photon.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主な目標{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.002",
+      "sourceHash": "cdf659bae81db638e751034da2d61ea1021d4e5a87af506be7c2c8f13bcd7679",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "青・赤・黄・紫・緑マトリクスと{{item_1122_1}}をそれぞれ {{fact_1}} で継続生産し、「白」用に反物質 {{fact_2}} 個を蓄える"
+    },
+    {
+      "id": "d.photon.td.003",
+      "sourceHash": "39c88b50e223434222b66ebe6a68fb6c12a6bbbfcb0db059e38dc0c95495bfce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}目指す状態{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.004",
+      "sourceHash": "c94469d80223166c3d3c973e9441a2269f194f24847ff9a9a84d683086e9dc33",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "必要な各入力が継続稼働中も目標量を保つ。順調なラインはそのままにし、最初に見つかった不足を直す"
+    },
+    {
+      "id": "d.photon.td.005",
+      "sourceHash": "7a3be468e528aeabeccf0f0ed7a7178b28fc57abfe9465ecfba1c2ecef353687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}次に研究するもの{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.p.002",
+      "sourceHash": "ddc2b44cefa3dbabe824f0d7763ba28b78a6457f2013f35810d23b69acf98146",
+      "termHash": "62623e629a938e05e34029711a38cfef9c36fe53dc52ee41968342664ba5c2e1",
+      "text": "{{strong_1}}レシーバーの効率：{{end_strong_1}}{{tech_3201_1}} レベル {{fact_1}} {{fact_2}} {{tech_3202_1}} レベル {{fact_3}}"
+    },
+    {
+      "id": "d.photon.p.003",
+      "sourceHash": "294be42a8a73e8584499003d3f4775df74d3353c7e652cb21be2e95e0edee05e",
+      "termHash": "9be506a2473528b4ac043b39f5ae230e237146dac1e3135bc13550168e3dd27a",
+      "text": "{{strong_1}}資源供給：{{end_strong_1}}{{tech_3601_1}} レベル {{fact_1}} {{fact_2}} {{tech_3602_1}} レベル {{fact_3}} {{fact_4}} {{tech_3603_1}} レベル {{fact_5}}まで進める"
+    },
+    {
+      "id": "d.photon.p.004",
+      "sourceHash": "9a6a029d791a324427e131aa7072b74df2dc04a81cf67f9aca864fd8bc8312d1",
+      "termHash": "500d80e139e335755e152d2ed60e954cb8e2c572ddb857495e53e605468b3596",
+      "text": "{{strong_1}}生産の高速化：{{end_strong_1}}{{tech_1417_1}}／{{tech_1202_1}} {{fact_1}} {{tech_1203_1}}"
+    },
+    {
+      "id": "d.photon.td.006",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}注意する点{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.007",
+      "sourceHash": "b5f7350be33e06fe1ba30d6124c6fa04e323e47746df75cc9aa2cdd04b1418cc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "統計パネルの持続的な生産速度、最初に目標を下回るマトリクスのライン、反物質在庫の増加、戻りの水素の出口"
+    },
+    {
+      "id": "d.photon.td.008",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}次へ進む条件{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.009",
+      "sourceHash": "00bf5c91ee6bff41bf220218a193d7d9d466666fb2611ea4b66db0f6a34fb1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "各色のマトリクスと反物質を少なくとも {{fact_1}} で継続生産し、反物質を少なくとも {{fact_2}} 個蓄えている"
+    },
+    {
+      "id": "d.photon.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目標"
+    },
+    {
+      "id": "d.photon.p.005",
+      "sourceHash": "2d941e1bff16bf98ebd924979346b6b59fd59eff1301849640a5478ff1ec44e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}反物質は作れました。次は、最後まで安定して進める工場にします。{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.p.006",
+      "sourceHash": "4976452a7b0314ec25002c8e0a2557cd76ce235e30795f0b5497da6faa7cdf88",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "レシーバー群を動かしながら、以前の段階で造った五色のマトリクスのラインを確認します。各色と{{item_1122_1}}を少なくとも {{fact_1}} にし、最初に不足する供給ラインだけを直します。その間に反物質の在庫を {{fact_2}} 個まで増やします。"
+    },
+    {
+      "id": "d.photon.p.007",
+      "sourceHash": "b8484b41057f0f5f5445e5d840cb7354d3edddd7df7b9ffed87bf62b2b03006c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "「白」を始めてもすぐに材料切れにならない状態になれば、「光子」は完了です。必要なレシーバーの設定は{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}にあります。ここで造り直す必要はありません。"
+    },
+    {
+      "id": "d.photon.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先に研究するもの"
+    },
+    {
+      "id": "d.photon.p.008",
+      "sourceHash": "099de228240bc8835ab6b42629101a5aeaa2f1dbde3aca15ac28445f45b699e0",
+      "termHash": "62623e629a938e05e34029711a38cfef9c36fe53dc52ee41968342664ba5c2e1",
+      "text": "{{strong_1}}レシーバーの効率：{{end_strong_1}}{{tech_3201_1}} レベル {{fact_1}} {{fact_2}} {{tech_3202_1}} レベル {{fact_3}}。この二レベルで止めます。アップグレードにより、レシーバー群が必要とするダイソン電力を減らせます。一段階上げるたびに安定するまで待ち、反物質が {{fact_4}} を上回ったままか確認します。"
+    },
+    {
+      "id": "d.photon.p.009",
+      "sourceHash": "4354542922c74e9fdd8d1051a1ac97a659623a9601cc5124ac25ca27a101e2d0",
+      "termHash": "9be506a2473528b4ac043b39f5ae230e237146dac1e3135bc13550168e3dd27a",
+      "text": "{{strong_1}}資源供給：{{end_strong_1}}{{tech_3601_1}} レベル {{fact_1}} {{fact_2}} {{tech_3602_1}} レベル {{fact_3}} {{fact_4}} {{tech_3603_1}} レベル {{fact_5}}の未完了分を研究し、レベル {{fact_6}}で止めます。以前の任意の推奨研究では、この一部または全部を後回しにしていても構いませんでした。"
+    },
+    {
+      "id": "d.photon.p.010",
+      "sourceHash": "b2798fc08d155432be92f767071887fb36ca4d997346e389d4aa6d4da4fe450d",
+      "termHash": "500d80e139e335755e152d2ed60e954cb8e2c572ddb857495e53e605468b3596",
+      "text": "{{strong_1}}生産の高速化：{{end_strong_1}}{{tech_1417_1}}／{{tech_1202_1}} {{fact_1}} {{tech_1203_1}}。古いラインが白のペースを維持できない箇所にだけ使い、順調なラインはそのままにします。"
+    },
+    {
+      "id": "d.photon.h2.004",
+      "sourceHash": "19d1213fdc95b8034b0c067a706355571acaa10ad861bc405d79903d50fde08e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "各色のラインを白に必要なペースへ上げる"
+    },
+    {
+      "id": "d.photon.p.011",
+      "sourceHash": "cb48e0f4ac96ae97c6df0152500130edd2406b8b22d748b1095ba43901e89f18",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}統計パネル{{end_a_1}}を開き、青、赤、黄、紫、緑マトリクスを確認します。各色が少なくとも {{fact_1}} を維持する必要があります。"
+    },
+    {
+      "id": "d.photon.p.012",
+      "sourceHash": "da92f01773e4d399ee7ad531f6e6717acd503a02dbc9e6aa5091b198ed5371c2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最初に目標を下回る色から始めます。そのラインを上流へたどって不足する材料を見つけ、その枝ラインを強化します。すでに {{fact_1}} を維持できるラインはそのままにします。"
+    },
+    {
+      "id": "d.photon.h2.005",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — どれだけあれば十分か"
+    },
+    {
+      "id": "d.photon.p.013",
+      "sourceHash": "af6438e00a62a0a96cc5844f5bb75ea7d90e331bd490149e41a2bc2b892c7231",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "四基のレシーバーが出せる最大の{{strong_1}}反物質 {{fact_1}}{{fact_2}}{{end_strong_1}}は、白の基準 {{fact_3}} に対して余裕のある設計です。四基で {{fact_4}} を目指しますが、反物質が {{fact_5}} 以上を維持し、予備在庫が増え続けていれば次へ進めます。"
+    },
+    {
+      "id": "d.photon.p.014",
+      "sourceHash": "167b5880594b6783204f8ade6785e7610659f75a9347ec69fc4f99e1a5cdaba0",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "貯蔵場所に少なくとも{{strong_1}}{{item_1122_1}} {{fact_1}} 個{{end_strong_1}}あれば、最後の白の研究で使う反物質の半分は確保済みです。現在の需要から発電を増やす価値がある箇所では、軌道上の供給源も並行して拡大します。"
+    },
+    {
+      "id": "d.photon.h2.006",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意する点"
+    },
+    {
+      "id": "d.photon.p.015",
+      "sourceHash": "2752ca5b9f183023df045f5b9d7e8ce4e1d3bfc0fa2c9b14919d5ae8649504d8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}一時的な増産だけでは判断できません。{{end_strong_1}}工場を数分間動かしてから、表示速度を判断材料にします。"
+    },
+    {
+      "id": "d.photon.p.016",
+      "sourceHash": "922cd74d5b7ae1b94818d7dc7426c2b4cfa4592320553cdeb736a0e41680b4bc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}最初に見つかった不足を直します。{{end_strong_1}}弱いマトリクスのラインを上流へたどり、足を引っ張る枝ラインだけ強化します。"
+    },
+    {
+      "id": "d.photon.p.017",
+      "sourceHash": "a9e2663144aa70d2160b04c6e384714006c2b9cfcb8a8c9207547e31d74654e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}反物質が {{fact_1}}{{fact_2}} を下回るたびに対処する必要はありません。{{end_strong_1}}{{fact_3}} 以上を維持し、在庫が増え続けていれば準備はできています。"
+    },
+    {
+      "id": "d.photon.p.018",
+      "sourceHash": "8077427542116f5d4938b07f7f25474ef2e3c1a82c1fb1edb433d56bf1d0d48a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}戻りの水素を流し続けます。{{end_strong_1}}その出力が止まれば、反物質も止まります。"
+    },
+    {
+      "id": "d.photon.h2.007",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次へ進む条件"
+    },
+    {
+      "id": "d.photon.li.001",
+      "sourceHash": "2718af465bc630620b729bc80620c3581369576c0bd8c3846ab0261df7f84460",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "{{label_1}} {{input_1}}青、赤、黄、紫、緑と{{item_1122_1}}を、それぞれ少なくとも {{fact_1}} で継続生産している。 {{end_label_1}}"
+    },
+    {
+      "id": "d.photon.li.002",
+      "sourceHash": "11e8d9137284aed1a17281e0988572cba72f12a2ac4836601ae6bd0a1fa78b1e",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "{{label_1}} {{input_1}}{{item_1122_1}}を少なくとも {{fact_1}} 個蓄えている。 {{end_label_1}}"
+    },
+    {
+      "id": "d.photon.h2.008",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次の行き先"
+    },
+    {
+      "id": "d.photon.p.019",
+      "sourceHash": "0c6c9545aeafe64d3a884eb2bbc7d2e72d5a3415bb965d014ca5343a02e7bd88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "両方の条件を満たしたら、{{a_1}}{{img_1}}[白]{{end_a_1}}へ進みます。"
+    },
+    {
+      "id": "d.photon.li.003",
+      "sourceHash": "063f5b524c71e172fecfa2140b4e538a1994ffbd1c0ae3f5301e83fb3bdf5fca",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "{{label_1}} {{input_1}}青、赤、黄、紫、緑と{{item_1122_1}}を、それぞれ少なくとも {{fact_1}} で継続生産している。 {{end_label_1}}"
+    },
+    {
+      "id": "d.photon.li.004",
+      "sourceHash": "7a17d422654805331ad72284eda01f47d7aa69a03eebd0276aeb2b7608f7e994",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "{{label_1}} {{input_1}}{{item_1122_1}}を少なくとも {{fact_1}} 個蓄えている。 {{end_label_1}}"
+    },
+    {
+      "id": "d.white.h1.001",
+      "sourceHash": "2f82231d6850d481aa1964c05121ed0e21de0eb6aa722016bac94bec95741eb5",
+      "termHash": "8d022ba23cbaafd4748a3ce26724b01267c05fc3229138b7ad61c0cda7240c7c",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[白]{{end_a_1}} — {{item_6006_1}}と「任務完了！」"
+    },
+    {
+      "id": "d.white.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 現在地"
+    },
+    {
+      "id": "d.white.p.001",
+      "sourceHash": "ec0bad3bad7c68f3865ad36ed5c4db537f635166be8de3cd3e90fcd434563ae3",
+      "termHash": "b12000d1c26f7db2b91743b510e5fabf2aae843147a15f699b3228d466643075",
+      "text": "{{strong_1}}ここまでにできたこと：{{end_strong_1}}{{item_1122_1}}を継続生産できる。{{br_1}}{{strong_2}}今取り組むこと：{{end_strong_2}}すべての色のマトリクスを同時に使う。{{br_2}}{{strong_3}}これでできること：{{end_strong_3}}{{tech_1508_1}}{{br_3}}{{strong_4}}その後：{{end_strong_4}}楽しそうなクリア後の目標を自由に選びます。拡張のたびにステーションや輸送機を手作りするようなら、{{a_1}}{{img_1}}[物流]{{end_a_1}}を使いましょう。"
+    },
+    {
+      "id": "d.white.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "この段階の概要"
+    },
+    {
+      "id": "d.white.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確認項目"
+    },
+    {
+      "id": "d.white.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "今の要点"
+    },
+    {
+      "id": "d.white.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主な目標{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.002",
+      "sourceHash": "a2d04ee498c0df96e0536aa73956cc7db5d4d3a45c6afc6682f7357dc9962b9a",
+      "termHash": "ac6be10cad32f6d783bb7e416f000547b8a8c3f7b40b60aa790bd21ff0d3a655",
+      "text": "{{tech_1507_1}}を研究し、白 {{fact_1}}{{fact_2}} を維持して、研究「{{tech_1508_1}}」に {{fact_3}} 個を投入する"
+    },
+    {
+      "id": "d.white.td.003",
+      "sourceHash": "4ae8e0aa5c72dd067309c7140bc3e5855896b7533e556bb0f7a9db7895d9ea80",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}最後の合流{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.004",
+      "sourceHash": "e811682a416032c530e03e1fb43f871693057dbfd91f662e68570e3cd7204e90",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "既存の五色のマトリクスと{{item_1122_1}}を、生産用研究所 {{fact_1}} 基へ供給する"
+    },
+    {
+      "id": "d.white.td.005",
+      "sourceHash": "7a3be468e528aeabeccf0f0ed7a7178b28fc57abfe9465ecfba1c2ecef353687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}次に研究するもの{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.006",
+      "sourceHash": "2005f0ff0e7b4c51b40ede0208ce1e9a064844677f940a317cbe76d4260ebad4",
+      "termHash": "ac6be10cad32f6d783bb7e416f000547b8a8c3f7b40b60aa790bd21ff0d3a655",
+      "text": "{{tech_1507_1}} {{fact_1}} {{tech_1508_1}}"
+    },
+    {
+      "id": "d.white.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}注意する点{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.008",
+      "sourceHash": "d8333b1b6fdcf644ee3cd414d4015711802817a795ec75cc5ab76187e8e3bc6c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "以前の色のうち、最初に入力ベルトが空になるもの"
+    },
+    {
+      "id": "d.white.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}次へ進む条件{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.010",
+      "sourceHash": "b77d0c998bb371ffc1802cde8dedce95705903b591622f1499c9fcb5947347a7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "「任務完了！」の研究が終わる"
+    },
+    {
+      "id": "d.white.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目標"
+    },
+    {
+      "id": "d.white.p.002",
+      "sourceHash": "3dabdd7ff2abd834023dc61dd630673525dd75134ed24cd3d0540495a8c3b78a",
+      "termHash": "8284764bef8ab809acd567f1b895b6ec76f91beda8a07297abdbc20e27c09614",
+      "text": "白の研究は、未知の新工場ではなく、合流がうまくいくかの確認です。青 + 赤 + 黄 + 紫 + 緑 + {{item_1122_1}} {{fact_1}} 白マトリクスの研究所十基 {{fact_2}} 貯蔵と研究。各材料はすでに作ってきたものです。六つを集め、最初に途切れる入力をたどりましょう。"
+    },
+    {
+      "id": "d.white.p.003",
+      "sourceHash": "473ec2a14f9236eb14d1c5e54e8c1c49778729010690bcd9c659430d18f72350",
+      "termHash": "e5dcb63f3e32fe835381e8cda07b7b6e70df85a4825cc6bb83cd987bc157e3a1",
+      "text": "白の生産開始前に、{{tech_1507_1}}の研究で各色のマトリクスを {{fact_1}} 個ずつ使います。その後、研究「{{tech_1508_1}}」で{{item_6006_1}} {{fact_2}} 個を消費します。解放の研究中に生産ラインを造り、実際に供給が途切れるラインだけを直します。"
+    },
+    {
+      "id": "d.white.h2.003",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — どれだけあれば十分か"
+    },
+    {
+      "id": "d.white.p.004",
+      "sourceHash": "24b6c1cc0c9d1f4ce337bb93451bbf8ccd09b44b153cca814d5a9c43b734df91",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}白 {{fact_1}}{{fact_2}}：{{end_strong_1}}生産用研究所 {{fact_3}} 基と、六つの入力すべてから {{fact_4}} の供給です。この速度なら {{fact_5}} 個分の材料を生産するのに {{fact_6}} 時間 {{fact_7}} 分かかります。"
+    },
+    {
+      "id": "d.white.h2.004",
+      "sourceHash": "52174fb5361df3ec38f9d87ddc828c33afa87b5ff8b4409c4ed3a3a6a7479137",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — 最後の合流"
+    },
+    {
+      "id": "d.white.p.005",
+      "sourceHash": "8e0576b6b84e65d5d6a45bd40cd96fdf02abf6237c1531ea43a7004eb98304a3",
+      "termHash": "2387661eac37a26d892e9cb3325abe0bcfd476f19b445a436b50c63418317f5a",
+      "text": "青、赤、黄、紫、{{item_6005_1}}と{{item_1122_1}}を白の研究地区へ集めます。目標の {{fact_1}} に向けて、六つの入力をすべて{{item_2901_1}}十基へ供給します。できた{{item_6006_1}}を研究へ送り、実際に供給が途切れるラインだけ増設します。"
+    },
+    {
+      "id": "d.white.h2.005",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意する点"
+    },
+    {
+      "id": "d.white.p.006",
+      "sourceHash": "b68e2675919445edc495f9212abbbc9e365481eac82e068f3666af79a2e90960",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最も新しいラインが原因とは限りません。白の研究では、すべての色を継続して要求されるまで在庫で順調に見えていた、小さな古い赤・黄・紫の地区が不足を起こしがちです。"
+    },
+    {
+      "id": "d.white.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次へ進む条件"
+    },
+    {
+      "id": "d.white.li.001",
+      "sourceHash": "fd5de5426b3f8c0fb7a5efb9167b281f7cff0c05d53c3fe5b9e1be1298dfae5a",
+      "termHash": "8d022ba23cbaafd4748a3ce26724b01267c05fc3229138b7ad61c0cda7240c7c",
+      "text": "{{label_1}} {{input_1}}{{item_6006_1}}の研究が完了している。 {{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.002",
+      "sourceHash": "5f6a2db47d7946158d31b66f72b6f5a494fb38b8e53388b3a64d89541d2040c1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}六つの入力すべてが、白の研究所へ継続して届く。 {{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.003",
+      "sourceHash": "698f0b3b3e9df839db66cac717bd6ea8b4c85b625219f1152a25ecd471c92a50",
+      "termHash": "8d022ba23cbaafd4748a3ce26724b01267c05fc3229138b7ad61c0cda7240c7c",
+      "text": "{{label_1}} {{input_1}}研究所十基で{{item_6006_1}} {{fact_1}}{{fact_2}} を維持している。 {{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.004",
+      "sourceHash": "afc839aea2d7c81fd85c74ea277bee797856cd9e4209714141419e1abd7d5c6c",
+      "termHash": "8d022ba23cbaafd4748a3ce26724b01267c05fc3229138b7ad61c0cda7240c7c",
+      "text": "{{label_1}} {{input_1}}「任務完了！」で{{item_6006_1}} {{fact_1}} 個を消費中、または消費済みである。 {{end_label_1}}"
+    },
+    {
+      "id": "d.white.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次の行き先"
+    },
+    {
+      "id": "d.white.p.007",
+      "sourceHash": "6d4832a5ddd4f9ed0182f6d3b38be166abb801482aa5cf5a84f47eae590e31ca",
+      "termHash": "9cfe81138b1e622f9e313789773f965cea8615ce397f1a9ffb0bf25aabf125b0",
+      "text": "研究「{{tech_1508_1}}」を終えましょう。その後、拡張のたびにステーションや輸送機を手作りするようなら、{{a_1}}{{img_1}}[物流]{{end_a_1}}で補充用設備を自動化し、次の目標に備えます。"
+    },
+    {
+      "id": "d.sphere.h1.001",
+      "sourceHash": "fc71169c2e2beff5af38dfc9a9d78e3e232ef7050533f23ed7530ff9ed11d3b7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}任意ルート{{end_span_1}} {{a_1}}{{img_1}}[スフィア]{{end_a_1}} — 常設のダイソンスフィア"
+    },
+    {
+      "id": "d.sphere.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 現在地"
+    },
+    {
+      "id": "d.sphere.p.001",
+      "sourceHash": "5d37d98106920424d102e83bf760071d30bd23a36a4f9694db5777a19e48e606",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}始められる時期：{{end_strong_1}}緑で、この建設に使う高価な共用部品を整えた後。{{br_1}}{{strong_2}}選ぶこと：{{end_strong_2}}寿命のあるクラウドだけに頼らず、時間をかけて常設のノード、フレーム、シェルのセルを造る。{{br_2}}{{strong_3}}得られるもの：{{end_strong_3}}本筋と並行して拡張できる、軌道上の常設発電。{{br_3}}{{strong_4}}本筋への戻り先：{{end_strong_4}}{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}。"
+    },
+    {
+      "id": "d.sphere.h3.001",
+      "sourceHash": "15b1942e90b5d6134dda5f4d47db12af8b398b97a0694a3e678ebfae8d1db5c1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "任意ルートの概要"
+    },
+    {
+      "id": "d.sphere.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確認項目"
+    },
+    {
+      "id": "d.sphere.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "今の要点"
+    },
+    {
+      "id": "d.sphere.td.001",
+      "sourceHash": "8e4944938dcc900a5b6ffebd284a5e9f1e24c0ec228857c435e7820ba092c900",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}任意の用途{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.002",
+      "sourceHash": "c33f09db54e7ebfa9c893e735c225a0f7fc83cf078b241dd7f3e8353bb2af8a8",
+      "termHash": "68850c55015f2ea30b82e5638f259d00ec314aa32cdeec0bf1d1f8ec38993f91",
+      "text": "無理のない規模の{{item_1503_1}}ラインを造り、小さな常設構造を自分のペースで完成させながらスフィア編集を覚える"
+    },
+    {
+      "id": "d.sphere.td.003",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}先に研究するもの{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.004",
+      "sourceHash": "4f0eb36b2d088edc557c2339c591ee46a97b7c8a8952fa71cf219ab48b76d81b",
+      "termHash": "d4150b25dc2e8caeb6af757a5ef9a7cdc52b88daa2edfbdb929fc125e0f9ac3b",
+      "text": "{{tech_1522_1}} {{fact_1}} {{tech_1523_1}} レベル {{fact_2}}"
+    },
+    {
+      "id": "d.sphere.td.005",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}注意する点{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.006",
+      "sourceHash": "d44cd648d381a1aeb1500fdfea70bec2a5274d1ee8832dc99c2e74952ab57b37",
+      "termHash": "68850c55015f2ea30b82e5638f259d00ec314aa32cdeec0bf1d1f8ec38993f91",
+      "text": "{{item_1503_1}}が未完成のノードやフレームへ届くか、完成した枠がシェルを囲むか、既存部品のどの在庫が最初に尽きるか"
+    },
+    {
+      "id": "d.sphere.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目標"
+    },
+    {
+      "id": "d.sphere.p.002",
+      "sourceHash": "9ec3e27bed17652bef7dd3c7cf19cb77c1f2ff8871fd0914d12a0af073dc3492",
+      "termHash": "26db9b7817e1144c779a1818663965a94b26c6c7db7c5c2d668ab2d2e6934e65",
+      "text": "緑の後は、ダイソンのクラウドに常設構造を追加できます。素早く増やせる消耗品の代わりに、より多くの資材と時間を使って恒星に残る構造を造るのがスフィアです。{{item_1503_1}}はノードとその間のフレームからなる骨組みを造ります。{{item_1501_1}}がシェル領域を埋めるのは、フレームで有効な閉じた枠ができてからです。"
+    },
+    {
+      "id": "d.sphere.p.003",
+      "sourceHash": "ecd6dd059d1c79fda49a7d1f837a8bf7b03cea21e0b8f6750b23e73a00947484",
+      "termHash": "68850c55015f2ea30b82e5638f259d00ec314aa32cdeec0bf1d1f8ec38993f91",
+      "text": "スフィア編集では小さく始めましょう。最初の{{item_1503_1}}ラインで完成できる形を描き、サイロへの供給を続け、完成したフレームにシェルを追加します。初日から最終的な大建築を設計する必要はありません。形によって総資材量は変わります。決まった大きさ、意匠、発電目標、完了点はありません。自分に役立つ分だけ常設構造を造ってください。"
+    },
+    {
+      "id": "d.sphere.h2.003",
+      "sourceHash": "f38b4e7de032132af450e0452ea9d88d75197e53fe9cd152ab0c9f66e3c55207",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "このルートの研究"
+    },
+    {
+      "id": "d.sphere.p.004",
+      "sourceHash": "8bba0cbf56c42ee4822e29644f10d193be5514ce249a802c6e506a500116689c",
+      "termHash": "d4150b25dc2e8caeb6af757a5ef9a7cdc52b88daa2edfbdb929fc125e0f9ac3b",
+      "text": "緑の加速機用材料系統で、ここに必要なセイル軌道とフレーム材の研究は済んでいます。この任意ルートでは{{tech_1522_1}}、続いて{{tech_1523_1}} レベル {{fact_1}}を研究します。応力系の最初のレベルだけで、最初のシェルを囲めます。実際に大きなスフィアが必要になった場合だけ、さらに上げます。サイロの前提となる強化軽量構造物はすでに完了し、ロケットのレシピには緑の量子チップラインから供給できます。"
+    },
+    {
+      "id": "d.sphere.h2.004",
+      "sourceHash": "1be2e889c36274abfe95a64024166131e270a92f8ecd9f87308505f179b016b1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — 生産ラインの形"
+    },
+    {
+      "id": "d.sphere.p.005",
+      "sourceHash": "b9d28898dce2d78347150b202953c3a01725cd93134a6c5952feb48817d78c2c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}各カードは、供給元から貯蔵先まで、任意の生産ラインの形を一つ示します。{{end_strong_1}}全体像を見たいときに開きます。それ以外は閉じたまま建設を進めて構いません。必須の手順がカードの中だけに隠れていることはありません。"
+    },
+    {
+      "id": "d.sphere.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}すべてのカードを開く{{end_button_1}}{{button_2}}すべてのカードを閉じる{{end_button_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.summary.001",
+      "sourceHash": "487388a7455fae3cdcb0b1f68a403cc87454b55e402db512b8c1a99f5e7fef3e",
+      "termHash": "c07760d9b631ec21ede85d37ff0e3202fd3086e5020c601cadd339a6a77ec0ba",
+      "text": "{{span_1}}{{item_1502_1}} {{end_span_1}}{{span_2}}{{span_3}}任意{{end_span_3}}{{span_4}}段階的に建設{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.001",
+      "sourceHash": "9b41c0d0e260094a0c4ab9e9460c5405c0d7c4028e2a7d1bc32f1267b22019e9",
+      "termHash": "aebe343e3515fdb0e38fb69b8ff9ab66652c05b0c31df36294cdd32e7e65fb00",
+      "text": "{{a_1}}ダイソンで作った{{item_1501_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.002",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "3a08f74e1e4e60cca92668aee06a6025d1bd1366c01f775dd4d4c685615b5969",
+      "text": "{{a_1}}紫で作った{{item_1303_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.003",
+      "sourceHash": "4dc5006cfae2e5e33a177b8644b1385363de6abe1677ce385b108979eaf22998",
+      "termHash": "c8c54b37399e608bfcdfb351491c1aacdf42cce7e2ae12634d5a62e3d295e1e3",
+      "text": "{{a_1}}紫の枝ラインで作った{{item_1124_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.004",
+      "sourceHash": "25c7dff4c831f7885f4432d6d6888c38457a636b60bfcaa3d2671f46b87ee04e",
+      "termHash": "1e5097750dc4edace401f59fd1bd3bae0136e1dabccacef9477e8daece44fb65",
+      "text": "{{item_1107_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.005",
+      "sourceHash": "c6fd3ae07a243086d1ddd21a601b2f615c97db05ee201b561c8edc82ac3d3afa",
+      "termHash": "c7e35487848346015208abdec3be0d687131959b785619bccdd1dbd8d34fbf81",
+      "text": "{{item_1105_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.006",
+      "sourceHash": "41392ce829762406ba34f196380369ecf700e6a79ba1c4e1c919830581065fe6",
+      "termHash": "3f00ad5956f7e0c9fa0c1ed2b211204492a47eaa92a4aa3e66c633400ee556f5",
+      "text": "{{span_1}}フレーム材の枝ライン{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1107_1}} + {{item_1105_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1125_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.007",
+      "sourceHash": "7ef4c34bd7fef734efc1d5e94a66158bd17f42ee5b2cb95072cb726f79ef550f",
+      "termHash": "eab9198473b03be518fdd198aa60593779f28f2961fdb6909d75ada70c4b6c63",
+      "text": "{{span_1}}パーツの組み立て{{end_span_1}}{{span_2}}{{item_1125_1}} + {{item_1501_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1502_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.008",
+      "sourceHash": "2dcbff2a6a03465519fc9b2395d6f14c6ca3a396ccc9392a57732cae5ba5b41e",
+      "termHash": "acd00bc652c9b4daa2980f620a8e1592329c9b5b821f33771879c2d33334e235",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1502_1}}{{end_span_1}} — {{item_1503_1}}の組み立て前にパーツを備蓄します。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.009",
+      "sourceHash": "989a2f44169c4c1d95e8838a66b9e3e0276e128146aa111aeac0a9fe39d487e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "工程の間でフレーム材の残量を見えるようにします。パーツ生産が止まったら、フレーム材、セイル、プロセッサーのうち空になった供給元が増設すべき枝ラインです。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.summary.001",
+      "sourceHash": "08b625e73e5dd6cea911ba9a4f4842b17a7352ebae7eaf4af85bcfe9120420f9",
+      "termHash": "cb688105772a9c648d9ffea7122fe57f8e3fdc6e5f6f3ffe6f35f1f70452f22f",
+      "text": "{{span_1}}{{item_1802_1}} {{end_span_1}}{{span_2}}{{span_3}}任意{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.001",
+      "sourceHash": "bde291e2a656f9738421534f7f7b5924f074f7d0c72a7d74947a4bc93114c59a",
+      "termHash": "3cbea7713aadef148d0960c7c937ea4349d765a112d174619ad26105d2cbb4a8",
+      "text": "{{item_1121_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.002",
+      "sourceHash": "25c7dff4c831f7885f4432d6d6888c38457a636b60bfcaa3d2671f46b87ee04e",
+      "termHash": "1e5097750dc4edace401f59fd1bd3bae0136e1dabccacef9477e8daece44fb65",
+      "text": "{{item_1107_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.003",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "2c801abd839c4ac20c9263964ba5466f479a6e01614a548ec56bbb765588927b",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.004",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "c144c1bb833bd671a05526761c2fbf638d88497e6ee3ca90b6374c03a88f5a18",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.005",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "0b86faafb033963a9066cb89909f152ff75f9773cdc161686b6363b3cab5db2f",
+      "text": "{{a_1}}共用ラインの{{item_1204_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.006",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "ca1aa2301a7d4e9e031b55eb2676b18ce7d6e798d517ddf994e92ff4384b30fa",
+      "text": "{{span_1}}グラファイトの枝ライン{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.007",
+      "sourceHash": "c7fab8edf9d5d6a037e121e994e522ecc01394b2e9819a1e4f894ec00f37f824",
+      "termHash": "3cfd2c58a2a721b5d1f35f05b0f375b6bd281e09f58260ca1ea284fa1f24e47d",
+      "text": "{{span_1}}{{item_1102_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1102_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.008",
+      "sourceHash": "b49b505589c902d23f5442673713253868dcb6e7769e39140c269c6b78f007ab",
+      "termHash": "c13a4a71f5324e7e63b577d5aad30fa03e8988e58efbdc04d4997e214737f058",
+      "text": "{{span_1}}リングの組み立て{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.009",
+      "sourceHash": "fb3130e02f900774a375d3be936b430d45470de80f25494cdaa4fcceae0efe23",
+      "termHash": "83396753c49022844507bf72cb3a31a9b3dcb8b5555fabaa51378995021eae06",
+      "text": "{{span_1}}燃料棒の組み立て{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1802_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.010",
+      "sourceHash": "22feeaaf872042e37cc6256c146eedaf157403fc6a180af4e10eaf457a42b7a9",
+      "termHash": "e8c34f84e9d810a8e45ed659de912f1e8cd5b2861080ff8f4d12e988840f7a43",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1802_1}}{{end_span_1}} — {{item_1503_1}}の組み立てや核融合発電に使う前に、燃料棒を備蓄します。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.011",
+      "sourceHash": "f1c7bfb4da8acef143dd2316cee321460e0b75b5a9a1e576e7e1d346cdd6d6ac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "この枝ラインは、終盤の生産と重水素や磁性部品を共用します。燃料棒の組立機が原因と決めつけず、最初に空になった入力をたどりましょう。"
+    },
+    {
+      "id": "d.sphere.h2.005",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意する点"
+    },
+    {
+      "id": "d.sphere.p.006",
+      "sourceHash": "1701c34488608d10a782cce21d1012501a5862379d9c68db167b4e82472d9506",
+      "termHash": "68850c55015f2ea30b82e5638f259d00ec314aa32cdeec0bf1d1f8ec38993f91",
+      "text": "{{strong_1}}編集画面の状態。{{end_strong_1}}{{item_1503_1}}には建設対象の未完成ノードやフレームが必要です。セイルが常設構造になるには、指定したシェル領域を完成したフレームで囲む必要があります。"
+    },
+    {
+      "id": "d.sphere.p.007",
+      "sourceHash": "30dc24443ee2ef8d4c56c7fe74887b887c21eadd6871bc68541cf6ab275e0d86",
+      "termHash": "68850c55015f2ea30b82e5638f259d00ec314aa32cdeec0bf1d1f8ec38993f91",
+      "text": "{{strong_1}}部品ラインの供給不足。{{end_strong_1}}{{item_1503_1}}の組立機を増やすより、最初に空になった部品在庫から上流へたどります。常設ルートでは、すでにある複数の枝ラインを同時に使います。"
+    },
+    {
+      "id": "d.sphere.h2.006",
+      "sourceHash": "362aebe76071982591c85032bf71815323dc5045caa32b51941760408edf4624",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本筋へ戻る"
+    },
+    {
+      "id": "d.sphere.p.008",
+      "sourceHash": "d2c779acd6d6ba20dfdf0f1694783252cb440b816540813b35113dea98eca034",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "準備ができたら、{{a_1}}レシーバーから反物質への接続手順{{end_a_1}}へ進みます。常設構造はどの規模でも並行して造り続けられます。この戻り先は、スフィアの完成条件を定めるものではありません。"
+    },
+    {
       "id": "a.tech-sheet-title.h2.001",
       "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",

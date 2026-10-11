@@ -155,6 +155,12 @@ station modes are 現地供給/現地要求 and 星間供給/星間要求. 土�
 on first relevant use. Keep prose technology references aligned with the native
 精錬純化、結晶体精錬、鋼材精錬 and チタン精錬 labels.
 
+Receiver prose uses 光子生成, 継続受取 and 自動軌道, verified read-only in
+the same tables. The photon-conversion recipe is 質量エネルギー貯蔵. Use
+放射線送信効率 for the technology. The native tables contain both
+ダイソンクラウド and ダイソンスワーム; use ダイソンクラウド consistently in
+guide prose, matching the primary mode label, and クラウド once established.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 
