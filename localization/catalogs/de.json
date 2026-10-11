@@ -564,7 +564,7 @@
       "id": "a.top.p.016",
       "sourceHash": "586751b28d869500075ea222aae9703a4e9e1061ed4d655bc7c5af1ea3762527",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Die Baukarten verwenden Standardrezepte, keine seltenen Ersatzrohstoffe und keine Proliferation, sofern der Betriebshinweis nichts anderes sagt."
+      "text": "Die Baukarten verwenden Standardrezepte, keine seltenen Ersatzrohstoffe und keine Proliferation, sofern der Betriebshinweis nichts anderes sagt. Zahlen behalten die englische Schreibweise bei: Kommas trennen Tausender, Punkte die Dezimalstellen."
     },
     {
       "id": "a.top.p.017",
@@ -3709,6 +3709,1548 @@
       "sourceHash": "f1f20eb83d00d23c1d88d7bd8c96e902ab727524b88ab778ca2ddacf517824cb",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "text": "Weiter zu {{a_1}}{{img_1}}[GELB]{{end_a_1}}. Ersetze die begrenzte Forschungscharge durch eine dauerhaft versorgte Forschung."
+    },
+    {
+      "id": "c.yellow.h1.001",
+      "sourceHash": "51a46325012fe7e6595840c949f96c567d65f63b55a9ed3332a97cff8d544af7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[GELB]{{end_a_1}} — Gelbe Forschung dauerhaft versorgen"
+    },
+    {
+      "id": "c.yellow.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "c.yellow.p.001",
+      "sourceHash": "86c882d80ccfb49975567e1f7f936cbccd3bc2de6c3de05fccb326d31e08761d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Manuelle interplanetare Transporte abgelöst.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Die begrenzte ILS-Forschungscharge durch eine dauerhafte gelbe Linie ersetzen.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Dauerhaft versorgte gelbe Forschung und eine stabile Grundlage für die violette Produktion.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} {{a_1}}{{img_1}}[VIOLETT]{{end_a_1}}"
+    },
+    {
+      "id": "c.yellow.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Phasenübersicht"
+    },
+    {
+      "id": "c.yellow.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auf einen Blick"
+    },
+    {
+      "id": "c.yellow.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was jetzt zählt"
+    },
+    {
+      "id": "c.yellow.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hauptziel{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.002",
+      "sourceHash": "fc6884e69319250b68bb7d87f0973ee89a4395a33dd507a7746017c5e186a619",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "Drei Labore für gelbe Würfel mit lokaler Chemie und Importen des Produkts {{item_1106_1}} versorgen"
+    },
+    {
+      "id": "c.yellow.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Guter Richtwert{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.004",
+      "sourceHash": "542e9dd797a78a81f87aaf7545fa911efd5043d2a69ad813de7068b41fe0b598",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Jetzt drei Labore; erst ausbauen, wenn die Forschung erkennbar auf Gelb wartet"
+    },
+    {
+      "id": "c.yellow.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Zuerst erforschen{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.006",
+      "sourceHash": "68c66ecadafd6d01d62c883a14c73a9f3312e5740ac401dcc679ced9e71e9a19",
+      "termHash": "e78fd6fc6312f1b1e950f8ec4f9b5881c10157cf9a6e8fe75e3863085ecfbcbe",
+      "text": "{{strong_1}}Ausbau:{{end_strong_1}} {{tech_2203_1}} Stufe {{fact_1}}, {{tech_2302_1}} Stufe {{fact_2}}, {{tech_2403_1}} Stufe {{fact_3}}, {{tech_2602_1}} Stufe {{fact_4}} und {{tech_2703_1}} Stufe {{fact_5}}.{{br_1}}{{strong_2}}Mall-Zugriff:{{end_strong_2}} {{tech_1608_1}}.{{br_2}}{{strong_3}}Rohstoffreichweite:{{end_strong_3}} {{tech_3601_1}} Stufe {{fact_6}}."
+    },
+    {
+      "id": "c.yellow.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Im Blick behalten{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.008",
+      "sourceHash": "f93f874da4fb31fe7b199b80457ce2752ed9fbde3e25b538915e184971a8a4be",
+      "termHash": "2428c66e883ff50e2b263d2adc7861fb95a9ec9bc4ab7961abd2d6cc7cb3050a",
+      "text": "Gemeinsame Chemiezufuhr, Bilanz von „{{item_1114_1}}“ und die Titan-Empfangs-ILS"
+    },
+    {
+      "id": "c.yellow.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Weiter, sobald{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.010",
+      "sourceHash": "6e5bcf436807d49156bc336a18e260a08081fe7677ef63f2167d4d8508fac761",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Drei Labore durchgehend gelbe Würfel produzieren"
+    },
+    {
+      "id": "c.yellow.blockquote.001",
+      "sourceHash": "12cb33777175a17ed3b52dea93dbf9f9fb6a483c0c1809a3a7174791ce297897",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Das sind sinnvolle Forschungsaufgaben, während Gelb sich einspielt. Sobald alle drei gelben Labore weiterlaufen, verschiebe den Rest auf später und geh zu VIOLETT."
+    },
+    {
+      "id": "c.yellow.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "c.yellow.p.002",
+      "sourceHash": "e24a9a554ffd547e0c4429c1171a76ead10b00d572c5e280e7bdf8191384a824",
+      "termHash": "b17aa66ce781ec7d6d7de7339eaaca078be1ff5bb035fc24e69518c620ac546b",
+      "text": "In Gelb greift die kleine, ordentliche Startfabrik erstmals in alle Vorratsschränke zugleich. Öl, {{item_1006_1}}, {{item_1000_1}} und importiertes Titan erfüllen nun mehrere Aufgaben. Ein vernachlässigter Zweig kann deshalb Maschinen am anderen Ende des Bezirks stoppen."
+    },
+    {
+      "id": "c.yellow.p.003",
+      "sourceHash": "912c54664cb01aba4c36f9d41d700ee79d71bf8eb1d01d0c2f8808cac9f342d1",
+      "termHash": "5af767adafa4f6bcdaf8648df58f70aac91d1b4208a2fde8b15c8ece112df026",
+      "text": "Gib gemeinsam genutzten Materialien sichtbare Zufuhrpunkte und wichtigen Flüssigkeiten gut einsehbare Lager. Prüfe die unterversorgte Linie, statt jede {{item_2309_1}} des Planeten einzeln zu verhören. Du spielst schließlich ein Fabrikspiel: Finde die hungrige Linie schnell und baue weiter."
+    },
+    {
+      "id": "c.yellow.p.004",
+      "sourceHash": "bc176eafaf4f9a71afa4ac7b735d8a33dd940fadf8872d1617d2492087752650",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Eine planetenübergreifende Linie wird langsamer?{{end_strong_1}} Nutze die {{a_1}}Anleitung zur Produktionsstatistik{{end_a_1}}, um vor einem Umbau zwischen wartendem Ausgang, schwacher Zufuhr und Lieferlücke zu unterscheiden."
+    },
+    {
+      "id": "c.yellow.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zuerst erforschen"
+    },
+    {
+      "id": "c.yellow.h3.002",
+      "sourceHash": "4658268e984aba08485422fa3112822aefc01a86211de30ea9b62ba65cf061ca",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Empfohlen, während Gelb stabil wird"
+    },
+    {
+      "id": "c.yellow.p.005",
+      "sourceHash": "6843e49f5908d0de42794ad2fc5f93b8a4908917eb345ce1c8ee8975c9a20d6e",
+      "termHash": "1d9a01c2834818f0ad90c542b3f2e1ca3521883132087ae6ad330d9b0b3bde98",
+      "text": "Die während ILS abgeschlossene Technologie {{tech_2102_1}} verschafft dir einen Vorsprung bei den folgenden Verbesserungen. Arbeite diese Gruppen der Reihe nach ab, aber jeweils nur bis zur genannten Stufe:"
+    },
+    {
+      "id": "c.yellow.li.001",
+      "sourceHash": "ba6f71f5a6455ae2975476841ca2225c1b42e6d06968d69acda7dd008ae84693",
+      "termHash": "48f3344680eadf360a13bc4662359016ddf65d28d21dbeddc0a2e14337d63d3f",
+      "text": "{{strong_1}}Ausbau:{{end_strong_1}} {{tech_2203_1}} Stufe {{fact_1}}, {{tech_2302_1}} Stufe {{fact_2}}, {{tech_2403_1}} Stufe {{fact_3}}, {{tech_2602_1}} Stufe {{fact_4}} und {{tech_2703_1}} Stufe {{fact_5}} erleichtern Transport, Platzierung und Erweiterung der großen gelben Anlage."
+    },
+    {
+      "id": "c.yellow.li.002",
+      "sourceHash": "b58a60378f5b101d29978cb5b4d6f08c450aa079946cf918220f34576d71b4bb",
+      "termHash": "d632f028e1b860b0d2483fc47f3d7dcf7277ba117744f3b0c61aa6cf4a7c991f",
+      "text": "{{strong_1}}Mall-Zugriff:{{end_strong_1}} {{tech_1608_1}} macht häufig abgeholte Mall-Vorräte über Frachtverteiler verfügbar."
+    },
+    {
+      "id": "c.yellow.li.003",
+      "sourceHash": "5186aa596e29677e7665e7d49c55a9bcba64ac57c51b56490114299f244c85c5",
+      "termHash": "099f8fd798085d9829b428f3c25d6324a88bb4b4ff411e8ce2cdce6514480c5d",
+      "text": "{{strong_1}}Rohstoffreichweite:{{end_strong_1}} {{tech_3601_1}} Stufe {{fact_1}} verlängert die Nutzungsdauer der Vorkommen für die wachsende Fabrik."
+    },
+    {
+      "id": "c.yellow.p.006",
+      "sourceHash": "9f2281b298834aa2aabc690a43dd5ad1e93e172c11a0dc0a371d76a665087437",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hier aufhören.{{end_strong_1}} Weitere Stufen einschließlich Mech-Kern Stufe {{fact_1}} würden insgesamt {{fact_2}} Würfel verbrauchen. Für einen GELB-Abstecher vor VIOLETT ist das zu teuer."
+    },
+    {
+      "id": "c.yellow.h3.003",
+      "sourceHash": "487314694a82145965cf7d5fabd75e7d3929536ddccae7f881a891ebd7152ecb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Eine letzte Forschungskette für die Wartezeit"
+    },
+    {
+      "id": "c.yellow.p.007",
+      "sourceHash": "07180c8a798b20544828ef314c6a5283e6cd5227a05b4d232cf39c278b1dd191",
+      "termHash": "9baf6cc99df29f3bf8a490561270365b4d240cc36d192556ba46f5682abf2412",
+      "text": "Falls Gelb nach diesen drei Gruppen noch nicht stabil läuft, schließe {{tech_1501_1}} und {{tech_1711_1}} ab, danach {{tech_1511_1}}. Akkumulatoren können überschüssige Erzeugung aufnehmen und die Ladespitzen von Logistikstationen abfedern. Das ist sinnvolle Vorbereitung, keine weitere Priorität der Phasenübersicht."
+    },
+    {
+      "id": "c.yellow.h3.004",
+      "sourceHash": "274199ef83ef9c571064ef10965bab1cee767068033183dd38947f42c17822df",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Voraussetzung zum Verlassen von GELB"
+    },
+    {
+      "id": "c.yellow.p.008",
+      "sourceHash": "66685fcb45f01a8b4270e59326c0be90d01f51ebeaae311ced4643932459c7c3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Drei durchgehend versorgte Labore für gelbe Würfel reichen zum Weitergehen. Die übrigen Verbesserungen oben können warten."
+    },
+    {
+      "id": "c.yellow.h3.005",
+      "sourceHash": "d85b56435e56e08721a05baa6a6251a3965fc7fc960a21e3468af8a26b96204a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wann du die Liste liegen lässt"
+    },
+    {
+      "id": "c.yellow.p.009",
+      "sourceHash": "0e4f25e8a1a0d3e1f86d9a68ed7e58740184ba76a7ba7d4d3b1b6f8f3889ea0a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Sobald alle drei Labore weiterlaufen, verschiebe offene Aufgaben einschließlich der letzten Forschungskette auf später und geh zu VIOLETT. Bleib nicht nur deshalb in GELB, um diese Forschungsliste zu leeren."
+    },
+    {
+      "id": "c.yellow.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Wie viel reicht?"
+    },
+    {
+      "id": "c.yellow.p.010",
+      "sourceHash": "b70e3b9dbce5438fee0839af53fc3e75481dce0a90ee8c46dc3b7bd2d65d6426",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Die Produktion von drei Laboren{{end_strong_1}} reicht, wenn die gelbe Forschung läuft, während die Chemiezweige ihre eigenen Puffer nachfüllen. Erweitere erst, wenn die Forschungswarteschlange erkennbar auf Gelb wartet, nicht auf eine ältere Farbe oder eine fehlende Voraussetzung."
+    },
+    {
+      "id": "c.yellow.h2.005",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Benötigte Anlagen"
+    },
+    {
+      "id": "c.yellow.p.011",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Jede Karte skizziert eine nützliche Linie von den ersten Eingangsprodukten bis zum gewünschten Endprodukt.{{end_strong_1}} Öffne sie für einen Gesamtüberblick. Lass sie sonst geschlossen und baue weiter; darin ist nichts Unverzichtbares versteckt."
+    },
+    {
+      "id": "c.yellow.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}} Alle Karten aufklappen{{end_button_1}}{{button_2}} Alle Karten zuklappen {{end_button_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.summary.001",
+      "sourceHash": "4b899d8c021a3b70160f73a8159216db9f757f7a9825119429c14ab33e1696a3",
+      "termHash": "da8f550affe6c30be5b685be82c6e34ef4c0fbb5f575f53fb22d3edad8c87c0c",
+      "text": "{{span_1}}{{item_6003_1}} — Produktion von drei Laboren{{end_span_1}}{{span_2}}{{span_3}}ERFORDERLICH{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.001",
+      "sourceHash": "ad3c2a09748a762a1463926559d78b1fb2dabbd11552f40fa8ff8ba6f0190866",
+      "termHash": "a14bfcea088316ab73c9b2ef4e5c00b9bdc49a23a1f8a105d784fc9e314c3639",
+      "text": "{{item_1007_1}}."
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.002",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "81f01fd02c8e7cc2b4d9f6ce0dd76fb9a13e5b0da9a8a5e4694b9d56764a8982",
+      "text": "{{item_1006_1}}."
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.003",
+      "sourceHash": "60139b348f224aa07cdf015236a893f3aee96e5dac8133593a4ef28cc4c773bd",
+      "termHash": "0aaaf4045999a4e20cae462ea4cef41a4d3eda3dd2fd27c5d7e7210571f987fd",
+      "text": "{{item_1000_1}}."
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.004",
+      "sourceHash": "0d400ff0d1ada7ceefc6b4e3ada0b0d708002596e114475f8e16de266e765948",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "{{item_1106_1}}."
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h5.001",
+      "sourceHash": "6c78b5c02ab8e5904d03f1ec597f8e2908f5264f912dc6255b0d77c84dc2ee57",
+      "termHash": "d284dfd2d48788e5620777cc523e70f1c2cddc8b51b6f006de198304fea856ad",
+      "text": "{{item_1118_1}} — ZWEIG"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.005",
+      "sourceHash": "8624f4476924edf781ee264211f0a45d9fdfb5688cd3eac6f8039b66cd78affa",
+      "termHash": "66060d99adb0c2859b6ee32d06040ec864cb6b44a454d8c650eaab7b20190afc",
+      "text": "{{span_1}}Öl-Zweig{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Ölraffinerie{{end_span_5}}{{end_span_3}} {{item_1114_1}} + {{item_1120_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.006",
+      "sourceHash": "45ffe838bdf74a5eebf2cbc067e025c09edaaba5897007ad5e9ccb73ac880ec3",
+      "termHash": "1bcbe873e06f715844ca941698f0109c67a63c39e942f11f56862c67a97ce9a5",
+      "text": "{{span_1}}{{item_1115_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1114_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Chemiefabrik{{end_span_5}}{{end_span_3}} {{item_1115_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.007",
+      "sourceHash": "1ca1dcced701291754740cae5d500696b8b11ac176fea7eb4f003a31a009298e",
+      "termHash": "0c38d87296382b2af912defbbbeb3cdde37aeae496f0cd4b9acfcfc700925afe",
+      "text": "{{span_1}}{{item_1117_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1115_1}} + {{item_1114_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Chemiefabrik{{end_span_5}}{{end_span_3}} {{item_1117_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.route-yellow-titanium-crystals.li.001",
+      "sourceHash": "71975577bbdbae11345bc4547549be6b088ffef21f0db120ae91a504894d1771",
+      "termHash": "0d5bf30cf5e01431b84aba9136eef3e39f31fbefd8a98a6c57c0d418867fd242",
+      "text": "{{span_1}}{{item_1118_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1117_1}} + {{item_1106_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1118_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h5.002",
+      "sourceHash": "a8e3e9d6b0eb2fa96b8142fede643b09ab3f09fba873001f00040f8e85df6157",
+      "termHash": "aa26df24019d4f42ecb5e3352ccd34cd3a2eee1f48c2f250a84761bbed08743f",
+      "text": "{{item_1112_1}} — ZWEIG"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.008",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "1180c97681932fe4fe00e7d9295cf4924f14239eaa5c5607ca5a6bfcc080b486",
+      "text": "{{span_1}}Graphit-Zweig{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.route-yellow-diamonds.li.001",
+      "sourceHash": "9a0f850dbeb0eba385ca013b3fa69b0d5af4bf9a28106d093d9674608e6de30e",
+      "termHash": "9dc51e117c629290d1f277dfebf29e7771579f7d3f2b9aad073cfa1d2bbf4d24",
+      "text": "{{span_1}}{{item_1112_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1112_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h5.003",
+      "sourceHash": "6e79ff12d5026b76fdacce60b4c32aac87f3a782843fc8dc06a3c001a422d026",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ENDFERTIGUNG"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.009",
+      "sourceHash": "17a332f406fd5172feaa898f7b020fb5d43b6867ea36379c7b2a9e35037bb5c2",
+      "termHash": "e0cc09ee2140170c33a29b485eaad5c8d5466c9042ad24f003ac7c23154c368d",
+      "text": "{{span_1}}Matrix-Endfertigung{{end_span_1}}{{span_2}}{{item_1118_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Matrix-Labor{{end_span_5}}{{end_span_3}} {{item_6003_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.010",
+      "sourceHash": "1c6b4f7b340448a71a68f3332f59cb0c7ca20a6ce460ba14c9b1ca2e0106efbc",
+      "termHash": "2abbb5d3ac911430cde575194cbd0a6eb152a320bef54573f9effe23ec91fb9f",
+      "text": "{{span_1}}{{item_2901_1}} — {{item_6003_1}}{{end_span_1}} — {{span_2}}{{item_6003_2}} aus drei Laboren{{end_span_2}} dauerhaft an die Forschung liefern; bei Bedarf mit Überlauflager."
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nebenprodukte"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.011",
+      "sourceHash": "93f211cb88b04da3c6b0e1d15a696a7c9e04e95f4c2586da6a33a377a1ce8692",
+      "termHash": "c4297ad9281874bde9f5653bfadfb8f6510b8c676e9dcba57214631c71b14dec",
+      "text": "{{item_1120_1}} — später für Energie und mehrere Produktionszweige des späten Spiels nützlich."
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.005",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.012",
+      "sourceHash": "188d623d71e5ca9207a69620b275771999c91b8f5ca938457935f943bdab57f0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Abgebaute organische Kristalle ersetzen später den Zweig aus Plastik, raffiniertem Öl und Wasser, der nur zur Synthese organischer Kristalle dient."
+    },
+    {
+      "id": "c.yellow.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bereit für den nächsten Schritt, wenn"
+    },
+    {
+      "id": "c.yellow.li.004",
+      "sourceHash": "9d23d9b8ff0de26fb7ad60f21d5faca672e4d72003941d97c96ccd5a782cf2e4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}drei Labore durchgehend gelbe Würfel produzieren. {{end_label_1}}"
+    },
+    {
+      "id": "c.yellow.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "c.yellow.p.012",
+      "sourceHash": "be7b7b316d96feeb1fe5dcd816fb6519bd42a3ab876cd704698c797e2e118c5f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Weiter zu {{a_1}}{{img_1}}[VIOLETT]{{end_a_1}}."
+    },
+    {
+      "id": "c.purple.h1.001",
+      "sourceHash": "0a743ddf8126ba23bca35e86df70c7514cd466b4ad3177d82d58d70c0e52b91a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[VIOLETT]{{end_a_1}} — Die erste breit verzweigte Produktionsstufe aufbauen"
+    },
+    {
+      "id": "c.purple.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "c.purple.p.001",
+      "sourceHash": "d629f92885efc4f38081e3e8c06dd1a94528465dc9426eef575f22bdd91422b8",
+      "termHash": "9a47cbe87ba50d2fc342ec894d4a413619c4ba577d6251915bf74ec998143d0d",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Dauerhafte interplanetare Versorgung und gelbe Forschung.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Die Produktion von {{item_1123_1}}, {{item_1303_1}}, {{item_1115_1}} und Silizium sowie die Chemiekapazität zu einem richtigen violetten Bezirk ausbauen.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Stabile violette Forschung und die beiden Technologiezweige, die bei Grün zusammenkommen.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} Normalerweise {{a_1}}{{img_1}}[GRÜN]{{end_a_1}}, oder {{a_2}}{{img_2}}[WARP]{{end_a_2}}, um eine Abkürzung mit einem konkret ausgewählten seltenen Rohstoff vorzubereiten."
+    },
+    {
+      "id": "c.purple.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Phasenübersicht"
+    },
+    {
+      "id": "c.purple.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auf einen Blick"
+    },
+    {
+      "id": "c.purple.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was jetzt zählt"
+    },
+    {
+      "id": "c.purple.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hauptziel{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.002",
+      "sourceHash": "64a8faaa39f2ade19e30fffcbfc2113b784cc8a9901c686f19043a294de82afb",
+      "termHash": "b8c1f42312caa4e520d1bc5ff5cee6e2604779fce7225d2aeefd06c1ae479146",
+      "text": "{{item_6004_1}} erforschen und drei Labore durchgehend violette Würfel produzieren lassen"
+    },
+    {
+      "id": "c.purple.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Guter Richtwert{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.004",
+      "sourceHash": "2747e7a6b324aaa188f7932790d9a750ce279bea30101475ddddbc84a80291bb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} violette Würfel{{fact_2}} aus zwei getrennt gepufferten Produktionszweigen"
+    },
+    {
+      "id": "c.purple.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Zuerst erforschen{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.006",
+      "sourceHash": "67eb6bfbf677faa56ff533ca048fb84e23010a2b98219a645ff1a81ab85dd6c4",
+      "termHash": "a067a6e7030323a65306871af64b877452e9b3ec216ac56433f3cb2c3b26e1ac",
+      "text": "{{strong_1}}Voraussetzung für Violett:{{end_strong_1}} {{tech_1132_1}} {{fact_1}} {{tech_1133_1}} {{fact_2}} {{tech_1312_1}}{{br_1}}{{strong_2}}Ausbau:{{end_strong_2}} {{tech_2103_1}}, {{tech_2204_1}} Stufe {{fact_3}}, {{tech_2404_1}} Stufe {{fact_4}}, {{tech_2603_1}} Stufe {{fact_5}}, {{tech_2502_1}} Stufe {{fact_6}} und {{tech_2704_1}} Stufe {{fact_7}}.{{br_2}}{{strong_3}}Logistik:{{end_strong_3}} {{tech_3402_1}} Stufe {{fact_8}} und {{tech_3502_1}} Stufe {{fact_9}}."
+    },
+    {
+      "id": "c.purple.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Im Blick behalten{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.008",
+      "sourceHash": "4d0759e093d3ab7aac98ffc119fef5451765f6507630289e0e243d378c715922",
+      "termHash": "fbb0d8f1266e4028fd2ffc935bc6302b712f6877c15a6b4d61e7fcac4d726a8f",
+      "text": "Ausgänge für {{item_1123_1}} und {{item_1120_1}}, ältere Würfellinien und den jeweils schwächeren Endproduktzweig von Violett"
+    },
+    {
+      "id": "c.purple.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Weiter, sobald{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.010",
+      "sourceHash": "fc993c8d7e457cddabb36b97d68a392e2e1ce894ac21691411ed11001a32b798",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Drei Labore durchgehend violette Würfel produzieren"
+    },
+    {
+      "id": "c.purple.blockquote.001",
+      "sourceHash": "94375fefdd9c0b2222e5a2526b107b033cffddb4544ccbc42dd48cf4584b4cae",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die folgenden Verbesserungen geben der Forschung sinnvolle Arbeit, während sich der violette Bezirk einspielt. Sobald alle drei violetten Labore weiterlaufen, verschiebe den Rest auf später und geh zu GRÜN."
+    },
+    {
+      "id": "c.purple.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "c.purple.p.002",
+      "sourceHash": "d3398da19cbdca1b5abd779867b2ca394e52a4f8cffd17d4125fcb3287827832",
+      "termHash": "6715ea4f0bdcc115ac4cd4bc92689416fc0711a9fe297c2982efcf260b6df93e",
+      "text": "In Violett gibt dir DSP zwei Einkaufslisten vom Umfang der gelben Fabrik auf einmal. Eine endet beim Produkt {{item_1303_1}}, die andere führt durch eine lange Chemiekette zu {{item_1402_1}}. Baue sie als getrennte Bereiche, gib jedem Endprodukt einen sichtbaren Puffer und führe sie per Logistik im Forschungsbezirk zusammen."
+    },
+    {
+      "id": "c.purple.p.003",
+      "sourceHash": "7eb782d03c756bffef8fc5bda1349ea869cef251da4bb97d907b3655c954f6cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Jetzt fühlen sich wiederverwendbare Blaupausen und eine breitere Mall weniger wie Vorbereitung und mehr wie ein erlaubter Trick an. Kopiere Bewährtes, erweitere den Zweig mit leerer Kiste und widerstehe dem Drang, den gesamten Planeten über ein einziges heldenhaftes Band zu versorgen."
+    },
+    {
+      "id": "c.purple.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zuerst erforschen"
+    },
+    {
+      "id": "c.purple.h3.002",
+      "sourceHash": "828d5dc4a72ca7ba1239eb78d5c580a3bff2ec800d4ce3b872bcdf446fd7d3e7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Voraussetzung zum Start von VIOLETT"
+    },
+    {
+      "id": "c.purple.p.004",
+      "sourceHash": "7b5bd68dea4f7d9b93a75c4dc97ad647842f60a2acd0c112c0cb99b576a65548",
+      "termHash": "ff701372f4975cd92e71695fce4d2804861a0d9aae9385608a0e809f767130f5",
+      "text": "Schließe {{strong_1}}{{tech_1132_1}} {{fact_1}} {{tech_1133_1}} {{fact_2}} {{tech_1312_1}}{{end_strong_1}} ab. Nur diese drei Technologien sind erforderlich, bevor die Produktion violetter Würfel beginnen kann."
+    },
+    {
+      "id": "c.purple.p.005",
+      "sourceHash": "d46a3b5c7920fabc86f90d77486f2d2c2c93d63af9afaf2d964d0ab412148cda",
+      "termHash": "08e9ee569a0c375c2aac8466f4fc6e5515e5e1c6dbcf455c3ce8b8d91117d8c9",
+      "text": "{{tech_1131_1}} wurde bereits beim ILS-Übergang erforscht. Nun schaltet {{tech_1132_1}} das Produkt {{item_1124_1}} frei, und {{tech_1133_1}} erschließt {{item_1402_1}}. Der bereits vorhandene Zweig {{tech_1302_1}} vervollständigt die Voraussetzungen für {{tech_1312_1}}."
+    },
+    {
+      "id": "c.purple.h3.003",
+      "sourceHash": "976c481875b022bf10aa22ec0927040fa0884f37f70e8c0a4472b13cce7204bb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Empfohlen, während Violett stabil wird"
+    },
+    {
+      "id": "c.purple.p.006",
+      "sourceHash": "52cfd68c5dbd8bed5dcbcfa28c91eeeffa77d3004935df2a6a9bfc07357bfec5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Hole offene Stufen aus GELB nach. Arbeite dann diese Gruppen ab, aber jeweils nur bis zur genannten Stufe:"
+    },
+    {
+      "id": "c.purple.li.001",
+      "sourceHash": "26f01eb0154f005551c1a217b00d55e3643172231cca63d7a9ad8930b6852738",
+      "termHash": "6e8297a48870e371b4dd885e588877c7cbf7c88ea50e3d1cca31dd0132a12eff",
+      "text": "{{strong_1}}Ausbau:{{end_strong_1}} {{tech_2103_1}}, {{tech_2204_1}} Stufe {{fact_1}}, {{tech_2404_1}} Stufe {{fact_2}}, {{tech_2603_1}} Stufe {{fact_3}}, {{tech_2502_1}} Stufe {{fact_4}} und {{tech_2704_1}} Stufe {{fact_5}} unterstützen Transport, Bau und Energieversorgung des weitläufigen VIOLETT-Ausbaus."
+    },
+    {
+      "id": "c.purple.li.002",
+      "sourceHash": "7ad430da24015c05665a952fd000f99e4bc93cbd7f9b51952d80c413dcac297d",
+      "termHash": "b733fc15a653acf9f7f410ee647d3695cc9474afd7384dc0d4a11bb8b5265144",
+      "text": "{{strong_1}}Logistik:{{end_strong_1}} {{tech_3402_1}} Stufe {{fact_1}} und {{tech_3502_1}} Stufe {{fact_2}} unterstützen das wachsende interplanetare Versorgungsnetz."
+    },
+    {
+      "id": "c.purple.li.003",
+      "sourceHash": "00b781de3c5b76df972fc06badadca65d214dec76784289c734e866610ca9e61",
+      "termHash": "f27308ab59581416783230f9956e9b520b88da3a93922ca8e7c0e7d541d4d992",
+      "text": "{{strong_1}}Rohstoffreichweite:{{end_strong_1}} Falls du {{tech_3601_1}} Stufe {{fact_1}} in GELB ausgelassen hast, hole sie nach und gehe bis {{tech_3602_1}} Stufe {{fact_2}} weiter. Höre dort auf, denn die nächste Stufe verbraucht bereits violette Würfel."
+    },
+    {
+      "id": "c.purple.p.007",
+      "sourceHash": "722efe4dd54b1cfd97f86d692de9b89cd592f96bcba25f4f907aa74cfc53e53d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hier aufhören.{{end_strong_1}} Weitere gemeinsame Ausbauverbesserungen kosten insgesamt {{fact_1}} Würfel, darunter violette Würfel, die GRÜN benötigt. Die Verbesserungen sind sinnvoll, aber so früh noch zu teuer. Lass sie vorerst liegen."
+    },
+    {
+      "id": "c.purple.p.008",
+      "sourceHash": "0671576e7163f854a8293a576d2a9d9cef8eda014cc326ad98c15e9a5fa674dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die nächsten beiden Transportstufen würden weitere {{fact_1}} Würfel insgesamt verbrauchen, ohne für die VIOLETT-Routen im Startsystem nötig zu sein."
+    },
+    {
+      "id": "c.purple.h3.004",
+      "sourceHash": "3f0edb3f75ad866543ff23e1970ca0735a59810722d08dc39ba5bb9316ec8c3f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Voraussetzung zum Verlassen von VIOLETT"
+    },
+    {
+      "id": "c.purple.p.009",
+      "sourceHash": "4d37667af4f38cbe0c1debec79024b539b1445654b554dba38d36fedda657227",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Drei durchgehend versorgte Labore für violette Würfel reichen zum Weitergehen. Die übrigen Verbesserungen oben können warten."
+    },
+    {
+      "id": "c.purple.h3.005",
+      "sourceHash": "d85b56435e56e08721a05baa6a6251a3965fc7fc960a21e3468af8a26b96204a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wann du die Liste liegen lässt"
+    },
+    {
+      "id": "c.purple.p.010",
+      "sourceHash": "31f6c96bfd78101fc7f0b7ac50b65154216b6a140c981e958dfbb6448410e8f6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Sobald alle drei Labore weiterlaufen, verschiebe die restlichen Aufgaben für die Wartezeit auf später und geh zu GRÜN."
+    },
+    {
+      "id": "c.purple.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Wie viel reicht?"
+    },
+    {
+      "id": "c.purple.p.011",
+      "sourceHash": "852824040a6ecce54f801fae9d76917607350b62763d8ae17f3929b6dbc56684",
+      "termHash": "6715ea4f0bdcc115ac4cd4bc92689416fc0711a9fe297c2982efcf260b6df93e",
+      "text": "Beginne mit {{strong_1}}drei Laboren für violette Würfel{{end_strong_1}}. Lass sie laufen und beobachte die Lager für {{a_1}}{{item_1303_1}}{{end_a_1}} und {{a_2}}{{item_1402_1}}{{end_a_2}}. Leert sich eines fortlaufend, erweitere diese Linie. Füllen sich beide zwischen Forschungsaufträgen wieder, reicht die Produktion. Lass den Bezirk arbeiten und geh weiter."
+    },
+    {
+      "id": "c.purple.h2.005",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Benötigte Anlagen"
+    },
+    {
+      "id": "c.purple.p.012",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Jede Karte skizziert eine nützliche Linie von den ersten Eingangsprodukten bis zum gewünschten Endprodukt.{{end_strong_1}} Öffne sie für einen Gesamtüberblick. Lass sie sonst geschlossen und baue weiter; darin ist nichts Unverzichtbares versteckt."
+    },
+    {
+      "id": "c.purple.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}} Alle Karten aufklappen{{end_button_1}}{{button_2}} Alle Karten zuklappen {{end_button_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.summary.001",
+      "sourceHash": "032e6676064f051cbfd2895931be69c73a6984646d1a2d708a45cc7c64cf2f5c",
+      "termHash": "6813531c80882aa0fe139e1d3e2843ce33d408a828e419aeed5573fe0f6722b7",
+      "text": "{{span_1}}{{item_1303_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}ERFORDERLICH{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "c.card-purple-processors.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "e10560272a87fadb357239577ce8d2ce14c27775a607d8dee1a28f8da057fcd2",
+      "text": "{{item_1001_1}}."
+    },
+    {
+      "id": "c.card-purple-processors.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "75a0f3eb4fbf57c8c2ccdb0926faf65fdb98c6e8eda2874ccc6b03f0bf2474f9",
+      "text": "{{item_1002_1}}."
+    },
+    {
+      "id": "c.card-purple-processors.li.003",
+      "sourceHash": "901798e667519fdb44286b848bbc961621e97b01a187bfe2be0e9979e32b5168",
+      "termHash": "bb746a627632400caa1ceb260e97ad043e41ff8fe78c09d3576fbb0c73ea994a",
+      "text": "{{item_1003_1}}."
+    },
+    {
+      "id": "c.card-purple-processors.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "c.card-purple-processors.li.004",
+      "sourceHash": "1ba492e510bc8ffa7fac4ce2913b4a44b69c64284285e6f0bb0c6b70f7a6fb65",
+      "termHash": "6494fba4b51c93c9eda5d175dac8965e89036862d392736fc07a12b75fea2cca",
+      "text": "{{span_1}}Metallversorgung{{end_span_1}}{{span_2}}{{item_1001_1}} + {{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} + {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.li.005",
+      "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
+      "termHash": "26b832ec859a79cac9275f0da1bf5fdab889f4bba17c18748d0f12aea8c9b03c",
+      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.li.006",
+      "sourceHash": "fc176776dc9d90cda013534933807d47ba9f3bc9a719419b920bb687b2c84e21",
+      "termHash": "a1d9e5c01fbc87431840d934527e2e256e61fbd82994235bd4f64b92b0ea3627",
+      "text": "{{span_1}}Silizium-Zweig{{end_span_1}}{{span_2}}{{item_1003_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1105_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1302_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.li.007",
+      "sourceHash": "4515fb5c937735916583ba6d9ca16687601f1741f02d57da588502e86aa1b8ac",
+      "termHash": "19b01045547166bea4151f58bb28af6ef6db9b813075bc56a17ab03d1a003fc2",
+      "text": "{{span_1}}{{item_1303_1}} — Endfertigung{{end_span_1}}{{span_2}}{{item_1301_1}} + {{item_1302_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "c.card-purple-processors.li.008",
+      "sourceHash": "91c07810ec80ae7dd5ea71349a0db48d5371a48e1cc2f1f9c6639436d0e556a3",
+      "termHash": "dabb28df1d1e9b0fb3a3640a24d3d7fb71b57cf1093c730b17ca339106538d1f",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1303_1}}{{end_span_1}} — Zufuhr: {{span_2}}{{item_1303_2}} mit {{fact_1}}{{fact_2}}{{end_span_2}}, vor der Verteilung an violette Forschung und spätere Verbraucher."
+    },
+    {
+      "id": "c.card-purple-processors.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "c.card-purple-processors.li.009",
+      "sourceHash": "3fa88bc9671997bb66cdfc4c3b5bc7ccbd407605c677f691ef21fbe255292f1c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Betrachte das als dauerhafte Infrastruktur, nicht nur als Zutatenlinie für Violett.{{end_strong_1}} Halte das Prozessorlager sichtbar und lass Platz zum Erweitern: Quantenchips, Logistikgebäude und Dyson-Bauten werden mehr davon brauchen."
+    },
+    {
+      "id": "c.card-purple-particle-broadband.summary.001",
+      "sourceHash": "6dab53b3a5d3eedf03753d56c123c1d043b54f8197dbeaf91b25c4da8f76aa1e",
+      "termHash": "7fbcd090c9f7f679768915d6957a2b2a61871350e66ebe537ab777c3db3b5ee1",
+      "text": "{{span_1}}{{item_1402_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}ERFORDERLICH{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.001",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "a2e551e0377f89cec42962deee52462dc57970fd5150a55febd82a1d0b358ade",
+      "text": "{{a_1}}{{item_1123_1}} aus der wiederverwendbaren Standardlinie{{end_a_1}}."
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.002",
+      "sourceHash": "0d400ff0d1ada7ceefc6b4e3ada0b0d708002596e114475f8e16de266e765948",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "{{item_1106_1}}."
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.003",
+      "sourceHash": "c6fd3ae07a243086d1ddd21a601b2f615c97db05ee201b561c8edc82ac3d3afa",
+      "termHash": "cfe17d97876385ea4384fc20d861c83b5f8f2e826fefc95763a6bfd376bea6b2",
+      "text": "{{item_1105_1}}."
+    },
+    {
+      "id": "c.card-purple-particle-broadband.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "c.route-purple-carbon-nanotubes.li.001",
+      "sourceHash": "de1a0e1a574a1253afabdb573e4619906dab7cc309e51fc5b2ab16edbc4e6f82",
+      "termHash": "17010c60ef3d154f5d123152a03296ea1ea4544a89453ad82b1aeb881531953f",
+      "text": "{{span_1}}Nanoröhren-Zweig{{end_span_1}}{{span_2}}{{item_1123_1}} + {{item_1106_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Chemiefabrik{{end_span_5}}{{end_span_3}} {{item_1124_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.004",
+      "sourceHash": "45ffe838bdf74a5eebf2cbc067e025c09edaaba5897007ad5e9ccb73ac880ec3",
+      "termHash": "1bcbe873e06f715844ca941698f0109c67a63c39e942f11f56862c67a97ce9a5",
+      "text": "{{span_1}}{{item_1115_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1114_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Chemiefabrik{{end_span_5}}{{end_span_3}} {{item_1115_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.005",
+      "sourceHash": "a7227ccd1a70fb946dd02ec77c5d7caa64a8ceeb1943a219f69607a12ce809e8",
+      "termHash": "f5ac8f1d9c2757440d659545367936751d8aeef416257b350fea0a4161a8fb8c",
+      "text": "{{span_1}}Silizium-Zweig{{end_span_1}}{{span_2}}{{item_1105_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1113_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.006",
+      "sourceHash": "e01c2e96ab21099af6ca62adba5ff730b1b59e7b2793a6bc3a162f60b2a20203",
+      "termHash": "193b4dc05382bcda9b9007c744096a28545ac9e618af1df04bd80179b4a52024",
+      "text": "{{span_1}}Breitband-Endfertigung{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1115_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1402_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.007",
+      "sourceHash": "39077be9c101f34bafe931e1b68fde6337105746b6254abc4dabf33e18cc3146",
+      "termHash": "686baceb95e33c41c43fd9e98e65a3b7a0d58a01c6693cddede8a843246c1d8b",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1402_1}}{{end_span_1}} — Zufuhr: {{span_2}}{{item_1402_2}} mit {{fact_1}}{{fact_2}}{{end_span_2}}, vor der Verteilung an die violette Forschung."
+    },
+    {
+      "id": "c.card-purple-particle-broadband.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nebenprodukte"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.008",
+      "sourceHash": "764debac48ab03af05e659f00de27ea4998af9ccd8d77c34601b2ed321d33ca3",
+      "termHash": "b2ba4b847c13af570737d6b5be34c0eb97f3e1e06fa63f319458cc1f45538c76",
+      "text": "{{item_1120_1}} aus der Standardversorgung mit {{item_1123_1}}."
+    },
+    {
+      "id": "c.purple.h2.006",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Achte auf"
+    },
+    {
+      "id": "c.purple.p.013",
+      "sourceHash": "b5484ee7fa91e6276982723ca91d258938b5e766c846e713abebdbeb6c3f5161",
+      "termHash": "2b7057dbc40f23fedd0005e634984be5f71870feabf5fb5b3b5684a7c625a1cf",
+      "text": "{{strong_1}}{{item_1120_1}}.{{end_strong_1}} Die ölbasierten Zweige für {{item_1123_1}} und {{item_1115_1}} liefern beträchtliche Mengen {{item_1120_2}} zurück. Sorge für Lagerung oder Verbrauch, bevor einer der Chemiezweige blockiert."
+    },
+    {
+      "id": "c.purple.p.014",
+      "sourceHash": "a5c7787e6613698f8c5f979c174f63aebb87a471dcbc73b60564211bad154b1a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ILS-Unterversorgung.{{end_strong_1}} Werden Titan oder Silizium knapp, prüfe Liefer- und Empfangsstation, bevor du die Produktion erweiterst. Erhöhe die Kapazität dort, wo sich die Warteschlange bildet. Stocke die erste heimische ILS auf zehn Frachtschiffe auf, falls sie noch mit den fünf Schiffen des Einstiegs arbeitet."
+    },
+    {
+      "id": "c.purple.h2.007",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bereit für den nächsten Schritt, wenn"
+    },
+    {
+      "id": "c.purple.li.004",
+      "sourceHash": "d05fbe03f145fdc1c7d8c17e03b63eebaae9a8a54ceaae336d9ae4992f42c7b8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}drei Labore durchgehend violette Würfel produzieren. {{end_label_1}}"
+    },
+    {
+      "id": "c.purple.h2.008",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "c.purple.p.015",
+      "sourceHash": "21d3ced8e03589d1bfbc58e1dcdf3ca9b0793d91bd2e0602af77e93124cf0efa",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Weiter zu {{a_1}}{{img_1}}[GRÜN]{{end_a_1}}, oder nutze {{a_2}}{{img_2}}[WARP]{{end_a_2}}, wenn ein konkret ausgewählter seltener Rohstoff den Abstecher rechtfertigt."
+    },
+    {
+      "id": "c.green.h1.001",
+      "sourceHash": "d84156e7aae1e2041f0b0c45f61ab9e712a48c9b0596c9a03fa42d5526299b43",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[GRÜN]{{end_a_1}} — Die beiden Zutatenzweige für das späte Spiel aufbauen"
+    },
+    {
+      "id": "c.green.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "c.green.p.001",
+      "sourceHash": "3d453c6c4b43ca954ace0a9f155703bf5f214103c4cb6cdf36d7d683afcf63ef",
+      "termHash": "332d5309a0f36517f5141771320692ee922e1afa0d8c6a8f953bf45dc8a65180",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Violette Forschung und ihr weitläufiger Chemiebezirk.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} {{item_1305_1}} auf der einen Seite, {{item_1127_1}} und {{item_1209_1}} auf der anderen.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Eine stabile Produktion von {{item_6005_1}} und Zutaten für die Dyson-Infrastruktur.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} {{a_1}}{{img_1}}[DYSON]{{end_a_1}}."
+    },
+    {
+      "id": "c.green.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Phasenübersicht"
+    },
+    {
+      "id": "c.green.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auf einen Blick"
+    },
+    {
+      "id": "c.green.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was jetzt zählt"
+    },
+    {
+      "id": "c.green.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hauptziel{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.002",
+      "sourceHash": "042783caa4ac56315841356ce693c9231575dc6e4ff9bdebb93237b7a65f2a2a",
+      "termHash": "1ca43ca5b4e99139d3ccf34bc81ce0ff9f592c962fbf71fd29a375c253981468",
+      "text": "{{item_6005_1}} erforschen und zwei Labore durchgehend grüne Würfel produzieren lassen"
+    },
+    {
+      "id": "c.green.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Guter Richtwert{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.004",
+      "sourceHash": "bcf1d46c575c54f67a48b9be6f56fac0cfe01dc9b7dd1b0358528da8c9b03710",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} grüne Würfel{{fact_2}} aus zwei getrennt gepufferten Zweigen für das späte Spiel"
+    },
+    {
+      "id": "c.green.td.005",
+      "sourceHash": "7a3be468e528aeabeccf0f0ed7a7178b28fc57abfe9465ecfba1c2ecef353687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Als Nächstes erforschen{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.006",
+      "sourceHash": "dd7da47c3e760e2c8dde3cdc4a50d9c633fe45bf3a001c71db85c7f38866c29f",
+      "termHash": "eb2896ae9414d3391a344824fc8fcef96788c51a507d4956be15cc84518fa8f9",
+      "text": "{{strong_1}}Quanten-Zweig:{{end_strong_1}} {{tech_1125_1}} + {{tech_1126_1}} {{fact_1}} {{tech_1141_1}} {{fact_2}} {{tech_1303_1}} {{fact_3}} {{strong_2}}Gerüst-Zweig{{end_strong_2}} {{fact_4}} {{strong_3}}Gravitations-Zweig{{end_strong_3}} {{fact_5}} {{tech_1705_1}}"
+    },
+    {
+      "id": "c.green.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Im Blick behalten{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.008",
+      "sourceHash": "ea573452be9b24f8b24774a844cab9ce7e696f3a8a19efeaacb855dc33ff6470",
+      "termHash": "1d7c32adc7888b76c1170e84f130b4547abeebdedeafc38515a1b81b3b0a2823",
+      "text": "Füllstand der Lager für {{item_1120_1}}, Verbrauch von {{item_1121_1}}, Versorgung mit {{item_1206_1}} und Strombedarf der gewählten Route für {{item_1121_2}} sowie des Beschleunigers für „{{item_1127_1}}“"
+    },
+    {
+      "id": "c.green.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Weiter, sobald{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.010",
+      "sourceHash": "26b1eb29f26421ab0c29cde2ad640373b57a7cfe02745eeeec0a68759039ee06",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zwei Labore durchgehend grüne Würfel produzieren und beide Endproduktlager stabil bleiben"
+    },
+    {
+      "id": "c.green.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "c.green.p.002",
+      "sourceHash": "4f663126b4ad96f56293b7fea391c8fed6658c03220fdd56816df4fc36c530f3",
+      "termHash": "334363f7ca6b6fda60983b63c6ef2b0db5ab3fd7fe0d62c4ff420b0a6bc031b0",
+      "text": "Grün verlangt zwei Fabriken vom Umfang der violetten Produktion zugleich. Der Quanten-Zweig ist ein umfangreiches Elektronikprojekt. Der Gravitations-Zweig ergänzt {{item_1121_1}}, {{item_1206_1}}, {{item_1127_1}} und stromhungrige Beschleuniger. Ein Heimatplanet und eine Bergbaukolonie können langsam eng werden."
+    },
+    {
+      "id": "c.green.p.003",
+      "sourceHash": "06d1e3781aa5671f4a9e03765cd50bdc6406d5d10d159b3dd8f7df37c4287745",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Gib beiden Zweigen sichtbare Endproduktlager und erweitere denjenigen, der wirklich zurückfällt. Wenn du bei wiederholten Erweiterungen dieselben Stationen und Transportmittel immer wieder von Hand baust, kann der optionale Abschnitt {{a_1}}{{img_1}}[LOGISTIK]{{end_a_1}} diese Ersatzvorräte automatisieren. Das ist eine Einladung, keine Hausaufgabe. So oder so ist dies der letzte große Zutatenausbau, bevor die Fabrik nach dem Stern greift."
+    },
+    {
+      "id": "c.green.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zuerst erforschen"
+    },
+    {
+      "id": "c.green.p.004",
+      "sourceHash": "f3de7d8e29a194c0adc3e3d1bbdf7b1a5a3507e7fee98af8854df6c50fb83197",
+      "termHash": "d7093ca831aebc36800989f6c82bf564989e550ced1f0644aae4b1eb0415ac3c",
+      "text": "{{strong_1}}Quanten-Zweig:{{end_strong_1}} {{tech_1125_1}} + {{tech_1126_1}} {{fact_1}} {{tech_1141_1}} {{fact_2}} {{tech_1303_1}}."
+    },
+    {
+      "id": "c.green.p.005",
+      "sourceHash": "e65e35598505252809a5c8689b42cca75b5960547b293262db72d3839b6231a5",
+      "termHash": "ea83912ea5572369c9bbd2ecbc1e546c1de0c0e0e2497a0b2107248fa1bfdb0e",
+      "text": "{{strong_1}}Gerüst-Zweig:{{end_strong_1}} {{tech_1501_1}} {{fact_1}} {{tech_1502_1}} {{fact_2}} {{tech_1711_1}} {{fact_3}} {{tech_1503_1}} {{fact_4}} {{tech_1521_1}} {{fact_5}} {{item_1125_1}}."
+    },
+    {
+      "id": "c.green.p.006",
+      "sourceHash": "2c063ed1ffb7aae2ad30896b6206806297e6170a8e7c1a15c14abceb6b515ec7",
+      "termHash": "07b18f115a52b05a9161206271ab6938f523e60c49d8f55fca7fd7c27051a9b9",
+      "text": "{{strong_1}}Gravitations-Zweig:{{end_strong_1}} {{tech_1142_1}} {{fact_1}} {{tech_1143_1}} {{fact_2}} {{tech_1704_1}}."
+    },
+    {
+      "id": "c.green.p.007",
+      "sourceHash": "4eced7a5b9312317a06d58c7285affe3f1e90e308e18d08db889dacfd7a5144e",
+      "termHash": "275963f06b700fe2b649b350deaf2495ee1fc46ff9735eeefaed4fb41d97caee",
+      "text": "{{strong_1}}Beide Zweige (Quanten + Gravitation){{end_strong_1}} {{fact_1}} {{tech_1705_1}}."
+    },
+    {
+      "id": "c.green.p.008",
+      "sourceHash": "a9845141516075bbcae313df2c70f3a1253f373bf6f475cd05af46b644728b52",
+      "termHash": "9de4bd291276021ca1434d3fbac1e788ecd2cb3c4a40911ebdd4a84483873e45",
+      "text": "Erforsche nach {{tech_1142_1}} die Folge {{tech_1134_1}} {{fact_1}} {{tech_1416_1}}. Die Deuteriumfraktionierung dient hier nur zum Freischalten der Fusion; unser Deuterium entsteht in Beschleunigern. Fahre dann mit {{tech_1143_1}} {{fact_2}} {{tech_1704_1}} fort."
+    },
+    {
+      "id": "c.green.p.009",
+      "sourceHash": "176f92e5e8fb7c6dae66ef83c0ded5081f74d3b8f8b0e4e70c6692667acfc9c0",
+      "termHash": "2b9f0293735334fcdf462538c31fb988af5c9699e1662f994190ae07ff6488cc",
+      "text": "Erledige zuerst den Quanten-Zweig und beginne mit dem Einlagern des Produkts {{item_1305_1}}, sobald die Linie läuft. Während du die längere Gerüst- und Gravitationsroute bearbeitest, wächst dieser Puffer bereits. So sammelt sich eine Seite der grünen Forschung an, statt auf sämtliche Voraussetzungen zugleich zu warten."
+    },
+    {
+      "id": "c.green.p.010",
+      "sourceHash": "4b8ad926c1ac165362c07f43a9d666a0b6707fac7f347a41f1196f7ba9c9c677",
+      "termHash": "a26f5bfedbb4a1044ab2e4ca3d76c667b4e313b1c662727cf9e6e15c2ce290d1",
+      "text": "Wenn die Produktion von {{item_1209_1}} das Lager erreicht, sollte der Quantenchippuffer bereits einen nützlichen Vorsprung haben. Erforsche die Gravitationsmatrix, sobald Quantenchip und Gravitationswellen-Brechung abgeschlossen sind, und führe die beiden gelagerten Produkte bei der Forschung zusammen."
+    },
+    {
+      "id": "c.green.h3.002",
+      "sourceHash": "5c67ad45399b54df7aa775123be2b2020a2d5500c8d98f35942828ccd5d7b107",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Eine Deuteriumversorgung wählen"
+    },
+    {
+      "id": "c.green.p.011",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Für alle Spalten seitlich scrollen {{fact_1}}"
+    },
+    {
+      "id": "c.green.attr.001.aria-label",
+      "sourceHash": "499b4b0174c69c68c810124b28339812cec6a0fc231284fbce40dca3d317adb5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Möglichkeiten der Deuteriumversorgung"
+    },
+    {
+      "id": "c.green.th.003",
+      "sourceHash": "f6834530108c87d2faa85dcf9963d2b7265b2c5acd14aa4863bdc09f5a33e065",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Route"
+    },
+    {
+      "id": "c.green.th.004",
+      "sourceHash": "6893f48956dbb9114501d7b910105604be9854c5e24ef8cc64b865c44a54782f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Vorteil"
+    },
+    {
+      "id": "c.green.th.005",
+      "sourceHash": "9e62d8a51c8f8f4c2ce6108eda20af025ea7bda98e39181f34bf36d29f06b831",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Abwägung"
+    },
+    {
+      "id": "c.green.td.011",
+      "sourceHash": "1b6717e643f430bf1de069ad7e7f4bafeaa520d0e443747620e326873d6853ff",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Mikro-Beschleuniger — Route des Leitfadens{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.012",
+      "sourceHash": "58134edef0745390196d4ebd3f298c94cbd9bf1780624a116e985d0b6da8a876",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kompakt und berechenbar."
+    },
+    {
+      "id": "c.green.td.013",
+      "sourceHash": "2daa5c3adf80cacbc7b8748d65d0db54b0e1dd21e15ae77d9aa8b5cdf632a016",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Verbrauchen mehr Wasserstoff und Strom."
+    },
+    {
+      "id": "c.green.td.014",
+      "sourceHash": "fb12a6672370c7c88ce4211e102ed33d2c6cc9e55429780b3b38bb7a5791dcf3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Fraktionierer{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.015",
+      "sourceHash": "eb2b6ed1a98a19ed1dfd3463b7f408672b9e171c768731e37b9e2fe80fe4cdae",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nutzen Wasserstoff und Strom effizienter."
+    },
+    {
+      "id": "c.green.td.016",
+      "sourceHash": "02719f29bbf78fc2930f705113d0711a6da146399fd42e42736d70e0977cd592",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Brauchen einen größeren Bandkreislauf, dessen Durchsatz und Stapelung mehr Aufmerksamkeit erfordern."
+    },
+    {
+      "id": "c.green.td.017",
+      "sourceHash": "9886598ce0eef942aeebe01d8f1e797c7e3530b3626a05f1a170ea857cbcab01",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Orbitalkollektoren{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.018",
+      "sourceHash": "ef9de239acdb725d9069e1bd3b4e9bb342c625113281e059dbfd7ca4b84bdcfa",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Verlagern die Versorgung aus der heimischen Fabrik."
+    },
+    {
+      "id": "c.green.td.019",
+      "sourceHash": "0db32150539e59c5eead91f0cea85aa23de1b66d2f2a9026a725b3f2e54929fe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Erfordern einen erheblichen Kollektorausbau. Die Ausbeute hängt vom Gasriesen und der Zahl eingesetzter Kollektoren ab."
+    },
+    {
+      "id": "c.green.p.012",
+      "sourceHash": "af684dd7734b62155e65a18101231d64c9d06715ca579f975d177db405d49e5e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wir verwenden Mikro-Beschleuniger, weil sie Deuterium in einer kompakten, berechenbaren Linie herstellen. Fraktionierer brauchen weniger Wasserstoff und Strom, verlangen aber mehr Aufmerksamkeit für ihren Bandkreislauf. Orbitalkollektoren können einen Gasriesen anzapfen; das ist ein größerer Abstecher, dessen Ertrag vom Riesen und der Zahl eingesetzter Kollektoren abhängt. Beide Alternativen sind sinnvoll. Hier bleiben wir bei den Beschleunigern."
+    },
+    {
+      "id": "c.green.p.013",
+      "sourceHash": "177939d81ad6bb8ecd398370d0ec9c79abb92745d82d393c180ac4351f7bd82a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Beschleuniger sind am einfachsten aufzubauen und zu verstehen. Dafür verbrauchen sie viel Wasserstoff und Strom. Die folgende Linie verarbeitet daher ihr übriges Deuterium zu Brennstoff für den eigenen Ausbau."
+    },
+    {
+      "id": "c.green.h2.004",
+      "sourceHash": "dde01f8ac3e2aa3e016ef968b19c0c9494306c400c5e626c369e5c33f8049d51",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Deuterium, seltsame Materie und Energie gemeinsam ausbauen"
+    },
+    {
+      "id": "c.green.p.014",
+      "sourceHash": "27ed7e900e6747e324a7da844dfa8ca92c3b8844f9aea9df57ccbf5328783697",
+      "termHash": "8751d44e4932c4b4fc26ce9185156ff7590a58cb34ceac5b9b0693704799c008",
+      "text": "Versorge die Deuterium-Beschleuniger aus einem gut sichtbaren {{item_2106_1}}. Sie verbrauchen viel daraus, besonders wenn die Quantenchiplinie ebenfalls Wasserstoff benötigt. Sinkt der Füllstand ständig, verstärke zuerst die Wasserstoffversorgung, bevor du weitere Beschleuniger aufstellst."
+    },
+    {
+      "id": "c.green.p.015",
+      "sourceHash": "15635f68afde0a5069e8dc656bcae5d8ea1114f56e9fcc42ca57055fff49b31c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Schicke das erzeugte Deuterium zuerst zur Produktion seltsamer Materie. Führe dasselbe Band anschließend zu einer Linie für Deuterium-Brennstäbe, damit nur der Rest zu Brennstoff wird. Lagere die fertigen Brennstäbe gut sichtbar und baue einen Puffer auf, bevor du dich bei der Stromversorgung darauf verlässt."
+    },
+    {
+      "id": "c.green.attr.002.aria-label",
+      "sourceHash": "09b9728e2bd279561d365880d7d58a73f82ac1f9148ef0460d118fdce6409946",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "GRÜN: Produktionsplan für Deuterium, seltsame Materie und Brennstoff"
+    },
+    {
+      "id": "c.green.p.016",
+      "sourceHash": "aafccd5e34a0d41a6324890641af08a80f423983069dfa6d215f7f625749e9f4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Betriebspriorität:{{end_strong_1}} Zuerst seltsame Materie versorgen; übriges Deuterium in sichtbaren Brennstoffvorrat umwandeln."
+    },
+    {
+      "id": "c.green.h5.001",
+      "sourceHash": "4063008654dfedea65fee624fe1a1185129f4cc0a4f125e9a426eec60a02c52d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "DEUTERIUMVERSORGUNG"
+    },
+    {
+      "id": "c.green.li.001",
+      "sourceHash": "ab827a84d76f812f86d689d1790af5c3a6c348b498ad9eb9a4ac510a91e5e4df",
+      "termHash": "b15bcc3f1291919e57f8bbc814556c47a6a31517000047ed0b6eac9d17adbd77",
+      "text": "{{span_1}}Sichtbare Wasserstoffzufuhr{{end_span_1}}{{span_2}}{{item_1120_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Mikro-Beschleuniger{{end_span_5}}{{end_span_3}} {{item_1121_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.green.h5.002",
+      "sourceHash": "71de0a7ccda7cd23e4895caf062721df843514abe974c89b585ff3e5795b14f0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "PRIORISIERTE VERTEILUNG"
+    },
+    {
+      "id": "c.green.li.002",
+      "sourceHash": "df3d56d6d62ec2e5123806c4e13c12ed60d04ec6e8e0910389af5315edbb2bce",
+      "termHash": "01811eb3354162f3ace6a9524acfcd9554968291efa38fbb5dd55dd9855f140c",
+      "text": "{{span_1}}Vorrang: Seltsame Materie{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1206_1}} + {{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Mikro-Beschleuniger{{end_span_5}}{{end_span_3}} {{item_1127_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.green.li.003",
+      "sourceHash": "333ddbd4be64bcaa0f4bb0afeb7e879ab8bee358259cde0b5294549a4f31a284",
+      "termHash": "5b9740c30fa5af2e8655beb8a4b238d7a6e71f09cd7dd919b9f90a93d375ef3a",
+      "text": "{{span_1}}Rest: Brennstoff auf Vorrat{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1802_1}}, danach ein sichtbarer Puffer für {{item_2211_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.green.p.017",
+      "sourceHash": "2aaf0f2f12b537831865f80133f18df9be4dab4428aa62e65c3b21dd660dd65d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wiederhole dann diesen einfachen Ablauf:"
+    },
+    {
+      "id": "c.green.li.004",
+      "sourceHash": "66c67168138fde34fdd57d9f3e8d0fd634b6a37717f88d62b7b72ad73a529dc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ergänze zwei Miniatur-Fusionskraftwerke."
+    },
+    {
+      "id": "c.green.li.005",
+      "sourceHash": "96912274ab557440091c3b4ee89181e8f76f7e828371dae8e34f726426a98827",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Prüfe den Brennstabpuffer, sobald sie laufen."
+    },
+    {
+      "id": "c.green.li.006",
+      "sourceHash": "d9d947c53edf87032afc8358ba3f5b7de52e221bdc40cd3e8885c17d726637d5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wenn der Puffer schrumpft, erhöhe die Deuteriumproduktion."
+    },
+    {
+      "id": "c.green.li.007",
+      "sourceHash": "f4b55d19d4ae927c225fecc259e0561d614e86e4c8eefd6113e5d8fa22d89ec3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wenn der Puffer schnell wächst und du mehr grüne Produktion möchtest, ergänze einen weiteren Beschleuniger für seltsame Materie."
+    },
+    {
+      "id": "c.green.li.008",
+      "sourceHash": "5e0b876a5b3a9debac710482db4a338be616c32aba66c07e1dd0bab383abcbc9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wiederhole das, bis Strom und seltsame Materie ausreichen."
+    },
+    {
+      "id": "c.green.p.018",
+      "sourceHash": "c7c3a6e7978899e8e608546960a9b02c284be3a03f7b5fafe627d3da2ab14f3c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wenn beides dein gewünschtes Niveau erreicht, leite ungenutztes Deuterium in einen Lagerbehälter zurück, der die Linie versorgt. So wird es zur sichtbaren Reserve für spätere Erweiterungen, statt die Produktion zu blockieren."
+    },
+    {
+      "id": "c.green.p.019",
+      "sourceHash": "91317fa8ed1d9768d5772eb6181b576f6a752ce51b94885455c916e108c3c222",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die vorhandene Netzkapazität kann den sofortigen Bau von Fusionskraftwerken unnötig machen. Lass den Brennstabpuffer wachsen, bis du tatsächlich mehr Erzeugung brauchst."
+    },
+    {
+      "id": "c.green.h2.005",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Wie viel reicht?"
+    },
+    {
+      "id": "c.green.p.020",
+      "sourceHash": "21d9917cf0545fe2228f3d2d3293eba6123fa641bd9762659e364bf71c5011c3",
+      "termHash": "35ed47abde271fba9dfe9736bae25fef3d0a78e1dac075dd565ab8ececc4f7a9",
+      "text": "Beginne mit {{strong_1}}zwei Laboren für grüne Würfel{{end_strong_1}}. Beobachte {{a_1}}{{item_1305_1}}{{end_a_1}} und {{a_2}}{{item_1209_1}}{{end_a_2}}, während die Forschung läuft. Schrumpft ein Lager ständig, erweitere nur diesen Zweig. Erholen sich beide, sobald die Labore pausieren, hält die Fabrik mit."
+    },
+    {
+      "id": "c.green.h2.006",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Benötigte Anlagen"
+    },
+    {
+      "id": "c.green.p.021",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Jede Karte skizziert eine nützliche Linie von den ersten Eingangsprodukten bis zum gewünschten Endprodukt.{{end_strong_1}} Öffne sie für einen Gesamtüberblick. Lass sie sonst geschlossen und baue weiter; darin ist nichts Unverzichtbares versteckt."
+    },
+    {
+      "id": "c.green.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}} Alle Karten aufklappen{{end_button_1}}{{button_2}} Alle Karten zuklappen {{end_button_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.summary.001",
+      "sourceHash": "d120a7dfae4d9e5eb29f710a95576da18f7a6c1bbdbea8d55996f65a13257dff",
+      "termHash": "2b9f0293735334fcdf462538c31fb988af5c9699e1662f994190ae07ff6488cc",
+      "text": "{{span_1}}{{item_1305_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}ERFORDERLICH{{end_span_3}}{{span_4}}ETAPPENWEISE{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.001",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "6813531c80882aa0fe139e1d3e2843ce33d408a828e419aeed5573fe0f6722b7",
+      "text": "{{a_1}}{{item_1303_1}} aus VIOLETT{{end_a_1}}."
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.002",
+      "sourceHash": "e502d274c4b5ceb18e4fceaa52b91130652cadfe4ec94c3cc0e7bdf86e0a6f45",
+      "termHash": "d284dfd2d48788e5620777cc523e70f1c2cddc8b51b6f006de198304fea856ad",
+      "text": "{{a_1}}{{item_1118_1}} aus dem GELB-Zweig{{end_a_1}}."
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.003",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "a2e551e0377f89cec42962deee52462dc57970fd5150a55febd82a1d0b358ade",
+      "text": "{{a_1}}{{item_1123_1}} aus der wiederverwendbaren Standardlinie{{end_a_1}}."
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.004",
+      "sourceHash": "eac5f7457ab42bb5d807ef7d1cb55a6667d89b1183455df2f470a1d948e6f69a",
+      "termHash": "c4297ad9281874bde9f5653bfadfb8f6510b8c676e9dcba57214631c71b14dec",
+      "text": "{{item_1120_1}}."
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.005",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "af76fd18d9b862988c6e5483c1eb16666a6caa5da66f87ff913905ac1b614221",
+      "text": "{{item_1005_1}}."
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.006",
+      "sourceHash": "60139b348f224aa07cdf015236a893f3aee96e5dac8133593a4ef28cc4c773bd",
+      "termHash": "0aaaf4045999a4e20cae462ea4cef41a4d3eda3dd2fd27c5d7e7210571f987fd",
+      "text": "{{item_1000_1}}."
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.007",
+      "sourceHash": "0d400ff0d1ada7ceefc6b4e3ada0b0d708002596e114475f8e16de266e765948",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "{{item_1106_1}}."
+    },
+    {
+      "id": "c.card-green-quantum-chips.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h5.001",
+      "sourceHash": "a794238401b5dcf06e37d52dd630314dc79d30e22bb19a28f5d92e5f56b4cee6",
+      "termHash": "1cd7cb97b85a4c76acb9df1c0854a66847d4407cf3fc7853da19bcf91a331139",
+      "text": "ERGÄNZEN NACH {{tech_1125_1}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.008",
+      "sourceHash": "ad6e6d0800ba167dcddcc7736dce04c2173d024a27c9adbd32078d282690c475",
+      "termHash": "988187883274271db4f3a27cc41b2a058a710191065546e729ac4a50e2df5761",
+      "text": "{{span_1}}Casimir-Zweig{{end_span_1}}{{span_2}}{{item_1118_1}} + {{item_1123_1}} + {{item_1120_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1126_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.009",
+      "sourceHash": "6c2f54bef6e744506781776c5ef03813139148654414e1ce3202c7867bcdd289",
+      "termHash": "7e5cc4d80fa719ee89f3ef14541ced73ae1dcd8e10df1150c5943125ff9357e7",
+      "text": "{{span_1}}{{item_1110_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.010",
+      "sourceHash": "d60339eba20e9cb68a469a502f4b5c59008c0fca35ecc8197cc2e1ff96bd0c97",
+      "termHash": "2e9ca68be8a786dc1b5f1d2e0e9905874e0881da49d19d18c75248a47b5efe09",
+      "text": "{{span_1}}{{item_1119_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1110_1}} + {{item_1106_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1119_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h5.002",
+      "sourceHash": "b251e410a17b6529fc7d4f7a25371358913f5526db546e970bd6ad8e9e0d3b79",
+      "termHash": "044e0f33a442fbe5002aaf44c35f2ff30037a4a4f07483c821a4c393e250782b",
+      "text": "ERGÄNZEN NACH {{tech_1141_1}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.011",
+      "sourceHash": "8d9cb74bde3fa0da87663cfde13d750c3e94eaa945969d85a237d410f9831577",
+      "termHash": "d798fd94c31f7119f3e5aca7431df7387a88e1a054c73d27028cb5803a18e670",
+      "text": "{{span_1}}Filter-Endfertigung{{end_span_1}}{{span_2}}{{item_1126_1}} + {{item_1119_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1304_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h5.003",
+      "sourceHash": "7b96f5f76c9e3725b64927382ce60246fb4268cc6ca2ab3dcd4d7e880bc281a2",
+      "termHash": "4e99d5ebf5c3649834a1fea419af788b1cb34550c009f040b544377fb972fca3",
+      "text": "ERGÄNZEN NACH {{tech_1303_1}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.012",
+      "sourceHash": "a2bd78292b75218ea5af52f7ad0c49ecec8a5ca2bf6cf13ab864e348d1e50ea1",
+      "termHash": "beb7d5b823ac19de528bf82d8ef4c98cb28cab65db0a17639c8342212eba3bfa",
+      "text": "{{span_1}}Endfertigung{{end_span_1}}{{span_2}}{{item_1304_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1305_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.013",
+      "sourceHash": "2109162827ccaa6192ecb8df22937f7c1363b37bef97c86365f975ed3d91d9c1",
+      "termHash": "527c56ea1a403f1dc753749f1ffa3f7838bca04d3b0955106f29f7b4f57c6950",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1305_1}}{{end_span_1}} — Zufuhr: {{span_2}}{{item_1305_2}} mit {{fact_1}}{{fact_2}}{{end_span_2}}, vor der grünen Forschung."
+    },
+    {
+      "id": "c.card-green-quantum-chips.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.014",
+      "sourceHash": "036a66aed977ecb4a460059979579d41988aae677874f150a0c372ff72285f39",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Versorge die Casimir-Produktion aus einem lokalen Wasserstofflager und beobachte dessen Füllstand. Erzeugt ein anderer verbundener Zweig überschüssigen Wasserstoff, führe dieses Nebenprodukt über einen kurzen Bandkreislauf zum selben Vorratsbehälter zurück. Die gesamte Quantenchiplinie bleibt dennoch ein Nettoverbraucher von Wasserstoff."
+    },
+    {
+      "id": "c.card-green-graviton-lenses.summary.001",
+      "sourceHash": "6163e616a4e05107fada5bbd5eb9d0c72e8b690f1cb4c50c6cf779f60fa0a8a0",
+      "termHash": "a26f5bfedbb4a1044ab2e4ca3d76c667b4e313b1c662727cf9e6e15c2ce290d1",
+      "text": "{{span_1}}{{item_1209_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}ERFORDERLICH{{end_span_3}}{{span_4}}ETAPPENWEISE{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.001",
+      "sourceHash": "eac5f7457ab42bb5d807ef7d1cb55a6667d89b1183455df2f470a1d948e6f69a",
+      "termHash": "c4297ad9281874bde9f5653bfadfb8f6510b8c676e9dcba57214631c71b14dec",
+      "text": "{{item_1120_1}}."
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.002",
+      "sourceHash": "d2403d652bcad8a94e68176d3f544a33bae6e0e444671fd94002c1287814946d",
+      "termHash": "1a79a295f07ff4e2a45518f32a2719365874c5da6742d5b9d1d120b3ee58d374",
+      "text": "{{item_1101_1}}."
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.003",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "81f01fd02c8e7cc2b4d9f6ce0dd76fb9a13e5b0da9a8a5e4694b9d56764a8982",
+      "text": "{{item_1006_1}}."
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.004",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "83a34697d74a7ba83985d4ecee367973f1c9879bcaa2bcc6cb70b2eb4cb005cb",
+      "text": "{{a_1}}{{item_1204_1}} aus der wiederverwendbaren Linie{{end_a_1}}."
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.005",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "a2e551e0377f89cec42962deee52462dc57970fd5150a55febd82a1d0b358ade",
+      "text": "{{a_1}}{{item_1123_1}} aus der wiederverwendbaren Standardlinie{{end_a_1}}."
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h5.001",
+      "sourceHash": "063747ca78015012464aa12ece34d616bced976e10e22e9be4418dd792feab67",
+      "termHash": "87d03a677d3f1664a99d6ce41d6ba8c513e735ecce7c0aa878bb5ab171cd7188",
+      "text": "ERGÄNZEN NACH {{tech_1142_1}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.006",
+      "sourceHash": "aeac4592f30944fb802c7e0d579418bd15b15bd25e6f6abaef824ce1df49a051",
+      "termHash": "4f1f721c23047b5bfaee10d3132bf0c74519c249dba281e8582c0b5220a0b4dd",
+      "text": "{{span_1}}{{item_1121_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1120_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Mikro-Beschleuniger{{end_span_5}}{{end_span_3}} {{item_1121_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.route-green-particle-containers.li.001",
+      "sourceHash": "9c4a74c93c7757c68e3096b4f0a6bfdf65f6d30df2e4d7deb6a1a13f8a6c3b8f",
+      "termHash": "c6d67c471635680770194575f75648b26254743c5ca690e7d0cacce5e1cf2d65",
+      "text": "{{span_1}}Container-Zweig{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1206_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h5.002",
+      "sourceHash": "b722344cae0b71590400e8c00fada7823cdd273de2bf00e3d97b4ca5dac10761",
+      "termHash": "1aeb67efa1d5e7a2d5f6c727401ddf99fc4bad3d7cd65d9404397afb12932de4",
+      "text": "ERGÄNZEN NACH {{tech_1704_1}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.007",
+      "sourceHash": "8c3e4127553ec431dc48282ce6b2be81328e42b11a663194fe6c77216b2bed71",
+      "termHash": "01811eb3354162f3ace6a9524acfcd9554968291efa38fbb5dd55dd9855f140c",
+      "text": "{{span_1}}Erste Zusammenführung{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1206_1}} + {{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Mikro-Beschleuniger{{end_span_5}}{{end_span_3}} {{item_1127_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.008",
+      "sourceHash": "82eeda0148a87cb91aa93d9c999431c437149e472ae5d2b6cdc372ca0cead379",
+      "termHash": "a878a9d36e8dfeba1986fa65d9d1828eb876bed6bc6c1c6cf0038b6515c7f496",
+      "text": "{{span_1}}{{item_1112_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1109_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Lichtbogen-Schmelzofen{{end_span_8}}{{end_span_6}} {{item_1112_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.009",
+      "sourceHash": "796dd5154428c12814f1e74b18cfd1ec1c042de6bbba09e022940429730727fb",
+      "termHash": "e1207abbd2cdf3925c8dcbd6383dceb9ce04fb320226175305f4fda45f0ebd46",
+      "text": "{{span_1}}Endfertigung{{end_span_1}}{{span_2}}{{item_1127_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1209_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.010",
+      "sourceHash": "2e472d0346df0eec0600c050c657dfa825e3bff09fb3b5e0cf1601d6c89f3914",
+      "termHash": "2eeb9f4d829482862dc2c6e09813ce5714a70d3dc9c2d4c9a7ba14bb18e86940",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1209_1}}{{end_span_1}} — Zufuhr: {{span_2}}{{item_1209_2}} mit {{fact_1}}{{fact_2}}{{end_span_2}}, vor der grünen Forschung."
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.011",
+      "sourceHash": "af4c89d8689a4fd2a41d365df88497b46d986c4d76111276e369cacfc985ad82",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Versorge den Deuteriumzweig aus einem Wasserstofflager und beobachte dessen Füllstand. Führe ungenutzten Wasserstoff über einen kurzen Bandkreislauf dorthin zurück, wenn eine andere gewählte Route ihn erzeugt."
+    },
+    {
+      "id": "c.green.h2.007",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Achte auf"
+    },
+    {
+      "id": "c.green.p.022",
+      "sourceHash": "37cac9877fa09135f0d850bc227da347ff79cd6d5b666b1cd347712e7d99a727",
+      "termHash": "1755618f505f5dd36e64ce1b1bec4d3e6877fa50f0b2b27cbc5091db4143b457",
+      "text": "{{strong_1}}Bilanz für {{item_1120_1}}.{{end_strong_1}} Die Casimir-Produktion verbraucht {{item_1120_2}} schnell. Versorge sie aus einem Lagerbehälter, beobachte dessen Füllstand und führe wiederverwendbare Nebenprodukte vom Typ {{item_1120_3}} derselben Versorgung zu, wenn deine gewählten Zweige sie erzeugen."
+    },
+    {
+      "id": "c.green.p.023",
+      "sourceHash": "4ca8720683a489f423e597e570ee79a2164f657ab730869a921b0799f4a880af",
+      "termHash": "e37660b6080a1059ea012942f666ec203a151f4637746d5597474e432f83e3ce",
+      "text": "{{strong_1}}{{item_1206_1}}.{{end_strong_1}} Die Produktion von „{{item_1127_1}}“ kann einen alten Komponentenvorrat leeren, der beim ILS-Ausbau noch großzügig wirkte. Erweitere diesen Zweig nur, wenn sein Puffer tatsächlich schrumpft."
+    },
+    {
+      "id": "c.green.h2.008",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bereit für den nächsten Schritt, wenn"
+    },
+    {
+      "id": "c.green.li.009",
+      "sourceHash": "e30f8fa7570f8ccfffce8287c07580548b75c5ce4083f1b6a74b173bd6c16fd5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}zwei Labore durchgehend grüne Würfel produzieren. {{end_label_1}}"
+    },
+    {
+      "id": "c.green.li.010",
+      "sourceHash": "916856b8cf43bca9f86ef72e09856ecf7d085224f5f41e46e0d3d1a67f8104e7",
+      "termHash": "35ed47abde271fba9dfe9736bae25fef3d0a78e1dac075dd565ab8ececc4f7a9",
+      "text": "{{label_1}} {{input_1}}für {{item_1305_1}} und {{item_1209_1}} jeweils ein sichtbares Lager vorhanden ist. {{end_label_1}}"
+    },
+    {
+      "id": "c.green.h2.009",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "c.green.p.024",
+      "sourceHash": "c6d33b69346935a3e66e3c976301a387069ba8cf844d5b0af00190dd0e4a1b54",
+      "termHash": "2b27b81e13cdfce2124b43da86bc3467e8f084b27de57340a562b2075afc3afe",
+      "text": "Als Nächstes zu {{a_1}}{{img_1}}[DYSON]{{end_a_1}}. Soll ein konkret gewählter seltener Rohstoff jetzt unbeaufsichtigt importiert werden, springe zur Automatisierung unter {{a_2}}{{img_2}}[WARP]{{end_a_2}}. Grüne Würfel machen {{item_1210_1}} nun günstig."
     },
     {
       "id": "a.tech-sheet-title.h2.001",
