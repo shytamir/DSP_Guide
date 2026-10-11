@@ -3,17 +3,21 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 import { createRequire } from "node:module";
+import { localeUi } from "./lib/locale-delivery.mjs";
 
 const args = process.argv.slice(2);
 if (args.includes("--help")) {
   console.log(
-    "Usage: node scripts/validate-phone.mjs [--mode baseline|navigation|navigation-edges|layout|interaction] [--site directory-or-URL] [--output directory] [--full] [--profile name]",
+    "Usage: node scripts/validate-phone.mjs [--mode baseline|navigation|navigation-edges|layout|interaction] [--site directory-or-URL] [--locale en|zh-CN|de|ja] [--output directory] [--full] [--profile name]",
   );
   process.exit(0);
 }
 const option = (name, fallback) =>
   args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
 const mode = option("--mode", "baseline");
+const locale = option("--locale", "en");
+assert.ok(["en", "zh-CN", "de", "ja"].includes(locale), "Unknown locale");
+const ui = localeUi(locale).strings;
 assert.ok(
   [
     "baseline",
@@ -76,6 +80,7 @@ if (!/^https?:/.test(site)) {
   await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
   base = `http://127.0.0.1:${server.address().port}/`;
 }
+base = new URL(locale === "en" ? "./" : `${locale}/`, base).href;
 const matrix = [
   ["android", "chromium", 412, 915, true],
   ["android-narrow", "chromium", 360, 800, true],
@@ -99,6 +104,7 @@ const chrome = [process.env.PROGRAMFILES, process.env["PROGRAMFILES(X86)"]]
 if (chrome) matrix.push(["chrome-stable", "chromium", 412, 915, true, chrome]);
 const report = {
   mode,
+  locale,
   playwright: require(path.join(modules, "playwright/package.json")).version,
   site,
   cases: [],
@@ -109,6 +115,9 @@ async function screenshot(page, name) {
 }
 async function navigationChecks(page, name) {
   const phone = await page.locator("#phone-route-trigger").isVisible();
+  const openingCaption = await page
+    .locator("#phone-current-phase")
+    .textContent();
   await page.locator("#yellow").scrollIntoViewIfNeeded();
   await page.waitForFunction(() =>
     document
@@ -117,8 +126,9 @@ async function navigationChecks(page, name) {
   );
   await page.evaluate(() => scrollTo(0, 0));
   await page.waitForFunction(
-    () =>
-      document.getElementById("phone-current-phase").textContent === "Start",
+    (caption) =>
+      document.getElementById("phone-current-phase").textContent === caption,
+    openingCaption,
   );
   const hashes = await page
     .locator(".phase-rail a")
@@ -273,19 +283,6 @@ async function layoutChecks(page, name, width) {
   await page.locator("details.build-card").first().scrollIntoViewIfNeeded();
   await screenshot(page, `${name}-production`);
   if (["android", "iphone"].includes(name)) {
-    for (const [lang, title] of [
-      ["de", "Praktischer Leitfaden für deinen Spielfortschritt"],
-      ["zh-CN", "实用流程指南"],
-      ["ja", "実践的な進行ガイド"],
-    ]) {
-      await page.locator("html").evaluate((n, lang) => (n.lang = lang), lang);
-      await page
-        .locator(".guide-title-subtitle")
-        .evaluate((n, title) => (n.textContent = title), title);
-      await page.evaluate(() => scrollTo(0, 0));
-      await screenshot(page, `${name}-${lang}-sample`);
-      assert.deepEqual(await scan(), { overflow: [], document: false });
-    }
     await page.addStyleTag({
       content: "html { font-size: 200%; } body { font-size: 32px; }",
     });
@@ -301,7 +298,7 @@ async function layoutChecks(page, name, width) {
     cards,
     tables: await page.locator("table").count(),
     checks:
-      "collapsed/expanded geometry, dashboard width, table scrolling, language samples and 200% text",
+      "collapsed/expanded geometry, dashboard width, table scrolling, selected edition and 200% text",
   };
 }
 async function interactionChecks(page, context, name, width, height) {
@@ -330,11 +327,14 @@ async function interactionChecks(page, context, name, width, height) {
     await page.locator('#route-sheet a[href="#yellow"]').click();
 
     const longest = await page.evaluate(async () => {
+      const lang = document.documentElement.lang;
+      const dataPath =
+        lang === "en" ? "assets/data/" : `../assets/data/locales/${lang}/`;
       const data = await fetch(
-        new URL("assets/data/tech-reference.json", document.baseURI),
+        new URL(`${dataPath}tech-reference.json`, document.baseURI),
       ).then((r) => r.json());
       const details = await fetch(
-        new URL("assets/data/tech-tooltip-details.json", document.baseURI),
+        new URL(`${dataPath}tech-tooltip-details.json`, document.baseURI),
       ).then((r) => r.json());
       const refs = [...document.querySelectorAll(".tech-ref")];
       const score = (n) => {
@@ -497,9 +497,9 @@ async function interactionChecks(page, context, name, width, height) {
       () =>
         document.querySelector(".task-list-item-checkbox").disabled === false,
     );
-    assert.match(
+    assert.equal(
       await denied.locator("#checklist-save-status").innerText(),
-      /unavailable/,
+      ui.unavailable,
     );
     await denied.locator(".checklist-label").first().click();
     assert.equal(
@@ -548,6 +548,7 @@ try {
     });
     try {
       await page.goto(base);
+      assert.equal(await page.locator("html").getAttribute("lang"), locale);
       await page.waitForFunction(
         () =>
           document.querySelector(".task-list-item-checkbox")?.disabled ===
@@ -643,9 +644,10 @@ try {
       await page.waitForFunction(() =>
         document.querySelector("#tech-tooltip").classList.contains("visible"),
       );
-      assert.match(
-        await page.locator("#tech-tooltip").innerText(),
-        /Mechanical Frame/,
+      assert.ok(
+        (await page.locator("#tech-tooltip").textContent()).includes(
+          ui.required,
+        ),
       );
       await page.keyboard.press("Escape");
       const checkbox = page.locator(".task-list-item-checkbox").first();

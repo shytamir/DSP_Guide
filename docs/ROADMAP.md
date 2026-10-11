@@ -1,11 +1,11 @@
 # Roadmap — Phone Support and Localization
 
-**Status: ML-E5 complete, 2026-10-11.**
-ML-01–27, ML-M1, ML-G2 and ML-M2–ML-M4 are agent-validated. Japanese joins
-Chinese and German as a complete private edition. Each ML-22–27 story has
-validation, a management update and its own commit/push to `main`.
-Work stops at ML-M4. ML-28 and public activation need a later instruction;
-all translations remain private.
+**Status: ML-E6 / ML-28 in progress, 2026-10-11.**
+ML-01–27, ML-M1, ML-G2 and ML-M2–ML-M4 are agent-validated. The owner authorized
+the combined candidate, validation, management updates and commits/pushes to
+`main`, then a handoff. Version 3.2 enables all four complete editions.
+Local validation passed; ML-M5 remains pending exact CI/development evidence. Production
+publication remains the owner's action.
 
 **Outcome:** make the complete guide practical on phones, then offer equivalent
 English, Simplified Chinese, German, and Japanese editions without losing
@@ -446,6 +446,7 @@ the resulting hash and push outcome.
 | ML-25 — agent-validated | `node artifacts/ml-e5/catalog.mjs D`, `build-site.mjs artifacts/ml-e5/ML25-preview-accepted --preview ja`, `artifacts/ml-e5/browser.mjs ML25 D`, release generation to `ML25-release` and both output validators passed. | 228/228 entries; 1,105 cumulative. English comparison and Japanese-only revision retained swarm capacity as reference, early PHOTON overlap, receiver warm-up/blocking, 40/min baseline, 2,000 Antimatter reserve, 4,000-cube completion and optional permanent structure. Native read-only lookup confirmed 光子生成, 継続受取, 自動軌道, 質量エネルギー貯蔵 and the cloud naming variant. Revised 放射線送信効率, capacity wording and quoted completion labels. Three browser cases covered 227 rendered nodes, bridge, dashboards/cards and 200% text; screenshots reviewed. English-only release passes; no source edits or activation. | ML-26: optional WARP and LOGISTICS, preserving departure checks, scout-first progression and replacement-stock boundaries. |
 | ML-26 — agent-validated | `node artifacts/ml-e5/catalog.mjs E`, `build-site.mjs artifacts/ml-e5/ML26-preview-accepted --preview ja`, `artifacts/ml-e5/browser.mjs ML26 E`, release generation to `ML26-release` and both output validators passed. | 250/250 entries; 1,355 cumulative. English comparison and Japanese-only revision preserved eight rare-resource choices, optional departure, 20-Warper batch, return reserve, unpowered source/powered home fleet, two-Warper round trip, green-science protection, six limited equipment buffers and dispatch-station controls. Removed repeated native technology names and clarified 歪曲器搭載 with its exact native label and meaning. Read-only lookup also confirmed warp distance, minimum-load and storage labels. Three browser cases covered 247 rendered nodes, expedition stages, tables/cards and 200% text; screenshots reviewed. English-only release passes. | ML-27: remaining references, whole-edition consistency/completeness review, full private Japanese browser matrix and ML-M4 handoff. |
 | ML-27 — agent-validated; ML-M4 reached | `node artifacts/ml-e5/catalog.mjs F`, `finish-review.mjs`, `edition.mjs`, the six source/localization/terminology/card/checklist/readability checks, ML27 preview and segment browser checks, full private Japanese matrix, release generation and both output validators passed; details below. | 182/182 segment entries; all 1,537 messages and eight UI strings complete/current. English comparison, Japanese-only revision and whole-edition review preserved optional references, accumulator return/priority, checklist parity, statistics scope/rates and conclusion. Native statistics/proliferator labels checked read-only. Aligned opening cloud, matrix, station, storage and expedition terms with later sections. Repaired the negative test's obsolete assumption that a real catalog remains incomplete by removing a message from a disposable fixture. Three segment cases plus 38 full-matrix cases passed; screenshots reviewed. English-only release remains 539 files; no activation. | Stop after ML-E5. ML-M4 handoff below identifies ML-E6 / ML-28 as next, requiring a new instruction. |
+| ML-28 — local candidate validated; remote evidence pending | Source, localization, terminology, card, checklist, readability, 551-file generation/extracted ZIP, stale-edit rejection, 152 real-edition matrix cases and 96 switching paths passed; exact commands and reviewed surfaces below. | Version 3.2 enables all four editions together; no accepted prose or product behavior changed. Real-edition validation replaces disposable language-specific copies while retaining negative fixtures. Browser evidence is emulation and agent review. | Push the candidate, verify its exact CI package and development bytes/browser behavior, then record ML-M5 and archive implementation records in the management-only follow-up. Production remains owner-controlled. |
 
 ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
 and uses a hoisted/copy install to avoid sandbox symlink requirements. The first
@@ -798,6 +799,52 @@ and stale-copy rejection, then establish exact candidate ZIP/development evidenc
 using the roadmap's post-push follow-up rule. Preserve the 66 checklist identities,
 anchors, native IDs and protected facts. Production publication remains the
 owner's action. The two earlier concepts remain deferred.
+
+## ML-28 local candidate evidence — 2026-10-11
+
+All four complete editions are enabled at version 3.2. Local acceptance passed;
+ML-M5 awaits the exact CI ZIP and development deployment after the product push.
+No accepted translation, progression fact, asset, layout or runtime behavior
+needed revision. Validators now select real editions, retain independent
+disabled/incomplete fixtures, and reject incomplete enabled catalogs.
+
+- `scripts/Bootstrap-AgentEnvironment.ps1 -ValidateOnly` passed: Node 24.19.0,
+  pnpm 11.25.0, Prettier 3.9.6 and Playwright 1.64.0.
+- `node scripts/validate-localization.mjs`, `test-localization.mjs`,
+  `localization-source.mjs`, `validate-terminology.mjs`,
+  `validate-card-system.mjs`, `validate-checklists.mjs` and
+  `validate-source-readability.mjs` passed. All three catalogs have 1,537 current
+  messages and eight UI strings; 444 native identities per locale pass.
+- `node scripts/build-site.mjs artifacts/ml-e6/site` and both output validators
+  passed: 551 exact files, four editions, 171 referenced assets, 19 cards,
+  two reusable references and the sanitized permission record. A local ZIP was
+  created/extracted with .NET ZipFile; both validators passed on its contents.
+- `node scripts/validate-phone.mjs --site artifacts/ml-e6/site --locale <locale>
+  --mode <mode> --full --output artifacts/ml-e6/<locale>-<mode>` passed for en,
+  zh-CN, de and ja: navigation, layout and interaction each 12 cases, plus two
+  navigation-edge cases per edition (152 total, zero errors). The ignored
+  `artifacts/ml-e6/run-matrix.mjs` executes those commands and checks reports.
+- `node scripts/validate-localization-browser.mjs artifacts/ml-e6/switching-<profile>
+  <profile> --candidate` passed android, iphone and desktop: 96 switches across
+  all language pairs at root/prefix URLs, shared progress/reset, deep links,
+  route/card/table/details behavior, localized statuses, no-JS links, denied
+  storage and fail-closed UI loading. Screenshots reviewed include all editions,
+  desktop and phone selectors, route sheets, production cards, 200% German text,
+  CJK wrapping, landscape dashboards and native technology details.
+- `node artifacts/ml-e6/stale-edit.mjs` passed: an English heading changed in
+  an ignored fixture, its inventory was refreshed, and release generation
+  rejected the stale translation before creating output.
+
+Browser evidence uses managed Chromium 156.0.8078.4, WebKit 27.2 and installed
+Chrome 155.0.8059.39, with the full documented 320–480 px, landscape, desktop and
+200% text matrix. Freeze-time target refresh found
+[Chrome 155 stable on Android](https://chromereleases.googleblog.com/2026/10/chrome-for-android-update_01835271525.html)
+and [Safari 27.0](https://webkit.org/blog/18325/webkit-features-for-safari-27-0/).
+This is engine emulation and agent review, not physical-device, branded iOS
+Safari, OS-font, assistive-technology or independent native-speaker evidence.
+One test assertion was corrected to read source text rather than CSS-uppercase
+rendered text; the English/German matrix was restarted and passed. No product
+repair was required. Production remains untouched.
 
 ## Draft review — 2026-10-11
 

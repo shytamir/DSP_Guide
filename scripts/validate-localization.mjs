@@ -22,6 +22,7 @@ const html = fs.readFileSync("index.html", "utf8");
 const doc = parse(html);
 checkCoverage(doc);
 const messages = collect(doc);
+const manifest = readJson("localization/manifest.json");
 assert.deepEqual(readJson("localization/source.json"), {
   schema: 1,
   messages: sourceInventory(doc),
@@ -31,18 +32,20 @@ for (const locale of Object.keys(localeFolders)) {
   localeData(locale);
   const terms = readJson(`localization/terminology/${locale}.json`).terms;
   const catalog = readJson(`localization/catalogs/${locale}.json`);
-  checkCatalog(catalog, messages, locale, terms, false);
+  const enabled = manifest.locales.find((entry) => entry.id === locale).enabled;
+  checkCatalog(catalog, messages, locale, terms, enabled);
   assert.deepEqual(
-    factSignature(localizedDocument(html, locale, catalog, { partial: true })),
+    factSignature(
+      localizedDocument(html, locale, catalog, { partial: !enabled }),
+    ),
     factSignature(doc),
   );
   console.log(
-    `${locale}: ${catalog.messages.length}/${messages.length} messages current; private only`,
+    `${locale}: ${catalog.messages.length}/${messages.length} messages current; ${enabled ? "enabled" : "private only"}`,
   );
 }
 const site = process.argv[2];
 if (site) {
-  const manifest = readJson("localization/manifest.json");
   const baseUrl = process.argv[3] || manifest.baseUrl;
   const expected = generateSite({ baseUrl });
   const list = (directory) =>

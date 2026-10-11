@@ -1,10 +1,9 @@
 # Phone Support and Localization — Decisions and Investigation
 
-**Status:** Roadmap approved, 2026-10-11; ML-E1–E5 are complete.
-ML-E5 (ML-22–27) and ML-M4 are agent-validated, with per-story validation,
-management updates and commits/pushes. Japanese joins Chinese and German as a
-complete private edition. Work stops at the Japanese-epic handoff; ML-28 and
-public activation need a later instruction.
+**Status:** Roadmap approved, 2026-10-11; ML-E1–E5 are agent-validated.
+ML-E6 / ML-28 is authorized and in combined candidate validation. Version 3.2
+enables all four complete editions; exact CI/development evidence is required
+before ML-M5 closes. Production publication remains the owner's action.
 Early investigations and planning decisions are resolved below. Historical
 browser samples are disposable feasibility work, not product acceptance.
 Story scope, progress, and sequencing live only in the linked roadmap.
@@ -26,9 +25,9 @@ Story scope, progress, and sequencing live only in the linked roadmap.
   native-speaker, or owner-acceptance gates during implementation. Each finished
   story will update management records and be committed/pushed to `main` once
   implementation is instructed. Production publication remains with the owner.
-- Execution through ML-27 is authorized, following the phone, localization,
-  Chinese and German epics. Complete Japanese with per-story commits/pushes
-  and stop at ML-M4. Public locale activation and publication are outside this run.
+- Execution through ML-28 is authorized, following the phone, localization and
+  three translation epics. Validate the combined 3.2 candidate, commit/push to
+  main and stop with a handoff. Production publication is outside this run.
 
 The historical [no-mobile-polish record](../archive/no-mobile-polish-story.md)
 does not prohibit this newly authorized planning. The published site's

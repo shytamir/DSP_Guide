@@ -5,6 +5,7 @@ import http from "node:http";
 import { createRequire } from "node:module";
 import { completeFixtures } from "./lib/localization-fixtures.mjs";
 import { generateSite, writeSite } from "./lib/site-builder.mjs";
+import { readJson } from "./lib/terminology.mjs";
 import {
   localeUi,
   localeData,
@@ -14,6 +15,8 @@ import {
 const output = path.resolve(
   process.argv[2] || "artifacts/localization/browser",
 );
+const candidate = process.argv.includes("--candidate");
+const profile = process.argv.slice(3).find((arg) => arg !== "--candidate");
 fs.mkdirSync(output, { recursive: true });
 const require = createRequire(import.meta.url);
 const { chromium, webkit } = require(
@@ -44,17 +47,22 @@ const server = http.createServer((request, response) => {
 });
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const origin = `http://127.0.0.1:${server.address().port}/`;
-const fixtures = completeFixtures();
-const locales = fixtures.manifest.locales;
-const report = { synthetic: true, cases: [] };
+const fixtures = candidate
+  ? { manifest: readJson("localization/manifest.json") }
+  : completeFixtures();
+const locales = fixtures.manifest.locales.filter((locale) => locale.enabled);
+assert.equal(locales.length, 4, "Combined checks require all four editions");
+const report = { synthetic: !candidate, cases: [] };
 try {
   for (const prefix of ["", "guide/"]) {
     const files = generateSite({ ...fixtures, baseUrl: `${origin}${prefix}` });
     validateEditions(files, fixtures.manifest, `${origin}${prefix}`);
-    // An unmistakable private marker keeps fixture folders out of release checks.
+    // Local test URLs and synthetic fixtures must never enter a release package.
     files.set(
       "PREVIEW-ONLY.txt",
-      Buffer.from("Complete SYNTHETIC browser fixtures; never publish.\n"),
+      Buffer.from(
+        "Browser validation output with local URLs; never publish.\n",
+      ),
     );
     sites.set(prefix, files);
     writeSite(path.join(output, prefix ? "site-prefix" : "site-root"), files);
@@ -64,13 +72,14 @@ try {
     ["iphone", webkit, { width: 393, height: 852 }, true],
     ["desktop", chromium, { width: 1280, height: 800 }, false],
   ]) {
-    if (process.argv[3] && process.argv[3] !== name) continue;
+    if (profile && profile !== name) continue;
     const browser = await engine.launch();
     try {
       const context = await browser.newContext({
         viewport,
         isMobile: mobile,
         hasTouch: mobile,
+        deviceScaleFactor: mobile ? 3 : 1,
         reducedMotion: "reduce",
       });
       const page = await context.newPage();
@@ -120,13 +129,49 @@ try {
               "retained",
             );
           }
+        await page.goto(`${origin}${prefix}#yellow`);
         for (const locale of locales) {
           requests = [];
-          await page.goto(`${origin}${prefix}${locale.path}#yellow`);
+          await page
+            .locator(`#language-selector a[hreflang="${locale.id}"]`)
+            .click();
           await page.waitForFunction(
-            () => !document.querySelector("input").disabled,
+            (lang) =>
+              document.documentElement.lang === lang &&
+              !document.querySelector("input").disabled,
+            locale.id,
           );
+          assert.equal(new URL(page.url()).hash, "#yellow");
           const ui = localeUi(locale.id).strings;
+          if (mobile) {
+            await page.locator("#phone-route-trigger").click();
+            if (prefix)
+              await page.screenshot({
+                path: path.join(output, `${name}-${locale.id}-route.png`),
+              });
+            await page.locator('#route-sheet a[href="#yellow"]').click();
+          }
+          const card = page.locator("#yellow details.build-card").first();
+          await card.locator("summary").first().click();
+          assert.equal(await card.evaluate((node) => node.open), true);
+          if (prefix)
+            await page.screenshot({
+              path: path.join(output, `${name}-${locale.id}-card.png`),
+            });
+          await card.locator("summary").first().click();
+          const tables = await page
+            .locator(".table-scroll")
+            .evaluateAll((nodes) =>
+              nodes.map((node) => {
+                const overflows = node.scrollWidth > node.clientWidth;
+                node.scrollLeft = 100;
+                return !overflows || node.scrollLeft > 0;
+              }),
+            );
+          assert.ok(
+            tables.every(Boolean),
+            "Wide tables must scroll after switching",
+          );
           if (locale.id !== "en") {
             assert.ok(
               !requests.some((url) =>
@@ -225,7 +270,7 @@ try {
           `${name}: ${prefix || "root"} switches, UI, links and no-JS passed`,
         );
       }
-      for (const locale of locales.filter((l) => l.id !== "en")) {
+      for (const locale of locales) {
         const denied = await browser.newContext({
           viewport,
           isMobile: mobile,
@@ -238,7 +283,10 @@ try {
             };
           });
           const p = await denied.newPage();
-          await p.goto(`${origin}guide/${locale.path}`);
+          await p.goto(`${origin}guide/`);
+          await p
+            .locator(`#language-selector a[hreflang="${locale.id}"]`)
+            .click();
           await p.waitForFunction(
             () => !document.querySelector("input").disabled,
           );

@@ -17,8 +17,8 @@ evidence justified by the change.
 | 2 — Experience | Presentation, navigation, interaction, or persistence | Tier 1 plus required desktop Chromium review; narrow viewport only when affected                                                    |
 | 3 — Release    | Deployment behavior or publication candidate          | All repository validators, release-equivalent package validation including sanitized licensing records, and required browser review |
 
-Desktop and the 3.1 phone candidate are presentation targets. Production 3.0
-retains its previous best-effort mobile policy until the owner publishes 3.1.
+Desktop and the four-language 3.2 phone candidate are presentation targets.
+Production 3.0 retains its previous policy until the owner publishes a candidate.
 
 The [phone/localization roadmap](../ROADMAP.md) explicitly changes that target
 when its stories are implemented. Its
@@ -58,6 +58,8 @@ The check starts/stops its own loopback static server, uses Chromium and WebKit
 at four primary phone viewports plus desktop, and adds installed stable Chrome
 when available. `--full` adds landscape, 320/480 px boundaries, tablet smoke,
 and wide desktop. `--site <directory-or-URL>` checks staged or deployed output.
+Append `--locale en|zh-CN|de|ja` to select an edition beneath that site root;
+do not append the locale path to `--site`. The default is English.
 JSON findings and screenshots remain ignored artifacts; record acceptance
 findings in the roadmap ledger. Baseline mode observes current defects without
 asserting that unimplemented phone behavior already passes. Subsequent stories
@@ -69,7 +71,7 @@ desktop/phone transitions, simulated safe-area padding, and no-JavaScript stage
 links in both engines.
 
 `--mode layout` checks collapsed/expanded geometry, all dashboards and 19 cards,
-independent table scrolling, sample German/Chinese/Japanese titles, and 200%
+independent table scrolling, the selected edition's actual text, and 200%
 text on the primary Android/iPhone profiles. Review its screenshots alongside
 the results. `--profile <name>` isolates a matrix case when diagnosing a failure.
 
@@ -77,6 +79,18 @@ the results. `--profile <name>` isolates a matrix case when diagnosing a failure
 desktop transitions, desktop hover/keyboard, native checklist labels, grouped
 card controls, 44 px primary targets, save/reload, isolated reset, and denied
 storage. Its enlarged landscape scenario exercises actual overflowing details.
+
+`node scripts/validate-localization-browser.mjs <fresh-output> [profile]
+--candidate` checks real complete catalogs at root and path-prefix URLs, every
+language pair, deep-link/progress preservation, isolated reset, post-switch
+route/card/table/tooltip behavior, no-JS links and denied storage. Without
+`--candidate` it retains synthetic delivery fixtures. All evidence directories
+are ignored and must not deploy.
+
+These locale-aware options replace disposable per-language copies of the phone
+validator and complement synthetic fixtures with accepted prose. Maintainers run
+them for affected locale changes and all four editions at a candidate freeze;
+they add no deployed code or dependency.
 
 - Use browser review for claims about presentation, navigation, responsive
   behavior, focus, persistence, or interaction.

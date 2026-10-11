@@ -115,8 +115,14 @@ assert.deepEqual([...first.keys()], [...second.keys()]);
 for (const [file, bytes] of first)
   assert.ok(bytes.equals(second.get(file)), file);
 assert.ok(
-  ![...first.keys()].some((p) =>
-    /^(zh-CN|de|ja|localization|node_modules)\//.test(p),
+  ![...first.keys()].some((p) => /^(localization|node_modules)\//.test(p)),
+);
+const disabledManifest = readJson("localization/manifest.json");
+for (const locale of disabledManifest.locales)
+  locale.enabled = locale.id === "en";
+assert.ok(
+  ![...generateSite({ manifest: disabledManifest }).keys()].some((p) =>
+    /^(zh-CN|de|ja)\//.test(p),
   ),
 );
 assert.ok(generateSite({ preview: "ja" }).has("PREVIEW-ONLY.txt"));

@@ -1,7 +1,8 @@
 # Localization authoring contract
 
-Only English is currently deployable. Chinese (`zh-CN`), German (`de`), and
-Japanese (`ja`) stay private until ML-28. The roadmap owns story progress.
+Version 3.2 enables English, Simplified Chinese (`zh-CN`), German (`de`) and
+Japanese (`ja`) together. The source catalogs remain authoring inputs, excluded
+from deployment. Candidate acceptance and owner publication are separate.
 
 Native ID mappings and language rules are in [style.md](style.md). Validate
 retained snapshots with `node scripts/validate-terminology.mjs`; extraction is
@@ -93,11 +94,11 @@ node scripts/build-site.mjs artifacts/preview-ja --preview ja --segment A
 
 Serve the preview folder and open `/ja/`. It intentionally mixes translated
 samples with English, contains `PREVIEW-ONLY.txt` and noindex metadata, and fails
-the release allowlist. Never package it. Ordinary release generation currently
-emits English only. `manifest.json` fixes the four URL paths/autonyms and keeps
-the three target locales disabled. Enabling a locale requires all HTML messages,
+the release allowlist. Never package it. Ordinary release generation emits all
+four editions. `manifest.json` fixes their URL paths/autonyms. Each enabled
+locale requires all HTML messages,
 current UI strings and native names; the build fails before writing an incomplete
-edition. ML-28 owns public activation. Complete synthetic catalogs are constructed
+edition. Complete synthetic catalogs are constructed
 only by test helpers and cannot be selected by the build CLI.
 
 The generated selector links each complete edition, retaining the current hash
@@ -120,14 +121,42 @@ Run `node scripts/validate-localization-browser.mjs artifacts/localization/check
 for complete synthetic root/prefix switching, no-JS, localized tooltips/status,
 storage denial and fail-closed checks in desktop Chromium and both phone engines.
 An optional final argument (`android`, `iphone`, `desktop`) isolates one profile.
-Use a fresh output directory; fixtures carry `PREVIEW-ONLY.txt` and never deploy.
+Append `--candidate` to use the real enabled catalogs instead of synthetic text.
+This checks all 16 language pairs at root and prefix, shared progress/reset,
+post-switch route/card/table/tooltip behavior, no-JS links and storage failure.
+Use a fresh output directory; these local-URL fixtures carry `PREVIEW-ONLY.txt`
+and never deploy. For each of `en`, `zh-CN`, `de` and `ja`, run
+`node scripts/validate-phone.mjs --site artifacts/site --locale <locale>
+--mode <mode> --full --output artifacts/check-<locale>-<mode>` for navigation,
+layout, interaction and navigation-edges. Review the resulting screenshots.
 Chinese, German and Japanese each have all 1,537 HTML/attribute messages and
 eight UI strings reviewed and agent-validated privately through ML-15, ML-21
-and ML-27 respectively. The manifest still disables all three. The roadmap
-records coverage, corrections and the ML-M2/ML-M3/ML-M4 handoffs; ML-28 owns
-public activation of the three complete editions after a new instruction.
+and ML-27 respectively. The implementation record preserves coverage,
+corrections and the ML-M2/ML-M3/ML-M4 handoffs. ML-28 combines their delivery.
 The original sample review covered the heading, intro/emphasis,
 and native-name/numeric dashboard example; the German rate example uses a label
 and colon to preserve the official name without an unnatural counted singular.
 All language stories still require translation, semantic comparison, a separate
 target-language read, and rendered inspection of the entire segment.
+
+## Maintaining an enabled edition
+
+1. Edit the English source while preserving message IDs, anchors, checklist
+   identity and native factual objects. Run `node scripts/localization-source.mjs
+   --write` to refresh the inventory.
+2. Reconcile each changed message in all three catalogs against the new source:
+   compare meaning and facts, read the target independently, then record the
+   reviewed source/term hashes. Never refresh hashes solely to silence a failure.
+3. For dynamic UI changes, update all eight-string UI catalogs and their reviewed
+   English hash. Refresh native terminology only from authorized read-only data.
+4. Run the affected deterministic checks, generate a fresh site, then run both
+   package validators. Generation rejects missing/stale enabled translations
+   before writing output. Do not disable an edition merely to bypass that gate.
+5. Inspect changed prose and controls in both phone engines and desktop. Run the
+   candidate switching checks for delivery/UI changes and the full four-locale
+   matrix for a release candidate. Preserve the emulation/self-review limits.
+
+The ML-28 stale-edit probe changed an English heading in an ignored copy,
+refreshed that copy's inventory, and confirmed release generation rejected stale
+translations without creating an output directory. The working source stayed
+unchanged. CI repeats coverage, freshness and package checks on every push.

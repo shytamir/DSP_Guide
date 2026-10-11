@@ -48,8 +48,9 @@ factual and private browser checks. ML-E4 (ML-16–21) and ML-M3 are also
 agent-validated: German is complete privately, with whole-edition review and
 the full browser matrix passed. ML-E5 (ML-22–27) and ML-M4 are agent-validated:
 Japanese is complete privately, with whole-edition review and the full browser
-matrix passed. Work stops at the Japanese-epic handoff. ML-28 and public locale
-activation need a later instruction.
+matrix passed. ML-E6 / ML-28 is now authorized and in combined 3.2 candidate
+validation, including exact CI ZIP and development-deployment evidence, then
+a handoff. Production publication remains the owner's action.
 Each completed story includes a management update
 and commit/push to `main`; production publication remains with the owner.
 [`../ROADMAP.md`](../ROADMAP.md) remains the sole current roadmap.

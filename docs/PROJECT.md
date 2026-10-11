@@ -1,16 +1,15 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-E1–E5 and the private Chinese/German/Japanese milestones
-ML-M2/ML-M3/ML-M4 are complete and agent-validated. Each Japanese story through
-ML-27 has validation, a management update and its own commit/push to main.
-Japanese has all 1,537 messages and eight UI strings accepted privately.
-Work stops at ML-M4; ML-28 requires a new instruction.
-Version 3.1 remains English only.
+**Status:** ML-E6 / ML-28 is authorized and in candidate validation. Version 3.2
+enables the complete English, Simplified Chinese, German and Japanese editions.
+ML-E1–E5 and their milestones are agent-validated; each translated catalog has
+1,537 messages and eight UI strings. Combined acceptance requires local browser
+checks, the exact CI ZIP and development deployment evidence before closure.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
 Simplified Chinese, German, and Japanese localization, approved the roadmap,
-and subsequently authorized execution through ML-27; production publication remains owner-controlled.
+and subsequently authorized execution through ML-28; production publication remains owner-controlled.
 
 [`ROADMAP.md`](ROADMAP.md) is the sole active roadmap. The two previously
 deferred concepts remain deferred indefinitely in the historical archive.
@@ -19,14 +18,14 @@ deferred concepts remain deferred indefinitely in the historical archive.
 
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
-Only English is deployable; the complete Chinese, German and Japanese
-translations are accepted privately after linguistic review, fact checks and
-their full browser matrices.
+All four editions are enabled. Chinese, German and Japanese have completed
+linguistic review, fact checks and their private browser matrices; the combined
+candidate verifies delivery and shared behavior.
 Narrow main text can wrap long native names and German compounds at 200% text.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized
-tooltip/checklist data. The disabled locales cannot deploy until their full
-catalogs pass; ML-28 owns activation. See `localization/README.md` for authoring.
+tooltip/checklist data. Enabled locales cannot deploy with missing or stale
+translations. See `localization/README.md` for authoring and reconciliation.
 
 This repository publishes a player-facing progression guide for _Dyson Sphere
 Program_. It is written primarily for new and returning players who understand
@@ -162,7 +161,7 @@ For the phone/localization initiative, the owner has explicitly delegated
 acceptance and story closure to the agent under the roadmap's execution policy;
 production publication remains separate and owner-controlled.
 Release packages include `LICENSE` and the privacy-sanitized game-asset
-permission record alongside `index.html` and `assets/`.
+permission record alongside `index.html`, the three locale directories and `assets/`.
 
 The production host's Cloudflare Pages Analytics injection was explicitly
 accepted by the owner as out-of-scope background noise during the version 3.0
@@ -177,13 +176,13 @@ and quality decisions. The roadmap defines 28 weighted stories: an English phone
 candidate (3.1), then a four-language candidate (3.2). Phone targets are current
 Android Chrome on the S23 Ultra class and current iOS Safari, assessed through
 agent-operated browser emulation. Desktop behavior must be preserved. The
-published 3.0 product retains its best-effort mobile policy. The 3.1 candidate
+published 3.0 product retains its best-effort mobile policy. The 3.2 candidate
 supports 360–480 CSS px portrait, landscape, and 200% text using the emulation
 contract; 320 px is a stress check. Physical devices, branded iOS Safari, OS
 fonts, and assistive technologies have not been certified. Spanish and Russian
 remain excluded.
 
-The roadmap is approved; execution is currently authorized through ML-21.
+The roadmap is approved; execution is authorized through ML-28, then a handoff.
 There are no outstanding owner design, language-review, or device-testing
 decisions. Once implementation is instructed, the agent owns review, correction,
 acceptance, and closure, with a management update and commit/push to `main` after
