@@ -56,7 +56,9 @@ and [localization authoring guide](../../localization/README.md) govern upkeep.
 The roadmap bounds authoring-rule revisions to the associated implementation
 and validation stories. LC-01 now provides German numeric display with exact
 canonical-value checks; LC-02 aligns native labels and German grade notation.
-LC-E1 is agent-validated; LC-E2 continues under the full-sequence authorization.
+LC-E1–E2 is agent-validated, including all scoped convention/convergence and
+German grammar corrections. LC-07 now validates the combined candidate and
+records exact CI/package/development evidence before the final handoff.
 
 The published version 3.0 sequence is indexed under
 [`../archive/version-3.0/`](../archive/version-3.0/). The two previously named

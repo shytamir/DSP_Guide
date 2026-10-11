@@ -5358,13 +5358,13 @@
       "id": "d.dyson.p.002",
       "sourceHash": "9b6dd30b5474dab6da4d25b3fe65ee303c5ce8a2ed95efde0412b5929eb5cbc3",
       "termHash": "36d53fd5b2c87d874fd573aba730f656d024eb8c7a6ba81757834f802b8a0f4d",
-      "text": "Die Fabrik ist so weit, dass das nächste Kraftwerk ins All gehört. Die Segel vom Typ {{item_1501_1}} verlassen den Planeten, nehmen ihre Umlaufbahn ein und bilden die Megastruktur, die diesen Durchlauf über {{item_1122_1}} und weiße Forschung zum Sieg trägt. Jeder arbeitende Werfer bringt den Abschluss ein Stück näher."
+      "text": "Die Fabrik ist so weit, dass das nächste Kraftwerk ins All gehört. {{item_1501_1}} verlassen den Planeten, nehmen ihre Umlaufbahn ein und bilden die Megastruktur, die diesen Durchlauf über {{item_1122_1}} und weiße Forschung zum Sieg trägt. Jeder arbeitende Werfer bringt den Abschluss ein Stück näher."
     },
     {
       "id": "d.dyson.p.003",
       "sourceHash": "ea492f81a83a038875bd065c4f4801d580d984eb800a774df9387b2f3df9f72a",
       "termHash": "207442b6e2030876a22aac4f09df107426fcafd70d7e8cf13b7fcffe8acb9cdf",
-      "text": "Baue die Segellinie, verteile die Werfer auf brauchbare Schusszonen und beobachte die steigende Dyson-Erzeugung. Der vollständige Referenzschwarm ist ein Planungsziel, keine Zugangssperre: Receiver vom Typ {{item_2208_1}} mit Linsen können das Produkt {{item_1208_1}} schon lange erzeugen, bevor der Himmel voll ist. Beginne PHOTON, sobald der Teilschwarm verlässlich nutzbare Leistung liefert, und starte weiter Segel, während das Endspiel voranschreitet."
+      "text": "Baue die Segellinie, verteile die Werfer auf brauchbare Schusszonen und beobachte die steigende Dyson-Erzeugung. Der vollständige Referenzschwarm ist ein Planungsziel, keine Zugangssperre: {{item_2208_1}} mit Linsen können kritische Photonen ({{item_1208_1}}) schon lange erzeugen, bevor der Himmel voll ist. Beginne PHOTON, sobald der Teilschwarm verlässlich nutzbare Leistung liefert, und starte weiter Segel, während das Endspiel voranschreitet."
     },
     {
       "id": "d.dyson.h2.003",
@@ -5682,7 +5682,7 @@
       "id": "d.dyson.li.001",
       "sourceHash": "1b6c4dff19702841c2e50e30ac8d9dcbf9eda5808c946ad1d765516e620f776f",
       "termHash": "11167cc951cdf0d45a90dc82d1aa66ce5e7737772a2b722aea1d56b6e51b0da3",
-      "text": "{{label_1}} {{input_1}}das Produkt {{item_1208_1}} zuverlässig in {{item_1122_1}} umgewandelt wird und diese {{item_1122_2}} ohne manuellen Transport durch Icarus den Forschungsbezirk erreichen kann. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}kritische Photonen ({{item_1208_1}}) zuverlässig in {{item_1122_1}} umgewandelt werden und diese {{item_1122_2}} ohne manuellen Transport durch Icarus den Forschungsbezirk erreichen kann. {{end_label_1}}"
     },
     {
       "id": "d.dyson.h2.008",
@@ -5712,7 +5712,7 @@
       "id": "d.receiver-antimatter-bridge.p.001",
       "sourceHash": "cb1f77e2821860d1bd57792280efa4393e680e2dae0383020039877d0efb1993",
       "termHash": "44b5716f7bf0fd7cbd835caf7518fe564c5e9c655771d9047e6fc3d310ca6aa6",
-      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Nutzbare Dyson-Erzeugung aus dem arbeitenden Schwarm, ergänzt um eventuell gebaute dauerhafte Strukturen.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Diese Energie erst in das Produkt {{item_1208_1}} und dann in {{item_1122_1}} umwandeln.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Eine zuverlässige Materiallinie, die PHOTON stärken und in WEISS weiterführen kann."
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Nutzbare Dyson-Erzeugung aus dem arbeitenden Schwarm, ergänzt um eventuell gebaute dauerhafte Strukturen.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Diese Energie erst in kritische Photonen ({{item_1208_1}}) und dann in {{item_1122_1}} umwandeln.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Eine zuverlässige Materiallinie, die PHOTON stärken und in WEISS weiterführen kann."
     },
     {
       "id": "d.receiver-antimatter-bridge.h2.002",
@@ -5754,7 +5754,7 @@
       "id": "d.receiver-antimatter-bridge.p.004",
       "sourceHash": "498d4dd75fb4a74445d38256a7e466f0e8e27efdee7a1dc48f28cb0b01548ef8",
       "termHash": "d1d8ffa86759fcc5f08fc360af6e2e2d2ce41702b636770ee26581c7f7a605dd",
-      "text": "Beginne mit vier vollständig eingelaufenen Receivern vom Typ {{item_2208_1}} mit Linsen im Modus Photonenerzeugung. Bei Strahlenübertragungs-Effizienz Stufe {{fact_1}} braucht diese Anlage mindestens {{strong_1}}{{fact_2}}{{end_strong_1}} aktuelle Dyson-Erzeugung. Das ist der Ausgangsvergleich vor den Effizienzverbesserungen in PHOTON, keine Zusage über den späteren Leistungsbedarf."
+      "text": "Für den Start brauchst du vier vollständig eingelaufene {{item_2208_1}} mit Linsen im Modus Photonenerzeugung. Bei Strahlenübertragungs-Effizienz Stufe {{fact_1}} braucht diese Anlage mindestens {{strong_1}}{{fact_2}}{{end_strong_1}} aktuelle Dyson-Erzeugung. Das ist der Ausgangsvergleich vor den Effizienzverbesserungen in PHOTON, keine Zusage über den späteren Leistungsbedarf."
     },
     {
       "id": "d.receiver-antimatter-bridge.h2.004",
@@ -5766,13 +5766,13 @@
       "id": "d.receiver-antimatter-bridge.div.002",
       "sourceHash": "c5515d54764f3878c0754f5c5e3f1db1a11ac4320c68bf94adda7b2f4b747024",
       "termHash": "a26f5bfedbb4a1044ab2e4ca3d76c667b4e313b1c662727cf9e6e15c2ce290d1",
-      "text": "{{strong_1}}Alle vier Receiver mit Linsen versorgen.{{end_strong_1}} Automatisierung ist ideal, aber gelegentliches manuelles Nachfüllen ist während des Aufbaus völlig in Ordnung. Sechzig Linsen vom Typ {{item_1209_1}} versorgen vier Receiver etwa {{fact_1}} Stunden und {{fact_2}} Minuten lang. Setze dir eine Erinnerung und fülle alle zusammen nach."
+      "text": "{{strong_1}}Alle vier Receiver mit Linsen versorgen.{{end_strong_1}} Automatisierung ist ideal, aber gelegentliches manuelles Nachfüllen ist während des Aufbaus völlig in Ordnung. Sechzig Linsen ({{item_1209_1}}) versorgen vier Receiver etwa {{fact_1}} Stunden und {{fact_2}} Minuten lang. Setze dir eine Erinnerung und fülle alle zusammen nach."
     },
     {
       "id": "d.receiver-antimatter-bridge.li.001",
       "sourceHash": "2d95be8a3b0bb161d12848b44993a35979e72325c98a1b3db67befca051a265b",
       "termHash": "ce4427f2fc5fdd668319a44110a026d9c9de310f1fbd053845a761c2a47c7782",
-      "text": "Platziere vier Receiver vom Typ {{item_2208_1}}, führe Linsen vom Typ {{item_1209_1}} zu und wähle an jedem Gebäude {{strong_1}}Photonenerzeugung{{end_strong_1}}."
+      "text": "Platziere vier {{item_2208_1}}, versorge sie mit Linsen ({{item_1209_1}}) und wähle an jedem Gebäude {{strong_1}}Photonenerzeugung{{end_strong_1}}."
     },
     {
       "id": "d.receiver-antimatter-bridge.li.002",
@@ -5784,7 +5784,7 @@
       "id": "d.receiver-antimatter-bridge.li.003",
       "sourceHash": "03234e6418bfcf85f9ed0d9c3d9030c368c57b8003015286cd5e373d88e9864d",
       "termHash": "1dfdf2d3d9264a7f0a0416a2916ddf91993d78d6f513e3eabe1786754ecf2c93",
-      "text": "Führe das Produkt {{item_1208_1}} über ein Band zu einem {{item_2310_1}} mit dem Rezept {{strong_1}}Masse-Energiespeicher{{end_strong_1}}."
+      "text": "Führe kritische Photonen ({{item_1208_1}}) über ein Band zu einem {{item_2310_1}} mit dem Rezept {{strong_1}}Masse-Energiespeicher{{end_strong_1}}."
     },
     {
       "id": "d.receiver-antimatter-bridge.li.004",
@@ -5808,7 +5808,7 @@
       "id": "d.receiver-antimatter-bridge.li.006",
       "sourceHash": "a651ba894a6232769bfd2c6e55a8d3dc6018f398e0b1404996596d14895d5c98",
       "termHash": "8dec985373d8e5418a7fa0af0b2bd76d1f90a9a498e9174b9c50765ecd4f90b5",
-      "text": "{{label_1}} {{input_1}}das Produkt {{item_1208_1}} kontinuierlich den Beschleuniger erreicht. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}kritische Photonen ({{item_1208_1}}) kontinuierlich den Beschleuniger erreichen. {{end_label_1}}"
     },
     {
       "id": "d.receiver-antimatter-bridge.li.007",
@@ -6210,7 +6210,7 @@
       "id": "d.white.p.003",
       "sourceHash": "473ec2a14f9236eb14d1c5e54e8c1c49778729010690bcd9c659430d18f72350",
       "termHash": "4dbd71f0d91bea209dbec5e341d90c8d03782786377364bddd3c4b60af718f69",
-      "text": "{{tech_1507_1}} kostet vor Produktionsbeginn {{fact_1}} von jeder farbigen Matrix. „{{tech_1508_1}}“ verbraucht anschließend {{fact_2}} Würfel des Typs {{item_6006_1}}. Baue die Produktionslinie, während die Freischaltung erforscht wird, und behebe nur den tatsächlich unterversorgten Zulieferzweig."
+      "text": "{{tech_1507_1}} kostet vor Produktionsbeginn {{fact_1}} von jeder farbigen Matrix. „{{tech_1508_1}}“ verbraucht anschließend {{fact_2}} weiße Würfel ({{item_6006_1}}). Baue die Produktionslinie, während die Freischaltung erforscht wird, und behebe nur den tatsächlich unterversorgten Zulieferzweig."
     },
     {
       "id": "d.white.h2.003",
@@ -6234,7 +6234,7 @@
       "id": "d.white.p.005",
       "sourceHash": "8e0576b6b84e65d5d6a45bd40cd96fdf02abf6237c1531ea43a7004eb98304a3",
       "termHash": "334732df5bf8047efc59bdefe59bc35ae48326253cb406f58e7ee153c13589a0",
-      "text": "Bringe blaue, rote, gelbe und violette Würfel sowie {{item_6005_1}} und {{item_1122_1}} in den weißen Forschungsbezirk. Versorge zehn Labore vom Typ {{item_2901_1}} mit allen sechs Zutaten für das genannte Ziel von {{fact_1}}. Schicke die erzeugte {{item_6006_1}} zur Forschung und erweitere nur den Zulieferzweig, der wirklich zu wenig liefert."
+      "text": "Bringe blaue, rote, gelbe und violette Würfel sowie {{item_6005_1}} und {{item_1122_1}} in den weißen Forschungsbezirk. Versorge zehn Forschungslabore ({{item_2901_1}}) mit allen sechs Zutaten für das genannte Ziel von {{fact_1}}. Schicke die erzeugte {{item_6006_1}} zur Forschung und erweitere nur den Zulieferzweig, der wirklich zu wenig liefert."
     },
     {
       "id": "d.white.h2.005",
@@ -6276,7 +6276,7 @@
       "id": "d.white.li.004",
       "sourceHash": "afc839aea2d7c81fd85c74ea277bee797856cd9e4209714141419e1abd7d5c6c",
       "termHash": "6461a2f794f6df446b6be68ae2ee7df3625ace0add8345b8558943d2bd203b9e",
-      "text": "{{label_1}} {{input_1}}„Mission abgeschlossen!“ {{fact_1}} Würfel des Typs {{item_6006_1}} verbraucht oder bereits verbraucht hat. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}„Mission abgeschlossen!“ {{fact_1}} weiße Würfel ({{item_6006_1}}) verbraucht oder bereits verbraucht hat. {{end_label_1}}"
     },
     {
       "id": "d.white.h2.007",
@@ -6372,7 +6372,7 @@
       "id": "d.sphere.p.002",
       "sourceHash": "9ec3e27bed17652bef7dd3c7cf19cb77c1f2ff8871fd0914d12a0af073dc3492",
       "termHash": "d6fe6b12d29e4528293cb70e572c55ad9f4cc1376eba3b0d84207b47f3bcbb08",
-      "text": "Nach GRÜN kannst du den DYSON-Schwarm um dauerhafte Bauten ergänzen. Die Sphäre tauscht schnellen Ausbau mit Verbrauchsmaterial gegen eine langsamere, materialintensivere Struktur, die am Stern bleibt. Raketen vom Typ {{item_1503_1}} bauen das Gerippe aus Knoten und verbindenden Rahmen. Die Segel vom Typ {{item_1501_1}} füllen Schalenflächen erst, wenn diese Rahmen einen gültigen Rand schließen."
+      "text": "Nach GRÜN kannst du den DYSON-Schwarm um dauerhafte Bauten ergänzen. Die Sphäre tauscht schnellen Ausbau mit Verbrauchsmaterial gegen eine langsamere, materialintensivere Struktur, die am Stern bleibt. Trägerraketen ({{item_1503_1}}) bauen das Gerippe aus Knoten und verbindenden Rahmen. {{item_1501_1}} füllen Schalenflächen erst, wenn diese Rahmen einen gültigen Rand schließen."
     },
     {
       "id": "d.sphere.p.003",
@@ -6600,7 +6600,7 @@
       "id": "d.sphere.p.006",
       "sourceHash": "1701c34488608d10a782cce21d1012501a5862379d9c68db167b4e82472d9506",
       "termHash": "0b659a669dd9dd3cfa91b6b7cf21c3ace63c7c0536e4b4c55effc2b378a91f16",
-      "text": "{{strong_1}}Editorzustand.{{end_strong_1}} Raketen vom Typ {{item_1503_1}} brauchen unfertige Knoten oder Rahmen als Bauziele. Segel werden erst dauerhaft, wenn fertige Rahmen eine ausgewiesene Schalenfläche einschließen."
+      "text": "{{strong_1}}Editorzustand.{{end_strong_1}} Trägerraketen ({{item_1503_1}}) brauchen unfertige Knoten oder Rahmen als Bauziele. Segel werden erst dauerhaft, wenn fertige Rahmen eine ausgewiesene Schalenfläche einschließen."
     },
     {
       "id": "d.sphere.p.007",
@@ -6648,7 +6648,7 @@
       "id": "e.warp.p.002",
       "sourceHash": "34abd71cfb17b184535c462a4e48c54e9cada691b0adbc276d05419339456255",
       "termHash": "a8eea9c5e11dc5fa333f5e7b82548a619a63cc451969848643ed09a8d857a7ba",
-      "text": "Ein nützlicher seltener Rohstoff wartet außerhalb deines Heimatsystems. Wähle einen, der eine bereits wichtige Fabriklinie vereinfacht, packe einen kleinen Außenposten ein und fliege selbst dorthin. Baue die Quelle auf, bringe die erste Ladung nach Hause und ersetze den persönlichen Frachtflug durch Schiffe vom Typ {{item_5002_1}}, sobald grüne Würfel die Herstellung von {{item_1210_1}} günstig machen."
+      "text": "Ein nützlicher seltener Rohstoff wartet außerhalb deines Heimatsystems. Wähle einen, der eine bereits wichtige Fabriklinie vereinfacht, packe einen kleinen Außenposten ein und fliege selbst dorthin. Baue die Quelle auf, bringe die erste Ladung nach Hause und ersetze den persönlichen Frachtflug durch Frachtschiffe ({{item_5002_1}}), sobald grüne Würfel die Herstellung von {{item_1210_1}} günstig machen."
     },
     {
       "id": "e.warp.p.003",
@@ -6738,7 +6738,7 @@
       "id": "e.warp.td.008",
       "sourceHash": "517424727f0cc99102962ced7a5930ee83a946593900468b408c8c53a0e81df4",
       "termHash": "c4fe313cdb67b34d26757dd55441c272f615aa171146d71a2179cd3c31159f1c",
-      "text": "Schiffe vom Typ {{item_5002_1}} ersetzen den persönlichen Frachtflug durch laufenden ILS-Verkehr"
+      "text": "Frachtschiffe ({{item_5002_1}}) ersetzen den persönlichen Frachtflug durch laufenden ILS-Verkehr"
     },
     {
       "id": "e.warp.td.009",
@@ -6774,7 +6774,7 @@
       "id": "e.warp.p.008",
       "sourceHash": "4aa9dfaa3edcd4b61fc2f454e64104cb29de082a2e0d5580d9aeec64061b4245",
       "termHash": "8c818f38fadbe73cad49f3640b21141e8a6db4b1c89c4c1493154d97227f48a7",
-      "text": "{{strong_1}}Die Abreise-Mall erweitern.{{end_strong_1}} Ergänze den Gebäudetyp {{item_2309_1}} und halte {{item_3005_1}}, {{item_1609_1}} sowie {{item_3007_1}} auf Vorrat. Der Außenposten soll den gewählten Rohstoff verarbeiten und lange genug überleben, damit die automatische Route sich lohnt."
+      "text": "{{strong_1}}Die Abreise-Mall erweitern.{{end_strong_1}} Erweitere das Sortiment um die {{item_2309_1}} und halte Verteidigungsausrüstung auf Vorrat: {{item_3005_1}}, {{item_1609_1}} sowie {{item_3007_1}}. Der Außenposten soll den gewählten Rohstoff verarbeiten und lange genug überleben, damit die automatische Route sich lohnt."
     },
     {
       "id": "e.warp.p.009",
@@ -6852,7 +6852,7 @@
       "id": "e.warp.td.013",
       "sourceHash": "396a3fc84ef5fd428f96068cc5e37db07f1b3da6e1a864627a2e24940efd1f6d",
       "termHash": "7a7a6ae5a8b92867ed35d01218ac6039963d0a00ed9dd229ff04f41bf477445a",
-      "text": "Vorkommen des Typs {{item_1117_1}} abbauen"
+      "text": "Direkt aus Vorkommen gewinnen: „{{item_1117_1}}“"
     },
     {
       "id": "e.warp.td.014",
@@ -6912,7 +6912,7 @@
       "id": "e.warp.td.023",
       "sourceHash": "e9ca26cda346e2d89d6ea3b99b7ef18277da9d1594cd2eeb0727e634c261f9b8",
       "termHash": "23d9813236444a6f4945d5f575a5152f706740da73bdfbab8043b86212183cc4",
-      "text": "Vorkommen des Typs {{item_1011_1}} abbauen oder über einen {{item_2105_1}} importieren"
+      "text": "{{item_1011_1}} aus Vorkommen abbauen oder über einen {{item_2105_1}} importieren"
     },
     {
       "id": "e.warp.td.024",
@@ -6936,7 +6936,7 @@
       "id": "e.warp.td.027",
       "sourceHash": "ec6f8b81071d68bf752855a1fa25d6e3f7261d2eb53665738a78670d48fbfd09",
       "termHash": "aa26df24019d4f42ecb5e3352ccd34cd3a2eee1f48c2f250a84761bbed08743f",
-      "text": "{{strong_1}}Komfort:{{end_strong_1}} eine einfache Abkürzung, wenn der Bedarf am Produkt {{item_1112_1}} tatsächlich erkennbar ist."
+      "text": "{{strong_1}}Komfort:{{end_strong_1}} eine einfache Abkürzung, wenn der Bedarf an Diamanten ({{item_1112_1}}) tatsächlich erkennbar ist."
     },
     {
       "id": "e.warp.td.028",
@@ -6972,7 +6972,7 @@
       "id": "e.warp.td.033",
       "sourceHash": "735f8b288c144f2344e9ddd5251fc12fd1039ba50e3d74b847447ae91205d10d",
       "termHash": "fe894a3fc15795a52783ac8f29c60c1f54e7b6f63d8cd3bb7676550e13efeb27",
-      "text": "Vorkommen des Typs {{item_1013_1}} abbauen"
+      "text": "Direkt aus Vorkommen gewinnen: {{item_1013_1}}"
     },
     {
       "id": "e.warp.td.034",
@@ -7002,7 +7002,7 @@
       "id": "e.warp.td.038",
       "sourceHash": "a72376469021d92af004e3aa34e142f3f21087d5023a866b5c88f6898fbabd21",
       "termHash": "0aca1c600c85f3b59ae0a5d14d4dc383014811494af68feda6c1d30cd5e54780",
-      "text": "Vorkommen des Typs {{item_1014_1}} abbauen"
+      "text": "Direkt aus Vorkommen gewinnen: {{item_1014_1}}"
     },
     {
       "id": "e.warp.td.039",
@@ -7032,7 +7032,7 @@
       "id": "e.warp.td.043",
       "sourceHash": "16100100a5db0260177eb6cfc012f6412496373552778906d6a21d1a1efa9701",
       "termHash": "e0d98d57424c862286f3f86f556b7809a500e19935d69fea4f4aa1f78185d154",
-      "text": "Vorkommen des Typs {{item_1015_1}} abbauen"
+      "text": "Direkt aus Vorkommen gewinnen: {{item_1015_1}}"
     },
     {
       "id": "e.warp.td.044",
@@ -7062,7 +7062,7 @@
       "id": "e.warp.td.048",
       "sourceHash": "7bb5489a9513b4f8330d77e5ef60d0059183cfdee711bd1eda75f3f5e709b5d4",
       "termHash": "be862ad2674ec65018bd68a394cc610ab589d59e737437a80024538124181760",
-      "text": "Nach dem Auffinden Vorkommen des Typs {{item_1016_1}} abbauen"
+      "text": "Ein Vorkommen finden und abbauen: {{item_1016_1}}"
     },
     {
       "id": "e.warp.td.049",
@@ -7080,7 +7080,7 @@
       "id": "e.warp.p.011",
       "sourceHash": "895aea7263f81cd0e56c341660f96ca26c6951d6b0fb28b599eed8386f8cb36a",
       "termHash": "a3f8f9d660be65a4fc5c8cc7ea13c3793c17f1e18d8ca39876320471b3b2976d",
-      "text": "Hole {{fact_1}} Linsen vom Typ {{item_1209_1}} aus der Fabrik und stelle daraus im Replikator {{fact_2}} Stück {{item_1210_1}} her. Vor der grünen Forschung tauscht das Rezept eine Linse gegen einen Warper. Lade die fertige Charge in Icarus und höre dann auf. Bewahre die übrigen Linsen für Forschung und spätere Infrastruktur auf."
+      "text": "Hole {{fact_1}} Linsen ({{item_1209_1}}) aus der Fabrik und stelle daraus im Replikator {{fact_2}} Stück {{item_1210_1}} her. Vor der grünen Forschung tauscht das Rezept eine Linse gegen einen Warper. Lade die fertige Charge in Icarus und höre dann auf. Bewahre die übrigen Linsen für Forschung und spätere Infrastruktur auf."
     },
     {
       "id": "e.warp-outpost.h2.001",
@@ -7098,7 +7098,7 @@
       "id": "e.warp.p.013",
       "sourceHash": "caad7dde5f02ae502e50de0870ddf6b071d9f406b4c6c672957032b08d7a6f1d",
       "termHash": "5da2fc0174ddf095e06621a7a02c7e3fc2fb9d066c08a777b17fb1f6f9b46842",
-      "text": "Fliege hinaus, baue und verarbeite vor Ort, dann kehre zurück. Setze Bergbaumaschinen an das gewählte Vorkommen. Ergänze je nach seltenem Rezept Schmelzöfen, Montagemaschinen, {{item_2309_1}} oder {{item_2306_1}}. Puffere die verarbeitete Ausgabe vor Ort und führe sie per Band in eine ILS ohne Stromanschluss, eingestellt auf den blauen Zustand {{strong_1}}Fernanbieter{{end_strong_1}}. Die Station kann auf heimische Frachtschiffe warten; sie muss noch nichts selbst starten."
+      "text": "Fliege hinaus, baue und verarbeite vor Ort, dann kehre zurück. Setze Bergbaumaschinen an das gewählte Vorkommen. Ergänze je nach seltenem Rezept Schmelzöfen, Montagemaschinen, Chemiefabriken ({{item_2309_1}}) oder Wasserpumpen ({{item_2306_1}}). Puffere die verarbeitete Ausgabe vor Ort und führe sie per Band in eine ILS ohne Stromanschluss, eingestellt auf den blauen Zustand {{strong_1}}Fernanbieter{{end_strong_1}}. Die Station kann auf heimische Frachtschiffe warten; sie muss noch nichts selbst starten."
     },
     {
       "id": "e.warp.th.009",
@@ -7134,7 +7134,7 @@
       "id": "e.warp.td.053",
       "sourceHash": "075418b5e9686693368c322926be07aed8c637a586bbe8688fee6856c1017355",
       "termHash": "5af767adafa4f6bcdaf8648df58f70aac91d1b4208a2fde8b15c8ece112df026",
-      "text": "Genug Bergbaumaschinen sowie die Schmelzöfen, Montagemaschinen, Gebäude vom Typ {{item_2309_1}} oder Pumpen, die das gewählte Material braucht"
+      "text": "Genug Bergbaumaschinen sowie die Schmelzöfen, Montagemaschinen, Chemiefabriken ({{item_2309_1}}) oder Pumpen, die das gewählte Material braucht"
     },
     {
       "id": "e.warp.td.054",
@@ -7236,7 +7236,7 @@
       "id": "e.warp.p.016",
       "sourceHash": "d0b2813934f6596dd409efb5fc58fbf5509115b770e77c066294e031cc8258a0",
       "termHash": "d7514abfbc3cdb9391df7abe48bc98efbff4f69367b4a90d1cb98fa3d5c15a7e",
-      "text": "Nach {{tech_1705_1}} entstehen im effizienten Rezept aus einem Würfel des Typs {{item_6005_1}} acht Warper vom Typ {{item_1210_1}}. Führe {{item_6005_2}} per Band zu einer Montagemaschine und deren Warper zu einer PLS im blauen Zustand {{strong_1}}Lokalanbieter{{end_strong_1}}. Setze Drohnen vom Typ {{item_5001_1}} ein, die die heimische ILS über einen Warenplatz im orangefarbenen Zustand {{strong_2}}Lokalabnehmer{{end_strong_2}} beliefern. Die Station verschiebt die ersten {{fact_1}} automatisch in ihre eigene Warperreserve."
+      "text": "Nach {{tech_1705_1}} entstehen im effizienten Rezept aus einem grünen Würfel ({{item_6005_1}}) acht Warper ({{item_1210_1}}). Führe {{item_6005_2}} per Band zu einer Montagemaschine und deren Warper zu einer PLS im blauen Zustand {{strong_1}}Lokalanbieter{{end_strong_1}}. Setze Drohnen ({{item_5001_1}}) ein, die die heimische ILS über einen Warenplatz im orangefarbenen Zustand {{strong_2}}Lokalabnehmer{{end_strong_2}} beliefern. Die Station verschiebt die ersten {{fact_1}} automatisch in ihre eigene Warperreserve."
     },
     {
       "id": "e.warp.p.017",
@@ -7434,7 +7434,7 @@
       "id": "e.logistics.td.008",
       "sourceHash": "6385bd78a2eb0673a8f7ce36df34e83d397348855f092a1f53510b8e3a473bc6",
       "termHash": "0a563f3a02f5e7ac0e6747752d03515ae2c2b11c32043e2be6dc6f45e2d2aed5",
-      "text": "Gemeinsam genutzte Vorräte der Typen {{item_1303_1}}, {{item_1206_1}}, {{item_1107_1}} und Turbinen, wenn mehrere Kisten gleichzeitig nachfüllen"
+      "text": "Gemeinsam genutzte Vorräte, wenn mehrere Kisten gleichzeitig nachfüllen: {{item_1303_1}}, {{item_1206_1}}, {{item_1107_1}} und Turbinen"
     },
     {
       "id": "e.logistics.td.009",
@@ -7944,7 +7944,7 @@
       "id": "e.logistics.p.011",
       "sourceHash": "08e1ed37b2cebe88b6ae826e496b67f1259b2cccc1bedb0a56cfa6325eea6e63",
       "termHash": "9610f6e6ff82f7162f399b522087a6ce2177503fbde800b8d017b41071dbc5cb",
-      "text": "{{strong_1}}Gemeinsame Zufuhr.{{end_strong_1}} Mehrere Ausrüstungslinien benötigen {{item_1303_1}}, {{item_1206_1}}, {{item_1107_1}} und {{item_1204_1}}. Füllen mehrere Puffer zugleich nach, erweitere nur die etablierte Versorgung, deren Lager tatsächlich leer wird."
+      "text": "{{strong_1}}Gemeinsame Zufuhr.{{end_strong_1}} Mehrere Ausrüstungslinien greifen auf dieselben Vorräte zu: {{item_1303_1}}, {{item_1206_1}}, {{item_1107_1}} und {{item_1204_1}}. Füllen mehrere Puffer zugleich nach, erweitere nur die etablierte Versorgung, deren Lager tatsächlich leer wird."
     },
     {
       "id": "e.logistics.p.012",
@@ -8094,19 +8094,19 @@
       "id": "e.logistics.li.006",
       "sourceHash": "4d6a22e9ca763c2c8dd26df06f2773e2013ab9b701a7fae049bb57064dc9d8cd",
       "termHash": "61d4be280c0a74f502a55c7284b98b17b29ff73dee316adf0b86225799eaf41d",
-      "text": "{{label_1}} {{input_1}}Frachtverteiler und Bots vom Typ {{item_5003_1}} begrenzte Puffer nachfüllen. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}Frachtverteiler und Bots ({{item_5003_1}}) begrenzte Puffer nachfüllen. {{end_label_1}}"
     },
     {
       "id": "e.logistics.li.007",
       "sourceHash": "222a95b7b9372a6cd6b43082e721fda72d0344394fc26dbed9d4b7e24211b12d",
       "termHash": "f0f79c4d6aaea0c204165ecfdeaf871b8fddc44311ab27584f2c8287e73af2e4",
-      "text": "{{label_1}} {{input_1}}PLS und Drohnen vom Typ {{item_5001_1}} begrenzte Puffer nachfüllen. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}PLS und Drohnen ({{item_5001_1}}) begrenzte Puffer nachfüllen. {{end_label_1}}"
     },
     {
       "id": "e.logistics.li.008",
       "sourceHash": "fab9288a4aa7cb45ab5370fe5d3b9d1b9a3b366a7ff6a28a12dbefb0b60a7533",
       "termHash": "c4fe313cdb67b34d26757dd55441c272f615aa171146d71a2179cd3c31159f1c",
-      "text": "{{label_1}} {{input_1}}ILS und Schiffe vom Typ {{item_5002_1}} begrenzte Puffer nachfüllen. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}ILS und Frachtschiffe ({{item_5002_1}}) begrenzte Puffer nachfüllen. {{end_label_1}}"
     },
     {
       "id": "e.logistics.li.009",
@@ -8430,13 +8430,13 @@
       "id": "f.top.li.008",
       "sourceHash": "0a7d907c72e0c0735c362e9546e650b02fe9f501f6f13274440710245a6dca41",
       "termHash": "91e6d924874690085d38ff0321d8b4aeac6450c9d86a2472f78f18c040863a40",
-      "text": "Führe auf der Erzeugerwelt leere Exemplare vom Typ {{item_2206_1}} zu Geräten vom Typ {{item_2209_1}}, die auf Laden eingestellt sind."
+      "text": "Führe auf der Erzeugerwelt leere Akkumulatoren ({{item_2206_1}}) zur Ladestation. Verwende dafür {{item_2209_1}} im Modus Laden."
     },
     {
       "id": "f.top.li.009",
       "sourceHash": "25782d13bfd3ba52b77c955196c687a9ec10a2b810a76320ffd08ca69ed4de37",
       "termHash": "30abcaf4348d3b5667a2458d70692ac5f2abcb3fa3d573a8e25782fa57e5cff6",
-      "text": "Exportiere das Produkt {{item_2207_1}} über ILS."
+      "text": "Exportiere die geladenen Akkumulatoren ({{item_2207_1}}) über ILS."
     },
     {
       "id": "f.top.li.010",
@@ -8448,7 +8448,7 @@
       "id": "f.top.li.011",
       "sourceHash": "0137098cb7a7fb7a976004ff2300f5a23cd9fbbc9fadd3a54b703bb6284a9a67",
       "termHash": "cf689304d9fb7e63bd672c796424d53719b2ed1b3d5910fad3fb4beb86abe569",
-      "text": "Schicke die leeren Exemplare vom Typ {{item_2206_1}} über einen zweiten Logistik-Warenplatz zurück, damit derselbe Bestand weiter zirkuliert."
+      "text": "Schicke die leeren Akkumulatoren ({{item_2206_1}}) über einen zweiten Logistik-Warenplatz zurück, damit derselbe Bestand weiter zirkuliert."
     },
     {
       "id": "f.top.div.002",
@@ -8460,7 +8460,7 @@
       "id": "f.top.p.015",
       "sourceHash": "b322c23ebd0baceb0d439f12782c1006805f2b5fbf10fb0ba2ac0deabf43788a",
       "termHash": "cf689304d9fb7e63bd672c796424d53719b2ed1b3d5910fad3fb4beb86abe569",
-      "text": "Der Rücktransport leerer Akkumulatoren ist Teil des Kraftwerks, keine Aufräumarbeit. Gib Rückläufern auf der Ladewelt Vorrang vor neu hergestellten Exemplaren vom Typ {{item_2206_1}}. Ist eine Richtung voll oder unterversorgt, kommt der Kreislauf irgendwann zum Stillstand, auch wenn beide Planeten noch gut bevorratet aussehen."
+      "text": "Der Rücktransport leerer Akkumulatoren ist Teil des Kraftwerks, keine Aufräumarbeit. Gib Rückläufern auf der Ladewelt Vorrang vor neu hergestellten Akkumulatoren ({{item_2206_1}}). Ist eine Richtung voll oder unterversorgt, kommt der Kreislauf irgendwann zum Stillstand, auch wenn beide Planeten noch gut bevorratet aussehen."
     },
     {
       "id": "f.top.h2.015",
@@ -8484,7 +8484,7 @@
       "id": "f.top.li.014",
       "sourceHash": "69515f13b869dcee9d7d53e1cf158e4c3b96db40eef1c067bd7ba4cff1ae9eac",
       "termHash": "cf689304d9fb7e63bd672c796424d53719b2ed1b3d5910fad3fb4beb86abe569",
-      "text": "der Hin- und Rücktransport von Akkumulatoren des Typs {{item_2206_1}} einfacher ist als Brennstofflieferung und Generatorbetrieb."
+      "text": "der Hin- und Rücktransport von Akkumulatoren ({{item_2206_1}}) einfacher ist als Brennstofflieferung und Generatorbetrieb."
     },
     {
       "id": "f.top.h2.016",
@@ -8676,7 +8676,7 @@
       "id": "f.top.li.028",
       "sourceHash": "1f15b94d316c6d2af39190869e5bac474d5289cbc8cfbc3b246765c83436667f",
       "termHash": "939f7be5740627d349e8ef30d21abff724767289521e6dbdbdf9c519d4376391",
-      "text": "{{label_1}} {{input_1}}Zwei Labore vom Typ {{item_2901_1}} erzeugen dauerhaft {{item_6002_1}} mit {{fact_1}}{{fact_2}}, während {{item_1120_1}} und {{item_1114_1}} weiter aus den Raffinerien abfließen {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}Zwei Forschungslabore ({{item_2901_1}}) erzeugen dauerhaft {{item_6002_1}} mit {{fact_1}}{{fact_2}}, während {{item_1120_1}} und {{item_1114_1}} weiter aus den Raffinerien abfließen {{end_label_1}}"
     },
     {
       "id": "f.top.h2.023",
@@ -8688,7 +8688,7 @@
       "id": "f.top.li.029",
       "sourceHash": "b422144e9158c1414e52c9803a3ef1f6b6c81b304de66fd84e6d73cf917cd7d6",
       "termHash": "c4fe313cdb67b34d26757dd55441c272f615aa171146d71a2179cd3c31159f1c",
-      "text": "{{label_1}} {{input_1}}Zwei ILS und fünf Schiffe vom Typ {{item_5002_1}} sind im Einsatz {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}Zwei ILS und fünf Frachtschiffe ({{item_5002_1}}) sind im Einsatz {{end_label_1}}"
     },
     {
       "id": "f.top.li.030",
@@ -8736,7 +8736,7 @@
       "id": "f.top.li.034",
       "sourceHash": "f3c067574b054fa396c65312b8c888cecab820ee32deb0ea976f082a044a66d7",
       "termHash": "35ed47abde271fba9dfe9736bae25fef3d0a78e1dac075dd565ab8ececc4f7a9",
-      "text": "{{label_1}} {{input_1}}Für {{item_1305_1}} und {{item_1209_1}} ist jeweils ein sichtbares Lager vorhanden {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}Beide Vorräte werden gut sichtbar gelagert: {{item_1305_1}} und {{item_1209_1}} {{end_label_1}}"
     },
     {
       "id": "f.top.h2.027",
@@ -8772,7 +8772,7 @@
       "id": "f.top.li.038",
       "sourceHash": "d97ac86497de2a1a89e671bdb539f7807fd5c0c6dcd8113aece2453dff460526",
       "termHash": "44b5716f7bf0fd7cbd835caf7518fe564c5e9c655771d9047e6fc3d310ca6aa6",
-      "text": "{{label_1}} {{input_1}}Das Produkt {{item_1208_1}} wird zuverlässig in {{item_1122_1}} umgewandelt, und diese Antimaterie erreicht ohne Icarus den Forschungsbezirk {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}Kritische Photonen ({{item_1208_1}}) werden zuverlässig in {{item_1122_1}} umgewandelt, und diese Antimaterie erreicht ohne Icarus den Forschungsbezirk {{end_label_1}}"
     },
     {
       "id": "f.top.h2.029",
@@ -8814,13 +8814,13 @@
       "id": "f.top.li.043",
       "sourceHash": "44495754e01b44ca51e703535a59eac3260278a630d065e08be3cd1a18fbd2f8",
       "termHash": "2bc95f25583651d3f9a69a919af08d1a0c04f8372f3cbfa60cd5a713e3592ca1",
-      "text": "{{label_1}} {{input_1}}Zehn Labore vom Typ {{item_2901_1}} produzieren {{item_6006_1}} dauerhaft mit {{fact_1}}{{fact_2}} {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}Zehn Forschungslabore ({{item_2901_1}}) produzieren {{item_6006_1}} dauerhaft mit {{fact_1}}{{fact_2}} {{end_label_1}}"
     },
     {
       "id": "f.top.li.044",
       "sourceHash": "d5285a98c06e4f74a3b44ece29b5ba4bc8fc85621b3ae958fe79ad1b86eae12b",
       "termHash": "6461a2f794f6df446b6be68ae2ee7df3625ace0add8345b8558943d2bd203b9e",
-      "text": "{{label_1}} {{input_1}}„Mission abgeschlossen!“ verbraucht {{fact_1}} Würfel des Typs {{item_6006_1}} oder hat sie bereits verbraucht {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}„Mission abgeschlossen!“ verbraucht {{fact_1}} weiße Würfel ({{item_6006_1}}) oder hat sie bereits verbraucht {{end_label_1}}"
     },
     {
       "id": "f.checklist-optional-capabilities.h2.001",
@@ -8868,19 +8868,19 @@
       "id": "f.top.li.049",
       "sourceHash": "d50c856208ad4094afb74e57308071e6a78474953e682e043b60bd24852c1d45",
       "termHash": "ab2ed17b116361cd8d781c71bfffd4035d3c6a919cb44b3d44c5a99630b67909",
-      "text": "{{label_1}} {{input_1}}Geräte vom Typ {{item_2107_1}} und Bots füllen begrenzte Puffer nach {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}{{item_2107_1}} und Bots füllen begrenzte Puffer nach {{end_label_1}}"
     },
     {
       "id": "f.top.li.050",
       "sourceHash": "65555ae3eb681ac2598a42201eac97d7db53ffde5ab595e7973c3413fe7b6a56",
       "termHash": "f0f79c4d6aaea0c204165ecfdeaf871b8fddc44311ab27584f2c8287e73af2e4",
-      "text": "{{label_1}} {{input_1}}PLS und Drohnen vom Typ {{item_5001_1}} füllen begrenzte Puffer nach {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}PLS und Drohnen ({{item_5001_1}}) füllen begrenzte Puffer nach {{end_label_1}}"
     },
     {
       "id": "f.top.li.051",
       "sourceHash": "a97eb2de888bc341cf8fa136437696a5ee296e7005da56a04c071f3f93d450cd",
       "termHash": "c4fe313cdb67b34d26757dd55441c272f615aa171146d71a2179cd3c31159f1c",
-      "text": "{{label_1}} {{input_1}}ILS und Schiffe vom Typ {{item_5002_1}} füllen begrenzte Puffer nach {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}ILS und Frachtschiffe ({{item_5002_1}}) füllen begrenzte Puffer nach {{end_label_1}}"
     },
     {
       "id": "f.top.li.052",
@@ -9042,7 +9042,7 @@
       "id": "f.production-statistics-walkthrough.li.006",
       "sourceHash": "61674e8467dd96d9ad06bd8fef883a59140faf5d0a3dd95e82e5f90bff90ccf4",
       "termHash": "0c4c38d787f855d1b8c152d1e94c5a779a3cceae5efd9dad84f7f07e2cc22a32",
-      "text": "Verfolge eine schwache Zeile für {{item_1118_1}} einen Schritt zurück zu {{item_1117_1}} und {{item_1106_1}}."
+      "text": "Verfolge eine schwache Zeile für {{item_1118_1}} einen Schritt zurück zu ihren Zutaten: „{{item_1117_1}}“ und {{item_1106_1}}."
     },
     {
       "id": "f.production-statistics-walkthrough.li.007",

@@ -390,7 +390,7 @@ publication remains the owner's action.
 | LC-03 | Agent-validated | Corrected 15 messages (de 5, ja 9, zh-CN 1); checked all 12 Japanese stage title/aria entries. Localization, staged deployment and checklist validators passed; nine desktop/Android/iPhone review cases passed with enlarged text and screenshots. All six metadata copies retain “lost”. Evidence: `artifacts/lc/LC03-*`. | LC-04 |
 | LC-04 | Agent-validated | Reviewed all 123 convergence occurrences: zh-CN 35 corrected / 6 retained, ja 34 / 7, de 36 / 5. Glossary connections restored without changing recipes or specific smelting processes. Catalog, staged 551-file localization/deployment and card checks passed; all nine desktop/Android/iPhone cases passed, including enlarged text and reviewed screenshots. Evidence: `artifacts/lc/LC04-*`. | LC-05 |
 | LC-05 | Agent-validated | Reviewed 168 A–C grammar candidates plus 17 overlapping colon-label entries (181 distinct); corrected 24, retained 157. Preserved valid supply lists, technology chains and quantity tables; revised the German grammar rule. Bilingual and target-only review, catalog/staged 551-file deployment/checklist checks and desktop/Android/iPhone rendered review passed. Evidence: `artifacts/lc/LC05-*`. | LC-06; apply the same constructions to late-guide and closing checklists |
-| LC-06 | Authorized — not started | Pending implementation | LC-M2 / LC-E2 handoff |
+| LC-06 | Agent-validated; LC-G2 / LC-M2 reached | Reviewed 149 D–F grammar candidates and five further colon labels; corrected 48 / retained 106. Read affected sections and reconciled early/closing checklists. Catalog, staged 551-file localization/deployment and checklist checks passed; 154 messages inspected on desktop/Android/iPhone with 200% text and reviewed screenshots. Evidence: `artifacts/lc/LC06-*`. | LC-E2 handoff recorded; continue LC-07 |
 | LC-07 | Authorized — not started | Pending implementation | LC-M3 / final handoff |
 
 Draft preparation checked complete-edition pattern inventories, native
@@ -409,3 +409,15 @@ review gates. Native snapshots, source inventory, English/Japanese output and
 all identities remain unchanged. LC-03 receives the verified display rules;
 remaining convention and prose findings retain their approved scope. Continue
 within the full-sequence authorization; no production publication occurred.
+
+## LC-M2 handoff — 2026-10-11
+
+LC-03–06 completed the required editorial reconciliation. Convergence review
+covered 123 occurrences; German grammar review covered all 317 baseline
+candidates and 22 colon-label entries (335 distinct), with 72 prose corrections
+and 263 retained entries. Valid tables, resource lists, research chains and
+actual product contrasts remain. Source comparisons, target-only readings,
+rendered reviews and story checks found no remaining confirmed in-scope defect.
+Native spellings, protected facts, optional routes and repeated checklist
+meaning remain intact. LC-07 owns the combined candidate, full browser matrix
+and exact CI/package/development evidence; no publication has occurred.

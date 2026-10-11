@@ -146,9 +146,11 @@ and Gesamt. Proliferation modes are Zusatzprodukte and Produktionsbeschleunigung
 The guide's shorter statistics heading Bereich describes scope without replacing
 any native control label. Use Abnehmer consistently for the receiver role and
 Rätselraten for guessing, to avoid ambiguity with production rates. Whole-edition
-review reconciled these terms, protected-name grammar, repeated messages and
-checklist conditions; all 1,537 German entries and eight UI strings are accepted
-privately through ML-21.
+review through ML-21 covered all 1,537 German entries and eight UI strings.
+LC-05/06 subsequently corrected the confirmed protected-name grammar gaps
+across the full edition and reconciled repeated checklist conditions; valid
+structured labels and actual product contrasts remain. This is agent review,
+not independent native-speaker evidence.
 
 ### Japanese edition conventions
 
