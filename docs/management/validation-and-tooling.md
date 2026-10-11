@@ -73,6 +73,11 @@ independent table scrolling, sample German/Chinese/Japanese titles, and 200%
 text on the primary Android/iPhone profiles. Review its screenshots alongside
 the results. `--profile <name>` isolates a matrix case when diagnosing a failure.
 
+`--mode interaction` checks technology-sheet scrolling/dismissal/focus, phone and
+desktop transitions, desktop hover/keyboard, native checklist labels, grouped
+card controls, 44 px primary targets, save/reload, isolated reset, and denied
+storage. Its enlarged landscape scenario exercises actual overflowing details.
+
 - Use browser review for claims about presentation, navigation, responsive
   behavior, focus, persistence, or interaction.
 - Review the reader-facing result before hardening editorial assertions.

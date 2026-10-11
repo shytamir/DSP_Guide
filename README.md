@@ -13,6 +13,8 @@ scrollable sheet. **REF** opens references and **↑** returns to the top.
 The desktop phase rail and existing section links remain available.
 Phone dashboards stack their fields; wider reference tables have labelled
 sideways scrolling. Production flows and headings wrap within the reading width.
+Tap a technology name for scrollable details with a Close button. Checklist
+text is tappable, and progress stays in the same browser-local record.
 
 ## Privacy and dependencies
 

@@ -23,6 +23,12 @@
   function attachTooltips(techData, tooltipDetails) {
     let active = null;
     let pinned = false;
+    let restoringFocus = false;
+    const sheet = document.getElementById("tech-sheet");
+    const narrow = matchMedia(
+      "(max-width: 900px), (max-height: 500px) and (pointer: coarse)",
+    );
+    const references = [...document.querySelectorAll(".tech-ref")];
 
     function render(reference) {
       const data = techData[reference.dataset.techId];
@@ -102,28 +108,84 @@
         active.removeAttribute("aria-describedby");
       active = reference;
       pinned = shouldPin;
-      reference.setAttribute("aria-describedby", tip.id);
       tip.classList.add("visible");
-      place(reference);
+      if (narrow.matches) {
+        tip.classList.remove("is-hidden");
+        sheet.append(tip);
+        if (!sheet.open) sheet.showModal();
+        sheet.scrollTop = 0;
+      } else {
+        reference.setAttribute("aria-describedby", tip.id);
+        place(reference);
+      }
     }
 
     function hide(reference) {
       if (reference && active !== reference) return;
+      const referenceToRestore = active;
+      const wasOpen = sheet.open;
       if (active) active.removeAttribute("aria-describedby");
       active = null;
       pinned = false;
       tip.classList.remove("visible");
       tip.classList.add("is-hidden");
+      if (wasOpen) {
+        restoringFocus = true;
+        sheet.close();
+        referenceToRestore?.focus({ preventScroll: true });
+        restoringFocus = false;
+      }
     }
 
-    document.querySelectorAll(".tech-ref").forEach((reference) => {
-      reference.addEventListener("mouseenter", () => show(reference));
-      reference.addEventListener("mouseleave", () => {
-        if (!pinned && document.activeElement !== reference) hide(reference);
+    sheet
+      .querySelector(".phone-sheet-close")
+      .addEventListener("click", () => hide());
+    sheet.addEventListener("click", (event) => {
+      const bounds = sheet.getBoundingClientRect();
+      if (
+        event.target === sheet &&
+        (event.clientX < bounds.left ||
+          event.clientX > bounds.right ||
+          event.clientY < bounds.top ||
+          event.clientY > bounds.bottom)
+      )
+        hide();
+    });
+    sheet.addEventListener("cancel", (event) => {
+      event.preventDefault();
+      hide();
+    });
+    function setReferenceMode() {
+      hide();
+      if (!narrow.matches) document.body.append(tip);
+      if (narrow.matches) tip.removeAttribute("role");
+      else tip.setAttribute("role", "tooltip");
+      for (const reference of references) {
+        if (narrow.matches) {
+          reference.setAttribute("aria-haspopup", "dialog");
+          reference.setAttribute("aria-controls", sheet.id);
+        } else {
+          reference.removeAttribute("aria-haspopup");
+          reference.removeAttribute("aria-controls");
+        }
+      }
+    }
+    narrow.addEventListener("change", setReferenceMode);
+    setReferenceMode();
+
+    references.forEach((reference) => {
+      reference.addEventListener("mouseenter", () => {
+        if (!narrow.matches) show(reference);
       });
-      reference.addEventListener("focus", () => show(reference));
+      reference.addEventListener("mouseleave", () => {
+        if (!narrow.matches && !pinned && document.activeElement !== reference)
+          hide(reference);
+      });
+      reference.addEventListener("focus", () => {
+        if (!narrow.matches && !restoringFocus) show(reference);
+      });
       reference.addEventListener("blur", () => {
-        if (!pinned) hide(reference);
+        if (!narrow.matches && !pinned) hide(reference);
       });
       reference.addEventListener("click", (event) => {
         event.preventDefault();
@@ -139,15 +201,16 @@
     window.addEventListener(
       "scroll",
       () => {
-        if (active) place(active);
+        if (active && !narrow.matches) place(active);
       },
       { passive: true },
     );
     window.addEventListener("resize", () => {
-      if (active) place(active);
+      if (active && !narrow.matches) place(active);
     });
     document.addEventListener("click", (event) => {
-      if (active && !event.target.closest(".tech-ref")) hide(active);
+      if (active && !narrow.matches && !event.target.closest(".tech-ref"))
+        hide(active);
     });
   }
 

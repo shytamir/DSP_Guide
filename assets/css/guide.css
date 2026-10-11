@@ -2613,7 +2613,73 @@ details.build-card[open] > summary {
 .table-scroll-hint {
   display: none;
 }
+.checklist-label,
+.checklist-label-tail {
+  cursor: pointer;
+}
+.technology-sheet .tech-tooltip {
+  position: static;
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  overflow: visible;
+  padding: 12px;
+  border-width: 1px;
+  border-radius: 8px;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-shadow: none;
+  pointer-events: auto;
+}
+.technology-sheet .tech-tooltip-line + .tech-tooltip-line {
+  margin-top: 0.8rem;
+}
+.technology-sheet .tech-tooltip-key {
+  display: block;
+}
+.technology-sheet .phone-sheet-header h2 {
+  overflow-wrap: anywhere;
+}
+:is(
+  .tech-ref,
+  .task-list-item-checkbox,
+  .card-control,
+  .checklist-reset,
+  .build-card > summary
+):focus-visible {
+  outline: 3px solid #8edcff;
+  outline-offset: 3px;
+}
 @media (max-width: 900px), (max-height: 500px) and (pointer: coarse) {
+  .checklist-label {
+    display: block;
+    min-height: 44px;
+    padding: 8px 0;
+  }
+  .checklist-label-tail {
+    display: inline-block;
+    min-height: 44px;
+    padding: 8px 0;
+  }
+  .task-list-item-checkbox {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .card-control,
+  .checklist-reset,
+  .build-card > summary {
+    min-height: 44px;
+  }
+  .tech-ref {
+    padding-block: 3px;
+    cursor: pointer;
+  }
   .asset-rights-notice {
     margin: 0.75rem 0 1.55rem;
     font-size: 0.75rem;
