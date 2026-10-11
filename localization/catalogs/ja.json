@@ -2349,6 +2349,1368 @@
       "text": "{{a_1}}{{img_1}}[赤]{{end_a_1}}へ進みます。石油産業を整えている間も、建設用品工場は在庫を補充できます。"
     },
     {
+      "id": "b.red.h1.001",
+      "sourceHash": "0a1472e82b6e6189e0ec7546942e8f0a934122060f024b171b5aa6443a774940",
+      "termHash": "aeda8c6ccf46669cf0b89b42d9fd2284497ebdd7b1a284e6fc886a9db0eaa6bf",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[赤]{{end_a_1}} — 石油の生産基盤を整え、{{item_6002_1}}を作り続ける"
+    },
+    {
+      "id": "b.red.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 現在地"
+    },
+    {
+      "id": "b.red.p.001",
+      "sourceHash": "6a7a8da8f1882cc12721db65001af06e3aa0f91f8238e848300460e4e4e1542c",
+      "termHash": "0f0c2c281f32450391e9de8d4cdacea448f77b4ff2ff4776c90c0c4d64226fd0",
+      "text": "{{strong_1}}ここまでにできたこと：{{end_strong_1}}青の研究を継続できる。{{br_1}}{{strong_2}}今取り組むこと：{{end_strong_2}}{{item_1006_1}}と石油から{{item_6002_1}}までをつなぐ生産ラインを完成させる。{{br_2}}{{strong_3}}これでできること：{{end_strong_3}}赤の研究を継続し、後の化学製品に使う{{item_1114_1}}を蓄える。{{br_3}}{{strong_4}}次の段階：{{end_strong_4}}{{a_1}}{{img_1}}[ILS]{{end_a_1}}"
+    },
+    {
+      "id": "b.red.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "この段階の概要"
+    },
+    {
+      "id": "b.red.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確認項目"
+    },
+    {
+      "id": "b.red.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "今の要点"
+    },
+    {
+      "id": "b.red.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主な目標{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.002",
+      "sourceHash": "d5e4d797423dc86b9c6589ab2d59ae663a923ba7d01bf1c29809401e53829cfe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "プラズマ精製を詰まらせずに、研究所二基で赤マトリクスを作り続ける"
+    },
+    {
+      "id": "b.red.td.003",
+      "sourceHash": "1525a1b5d7aa1c14ee59314ac8fea4e879869d228306d4277779b630abf204f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}生産量の目安{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.004",
+      "sourceHash": "5a2b104b781bd665a9ffed1e6278bd3a5a034c91396ed200fbee97eb9ab39302",
+      "termHash": "aeda8c6ccf46669cf0b89b42d9fd2284497ebdd7b1a284e6fc886a9db0eaa6bf",
+      "text": "{{fact_1}} {{item_6002_1}}{{fact_2}}"
+    },
+    {
+      "id": "b.red.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}先に研究するもの{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.006",
+      "sourceHash": "05e545a25940ccb49865a51e692fa594d26f9078dfdbf48b07e639b7e6b4abdc",
+      "termHash": "fb0c266abcae4c558f7e2d8cc7156dd0e141356c77311ac9ee1247a9b3dd1a25",
+      "text": "{{tech_1402_1}}{{br_1}}{{tech_1101_1}} + {{tech_1120_1}} {{fact_1}} {{tech_1102_1}} {{fact_2}} {{tech_1111_1}}"
+    },
+    {
+      "id": "b.red.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}注意する点{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.008",
+      "sourceHash": "14f3a2463549c51ef223ec7af73700d49d5f82c249c386ccd2f3598f73d32c0c",
+      "termHash": "15a8ce548bdc8ca9bc2fc5b1869c2ee594ac3e6f15ceeb31aa11dcab239f5635",
+      "text": "{{item_2308_1}}の両方の出力。片方が満杯になると、もう片方も止まります"
+    },
+    {
+      "id": "b.red.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}次へ進む条件{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.010",
+      "sourceHash": "8a0bd2f76214472b2bac5df89b6db6b5bd47065022e61f3437e8cecfa9dbc931",
+      "termHash": "fa41a6dd5711e2e15c6a81e26167e63f15293fc755c37c6f55cc3790053511fd",
+      "text": "研究所二基で赤を {{fact_1}}{{fact_2}} 生産でき、{{item_1114_1}}も継続して搬出できる"
+    },
+    {
+      "id": "b.red.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目標"
+    },
+    {
+      "id": "b.red.p.002",
+      "sourceHash": "f734b4ecb8e37fd63f3b32b4e574b6edc664b156c7796cc3f1c5f333be8cdb5e",
+      "termHash": "b523272c8fc0505f0cd37e75d0b3822485a31a7bbbaef66f76b08a4071e463b7",
+      "text": "石油は、欲しかったもの以外の生産物にも気を配る必要がある、DSP で最初の工程です。プラズマ精製では{{item_1120_1}}と{{item_1114_1}}が同時に生まれます。どちらかのベルトやタンクが満杯になると、{{item_2308_1}}は両方の生産を止めてしまいます。"
+    },
+    {
+      "id": "b.red.p.003",
+      "sourceHash": "b538c2517d665ca9a1926f2c6cc17e8883b539b40ea1514459d2cc80d32a2e3a",
+      "termHash": "b46a896572285a824891c29ef87885251303adbc91b95f9859da9fc8ab9d696c",
+      "text": "{{item_1120_1}}は今は赤の研究に使い、後でも重要になります。{{item_1114_1}}はまだ急いで消費する必要はありませんが、後の{{item_1115_1}}、{{item_1117_1}}、{{item_1116_1}}の生産を立ち上げる助けになります。それぞれに専用のベルトと{{item_2106_1}}を用意し、流れ続けられるだけの余裕を確保しましょう。大事なのは「余った出力を捨てること」ではなく、「将来役立つ在庫で今の工場を詰まらせないこと」です。"
+    },
+    {
+      "id": "b.red.summary.001",
+      "sourceHash": "d1d6ee491f7052cda6b441c792a609160e5e422cd97fd72401dde3f9ecf50fe2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作手順 — 精製所の出力を分ける"
+    },
+    {
+      "id": "b.red.li.001",
+      "sourceHash": "354457e95bb4c141d93ed8f58690b82f176f4367cb590694e8f364c18b84213b",
+      "termHash": "7369e387ef1f6dfaa4e6abcc98724892730ccab16eaea43f5d373e9063e66546",
+      "text": "{{item_1120_1}}用と{{item_1114_1}}用に、別々のベルトを引きます。"
+    },
+    {
+      "id": "b.red.li.002",
+      "sourceHash": "48ba05e439e08f9e4c75ef721412a63771e1a111a21951e999bc6f2d76c37d89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "精製所から最初のベルトへ、仕分機を設置し始めます。"
+    },
+    {
+      "id": "b.red.li.003",
+      "sourceHash": "878d925c2fc975029c1d1340e6b2fde571ee69e888df3d51b02c44a6fac0de92",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "設置プレビューが表示されている間に、目的の生産物が出るまで {{key_1}} を押し、その状態で設置します。"
+    },
+    {
+      "id": "b.red.li.004",
+      "sourceHash": "0157333e75abf2e376a2e1e1e5191a87a63b10fed3374fc461c7fb46f86ed408",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "もう一方のベルトにも同じ手順で仕分機を設置し、別の生産物を選びます。"
+    },
+    {
+      "id": "b.red.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先に研究するもの"
+    },
+    {
+      "id": "b.red.p.004",
+      "sourceHash": "b141ab023a24b91e3be41d95f0443c31cbf323898f13f1dc43f2db0d7a13ae4e",
+      "termHash": "96ffeadf57c817ccad2e821b1ab40b9217f4e1a922f0ddaf0f9408caa52b6b96",
+      "text": "{{tech_1402_1}}で、このラインの{{item_1109_1}}の生産が解放されます。続いて{{tech_1403_1}}を研究すると、赤の惑星基地掃討で使うシグナルタワー用の{{item_1113_1}}を建設用品工場で作れます。青の便利な技術の研究で精錬純化を済ませている場合は、ここでは結晶体精錬から始めます。"
+    },
+    {
+      "id": "b.red.p.005",
+      "sourceHash": "2e6024160eab73782f515277ed5d5088db824e3853be6a98795bb7b6b987bc4b",
+      "termHash": "45783586b622ca0334df5d83a516925c7bfe63892cc9f0fc737915c1d88a7b73",
+      "text": "{{strong_1}}石油の枝ライン：{{end_strong_1}}{{tech_1101_1}} + {{tech_1120_1}} {{fact_1}} {{tech_1102_1}} {{fact_2}} {{tech_1111_1}}。"
+    },
+    {
+      "id": "b.red.p.006",
+      "sourceHash": "f52ddd9900e06ab460bfd4326cb0873601887ff9d3e6164b6cb66d01ce80d496",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "青の段階で安価な前提技術を済ませていれば、赤での作業は単純です。グラファイトと石油の枝ラインを造り、両方を使う工程を解放して、研究所を稼働させましょう。"
+    },
+    {
+      "id": "b.red.p.007",
+      "sourceHash": "a65ba4b3a15074079d352c4327597030d2217dcb009df4de36382d91c46d2987",
+      "termHash": "8ec3b796cfecf45d67c508aa79c6d124ae3a2591b3bf00ea84962f1c342a890d",
+      "text": "赤の研究が安定したら、{{tech_1806_1}} {{fact_1}} {{tech_1808_1}}を完了し、下の防衛用品工場を追加します。ILS の準備を急ぐ前に、上限を設けた貯蔵庫を満たしてください。これは道具の備蓄であり、新たな生産速度の目標ではありません。貯蔵庫が満杯になれば、ラインは休止します。"
+    },
+    {
+      "id": "b.red.div.001",
+      "sourceHash": "05b886fcdc5b1216f23d7e67b72b97ea0f56c744ed914ca30ee8c90d3dfc06b8",
+      "termHash": "32832e410e1a387a3ed4fa620332210d5bbf322ac46cbdae1833b811bea0bd1f",
+      "text": "{{strong_1}}任意の石油調整策：{{end_strong_1}}基本はプラズマ精製です。X線崩壊は、{{item_1114_1}}と{{item_1120_1}}を使って{{item_1120_2}}を増やし、{{item_1109_1}}も作れます。赤の研究がこれらの不足で止まるときに使えます。後の化学製品で反対側が必要になったら、改質精製で余分な{{item_1120_3}}と{{item_1006_1}}を{{item_1114_2}}に変えられます。どちらも目に見える需給の偏りを調整する手段です。順調に動く{{item_2308_1}}に必ず追加するものではありません。"
+    },
+    {
+      "id": "b.red.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — どれだけあれば十分か"
+    },
+    {
+      "id": "b.red.p.008",
+      "sourceHash": "a54504730a1578fae67fc6a4605c598d766e0dc6376caaec7b6d34d60bd9cbcd",
+      "termHash": "b523272c8fc0505f0cd37e75d0b3822485a31a7bbbaef66f76b08a4071e463b7",
+      "text": "この段階は{{strong_1}}赤 {{fact_1}}{{fact_2}}{{end_strong_1}}で十分です。それ以上に大切なのは、石油地区を離れて戻ってきても、赤の研究が続き、{{item_1120_1}}が流れ、{{item_1114_1}}が{{item_2308_1}}を止めずに蓄積していることです。"
+    },
+    {
+      "id": "b.red.h2.005",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "早見表 — 必要な生産設備"
+    },
+    {
+      "id": "b.red.p.009",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}各カードは、最初の供給元から目的の製品まで、一つの有用なラインを示します。{{end_strong_1}}全体像を見たいときに開いてください。それ以外は閉じたまま建設を進めて構いません。必須の手順がカードの中だけに隠れていることはありません。"
+    },
+    {
+      "id": "b.red.div.002",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}すべてのカードを開く{{end_button_1}}{{button_2}}すべてのカードを閉じる{{end_button_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.summary.001",
+      "sourceHash": "a29a92ea332d3ef9a31efc9f4b8c2e6c1ef2f1df758dcca27d49395f841578bb",
+      "termHash": "aeda8c6ccf46669cf0b89b42d9fd2284497ebdd7b1a284e6fc886a9db0eaa6bf",
+      "text": "{{span_1}}{{item_6002_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}必須{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.001",
+      "sourceHash": "ad3c2a09748a762a1463926559d78b1fb2dabbd11552f40fa8ff8ba6f0190866",
+      "termHash": "694dfc65e64b9484868fde7f45cb28b90bd427a9182cce276c545f4496a99ded",
+      "text": "{{item_1007_1}}。"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.002",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "c144c1bb833bd671a05526761c2fbf638d88497e6ee3ca90b6374c03a88f5a18",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.003",
+      "sourceHash": "8624f4476924edf781ee264211f0a45d9fdfb5688cd3eac6f8039b66cd78affa",
+      "termHash": "b18b75aa8ba55a2ff3790914fc4e0cc7d74a06ea809b0299330380d54d37a997",
+      "text": "{{span_1}}石油の枝ライン{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：原油精製所{{end_span_5}}{{end_span_3}} {{item_1114_1}} + {{item_1120_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.004",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "ca1aa2301a7d4e9e031b55eb2676b18ce7d6e798d517ddf994e92ff4384b30fa",
+      "text": "{{span_1}}グラファイトの枝ライン{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.005",
+      "sourceHash": "d421447d9ed3cedf4cddfc5c1accf5faa81a14103bbc2b6b49501f4c2e6bcfb3",
+      "termHash": "6a3897b4efbe33cb9795e50780594a18623baa7d1ab91ed581180b0df6569829",
+      "text": "{{span_1}}マトリクスの生産{{end_span_1}}{{span_2}}{{item_1120_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：マトリクス研究所{{end_span_5}}{{end_span_3}} {{item_6002_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.006",
+      "sourceHash": "e776aeef8abdc8fbe69c7440a29f9a2363ae7f8f0696c25211686b34845233b4",
+      "termHash": "107239e09e172213a6a5f062ed617ff93487b65d40302d809f104e23dbb78b64",
+      "text": "{{span_1}}{{item_2901_1}} — {{item_6002_1}}{{end_span_1}} — 研究へ{{span_2}}{{item_6002_2}} {{fact_1}}{{fact_2}}{{end_span_2}}を継続供給します。必要なら余剰分を保管します。"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "副産物"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.007",
+      "sourceHash": "b7dd5e29cdc731e1112c8bcfcca03b3856c0d12dd1fc5813872f0cec06cca35b",
+      "termHash": "fa41a6dd5711e2e15c6a81e26167e63f15293fc755c37c6f55cc3790053511fd",
+      "text": "{{item_1114_1}}。"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.005",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.008",
+      "sourceHash": "a6a9a393a06ece727dca3e80e4399c0ec0af147bf7ee7366fbec19d00c99c561",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "精製所の両方の出力を流し続けます。精製油と水素は別々に保管または消費し、片方の詰まりでもう片方を止めないようにしましょう。"
+    },
+    {
+      "id": "b.card-red-security-mall.summary.001",
+      "sourceHash": "44c38dca630e3c31e014cce1bcac993aa3e2bf30750aa8c5051715ab2fdaa406",
+      "termHash": "bcc59fc7ec9e71feecb9680f7dba92dbcd891ea84893d9c1901edd5d8132a6d6",
+      "text": "{{span_1}}防衛用品工場 — 在庫：{{item_3005_1}} {{fact_1}} 基 + {{item_3007_1}} {{fact_2}} 基 + {{item_1609_1}} {{fact_3}} 個{{end_span_1}}{{span_2}}{{span_3}}必須{{end_span_3}}{{span_4}}備蓄用{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供給元"
+    },
+    {
+      "id": "b.card-red-security-mall.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "2c801abd839c4ac20c9263964ba5466f479a6e01614a548ec56bbb765588927b",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "6f977600aec4b37d5371159a554be0d2b00969db6d977c0436f6e368e3dff6b1",
+      "text": "{{item_1002_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.003",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "c144c1bb833bd671a05526761c2fbf638d88497e6ee3ca90b6374c03a88f5a18",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.004",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "c17ef55a9c8543214f0579d1c85d7aad7fe2a61bf15bec4533ff9e8a14e44fbc",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.005",
+      "sourceHash": "55c077673700a40b71fb5a7b5949166f33aefc3bfdc55f91d71f65b93f02ade5",
+      "termHash": "58695e89097b3e707ece0c7ac828b6b3de20cd9746fe88649257938a1459f3e0",
+      "text": "{{a_1}}青で作った{{item_1202_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.006",
+      "sourceHash": "237d7729d381dfab9f0ff8510603e67b405837e8f9292d3c8d4c97953e4b712c",
+      "termHash": "00e5933ace0199c15904fac07c5f44f7b5579cd6f32d0af2b7324b01c7d3a772",
+      "text": "{{a_1}}青で作った{{item_1301_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生産マップ"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.001",
+      "sourceHash": "d879b49ac8a334e956e63c66046c026fe9e70dd7408b7504f051b3844bea8cf1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "基礎素材"
+    },
+    {
+      "id": "b.card-red-security-mall.li.007",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "ed38edb8796664eb99453ca3c9d4ba83fcbcedb3f2bc5d732f87c329c3ba859a",
+      "text": "{{span_1}}{{item_1103_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：アーク溶鉱炉{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.008",
+      "sourceHash": "7bb207bd986dc93818e1e9c6eef9f8219d9fce517a662a3f64f8639a9d7fd23d",
+      "termHash": "04d45c1661b56290d12da52fc94c38fd8307e148543366e78c8ea54c073f0f9d",
+      "text": "{{span_1}}銅の枝ライン{{end_span_1}}{{span_2}}{{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.009",
+      "sourceHash": "f970cd2ec7b81bfa8da830c6e956d60e0ef6707831a5c75398d613f27194d0e9",
+      "termHash": "736e547d2c6c8f7a16b3aa328604f23edb2070af5ac9638fefdbfd590ed5851e",
+      "text": "{{span_1}}{{item_1407_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1407_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.010",
+      "sourceHash": "3b5dafec8be17fe4c21c76874192fcf945d9c2cebdf7815cac791abcf4a4772f",
+      "termHash": "3c1e6e33a24147559500764131cdfd0b09b88bb71af1f8079e1a9edcab849072",
+      "text": "{{span_1}}燃料の枝ライン{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1128_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.011",
+      "sourceHash": "90e8d9294094c7f5b41e90ba445fbd0344c736b1b6f02c6c52b45a80eedff0b2",
+      "termHash": "a5f5b5cb866f677d9490f91bcc04c6a6c64e4d89420e90eafdc6ba28c01e2a47",
+      "text": "{{span_1}}結晶の枝ライン{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1003_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：アーク溶鉱炉{{end_span_8}}{{end_span_6}} {{item_1105_1}} {{span_9}}{{img_3}}{{span_10}}{{fact_3}}{{end_span_10}}{{span_11}}生産設備：アーク溶鉱炉{{end_span_11}}{{end_span_9}} {{item_1113_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.002",
+      "sourceHash": "2beb8e3acf2a673d347653920d6a5b19f8d4c174abecb45e789c4a099315f078",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "モーターと送電設備"
+    },
+    {
+      "id": "b.card-red-security-mall.li.012",
+      "sourceHash": "a40b4969454c2c5991b9ec1c754a0a4947d1b0076b64e06f7afd6c970a3050f0",
+      "termHash": "5a60620aa2244d9cf314e63c17a63e67aa72177185fb9224868d06fb5b797efc",
+      "text": "{{span_1}}モーターの枝ライン{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1201_1}}／ {{item_1101_2}} + {{item_1201_2}} + {{item_1202_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_3}}{{end_span_7}}{{span_8}}生産設備：組立機 {{fact_4}}{{end_span_8}}{{end_span_6}} {{item_1203_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.013",
+      "sourceHash": "6b5d6974b95e97b8a236498ad4ae7b9fe5666cdf7bd1e053c65e3333e822ee48",
+      "termHash": "59b8627e4ab64016194f1027d6e7ac594c276b010b26821f0b4be99c9757a13c",
+      "text": "{{span_1}}タワーの枝ライン{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2201_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.014",
+      "sourceHash": "9ad0fa9c0da87752b99fd72b2a5e374bbd5c1809a7240bfde54ec2228852cc70",
+      "termHash": "03316cf076dacd8c7ec39e939f7a97054b07f2cdd738c98c5dcccb0b97a0ee78",
+      "text": "{{span_1}}励振器の枝ライン{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：組立機 {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_1}}／ {{item_1202_1}} + {{item_1111_2}} {{span_9}}{{img_3}}{{span_10}}{{fact_4}}{{end_span_10}}{{span_11}}生産設備：組立機 {{fact_5}}{{end_span_11}}{{end_span_9}} {{item_1401_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.015",
+      "sourceHash": "43688dc73886538cb286167392c05c4705992c128910c272ad3ecb6b1cb14f76",
+      "termHash": "3032151bc54d140d0aaf5652ed23a540cb1e8bf915dc432d6ab2834e297ea0d7",
+      "text": "{{span_1}}無線送電塔の組み立て{{end_span_1}}{{span_2}}{{item_2201_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2202_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.003",
+      "sourceHash": "4eb1b97baa317d5b4916d7d8e80e9ca1075e35420993b2c6387471a215192eb1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "備蓄する製品"
+    },
+    {
+      "id": "b.card-red-security-mall.li.016",
+      "sourceHash": "34dbec8683d39f7723de9e7e6f72dd16aae4fe1031c4f374745a1096eed62d3c",
+      "termHash": "afe8e84cdab7b643641254b763a68e6cef1afe31efc048bcae68e339bb6aea42",
+      "text": "{{span_1}}防衛タワーの組み立て{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1203_1}} + {{item_1301_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_3005_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.017",
+      "sourceHash": "79b94287e9e88ab020a03cb4028f44596b6271c20d78058d6d80783c7a04a8b3",
+      "termHash": "066f79f57c6e06996f2d91a511f7034481e73568205f109c3d95dbe4efa3685a",
+      "text": "{{span_1}}ミサイルの組み立て{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1301_1}} + {{item_1128_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1609_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.018",
+      "sourceHash": "a7fa289295dcc7490f7f1a69e6c9ad376503e18427497ef7e87576d798860a4c",
+      "termHash": "96771d2794d3ec5d3406e2a7313d705b4726657323242753d0c1965dd045df2c",
+      "text": "{{span_1}}タワーの組み立て{{end_span_1}}{{span_2}}{{item_2202_1}} + {{item_1103_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_3007_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搬出先"
+    },
+    {
+      "id": "b.card-red-security-mall.li.019",
+      "sourceHash": "29477c0c73e665f3abb0bc02ad6c42e05e92da961b1ddc00eba660eeb52f2941",
+      "termHash": "5a2307b4ca9423f1e14dc1a674da093fa08c3e71dbcffe91f2a31d3dca91273f",
+      "text": "{{item_2101_1}} — {{item_3005_1}} — {{span_1}}{{fact_1}}{{end_span_1}} 基作ったら組立機を停止します。最大 {{fact_3}} 基の一スタックまで自動補充したい場合に限り、貯蔵枠を {{fact_2}} 枠開けます。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.020",
+      "sourceHash": "de44a0c748a196045b291232fca3b71c29fff9a4cb3f64037ba615baf3baa316",
+      "termHash": "cebc54535190c0d54372850860640cb829af834841d15b0a263b327e192e268c",
+      "text": "{{item_2101_1}} — {{item_3007_1}} — 使用枠：{{span_1}}{{fact_1}} 枠{{end_span_1}}（最大 {{fact_2}}）。"
+    },
+    {
+      "id": "b.card-red-security-mall.li.021",
+      "sourceHash": "81258a2bfb384cea2eda1a0510f0f34d11644b203cf713bdbfc0342f2705eb45",
+      "termHash": "2d7b734d09ceb7dd6d5235b40119d1dd0ee0486d32e3c648331632bb51647bd8",
+      "text": "{{item_2101_1}} — {{item_1609_1}} — 使用枠：{{span_1}}{{fact_1}} 枠{{end_span_1}}（最大 {{fact_2}}）。"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "運用メモ"
+    },
+    {
+      "id": "b.card-red-security-mall.li.022",
+      "sourceHash": "6f2f847acc5321bb41f8ca7521c4930ec36882fd52ec4a53e1a17a635dc45b21",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ILS の準備を急ぐ前に、この三つの貯蔵庫を設定した上限まで満たします。その後は工場を休止させて構いません。初期惑星で砲台群を増設したり、タワーを前進させたりするときに補充します。"
+    },
+    {
+      "id": "b.red-planetary-base-clearing.h2.001",
+      "sourceHash": "73b512f0fb002db10e5a25b500cd49b52af77df8f836eb2db752abdffb33c739",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "初期惑星にある基地を掃討する"
+    },
+    {
+      "id": "b.red.p.010",
+      "sourceHash": "28b971410c42e4d8c107d8c61b1f8670f26bd3c70d06b19835dd79ce2cf1caa9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}新しく始める {{fact_1}} ゲームを始める{{end_strong_1}}を選んで新規ゲームを始めたなら、すでに隣人に出会っているはずです。放置して成長させず、以下の手順で排除しましょう。"
+    },
+    {
+      "id": "b.red.p.011",
+      "sourceHash": "9ccf847837e9c5fc9b5d2c9a20c148d1e337621ffbc04dc18d10a9f2cc47f475",
+      "termHash": "81cccff6e9031997ff3f033f363267437875443b236678f584dc8baffc2fe6ec",
+      "text": "既存の電力網に{{item_3005_1}}を八基まとめて固定配置し、{{item_1609_1}}を供給して、すべて装填済みであることを確認します。準備ができたら、次の手順で進めます。"
+    },
+    {
+      "id": "b.red.li.005",
+      "sourceHash": "b4aea25384e77e457b5635a0b270e85689fb21a0f9fc1da6c3d83b60f84b679d",
+      "termHash": "eb67d9e57de95b5bd93bd0d69246f8db9e8b332bb006a5cb896f68369cf0f025",
+      "text": "{{strong_1}}敵の反応範囲の手前まで送電します。{{end_strong_1}}{{item_2201_1}}を惑星基地へ向けて延ばし、敵が反応する範囲の直前で止めます。早めに敵を引きつけてしまったら後退し、追ってきた敵を撃ち落とします。その後、反応範囲内に{{item_2201_2}}を残していないか確認してください。"
+    },
+    {
+      "id": "b.red.li.006",
+      "sourceHash": "6ae5d78051bbf83d5147ccde685e2e7a3201b6f5803f84ce342a0766d71dfac5",
+      "termHash": "e47306fc092e07d5df581161a3d1195fabc4a0230b938b367e44f1887cb356de",
+      "text": "{{strong_1}}砲撃を始めます。{{end_strong_1}}最初の通電した{{item_3007_1}}を敵の反応範囲内に置きます。ただし、基地のすぐ脇には置きません。敵を引きつけ、砲台群の{{item_1609_1}}が着弾し始めるまで待ちます。"
+    },
+    {
+      "id": "b.red.li.007",
+      "sourceHash": "44a13c2bcc6c0c4fc9a322eb8e726caa03921fcb2b88fbdaa01e74c5a30ee218",
+      "termHash": "80cd4367c4f17cd0499ca4ab1b0fe700a19a8997b69698e5f9244cc3e57490b4",
+      "text": "{{strong_1}}攻撃範囲を前へ延ばします。{{end_strong_1}}最初の{{item_3007_1}}に敵の注意が向いている間に、二本目の通電したタワーをさらに近くに置き、基地全体を範囲内に収めます。"
+    },
+    {
+      "id": "b.red.li.008",
+      "sourceHash": "ae059c97d16dbf68e4dab666af6d13a22e15ee80227dfe247ceda36ea1dead25",
+      "termHash": "80cd4367c4f17cd0499ca4ab1b0fe700a19a8997b69698e5f9244cc3e57490b4",
+      "text": "{{strong_1}}基地の奥まで届かせます。{{end_strong_1}}範囲外に施設が残ったら、最後の{{item_3007_1}}を置き直すか前進させ、砲台群で破壊できるようにします。終わったら、不要になった前方のタワーを回収します。"
+    },
+    {
+      "id": "b.red.li.009",
+      "sourceHash": "ae7bdedf9653cd74f312e732a5729ab326c14c3022fe36c664cb69efbe5b9613",
+      "termHash": "bd7a2c918e1adffbfed61cfbce4d30527b2a89fd78acf554dc3a4c9df1cfe7d3",
+      "text": "{{strong_1}}跡地を電源にします。{{end_strong_1}}露出したコアドリル跡に{{item_2213_1}}を設置します。{{item_1131_1}}や土砂を消費せずに、掃討した基地を安定した発電源にできます。"
+    },
+    {
+      "id": "b.red.div.003",
+      "sourceHash": "ed8803559996ae0e49942bc71dd361010764305027bf011d5de5f814295e0507",
+      "termHash": "d75042624d8277eff68e5d52a49fef4c1040a85298dccdd918e6dd41217bebb3",
+      "text": "{{strong_1}}⚠ 砲台群への供給を切らさないでください。{{end_strong_1}}射撃が止まったら、手順を変える前に電力と{{item_1609_1}}の供給を確認します。"
+    },
+    {
+      "id": "b.red.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次へ進む条件"
+    },
+    {
+      "id": "b.red.li.010",
+      "sourceHash": "6e70c89c858bf0e5e7c1a5a13341e822b1346e8e2e900ad011245724d627aa38",
+      "termHash": "3b527d7afddfd258df9774d349d4e2784bf5ebb87a3f51fad1e45cc54206119f",
+      "text": "{{label_1}} {{input_1}}{{item_2901_1}}二基で{{item_6002_1}}を {{fact_1}}{{fact_2}} 生産し続け、{{item_1120_1}}と{{item_1114_1}}の両方を{{item_2308_1}}から搬出できている。 {{end_label_1}}"
+    },
+    {
+      "id": "b.red.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次の行き先"
+    },
+    {
+      "id": "b.red.p.012",
+      "sourceHash": "e836ad404bfaefa6d890766084d9fc9674ac02d0b2bdb754609ec4372005a44f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[ILS]{{end_a_1}}へ進みます。"
+    },
+    {
+      "id": "b.ils.h1.001",
+      "sourceHash": "c4070f09aa3b851f80e00029a7bf31b547b53fca9cc3f3ccaa372488a8ddfa69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[ILS]{{end_a_1}} — 初期惑星を離れ、最初の惑星間輸送を自動化する"
+    },
+    {
+      "id": "b.ils.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 現在地"
+    },
+    {
+      "id": "b.ils.p.001",
+      "sourceHash": "8e587bcee40b90ae32437fb74732c38e35ebd9c91c532e548a186aeeecba3d71",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ここまでにできたこと：{{end_strong_1}}赤の研究を継続できる。{{br_1}}{{strong_2}}今取り組むこと：{{end_strong_2}}遠征を通じて、チタンとシリコンが自動で宇宙を渡って届く仕組みを作る。{{br_2}}{{strong_3}}これでできること：{{end_strong_3}}惑星間の供給を自動化し、初期惑星の資源だけに頼らず工場を動かす。{{br_3}}{{strong_4}}次の段階：{{end_strong_4}}{{a_1}}{{img_1}}[黄]{{end_a_1}}"
+    },
+    {
+      "id": "b.ils.h2.002",
+      "sourceHash": "f9f1813928ae6ed79315d43c79bab163f1d82b7bd58b9043fe52d77d232ec91a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "遠征の概要"
+    },
+    {
+      "id": "b.ils.p.002",
+      "sourceHash": "b2734ddd69fc2d491e5057654ae78f742fad66e80e4de6922cee2d8ada61ee27",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "三つの場所で進める、一続きの作業です。別々の三段階ではありません。計画を立てて出発し、再訪する価値のある拠点を造り、最後にはイカロスを惑星間の荷運びから解放しましょう。ここでは星間物流ステーションを ILS、惑星内物流ステーションを PLS と略します。"
+    },
+    {
+      "id": "b.ils.blockquote.001",
+      "sourceHash": "6e2f6bd3f676b67a8e819650ede9789e4de740d1ec67280321d8660aed2b4f7b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}全体の流れ：{{end_strong_1}}飛行を解放する {{fact_1}} 本格的な拠点用の荷物をそろえる {{fact_2}} 現地でチタンとシリコンを精錬する {{fact_3}} 立ち上げ用の資材を持ち帰る {{fact_4}} ILS 二基と輸送船五隻を造る {{fact_5}} 自動配送を設定する。"
+    },
+    {
+      "id": "b.ils.h2.003",
+      "sourceHash": "f50bd8607bd36e6c83d5bfeee87e5ab25b9486e8f9def220c89edd5eda2e2ac7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "遠征の工程表"
+    },
+    {
+      "id": "b.ils.th.001",
+      "sourceHash": "ec0dab122f9a00f17aa4a44f52b2ba83ede6463b3a11bf8ae66cb35cbe961b39",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "段階"
+    },
+    {
+      "id": "b.ils.th.002",
+      "sourceHash": "e2a3cb870c86e0e0e0729e02258b023bb89cbf873606cb0b6f88007c47fc7f8a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "到達する状態"
+    },
+    {
+      "id": "b.ils.td.001",
+      "sourceHash": "68fde42a847cba9720332f68efbdd45b681494adf78741ed905b653ea39c2b9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}工程 I — 出発{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.002",
+      "sourceHash": "1baeb7e9561716c19567a1c7393bfc90405c061ad9c85b01f6a611dab01e2d4e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "飛行の準備を整え、目的地を選び、電源のある拠点を造るための荷物をすべて積んで初期惑星を離れます。"
+    },
+    {
+      "id": "b.ils.td.003",
+      "sourceHash": "5ef5d891b478a81f0470acde23bdb1497c9093ee01bdf57e60ac4f1f4feb6d25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}工程 II — 持ち帰り{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.004",
+      "sourceHash": "1c140f082c0a95b3205e2ed407142361b8da949a015643a01d363e58c77a439c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途を決めたチタンとシリコンを確保して帰還します。現地の精錬ラインは電源を維持し、後で供給側ステーションにつなげられる状態にします。"
+    },
+    {
+      "id": "b.ils.td.005",
+      "sourceHash": "2ce624a72a8935c09e140ae819f24689eff94fb92eba9d7b21e3a034a5858715",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}工程 III — 自動化{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.006",
+      "sourceHash": "c2bc82f1fefad3cc7179627153ac069de2dbe21572c3e9031f8db07f58afff4c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確保した資材を研究と輸送設備に使い、イカロスが運ばなくてもチタンとシリコンが届くようにします。"
+    },
+    {
+      "id": "b.flight.h2.001",
+      "sourceHash": "6cf3a5a642f63b9e45c69d51b691756ccbebfd3212a0086c5eb735b414c2fb3c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 飛行の準備を整える"
+    },
+    {
+      "id": "b.ils.p.003",
+      "sourceHash": "a3122fef34fa2f792d5160c96a4661c96f7dec6fd016641debac3b1a76d291ab",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}開始条件：{{end_strong_1}}赤の研究が安定し、次の必須作業が ILS の導入になっていること。{{strong_2}}次へ進む条件：{{end_strong_2}}ドライブエンジン レベル {{fact_1}}とチタン精錬の研究が完了し、目的地を把握し、電源付きの工場を現地に残せる装備がそろっていること。"
+    },
+    {
+      "id": "b.ils.h3.001",
+      "sourceHash": "74ef41b00c02e3ad95018d8ac6c99615f747ba209161477cd5c915635805e681",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "出発前の研究"
+    },
+    {
+      "id": "b.ils.p.004",
+      "sourceHash": "a31403ddf73fa27256519071c0305e79d95e98f82f3303e8bf8c925642c2c862",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "拠点用の荷物をそろえる間も、青と赤の研究を続けます。出発前には、飛行、調査、現地精錬に必要なものだけを済ませます。"
+    },
+    {
+      "id": "b.ils.li.001",
+      "sourceHash": "bff85898a50f1edfc01fc399b4b83a275d615cfe9509bc63cc99699c62cfdec9",
+      "termHash": "72feef50e85a41a60ad3d8252f77c7998c11361d3d9e9cc6963d5b6e68413851",
+      "text": "{{tech_4101_1}} レベル {{fact_1}} {{fact_2}} {{tech_4102_1}} レベル {{fact_3}}。"
+    },
+    {
+      "id": "b.ils.li.002",
+      "sourceHash": "1f0979f13c0dfa46c049307e7ce05855d820cb740a4599f2b83f1b0e78bc6c46",
+      "termHash": "4a6be03ac99c3420338e4918bb53acadd171bfb943205ee0aaf8acb6b27823d0",
+      "text": "{{tech_1805_1}} {{fact_1}} {{tech_2901_1}}。このアップグレードはマトリクスではなく、エンジンを直接消費します。"
+    },
+    {
+      "id": "b.ils.li.003",
+      "sourceHash": "09e8d4ff0e99dca152aa55137c7c93f4ae2544e3c0599b460007f677619c7d97",
+      "termHash": "a93efd9a642d7f920f050d15e1f65ce182e4a5dee1809d5aa80671286a69667c",
+      "text": "{{tech_2102_1}} {{fact_1}} {{tech_2902_1}}。"
+    },
+    {
+      "id": "b.ils.li.004",
+      "sourceHash": "4f4330342e939ebb1bad443d3ac589003a6e1babeeb14a2bcc397261b2af5c60",
+      "termHash": "5e6f775310ed7901585b2f2fa16eeebbdd6653f15a566cf11d53dd8e6b3bb228",
+      "text": "{{tech_1413_1}}を研究し、かさばる鉱石ではなく加工済みの資材を現地から送れるようにします。鋼材精錬は、赤で原油精製所を造る際に必要だったため、ここでは繰り返しません。"
+    },
+    {
+      "id": "b.ils.h3.002",
+      "sourceHash": "61501e086f6481c1bf37479dbd2adabadf34718545cd34288825b2aa5dedd72e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "初期恒星系を調べる"
+    },
+    {
+      "id": "b.ils.p.005",
+      "sourceHash": "53a2f4139544308256cbfb1fd0cb1d9348a43434dc4a8ab32b7350d34590f45b",
+      "termHash": "1995917ec120b30cbfd50fc0f69a1322598ef173e874de59add7a16982e5e09e",
+      "text": "{{tech_4102_1}} レベル {{fact_1}}で、初期恒星系全体の資源量が分かります。拠点を選ぶ前にマップを確認してください。この最初の調査で、後の資源不足を早めに見越せます。"
+    },
+    {
+      "id": "b.ils.th.003",
+      "sourceHash": "eb0f9dc74a1285cf76c73aaae97276c2080a172094afcc373040349b9673e9f1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "今確認すること"
+    },
+    {
+      "id": "b.ils.th.004",
+      "sourceHash": "e601052389ec7c14095b7b3cbb3f6a8b466c5ef9ddf3128f5a4853e8681ee00b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "分かること"
+    },
+    {
+      "id": "b.ils.td.007",
+      "sourceHash": "fc5a7ae62dafc1464029cb0a0b2a6ded4771189dd3ef128e84ff9d29b6f81ed6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}チタンとシリコンの総量{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.008",
+      "sourceHash": "3604b604a8af525f38dbeac04eb94426ac8624ae9d768a7112a64fe1678dcf89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "近隣に十分な鉱床があれば、基本ルートを長く支えられます。近隣惑星で両方ともおおむね百万以上を確保できない場合は、残量が厳しくなる前に、少なくとも小規模な{{a_1}}{{img_1}}[ワープ]{{end_a_1}}拠点を設ける計画を立てましょう。"
+    },
+    {
+      "id": "b.ils.td.009",
+      "sourceHash": "e4c95cc67e77d75985a4f0baad92766b1aedd05359a893b0993202c2d077a239",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}希少鉱脈と利用できる海{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.010",
+      "sourceHash": "beba6164813c0596e41f05859050eb6ba024eb9ac6a7c970e51d53cd5b82dcf8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "恒星系内にある近道を記録しておきます。星間移動をせずに、後で長い標準レシピを省けるかもしれません。"
+    },
+    {
+      "id": "b.ils.td.011",
+      "sourceHash": "c60a06c1281353624475806df3bf120e14038fb67780851ca6ea3c9f2383fef2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ガス巨星の採集量{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.012",
+      "sourceHash": "8c0eaf5fca8be475774fced02f3c73570edeb45fbfbe9f16e738d86557edcbd8",
+      "termHash": "9455de1dfef92e3488bec40db94767b2df228e530ed9520a185c7b44bd572c7f",
+      "text": "{{item_1120_1}}、{{item_1121_1}}、{{item_1011_1}}が豊富に採れるなら、これらが不足したときに、任意のガス巨星ルートを選ぶ価値が高まります。"
+    },
+    {
+      "id": "b.ils.td.013",
+      "sourceHash": "e5b0e6d57be83882fb925b72923536462f6006ef0d1e9c69ea22a40d8fe5c2dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}後で調べる近隣恒星{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.014",
+      "sourceHash": "6d3d2f1a72b5afa3f3518a305f9d93a4a431e51cce63451359ee64e139b15ef8",
+      "termHash": "e2427b5948c9051ad7843121f5d2c2f6735852edf241e0626b152a739ef25bce",
+      "text": "ワープが必要になったら、{{tech_4103_1}}で六光年以内の恒星系にも同じ比較を広げられます。"
+    },
+    {
+      "id": "b.ils.p.006",
+      "sourceHash": "2e0a329aa5aec62c1909031a15bf6375f2462fff78de842d725d988203dfedc1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}これは下調べであり、新しい進行条件ではありません。{{end_strong_1}}今ある資源を使いながら、どの不足が起きたら恒星系を出る価値があるか覚えておきましょう。"
+    },
+    {
+      "id": "b.ils.p.007",
+      "sourceHash": "deaaff39c0a5dd0f8594f3f93ffa29cb8251adb4a0cdab07dc7563205712ce6d",
+      "termHash": "6aedeb376745448b0af600ac3028b758633f4172daeec32d11510acb283287b8",
+      "text": "{{strong_1}}見学ではなく、拠点建設の準備をします。{{end_strong_1}}採鉱機、溶鉱炉、ベルト、仕分機、貯蔵設備、独立した電源、必要なら{{item_1131_1}}を積みます。接近に手間取っても対応できる燃料とコアエネルギーの余裕も確保します。目的地に敵がいる場合は、拠点を無人にする前に{{a_1}}赤のミサイル砲台群と{{item_3007_1}}の手順{{end_a_1}}を使います。"
+    },
+    {
+      "id": "b.ils.blockquote.002",
+      "sourceHash": "b852fb26dea156e103f87e10ef4cf5985e90dc4c5f636233a8e76eb9fee21f08",
+      "termHash": "32ea3304ec5e57962058d74f99ff9ca2424abd6a0814b9056c579b2d942d3d74",
+      "text": "{{strong_1}}出発条件：{{end_strong_1}}{{tech_2902_1}}とチタン精錬の研究が完了し、目的地を把握し、積み荷で電源付きの工場を現地に残せること。"
+    },
+    {
+      "id": "b.titanium.h2.001",
+      "sourceHash": "afedbff86343c214b2d3519f6601acb8cecd0576e64f26c53b6d3b0274656fa4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 再訪する価値のある拠点を造る"
+    },
+    {
+      "id": "b.ils.p.008",
+      "sourceHash": "c616050ee4f98d8bb72352021998aeb016445df8d0a0f79055aac9b3625c0c5f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}開始条件：{{end_strong_1}}飛行の準備と電源付き拠点の建設資材がそろっていること。{{strong_2}}次へ進む条件：{{end_strong_2}}現地の精錬ラインが稼働し、用途を決めたチタンインゴット {{fact_1}} 個と高純度シリコンインゴット {{fact_2}} 個をイカロスが持ち帰っていること。"
+    },
+    {
+      "id": "b.ils.h3.003",
+      "sourceHash": "d81fd2491fe4add280ba8b19f521cdcbf21183f1d727e1b61b401498498f7d9e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "拠点建設と並行して進める研究"
+    },
+    {
+      "id": "b.ils.p.009",
+      "sourceHash": "627ba9548397b5cf4f8d96158e912c4aefacee9de6ef52b0cbc0848eec912ac6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "現地拠点を造って稼働させる間も、青と赤の研究への供給を続けます。帰還するまでに以下の研究系統を済ませます。黄の生産は、必要なチタンを確保して持ち帰ってからです。"
+    },
+    {
+      "id": "b.ils.li.005",
+      "sourceHash": "f380b47b977f51eac973618c32822dfb4d1ca7b7e32c42e43576f8511129a467",
+      "termHash": "c5df4c6f5e12b3036911521a5f993bd9078d2a269777af0d92e6384dd586b41c",
+      "text": "{{tech_1121_1}} {{fact_1}} {{tech_1131_1}}。"
+    },
+    {
+      "id": "b.ils.li.006",
+      "sourceHash": "d5e43801b4b8873992a80e12d0648287b58964f6c3fa50ce0148ba2720eae130",
+      "termHash": "5158f6ce2acb871a5d39bd4fb9e1758b4027bdc6aff7b7ae90a69d415d5f1599",
+      "text": "{{tech_1311_1}} {{fact_1}} {{tech_1302_1}}。"
+    },
+    {
+      "id": "b.ils.li.007",
+      "sourceHash": "3c12d7546f69f4210bfec90746909925f6e60d657ac2b85e1249b0d0cf7879c1",
+      "termHash": "fb6ec5d45dca087ae2b6e57e57a5ba9b2884a38ef725a62ad8513a0785a3214e",
+      "text": "{{tech_1122_1}} {{fact_1}} {{tech_1123_1}} {{fact_2}} {{tech_1124_1}}。"
+    },
+    {
+      "id": "b.ils.li.008",
+      "sourceHash": "de776afc5de4b5354350a806548220b5d925daba67acfb6544fdfe333f59ffc5",
+      "termHash": "a01eb526478612902a6e5ab4250435c35204c77a204d4da0b9fe4012053f582d",
+      "text": "{{tech_1701_1}} {{fact_1}} {{tech_1702_1}} {{fact_2}} {{tech_1703_1}}。"
+    },
+    {
+      "id": "b.ils.li.009",
+      "sourceHash": "5358a3671791b4cffe2c45890c1325efce31a7f9d07c039bac22647f79e70ef2",
+      "termHash": "4f2f1eebbbbe174eeae23792566c6bbab5e84e1fee97e2deced24bae4a396400",
+      "text": "{{tech_1112_1}} {{fact_1}} {{tech_1113_1}} {{fact_2}} {{tech_1114_1}}。"
+    },
+    {
+      "id": "b.ils.li.010",
+      "sourceHash": "54f6e4a1d91242d8c4434a553e5627cb83b21ea263f88045ae784acb5702cfca",
+      "termHash": "a9fd56e9645bd2638c1c070104deb3542804d47920da8ac6fc2ebc5a09554660",
+      "text": "{{tech_1602_1}} {{fact_1}} {{tech_1603_1}}。"
+    },
+    {
+      "id": "b.ils.li.011",
+      "sourceHash": "4ea926119aa37b36553fc1a6d1086103fc9d8b49347989398c9ff46d8116ccaf",
+      "termHash": "ca08379dc0d9d7ab9ae43bbd8272176c5ddfc901a15be46a2c6559ccecdfb0a7",
+      "text": "{{tech_3701_1}}。"
+    },
+    {
+      "id": "b.ils.p.010",
+      "sourceHash": "5f562e7a65a9676fff019d5d7ee74a03991c6a5b20425e60cdc9383d9220c2c2",
+      "termHash": "14f9e643ecfe42207469c6d3523307054ce10ff42333fb5a3123725899f27de0",
+      "text": "これらの研究系統がそろったら、{{tech_1604_1}}を研究します。現地拠点にはまだ PLS は不要です。この研究は、資材を持ち帰った後で組み立てるステーションの部品を準備するものです。"
+    },
+    {
+      "id": "b.ils.p.011",
+      "sourceHash": "b135155d88f8113d910e52fb0ce64698a13b6e7d7c383667e234146eaa656556",
+      "termHash": "501bc489ef31d03e2c490d58012c9f6e60aee80cba56c6dab55b4838487a69c5",
+      "text": "初期惑星には通常の{{item_1004_1}}の鉱脈がなく、{{item_1005_1}}から作るシリコンは立ち上げ用にすぎません。両方とも現地で精錬しましょう。加工済みの資材なら帰路の積載量を有効に使え、同じ電源付きラインを後の供給側ステーションにつなげられます。"
+    },
+    {
+      "id": "b.ils.p.012",
+      "sourceHash": "3a35741b1035a3724e417c1a0f3d1a776e0df4f986815c89520a5ffd984c0686",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "決められた量の積み荷で、この導入作業全体を賄います。荷下ろし中も用途別の割り当てを見えるようにし、手運びを終わらせるための部品を通常の工場で消費しないでください。"
+    },
+    {
+      "id": "b.ils.p.013",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横にスクロールすると全列を読めます {{fact_1}}"
+    },
+    {
+      "id": "b.ils.attr.001.aria-label",
+      "sourceHash": "f48970e87123eb466235254fb5464c412d17d18be7d64705de5ae6937962f140",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "持ち帰る資材の割り当て"
+    },
+    {
+      "id": "b.ils.th.005",
+      "sourceHash": "d329374b7055f9c75c008742076e62040075924c709e522721baf1c67598f21d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "持ち帰る資材"
+    },
+    {
+      "id": "b.ils.th.006",
+      "sourceHash": "a6bb955de0020b42b63a8e8f3239bae1fb1a5c5b596013cd7c22287712914a11",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確保する量"
+    },
+    {
+      "id": "b.ils.th.007",
+      "sourceHash": "677afe86aada9d7474f40cb7372cc6ce6ac2b4ee6a98c0d4894f08ab2452712d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "b.ils.td.015",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "72c09d400d2fc1d44ddd3d02d1f1c035c3c6834388b61f76df09eeee39627604",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.016",
+      "sourceHash": "a28f5f760f34ca604f0576de17f16eaef6191c563522f9bc866130df0f1893d7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.017",
+      "sourceHash": "2400e6a2bc5feaecb3d3322756df8cf52460491b5b2cfa67505dc2b6784135ea",
+      "termHash": "bab1ac1671b27ff12176d2c3b6b856eb91d557adb6c1c8e41e8eab9e34455bf1",
+      "text": "最初の{{item_6003_1}} {{fact_1}} 個"
+    },
+    {
+      "id": "b.ils.td.018",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "72c09d400d2fc1d44ddd3d02d1f1c035c3c6834388b61f76df09eeee39627604",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.019",
+      "sourceHash": "3f06ba198c33c66a692fefe765622f4174bd264fadb9e9870b5f528800e8a0b8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.020",
+      "sourceHash": "12bb6995c85fedee6228a7944276504833823d383e73a61b5ebaca8cecefd4af",
+      "termHash": "1e5097750dc4edace401f59fd1bd3bae0136e1dabccacef9477e8daece44fb65",
+      "text": "ILS 導入用の{{item_1107_1}}"
+    },
+    {
+      "id": "b.ils.td.021",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "72c09d400d2fc1d44ddd3d02d1f1c035c3c6834388b61f76df09eeee39627604",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.022",
+      "sourceHash": "d865e709dd69c1deeb2c8d66e8689d5f3da8a5b9597d3599b04ab9dcc6da7cc6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.023",
+      "sourceHash": "3732dee9cf264aa4f140b7e1b15881d1ed50793f05a6d97945cff8f863543f36",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ILS 二基の材料になる PLS 二基"
+    },
+    {
+      "id": "b.ils.td.024",
+      "sourceHash": "8506ed84aac1e0340a42643493fc189b22c2abdd0141ae3f75c7943af90df2b3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}チタンの合計{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.025",
+      "sourceHash": "2c20c2e5a92e22565ecec5c2b1d6b9a9600d29e93e7df34bf01295c53b7b7f47",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}{{fact_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.026",
+      "sourceHash": "32926903765e2d4cfeb8c41f889c7908c3c6e2a2334c4470c3124a96bde1ccc8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "導入が完了するまで、この確保分を他の用途に使わない"
+    },
+    {
+      "id": "b.ils.td.027",
+      "sourceHash": "5a6cc915ba2c3cbb972a9021475de2ba07934e56833ac4c461a7168acb0a4879",
+      "termHash": "c7e35487848346015208abdec3be0d687131959b785619bccdd1dbd8d34fbf81",
+      "text": "{{item_1105_1}}"
+    },
+    {
+      "id": "b.ils.td.028",
+      "sourceHash": "7d17dc550626fe88258152914cfdfeeb2838069509e256a75e1a4140d0ea6fa7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.029",
+      "sourceHash": "273ed0e41948b9f764371e873fa272e57745512240f4297cb614e28c1515acc7",
+      "termHash": "db903da101c0dbabed91fe05ba72bb29ac001003468b70138478e33406b565d9",
+      "text": "ステーション二基と{{item_5002_1}}五隻に使う{{item_1303_1}} {{fact_1}} 個"
+    },
+    {
+      "id": "b.ils.h3.004",
+      "sourceHash": "836829d63f5fc0146adb3699cf592b97db1a134d3214fb4d141c128ee091ad5d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "帰路に就く前に"
+    },
+    {
+      "id": "b.ils.li.012",
+      "sourceHash": "cb7ea4e16ce4bc09249dac322288b2800945cbbf497519206f97dd64e155e55b",
+      "termHash": "452f3b9ad318a605bc87a74da04fcc48871586202d897f4b77a0d6a6ba2b135d",
+      "text": "{{label_1}} {{input_1}}{{item_1106_1}} {{fact_1}} 個と{{item_1105_1}} {{fact_2}} 個を積んでいる。 {{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.013",
+      "sourceHash": "d77cb3b1720e256adfd0f010321dccb9f5672f8c5ba91711b74c643d82ba74bc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}両方の精錬ラインに電力が供給され、貯蔵設備につながっている。 {{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.014",
+      "sourceHash": "fc239a69b6a00263b97edb513ff9bd7b12d7cd331a3ec950e69758bcf06f4525",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}搬出先に、供給側の ILS を置く余地がある。 {{end_label_1}}"
+    },
+    {
+      "id": "b.ils-automate.h2.001",
+      "sourceHash": "c8574542c80dd14e80b33a6b903ec56874ff95cd5b563d1431bd1ca12aecaaf2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. 輸送ルートを構築して自動化する"
+    },
+    {
+      "id": "b.ils.p.014",
+      "sourceHash": "1f62b81ee3640b9ce0505d555b29a43a3cd1dc472cfc44d1a734d4cafe737238",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}開始条件：{{end_strong_1}}持ち帰ったチタンとシリコンの必要量を本拠地で確保していること。{{strong_2}}完了条件：{{end_strong_2}}ILS 二基と輸送船五隻で、イカロスが運ばなくてもチタンとシリコンが本拠地に届くこと。"
+    },
+    {
+      "id": "b.ils.h3.005",
+      "sourceHash": "7fcfa8a2cc8094334bca2cf8a2afb17f6db19c368e6791557de11e0843ea9fdd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "輸送設備一式を造る"
+    },
+    {
+      "id": "b.ils.p.015",
+      "sourceHash": "a0a5d994df0829ac9b6a6a959364ece497a848e951fb0b4e2fbd11a11f55efe2",
+      "termHash": "5249dca74a9610bdcd889c6019bf848aade87e8d48113a23f2ef082fe4d64294",
+      "text": "確保した資材で最初の黄マトリクス {{fact_1}} 個を作ります。この一回分を{{tech_1414_1}} {{fact_2}} {{tech_1605_1}}に使います。"
+    },
+    {
+      "id": "b.ils.p.016",
+      "sourceHash": "fb48c405b3451b3b91132ad48b2bf6d05cb31def037c840d4d45c9e269ee0797",
+      "termHash": "7279beb617e8d8cc81d3cb52b2d8251be6697a2a309dd0eb36ba7151f95d24dd",
+      "text": "{{item_1206_1}}を組み立てる前に、{{a_1}}{{item_1123_1}}{{end_a_1}}の生産を用意します。"
+    },
+    {
+      "id": "b.ils.h3.006",
+      "sourceHash": "a9ab808a194f9ad93e4ccd1eedb545c2f02d87bf026cef894a1923250829d118",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "確保した資材で作るもの"
+    },
+    {
+      "id": "b.ils.p.017",
+      "sourceHash": "f1c3af29c9d1fcbeb59d190b3d515c01bf217360310d952152bf1e909616422a",
+      "termHash": "a89a475f8d5adc35c59560995e7225931031982da9bf57f128765e9fa337dbe7",
+      "text": "以下は内訳を展開した小計です。ILS の行には材料の PLS 二基を、輸送船の行には{{item_1406_1}}で消費する合金とタービンをすでに含みます。これらをもう一度加算しないでください。"
+    },
+    {
+      "id": "b.ils.p.018",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横にスクロールすると全列を読めます {{fact_1}}"
+    },
+    {
+      "id": "b.ils.attr.002.aria-label",
+      "sourceHash": "9be5555da16113d828fbba03724fd27307ee0b1bb2c784543cc0bd564b5c2b87",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "部品の必要量"
+    },
+    {
+      "id": "b.ils.th.008",
+      "sourceHash": "ecd41ae15769b5b863c63275997acf41d296bef0c6c23523d3b44486404aab60",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "必要数だけ作るもの"
+    },
+    {
+      "id": "b.ils.th.009",
+      "sourceHash": "67ea23d8bf467e0de321f0de104e14639cf15fa99b6ec86c4fff4d3ba3da77d6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "完成品の目標数"
+    },
+    {
+      "id": "b.ils.th.010",
+      "sourceHash": "de157b9f5a8b126e5a19312cc7e163491755869fb0ee22bb93c3303dc16f2853",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "主要部品の小計"
+    },
+    {
+      "id": "b.ils.th.011",
+      "sourceHash": "a366b624e33f9410b9af334ea9d0d07992bcec5f82fbda844315e25583a78894",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "そのために確保する素材"
+    },
+    {
+      "id": "b.ils.td.030",
+      "sourceHash": "6b63ffa097a7918f4248b2a211f1e864cf794eca73fbd570a189544b2f8931bb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}最初の黄マトリクス{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.031",
+      "sourceHash": "144781ab1d5b0222833f3c1bc1b47a29b5521c507db580cf842d009e3487d3ec",
+      "termHash": "bab1ac1671b27ff12176d2c3b6b856eb91d557adb6c1c8e41e8eab9e34455bf1",
+      "text": "{{fact_1}} {{item_6003_1}}"
+    },
+    {
+      "id": "b.ils.td.032",
+      "sourceHash": "0bb56fe821e0058c3b12df30c23ba2abb28c82d3fb3a08a25eebc2745a31115d",
+      "termHash": "be50ecc0f9336b4aeb8fe3035ff7acc157d1616856a3f4edb3f4a19be0b61ee0",
+      "text": "{{fact_1}} {{item_1118_1}} + {{fact_2}} {{item_1112_1}}"
+    },
+    {
+      "id": "b.ils.td.033",
+      "sourceHash": "59cd62996ab1696f7b1709b9a26f113bf0217ac362368db8bc10942c19405b30",
+      "termHash": "e0bb2c45a316baea90d69fdad0a1fab644416d8fde48fb9af129fd0603eb673b",
+      "text": "{{item_1118_1}} {{fact_2}} 個に使う{{item_1106_1}} {{fact_1}} 個"
+    },
+    {
+      "id": "b.ils.td.034",
+      "sourceHash": "111c2c8be1a6e8fec7a1d1b1d34e36e60ce3235106e1c34fb17fe1c39c12d2a3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ILS 一対{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.035",
+      "sourceHash": "b2fd546fc2d0a59fe9324ad2172cf881c5c4a2892bc64f59275c35bcf4830dab",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ILS {{fact_1}} 基（材料の PLS {{fact_2}} 基を含む）"
+    },
+    {
+      "id": "b.ils.td.036",
+      "sourceHash": "85eb58222e93563b77b3d47fc051a474943757c06d9d892a1f71b8766e6cd6b6",
+      "termHash": "424fe45023108df6374a73f9c8170ac44fb0b69af44e70fade248ad10c3aa815",
+      "text": "{{fact_1}} {{item_1107_1}} + {{fact_2}} {{item_1303_1}} + {{fact_3}} {{item_1206_1}}"
+    },
+    {
+      "id": "b.ils.td.037",
+      "sourceHash": "f88e5864955f8d7bead2e6dee99089a087510c4c2154e35302b3ee178ad7eeee",
+      "termHash": "c5ab48756a54eb3568e9a6c6ff95d5780193e1a6fa04bcdd137d209725cf30ea",
+      "text": "{{item_1103_1}} {{fact_1}} 個 + {{item_1106_1}} {{fact_2}} 個（材料の PLS 二基に {{fact_3}} 個、{{item_1107_1}} {{fact_5}} 個に {{fact_4}} 個）+ {{item_1206_1}}用の{{item_1204_1}} {{fact_6}} 個"
+    },
+    {
+      "id": "b.ils.td.038",
+      "sourceHash": "6a6e5cbfaa7db57a6629a9548c617f92ece21ce01421e48d21cdbe5ee0ded046",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}輸送船隊{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.039",
+      "sourceHash": "62da2eacc5a4aaa0012ecab0976d59832692a4250d2552b3c53ec4283c5de28c",
+      "termHash": "4e1c54dad77cbbb2b5195d3ee8a2992213d100919779b590eff145e3092f4e87",
+      "text": "{{item_5002_1}} {{fact_1}} 隻（{{item_1406_1}} {{fact_2}} 個を含む）"
+    },
+    {
+      "id": "b.ils.td.040",
+      "sourceHash": "605bfcfae32f150a182f1789e7570280b7c48e667e4eb10abf33ffa9fbbaeb40",
+      "termHash": "486dc395ee9bab119b432adc137e6d9be5e10592cd44fedfe3e3ab9c55847e20",
+      "text": "{{fact_1}} {{item_1107_1}} + {{fact_2}} {{item_1303_1}} + {{fact_3}} {{item_1406_1}}"
+    },
+    {
+      "id": "b.ils.td.041",
+      "sourceHash": "46da36c4cb43bfed0618741fbddf18d04d8bde110960ec927f7f7ac26f09d7ee",
+      "termHash": "e24b5cf02ecf70083e5f41b77f935c7c4aae372d5bb798786a4fab31410084dc",
+      "text": "{{item_1107_1}} {{fact_2}} 個に使う{{item_1106_1}} {{fact_1}} 個：{{br_1}}{{item_1406_1}} {{fact_4}} 個に合金 {{fact_3}} 個、{{item_5002_1}} {{fact_6}} 隻に直接使う合金 {{fact_5}} 個。{{br_2}}強化スラスター用の{{item_1204_1}} {{fact_7}} 個"
+    },
+    {
+      "id": "b.ils.td.042",
+      "sourceHash": "3f21d21cf7333f8ed5fa95117b5b4cc616247207bbf9f477a0a33f025cac1ac1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}確保する合計{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.043",
+      "sourceHash": "f4cf10e2002d05bb6b0ac0f98d4ea1012196c27622364fd3fd09535e4763775d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}マトリクス {{fact_1}} 個 + ILS {{fact_2}} 基 + 輸送船 {{fact_3}} 隻{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.044",
+      "sourceHash": "ad5baa6ae96edfa080ff1aee322141a9a6126d4ab8920d94db5177309436b89c",
+      "termHash": "6913e8570e092f026906886434d7cce08f85ceec77c284c29966f0ecde744df5",
+      "text": "{{strong_1}}{{fact_1}} {{item_1118_1}} + {{fact_2}} {{item_1112_1}} + {{fact_3}} {{item_1107_1}} + {{fact_4}} {{item_1303_1}} + {{fact_5}} {{item_1206_1}} + {{fact_6}} {{item_1406_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.045",
+      "sourceHash": "e140b9fc0c8b865d6fef38d25396ff0010be2054f7cca0d4beadf6c3270b9612",
+      "termHash": "419fddc505e9509777f29478cb957bf73cf6e0703d57609d0c08f33540735170",
+      "text": "{{strong_1}}{{item_1103_1}} {{fact_1}} 個 + {{item_1106_1}} {{fact_2}} 個（{{item_1118_1}}に {{fact_3}} 個、すべての{{item_1107_1}}に {{fact_4}} 個、材料の PLS 二基に {{fact_5}} 個）+ {{item_1204_1}} {{fact_6}} 個{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.li.015",
+      "sourceHash": "7b1286fb547161a5cf6f2edc4de5f80b6d8034ec9824f0dfd51637261a1ba219",
+      "termHash": "28669ccda022aaf3a3ffd3d9de4a20d9b9e25c417be8e3623a66aa13998aec8a",
+      "text": "{{strong_1}}組み立て用の部品を先に確保します。{{end_strong_1}}仮設の組み立て場所の脇に{{item_2101_1}}を一つ置き、表の部品が必要数できるたびに移します。この貯蔵庫から通常の生産へ回してはいけません。表の数だけ造ったら停止します。余分なステーションや輸送船を造ると、次の作業用の{{item_1303_1}}、合金、{{item_1206_1}}を使い込んでしまうことがあります。"
+    },
+    {
+      "id": "b.ils.strong.001",
+      "sourceHash": "e532002471db22f3f6a2b5bc8c6d93592ecf41d5afd4879b28d182aeb2a17793",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "仮設の部品ラインを造る。"
+    },
+    {
+      "id": "b.ils.attr.003.aria-label",
+      "sourceHash": "e06f9dd695071e3940ecc8805a4834a108fc59544d12fd602956fd857108ffac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ILS 立ち上げ用の生産マップ"
+    },
+    {
+      "id": "b.ils.p.019",
+      "sourceHash": "f3de7c7076494cfb5cc792e99b91cfe79e30847f6769000cd04ece5dd9693c9d",
+      "termHash": "258de0f1796d2e88cd8e0e67490c02c9fb7ea39c04140d32ae2b5d7e87470c47",
+      "text": "{{strong_1}}生産順序：{{end_strong_1}}{{item_1303_1}} {{fact_1}} {{item_6003_1}} {{fact_2}} {{item_1206_1}} {{fact_3}} {{item_1107_1}}。"
+    },
+    {
+      "id": "b.ils.h5.001",
+      "sourceHash": "15f6fdec1c3bbb363eaf9002eee9af2bb76d5eede21b413a16e50c9985112ee3",
+      "termHash": "3a08f74e1e4e60cca92668aee06a6025d1bd1366c01f775dd4d4c685615b5969",
+      "text": "{{item_1303_1}}"
+    },
+    {
+      "id": "b.ils.li.016",
+      "sourceHash": "2af9208a730b2d37a123c03496c1d26bc3233d8346ff215e19fb36b6a5900a05",
+      "termHash": "029586c292f380f9586caf3b709d4e12ac4ac849c44029a6b5e696a3ad418818",
+      "text": "{{span_1}}微晶質素子の枝ライン{{end_span_1}}{{span_2}}{{item_1105_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1302_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.017",
+      "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
+      "termHash": "fbd41d684ce1fb361bd3d138c694715aba55fd8375e9c23981caf473091abb32",
+      "text": "{{span_1}}回路基板の枝ライン{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.018",
+      "sourceHash": "bf1562fcec31e82e2223fe509e3184c81379170333c1433ae786ed5120a7f420",
+      "termHash": "4b978e9e65c511591a2f0f751d7b98a7d2a84affa9f18a2e976ec8005ba58cef",
+      "text": "{{span_1}}{{item_1303_1}}の最終工程{{end_span_1}}{{span_2}}{{item_1302_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.002",
+      "sourceHash": "0d9613b44ef65ee3b278607ee1dd931a2c1789f1f5ae72f7fa7fb288fbd13011",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "粒子コンテナ"
+    },
+    {
+      "id": "b.ils.li.019",
+      "sourceHash": "dd2ccffd3b08393e61f4076bda1fa7d05357f349ba64ac28375b4ff12f89518c",
+      "termHash": "11240db44900d849db52097ec148b6c2424c2b5937524c1b86924b8c90b9131a",
+      "text": "{{span_1}}{{item_1206_1}}{{end_span_1}}{{span_2}}{{a_1}}{{item_1204_1}}{{end_a_1}} + {{a_2}}{{item_1123_1}}{{end_a_2}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1206_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.003",
+      "sourceHash": "0f9eef103a498692fe8062076a49bb7736f7b229a1326f9e7584e2f8219c3e69",
+      "termHash": "1e5097750dc4edace401f59fd1bd3bae0136e1dabccacef9477e8daece44fb65",
+      "text": "{{item_1107_1}}"
+    },
+    {
+      "id": "b.ils.li.020",
+      "sourceHash": "f0477f7b39cff517a591fda7958fa5a7db28a4bfa22de9e3f8d53fc0060fa1f8",
+      "termHash": "2096556c945e78a372d410452d0e6417aa9fd49fbc663c7e91f71e9e3abea65f",
+      "text": "{{span_1}}硫酸の枝ライン{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：原油精製所{{end_span_5}}{{end_span_3}} {{item_1114_1}}／ {{item_1114_2}} + {{item_1005_1}} + {{item_1000_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：化学工場{{end_span_8}}{{end_span_6}} {{item_1116_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.021",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "ed38edb8796664eb99453ca3c9d4ba83fcbcedb3f2bc5d732f87c329c3ba859a",
+      "text": "{{span_1}}{{item_1103_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}生産設備：アーク溶鉱炉{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.022",
+      "sourceHash": "4076b5c669afdf90e059aa82517e1ccf5ea8054a9ebf48e9ac579fd639570d88",
+      "termHash": "2ecc2447817be717df69baba6c3dd11ce5f006da64c212df186bccbe1f2a51bf",
+      "text": "{{span_1}}合金の精錬{{end_span_1}}{{span_2}}{{item_1106_1}} + {{item_1103_1}} + {{item_1116_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：アーク溶鉱炉{{end_span_5}}{{end_span_3}} {{item_1107_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.004",
+      "sourceHash": "0376f27ea3d1532a48f8703e6f40c669ef4a057a71a5c0bb66ac7c25381cc63e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "輸送設備"
+    },
+    {
+      "id": "b.ils.li.023",
+      "sourceHash": "c02f5ef21232a983668d1396db0e6265a42821ed4a1975b6c6e9ba1deb6409c6",
+      "termHash": "9e09ad2fb4f3f263c35b5d6b3a2b214a608feb9d5ee927d75d5359a54c12366a",
+      "text": "{{span_1}}PLS の組み立て{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.024",
+      "sourceHash": "8c65397affd9fb53c6e2965614b50f7442c1fabf121f74e33a46bc4264ca2e3d",
+      "termHash": "44eddbb03e79f721015c23f7f2ed9e52dd800c952e563456ff01ba1ed385f15a",
+      "text": "{{span_1}}{{item_1405_1}}の枝ライン{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1204_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1406_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.025",
+      "sourceHash": "2491e822b8ddd246f94ed02224bf017b9c219837ea2c449b7930430f279a2da0",
+      "termHash": "689cac00f535987bd62ba4df44c5b6514a7d6bf1eb9f476dfa54dcf34e0dc6b4",
+      "text": "{{span_1}}ILS の組み立て{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.026",
+      "sourceHash": "dc03258c1de18cf434e028fac8f15fa5e1d7e6eb2e0d86ae11676f0ace87b2a0",
+      "termHash": "01241d5ce752e6fb1954934805328fd6eeef6573a8b7fb4231e2b06423a07728",
+      "text": "{{span_1}}輸送船の組み立て{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}生産設備：組立機 {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.027",
+      "sourceHash": "ed13fc37b8ec128948b82d48151a7ff6bb2ddf801817d54ccc55b92bef1c22ce",
+      "termHash": "81175ba007491943434988c1e877c5be4848736f3aa5d9ff9f34261020bcccf7",
+      "text": "{{strong_1}}輸送設備を組み立てます。{{end_strong_1}}合成機か仮設の組立機で、{{item_1103_1}}、{{item_1106_1}}、{{item_1303_1}}、{{item_1206_1}}から材料となる PLS 二基を造ります。これに{{item_1107_1}}と{{item_1206_2}}を加えて ILS 二基にし、{{item_1107_2}}、{{item_1303_2}}、{{item_1406_1}}から{{item_5002_1}}五隻を造ります。一式そろうまで、完成品はその都度確保用の貯蔵庫に戻します。"
+    },
+    {
+      "id": "b.ils.blockquote.003",
+      "sourceHash": "c6f7f997b5c85714172362f4d1ee1d1072810295938e58c54cc6909cedc8d53a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}輸送設備の確認：{{end_strong_1}}確保用の貯蔵庫に ILS 二基と星間輸送船五隻がすべてそろうまで、配備を始めないでください。"
+    },
+    {
+      "id": "b.ils.h3.007",
+      "sourceHash": "8ad1441d0d55f17e5aaf102e82f9e44b4e649e651020da1bdb2442fa1ab3bbc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "輸送ルートを稼働させる"
+    },
+    {
+      "id": "b.ils.li.028",
+      "sourceHash": "809511054092102ef1bf3e0f8b601581f6933b6a24473dcc801e8a514eea18f6",
+      "termHash": "452f3b9ad318a605bc87a74da04fcc48871586202d897f4b77a0d6a6ba2b135d",
+      "text": "{{strong_1}}遠隔拠点の供給側を設定します。{{end_strong_1}}拠点の貯蔵設備の脇に、電力を接続しない ILS を一基置きます。{{item_1106_1}}と{{item_1105_1}}を取扱品目に追加し、両方とも青色の{{strong_2}}星間供給{{end_strong_2}}に設定します。精錬ラインの両方の出力をベルトで送り、品目を指定したステーションの枠に入れます。"
+    },
+    {
+      "id": "b.ils.li.029",
+      "sourceHash": "8a6152ae942bb2cf8fe499d32095514bb597a92e895af6e014ce58e393964258",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}本拠地の受け取り側を設定します。{{end_strong_1}}もう一基の ILS を本拠地に置いて通電し、同じ二品目を追加します。両方ともオレンジ色の{{strong_2}}星間要求{{end_strong_2}}に設定し、輸送船五隻をすべて配備します。ステーションから工場への出力に品目フィルターを設定します。最初の輸送船が出発すれば、イカロスによる手運びは役目を終えます。"
+    },
+    {
+      "id": "b.ils.div.001",
+      "sourceHash": "29c57bc2175ebfacc5f5d5fb7659db628beedc3c6c1bd4f64ac499fa0f7f09e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ 充電開始時の負荷に注意します。{{end_strong_1}}新しく通電したステーションは、普段は余裕のある電力網にも一時的に大きな負荷をかけます。{{strong_2}}充電電力の設定を下げる{{end_strong_2}}か、段階的に充電しましょう。一時的な負荷のために惑星全体の電源を造り直す必要はありません。"
+    },
+    {
+      "id": "b.ils.h2.004",
+      "sourceHash": "5ac177bf37bc69fae8e24196927f5fefb145abf39ad93db15f05696a92965672",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "完了条件"
+    },
+    {
+      "id": "b.ils.li.030",
+      "sourceHash": "2f289afab188aafc5f719c999bc1993252f41720deb779ad914a15b83adb1369",
+      "termHash": "a2ce7fa41d3f2de1f9f95cd21cfe346affb8759af36ad2adece836bfd73fc552",
+      "text": "{{label_1}} {{input_1}}ILS 二基と{{item_5002_1}}五隻を配備している。 {{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.031",
+      "sourceHash": "71737f8cbf1ed24478002de9fd30fa2bdb8e31eb7563049210b19604d4d9169e",
+      "termHash": "452f3b9ad318a605bc87a74da04fcc48871586202d897f4b77a0d6a6ba2b135d",
+      "text": "{{label_1}} {{input_1}}イカロスが運ばなくても、{{item_1106_1}}と{{item_1105_1}}が本拠地に届く。 {{end_label_1}}"
+    },
+    {
+      "id": "b.ils.h2.005",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "次の行き先"
+    },
+    {
+      "id": "b.ils.p.020",
+      "sourceHash": "f1f20eb83d00d23c1d88d7bd8c96e902ab727524b88ab778ca2ddacf517824cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[黄]{{end_a_1}}へ進み、一回分の研究用生産を継続的な生産に切り替えます。"
+    },
+    {
       "id": "a.tech-sheet-title.h2.001",
       "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",

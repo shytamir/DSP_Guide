@@ -148,6 +148,13 @@ deliberate exceptions, not untranslated guide prose. Shared controls use
 はじめに、ルート、資料 and 閉じる; tooltip labels are 前提技術、
 間接的な前提技術 and 解放されるもの.
 
+Japanese refinery recipes are プラズマ精製、X線崩壊 and 改質精製; native
+station modes are 現地供給/現地要求 and 星間供給/星間要求. 土砂, 合成機,
+新しく始める and ゲームを始める were also verified read-only in the installed
+1041 tables. Expand ILS/PLS as 星間物流ステーション / 惑星内物流ステーション
+on first relevant use. Keep prose technology references aligned with the native
+精錬純化、結晶体精錬、鋼材精錬 and チタン精錬 labels.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 
