@@ -1,8 +1,9 @@
 # Phone Support and Localization — Decisions and Investigation
 
-**Status:** Roadmap approved, 2026-10-11; ML-E1–E3 are complete.
-ML-E4 (ML-16–21) is authorized with per-story validation, management updates,
-commits/pushes and a stop after the German epic. ML-16 is agent-validated.
+**Status:** Roadmap approved, 2026-10-11; ML-E1–E4 are complete.
+ML-E4 (ML-16–21) and ML-M3 are agent-validated with per-story validation,
+management updates and commits/pushes. Work stops at the German-epic handoff;
+Japanese and public activation need later instructions.
 Early investigations and planning decisions are resolved below. Historical
 browser samples are disposable feasibility work, not product acceptance.
 Story scope, progress, and sequencing live only in the linked roadmap.
@@ -24,9 +25,9 @@ Story scope, progress, and sequencing live only in the linked roadmap.
   native-speaker, or owner-acceptance gates during implementation. Each finished
   story will update management records and be committed/pushed to `main` once
   implementation is instructed. Production publication remains with the owner.
-- Current execution authorization covers ML-16–21, following the completed
-  phone, localization-foundation and Chinese epics, with per-story commits/pushes
-  and a German-epic handoff. Japanese work and publication remain outside this run.
+- Execution authorization through ML-21 has been fulfilled, following the phone,
+  localization-foundation and Chinese epics, with per-story commits/pushes and
+  the German-epic handoff. Japanese work and publication remain outside this run.
 
 The historical [no-mobile-polish record](../archive/no-mobile-polish-story.md)
 does not prohibit this newly authorized planning. The published site's

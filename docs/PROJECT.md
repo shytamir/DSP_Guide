@@ -1,10 +1,10 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-E1–E3 and the private Chinese milestone ML-M2 are complete.
-ML-E4 is authorized through ML-21; ML-16 is agent-validated with the German
-opening, BLUE, shared controls and eight UI strings complete privately.
-Each story includes validation, management updates and a commit/push; stop
-after the German epic. Version 3.1 remains English only.
+**Status:** ML-E1–E4 and the private Chinese/German milestones ML-M2/ML-M3
+are complete and agent-validated. German has all 1,537 messages and eight UI
+strings reviewed, with its full private browser matrix passed. Each story
+includes validation, management updates and a commit/push. Work stops after
+ML-21; Japanese needs a new instruction. Version 3.1 remains English only.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
@@ -18,8 +18,8 @@ deferred concepts remain deferred indefinitely in the historical archive.
 
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
-Only English is deployable; the complete Chinese translation is accepted privately.
-German segment A is complete privately; Japanese retains four tooling samples.
+Only English is deployable; the complete Chinese and German translations are
+accepted privately. Japanese retains four tooling samples.
 Narrow main text can wrap long native names and German compounds at 200% text.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized

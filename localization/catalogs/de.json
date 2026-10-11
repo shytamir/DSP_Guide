@@ -462,7 +462,7 @@
       "id": "a.top.h2.001",
       "sourceHash": "e012093a76755de9f781dcf7e096afe9cacd8d71dc2f3d28784a3662760bf9bd",
       "termHash": "ba21a855c05439f87d8b89d4518bf769a6ad6358f991d45634c7709b52a30541",
-      "text": "Ein praktischer Weg von deiner ersten Fabrik bis zur Technologie {{tech_1508_1}}"
+      "text": "Ein praktischer Weg von deiner ersten Fabrik bis zur Technologie „{{tech_1508_1}}“"
     },
     {
       "id": "a.top.p.003",
@@ -972,7 +972,7 @@
       "id": "a.top.dt.008",
       "sourceHash": "87186f6fb0a278dfce314f9fad4d242264132a22aecce9c662cdb11368210d47",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Empfänger / Nachfrage"
+      "text": "Abnehmer / Nachfrage"
     },
     {
       "id": "a.top.dd.008",
@@ -1260,7 +1260,7 @@
       "id": "a.top.td.035",
       "sourceHash": "52d5e45f7767b654479e5f5d2526fa2b047fda91f5a2031f5968de62bb2f751e",
       "termHash": "b228547a0f512171ae069fc9acfd57e7e64d87584e1c4b0ea7c765f3856941d7",
-      "text": "{{item_6006_1}} durchgehend produzieren und {{tech_1508_1}} abschließen"
+      "text": "{{item_6006_1}} durchgehend produzieren und die Forschung „{{tech_1508_1}}“ abschließen"
     },
     {
       "id": "a.top.td.036",
@@ -4008,7 +4008,7 @@
       "id": "c.card-yellow-yellow-cubes.li.007",
       "sourceHash": "1ca1dcced701291754740cae5d500696b8b11ac176fea7eb4f003a31a009298e",
       "termHash": "0c38d87296382b2af912defbbbeb3cdde37aeae496f0cd4b9acfcfc700925afe",
-      "text": "{{span_1}}{{item_1117_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1115_1}} + {{item_1114_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Chemiefabrik{{end_span_5}}{{end_span_3}} {{item_1117_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1117_1}} — Zweig{{end_span_1}}{{span_2}}{{item_1115_1}} + {{item_1114_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Chemiefabrik{{end_span_5}}{{end_span_3}} {{item_1117_2}}{{end_span_2}}"
     },
     {
       "id": "c.route-yellow-titanium-crystals.li.001",
@@ -5298,7 +5298,7 @@
       "id": "d.dyson.td.002",
       "sourceHash": "622549060ff7fb659b8610607e203ed0ec933896097528f3e0ae94b6fc952fc9",
       "termHash": "8e751bd106cfd8495b15d0815bcb2e8485f5d08dc87b8597397bf482f445cff5",
-      "text": "Die Produktion von {{item_1501_1}} automatisieren und ein funktionierendes EM-Werfer-Netz versorgen"
+      "text": "Die Produktionslinie für {{item_1501_1}} automatisieren und ein funktionierendes EM-Werfer-Netz versorgen"
     },
     {
       "id": "d.dyson.td.003",
@@ -5388,7 +5388,7 @@
       "id": "d.dyson.p.005",
       "sourceHash": "e1fde5f2e932c72dd7750ab785b964923d0841c38b98f53ca7d2c1dfba0e4909",
       "termHash": "115f3c199554cb4ad164de0f702a3dbda85b22a89c21f7e5cc7fe6896bf1a2bc",
-      "text": "{{strong_1}}Entscheide anhand des laufenden Betriebs, wann du ausbaust oder weitergehst.{{end_strong_1}} Beobachte die gemessene Schussauslastung, steigende oder fallende Vorräte von {{item_1501_1}}, die aktuelle Dyson-Erzeugung und die tatsächliche Ausgabe deiner Receiver ({{item_2208_1}}). Wenn die Receiver nützlich arbeiten, beginne PHOTON. Erweitere nur dort weiter, wo Schussauslastung, Segelvorrat oder Receiver-Bedarf einen Engpass zeigen."
+      "text": "{{strong_1}}Entscheide anhand des laufenden Betriebs, wann du ausbaust oder weitergehst.{{end_strong_1}} Beobachte die gemessene Schussauslastung, steigende oder fallende Segelvorräte ({{item_1501_1}}), die aktuelle Dyson-Erzeugung und die tatsächliche Ausgabe deiner Receiver ({{item_2208_1}}). Wenn die Receiver nützlich arbeiten, beginne PHOTON. Erweitere nur dort weiter, wo Schussauslastung, Segelvorrat oder Receiver-Bedarf einen Engpass zeigen."
     },
     {
       "id": "d.dyson.p.006",
@@ -5514,7 +5514,7 @@
       "id": "d.card-dyson-solar-sails.li.008",
       "sourceHash": "de02eb4b2d310e6d975114e5b68d9e78429313186d005b7ba3fd886474399d26",
       "termHash": "aca871b3c4158245dd51ba80ce2375033f15ccdd181fc6a254dd9f89f90aa92b",
-      "text": "{{span_1}}{{item_2101_1}} — {{item_1501_1}}{{end_span_1}} — die geplante Produktion von {{item_1501_2}} vor der Werferzufuhr aufnehmen."
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1501_1}}{{end_span_1}} — die geplante Ausgabe der Segellinie ({{item_1501_2}}) vor der Werferzufuhr aufnehmen."
     },
     {
       "id": "d.card-dyson-solar-sails.h4.004",
@@ -8112,13 +8112,1105 @@
       "id": "e.logistics.li.009",
       "sourceHash": "821e9b42c84382aabe1ae50a2e4bb317182224ba88820118a5325f21532a83c2",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{label_1}} {{input_1}}eine Route Fernanbieter {{fact_1}} Frachtschiff {{fact_2}} Fernabnehmer ohne Raten eingestellt werden kann. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}eine Route Fernanbieter {{fact_1}} Frachtschiff {{fact_2}} Fernabnehmer ohne Rätselraten eingestellt werden kann. {{end_label_1}}"
     },
     {
       "id": "e.logistics.li.010",
       "sourceHash": "4f07de3bf7d512f2532f3ffd807a9bd46525cf7e54743a5b32b8175090a7275d",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{label_1}} {{input_1}}eine Route Lokalanbieter {{fact_1}} Drohne {{fact_2}} Lokalabnehmer ohne Raten eingestellt werden kann. {{end_label_1}}"
+      "text": "{{label_1}} {{input_1}}eine Route Lokalanbieter {{fact_1}} Drohne {{fact_2}} Lokalabnehmer ohne Rätselraten eingestellt werden kann. {{end_label_1}}"
+    },
+    {
+      "id": "f.optional-paths.h1.001",
+      "sourceHash": "5c7105839b696159cfe94e93b0f191ebd0d59763c4264f18fcd95febdf57eddd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Optionale Wege"
+    },
+    {
+      "id": "f.top.p.001",
+      "sourceHash": "3f9118096249b61414b93c3e5ed962b4b7fd23804f7bea326afe999d082ff701",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Das sind keine Nebenaufgaben, die du dem Forschungsbaum schuldest. Nutze einen Weg, wenn er ein bereits sichtbares Problem löst. Lass ihn sonst liegen und geh weiter."
+    },
+    {
+      "id": "f.ref-proliferation.h1.001",
+      "sourceHash": "7404c3b9340add211c995e2deef6864766eccd20166f12549a686305eb2e1d89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "[PROLIFERATION] — Optionaler Produktionsbonus"
+    },
+    {
+      "id": "f.top.h2.001",
+      "sourceHash": "8206aaaa1d9523f5308bbf61dc357df7807f8e0ba702b0c0a774abb513f30bac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zweck"
+    },
+    {
+      "id": "f.top.p.002",
+      "sourceHash": "1caf8e9e32560676055660d0815c7df05b8579c700d42f511ffd82fd810bcb2c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Proliferation kostet Sprühmittel, Strom, Bänder und eine weitere Produktionslinie, um aus ausgewählten Rezepten mehr herauszuholen. Sie ist ein nützliches Mittel, keine Pflicht für jeden Gegenstand der Fabrik."
+    },
+    {
+      "id": "f.top.h2.002",
+      "sourceHash": "cad17255c05372959d419822cb91f946a090a7ef31cd0754c63b430f3d17cfb1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Den Modus passend zum Problem wählen"
+    },
+    {
+      "id": "f.top.p.003",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Für alle Spalten seitlich scrollen {{fact_1}}"
+    },
+    {
+      "id": "f.top.attr.001.aria-label",
+      "sourceHash": "642bd98facfe2a58e6354420f4bd255614c7592fdb105b7e1cbed19a3cc986f3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Proliferationsmodi"
+    },
+    {
+      "id": "f.top.th.001",
+      "sourceHash": "6af4138b7cf3f4237d7291ad900bc40f55ecc595151ae258f9eae429668ea1be",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Modus"
+    },
+    {
+      "id": "f.top.th.002",
+      "sourceHash": "324d775defd97f6a31cf3d24fa9e8f6aba02cf71739c317aa735ab88f611f46f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nutzen, wenn"
+    },
+    {
+      "id": "f.top.th.003",
+      "sourceHash": "2f8b77ccf0dca80c07042cbe02f1fe720b5a7d4172718e35c50fbd084fd19749",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Beachten"
+    },
+    {
+      "id": "f.top.td.001",
+      "sourceHash": "fd2b3b78648a556ec52ee578dd41b061bc2da04b67834bfa0c8633b1ab9f4ca4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Zusatzprodukte{{end_strong_1}}"
+    },
+    {
+      "id": "f.top.td.002",
+      "sourceHash": "d3606faa16695131f1d708b2497ce278ffe40a33fb919d8cb784dba29882153b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ein unterstütztes Rezept teure Zutaten verbraucht und eine höhere Ausbeute wertvoller ist als eine kleinere Fabrik."
+    },
+    {
+      "id": "f.top.td.003",
+      "sourceHash": "740ee7588e92213f4c00889011fb138b9ab063a561666d6cadc29862d2e24e7b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Alle Rezeptzutaten müssen besprüht eintreffen; die am wenigsten besprühte Zutat begrenzt den Bonus."
+    },
+    {
+      "id": "f.top.td.004",
+      "sourceHash": "4e6c19729b0afd5ede2c80f54340f54cb207ebb94b4557fce59bb1011f6ca3c5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Produktionsbeschleunigung{{end_strong_1}}"
+    },
+    {
+      "id": "f.top.td.005",
+      "sourceHash": "255c8e70ef4c6b35a7b9914518d34ef7fb670aa74bb7a37388b49119ba871792",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Platz oder Maschinenzahl den Ausbau begrenzen und das Netz die höhere Last tragen kann."
+    },
+    {
+      "id": "f.top.td.006",
+      "sourceHash": "8e2c11b73be249f34035306489219e911c9a8a595ccfbd829cea4d00c7eddc18",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Dieselbe Linie arbeitet schneller, braucht aber mehr Strom und Zutaten."
+    },
+    {
+      "id": "f.top.h2.003",
+      "sourceHash": "1c400fe58e2897ecbb3e7347c18c42b9756c74bc6f590cdde5f5b2c6ba9516f1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Gute erste Einsatzstellen"
+    },
+    {
+      "id": "f.top.p.004",
+      "sourceHash": "5f1fa150741ed43376107616607036bbabd6263cbb4134804dac6f67f5bd34ed",
+      "termHash": "1589e6b4963b212c6d1cb229bedd2cfee33a8fb22078516abfa672307988136e",
+      "text": "Bei Forschung ist der Nutzen leicht nachzuvollziehen: Besprühe die Zutaten vor der Würfelproduktion und dann die Würfel vor der Forschung. Teure Zwischenprodukte des späten Spiels sind ebenfalls sinnvoll, wenn sich ihre Zufuhr schwerer erweitern lässt als die Linie mit {{item_2313_1}}."
+    },
+    {
+      "id": "f.top.p.005",
+      "sourceHash": "237a576c82869b0349cf502c6b11c61cc6918073d57fadde2f21d6eb67b23a3e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die Baukarten bleiben Ausgangsmodelle ohne Proliferation. Ihre Produktionswege gelten weiterhin. Proliferation verändert die erzielbare Kapazität, nicht die Reihenfolge der Zutaten."
+    },
+    {
+      "id": "f.top.h2.004",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zur Hauptroute zurückkehren, wenn"
+    },
+    {
+      "id": "f.top.p.006",
+      "sourceHash": "f95682c70f83be3a5f74349910e7bba43b74138bf8761337e95730a1d6c37dc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Sobald der gewählte Engpass entschärft ist, besprühe nicht allein deshalb weitere Produktgruppen, weil ein Band in der Nähe vorbeiführt."
+    },
+    {
+      "id": "f.ref-pile-sorter.h1.001",
+      "sourceHash": "c868b24b03e767aa66e3f9887348bdbb44ef7d9643a6ab6d98d810d12d6c935e",
+      "termHash": "644bf1fda4aeb31423e6615f09307adf1a3bb87662f60813251d8f4b2398e572",
+      "text": "[{{item_2014_1}}] — Integrierte Logistik"
+    },
+    {
+      "id": "f.top.h2.005",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zweck"
+    },
+    {
+      "id": "f.top.p.007",
+      "sourceHash": "4a1906b1c544a9a91913d5ef444cdd792c7f1230aef2c4c5f82d7b85800cec44",
+      "termHash": "644bf1fda4aeb31423e6615f09307adf1a3bb87662f60813251d8f4b2398e572",
+      "text": "Gleiche Fracht so schnell transportieren und stapeln, dass Bänder und Maschinenanschlüsse nicht mehr bremsen. Ein {{item_2014_1}} verbessert den Transport, verkürzt aber nicht das Rezept in der Maschine."
+    },
+    {
+      "id": "f.top.h2.006",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nutzen, wenn"
+    },
+    {
+      "id": "f.top.li.001",
+      "sourceHash": "a1198416bf34a9605f23ae008ac1f12b519deb61a6fe3699b358d12bc06db89a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "dichte Blöcke an ihren Anschlüssen unterversorgt oder blockiert sind, obwohl die Produktionsmaschinen ausreichen;"
+    },
+    {
+      "id": "f.top.li.002",
+      "sourceHash": "63f766534f144bc58002c67bcb0d9c5d60f1ddb17f7526bc30c8924d1e95f751",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Stapelung nützliche Bandkapazität zurückgewinnen würde;"
+    },
+    {
+      "id": "f.top.li.003",
+      "sourceHash": "6665788cedaddc6d9112b579f5d48fac921bc4f33229a0e1457874d882f4d4dc",
+      "termHash": "08a758c48236f4ccb94e518faa839646b3e6f5ce3f587164cd58576100d5160c",
+      "text": "ein Kreislauf mit hohem Durchsatz, etwa mit einem {{item_2314_1}}, von dichter gepackter Fracht desselben Typs profitiert."
+    },
+    {
+      "id": "f.top.h2.007",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Vorgehen"
+    },
+    {
+      "id": "f.top.p.008",
+      "sourceHash": "e20677173d47ab6b34bf64c7b73374deda877d0515cd2005d28b2496d84170c7",
+      "termHash": "644bf1fda4aeb31423e6615f09307adf1a3bb87662f60813251d8f4b2398e572",
+      "text": "Setze den {{item_2014_1}} dort ein, wo gemessene Einsetzleistung oder Banddurchsatz begrenzen. Er stapelt nur gleiche Gegenstände, keine Mischfracht. Heb dir Ideen für Mischbänder deshalb für geeignetere Stellen auf."
+    },
+    {
+      "id": "f.top.h2.008",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zur Hauptroute zurückkehren, wenn"
+    },
+    {
+      "id": "f.top.p.009",
+      "sourceHash": "2a57c1cc9e680529340b897eacb4f30ae7a1e51081edd7e88d3ca4aaea5acde7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Sobald der Warentransport die Linie nicht mehr bremst, lass die Maschinen unverändert und setze den Fortschritt fort."
+    },
+    {
+      "id": "f.ref-gas-giant.h1.001",
+      "sourceHash": "07b1e33ea4a3c4c5fba41a2dd072279e145228831bfcfd803f3420c779e1b43c",
+      "termHash": "7bf5d3d1eba7f0cfe2d5c1ca8d42fc5b348b9873121cd6d55cf5b2536d2ece39",
+      "text": "[GASRIESE] — {{item_2105_1}}"
+    },
+    {
+      "id": "f.top.h2.009",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zweck"
+    },
+    {
+      "id": "f.top.p.010",
+      "sourceHash": "0ac0009603a5b43abb55b84b274dfe54a31677ce2ecc02d37c9a97911321bbf7",
+      "termHash": "76b29bb7c56aedc604ccea3ff4cd8f66ed49bf307b0787cf1c4dba6631519b31",
+      "text": "Nutze den {{item_2105_1}}, wenn die lokale Herstellung ausreichender Mengen {{item_1120_1}}, {{item_1121_1}} oder {{item_1011_1}} mehr Mühe macht, als sie wert ist."
+    },
+    {
+      "id": "f.top.h2.010",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nutzen, wenn"
+    },
+    {
+      "id": "f.top.li.004",
+      "sourceHash": "ae03e1ecf54106f369325cd3f94b2e06c15834ff00e583f9903de43e0cc1cb8f",
+      "termHash": "c4297ad9281874bde9f5653bfadfb8f6510b8c676e9dcba57214631c71b14dec",
+      "text": "{{item_1120_1}} die Casimir- oder grüne Produktion tatsächlich bremst;"
+    },
+    {
+      "id": "f.top.li.005",
+      "sourceHash": "ce69edb12552cc544c377c2f0cd495c5777e3abcfe497fa3221a622615c7bf27",
+      "termHash": "0d4a87623c056dd9a5cae377cf7e96a7e64b4c49b8a4de04a34dfde0b122d466",
+      "text": "genügend {{item_1121_1}} vor Ort herzustellen zu viel Fabrikfläche beansprucht;"
+    },
+    {
+      "id": "f.top.li.006",
+      "sourceHash": "727b73f51cb9c48869920fe74b877ebbeb37be1210afb0fa49b7af7532908ec4",
+      "termHash": "29e853be5917eb67abaa8622d76026c6030ad46462fef28d4edf744a9c71614e",
+      "text": "{{item_1011_1}} die Produktion von {{item_1123_1}} merklich vereinfachen würde;"
+    },
+    {
+      "id": "f.top.li.007",
+      "sourceHash": "bfa025f4cad36f2a596ad5d18e8afa6750cb3728e3bec434becf41997bb931e7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "ein tatsächlich erreichbarer Gasriese den Rohstoff mit nützlicher Rate liefert."
+    },
+    {
+      "id": "f.top.h2.011",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Vorgehen"
+    },
+    {
+      "id": "f.top.p.011",
+      "sourceHash": "2ad14894787ca1179367e2d1803f4d43514e1bdb2d71b0fad383ee440f03e5bf",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Prüfe die angegebenen Rohstoffe und Sammelraten des Riesen, bevor du die Ausrüstung einsetzt. Jeder Kollektor sammelt seine angezeigten Rohstoffe unabhängig. Adernutzung verbessert die Förderung mit der Zeit."
+    },
+    {
+      "id": "f.top.p.012",
+      "sourceHash": "d4e194bc9052bca4d09facba5dd30e70d13a7cc1ae29187d7025e53e8f57d2da",
+      "termHash": "fd5b0fb431aedad788122c989f52d3a6ee5e7bdc268b164d29aebb882eadada2",
+      "text": "Gib an der verbrauchenden Fabrik lokal als Nebenprodukt anfallendem {{item_1120_1}} Vorrang und nutze den {{item_2105_1}} als Reserveversorgung. Ein einfaches Muster sind zwei Empfangswege: einer für Nebenprodukte aus {{item_2308_1}}, {{item_1011_1}} und {{item_1122_1}}, der andere für einen Import mit freigegebenen Kollektoren. Führe ihre Bänder zusammen und priorisiere den Nebenprodukteingang. ILS-Prioritätspaare oder -gruppen können dieselbe Bevorzugung planetenübergreifend durchsetzen. Halte bei jeder Methode den Nebenproduktausgang sichtbar, damit ein voller Behälter nicht unbemerkt eine andere Linie blockiert."
+    },
+    {
+      "id": "f.top.div.001",
+      "sourceHash": "2fe6e4659995cd0304ac9e51340050bfda863c2e3706241ed53cb9f6a46cfc73",
+      "termHash": "c4297ad9281874bde9f5653bfadfb8f6510b8c676e9dcba57214631c71b14dec",
+      "text": "{{strong_1}}⚠ Ein volles Gaslager bedeutet nicht immer Überfluss.{{end_strong_1}} Importierter {{item_1120_1}} kann ein blockiertes lokales Nebenprodukt verdecken. Prüfe, welche Quelle das Ziel füllt, bevor du die Sammlung erweiterst."
+    },
+    {
+      "id": "f.top.h2.012",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zur Hauptroute zurückkehren, wenn"
+    },
+    {
+      "id": "f.top.p.013",
+      "sourceHash": "fc793a3f37ec61b704edfe1e03bf617672639872360c4af741cadd449da5e343",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Sobald die Gasversorgung die grüne oder spätere Produktion nicht mehr bremst, kehre zur Hauptroute zurück."
+    },
+    {
+      "id": "f.ref-power.h1.001",
+      "sourceHash": "717e41f7607f75db2b693670a9e2577e3fc0cc18c57abc8a38238b56a4c1980d",
+      "termHash": "1d8aaca905d997c8730bf2576046faeb4fd5aab3cf6e15b5ad0f0bb28361a4c7",
+      "text": "[INTERSTELLARE ENERGIE] — {{item_2209_1}} und Transport mit {{item_2206_1}}"
+    },
+    {
+      "id": "f.top.h2.013",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zweck"
+    },
+    {
+      "id": "f.top.p.014",
+      "sourceHash": "7f4466417ef3bfa1a58629809ac934016d892cbcbd20d8a3d12fe9dd19a73239",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nutze diesen Weg, wenn eine Welt Strom übrig hat und eine andere leichter per Logistik als über eine eigene Brennstoffkette versorgt werden kann."
+    },
+    {
+      "id": "f.top.h2.014",
+      "sourceHash": "a54f7f1581d1e084a5b240158c6c5228d58509a3b11c0ee55937976894b09869",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Den Kreislauf bauen"
+    },
+    {
+      "id": "f.top.li.008",
+      "sourceHash": "0a7d907c72e0c0735c362e9546e650b02fe9f501f6f13274440710245a6dca41",
+      "termHash": "91e6d924874690085d38ff0321d8b4aeac6450c9d86a2472f78f18c040863a40",
+      "text": "Führe auf der Erzeugerwelt leere Exemplare vom Typ {{item_2206_1}} zu Geräten vom Typ {{item_2209_1}}, die auf Laden eingestellt sind."
+    },
+    {
+      "id": "f.top.li.009",
+      "sourceHash": "25782d13bfd3ba52b77c955196c687a9ec10a2b810a76320ffd08ca69ed4de37",
+      "termHash": "30abcaf4348d3b5667a2458d70692ac5f2abcb3fa3d573a8e25782fa57e5cff6",
+      "text": "Exportiere das Produkt {{item_2207_1}} über ILS."
+    },
+    {
+      "id": "f.top.li.010",
+      "sourceHash": "517822a734c7a9c73bc2145b7011b41d6ef85a4419585f044c032432c141e21d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Führe sie auf der fernen Welt durch Energietauscher, die auf Entladen eingestellt sind."
+    },
+    {
+      "id": "f.top.li.011",
+      "sourceHash": "0137098cb7a7fb7a976004ff2300f5a23cd9fbbc9fadd3a54b703bb6284a9a67",
+      "termHash": "cf689304d9fb7e63bd672c796424d53719b2ed1b3d5910fad3fb4beb86abe569",
+      "text": "Schicke die leeren Exemplare vom Typ {{item_2206_1}} über einen zweiten Logistik-Warenplatz zurück, damit derselbe Bestand weiter zirkuliert."
+    },
+    {
+      "id": "f.top.div.002",
+      "sourceHash": "a53d1c81783dcb25a807b4fee6b505e14ee454709f5df2b02581f37ed6190d12",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ Entladen hat Vorrang im Stromnetz.{{end_strong_1}} Ein entladender Energietauscher kann importierte Energie verbrauchen, obwohl lokale Generatoren die Last decken könnten. Wenn das Ziel angelieferte Energie mit lokaler Erzeugung kombiniert, ergänze die Entladegruppe um eine gleich große Ladegruppe. Überschüssige Entladung füllt sofort leere Akkumulatoren. Nur der tatsächliche Fehlbedarf des lokalen Netzes verbraucht dann die importierte Ladung."
+    },
+    {
+      "id": "f.top.p.015",
+      "sourceHash": "b322c23ebd0baceb0d439f12782c1006805f2b5fbf10fb0ba2ac0deabf43788a",
+      "termHash": "cf689304d9fb7e63bd672c796424d53719b2ed1b3d5910fad3fb4beb86abe569",
+      "text": "Der Rücktransport leerer Akkumulatoren ist Teil des Kraftwerks, keine Aufräumarbeit. Gib Rückläufern auf der Ladewelt Vorrang vor neu hergestellten Exemplaren vom Typ {{item_2206_1}}. Ist eine Richtung voll oder unterversorgt, kommt der Kreislauf irgendwann zum Stillstand, auch wenn beide Planeten noch gut bevorratet aussehen."
+    },
+    {
+      "id": "f.top.h2.015",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nutzen, wenn"
+    },
+    {
+      "id": "f.top.li.012",
+      "sourceHash": "f343264688127afa19276280cf64975de6a5a7dad94ab5562ea259eaf5fbd34e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "eine ferne Bergbauwelt schlechte Möglichkeiten zur eigenen Stromversorgung hat;"
+    },
+    {
+      "id": "f.top.li.013",
+      "sourceHash": "2ce35ccd4178a144a8a224c690ed5e1b8a6effa8482bcb0190bfe84a07b04310",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "bereits reichlich zentrale Erzeugung vorhanden ist;"
+    },
+    {
+      "id": "f.top.li.014",
+      "sourceHash": "69515f13b869dcee9d7d53e1cf158e4c3b96db40eef1c067bd7ba4cff1ae9eac",
+      "termHash": "cf689304d9fb7e63bd672c796424d53719b2ed1b3d5910fad3fb4beb86abe569",
+      "text": "der Hin- und Rücktransport von Akkumulatoren des Typs {{item_2206_1}} einfacher ist als Brennstofflieferung und Generatorbetrieb."
+    },
+    {
+      "id": "f.top.h2.016",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zur Hauptroute zurückkehren, wenn"
+    },
+    {
+      "id": "f.top.p.016",
+      "sourceHash": "f6fe4115be5f26ae0a5d968e8fa042fee14f42d14414cba61a283c5062dacce7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wähle das einfachere System für den tatsächlichen Planeten. Ein paar lokale Generatoren können besser sein als ein eleganter interstellarer Akkutausch, den niemand gebraucht hat."
+    },
+    {
+      "id": "f.ref-mining.h1.001",
+      "sourceHash": "0ae54c990d7a2ea9072f8244e6eeed199a78d278eeda0bda2091bd348fcf1da1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "[FORTGESCHRITTENER BERGBAU] — Große Fördernetze auf fernen Welten"
+    },
+    {
+      "id": "f.top.h2.017",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zweck"
+    },
+    {
+      "id": "f.top.p.017",
+      "sourceHash": "4ca47a714d91bcab3a1dd60a6b24938816596b1c83b3ac22b78d9816903a62cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Große Bergbaunetze über mehrere Welten schneller und weniger mühsam aufbauen."
+    },
+    {
+      "id": "f.top.h2.018",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nutzen, wenn"
+    },
+    {
+      "id": "f.top.li.015",
+      "sourceHash": "76018502174041ebb992a3432f9a94852c500dd155e51cd50215001a9d445c5a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "bereits viele ferne Bergbauwelten betrieben werden;"
+    },
+    {
+      "id": "f.top.li.016",
+      "sourceHash": "d28bbae85220c984335bb2539e9dc58140953df6f70ad63287706d5ae485529f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "das Platzieren einzelner Bergbaumaschinen und Sammelbänder den Außenpostenbau zeitlich dominiert;"
+    },
+    {
+      "id": "f.top.li.017",
+      "sourceHash": "6f4b066509859d07f7e81ff1251c30d9cca1d9942eda7e90eba0bd43e7952ec3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Fördernetze mit ILS bereits ausgereift sind."
+    },
+    {
+      "id": "f.top.h2.019",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Vorgehen"
+    },
+    {
+      "id": "f.top.p.018",
+      "sourceHash": "900d14c1faf10f4769c1a602fd1af8d0aba496cb04b46f58027837cc8aa807c2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betrachte das als Komfortverbesserung für eine Fabrik, die sich bereits über viele Welten erstreckt, nicht als Anlass, dich zu früh auszubreiten."
+    },
+    {
+      "id": "f.top.p.019",
+      "sourceHash": "32b910570a9caf3915263fe45d4b9ad90ad902dc4aa890724fa790a702795bd0",
+      "termHash": "ba21a855c05439f87d8b89d4518bf769a6ad6358f991d45634c7709b52a30541",
+      "text": "Für einen effizienten Durchlauf bis „{{tech_1508_1}}“ ist es nicht erforderlich."
+    },
+    {
+      "id": "f.top.h2.020",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zur Hauptroute zurückkehren, wenn"
+    },
+    {
+      "id": "f.top.p.020",
+      "sourceHash": "a38d7b154b1cd2c828e4140f7d70f7a67c3daf4d4b95467a2e55e139b44f329e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wenn Bergbau den Ausbau nicht mehr bremst, kümmere dich um das Produktions- oder Logistikproblem, das es tatsächlich tut."
+    },
+    {
+      "id": "f.top.attr.002.alt",
+      "sourceHash": "f5e071eb18aa1aa949236fdef831492642f7c4688715ddbac93c859f83d13793",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Dyson Sphere Program"
+    },
+    {
+      "id": "f.ref-tools.h1.001",
+      "sourceHash": "98e4ae6f6a2cebedfc0694aab585b0ff215a99911a6a6c809807d873b03d4b3d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Externe Werkzeuge und Communitys"
+    },
+    {
+      "id": "f.top.p.021",
+      "sourceHash": "9c96d3a0dcbd0172abeab702689281bfe006b1ac1e42433802eb7228a35cc6c4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die Route ist absichtlich in sich geschlossen. Diese Angebote sind trotzdem nützlich, wenn du Blaupausen, einen Rechner, Mods oder Leute suchst, die deine nächste verrückte Idee schon gebaut haben."
+    },
+    {
+      "id": "f.top.li.018",
+      "sourceHash": "73e881a16afc29be32ff103faf13be9e47b4c03af537edc3884501b5545ed4d7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Dyson Sphere Blueprints{{end_a_1}} — die zentrale öffentliche Blaupausenbörse."
+    },
+    {
+      "id": "f.top.li.019",
+      "sourceHash": "1de332ca778872758107861e0ec02e1b6a86cc0690a329a16b0badfbfba0585b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Nilaus DSP blueprints{{end_a_1}} — eine kuratierte Sammlung, deren ältere Entwürfe aus früheren Spielversionen stammen können."
+    },
+    {
+      "id": "f.top.li.020",
+      "sourceHash": "b49a07b18694818a5e15b636908c369ff0c48a3bac440c70789e8465063a5d7e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}FactorioLab for DSP{{end_a_1}} — Planung von Produktionsketten und Raten."
+    },
+    {
+      "id": "f.top.li.021",
+      "sourceHash": "5b610e251401b951c1bb5401ed8ba87c126cea9f02f2520415ba3830d081eedb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Thunderstore DSP mods{{end_a_1}} — der aktuelle öffentliche Modkatalog."
+    },
+    {
+      "id": "f.top.li.022",
+      "sourceHash": "f86115548adc9037e993c3313349780aa551737acc2188d435e4e3b75defd068",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Official DSP Discord{{end_a_1}} — Diskussionen, Blaupausen und aktuelles Wissen der Spielerschaft."
+    },
+    {
+      "id": "f.top.div.003",
+      "sourceHash": "1219e7c49f2c69c2a28b9874078183428c936bc9218095c820edb21a39cf5fd9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ Vor dem Einfügen prüfen.{{end_strong_1}} Prüfe Spielversion, benötigte Technologien und Verbesserungen, Breitengradannahmen, seltene Rezepte, Proliferation und ob eine Dyson-Blaupause eine einzelne Ebene oder einen vollständigen Entwurf enthält. Eine schöne alte Blaupause kann ein sehr effizienter Weg sein, das veraltete Problem eines anderen zu importieren."
+    },
+    {
+      "id": "f.ref-checklist.h1.001",
+      "sourceHash": "5f4d35ac59c6762d418e44492637ba7fcbce900560cc3d79154595e19041f262",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kompakte Checkliste der Standardroute"
+    },
+    {
+      "id": "f.top.h2.021",
+      "sourceHash": "268caa296349283482325e8f9ef2f68c406eeb9653ad75c15ca039c330b6c8ee",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[BLAU]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.023",
+      "sourceHash": "9c0ad21e65f01fa5625fa78c41a846b19d8a186c99341d2a14e0db0028f2fabb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Eisen, Kupfer, Magnetspulen und Leiterplatten treffen kontinuierlich ein {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.024",
+      "sourceHash": "7f7ab6295af803551555308043c9c44bfa5c55d0846bad1ab44aebe1e3075e0f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Fließbänder, Sorter, Bergbaumaschinen, Schmelzöfen, Montagemaschinen, Depot {{fact_1}}, Lagerbehälter, Windkraftwerke und Tesla-Türme werden automatisch nachgefüllt {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.025",
+      "sourceHash": "65d244499ae9bb87b8cb0f18dc7d728ef0a11f3c54071dba234782f214d90b69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Blaue Würfel werden kontinuierlich mit mindestens {{fact_1}} produziert {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.026",
+      "sourceHash": "3aaeaed19bce9e0fb9f12472d15aa244a57f92cf581bfd3cadeb07c5570dbd7d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Die Forschung läuft ohne manuelle Zufuhr weiter {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.027",
+      "sourceHash": "b2c19ca89c8990a440dd25d3c1d476d4627dcac88e7b5019cd0f7345a63c0547",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Das Netz stellt etwa {{fact_1}} für Mall, blaue Forschung und den kommenden Ölbezirk bereit {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.022",
+      "sourceHash": "aeaa47a50ef55170f5ed6da9394fbdd89dc92622399b27d158b735a58dc37d48",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[ROT]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.028",
+      "sourceHash": "1f15b94d316c6d2af39190869e5bac474d5289cbc8cfbc3b246765c83436667f",
+      "termHash": "939f7be5740627d349e8ef30d21abff724767289521e6dbdbdf9c519d4376391",
+      "text": "{{label_1}} {{input_1}}Zwei Labore vom Typ {{item_2901_1}} erzeugen dauerhaft {{item_6002_1}} mit {{fact_1}}{{fact_2}}, während {{item_1120_1}} und {{item_1114_1}} weiter aus den Raffinerien abfließen {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.023",
+      "sourceHash": "0a7b775c6199305f6dd8ce045e627632a7a2b4f6a4036330ec67ecc66cacdc4f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[ILS]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.029",
+      "sourceHash": "b422144e9158c1414e52c9803a3ef1f6b6c81b304de66fd84e6d73cf917cd7d6",
+      "termHash": "c4fe313cdb67b34d26757dd55441c272f615aa171146d71a2179cd3c31159f1c",
+      "text": "{{label_1}} {{input_1}}Zwei ILS und fünf Schiffe vom Typ {{item_5002_1}} sind im Einsatz {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.030",
+      "sourceHash": "827a8db26d3445c8bc1b1d21dcbbdb1863277329fc7711d365fa95f86cdf5d61",
+      "termHash": "3d66890f68e6c0457e4846a931a376b86f1a1d7199591f73bcec3d7933ee4fa0",
+      "text": "{{label_1}} {{input_1}}{{item_1106_1}} und {{item_1105_1}} kommen ohne Icarus zu Hause an {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.024",
+      "sourceHash": "8622e13a0e16fad1f03cb5ae5483e589de0e6512dcdfb92954aca97870b30a22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[GELB]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.031",
+      "sourceHash": "f35da36749dafca6ac6d6ecafbad304d522557b79d755dd4bee94fd1c976eb80",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Drei Labore produzieren durchgehend gelbe Würfel {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.025",
+      "sourceHash": "2113ec2853d3ee84978884f4e5f528a99c8da2780000b44027dbfe784487f685",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[VIOLETT]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.032",
+      "sourceHash": "d1af4e76d4a0dbb47c28b87432548e2c90fb202be8b0aded2965680678b516f6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Drei Labore produzieren durchgehend violette Würfel {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.026",
+      "sourceHash": "59cdbb807cedea504baf4dc5cf493dba1d48b970763575c14d1cff1a8e371a50",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[GRÜN]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.033",
+      "sourceHash": "43090effe2b7096d44b1231fe35a9adb8bf0a30f5691a596a2baa6fe4d426d8a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Zwei Labore produzieren durchgehend grüne Würfel {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.034",
+      "sourceHash": "f3c067574b054fa396c65312b8c888cecab820ee32deb0ea976f082a044a66d7",
+      "termHash": "35ed47abde271fba9dfe9736bae25fef3d0a78e1dac075dd565ab8ececc4f7a9",
+      "text": "{{label_1}} {{input_1}}Für {{item_1305_1}} und {{item_1209_1}} ist jeweils ein sichtbares Lager vorhanden {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.027",
+      "sourceHash": "5979b6bd7879b73ec99b3bcb9b79bc690639980b6ede5c53f69d8ef68f77a624",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[DYSON]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.035",
+      "sourceHash": "390e7d7aac1320da81c32376ab3f7860f668e4d483ef6033d5c1c1cd66f6d3fa",
+      "termHash": "8e751bd106cfd8495b15d0815bcb2e8485f5d08dc87b8597397bf482f445cff5",
+      "text": "{{label_1}} {{input_1}}Die zur gewählten Route gehörende Linie für {{item_1501_1}} ist automatisiert und läuft {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.036",
+      "sourceHash": "2d81e054ed98739a4b7069f08fbaba62653acb2c5bd831a2887d2b19d3133a56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Die Startinfrastruktur mit EM-Werfern ist automatisiert und läuft {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.037",
+      "sourceHash": "c54b49aa744dda5d9159df0e02b6306b0990cd7583808e3db9666807a20c614a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Die aktuelle Dyson-Erzeugung ist nützlich genug, um zum Receiver-Übergang weiterzugehen {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.028",
+      "sourceHash": "b91c50167c69217c6bf78dc71eefd38b34e03b6a208bb87ca5e0a087ead21311",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}[DYSON {{fact_1}} PHOTON]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.038",
+      "sourceHash": "d97ac86497de2a1a89e671bdb539f7807fd5c0c6dcd8113aece2453dff460526",
+      "termHash": "44b5716f7bf0fd7cbd835caf7518fe564c5e9c655771d9047e6fc3d310ca6aa6",
+      "text": "{{label_1}} {{input_1}}Das Produkt {{item_1208_1}} wird zuverlässig in {{item_1122_1}} umgewandelt, und diese Antimaterie erreicht ohne Icarus den Forschungsbezirk {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.029",
+      "sourceHash": "53bd4b5a8ed531140ab5d99f6986f0320562bf7f854ce6bf7f13d140d61a6865",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[PHOTON]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.039",
+      "sourceHash": "5b36c01d25c06996a96db304d3df9585f3f18355e2e057a71cae7b4da2d1c833",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{label_1}} {{input_1}}Blau, Rot, Gelb, Violett, Grün und {{item_1122_1}} erreichen jeweils dauerhaft mindestens {{fact_1}} {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.040",
+      "sourceHash": "47b97941c2b339b61bb629e1af49430f1242258e0a70384b6562937530faed5a",
+      "termHash": "07dd4024b8bfc9f2aae1cc340125005f3a208eaf98564b9c982f0c9e9e503443",
+      "text": "{{label_1}} {{input_1}}Mindestens {{fact_1}} Einheiten {{item_1122_1}} sind gelagert {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.030",
+      "sourceHash": "acb73f34741052018f27328dbbc44d56ed6fbb30b97cecf0fc3d8227d598ea5d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[WEISS]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.041",
+      "sourceHash": "2e55b59399c0aa64f08af64b0547d99ec5495d089ff53c8e80b73eae1fed51c6",
+      "termHash": "5083c9e4b8a409edd6e3ce069b3783f8067a1e8889e1eb7303bfa536449dd5c9",
+      "text": "{{input_1}}{{span_1}}{{tech_1507_1}}{{label_1}} ist vollständig erforscht {{end_label_1}}{{end_span_1}}"
+    },
+    {
+      "id": "f.top.li.042",
+      "sourceHash": "12f56e24d621083c593935a22c3069aa191ebf959c5782cedca8d1e14ec922a8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Alle sechs Zutaten erreichen die weißen Labore kontinuierlich {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.043",
+      "sourceHash": "44495754e01b44ca51e703535a59eac3260278a630d065e08be3cd1a18fbd2f8",
+      "termHash": "2bc95f25583651d3f9a69a919af08d1a0c04f8372f3cbfa60cd5a713e3592ca1",
+      "text": "{{label_1}} {{input_1}}Zehn Labore vom Typ {{item_2901_1}} produzieren {{item_6006_1}} dauerhaft mit {{fact_1}}{{fact_2}} {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.044",
+      "sourceHash": "d5285a98c06e4f74a3b44ece29b5ba4bc8fc85621b3ae958fe79ad1b86eae12b",
+      "termHash": "6461a2f794f6df446b6be68ae2ee7df3625ace0add8345b8558943d2bd203b9e",
+      "text": "{{label_1}} {{input_1}}„Mission abgeschlossen!“ verbraucht {{fact_1}} Würfel des Typs {{item_6006_1}} oder hat sie bereits verbraucht {{end_label_1}}"
+    },
+    {
+      "id": "f.checklist-optional-capabilities.h2.001",
+      "sourceHash": "6604f6dace8a77ca3e16ef0ec213e9c57a218f6deb36de419706daba20f4f6ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Optionale Erweiterungen"
+    },
+    {
+      "id": "f.top.h2.031",
+      "sourceHash": "f5ee0ddf1a0a74b923125fd2c4c04e7aaf30c13089b886e95a2d0739245740c9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[WARP]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.045",
+      "sourceHash": "4a88b6825c8e33f0ac576dbd9a8f091e18d8b8531dba4a9fe50ded7588420bdb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Mech-Warp ist verfügbar, wenn persönliche Erkundung oder manueller Transport sinnvoll ist {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.046",
+      "sourceHash": "7477299c48c16fb2767f2f64b050fc962576982adf36b096c81e713c65a46781",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Frachtschiff-Warp ist verfügbar, wenn eine interstellare ILS-Route unbeaufsichtigt laufen soll {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.047",
+      "sourceHash": "351911d98615f3442aff2ed2ff55b15e10ec9c0041a751698b71ac0131bbcd56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Für jeden importierten seltenen Rohstoff steht fest, welche Standardkette er ersetzt {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.048",
+      "sourceHash": "04fb7bfc79fdd54f8373a3f227fcb794e18b7999c40172f88ec24eb6c6cc31df",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Ein Warperpuffer aus grünen Würfeln versorgt das ILS-Netz, sobald regelmäßige Reisen beginnen {{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.032",
+      "sourceHash": "67d3e6b6464acdf57b1f6c38ff5aa0dc666b8e0b25bbbf96b8ede6b0d653ad92",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[LOGISTIK]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.049",
+      "sourceHash": "d50c856208ad4094afb74e57308071e6a78474953e682e043b60bd24852c1d45",
+      "termHash": "ab2ed17b116361cd8d781c71bfffd4035d3c6a919cb44b3d44c5a99630b67909",
+      "text": "{{label_1}} {{input_1}}Geräte vom Typ {{item_2107_1}} und Bots füllen begrenzte Puffer nach {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.050",
+      "sourceHash": "65555ae3eb681ac2598a42201eac97d7db53ffde5ab595e7973c3413fe7b6a56",
+      "termHash": "f0f79c4d6aaea0c204165ecfdeaf871b8fddc44311ab27584f2c8287e73af2e4",
+      "text": "{{label_1}} {{input_1}}PLS und Drohnen vom Typ {{item_5001_1}} füllen begrenzte Puffer nach {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.051",
+      "sourceHash": "a97eb2de888bc341cf8fa136437696a5ee296e7005da56a04c071f3f93d450cd",
+      "termHash": "c4fe313cdb67b34d26757dd55441c272f615aa171146d71a2179cd3c31159f1c",
+      "text": "{{label_1}} {{input_1}}ILS und Schiffe vom Typ {{item_5002_1}} füllen begrenzte Puffer nach {{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.052",
+      "sourceHash": "9d726cbbb508a11276af16903d340153e1a2ea3b06e39f2f75d260437c05d826",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Die Einstellungen Anbieter, Abnehmer, Lager, Lokal und Fern sind auf einen Blick verständlich {{end_label_1}}"
+    },
+    {
+      "id": "f.ref-troubleshoot.h1.001",
+      "sourceHash": "7df4aa47910f337e48cad90470eae5c7350ea45da63bec940494c784fd9879be",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wenn du nicht weißt, woran es liegt"
+    },
+    {
+      "id": "f.top.p.022",
+      "sourceHash": "a9c2a99fc791bc374522a59600e8fc6b86cb121db6cfb011071facfbcfae8804",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wenn die Fabrik keinen Sinn mehr ergibt, widerstehe dem Drang, sie nach Gefühl umzubauen. Stelle diese Fragen der Reihe nach:"
+    },
+    {
+      "id": "f.top.p.023",
+      "sourceHash": "1e15e5664628abbc611da9043d1e6273b8c05d6cde6932506ab6eda0221f0250",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Kann ich die Technologie erforschen?{{end_strong_1}}{{br_1}} Falls nicht, prüfe, welche frühere Technologie noch fehlt."
+    },
+    {
+      "id": "f.top.p.024",
+      "sourceHash": "1f83140cd4f84aa7c0781903a9fc724b7b8c774cb007bcd0e59f748ef4e875a6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Kann ich das Rezept umsetzen oder die Maschine bauen?{{end_strong_1}}{{br_1}} Falls nicht, prüfe, ob eine weitere Technologie oder die tatsächlich benötigte Produktionsmaschine fehlt."
+    },
+    {
+      "id": "f.top.p.025",
+      "sourceHash": "f4d4fdade414c9c0ecae25eb855024f6b99c2860bafead75fae0827350a8ba43",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Kann ich alle benötigten Materialien dauerhaft liefern?{{end_strong_1}}{{br_1}} Falls nicht, suche den Stoff, den du noch nicht zuverlässig abbauen, herstellen oder importieren kannst."
+    },
+    {
+      "id": "f.top.p.026",
+      "sourceHash": "e821a3c1a1392bf5650f8827b955a1edfac54d8cb50b7f03811346ac2a13f40c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hängt die Linie noch davon ab, dass ich Material trage oder von Hand einfülle?{{end_strong_1}}{{br_1}} Falls ja, automatisiere den fehlenden Transport- oder Lagerschritt."
+    },
+    {
+      "id": "f.top.p.027",
+      "sourceHash": "46374740d5c6cf0aaee62e0f06d997a773e2a16e0d25f1eced16fb52e8edaaec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Finde ich die erste Stelle, an der das Produkt nicht mehr weiterkommt?{{end_strong_1}}{{br_1}} Beginne mit dem benötigten Gegenstand und verfolge seine Produktion rückwärts. Suche die erste Maschine mit fehlender Zutat, vollem Ausgang, Strommangel oder einer nicht liefernden Transportverbindung. Nutze die {{a_1}}Anleitung zur Produktionsstatistik{{end_a_1}}, wenn die Fabrik für eine Sichtprüfung zu weit verteilt ist. Behebe dieses eine Problem, lass die Linie laufen und prüfe erneut."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.summary.001",
+      "sourceHash": "ba48a1a4880b3eb3dd399bc54a20acbc0e562492d8d5009e22da1bcd958dd5d5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzablauf — Einen Engpass mit der Produktionsstatistik finden"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.p.001",
+      "sourceHash": "429f68d13a2b05c1fdb4361c546be927e4e2df7103840444a51fccbaba627bc7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Beispiel:{{end_strong_1}} Die gelbe Forschung läuft und das Würfellager ist nicht voll, aber die Würfelproduktion ist langsamer geworden."
+    },
+    {
+      "id": "f.statistics-read-first.h3.001",
+      "sourceHash": "bf544e1deb06d6d37caaf0e755f17d253d4a3504c14d70cca12bd4844f9b381d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zuerst diese drei Werte lesen"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.th.001",
+      "sourceHash": "dad50dab57c3ac040474886bf7fb7fb2c81b7a754de55bed9e9e784c6685b0da",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wert"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.th.002",
+      "sourceHash": "2aebbfddfd6c9134f141ea8d8f23a1ab9b955df3e5d006fcce71c277478dd0dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bedeutung"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.001",
+      "sourceHash": "c081c96a4efa65ea56eae3865df309382bd2d2e411c005305688708201bc4d16",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Produktionsrate{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.002",
+      "sourceHash": "8a4a1bd7054f9008a84e332b325d7603c2797c73135778969cc4d41dd454053c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was im gewählten Zeitraum tatsächlich hergestellt wurde."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.003",
+      "sourceHash": "77d1fd80dec840d1e760d9481d403e1827df4c2fac1a2be0a665494fc81d8b1a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Referenzrate{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.004",
+      "sourceHash": "072c4412182d9701cf6f22d27026127e5467976fa52efa10dd148ebba66ad2fe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was die installierten, ans Stromnetz angeschlossenen Maschinen unter idealen Bedingungen herstellen könnten."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.005",
+      "sourceHash": "d149535ce648d7240eb5c56fe9f01547427602299826d9e2ced02235c4448210",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Lagerbestand{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.006",
+      "sourceHash": "706a25b1552668cccecd2af5d788c653a67d592a75d40e5d9a1063dabe8d01f0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ob die Produktion vielleicht nur angehalten hat, weil für die Ausgabe kein Platz mehr war."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.001",
+      "sourceHash": "d23db6f67918a3a8bdc8808608e07563b24da82ed0ab5264bad642c3668e8751",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — Die verlangsamte Ausgabe finden"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.001",
+      "sourceHash": "9c7315cf303448a42bdc33b27e584485ca2c7e32599367a044772de45a5a86a7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Drücke {{key_1}}, wähle {{strong_1}}Produktion{{end_strong_1}}, dann {{strong_2}}Lokaler Planet{{end_strong_2}} und {{strong_3}}{{fact_1}} Minute{{end_strong_3}}."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.002",
+      "sourceHash": "97f41b0ecc46319ed3d28f346ba2884867406c8415dbd35fbdc71d37587fc418",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Suche nach {{strong_1}}Strukturmatrix{{end_strong_1}}."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.003",
+      "sourceHash": "5bb2c508747dde46f08e51a2c0d2a3a59f7759c04b49fa7a1c070e06e873f5e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Vergleiche die {{strong_1}}Produktionsrate{{end_strong_1}} mit der {{strong_2}}Referenzrate{{end_strong_2}} für die Produktion."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.004",
+      "sourceHash": "bb32933e2810cf22715b1251fd355c9f24820f910e184dc5b51e6b5e089be194",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zeige vor der Fehlersuche auf {{strong_1}}Lagerbestand{{end_strong_1}}. Ein voller Ausgang bedeutet, dass die Linie wartet, nicht dass sie defekt ist."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.002",
+      "sourceHash": "8dbdf7cd93c985305ef5a12132a9a0fe1a1a7ef315dd5fbb754c8e5f0cd1f245",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — Die fehlende Zufuhr verfolgen"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.005",
+      "sourceHash": "f7fe1e9793cb9f167b19ef13e795896ac933b16e5f8005b81683d47ea1171ca7",
+      "termHash": "d708f3ab3d37e6ca8c9a22e24a2e711cd4bd91d1de97ab43f963aad51607c35d",
+      "text": "Wenn das Lager nicht voll ist und die Forschung Würfel verbraucht, klicke auf {{strong_1}}Produktionsstatistik der Rohstoffe{{end_strong_1}} und vergleiche {{item_1112_1}} mit {{item_1118_1}}."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.006",
+      "sourceHash": "61674e8467dd96d9ad06bd8fef883a59140faf5d0a3dd95e82e5f90bff90ccf4",
+      "termHash": "0c4c38d787f855d1b8c152d1e94c5a779a3cceae5efd9dad84f7f07e2cc22a32",
+      "text": "Verfolge eine schwache Zeile für {{item_1118_1}} einen Schritt zurück zu {{item_1117_1}} und {{item_1106_1}}."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.007",
+      "sourceHash": "61a50a1ef3e959b5f544cc0dd39ec02a3389a0e5390c2f2f2e7d4556173014ea",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "Beachte, dass der Heimatplanet {{item_1106_1}} importiert, statt das Material vor Ort herzustellen."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.008",
+      "sourceHash": "4c7da4cc3fc9a5c8a99a3a30bca93915a481a471ff0fa86a3e2e4aa0c46fa9a6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wechsle vom Heimatplaneten zum benannten Heimatsystem. Die Planetenansicht zählt Titan, das ihre Grenze überschreitet, als Import. Die Systemansicht schließt die Produktion auf dem Quellplaneten ein und behandelt Transporte zwischen den Planeten des Systems als intern."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.003",
+      "sourceHash": "d2437ba0ee9b42f9c004b41f66d181e813402a50473925ce1d84fb8783a38a32",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — Bestätigen und beheben"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.009",
+      "sourceHash": "bf87e0bccfbebaa85dabab97065b42a32a5675f4f687fd674aa94bc9099ca95c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wechsle zu {{strong_1}}{{fact_1}} Minuten{{end_strong_1}}, um zu prüfen, ob der Engpass über eine einzelne jüngste Lieferlücke hinaus anhält."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.010",
+      "sourceHash": "9289d0869d6bc1f4402e7501c1ad084641a2339359a53201defd7dbfe3bf7bf6",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "Verfolge die Produktionskette für {{item_1106_1}} weiter zurück oder prüfe die ILS-Route — je nachdem, was die Zeilen zeigen."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.011",
+      "sourceHash": "940d24475f65f845f06b10590e75eddf8c2355103b85c09c9f5f72f49791c29f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Behebe eine Ursache, lass die Route laufen und prüfe erneut."
+    },
+    {
+      "id": "f.statistics-panel-details.h3.001",
+      "sourceHash": "01c2e91abc79b3ea017eb75594d1f409d173d63d64b94912da0e8916080b1608",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Details des Statistikfensters"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.001",
+      "sourceHash": "e0b177860d1a14cbcc93dee2652519b81e73667e1dab572064f13620a9fb1706",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bereich"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.001",
+      "sourceHash": "ee98ca48fb6cc5776a046052e8c7b6f8145200e7a94bf9a99f7e5b4d85ccd801",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wähle {{strong_1}}Lokaler Planet{{end_strong_1}} für die Fabrik vor dir, ein benanntes {{strong_2}}Planetensystem{{end_strong_2}} für Arbeit über mehrere Planeten dieses Systems oder {{strong_3}}Gesamter Sternensektor{{end_strong_3}} erst später für den Blick auf die ganze Fabrik."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.002",
+      "sourceHash": "2f17d363ee3fbb9b2c3fd3b5e79f8b170838161c8d23475137cf128a75237aa2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zeiträume"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.002",
+      "sourceHash": "8c713847eedafce6e427fdcda7b15b0c77043dc8448a754f96bc47173db3e280",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nutze {{strong_1}}{{fact_1}} Minute{{end_strong_1}} für eine schnelle Reaktion auf die jüngste Entwicklung und {{strong_2}}{{fact_2}} Minuten{{end_strong_2}} für einen ruhigeren kurzfristigen Durchschnitt. Historische Zeiträume zeigen Mittelwerte pro Minute; {{strong_3}}Gesamt{{end_strong_3}} zeigt stattdessen aufsummierte Mengen."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.003",
+      "sourceHash": "29fb93d7304d429098d3b1258788da974484dd63c15de3362796884fd94d4348",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Warenzeilen"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.003",
+      "sourceHash": "e441ee0df54ec46a1c0cfd4d75f70ede4de714b66155c7ddb59671c2fe0e3110",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Jede Zeile enthält Produktion und Verbrauch mit getrennten Referenzraten, Import und Export, zugehörige Logistiklager, gesamten Lagerbestand, herumliegende Gegenstände, Verlaufsgrafik sowie direkte Navigation zu Rohstoffen und Produkten."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.004",
+      "sourceHash": "b2ddb67b4ea5c82f19141f084909e44342422f99200d5ee75a0ae5eb4cf04013",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Grenzen"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.004",
+      "sourceHash": "f22ed946f9da2b15c14e97f22418c6cbd06db03465110b307e9d10a41723ccb6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Importe und Exporte überschreiten die Grenze des gewählten Auswertungsbereichs. Sie sind von Produktion und Verbrauch innerhalb dieser Grenze zu unterscheiden."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.005",
+      "sourceHash": "162360372500f22c36442883a0753eebc926cfcf916bd7e477b58cbbebee41c6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Referenzrate"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.005",
+      "sourceHash": "b111f462c0ad4f68e1a29167051ce3059289c2a2c2905e03f4aa43ef582efa56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Das ist die konfigurierte Idealkapazität der relevanten, ans Stromnetz angeschlossenen Anlagen im gewählten Bereich. Berücksichtigt werden Rezepte, Maschinengeschwindigkeit, Proliferationsmodus, Forschungsmodifikatoren und relevante Anlageneigenschaften. Sie ist weder tatsächliche Ausgabe noch historischer Durchschnitt oder selbst gesetztes Ziel."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.006",
+      "sourceHash": "6e4d69ec4c394a6377ff1555be6e559c6dbde81ab6b3463c5367c9e8d5e770af",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Details per Mauszeiger"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.006",
+      "sourceHash": "e37edf21f48f5560c1cb00942ade7ecaa0ba03854ddb0a46af25e67aecec8875",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zeige auf die Referenzrate für ihre Aufschlüsselung nach Anlagen, auf den Lagerbestand für Lagerorte und auf die Verlaufsgrafik für den genauen Zeitraum samt Werten."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.007",
+      "sourceHash": "a175338865c95bc347e6d37e35a65dc3ce6efcbf31546927f71219fa902a1104",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Echtzeit"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.007",
+      "sourceHash": "821977536828b4f3d9c3f5b86766470efb29607fcec1803e88e1236af9f216a1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Klicke mit der rechten Maustaste auf einen der kreisförmigen Aktualisierungspfeile, um Referenzraten und aktuelle Bestandsaufnahmen laufend zu aktualisieren. Das ersetzt nicht den gewählten historischen Zeitraum und macht aus Produktion und Verbrauch keine Momentanraten."
+    },
+    {
+      "id": "f.production-statistics-walkthrough.p.002",
+      "sourceHash": "d527ae831064b2051d32455396ee30b8774c0f7b4e63a13b196ead028fc322c4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Was das Fenster belegt:{{end_strong_1}} Es zeigt die schwache Produktionsstufe. Eine Lücke zur Referenzrate allein beweist nicht, ob fehlende Zutaten, blockierte Ausgänge, Strommangel oder eine andere Betriebsgrenze die genaue Ursache sind. Prüfe die betroffene tatsächliche Fabriklinie, bevor du sie änderst."
+    },
+    {
+      "id": "f.top.p.028",
+      "sourceHash": "f5d0ebee35548ea230cb1c38f59a118e19674248fd5aaaa16c02fa650a76e6cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Behebe jeweils einen sichtbaren Stillstand. Eine ruhende Maschine mit bereits vollem Ausgang wartet, ist nicht defekt und braucht keinen Ausbau."
+    },
+    {
+      "id": "f.top.h1.001",
+      "sourceHash": "3168b05da204e1feac07d1733f7075ba10b4e691537c791caffd74fe29314e29",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Der weitere Weg gehört dir"
+    },
+    {
+      "id": "f.top.p.029",
+      "sourceHash": "ce08010012288a3505af29656eed467da32308513e5f586b5482f27e9a2e6efb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "„Mission abgeschlossen!“ bedeutet nicht, dass die Fabrik fertig ist. Es bedeutet, dass du weißt, wie du sie zum Abschluss führst."
+    },
+    {
+      "id": "f.top.p.030",
+      "sourceHash": "17fc23ee4ada4bfa33574cb38d064e2e93c6e697f829b1e504a112281c6ac473",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Du hast unter einer fremden Sonne begonnen, mit Icarus, einem Replikator und mehr Arbeit als Antworten. Jetzt hast du eine Fabrik über mehrere Planeten, fünf Würfellinien, die zur weißen Forschung zusammenkommen, ein funktionierendes Dyson-Projekt und Antimaterie, die ohne dich weitertransportiert wird."
+    },
+    {
+      "id": "f.top.p.031",
+      "sourceHash": "a27935790590422d7a1bab5ac2d50d280f4185341e680fdf2f221c4ad8737bad",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Vor allem hast du gelernt, Engpässe in Produktionslinien zu verwandeln, gekoppelte Ausgänge frei zu halten, Industrie über den Heimatplaneten hinaus aufzubauen, Energie zusammen mit dem Bedarf zu erweitern und ein stockendes Produkt bis zu seiner Ursache zurückzuverfolgen. Diese Fähigkeiten bleiben nützlich, lange nachdem Zahlen und Fabriklayouts dieses Leitfadens überholt sind."
+    },
+    {
+      "id": "f.top.p.032",
+      "sourceHash": "9f4c56f2aa54ce9371cddd24bc9c4f9b7e5791deb2d08655ba7488bfa7169ce0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Baue eine dauerhafte Sphäre, baue im ganzen Sternensektor weiter, setze höhere eigene Ziele oder beginne mit einem besseren Plan von vorn. Glückwunsch, Ingenieur. Dyson hinterließ die Anleitung; du hast den Weg gebaut."
     },
     {
       "id": "a.tech-sheet-title.h2.001",

@@ -118,6 +118,18 @@ Masse-Energiespeicher, not a literal translation of Photon Materialization.
 Source-owned numbers retain English separators; the German build-card assumptions
 explain that commas group thousands and points mark decimals.
 
+Other native labels verified read-only are Warp-Distanz, Warper benötigt,
+Min. Ladegewicht von Drohnen/Schiffen, Lokallager and Fernlager. The statistics
+walkthrough uses Produktion, Lokaler Planet, Planetensystem, Gesamter Sternensektor,
+Produktionsrate, Referenzrate, Lagerbestand, Produktionsstatistik der Rohstoffe
+and Gesamt. Proliferation modes are Zusatzprodukte and Produktionsbeschleunigung.
+The guide's shorter statistics heading Bereich describes scope without replacing
+any native control label. Use Abnehmer consistently for the receiver role and
+Rätselraten for guessing, to avoid ambiguity with production rates. Whole-edition
+review reconciled these terms, protected-name grammar, repeated messages and
+checklist conditions; all 1,537 German entries and eight UI strings are accepted
+privately through ML-21.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 

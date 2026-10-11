@@ -1,10 +1,10 @@
 # Roadmap — Phone Support and Localization
 
-**Status: ML-E4 in progress, 2026-10-11.**
-ML-01–20, ML-M1, ML-G2 and ML-M2 are agent-validated. The owner authorized
-ML-16–21 with validation, management updates and a commit/push per story to
-`main`, then a German-epic handoff. Japanese and public activation remain later
-work; all translations remain private.
+**Status: ML-E4 complete; stopped at ML-M3, 2026-10-11.**
+ML-01–21, ML-M1, ML-G2, ML-M2 and ML-M3 are agent-validated. The authorized
+German epic includes validation, management updates and a commit/push per story
+to `main`. See the [ML-M3 handoff](#ml-m3-handoff--2026-10-11). Japanese and
+public activation need later instructions; all translations remain private.
 
 **Outcome:** make the complete guide practical on phones, then offer equivalent
 English, Simplified Chinese, German, and Japanese editions without losing
@@ -438,6 +438,7 @@ the resulting hash and push outcome.
 | ML-18 — agent-validated | `node artifacts/ml-e4/catalog.mjs C`, `build-site.mjs artifacts/ml-e4/ML18-final-preview-accepted --preview de`, `artifacts/ml-e4/browser.mjs ML18-final C`, `build-site.mjs artifacts/ml-e4/ML18-final-release`, and both output validators passed. | 257/257 entries; 877 cumulative. Bilingual comparison and separate German review preserved upgrade caps and discard rules, three/three/two Labs, conditional expansion, optional detours, net Hydrogen consumption and Strange-Matter-first fuel priority. Revised import/stock grammar around protected singular names and aligned Gravitationswellen-Brechung with the native label. Three Chromium/WebKit/desktop cases covered 255 rendered nodes, all dashboards/cards and 200% text; screenshots reviewed. Source-owned number punctuation remains exact; the build-card assumptions now explain English thousands/decimal separators to German readers. English-only release passes; no source changes. | ML-19: DYSON, receiver bridge, PHOTON, WHITE and optional SPHERE; preserve power/photon/antimatter/completion distinctions. |
 | ML-19 — agent-validated | `node artifacts/ml-e4/catalog.mjs D`, `build-site.mjs artifacts/ml-e4/ML19-preview-accepted --preview de`, `artifacts/ml-e4/browser.mjs ML19 D`, `build-site.mjs artifacts/ml-e4/ML19-release`, and both output validators passed. | 228/228 entries; 1,105 cumulative. Bilingual and separate German review preserved reference swarm capacity, early PHOTON overlap, receiver warm-up/blocking, 40/min baseline, 2,000 Antimatter reserve, 4,000-cube completion and optional permanent structure. Corrected the instruction not to wait for the reserve before leaving DYSON, counted Antimatter units and protected-name grammar. Native read-only lookup confirms Aut. Umlaufbahn, Photonenerzeugung, Fortlaufender Empfang and the recipe Masse-Energiespeicher. Three Chromium/WebKit/desktop cases covered 227 rendered nodes, dashboards, bridge, cards and 200% text; screenshots reviewed. English-only release passes; no source edits or public activation. | ML-20: optional WARP and LOGISTICS, preserving departure checks, scout-first progression and replacement-stock boundaries. |
 | ML-20 — agent-validated | `node artifacts/ml-e4/catalog.mjs E`, `build-site.mjs artifacts/ml-e4/ML20-preview-accepted --preview de`, `artifacts/ml-e4/browser.mjs ML20 E`, `build-site.mjs artifacts/ml-e4/ML20-release`, and both output validators passed. | 250/250 entries; 1,355 cumulative. Bilingual and separate German review preserved eight rare-resource alternatives, optional departure, 20-Warper batch, return reserve, unpowered source/powered home fleet, two-Warper round trip, green-science protection, six limited hardware buffers and dispatch-station controls. Removed repeated native technology names, clarified recipe yield and distinguished stored energy from cargo. Native read-only labels confirm Warp-Distanz, Warper benötigt, Min. Ladegewicht and Lokal-/Fernlager. Three Chromium/WebKit/desktop cases covered 247 rendered nodes, expedition stages, tables, logistics cards and 200% text; screenshots reviewed. English-only release passes. | ML-21: remaining references, whole-edition consistency and completeness review, then full private German browser matrix and ML-M3 handoff. |
+| ML-21 — agent-validated; ML-M3 reached | `node artifacts/ml-e4/catalog.mjs F`, `edition.mjs`, the six source/localization/terminology/card/checklist/readability checks, ML21 preview and segment browser checks, full private German phone matrix, release generation and both package validators passed; details below. | 182/182 segment entries; all 1,537 messages and eight UI strings complete/current. Bilingual, German-only and whole-edition review preserved optional references, accumulator return/priority, checklist parity, statistics scope/rates and conclusion. Native statistics/proliferation labels checked read-only. Corrected recipe/transport phrasing, protected-name grammar, glossary Abnehmer and ambiguous Raten. A desktop statistics heading overflow was repaired by shortening the guide heading to Bereich; final segment checks and screenshots pass. Three segment cases plus 38 full-matrix cases passed. English-only release remains 539 files; no public activation. | Stop after ML-E4. ML-M3 handoff below identifies ML-E5 / ML-22 as next, requiring a new instruction. |
 
 ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
 and uses a hoisted/copy install to avoid sandbox symlink requirements. The first
@@ -630,6 +631,88 @@ with a fresh ignored output. Use the current English source inventory, including
 the three corrected annotations; preserve all 66 checklist identities/aliases,
 anchors, native IDs and `rankInside` handling. Keep all target locales disabled
 and `VERSION` at 3.1 until ML-28. The two earlier concepts remain deferred.
+
+## ML-M3 handoff — 2026-10-11
+
+**ML-E4 / ML-16–21 are agent-validated; stop here.** German is complete and
+accepted privately: A 393, B 227, C 257, D 228, E 250 and F 182 messages
+(1,537 total), plus eight UI strings. Every segment received bilingual comparison,
+a separate German read/revision and rendered inspection. The whole-edition pass
+reconciled glossary/station terms, native names and ranks, repeated messages,
+checklist conditions, negation, optionality, attributes and metadata. No missing
+or stale entry, untranslated guide prose or known linguistic defect remains.
+This is agent linguistic acceptance, not independent native-speaker evidence.
+
+Final verification:
+
+- `node artifacts/ml-e4/edition.mjs` enforced complete coverage without partial
+  fallback, current source/term hashes, all protected objects/numbers, eight UI
+  strings and an exact English/German fact signature. Repeated source messages
+  have consistent German wording. Source-identical text consists of shared
+  German words (Route, Start, Phase, Reserve, Optional), defined Mall, route/key/
+  expedition abbreviations, product names and legal credit. External-tool names,
+  the quoted English image title and Install with Mod Manager remain deliberate
+  exceptions with German explanations where needed.
+- `node scripts/localization-source.mjs`, `test-localization.mjs`,
+  `validate-terminology.mjs`, `validate-card-system.mjs`,
+  `validate-checklists.mjs` and `validate-source-readability.mjs` passed.
+- `node scripts/build-site.mjs artifacts/ml-e4/ML21-final-preview-accepted
+  --preview de` and `node artifacts/ml-e4/browser.mjs ML21-final F` passed.
+  Segment F has 180 rendered text nodes plus two attributes. All reference
+  sections, dense tables, the checklist and statistics walkthrough were inspected
+  on desktop and Chromium/WebKit phones, including 200% phone text.
+- `node artifacts/ml-e4/validate-german-phone.mjs --site
+  artifacts/ml-e4/ML21-preview-accepted --mode <mode> --full --output
+  artifacts/ml-e4/ML21-<mode>` passed navigation, layout and interaction
+  (12 cases each). Navigation-edges used `ML21-final-preview-accepted` and passed
+  both engine cases. This ignored copy of `scripts/validate-phone.mjs` changes
+  only the private URL, German text assertions/data paths and removes synthetic
+  language-title substitutions. Geometry/navigation/interaction assertions remain
+  intact. Evidence covers Chromium 156.0.8078.4, WebKit 27.2 and installed Chrome
+  155.0.8059.39; 320–480 px portrait, landscape, desktop, 200% text, scrolling,
+  focus/dismissal, native tooltips, storage denial, checklist reload/reset and
+  no-JS navigation. The first preview differed only in the longer statistics
+  heading; the final segment run verified its shorter replacement. Screenshots
+  were reviewed, including expanded cards, long research labels and route sheets.
+- `node artifacts/ml-e4/final-spots.mjs` confirmed the shortened statistics
+  heading fits all three primary profiles and captured the final statistics
+  details, conclusion and number-format explanation; screenshots reviewed.
+- `node scripts/build-site.mjs artifacts/ml-e4/ML21-release`,
+  `node scripts/validate-localization.mjs artifacts/ml-e4/ML21-release` and
+  `node scripts/validate-deployment.mjs artifacts/ml-e4/ML21-release .` passed:
+  539 exact English-only files, with catalogs/parser/previews excluded.
+- `node artifacts/mobile-localization-investigation/check-docs.mjs` and
+  `git diff --check` passed for the settled records.
+
+The epic's one shared foundation repair was ML-16's narrow-main wrapping rule
+for long German compounds, verified in both engines and the full English layout
+matrix. No English progression or game-data change was needed. ML-21 shortened
+one German statistics heading after a desktop overflow finding; it changed no
+native label or shared layout. Whole-edition corrections also aligned Abnehmer,
+used Rätselraten to distinguish guessing from rates, and adjusted prose around
+protected singular/adjective-bearing names. Source-owned numeric separators stay
+exact; the German card assumptions explain their English notation. Native UI and
+recipe labels were read from installed locale text only; no game launch or game
+file modification occurred.
+
+Each story has its own management-bearing commit and push to `main`; this final
+story contains the handoff. The prior commits are ML-16 `7616e46`, ML-17 `8993f6e`,
+ML-18 `8e83f08`, ML-19 `e9c0dba` and ML-20 `d84dda4`; Git history and the completion
+report identify ML-21. No version change, public locale activation, production
+publication or further epic was performed. Emulation is not physical-device,
+branded iOS Safari, OS-font or assistive-technology certification. CI ZIP and
+development checks were not repeated for this private milestone; ML-28 owns the
+combined candidate and its delivery evidence.
+
+**Next starting point, only after a new instruction: ML-E5 / ML-22, Japanese
+segment A.** Read the translation contract, [authoring guide](../localization/README.md)
+and [language rules](../localization/style.md). Japanese retains four tooling
+samples and eight UI strings to reconcile with the complete segment. Generate
+`node scripts/build-site.mjs artifacts/preview-ml22 --preview ja --segment A`
+in a fresh ignored directory. Preserve all 66 checklist identities/aliases,
+anchors, native IDs, protected numeric punctuation and `rankInside` handling.
+Keep all three target locales disabled and `VERSION` at 3.1 until ML-28. The
+two earlier concepts remain deferred.
 
 ## Draft review — 2026-10-11
 
