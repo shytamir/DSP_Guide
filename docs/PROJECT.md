@@ -1,14 +1,15 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-E1 and ML-E2 complete; ML-E3 is executing through ML-15 under
-the owner's new instruction. Chinese segment A is agent-validated privately.
+**Status:** ML-E1–E3 complete; ML-01–15 and the private Chinese milestone ML-M2
+are agent-validated. All six Chinese segments and the whole-edition review pass.
 Version 3.1 remains English only. Each Chinese story includes validation,
-management updates and a commit/push; work stops with a handoff after ML-15.
+management updates and a commit/push; work stops with the ML-E3 handoff.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
 Simplified Chinese, German, and Japanese localization, approved the roadmap,
-and subsequently authorized execution through ML-09 with a handoff before ML-E3.
+and subsequently authorized execution through ML-15. ML-E4 requires a new
+execution instruction; production publication remains owner-controlled.
 
 [`ROADMAP.md`](ROADMAP.md) is the sole active roadmap. The two previously
 deferred concepts remain deferred indefinitely in the historical archive.
@@ -17,7 +18,7 @@ deferred concepts remain deferred indefinitely in the historical archive.
 
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
-Only English is deployable; Chinese translation is in progress privately.
+Only English is deployable; the complete Chinese translation is accepted privately.
 German and Japanese still contain only four private HTML samples each.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized

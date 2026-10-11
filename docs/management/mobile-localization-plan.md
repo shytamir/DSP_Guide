@@ -1,6 +1,8 @@
 # Phone Support and Localization — Decisions and Investigation
 
-**Status:** Roadmap approved, 2026-10-11; execution authorized through ML-15.
+**Status:** Roadmap approved, 2026-10-11; authorized execution through ML-15
+is complete. ML-E3 and the private Chinese milestone ML-M2 are agent-validated;
+work is stopped at the epic handoff before ML-E4.
 Early investigations and planning decisions are resolved below. Historical
 browser samples are disposable feasibility work, not product acceptance.
 Story scope, progress, and sequencing live only in the linked roadmap.

@@ -1884,7 +1884,7 @@
       "id": "a.card-bootstrap-mall-industry.li.013",
       "sourceHash": "88d3433fd5d7d991321de967ee9c0ef28bffb98f6185389acc54521e4125742f",
       "termHash": "be84379a134925f1733c784e48caec10de5f76461e78e72241671e2ea4a4eb32",
-      "text": "{{span_1}}{{fact_1}} 制造台{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_2}}{{end_span_4}}{{span_5}}由制造台 {{fact_3}} 生产{{end_span_5}}{{end_span_3}} {{item_2303_1}}{{end_span_2}}"
+      "text": "{{span_1}}制造台 {{fact_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_2}}{{end_span_4}}{{span_5}}由制造台 {{fact_3}} 生产{{end_span_5}}{{end_span_3}} {{item_2303_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-industry.h4.003",
@@ -2742,7 +2742,7 @@
       "id": "b.card-red-security-mall.li.012",
       "sourceHash": "a40b4969454c2c5991b9ec1c754a0a4947d1b0076b64e06f7afd6c970a3050f0",
       "termHash": "e728bd178f40ad8cb241edc588883d1f47b3ed0c14417e8091c326c0039c98d9",
-      "text": "{{span_1}}电动机支线{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1201_1}}; {{item_1101_2}} + {{item_1201_2}} + {{item_1202_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_3}}{{end_span_7}}{{span_8}}由制造台 {{fact_4}} 生产{{end_span_8}}{{end_span_6}} {{item_1203_1}}{{end_span_2}}"
+      "text": "{{span_1}}电动机支线{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1201_1}}； {{item_1101_2}} + {{item_1201_2}} + {{item_1202_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_3}}{{end_span_7}}{{span_8}}由制造台 {{fact_4}} 生产{{end_span_8}}{{end_span_6}} {{item_1203_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.013",
@@ -2754,7 +2754,7 @@
       "id": "b.card-red-security-mall.li.014",
       "sourceHash": "9ad0fa9c0da87752b99fd72b2a5e374bbd5c1809a7240bfde54ec2228852cc70",
       "termHash": "02526c54a5c8938441325e16c1589cf47a2652fb3b59607f5ec92b2aefc28087",
-      "text": "{{span_1}}电浆激发器支线{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由制造台 {{fact_3}} 生产{{end_span_8}}{{end_span_6}} {{item_1111_1}}; {{item_1202_1}} + {{item_1111_2}} {{span_9}}{{img_3}}{{span_10}}{{fact_4}}{{end_span_10}}{{span_11}}由制造台 {{fact_5}} 生产{{end_span_11}}{{end_span_9}} {{item_1401_1}}{{end_span_2}}"
+      "text": "{{span_1}}电浆激发器支线{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由制造台 {{fact_3}} 生产{{end_span_8}}{{end_span_6}} {{item_1111_1}}； {{item_1202_1}} + {{item_1111_2}} {{span_9}}{{img_3}}{{span_10}}{{fact_4}}{{end_span_10}}{{span_11}}由制造台 {{fact_5}} 生产{{end_span_11}}{{end_span_9}} {{item_1401_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.015",
@@ -3600,7 +3600,7 @@
       "id": "b.ils.li.020",
       "sourceHash": "f0477f7b39cff517a591fda7958fa5a7db28a4bfa22de9e3f8d53fc0060fa1f8",
       "termHash": "4420406d583aa98404eb701e8380785f205fd0f22870e654682c7688e01d0113",
-      "text": "{{span_1}}硫酸支线{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由原油精炼厂生产{{end_span_5}}{{end_span_3}} {{item_1114_1}}; {{item_1114_2}} + {{item_1005_1}} + {{item_1000_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由化工厂生产{{end_span_8}}{{end_span_6}} {{item_1116_1}}{{end_span_2}}"
+      "text": "{{span_1}}硫酸支线{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由原油精炼厂生产{{end_span_5}}{{end_span_3}} {{item_1114_1}}； {{item_1114_2}} + {{item_1005_1}} + {{item_1000_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由化工厂生产{{end_span_8}}{{end_span_6}} {{item_1116_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.021",
@@ -5598,7 +5598,7 @@
       "id": "d.card-dyson-em-rail-ejectors.li.007",
       "sourceHash": "f7d13a7cbb66a6f57ba505409cba35650cfc8ccc07381d01bcbf6d5c0cd9169b",
       "termHash": "bc261b02c037fae9e8368137659c0ccc60e8b97e8da4cadd1d13baf28fc324fe",
-      "text": "{{span_1}}磁铁／高能石墨支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1102_1}}; {{item_1006_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由电弧熔炉生产{{end_span_8}}{{end_span_6}} {{item_1109_1}}{{end_span_2}}"
+      "text": "{{span_1}}磁铁／高能石墨支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1102_1}}； {{item_1006_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由电弧熔炉生产{{end_span_8}}{{end_span_6}} {{item_1109_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-em-rail-ejectors.li.008",
@@ -8119,6 +8119,1098 @@
       "sourceHash": "4f07de3bf7d512f2532f3ffd807a9bd46525cf7e54743a5b32b8175090a7275d",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "text": "{{label_1}}{{input_1}}能明确配置本地供应站 {{fact_1}} 运输机 {{fact_2}} 本地需求站的路线，无需猜测。{{end_label_1}}"
+    },
+    {
+      "id": "f.optional-paths.h1.001",
+      "sourceHash": "5c7105839b696159cfe94e93b0f191ebd0d59763c4264f18fcd95febdf57eddd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选路线"
+    },
+    {
+      "id": "f.top.p.001",
+      "sourceHash": "3f9118096249b61414b93c3e5ed962b4b7fd23804f7bea326afe999d082ff701",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "这些并不是科技树要求你完成的支线任务。只有能解决眼前问题时才选；否则就先放下，继续前进。"
+    },
+    {
+      "id": "f.ref-proliferation.h1.001",
+      "sourceHash": "7404c3b9340add211c995e2deef6864766eccd20166f12549a686305eb2e1d89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "[增产] — 可选的生产增益"
+    },
+    {
+      "id": "f.top.h2.001",
+      "sourceHash": "8206aaaa1d9523f5308bbf61dc357df7807f8e0ba702b0c0a774abb513f30bac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.002",
+      "sourceHash": "1caf8e9e32560676055660d0815c7df05b8579c700d42f511ffd82fd810bcb2c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "增产需要投入增产剂、电力、传送带和另一条产线，让选定配方发挥更大作用。它是实用的强化手段，不是工厂里每件物品都必须承担的成本。"
+    },
+    {
+      "id": "f.top.h2.002",
+      "sourceHash": "cad17255c05372959d419822cb91f946a090a7ef31cd0754c63b430f3d17cfb1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "按问题选择模式"
+    },
+    {
+      "id": "f.top.p.003",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横向滚动查看所有列 {{fact_1}}"
+    },
+    {
+      "id": "f.top.attr.001.aria-label",
+      "sourceHash": "642bd98facfe2a58e6354420f4bd255614c7592fdb105b7e1cbed19a3cc986f3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "增产模式"
+    },
+    {
+      "id": "f.top.th.001",
+      "sourceHash": "6af4138b7cf3f4237d7291ad900bc40f55ecc595151ae258f9eae429668ea1be",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "模式"
+    },
+    {
+      "id": "f.top.th.002",
+      "sourceHash": "324d775defd97f6a31cf3d24fa9e8f6aba02cf71739c317aa735ab88f611f46f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "适用情况"
+    },
+    {
+      "id": "f.top.th.003",
+      "sourceHash": "2f8b77ccf0dca80c07042cbe02f1fe720b5a7d4172718e35c50fbd084fd19749",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意"
+    },
+    {
+      "id": "f.top.td.001",
+      "sourceHash": "fd2b3b78648a556ec52ee578dd41b061bc2da04b67834bfa0c8633b1ab9f4ca4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}额外产出{{end_strong_1}}"
+    },
+    {
+      "id": "f.top.td.002",
+      "sourceHash": "d3606faa16695131f1d708b2497ce278ffe40a33fb919d8cb784dba29882153b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "支持该模式的配方消耗昂贵原料，而且比起缩小工厂规模，你更需要增加产出。"
+    },
+    {
+      "id": "f.top.td.003",
+      "sourceHash": "740ee7588e92213f4c00889011fb138b9ab063a561666d6cadc29862d2e24e7b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "配方的所有输入都必须经过喷涂；喷涂最不足的那种原料会限制加成。"
+    },
+    {
+      "id": "f.top.td.004",
+      "sourceHash": "4e6c19729b0afd5ede2c80f54340f54cb207ebb94b4557fce59bb1011f6ca3c5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}生产加速{{end_strong_1}}"
+    },
+    {
+      "id": "f.top.td.005",
+      "sourceHash": "255c8e70ef4c6b35a7b9914518d34ef7fb670aa74bb7a37388b49119ba871792",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "空间或机器数量是限制，而电网能承担更高负荷。"
+    },
+    {
+      "id": "f.top.td.006",
+      "sourceHash": "8e2c11b73be249f34035306489219e911c9a8a595ccfbd829cea4d00c7eddc18",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "让同一条产线更快工作，同时增加耗电和原料需求。"
+    },
+    {
+      "id": "f.top.h2.003",
+      "sourceHash": "1c400fe58e2897ecbb3e7347c18c42b9756c74bc6f590cdde5f5b2c6ba9516f1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "适合优先尝试的地方"
+    },
+    {
+      "id": "f.top.p.004",
+      "sourceHash": "5f1fa150741ed43376107616607036bbabd6263cbb4134804dac6f67f5bd34ed",
+      "termHash": "f6d217af0b3ad8a9c6bed44ea7dae4d64517118073d85171dddafd61b34cb9b9",
+      "text": "科研最容易理解：生产矩阵前喷涂原料，研究前再喷涂矩阵。昂贵的后期中间产物也值得考虑，尤其是扩充其原料供应比增加{{item_2313_1}}产线更困难的时候。"
+    },
+    {
+      "id": "f.top.p.005",
+      "sourceHash": "237a576c82869b0349cf502c6b11c61cc6918073d57fadde2f21d6eb67b23a3e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "建设卡片仍以不增产为基准。流程依旧适用；增产改变的是这些流程能提供的产能，不是原料的加工顺序。"
+    },
+    {
+      "id": "f.top.h2.004",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "何时返回主线"
+    },
+    {
+      "id": "f.top.p.006",
+      "sourceHash": "f95682c70f83be3a5f74349910e7bba43b74138bf8761337e95730a1d6c37dc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "选定的瓶颈解决后，就停下来，不必仅仅因为旁边有传送带经过，就把喷涂范围扩大到更多物品。"
+    },
+    {
+      "id": "f.ref-pile-sorter.h1.001",
+      "sourceHash": "c868b24b03e767aa66e3f9887348bdbb44ef7d9643a6ab6d98d810d12d6c935e",
+      "termHash": "c6b3790e4d91cb6f36d22bc9f391a76dd0666492a419f042d9f9f9403644ca4e",
+      "text": "[{{item_2014_1}}] — 集成物流"
+    },
+    {
+      "id": "f.top.h2.005",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.007",
+      "sourceHash": "4a1906b1c544a9a91913d5ef444cdd792c7f1230aef2c4c5f82d7b85800cec44",
+      "termHash": "c6b3790e4d91cb6f36d22bc9f391a76dd0666492a419f042d9f9f9403644ca4e",
+      "text": "快速搬运并堆叠同类货物，让传送带和机器接口不再成为瓶颈。{{item_2014_1}}改善的是运输，不会缩短机器内部的配方加工时间。"
+    },
+    {
+      "id": "f.top.h2.006",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "适用情况"
+    },
+    {
+      "id": "f.top.li.001",
+      "sourceHash": "a1198416bf34a9605f23ae008ac1f12b519deb61a6fe3699b358d12bc06db89a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "配方所需机器已足够，但密集布局仍在接口处断料或堵塞；"
+    },
+    {
+      "id": "f.top.li.002",
+      "sourceHash": "63f766534f144bc58002c67bcb0d9c5d60f1ddb17f7526bc30c8924d1e95f751",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "堆叠能腾出实用的传送带运力；"
+    },
+    {
+      "id": "f.top.li.003",
+      "sourceHash": "6665788cedaddc6d9112b579f5d48fac921bc4f33229a0e1457874d882f4d4dc",
+      "termHash": "059452f1777f923f761c85856ecabd0684052140b231b1482afdd079825b88fb",
+      "text": "高吞吐循环线，包括{{item_2314_1}}循环线，能从更密集的同类货物中受益。"
+    },
+    {
+      "id": "f.top.h2.007",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "做法"
+    },
+    {
+      "id": "f.top.p.008",
+      "sourceHash": "e20677173d47ab6b34bf64c7b73374deda877d0515cd2005d28b2496d84170c7",
+      "termHash": "c6b3790e4d91cb6f36d22bc9f391a76dd0666492a419f042d9f9f9403644ca4e",
+      "text": "实测表明进料或传送带吞吐量受限时，再使用{{item_2014_1}}。它堆叠的是同一种物品，不能把混合货物堆在一起；混料传送带的设想还是另找地方尝试。"
+    },
+    {
+      "id": "f.top.h2.008",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "何时返回主线"
+    },
+    {
+      "id": "f.top.p.009",
+      "sourceHash": "2a57c1cc9e680529340b897eacb4f30ae7a1e51081edd7e88d3ca4aaea5acde7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "货物搬运不再拖慢产线后，就保持现有机器不动，继续推进。"
+    },
+    {
+      "id": "f.ref-gas-giant.h1.001",
+      "sourceHash": "07b1e33ea4a3c4c5fba41a2dd072279e145228831bfcfd803f3420c779e1b43c",
+      "termHash": "d24385b9d3fcd9d0fd6d91bf9549636778bd10b3443419cc40a30cbac160c980",
+      "text": "[气态巨星] — {{item_2105_1}}"
+    },
+    {
+      "id": "f.top.h2.009",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.010",
+      "sourceHash": "0ac0009603a5b43abb55b84b274dfe54a31677ce2ecc02d37c9a97911321bbf7",
+      "termHash": "d84b330f681455317f5a8d880889668a842ef9d0725057497eb1c12d40783be3",
+      "text": "在本地生产足够的{{item_1120_1}}、{{item_1121_1}}或{{item_1011_1}}开始得不偿失时，考虑{{item_2105_1}}。"
+    },
+    {
+      "id": "f.top.h2.010",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "适用情况"
+    },
+    {
+      "id": "f.top.li.004",
+      "sourceHash": "ae03e1ecf54106f369325cd3f94b2e06c15834ff00e583f9903de43e0cc1cb8f",
+      "termHash": "81f07c6af9999ea501fe5374ef5c8e0d2dd9e52b4e4d0b01a4ba0b3958dc981a",
+      "text": "{{item_1120_1}}确实拖慢了卡西米尔晶体或绿糖生产；"
+    },
+    {
+      "id": "f.top.li.005",
+      "sourceHash": "ce69edb12552cc544c377c2f0cd495c5777e3abcfe497fa3221a622615c7bf27",
+      "termHash": "e7ae9efc8f374c93b4c1eeaa1819a47af96eb63efcd1d768930f20673ab5ac12",
+      "text": "本地生产足量{{item_1121_1}}占用了太多工厂资源；"
+    },
+    {
+      "id": "f.top.li.006",
+      "sourceHash": "727b73f51cb9c48869920fe74b877ebbeb37be1210afb0fa49b7af7532908ec4",
+      "termHash": "82b33a6262388d2292e1c83396f5884956cf3b7e818e800454d901cb7a4b2ed2",
+      "text": "{{item_1011_1}}能明显简化{{item_1123_1}}生产；"
+    },
+    {
+      "id": "f.top.li.007",
+      "sourceHash": "bfa025f4cad36f2a596ad5d18e8afa6750cb3728e3bec434becf41997bb931e7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "实际能到达的气态巨星，以实用的速率提供所需资源。"
+    },
+    {
+      "id": "f.top.h2.011",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "做法"
+    },
+    {
+      "id": "f.top.p.011",
+      "sourceHash": "2ad14894787ca1179367e2d1803f4d43514e1bdb2d71b0fad383ee440f03e5bf",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "投入设备前，先查看巨星列出的资源和采集速率。每台采集器都独立采集其显示的资源；随着矿物利用升级，采集能力也会提高。"
+    },
+    {
+      "id": "f.top.p.012",
+      "sourceHash": "d4e194bc9052bca4d09facba5dd30e70d13a7cc1ae29187d7025e53e8f57d2da",
+      "termHash": "8dbc0fbe7dd8a63c11d503c67d10ad2c91c4e8b7db078cf686887e1f39435e9c",
+      "text": "在消耗端工厂，优先使用本地产生的副产{{item_1120_1}}，由{{item_2105_1}}兜底。一种简单做法是分成两路接收：一路接收{{item_2308_1}}、{{item_1011_1}}和{{item_1122_1}}生产的副产物，另一路允许从采集器输入。合并传送带时，把副产物一路设为优先输入。星际物流站的优先配对或分组，也可以跨行星维持同样的优先顺序。无论采用哪种方法，都要让副产物出口便于观察，免得储罐满了，悄悄卡住另一条产线。"
+    },
+    {
+      "id": "f.top.div.001",
+      "sourceHash": "2fe6e4659995cd0304ac9e51340050bfda863c2e3706241ed53cb9f6a46cfc73",
+      "termHash": "81f07c6af9999ea501fe5374ef5c8e0d2dd9e52b4e4d0b01a4ba0b3958dc981a",
+      "text": "{{strong_1}}⚠ 气体储罐满了，不一定代表供应充裕。{{end_strong_1}}也可能是输入的{{item_1120_1}}掩盖了本地副产物堵塞。扩建采集器之前，先查清究竟是哪一路填满了目的地。"
+    },
+    {
+      "id": "f.top.h2.012",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "何时返回主线"
+    },
+    {
+      "id": "f.top.p.013",
+      "sourceHash": "fc793a3f37ec61b704edfe1e03bf617672639872360c4af741cadd449da5e343",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "气体供应不再拖慢绿糖或后续生产时，就返回主线。"
+    },
+    {
+      "id": "f.ref-power.h1.001",
+      "sourceHash": "717e41f7607f75db2b693670a9e2577e3fc0cc18c57abc8a38238b56a4c1980d",
+      "termHash": "77837baca8892155275bf8aa3019538f221f3a550baef7c6f7ee68208effe26f",
+      "text": "[星际输电] — {{item_2209_1}}与{{item_2206_1}}运输"
+    },
+    {
+      "id": "f.top.h2.013",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.014",
+      "sourceHash": "7f4466417ef3bfa1a58629809ac934016d892cbcbd20d8a3d12fe9dd19a73239",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一颗星球电力富余，而另一颗星球通过物流获得电力比建立自有燃料链更方便时，就可以使用这套系统。"
+    },
+    {
+      "id": "f.top.h2.014",
+      "sourceHash": "a54f7f1581d1e084a5b240158c6c5228d58509a3b11c0ee55937976894b09869",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "建立循环"
+    },
+    {
+      "id": "f.top.li.008",
+      "sourceHash": "0a7d907c72e0c0735c362e9546e650b02fe9f501f6f13274440710245a6dca41",
+      "termHash": "933ff931a6a064cdfd4ed3f3d8d08028ddbfa3e4d31ae5b5e124d1093c407385",
+      "text": "在发电星球，将空的{{item_2206_1}}送入设为充电的{{item_2209_1}}。"
+    },
+    {
+      "id": "f.top.li.009",
+      "sourceHash": "25782d13bfd3ba52b77c955196c687a9ec10a2b810a76320ffd08ca69ed4de37",
+      "termHash": "603eebe1c1148263bdb0c2bfea3b02aaf9d1f7089be2afb4e81302129bdf6154",
+      "text": "通过星际物流输出{{item_2207_1}}。"
+    },
+    {
+      "id": "f.top.li.010",
+      "sourceHash": "517822a734c7a9c73bc2145b7011b41d6ef85a4419585f044c032432c141e21d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "在远端星球，把它们送入设为放电的能量枢纽。"
+    },
+    {
+      "id": "f.top.li.011",
+      "sourceHash": "0137098cb7a7fb7a976004ff2300f5a23cd9fbbc9fadd3a54b703bb6284a9a67",
+      "termHash": "2885d44ac668543522bc3464dac902a17bc83808e9b396ca2446a706784ed23d",
+      "text": "通过第二个物流物品栏送回空的{{item_2206_1}}，让同一批设备不断循环。"
+    },
+    {
+      "id": "f.top.div.002",
+      "sourceHash": "a53d1c81783dcb25a807b4fee6b505e14ee454709f5df2b02581f37ed6190d12",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ 放电优先供给电网。{{end_strong_1}}即使本地发电机足以承担负荷，放电中的能量枢纽也可能消耗输入电力。目的地同时使用外来电力和本地发电时，应为放电阵列配上等规模的充电阵列：多余的放电立即充回空蓄电器，只有本地电网的实际缺口，才消耗外来电量。"
+    },
+    {
+      "id": "f.top.p.015",
+      "sourceHash": "b322c23ebd0baceb0d439f12782c1006805f2b5fbf10fb0ba2ac0deabf43788a",
+      "termHash": "2885d44ac668543522bc3464dac902a17bc83808e9b396ca2446a706784ed23d",
+      "text": "空蓄电器回运也是电站的一部分，不能当成善后工作。在充电星球，应优先接收回运的空蓄电器，再补充新制造的{{item_2206_1}}。任一方向堵满或断供，最终都会让循环停下，即使两颗星球看起来仍有不少库存。"
+    },
+    {
+      "id": "f.top.h2.015",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "适用情况"
+    },
+    {
+      "id": "f.top.li.012",
+      "sourceHash": "f343264688127afa19276280cf64975de6a5a7dad94ab5562ea259eaf5fbd34e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "远程采矿星缺乏合适的本地电源；"
+    },
+    {
+      "id": "f.top.li.013",
+      "sourceHash": "2ce35ccd4178a144a8a224c690ed5e1b8a6effa8482bcb0190bfe84a07b04310",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "集中发电已很充裕；"
+    },
+    {
+      "id": "f.top.li.014",
+      "sourceHash": "69515f13b869dcee9d7d53e1cf158e4c3b96db40eef1c067bd7ba4cff1ae9eac",
+      "termHash": "2885d44ac668543522bc3464dac902a17bc83808e9b396ca2446a706784ed23d",
+      "text": "双向运输{{item_2206_1}}，比运输燃料并维护发电机更简单。"
+    },
+    {
+      "id": "f.top.h2.016",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "何时返回主线"
+    },
+    {
+      "id": "f.top.p.016",
+      "sourceHash": "f6fe4115be5f26ae0a5d968e8fa042fee14f42d14414cba61a283c5062dacce7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "按星球的实际情况选择更简单的系统。几台本地发电机，仍可能比一套漂亮却没人需要的星际电池交换系统更实用。"
+    },
+    {
+      "id": "f.ref-mining.h1.001",
+      "sourceHash": "0ae54c990d7a2ea9072f8244e6eeed199a78d278eeda0bda2091bd348fcf1da1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "[高级采矿] — 大型远程采矿网络"
+    },
+    {
+      "id": "f.top.h2.017",
+      "sourceHash": "8ce06c9b129fedb01676631d2ec419f785d7b09e30cc7081f305d9db50c19209",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用途"
+    },
+    {
+      "id": "f.top.p.017",
+      "sourceHash": "4ca47a714d91bcab3a1dd60a6b24938816596b1c83b3ac22b78d9816903a62cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "让大型跨星球采矿网络建得更快，少些重复操作。"
+    },
+    {
+      "id": "f.top.h2.018",
+      "sourceHash": "09bc0cd76255da737898d7281d27580f74f26bbf234cb35ec7b7d023515b54b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "适用情况"
+    },
+    {
+      "id": "f.top.li.015",
+      "sourceHash": "76018502174041ebb992a3432f9a94852c500dd155e51cd50215001a9d445c5a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "已有许多远程采矿星在运作；"
+    },
+    {
+      "id": "f.top.li.016",
+      "sourceHash": "d28bbae85220c984335bb2539e9dc58140953df6f70ad63287706d5ae485529f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "逐台铺设采矿机和汇集传送带，占用了建立前哨的大部分时间；"
+    },
+    {
+      "id": "f.top.li.017",
+      "sourceHash": "6f4b066509859d07f7e81ff1251c30d9cca1d9942eda7e90eba0bd43e7952ec3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "依托星际物流站的采矿网络已经成熟。"
+    },
+    {
+      "id": "f.top.h2.019",
+      "sourceHash": "b1322707378e0b91771f9c0eb126e0124d5c4472a0a70fb612cd72524a95214e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "做法"
+    },
+    {
+      "id": "f.top.p.018",
+      "sourceHash": "900d14c1faf10f4769c1a602fd1af8d0aba496cb04b46f58027837cc8aa807c2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "把它当作工厂已经遍布多颗星球之后的便利升级，而不是提前铺开的理由。"
+    },
+    {
+      "id": "f.top.p.019",
+      "sourceHash": "32b910570a9caf3915263fe45d4b9ad90ad902dc4aa890724fa790a702795bd0",
+      "termHash": "e349030824d3457381b4c89cc362d3a017f495137caee2406d3ea7c136a9530e",
+      "text": "高效完成「{{tech_1508_1}}」，并不需要这项升级。"
+    },
+    {
+      "id": "f.top.h2.020",
+      "sourceHash": "97175704880180ae3f3cb49b4546c7847b1e30272a01df067be7d21e2d37ad22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "何时返回主线"
+    },
+    {
+      "id": "f.top.p.020",
+      "sourceHash": "a38d7b154b1cd2c828e4140f7d70f7a67c3daf4d4b95467a2e55e139b44f329e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如果拖慢扩张的已经不是采矿，就去处理真正的生产或物流问题。"
+    },
+    {
+      "id": "f.top.attr.002.alt",
+      "sourceHash": "f5e071eb18aa1aa949236fdef831492642f7c4688715ddbac93c859f83d13793",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "戴森球计划"
+    },
+    {
+      "id": "f.ref-tools.h1.001",
+      "sourceHash": "98e4ae6f6a2cebedfc0694aab585b0ff215a99911a6a6c809807d873b03d4b3d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "外部工具与社区"
+    },
+    {
+      "id": "f.top.p.021",
+      "sourceHash": "9c96d3a0dcbd0172abeab702689281bfe006b1ac1e42433802eb7228a35cc6c4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本指南有意让主线内容自成一体。但想找蓝图、计算器、模组，或找已经建过那些奇特方案的玩家交流时，下面这些资源仍然很有帮助。"
+    },
+    {
+      "id": "f.top.li.018",
+      "sourceHash": "73e881a16afc29be32ff103faf13be9e47b4c03af537edc3884501b5545ed4d7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Dyson Sphere Blueprints{{end_a_1}} — 主要的公开蓝图交流站。"
+    },
+    {
+      "id": "f.top.li.019",
+      "sourceHash": "1de332ca778872758107861e0ec02e1b6a86cc0690a329a16b0badfbfba0585b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Nilaus DSP 蓝图{{end_a_1}} — 经过整理的蓝图合集；其中较早的设计可能不适用于当前游戏版本。"
+    },
+    {
+      "id": "f.top.li.020",
+      "sourceHash": "b49a07b18694818a5e15b636908c369ff0c48a3bac440c70789e8465063a5d7e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}FactorioLab for DSP{{end_a_1}} — 规划生产链和产量。"
+    },
+    {
+      "id": "f.top.li.021",
+      "sourceHash": "5b610e251401b951c1bb5401ed8ba87c126cea9f02f2520415ba3830d081eedb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}Thunderstore DSP 模组{{end_a_1}} — 目前公开的模组目录。"
+    },
+    {
+      "id": "f.top.li.022",
+      "sourceHash": "f86115548adc9037e993c3313349780aa551737acc2188d435e4e3b75defd068",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}DSP 官方 Discord{{end_a_1}} — 社区讨论、蓝图分享和玩家的最新经验。"
+    },
+    {
+      "id": "f.top.div.003",
+      "sourceHash": "1219e7c49f2c69c2a28b9874078183428c936bc9218095c820edb21a39cf5fd9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ 粘贴前先检查。{{end_strong_1}}查看游戏版本、所需科技和升级、纬度假设、稀有配方、增产设置，以及戴森球蓝图是单层还是完整设计。再漂亮的老蓝图，也可能让你高效地复制一个早已过时的问题。"
+    },
+    {
+      "id": "f.ref-checklist.h1.001",
+      "sourceHash": "5f4d35ac59c6762d418e44492637ba7fcbce900560cc3d79154595e19041f262",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "主线清单总览"
+    },
+    {
+      "id": "f.top.h2.021",
+      "sourceHash": "268caa296349283482325e8f9ef2f68c406eeb9653ad75c15ca039c330b6c8ee",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[蓝糖]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.023",
+      "sourceHash": "9c0ad21e65f01fa5625fa78c41a846b19d8a186c99341d2a14e0db0028f2fabb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}铁块、铜块、磁线圈和电路板持续供应{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.024",
+      "sourceHash": "7f7ab6295af803551555308043c9c44bfa5c55d0846bad1ab44aebe1e3075e0f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}传送带、分拣器、采矿机、熔炉、制造台、储物仓 {{fact_1}}、储液罐、风力涡轮机和电力感应塔自动补货{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.025",
+      "sourceHash": "65d244499ae9bb87b8cb0f18dc7d728ef0a11f3c54071dba234782f214d90b69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}蓝糖持续生产，产量至少为 {{fact_1}}{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.026",
+      "sourceHash": "3aaeaed19bce9e0fb9f12472d15aa244a57f92cf581bfd3cadeb07c5570dbd7d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}研究持续进行，无需手动喂料{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.027",
+      "sourceHash": "b2c19ca89c8990a440dd25d3c1d476d4627dcac88e7b5019cd0f7345a63c0547",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}电网提供约 {{fact_1}}，供建筑超市、蓝糖科研和接下来建立的炼油区使用{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.022",
+      "sourceHash": "aeaa47a50ef55170f5ed6da9394fbdd89dc92622399b27d158b735a58dc37d48",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[红糖]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.028",
+      "sourceHash": "1f15b94d316c6d2af39190869e5bac474d5289cbc8cfbc3b246765c83436667f",
+      "termHash": "c38762b027edcc0f12743befb995cae972e890a88b9c99f7a7435fb9d45afe40",
+      "text": "{{label_1}}{{input_1}}两座{{item_2901_1}}维持 {{fact_1}} {{item_6002_1}}{{fact_2}}，且{{item_1120_1}}和{{item_1114_1}}都持续离开精炼厂{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.023",
+      "sourceHash": "0a7b775c6199305f6dd8ce045e627632a7a2b4f6a4036330ec67ecc66cacdc4f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[星际物流]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.029",
+      "sourceHash": "b422144e9158c1414e52c9803a3ef1f6b6c81b304de66fd84e6d73cf917cd7d6",
+      "termHash": "f1a8510f01df3b6bf44b8ef78edabc43b9f5bec58b63de452b48166276cdd601",
+      "text": "{{label_1}}{{input_1}}两座星际物流站和五艘{{item_5002_1}}已部署{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.030",
+      "sourceHash": "827a8db26d3445c8bc1b1d21dcbbdb1863277329fc7711d365fa95f86cdf5d61",
+      "termHash": "bf5ec0106b3327c0cb13433a38f8b59da092ab7a6c464e4469fd271c7529e611",
+      "text": "{{label_1}}{{input_1}}{{item_1106_1}}和{{item_1105_1}}无需伊卡洛斯搬运，就能送达母星{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.024",
+      "sourceHash": "8622e13a0e16fad1f03cb5ae5483e589de0e6512dcdfb92954aca97870b30a22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[黄糖]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.031",
+      "sourceHash": "f35da36749dafca6ac6d6ecafbad304d522557b79d755dd4bee94fd1c976eb80",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}三座黄糖研究站持续生产{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.025",
+      "sourceHash": "2113ec2853d3ee84978884f4e5f528a99c8da2780000b44027dbfe784487f685",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[紫糖]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.032",
+      "sourceHash": "d1af4e76d4a0dbb47c28b87432548e2c90fb202be8b0aded2965680678b516f6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}三座紫糖研究站持续生产{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.026",
+      "sourceHash": "59cdbb807cedea504baf4dc5cf493dba1d48b970763575c14d1cff1a8e371a50",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[绿糖]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.033",
+      "sourceHash": "43090effe2b7096d44b1231fe35a9adb8bf0a30f5691a596a2baa6fe4d426d8a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}两座绿糖研究站持续生产{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.034",
+      "sourceHash": "f3c067574b054fa396c65312b8c888cecab820ee32deb0ea976f082a044a66d7",
+      "termHash": "f05ea493e57c09112bce36a401eb67e4e93a4b7282fe579ae3ee8e173e7b0ba8",
+      "text": "{{label_1}}{{input_1}}{{item_1305_1}}和{{item_1209_1}}各自都有便于观察的库存{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.027",
+      "sourceHash": "5979b6bd7879b73ec99b3bcb9b79bc690639980b6ede5c53f69d8ef68f77a624",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[戴森云]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.035",
+      "sourceHash": "390e7d7aac1320da81c32376ab3f7860f668e4d483ef6033d5c1c1cd66f6d3fa",
+      "termHash": "6766b119aa457d58dffa9d824c473899c9c2c830804e4379b06f7f1da463232c",
+      "text": "{{label_1}}{{input_1}}所选路线的{{item_1501_1}}产线已自动运行{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.036",
+      "sourceHash": "2d81e054ed98739a4b7069f08fbaba62653acb2c5bd831a2887d2b19d3133a56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}电磁轨道弹射器发射系统已自动运行{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.037",
+      "sourceHash": "c54b49aa744dda5d9159df0e02b6306b0990cd7583808e3db9666807a20c614a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}戴森实时发电量已能发挥实用作用，可以进入接收站过渡环节{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.028",
+      "sourceHash": "b91c50167c69217c6bf78dc71eefd38b34e03b6a208bb87ca5e0a087ead21311",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}[戴森云 {{fact_1}} 光子]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.038",
+      "sourceHash": "d97ac86497de2a1a89e671bdb539f7807fd5c0c6dcd8113aece2453dff460526",
+      "termHash": "cee8a40655b71b1bc4a207959642c5bb88edfe2fbe0a4692004bec596a69e58e",
+      "text": "{{label_1}}{{input_1}}{{item_1208_1}}稳定转为{{item_1122_1}}，且反物质无需伊卡洛斯搬运就能送达科研区{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.029",
+      "sourceHash": "53bd4b5a8ed531140ab5d99f6986f0320562bf7f854ce6bf7f13d140d61a6865",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[光子]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.039",
+      "sourceHash": "5b36c01d25c06996a96db304d3df9585f3f18355e2e057a71cae7b4da2d1c833",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{label_1}}{{input_1}}蓝糖、红糖、黄糖、紫糖、绿糖和{{item_1122_1}}的持续产量各自至少为 {{fact_1}}{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.040",
+      "sourceHash": "47b97941c2b339b61bb629e1af49430f1242258e0a70384b6562937530faed5a",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{label_1}}{{input_1}}至少储存了 {{fact_1}} 个{{item_1122_1}}{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.030",
+      "sourceHash": "acb73f34741052018f27328dbbc44d56ed6fbb30b97cecf0fc3d8227d598ea5d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[白糖]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.041",
+      "sourceHash": "2e55b59399c0aa64f08af64b0547d99ec5495d089ff53c8e80b73eae1fed51c6",
+      "termHash": "64b783d6febd62c68272a9a0879a124427454d3d672113627b771521a261b230",
+      "text": "{{input_1}}{{span_1}}{{tech_1507_1}}{{label_1}}已研究完成{{end_label_1}}{{end_span_1}}"
+    },
+    {
+      "id": "f.top.li.042",
+      "sourceHash": "12f56e24d621083c593935a22c3069aa191ebf959c5782cedca8d1e14ec922a8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}六种输入都持续送达白糖研究站{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.043",
+      "sourceHash": "44495754e01b44ca51e703535a59eac3260278a630d065e08be3cd1a18fbd2f8",
+      "termHash": "2118d15093b4ddbfb0d90dcb554b5ef5e5ef14e9419eab3cd97cfb5feccef949",
+      "text": "{{label_1}}{{input_1}}十座{{item_2901_1}}维持 {{fact_1}} {{item_6006_1}}{{fact_2}}{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.044",
+      "sourceHash": "d5285a98c06e4f74a3b44ece29b5ba4bc8fc85621b3ae958fe79ad1b86eae12b",
+      "termHash": "7086ce733149499d144221d74f8b218993cb0a04da0eba042f98895557a9a1fb",
+      "text": "{{label_1}}{{input_1}}「任务完成」正在消耗、或已经消耗完 {{fact_1}} 个{{item_6006_1}}{{end_label_1}}"
+    },
+    {
+      "id": "f.checklist-optional-capabilities.h2.001",
+      "sourceHash": "6604f6dace8a77ca3e16ef0ec213e9c57a218f6deb36de419706daba20f4f6ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选能力"
+    },
+    {
+      "id": "f.top.h2.031",
+      "sourceHash": "f5ee0ddf1a0a74b923125fd2c4c04e7aaf30c13089b886e95a2d0739245740c9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[曲速]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.045",
+      "sourceHash": "4a88b6825c8e33f0ac576dbd9a8f091e18d8b8531dba4a9fe50ded7588420bdb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}需要亲自勘察或运货时，已具备机甲曲速能力{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.046",
+      "sourceHash": "7477299c48c16fb2767f2f64b050fc962576982adf36b096c81e713c65a46781",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}跨星系物流需要自动运行时，已具备运输船曲速能力{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.047",
+      "sourceHash": "351911d98615f3442aff2ed2ff55b15e10ec9c0041a751698b71ac0131bbcd56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}每种输入的稀有资源，都有明确要替代的常规产线{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.048",
+      "sourceHash": "04fb7bfc79fdd54f8373a3f227fcb794e18b7999c40172f88ec24eb6c6cc31df",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}开始常态化运输时，已有用绿糖制作的翘曲器库存供应星际物流网络{{end_label_1}}"
+    },
+    {
+      "id": "f.top.h2.032",
+      "sourceHash": "67d3e6b6464acdf57b1f6c38ff5aa0dc666b8e0b25bbbf96b8ede6b0d653ad92",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[物流]{{end_a_1}}"
+    },
+    {
+      "id": "f.top.li.049",
+      "sourceHash": "d50c856208ad4094afb74e57308071e6a78474953e682e043b60bd24852c1d45",
+      "termHash": "1d0a1a0ee9124b4ec7ebc063f3927aa57aa75dcacb2c9a7cd2ec25efc0e632b8",
+      "text": "{{label_1}}{{input_1}}{{item_2107_1}}和配送运输机能补满限额库存{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.050",
+      "sourceHash": "65555ae3eb681ac2598a42201eac97d7db53ffde5ab595e7973c3413fe7b6a56",
+      "termHash": "89dafb73f4929b061447881aecb86bcfe5afbe8b0225768b40097e3d55093893",
+      "text": "{{label_1}}{{input_1}}行星内物流站和{{item_5001_1}}能补满限额库存{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.051",
+      "sourceHash": "a97eb2de888bc341cf8fa136437696a5ee296e7005da56a04c071f3f93d450cd",
+      "termHash": "f1a8510f01df3b6bf44b8ef78edabc43b9f5bec58b63de452b48166276cdd601",
+      "text": "{{label_1}}{{input_1}}星际物流站和{{item_5002_1}}能补满限额库存{{end_label_1}}"
+    },
+    {
+      "id": "f.top.li.052",
+      "sourceHash": "9d726cbbb508a11276af16903d340153e1a2ea3b06e39f2f75d260437c05d826",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}供应、需求、仓储、本地和星际设置，都能一眼看懂{{end_label_1}}"
+    },
+    {
+      "id": "f.ref-troubleshoot.h1.001",
+      "sourceHash": "7df4aa47910f337e48cad90470eae5c7350ea45da63bec940494c784fd9879be",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "不确定问题出在哪里时"
+    },
+    {
+      "id": "f.top.p.022",
+      "sourceHash": "a9c2a99fc791bc374522a59600e8fc6b86cb121db6cfb011071facfbcfae8804",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "看不懂工厂为什么停下来时，先别凭直觉重建。按顺序问自己："
+    },
+    {
+      "id": "f.top.p.023",
+      "sourceHash": "1e15e5664628abbc611da9043d1e6273b8c05d6cde6932506ab6eda0221f0250",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}这项科技能研究吗？{{end_strong_1}}{{br_1}}不能的话，查看还缺哪项前置科技。"
+    },
+    {
+      "id": "f.top.p.024",
+      "sourceHash": "1f83140cd4f84aa7c0781903a9fc724b7b8c774cb007bcd0e59f748ef4e875a6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}这个配方或这台机器能造吗？{{end_strong_1}}{{br_1}}不能的话，查看是否还缺另一项科技，或缺少实际执行配方的机器。"
+    },
+    {
+      "id": "f.top.p.025",
+      "sourceHash": "f4d4fdade414c9c0ecae25eb855024f6b99c2860bafead75fae0827350a8ba43",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}所有必需材料，都能持续供应吗？{{end_strong_1}}{{br_1}}不能的话，找出还无法可靠开采、生产或输入的那种材料。"
+    },
+    {
+      "id": "f.top.p.026",
+      "sourceHash": "e821a3c1a1392bf5650f8827b955a1edfac54d8cb50b7f03811346ac2a13f40c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}这条线还依赖我搬运或手动喂料吗？{{end_strong_1}}{{br_1}}如果是，就把缺失的运输或仓储环节自动化。"
+    },
+    {
+      "id": "f.top.p.027",
+      "sourceHash": "46374740d5c6cf0aaee62e0f06d997a773e2a16e0d25f1eced16fb52e8edaaec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}能找到产品最先停住的地方吗？{{end_strong_1}}{{br_1}}从需要的物品开始，沿生产流程逆向追查。找到第一台缺料、产出堵塞、没电，或运输连接不送货的机器。工厂分布太广、难以目视追踪时，参考{{a_1}}生产统计操作示例{{end_a_1}}。修复这一处，让产线运行，再检查结果。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.summary.001",
+      "sourceHash": "ba48a1a4880b3eb3dd399bc54a20acbc0e562492d8d5009e22da1bcd958dd5d5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作速览 — 用生产统计查找短缺"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.p.001",
+      "sourceHash": "429f68d13a2b05c1fdb4361c546be927e4e2df7103840444a51fccbaba627bc7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}示例：{{end_strong_1}}黄糖研究正在进行，黄糖仓储也没满，但矩阵生产变慢了。"
+    },
+    {
+      "id": "f.statistics-read-first.h3.001",
+      "sourceHash": "bf544e1deb06d6d37caaf0e755f17d253d4a3504c14d70cca12bd4844f9b381d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先看这三个数值"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.th.001",
+      "sourceHash": "dad50dab57c3ac040474886bf7fb7fb2c81b7a754de55bed9e9e784c6685b0da",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "查看"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.th.002",
+      "sourceHash": "2aebbfddfd6c9134f141ea8d8f23a1ab9b955df3e5d006fcce71c277478dd0dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "含义"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.001",
+      "sourceHash": "c081c96a4efa65ea56eae3865df309382bd2d2e411c005305688708201bc4d16",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}生产速率{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.002",
+      "sourceHash": "8a4a1bd7054f9008a84e332b325d7603c2797c73135778969cc4d41dd454053c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "所选时间段内，实际生产的速率。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.003",
+      "sourceHash": "77d1fd80dec840d1e760d9481d403e1827df4c2fac1a2be0a665494fc81d8b1a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}参考速率{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.004",
+      "sourceHash": "072c4412182d9701cf6f22d27026127e5467976fa52efa10dd148ebba66ad2fe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "已建成并接入电网的设备，在理想条件下能达到的产量。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.005",
+      "sourceHash": "d149535ce648d7240eb5c56fe9f01547427602299826d9e2ced02235c4448210",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}仓储数量{{end_strong_1}}"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.td.006",
+      "sourceHash": "706a25b1552668cccecd2af5d788c653a67d592a75d40e5d9a1063dabe8d01f0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "判断停产是否只是因为产物已无处可放。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.001",
+      "sourceHash": "d23db6f67918a3a8bdc8808608e07563b24da82ed0ab5264bad642c3668e8751",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — 找出变慢的产物"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.001",
+      "sourceHash": "9c7315cf303448a42bdc33b27e584485ca2c7e32599367a044772de45a5a86a7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "按 {{key_1}}，选择{{strong_1}}生产统计{{end_strong_1}}，范围选{{strong_2}}统计当前星球{{end_strong_2}}，时间选{{strong_3}}{{fact_1}} 分钟{{end_strong_3}}。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.002",
+      "sourceHash": "97f41b0ecc46319ed3d28f346ba2884867406c8415dbd35fbdc71d37587fc418",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "搜索{{strong_1}}结构矩阵{{end_strong_1}}。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.003",
+      "sourceHash": "5bb2c508747dde46f08e51a2c0d2a3a59f7759c04b49fa7a1c070e06e873f5e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "比较它的{{strong_1}}生产速率{{end_strong_1}}与生产侧的{{strong_2}}参考速率{{end_strong_2}}。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.004",
+      "sourceHash": "bb32933e2810cf22715b1251fd355c9f24820f910e184dc5b51e6b5e089be194",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "判断故障前，先悬停查看{{strong_1}}仓储数量{{end_strong_1}}。产出仓储已满，说明产线在等待，并非发生故障。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.002",
+      "sourceHash": "8dbdf7cd93c985305ef5a12132a9a0fe1a1a7ef315dd5fbb754c8e5f0cd1f245",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — 追查缺失的供应"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.005",
+      "sourceHash": "f7fe1e9793cb9f167b19ef13e795896ac933b16e5f8005b81683d47ea1171ca7",
+      "termHash": "677075bc6722ce769a31f7d301e89d3a7a68921e1324ff64f8896d5b5ec96e54",
+      "text": "如果仓储未满，而且研究正在消耗矩阵，点击{{strong_1}}上游原材料生产统计{{end_strong_1}}，比较{{item_1112_1}}和{{item_1118_1}}。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.006",
+      "sourceHash": "61674e8467dd96d9ad06bd8fef883a59140faf5d0a3dd95e82e5f90bff90ccf4",
+      "termHash": "ae90826b71f28cda3719766e00aa3060f5424ac23c936c6ae6e701aaaa326198",
+      "text": "如果{{item_1118_1}}这一行表现偏低，就向上追一步，查看{{item_1117_1}}和{{item_1106_1}}。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.007",
+      "sourceHash": "61a50a1ef3e959b5f544cc0dd39ec02a3389a0e5390c2f2f2e7d4556173014ea",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "注意：母星的{{item_1106_1}}来自输入，而非本地生产。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.008",
+      "sourceHash": "4c7da4cc3fc9a5c8a99a3a30bca93915a481a471ff0fa86a3e2e4aa0c46fa9a6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "把范围从母星切换为其所属的星系名称。行星视图会把跨过其边界的钛块计为输入；星系视图包含源头行星的生产，并把星系内部行星间的运输视为内部流转。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.h3.003",
+      "sourceHash": "d2437ba0ee9b42f9c004b41f66d181e813402a50473925ce1d84fb8783a38a32",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} — 确认并修复"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.009",
+      "sourceHash": "bf87e0bccfbebaa85dabab97065b42a32a5675f4f687fd674aa94bc9099ca95c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "切换到{{strong_1}}{{fact_1}} 分钟{{end_strong_1}}，判断短缺是否持续存在，而不只是最近一次送货间隙。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.010",
+      "sourceHash": "9289d0869d6bc1f4402e7501c1ad084641a2339359a53201defd7dbfe3bf7bf6",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "根据各行显示的情况，继续追查{{item_1106_1}}的上游，或检查星际物流路线。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.li.011",
+      "sourceHash": "940d24475f65f845f06b10590e75eddf8c2355103b85c09c9f5f72f49791c29f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "修复一个原因，让路线运行，再检查结果。"
+    },
+    {
+      "id": "f.statistics-panel-details.h3.001",
+      "sourceHash": "01c2e91abc79b3ea017eb75594d1f409d173d63d64b94912da0e8916080b1608",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "面板详解"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.001",
+      "sourceHash": "e0b177860d1a14cbcc93dee2652519b81e73667e1dab572064f13620a9fb1706",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "统计范围"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.001",
+      "sourceHash": "ee98ca48fb6cc5776a046052e8c7b6f8145200e7a94bf9a99f7e5b4d85ccd801",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "查看眼前工厂时，选择{{strong_1}}统计当前星球{{end_strong_1}}；工作跨越同一星系的多颗行星时，按名称选择对应的{{strong_2}}星系{{end_strong_2}}；后期需要工厂全貌时，再选{{strong_3}}统计全星区{{end_strong_3}}。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.002",
+      "sourceHash": "2f17d363ee3fbb9b2c3fd3b5e79f8b170838161c8d23475137cf128a75237aa2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "时间区间"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.002",
+      "sourceHash": "8c713847eedafce6e427fdcda7b15b0c77043dc8448a754f96bc47173db3e280",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用{{strong_1}}{{fact_1}} 分钟{{end_strong_1}}快速查看近期变化，用{{strong_2}}{{fact_2}} 分钟{{end_strong_2}}查看更平稳的短期平均值。历史区间的数据是每分钟平均值；{{strong_3}}总计{{end_strong_3}}显示的则是累计数量。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.003",
+      "sourceHash": "29fb93d7304d429098d3b1258788da974484dd63c15de3362796884fd94d4348",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "物品行"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.003",
+      "sourceHash": "e441ee0df54ec46a1c0cfd4d75f70ede4de714b66155c7ddb59671c2fe0e3110",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "每行包含生产和消耗及其各自的参考速率、输入与输出、相关物流仓储、仓储总量、垃圾数量、历史曲线，以及直接跳转原料和产物的入口。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.004",
+      "sourceHash": "b2ddb67b4ea5c82f19141f084909e44342422f99200d5ee75a0ae5eb4cf04013",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "范围边界"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.004",
+      "sourceHash": "f22ed946f9da2b15c14e97f22418c6cbd06db03465110b307e9d10a41723ccb6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "输入和输出指跨越所选统计范围边界的运输，与边界内的生产和消耗不同。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.005",
+      "sourceHash": "162360372500f22c36442883a0753eebc926cfcf916bd7e477b58cbbebee41c6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "参考速率"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.005",
+      "sourceHash": "b111f462c0ad4f68e1a29167051ce3059289c2a2c2905e03f4aa43ef582efa56",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "这是统计范围内，符合条件且接入电网的设施，按当前配置计算出的理想产能。计算会考虑配方、机器速度、增产模式、研究加成及相关设施行为。它不是实际产出、历史平均值，也不是你设定的目标。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.006",
+      "sourceHash": "6e4d69ec4c394a6377ff1555be6e559c6dbde81ab6b3463c5367c9e8d5e770af",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "悬停详情"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.006",
+      "sourceHash": "e37edf21f48f5560c1cb00942ade7ecaa0ba03854ddb0a46af25e67aecec8875",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "悬停参考速率可查看设施明细，悬停仓储数量可查看物品存放位置，悬停历史曲线可查看确切的时间段和数值。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dt.007",
+      "sourceHash": "a175338865c95bc347e6d37e35a65dc3ce6efcbf31546927f71219fa902a1104",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "实时刷新"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.dd.007",
+      "sourceHash": "821977536828b4f3d9c3f5b86766470efb29607fcec1803e88e1236af9f216a1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "右键点击任一圆形刷新箭头，可持续刷新参考速率和当前库存快照。这不会替换所选历史区间，也不会把生产和消耗变成瞬时速率。"
+    },
+    {
+      "id": "f.production-statistics-walkthrough.p.002",
+      "sourceHash": "d527ae831064b2051d32455396ee30b8774c0f7b4e63a13b196ead028fc322c4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}面板能说明什么：{{end_strong_1}}它能找出表现不足的环节。仅凭与参考速率的差距，无法确定具体原因究竟是缺料、产出堵塞、电力不足，还是其他运行限制。修改之前，先检查对应的实体产线。"
+    },
+    {
+      "id": "f.top.p.028",
+      "sourceHash": "f5d0ebee35548ea230cb1c38f59a118e19674248fd5aaaa16c02fa650a76e6cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "每次只修复一处看得见的停滞。机器安静下来、产出已满，说明它在等待，并非故障，也无需扩建。"
+    },
+    {
+      "id": "f.top.h1.001",
+      "sourceHash": "3168b05da204e1feac07d1733f7075ba10b4e691537c791caffd74fe29314e29",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "接下来的路，由你来走"
+    },
+    {
+      "id": "f.top.p.029",
+      "sourceHash": "ce08010012288a3505af29656eed467da32308513e5f586b5482f27e9a2e6efb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "研究完「任务完成」，并不意味着工厂已经完工，而是意味着你已经知道怎样让一座工厂走到终点。"
+    },
+    {
+      "id": "f.top.p.030",
+      "sourceHash": "17fc23ee4ada4bfa33574cb38d064e2e93c6e697f829b1e504a112281c6ac473",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最初，你站在异星的太阳下，只有伊卡洛斯、一台合成器，以及一堆尚无答案的任务。如今，工厂已跨越行星，五色矩阵汇入白糖科研，戴森工程正在运作，反物质也无需你亲自搬运。"
+    },
+    {
+      "id": "f.top.p.031",
+      "sourceHash": "a27935790590422d7a1bab5ac2d50d280f4185341e680fdf2f221c4ad8737bad",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "更重要的是，你学会了把短缺变成产线、让共同产物保持畅通、把工业带出母星、让电力随需求增长，并沿着停产的物品找到根因。这些能力，比本指南里的任何数值和工厂布局都更经得起时间考验。"
+    },
+    {
+      "id": "f.top.p.032",
+      "sourceHash": "9f4c56f2aa54ce9371cddd24bc9c4f9b7e5791deb2d08655ba7488bfa7169ce0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "建一座永久戴森球，扩张到整个星区，提高自己的目标，或带着更好的计划重新开始。恭喜你，工程师。戴森指明了方向，而你铺出了道路。"
     },
     {
       "id": "a.tech-sheet-title.h2.001",

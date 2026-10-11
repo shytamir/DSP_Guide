@@ -73,6 +73,15 @@ recipe is 质能储存: the installed `2052/prototype.txt` maps the source key
 literally. These short names were verified read-only alongside 自动轨道 in
 `2052/base.txt`; no game launch or file change was involved.
 
+Other UI labels verified against the installed Chinese base table are
+本地供应/需求、星际供应/需求、运输机/运输船起送量、曲速启用路程 and
+翘曲器必备. The statistics walkthrough uses 生产统计、统计当前星球、
+统计全星区、生产速率、参考速率、仓储数量 and 上游原材料生产统计.
+These match the English keys for Production, Local planet, Entire star cluster,
+Production Rate, Reference Rate, Storage Amount and Raw Material Statistics;
+do not substitute literal English-shaped UI names. Proliferation modes are
+额外产出 and 生产加速. English external-tool names remain recognizable.
+
 Use Chinese punctuation around protected tokens. Keep source-owned units,
 Mk.I/II/III and expedition I/II/III labels. Preserve the exact English
 `Install with Mod Manager` action beside a Chinese explanation so readers can

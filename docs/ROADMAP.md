@@ -1,9 +1,10 @@
 # Roadmap — Phone Support and Localization
 
-**Status: executing ML-E3, 2026-10-11.** ML-01–14, ML-M1 and ML-G2 are
-agent-validated. The owner authorized ML-10–15 with validation, management
-updates and a commit/push per story to `main`, stopping after the Chinese epic.
-ML-E4–06 require a later execution instruction; all translations remain private.
+**Status: ML-E3 complete; stopped at the epic handoff, 2026-10-11.**
+ML-01–15, ML-M1, ML-G2 and ML-M2 are agent-validated. The authorized Chinese
+epic includes validation, management updates and a commit/push per story to
+`main`. ML-E4–06 require a later execution instruction; all translations remain
+private. See the [current handoff](#ml-m2-handoff--2026-10-11).
 
 **Outcome:** make the complete guide practical on phones, then offer equivalent
 English, Simplified Chinese, German, and Japanese editions without losing
@@ -431,6 +432,7 @@ the resulting hash and push outcome.
 | ML-12 — agent-validated | `node artifacts/ml-e3/catalog.mjs C`, `localization-source.mjs --write`, card/readability validators, `build-site.mjs artifacts/ml-e3/ML12-preview --preview zh-CN`, `artifacts/ml-e3/browser.mjs ML12 C`, and `build-site.mjs artifacts/ml-e3/ML12-release` plus both output validators passed. | 257/257 segment entries; 877 cumulative. Bilingual comparison and separate Chinese revision retained rank caps, discard rules, three/three/two Labs, conditional expansion, optional resource detours, net Hydrogen consumption, and Strange-Matter-first fuel priority. Corrected an ambiguous Chinese bypass verb and smoothed fuel/blueprint phrasing. Chromium/WebKit/desktop covered 255 rendered nodes, all three dashboards/cards and enlarged text. Source item 1102 on the Iron Ingots flow was corrected to 1101 against retained runtime recipe 104; the validator now compares those inputs to that recipe. English wording, image and quantities are unchanged; English-only output passes. | ML-13: DYSON, receiver bridge, PHOTON, WHITE and optional SPHERE; preserve power/photon/antimatter/completion distinctions. |
 | ML-13 — agent-validated | `node artifacts/ml-e3/catalog.mjs D`, `build-site.mjs artifacts/ml-e3/ML13-preview --preview zh-CN`, `artifacts/ml-e3/browser.mjs ML13 D`, and `build-site.mjs artifacts/ml-e3/ML13-release` plus both output validators passed. | 228/228 segment entries; 1,105 cumulative. Bilingual and separate Chinese review preserved sail-capacity/reference distinctions, receiver warm-up and output blocking, the 40/min baseline, 2,000 Antimatter reserve, 4,000-cube completion and optional permanent-sphere scope. Read-only native locale lookup confirmed 光子生成, 持续接收, 自动轨道 and the displayed collider recipe 质能储存; no game launch/write. Revised literal sphere phrasing. Chromium/WebKit/desktop inspected 227 rendered nodes, bridge, dashboards, cards and 200% phone text; screenshots reviewed. The 539-file English-only release remains unchanged. | ML-14: optional WARP and LOGISTICS, preserving departure checks, scout-first progression and replacement-stock boundaries. |
 | ML-14 — agent-validated | `node artifacts/ml-e3/catalog.mjs E`, `build-site.mjs artifacts/ml-e3/ML14-preview --preview zh-CN`, `artifacts/ml-e3/browser.mjs ML14 E`, and `build-site.mjs artifacts/ml-e3/ML14-release` plus both output validators passed. | 250/250 entries; 1,355 cumulative. Bilingual and separate Chinese review preserved eight rare-resource alternatives, optional departure, 20-Warper batch, return reserve, unpowered source/powered home fleet, two-Warper round trip, green-science protection, six limited equipment buffers and dispatch-station controls. Native base labels confirmed 星际/本地供应/需求, 起送量, 曲速启用路程 and 翘曲器必备 read-only. Removed repetitive technology-name wording. Three Chromium/WebKit/desktop cases inspected 247 rendered nodes, expedition stages, dense tables, logistics cards and 200% phone text; screenshots reviewed. English-only deployment passes. | ML-15: remaining references and ancillary copy, then complete-manifest and whole-edition review plus the full private browser matrix. |
+| ML-15 — agent-validated; ML-M2 reached | `node artifacts/ml-e3/catalog.mjs F`, `edition.mjs`, the six source/localization/terminology/card/checklist/readability checks, ML15 preview and segment browser checks, full private Chinese phone matrix, release generation and both package validators passed; details below. | 182/182 segment entries; all 1,537 messages and eight UI strings complete/current. Bilingual, Chinese-only and whole-edition review covered optional references, external tools, checklist parity, statistics controls and conclusion. Verified native statistics/proliferation labels read-only; corrected literal phrasing, one earlier assembler label and four semicolons. Three segment cases plus 38 full-matrix cases passed; screenshots reviewed. The ignored completeness helper initially counted the UI wrapper instead of its strings; corrected before acceptance, with no product failure. No source edits or public activation in this story. | Stop after ML-E3. The current ML-M2 handoff identifies ML-E4 / ML-16 as the next work, requiring a new instruction. |
 
 ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
 and uses a hoisted/copy install to avoid sandbox symlink requirements. The first
@@ -554,6 +556,75 @@ Use a fresh ignored output with
 for private inspection. All three non-English locales stay disabled and `VERSION`
 stays unchanged until ML-28. ML-10 has not started; the two earlier concepts
 remain deferred indefinitely.
+
+## ML-M2 handoff — 2026-10-11
+
+**ML-E3 / ML-10–15 are agent-validated; stop here.** Chinese is complete and
+accepted privately: A 393, B 227, C 257, D 228, E 250 and F 182 messages
+(1,537 total), plus eight UI strings. Every segment received source comparison,
+a separate Chinese read/revision and rendered inspection. Whole-edition review
+reconciled terminology, repeated copy, optionality, progression/checklist gates,
+attributes, metadata and deliberate English exceptions. There are no missing or
+stale entries, untranslated prose or known linguistic defects in the reviewed
+edition. Language judgment is the implementing agent's; it is not independent
+native-speaker or real-user evidence.
+
+Final verification:
+
+- `node artifacts/ml-e3/edition.mjs` enforced complete coverage (no partial
+  fallback), current source/term hashes, protected objects and numbers, eight
+  current UI strings and exact source/localized fact signatures. Repeated source
+  messages have consistent wording. Latin exceptions are product/tool names,
+  quoted image text, legal credit, native X-ray recipe spelling, ILS/PLS and
+  retained expedition/key/unit labels.
+- `node scripts/localization-source.mjs`, `test-localization.mjs`,
+  `validate-terminology.mjs`, `validate-card-system.mjs`,
+  `validate-checklists.mjs` and `validate-source-readability.mjs` passed.
+- `node scripts/build-site.mjs artifacts/ml-e3/ML15-preview --preview zh-CN`
+  and `node artifacts/ml-e3/browser.mjs ML15 F` passed. Segment F has 180
+  rendered text nodes plus two attributes; all reference sections, the checklist
+  and statistics walkthrough were inspected in Chromium/WebKit and desktop.
+- `node artifacts/ml-e3/validate-chinese-phone.mjs --site
+  artifacts/ml-e3/ML15-preview --mode <mode> --full --output
+  artifacts/ml-e3/ML15-<mode>` passed navigation, layout and interaction
+  (12 cases each), plus navigation-edges (2), with zero errors. This ignored
+  copy of `scripts/validate-phone.mjs` changes only the private URL, Chinese
+  text assertions/data paths and removes synthetic language-title substitutions.
+  Its geometry, navigation and interaction assertions remain intact. Evidence
+  covers Chromium 156.0.8078.4, WebKit 27.2 and installed Chrome 155.0.8059.39;
+  portrait/landscape, 320–480 px, desktop, 200% text, focus/dismissal, scrolling,
+  native tooltips, storage denial, checklist reload/reset and no-JS links.
+- `node scripts/build-site.mjs artifacts/ml-e3/ML15-release`,
+  `node scripts/validate-localization.mjs artifacts/ml-e3/ML15-release` and
+  `node scripts/validate-deployment.mjs artifacts/ml-e3/ML15-release .` passed:
+  539 exact English-only files; no catalogs, parser or Chinese preview deployed.
+- Documentation link/order/weight checks and `git diff --check` passed.
+
+The epic also repaired three blocking source annotations: Drive Engine Lv2
+now references tech 2902 rather than item 1407; generic FOUNDATIONS no longer
+claims to be item 1131; Strange Matter's Iron Ingots reference is item 1101,
+checked against retained recipe 104. English wording and quantities were
+preserved. Chinese closure corrected one assembler-grade label's word order
+and four card-flow semicolons. Native UI/recipe names were checked by reading
+installed locale text only; no game launch or game-file change occurred.
+
+Each story has its own management-bearing commit and push to `main`. The final
+story commit contains this handoff; Git history and the completion report carry
+the resulting hashes. No production publication, version change, public locale
+activation or further epic was performed. Emulation is not physical-device,
+branded iOS Safari, OS-font or assistive-technology certification. Exact CI ZIP
+and development checks were not repeated for this private translation milestone;
+the prior ML-G2 evidence remains historical, and ML-28 owns combined delivery.
+
+**Next starting point, only after a new instruction: ML-E4 / ML-16, German
+segment A.** Read the translation contract, [authoring guide](../localization/README.md)
+and [language rules](../localization/style.md). German still has four tooling
+samples and eight UI strings to reconcile against the complete segment. Use
+`node scripts/build-site.mjs artifacts/preview-ml16 --preview de --segment A`
+with a fresh ignored output. Use the current English source inventory, including
+the three corrected annotations; preserve all 66 checklist identities/aliases,
+anchors, native IDs and `rankInside` handling. Keep all target locales disabled
+and `VERSION` at 3.1 until ML-28. The two earlier concepts remain deferred.
 
 ## Draft review — 2026-10-11
 
