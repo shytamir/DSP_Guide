@@ -1,15 +1,15 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-E1–E3 complete; ML-01–15 and the private Chinese milestone ML-M2
-are agent-validated. All six Chinese segments and the whole-edition review pass.
-Version 3.1 remains English only. Each Chinese story includes validation,
-management updates and a commit/push; work stops with the ML-E3 handoff.
+**Status:** ML-E1–E3 and the private Chinese milestone ML-M2 are complete.
+ML-E4 is authorized through ML-21; ML-16 is agent-validated with the German
+opening, BLUE, shared controls and eight UI strings complete privately.
+Each story includes validation, management updates and a commit/push; stop
+after the German epic. Version 3.1 remains English only.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
 Simplified Chinese, German, and Japanese localization, approved the roadmap,
-and subsequently authorized execution through ML-15. ML-E4 requires a new
-execution instruction; production publication remains owner-controlled.
+and subsequently authorized execution through ML-21; production publication remains owner-controlled.
 
 [`ROADMAP.md`](ROADMAP.md) is the sole active roadmap. The two previously
 deferred concepts remain deferred indefinitely in the historical archive.
@@ -19,7 +19,8 @@ deferred concepts remain deferred indefinitely in the historical archive.
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
 Only English is deployable; the complete Chinese translation is accepted privately.
-German and Japanese still contain only four private HTML samples each.
+German segment A is complete privately; Japanese retains four tooling samples.
+Narrow main text can wrap long native names and German compounds at 200% text.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized
 tooltip/checklist data. The disabled locales cannot deploy until their full
@@ -180,7 +181,7 @@ contract; 320 px is a stress check. Physical devices, branded iOS Safari, OS
 fonts, and assistive technologies have not been certified. Spanish and Russian
 remain excluded.
 
-The roadmap is approved; execution is currently authorized through ML-15.
+The roadmap is approved; execution is currently authorized through ML-21.
 There are no outstanding owner design, language-review, or device-testing
 decisions. Once implementation is instructed, the agent owns review, correction,
 acceptance, and closure, with a management update and commit/push to `main` after

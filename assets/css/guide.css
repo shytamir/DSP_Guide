@@ -2707,6 +2707,7 @@ details.build-card[open] > summary {
   main {
     width: calc(100% - 32px);
     padding-top: 20px;
+    overflow-wrap: anywhere;
   }
   .guide-title {
     grid-template-columns: minmax(0, 1fr) 56px;

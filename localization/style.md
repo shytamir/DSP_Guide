@@ -90,6 +90,20 @@ keyboard keys and the legal credit remain deliberate exceptions. Put the native
 completion technology name in quotation marks when needed to avoid a repeated
 “完成任务完成” phrase. These choices introduce no new gameplay conditions.
 
+### German edition conventions
+
+Use Mall (defined in the glossary), Puffer, Zweig, Zusammenführung and
+Reserveversorgung consistently. Color/route labels are BLAU, ROT, GELB, VIOLETT,
+GRÜN, DYSON, PHOTON, WEISS, SPHÄRE, WARP and LOGISTIK. Native matrix links retain
+the official names; the introduction distinguishes these from prose color names.
+The producer explanation uses Montagemaschine as readable prose for the native
+Zusammens.-Masch.; protected item names stay exact. Preserve source-owned Mk.I
+notation, quantities and units even when the native item uses Typ I. Use a
+label plus quantity or “vom Typ” where a protected singular cannot be declined.
+Keep the image's actual English title, external product names, the exact
+Install with Mod Manager action and legal credit; explain the install action
+in German. These are deliberate exceptions, not untranslated guide prose.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 
