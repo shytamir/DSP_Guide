@@ -67,6 +67,12 @@ the generated native item labels are color aliases. Expand ILS/PLS as 星际物�
 行星内物流运输站 on first relevant use; keep the abbreviations only where useful.
 Transport names remain distinct: 配送运输机、物流运输机、星际物流运输船.
 
+Receiver prose uses the native 光子生成 mode and 持续接收 label. The collider
+recipe is 质能储存: the installed `2052/prototype.txt` maps the source key
+光子物质化 to that displayed value. Do not translate the English recipe name
+literally. These short names were verified read-only alongside 自动轨道 in
+`2052/base.txt`; no game launch or file change was involved.
+
 Use Chinese punctuation around protected tokens. Keep source-owned units,
 Mk.I/II/III and expedition I/II/III labels. Preserve the exact English
 `Install with Mod Manager` action beside a Chinese explanation so readers can

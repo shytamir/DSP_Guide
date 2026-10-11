@@ -5253,6 +5253,1374 @@
       "text": "接下来前往{{a_1}}{{img_1}}[戴森云]{{end_a_1}}。如果已选定一种稀有资源，准备让输入线无人值守运行，就跳到{{a_2}}{{img_2}}[曲速]{{end_a_2}}的自动化步骤；有了绿糖，{{item_1210_1}}的成本已经很低。"
     },
     {
+      "id": "d.dyson.h1.001",
+      "sourceHash": "ccf17766074cc648fadaf11e06a6aec5818ed8794b537cf7253674aac6c7ba84",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[戴森云]{{end_a_1}} — 为光子生产建立戴森云"
+    },
+    {
+      "id": "d.dyson.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "d.dyson.p.001",
+      "sourceHash": "e44031d80f705bd050b8d858607a3cbedaccbf2de3b9885240c61bf08e492916",
+      "termHash": "3286da98fd713fa63a32cbbb990e19316110a5ffd6348d0020278fd27b9dead7",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}绿糖科研和两条后期原料支线。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}持续发射太阳帆，让不断扩大的戴森云为{{item_2208_1}}提供实用产出。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}用戴森云支撑{{item_1122_1}}产线，补齐白糖科研前的最后一种原料。{{br_3}}{{strong_4}}下一步：{{end_strong_4}}{{a_1}}接收站与反物质过渡环节{{end_a_1}}；如果更愿意放慢一次性戴森云的扩张速度，换取永久留在恒星旁的建筑，也可以先走可选的{{a_2}}{{img_1}}[戴森球]{{end_a_2}}路线。"
+    },
+    {
+      "id": "d.dyson.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段概览"
+    },
+    {
+      "id": "d.dyson.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "d.dyson.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "d.dyson.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主要目标{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.002",
+      "sourceHash": "622549060ff7fb659b8610607e203ed0ec933896097528f3e0ae94b6fc952fc9",
+      "termHash": "6766b119aa457d58dffa9d824c473899c9c2c830804e4379b06f7f1da463232c",
+      "text": "自动生产{{item_1501_1}}，持续供应能够实际发射的电磁轨道弹射器网络"
+    },
+    {
+      "id": "d.dyson.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}建议目标{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.004",
+      "sourceHash": "a33a3dc321e25215a163375c02e4c236ea81027e9816300d45e5f2d727c35189",
+      "termHash": "790a29d2f6b4cb3ad57cd935efd2ed376528dfe29f7faf1b77347782e2f35e7c",
+      "text": "只需部分戴森云，就能让{{item_2208_1}}产生实用输出；进入光子阶段后继续扩建"
+    },
+    {
+      "id": "d.dyson.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}优先研究{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.006",
+      "sourceHash": "57d5e6822ba233d4edcf65ee916275c89d47c36c5f4dc621ed84878b5a4a6c74",
+      "termHash": "c2f2743b27bac80729390a1010b8729d0bd8c2a7457c3b96b4ae05b0289643d4",
+      "text": "{{span_1}}{{strong_1}}戴森云阶段研究：{{end_strong_1}}{{tech_3101_1}}等级 {{fact_1}} {{fact_2}} {{tech_3102_1}}等级 {{fact_3}}{{end_span_1}}"
+    },
+    {
+      "id": "d.dyson.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.008",
+      "sourceHash": "a091efc00ba1a65ed7f39f906c3a9ebe8b9254b5f35cb579164618154f0b54cf",
+      "termHash": "6766b119aa457d58dffa9d824c473899c9c2c830804e4379b06f7f1da463232c",
+      "text": "实测有效发射时间占比、{{item_1501_1}}库存趋势、恒星光度、太阳帆寿命，以及戴森系统的实时发电量"
+    },
+    {
+      "id": "d.dyson.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时进入下一阶段{{end_strong_1}}"
+    },
+    {
+      "id": "d.dyson.td.010",
+      "sourceHash": "d2a0b1b0b16ac980d208e20663777db284dd05afae457c3973c4a880c5bebd4d",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{item_1122_1}}稳定生产，且能送达科研区"
+    },
+    {
+      "id": "d.dyson.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "d.dyson.p.002",
+      "sourceHash": "9b6dd30b5474dab6da4d25b3fe65ee303c5ce8a2ed95efde0412b5929eb5cbc3",
+      "termHash": "3f827e5ee3ada2b1542d2772f33ab7448a12f02fdcef3a5e0a10845176093fb8",
+      "text": "工厂已经发展到该把下一座发电厂建到太空里的时候。{{item_1501_1}}离开行星，进入轨道，组成支撑{{item_1122_1}}、白糖科研和最终胜利的巨型结构。每一台真正开火的弹射器，都让这个终点更近一步。"
+    },
+    {
+      "id": "d.dyson.p.003",
+      "sourceHash": "ea492f81a83a038875bd065c4f4801d580d984eb800a774df9387b2f3df9f72a",
+      "termHash": "46cd5b7a5fba070599776888c7c331bc429796ffe5000c437fee7ce5c74f4cc3",
+      "text": "建好太阳帆产线，把弹射器分散到合适的发射区域，看戴森系统的实时功率逐步上升。完整参考规模只是规划目标，不是进入下一阶段的门槛：配有透镜的{{item_2208_1}}，早在天空布满太阳帆之前就能生产{{item_1208_1}}。只要部分戴森云已经能稳定发挥作用，就开始光子阶段；推进终局时，继续发射太阳帆。"
+    },
+    {
+      "id": "d.dyson.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先研究"
+    },
+    {
+      "id": "d.dyson.p.004",
+      "sourceHash": "58252f5e0d3a5b619bb74ac4b85e0e93b93899c23ddb7eeb43cc026c9cec6f89",
+      "termHash": "c2f2743b27bac80729390a1010b8729d0bd8c2a7457c3b96b4ae05b0289643d4",
+      "text": "{{strong_1}}戴森云阶段研究：{{end_strong_1}}在发射网络达到完整规模前，完成{{tech_3101_1}}等级 {{fact_1}} {{fact_2}} {{tech_3102_1}}等级 {{fact_3}}。完成等级 {{fact_4}} 后，进入接收站过渡环节前就没有其他待办研究了。"
+    },
+    {
+      "id": "d.dyson.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 多少才够用"
+    },
+    {
+      "id": "d.dyson.p.005",
+      "sourceHash": "e1fde5f2e932c72dd7750ab785b964923d0841c38b98f53ca7d2c1dfba0e4909",
+      "termHash": "bd052244aa58184842c849b951e00d4a6b420f07b547933a6116e91911a4542a",
+      "text": "{{strong_1}}根据实际运行情况决定扩产或前进。{{end_strong_1}}观察弹射器的实测发射时间占比、{{item_1501_1}}库存升降、戴森系统实时发电量，以及{{item_2208_1}}的实际产出。接收站已能有效工作，就开始光子阶段；只有发射时间、太阳帆库存或接收站需求显示出短缺时，才在对应位置继续扩建。"
+    },
+    {
+      "id": "d.dyson.p.006",
+      "sourceHash": "e4422c0d059720e9fde7899f86955397b10064e1a41fa4876d0b08d129e444e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "在发射网络达到完整规模前，研究太阳帆寿命等级 {{fact_1}} {{fact_2}} 等级 {{fact_3}}。升级让每张太阳帆在轨道上停留更久，减少工厂和弹射器需要补充的数量。也可以跳过升级，用更多太阳帆产能和成功发射次数来补偿。这种取舍合理，具体怎么算可以自行决定。"
+    },
+    {
+      "id": "d.dyson.p.007",
+      "sourceHash": "ec94d09e06fc3c4b2fb6e47996b39ef0cafb7c0332144e67f131fb52efbacdcc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "完成两级太阳帆寿命升级后，参考戴森云需要建成{{strong_1}}{{fact_1}}{{fact_2}} 的太阳帆产能{{end_strong_1}}，并实现约{{strong_2}}{{fact_3}}{{fact_4}} 的成功发射速率{{end_strong_2}}。六十台弹射器若平均有 {{fact_5}} 的时间在发射，就能达到约 {{fact_6}}{{fact_7}}。这是规划参考，不是完成条件：弹射器只有在轨道和发射窗口允许时，才能真正贡献发射量。"
+    },
+    {
+      "id": "d.dyson.p.008",
+      "sourceHash": "554fdf27fa52f127c9ff14390c98923229179cebefb60b04b252ae963c7d878f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "把参考值当作起点。够不够用，最终取决于实际建成的工厂和所处的恒星。"
+    },
+    {
+      "id": "d.dyson.p.009",
+      "sourceHash": "9172e0f432c1a67f16c120b9de8da169d8efca4c605d819ab1e1e4d49a604f25",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "参考规模的戴森云建成之前，接收站阵列就能开始积累{{item_1122_1}}。让它持续运行，同时扩大戴森云，并在光子阶段强化系统。之后存够 {{fact_1}} 个反物质才进入白糖阶段；不要为等这个库存而停留在戴森云阶段。通过{{a_1}}接收站与反物质过渡环节{{end_a_1}}继续前进。"
+    },
+    {
+      "id": "d.dyson.h2.005",
+      "sourceHash": "9101e3c550c0ac28f6def8ce3c6827b7e44f596c4b1a342052100926e1e76083",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 建设概览"
+    },
+    {
+      "id": "d.dyson.p.010",
+      "sourceHash": "b9ae5edda6a1462ee2e40d4823adff9b90616c833672aec796da07c740c49d3b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}这些卡片用于规划，不是完成条件。{{end_strong_1}}需要一眼看清整条产线时再打开。部分戴森云已能让接收站产生实用输出，就进入光子阶段，同时继续扩大发射系统。"
+    },
+    {
+      "id": "d.dyson.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}展开全部卡片{{end_button_1}}{{button_2}}折叠全部卡片{{end_button_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.summary.001",
+      "sourceHash": "61f5390c06aa52cfe52c5968279f9d871f160df8a662003242ad2c821195865a",
+      "termHash": "6766b119aa457d58dffa9d824c473899c9c2c830804e4379b06f7f1da463232c",
+      "text": "{{span_1}}{{item_1501_1}} — 已安装产能 {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}参考{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.001",
+      "sourceHash": "1a7c97b7cdbf2d7b15266b5586ba0c2184a9462cd5afc09a5055b27eee9f4239",
+      "termHash": "959d63b638036c281c75654ba2300077ec9ae604372846f969e4a81b59ea7dbf",
+      "text": "{{a_1}}蓝糖支线产出的{{item_1301_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.002",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "6431d7fe1b21f67a7db54f3b7a9e8c4f89be31490ea1d5a551012c7bc916c13a",
+      "text": "{{a_1}}通用常规产线生产的{{item_1123_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.003",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "b89457a65b7615b6eca8df047136e35f38bc1a82c0eb2b19fe6830430ab7a9d5",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h5.001",
+      "sourceHash": "f1e5274735ecd9240785d872cb0b405692bd9764d9d00faca73f5d92dcc4dd9c",
+      "termHash": "204922065691ad390d4dd8b0cc4da060281ca56488defc7e5ddf9c13df0112c1",
+      "text": "研究后补建：{{tech_1502_1}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.004",
+      "sourceHash": "06c426c482d1939b31f146b6aca9f38de5f37f9ced06abcee89179681ca18d33",
+      "termHash": "fdb726eb5d4036b6982bac4785f3e2d5c2176c6c43c869cbb50417b64a596521",
+      "text": "{{span_1}}{{item_1111_1}}支线{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由制造台 {{fact_3}} 生产{{end_span_8}}{{end_span_6}} {{item_1111_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.005",
+      "sourceHash": "bdcda2723f589d0d94fd26c292f76739b1d3e992b2cdf62e760fee04fbe44bae",
+      "termHash": "b1616e7fb054d3a8f9b2662d42213b65be453da72bd50dfee8fb71e526f5fd1a",
+      "text": "{{span_1}}光子合并器支线{{end_span_1}}{{span_2}}{{item_1111_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1404_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.006",
+      "sourceHash": "3730b7dc6bbd69b0a22629547add46dc3844f4469008bce2c8844d9b0af386cc",
+      "termHash": "612da6fcb2f8b8000193167949d57db386c3394676a4a96a18b5cf4c7a76255b",
+      "text": "{{span_1}}太阳帆合成{{end_span_1}}{{span_2}}{{item_1404_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1501_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h5.002",
+      "sourceHash": "98578106736b3314d26097e171d3337107d99058138c50f30db2f8ba9cac304b",
+      "termHash": "6075ae31f10dbdeb9e2e6bc5f35d48f49793e7707c86047bfb1d70c0b88483ab",
+      "text": "研究后补建：{{tech_1503_1}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.007",
+      "sourceHash": "eb766f41aa1996086fd876ac9af8818d1efaf64cc675b74fbe747c9976b3e458",
+      "termHash": "5f22d18d879910b51269be9f59b2c885a925d904091a444bd23c1577478179f2",
+      "text": "{{span_1}}发射供料{{end_span_1}}{{span_2}}{{item_1501_1}} · 存入{{item_2101_1}}作为缓冲 · 供应{{item_2311_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.008",
+      "sourceHash": "de02eb4b2d310e6d975114e5b68d9e78429313186d005b7ba3fd886474399d26",
+      "termHash": "e89565717cee8f1598d2624c7737d44df9534023f9de365035dc3ed7780555d7",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1501_1}}{{end_span_1}} — 先接收计划产出的{{item_1501_2}}，再送往弹射器。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.009",
+      "sourceHash": "c793ae5bc2d61924707011d142df3427b89c4cfb24d462ce7325559ba87701a1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "卡片标题中的已安装产能参考值，采用本指南太阳帆寿命等级 {{fact_1}} {{fact_2}} 等级 {{fact_3}} 的路线。"
+    },
+    {
+      "id": "d.card-dyson-solar-sails.li.010",
+      "sourceHash": "b366141195f805e57b4b2c01900c16ed858fb86819f7db890bdb0a7d6e3e252f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如果太阳帆库存见底，就说明发射需求超过当前产量，即使已建制造台的数量看起来足够。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.summary.001",
+      "sourceHash": "41808075fb6a1a3c6708bd09d77b1d0567a92d985accaba3bee9f41488fd7456",
+      "termHash": "c810fd5e7ecdbeb11befbc668d2d69c19c24181375c2ec21fab587a2cb73fc5e",
+      "text": "{{span_1}}{{item_2311_1}} — 库存 {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}参考{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.002",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.003",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "0d7f1dbf29f18ced00e61e2c03de98a17b76a0d9de49a0ba807d6fbd077ea70f",
+      "text": "{{a_1}}紫糖阶段产出的{{item_1303_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.004",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "ce1a0782cf279734394dad8efcb5a08fd621265129c1f659c95ea7e81fb674f9",
+      "text": "{{a_1}}通用产线生产的{{item_1204_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h5.001",
+      "sourceHash": "98578106736b3314d26097e171d3337107d99058138c50f30db2f8ba9cac304b",
+      "termHash": "6075ae31f10dbdeb9e2e6bc5f35d48f49793e7707c86047bfb1d70c0b88483ab",
+      "text": "研究后补建：{{tech_1503_1}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.005",
+      "sourceHash": "19076d3a5443196c74ce7f148442d45eda92ce59a31d925220549bf3d8cdafc9",
+      "termHash": "1bf5137d284139f4410d037d014bc9acd2d8ccfd1505d90b17bfda7f5f8e6d60",
+      "text": "{{span_1}}{{item_1201_1}}支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由制造台 {{fact_3}} 生产{{end_span_8}}{{end_span_6}} {{item_1201_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.006",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "7639364fd3975452345655c09c3433f01928eb86e6a5893358550014661cf9db",
+      "text": "{{span_1}}{{item_1103_1}}支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由电弧熔炉生产{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.007",
+      "sourceHash": "f7d13a7cbb66a6f57ba505409cba35650cfc8ccc07381d01bcbf6d5c0cd9169b",
+      "termHash": "bc261b02c037fae9e8368137659c0ccc60e8b97e8da4cadd1d13baf28fc324fe",
+      "text": "{{span_1}}磁铁／高能石墨支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1102_1}}; {{item_1006_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由电弧熔炉生产{{end_span_8}}{{end_span_6}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.008",
+      "sourceHash": "e993ea8c08c43a17fdc3cf73b1500d2cfb263297ae169f9984ce173d5465eaa6",
+      "termHash": "6d5945eb58d762f80e27c4348f869dd0928125561e28a58dfd68f655521c42e5",
+      "text": "{{span_1}}超级磁场环支线{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.009",
+      "sourceHash": "58cf864e177dc67419d36700af0c376d27ed5726c2346501c0720f4a6d623963",
+      "termHash": "93ab20876ebea2edf6708481aebb28d7a2afecd5333e4e9ad64a284f2dcffe2c",
+      "text": "{{span_1}}电磁轨道弹射器合成{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1201_1}} + {{item_1303_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2311_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.010",
+      "sourceHash": "2249df619f8d609491542c177d65c6f03dd8f82a5374ba23af5cb169b5408b4e",
+      "termHash": "5b96a5f4f8d3923c2306f189fcf725a5468c2459980947753834d93ddd1746db",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2311_1}}{{end_span_1}} — 保留少量限额库存，用于分批部署。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.011",
+      "sourceHash": "c574474433bbd1f78609760ed93c43a95a153575b1a9d818d67513dc169147bd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "卡片标题中的库存参考值，采用本指南太阳帆寿命等级 {{fact_1}} {{fact_2}} 等级 {{fact_3}} 的路线。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.012",
+      "sourceHash": "b0f1f11c06a1b3977e8ed97709e00bc2ec06bb19d1e7ee0b81c038983c03d8de",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "弹射器需要合适的入轨角度，参考规模的发射场也会占据相当大的面积。分不同纬度区域部署，观察哪些区域真正能开火，扩建有效区域，而不是把所有机器挤在一起。"
+    },
+    {
+      "id": "d.card-dyson-em-rail-ejectors.li.013",
+      "sourceHash": "dccc633db0972c2b4b42deb6a58f5279de5eb4a268bdba30a3eb7934018c37ce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "每台正在发射的弹射器耗电 {{fact_1}}。角度合适时，大型发射场可能从待机突然变成高负荷，所以要分批铺设，并在各区域上线时观察电力曲线。"
+    },
+    {
+      "id": "d.dyson.h2.006",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意事项"
+    },
+    {
+      "id": "d.dyson.p.011",
+      "sourceHash": "4ece2531903fb9a06b78e538fb4b5879a2f86a2fd14bc3ab4141cc064c29f861",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}轨道管理。{{end_strong_1}}启用“自动轨道”后，弹射器可以选择当前可用的轨道，不必一直等待一个不合适的入轨点。它会保持这一选择，直到轨道无法使用；不会均衡分配弹射器，也不会主动切回偏好的轨道。最终仍受几何条件限制，所以要看实测发射时间占比，并持续供应有效纬度区域。"
+    },
+    {
+      "id": "d.dyson.p.012",
+      "sourceHash": "e58cf25134fa5ce49a8a6bd6554aa4705098ce406a5d985583d6d81389cfc572",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}同时启动的用电负荷。{{end_strong_1}}入轨点进入可见范围时，一大片弹射器可能同时开火。分批部署，并观察电力曲线。"
+    },
+    {
+      "id": "d.dyson.p.013",
+      "sourceHash": "cb97aba9371735295e9228388b277050e354ba30f58787cbc7f016144b62930d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}阶段可以重叠。{{end_strong_1}}部分戴森云一旦能支撑接收站的实用产出，就通过{{a_1}}接收站与反物质过渡环节{{end_a_1}}继续推进。如果实时发电量或接收站需求表明更多轨道电力有帮助，就同时继续扩大戴森云。"
+    },
+    {
+      "id": "d.dyson.h2.007",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足这些条件后，再进入下一阶段"
+    },
+    {
+      "id": "d.dyson.li.001",
+      "sourceHash": "1b6c4dff19702841c2e50e30ac8d9dcbf9eda5808c946ad1d765516e620f776f",
+      "termHash": "ecec03c231eac4dad88d0d5569a84fbd8271b94aa94dc9adb9c2cc55df514102",
+      "text": "{{label_1}}{{input_1}}{{item_1208_1}}能够稳定转为{{item_1122_1}}，且{{item_1122_2}}无需伊卡洛斯搬运就能送达科研区。{{end_label_1}}"
+    },
+    {
+      "id": "d.dyson.h2.008",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "d.dyson.p.014",
+      "sourceHash": "8366252b2971d9401d97622506213971d514af0438c025e99a4b6be99e7960d2",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "戴森云一旦能支撑接收站的实用产出，就继续完成{{a_1}}接收站与反物质过渡环节{{end_a_1}}。同时让弹射器持续工作，直到{{item_1122_1}}产量足以从容支撑终局。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge-title.h1.001",
+      "sourceHash": "1c7ea7e4483b2167d812ee396901c275025c3cff7e2ad564f9fbaaa2e06a69ce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}主线必经环节{{end_span_1}} 接收站与反物质过渡环节"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.001",
+      "sourceHash": "8635d0417e5e6e93edcfd18ab2ec1e4a208901e0f79fbf25d6d0566132769fb3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 衔接主线"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.001",
+      "sourceHash": "cb1f77e2821860d1bd57792280efa4393e680e2dae0383020039877d0efb1993",
+      "termHash": "cee8a40655b71b1bc4a207959642c5bb88edfe2fbe0a4692004bec596a69e58e",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}正在运行的戴森云已提供实用的实时发电量，也可以叠加自选的永久结构发电。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}把这些电力转为{{item_1208_1}}，再转为{{item_1122_1}}。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}建好一条可靠的物资产线，供光子阶段强化，并延续到白糖阶段。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.002",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先研究"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.002",
+      "sourceHash": "646426debf8bbea1935644dfdbc6e0d66ecfc0435e4a198832c24d3ee84f32d3",
+      "termHash": "0cba03501c15db61b44e163c9d7155b775f67c946d9935d42b285b7d0347222b",
+      "text": "{{tech_1504_1}} {{fact_1}} {{tech_1505_1}} {{fact_2}} {{tech_1506_1}}。按需要的顺序，解锁接收站、透镜辅助接收、光子生成模式，以及质能储存配方。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.003",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.003",
+      "sourceHash": "98d0aff97f3038931675125904af5b2c888449e2c51f0288dfdfbd82c6537f0c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "建立一条容易观察、不中断的路线，将轨道电力转为反物质库存。绿糖阶段的对撞机和矩阵原料线，已经提供了这套流程所需的昂贵部件。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.div.001",
+      "sourceHash": "68615d2aecce7750775908e70e0254f1cf0a780365438e8199fe64073932cc08",
+      "termHash": "ec3fe9aaf5a49afbdaf019a6d8b3a56039392445041ed42e07a03abcac9e66c5",
+      "text": "{{span_1}}戴森系统实时功率{{end_span_1}}{{b_1}}{{fact_1}}{{end_b_1}}{{span_2}}使用透镜的{{item_2208_1}}{{end_span_2}}{{b_2}}{{fact_2}}{{end_b_2}}{{span_3}}{{item_1208_1}}{{end_span_3}}{{b_3}}{{fact_3}}{{end_b_3}}{{span_4}}质能储存{{end_span_4}}{{b_4}}{{fact_4}}{{end_b_4}}{{span_5}}{{item_1122_1}} + {{item_1120_1}}{{end_span_5}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.attr.001.aria-label",
+      "sourceHash": "9b80f25aa4705f930f342b35a3cc36593b5073276e016fd38aa48508e1b27b4f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "戴森电力转为反物质的生产流程"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.004",
+      "sourceHash": "498d4dd75fb4a74445d38256a7e466f0e8e27efdee7a1dc48f28cb0b01548ef8",
+      "termHash": "790a29d2f6b4cb3ad57cd935efd2ed376528dfe29f7faf1b77347782e2f35e7c",
+      "text": "先用四座已充分预热、持续供应透镜的{{item_2208_1}}，都设为光子生成模式。在射线传输效率等级 {{fact_1}} 时，这组接收站至少需要{{strong_1}}{{fact_2}}{{end_strong_1}}的戴森实时发电量。这是光子阶段效率升级之前的起始参考，不代表升级后的功率需求。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.004",
+      "sourceHash": "d603361b2bc99a3dd6592ce9105a119722d59032580e17077bc3356ea7a1009a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作速览 — 从接收站到反物质"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.div.002",
+      "sourceHash": "c5515d54764f3878c0754f5c5e3f1db1a11ac4320c68bf94adda7b2f4b747024",
+      "termHash": "09b9005ee7047d9d00aa84e7fd3e3188cb93ab9be744738a0c03c5d2bb74f7e4",
+      "text": "{{strong_1}}让四座接收站都有透镜可用。{{end_strong_1}}自动补给最理想，但轨道系统起步时，手动补给也完全可以。六十个{{item_1209_1}}能让四座接收站运行大约 {{fact_1}} 小时 {{fact_2}} 分钟；记得设个提醒，到时一起补满。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.001",
+      "sourceHash": "2d95be8a3b0bb161d12848b44993a35979e72325c98a1b3db67befca051a265b",
+      "termHash": "637da4db204ea4bb715ae68511b82bc11fc4529854fadccb0c168455de4fd98a",
+      "text": "放置四座{{item_2208_1}}，供应{{item_1209_1}}，每座都选择{{strong_1}}光子生成{{end_strong_1}}。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.002",
+      "sourceHash": "fa901d7c253fedbc2351238ba16a1eefa51698bee632ed0a7f7dd6e7803e1697",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "让持续接收和接收能力逐步达到稳定水平，同时检查戴森实时发电量是否满足整组接收站的需求。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.003",
+      "sourceHash": "03234e6418bfcf85f9ed0d9c3d9030c368c57b8003015286cd5e373d88e9864d",
+      "termHash": "4d4a34f7c54ddb23785b35f5e07ed00910bc2ea7c68087b15906c7ff65a10cc5",
+      "text": "用传送带将{{item_1208_1}}送入一台{{item_2310_1}}，配方设为{{strong_1}}质能储存{{end_strong_1}}。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.004",
+      "sourceHash": "452964f77a27ead5c602bb3e6e57a6f41770d8138e379387aa2917512b5c88e0",
+      "termHash": "6a220de629b5d0468c356b4594f5aa018dd250b8647a35d128a95a1df60797ce",
+      "text": "把{{item_1122_1}}送入白糖科研区旁便于观察的仓储，并让对撞机副产的{{item_1120_1}}保持畅通。任一产物出口堵塞，两种产物都会停产。"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.005",
+      "sourceHash": "fd32f1f59e97307a39830bed480ad46036019f7a1b8eb1b3b5cbd1aef2ea7336",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足以下条件后继续"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.005",
+      "sourceHash": "21bd4fd9134fcf0654154b75fe445b93cb70fbb9e6fb5474aa75cd9f98ad95d0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}四座接收站都设为光子生成模式，持续供应透镜，并已充分预热。{{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.006",
+      "sourceHash": "a651ba894a6232769bfd2c6e55a8d3dc6018f398e0b1404996596d14895d5c98",
+      "termHash": "c1576557ec0964f7d523954e7a5d367aa2c6fa528dd0ebd590769d5c4c8396f6",
+      "text": "{{label_1}}{{input_1}}{{item_1208_1}}持续送达对撞机。{{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.007",
+      "sourceHash": "bd815c4f3b4931226bdc121a361a0bf7b2ae34fedebbc6f0c7fd9aa845444169",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{label_1}}{{input_1}}{{item_1122_1}}在可观察的仓储中稳定积累。{{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.li.008",
+      "sourceHash": "045caafd357842c86206f7bba560e676e25ed2090322162f0a40856a0c531ae3",
+      "termHash": "81f07c6af9999ea501fe5374ef5c8e0d2dd9e52b4e4d0b01a4ba0b3958dc981a",
+      "text": "{{label_1}}{{input_1}}副产{{item_1120_1}}的出口保持畅通。{{end_label_1}}"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.h2.006",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "d.receiver-antimatter-bridge.p.005",
+      "sourceHash": "3c7b83d05f334b6136ea5eff3247c8e58574c30e2d8a32843536c974228109d4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "反物质稳定积累、副产氢的出口保持畅通后，继续前往{{a_1}}{{img_1}}[光子]{{end_a_1}}。"
+    },
+    {
+      "id": "d.photon.h1.001",
+      "sourceHash": "a016c5147d5def483c0ed87bdaf6f8ef6e99ca7fbdb68f76ea0ba068c68c2e30",
+      "termHash": "cee8a40655b71b1bc4a207959642c5bb88edfe2fbe0a4692004bec596a69e58e",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[光子]{{end_a_1}} — {{item_1208_1}}与{{item_1122_1}}"
+    },
+    {
+      "id": "d.photon.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "d.photon.p.001",
+      "sourceHash": "aa4f83dad4592fa74efd779f02d51a1766c10383f7ec5f56de7333f3eb825458",
+      "termHash": "7086ce733149499d144221d74f8b218993cb0a04da0eba042f98895557a9a1fb",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}通过{{a_1}}接收站与反物质过渡环节{{end_a_1}}，建立了可靠的反物质产线。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}强化这条线并积累库存，同时让工厂其余部分为白糖做好准备。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}备齐{{item_6006_1}}所需的最后一种成品原料和储备。{{br_3}}{{strong_4}}下一步：{{end_strong_4}}{{a_2}}{{img_1}}[白糖]{{end_a_2}}。"
+    },
+    {
+      "id": "d.photon.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段概览"
+    },
+    {
+      "id": "d.photon.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "d.photon.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "d.photon.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主要目标{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.002",
+      "sourceHash": "cdf659bae81db638e751034da2d61ea1021d4e5a87af506be7c2c8f13bcd7679",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "让蓝糖、红糖、黄糖、紫糖、绿糖和{{item_1122_1}}的产量各自稳定达到 {{fact_1}}，再为白糖储存 {{fact_2}} 个反物质"
+    },
+    {
+      "id": "d.photon.td.003",
+      "sourceHash": "39c88b50e223434222b66ebe6a68fb6c12a6bbbfcb0db059e38dc0c95495bfce",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}理想状态{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.004",
+      "sourceHash": "c94469d80223166c3d3c973e9441a2269f194f24847ff9a9a84d683086e9dc33",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "持续运行时，所有必需输入都保持目标产量；只修复第一个可见短缺，正常的产线保持不动"
+    },
+    {
+      "id": "d.photon.td.005",
+      "sourceHash": "7a3be468e528aeabeccf0f0ed7a7178b28fc57abfe9465ecfba1c2ecef353687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}接下来研究{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.p.002",
+      "sourceHash": "ddc2b44cefa3dbabe824f0d7763ba28b78a6457f2013f35810d23b69acf98146",
+      "termHash": "a3bbf71fc670e31cce12f096d38cd3ee25c056c423dacf82b3c34866b64d4eef",
+      "text": "{{strong_1}}接收效率：{{end_strong_1}}{{tech_3201_1}}等级 {{fact_1}} {{fact_2}} {{tech_3202_1}}等级 {{fact_3}}"
+    },
+    {
+      "id": "d.photon.p.003",
+      "sourceHash": "294be42a8a73e8584499003d3f4775df74d3353c7e652cb21be2e95e0edee05e",
+      "termHash": "091e60d3fe37229a6739cab15a1aa464646b038d7b6a0a0f56c03975ff3829ab",
+      "text": "{{strong_1}}资源供应：{{end_strong_1}}继续{{tech_3601_1}}等级 {{fact_1}} {{fact_2}} {{tech_3602_1}}等级 {{fact_3}} {{fact_4}} {{tech_3603_1}}等级 {{fact_5}}"
+    },
+    {
+      "id": "d.photon.p.004",
+      "sourceHash": "9a6a029d791a324427e131aa7072b74df2dc04a81cf67f9aca864fd8bc8312d1",
+      "termHash": "3d3be7d02681734b5774356670135f71f42b0c3329286935bf4f94dacadb8d08",
+      "text": "{{strong_1}}提高产速：{{end_strong_1}}{{tech_1417_1}}；{{tech_1202_1}} {{fact_1}} {{tech_1203_1}}"
+    },
+    {
+      "id": "d.photon.td.006",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.007",
+      "sourceHash": "b5f7350be33e06fe1ba30d6124c6fa04e323e47746df75cc9aa2cdd04b1418cc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "统计面板中的持续产量、第一条低于目标的矩阵线、反物质库存增长，以及副产氢的出口"
+    },
+    {
+      "id": "d.photon.td.008",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时进入下一阶段{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.td.009",
+      "sourceHash": "00bf5c91ee6bff41bf220218a193d7d9d466666fb2611ea4b66db0f6a34fb1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "每种颜色的矩阵和反物质都持续达到至少 {{fact_1}}，且反物质库存至少有 {{fact_2}} 个"
+    },
+    {
+      "id": "d.photon.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "d.photon.p.005",
+      "sourceHash": "2d941e1bff16bf98ebd924979346b6b59fd59eff1301849640a5478ff1ec44e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}你已经造出了反物质。现在，让整个终局流程都可靠起来。{{end_strong_1}}"
+    },
+    {
+      "id": "d.photon.p.006",
+      "sourceHash": "4976452a7b0314ec25002c8e0a2557cd76ce235e30795f0b5497da6faa7cdf88",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "让接收站阵列继续运转，同时检查前面建立的五种矩阵产线。每种颜色和{{item_1122_1}}都要达到至少 {{fact_1}}，然后只修复第一条跟不上的供应线。处理问题的同时，让反物质储备增长到 {{fact_2}}。"
+    },
+    {
+      "id": "d.photon.p.007",
+      "sourceHash": "b8484b41057f0f5f5445e5d840cb7354d3edddd7df7b9ffed87bf62b2b03006c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "白糖启动后不会立即缺料，就说明光子阶段已经完成。接收站的必要配置仍见{{a_1}}接收站与反物质过渡环节{{end_a_1}}，不必在这里重建。"
+    },
+    {
+      "id": "d.photon.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先研究"
+    },
+    {
+      "id": "d.photon.p.008",
+      "sourceHash": "099de228240bc8835ab6b42629101a5aeaa2f1dbde3aca15ac28445f45b699e0",
+      "termHash": "a3bbf71fc670e31cce12f096d38cd3ee25c056c423dacf82b3c34866b64d4eef",
+      "text": "{{strong_1}}接收效率：{{end_strong_1}}{{tech_3201_1}}等级 {{fact_1}} {{fact_2}} {{tech_3202_1}}等级 {{fact_3}}。完成这两级就停。升级会减少整组接收站所需的戴森功率。每次升级后，先让接收站稳定下来，再检查反物质产量是否仍高于 {{fact_4}}。"
+    },
+    {
+      "id": "d.photon.p.009",
+      "sourceHash": "4354542922c74e9fdd8d1051a1ac97a659623a9601cc5124ac25ca27a101e2d0",
+      "termHash": "091e60d3fe37229a6739cab15a1aa464646b038d7b6a0a0f56c03975ff3829ab",
+      "text": "{{strong_1}}资源供应：{{end_strong_1}}补完尚未完成的{{tech_3601_1}}等级 {{fact_1}} {{fact_2}} {{tech_3602_1}}等级 {{fact_3}} {{fact_4}} {{tech_3603_1}}等级 {{fact_5}}，到等级 {{fact_6}} 为止。前面可选的升级建议可能让你暂时跳过了其中一部分，甚至全部。"
+    },
+    {
+      "id": "d.photon.p.010",
+      "sourceHash": "b2798fc08d155432be92f767071887fb36ca4d997346e389d4aa6d4da4fe450d",
+      "termHash": "3d3be7d02681734b5774356670135f71f42b0c3329286935bf4f94dacadb8d08",
+      "text": "{{strong_1}}提高产速：{{end_strong_1}}{{tech_1417_1}}；{{tech_1202_1}} {{fact_1}} {{tech_1203_1}}。只在旧产线无法持续达到白糖阶段所需速率时使用这些工具；正常供给的产线不必动。"
+    },
+    {
+      "id": "d.photon.h2.004",
+      "sourceHash": "19d1213fdc95b8034b0c067a706355571acaa10ad861bc405d79903d50fde08e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "把每条矩阵线提到白糖所需的速率"
+    },
+    {
+      "id": "d.photon.p.011",
+      "sourceHash": "cb48e0f4ac96ae97c6df0152500130edd2406b8b22d748b1095ba43901e89f18",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "打开{{a_1}}统计面板{{end_a_1}}，检查蓝糖、红糖、黄糖、紫糖和绿糖。每种颜色都必须保持至少 {{fact_1}}。"
+    },
+    {
+      "id": "d.photon.p.012",
+      "sourceHash": "da92f01773e4d399ee7ad531f6e6717acd503a02dbc9e6aa5091b198ed5371c2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "从第一种低于目标的颜色开始，沿产线逆向追查缺少的材料，再加强对应支线。已经能保持 {{fact_1}} 的产线，都不必改动。"
+    },
+    {
+      "id": "d.photon.h2.005",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 多少才够用"
+    },
+    {
+      "id": "d.photon.p.013",
+      "sourceHash": "af6438e00a62a0a96cc5844f5bb75ea7d90e331bd490149e41a2bc2b892c7231",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "四座接收站的完整产出为{{strong_1}}{{fact_1}}{{fact_2}} 反物质{{end_strong_1}}，高于白糖所需的 {{fact_3}} 基准，能提供宽裕的设计余量。以整组 {{fact_4}} 的产出为目标，但只要反物质保持在 {{fact_5}} 或以上，且库存继续增长，就可以前进。"
+    },
+    {
+      "id": "d.photon.p.014",
+      "sourceHash": "167b5880594b6783204f8ade6785e7610659f75a9347ec69fc4f99e1a5cdaba0",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "仓储中至少备好{{strong_1}}{{fact_1}} 个{{item_1122_1}}{{end_strong_1}}后，最终白糖科研所需反物质的一半就已到位。如果实时需求表明增加发电量有帮助，就同时继续扩大轨道电源。"
+    },
+    {
+      "id": "d.photon.h2.006",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意事项"
+    },
+    {
+      "id": "d.photon.p.015",
+      "sourceHash": "2752ca5b9f183023df045f5b9d7e8ce4e1d3bfc0fa2c9b14919d5ae8649504d8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}短暂的产量爆发会误导判断。{{end_strong_1}}让工厂先运行几分钟，再相信显示的速率。"
+    },
+    {
+      "id": "d.photon.p.016",
+      "sourceHash": "922cd74d5b7ae1b94818d7dc7426c2b4cfa4592320553cdeb736a0e41680b4bc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}先修复第一个看得见的短缺。{{end_strong_1}}沿供不上的矩阵线逆向查找，只加强拖住它的那条支线。"
+    },
+    {
+      "id": "d.photon.p.017",
+      "sourceHash": "a9e2663144aa70d2160b04c6e384714006c2b9cfcb8a8c9207547e31d74654e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}反物质低于 {{fact_1}}{{fact_2}} 时，不必每次都追着修。{{end_strong_1}}只要产量保持在 {{fact_3}} 或以上，库存也持续增长，这条线就已就绪。"
+    },
+    {
+      "id": "d.photon.p.018",
+      "sourceHash": "8077427542116f5d4938b07f7f25474ef2e3c1a82c1fb1edb433d56bf1d0d48a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}保持副产氢输出。{{end_strong_1}}氢的出口一停，反物质也会停产。"
+    },
+    {
+      "id": "d.photon.h2.007",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足这些条件后，再进入下一阶段"
+    },
+    {
+      "id": "d.photon.li.001",
+      "sourceHash": "2718af465bc630620b729bc80620c3581369576c0bd8c3846ab0261df7f84460",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{label_1}}{{input_1}}蓝糖、红糖、黄糖、紫糖、绿糖和{{item_1122_1}}，各自的持续产量都至少为 {{fact_1}}。{{end_label_1}}"
+    },
+    {
+      "id": "d.photon.li.002",
+      "sourceHash": "11e8d9137284aed1a17281e0988572cba72f12a2ac4836601ae6bd0a1fa78b1e",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{label_1}}{{input_1}}至少储存了 {{fact_1}} 个{{item_1122_1}}。{{end_label_1}}"
+    },
+    {
+      "id": "d.photon.h2.008",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "d.photon.p.019",
+      "sourceHash": "0c6c9545aeafe64d3a884eb2bbc7d2e72d5a3415bb965d014ca5343a02e7bd88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "同时满足以下两个条件后，前往{{a_1}}{{img_1}}[白糖]{{end_a_1}}："
+    },
+    {
+      "id": "d.photon.li.003",
+      "sourceHash": "063f5b524c71e172fecfa2140b4e538a1994ffbd1c0ae3f5301e83fb3bdf5fca",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{label_1}}{{input_1}}蓝糖、红糖、黄糖、紫糖、绿糖和{{item_1122_1}}，各自的持续产量都至少为 {{fact_1}}。{{end_label_1}}"
+    },
+    {
+      "id": "d.photon.li.004",
+      "sourceHash": "7a17d422654805331ad72284eda01f47d7aa69a03eebd0276aeb2b7608f7e994",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{label_1}}{{input_1}}至少储存了 {{fact_1}} 个{{item_1122_1}}。{{end_label_1}}"
+    },
+    {
+      "id": "d.white.h1.001",
+      "sourceHash": "2f82231d6850d481aa1964c05121ed0e21de0eb6aa722016bac94bec95741eb5",
+      "termHash": "7086ce733149499d144221d74f8b218993cb0a04da0eba042f98895557a9a1fb",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[白糖]{{end_a_1}} — {{item_6006_1}}与任务完成！"
+    },
+    {
+      "id": "d.white.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "d.white.p.001",
+      "sourceHash": "ec0bad3bad7c68f3865ad36ed5c4db537f635166be8de3cd3e90fcd434563ae3",
+      "termHash": "0eaac65461400de998e8a2fda19347e2fcad7688e91a7d00066c597492fa130d",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}{{item_1122_1}}持续生产。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}让所有颜色的矩阵同时投入工作。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}「{{tech_1508_1}}」{{br_3}}{{strong_4}}下一步：{{end_strong_4}}选择任何觉得有趣的后续项目；反复扩建开始消耗手搓的物流站和运输工具时，就参考{{a_1}}{{img_1}}[物流]{{end_a_1}}。"
+    },
+    {
+      "id": "d.white.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段概览"
+    },
+    {
+      "id": "d.white.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "d.white.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "d.white.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主要目标{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.002",
+      "sourceHash": "a2d04ee498c0df96e0536aa73956cc7db5d4d3a45c6afc6682f7357dc9962b9a",
+      "termHash": "35d8320c99471090d360f9a82b54d1aff208604ba341b9e10a72bc9aee06b067",
+      "text": "研究{{tech_1507_1}}，维持 {{fact_1}}{{fact_2}} 的白糖产量，并将 {{fact_3}} 个投入「{{tech_1508_1}}」"
+    },
+    {
+      "id": "d.white.td.003",
+      "sourceHash": "4ae8e0aa5c72dd067309c7140bc3e5855896b7533e556bb0f7a9db7895d9ea80",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}最终汇合{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.004",
+      "sourceHash": "e811682a416032c530e03e1fb43f871693057dbfd91f662e68570e3cd7204e90",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "由前面五种矩阵和{{item_1122_1}}，供应 {{fact_1}} 座生产用研究站"
+    },
+    {
+      "id": "d.white.td.005",
+      "sourceHash": "7a3be468e528aeabeccf0f0ed7a7178b28fc57abfe9465ecfba1c2ecef353687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}接下来研究{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.006",
+      "sourceHash": "2005f0ff0e7b4c51b40ede0208ce1e9a064844677f940a317cbe76d4260ebad4",
+      "termHash": "35d8320c99471090d360f9a82b54d1aff208604ba341b9e10a72bc9aee06b067",
+      "text": "{{tech_1507_1}} {{fact_1}} {{tech_1508_1}}"
+    },
+    {
+      "id": "d.white.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.008",
+      "sourceHash": "d8333b1b6fdcf644ee3cd414d4015711802817a795ec75cc5ab76187e8e3bc6c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最先出现输入带断料的那一种早期矩阵"
+    },
+    {
+      "id": "d.white.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时进入下一阶段{{end_strong_1}}"
+    },
+    {
+      "id": "d.white.td.010",
+      "sourceHash": "b77d0c998bb371ffc1802cde8dedce95705903b591622f1499c9fcb5947347a7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "「任务完成」研究结束"
+    },
+    {
+      "id": "d.white.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "d.white.p.002",
+      "sourceHash": "3dabdd7ff2abd834023dc61dd630673525dd75134ed24cd3d0540495a8c3b78a",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "白糖科研考验的是汇总供料，不是什么神秘的新工厂：蓝糖 + 红糖 + 黄糖 + 紫糖 + 绿糖 + {{item_1122_1}} {{fact_1}} 十座白糖研究站 {{fact_2}} 仓储与科研。每种输入都已经有产线；把六种产品汇到一起，再沿第一条断料的输入线查下去。"
+    },
+    {
+      "id": "d.white.p.003",
+      "sourceHash": "473ec2a14f9236eb14d1c5e54e8c1c49778729010690bcd9c659430d18f72350",
+      "termHash": "428106101247470aea7c2987d7699a396239318e65afb14f65190b7e341b91cf",
+      "text": "开始生产白糖前，{{tech_1507_1}}需要每种颜色的矩阵各 {{fact_1}} 个。之后，「{{tech_1508_1}}」会消耗 {{fact_2}} 个{{item_6006_1}}。解锁研究进行时就搭建产线，只修复实际缺料的供给端。"
+    },
+    {
+      "id": "d.white.h2.003",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 多少才够用"
+    },
+    {
+      "id": "d.white.p.004",
+      "sourceHash": "24b6c1cc0c9d1f4ce337bb93451bbf8ccd09b44b153cca814d5a9c43b734df91",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}白糖 {{fact_1}}{{fact_2}}：{{end_strong_1}}{{fact_3}} 座生产用研究站，六种输入各需 {{fact_4}}。按这个速率，准备 {{fact_5}} 个矩阵所需的这批材料，要花 {{fact_6}} 小时 {{fact_7}} 分钟。"
+    },
+    {
+      "id": "d.white.h2.004",
+      "sourceHash": "52174fb5361df3ec38f9d87ddc828c33afa87b5ff8b4409c4ed3a3a6a7479137",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 最终汇合"
+    },
+    {
+      "id": "d.white.p.005",
+      "sourceHash": "8e0576b6b84e65d5d6a45bd40cd96fdf02abf6237c1531ea43a7004eb98304a3",
+      "termHash": "2e725fda552ffd18cc9c418d7b5bf4b5a65778e2cdfc54e0f877b01317d6921d",
+      "text": "把蓝糖、红糖、黄糖、紫糖、{{item_6005_1}}以及{{item_1122_1}}送到白糖科研区。六种输入一起供应十座{{item_2901_1}}，达到所述的 {{fact_1}} 目标；将产出的{{item_6006_1}}送去研究，只扩建真正缺料的那一侧。"
+    },
+    {
+      "id": "d.white.h2.005",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意事项"
+    },
+    {
+      "id": "d.white.p.006",
+      "sourceHash": "b68e2675919445edc495f9212abbbc9e365481eac82e068f3666af79a2e90960",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最新的产线往往不是瓶颈。白糖科研经常暴露出一小片老旧的红糖、黄糖或紫糖区：之前靠缓冲库存看起来很健康，直到所有颜色都被持续消耗，才露出短板。"
+    },
+    {
+      "id": "d.white.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足这些条件后，再进入下一阶段"
+    },
+    {
+      "id": "d.white.li.001",
+      "sourceHash": "fd5de5426b3f8c0fb7a5efb9167b281f7cff0c05d53c3fe5b9e1be1298dfae5a",
+      "termHash": "7086ce733149499d144221d74f8b218993cb0a04da0eba042f98895557a9a1fb",
+      "text": "{{label_1}}{{input_1}}{{item_6006_1}}对应的科技已研究完成。{{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.002",
+      "sourceHash": "5f6a2db47d7946158d31b66f72b6f5a494fb38b8e53388b3a64d89541d2040c1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}六种输入都持续送达白糖研究站。{{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.003",
+      "sourceHash": "698f0b3b3e9df839db66cac717bd6ea8b4c85b625219f1152a25ecd471c92a50",
+      "termHash": "7086ce733149499d144221d74f8b218993cb0a04da0eba042f98895557a9a1fb",
+      "text": "{{label_1}}{{input_1}}十座研究站持续生产{{item_6006_1}}，产量为 {{fact_1}}{{fact_2}}。{{end_label_1}}"
+    },
+    {
+      "id": "d.white.li.004",
+      "sourceHash": "afc839aea2d7c81fd85c74ea277bee797856cd9e4209714141419e1abd7d5c6c",
+      "termHash": "7086ce733149499d144221d74f8b218993cb0a04da0eba042f98895557a9a1fb",
+      "text": "{{label_1}}{{input_1}}「任务完成」正在消耗、或已经消耗完 {{fact_1}} 个{{item_6006_1}}。{{end_label_1}}"
+    },
+    {
+      "id": "d.white.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "d.white.p.007",
+      "sourceHash": "6d4832a5ddd4f9ed0182f6d3b38be166abb801482aa5cf5a84f47eae590e31ca",
+      "termHash": "e349030824d3457381b4c89cc362d3a017f495137caee2406d3ea7c136a9530e",
+      "text": "研究完「{{tech_1508_1}}」后，如果反复扩建仍在消耗手搓的物流站和运输工具，就参考{{a_1}}{{img_1}}[物流]{{end_a_1}}，自动生产接下来所需的补充设备。"
+    },
+    {
+      "id": "d.sphere.h1.001",
+      "sourceHash": "fc71169c2e2beff5af38dfc9a9d78e3e232ef7050533f23ed7530ff9ed11d3b7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}可选路线{{end_span_1}} {{a_1}}{{img_1}}[戴森球]{{end_a_1}} — 可选的永久戴森球"
+    },
+    {
+      "id": "d.sphere.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "d.sphere.p.001",
+      "sourceHash": "5d37d98106920424d102e83bf760071d30bd23a36a4f9694db5777a19e48e606",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时可做：{{end_strong_1}}绿糖阶段已建立本项目所需的昂贵通用部件产线。{{br_1}}{{strong_2}}你的选择：{{end_strong_2}}以更慢的速度建造永久节点、框架和壳面，而不只依靠会到期消失的戴森云。{{br_2}}{{strong_3}}能带来什么：{{end_strong_3}}永久的轨道发电能力，可与主线并行扩张。{{br_3}}{{strong_4}}返回主线：{{end_strong_4}}{{a_1}}接收站与反物质过渡环节{{end_a_1}}。"
+    },
+    {
+      "id": "d.sphere.h3.001",
+      "sourceHash": "15b1942e90b5d6134dda5f4d47db12af8b398b97a0694a3e678ebfae8d1db5c1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选路线概览"
+    },
+    {
+      "id": "d.sphere.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "d.sphere.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "d.sphere.td.001",
+      "sourceHash": "8e4944938dcc900a5b6ffebd284a5e9f1e24c0ec228857c435e7820ba092c900",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}可选用途{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.002",
+      "sourceHash": "c33f09db54e7ebfa9c893e735c225a0f7fc83cf078b241dd7f3e8353bb2af8a8",
+      "termHash": "68d136691b94b53113f8c0e21215380fe8e960841a3acab7dfe09208530e2da6",
+      "text": "建一条规模可控的{{item_1503_1}}产线，按自己的节奏完成一小块永久结构，熟悉戴森球编辑器"
+    },
+    {
+      "id": "d.sphere.td.003",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}优先研究{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.004",
+      "sourceHash": "4f0eb36b2d088edc557c2339c591ee46a97b7c8a8952fa71cf219ab48b76d81b",
+      "termHash": "8ff4d3307737d9f07042147cd97dac5c886d8adbbe821a626549758827de9a10",
+      "text": "{{tech_1522_1}} {{fact_1}} {{tech_1523_1}}等级 {{fact_2}}"
+    },
+    {
+      "id": "d.sphere.td.005",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "d.sphere.td.006",
+      "sourceHash": "d44cd648d381a1aeb1500fdfea70bec2a5274d1ee8832dc99c2e74952ab57b37",
+      "termHash": "68d136691b94b53113f8c0e21215380fe8e960841a3acab7dfe09208530e2da6",
+      "text": "{{item_1503_1}}是否有未完工的节点或框架可建、已完成的边界是否围出了壳面，以及哪一种已有部件库存先见底"
+    },
+    {
+      "id": "d.sphere.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "d.sphere.p.002",
+      "sourceHash": "9ec3e27bed17652bef7dd3c7cf19cb77c1f2ff8871fd0914d12a0af073dc3492",
+      "termHash": "23d4b3695261baeb97b2e2786debd1eefb460340c3d83a68c344c8a8b233b3d9",
+      "text": "绿糖阶段之后，可以在戴森云基础上叠加永久建设。戴森球用更慢、耗料更多的永久结构，换取不必持续替换的发电能力。{{item_1503_1}}负责建造骨架——节点及连接节点的框架；只有框架围成有效边界后，{{item_1501_1}}才能填入壳面。"
+    },
+    {
+      "id": "d.sphere.p.003",
+      "sourceHash": "ecd6dd059d1c79fda49a7d1f837a8bf7b03cea21e0b8f6750b23e73a00947484",
+      "termHash": "68d136691b94b53113f8c0e21215380fe8e960841a3acab7dfe09208530e2da6",
+      "text": "在戴森球编辑器里从小规模开始。画一个首条{{item_1503_1}}产线能完成的结构，保持发射井供料，再给已完成的框架添加壳面，不必第一天就设计终极巨构。形状决定总材料需求。这里不要求特定的规模、设计、功率目标或完工进度；只建自己觉得有用的永久结构即可。"
+    },
+    {
+      "id": "d.sphere.h2.003",
+      "sourceHash": "f38b4e7de032132af450e0452ea9d88d75197e53fe9cd152ab0c9f66e3c55207",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "这条路线所需的研究"
+    },
+    {
+      "id": "d.sphere.p.004",
+      "sourceHash": "8bba0cbf56c42ee4822e29644f10d193be5514ce249a802c6e506a500116689c",
+      "termHash": "8ff4d3307737d9f07042147cd97dac5c886d8adbbe821a626549758827de9a10",
+      "text": "绿糖阶段的对撞机材料链，已经完成这里所需的太阳帆轨道和框架材料研究。这条可选路线需要{{tech_1522_1}}，然后是{{tech_1523_1}}等级 {{fact_1}}。应力系统的第一级已足以围出第一块壳面；只有更大的戴森球确实需要时，再升更高等级。发射井的前置科技“高强度轻质结构”已经完成，绿糖阶段的量子芯片产线也能供应火箭配方。"
+    },
+    {
+      "id": "d.sphere.h2.004",
+      "sourceHash": "1be2e889c36274abfe95a64024166131e270a92f8ecd9f87308505f179b016b1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 产线结构"
+    },
+    {
+      "id": "d.sphere.p.005",
+      "sourceHash": "b9d28898dce2d78347150b202953c3a01725cd93134a6c5952feb48817d78c2c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}每张卡片概括一种可选产线，从原料到库存。{{end_strong_1}}需要一眼看清全貌时再打开；否则就保持折叠，继续建设。必需的信息不会藏在卡片里。"
+    },
+    {
+      "id": "d.sphere.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}展开全部卡片{{end_button_1}}{{button_2}}折叠全部卡片{{end_button_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.summary.001",
+      "sourceHash": "487388a7455fae3cdcb0b1f68a403cc87454b55e402db512b8c1a99f5e7fef3e",
+      "termHash": "2a86b2f53add19ae6ee447db9f78ac5e4c236c3a8c0fc317fc1f0a9f98b4a8e6",
+      "text": "{{span_1}}{{item_1502_1}}{{end_span_1}}{{span_2}}{{span_3}}可选{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.001",
+      "sourceHash": "9b41c0d0e260094a0c4ab9e9460c5405c0d7c4028e2a7d1bc32f1267b22019e9",
+      "termHash": "6766b119aa457d58dffa9d824c473899c9c2c830804e4379b06f7f1da463232c",
+      "text": "{{a_1}}戴森云阶段产出的{{item_1501_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.002",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "0d7f1dbf29f18ced00e61e2c03de98a17b76a0d9de49a0ba807d6fbd077ea70f",
+      "text": "{{a_1}}紫糖阶段产出的{{item_1303_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.003",
+      "sourceHash": "4dc5006cfae2e5e33a177b8644b1385363de6abe1677ce385b108979eaf22998",
+      "termHash": "e4661d4e7ed6137fc318693b3ad2177961154b9138daf2c1cd09d88251d1eccc",
+      "text": "{{a_1}}紫糖支线产出的{{item_1124_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.004",
+      "sourceHash": "25c7dff4c831f7885f4432d6d6888c38457a636b60bfcaa3d2671f46b87ee04e",
+      "termHash": "5fc715fe6042bd8cf47a388bb650242ede76f5ae8962ba39b8e1e7909aed0e98",
+      "text": "{{item_1107_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.005",
+      "sourceHash": "c6fd3ae07a243086d1ddd21a601b2f615c97db05ee201b561c8edc82ac3d3afa",
+      "termHash": "db75cc9b2d6a15f1c14e25dc0997c4673c938ff4518eec4cf06b218dacaf82bb",
+      "text": "{{item_1105_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.006",
+      "sourceHash": "41392ce829762406ba34f196380369ecf700e6a79ba1c4e1c919830581065fe6",
+      "termHash": "c51cea584a9461a6b6643d884d53489e399bb20978b14317ffb209bc7a130223",
+      "text": "{{span_1}}框架材料支线{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1107_1}} + {{item_1105_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1125_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.007",
+      "sourceHash": "7ef4c34bd7fef734efc1d5e94a66158bd17f42ee5b2cb95072cb726f79ef550f",
+      "termHash": "bb99e93352530802b0c6d628ecab1cfa962a868b6f8a5cc9c717d05c9094cf64",
+      "text": "{{span_1}}戴森球组件合成{{end_span_1}}{{span_2}}{{item_1125_1}} + {{item_1501_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1502_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.008",
+      "sourceHash": "2dcbff2a6a03465519fc9b2395d6f14c6ca3a396ccc9392a57732cae5ba5b41e",
+      "termHash": "ae1acfaccd59b5e5dbfadd4dc56ddce3dd2136ab29354404ecf971f6a75e5efe",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1502_1}}{{end_span_1}} — 先储备组件，再制造{{item_1503_1}}。"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "d.card-sphere-dyson-components.li.009",
+      "sourceHash": "989a2f44169c4c1d95e8838a66b9e3e0276e128146aa111aeac0a9fe39d487e6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "让各步骤之间的框架材料库存容易查看。如果组件停产，就看框架材料、太阳帆或处理器哪一路断料，再扩建对应支线。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.summary.001",
+      "sourceHash": "08b625e73e5dd6cea911ba9a4f4842b17a7352ebae7eaf4af85bcfe9120420f9",
+      "termHash": "77a6b565b2766d3b6fdef3b0f17ef01ba21cd7c95d0f8baeae9338cacb3cb115",
+      "text": "{{span_1}}{{item_1802_1}}{{end_span_1}}{{span_2}}{{span_3}}可选{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.001",
+      "sourceHash": "bde291e2a656f9738421534f7f7b5924f074f7d0c72a7d74947a4bc93114c59a",
+      "termHash": "e7ae9efc8f374c93b4c1eeaa1819a47af96eb63efcd1d768930f20673ab5ac12",
+      "text": "{{item_1121_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.002",
+      "sourceHash": "25c7dff4c831f7885f4432d6d6888c38457a636b60bfcaa3d2671f46b87ee04e",
+      "termHash": "5fc715fe6042bd8cf47a388bb650242ede76f5ae8962ba39b8e1e7909aed0e98",
+      "text": "{{item_1107_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.003",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.004",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.005",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "ce1a0782cf279734394dad8efcb5a08fd621265129c1f659c95ea7e81fb674f9",
+      "text": "{{a_1}}通用产线生产的{{item_1204_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.006",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "24b338c5f3566282267888f6d8df55d1b58bb30c93f6f8e8de8950795f0abaec",
+      "text": "{{span_1}}高能石墨支线{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.007",
+      "sourceHash": "c7fab8edf9d5d6a037e121e994e522ecc01394b2e9819a1e4f894ec00f37f824",
+      "termHash": "fac64209b29aa7f8b16799b1ffcce03e014bda3a77e8b8070eda0be23cc8e9cd",
+      "text": "{{span_1}}{{item_1102_1}}支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1102_2}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.008",
+      "sourceHash": "b49b505589c902d23f5442673713253868dcb6e7769e39140c269c6b78f007ab",
+      "termHash": "6d5945eb58d762f80e27c4348f869dd0928125561e28a58dfd68f655521c42e5",
+      "text": "{{span_1}}超级磁场环合成{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.009",
+      "sourceHash": "fb3130e02f900774a375d3be936b430d45470de80f25494cdaa4fcceae0efe23",
+      "termHash": "1e07fa67b7aaae3f0fcfaeede79d2ac827a6f92e0548f68804926cd1217c2708",
+      "text": "{{span_1}}氘核燃料棒合成{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1802_1}}{{end_span_2}}"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.010",
+      "sourceHash": "22feeaaf872042e37cc6256c146eedaf157403fc6a180af4e10eaf457a42b7a9",
+      "termHash": "689a588cbe74c0ca15c61fefe3f944075efeeeb9d105d53254bc4ca6dbc4b888",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1802_1}}{{end_span_1}} — 先储备燃料棒，再用于制造{{item_1503_1}}或聚变发电。"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "d.card-sphere-deuteron-fuel-rods.li.011",
+      "sourceHash": "f1c7bfb4da8acef143dd2316cee321460e0b75b5a9a1e576e7e1d346cdd6d6ac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "这条支线与后期生产共用重氢和磁性部件。沿着第一处断料往回查，不要直接认定是制造燃料棒的制造台不够。"
+    },
+    {
+      "id": "d.sphere.h2.005",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意事项"
+    },
+    {
+      "id": "d.sphere.p.006",
+      "sourceHash": "1701c34488608d10a782cce21d1012501a5862379d9c68db167b4e82472d9506",
+      "termHash": "68d136691b94b53113f8c0e21215380fe8e960841a3acab7dfe09208530e2da6",
+      "text": "{{strong_1}}编辑器状态。{{end_strong_1}}{{item_1503_1}}需要未完工的节点或框架作为建设目标；太阳帆只有在已完成框架围住指定壳面区域后，才能成为永久结构。"
+    },
+    {
+      "id": "d.sphere.p.007",
+      "sourceHash": "30dc24443ee2ef8d4c56c7fe74887b887c21eadd6871bc68541cf6ab275e0d86",
+      "termHash": "68d136691b94b53113f8c0e21215380fe8e960841a3acab7dfe09208530e2da6",
+      "text": "{{strong_1}}配套产线缺料。{{end_strong_1}}从第一处空掉的部件库存逆向追查，不要直接增加{{item_1503_1}}制造台数量。这条永久建设路线会同时调用多条成熟支线。"
+    },
+    {
+      "id": "d.sphere.h2.006",
+      "sourceHash": "362aebe76071982591c85032bf71815323dc5045caa32b51941760408edf4624",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "返回主线"
+    },
+    {
+      "id": "d.sphere.p.008",
+      "sourceHash": "d2c779acd6d6ba20dfdf0f1694783252cb440b816540813b35113dea98eca034",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "准备好时，随时可以通过{{a_1}}接收站与反物质过渡环节{{end_a_1}}继续推进。永久建设可以按任意规模并行进行；这里返回主线，并不规定戴森球的完工条件。"
+    },
+    {
       "id": "a.tech-sheet-title.h2.001",
       "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
