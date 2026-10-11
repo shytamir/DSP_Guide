@@ -104,6 +104,14 @@ Keep the image's actual English title, external product names, the exact
 Install with Mod Manager action and legal credit; explain the install action
 in German. These are deliberate exceptions, not untranslated guide prose.
 
+German refinery recipe labels are Plasmaraffination, Röntgencracken and
+Reformierung; station modes are Lokalanbieter/Lokalabnehmer and
+Fernanbieter/Fernabnehmer. The native soil label is Erdhaufen. These labels
+were verified read-only in installed 1031 base/prototype tables. Expand ILS as
+Interstellare Logistikstation and PLS as Planetare Logistikstation on first
+relevant use. Quote protected adjective-bearing names when case would otherwise
+require changing the native label; distinguish Motor from Elektromotor.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 

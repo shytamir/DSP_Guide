@@ -2349,6 +2349,1368 @@
       "text": "Weiter zu {{a_1}}{{img_1}}[ROT]{{end_a_1}}. Die Mall kann ihre Puffer fertig füllen, während du die Ölwirtschaft aufbaust."
     },
     {
+      "id": "b.red.h1.001",
+      "sourceHash": "0a1472e82b6e6189e0ec7546942e8f0a934122060f024b171b5aa6443a774940",
+      "termHash": "daf63c3808dd6d1d3a825de0eab31ae72a671c4cc1772f7169fba63d49f5d8de",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[ROT]{{end_a_1}} — Ölwirtschaft aufbauen und {{item_6002_1}} zuverlässig produzieren"
+    },
+    {
+      "id": "b.red.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "b.red.p.001",
+      "sourceHash": "6a7a8da8f1882cc12721db65001af06e3aa0f91f8238e848300460e4e4e1542c",
+      "termHash": "deca2e22fad50ee500271ed82f56003f9b75a56f18d3b0375d24aa70c3a8d952",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Durchgehende blaue Forschung.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Eine vollständige Linie aus {{item_1006_1}} und Öl bis zum Endprodukt {{item_6002_1}}.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Dauerhafte rote Forschung und einen Vorrat des Produkts „{{item_1114_1}}“ für spätere Chemie.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} {{a_1}}{{img_1}}[ILS]{{end_a_1}}"
+    },
+    {
+      "id": "b.red.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Phasenübersicht"
+    },
+    {
+      "id": "b.red.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auf einen Blick"
+    },
+    {
+      "id": "b.red.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was jetzt zählt"
+    },
+    {
+      "id": "b.red.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Hauptziel{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.002",
+      "sourceHash": "d5e4d797423dc86b9c6589ab2d59ae663a923ba7d01bf1c29809401e53829cfe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zwei Labore dauerhaft rote Würfel produzieren lassen, ohne die Plasmaraffination zu blockieren"
+    },
+    {
+      "id": "b.red.td.003",
+      "sourceHash": "1525a1b5d7aa1c14ee59314ac8fea4e879869d228306d4277779b630abf204f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Sinnvoller Richtwert{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.004",
+      "sourceHash": "5a2b104b781bd665a9ffed1e6278bd3a5a034c91396ed200fbee97eb9ab39302",
+      "termHash": "daf63c3808dd6d1d3a825de0eab31ae72a671c4cc1772f7169fba63d49f5d8de",
+      "text": "{{item_6002_1}}: {{fact_1}}{{fact_2}}"
+    },
+    {
+      "id": "b.red.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Zuerst erforschen{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.006",
+      "sourceHash": "05e545a25940ccb49865a51e692fa594d26f9078dfdbf48b07e639b7e6b4abdc",
+      "termHash": "08b2c190a115d224724fd1bf1a9583a0fd349af6810679b1823d83ed6a8be938",
+      "text": "{{tech_1402_1}}{{br_1}}{{tech_1101_1}} + {{tech_1120_1}} {{fact_1}} {{tech_1102_1}} {{fact_2}} {{tech_1111_1}}"
+    },
+    {
+      "id": "b.red.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Im Blick behalten{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.008",
+      "sourceHash": "14f3a2463549c51ef223ec7af73700d49d5f82c249c386ccd2f3598f73d32c0c",
+      "termHash": "02b860f0a349580a712231f4c396035eee2b62fdd2f780c85489d26271a9b96a",
+      "text": "Beide Ausgänge der {{item_2308_1}}; ein voller Ausgang kann auch den anderen stoppen"
+    },
+    {
+      "id": "b.red.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Weiter, sobald{{end_strong_1}}"
+    },
+    {
+      "id": "b.red.td.010",
+      "sourceHash": "8a0bd2f76214472b2bac5df89b6db6b5bd47065022e61f3437e8cecfa9dbc931",
+      "termHash": "2428c66e883ff50e2b263d2adc7861fb95a9ec9bc4ab7961abd2d6cc7cb3050a",
+      "text": "Zwei Labore dauerhaft {{fact_1}} rote Würfel{{fact_2}} liefern und {{item_1114_1}} weiterhin abfließen kann"
+    },
+    {
+      "id": "b.red.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "b.red.p.002",
+      "sourceHash": "f734b4ecb8e37fd63f3b32b4e574b6edc664b156c7796cc3f1c5f333be8cdb5e",
+      "termHash": "336333de03f19cb462f23a8cc12cc9f84b583bd88d1fd89afb08c6a6dbd2b12a",
+      "text": "Bei Öl verlangt DSP erstmals, dass du dich auch um das ungefragte Nebenprodukt kümmerst. Plasmaraffination erzeugt {{item_1120_1}} und „{{item_1114_1}}“ gemeinsam. Ist eines der Bänder oder Lager voll, stellt die {{item_2308_1}} beide Produkte nicht mehr her."
+    },
+    {
+      "id": "b.red.p.003",
+      "sourceHash": "b538c2517d665ca9a1926f2c6cc17e8883b539b40ea1514459d2cc80d32a2e3a",
+      "termHash": "11349b85b8be777c46c8be4ea928285b626cf40a6f07c5148a0b2c27609a5da5",
+      "text": "{{item_1120_1}} versorgt jetzt die rote Forschung und wird später erneut wertvoll. „{{item_1114_1}}“ hat noch keinen dringenden Abnehmer, erleichtert aber später den Einstieg in die Herstellung der Produkte {{item_1115_1}}, „{{item_1117_1}}“ und {{item_1116_1}}. Gib jedem Produkt ein eigenes Band mit angeschlossenem {{item_2106_1}} und genug Platz zum Weiterfließen. Es geht nicht darum, Überschüsse wegzuwerfen, sondern darum, dass nützliche Zukunftsvorräte die heutige Fabrik nicht lahmlegen."
+    },
+    {
+      "id": "b.red.summary.001",
+      "sourceHash": "d1d6ee491f7052cda6b441c792a609160e5e422cd97fd72401dde3f9ecf50fe2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzablauf — Raffinerieausgänge trennen"
+    },
+    {
+      "id": "b.red.li.001",
+      "sourceHash": "354457e95bb4c141d93ed8f58690b82f176f4367cb590694e8f364c18b84213b",
+      "termHash": "d34ff0800483297933fdc8f9d34bcd64f27d3d4f30c852eda5015b5d0b091d60",
+      "text": "Lege ein Band für {{item_1120_1}} und ein zweites für „{{item_1114_1}}“ an."
+    },
+    {
+      "id": "b.red.li.002",
+      "sourceHash": "48ba05e439e08f9e4c75ef721412a63771e1a111a21951e999bc6f2d76c37d89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Beginne, einen Sorter von der Raffinerie zum ersten Band zu platzieren."
+    },
+    {
+      "id": "b.red.li.003",
+      "sourceHash": "878d925c2fc975029c1d1340e6b2fde571ee69e888df3d51b02c44a6fac0de92",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Drücke in der Sorter-Vorschau {{key_1}}, bis das gewünschte Produkt erscheint, und platziere ihn dann."
+    },
+    {
+      "id": "b.red.li.004",
+      "sourceHash": "0157333e75abf2e376a2e1e1e5191a87a63b10fed3374fc461c7fb46f86ed408",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wiederhole das für das zweite Band und wähle das andere Produkt."
+    },
+    {
+      "id": "b.red.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zuerst erforschen"
+    },
+    {
+      "id": "b.red.p.004",
+      "sourceHash": "b141ab023a24b91e3be41d95f0443c31cbf323898f13f1dc43f2db0d7a13ae4e",
+      "termHash": "88c527fa5ed5994df4c7ffc79133c5bbe186fa62f0eadb18d08eb68cd91a3266",
+      "text": "{{tech_1402_1}} schaltet den Zweig für {{item_1109_1}} frei. Erforsche danach {{tech_1403_1}}, damit die Mall {{item_1113_1}} für die Signaltürme herstellen kann, die beim Räumen planetarer Basen in ROT gebraucht werden. Falls du Schmelzreinigung bereits in BLAU erledigt hast, beginne hier mit Kristallschmelzen."
+    },
+    {
+      "id": "b.red.p.005",
+      "sourceHash": "2e6024160eab73782f515277ed5d5088db824e3853be6a98795bb7b6b987bc4b",
+      "termHash": "c69ec7d33e84afa838e4aba7a8860170b423da1cb8282c98a6f3d067951482d4",
+      "text": "{{strong_1}}Öl-Zweig:{{end_strong_1}} {{tech_1101_1}} + {{tech_1120_1}} {{fact_1}} {{tech_1102_1}} {{fact_2}} {{tech_1111_1}}."
+    },
+    {
+      "id": "b.red.p.006",
+      "sourceHash": "f52ddd9900e06ab460bfd4326cb0873601887ff9d3e6164b6cb66d01ce80d496",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wenn die günstigen Voraussetzungen bereits in BLAU erforscht wurden, wird ROT angenehm geradlinig: Graphit- und Ölzweig bauen, ihr gemeinsames Endprodukt freischalten und die Labore laufen lassen."
+    },
+    {
+      "id": "b.red.p.007",
+      "sourceHash": "a65ba4b3a15074079d352c4327597030d2217dcb009df4de36382d91c46d2987",
+      "termHash": "6b38f1165f7ea68a8c0c2608a14b8b132b62ce3c1f0a1028d354cef0d6763eae",
+      "text": "Sobald die rote Forschung stabil läuft, schließe {{tech_1806_1}} {{fact_1}} {{tech_1808_1}} ab und ergänze die Verteidigungs-Mall unten. Lass ihre begrenzten Kisten füllen, bevor du dich auf ILS konzentrierst. Das ist Ausrüstung auf Vorrat, kein neues Produktionsratenziel. Sind die Kisten voll, ruhen die Linien."
+    },
+    {
+      "id": "b.red.div.001",
+      "sourceHash": "05b886fcdc5b1216f23d7e67b72b97ea0f56c744ed914ca30ee8c90d3dfc06b8",
+      "termHash": "969d5333c9535ab56cc222a31fef4de5eb34d062a1f91158ad67e793ffa17c0f",
+      "text": "{{strong_1}}Optionale Ölregelung:{{end_strong_1}} Plasmaraffination bleibt die Grundlage. Röntgencracken verarbeitet „{{item_1114_1}}“ und {{item_1120_1}} zu mehr {{item_1120_2}} und zu {{item_1109_1}}, wenn der roten Forschung diese Produkte fehlen. Reformierung wandelt überschüssigen {{item_1120_3}} zusammen mit {{item_1006_1}} wieder in „{{item_1114_2}}“ um, wenn die spätere Chemie mehr davon braucht. Nutze diese Rezepte zum Ausgleich erkennbarer Engpässe, nicht als Pflichtausbau einer bereits gut laufenden {{item_2308_1}}."
+    },
+    {
+      "id": "b.red.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Wie viel reicht?"
+    },
+    {
+      "id": "b.red.p.008",
+      "sourceHash": "a54504730a1578fae67fc6a4605c598d766e0dc6376caaec7b6d34d60bd9cbcd",
+      "termHash": "336333de03f19cb462f23a8cc12cc9f84b583bd88d1fd89afb08c6a6dbd2b12a",
+      "text": "{{strong_1}}{{fact_1}} rote Würfel{{fact_2}}{{end_strong_1}} reichen in dieser Phase. Wichtiger ist, dass du den Ölbezirk allein lassen kannst und bei deiner Rückkehr die rote Forschung noch läuft, {{item_1120_1}} weiterfließt und sich {{item_1114_1}} ansammelt, ohne die {{item_2308_1}} zu blockieren."
+    },
+    {
+      "id": "b.red.h2.005",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Kurzreferenz — Benötigte Anlagen"
+    },
+    {
+      "id": "b.red.p.009",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Jede Karte skizziert eine nützliche Linie von den ersten Eingangsprodukten bis zum gewünschten Endprodukt.{{end_strong_1}} Öffne sie für einen Gesamtüberblick. Lass sie sonst geschlossen und baue weiter; darin ist nichts Unverzichtbares versteckt."
+    },
+    {
+      "id": "b.red.div.002",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}} Alle Karten aufklappen{{end_button_1}}{{button_2}} Alle Karten zuklappen {{end_button_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.summary.001",
+      "sourceHash": "a29a92ea332d3ef9a31efc9f4b8c2e6c1ef2f1df758dcca27d49395f841578bb",
+      "termHash": "daf63c3808dd6d1d3a825de0eab31ae72a671c4cc1772f7169fba63d49f5d8de",
+      "text": "{{span_1}}{{item_6002_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}ERFORDERLICH{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.001",
+      "sourceHash": "ad3c2a09748a762a1463926559d78b1fb2dabbd11552f40fa8ff8ba6f0190866",
+      "termHash": "a14bfcea088316ab73c9b2ef4e5c00b9bdc49a23a1f8a105d784fc9e314c3639",
+      "text": "{{item_1007_1}}."
+    },
+    {
+      "id": "b.card-red-red-cubes.li.002",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "81f01fd02c8e7cc2b4d9f6ce0dd76fb9a13e5b0da9a8a5e4694b9d56764a8982",
+      "text": "{{item_1006_1}}."
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.003",
+      "sourceHash": "8624f4476924edf781ee264211f0a45d9fdfb5688cd3eac6f8039b66cd78affa",
+      "termHash": "66060d99adb0c2859b6ee32d06040ec864cb6b44a454d8c650eaab7b20190afc",
+      "text": "{{span_1}}Öl-Zweig{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Ölraffinerie{{end_span_5}}{{end_span_3}} {{item_1114_1}} + {{item_1120_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.004",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "1180c97681932fe4fe00e7d9295cf4924f14239eaa5c5607ca5a6bfcc080b486",
+      "text": "{{span_1}}Graphit-Zweig{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.005",
+      "sourceHash": "d421447d9ed3cedf4cddfc5c1accf5faa81a14103bbc2b6b49501f4c2e6bcfb3",
+      "termHash": "0383de16485edad6df23e6e691df3a6ecac57c55df656b11fcf8fa81797946cf",
+      "text": "{{span_1}}Matrix-Endfertigung{{end_span_1}}{{span_2}}{{item_1120_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Matrix-Labor{{end_span_5}}{{end_span_3}} {{item_6002_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.006",
+      "sourceHash": "e776aeef8abdc8fbe69c7440a29f9a2363ae7f8f0696c25211686b34845233b4",
+      "termHash": "d3f2f67ca12b0fc0592b62d0cdc7ca74818dcaa3202abf54ca0c306458805207",
+      "text": "{{span_1}}{{item_2901_1}} — {{item_6002_1}}{{end_span_1}} — {{span_2}}{{item_6002_2}}: {{fact_1}}{{fact_2}}{{end_span_2}} dauerhaft an die Forschung liefern; bei Bedarf mit Überlauflager."
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Nebenprodukte"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.007",
+      "sourceHash": "b7dd5e29cdc731e1112c8bcfcca03b3856c0d12dd1fc5813872f0cec06cca35b",
+      "termHash": "2428c66e883ff50e2b263d2adc7861fb95a9ec9bc4ab7961abd2d6cc7cb3050a",
+      "text": "{{item_1114_1}}."
+    },
+    {
+      "id": "b.card-red-red-cubes.h4.005",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "b.card-red-red-cubes.li.008",
+      "sourceHash": "a6a9a393a06ece727dca3e80e4399c0ec0af147bf7ee7366fbec19d00c99c561",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Beide Raffinerieausgänge müssen frei bleiben. Lagere oder verbrauche raffiniertes Öl und Wasserstoff unabhängig voneinander, damit keines der Produkte das andere blockiert."
+    },
+    {
+      "id": "b.card-red-security-mall.summary.001",
+      "sourceHash": "44c38dca630e3c31e014cce1bcac993aa3e2bf30750aa8c5051715ab2fdaa406",
+      "termHash": "a3d667e8813ec1042f1cd6e42fb433146eda09a32c0963e7f882fcf5a6961c7a",
+      "text": "{{span_1}}Verteidigungs-Mall — Vorrat: {{item_3005_1}} ({{fact_1}}) + {{item_3007_1}} ({{fact_2}}) + {{item_1609_1}} ({{fact_3}}){{end_span_1}}{{span_2}}{{span_3}}ERFORDERLICH{{end_span_3}}{{span_4}}AUF VORRAT{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zufuhr"
+    },
+    {
+      "id": "b.card-red-security-mall.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "e10560272a87fadb357239577ce8d2ce14c27775a607d8dee1a28f8da057fcd2",
+      "text": "{{item_1001_1}}."
+    },
+    {
+      "id": "b.card-red-security-mall.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "75a0f3eb4fbf57c8c2ccdb0926faf65fdb98c6e8eda2874ccc6b03f0bf2474f9",
+      "text": "{{item_1002_1}}."
+    },
+    {
+      "id": "b.card-red-security-mall.li.003",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "81f01fd02c8e7cc2b4d9f6ce0dd76fb9a13e5b0da9a8a5e4694b9d56764a8982",
+      "text": "{{item_1006_1}}."
+    },
+    {
+      "id": "b.card-red-security-mall.li.004",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "af76fd18d9b862988c6e5483c1eb16666a6caa5da66f87ff913905ac1b614221",
+      "text": "{{item_1005_1}}."
+    },
+    {
+      "id": "b.card-red-security-mall.li.005",
+      "sourceHash": "55c077673700a40b71fb5a7b5949166f33aefc3bfdc55f91d71f65b93f02ade5",
+      "termHash": "e78b50b8225cfa435767ebd13046eada2132576c2df2da8888daf29ff236d616",
+      "text": "{{a_1}}{{item_1202_1}} aus BLAU{{end_a_1}}."
+    },
+    {
+      "id": "b.card-red-security-mall.li.006",
+      "sourceHash": "237d7729d381dfab9f0ff8510603e67b405837e8f9292d3c8d4c97953e4b712c",
+      "termHash": "c49f5b75a1c3bf96a4b9ad2304afafd0cf88623416380d4979fd731741dd3d6f",
+      "text": "{{a_1}}{{item_1301_1}} aus BLAU{{end_a_1}}."
+    },
+    {
+      "id": "b.card-red-security-mall.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.001",
+      "sourceHash": "d879b49ac8a334e956e63c66046c026fe9e70dd7408b7504f051b3844bea8cf1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "GRUNDLAGEN"
+    },
+    {
+      "id": "b.card-red-security-mall.li.007",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "3e3211033f7a4cf7bc39a6a2d758863643c261e8bdb7d1f0d4d73680511b81fd",
+      "text": "{{span_1}}{{item_1103_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Lichtbogen-Schmelzofen{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.008",
+      "sourceHash": "7bb207bd986dc93818e1e9c6eef9f8219d9fce517a662a3f64f8639a9d7fd23d",
+      "termHash": "50d17b6e2d1dd3542389d1113656db47c69bfeddc80c71395329947052bf3a7b",
+      "text": "{{span_1}}Kupfer-Zweig{{end_span_1}}{{span_2}}{{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.009",
+      "sourceHash": "f970cd2ec7b81bfa8da830c6e956d60e0ef6707831a5c75398d613f27194d0e9",
+      "termHash": "49848dd5b2c67369e9b187930dae86402f20d7cfd02dd47c540fd1bb54d9d865",
+      "text": "{{span_1}}{{item_1407_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1407_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.010",
+      "sourceHash": "3b5dafec8be17fe4c21c76874192fcf945d9c2cebdf7815cac791abcf4a4772f",
+      "termHash": "cfd6690035fbcf29bcc675380fecb181a3e558f80d2e415bd9dfcf4872e65aff",
+      "text": "{{span_1}}Brennstoff-Zweig{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1128_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.011",
+      "sourceHash": "90e8d9294094c7f5b41e90ba445fbd0344c736b1b6f02c6c52b45a80eedff0b2",
+      "termHash": "bb3b09969290cee584f6106d0d77d3860dca1f12b5b5b1c7affa4e3a51ff1f0b",
+      "text": "{{span_1}}Kristall-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1003_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Lichtbogen-Schmelzofen{{end_span_8}}{{end_span_6}} {{item_1105_1}} {{span_9}}{{img_3}}{{span_10}}{{fact_3}}{{end_span_10}}{{span_11}}Herstellung: Lichtbogen-Schmelzofen{{end_span_11}}{{end_span_9}} {{item_1113_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.002",
+      "sourceHash": "2beb8e3acf2a673d347653920d6a5b19f8d4c174abecb45e789c4a099315f078",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "MOTOREN UND ENERGIE"
+    },
+    {
+      "id": "b.card-red-security-mall.li.012",
+      "sourceHash": "a40b4969454c2c5991b9ec1c754a0a4947d1b0076b64e06f7afd6c970a3050f0",
+      "termHash": "ee429a800af695ba4d2608e81204e2404e03674f0c6ef79bbef4aae8e1589e15",
+      "text": "{{span_1}}Elektromotor-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1201_1}}; {{item_1101_2}} + {{item_1201_2}} + {{item_1202_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_3}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_4}}{{end_span_8}}{{end_span_6}} {{item_1203_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.013",
+      "sourceHash": "6b5d6974b95e97b8a236498ad4ae7b9fe5666cdf7bd1e053c65e3333e822ee48",
+      "termHash": "2a00e0f95c7cf3a41991f0ce8923e42ea2bffa6549fa18d2b293f54b2b500be7",
+      "text": "{{span_1}}Turm-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2201_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.014",
+      "sourceHash": "9ad0fa9c0da87752b99fd72b2a5e374bbd5c1809a7240bfde54ec2228852cc70",
+      "termHash": "1ad146fb675a960770b73e6ca9a03c570133a9ea1b6ab5de440774e68fbd977f",
+      "text": "{{span_1}}Erreger-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_1}}; {{item_1202_1}} + {{item_1111_2}} {{span_9}}{{img_3}}{{span_10}}{{fact_4}}{{end_span_10}}{{span_11}}Herstellung: Montagemaschine {{fact_5}}{{end_span_11}}{{end_span_9}} {{item_1401_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.015",
+      "sourceHash": "43688dc73886538cb286167392c05c4705992c128910c272ad3ecb6b1cb14f76",
+      "termHash": "cde2d11c85d017eca6463789b5031e83ed8c033131145c0707b1173734b41ad8",
+      "text": "{{span_1}}Kabelloser Energieturm — Endfertigung{{end_span_1}}{{span_2}}{{item_2201_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2202_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h5.003",
+      "sourceHash": "4eb1b97baa317d5b4916d7d8e80e9ca1075e35420993b2c6387471a215192eb1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "AUSGÄNGE MIT VORRAT"
+    },
+    {
+      "id": "b.card-red-security-mall.li.016",
+      "sourceHash": "34dbec8683d39f7723de9e7e6f72dd16aae4fe1031c4f374745a1096eed62d3c",
+      "termHash": "8401e72d629aa467c2cd729eebcc68fe2fb6e18355b28a04b7d7e0f375b5912c",
+      "text": "{{span_1}}Geschütz-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1203_1}} + {{item_1301_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_3005_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.017",
+      "sourceHash": "79b94287e9e88ab020a03cb4028f44596b6271c20d78058d6d80783c7a04a8b3",
+      "termHash": "fa078665df313b852eaef90c3246771b79c8c21fafd967d5a093d58672999ac5",
+      "text": "{{span_1}}Raketen-Endfertigung{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1301_1}} + {{item_1128_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1609_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.li.018",
+      "sourceHash": "a7fa289295dcc7490f7f1a69e6c9ad376503e18427497ef7e87576d798860a4c",
+      "termHash": "112a91241e6422f120f9f388e56b713f14123e6f0ae0f4c8fd82496d1fd2bf09",
+      "text": "{{span_1}}Turm-Endfertigung{{end_span_1}}{{span_2}}{{item_2202_1}} + {{item_1103_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_3007_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.card-red-security-mall.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ziel"
+    },
+    {
+      "id": "b.card-red-security-mall.li.019",
+      "sourceHash": "29477c0c73e665f3abb0bc02ad6c42e05e92da961b1ddc00eba660eeb52f2941",
+      "termHash": "75342e4c1b965597db159767d145697aa1f28cff2049ca8e22dbd98a555ee4ba",
+      "text": "{{item_2101_1}} — {{item_3005_1}} — {{span_1}}{{fact_1}}{{end_span_1}} Stück herstellen, dann die Montagemaschine anhalten. Gib nur dann {{fact_2}} Lagerplatz frei, wenn du automatisches Nachfüllen bis zu einem vollen Stapel mit {{fact_3}} Stück möchtest."
+    },
+    {
+      "id": "b.card-red-security-mall.li.020",
+      "sourceHash": "de44a0c748a196045b291232fca3b71c29fff9a4cb3f64037ba615baf3baa316",
+      "termHash": "ea78507ac0f8bb100c4c5f55ca1508a81efe102804a77a93249067d11985ea71",
+      "text": "{{item_2101_1}} — {{item_3007_1}} — freigeben: {{span_1}}{{fact_1}} Lagerplatz{{end_span_1}} (bis zu {{fact_2}})."
+    },
+    {
+      "id": "b.card-red-security-mall.li.021",
+      "sourceHash": "81258a2bfb384cea2eda1a0510f0f34d11644b203cf713bdbfc0342f2705eb45",
+      "termHash": "299c1af4babbb15ebe77632acbfada2aacd164d2eb01aa8faffe3ea565ba82c7",
+      "text": "{{item_2101_1}} — {{item_1609_1}} — freigeben: {{span_1}}{{fact_1}} Lagerplätze{{end_span_1}} (bis zu {{fact_2}})."
+    },
+    {
+      "id": "b.card-red-security-mall.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Betriebshinweis"
+    },
+    {
+      "id": "b.card-red-security-mall.li.022",
+      "sourceHash": "6f2f847acc5321bb41f8ca7521c4930ec36882fd52ec4a53e1a17a635dc45b21",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Fülle diese drei begrenzten Kisten vor dem ILS-Ausbau. Danach darf die Mall ruhen und wieder anlaufen, wenn der Startplanet eine weitere Geschützbatterie oder einen Turmvorstoß braucht."
+    },
+    {
+      "id": "b.red-planetary-base-clearing.h2.001",
+      "sourceHash": "73b512f0fb002db10e5a25b500cd49b52af77df8f836eb2db752abdffb33c739",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Vorhandene Basen auf dem Startplaneten räumen"
+    },
+    {
+      "id": "b.red.p.010",
+      "sourceHash": "28b971410c42e4d8c107d8c61b1f8670f26bd3c70d06b19835dd79ce2cf1caa9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wenn du über {{strong_1}}NEUES SPIEL {{fact_1}} SPIEL STARTEN{{end_strong_1}} begonnen hast, kennst du deine Nachbarn bereits. So wirst du sie los, statt sie in Ruhe stärker werden zu lassen."
+    },
+    {
+      "id": "b.red.p.011",
+      "sourceHash": "9ccf847837e9c5fc9b5d2c9a20c148d1e337621ffbc04dc18d10a9f2cc47f475",
+      "termHash": "162999a1eaecac6da4a8d0661da973993f867c0962395fe02113557cf1258b09",
+      "text": "Baue eine feste Batterie aus acht Geschützen vom Typ {{item_3005_1}} am vorhandenen Stromnetz. Versorge sie mit Munition vom Typ {{item_1609_1}} und prüfe, ob jedes Geschütz geladen ist. Sobald die Batterie bereit ist:"
+    },
+    {
+      "id": "b.red.li.005",
+      "sourceHash": "b4aea25384e77e457b5635a0b270e85689fb21a0f9fc1da6c3d83b60f84b679d",
+      "termHash": "5b0b34abd72a2622b38cffb0d0d35483c650859c8539e7d65b16c09ef38091d1",
+      "text": "{{strong_1}}Strom bis an den Rand bringen.{{end_strong_1}} Verlängere das Netz mit Türmen vom Typ {{item_2201_1}} in Richtung der planetaren Basis und halte knapp außerhalb ihrer Angriffsreichweite an. Wenn du sie zu früh provozierst, ziehe dich zurück und schieße Verfolger ab. Prüfe dann, ob du versehentlich ein Gebäude vom Typ {{item_2201_2}} innerhalb der Angriffsreichweite zurückgelassen hast."
+    },
+    {
+      "id": "b.red.li.006",
+      "sourceHash": "6ae5d78051bbf83d5147ccde685e2e7a3201b6f5803f84ce342a0766d71dfac5",
+      "termHash": "2bd1cf7d11e2eb8dc2167c6e75dd9906a01c536671a2e1e5d8a34d6e2b502830",
+      "text": "{{strong_1}}Den Beschuss eröffnen.{{end_strong_1}} Platziere den ersten mit Strom versorgten {{item_3007_1}} innerhalb der Angriffsreichweite, aber nicht direkt an der Basis. Lass ihn die Aufmerksamkeit auf sich ziehen und gib der Batterie Zeit, Munition vom Typ {{item_1609_1}} ins Ziel zu bringen."
+    },
+    {
+      "id": "b.red.li.007",
+      "sourceHash": "44a13c2bcc6c0c4fc9a322eb8e726caa03921fcb2b88fbdaa01e74c5a30ee218",
+      "termHash": "f37f414de64c41a88f21da5c0879b7f703cb3c6cb73a8394ccb9894f2d4506dd",
+      "text": "{{strong_1}}Die Abdeckung vorverlegen.{{end_strong_1}} Während der erste {{item_3007_1}} die Gegner beschäftigt, stelle einen zweiten versorgten Turm näher heran. Versuche, mit seiner Reichweite die gesamte Basis abzudecken."
+    },
+    {
+      "id": "b.red.li.008",
+      "sourceHash": "ae059c97d16dbf68e4dab666af6d13a22e15ee80227dfe247ceda36ea1dead25",
+      "termHash": "f37f414de64c41a88f21da5c0879b7f703cb3c6cb73a8394ccb9894f2d4506dd",
+      "text": "{{strong_1}}Die Rückseite erreichen.{{end_strong_1}} Wenn Gebäude außerhalb der Abdeckung stehen bleiben, ersetze den letzten {{item_3007_1}} oder versetze ihn nach vorn, bis die Batterie sie zerstören kann. Baue anschließend nicht mehr benötigte vorgeschobene Türme ab."
+    },
+    {
+      "id": "b.red.li.009",
+      "sourceHash": "ae7bdedf9653cd74f312e732a5729ab326c14c3022fe36c664cb69efbe5b9613",
+      "termHash": "99f9f9a263ada0616b653806467295fc2075f03d0f404c6ed0378eb9fc4eb2cf",
+      "text": "{{strong_1}}Die kostenlose Energie nutzen.{{end_strong_1}} Setze ein {{item_2213_1}} auf das freigelegte Kernbohrloch. Damit erzeugt die geräumte Basis stetig Strom, ohne dass du {{item_1131_1}} oder Erdhaufen ausgeben musst."
+    },
+    {
+      "id": "b.red.div.003",
+      "sourceHash": "ed8803559996ae0e49942bc71dd361010764305027bf011d5de5f814295e0507",
+      "termHash": "69fe78a04bea4bef2deaa0c504167812053b55e8736d5c3e9330e374092dbe38",
+      "text": "{{strong_1}}⚠ Die Batterie weiter versorgen.{{end_strong_1}} Wenn die Geschütze nicht mehr feuern, prüfe Strom und Nachschub an Munition vom Typ {{item_1609_1}}, bevor du den Plan änderst."
+    },
+    {
+      "id": "b.red.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Bereit für den nächsten Schritt, wenn"
+    },
+    {
+      "id": "b.red.li.010",
+      "sourceHash": "6e70c89c858bf0e5e7c1a5a13341e822b1346e8e2e900ad011245724d627aa38",
+      "termHash": "0bd3c2599b8f3d760603afbc6647be0dadbde67b0606a69dc4df6b45bf68663a",
+      "text": "{{label_1}} {{input_1}}Zwei Labore vom Typ {{item_2901_1}} dauerhaft {{item_6002_1}} mit {{fact_1}}{{fact_2}} erzeugen, während {{item_1120_1}} und {{item_1114_1}} weiter aus der {{item_2308_1}} abfließen. {{end_label_1}}"
+    },
+    {
+      "id": "b.red.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "b.red.p.012",
+      "sourceHash": "e836ad404bfaefa6d890766084d9fc9674ac02d0b2bdb754609ec4372005a44f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Weiter zu {{a_1}}{{img_1}}[ILS]{{end_a_1}}."
+    },
+    {
+      "id": "b.ils.h1.001",
+      "sourceHash": "c4070f09aa3b851f80e00029a7bf31b547b53fca9cc3f3ccaa372488a8ddfa69",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[ILS]{{end_a_1}} — Heimatplaneten verlassen und die erste interplanetare Route automatisieren"
+    },
+    {
+      "id": "b.ils.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ DU BIST HIER"
+    },
+    {
+      "id": "b.ils.p.001",
+      "sourceHash": "8e587bcee40b90ae32437fb74732c38e35ebd9c91c532e548a186aeeecba3d71",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Gerade geschafft:{{end_strong_1}} Dauerhaft versorgte rote Forschung.{{br_1}}{{strong_2}}Deine aktuelle Aufgabe:{{end_strong_2}} Eine Expedition, nach der Titan und Silizium ohne dich durchs All reisen.{{br_2}}{{strong_3}}Das bringt dir:{{end_strong_3}} Automatische interplanetare Versorgung und eine Fabrik, die nicht mehr auf den Startplaneten beschränkt ist.{{br_3}}{{strong_4}}Danach:{{end_strong_4}} {{a_1}}{{img_1}}[GELB]{{end_a_1}}"
+    },
+    {
+      "id": "b.ils.h2.002",
+      "sourceHash": "f9f1813928ae6ed79315d43c79bab163f1d82b7bd58b9043fe52d77d232ec91a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Auftrag"
+    },
+    {
+      "id": "b.ils.p.002",
+      "sourceHash": "b2734ddd69fc2d491e5057654ae78f742fad66e80e4de6922cee2d8ada61ee27",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Das ist eine Aufgabe an drei Schauplätzen, nicht drei getrennte Phasen. Reise mit einem Plan ab, baue einen lohnenden Außenposten und befreie Icarus anschließend von seinem Job als interplanetarer Frachter."
+    },
+    {
+      "id": "b.ils.blockquote.001",
+      "sourceHash": "6e2f6bd3f676b67a8e819650ede9789e4de740d1ec67280321d8660aed2b4f7b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Der gesamte Weg:{{end_strong_1}} Raumflug freischalten {{fact_1}} einen richtigen Außenposten einpacken {{fact_2}} Titan und Silizium vor Ort schmelzen {{fact_3}} mit der Startfracht zurückkehren {{fact_4}} zwei Interstellare Logistikstationen (ILS) und fünf Frachtschiffe bauen {{fact_5}} automatische Lieferungen einstellen."
+    },
+    {
+      "id": "b.ils.h2.003",
+      "sourceHash": "f50bd8607bd36e6c83d5bfeee87e5ab25b9486e8f9def220c89edd5eda2e2ac7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Expeditionsplan"
+    },
+    {
+      "id": "b.ils.th.001",
+      "sourceHash": "ec0dab122f9a00f17aa4a44f52b2ba83ede6463b3a11bf8ae66cb35cbe961b39",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Etappe"
+    },
+    {
+      "id": "b.ils.th.002",
+      "sourceHash": "e2a3cb870c86e0e0e0729e02258b023bb89cbf873606cb0b6f88007c47fc7f8a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ergebnis"
+    },
+    {
+      "id": "b.ils.td.001",
+      "sourceHash": "68fde42a847cba9720332f68efbdd45b681494adf78741ed905b653ea39c2b9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Etappe I — Abflug{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.002",
+      "sourceHash": "1baeb7e9561716c19567a1c7393bfc90405c061ad9c85b01f6a611dab01e2d4e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Den Startplaneten flugbereit verlassen, mit gewähltem Ziel und allem für einen Außenposten mit eigener Stromversorgung."
+    },
+    {
+      "id": "b.ils.td.003",
+      "sourceHash": "5ef5d891b478a81f0470acde23bdb1497c9093ee01bdf57e60ac4f1f4feb6d25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Etappe II — Rückfracht{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.004",
+      "sourceHash": "1c140f082c0a95b3205e2ed407142361b8da949a015643a01d363e58c77a439c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Mit den reservierten Titan- und Siliziumvorräten zurückkehren, während die fernen Schmelzöfen weiter versorgt werden und für die spätere Lieferstation bereitstehen."
+    },
+    {
+      "id": "b.ils.td.005",
+      "sourceHash": "2ce624a72a8935c09e140ae819f24689eff94fb92eba9d7b21e3a034a5858715",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Etappe III — Automatisierung{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.006",
+      "sourceHash": "c2bc82f1fefad3cc7179627153ac069de2dbe21572c3e9031f8db07f58afff4c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die reservierte Fracht in Forschung und Transportausrüstung umsetzen, damit Titan und Silizium ohne Icarus zu Hause ankommen."
+    },
+    {
+      "id": "b.flight.h2.001",
+      "sourceHash": "6cf3a5a642f63b9e45c69d51b691756ccbebfd3212a0086c5eb735b414c2fb3c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. Flugbereit werden"
+    },
+    {
+      "id": "b.ils.p.003",
+      "sourceHash": "a3122fef34fa2f792d5160c96a4661c96f7dec6fd016641debac3b1a76d291ab",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Beginne, wenn:{{end_strong_1}} Die rote Forschung dauerhaft läuft und der ILS-Übergang als nächste Pflichtaufgabe ansteht. {{strong_2}}Weiter, wenn:{{end_strong_2}} Antrieb Stufe {{fact_1}} und Titanerzschmelzen erforscht sind, du das Ziel kennst und die Ausrüstung für eine Fabrik mit eigener Stromversorgung reicht."
+    },
+    {
+      "id": "b.ils.h3.001",
+      "sourceHash": "74ef41b00c02e3ad95018d8ac6c99615f747ba209161477cd5c915635805e681",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Forschung vor dem Abflug"
+    },
+    {
+      "id": "b.ils.p.004",
+      "sourceHash": "a31403ddf73fa27256519071c0305e79d95e98f82f3303e8bf8c925642c2c862",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Lass blaue und rote Forschung weiterlaufen, während du den Außenposten packst. Erledige vor dem Start nur die nötigen Schritte für Flug, Erkundung und Schmelzen vor Ort:"
+    },
+    {
+      "id": "b.ils.li.001",
+      "sourceHash": "bff85898a50f1edfc01fc399b4b83a275d615cfe9509bc63cc99699c62cfdec9",
+      "termHash": "4ac50e2819e0839eef2dcc0486fe5bd0c520069495fc8e4301f27c975e63d777",
+      "text": "{{tech_4101_1}} Stufe {{fact_1}} {{fact_2}} {{tech_4102_1}} Stufe {{fact_3}}."
+    },
+    {
+      "id": "b.ils.li.002",
+      "sourceHash": "1f0979f13c0dfa46c049307e7ce05855d820cb740a4599f2b83f1b0e78bc6c46",
+      "termHash": "26408148f3143c47d400a9b4d5581e638694ba54cb137b847e2f69444ac2a8c5",
+      "text": "{{tech_1805_1}} {{fact_1}} {{tech_2901_1}}. Diese Verbesserung verbraucht direkt Motoren statt Matrixwürfel."
+    },
+    {
+      "id": "b.ils.li.003",
+      "sourceHash": "09e8d4ff0e99dca152aa55137c7c93f4ae2544e3c0599b460007f677619c7d97",
+      "termHash": "623e7e75987b1aa682e399cf5e993c73822194dec27cfef6ddb8e58a8729461b",
+      "text": "{{tech_2102_1}} {{fact_1}} {{tech_2902_1}}."
+    },
+    {
+      "id": "b.ils.li.004",
+      "sourceHash": "4f4330342e939ebb1bad443d3ac589003a6e1babeeb14a2bcc397261b2af5c60",
+      "termHash": "ac5421228b492d772ae519a689f0b6a4495ea797454d8b3db0e9fb37eeb8455c",
+      "text": "Erforsche {{tech_1413_1}}, damit die ferne Fabrik fertiges Material statt sperrigem Erz liefern kann. Die Ölraffineriekosten in ROT haben Stahlschmelzen bereits vorausgesetzt; deshalb steht es hier nicht erneut."
+    },
+    {
+      "id": "b.ils.h3.002",
+      "sourceHash": "61501e086f6481c1bf37479dbd2adabadf34718545cd34288825b2aa5dedd72e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Das Startsystem erkunden"
+    },
+    {
+      "id": "b.ils.p.005",
+      "sourceHash": "53a2f4139544308256cbfb1fd0cb1d9348a43434dc4a8ab32b7350d34590f45b",
+      "termHash": "578be5ef9db71f33ac2ca51b7565d0788edb299cd990b3cd78d553164be9e45f",
+      "text": "{{tech_4102_1}} Stufe {{fact_1}} zeigt die Rohstoffmengen im gesamten Startsystem. Prüfe die Karte, bevor du den Außenposten auswählst. Diese erste Erkundung kann Engpässe lange vor dem Notfall aufzeigen."
+    },
+    {
+      "id": "b.ils.th.003",
+      "sourceHash": "eb0f9dc74a1285cf76c73aaae97276c2080a172094afcc373040349b9673e9f1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Jetzt prüfen"
+    },
+    {
+      "id": "b.ils.th.004",
+      "sourceHash": "e601052389ec7c14095b7b3cbb3f6a8b466c5ef9ddf3128f5a4853e8681ee00b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Was du daraus erfährst"
+    },
+    {
+      "id": "b.ils.td.007",
+      "sourceHash": "fc5a7ae62dafc1464029cb0a0b2a6ded4771189dd3ef128e84ff9d29b6f81ed6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Titan- und Siliziumvorräte{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.008",
+      "sourceHash": "3604b604a8af525f38dbeac04eb94426ac8624ae9d768a7112a64fe1678dcf89",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Ergiebige Vorkommen auf Nachbarplaneten können die Standardroute lange versorgen. Wenn dort nicht ungefähr eine Million oder mehr von beiden Rohstoffen verfügbar ist, plane zumindest einen begrenzten {{a_1}}{{img_1}}[WARP]{{end_a_1}}-Ausbau, bevor die Vorräte kritisch werden."
+    },
+    {
+      "id": "b.ils.td.009",
+      "sourceHash": "e4c95cc67e77d75985a4f0baad92766b1aedd05359a893b0993202c2d077a239",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Seltene Adern und nützliche Ozeane{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.010",
+      "sourceHash": "beba6164813c0596e41f05859050eb6ba024eb9ac6a7c970e51d53cd5b82dcf8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Notiere Abkürzungen, die bereits im System verfügbar sind. Sie können später ein langes Standardrezept ersetzen, ohne interstellare Reise zu erfordern."
+    },
+    {
+      "id": "b.ils.td.011",
+      "sourceHash": "c60a06c1281353624475806df3bf120e14038fb67780851ca6ea3c9f2383fef2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Erträge des Gasriesen{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.012",
+      "sourceHash": "8c0eaf5fca8be475774fced02f3c73570edeb45fbfbe9f16e738d86557edcbd8",
+      "termHash": "af0c586d90132b048db558f436a896106fbdffa79cfbeb58009465e1c526f378",
+      "text": "Eine ergiebige Quelle für {{item_1120_1}}, {{item_1121_1}} oder {{item_1011_1}} macht den optionalen Gasriesen-Weg attraktiver, sobald diese Stoffe knapp werden."
+    },
+    {
+      "id": "b.ils.td.013",
+      "sourceHash": "e5b0e6d57be83882fb925b72923536462f6006ef0d1e9c69ea22a40d8fe5c2dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Später: Nachbarsterne{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.014",
+      "sourceHash": "6d3d2f1a72b5afa3f3518a305f9d93a4a431e51cce63451359ee64e139b15ef8",
+      "termHash": "706e338fa392a7f67778406c4702291c60f9b25fdcaf4eb034d525b7c299ed1d",
+      "text": "{{tech_4103_1}} erweitert denselben Vergleich auf Systeme innerhalb von sechs Lichtjahren, wenn WARP relevant wird."
+    },
+    {
+      "id": "b.ils.p.006",
+      "sourceHash": "2e0a329aa5aec62c1909031a15bf6375f2462fff78de842d725d988203dfedc1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Das ist Erkundung, keine zusätzliche Hürde.{{end_strong_1}} Nutze jetzt die Möglichkeiten deines Seeds und merke dir, welcher spätere Engpass eine Reise in ein anderes System rechtfertigen könnte."
+    },
+    {
+      "id": "b.ils.p.007",
+      "sourceHash": "deaaff39c0a5dd0f8594f3f93ffa29cb8251adb4a0cdab07dc7563205712ce6d",
+      "termHash": "1f7c910a84abe3d2a88afd15a767556f4767ea8bb302d9a2c36c83b15f6074fd",
+      "text": "{{strong_1}}Packe für einen Außenposten, nicht für einen Besuch:{{end_strong_1}} Bergbaumaschinen, Schmelzöfen, Fließbänder, Sorter, Lager, unabhängige Stromversorgung, bei Bedarf {{item_1131_1}} sowie genug Brennstoff und Kernenergiereserve für einen misslungenen Anflug. Ist das Ziel besetzt, nutze das {{a_1}}Verfahren aus ROT mit Raketenbatterie und {{item_3007_1}}{{end_a_1}}, bevor du den Außenposten unbeaufsichtigt lässt."
+    },
+    {
+      "id": "b.ils.blockquote.002",
+      "sourceHash": "b852fb26dea156e103f87e10ef4cf5985e90dc4c5f636233a8e76eb9fee21f08",
+      "termHash": "7714123cb0e6533e58cd65cf09d5d22f0a1937b7cab175b52277ea8d878e15c3",
+      "text": "{{strong_1}}Abflug, wenn:{{end_strong_1}} {{tech_2902_1}} und Titanerzschmelzen erforscht sind, du das Ziel kennst und die Fracht für eine Fabrik mit eigener Stromversorgung reicht."
+    },
+    {
+      "id": "b.titanium.h2.001",
+      "sourceHash": "afedbff86343c214b2d3519f6601acb8cecd0576e64f26c53b6d3b0274656fa4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. Einen lohnenden Außenposten aufbauen"
+    },
+    {
+      "id": "b.ils.p.008",
+      "sourceHash": "c616050ee4f98d8bb72352021998aeb016445df8d0a0f79055aac9b3625c0c5f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Beginne, wenn:{{end_strong_1}} Flugbereitschaft und Ausrüstung für den versorgten Außenposten stehen. {{strong_2}}Weiter, wenn:{{end_strong_2}} Die fernen Schmelzöfen laufen und Icarus mit den reservierten {{fact_1}} Titanbarren sowie {{fact_2}} Einheiten hochreinem Silizium zurückgekehrt ist."
+    },
+    {
+      "id": "b.ils.h3.003",
+      "sourceHash": "d81fd2491fe4add280ba8b19f521cdcbf21183f1d727e1b61b401498498f7d9e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Forschung während des Außenpostenbaus"
+    },
+    {
+      "id": "b.ils.p.009",
+      "sourceHash": "627ba9548397b5cf4f8d96158e912c4aefacee9de6ef52b0cbc0848eec912ac6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Versorge die blaue und rote Forschung weiter, während du den fernen Außenposten baust und betreibst. Schließe diese Zweige vor der Heimreise ab. Die gelbe Produktion wartet auf die reservierte Titanrückfracht."
+    },
+    {
+      "id": "b.ils.li.005",
+      "sourceHash": "f380b47b977f51eac973618c32822dfb4d1ca7b7e32c42e43576f8511129a467",
+      "termHash": "2ed8e6beaca5d0d17c830de476f1b6ad4a0831131d2c8805656c6453a8775723",
+      "text": "{{tech_1121_1}} {{fact_1}} {{tech_1131_1}}."
+    },
+    {
+      "id": "b.ils.li.006",
+      "sourceHash": "d5e43801b4b8873992a80e12d0648287b58964f6c3fa50ce0148ba2720eae130",
+      "termHash": "6100ab624cb4d0b44b0871c32888b247239c6465f523f17b12e67309eac57dc6",
+      "text": "{{tech_1311_1}} {{fact_1}} {{tech_1302_1}}."
+    },
+    {
+      "id": "b.ils.li.007",
+      "sourceHash": "3c12d7546f69f4210bfec90746909925f6e60d657ac2b85e1249b0d0cf7879c1",
+      "termHash": "9a84d8c4eb91c420c79d00253dcbef6c260f5032a0ad963459ae4ce99c8ef525",
+      "text": "{{tech_1122_1}} {{fact_1}} {{tech_1123_1}} {{fact_2}} {{tech_1124_1}}."
+    },
+    {
+      "id": "b.ils.li.008",
+      "sourceHash": "de776afc5de4b5354350a806548220b5d925daba67acfb6544fdfe333f59ffc5",
+      "termHash": "709a680c445f8bc3f225418954a18cfb7b3884ca467abed6d1953d74455f2bf1",
+      "text": "{{tech_1701_1}} {{fact_1}} {{tech_1702_1}} {{fact_2}} {{tech_1703_1}}."
+    },
+    {
+      "id": "b.ils.li.009",
+      "sourceHash": "5358a3671791b4cffe2c45890c1325efce31a7f9d07c039bac22647f79e70ef2",
+      "termHash": "2201c525cd54511f553ebac97fb8497c17c54fc1230bd38001ac5d41dac5168c",
+      "text": "{{tech_1112_1}} {{fact_1}} {{tech_1113_1}} {{fact_2}} {{tech_1114_1}}."
+    },
+    {
+      "id": "b.ils.li.010",
+      "sourceHash": "54f6e4a1d91242d8c4434a553e5627cb83b21ea263f88045ae784acb5702cfca",
+      "termHash": "e1559bc80345b2995e13840eda0cb36a6ef586cdda8034dd343454af8f2bb603",
+      "text": "{{tech_1602_1}} {{fact_1}} {{tech_1603_1}}."
+    },
+    {
+      "id": "b.ils.li.011",
+      "sourceHash": "4ea926119aa37b36553fc1a6d1086103fc9d8b49347989398c9ff46d8116ccaf",
+      "termHash": "14d56099e476aeabcdfa61c9fb77ace9787cc555f164208acb4866087fe5825f",
+      "text": "{{tech_3701_1}}."
+    },
+    {
+      "id": "b.ils.p.010",
+      "sourceHash": "5f562e7a65a9676fff019d5d7ee74a03991c6a5b20425e60cdc9383d9220c2c2",
+      "termHash": "65a0cf9422668ca9ece4f2cd62218c869b503f7229e3541f897bfac380d92e7b",
+      "text": "Wenn diese Zweige zusammenkommen, erforsche {{tech_1604_1}}. Der Außenposten braucht noch keine Planetare Logistikstation (PLS). Die Freischaltung bereitet die Stationskomponenten vor, die du nach der Rückkehr zusammenbaust."
+    },
+    {
+      "id": "b.ils.p.011",
+      "sourceHash": "b135155d88f8113d910e52fb0ce64698a13b6e7d7c383667e234146eaa656556",
+      "termHash": "f8c8c006bdd60e561d5cf2d1af79cf57723d604cacc4eb45b91acfd000fa7cdd",
+      "text": "Auf dem Startplaneten gibt es keine gewöhnlichen Adern mit {{item_1004_1}}. Silizium aus {{item_1005_1}} ist nur eine Starthilfe. Schmelze beide Rohstoffe am Zielort: Fertiges Material nutzt den Rückflug besser, und dieselben versorgten Linien können später die Lieferstation speisen."
+    },
+    {
+      "id": "b.ils.p.012",
+      "sourceHash": "3a35741b1035a3724e417c1a0f3d1a776e0df4f986815c89520a5ffd984c0686",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die genau bemessene Fracht trägt den gesamten Übergang. Halte diese Aufteilung beim Entladen sichtbar, damit die Fabrik nicht unbemerkt die Teile verbraucht, die deine manuellen Transporte ablösen sollen."
+    },
+    {
+      "id": "b.ils.p.013",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Für alle Spalten seitlich scrollen {{fact_1}}"
+    },
+    {
+      "id": "b.ils.attr.001.aria-label",
+      "sourceHash": "f48970e87123eb466235254fb5464c412d17d18be7d64705de5ae6937962f140",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Aufteilung der Rückfracht"
+    },
+    {
+      "id": "b.ils.th.005",
+      "sourceHash": "d329374b7055f9c75c008742076e62040075924c709e522721baf1c67598f21d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Rückfracht"
+    },
+    {
+      "id": "b.ils.th.006",
+      "sourceHash": "a6bb955de0020b42b63a8e8f3239bae1fb1a5c5b596013cd7c22287712914a11",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Reserve"
+    },
+    {
+      "id": "b.ils.th.007",
+      "sourceHash": "677afe86aada9d7474f40cb7372cc6ce6ac2b4ee6a98c0d4894f08ab2452712d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Verwendungszweck"
+    },
+    {
+      "id": "b.ils.td.015",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.016",
+      "sourceHash": "a28f5f760f34ca604f0576de17f16eaef6191c563522f9bc866130df0f1893d7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.017",
+      "sourceHash": "2400e6a2bc5feaecb3d3322756df8cf52460491b5b2cfa67505dc2b6784135ea",
+      "termHash": "da8f550affe6c30be5b685be82c6e34ef4c0fbb5f575f53fb22d3edad8c87c0c",
+      "text": "Erste Charge {{item_6003_1}}: {{fact_1}} Stück"
+    },
+    {
+      "id": "b.ils.td.018",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.019",
+      "sourceHash": "3f06ba198c33c66a692fefe765622f4174bd264fadb9e9870b5f528800e8a0b8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.020",
+      "sourceHash": "12bb6995c85fedee6228a7944276504833823d383e73a61b5ebaca8cecefd4af",
+      "termHash": "6b8c7c08a3393d94c0f311103fb50532a59cc86bd79ed62afeca0d75268a4b47",
+      "text": "{{item_1107_1}} für den ILS-Übergang"
+    },
+    {
+      "id": "b.ils.td.021",
+      "sourceHash": "67c8c2343943eb9747fdb59ed64493380b6bc97b06cb97062bab4706cbaf4a01",
+      "termHash": "80c5be99ea0bcb6efd131ae28ecd507155f0737fdc007538ae8877c18df662bb",
+      "text": "{{item_1106_1}}"
+    },
+    {
+      "id": "b.ils.td.022",
+      "sourceHash": "d865e709dd69c1deeb2c8d66e8689d5f3da8a5b9597d3599b04ab9dcc6da7cc6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.023",
+      "sourceHash": "3732dee9cf264aa4f140b7e1b15881d1ed50793f05a6d97945cff8f863543f36",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die beiden PLS-Komponenten im ILS-Paar"
+    },
+    {
+      "id": "b.ils.td.024",
+      "sourceHash": "8506ed84aac1e0340a42643493fc189b22c2abdd0141ae3f75c7943af90df2b3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Titan insgesamt{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.025",
+      "sourceHash": "2c20c2e5a92e22565ecec5c2b1d6b9a9600d29e93e7df34bf01295c53b7b7f47",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}{{fact_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.026",
+      "sourceHash": "32926903765e2d4cfeb8c41f889c7908c3c6e2a2334c4470c3124a96bde1ccc8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Diese Reserve vor dem Bau der Route nicht unterschreiten"
+    },
+    {
+      "id": "b.ils.td.027",
+      "sourceHash": "5a6cc915ba2c3cbb972a9021475de2ba07934e56833ac4c461a7168acb0a4879",
+      "termHash": "cfe17d97876385ea4384fc20d861c83b5f8f2e826fefc95763a6bfd376bea6b2",
+      "text": "{{item_1105_1}}"
+    },
+    {
+      "id": "b.ils.td.028",
+      "sourceHash": "7d17dc550626fe88258152914cfdfeeb2838069509e256a75e1a4140d0ea6fa7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.029",
+      "sourceHash": "273ed0e41948b9f764371e873fa272e57745512240f4297cb614e28c1515acc7",
+      "termHash": "77959c130a32b7701296a9c547d33e435b6870bdb890dab6a163dce6b03e0a6a",
+      "text": "{{item_1303_1}}: {{fact_1}} Stück für zwei Stationen und fünf Schiffe vom Typ {{item_5002_1}}"
+    },
+    {
+      "id": "b.ils.h3.004",
+      "sourceHash": "836829d63f5fc0146adb3699cf592b97db1a134d3214fb4d141c128ee091ad5d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Vor der Heimreise"
+    },
+    {
+      "id": "b.ils.li.012",
+      "sourceHash": "cb7ea4e16ce4bc09249dac322288b2800945cbbf497519206f97dd64e155e55b",
+      "termHash": "3d66890f68e6c0457e4846a931a376b86f1a1d7199591f73bcec3d7933ee4fa0",
+      "text": "{{label_1}} {{input_1}}An Bord: {{item_1106_1}} ({{fact_1}}) und {{item_1105_1}} ({{fact_2}}). {{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.013",
+      "sourceHash": "d77cb3b1720e256adfd0f010321dccb9f5672f8c5ba91711b74c643d82ba74bc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Beide Schmelzlinien bleiben mit Strom versorgt und an Lager angeschlossen. {{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.014",
+      "sourceHash": "fc239a69b6a00263b97edb513ff9bd7b12d7cd331a3ec950e69758bcf06f4525",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}} {{input_1}}Im Ausgabebereich ist Platz für die Liefer-ILS. {{end_label_1}}"
+    },
+    {
+      "id": "b.ils-automate.h2.001",
+      "sourceHash": "c8574542c80dd14e80b33a6b903ec56874ff95cd5b563d1431bd1ca12aecaaf2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. Die Route bauen und automatisieren"
+    },
+    {
+      "id": "b.ils.p.014",
+      "sourceHash": "1f62b81ee3640b9ce0505d555b29a43a3cd1dc472cfc44d1a734d4cafe737238",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Beginne, wenn:{{end_strong_1}} Die reservierte Titan- und Siliziumrückfracht sicher zu Hause ist. {{strong_2}}Abgeschlossen, wenn:{{end_strong_2}} Zwei ILS und fünf Frachtschiffe Titan und Silizium ohne Icarus nach Hause liefern."
+    },
+    {
+      "id": "b.ils.h3.005",
+      "sourceHash": "7fcfa8a2cc8094334bca2cf8a2afb17f6db19c368e6791557de11e0843ea9fdd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die Transportausrüstung bauen"
+    },
+    {
+      "id": "b.ils.p.015",
+      "sourceHash": "a0a5d994df0829ac9b6a6a959364ece497a848e951fb0b4e2fbd11a11f55efe2",
+      "termHash": "1af01a93fbed1c63ec81c571bad0f4b6534630403beb9b7fb2aa118dba5ac4e5",
+      "text": "Produziere mit der reservierten Rückfracht die ersten {{fact_1}} gelben Würfel. Gib diese eine Charge für {{tech_1414_1}} {{fact_2}} {{tech_1605_1}} aus."
+    },
+    {
+      "id": "b.ils.p.016",
+      "sourceHash": "fb48c405b3451b3b91132ad48b2bf6d05cb31def037c840d4d45c9e269ee0797",
+      "termHash": "3235fb55948e7c13eb1123f6fe3071514675f3990b800dd225736e64eb0714a1",
+      "text": "Baue die Produktion von {{a_1}}{{item_1123_1}}{{end_a_1}} auf, bevor du {{item_1206_1}} herstellst."
+    },
+    {
+      "id": "b.ils.h3.006",
+      "sourceHash": "a9ab808a194f9ad93e4ccd1eedb545c2f02d87bf026cef894a1923250829d118",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Reservierter Produktionsbedarf"
+    },
+    {
+      "id": "b.ils.p.017",
+      "sourceHash": "f1c3af29c9d1fcbeb59d190b3d515c01bf217360310d952152bf1e909616422a",
+      "termHash": "c40264a31868e650669e40bd5c7cf148a799fbe68ece4fc8a40c50d0f396c714",
+      "text": "Dies sind aufgeschlüsselte Zwischensummen: Die ILS-Zeile enthält bereits die beiden PLS-Komponenten. Die Frachtschiffzeile enthält bereits Legierung und Turbinen, die für „{{item_1406_1}}“ verbraucht werden. Zähle diese enthaltenen Teile nicht noch einmal hinzu."
+    },
+    {
+      "id": "b.ils.p.018",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Für alle Spalten seitlich scrollen {{fact_1}}"
+    },
+    {
+      "id": "b.ils.attr.002.aria-label",
+      "sourceHash": "9be5555da16113d828fbba03724fd27307ee0b1bb2c784543cc0bd564b5c2b87",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Komponentenbedarf"
+    },
+    {
+      "id": "b.ils.th.008",
+      "sourceHash": "ecd41ae15769b5b863c63275997acf41d296bef0c6c23523d3b44486404aab60",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Begrenzte Aufgabe"
+    },
+    {
+      "id": "b.ils.th.009",
+      "sourceHash": "67ea23d8bf467e0de321f0de104e14639cf15fa99b6ec86c4fff4d3ba3da77d6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zielmenge"
+    },
+    {
+      "id": "b.ils.th.010",
+      "sourceHash": "de157b9f5a8b126e5a19312cc7e163491755869fb0ee22bb93c3303dc16f2853",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Wichtigste Komponenten"
+    },
+    {
+      "id": "b.ils.th.011",
+      "sourceHash": "a366b624e33f9410b9af334ea9d0d07992bcec5f82fbda844315e25583a78894",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Zusätzliche Reserve"
+    },
+    {
+      "id": "b.ils.td.030",
+      "sourceHash": "6b63ffa097a7918f4248b2a211f1e864cf794eca73fbd570a189544b2f8931bb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Erste gelbe Charge{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.031",
+      "sourceHash": "144781ab1d5b0222833f3c1bc1b47a29b5521c507db580cf842d009e3487d3ec",
+      "termHash": "da8f550affe6c30be5b685be82c6e34ef4c0fbb5f575f53fb22d3edad8c87c0c",
+      "text": "{{item_6003_1}}: {{fact_1}}"
+    },
+    {
+      "id": "b.ils.td.032",
+      "sourceHash": "0bb56fe821e0058c3b12df30c23ba2abb28c82d3fb3a08a25eebc2745a31115d",
+      "termHash": "5b2e77428571c7caa1980a915bb4161267411aabd4501c7930b713b330f572b8",
+      "text": "{{item_1118_1}}: {{fact_1}} + {{item_1112_1}}: {{fact_2}}"
+    },
+    {
+      "id": "b.ils.td.033",
+      "sourceHash": "59cd62996ab1696f7b1709b9a26f113bf0217ac362368db8bc10942c19405b30",
+      "termHash": "4d532da0a26f6b9c181d6fc5cbb63bab257e2cfde104fe18a19ffa557d894f25",
+      "text": "{{item_1106_1}}: {{fact_1}} für {{item_1118_1}}: {{fact_2}}"
+    },
+    {
+      "id": "b.ils.td.034",
+      "sourceHash": "111c2c8be1a6e8fec7a1d1b1d34e36e60ce3235106e1c34fb17fe1c39c12d2a3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}ILS-Paar{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.035",
+      "sourceHash": "b2fd546fc2d0a59fe9324ad2172cf881c5c4a2892bc64f59275c35bcf4830dab",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}} ILS, einschließlich ihrer {{fact_2}} PLS-Komponenten"
+    },
+    {
+      "id": "b.ils.td.036",
+      "sourceHash": "85eb58222e93563b77b3d47fc051a474943757c06d9d892a1f71b8766e6cd6b6",
+      "termHash": "c56aeff5fe11ca911ce1cd3a3746e8f317a8848eeb621f139cc55b729a07bafe",
+      "text": "{{item_1107_1}}: {{fact_1}} + {{item_1303_1}}: {{fact_2}} + {{item_1206_1}}: {{fact_3}}"
+    },
+    {
+      "id": "b.ils.td.037",
+      "sourceHash": "f88e5864955f8d7bead2e6dee99089a087510c4c2154e35302b3ee178ad7eeee",
+      "termHash": "051e44983801c87d0094ee846ecd6e6b08595f37c7f2152d6dd4ac4c5bb13ca9",
+      "text": "{{item_1103_1}}: {{fact_1}} + {{item_1106_1}}: {{fact_2}} ({{fact_3}} für die beiden enthaltenen PLS-Komponenten + {{fact_4}} für {{item_1107_1}}: {{fact_5}}) + {{item_1204_1}}: {{fact_6}} für {{item_1206_1}}"
+    },
+    {
+      "id": "b.ils.td.038",
+      "sourceHash": "6a6e5cbfaa7db57a6629a9548c617f92ece21ce01421e48d21cdbe5ee0ded046",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Frachtschiffflotte{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.039",
+      "sourceHash": "62da2eacc5a4aaa0012ecab0976d59832692a4250d2552b3c53ec4283c5de28c",
+      "termHash": "012adb5555aee4ca34cd5a6e84548bf800fa37f9e5879cd1c74c1085ba7a5301",
+      "text": "{{item_5002_1}}: {{fact_1}}, einschließlich {{item_1406_1}}: {{fact_2}}"
+    },
+    {
+      "id": "b.ils.td.040",
+      "sourceHash": "605bfcfae32f150a182f1789e7570280b7c48e667e4eb10abf33ffa9fbbaeb40",
+      "termHash": "d93bb54523ed9593fafd50bda5da20b6c23577b0b3d5ebae242b7101002f2898",
+      "text": "{{item_1107_1}}: {{fact_1}} + {{item_1303_1}}: {{fact_2}} + {{item_1406_1}}: {{fact_3}}"
+    },
+    {
+      "id": "b.ils.td.041",
+      "sourceHash": "46da36c4cb43bfed0618741fbddf18d04d8bde110960ec927f7f7ac26f09d7ee",
+      "termHash": "f980676c0649658407bde634e7c9f466d2cfda6b396cdbb99eb188bdc56eb1d7",
+      "text": "{{item_1106_1}}: {{fact_1}} für {{item_1107_1}}: {{fact_2}}.{{br_1}}Davon {{fact_3}} Legierung für {{item_1406_1}}: {{fact_4}}; {{fact_5}} Legierung direkt für {{item_5002_1}}: {{fact_6}}.{{br_2}}{{item_1204_1}}: {{fact_7}} für die verstärkten Triebwerke"
+    },
+    {
+      "id": "b.ils.td.042",
+      "sourceHash": "3f21d21cf7333f8ed5fa95117b5b4cc616247207bbf9f477a0a33f025cac1ac1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Reservierte Gesamtmenge{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.043",
+      "sourceHash": "f4cf10e2002d05bb6b0ac0f98d4ea1012196c27622364fd3fd09535e4763775d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}{{fact_1}} Würfel + {{fact_2}} ILS + {{fact_3}} Frachtschiffe{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.044",
+      "sourceHash": "ad5baa6ae96edfa080ff1aee322141a9a6126d4ab8920d94db5177309436b89c",
+      "termHash": "77b87ebb7ace89c1943e4b12992534513a83ca75c0e44532ecec4b5bc7b8c7cf",
+      "text": "{{strong_1}}{{item_1118_1}}: {{fact_1}} + {{item_1112_1}}: {{fact_2}} + {{item_1107_1}}: {{fact_3}} + {{item_1303_1}}: {{fact_4}} + {{item_1206_1}}: {{fact_5}} + {{item_1406_1}}: {{fact_6}}{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.td.045",
+      "sourceHash": "e140b9fc0c8b865d6fef38d25396ff0010be2054f7cca0d4beadf6c3270b9612",
+      "termHash": "81a0aab8087fe985c1cd068824e0946d5f83934c1906ca46c09d9aa3608980ee",
+      "text": "{{strong_1}}{{item_1103_1}}: {{fact_1}} + {{item_1106_1}}: {{fact_2}} ({{fact_3}} für {{item_1118_1}} + {{fact_4}} für die gesamte Menge {{item_1107_1}} + {{fact_5}} für die beiden enthaltenen PLS-Komponenten) + {{item_1204_1}}: {{fact_6}}{{end_strong_1}}"
+    },
+    {
+      "id": "b.ils.li.015",
+      "sourceHash": "7b1286fb547161a5cf6f2edc4de5f80b6d8034ec9824f0dfd51637261a1ba219",
+      "termHash": "73c499a03a1bc489dc2af3aa9ad2c1a0d91826bfe8fd6a2fd7abeeaac87fe7ca",
+      "text": "{{strong_1}}Zuerst die Bauteile sichern.{{end_strong_1}} Stelle ein {{item_2101_1}} neben den vorübergehenden Montagebereich und lege jede fertige Komponentencharge aus der Bedarfstabelle sofort hinein. Die normale Produktion darf nichts aus dieser Kiste entnehmen. Baue genau nach Tabelle und höre dann auf: Eine zusätzliche Station oder ein Frachtschiff kann unbemerkt Vorräte der Typen {{item_1303_1}}, Legierung oder {{item_1206_1}} verbrauchen, die für den nächsten Schritt gedacht sind."
+    },
+    {
+      "id": "b.ils.strong.001",
+      "sourceHash": "e532002471db22f3f6a2b5bc8c6d93592ecf41d5afd4879b28d182aeb2a17793",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Baue die vorübergehenden Komponentenlinien."
+    },
+    {
+      "id": "b.ils.attr.003.aria-label",
+      "sourceHash": "e06f9dd695071e3940ecc8805a4834a108fc59544d12fd602956fd857108ffac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Produktionsplan für den ILS-Einstieg"
+    },
+    {
+      "id": "b.ils.p.019",
+      "sourceHash": "f3de7c7076494cfb5cc792e99b91cfe79e30847f6769000cd04ece5dd9693c9d",
+      "termHash": "3141f7e8f2ff9bfab4f4830b48aec7a433210b44ee29b315ef79553204e36111",
+      "text": "{{strong_1}}Produktionsreihenfolge:{{end_strong_1}} {{item_1303_1}} {{fact_1}} {{item_6003_1}} {{fact_2}} {{item_1206_1}} {{fact_3}} {{item_1107_1}}."
+    },
+    {
+      "id": "b.ils.h5.001",
+      "sourceHash": "15f6fdec1c3bbb363eaf9002eee9af2bb76d5eede21b413a16e50c9985112ee3",
+      "termHash": "6813531c80882aa0fe139e1d3e2843ce33d408a828e419aeed5573fe0f6722b7",
+      "text": "{{item_1303_1}}"
+    },
+    {
+      "id": "b.ils.li.016",
+      "sourceHash": "2af9208a730b2d37a123c03496c1d26bc3233d8346ff215e19fb36b6a5900a05",
+      "termHash": "9f72d3854381d9a0e70022786c204e331e18b7f4e3cdd0564189b0de52ee871c",
+      "text": "{{span_1}}Mikrokristall-Zweig{{end_span_1}}{{span_2}}{{item_1105_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1302_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.017",
+      "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
+      "termHash": "26b832ec859a79cac9275f0da1bf5fdab889f4bba17c18748d0f12aea8c9b03c",
+      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.018",
+      "sourceHash": "bf1562fcec31e82e2223fe509e3184c81379170333c1433ae786ed5120a7f420",
+      "termHash": "b707d096eacb01d9690a526676135b538490557119c87fe2c0129690dbdc2a0a",
+      "text": "{{span_1}}{{item_1303_1}} — Endfertigung{{end_span_1}}{{span_2}}{{item_1302_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.002",
+      "sourceHash": "0d9613b44ef65ee3b278607ee1dd931a2c1789f1f5ae72f7fa7fb288fbd13011",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "PARTIKELCONTAINER"
+    },
+    {
+      "id": "b.ils.li.019",
+      "sourceHash": "dd2ccffd3b08393e61f4076bda1fa7d05357f349ba64ac28375b4ff12f89518c",
+      "termHash": "351a300bee7a0dfb527dcd58433ee7397032ddd243a4997da1fbe771c41e0861",
+      "text": "{{span_1}}{{item_1206_1}}{{end_span_1}}{{span_2}}{{a_1}}{{item_1204_1}}{{end_a_1}} + {{a_2}}{{item_1123_1}}{{end_a_2}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1206_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.003",
+      "sourceHash": "0f9eef103a498692fe8062076a49bb7736f7b229a1326f9e7584e2f8219c3e69",
+      "termHash": "6b8c7c08a3393d94c0f311103fb50532a59cc86bd79ed62afeca0d75268a4b47",
+      "text": "{{item_1107_1}}"
+    },
+    {
+      "id": "b.ils.li.020",
+      "sourceHash": "f0477f7b39cff517a591fda7958fa5a7db28a4bfa22de9e3f8d53fc0060fa1f8",
+      "termHash": "66305c51228b4b74333a059f705da7a50e77d46452d841cc4b8b18d3688da8a5",
+      "text": "{{span_1}}Säure-Zweig{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Ölraffinerie{{end_span_5}}{{end_span_3}} {{item_1114_1}}; {{item_1114_2}} + {{item_1005_1}} + {{item_1000_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Chemiefabrik{{end_span_8}}{{end_span_6}} {{item_1116_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.021",
+      "sourceHash": "7420d61bb22ca2bf490a6bac9a730e3b18324e117ebecfd06a71eacf68442790",
+      "termHash": "3e3211033f7a4cf7bc39a6a2d758863643c261e8bdb7d1f0d4d73680511b81fd",
+      "text": "{{span_1}}{{item_1103_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Lichtbogen-Schmelzofen{{end_span_8}}{{end_span_6}} {{item_1103_2}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.022",
+      "sourceHash": "4076b5c669afdf90e059aa82517e1ccf5ea8054a9ebf48e9ac579fd639570d88",
+      "termHash": "a1f6f6034556ac776ff6842e0c00b13b1d2cc2cbe7a61b55cc8062b91c52bab6",
+      "text": "{{span_1}}Legierungs-Endfertigung{{end_span_1}}{{span_2}}{{item_1106_1}} + {{item_1103_1}} + {{item_1116_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1107_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.h5.004",
+      "sourceHash": "0376f27ea3d1532a48f8703e6f40c669ef4a057a71a5c0bb66ac7c25381cc63e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "TRANSPORTAUSRÜSTUNG"
+    },
+    {
+      "id": "b.ils.li.023",
+      "sourceHash": "c02f5ef21232a983668d1396db0e6265a42821ed4a1975b6c6e9ba1deb6409c6",
+      "termHash": "8825f8f36129b5a9a0fc2622a2a00cbea3b332dfdf0d03308b3075df8ea108c4",
+      "text": "{{span_1}}PLS-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.024",
+      "sourceHash": "8c65397affd9fb53c6e2965614b50f7442c1fabf121f74e33a46bc4264ca2e3d",
+      "termHash": "36ceecfad7ac5fd5e0d9c77f74eecb4865022b92b871847f4ac5d479619859b6",
+      "text": "{{span_1}}{{item_1405_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1204_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1406_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.025",
+      "sourceHash": "2491e822b8ddd246f94ed02224bf017b9c219837ea2c449b7930430f279a2da0",
+      "termHash": "80b8f6f349b1524d7bff34bd07f4e35af927b1b8bb30ced99ac353722158fd10",
+      "text": "{{span_1}}ILS-Endfertigung{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.026",
+      "sourceHash": "dc03258c1de18cf434e028fac8f15fa5e1d7e6eb2e0d86ae11676f0ace87b2a0",
+      "termHash": "ad6be4defa65290c33864f0d9c133d53e09932a5c73a4b9dc31e970b1315c308",
+      "text": "{{span_1}}Frachtschiff-Endfertigung{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
+    },
+    {
+      "id": "b.ils.li.027",
+      "sourceHash": "ed13fc37b8ec128948b82d48151a7ff6bb2ddf801817d54ccc55b92bef1c22ce",
+      "termHash": "6a2fa0f9c53340e974b1123c3519eb32ab7a393824ac2b8f2ad84f9259ab22c9",
+      "text": "{{strong_1}}Die Transportausrüstung zusammensetzen.{{end_strong_1}} Stelle im Replikator oder in vorübergehenden Montagemaschinen aus {{item_1103_1}}, {{item_1106_1}}, {{item_1303_1}} und {{item_1206_1}} zwei PLS-Komponenten her. Baue diese mit {{item_1107_1}} und {{item_1206_2}} zu zwei ILS aus. Kombiniere danach {{item_1107_2}}, {{item_1303_2}} und „{{item_1406_1}}“ zu fünf Schiffen vom Typ {{item_5002_1}}. Lege jedes fertige Teil zurück in die reservierte Kiste, bis der ganze Satz vorliegt."
+    },
+    {
+      "id": "b.ils.blockquote.003",
+      "sourceHash": "c6f7f997b5c85714172362f4d1ee1d1072810295938e58c54cc6909cedc8d53a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Kontrollpunkt Transportausrüstung:{{end_strong_1}} Beginne den Einsatz erst, wenn beide ILS und alle fünf interstellaren Frachtschiffe vollständig in der reservierten Kiste liegen."
+    },
+    {
+      "id": "b.ils.h3.007",
+      "sourceHash": "8ad1441d0d55f17e5aaf102e82f9e44b4e649e651020da1bdb2442fa1ab3bbc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Die Route in Betrieb nehmen"
+    },
+    {
+      "id": "b.ils.li.028",
+      "sourceHash": "809511054092102ef1bf3e0f8b601581f6933b6a24473dcc801e8a514eea18f6",
+      "termHash": "3d66890f68e6c0457e4846a931a376b86f1a1d7199591f73bcec3d7933ee4fa0",
+      "text": "{{strong_1}}Die entfernte Lieferstation einstellen.{{end_strong_1}} Stelle eine ILS ohne Stromanschluss neben die Lager des Außenpostens. Trage {{item_1106_1}} und {{item_1105_1}} als Stationsgüter ein und stelle beide auf den blauen Zustand {{strong_2}}Fernanbieter{{end_strong_2}}. Führe beide Schmelzprodukte über Bänder in die zugeordneten Stationsplätze."
+    },
+    {
+      "id": "b.ils.li.029",
+      "sourceHash": "8a6152ae942bb2cf8fe499d32095514bb597a92e895af6e014ce58e393964258",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}Die heimische Empfangsstation einstellen.{{end_strong_1}} Stelle die zweite ILS zu Hause auf, versorge sie mit Strom, trage dieselben beiden Materialien ein und setze beide auf den orangefarbenen Zustand {{strong_2}}Fernabnehmer{{end_strong_2}}. Stationiere alle fünf Frachtschiffe dort. Filtere die Stationsausgänge passend zur Fabrik. Sobald das erste Schiff startet, ist Icarus seinen letzten manuellen Frachtflug geflogen."
+    },
+    {
+      "id": "b.ils.div.001",
+      "sourceHash": "29c57bc2175ebfacc5f5d5fb7659db628beedc3c6c1bd4f64ac499fa0f7f09e2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}⚠ Die Ladespitze beachten.{{end_strong_1}} Eine neue, versorgte Station kann ein sonst gesundes Stromnetz kurzzeitig überlasten. {{strong_2}}Senke ihre eingestellte Ladeleistung{{end_strong_2}} oder lass sie schrittweise aufladen, statt den ganzen Planeten für eine vorübergehende Last umzubauen."
+    },
+    {
+      "id": "b.ils.h2.004",
+      "sourceHash": "5ac177bf37bc69fae8e24196927f5fefb145abf39ad93db15f05696a92965672",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Abgeschlossen, wenn"
+    },
+    {
+      "id": "b.ils.li.030",
+      "sourceHash": "2f289afab188aafc5f719c999bc1993252f41720deb779ad914a15b83adb1369",
+      "termHash": "c4fe313cdb67b34d26757dd55441c272f615aa171146d71a2179cd3c31159f1c",
+      "text": "{{label_1}} {{input_1}}Zwei ILS und fünf Schiffe vom Typ {{item_5002_1}} im Einsatz sind. {{end_label_1}}"
+    },
+    {
+      "id": "b.ils.li.031",
+      "sourceHash": "71737f8cbf1ed24478002de9fd30fa2bdb8e31eb7563049210b19604d4d9169e",
+      "termHash": "3d66890f68e6c0457e4846a931a376b86f1a1d7199591f73bcec3d7933ee4fa0",
+      "text": "{{label_1}} {{input_1}}{{item_1106_1}} und {{item_1105_1}} ohne Icarus zu Hause ankommen. {{end_label_1}}"
+    },
+    {
+      "id": "b.ils.h2.005",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Danach"
+    },
+    {
+      "id": "b.ils.p.020",
+      "sourceHash": "f1f20eb83d00d23c1d88d7bd8c96e902ab727524b88ab778ca2ddacf517824cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "Weiter zu {{a_1}}{{img_1}}[GELB]{{end_a_1}}. Ersetze die begrenzte Forschungscharge durch eine dauerhaft versorgte Forschung."
+    },
+    {
       "id": "a.tech-sheet-title.h2.001",
       "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
