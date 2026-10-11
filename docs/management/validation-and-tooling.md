@@ -52,6 +52,17 @@ clarity, usefulness, or owner acceptance.
 
 ## Browser evidence
 
+For the phone initiative, activate the runtime helper and run
+`node scripts/validate-phone.mjs --mode baseline --output artifacts/phone-validation/baseline`.
+The check starts/stops its own loopback static server, uses Chromium and WebKit
+at four primary phone viewports plus desktop, and adds installed stable Chrome
+when available. `--full` adds landscape, 320/480 px boundaries, tablet smoke,
+and wide desktop. `--site <directory-or-URL>` checks staged or deployed output.
+JSON findings and screenshots remain ignored artifacts; record acceptance
+findings in the roadmap ledger. Baseline mode observes current defects without
+asserting that unimplemented phone behavior already passes. Subsequent stories
+add their acceptance scenarios to the same bounded check.
+
 - Use browser review for claims about presentation, navigation, responsive
   behavior, focus, persistence, or interaction.
 - Review the reader-facing result before hardening editorial assertions.

@@ -1,0 +1,205 @@
+import assert from "node:assert/strict";
+import fs from "node:fs";
+import http from "node:http";
+import path from "node:path";
+import { createRequire } from "node:module";
+
+const args = process.argv.slice(2);
+if (args.includes("--help")) {
+  console.log(
+    "Usage: node scripts/validate-phone.mjs [--mode baseline] [--site directory-or-URL] [--output directory] [--full]",
+  );
+  process.exit(0);
+}
+const option = (name, fallback) =>
+  args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
+const mode = option("--mode", "baseline");
+const root = path.resolve(import.meta.dirname, "..");
+const site = option("--site", root);
+const output = path.resolve(
+  option("--output", path.join(root, "artifacts/phone-validation", mode)),
+);
+const modules =
+  process.env.NODE_PATH ||
+  path.join(root, "artifacts/.runtime-tools/node/node_modules");
+const require = createRequire(import.meta.url);
+const playwright = require(path.join(modules, "playwright"));
+process.env.PLAYWRIGHT_BROWSERS_PATH ||= path.join(
+  root,
+  "artifacts/.runtime-tools/browsers",
+);
+fs.mkdirSync(output, { recursive: true });
+let server;
+let base = site;
+if (!/^https?:/.test(site)) {
+  const siteRoot = path.resolve(site);
+  server = http.createServer((req, res) => {
+    const pathname = decodeURIComponent(
+      new URL(req.url, "http://localhost").pathname,
+    );
+    const file = path.resolve(
+      siteRoot,
+      `.${pathname.endsWith("/") ? `${pathname}index.html` : pathname}`,
+    );
+    if (!file.startsWith(`${siteRoot}${path.sep}`)) {
+      res.writeHead(403).end();
+      return;
+    }
+    try {
+      const bytes = fs.readFileSync(file);
+      res.setHeader(
+        "Content-Type",
+        {
+          ".html": "text/html; charset=utf-8",
+          ".css": "text/css",
+          ".js": "text/javascript",
+          ".json": "application/json",
+          ".png": "image/png",
+          ".webp": "image/webp",
+        }[path.extname(file)] || "application/octet-stream",
+      );
+      res.end(bytes);
+    } catch {
+      res.writeHead(404).end();
+    }
+  });
+  await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
+  base = `http://127.0.0.1:${server.address().port}/`;
+}
+const matrix = [
+  ["android", "chromium", 412, 915, true],
+  ["android-narrow", "chromium", 360, 800, true],
+  ["iphone", "webkit", 393, 852, true],
+  ["iphone-wide", "webkit", 430, 932, true],
+  ["desktop", "chromium", 1280, 800, false],
+];
+if (args.includes("--full"))
+  matrix.push(
+    ["phone-wide", "chromium", 480, 900, true],
+    ["android-landscape", "chromium", 915, 412, true],
+    ["iphone-landscape", "webkit", 852, 393, true],
+    ["stress", "chromium", 320, 740, true],
+    ["tablet", "webkit", 768, 1024, true],
+    ["desktop-wide", "chromium", 1920, 1080, false],
+  );
+const chrome = [process.env.PROGRAMFILES, process.env["PROGRAMFILES(X86)"]]
+  .filter(Boolean)
+  .map((p) => path.join(p, "Google/Chrome/Application/chrome.exe"))
+  .find((p) => fs.existsSync(p));
+if (chrome) matrix.push(["chrome-stable", "chromium", 412, 915, true, chrome]);
+const report = {
+  mode,
+  playwright: require(path.join(modules, "playwright/package.json")).version,
+  site,
+  cases: [],
+  errors: [],
+};
+async function screenshot(page, name) {
+  await page.screenshot({ path: path.join(output, `${name}.png`) });
+}
+try {
+  for (const [name, engine, width, height, mobile, executablePath] of matrix) {
+    const browser = await playwright[engine].launch({ executablePath });
+    const entry = {
+      name,
+      engine,
+      version: browser.version(),
+      width,
+      height,
+      mobile,
+    };
+    report.cases.push(entry);
+    const context = await browser.newContext({
+      viewport: { width, height },
+      isMobile: mobile,
+      hasTouch: mobile,
+      deviceScaleFactor: mobile ? 3 : 1,
+      reducedMotion: "reduce",
+    });
+    const page = await context.newPage();
+    page.setDefaultTimeout(10000);
+    page.on("pageerror", (error) =>
+      report.errors.push(`${name}: ${error.message}`),
+    );
+    page.on("response", (response) => {
+      if (response.status() >= 400 && response.url().startsWith(base))
+        report.errors.push(`${name}: ${response.status()} ${response.url()}`);
+    });
+    try {
+      await page.goto(base);
+      await page.waitForFunction(
+        () =>
+          document.querySelector(".task-list-item-checkbox")?.disabled ===
+          false,
+      );
+      await page.addStyleTag({
+        content:
+          "html { scroll-behavior: auto !important; } * { animation: none !important; transition: none !important; }",
+      });
+      entry.baseline = await page.evaluate(() => ({
+        overflow: document.documentElement.scrollWidth > innerWidth,
+        cards: document.querySelectorAll("details.build-card").length,
+        checklists: document.querySelectorAll(".task-list-item-checkbox")
+          .length,
+        navigation: [...document.querySelectorAll(".rail-tab, .stage-tab")].map(
+          (n) => ({ hash: n.hash, height: n.getBoundingClientRect().height }),
+        ),
+        tooltipPointerEvents: getComputedStyle(
+          document.getElementById("tech-tooltip"),
+        ).pointerEvents,
+      }));
+      assert.equal(entry.baseline.cards, 19);
+      assert.equal(entry.baseline.checklists, 66);
+      await screenshot(page, `${name}-opening`);
+      await page.goto(`${base}#yellow`);
+      await page.waitForFunction(() =>
+        document.querySelector('[data-phase="yellow"].active'),
+      );
+      const card = page.locator("#yellow details.build-card").first();
+      await card.locator("summary").first().click();
+      assert.equal(await card.evaluate((n) => n.open), true);
+      await screenshot(page, `${name}-card`);
+      await page.locator('#yellow [data-tech-id="2203"]').first().click();
+      await page.waitForFunction(() =>
+        document.querySelector("#tech-tooltip").classList.contains("visible"),
+      );
+      assert.match(
+        await page.locator("#tech-tooltip").innerText(),
+        /Mechanical Frame/,
+      );
+      await page.keyboard.press("Escape");
+      const checkbox = page.locator(".task-list-item-checkbox").first();
+      await checkbox.check();
+      await page.reload();
+      await page.waitForFunction(
+        () =>
+          document.querySelector(".task-list-item-checkbox")?.checked === true,
+      );
+      entry.checks = [
+        "document inventory",
+        "hash navigation",
+        "card disclosure",
+        "technology details",
+        "checklist reload",
+      ];
+      console.log(`${name}: passed (${engine} ${entry.version})`);
+    } catch (error) {
+      report.errors.push(`${name}: ${error.message}`);
+      await screenshot(page, `${name}-failure`);
+      console.error(`${name}: ${error.message}`);
+    } finally {
+      await context.close();
+      await browser.close();
+    }
+  }
+} finally {
+  server?.close();
+}
+fs.writeFileSync(
+  path.join(output, "report.json"),
+  `${JSON.stringify(report, null, 2)}\n`,
+);
+console.log(
+  `Phone ${mode}: ${report.cases.length} cases, ${report.errors.length} errors. Evidence: ${output}`,
+);
+if (report.errors.length) process.exitCode = 1;

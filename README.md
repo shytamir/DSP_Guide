@@ -49,6 +49,11 @@ and assembly hash.
 
 ## Project documentation
 
+For authoring checks, `scripts/Bootstrap-AgentEnvironment.ps1` provisions pinned
+Prettier and Playwright Chromium/WebKit in ignored local tools. After activating
+its helper, `node scripts/validate-phone.mjs --help` describes the repeatable
+browser checks. These tools are not deployed with the website.
+
 - [`docs/PROJECT.md`](docs/PROJECT.md) defines the product and governance
   boundaries.
 - [`docs/ROADMAP.md`](docs/ROADMAP.md) records the current planning state.

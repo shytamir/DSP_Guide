@@ -25,7 +25,7 @@ $nodeInstallStamp = Join-Path $nodeWorkspace ".dependency-fingerprint"
 $runtimePackageFile = Join-Path $nodeWorkspace "package.json"
 $expectedPackages = [ordered]@{
     prettier = "3.9.6"
-    playwright = "1.62.0"
+    playwright = "1.64.0"
 }
 $dependencyFingerprint = ($expectedPackages.GetEnumerator() | ForEach-Object { "$($_.Key)@$($_.Value)" }) -join "`n"
 $results = New-Object System.Collections.Generic.List[object]
@@ -176,11 +176,11 @@ function Write-FileIfChanged {
     Set-Content -LiteralPath $Path -Value $Content -Encoding UTF8 -NoNewline
 }
 
-function Get-ChromiumExecutablePath {
-    param([string]$NodePath)
+function Get-BrowserExecutablePath {
+    param([string]$NodePath, [string]$BrowserName)
 
-    $script = 'const path=require("node:path");const root=path.resolve(process.argv[1]);process.stdout.write(require(path.join(root,"playwright")).chromium.executablePath());'
-    return Invoke-External $NodePath @("-e", $script, $nodeModules)
+    $script = 'const path=require("node:path");const root=path.resolve(process.argv[1]);process.stdout.write(require(path.join(root,"playwright"))[process.argv[2]].executablePath());'
+    return Invoke-External $NodePath @("-e", $script, $nodeModules, $BrowserName)
 }
 
 Write-Host "DSP Guide agent environment bootstrap"
@@ -228,7 +228,7 @@ if (-not $ValidateOnly) {
 
             $env:CI = "true"
             Write-Host "Installing exact Node authoring packages. pnpm output follows."
-            & $pnpmPath --dir $nodeWorkspace install --ignore-scripts --store-dir $pnpmStore
+            & $pnpmPath --dir $nodeWorkspace install --ignore-scripts --no-frozen-lockfile --node-linker=hoisted --package-import-method=copy --store-dir $pnpmStore
             if ($LASTEXITCODE -ne 0) {
                 throw "pnpm exited with code $LASTEXITCODE. Do not retry under restricted network access."
             }
@@ -249,19 +249,21 @@ if (-not $ValidateOnly) {
 
     $playwrightCli = Join-Path $nodeModules "playwright\cli.js"
     if ([string]::IsNullOrWhiteSpace($nodePath) -or -not (Test-Path -LiteralPath $playwrightCli -PathType Leaf)) {
-        $installationFailures.Add("Chromium installation requires Node.js and the installed Playwright package.")
+        $installationFailures.Add("Browser installation requires Node.js and the installed Playwright package.")
     } else {
         $previousBrowserPath = $env:PLAYWRIGHT_BROWSERS_PATH
         $env:PLAYWRIGHT_BROWSERS_PATH = $browserRoot
         try {
-            $requiredBrowserPath = Get-ChromiumExecutablePath $nodePath
-            if (Test-Path -LiteralPath $requiredBrowserPath -PathType Leaf) {
-                Write-Host "Playwright Chromium is current; browser installation skipped."
-            } else {
-                Write-Host "Installing Playwright Chromium. Installer output follows."
-                & $nodePath $playwrightCli install chromium
-                if ($LASTEXITCODE -ne 0) {
-                    throw "Playwright exited with code $LASTEXITCODE. Do not retry under restricted network access."
+            foreach ($browserName in @("chromium", "webkit")) {
+                $requiredBrowserPath = Get-BrowserExecutablePath $nodePath $browserName
+                if (Test-Path -LiteralPath $requiredBrowserPath -PathType Leaf) {
+                    Write-Host "Playwright $browserName is current; browser installation skipped."
+                } else {
+                    Write-Host "Installing Playwright $browserName. Installer output follows."
+                    & $nodePath $playwrightCli install $browserName
+                    if ($LASTEXITCODE -ne 0) {
+                        throw "Playwright exited with code $LASTEXITCODE. Do not retry under restricted network access."
+                    }
                 }
             }
         } catch {
@@ -343,15 +345,16 @@ const prettier = require(path.join(root, "prettier"));
 
     $previousBrowserPath = $env:PLAYWRIGHT_BROWSERS_PATH
     $env:PLAYWRIGHT_BROWSERS_PATH = $browserRoot
-    try {
-        $chromiumPath = Get-ChromiumExecutablePath $nodePath
-        if (-not (Test-Path -LiteralPath $chromiumPath -PathType Leaf)) { throw "Chromium executable is missing: $chromiumPath" }
+    foreach ($browserName in @("chromium", "webkit")) {
+      try {
+        $browserPath = Get-BrowserExecutablePath $nodePath $browserName
+        if (-not (Test-Path -LiteralPath $browserPath -PathType Leaf)) { throw "$browserName executable is missing: $browserPath" }
         $browserSmoke = @'
 const path = require("node:path");
 const root = path.resolve(process.argv[1]);
-const { chromium } = require(path.join(root, "playwright"));
+const browserType = require(path.join(root, "playwright"))[process.argv[2]];
 (async () => {
-    const browser = await chromium.launch({ headless: true });
+    const browser = await browserType.launch({ headless: true });
     const page = await browser.newPage({ viewport: { width: 320, height: 200 } });
     await page.setContent("<h1>DSP Guide</h1>");
     const screenshot = await page.screenshot();
@@ -363,17 +366,17 @@ const { chromium } = require(path.join(root, "playwright"));
     process.exit(1);
 });
 '@
-        $smokeResult = Invoke-External $nodePath @("-e", $browserSmoke, $nodeModules)
+        $smokeResult = Invoke-External $nodePath @("-e", $browserSmoke, $nodeModules, $browserName)
         if ($smokeResult -ne "ready") { throw "Unexpected browser smoke result: $smokeResult" }
-        Add-InventoryResult "Rendering" "Playwright Chromium" "Ready" $expectedPackages.playwright $chromiumPath "Headless rendering smoke test passed."
+        Add-InventoryResult "Rendering" "Playwright $browserName" "Ready" (Get-PackageVersion "playwright") $browserPath "Headless rendering smoke test passed."
     } catch {
-        Add-InventoryResult "Rendering" "Playwright Chromium" "Failed" "" $browserRoot $_.Exception.Message
-    } finally {
-        if ($null -eq $previousBrowserPath) {
-            Remove-Item Env:PLAYWRIGHT_BROWSERS_PATH -ErrorAction SilentlyContinue
-        } else {
-            $env:PLAYWRIGHT_BROWSERS_PATH = $previousBrowserPath
-        }
+        Add-InventoryResult "Rendering" "Playwright $browserName" "Failed" "" $browserRoot $_.Exception.Message
+      }
+    }
+    if ($null -eq $previousBrowserPath) {
+        Remove-Item Env:PLAYWRIGHT_BROWSERS_PATH -ErrorAction SilentlyContinue
+    } else {
+        $env:PLAYWRIGHT_BROWSERS_PATH = $previousBrowserPath
     }
 }
 

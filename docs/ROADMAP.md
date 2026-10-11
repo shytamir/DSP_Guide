@@ -412,10 +412,18 @@ preserving release evidence.
 
 ## Execution ledger
 
-No implementation has started. At story closure append a compact row:
-`story | agent validation and commands | outcome/limitations | next handoff`.
-Its containing commit identifies the local result; the chat report supplies
+The containing commit identifies each local result; the story report supplies
 the resulting hash and push outcome.
+
+| Story | Agent validation and commands | Outcome / limitations | Next handoff |
+| --- | --- | --- | --- |
+| ML-01 — agent-validated | `Bootstrap-AgentEnvironment.ps1 -ValidateOnly`; `node scripts/validate-phone.mjs --mode baseline --output artifacts/phone-validation/ml-01`; card, checklist, and source-readability validators; diff review. All passed. | Playwright 1.64.0; managed Chromium 156.0.8078.4 and WebKit 27.2; installed Chrome 155.0.8059.39. Six browser profiles passed inventory, hash, disclosure, tooltip, and persistence checks; desktop screenshot reviewed. No phone document overflow sampled. 35 px route tabs and non-interactive tooltip overflow remain baseline defects. | ML-02 owns route controls; ML-03 owns dense layout/header spacing; ML-04 owns touch details. Tooling is ready; no real-device claim. |
+
+ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
+and uses a hoisted/copy install to avoid sandbox symlink requirements. The first
+upgrade failed on the old lockfile; a buffered browser download was interrupted
+and completed separately with `playwright install chromium webkit`. The final
+validate-only run confirmed the exact packages and both rendering smoke tests.
 
 For ML-05/ML-28, append actual CI artifact/run identity and remote results after
 the first push in a small evidence follow-up commit within that story. Do not

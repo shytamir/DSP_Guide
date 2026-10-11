@@ -170,9 +170,9 @@ When authoritative game knowledge is required:
 ## Environment Bootstrap
 
 - Location: `scripts/Bootstrap-AgentEnvironment.ps1` creates a Git-ignored tool workspace and activation helper under `artifacts/.runtime-tools/`.
-- Purpose: verify the supplied core runtime and install only the exact Prettier, Playwright, and managed Chromium versions required for HTML authoring and browser validation. Current installations are reused without contacting package registries.
+- Purpose: verify the supplied core runtime and install only the exact Prettier, Playwright, and managed Chromium/WebKit versions required for HTML authoring and browser validation. Current installations are reused without contacting package registries.
 - Procedure: the ordinary bootstrap may need npm-registry and Playwright-download access. Run it with authorized network access from the outset; do not first run it in a network-restricted sandbox and retry. Its install output is streamed. `-ValidateOnly` performs no installation or network access.
-- Verified tooling: Git, ripgrep, Node.js, pnpm, Prettier 3.9.6, Playwright 1.62.0, and Playwright-managed Chromium, including formatter and browser-rendering smoke tests.
+- Verified tooling: Git, ripgrep, Node.js, pnpm, Prettier 3.9.6, Playwright 1.64.0, and managed Chromium/WebKit, including formatter and browser-rendering smoke tests. The phone scenarios run with `node scripts/validate-phone.mjs`; see its `--help` and the active validation record.
 
 ## 9. Implementation discipline
 
