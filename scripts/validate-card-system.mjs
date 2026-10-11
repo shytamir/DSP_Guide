@@ -994,7 +994,7 @@ if (
     "1121",
     "1121",
     "1206",
-    "1102",
+    "1101",
     "1127",
     "1121",
     "1107",
@@ -1006,6 +1006,14 @@ if (
   errors.push(
     `GREEN fuel map item sequence is invalid: ${greenFuelMapItemIds.join(", ")}`,
   );
+}
+if (
+  !sameIds(
+    greenFuelMapItemIds.slice(2, 5).map(Number),
+    (strangeMatterRecipe?.inputs || []).map(({ item_id: itemId }) => itemId),
+  )
+) {
+  errors.push("GREEN fuel map Strange Matter inputs differ from the runtime recipe");
 }
 const greenFuelMapProducerIds = [
   ...(greenFuelMap?.inner || "").matchAll(/data-producer-item-id="(\d+)"/g),

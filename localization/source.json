@@ -10750,8 +10750,8 @@
     {
       "id": "c.green.li.002",
       "segment": "C",
-      "source": "{{span_1}}Priority: Strange Matter{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1206_1}} + {{item_1102_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Produced in Miniature Particle Collider{{end_span_5}}{{end_span_3}} {{item_1127_1}}{{end_span_2}}",
-      "sourceHash": "5af9a15430381bed44b5724ff7e78310c3b75b7df52d31aac0532f5b0c6c3486",
+      "source": "{{span_1}}Priority: Strange Matter{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1206_1}} + {{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Produced in Miniature Particle Collider{{end_span_5}}{{end_span_3}} {{item_1127_1}}{{end_span_2}}",
+      "sourceHash": "df3d56d6d62ec2e5123806c4e13c12ed60d04ec6e8e0910389af5315edbb2bce",
       "placeholders": {
         "span_1": "open",
         "end_span_1": "close",
@@ -10763,8 +10763,8 @@
         "item_1206_1": {
           "term": "item:1206"
         },
-        "item_1102_1": {
-          "term": "item:1102"
+        "item_1101_1": {
+          "term": "item:1101"
         },
         "span_3": "open",
         "end_span_3": "close",

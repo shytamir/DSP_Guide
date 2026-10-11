@@ -3711,6 +3711,1548 @@
       "text": "前往{{a_1}}{{img_1}}[黄糖]{{end_a_1}}，把一次性的科研批次改为可持续生产。"
     },
     {
+      "id": "c.yellow.h1.001",
+      "sourceHash": "51a46325012fe7e6595840c949f96c567d65f63b55a9ed3332a97cff8d544af7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[黄糖]{{end_a_1}} — 建立可持续的黄糖科研"
+    },
+    {
+      "id": "c.yellow.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "c.yellow.p.001",
+      "sourceHash": "86c882d80ccfb49975567e1f7f936cbccd3bc2de6c3de05fccb326d31e08761d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}不再手动往返行星运货。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}把星际物流所需的一次性科研批次，改成持续运行的黄糖产线。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}黄糖科研稳定推进，并为紫糖生产打好基础。{{br_3}}{{strong_4}}下一步：{{end_strong_4}}{{a_1}}{{img_1}}[紫糖]{{end_a_1}}"
+    },
+    {
+      "id": "c.yellow.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段概览"
+    },
+    {
+      "id": "c.yellow.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "c.yellow.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "c.yellow.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主要目标{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.002",
+      "sourceHash": "fc6884e69319250b68bb7d87f0973ee89a4395a33dd507a7746017c5e186a619",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "用本地化工产物和输入的{{item_1106_1}}，持续供应三座黄糖研究站"
+    },
+    {
+      "id": "c.yellow.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}建议目标{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.004",
+      "sourceHash": "542e9dd797a78a81f87aaf7545fa911efd5043d2a69ad813de7068b41fe0b598",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先建三座研究站；只有科研明显在等黄糖时才扩产"
+    },
+    {
+      "id": "c.yellow.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}优先研究{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.006",
+      "sourceHash": "68c66ecadafd6d01d62c883a14c73a9f3312e5740ac401dcc679ced9e71e9a19",
+      "termHash": "4820516764acfc0efdebba2ce34524897ca22c906731b6b2251da1546a7bb546",
+      "text": "{{strong_1}}建设能力：{{end_strong_1}}{{tech_2203_1}}等级 {{fact_1}}、{{tech_2302_1}}等级 {{fact_2}}、{{tech_2403_1}}等级 {{fact_3}}、{{tech_2602_1}}等级 {{fact_4}}，以及{{tech_2703_1}}等级 {{fact_5}}。{{br_1}}{{strong_2}}超市取货：{{end_strong_2}}{{tech_1608_1}}。{{br_2}}{{strong_3}}资源续航：{{end_strong_3}}{{tech_3601_1}}等级 {{fact_6}}。"
+    },
+    {
+      "id": "c.yellow.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.008",
+      "sourceHash": "f93f874da4fb31fe7b199b80457ce2752ed9fbde3e25b538915e184971a8a4be",
+      "termHash": "a3c50d8d66303a34bd575b0f6bb0ac886b1d540e468725491f9b78d38ad599d5",
+      "text": "共用化工原料的供应、{{item_1114_1}}的产销平衡，以及接收钛块的星际物流运输站"
+    },
+    {
+      "id": "c.yellow.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时进入下一阶段{{end_strong_1}}"
+    },
+    {
+      "id": "c.yellow.td.010",
+      "sourceHash": "6e5bcf436807d49156bc336a18e260a08081fe7677ef63f2167d4d8508fac761",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "三座黄糖研究站持续运行"
+    },
+    {
+      "id": "c.yellow.blockquote.001",
+      "sourceHash": "12cb33777175a17ed3b52dea93dbf9f9fb6a483c0c1809a3a7174791ce297897",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "黄糖逐步稳定时，可以让研究队列做这些实用升级。一旦三座黄糖研究站都能持续运行，就把其余研究留到以后，前往紫糖阶段。"
+    },
+    {
+      "id": "c.yellow.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "c.yellow.p.002",
+      "sourceHash": "e24a9a554ffd547e0c4429c1171a76ead10b00d572c5e280e7bdf8191384a824",
+      "termHash": "6fdaa2f5e26948d1b1aecec04a710c2da30b81a06d0914fb5063cd94666cd217",
+      "text": "到了黄糖阶段，原本井井有条的小工厂开始同时向各处索取原料。石油、{{item_1006_1}}、{{item_1000_1}}和输入的钛要兼顾多项用途；一条支线没照顾好，就可能让另一头的机器停工。"
+    },
+    {
+      "id": "c.yellow.p.003",
+      "sourceHash": "912c54664cb01aba4c36f9d41d700ee79d71bf8eb1d01d0c2f8808cac9f342d1",
+      "termHash": "bdb87cfb4f338584f917d48b944257ed39e2c34aa7bb98bda0c15fdd154ceb19",
+      "text": "为共用材料设置容易查看的供应点，把重要液体存入一眼能看清的储液罐。缺料时检查那条产线，不必逐一盘问全星球的{{item_2309_1}}。这终究是个建工厂的游戏：尽快找出缺料的位置，就能继续建设。"
+    },
+    {
+      "id": "c.yellow.p.004",
+      "sourceHash": "bc176eafaf4f9a71afa4ac7b735d8a33dd940fadf8872d1617d2492087752650",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}跨行星产线变慢了？{{end_strong_1}}先用{{a_1}}生产统计操作示例{{end_a_1}}，区分是输出等待、原料不足还是运输断档，再考虑改建。"
+    },
+    {
+      "id": "c.yellow.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先研究"
+    },
+    {
+      "id": "c.yellow.h3.002",
+      "sourceHash": "4658268e984aba08485422fa3112822aefc01a86211de30ea9b62ba65cf061ca",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "黄糖稳定期间建议研究"
+    },
+    {
+      "id": "c.yellow.p.005",
+      "sourceHash": "6843e49f5908d0de42794ad2fc5f93b8a4908917eb345ce1c8ee8975c9a20d6e",
+      "termHash": "1d1a6da526ae1cc86625d4de430a891a9cc1eb0e4fe558e41f31275c50e87f64",
+      "text": "星际物流阶段完成的{{tech_2102_1}}，已为下面的升级打好基础。按顺序推进这些组别，但每项只研究到指定等级："
+    },
+    {
+      "id": "c.yellow.li.001",
+      "sourceHash": "ba6f71f5a6455ae2975476841ca2225c1b42e6d06968d69acda7dd008ae84693",
+      "termHash": "91ae889f6b6de513bf077cb8ff3e60c81c1d05f6e2335d01406eb5133fe74886",
+      "text": "{{strong_1}}建设能力：{{end_strong_1}}{{tech_2203_1}}等级 {{fact_1}}、{{tech_2302_1}}等级 {{fact_2}}、{{tech_2403_1}}等级 {{fact_3}}、{{tech_2602_1}}等级 {{fact_4}}，以及{{tech_2703_1}}等级 {{fact_5}}，能让黄糖大规模建设时的携带、放置和扩建更方便。"
+    },
+    {
+      "id": "c.yellow.li.002",
+      "sourceHash": "b58a60378f5b101d29978cb5b4d6f08c450aa079946cf918220f34576d71b4bb",
+      "termHash": "da9bcaaec1fc3aaccdece008c3e91e7b4b6f6927fa90e1479a7b7732d202d6c4",
+      "text": "{{strong_1}}超市取货：{{end_strong_1}}{{tech_1608_1}}让常取的超市物资可以通过物流配送器送到手边。"
+    },
+    {
+      "id": "c.yellow.li.003",
+      "sourceHash": "5186aa596e29677e7665e7d49c55a9bcba64ac57c51b56490114299f244c85c5",
+      "termHash": "d4dfcb0d00e5a417f2d4677b2111097a97db71a6785dab943639b94cd953da04",
+      "text": "{{strong_1}}资源续航：{{end_strong_1}}{{tech_3601_1}}等级 {{fact_1}}，能让支撑工厂扩张的矿藏用得更久。"
+    },
+    {
+      "id": "c.yellow.p.006",
+      "sourceHash": "9f2281b298834aa2aabc690a43dd5ad1e93e172c11a0dc0a371d76a665087437",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}到这里就停。{{end_strong_1}}再往上研究，包括机甲核心等级 {{fact_1}}，合计会消耗 {{fact_2}} 个矩阵。在紫糖之前，为这些升级绕路太贵了。"
+    },
+    {
+      "id": "c.yellow.h3.003",
+      "sourceHash": "487314694a82145965cf7d5fabd75e7d3929536ddccae7f881a891ebd7152ecb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最后一组填补等待时间的科技"
+    },
+    {
+      "id": "c.yellow.p.007",
+      "sourceHash": "07180c8a798b20544828ef314c6a5283e6cd5227a05b4d232cf39c278b1dd191",
+      "termHash": "61e57e0fb96024b7562cbd7f83423fe7ba2a135d3d9ade72687c66ee4791f838",
+      "text": "完成上述三组后，如果黄糖还没稳定，就研究{{tech_1501_1}}和{{tech_1711_1}}，再研究{{tech_1511_1}}。蓄电器能吸收多余发电量，缓冲物流站充电的冲击。这是一项稳妥的准备工作，不是阶段概览中新增的优先目标。"
+    },
+    {
+      "id": "c.yellow.h3.004",
+      "sourceHash": "274199ef83ef9c571064ef10965bab1cee767068033183dd38947f42c17822df",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "离开黄糖阶段的必要条件"
+    },
+    {
+      "id": "c.yellow.p.008",
+      "sourceHash": "66685fcb45f01a8b4270e59326c0be90d01f51ebeaae311ced4643932459c7c3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "三座黄糖研究站持续获得供料，就足以进入下一阶段。上面的其他升级可以等。"
+    },
+    {
+      "id": "c.yellow.h3.005",
+      "sourceHash": "d85b56435e56e08721a05baa6a6251a3965fc7fc960a21e3468af8a26b96204a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "何时放下待办研究"
+    },
+    {
+      "id": "c.yellow.p.009",
+      "sourceHash": "0e4f25e8a1a0d3e1f86d9a68ed7e58740184ba76a7ba7d4d3b1b6f8f3889ea0a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一旦三座研究站都持续运行，就把尚未完成的研究——包括最后那组填补等待时间的科技——留到以后，进入紫糖阶段。不要为了清空研究队列而继续停留在黄糖阶段。"
+    },
+    {
+      "id": "c.yellow.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 多少才够用"
+    },
+    {
+      "id": "c.yellow.p.010",
+      "sourceHash": "b70e3b9dbce5438fee0839af53fc3e75481dce0a90ee8c46dc3b7bd2d65d6426",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "只要黄糖科研持续推进、化工支线也能自行补足缓冲库存，{{strong_1}}三座研究站的产量{{end_strong_1}}就够了。只有研究队列明显在等黄糖，而不是等更早的矩阵或缺失的前置科技时，才需要扩产。"
+    },
+    {
+      "id": "c.yellow.h2.005",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 必要建设"
+    },
+    {
+      "id": "c.yellow.p.011",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}每张卡片都概括一条实用产线，从最初原料一直到目标产品。{{end_strong_1}}想看清全貌时再展开；否则就保持折叠，继续建设。必需的信息不会藏在卡片里。"
+    },
+    {
+      "id": "c.yellow.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}展开全部卡片{{end_button_1}}{{button_2}}折叠全部卡片{{end_button_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.summary.001",
+      "sourceHash": "4b899d8c021a3b70160f73a8159216db9f757f7a9825119429c14ab33e1696a3",
+      "termHash": "a18fb9ebc39353f04d3eb10098454c362d6a0a3b1601aa3d015000c4ad11c2cc",
+      "text": "{{span_1}}{{item_6003_1}} — 三座研究站的产量{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.001",
+      "sourceHash": "ad3c2a09748a762a1463926559d78b1fb2dabbd11552f40fa8ff8ba6f0190866",
+      "termHash": "bc6ae910f80905c902f44bc607ae61be743be644d4a9b24b1b547227372bdb73",
+      "text": "{{item_1007_1}}。"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.002",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.003",
+      "sourceHash": "60139b348f224aa07cdf015236a893f3aee96e5dac8133593a4ef28cc4c773bd",
+      "termHash": "f7258f039160859db2fb7d7d92b0f2b6c12baabbef5f9ddc404185734af9487c",
+      "text": "{{item_1000_1}}。"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.004",
+      "sourceHash": "0d400ff0d1ada7ceefc6b4e3ada0b0d708002596e114475f8e16de266e765948",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "{{item_1106_1}}。"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h5.001",
+      "sourceHash": "6c78b5c02ab8e5904d03f1ec597f8e2908f5264f912dc6255b0d77c84dc2ee57",
+      "termHash": "160f3b127778a714ecc3c8e7b78745c943297841da3356c2ae4b4e2a590ae9fb",
+      "text": "{{item_1118_1}}支线"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.005",
+      "sourceHash": "8624f4476924edf781ee264211f0a45d9fdfb5688cd3eac6f8039b66cd78affa",
+      "termHash": "e469d6738b89268d7c1e16f736ad19d67271265e23918e6ecc4b49794000da01",
+      "text": "{{span_1}}炼油支线{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由原油精炼厂生产{{end_span_5}}{{end_span_3}} {{item_1114_1}} + {{item_1120_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.006",
+      "sourceHash": "45ffe838bdf74a5eebf2cbc067e025c09edaaba5897007ad5e9ccb73ac880ec3",
+      "termHash": "4f6c5a88b9bab2ccc1320aa9535dbc3369198fa0531d174f5974ddd0459e0d80",
+      "text": "{{span_1}}{{item_1115_1}}支线{{end_span_1}}{{span_2}}{{item_1114_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由化工厂生产{{end_span_5}}{{end_span_3}} {{item_1115_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.007",
+      "sourceHash": "1ca1dcced701291754740cae5d500696b8b11ac176fea7eb4f003a31a009298e",
+      "termHash": "d2aacce6ee129189af57adf6254fd21446986842b1db88a7b6bd6c131c754658",
+      "text": "{{span_1}}{{item_1117_1}}支线{{end_span_1}}{{span_2}}{{item_1115_1}} + {{item_1114_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由化工厂生产{{end_span_5}}{{end_span_3}} {{item_1117_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.route-yellow-titanium-crystals.li.001",
+      "sourceHash": "71975577bbdbae11345bc4547549be6b088ffef21f0db120ae91a504894d1771",
+      "termHash": "935a0e936edfffe877dfb115cb62847de3eb0692eede58d632fe16dbf197c6d4",
+      "text": "{{span_1}}{{item_1118_1}}支线{{end_span_1}}{{span_2}}{{item_1117_1}} + {{item_1106_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1118_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h5.002",
+      "sourceHash": "a8e3e9d6b0eb2fa96b8142fede643b09ab3f09fba873001f00040f8e85df6157",
+      "termHash": "1df2fd8e408aac59bb7316428c75a549f52f8457fef993a4b37414322613ce36",
+      "text": "{{item_1112_1}}支线"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.008",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "24b338c5f3566282267888f6d8df55d1b58bb30c93f6f8e8de8950795f0abaec",
+      "text": "{{span_1}}高能石墨支线{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.route-yellow-diamonds.li.001",
+      "sourceHash": "9a0f850dbeb0eba385ca013b3fa69b0d5af4bf9a28106d093d9674608e6de30e",
+      "termHash": "9689f217ac900748075b470b85e6fe1fe4b0a727307963ce10f3f994c181e5ab",
+      "text": "{{span_1}}{{item_1112_1}}支线{{end_span_1}}{{span_2}}{{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1112_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h5.003",
+      "sourceHash": "6e79ff12d5026b76fdacce60b4c32aac87f3a782843fc8dc06a3c001a422d026",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最终合成"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.009",
+      "sourceHash": "17a332f406fd5172feaa898f7b020fb5d43b6867ea36379c7b2a9e35037bb5c2",
+      "termHash": "68295f8fafc549ebbf056854ad8feed2e0c3a2ba3f05b6f7f103b7daf0e6e241",
+      "text": "{{span_1}}矩阵合成{{end_span_1}}{{span_2}}{{item_1118_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6003_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.010",
+      "sourceHash": "1c6b4f7b340448a71a68f3332f59cb0c7ca20a6ce460ba14c9b1ca2e0106efbc",
+      "termHash": "2b2408fcf1791e9da0253310dee7a0838ae825c918628c45147bed2b04f84224",
+      "text": "{{span_1}}{{item_2901_1}} — {{item_6003_1}}{{end_span_1}} — 以{{span_2}}三座研究站的{{item_6003_2}}产量{{end_span_2}}持续供应科研；如有需要，可以加上溢出仓储。"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "副产物"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.011",
+      "sourceHash": "93f211cb88b04da3c6b0e1d15a696a7c9e04e95f4c2586da6a33a377a1ce8692",
+      "termHash": "81f07c6af9999ea501fe5374ef5c8e0d2dd9e52b4e4d0b01a4ba0b3958dc981a",
+      "text": "{{item_1120_1}}，以后可用于发电和多条后期产线。"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.h4.005",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "c.card-yellow-yellow-cubes.li.012",
+      "sourceHash": "188d623d71e5ca9207a69620b275771999c91b8f5ca938457935f943bdab57f0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "后期直接开采有机晶体，就能省掉专门用于合成有机晶体的塑料、精炼油和水支线。"
+    },
+    {
+      "id": "c.yellow.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足这些条件后，再进入下一阶段"
+    },
+    {
+      "id": "c.yellow.li.004",
+      "sourceHash": "9d23d9b8ff0de26fb7ad60f21d5faca672e4d72003941d97c96ccd5a782cf2e4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}三座黄糖研究站持续生产。{{end_label_1}}"
+    },
+    {
+      "id": "c.yellow.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "c.yellow.p.012",
+      "sourceHash": "be7b7b316d96feeb1fe5dcd816fb6519bd42a3ab876cd704698c797e2e118c5f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "前往{{a_1}}{{img_1}}[紫糖]{{end_a_1}}。"
+    },
+    {
+      "id": "c.purple.h1.001",
+      "sourceHash": "0a743ddf8126ba23bca35e86df70c7514cd466b4ad3177d82d58d70c0e52b91a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[紫糖]{{end_a_1}} — 建立第一个真正庞大的生产体系"
+    },
+    {
+      "id": "c.purple.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "c.purple.p.001",
+      "sourceHash": "d629f92885efc4f38081e3e8c06dd1a94528465dc9426eef575f22bdd91422b8",
+      "termHash": "f44f8dc3eebb0ed8e5a94eaf78a8fac0011ed1831f54c25db1779b000bb6c770",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}行星间供应和黄糖科研都已稳定。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}扩充{{item_1123_1}}、{{item_1303_1}}、{{item_1115_1}}、硅及化工产能，建成完整的紫糖工业区。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}紫糖科研稳定运行，解锁汇入绿糖的两条科技支线。{{br_3}}{{strong_4}}下一步：{{end_strong_4}}默认前往{{a_1}}{{img_1}}[绿糖]{{end_a_1}}；如果已确定某种稀有资源能提供捷径，也可以先走{{a_2}}{{img_2}}[曲速]{{end_a_2}}路线。"
+    },
+    {
+      "id": "c.purple.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段概览"
+    },
+    {
+      "id": "c.purple.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "c.purple.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "c.purple.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主要目标{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.002",
+      "sourceHash": "64a8faaa39f2ade19e30fffcbfc2113b784cc8a9901c686f19043a294de82afb",
+      "termHash": "051b99b8c586d432d165d7db641b54b86569fbb772cccb6d434417ae91d9a911",
+      "text": "研究{{item_6004_1}}，让三座紫糖研究站持续生产"
+    },
+    {
+      "id": "c.purple.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}建议目标{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.004",
+      "sourceHash": "2747e7a6b324aaa188f7932790d9a750ce279bea30101475ddddbc84a80291bb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "两条各自设有缓冲库存的生产支线，支撑 {{fact_1}}{{fact_2}} 的紫糖产量"
+    },
+    {
+      "id": "c.purple.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}优先研究{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.006",
+      "sourceHash": "67eb6bfbf677faa56ff533ca048fb84e23010a2b98219a645ff1a81ab85dd6c4",
+      "termHash": "0eafabd2d9f0ff7f00fa94f18a60566f2f8b1f8e28efb7d5736dd7c58d917588",
+      "text": "{{strong_1}}紫糖前置：{{end_strong_1}}{{tech_1132_1}} {{fact_1}} {{tech_1133_1}} {{fact_2}} {{tech_1312_1}}{{br_1}}{{strong_2}}建设能力：{{end_strong_2}}{{tech_2103_1}}、{{tech_2204_1}}等级 {{fact_3}}、{{tech_2404_1}}等级 {{fact_4}}、{{tech_2603_1}}等级 {{fact_5}}、{{tech_2502_1}}等级 {{fact_6}}，以及{{tech_2704_1}}等级 {{fact_7}}。{{br_2}}{{strong_3}}物流：{{end_strong_3}}{{tech_3402_1}}等级 {{fact_8}}和{{tech_3502_1}}等级 {{fact_9}}。"
+    },
+    {
+      "id": "c.purple.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.008",
+      "sourceHash": "4d0759e093d3ab7aac98ffc119fef5451765f6507630289e0e243d378c715922",
+      "termHash": "4d2e4a2074deb02ca2ad7e0088d447a6fcb3cac2fbb3521145a18ebccc030fc9",
+      "text": "{{item_1123_1}}和{{item_1120_1}}的输出、早期矩阵产线，以及紫糖两种原料中供不上的一侧"
+    },
+    {
+      "id": "c.purple.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时进入下一阶段{{end_strong_1}}"
+    },
+    {
+      "id": "c.purple.td.010",
+      "sourceHash": "fc993c8d7e457cddabb36b97d68a392e2e1ce894ac21691411ed11001a32b798",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "三座紫糖研究站持续运行"
+    },
+    {
+      "id": "c.purple.blockquote.001",
+      "sourceHash": "94375fefdd9c0b2222e5a2526b107b033cffddb4544ccbc42dd48cf4584b4cae",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "紫糖工业区逐步稳定时，可以让研究队列做下面这些实用升级。一旦三座紫糖研究站都能持续运行，就把其余升级留到以后，前往绿糖阶段。"
+    },
+    {
+      "id": "c.purple.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "c.purple.p.002",
+      "sourceHash": "d3398da19cbdca1b5abd779867b2ca394e52a4f8cffd17d4125fcb3287827832",
+      "termHash": "a99a8a3b6dd82504ebb4a7ea178dcf8490bf844c2862b19c5073e72e9e85b670",
+      "text": "紫糖相当于同时给你两份黄糖规模的建设清单。一条产线以{{item_1303_1}}收尾，另一条则经过漫长的化工链，最终产出{{item_1402_1}}。把它们分区建设，两端都留出可观察的库存，再用物流把产品送到科研区汇合。"
+    },
+    {
+      "id": "c.purple.p.003",
+      "sourceHash": "7eb782d03c756bffef8fc5bda1349ea869cef251da4bb97d907b3655c954f6cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "到了这里，可复用蓝图和更齐全的建筑超市不再只是前期准备，而会让建设像开了挂一样省心。复制已经好用的模块，扩建库存见底的支线，别总想着用一条“终极传送带”扛起整颗星球。"
+    },
+    {
+      "id": "c.purple.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先研究"
+    },
+    {
+      "id": "c.purple.h3.002",
+      "sourceHash": "828d5dc4a72ca7ba1239eb78d5c580a3bff2ec800d4ce3b872bcdf446fd7d3e7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "开始紫糖生产的必要条件"
+    },
+    {
+      "id": "c.purple.p.004",
+      "sourceHash": "7b5bd68dea4f7d9b93a75c4dc97ad647842f60a2acd0c112c0cb99b576a65548",
+      "termHash": "36e7d32c0a4c2e726ce2d7bf90cff71251937d6c08d6b1947243fc77522accc6",
+      "text": "完成{{strong_1}}{{tech_1132_1}} {{fact_1}} {{tech_1133_1}} {{fact_2}} {{tech_1312_1}}{{end_strong_1}}。开始生产紫糖前，只需要完成这三项科技解锁。"
+    },
+    {
+      "id": "c.purple.p.005",
+      "sourceHash": "d46a3b5c7920fabc86f90d77486f2d2c2c93d63af9afaf2d964d0ab412148cda",
+      "termHash": "7fa23b1cece9d03cd5e8b0aecad2db31e37acd2560ba8eee832601c9b4dc2e25",
+      "text": "{{tech_1131_1}}已在星际物流过渡阶段完成，因此{{tech_1132_1}}会解锁{{item_1124_1}}，{{tech_1133_1}}会解锁{{item_1402_1}}。再加上已有的{{tech_1302_1}}科技支线，就满足了{{tech_1312_1}}的解锁条件。"
+    },
+    {
+      "id": "c.purple.h3.003",
+      "sourceHash": "976c481875b022bf10aa22ec0927040fa0884f37f70e8c0a4472b13cce7204bb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "紫糖稳定期间建议研究"
+    },
+    {
+      "id": "c.purple.p.006",
+      "sourceHash": "52cfd68c5dbd8bed5dcbcfa28c91eeeffa77d3004935df2a6a9bfc07357bfec5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "先补齐黄糖阶段尚未完成的等级，再按组推进下列升级，每项只研究到指定等级："
+    },
+    {
+      "id": "c.purple.li.001",
+      "sourceHash": "26f01eb0154f005551c1a217b00d55e3643172231cca63d7a9ad8930b6852738",
+      "termHash": "00c4e868f7f3511da42b9ce0920a1d88f650181e473872e1b3c539e108d3a72e",
+      "text": "{{strong_1}}建设能力：{{end_strong_1}}{{tech_2103_1}}、{{tech_2204_1}}等级 {{fact_1}}、{{tech_2404_1}}等级 {{fact_2}}、{{tech_2603_1}}等级 {{fact_3}}、{{tech_2502_1}}等级 {{fact_4}}，以及{{tech_2704_1}}等级 {{fact_5}}，为紫糖的大规模建设提供搬运、放置和供能能力。"
+    },
+    {
+      "id": "c.purple.li.002",
+      "sourceHash": "7ad430da24015c05665a952fd000f99e4bc93cbd7f9b51952d80c413dcac297d",
+      "termHash": "aec4153ae7fd25d451cced7fe84e75b426095b065676e070394ab770d3f5ceb7",
+      "text": "{{strong_1}}物流：{{end_strong_1}}{{tech_3402_1}}等级 {{fact_1}}和{{tech_3502_1}}等级 {{fact_2}}，支撑不断扩大的行星间供应网络。"
+    },
+    {
+      "id": "c.purple.li.003",
+      "sourceHash": "00b781de3c5b76df972fc06badadca65d214dec76784289c734e866610ca9e61",
+      "termHash": "48324105045308eb3add2913e37b672d9be9e6015c5702b3d8591c6a0f2f918f",
+      "text": "{{strong_1}}资源续航：{{end_strong_1}}如果黄糖阶段暂缓了{{tech_3601_1}}等级 {{fact_1}}，先补上，再研究到{{tech_3602_1}}等级 {{fact_2}}。到此为止，因为再下一级就开始消耗紫糖。"
+    },
+    {
+      "id": "c.purple.p.007",
+      "sourceHash": "722efe4dd54b1cfd97f86d692de9b89cd592f96bcba25f4f907aa74cfc53e53d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}到这里就停。{{end_strong_1}}通用建设升级再往上，合计要消耗 {{fact_1}} 个矩阵，其中包括绿糖阶段需要的紫糖。升级本身有用，但现在投入并不划算，先放一放。"
+    },
+    {
+      "id": "c.purple.p.008",
+      "sourceHash": "0671576e7163f854a8293a576d2a9d9cef8eda014cc326ad98c15e9a5fa674dd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "运输能力的下一对等级还要额外消耗总计 {{fact_1}} 个矩阵，而紫糖阶段在初始恒星系内的运输线并不需要它们。"
+    },
+    {
+      "id": "c.purple.h3.004",
+      "sourceHash": "3f0edb3f75ad866543ff23e1970ca0735a59810722d08dc39ba5bb9316ec8c3f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "离开紫糖阶段的必要条件"
+    },
+    {
+      "id": "c.purple.p.009",
+      "sourceHash": "4d37667af4f38cbe0c1debec79024b539b1445654b554dba38d36fedda657227",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "三座紫糖研究站持续获得供料，就足以进入下一阶段。上面的其他升级可以等。"
+    },
+    {
+      "id": "c.purple.h3.005",
+      "sourceHash": "d85b56435e56e08721a05baa6a6251a3965fc7fc960a21e3468af8a26b96204a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "何时放下待办研究"
+    },
+    {
+      "id": "c.purple.p.010",
+      "sourceHash": "31f6c96bfd78101fc7f0b7ac50b65154216b6a140c981e958dfbb6448410e8f6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一旦三座研究站都持续运行，就把剩余的、用来填补等待时间的研究留到以后，进入绿糖阶段。"
+    },
+    {
+      "id": "c.purple.h2.004",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 多少才够用"
+    },
+    {
+      "id": "c.purple.p.011",
+      "sourceHash": "852824040a6ecce54f801fae9d76917607350b62763d8ae17f3929b6dbc56684",
+      "termHash": "a99a8a3b6dd82504ebb4a7ea178dcf8490bf844c2862b19c5073e72e9e85b670",
+      "text": "先建{{strong_1}}三座紫糖研究站{{end_strong_1}}。运行后观察{{a_1}}{{item_1303_1}}{{end_a_1}}和{{a_2}}{{item_1402_1}}{{end_a_2}}库存。哪一种不断减少，就扩建哪条线。如果两者都能在科研间歇补回来，说明产量足够；让工业区自行运转，继续前进。"
+    },
+    {
+      "id": "c.purple.h2.005",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 必要建设"
+    },
+    {
+      "id": "c.purple.p.012",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}每张卡片都概括一条实用产线，从最初原料一直到目标产品。{{end_strong_1}}想看清全貌时再展开；否则就保持折叠，继续建设。必需的信息不会藏在卡片里。"
+    },
+    {
+      "id": "c.purple.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}展开全部卡片{{end_button_1}}{{button_2}}折叠全部卡片{{end_button_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.summary.001",
+      "sourceHash": "032e6676064f051cbfd2895931be69c73a6984646d1a2d708a45cc7c64cf2f5c",
+      "termHash": "0d7f1dbf29f18ced00e61e2c03de98a17b76a0d9de49a0ba807d6fbd077ea70f",
+      "text": "{{span_1}}{{item_1303_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "c.card-purple-processors.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "c.card-purple-processors.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "504eddbcad1e2e956567c27eb9dcf895ccb6678cef05756d8a2ac91dcbb22bec",
+      "text": "{{item_1002_1}}。"
+    },
+    {
+      "id": "c.card-purple-processors.li.003",
+      "sourceHash": "901798e667519fdb44286b848bbc961621e97b01a187bfe2be0e9979e32b5168",
+      "termHash": "bee26e1d09dc89d189444626c852d3855b4265ff861c4fa4d86d9d393f8a232c",
+      "text": "{{item_1003_1}}。"
+    },
+    {
+      "id": "c.card-purple-processors.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "c.card-purple-processors.li.004",
+      "sourceHash": "1ba492e510bc8ffa7fac4ce2913b4a44b69c64284285e6f0bb0c6b70f7a6fb65",
+      "termHash": "0d3950a3633061bfb2b28d49670387c0e770803432da9059cc4c4766494c3cbc",
+      "text": "{{span_1}}金属供应{{end_span_1}}{{span_2}}{{item_1001_1}} + {{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}} + {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.li.005",
+      "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
+      "termHash": "c1f12c86539959478642edcb92dd43993b5b2da4cb341ce1859e8b8e9c20a43e",
+      "text": "{{span_1}}电路板支线{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.li.006",
+      "sourceHash": "fc176776dc9d90cda013534933807d47ba9f3bc9a719419b920bb687b2c84e21",
+      "termHash": "ecc936ebff4f66e7f43b58d6fc85a28201e3ce63266653d8aade1caac14d1938",
+      "text": "{{span_1}}硅支线{{end_span_1}}{{span_2}}{{item_1003_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1105_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由制造台 {{fact_3}} 生产{{end_span_8}}{{end_span_6}} {{item_1302_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.li.007",
+      "sourceHash": "4515fb5c937735916583ba6d9ca16687601f1741f02d57da588502e86aa1b8ac",
+      "termHash": "4737848072496ce706beec1ff6c324bcc69f72cb67e97549ff49f4d48401311b",
+      "text": "{{span_1}}{{item_1303_1}}合成{{end_span_1}}{{span_2}}{{item_1301_1}} + {{item_1302_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-processors.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "c.card-purple-processors.li.008",
+      "sourceHash": "91c07810ec80ae7dd5ea71349a0db48d5371a48e1cc2f1f9c6639436d0e556a3",
+      "termHash": "2b10f861af6c533d33e9c1e6656c4b4919331e2f3862662845edbc039aabd2fc",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1303_1}}{{end_span_1}} — 以{{span_2}}{{fact_1}}{{fact_2}}{{end_span_2}}接收{{item_1303_2}}，再分配给紫糖科研和后续用途。"
+    },
+    {
+      "id": "c.card-purple-processors.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "c.card-purple-processors.li.009",
+      "sourceHash": "3fa88bc9671997bb66cdfc4c3b5bc7ccbd407605c677f691ef21fbe255292f1c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}把它当作长期基础设施，而不只是紫糖原料线。{{end_strong_1}}让处理器库存容易查看，并预留扩产空间：量子芯片、物流设备和戴森建设都会继续消耗它。"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.summary.001",
+      "sourceHash": "6dab53b3a5d3eedf03753d56c123c1d043b54f8197dbeaf91b25c4da8f76aa1e",
+      "termHash": "0a14688e5995b8daa1a6d4fb01cb5df4d97cad97072064e8cf4506445f7e3218",
+      "text": "{{span_1}}{{item_1402_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.001",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "6431d7fe1b21f67a7db54f3b7a9e8c4f89be31490ea1d5a551012c7bc916c13a",
+      "text": "{{a_1}}通用常规产线生产的{{item_1123_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.002",
+      "sourceHash": "0d400ff0d1ada7ceefc6b4e3ada0b0d708002596e114475f8e16de266e765948",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "{{item_1106_1}}。"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.003",
+      "sourceHash": "c6fd3ae07a243086d1ddd21a601b2f615c97db05ee201b561c8edc82ac3d3afa",
+      "termHash": "db75cc9b2d6a15f1c14e25dc0997c4673c938ff4518eec4cf06b218dacaf82bb",
+      "text": "{{item_1105_1}}。"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "c.route-purple-carbon-nanotubes.li.001",
+      "sourceHash": "de1a0e1a574a1253afabdb573e4619906dab7cc309e51fc5b2ab16edbc4e6f82",
+      "termHash": "dad19cf5cc9bd5224983c414e11de97f35b55b7a82dd61ad21dd9ab06a728753",
+      "text": "{{span_1}}碳纳米管支线{{end_span_1}}{{span_2}}{{item_1123_1}} + {{item_1106_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由化工厂生产{{end_span_5}}{{end_span_3}} {{item_1124_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.004",
+      "sourceHash": "45ffe838bdf74a5eebf2cbc067e025c09edaaba5897007ad5e9ccb73ac880ec3",
+      "termHash": "4f6c5a88b9bab2ccc1320aa9535dbc3369198fa0531d174f5974ddd0459e0d80",
+      "text": "{{span_1}}{{item_1115_1}}支线{{end_span_1}}{{span_2}}{{item_1114_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由化工厂生产{{end_span_5}}{{end_span_3}} {{item_1115_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.005",
+      "sourceHash": "a7227ccd1a70fb946dd02ec77c5d7caa64a8ceeb1943a219f69607a12ce809e8",
+      "termHash": "ddd83781b17a29ac002e9f97d710cd4095ba0842d94f3135a2c80753fb285ad0",
+      "text": "{{span_1}}硅支线{{end_span_1}}{{span_2}}{{item_1105_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1113_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.006",
+      "sourceHash": "e01c2e96ab21099af6ca62adba5ff730b1b59e7b2793a6bc3a162f60b2a20203",
+      "termHash": "f11bc69e744cb59823815be4ed78f9aed683b2fac710b80d49c2bf604f6a887b",
+      "text": "{{span_1}}粒子宽带合成{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1115_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1402_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.007",
+      "sourceHash": "39077be9c101f34bafe931e1b68fde6337105746b6254abc4dabf33e18cc3146",
+      "termHash": "d683ef35c129ada3c69babfa627f5d2d53c07c9364066d5a1aee51a5f088cd82",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1402_1}}{{end_span_1}} — 以{{span_2}}{{fact_1}}{{fact_2}}{{end_span_2}}接收{{item_1402_2}}，再分配给紫糖科研。"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "副产物"
+    },
+    {
+      "id": "c.card-purple-particle-broadband.li.008",
+      "sourceHash": "764debac48ab03af05e659f00de27ea4998af9ccd8d77c34601b2ed321d33ca3",
+      "termHash": "d1a91526aa2a3085b9c7be8fa48dde4b9e8652b398547eb8acff84f9756e54ea",
+      "text": "常规{{item_1123_1}}产线副产的{{item_1120_1}}。"
+    },
+    {
+      "id": "c.purple.h2.006",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意事项"
+    },
+    {
+      "id": "c.purple.p.013",
+      "sourceHash": "b5484ee7fa91e6276982723ca91d258938b5e766c846e713abebdbeb6c3f5161",
+      "termHash": "1b768999d4c6d85c98885bde23292123d02e24215b56352e0ab6419c4bb3e8ca",
+      "text": "{{strong_1}}{{item_1120_1}}。{{end_strong_1}}依赖石油的{{item_1123_1}}和{{item_1115_1}}支线会带来大量{{item_1120_2}}。在任一化工支线堵塞前，先为它安排仓储或消耗去向。"
+    },
+    {
+      "id": "c.purple.p.014",
+      "sourceHash": "a5c7787e6613698f8c5f979c174f63aebb87a471dcbc73b60564211bad154b1a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}星际物流供料不足。{{end_strong_1}}如果钛或硅断货，扩产之前先检查供给站和接收站。在哪一端排队，就补哪一端的能力；母星第一座星际物流运输站如果还只有起步时的五艘船，就补到十艘。"
+    },
+    {
+      "id": "c.purple.h2.007",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足这些条件后，再进入下一阶段"
+    },
+    {
+      "id": "c.purple.li.004",
+      "sourceHash": "d05fbe03f145fdc1c7d8c17e03b63eebaae9a8a54ceaae336d9ae4992f42c7b8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}三座紫糖研究站持续生产。{{end_label_1}}"
+    },
+    {
+      "id": "c.purple.h2.008",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "c.purple.p.015",
+      "sourceHash": "21d3ced8e03589d1bfbc58e1dcdf3ca9b0793d91bd2e0602af77e93124cf0efa",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "继续前往{{a_1}}{{img_1}}[绿糖]{{end_a_1}}；如果已确定某种稀有资源值得绕路，再走{{a_2}}{{img_2}}[曲速]{{end_a_2}}路线。"
+    },
+    {
+      "id": "c.green.h1.001",
+      "sourceHash": "d84156e7aae1e2041f0b0c45f61ab9e712a48c9b0596c9a03fa42d5526299b43",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[绿糖]{{end_a_1}} — 建立两条后期原料支线"
+    },
+    {
+      "id": "c.green.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "c.green.p.001",
+      "sourceHash": "3d453c6c4b43ca954ace0a9f155703bf5f214103c4cb6cdf36d7d683afcf63ef",
+      "termHash": "50a3a3d1f23911ff425d2662ab88fca07aa36075d9f40d4eb1fd750c785bcc65",
+      "text": "{{strong_1}}刚刚解决：{{end_strong_1}}紫糖科研和庞大的化工区。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}一边生产{{item_1305_1}}，另一边生产{{item_1127_1}}和{{item_1209_1}}。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}稳定供应{{item_6005_1}}，并准备好戴森基础设施所需的材料。{{br_3}}{{strong_4}}下一步：{{end_strong_4}}{{a_1}}{{img_1}}[戴森云]{{end_a_1}}。"
+    },
+    {
+      "id": "c.green.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段概览"
+    },
+    {
+      "id": "c.green.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "c.green.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "c.green.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主要目标{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.002",
+      "sourceHash": "042783caa4ac56315841356ce693c9231575dc6e4ff9bdebb93237b7a65f2a2a",
+      "termHash": "b26026ddb6e2dcd73d37dd22967a6b710dca2ff0522ed3fd827201260b531464",
+      "text": "研究{{item_6005_1}}，让两座绿糖研究站持续生产"
+    },
+    {
+      "id": "c.green.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}建议目标{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.004",
+      "sourceHash": "bcf1d46c575c54f67a48b9be6f56fac0cfe01dc9b7dd1b0358528da8c9b03710",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "两条各自设有缓冲库存的后期支线，支撑 {{fact_1}}{{fact_2}} 的绿糖产量"
+    },
+    {
+      "id": "c.green.td.005",
+      "sourceHash": "7a3be468e528aeabeccf0f0ed7a7178b28fc57abfe9465ecfba1c2ecef353687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}接下来研究{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.006",
+      "sourceHash": "dd7da47c3e760e2c8dde3cdc4a50d9c633fe45bf3a001c71db85c7f38866c29f",
+      "termHash": "aeb3b4298294327be030a49a67a21ba5e30946cf15df445d24bdf4eb8b217502",
+      "text": "{{strong_1}}量子支线：{{end_strong_1}}{{tech_1125_1}} + {{tech_1126_1}} {{fact_1}} {{tech_1141_1}} {{fact_2}} {{tech_1303_1}} {{fact_3}} {{strong_2}}框架支线{{end_strong_2}} {{fact_4}} {{strong_3}}引力支线{{end_strong_3}} {{fact_5}} {{tech_1705_1}}"
+    },
+    {
+      "id": "c.green.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.008",
+      "sourceHash": "ea573452be9b24f8b24774a844cab9ce7e696f3a8a19efeaacb855dc33ff6470",
+      "termHash": "528d95c7f79627c20e55f6310524cbc528c6e36775ca097586dca5d3758bbec5",
+      "text": "{{item_1120_1}}储液罐的库存趋势、{{item_1121_1}}消耗、{{item_1206_1}}供应，以及所选{{item_1121_2}}生产路线和{{item_1127_1}}对撞机的耗电量"
+    },
+    {
+      "id": "c.green.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时进入下一阶段{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.010",
+      "sourceHash": "26b1eb29f26421ab0c29cde2ad640373b57a7cfe02745eeeec0a68759039ee06",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "两座绿糖研究站持续运行，两种最终原料的库存均保持稳定"
+    },
+    {
+      "id": "c.green.h2.002",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "c.green.p.002",
+      "sourceHash": "4f663126b4ad96f56293b7fea391c8fed6658c03220fdd56816df4fc36c530f3",
+      "termHash": "b694e7553976f177167f181fd6313bc1ff8992b90021d63c70b7de3649128217",
+      "text": "绿糖又要求同时建设两座紫糖规模的工厂。量子支线是一项深入的电子工业工程；引力支线则引入{{item_1121_1}}、{{item_1206_1}}、{{item_1127_1}}，以及耗电不小的对撞机。仅有一颗母星和一处采矿殖民地，可能终于开始显得局促。"
+    },
+    {
+      "id": "c.green.p.003",
+      "sourceHash": "06d1e3781aa5671f4a9e03765cd50bdc6406d5d10d159b3dd8f7df37c4287745",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "两条支线的成品都要有可观察的库存，只扩建实际供不上的一侧。如果反复扩张让你又在手搓相同的物流站和运输工具，可选的{{a_1}}{{img_1}}[物流]{{end_a_1}}章节能帮你把这些补充库存自动化——这是选择，不是作业。无论是否采用，这都是工厂向恒星进军前，最后一轮大型原料建设。"
+    },
+    {
+      "id": "c.green.h2.003",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先研究"
+    },
+    {
+      "id": "c.green.p.004",
+      "sourceHash": "f3de7d8e29a194c0adc3e3d1bbdf7b1a5a3507e7fee98af8854df6c50fb83197",
+      "termHash": "db4cd64c953169d5cfbe54e89bc0606be05e7a8c415f5537aa6af964def831d5",
+      "text": "{{strong_1}}量子支线：{{end_strong_1}}{{tech_1125_1}} + {{tech_1126_1}} {{fact_1}} {{tech_1141_1}} {{fact_2}} {{tech_1303_1}}。"
+    },
+    {
+      "id": "c.green.p.005",
+      "sourceHash": "e65e35598505252809a5c8689b42cca75b5960547b293262db72d3839b6231a5",
+      "termHash": "702c022a68d2012c9746ef7311f1a2a87bf7800937e374ccd90563107f527677",
+      "text": "{{strong_1}}框架支线：{{end_strong_1}}{{tech_1501_1}} {{fact_1}} {{tech_1502_1}} {{fact_2}} {{tech_1711_1}} {{fact_3}} {{tech_1503_1}} {{fact_4}} {{tech_1521_1}} {{fact_5}} {{item_1125_1}}。"
+    },
+    {
+      "id": "c.green.p.006",
+      "sourceHash": "2c063ed1ffb7aae2ad30896b6206806297e6170a8e7c1a15c14abceb6b515ec7",
+      "termHash": "287fbb2f10ce3b014e7f31e4d0afb47336c235c1ce780a23b3e1d88f45bbe842",
+      "text": "{{strong_1}}引力支线：{{end_strong_1}}{{tech_1142_1}} {{fact_1}} {{tech_1143_1}} {{fact_2}} {{tech_1704_1}}。"
+    },
+    {
+      "id": "c.green.p.007",
+      "sourceHash": "4eced7a5b9312317a06d58c7285affe3f1e90e308e18d08db889dacfd7a5144e",
+      "termHash": "e8d471465e9397980b2a4bdde830b85bf9d1e730ec73f760270e85b8edea6bc8",
+      "text": "{{strong_1}}两条支线（量子 + 引力）{{end_strong_1}} {{fact_1}} {{tech_1705_1}}。"
+    },
+    {
+      "id": "c.green.p.008",
+      "sourceHash": "a9845141516075bbcae313df2c70f3a1253f373bf6f475cd05af46b644728b52",
+      "termHash": "82ad07db40e4c3f2e22d4ade736278205835ff26af5d487e38a2fd27d461e9da",
+      "text": "完成{{tech_1142_1}}后，研究{{tech_1134_1}} {{fact_1}} {{tech_1416_1}}。这里研究重氢分馏只是为了解锁聚变发电；重氢仍用对撞机生产。随后继续{{tech_1143_1}} {{fact_2}} {{tech_1704_1}}。"
+    },
+    {
+      "id": "c.green.p.009",
+      "sourceHash": "176f92e5e8fb7c6dae66ef83c0ded5081f74d3b8f8b0e4e70c6692667acfc9c0",
+      "termHash": "563b78982942a757eb86ef1515b5447a4befdf3501dde086c105c3ded888bc35",
+      "text": "先做量子支线。{{item_1305_1}}一开始生产，就存起来。推进更长的框架和引力路线时，库存能持续增长，让绿糖的一侧原料先积累，而不必等所有前置科技一起完成。"
+    },
+    {
+      "id": "c.green.p.010",
+      "sourceHash": "4b8ad926c1ac165362c07f43a9d666a0b6707fac7f347a41f1196f7ba9c9c677",
+      "termHash": "09b9005ee7047d9d00aa84e7fd3e3188cb93ab9be744738a0c03c5d2bb74f7e4",
+      "text": "等{{item_1209_1}}开始入库时，量子芯片应该已经攒下一批。完成量子芯片和引力波折射后，研究引力矩阵，再把两种存好的成品送到科研区汇合。"
+    },
+    {
+      "id": "c.green.h3.002",
+      "sourceHash": "5c67ad45399b54df7aa775123be2b2020a2d5500c8d98f35942828ccd5d7b107",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "选择重氢来源"
+    },
+    {
+      "id": "c.green.p.011",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横向滚动查看所有列 {{fact_1}}"
+    },
+    {
+      "id": "c.green.attr.001.aria-label",
+      "sourceHash": "499b4b0174c69c68c810124b28339812cec6a0fc231284fbce40dca3d317adb5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "重氢供应方案"
+    },
+    {
+      "id": "c.green.th.003",
+      "sourceHash": "f6834530108c87d2faa85dcf9963d2b7265b2c5acd14aa4863bdc09f5a33e065",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "路线"
+    },
+    {
+      "id": "c.green.th.004",
+      "sourceHash": "6893f48956dbb9114501d7b910105604be9854c5e24ef8cc64b865c44a54782f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优势"
+    },
+    {
+      "id": "c.green.th.005",
+      "sourceHash": "9e62d8a51c8f8f4c2ce6108eda20af025ea7bda98e39181f34bf36d29f06b831",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "代价"
+    },
+    {
+      "id": "c.green.td.011",
+      "sourceHash": "1b6717e643f430bf1de069ad7e7f4bafeaa520d0e443747620e326873d6853ff",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}微型粒子对撞机 — 本指南路线{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.012",
+      "sourceHash": "58134edef0745390196d4ebd3f298c94cbd9bf1780624a116e985d0b6da8a876",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "紧凑，产出容易预估。"
+    },
+    {
+      "id": "c.green.td.013",
+      "sourceHash": "2daa5c3adf80cacbc7b8748d65d0db54b0e1dd21e15ae77d9aa8b5cdf632a016",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "消耗更多氢和电力。"
+    },
+    {
+      "id": "c.green.td.014",
+      "sourceHash": "fb12a6672370c7c88ce4211e102ed33d2c6cc9e55429780b3b38bb7a5791dcf3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}分馏塔{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.015",
+      "sourceHash": "eb2b6ed1a98a19ed1dfd3463b7f408672b9e171c768731e37b9e2fe80fe4cdae",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "氢和电力的利用效率更高。"
+    },
+    {
+      "id": "c.green.td.016",
+      "sourceHash": "02719f29bbf78fc2930f705113d0711a6da146399fd42e42736d70e0977cd592",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "需要更大的循环传送带系统，对流量和集装的维护要求更高。"
+    },
+    {
+      "id": "c.green.td.017",
+      "sourceHash": "9886598ce0eef942aeebe01d8f1e797c7e3530b3626a05f1a170ea857cbcab01",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}轨道采集器{{end_strong_1}}"
+    },
+    {
+      "id": "c.green.td.018",
+      "sourceHash": "ef9de239acdb725d9069e1bd3b4e9bb342c625113281e059dbfd7ca4b84bdcfa",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "把供应来源移到母星工厂之外。"
+    },
+    {
+      "id": "c.green.td.019",
+      "sourceHash": "0db32150539e59c5eead91f0cea85aa23de1b66d2f2a9026a725b3f2e54929fe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "需要大规模建设采集器，产出取决于气态巨星和部署数量。"
+    },
+    {
+      "id": "c.green.p.012",
+      "sourceHash": "af684dd7734b62155e65a18101231d64c9d06715ca579f975d177db405d49e5e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本指南使用微型粒子对撞机，因为它能用一条紧凑、产出可预期的线制造重氢。分馏塔更省氢和电，但循环传送带需要更多照看。轨道采集器可以开发气态巨星，不过前期投入更大，产出也取决于巨星和部署数量。两种替代方案都可行，这里不展开采用。"
+    },
+    {
+      "id": "c.green.p.013",
+      "sourceHash": "177939d81ad6bb8ecd398370d0ec9c79abb92745d82d393c180ac4351f7bd82a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "对撞机路线最容易搭建和理解，代价是大量消耗氢和电。因此，下面的产线会把多余重氢做成燃料，为自身扩张提供电力。"
+    },
+    {
+      "id": "c.green.h2.004",
+      "sourceHash": "dde01f8ac3e2aa3e016ef968b19c0c9494306c400c5e626c369e5c33f8049d51",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "同步扩充重氢、奇异物质和电力"
+    },
+    {
+      "id": "c.green.p.014",
+      "sourceHash": "27ed7e900e6747e324a7da844dfa8ca92c3b8844f9aea9df57ccbf5328783697",
+      "termHash": "f220afcb6217581ab5729f94da1eae8ea92d69f09a2a8858d53c3ea28ed019b0",
+      "text": "从一座容易观察的{{item_2106_1}}向重氢对撞机供料。它们消耗很快，尤其是在量子芯片产线也用氢的时候。如果罐内库存持续下降，先加强氢供应，再添对撞机。"
+    },
+    {
+      "id": "c.green.p.015",
+      "sourceHash": "15635f68afde0a5069e8dc656bcae5d8ea1114f56e9fcc42ca57055fff49b31c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产出的重氢优先送去制造奇异物质。同一条传送带继续接到一条氘核燃料棒产线，确保只有剩余重氢才会变成燃料。将成品燃料棒存放在容易查看的位置，先积累一批，再依靠它们供电。"
+    },
+    {
+      "id": "c.green.attr.002.aria-label",
+      "sourceHash": "09b9728e2bd279561d365880d7d58a73f82ac1f9148ef0460d118fdce6409946",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "绿糖阶段的重氢、奇异物质与燃料生产流程"
+    },
+    {
+      "id": "c.green.p.016",
+      "sourceHash": "aafccd5e34a0d41a6324890641af08a80f423983069dfa6d215f7f625749e9f4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}供料优先级：{{end_strong_1}}先供应奇异物质；剩余重氢再转为可观察的燃料库存。"
+    },
+    {
+      "id": "c.green.h5.001",
+      "sourceHash": "4063008654dfedea65fee624fe1a1185129f4cc0a4f125e9a426eec60a02c52d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "重氢供应"
+    },
+    {
+      "id": "c.green.li.001",
+      "sourceHash": "ab827a84d76f812f86d689d1790af5c3a6c348b498ad9eb9a4ac510a91e5e4df",
+      "termHash": "5c3e19a5339aca24c8ecebebc0dab663cf9535e6605cf610c592b989ff018a28",
+      "text": "{{span_1}}可观察的氢供应{{end_span_1}}{{span_2}}{{item_1120_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由微型粒子对撞机生产{{end_span_5}}{{end_span_3}} {{item_1121_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.green.h5.002",
+      "sourceHash": "71de0a7ccda7cd23e4895caf062721df843514abe974c89b585ff3e5795b14f0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "按优先级分配"
+    },
+    {
+      "id": "c.green.li.002",
+      "sourceHash": "df3d56d6d62ec2e5123806c4e13c12ed60d04ec6e8e0910389af5315edbb2bce",
+      "termHash": "2bb80736e215fb615fbcb5801cb690efddc0f27fa2bc437c98d4650c35d144dc",
+      "text": "{{span_1}}优先供应奇异物质{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1206_1}} + {{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由微型粒子对撞机生产{{end_span_5}}{{end_span_3}} {{item_1127_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.green.li.003",
+      "sourceHash": "333ddbd4be64bcaa0f4bb0afeb7e879ab8bee358259cde0b5294549a4f31a284",
+      "termHash": "507317dfa94d98d7aee76ace08a8bd8aa3d099986a0a95cd7a4a7e2bfb4eb0d7",
+      "text": "{{span_1}}余料：燃料库存{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1802_1}}，再进入可观察的库存，供给{{item_2211_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.green.p.017",
+      "sourceHash": "2aaf0f2f12b537831865f80133f18df9be4dab4428aa62e65c3b21dd660dd65d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "然后重复这个简单循环："
+    },
+    {
+      "id": "c.green.li.004",
+      "sourceHash": "66c67168138fde34fdd57d9f3e8d0fd634b6a37717f88d62b7b72ad73a529dc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "增加两座微型聚变发电站。"
+    },
+    {
+      "id": "c.green.li.005",
+      "sourceHash": "96912274ab557440091c3b4ee89181e8f76f7e828371dae8e34f726426a98827",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "投运后，检查燃料棒库存。"
+    },
+    {
+      "id": "c.green.li.006",
+      "sourceHash": "d9d947c53edf87032afc8358ba3f5b7de52e221bdc40cd3e8885c17d726637d5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如果库存下降，增加重氢产能。"
+    },
+    {
+      "id": "c.green.li.007",
+      "sourceHash": "f4b55d19d4ae927c225fecc259e0561d614e86e4c8eefd6113e5d8fa22d89ec3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如果库存增长很快，而且希望提高绿糖产量，再加一台奇异物质对撞机。"
+    },
+    {
+      "id": "c.green.li.008",
+      "sourceHash": "5e0b876a5b3a9debac710482db4a338be616c32aba66c07e1dd0bab383abcbc9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "重复以上步骤，直到电力和奇异物质都跟得上需求。"
+    },
+    {
+      "id": "c.green.p.018",
+      "sourceHash": "c7c3a6e7978899e8e608546960a9b02c284be3a03f7b5fafe627d3da2ab14f3c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "两者都达到所需水平后，把用不完的重氢送回供给这条线的储液罐。这样罐子就成了便于观察的扩产储备，而不是让多余重氢堵住生产。"
+    },
+    {
+      "id": "c.green.p.019",
+      "sourceHash": "91317fa8ed1d9768d5772eb6181b576f6a752ce51b94885455c916e108c3c222",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如果现有电网还有余量，就不必立刻建设聚变发电。先让燃料棒库存积累，等确实需要更多电力时再用。"
+    },
+    {
+      "id": "c.green.h2.005",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 多少才够用"
+    },
+    {
+      "id": "c.green.p.020",
+      "sourceHash": "21d9917cf0545fe2228f3d2d3293eba6123fa641bd9762659e364bf71c5011c3",
+      "termHash": "f05ea493e57c09112bce36a401eb67e4e93a4b7282fe579ae3ee8e173e7b0ba8",
+      "text": "先建{{strong_1}}两座绿糖研究站{{end_strong_1}}。科研运行时，观察{{a_1}}{{item_1305_1}}{{end_a_1}}和{{a_2}}{{item_1209_1}}{{end_a_2}}。哪种库存持续减少，就只扩建对应支线。如果研究站暂停时，两种库存都能回升，说明工厂跟得上。"
+    },
+    {
+      "id": "c.green.h2.006",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 必要建设"
+    },
+    {
+      "id": "c.green.p.021",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}每张卡片都概括一条实用产线，从最初原料一直到目标产品。{{end_strong_1}}想看清全貌时再展开；否则就保持折叠，继续建设。必需的信息不会藏在卡片里。"
+    },
+    {
+      "id": "c.green.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}展开全部卡片{{end_button_1}}{{button_2}}折叠全部卡片{{end_button_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.summary.001",
+      "sourceHash": "d120a7dfae4d9e5eb29f710a95576da18f7a6c1bbdbea8d55996f65a13257dff",
+      "termHash": "563b78982942a757eb86ef1515b5447a4befdf3501dde086c105c3ded888bc35",
+      "text": "{{span_1}}{{item_1305_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.001",
+      "sourceHash": "932520bc702a3ef4f5ef97705a5d72e1fc0a74854091c3aa76d7974d9166aff3",
+      "termHash": "0d7f1dbf29f18ced00e61e2c03de98a17b76a0d9de49a0ba807d6fbd077ea70f",
+      "text": "{{a_1}}紫糖阶段产出的{{item_1303_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.002",
+      "sourceHash": "e502d274c4b5ceb18e4fceaa52b91130652cadfe4ec94c3cc0e7bdf86e0a6f45",
+      "termHash": "160f3b127778a714ecc3c8e7b78745c943297841da3356c2ae4b4e2a590ae9fb",
+      "text": "{{a_1}}黄糖支线产出的{{item_1118_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.003",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "6431d7fe1b21f67a7db54f3b7a9e8c4f89be31490ea1d5a551012c7bc916c13a",
+      "text": "{{a_1}}通用常规产线生产的{{item_1123_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.004",
+      "sourceHash": "eac5f7457ab42bb5d807ef7d1cb55a6667d89b1183455df2f470a1d948e6f69a",
+      "termHash": "81f07c6af9999ea501fe5374ef5c8e0d2dd9e52b4e4d0b01a4ba0b3958dc981a",
+      "text": "{{item_1120_1}}。"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.005",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "b89457a65b7615b6eca8df047136e35f38bc1a82c0eb2b19fe6830430ab7a9d5",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.006",
+      "sourceHash": "60139b348f224aa07cdf015236a893f3aee96e5dac8133593a4ef28cc4c773bd",
+      "termHash": "f7258f039160859db2fb7d7d92b0f2b6c12baabbef5f9ddc404185734af9487c",
+      "text": "{{item_1000_1}}。"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.007",
+      "sourceHash": "0d400ff0d1ada7ceefc6b4e3ada0b0d708002596e114475f8e16de266e765948",
+      "termHash": "63f96620400771402d0987ac9321a480002df850681a034e32fa68e8eb673e59",
+      "text": "{{item_1106_1}}。"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h5.001",
+      "sourceHash": "a794238401b5dcf06e37d52dd630314dc79d30e22bb19a28f5d92e5f56b4cee6",
+      "termHash": "75a11157d1e37bb3ca137c42c5fa6e2449ecad54abf47e051b8ee8de7c169463",
+      "text": "研究后补建：{{tech_1125_1}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.008",
+      "sourceHash": "ad6e6d0800ba167dcddcc7736dce04c2173d024a27c9adbd32078d282690c475",
+      "termHash": "ef8d11966a1fa7f4dea36ba048cb3bfea90b25d75cb1d564707c60a884004c84",
+      "text": "{{span_1}}卡西米尔晶体支线{{end_span_1}}{{span_2}}{{item_1118_1}} + {{item_1123_1}} + {{item_1120_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1126_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.009",
+      "sourceHash": "6c2f54bef6e744506781776c5ef03813139148654414e1ce3202c7867bcdd289",
+      "termHash": "c7ea157ae7ae8bc756b6567a4ac1ce6ba0a6f4075446f5070e4b203157af9e25",
+      "text": "{{span_1}}{{item_1110_1}}支线{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1110_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.010",
+      "sourceHash": "d60339eba20e9cb68a469a502f4b5c59008c0fca35ecc8197cc2e1ff96bd0c97",
+      "termHash": "27e27495ac80d95a90561968e2ca573bc93de9c4753afb0284de51233a4ed938",
+      "text": "{{span_1}}{{item_1119_1}}支线{{end_span_1}}{{span_2}}{{item_1110_1}} + {{item_1106_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1119_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h5.002",
+      "sourceHash": "b251e410a17b6529fc7d4f7a25371358913f5526db546e970bd6ad8e9e0d3b79",
+      "termHash": "1016cde4519824d8817b770a4cbb8ce8d8a8d07a4a26dbbe4222eadf73ae14cd",
+      "text": "研究后补建：{{tech_1141_1}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.011",
+      "sourceHash": "8d9cb74bde3fa0da87663cfde13d750c3e94eaa945969d85a237d410f9831577",
+      "termHash": "b810f2b677976c6b1186398e25cc95377d0a022257673c6e836d93d3d2b1f0c0",
+      "text": "{{span_1}}位面过滤器合成{{end_span_1}}{{span_2}}{{item_1126_1}} + {{item_1119_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1304_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h5.003",
+      "sourceHash": "7b96f5f76c9e3725b64927382ce60246fb4268cc6ca2ab3dcd4d7e880bc281a2",
+      "termHash": "99b1b947fab57e9d519f84f4ad5121d943b7b7a71c80cc649ae728d2e3de89ae",
+      "text": "研究后补建：{{tech_1303_1}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.012",
+      "sourceHash": "a2bd78292b75218ea5af52f7ad0c49ecec8a5ca2bf6cf13ab864e348d1e50ea1",
+      "termHash": "79c080cafc389a2386322063fec70e0e1c7dad4ad8150d42c33cba2d47664a0b",
+      "text": "{{span_1}}最终合成{{end_span_1}}{{span_2}}{{item_1304_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1305_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.013",
+      "sourceHash": "2109162827ccaa6192ecb8df22937f7c1363b37bef97c86365f975ed3d91d9c1",
+      "termHash": "4e7541acc0f6985446545956b3de829dd13411226d056a6274a7b152b58ea9ec",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1305_1}}{{end_span_1}} — 以{{span_2}}{{fact_1}}{{fact_2}}{{end_span_2}}接收{{item_1305_2}}，再用于绿糖科研。"
+    },
+    {
+      "id": "c.card-green-quantum-chips.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "c.card-green-quantum-chips.li.014",
+      "sourceHash": "036a66aed977ecb4a460059979579d41988aae677874f150a0c372ff72285f39",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "从本地储氢罐向卡西米尔晶体产线供料，留意库存是否见底。如果其他相连支线产出多余氢，用一小段回流传送带将副产物送回同一个供料罐；整条量子芯片产线仍然净消耗氢。"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.summary.001",
+      "sourceHash": "6163e616a4e05107fada5bbd5eb9d0c72e8b690f1cb4c50c6cf779f60fa0a8a0",
+      "termHash": "09b9005ee7047d9d00aa84e7fd3e3188cb93ab9be744738a0c03c5d2bb74f7e4",
+      "text": "{{span_1}}{{item_1209_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.001",
+      "sourceHash": "eac5f7457ab42bb5d807ef7d1cb55a6667d89b1183455df2f470a1d948e6f69a",
+      "termHash": "81f07c6af9999ea501fe5374ef5c8e0d2dd9e52b4e4d0b01a4ba0b3958dc981a",
+      "text": "{{item_1120_1}}。"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.002",
+      "sourceHash": "d2403d652bcad8a94e68176d3f544a33bae6e0e444671fd94002c1287814946d",
+      "termHash": "0cf93d40343fc7310bc8d8fef36a41cad37b896dfe20a4f93cd887fbe83f0f5d",
+      "text": "{{item_1101_1}}。"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.003",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.004",
+      "sourceHash": "4ab80e28e813c335524a46148b1d88d59a3e67e48c3ee700cb24f666b257951b",
+      "termHash": "ce1a0782cf279734394dad8efcb5a08fd621265129c1f659c95ea7e81fb674f9",
+      "text": "{{a_1}}通用产线生产的{{item_1204_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.005",
+      "sourceHash": "84f31882077375cf5191b208b742dd0864f00181d07f70340879111456019020",
+      "termHash": "6431d7fe1b21f67a7db54f3b7a9e8c4f89be31490ea1d5a551012c7bc916c13a",
+      "text": "{{a_1}}通用常规产线生产的{{item_1123_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h5.001",
+      "sourceHash": "063747ca78015012464aa12ece34d616bced976e10e22e9be4418dd792feab67",
+      "termHash": "ca14797dceea8dd6ca3cc5ef09ae845d271061cc9d885324e4d89396dc312c51",
+      "text": "研究后补建：{{tech_1142_1}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.006",
+      "sourceHash": "aeac4592f30944fb802c7e0d579418bd15b15bd25e6f6abaef824ce1df49a051",
+      "termHash": "dbead90e99a0a9e2fb4b0d603540eaf3297d573d51360ff9afe19cae5e25f977",
+      "text": "{{span_1}}{{item_1121_1}}支线{{end_span_1}}{{span_2}}{{item_1120_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由微型粒子对撞机生产{{end_span_5}}{{end_span_3}} {{item_1121_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.route-green-particle-containers.li.001",
+      "sourceHash": "9c4a74c93c7757c68e3096b4f0a6bfdf65f6d30df2e4d7deb6a1a13f8a6c3b8f",
+      "termHash": "834c5de1aa472b5f1dcea22d4a31a62c86b0fe61a1082275d3a38678c9282ef3",
+      "text": "{{span_1}}粒子容器支线{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1206_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h5.002",
+      "sourceHash": "b722344cae0b71590400e8c00fada7823cdd273de2bf00e3d97b4ca5dac10761",
+      "termHash": "b03553e50619317849d0b3cbc303993648e29269bda597214678f8cc81efc872",
+      "text": "研究后补建：{{tech_1704_1}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.007",
+      "sourceHash": "8c3e4127553ec431dc48282ce6b2be81328e42b11a663194fe6c77216b2bed71",
+      "termHash": "2bb80736e215fb615fbcb5801cb690efddc0f27fa2bc437c98d4650c35d144dc",
+      "text": "{{span_1}}初次合成{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1206_1}} + {{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由微型粒子对撞机生产{{end_span_5}}{{end_span_3}} {{item_1127_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.008",
+      "sourceHash": "82eeda0148a87cb91aa93d9c999431c437149e472ae5d2b6cdc372ca0cead379",
+      "termHash": "625a8b1566891a8ad29a5a7efc8a3271e489fc536f2b5ee0e748b08ab0a76e3f",
+      "text": "{{span_1}}{{item_1112_1}}支线{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1109_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由电弧熔炉生产{{end_span_8}}{{end_span_6}} {{item_1112_2}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.009",
+      "sourceHash": "796dd5154428c12814f1e74b18cfd1ec1c042de6bbba09e022940429730727fb",
+      "termHash": "97035cbd958225e5ff5839e90cc71de94f62d9ac74db50f7af0dc28b2e6671a6",
+      "text": "{{span_1}}最终合成{{end_span_1}}{{span_2}}{{item_1127_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1209_1}}{{end_span_2}}"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.010",
+      "sourceHash": "2e472d0346df0eec0600c050c657dfa825e3bff09fb3b5e0cf1601d6c89f3914",
+      "termHash": "58fa13441dfff2821602f5f7d9ffe708729ac5dcda0ab201420c61aa09e5c8ba",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1209_1}}{{end_span_1}} — 以{{span_2}}{{fact_1}}{{fact_2}}{{end_span_2}}接收{{item_1209_2}}，再用于绿糖科研。"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "c.card-green-graviton-lenses.li.011",
+      "sourceHash": "af4c89d8689a4fd2a41d365df88497b46d986c4d76111276e369cacfc985ad82",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "从储氢罐向重氢支线供料，留意库存是否见底。如果所选的其他路线产出未用完的氢，就用一小段回流传送带送回这个供料罐。"
+    },
+    {
+      "id": "c.green.h2.007",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意事项"
+    },
+    {
+      "id": "c.green.p.022",
+      "sourceHash": "37cac9877fa09135f0d850bc227da347ff79cd6d5b666b1cd347712e7d99a727",
+      "termHash": "a8f0319b40b6b41c527a8e78cb4fa2ea0af5f9ce9e5c8b170b93e18d9712e04f",
+      "text": "{{strong_1}}{{item_1120_1}}收支。{{end_strong_1}}卡西米尔晶体生产会迅速消耗{{item_1120_2}}。从储液罐供料，观察库存是否下降；所选支线若产出可复用的{{item_1120_3}}副产物，就送回同一个供应点。"
+    },
+    {
+      "id": "c.green.p.023",
+      "sourceHash": "4ca8720683a489f423e597e570ee79a2164f657ab730869a921b0799f4a880af",
+      "termHash": "c23b292735f280cf6a01169dd4f8a95f3431ef18ce50f7ce9c814f4802ff05cb",
+      "text": "{{strong_1}}{{item_1206_1}}。{{end_strong_1}}{{item_1127_1}}可能迅速耗尽在星际物流阶段看来还很充裕的部件库存。只有缓冲库存确实在减少时，才扩建这条支线。"
+    },
+    {
+      "id": "c.green.h2.008",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足这些条件后，再进入下一阶段"
+    },
+    {
+      "id": "c.green.li.009",
+      "sourceHash": "e30f8fa7570f8ccfffce8287c07580548b75c5ce4083f1b6a74b173bd6c16fd5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}两座绿糖研究站持续生产。{{end_label_1}}"
+    },
+    {
+      "id": "c.green.li.010",
+      "sourceHash": "916856b8cf43bca9f86ef72e09856ecf7d085224f5f41e46e0d3d1a67f8104e7",
+      "termHash": "f05ea493e57c09112bce36a401eb67e4e93a4b7282fe579ae3ee8e173e7b0ba8",
+      "text": "{{label_1}}{{input_1}}{{item_1305_1}}和{{item_1209_1}}各有一处可观察的库存。{{end_label_1}}"
+    },
+    {
+      "id": "c.green.h2.009",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "c.green.p.024",
+      "sourceHash": "c6d33b69346935a3e66e3c976301a387069ba8cf844d5b0af00190dd0e4a1b54",
+      "termHash": "9071b00332b84af1309ad912ef5f4db32844f08b4836bd9372e9f442504ba061",
+      "text": "接下来前往{{a_1}}{{img_1}}[戴森云]{{end_a_1}}。如果已选定一种稀有资源，准备让输入线无人值守运行，就跳到{{a_2}}{{img_2}}[曲速]{{end_a_2}}的自动化步骤；有了绿糖，{{item_1210_1}}的成本已经很低。"
+    },
+    {
       "id": "a.tech-sheet-title.h2.001",
       "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
