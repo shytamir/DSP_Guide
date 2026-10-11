@@ -1,24 +1,34 @@
 # DSP Practical Progression Guide
 
-**Status:** Maintenance; ML-01–28 and all six epics are complete and
-agent-validated as of 2026-10-11. The four-language 3.2 candidate passed the
-full local browser matrix, exact CI ZIP and development deployment checks.
-Each translated catalog has 1,537 messages and eight UI strings. The
+**Status:** Localization corrections authorized through completion on 2026-10-11.
+LC-01 is agent-validated; LC-02–07 follows in sequence with agent validation and
+per-story management updates and commit/push to `main`. Production publication
+remains the owner's action.
+
+ML-01–28 and all six original epics remain complete and agent-validated. Their
+four-language 3.2 candidate passed the full local browser matrix, exact CI ZIP
+and development checks. Subsequent review confirmed editorial defects in number
+display, naming and prose; that technical evidence does not establish the
+corrected candidate's readiness. Each translated catalog has 1,537 messages
+and eight UI strings. The historical
 [ML-M5 handoff](archive/version-3.2/ROADMAP.md#ml-m5-handoff--2026-10-11)
-identifies the tested package and evidence limits. Production publication
+identifies the original package and evidence limits. Production publication
 remains the owner's action. Version 3.0 is the last recorded published product
 and passed final cold verification on 2026-08-27.
 
-[`ROADMAP.md`](ROADMAP.md) is the current maintenance placeholder. The two previously
-deferred concepts remain deferred indefinitely in the historical archive.
+[`ROADMAP.md`](ROADMAP.md) is the sole active correction roadmap: three epics,
+seven bounded stories, with confirmed defects separated from optional polish
+and native terms protected. The owner has authorized the complete implementation sequence.
+The two previously deferred concepts remain deferred indefinitely.
 
 ## Purpose
 
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
-All four editions are enabled. Chinese, German and Japanese have completed
-linguistic review, fact checks and their private browser matrices; the combined
-candidate also passed delivery and shared-behavior validation.
+All four editions are enabled. Chinese, German and Japanese completed the
+original linguistic review, fact checks and private browser matrices; the
+combined candidate passed delivery and shared-behavior validation. The current
+correction roadmap addresses the confirmed gaps in that editorial review.
 Narrow main text can wrap long native names and German compounds at 200% text.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized

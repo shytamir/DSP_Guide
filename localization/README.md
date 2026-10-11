@@ -72,9 +72,12 @@ their original elements, IDs and icons. A technology placeholder's `rankInside`
 flag says whether the English button already includes its rank. If false, the
 placeholder emits only the native base name: translate an adjacent `Lv` label
 using the locale's rank pattern and keep its separate fact token. Never append
-a second rank. A rendered-number comparison checks every message.
-`{{fact_1}}` retains the exact numeric
-value, rate, unit or technical symbol shown in `source.json`. Keyboard commands
+a second rank. Every message has a canonical rendered-number comparison.
+`{{fact_1}}` retains the numeric value, precision, rate, unit or technical symbol
+shown in `source.json`. German quantity display uses decimal commas and grouping
+dots; the generator reverses that presentation per protected token and checks
+its exact source value before comparing the message. Other locales keep source
+number punctuation. Catalogs cannot override factual values. Keyboard commands
 are atomic objects too. Every placeholder must occur exactly once. Catalogs
 contain plain text, not HTML; quotes and ampersands are serialized safely.
 Spelled-out quantities and the meaning of advice still require the roadmap's

@@ -11,6 +11,8 @@ import {
   localizedDocument,
   factSignature,
   renderMessage,
+  factDisplay,
+  checkFactDisplay,
 } from "./lib/localization.mjs";
 import { readJson } from "./lib/terminology.mjs";
 import { generateSite } from "./lib/site-builder.mjs";
@@ -24,6 +26,37 @@ import {
 const html = fs.readFileSync("index.html", "utf8");
 const doc = parse(html);
 const messages = collect(doc);
+for (const [source, german] of [
+  ["10,500", "10.500"],
+  ["20,800", "20.800"],
+  ["22.5/min", "22,5/min"],
+  ["7.5", "7,5"],
+  ["1.655 GW", "1,655 GW"],
+  ["1,200–2,000", "1.200–2.000"],
+  ["1.80 MW", "1,80 MW"],
+  ["15–20 MW", "15–20 MW"],
+  ["40/min", "40/min"],
+  ["3.2.191", "3.2.191"],
+  ["https://example.test/3.2/", "https://example.test/3.2/"],
+  ["Mk.I", "Mk.I"],
+  ["→", "→"],
+]) {
+  assert.equal(factDisplay(source, "de"), german);
+  checkFactDisplay(source, german, "de");
+  for (const locale of ["en", "zh-CN", "ja"]) {
+    assert.equal(factDisplay(source, locale), source);
+    checkFactDisplay(source, source, locale);
+  }
+}
+for (const displayed of [
+  "1.655 GW",
+  "1655 GW",
+  "1,655 MW",
+  "1,6550 GW",
+  "1,65 GW",
+])
+  assert.throws(() => checkFactDisplay("1.655 GW", displayed, "de"), /fact/);
+assert.throws(() => checkFactDisplay("40/min", "40/s", "de"), /fact/);
 assert.deepEqual(
   collect(parse(html.replace(/\r?\n/g, " "))).map((m) => m.sourceHash),
   messages.map((m) => m.sourceHash),

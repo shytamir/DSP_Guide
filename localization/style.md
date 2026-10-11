@@ -43,7 +43,10 @@ All current native technology names are base names. The shared formatter removes
 only a recognized suffix matching the retained integer before appending rank;
 it never guesses a level from prose. Mk.I/II/III remain part of official item
 names. Quantities, precision, ranges, rates, technical symbols and units stay
-source-owned; surrounding language may move their named placeholders.
+source-owned; surrounding language may move their named placeholders. German
+quantity display uses decimal commas and grouping dots, generated from the
+canonical source token without rounding or changing its precision or unit.
+Other locales retain their source numeric display.
 
 Expand ILS/PLS and other useful acronyms in the localized glossary using the
 official native station name, then use a consistent abbreviation where useful.
@@ -115,8 +118,9 @@ require changing the native label; distinguish Motor from Elektromotor.
 Receiver/orbit labels verified in the same German tables are Photonenerzeugung,
 Fortlaufender Empfang and Aut. Umlaufbahn. The photon-conversion recipe is
 Masse-Energiespeicher, not a literal translation of Photon Materialization.
-Source-owned numbers retain English separators; the German build-card assumptions
-explain that commas group thousands and points mark decimals.
+German quantities use decimal commas and grouping dots, including rates and
+power values. Generation checks each displayed token against its canonical
+source value, precision and unit; a distant formatting disclaimer is unnecessary.
 
 Other native labels verified read-only are Warp-Distanz, Warper benötigt,
 Min. Ladegewicht von Drohnen/Schiffen, Lokallager and Fernlager. The statistics

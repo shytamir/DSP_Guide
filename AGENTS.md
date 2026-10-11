@@ -114,7 +114,10 @@ stories may need the roadmap's evidence follow-up commit after remote checks.
 Production publication remains the owner's action. Preparing the roadmap draft
 does not itself authorize implementation, committing, or pushing. This initiative
 is complete; its delegation does not authorize new work. `docs/ROADMAP.md` is the
-current maintenance placeholder.
+active localization correction roadmap. The owner authorized LC-01–07 through
+completion on 2026-10-11, including agent validation/closure and the established
+per-story management and commit/push workflow. Record epic handoffs and continue
+through the authorized sequence. Production publication remains owner-controlled.
 
 ## 7. Repository architecture
 

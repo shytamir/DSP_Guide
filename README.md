@@ -25,6 +25,7 @@ Chrome with mobile settings. It is not physical-device or branded iOS Safari
 certification; OS fonts, browser chrome, and assistive technology can differ.
 Desktop remains supported. Other mobile browsers and tablet-specific design
 are outside this support promise. The owner controls production publication.
+German quantities use decimal commas and grouping dots while preserving the English source values and units.
 
 ## Privacy and dependencies
 

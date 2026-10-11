@@ -16,8 +16,9 @@ record.
 3. **Implement within the approved scope.** Passing checks establishes
    technical consistency, not reader acceptance.
 4. **Apply the recorded acceptance authority.** The owner normally accepts and
-   closes stories. The phone/localization roadmap explicitly delegates those
-   decisions to the agent, with no repeated owner gate.
+   closes stories. ML-01–28 used a completed, scoped delegation to the agent.
+   LC-01–07 is now authorized through completion with agent validation and
+   closure; production publication remains the owner's action.
 5. **Close the record.** Update current project status at a meaningful
    milestone and move accepted or superseded records to `docs/archive/`.
 
@@ -33,11 +34,18 @@ record.
 
 ## Planning state
 
-The project is in maintenance with no active implementation roadmap. All
-ML-01–28 stories and six phone/localization epics are complete and agent-validated
-under the owner's delegated acceptance policy. Each story has validation,
-management updates and a commit/push to `main`; candidate delivery evidence is
-retained separately from publication.
+Localization correction implementation is active. The sole current record is
+[`../ROADMAP.md`](../ROADMAP.md): LC-E1–E3 / LC-01–07, authorized through completion on 2026-10-11.
+Full-edition checks of the external review's patterns confirmed bounded
+number-display, naming, convention and German-prose corrections. Native game
+terms remain protected; optional polish is excluded. Execute in story order,
+validate and update records, and commit/push each completed story to `main`.
+Record epic handoffs while continuing through the fully authorized sequence.
+
+All ML-01–28 stories and six original phone/localization epics remain complete
+and agent-validated under their scoped delegation. Their technical delivery
+evidence remains historical; it does not resolve the newly confirmed editorial
+findings or validate a corrected candidate.
 
 The [completed records](../archive/version-3.2/) preserve investigations and
 execution. The [ML-M5 handoff](../archive/version-3.2/ROADMAP.md#ml-m5-handoff--2026-10-11)
@@ -45,8 +53,9 @@ identifies the four-language 3.2 package, exact CI/development checks and limits
 Production publication remains the owner's action. The active
 [validation contract](validation-and-tooling.md#phone-and-language-acceptance-contract)
 and [localization authoring guide](../../localization/README.md) govern upkeep.
-[`../ROADMAP.md`](../ROADMAP.md) is the sole current maintenance placeholder;
-new implementation requires new direction.
+The roadmap bounds authoring-rule revisions to the associated implementation
+and validation stories. LC-01 now provides German numeric display with exact
+canonical-value checks; later stories retain their defined boundaries.
 
 The published version 3.0 sequence is indexed under
 [`../archive/version-3.0/`](../archive/version-3.0/). The two previously named

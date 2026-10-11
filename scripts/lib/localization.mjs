@@ -20,6 +20,30 @@ export const text = (node) =>
 export const normalize = (value) => value.replace(/\s+/g, " ").trim();
 const numberPattern =
   /\d+(?:[,.]\d+)*(?:[–−-]\d+(?:[,.]\d+)*)?(?:\s*(?:%|°|MW|GW|kW|MJ|GJ|kJ|m\/s|\/min|\/s|rpm|AU|ly))?|\/min\b|\/s\b|\b(?:MW|GW|kW|MJ|GJ|kJ|rpm|AU|ly|Mk\.(?:III|II|I))\b|[≥≤×→←°%]/g;
+const quantityPattern =
+  /^\d+(?:,\d{3})*(?:\.\d+)?(?:[–−-]\d+(?:,\d{3})*(?:\.\d+)?)?(?:\s*(?:%|°|MW|GW|kW|MJ|GJ|kJ|m\/s|\/min|\/s|rpm|AU|ly))?$/;
+const swapSeparators = (value) =>
+  value.replace(/[.,]/g, (separator) => (separator === "." ? "," : "."));
+
+export function factDisplay(value, locale) {
+  return locale === "de" && quantityPattern.test(value)
+    ? swapSeparators(value)
+    : value;
+}
+
+export function checkFactDisplay(source, displayed, locale) {
+  // Reverse only a source-classified quantity, never names, ranks or URLs.
+  const canonical =
+    locale === "de" && quantityPattern.test(source)
+      ? swapSeparators(displayed)
+      : displayed;
+  assert.equal(
+    canonical,
+    source,
+    "Rendered fact value, precision or unit differs",
+  );
+}
+
 const clone = (node) => {
   const copy = { ...node, attrs: node.attrs?.map((a) => ({ ...a })) };
   delete copy.parentNode;
@@ -170,6 +194,7 @@ export function renderMessage(msg, value, terms, locale) {
     `${msg.id}: HTML/control characters forbidden`,
   );
   const used = new Set();
+  const facts = new Map();
   const root = { childNodes: [] };
   const stack = [{ key: null, node: root }];
   const append = (node) => {
@@ -200,8 +225,11 @@ export function renderMessage(msg, value, terms, locale) {
         `${msg.id}: invalid inline nesting`,
       );
       stack.pop();
-    } else if (object.kind === "fact") append(txt(object.value));
-    else {
+    } else if (object.kind === "fact") {
+      const node = txt(factDisplay(object.value, locale));
+      facts.set(node, object.value);
+      append(node);
+    } else {
       const node = clone(object.node);
       if (object.kind === "term") {
         assert.ok(terms[object.term], `Missing native name ${object.term}`);
@@ -225,8 +253,18 @@ export function renderMessage(msg, value, terms, locale) {
     `${msg.id}: missing placeholder`,
   );
   const numbers = (value) => (value.match(/\d+(?:[.,]\d+)*/g) || []).sort();
+  const canonicalText = (node) => {
+    if (facts.has(node)) {
+      const source = facts.get(node);
+      checkFactDisplay(source, node.value, locale);
+      return source;
+    }
+    return node.nodeName === "#text"
+      ? node.value
+      : (node.childNodes || []).map(canonicalText).join("");
+  };
   assert.deepEqual(
-    numbers(text(root)),
+    numbers(canonicalText(root)),
     numbers(msg.attribute ? attr(msg.node, msg.attribute) : text(msg.node)),
     `${msg.id}: rendered numerical facts differ`,
   );
