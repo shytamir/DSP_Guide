@@ -41,8 +41,8 @@ Ordinary generation and validation need no installed game or locale files.
 Ranks are separate from the base name: `等级 {n}`, `Stufe {n}`, `レベル {n}`.
 All current native technology names are base names. The shared formatter removes
 only a recognized suffix matching the retained integer before appending rank;
-it never guesses a level from prose. Mk.I/II/III remain part of official item
-names. Quantities, precision, ranges, rates, technical symbols and units stay
+it never guesses a level from prose. Official grade labels remain native: for
+example, German item names use Typ I where English uses Mk.I. Quantities, precision, ranges, rates, technical symbols and units stay
 source-owned; surrounding language may move their named placeholders. German
 quantity display uses decimal commas and grouping dots, generated from the
 canonical source token without rounding or changing its precision or unit.
@@ -69,6 +69,9 @@ The introduction explains this display distinction instead of implying that
 the generated native item labels are color aliases. Expand ILS/PLS as 星际物流运输站 /
 行星内物流运输站 on first relevant use; keep the abbreviations only where useful.
 Transport names remain distinct: 配送运输机、物流运输机、星际物流运输船.
+
+The Replicator title is 合成器 (native key 合成器标题); use it consistently
+in ILS, WARP and the conclusion, rather than inventing 制造面板.
 
 Receiver prose uses the native 光子生成 mode and 持续接收 label. The collider
 recipe is 质能储存: the installed `2052/prototype.txt` maps the source key
@@ -99,9 +102,12 @@ Use Mall (defined in the glossary), Puffer, Zweig, Zusammenführung and
 Reserveversorgung consistently. Color/route labels are BLAU, ROT, GELB, VIOLETT,
 GRÜN, DYSON, PHOTON, WEISS, SPHÄRE, WARP and LOGISTIK. Native matrix links retain
 the official names; the introduction distinguishes these from prose color names.
-The producer explanation uses Montagemaschine as readable prose for the native
-Zusammens.-Masch.; protected item names stay exact. Preserve source-owned Mk.I
-notation, quantities and units even when the native item uses Typ I. Use a
+Producer labels use the exact native Zusammens.-Masch. Typ I; generic prose
+may use Montagemaschine. The generator displays the existing source Mk.I grade
+as Typ I in German, preserving its identity separately from number formatting.
+Use Depot Typ I consistently for that storage grade. Name the technology
+Wärmeenergie and the enemy Dunkelnebel; generic Wärmekraft remains suitable
+when describing generation. Preserve protected item names, quantities and units. Use a
 label plus quantity or “vom Typ” where a protected singular cannot be declined.
 Keep the image's actual English title, external product names, the exact
 Install with Mod Manager action and legal credit; explain the install action

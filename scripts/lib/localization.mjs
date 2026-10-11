@@ -24,14 +24,21 @@ const quantityPattern =
   /^\d+(?:,\d{3})*(?:\.\d+)?(?:[–−-]\d+(?:,\d{3})*(?:\.\d+)?)?(?:\s*(?:%|°|MW|GW|kW|MJ|GJ|kJ|m\/s|\/min|\/s|rpm|AU|ly))?$/;
 const swapSeparators = (value) =>
   value.replace(/[.,]/g, (separator) => (separator === "." ? "," : "."));
+const designations = { de: { "Mk.I": "Typ I" } };
 
 export function factDisplay(value, locale) {
+  if (designations[locale]?.[value]) return designations[locale][value];
   return locale === "de" && quantityPattern.test(value)
     ? swapSeparators(value)
     : value;
 }
 
 export function checkFactDisplay(source, displayed, locale) {
+  const designation = designations[locale]?.[source];
+  if (designation) {
+    assert.equal(displayed, designation, "Rendered fact designation differs");
+    return;
+  }
   // Reverse only a source-classified quantity, never names, ranks or URLs.
   const canonical =
     locale === "de" && quantityPattern.test(source)

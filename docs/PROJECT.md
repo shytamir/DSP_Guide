@@ -1,8 +1,8 @@
 # DSP Practical Progression Guide
 
 **Status:** Localization corrections authorized through completion on 2026-10-11.
-LC-01 is agent-validated; LC-02–07 follows in sequence with agent validation and
-per-story management updates and commit/push to `main`. Production publication
+LC-E1 / LC-01–02 is agent-validated. LC-03–07 continues in sequence with
+per-story validation, management updates and commit/push to `main`. Production publication
 remains the owner's action.
 
 ML-01–28 and all six original epics remain complete and agent-validated. Their

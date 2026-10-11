@@ -38,7 +38,7 @@ for (const [source, german] of [
   ["40/min", "40/min"],
   ["3.2.191", "3.2.191"],
   ["https://example.test/3.2/", "https://example.test/3.2/"],
-  ["Mk.I", "Mk.I"],
+  ["Mk.I", "Typ I"],
   ["→", "→"],
 ]) {
   assert.equal(factDisplay(source, "de"), german);
@@ -57,6 +57,8 @@ for (const displayed of [
 ])
   assert.throws(() => checkFactDisplay("1.655 GW", displayed, "de"), /fact/);
 assert.throws(() => checkFactDisplay("40/min", "40/s", "de"), /fact/);
+for (const displayed of ["Mk.I", "Typ II", "Typ III", "Typ 1"])
+  assert.throws(() => checkFactDisplay("Mk.I", displayed, "de"), /designation/);
 assert.deepEqual(
   collect(parse(html.replace(/\r?\n/g, " "))).map((m) => m.sourceHash),
   messages.map((m) => m.sourceHash),

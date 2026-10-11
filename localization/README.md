@@ -77,7 +77,10 @@ a second rank. Every message has a canonical rendered-number comparison.
 shown in `source.json`. German quantity display uses decimal commas and grouping
 dots; the generator reverses that presentation per protected token and checks
 its exact source value before comparing the message. Other locales keep source
-number punctuation. Catalogs cannot override factual values. Keyboard commands
+number punctuation. The existing Mk.I grade token displays Typ I in German;
+this explicit designation mapping is checked independently from quantities.
+It does not alter native-name placeholders or other locales. Catalogs cannot
+override factual values. Keyboard commands
 are atomic objects too. Every placeholder must occur exactly once. Catalogs
 contain plain text, not HTML; quotes and ampersands are serialized safely.
 Spelled-out quantities and the meaning of advice still require the roadmap's

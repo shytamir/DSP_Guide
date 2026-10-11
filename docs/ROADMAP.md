@@ -386,7 +386,7 @@ publication remains the owner's action.
 | Story | State | Validation / disposition | Next boundary |
 | --- | --- | --- | --- |
 | LC-01 | Agent-validated | Localization tests/terminology passed; staged 551-file localization/deployment checks passed. Only German HTML differs from the previous package. All 28 affected messages reviewed in Chromium desktop/Android and WebKit iPhone, including enlarged text; numeric/card/power/table screenshots reviewed. Evidence: `artifacts/lc/LC01-*`. | LC-02 |
-| LC-02 | Authorized — not started | Pending implementation | LC-M1 / LC-E1 handoff |
+| LC-02 | Agent-validated; LC-G1 / LC-M1 reached | Native terminology and localization tests passed; 551-file staged deployment passed. Reviewed 76 German messages and all three Chinese Replicator references in desktop/Android Chromium and iPhone WebKit with 200% text. English/Japanese HTML byte-identical to LC-01. Evidence: `artifacts/lc/LC02-*`. | LC-E1 handoff recorded; continue LC-03 |
 | LC-03 | Authorized — not started | Pending implementation | LC-04 |
 | LC-04 | Authorized — not started | Pending implementation | LC-05 |
 | LC-05 | Authorized — not started | Pending implementation | LC-06 |
@@ -401,3 +401,11 @@ The Dark Fog control and YELLOW/PURPLE resolvers remain
 [deferred indefinitely](archive/deferred-indefinitely/). Current governance is
 in [PROJECT.md](PROJECT.md), [work management](management/work-management.md)
 and [validation and tooling](management/validation-and-tooling.md).
+
+## LC-M1 handoff — 2026-10-11
+
+LC-01–02 passed their numerical, terminology, generated-package and rendered
+review gates. Native snapshots, source inventory, English/Japanese output and
+all identities remain unchanged. LC-03 receives the verified display rules;
+remaining convention and prose findings retain their approved scope. Continue
+within the full-sequence authorization; no production publication occurred.

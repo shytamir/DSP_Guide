@@ -534,7 +534,7 @@
       "id": "a.top.p.013",
       "sourceHash": "500529836b971021c53bf60d6caac96f5f71a61e99abe9e6c5903c9c19367d8c",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Wenn du mit Dunklem Nebel spielst, sicherst du in ROT deinen ersten Planeten und räumst eine lokale Basis. Das reicht vorerst an Kampf; der Rest darf im Nebel bleiben."
+      "text": "Wenn du mit Dunkelnebel spielst, sicherst du in ROT deinen ersten Planeten und räumst eine lokale Basis. Das reicht vorerst an Kampf; der Rest darf im Nebel bleiben."
     },
     {
       "id": "a.top.p.014",
@@ -678,7 +678,7 @@
       "id": "a.reference-electromagnetic-turbines.li.005",
       "sourceHash": "2216664ef315ca7efbdf09b616edba614d7a682f456b2bfdc0f158a97d36ed77",
       "termHash": "c304b34df0fa4f5b6ed0f188306af2de7ca1fd249b29d90f7853add7eca52d0c",
-      "text": "{{span_1}}Spulen-Zweig{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
+      "text": "{{span_1}}Spulen-Zweig{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
     },
     {
       "id": "a.reference-electromagnetic-turbines.h5.002",
@@ -690,13 +690,13 @@
       "id": "a.reference-electromagnetic-turbines.li.006",
       "sourceHash": "19076d3a5443196c74ce7f148442d45eda92ce59a31d925220549bf3d8cdafc9",
       "termHash": "4b56f42be09e19e130c2649a310224c31328a71177e961c794f653683f3dc479",
-      "text": "{{span_1}}{{item_1201_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1201_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1201_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Zusammens.-Masch. {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1201_2}}{{end_span_2}}"
     },
     {
       "id": "a.reference-electromagnetic-turbines.li.007",
       "sourceHash": "dc4e1e7e41845d3dbb297942ae1d39dca2f958925e8c316f62db9c4e31edd1e3",
       "termHash": "e1d8594cad45b0231cc53f3fe0dd8dbb3944c433cb2ac8e9a650c1336d54840b",
-      "text": "{{span_1}}Motor-Endfertigung{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1203_1}}{{end_span_2}}"
+      "text": "{{span_1}}Motor-Endfertigung{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1203_1}}{{end_span_2}}"
     },
     {
       "id": "a.reference-electromagnetic-turbines.h5.003",
@@ -708,7 +708,7 @@
       "id": "a.reference-electromagnetic-turbines.li.008",
       "sourceHash": "b85547ce5fdd29205132420795a0ec24901e223d65f2f775817d7fed0078b064",
       "termHash": "7137274724590bd7ed9d49e0d751fd7b913bfb82ce8531c08c526b20313cd27a",
-      "text": "{{span_1}}Turbinen-Endfertigung{{end_span_1}}{{span_2}}{{item_1203_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1204_1}}{{end_span_2}}"
+      "text": "{{span_1}}Turbinen-Endfertigung{{end_span_1}}{{span_2}}{{item_1203_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1204_1}}{{end_span_2}}"
     },
     {
       "id": "a.reference-electromagnetic-turbines.h4.003",
@@ -1458,7 +1458,7 @@
       "id": "a.blue.p.003",
       "sourceHash": "f9667b31a96e74c9dbdaa36e3f4325e8c677bb678f6c499c4c0a115dc34baba4",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Warte nicht, bis du alles auf einmal bauen kannst. Beginne jeden Mall-Zweig, sobald sein Rezept freigeschaltet ist. Die ersten Kisten füllen sich, während die blaue Forschung Wärmekraft, Stahl und Fundament freischaltet."
+      "text": "Warte nicht, bis du alles auf einmal bauen kannst. Beginne jeden Mall-Zweig, sobald sein Rezept freigeschaltet ist. Die ersten Kisten füllen sich, während die blaue Forschung Wärmeenergie, Stahl und Fundament freischaltet."
     },
     {
       "id": "a.blue.p.004",
@@ -1704,13 +1704,13 @@
       "id": "a.route-bootstrap-gears.li.001",
       "sourceHash": "307b44ed6ad06cd1e1e735eae4980466519b5810216e4159a0600a9455497add",
       "termHash": "3b92cf1ea4b778dd4d83f9647df8e96206e0529b1f4ee312db4d41261080e97a",
-      "text": "{{span_1}}{{item_1201_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1201_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1201_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1201_2}}{{end_span_2}}"
     },
     {
       "id": "a.route-bootstrap-circuit-boards.li.001",
       "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
       "termHash": "26b832ec859a79cac9275f0da1bf5fdab889f4bba17c18748d0f12aea8c9b03c",
-      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-logistics.h5.002",
@@ -1722,13 +1722,13 @@
       "id": "a.card-bootstrap-mall-logistics.li.005",
       "sourceHash": "a841bc754611628783d42baba63f84c0bc07b5dca8a0210f68ea56fa7f592dd7",
       "termHash": "648cb6376486d6dc610d1e88e857f7715e54f8ef46b93b427441768cfc7676de",
-      "text": "{{span_1}}Fließband-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2001_1}}{{end_span_2}}"
+      "text": "{{span_1}}Fließband-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2001_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-logistics.li.006",
       "sourceHash": "07bbea92e0cf6579d4372114e9fbb56ab9a7207fed140b7c581522da9b66a666",
       "termHash": "e7ca8b58c679b1f09018636c6f20f64f36f53a8de3a0dedbe0d7d597d095f5f5",
-      "text": "{{span_1}}Sorter-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2011_1}}{{end_span_2}}"
+      "text": "{{span_1}}Sorter-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2011_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-logistics.h5.003",
@@ -1860,19 +1860,19 @@
       "id": "a.card-bootstrap-mall-industry.li.010",
       "sourceHash": "2216664ef315ca7efbdf09b616edba614d7a682f456b2bfdc0f158a97d36ed77",
       "termHash": "c304b34df0fa4f5b6ed0f188306af2de7ca1fd249b29d90f7853add7eca52d0c",
-      "text": "{{span_1}}Spulen-Zweig{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
+      "text": "{{span_1}}Spulen-Zweig{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-industry.li.011",
       "sourceHash": "c494aa0fb74d5e86add1228ac90b5dfc0bc8d2bfe3621d35ef46e0a29c14e454",
       "termHash": "fdad3744fd7a780f64aca9eea205ef97237cfc4e8cf2c555c64fb1e3a2af912c",
-      "text": "{{span_1}}{{item_2301_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2301_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_2301_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2301_2}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-industry.li.012",
       "sourceHash": "587fe4146716aa06c5b65c335db4c45eea674aa7f55ca819744bc4722bfa3c71",
       "termHash": "1d9038969eda1700e26e40080d290c3a33ef43777a2c75685c81e5dd9fc2057e",
-      "text": "{{span_1}}{{item_2302_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} + {{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2302_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_2302_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} + {{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2302_2}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-industry.h5.003",
@@ -1884,7 +1884,7 @@
       "id": "a.card-bootstrap-mall-industry.li.013",
       "sourceHash": "88d3433fd5d7d991321de967ee9c0ef28bffb98f6185389acc54521e4125742f",
       "termHash": "1eb763eb7f131b902e70da533d2f0194b32a4dfdbde513c9ea9ece195572335c",
-      "text": "{{span_1}}{{fact_1}} — Montagemaschinen{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_2}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_3}}{{end_span_5}}{{end_span_3}} {{item_2303_1}}{{end_span_2}}"
+      "text": "{{span_1}}{{fact_1}} — Montagemaschinen{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_2}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_3}}{{end_span_5}}{{end_span_3}} {{item_2303_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-industry.h4.003",
@@ -1974,7 +1974,7 @@
       "id": "a.card-bootstrap-mall-storage.li.005",
       "sourceHash": "2a2140fbdd9b90fa867301a4117567c1f4fa9b05890522c647edcc11aeb44b95",
       "termHash": "b8aad2b3cdc861fac9478451aeabc810ecda6d8a7b44cc145f5a0d2294523691",
-      "text": "{{span_1}}Feststofflager{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2101_1}}{{end_span_2}}"
+      "text": "{{span_1}}Feststofflager{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2101_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-storage.h5.002",
@@ -1992,7 +1992,7 @@
       "id": "a.card-bootstrap-mall-storage.li.007",
       "sourceHash": "67953fc322ab10ddb6166109c6ef6ac6f3d9b69845dc99a4348b2bd984239419",
       "termHash": "0249f4b8488c9670ce989113fa8df9b361bfeda44b6b39512819e0a86ca2a506",
-      "text": "{{span_1}}Flüssigkeitslager{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} + {{item_1110_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2106_1}}{{end_span_2}}"
+      "text": "{{span_1}}Flüssigkeitslager{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} + {{item_1110_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2106_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-storage.h4.003",
@@ -2088,19 +2088,19 @@
       "id": "a.route-bootstrap-magnetic-coils.li.001",
       "sourceHash": "2216664ef315ca7efbdf09b616edba614d7a682f456b2bfdc0f158a97d36ed77",
       "termHash": "c304b34df0fa4f5b6ed0f188306af2de7ca1fd249b29d90f7853add7eca52d0c",
-      "text": "{{span_1}}Spulen-Zweig{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
+      "text": "{{span_1}}Spulen-Zweig{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-power.li.007",
       "sourceHash": "d2a03db96c2f40e34686c5f8a01ed7edfb002484f926db61b53729112bf139d6",
       "termHash": "230e4e4f51265590d986397da36544897636b7ed5a3cf64b08d2cafd1b4852df",
-      "text": "{{span_1}}{{item_2203_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2203_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_2203_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2203_2}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-power.li.008",
       "sourceHash": "28a5d4550516e2e883b4337a9d331175277642b42909be34cf9790b5e4918bac",
       "termHash": "7215118500f7bd2b5bf6bcb0c1db63d183c7c4c467c25caa823a73a22e6170e4",
-      "text": "{{span_1}}{{item_2201_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2201_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_2201_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2201_2}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-power.h5.002",
@@ -2112,7 +2112,7 @@
       "id": "a.card-bootstrap-mall-power.li.009",
       "sourceHash": "231d28abb19cda42dd033306df4283f7ccbd0e7fb432047870b94a3952eab0e1",
       "termHash": "cfd6690035fbcf29bcc675380fecb181a3e558f80d2e415bd9dfcf4872e65aff",
-      "text": "{{span_1}}Mech-Brennstoff{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1128_1}}{{end_span_2}}"
+      "text": "{{span_1}}Mech-Brennstoff{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1128_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-bootstrap-mall-power.h4.003",
@@ -2214,13 +2214,13 @@
       "id": "a.route-blue-magnetic-coils.li.001",
       "sourceHash": "2216664ef315ca7efbdf09b616edba614d7a682f456b2bfdc0f158a97d36ed77",
       "termHash": "c304b34df0fa4f5b6ed0f188306af2de7ca1fd249b29d90f7853add7eca52d0c",
-      "text": "{{span_1}}Spulen-Zweig{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
+      "text": "{{span_1}}Spulen-Zweig{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
     },
     {
       "id": "a.route-blue-circuit-boards.li.001",
       "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
       "termHash": "26b832ec859a79cac9275f0da1bf5fdab889f4bba17c18748d0f12aea8c9b03c",
-      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-blue-blue-cubes.li.006",
@@ -2718,13 +2718,13 @@
       "id": "b.card-red-security-mall.li.009",
       "sourceHash": "f970cd2ec7b81bfa8da830c6e956d60e0ef6707831a5c75398d613f27194d0e9",
       "termHash": "49848dd5b2c67369e9b187930dae86402f20d7cfd02dd47c540fd1bb54d9d865",
-      "text": "{{span_1}}{{item_1407_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1407_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1407_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1407_2}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.010",
       "sourceHash": "3b5dafec8be17fe4c21c76874192fcf945d9c2cebdf7815cac791abcf4a4772f",
       "termHash": "cfd6690035fbcf29bcc675380fecb181a3e558f80d2e415bd9dfcf4872e65aff",
-      "text": "{{span_1}}Brennstoff-Zweig{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1128_1}}{{end_span_2}}"
+      "text": "{{span_1}}Brennstoff-Zweig{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1128_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.011",
@@ -2742,25 +2742,25 @@
       "id": "b.card-red-security-mall.li.012",
       "sourceHash": "a40b4969454c2c5991b9ec1c754a0a4947d1b0076b64e06f7afd6c970a3050f0",
       "termHash": "ee429a800af695ba4d2608e81204e2404e03674f0c6ef79bbef4aae8e1589e15",
-      "text": "{{span_1}}Elektromotor-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1201_1}}; {{item_1101_2}} + {{item_1201_2}} + {{item_1202_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_3}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_4}}{{end_span_8}}{{end_span_6}} {{item_1203_1}}{{end_span_2}}"
+      "text": "{{span_1}}Elektromotor-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1201_1}}; {{item_1101_2}} + {{item_1201_2}} + {{item_1202_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_3}}{{end_span_7}}{{span_8}}Herstellung: Zusammens.-Masch. {{fact_4}}{{end_span_8}}{{end_span_6}} {{item_1203_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.013",
       "sourceHash": "6b5d6974b95e97b8a236498ad4ae7b9fe5666cdf7bd1e053c65e3333e822ee48",
       "termHash": "2a00e0f95c7cf3a41991f0ce8923e42ea2bffa6549fa18d2b293f54b2b500be7",
-      "text": "{{span_1}}Turm-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2201_1}}{{end_span_2}}"
+      "text": "{{span_1}}Turm-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2201_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.014",
       "sourceHash": "9ad0fa9c0da87752b99fd72b2a5e374bbd5c1809a7240bfde54ec2228852cc70",
       "termHash": "1ad146fb675a960770b73e6ca9a03c570133a9ea1b6ab5de440774e68fbd977f",
-      "text": "{{span_1}}Erreger-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_1}}; {{item_1202_1}} + {{item_1111_2}} {{span_9}}{{img_3}}{{span_10}}{{fact_4}}{{end_span_10}}{{span_11}}Herstellung: Montagemaschine {{fact_5}}{{end_span_11}}{{end_span_9}} {{item_1401_1}}{{end_span_2}}"
+      "text": "{{span_1}}Erreger-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Zusammens.-Masch. {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_1}}; {{item_1202_1}} + {{item_1111_2}} {{span_9}}{{img_3}}{{span_10}}{{fact_4}}{{end_span_10}}{{span_11}}Herstellung: Zusammens.-Masch. {{fact_5}}{{end_span_11}}{{end_span_9}} {{item_1401_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.015",
       "sourceHash": "43688dc73886538cb286167392c05c4705992c128910c272ad3ecb6b1cb14f76",
       "termHash": "cde2d11c85d017eca6463789b5031e83ed8c033131145c0707b1173734b41ad8",
-      "text": "{{span_1}}Kabelloser Energieturm — Endfertigung{{end_span_1}}{{span_2}}{{item_2201_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2202_1}}{{end_span_2}}"
+      "text": "{{span_1}}Kabelloser Energieturm — Endfertigung{{end_span_1}}{{span_2}}{{item_2201_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2202_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.h5.003",
@@ -2772,19 +2772,19 @@
       "id": "b.card-red-security-mall.li.016",
       "sourceHash": "34dbec8683d39f7723de9e7e6f72dd16aae4fe1031c4f374745a1096eed62d3c",
       "termHash": "8401e72d629aa467c2cd729eebcc68fe2fb6e18355b28a04b7d7e0f375b5912c",
-      "text": "{{span_1}}Geschütz-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1203_1}} + {{item_1301_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_3005_1}}{{end_span_2}}"
+      "text": "{{span_1}}Geschütz-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1203_1}} + {{item_1301_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_3005_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.017",
       "sourceHash": "79b94287e9e88ab020a03cb4028f44596b6271c20d78058d6d80783c7a04a8b3",
       "termHash": "fa078665df313b852eaef90c3246771b79c8c21fafd967d5a093d58672999ac5",
-      "text": "{{span_1}}Raketen-Endfertigung{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1301_1}} + {{item_1128_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1609_1}}{{end_span_2}}"
+      "text": "{{span_1}}Raketen-Endfertigung{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1301_1}} + {{item_1128_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1609_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.018",
       "sourceHash": "a7fa289295dcc7490f7f1a69e6c9ad376503e18427497ef7e87576d798860a4c",
       "termHash": "112a91241e6422f120f9f388e56b713f14123e6f0ae0f4c8fd82496d1fd2bf09",
-      "text": "{{span_1}}Turm-Endfertigung{{end_span_1}}{{span_2}}{{item_2202_1}} + {{item_1103_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_3007_1}}{{end_span_2}}"
+      "text": "{{span_1}}Turm-Endfertigung{{end_span_1}}{{span_2}}{{item_2202_1}} + {{item_1103_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_3007_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.h4.003",
@@ -3564,19 +3564,19 @@
       "id": "b.ils.li.016",
       "sourceHash": "2af9208a730b2d37a123c03496c1d26bc3233d8346ff215e19fb36b6a5900a05",
       "termHash": "9f72d3854381d9a0e70022786c204e331e18b7f4e3cdd0564189b0de52ee871c",
-      "text": "{{span_1}}Mikrokristall-Zweig{{end_span_1}}{{span_2}}{{item_1105_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1302_1}}{{end_span_2}}"
+      "text": "{{span_1}}Mikrokristall-Zweig{{end_span_1}}{{span_2}}{{item_1105_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1302_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.017",
       "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
       "termHash": "26b832ec859a79cac9275f0da1bf5fdab889f4bba17c18748d0f12aea8c9b03c",
-      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.018",
       "sourceHash": "bf1562fcec31e82e2223fe509e3184c81379170333c1433ae786ed5120a7f420",
       "termHash": "b707d096eacb01d9690a526676135b538490557119c87fe2c0129690dbdc2a0a",
-      "text": "{{span_1}}{{item_1303_1}} — Endfertigung{{end_span_1}}{{span_2}}{{item_1302_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1303_1}} — Endfertigung{{end_span_1}}{{span_2}}{{item_1302_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
     },
     {
       "id": "b.ils.h5.002",
@@ -3588,7 +3588,7 @@
       "id": "b.ils.li.019",
       "sourceHash": "dd2ccffd3b08393e61f4076bda1fa7d05357f349ba64ac28375b4ff12f89518c",
       "termHash": "351a300bee7a0dfb527dcd58433ee7397032ddd243a4997da1fbe771c41e0861",
-      "text": "{{span_1}}{{item_1206_1}}{{end_span_1}}{{span_2}}{{a_1}}{{item_1204_1}}{{end_a_1}} + {{a_2}}{{item_1123_1}}{{end_a_2}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1206_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1206_1}}{{end_span_1}}{{span_2}}{{a_1}}{{item_1204_1}}{{end_a_1}} + {{a_2}}{{item_1123_1}}{{end_a_2}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1206_2}}{{end_span_2}}"
     },
     {
       "id": "b.ils.h5.003",
@@ -3624,25 +3624,25 @@
       "id": "b.ils.li.023",
       "sourceHash": "c02f5ef21232a983668d1396db0e6265a42821ed4a1975b6c6e9ba1deb6409c6",
       "termHash": "8825f8f36129b5a9a0fc2622a2a00cbea3b332dfdf0d03308b3075df8ea108c4",
-      "text": "{{span_1}}PLS-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
+      "text": "{{span_1}}PLS-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.024",
       "sourceHash": "8c65397affd9fb53c6e2965614b50f7442c1fabf121f74e33a46bc4264ca2e3d",
       "termHash": "36ceecfad7ac5fd5e0d9c77f74eecb4865022b92b871847f4ac5d479619859b6",
-      "text": "{{span_1}}{{item_1405_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1204_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1406_1}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1405_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1204_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1406_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.025",
       "sourceHash": "2491e822b8ddd246f94ed02224bf017b9c219837ea2c449b7930430f279a2da0",
       "termHash": "80b8f6f349b1524d7bff34bd07f4e35af927b1b8bb30ced99ac353722158fd10",
-      "text": "{{span_1}}ILS-Endfertigung{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
+      "text": "{{span_1}}ILS-Endfertigung{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.026",
       "sourceHash": "dc03258c1de18cf434e028fac8f15fa5e1d7e6eb2e0d86ae11676f0ace87b2a0",
       "termHash": "ad6be4defa65290c33864f0d9c133d53e09932a5c73a4b9dc31e970b1315c308",
-      "text": "{{span_1}}Frachtschiff-Endfertigung{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
+      "text": "{{span_1}}Frachtschiff-Endfertigung{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.027",
@@ -4014,7 +4014,7 @@
       "id": "c.route-yellow-titanium-crystals.li.001",
       "sourceHash": "71975577bbdbae11345bc4547549be6b088ffef21f0db120ae91a504894d1771",
       "termHash": "0d5bf30cf5e01431b84aba9136eef3e39f31fbefd8a98a6c57c0d418867fd242",
-      "text": "{{span_1}}{{item_1118_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1117_1}} + {{item_1106_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1118_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1118_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1117_1}} + {{item_1106_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1118_2}}{{end_span_2}}"
     },
     {
       "id": "c.card-yellow-yellow-cubes.h5.002",
@@ -4392,19 +4392,19 @@
       "id": "c.card-purple-processors.li.005",
       "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
       "termHash": "26b832ec859a79cac9275f0da1bf5fdab889f4bba17c18748d0f12aea8c9b03c",
-      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+      "text": "{{span_1}}Leiterplatten-Zweig{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-purple-processors.li.006",
       "sourceHash": "fc176776dc9d90cda013534933807d47ba9f3bc9a719419b920bb687b2c84e21",
       "termHash": "a1d9e5c01fbc87431840d934527e2e256e61fbd82994235bd4f64b92b0ea3627",
-      "text": "{{span_1}}Silizium-Zweig{{end_span_1}}{{span_2}}{{item_1003_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1105_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1302_1}}{{end_span_2}}"
+      "text": "{{span_1}}Silizium-Zweig{{end_span_1}}{{span_2}}{{item_1003_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1105_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Zusammens.-Masch. {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1302_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-purple-processors.li.007",
       "sourceHash": "4515fb5c937735916583ba6d9ca16687601f1741f02d57da588502e86aa1b8ac",
       "termHash": "19b01045547166bea4151f58bb28af6ef6db9b813075bc56a17ab03d1a003fc2",
-      "text": "{{span_1}}{{item_1303_1}} — Endfertigung{{end_span_1}}{{span_2}}{{item_1301_1}} + {{item_1302_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1303_1}} — Endfertigung{{end_span_1}}{{span_2}}{{item_1301_1}} + {{item_1302_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
     },
     {
       "id": "c.card-purple-processors.h4.003",
@@ -4488,7 +4488,7 @@
       "id": "c.card-purple-particle-broadband.li.006",
       "sourceHash": "e01c2e96ab21099af6ca62adba5ff730b1b59e7b2793a6bc3a162f60b2a20203",
       "termHash": "193b4dc05382bcda9b9007c744096a28545ac9e618af1df04bd80179b4a52024",
-      "text": "{{span_1}}Breitband-Endfertigung{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1115_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1402_1}}{{end_span_2}}"
+      "text": "{{span_1}}Breitband-Endfertigung{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1115_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1402_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-purple-particle-broadband.h4.003",
@@ -4878,7 +4878,7 @@
       "id": "c.green.li.003",
       "sourceHash": "333ddbd4be64bcaa0f4bb0afeb7e879ab8bee358259cde0b5294549a4f31a284",
       "termHash": "5b9740c30fa5af2e8655beb8a4b238d7a6e71f09cd7dd919b9f90a93d375ef3a",
-      "text": "{{span_1}}Rest: Brennstoff auf Vorrat{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1802_1}}, danach ein sichtbarer Puffer für {{item_2211_1}}{{end_span_2}}"
+      "text": "{{span_1}}Rest: Brennstoff auf Vorrat{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1802_1}}, danach ein sichtbarer Puffer für {{item_2211_1}}{{end_span_2}}"
     },
     {
       "id": "c.green.p.017",
@@ -5028,7 +5028,7 @@
       "id": "c.card-green-quantum-chips.li.008",
       "sourceHash": "ad6e6d0800ba167dcddcc7736dce04c2173d024a27c9adbd32078d282690c475",
       "termHash": "988187883274271db4f3a27cc41b2a058a710191065546e729ac4a50e2df5761",
-      "text": "{{span_1}}Casimir-Zweig{{end_span_1}}{{span_2}}{{item_1118_1}} + {{item_1123_1}} + {{item_1120_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1126_1}}{{end_span_2}}"
+      "text": "{{span_1}}Casimir-Zweig{{end_span_1}}{{span_2}}{{item_1118_1}} + {{item_1123_1}} + {{item_1120_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1126_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-quantum-chips.li.009",
@@ -5040,7 +5040,7 @@
       "id": "c.card-green-quantum-chips.li.010",
       "sourceHash": "d60339eba20e9cb68a469a502f4b5c59008c0fca35ecc8197cc2e1ff96bd0c97",
       "termHash": "2e9ca68be8a786dc1b5f1d2e0e9905874e0881da49d19d18c75248a47b5efe09",
-      "text": "{{span_1}}{{item_1119_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1110_1}} + {{item_1106_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1119_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1119_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1110_1}} + {{item_1106_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1119_2}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-quantum-chips.h5.002",
@@ -5052,7 +5052,7 @@
       "id": "c.card-green-quantum-chips.li.011",
       "sourceHash": "8d9cb74bde3fa0da87663cfde13d750c3e94eaa945969d85a237d410f9831577",
       "termHash": "d798fd94c31f7119f3e5aca7431df7387a88e1a054c73d27028cb5803a18e670",
-      "text": "{{span_1}}Filter-Endfertigung{{end_span_1}}{{span_2}}{{item_1126_1}} + {{item_1119_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1304_1}}{{end_span_2}}"
+      "text": "{{span_1}}Filter-Endfertigung{{end_span_1}}{{span_2}}{{item_1126_1}} + {{item_1119_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1304_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-quantum-chips.h5.003",
@@ -5064,7 +5064,7 @@
       "id": "c.card-green-quantum-chips.li.012",
       "sourceHash": "a2bd78292b75218ea5af52f7ad0c49ecec8a5ca2bf6cf13ab864e348d1e50ea1",
       "termHash": "beb7d5b823ac19de528bf82d8ef4c98cb28cab65db0a17639c8342212eba3bfa",
-      "text": "{{span_1}}Endfertigung{{end_span_1}}{{span_2}}{{item_1304_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1305_1}}{{end_span_2}}"
+      "text": "{{span_1}}Endfertigung{{end_span_1}}{{span_2}}{{item_1304_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1305_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-quantum-chips.h4.003",
@@ -5154,7 +5154,7 @@
       "id": "c.route-green-particle-containers.li.001",
       "sourceHash": "9c4a74c93c7757c68e3096b4f0a6bfdf65f6d30df2e4d7deb6a1a13f8a6c3b8f",
       "termHash": "c6d67c471635680770194575f75648b26254743c5ca690e7d0cacce5e1cf2d65",
-      "text": "{{span_1}}Container-Zweig{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1206_1}}{{end_span_2}}"
+      "text": "{{span_1}}Container-Zweig{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1206_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-graviton-lenses.h5.002",
@@ -5178,7 +5178,7 @@
       "id": "c.card-green-graviton-lenses.li.009",
       "sourceHash": "796dd5154428c12814f1e74b18cfd1ec1c042de6bbba09e022940429730727fb",
       "termHash": "e1207abbd2cdf3925c8dcbd6383dceb9ce04fb320226175305f4fda45f0ebd46",
-      "text": "{{span_1}}Endfertigung{{end_span_1}}{{span_2}}{{item_1127_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1209_1}}{{end_span_2}}"
+      "text": "{{span_1}}Endfertigung{{end_span_1}}{{span_2}}{{item_1127_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1209_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-graviton-lenses.h4.003",
@@ -5478,19 +5478,19 @@
       "id": "d.card-dyson-solar-sails.li.004",
       "sourceHash": "06c426c482d1939b31f146b6aca9f38de5f37f9ced06abcee89179681ca18d33",
       "termHash": "f13de247699b0d7832aa01d9713188cf77923f6960dca23f3146308579f6a6b5",
-      "text": "{{span_1}}{{item_1111_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1111_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Zusammens.-Masch. {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_2}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-solar-sails.li.005",
       "sourceHash": "bdcda2723f589d0d94fd26c292f76739b1d3e992b2cdf62e760fee04fbe44bae",
       "termHash": "d3470af7727bd0f83f4579c7d29aaa82c6b9db0f183687e980af7543f416f5c0",
-      "text": "{{span_1}}Kombinator-Zweig{{end_span_1}}{{span_2}}{{item_1111_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1404_1}}{{end_span_2}}"
+      "text": "{{span_1}}Kombinator-Zweig{{end_span_1}}{{span_2}}{{item_1111_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1404_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-solar-sails.li.006",
       "sourceHash": "3730b7dc6bbd69b0a22629547add46dc3844f4469008bce2c8844d9b0af386cc",
       "termHash": "bfbb94fa66f41bae385059c033e4d448b5ab724686b4c6b08e17e1cb189f9fb2",
-      "text": "{{span_1}}Segel-Endfertigung{{end_span_1}}{{span_2}}{{item_1404_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1501_1}}{{end_span_2}}"
+      "text": "{{span_1}}Segel-Endfertigung{{end_span_1}}{{span_2}}{{item_1404_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1501_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-solar-sails.h5.002",
@@ -5586,7 +5586,7 @@
       "id": "d.card-dyson-em-rail-ejectors.li.005",
       "sourceHash": "19076d3a5443196c74ce7f148442d45eda92ce59a31d925220549bf3d8cdafc9",
       "termHash": "4b56f42be09e19e130c2649a310224c31328a71177e961c794f653683f3dc479",
-      "text": "{{span_1}}{{item_1201_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1201_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1201_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Zusammens.-Masch. {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1201_2}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-em-rail-ejectors.li.006",
@@ -5604,13 +5604,13 @@
       "id": "d.card-dyson-em-rail-ejectors.li.008",
       "sourceHash": "e993ea8c08c43a17fdc3cf73b1500d2cfb263297ae169f9984ce173d5465eaa6",
       "termHash": "c3ace52dcb53795d4ef2d674b81150c498ada562578e5d04c7df816ea39d37fb",
-      "text": "{{span_1}}Ring-Zweig{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+      "text": "{{span_1}}Ring-Zweig{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-em-rail-ejectors.li.009",
       "sourceHash": "58cf864e177dc67419d36700af0c376d27ed5726c2346501c0720f4a6d623963",
       "termHash": "b72a04bc392b4376fc2dbc90bd09f9c2548a6188a1986f2d2e7f897f54cd0316",
-      "text": "{{span_1}}Werfer-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1201_1}} + {{item_1303_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2311_1}}{{end_span_2}}"
+      "text": "{{span_1}}Werfer-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1201_1}} + {{item_1303_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2311_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-em-rail-ejectors.h4.003",
@@ -6462,13 +6462,13 @@
       "id": "d.card-sphere-dyson-components.li.006",
       "sourceHash": "41392ce829762406ba34f196380369ecf700e6a79ba1c4e1c919830581065fe6",
       "termHash": "5488686763348a4f6aa3ae6475d41758d70775941c27a87b7caa195916079f21",
-      "text": "{{span_1}}Gerüst-Zweig{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1107_1}} + {{item_1105_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1125_1}}{{end_span_2}}"
+      "text": "{{span_1}}Gerüst-Zweig{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1107_1}} + {{item_1105_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1125_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-sphere-dyson-components.li.007",
       "sourceHash": "7ef4c34bd7fef734efc1d5e94a66158bd17f42ee5b2cb95072cb726f79ef550f",
       "termHash": "b42121e9837866ec022b87bc23616fd3b54f6f1d0cc9b99748f48fd1dfcba753",
-      "text": "{{span_1}}Komponenten-Endfertigung{{end_span_1}}{{span_2}}{{item_1125_1}} + {{item_1501_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1502_1}}{{end_span_2}}"
+      "text": "{{span_1}}Komponenten-Endfertigung{{end_span_1}}{{span_2}}{{item_1125_1}} + {{item_1501_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1502_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-sphere-dyson-components.h4.003",
@@ -6558,13 +6558,13 @@
       "id": "d.card-sphere-deuteron-fuel-rods.li.008",
       "sourceHash": "b49b505589c902d23f5442673713253868dcb6e7769e39140c269c6b78f007ab",
       "termHash": "c3ace52dcb53795d4ef2d674b81150c498ada562578e5d04c7df816ea39d37fb",
-      "text": "{{span_1}}Ring-Endfertigung{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+      "text": "{{span_1}}Ring-Endfertigung{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-sphere-deuteron-fuel-rods.li.009",
       "sourceHash": "fb3130e02f900774a375d3be936b430d45470de80f25494cdaa4fcceae0efe23",
       "termHash": "86736b2557b6032d3e9be9aa17ad2b31d69ed0ff5e435ffe9d96d5323dba8bba",
-      "text": "{{span_1}}Brennstab-Endfertigung{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1802_1}}{{end_span_2}}"
+      "text": "{{span_1}}Brennstab-Endfertigung{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1802_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-sphere-deuteron-fuel-rods.h4.003",
@@ -7296,7 +7296,7 @@
       "id": "e.warp.td.070",
       "sourceHash": "55664da9951d252342cce8b6b8b7651ddc951c70140be50144362944f50f6fc8",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "{{strong_1}}{{fact_1}} Montagemaschine {{fact_2}}{{end_strong_1}}"
+      "text": "{{strong_1}}{{fact_1}} Zusammens.-Masch. {{fact_2}}{{end_strong_1}}"
     },
     {
       "id": "e.warp.td.071",
@@ -7680,31 +7680,31 @@
       "id": "e.card-logistics-distribution-kit.li.006",
       "sourceHash": "06c426c482d1939b31f146b6aca9f38de5f37f9ced06abcee89179681ca18d33",
       "termHash": "f13de247699b0d7832aa01d9713188cf77923f6960dca23f3146308579f6a6b5",
-      "text": "{{span_1}}{{item_1111_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Montagemaschine {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1111_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Lichtbogen-Schmelzofen{{end_span_5}}{{end_span_3}} {{item_1110_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}Herstellung: Zusammens.-Masch. {{fact_3}}{{end_span_8}}{{end_span_6}} {{item_1111_2}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-distribution-kit.li.007",
       "sourceHash": "4282377e98b4ea5593e122df684c298116aaf9bf90a96763f0323919808e80bf",
       "termHash": "ae9e3c8458a7948c279d6d1d014b2ca3e0237ebe62acf47e5f837c653b215bd7",
-      "text": "{{span_1}}Erreger-Zweig{{end_span_1}}{{span_2}}{{item_1111_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1401_1}}{{end_span_2}}"
+      "text": "{{span_1}}Erreger-Zweig{{end_span_1}}{{span_2}}{{item_1111_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1401_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-distribution-kit.li.008",
       "sourceHash": "155e985edc4b7ece956f133f086b88c39083c226d69c7b20ad5e7165f3467a26",
       "termHash": "1d9cbf72a5cf70ee9e6395e9eba3b2da41b54d24eaf3b979cdc99e0d77402081",
-      "text": "{{span_1}}Verteiler-Endfertigung{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2107_1}}{{end_span_2}}"
+      "text": "{{span_1}}Verteiler-Endfertigung{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2107_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-distribution-kit.li.009",
       "sourceHash": "f970cd2ec7b81bfa8da830c6e956d60e0ef6707831a5c75398d613f27194d0e9",
       "termHash": "49848dd5b2c67369e9b187930dae86402f20d7cfd02dd47c540fd1bb54d9d865",
-      "text": "{{span_1}}{{item_1407_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1407_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1407_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1407_2}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-distribution-kit.li.010",
       "sourceHash": "20b9f466671782642d98b7be38d10fc155bda23ab77e0cf2412e11af8e3e9c30",
       "termHash": "63d9e051a951cca750e9e8111f2ae1fd21de7ba01a654e8d80e4f4c53c510b7d",
-      "text": "{{span_1}}Bot-Endfertigung{{end_span_1}}{{span_2}}{{item_1407_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5003_1}}{{end_span_2}}"
+      "text": "{{span_1}}Bot-Endfertigung{{end_span_1}}{{span_2}}{{item_1407_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5003_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-distribution-kit.h4.003",
@@ -7794,19 +7794,19 @@
       "id": "e.card-logistics-planetary-kit.li.007",
       "sourceHash": "1e87d7cecf20b49b1e73f5c34b32bb4bb50241e0c65b028785be69b59dbb764f",
       "termHash": "8825f8f36129b5a9a0fc2622a2a00cbea3b332dfdf0d03308b3075df8ea108c4",
-      "text": "{{span_1}}PLS-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
+      "text": "{{span_1}}PLS-Endfertigung{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-planetary-kit.li.008",
       "sourceHash": "3254c3ab771d57194937b91aeb234730a925b9947464ce2219394d48d4800920",
       "termHash": "2b9460ed54d7bf2779d28aa5db3d4034a25015049a1cfa05191007ca73176247",
-      "text": "{{span_1}}{{item_1405_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1405_2}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1405_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1405_2}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-planetary-kit.li.009",
       "sourceHash": "b859e031fc5bfaa1c1554115652a5708016222aaf92257abe3e84dcc71130abb",
       "termHash": "7def312fb0e453063164337f2591938b1c6f4333ad855e32fc978b69d5e8d9a6",
-      "text": "{{span_1}}Drohnen-Endfertigung{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1405_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5001_1}}{{end_span_2}}"
+      "text": "{{span_1}}Drohnen-Endfertigung{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1405_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5001_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-planetary-kit.h4.003",
@@ -7890,19 +7890,19 @@
       "id": "e.card-logistics-interstellar-kit.li.006",
       "sourceHash": "e1d20feb2cb7f6adc627beff5fcdc1752816ea1493785876514e859eb2e96426",
       "termHash": "80b8f6f349b1524d7bff34bd07f4e35af927b1b8bb30ced99ac353722158fd10",
-      "text": "{{span_1}}ILS-Endfertigung{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
+      "text": "{{span_1}}ILS-Endfertigung{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-interstellar-kit.li.007",
       "sourceHash": "8c65397affd9fb53c6e2965614b50f7442c1fabf121f74e33a46bc4264ca2e3d",
       "termHash": "36ceecfad7ac5fd5e0d9c77f74eecb4865022b92b871847f4ac5d479619859b6",
-      "text": "{{span_1}}{{item_1405_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1204_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1406_1}}{{end_span_2}}"
+      "text": "{{span_1}}{{item_1405_1}}-Zweig{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1204_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_1406_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-interstellar-kit.li.008",
       "sourceHash": "dc03258c1de18cf434e028fac8f15fa5e1d7e6eb2e0d86ae11676f0ace87b2a0",
       "termHash": "ad6be4defa65290c33864f0d9c133d53e09932a5c73a4b9dc31e970b1315c308",
-      "text": "{{span_1}}Frachtschiff-Endfertigung{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Montagemaschine {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
+      "text": "{{span_1}}Frachtschiff-Endfertigung{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}Herstellung: Zusammens.-Masch. {{fact_2}}{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-interstellar-kit.h4.003",
