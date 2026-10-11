@@ -3,10 +3,472 @@
   "locale": "zh-CN",
   "messages": [
     {
+      "id": "a.opening.attr.001.content",
+      "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一名工程师，迷失在异星的阳光下。他的目标：建造戴森球。幸好，戴森留下了指南。"
+    },
+    {
+      "id": "a.opening.attr.002.content",
+      "sourceHash": "bf2ddee7fbcf9917214eabc0f1ec6f7e65cb0cbba3beb4237de5d8c2cfd99be1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "DSP 实用流程指南"
+    },
+    {
+      "id": "a.opening.attr.003.content",
+      "sourceHash": "68bd10654308837aa0a20f75189327b9f3e2a773ae7ed4fbd5e3c994dc7a363d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "戴森球计划 — 实用流程指南"
+    },
+    {
+      "id": "a.opening.attr.004.content",
+      "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一名工程师，迷失在异星的阳光下。他的目标：建造戴森球。幸好，戴森留下了指南。"
+    },
+    {
+      "id": "a.opening.attr.005.content",
+      "sourceHash": "83f13cefdd7a4a2fa0127861eb71ea7d03e015b353c0db81a8e443240e44c0e5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "深色太空背景上，《戴森球计划》的英文标志位于“Practical Progression Guide”标题上方，下方是一条六色流程路线。"
+    },
+    {
+      "id": "a.opening.attr.006.content",
+      "sourceHash": "68bd10654308837aa0a20f75189327b9f3e2a773ae7ed4fbd5e3c994dc7a363d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "戴森球计划 — 实用流程指南"
+    },
+    {
+      "id": "a.opening.attr.007.content",
+      "sourceHash": "5e6c3fd2f8e2926f2190b475b8ae77afc9585b27633e43d7f03e2403660e17fb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一名工程师，迷失在异星的阳光下。他的目标：建造戴森球。幸好，戴森留下了指南。"
+    },
+    {
+      "id": "a.opening.attr.008.content",
+      "sourceHash": "83f13cefdd7a4a2fa0127861eb71ea7d03e015b353c0db81a8e443240e44c0e5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "深色太空背景上，《戴森球计划》的英文标志位于“Practical Progression Guide”标题上方，下方是一条六色流程路线。"
+    },
+    {
+      "id": "a.opening.title.001",
+      "sourceHash": "68bd10654308837aa0a20f75189327b9f3e2a773ae7ed4fbd5e3c994dc7a363d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "戴森球计划 — 实用流程指南"
+    },
+    {
+      "id": "a.top.attr.001.aria-label",
+      "sourceHash": "23137adbf7e2beb4e17d315054d7f1958e671f38e84f6fb0ffd95151ff547612",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "主线与可选路线导航"
+    },
+    {
+      "id": "a.top.div.001",
+      "sourceHash": "440ec14a4cc22644617e955060dad57e450bb8c7660fba1cc3f90a422275e61e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "主线"
+    },
+    {
+      "id": "a.top.a.001",
+      "sourceHash": "a8de59ec1efe2f86e144bffbd077ed7b74b356694670a3191cdb6e1fe579bca0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}蓝糖{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.002.title",
+      "sourceHash": "08d500e1da46a1b7dea131369d174e6648f861853d472c597864e5113a092d17",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [蓝糖] — 建起工厂，让蓝糖持续生产"
+    },
+    {
+      "id": "a.top.a.002",
+      "sourceHash": "0efd9e027934f3b96f09e81b4fb5127973c34f96e32750c761d2ee3ea37302b2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}红糖{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.003.title",
+      "sourceHash": "174d1ac4858967db29dad3f44ab4b3433fabbf01e3d87e36a78dc8c074b85b81",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [红糖] — 建立石油工业，保持红糖供应"
+    },
+    {
+      "id": "a.top.a.003",
+      "sourceHash": "e6d06211b33f99365da0d73ed1f7916d572f817ff9fb7902ab2050e583a72c0e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}星际物流{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.004.title",
+      "sourceHash": "a133f61596f28a9b54076c70dd1badf54346c7297becf44f3890a0b05e9bd7e0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [星际物流] — 飞离母星，将第一条行星间运输线自动化"
+    },
+    {
+      "id": "a.top.div.002",
+      "sourceHash": "827dfaae1164f90766b3fcb0a3b4b395317bb7a2d304d3bc0885963fef2fc694",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}I{{end_a_1}}{{a_2}}II{{end_a_2}}{{a_3}}III{{end_a_3}}"
+    },
+    {
+      "id": "a.top.attr.005.aria-label",
+      "sourceHash": "23f3513617f0ac65484b2f61ec631e232afb18f5afa0e318cb139a796441ccda",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流远征阶段"
+    },
+    {
+      "id": "a.top.attr.006.title",
+      "sourceHash": "cca2e9d4784bfe15924068a815b4566b2837a1153c56661d63ee1df5ecaa0756",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流阶段 I：做好飞行准备"
+    },
+    {
+      "id": "a.top.attr.006.aria-label",
+      "sourceHash": "cca2e9d4784bfe15924068a815b4566b2837a1153c56661d63ee1df5ecaa0756",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流阶段 I：做好飞行准备"
+    },
+    {
+      "id": "a.top.attr.007.title",
+      "sourceHash": "2c60095350d9a0ec468509ee01f6a1690f823a1ff62802db67622ef8f9dd224c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流阶段 II：建立值得再次造访的前哨站"
+    },
+    {
+      "id": "a.top.attr.007.aria-label",
+      "sourceHash": "2c60095350d9a0ec468509ee01f6a1690f823a1ff62802db67622ef8f9dd224c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流阶段 II：建立值得再次造访的前哨站"
+    },
+    {
+      "id": "a.top.attr.008.title",
+      "sourceHash": "479970669f7da7b706ea06f666f487144478d128a0d4deeae15d92855b325b4d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流阶段 III：实现航线自动化"
+    },
+    {
+      "id": "a.top.attr.008.aria-label",
+      "sourceHash": "479970669f7da7b706ea06f666f487144478d128a0d4deeae15d92855b325b4d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流阶段 III：实现航线自动化"
+    },
+    {
+      "id": "a.top.a.004",
+      "sourceHash": "8c3a26622323e38ea174f896e765447498f785c04096febda4976ff061290984",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}黄糖{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.009.title",
+      "sourceHash": "2835ff71e8fb9f87789a6b2e0a0410d5a18bd82a81201452122450d870912e99",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [黄糖] — 建立可持续的黄糖科研"
+    },
+    {
+      "id": "a.top.a.005",
+      "sourceHash": "ab24840a72ea2c6f1ce2595091c4feaee4b27c388db7fb528833a1f38fe59d4c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}紫糖{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.010.title",
+      "sourceHash": "578ce40bbdf4387c2d4990ecc1f80cea4dccd962b610c1305ad05ad57aa07daf",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [紫糖] — 建立第一个真正庞大的生产体系"
+    },
+    {
+      "id": "a.top.a.006",
+      "sourceHash": "47ac7a3984417d2f6f91aac541b8f6479dd06002b4bfd8ffa04db3e474905ca9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}绿糖{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.011.title",
+      "sourceHash": "fef2bde8e7d7d795654159a5f3231b3c1c9e05b78b10fee86b217a0c604e7a95",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [绿糖] — 建立两条后期原料支线"
+    },
+    {
+      "id": "a.top.a.007",
+      "sourceHash": "f8c76ff367941ece83688ece590954cb00758114eeaef3985ab513634a7ca59f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}戴森云{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.012.title",
+      "sourceHash": "f6165545b544197a5a3ab10316f954108aed0e60b8ef684aca2ac3635254aa01",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [戴森云] — 为光子生产建立戴森云"
+    },
+    {
+      "id": "a.top.a.008",
+      "sourceHash": "38a2ec2dc7a87bed4d7578d1f2dcddc92343084c3f69d89a95412d4b5b14b8cb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}光子{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.013.title",
+      "sourceHash": "e8bbb5134f830dbe109ac81900fe7a8966c5c47329fbacacb264b892cf482b22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [光子] — 临界光子与反物质"
+    },
+    {
+      "id": "a.top.a.009",
+      "sourceHash": "dc3c6d3a312702ff1875540b7067218d6c3221b8db0465b64e9dfe622664f045",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}白糖{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.014.title",
+      "sourceHash": "94b4efb606fa08caa14682faa53594e7465391a02f1287f00d7723564454a6e1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}. [白糖] — 白糖与任务完成"
+    },
+    {
+      "id": "a.top.div.003",
+      "sourceHash": "efa451554be07542ed9c813f730510c15016e7e49ab5ced1387b963979ae8773",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选路线"
+    },
+    {
+      "id": "a.top.a.010",
+      "sourceHash": "cb3a048efd917ddf1b9b6021b050c1cb5db721fa89b068d41575ccd867594690",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}戴森球{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.015.title",
+      "sourceHash": "74495e01aa4ae27ebe6798ea874cecc2b1310f13d69d2497a2598fcd4a68c558",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选路线：[戴森球] — 永久性的戴森球"
+    },
+    {
+      "id": "a.top.attr.015.aria-label",
+      "sourceHash": "74495e01aa4ae27ebe6798ea874cecc2b1310f13d69d2497a2598fcd4a68c558",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选路线：[戴森球] — 永久性的戴森球"
+    },
+    {
+      "id": "a.top.a.011",
+      "sourceHash": "8783fac96caa97870f462292683e5f697d9c752ef46addbd128992f99bd0eff8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}曲速{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.016.title",
+      "sourceHash": "fcd54f21a6ce1c1b80cc96d29cd30d885ec181ef2998597b95cc2d25651b5504",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选能力：[曲速] — 跨恒星资源开发"
+    },
+    {
+      "id": "a.top.attr.016.aria-label",
+      "sourceHash": "fcd54f21a6ce1c1b80cc96d29cd30d885ec181ef2998597b95cc2d25651b5504",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选能力：[曲速] — 跨恒星资源开发"
+    },
+    {
+      "id": "a.top.div.004",
+      "sourceHash": "78fcc0e1840728521a68ae772bdac7477ffcd240f63237f259701b56b077931e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}I{{end_a_1}}{{a_2}}II{{end_a_2}}{{a_3}}III{{end_a_3}}"
+    },
+    {
+      "id": "a.top.attr.017.aria-label",
+      "sourceHash": "7c22f94c2f11ce44051d20bd5efefacffeb20adcf2eea7c662bc02180bb3c226",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "曲速远征阶段"
+    },
+    {
+      "id": "a.top.attr.018.title",
+      "sourceHash": "7a90a881e333208bc410b8e110c75efc168439241fdeab20cd718fae9647b3d3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "曲速阶段 I：准备远征"
+    },
+    {
+      "id": "a.top.attr.018.aria-label",
+      "sourceHash": "7a90a881e333208bc410b8e110c75efc168439241fdeab20cd718fae9647b3d3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "曲速阶段 I：准备远征"
+    },
+    {
+      "id": "a.top.attr.019.title",
+      "sourceHash": "003ad1b49820e03c53559f035ff5a386b15448608fab15d9e1fc2cfb0b967915",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "曲速阶段 II：建立资源前哨站"
+    },
+    {
+      "id": "a.top.attr.019.aria-label",
+      "sourceHash": "003ad1b49820e03c53559f035ff5a386b15448608fab15d9e1fc2cfb0b967915",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "曲速阶段 II：建立资源前哨站"
+    },
+    {
+      "id": "a.top.attr.020.title",
+      "sourceHash": "065c79ed9f6e579e94458b08208a0b3b6ca6883a177b1056fb5c17ad21fdaecd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "曲速阶段 III：将运输船航线自动化"
+    },
+    {
+      "id": "a.top.attr.020.aria-label",
+      "sourceHash": "065c79ed9f6e579e94458b08208a0b3b6ca6883a177b1056fb5c17ad21fdaecd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "曲速阶段 III：将运输船航线自动化"
+    },
+    {
+      "id": "a.top.a.012",
+      "sourceHash": "e20949ca63ee43f34f95b53bcdf7305b144536de2dc5a0171fb0ca3843dc110b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{img_1}}{{span_1}}物流{{end_span_1}}"
+    },
+    {
+      "id": "a.top.attr.021.title",
+      "sourceHash": "642c80f497e827827a4c5f90dce697ce94cd48715e26677b2e9c71c2b2968b54",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选能力：[物流] — 自动生产负责运输的基础设施"
+    },
+    {
+      "id": "a.top.attr.021.aria-label",
+      "sourceHash": "642c80f497e827827a4c5f90dce697ce94cd48715e26677b2e9c71c2b2968b54",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选能力：[物流] — 自动生产负责运输的基础设施"
+    },
+    {
+      "id": "a.phone-route-trigger.button.001",
+      "sourceHash": "25fdb2b6b8eb6116e775b217dd525e451a174535fbc08a684f99774e21feefe1",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "路线 {{span_1}}·{{end_span_1}} {{span_2}}开始{{end_span_2}}"
+    },
+    {
+      "id": "a.route-sheet-title.h2.001",
+      "sourceHash": "f6834530108c87d2faa85dcf9963d2b7265b2c5acd14aa4863bdc09f5a33e065",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "路线"
+    },
+    {
+      "id": "a.route-sheet.button.001",
+      "sourceHash": "66c88e366ecb8ea4ce185f33485d4f6f32012fbcf130abea2b0aa3b9ca96f731",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "关闭"
+    },
+    {
+      "id": "a.top.summary.001",
+      "sourceHash": "f63e3934db7ca4e24652dabe8f1d019f44c4e1942826e89b154dc1e212327a30",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "参考"
+    },
+    {
+      "id": "a.top.attr.022.title",
+      "sourceHash": "c3604bbb98567b7e037a8701f2dd9a524e9937ad2dfee7b44daeb158e626a5fb",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "参考章节"
+    },
+    {
+      "id": "a.top.nav.001",
+      "sourceHash": "d6b6b693ce523e70707c21fd43e44a3f80a8b7a078bf4be4a7ec038530598cfd",
+      "termHash": "c6b3790e4d91cb6f36d22bc9f391a76dd0666492a419f042d9f9f9403644ca4e",
+      "text": "{{a_1}}增产剂{{end_a_1}}{{a_2}}{{item_2014_1}}{{end_a_2}}{{a_3}}气态巨星{{end_a_3}}{{a_4}}电力{{end_a_4}}{{a_5}}采矿{{end_a_5}}{{a_6}}工具{{end_a_6}}{{a_7}}清单{{end_a_7}}{{a_8}}排障{{end_a_8}}"
+    },
+    {
+      "id": "a.top.attr.023.aria-label",
+      "sourceHash": "8427eeb75208cb9785947b459d3cb2527bdd85bafee36e2e49865dabfcc6475d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "参考章节导航"
+    },
+    {
+      "id": "a.top.a.013",
+      "sourceHash": "dfafffcfd92cd9867d375cf5b90ee53e66d3df215bdafdfcb715f9c305693812",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "↑"
+    },
+    {
+      "id": "a.top.attr.024.title",
+      "sourceHash": "f16d9761e92f679230f7e8fc8632ca4cc2963f1ab33dec18698ac0a2a881d07c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "返回顶部"
+    },
+    {
+      "id": "a.top.attr.024.aria-label",
+      "sourceHash": "f16d9761e92f679230f7e8fc8632ca4cc2963f1ab33dec18698ac0a2a881d07c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "返回顶部"
+    },
+    {
+      "id": "a.top.p.001",
+      "sourceHash": "74bf4e06987e7c0868fe668f5713ae008270f0fe6f8ca048926c213139316098",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选配套模组"
+    },
+    {
+      "id": "a.companion-dock-title.h2.001",
+      "sourceHash": "2223384a9e277680d839a5530f16fae17e94c2861bd736677f507644084af78a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "DSP Guide Check"
+    },
+    {
+      "id": "a.top.p.002",
+      "sourceHash": "d7ff3f9da3cac97cc5b926cfb3c3063b6469225486a8f62196aabc26570ef942",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "在游戏内查看当前指南阶段、已完成的目标，以及接下来值得做的事。"
+    },
+    {
+      "id": "a.top.a.014",
+      "sourceHash": "35b656f30555cb97faf5531af10ed8e1d8c96766a914ee5185d6a65b4867cd5a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "在 Thunderstore 打开 {{span_1}}↗{{end_span_1}}"
+    },
+    {
+      "id": "a.top.summary.002",
+      "sourceHash": "8272cc66c2e28646335b4051d45aaa866f2aab79973920c28e076e655417965d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "安装方法"
+    },
+    {
+      "id": "a.top.li.001",
+      "sourceHash": "05892e745774485233db26f75430df03696c3bdbd8704ec7879a4e57f9a1bd39",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "在 Thunderstore 页面选择 {{strong_1}}Install with Mod Manager{{end_strong_1}}（使用模组管理器安装）。"
+    },
+    {
+      "id": "a.top.li.002",
+      "sourceHash": "bdd6f2de9ebe54e5ad8e66e6fa07d8428fdee998b66690f5a3319a4edb69893f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "从该模组配置启动 DSP。"
+    },
+    {
+      "id": "a.top.li.003",
+      "sourceHash": "e7678ad8d2dd7c3b714cba38a9c3e37162b772fe03fb7f82b478f0ebcaec778a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "载入存档，按 {{strong_1}}F{{fact_1}}{{end_strong_1}}。"
+    },
+    {
+      "id": "a.language-selector.attr.001.aria-label",
+      "sourceHash": "9cdd75470541e1e0ec226b3173a3ce3a37b97cec0ce0124021bf3402ee633573",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "语言"
+    },
+    {
       "id": "a.top.h1.001",
       "sourceHash": "d710b20213394f92fbe574bde8eaef22f1510fb7ff0c58f53e84645532896e69",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
       "text": "{{a_1}}{{span_1}}{{img_1}}{{end_span_1}}{{end_a_1}}{{span_2}}实用流程指南{{end_span_2}}"
+    },
+    {
+      "id": "a.top.attr.025.alt",
+      "sourceHash": "f5e071eb18aa1aa949236fdef831492642f7c4688715ddbac93c859f83d13793",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "戴森球计划"
+    },
+    {
+      "id": "a.top.h2.001",
+      "sourceHash": "e012093a76755de9f781dcf7e096afe9cacd8d71dc2f3d28784a3662760bf9bd",
+      "termHash": "e349030824d3457381b4c89cc362d3a017f495137caee2406d3ea7c136a9530e",
+      "text": "从第一座工厂到「{{tech_1508_1}}」的实用路线"
+    },
+    {
+      "id": "a.top.p.003",
+      "sourceHash": "9c95852e63258b95244a1cb862c708225033aba8d703698af02cabe886b574c4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{small_1}}© images rights reserved to Dyson Sphere Program{{end_small_1}}"
     },
     {
       "id": "a.top.p.004",
@@ -15,16 +477,1888 @@
       "text": "我是在学习 DSP 的过程中写下这份指南的。每次完成一项建设后，我常常不知道下一步该做什么。你可以{{strong_1}}一边玩一边查阅{{end_strong_1}}，不必从头读到尾，更不用把内容背下来。"
     },
     {
-      "id": "a.opening.title.001",
-      "sourceHash": "68bd10654308837aa0a20f75189327b9f3e2a773ae7ed4fbd5e3c994dc7a363d",
+      "id": "a.top.p.005",
+      "sourceHash": "147cdf04313ca57db75a4dc8d8ccc87547c84050f16da365d6efebaa38acdc30",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "Dyson Sphere Program — 实用流程指南"
+      "text": "对我来说，最管用的节奏是："
+    },
+    {
+      "id": "a.top.p.006",
+      "sourceHash": "dafbcd942143404ca7fffc796a83df9ffeb43eee1657bc3d62947a0bc37fec7f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}查阅指南 {{fact_1}} 玩一会儿 {{fact_2}} 需要理清方向时再回来 {{fact_3}} 找到下一件值得做的事 {{fact_4}} 回到游戏{{end_strong_1}}"
+    },
+    {
+      "id": "a.top.p.007",
+      "sourceHash": "4ef3bc0853c259379bd5f84198ed26635e76f6de53b175e48c4bde0762a4a28e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "默认路线是："
+    },
+    {
+      "id": "a.top.p.008",
+      "sourceHash": "5c6eab13e7dc4c704ab28adf46e0395fce1c25ccc261a9382d345988c5441cdd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}蓝糖 {{fact_1}} 红糖 {{fact_2}} 星际物流 {{fact_3}} 黄糖 {{fact_4}} 紫糖 {{fact_5}} 绿糖 {{fact_6}} 戴森云 {{fact_7}} 光子 {{fact_8}} 白糖 {{fact_9}} 任务完成{{end_strong_1}}"
+    },
+    {
+      "id": "a.top.h3.001",
+      "sourceHash": "b8817ea2fb683194d5b1a7613161a2b55bcbca05bbdcef54fda5226047c9ff35",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本指南中的矩阵名称"
+    },
+    {
+      "id": "a.top.p.009",
+      "sourceHash": "c164dc2dd1e154a5abd7d62b3be0de0d7310d7f240a6a4230bf196b2735c298c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "DSP 中的每种矩阵都有正式名称，但忙着建设时，用颜色来区分更直观。通常我们会这样简称："
+    },
+    {
+      "id": "a.top.p.010",
+      "sourceHash": "af26adfb306d42d871147b2aa147b41a50a79335621aeba77ff41a464b75ae05",
+      "termHash": "e60ff62c0d2b17fda186bb03a6838045492667400943c39ac1fdbeb64b6cb2b6",
+      "text": "{{strong_1}}蓝糖：{{tech_1002_1}}{{end_strong_1}} {{em_1}}（对应科技：{{tech_1002_2}}）{{end_em_1}} · {{strong_2}}红糖：{{tech_1111_1}}{{end_strong_2}} {{em_2}}（对应科技：{{tech_1111_2}}）{{end_em_2}} · {{strong_3}}黄糖：{{tech_1124_1}}{{end_strong_3}} {{em_3}}（对应科技：{{tech_1124_2}}）{{end_em_3}} · {{strong_4}}紫糖：{{tech_1312_1}}{{end_strong_4}} {{em_4}}（对应科技：{{tech_1312_2}}）{{end_em_4}} · {{strong_5}}绿糖：{{tech_1705_1}}{{end_strong_5}} {{em_5}}（对应科技：{{tech_1705_2}}）{{end_em_5}} · {{strong_6}}白糖：{{tech_1507_1}}{{end_strong_6}} {{em_6}}（对应科技：{{tech_1507_2}}）{{end_em_6}}"
+    },
+    {
+      "id": "a.top.p.011",
+      "sourceHash": "eb391dccfe4b3c1e1fa2ad75c0e25dc081a338e6734cddbbaa60727eba706f28",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "后文谈到矩阵科技时，正式名称指的是{{strong_1}}科技树中要点击的科技{{end_strong_1}}。讨论实际生产的物品、速率、库存和配方时，会用蓝糖等颜色简称；物品链接则显示对应的正式名称。"
+    },
+    {
+      "id": "a.top.p.012",
+      "sourceHash": "66f76b8ef074d3f66116fcf489d1147a188584cb01dffc8060b4d484dcb59ee4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "上面的路线力求简单，但并不是唯一值得做的事。默认用太阳帆组成的戴森云来实现光子生产和白糖科研。如果想建造能长期保留的工程，再去造戴森球；没有永久性的戴森球也能完成这条路线。"
+    },
+    {
+      "id": "a.top.p.013",
+      "sourceHash": "500529836b971021c53bf60d6caac96f5f71a61e99abe9e6c5903c9c19367d8c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如果启用了黑雾，红糖阶段会帮助你守住初始星球，并清除一处本地基地。当前的战斗先做到这里，其余的就暂且留在迷雾中吧。"
+    },
+    {
+      "id": "a.top.p.014",
+      "sourceHash": "bf09a242daf40685777ad7762296428d892e925420c2a2d56b14d5d01897e91d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "途中还会遇到一些实用的支线项目。先不必理会；等它能解决眼前的问题时，再来了解也不迟。"
+    },
+    {
+      "id": "a.top.h1.002",
+      "sourceHash": "2e13ac297f8f5f4765f635af656576cadb5262419cad42607f691d043003cd87",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "如何使用本指南，而不用反复重读"
+    },
+    {
+      "id": "a.top.p.015",
+      "sourceHash": "7fc0be4563074cc55c215ae08c4785315c8cd63ffb3ec60a9502866ac0f95de8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}玩了很久，忘了该往哪走？{{end_strong_1}}用右侧彩色导航条跳到当前阶段，让{{strong_2}}当前位置{{end_strong_2}}帮你回忆。这正是它的用途。"
+    },
+    {
+      "id": "a.top.summary.003",
+      "sourceHash": "104632dded3f5006fee6cadd86f0f385fee29684dd8cd82773e114dd0ca34b4c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产卡片的默认条件"
+    },
+    {
+      "id": "a.top.p.016",
+      "sourceHash": "586751b28d869500075ea222aae9703a4e9e1061ed4d655bc7c5af1ea3762527",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "除非操作说明另有注明，卡片均使用常规配方，不替换稀有资源，也不使用增产剂。"
+    },
+    {
+      "id": "a.top.p.017",
+      "sourceHash": "747045588441a52466c3d7e7473269a878815d7ac146655c96179471c1937f72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}卡片的用途：{{end_strong_1}}卡片是可按需查阅的生产概览。指南说明当前什么最重要、为什么重要；卡片则展示一条实用产线的完整结构，不要求你按图精算内部机器数量。"
+    },
+    {
+      "id": "a.top.p.018",
+      "sourceHash": "bbe1a5993340f1452928b5308f8eb59809ceb61599c3c6e4a1711c147eac8312",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}卡片的结构：{{end_strong_1}}{{strong_2}}原料供应{{end_strong_2}}列出原始或已建立供应的输入。{{strong_3}}生产流程{{end_strong_3}}按建设顺序展示各条短支线及其汇合点。{{strong_4}}产出去向{{end_strong_4}}说明准确的成品目标和用途。{{strong_5}}副产物{{end_strong_5}}只列出确实能再利用、或可能堵住产线的副产物类型。只有会影响建设或持续运行的事项，才会出现在{{strong_6}}操作说明{{end_strong_6}}中。"
+    },
+    {
+      "id": "a.top.p.019",
+      "sourceHash": "51068994dce740ac66eb043398177f2d3e776af4ccbb300fbde3e9fd1bc97d1f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "有限批次、出行物资、研究投入、航线配置和轨道运行仍在阶段正文中说明。内部精确消耗速率、机器和传送带数量、装满时间及产能余量，则留给实际建成的工厂来决定。"
+    },
+    {
+      "id": "a.top.p.020",
+      "sourceHash": "4555a7f30f054afd22d554c44dc8650a351a6ecc72b1215f2b4ed856754a0881",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}有目的地留库存：{{end_strong_1}}建筑超市成品、远征物资、会堵塞生产的副产物，以及阶段性批次，都适合存入有明确上限的仓储。每条线后面都接巨量库存，反而可能把短缺掩盖到整座工厂一起停摆；普通中间产物只需留出足够空间，让运输和生产顺畅运转。"
+    },
+    {
+      "id": "a.top.p.021",
+      "sourceHash": "fef1ce74b88159d737866b57c5f31d10e52da5013782cb9539920650a7a09dab",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}仓储上限按格设置：{{end_strong_1}}仓储滑块开放的是完整的堆叠格，而不是精确的物品数量。卡片会说明开放格数及其最大容量。若目标少于一整组，请在达到数量时暂停生产机器。"
+    },
+    {
+      "id": "a.top.div.005",
+      "sourceHash": "0d9fd5bc5050187a1cbf394390d2f8216648407573fac8223d3cef37ae7c3ece",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}生产方式：{{end_span_1}}{{span_2}}冶炼{{end_span_2}}{{span_3}}制造{{end_span_3}}{{span_4}}加工{{end_span_4}}"
+    },
+    {
+      "id": "a.top.attr.026.aria-label",
+      "sourceHash": "352eb620d27636039ad3c8d4ff07132412633578eb4be35c8648880c4f2a44fe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程中的设备图例"
+    },
+    {
+      "id": "a.top.div.006",
+      "sourceHash": "ba2b113bfa643729a6cb3735cda95477d424ba838106238c067a9a014c43a1ac",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}想知道下一步做什么？跟着主线走。{{end_strong_1}}想一眼看清整条产线？打开对应卡片。卡片默认折叠，始终不展开也完全没问题。"
+    },
+    {
+      "id": "a.production-reference-library.summary.001",
+      "sourceHash": "57343e7fe196115a2732cc58e0d39a81d8c07506397094d1b77e14d81161b705",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}通用产线参考{{end_span_1}}{{span_2}}{{fact_1}} 条产线{{end_span_2}}"
+    },
+    {
+      "id": "a.production-reference-library.p.001",
+      "sourceHash": "e1caa691e9d3832e92536aca3ba51c799520d36267511be684c97739d8cf6747",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下面两个例子采用与阶段卡片相同的流程图格式。它们是可复用的中间产物生产线，不是阶段目标；后续卡片用到时，会链接回这里。"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.summary.001",
+      "sourceHash": "aaa16fa2cdcefea2cff17f1dc79913418284f168e3d5540ca550d999b62591de",
+      "termHash": "ce1a0782cf279734394dad8efcb5a08fd621265129c1f659c95ea7e81fb674f9",
+      "text": "通用产线 — {{item_1204_1}}"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "504eddbcad1e2e956567c27eb9dcf895ccb6678cef05756d8a2ac91dcbb22bec",
+      "text": "{{item_1002_1}}。"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.h5.001",
+      "sourceHash": "a0fcb09af8bb97e3980302f2dc094afc609b882de59caff91dc13f4a51200b37",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "磁线圈支线"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.003",
+      "sourceHash": "038c0126885c653837e3729c7fe805951d981d8e0d01b1f104ed0189a5b54934",
+      "termHash": "d64fd09d92457b4d2c39722dc1c2aa4eebfd75f65a767813e5bf5316b14222f7",
+      "text": "{{span_1}}磁铁{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1102_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.004",
+      "sourceHash": "d6a2c6e318a7d9bbb2cee55e0d1bee7abe1671a5ea336e1c5bab1e5a53800f94",
+      "termHash": "003c3b734065d5faf760b648b87e23625f561eed712856269523cd9db0b71cb0",
+      "text": "{{span_1}}铜块供应{{end_span_1}}{{span_2}}{{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.005",
+      "sourceHash": "2216664ef315ca7efbdf09b616edba614d7a682f456b2bfdc0f158a97d36ed77",
+      "termHash": "8f4629d19e9a15a01816056234ee2bd95857139573755cf7552eaa2cde9cf623",
+      "text": "{{span_1}}磁线圈支线{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.h5.002",
+      "sourceHash": "147d96e15b8ad53cfe9b8261f83093c4ed71ae0b9942485f2f9feb9a76e45f3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "电动机支线"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.006",
+      "sourceHash": "19076d3a5443196c74ce7f148442d45eda92ce59a31d925220549bf3d8cdafc9",
+      "termHash": "1bf5137d284139f4410d037d014bc9acd2d8ccfd1505d90b17bfda7f5f8e6d60",
+      "text": "{{span_1}}{{item_1201_1}}支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}} {{span_6}}{{img_2}}{{span_7}}{{fact_2}}{{end_span_7}}{{span_8}}由制造台 {{fact_3}} 生产{{end_span_8}}{{end_span_6}} {{item_1201_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.007",
+      "sourceHash": "dc4e1e7e41845d3dbb297942ae1d39dca2f958925e8c316f62db9c4e31edd1e3",
+      "termHash": "5768d635ed328f0c526b606763c04c16c36a34cac9c516f67271dfa8c57e3ee5",
+      "text": "{{span_1}}电动机合成{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1203_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.h5.003",
+      "sourceHash": "7c3c9631e9dbe95ad9fc00b2dc560e1a4438b1510b4e210b91d061bd38e39b70",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "最终合成"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.008",
+      "sourceHash": "b85547ce5fdd29205132420795a0ec24901e223d65f2f775817d7fed0078b064",
+      "termHash": "1ba53a8681e7b4e1a7df643dd01f7269d192b5f8834f01234d9cac879cd90a69",
+      "text": "{{span_1}}电磁涡轮合成{{end_span_1}}{{span_2}}{{item_1203_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1204_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "a.reference-electromagnetic-turbines.li.009",
+      "sourceHash": "a179ecb2a37531a24edd27101ffdf2dc39e764bc48353da2eab118e46e5a290c",
+      "termHash": "ce1a0782cf279734394dad8efcb5a08fd621265129c1f659c95ea7e81fb674f9",
+      "text": "{{item_1204_1}} {{fact_1}} 仓储或链接所指的下游产线。"
+    },
+    {
+      "id": "a.reference-graphene.summary.001",
+      "sourceHash": "e89613401bb2265b4c4dffdd7fc17a4ccc92a659fdf3830af347a81bd45e3cf1",
+      "termHash": "6431d7fe1b21f67a7db54f3b7a9e8c4f89be31490ea1d5a551012c7bc916c13a",
+      "text": "通用产线 — {{item_1123_1}}"
+    },
+    {
+      "id": "a.reference-graphene.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "a.reference-graphene.li.001",
+      "sourceHash": "ad3c2a09748a762a1463926559d78b1fb2dabbd11552f40fa8ff8ba6f0190866",
+      "termHash": "bc6ae910f80905c902f44bc607ae61be743be644d4a9b24b1b547227372bdb73",
+      "text": "{{item_1007_1}}。"
+    },
+    {
+      "id": "a.reference-graphene.li.002",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "b89457a65b7615b6eca8df047136e35f38bc1a82c0eb2b19fe6830430ab7a9d5",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "a.reference-graphene.li.003",
+      "sourceHash": "60139b348f224aa07cdf015236a893f3aee96e5dac8133593a4ef28cc4c773bd",
+      "termHash": "f7258f039160859db2fb7d7d92b0f2b6c12baabbef5f9ddc404185734af9487c",
+      "text": "{{item_1000_1}}。"
+    },
+    {
+      "id": "a.reference-graphene.li.004",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "a.reference-graphene.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "a.reference-graphene.li.005",
+      "sourceHash": "8624f4476924edf781ee264211f0a45d9fdfb5688cd3eac6f8039b66cd78affa",
+      "termHash": "e469d6738b89268d7c1e16f736ad19d67271265e23918e6ecc4b49794000da01",
+      "text": "{{span_1}}炼油支线{{end_span_1}}{{span_2}}{{item_1007_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由原油精炼厂生产{{end_span_5}}{{end_span_3}} {{item_1114_1}} + {{item_1120_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-graphene.li.006",
+      "sourceHash": "72636a424e739f44fa495a44db0e1134958f537a52ce765bf05991184bab1f56",
+      "termHash": "189b680d4ea7beb929b99a523feb8ab1d96b768548d4d2acdfa5a7f0b2a609f6",
+      "text": "{{span_1}}硫酸支线{{end_span_1}}{{span_2}}{{item_1114_1}} + {{item_1005_1}} + {{item_1000_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由化工厂生产{{end_span_5}}{{end_span_3}} {{item_1116_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-graphene.li.007",
+      "sourceHash": "5564b93a1babd418c83fb49c8c903f9dcb5b3fc87af761c3b5d80c5b6ac521b0",
+      "termHash": "24b338c5f3566282267888f6d8df55d1b58bb30c93f6f8e8de8950795f0abaec",
+      "text": "{{span_1}}高能石墨支线{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1109_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-graphene.li.008",
+      "sourceHash": "59cf9025e4098e46fe09c101f6f66440558c43345430543f76bcf5e924503fb9",
+      "termHash": "1fbbdf55c9cde5d4530a0b3950022750a14020b49f89a6b61b763ca0eed57d7a",
+      "text": "{{span_1}}{{item_1123_1}}合成{{end_span_1}}{{span_2}}{{item_1116_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由化工厂生产{{end_span_5}}{{end_span_3}} {{item_1123_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.reference-graphene.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "a.reference-graphene.li.009",
+      "sourceHash": "193a87cf2b73246441b68b0b4c6973a890748d25f68e89fb0197a6c7d16ca26e",
+      "termHash": "6431d7fe1b21f67a7db54f3b7a9e8c4f89be31490ea1d5a551012c7bc916c13a",
+      "text": "{{item_1123_1}} {{fact_1}} 仓储或链接所指的下游产线。"
+    },
+    {
+      "id": "a.reference-graphene.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "副产物"
+    },
+    {
+      "id": "a.reference-graphene.li.010",
+      "sourceHash": "eac5f7457ab42bb5d807ef7d1cb55a6667d89b1183455df2f470a1d948e6f69a",
+      "termHash": "81f07c6af9999ea501fe5374ef5c8e0d2dd9e52b4e4d0b01a4ba0b3958dc981a",
+      "text": "{{item_1120_1}}。"
+    },
+    {
+      "id": "a.reference-graphene.h4.005",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "a.reference-graphene.li.011",
+      "sourceHash": "11004c70720fe2e7219488688d52203fba4ed33ee00df5517eca9633b25ca59a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "直接抽取硫酸后，就不需要化工制酸支线。使用可燃冰的石墨烯替代配方，则可以取代整条常规路线。"
+    },
+    {
+      "id": "a.top.p.022",
+      "sourceHash": "f5f34bc4611065aa29617deda8985d94bc4c067570e8effa470e5d24340bc5ae",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "使用方法就这么简单：{{strong_1}}找到当前阶段 {{fact_1}} 查阅需要的细节 {{fact_2}} 回到游戏。{{end_strong_1}}"
+    },
+    {
+      "id": "a.top.li.004",
+      "sourceHash": "a94ab6fa2926e4508af49f04fe8bb9eddde71bb2e54d16bef7cea0df1479022c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}跳到当前进度所在的位置。{{end_strong_1}}使用右侧彩色导航条；如果不确定，就看下方的进度速查表。"
+    },
+    {
+      "id": "a.top.li.005",
+      "sourceHash": "756f56d6578ce3c989cf770c2a6d4c00601183a4c252fa86ec6d1b3e6172cca8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}先看{{span_1}}当前位置{{end_span_1}}。{{end_strong_1}}它会提醒你刚解决了什么、眼下什么最重要，以及接下来做什么。"
+    },
+    {
+      "id": "a.top.li.006",
+      "sourceHash": "a76c7d21c078d739dcc0daba183dd46bf9d5cebc704729a23d28fe2c8674a4e4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}扫一眼简短概览。{{end_strong_1}}其中列出了应保持运转的产线、下一步研究、容易出的问题，以及进入下一阶段所需的条件。"
+    },
+    {
+      "id": "a.top.li.007",
+      "sourceHash": "4f64fddd4772c510246e17056a5a62459a7a822de8a916a73929958bcff87fcf",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}只有想看清某种实用产品的生产结构时，才需要展开卡片。{{end_strong_1}}一次性的任务都放在正文里。"
+    },
+    {
+      "id": "a.top.li.008",
+      "sourceHash": "5f149b13565c4b0dcbc065abdc3049a9160a49adc5d958a32c2024a3b11767a7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}需要了解原因时，再读其余内容。{{end_strong_1}}不该为了找回一个数字，就重读整个章节。"
+    },
+    {
+      "id": "a.top.div.007",
+      "sourceHash": "aa3997961621f84ef94a739aacbd67fcc81091d1fa0f296aec62da6cbde59251",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}重置清单进度{{end_button_1}}{{span_1}}清单进度仅保存在此浏览器中。{{end_span_1}}"
+    },
+    {
+      "id": "a.top.p.023",
+      "sourceHash": "e0d8e9e08a8d76bd86df0bbeb3ff2978559780629ef42969dce1e8a4e0aceeab",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "等你再回来时："
+    },
+    {
+      "id": "a.top.p.024",
+      "sourceHash": "0a7181198b2123499ed2d988c3b2641e835578f790f7f0fff808ce07267bcf99",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "不需要记住每条产线是怎样衔接的。把指南放在一旁，先去游戏里忙一会儿；等你连一半传送带的用途都想不起来时，再回来看看。"
+    },
+    {
+      "id": "a.top.summary.004",
+      "sourceHash": "e855f0494f21c75da5661e924e4e90074292f0c4c5c4747fdcccdaddf554e84f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "术语表 — 工厂里常用的说法"
+    },
+    {
+      "id": "a.top.dt.001",
+      "sourceHash": "fb65de10cd45a05e70178265cf14e87d3ce80188fe14e9b7986919ddc3b37ea3",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段"
+    },
+    {
+      "id": "a.top.dd.001",
+      "sourceHash": "cd00d7f808990bf3d3e6d96102419fe8b52cb420c541aa36bc2db6e894f20386",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "主线中一个实用的步骤单元。每个阶段描述下一项要建立的能力；工厂条件允许时，可以同时推进多个阶段。"
+    },
+    {
+      "id": "a.top.dt.002",
+      "sourceHash": "420af1c8005a9e880c10c70eb60b0ff35470f5b9d911a4c655ec30796a723851",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "建筑超市"
+    },
+    {
+      "id": "a.top.dd.002",
+      "sourceHash": "7f2079a3b4b6306e230743e5334edf96209b3d92c29df29a8a0fe58c25153573",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一组小型生产线，把常用建筑和物流部件存入有上限的仓储，让伊卡洛斯不必反复手工制作。"
+    },
+    {
+      "id": "a.top.dt.003",
+      "sourceHash": "be37b15c6b44eb0996a0b4b083c3bd963531b3fc2851e77a24d7e07ddfb3f78f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产线"
+    },
+    {
+      "id": "a.top.dd.003",
+      "sourceHash": "d8adb66edeeb99bc71fa34f488a8690436ff6af8b1735e2702e5d6474a4320e5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "由原料供应、加工和输出连接而成的完整路径，用于自动生产一种实用成品。"
+    },
+    {
+      "id": "a.top.dt.004",
+      "sourceHash": "28c16128c91b248a3107bc9f366acca4581820c6a5be2e3daa888aee62330a75",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "支线"
+    },
+    {
+      "id": "a.top.dd.004",
+      "sourceHash": "299b34e47f810108176fa4353a1879836d100643409e80538e7aad4c554b892e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "较大产线中，负责某一种原料的生产路径。"
+    },
+    {
+      "id": "a.top.dt.005",
+      "sourceHash": "fb52d6116d3fb0eeaad83645e228f4cb5b285fa87a9da023d55d6d7b9ebdf9c9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "汇合点"
+    },
+    {
+      "id": "a.top.dd.005",
+      "sourceHash": "360324dc7325ceb7571c21c972543dae4643b7320fc312e9c6a4d600cbce358a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "两条或更多原料支线汇入同一道配方的位置。"
+    },
+    {
+      "id": "a.top.dt.006",
+      "sourceHash": "d6fd9d1738bb4da2cf8faa4e6b9a1b73c36b2f62dc42e7eec91ec131711a0610",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "缓冲库存"
+    },
+    {
+      "id": "a.top.dd.006",
+      "sourceHash": "b6bad792c1f80975abe953dffb0d60c37912b9f3dcec7ceae544c0c61ee00b32",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "有上限的储存空间，用于应对中断或保存计划好的批次。它提供的是周转余地，不是把所有箱子都装满的理由。"
+    },
+    {
+      "id": "a.top.dt.007",
+      "sourceHash": "678e72c668f7855cab5775b220783c0e120284a8d0138adc4fab18b029ce8869",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "供给端／供应"
+    },
+    {
+      "id": "a.top.dd.007",
+      "sourceHash": "c725b91d35ebf31d70565f362e4fc688e40342660d0880069eab10ba6cab9b41",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "提供物品，让配送运输机、物流运输机或星际物流运输船前来取货的物流设置。"
+    },
+    {
+      "id": "a.top.dt.008",
+      "sourceHash": "87186f6fb0a278dfce314f9fad4d242264132a22aecce9c662cdb11368210d47",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "接收端／需求"
+    },
+    {
+      "id": "a.top.dd.008",
+      "sourceHash": "0c104a5c801bad62fee197f0964ffe0cf8ba40340f616a58a5eed5b064b47dc2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "请求配送运输机、物流运输机或星际物流运输船送来物品的物流设置。"
+    },
+    {
+      "id": "a.top.dt.009",
+      "sourceHash": "abd06f1393a40ee0fab37f25e649274f1df62c78f5646c4d39312bd75cca8687",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "兜底供应"
+    },
+    {
+      "id": "a.top.dd.009",
+      "sourceHash": "a9706c536d8de64119942dc7181dbbe6a40deb94ce1b579e56e8c282398eb41b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "只有优先供给跟不上时，才补足缺口的备用来源。"
+    },
+    {
+      "id": "a.top.dt.010",
+      "sourceHash": "7744991d4579b8f290a677478eddce737cf32340a6c9d000801a7bcea7b94fea",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "有效发射时间占比"
+    },
+    {
+      "id": "a.top.dd.010",
+      "sourceHash": "1d11fe8357090173afd7e667914c5aa545eac4f7502c9dd64604c54c5b0c089e",
+      "termHash": "c810fd5e7ecdbeb11befbc668d2d69c19c24181375c2ec21fab587a2cb73fc5e",
+      "text": "{{item_2311_1}}实际发射的时间占比；其余时间因轨道角度不合适而等待。"
+    },
+    {
+      "id": "a.top.h1.003",
+      "sourceHash": "ae38d4da828983692d8b3991699f2470182ec8cd6563bf23c240dae0a8da1718",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "进度速查表"
+    },
+    {
+      "id": "a.top.p.025",
+      "sourceHash": "9c71d6b9dbaeeeb82404cc6466a59076f38495cfe20d9665b8d30dafbf9fea16",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}回到指南时，不确定上次做到哪了？{{end_strong_1}}找到最后一个确定已经完成的里程碑，再跳到下一行。方括号内的标签可以直接带你前往对应章节。"
+    },
+    {
+      "id": "a.top.p.026",
+      "sourceHash": "78f36136d50e3d637b7c465c2f20f32cc9e5576edfce81829955377af775703c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "横向滚动查看所有列 {{fact_1}}"
+    },
+    {
+      "id": "a.top.attr.027.aria-label",
+      "sourceHash": "db6d590413793606235e0d62ba9ded22efeeaa448aa4d37ece41ada2a87e58e8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "进度速查表"
+    },
+    {
+      "id": "a.top.th.001",
+      "sourceHash": "ec0dab122f9a00f17aa4a44f52b2ba83ede6463b3a11bf8ae66cb35cbe961b39",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段"
+    },
+    {
+      "id": "a.top.th.002",
+      "sourceHash": "d382461c70d2852e72d2370aa979512d2905589dd63792717c0cee601f495970",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "检索标签"
+    },
+    {
+      "id": "a.top.th.003",
+      "sourceHash": "41262b3168fa4e1cb6b64783609cd8be12dde3d71393a3f8933710534b853780",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "a.top.th.004",
+      "sourceHash": "e255bb8a02879e5f673d188a37f0483d894779ca8fc441d26a1f03d3ae7d547f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "进入时机"
+    },
+    {
+      "id": "a.top.td.001",
+      "sourceHash": "e29b136d8de90038ac7290c432be45c2d3c72fab597e933e3b515ada0f4ad2a2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.002",
+      "sourceHash": "268caa296349283482325e8f9ef2f68c406eeb9653ad75c15ca039c330b6c8ee",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[蓝糖]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.003",
+      "sourceHash": "9ecf42b4c68073e1cf6f9204c3a574abd035fc72a9c8900c70ddda17ec0212aa",
+      "termHash": "49f13dc1d0f6311d360a8f27dcb8c4c428dfae6ce4f5864685fdce4b504f0ef3",
+      "text": "建起工厂，让{{item_6001_1}}持续供应"
+    },
+    {
+      "id": "a.top.td.004",
+      "sourceHash": "62f7bf5461a2cbdfc1442d069376cd7546f9df078d3dfdae4f442e0bccf2bea6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "开始"
+    },
+    {
+      "id": "a.top.td.005",
+      "sourceHash": "3f1255b970562cd2e6cc426ebf9440b84a322bbdc91b475f4a4bf42fb68bd027",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.006",
+      "sourceHash": "aeaa47a50ef55170f5ed6da9394fbdd89dc92622399b27d158b735a58dc37d48",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[红糖]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.007",
+      "sourceHash": "715c669ce0edf882bf5094413658025ac9a0da4af5206dd24ebb9581df24845b",
+      "termHash": "c51f5292d8a6178311274a31e1125727264e186bfdae39d0b46424aea8d773f7",
+      "text": "保持{{item_6002_1}}供应，稳定石油加工"
+    },
+    {
+      "id": "a.top.td.008",
+      "sourceHash": "cc4e29c6618f0250b422f654be0ae1e0c24b9ebe850435e322c8846dc4a127c6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "蓝糖科研"
+    },
+    {
+      "id": "a.top.td.009",
+      "sourceHash": "db67eaa661f7baae02c2aec60dfcde4cbc4d0ac60fba0a1e5e7fc86db75daf64",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.010",
+      "sourceHash": "0a7b775c6199305f6dd8ce045e627632a7a2b4f6a4036330ec67ecc66cacdc4f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[星际物流]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.011",
+      "sourceHash": "e0f76548d2753d02d87e4efda9aef211edbf6eb4b6d272c3953ad9a2e3934fd5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "飞离母星，带回计划好数量的储备物资，并结束手动运货"
+    },
+    {
+      "id": "a.top.td.012",
+      "sourceHash": "372b549e5c703931f07795ac2f7875d937104046821faca005b45a23a7293d33",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "红糖科研"
+    },
+    {
+      "id": "a.top.td.013",
+      "sourceHash": "2c871a245540055de76344ab74b83b4183bfbbad2ad214067e31a8d69ce52b4e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.014",
+      "sourceHash": "8622e13a0e16fad1f03cb5ae5483e589de0e6512dcdfb92954aca97870b30a22",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[黄糖]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.015",
+      "sourceHash": "c4798c107bd3bc1059a444ff2459e29f0d56802304e21649db99024c4b151e19",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "将行星间供应自动化后，建立可持续的黄糖科研"
+    },
+    {
+      "id": "a.top.td.016",
+      "sourceHash": "c4c73216349225986f42b861683c33a0800f6c6813edfd2ee9db8dabe1d7f300",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "星际物流过渡阶段"
+    },
+    {
+      "id": "a.top.td.017",
+      "sourceHash": "1f0469e00298753af93b856c4a6e55815de63f670880fa38b10bd3c884f97d4c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.018",
+      "sourceHash": "2113ec2853d3ee84978884f4e5f528a99c8da2780000b44027dbfe784487f685",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[紫糖]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.019",
+      "sourceHash": "b1ced911fcd94c2e7183ebbed7d8cc90be5b587ecdc6bbea1a1f18421f8438dc",
+      "termHash": "051b99b8c586d432d165d7db641b54b86569fbb772cccb6d434417ae91d9a911",
+      "text": "保持{{item_6004_1}}供应，解锁通往绿糖的两条支线"
+    },
+    {
+      "id": "a.top.td.020",
+      "sourceHash": "1e97e8d360970d4e2a6aa93b65aef9c2ef0f826990ae5553493bdf1f24afe272",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "黄糖科研"
+    },
+    {
+      "id": "a.top.td.021",
+      "sourceHash": "a727f1f83026effd350e2641a72c1103693ac4a823a50d89b3430b67b08e17fa",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.022",
+      "sourceHash": "59cdbb807cedea504baf4dc5cf493dba1d48b970763575c14d1cff1a8e371a50",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[绿糖]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.023",
+      "sourceHash": "88674e5e71febdb18e9adc6a4ca1e0da7234c53202f6bfb90f393868748ba97f",
+      "termHash": "eedf30a5530b54b3fddeba17b30e2537ad617e8cdafd253ef41b8cd285dd5f7a",
+      "text": "保持{{item_6005_1}}供应，解锁低成本{{item_1210_1}}"
+    },
+    {
+      "id": "a.top.td.024",
+      "sourceHash": "7a72b1e3158e7e9e14443d169efcff62374f84ef525aebc4cbf576e247d2e2be",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "紫糖科研"
+    },
+    {
+      "id": "a.top.td.025",
+      "sourceHash": "62480a5239d70c34ccfd3e416f51fea389c0149eb02c0669b212b3823bb9fe24",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.026",
+      "sourceHash": "5979b6bd7879b73ec99b3bcb9b79bc690639980b6ede5c53f69d8ef68f77a624",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[戴森云]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.027",
+      "sourceHash": "73356990cd43d9c723df73b7ed0f9419e9c910760e41502d7f21acba6be10092",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "按默认戴森云路线，让射线接收站具备实用产出"
+    },
+    {
+      "id": "a.top.td.028",
+      "sourceHash": "9e0a006272a3733a847be5b7f453028dffde1d149a94d3636ac71bccfcc09d3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "绿糖科研"
+    },
+    {
+      "id": "a.top.td.029",
+      "sourceHash": "c29bde25e884050dc2d323772bf35f18aef73ff75e59a9c96eb4a8d01faf5d8e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.030",
+      "sourceHash": "53bd4b5a8ed531140ab5d99f6986f0320562bf7f854ce6bf7f13d140d61a6865",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[光子]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.031",
+      "sourceHash": "cc467dd02ffff4de4d0afa195260c9dad98c22363a5a6cc2d8472e9c56e440b0",
+      "termHash": "cee8a40655b71b1bc4a207959642c5bb88edfe2fbe0a4692004bec596a69e58e",
+      "text": "{{item_1208_1}}与{{item_1122_1}}"
+    },
+    {
+      "id": "a.top.td.032",
+      "sourceHash": "5eee1494e419a085880afcf07aa9aa19c3bfe69b2de5def78e21c05dd70860af",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "戴森系统已有实用产出"
+    },
+    {
+      "id": "a.top.td.033",
+      "sourceHash": "317537c48b5de9f5608f3cf7881f2b742695d91c3a2f4ea368ee280833e4aaf9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{fact_1}}"
+    },
+    {
+      "id": "a.top.td.034",
+      "sourceHash": "acb73f34741052018f27328dbbc44d56ed6fbb30b97cecf0fc3d8227d598ea5d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[白糖]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.035",
+      "sourceHash": "52d5e45f7767b654479e5f5d2526fa2b047fda91f5a2031f5968de62bb2f751e",
+      "termHash": "9fd2ec578ed10dfa8f9e555a3df7d7caf1b44df0a6bd97af7ab873e8b6ecbb56",
+      "text": "保持{{item_6006_1}}供应，研究「{{tech_1508_1}}」"
+    },
+    {
+      "id": "a.top.td.036",
+      "sourceHash": "c8782835055a4bba6e468fcb770944367c785637cb45d5096a9863239512c28c",
+      "termHash": "320a351b910eeba4f07758f4bebb360655651a2c034450401bae9bafbf3183bf",
+      "text": "{{item_1122_1}}供应"
+    },
+    {
+      "id": "a.top.th.005",
+      "sourceHash": "bb09bfa1fd7979e472fb6b0daff818a5b1a25e46cb784b24ee0cbc3f4687b6bc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选路线 — 可直接查阅，不是必经阶段"
+    },
+    {
+      "id": "a.top.td.037",
+      "sourceHash": "408e4e6548373017edccbc4b27608c77ae87513beb9056b4d44fd876a67ee902",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选"
+    },
+    {
+      "id": "a.top.td.038",
+      "sourceHash": "98836de5a825e671b15785f7d3d74fe7048719c5b407713d1f2c2b8c47ed84df",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[戴森球]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.039",
+      "sourceHash": "55ab83f50e68b2dc994e437c6c51319205c818ccb16d651a3d2a29ec14481ef6",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "用较慢、但能永久保留的方式达到光子生产所需的功率目标"
+    },
+    {
+      "id": "a.top.td.040",
+      "sourceHash": "a61dc94e7ebd20a7150bcc7e917a18c5d4072330229681d61caea9651a1a3850",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "绿糖之后"
+    },
+    {
+      "id": "a.top.td.041",
+      "sourceHash": "408e4e6548373017edccbc4b27608c77ae87513beb9056b4d44fd876a67ee902",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选"
+    },
+    {
+      "id": "a.top.td.042",
+      "sourceHash": "f5ee0ddf1a0a74b923125fd2c4c04e7aaf30c13089b886e95a2d0739245740c9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[曲速]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.043",
+      "sourceHash": "257f6334c167ad139480bf2de0078481bd8a79b3a0ea02a9dc62ea2c0ad7b235",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "远征获取稀有资源，并自动进行跨恒星输入"
+    },
+    {
+      "id": "a.top.td.044",
+      "sourceHash": "c8e585d83b7df2c8cc34deef2a68719af2ddec914b9ca808d036d8a89ebf12e9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "紫糖之后"
+    },
+    {
+      "id": "a.top.td.045",
+      "sourceHash": "408e4e6548373017edccbc4b27608c77ae87513beb9056b4d44fd876a67ee902",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "可选"
+    },
+    {
+      "id": "a.top.td.046",
+      "sourceHash": "67d3e6b6464acdf57b1f6c38ff5aa0dc666b8e0b25bbbf96b8ede6b0d653ad92",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{a_1}}{{img_1}}[物流]{{end_a_1}}"
+    },
+    {
+      "id": "a.top.td.047",
+      "sourceHash": "48d55b732b2fbb2bb1c053511121654ba6e384af814d2f866359d31910183074",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "自动生产物流站和运输工具，让后续扩建更容易重复"
+    },
+    {
+      "id": "a.top.td.048",
+      "sourceHash": "11ce309de07f58e8ce6dddff9ed7eebb28e12a69dae9247299cba8850a3141a4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "反复扩建，消耗大量手工制作的物流站和运输工具时"
+    },
+    {
+      "id": "a.blue.h1.001",
+      "sourceHash": "e767275605e03b70177c75d82bd7e3f9ec10a30ca24d81f4198cc013fb4f05ea",
+      "termHash": "49f13dc1d0f6311d360a8f27dcb8c4c428dfae6ce4f5864685fdce4b504f0ef3",
+      "text": "{{fact_1}}. {{a_1}}{{img_1}}[蓝糖]{{end_a_1}} — 建起工厂，让{{item_6001_1}}持续生产"
+    },
+    {
+      "id": "a.blue.h2.001",
+      "sourceHash": "27a4a37c0b3f19967c617869726728ed7583f218f121a1e1202f06cd65720158",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "▶▶ 当前位置"
+    },
+    {
+      "id": "a.blue.p.001",
+      "sourceHash": "82dd5d4b071c56ee9c2df376d7fbfada7b5573d8da5cd322170fa6d1c1110795",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}刚刚起步：{{end_strong_1}}伊卡洛斯仍在做太多手工活。{{br_1}}{{strong_2}}当前任务：{{end_strong_2}}同步建设基础建筑超市和第一条连续科研产线。{{br_2}}{{strong_3}}完成后能做到：{{end_strong_3}}建筑物资自动补货，科研持续推进，初期电网也为石油工业做好准备。{{br_3}}{{strong_4}}下一步：{{end_strong_4}}{{a_1}}{{img_1}}[红糖]{{end_a_1}}"
+    },
+    {
+      "id": "a.blue.h3.001",
+      "sourceHash": "f38633c5f036fb6f5054bc01478e4e2ceaf0e01ca020ffd59a99a503d8b45bbe",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "阶段概览"
+    },
+    {
+      "id": "a.blue.th.001",
+      "sourceHash": "2c9492a873ab15f1069ec30a0f7b6c84b7afff0f483f7902f5e16efbb16020f9",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "一览"
+    },
+    {
+      "id": "a.blue.th.002",
+      "sourceHash": "949981dd94fb34a4a482612726aa1c8dc47f11a5b0f90ee9762ebb85a8ad9297",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "当前重点"
+    },
+    {
+      "id": "a.blue.td.001",
+      "sourceHash": "11bd4ae62b336f6c43e6e34565294b057e559829bf9526141619e39e3e360871",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}主要目标{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.002",
+      "sourceHash": "569a7cfb6960fc17e6991d6226df3f6c791fb72899eeefeac8283364a74b7702",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "摆脱日常手搓，让蓝糖科研持续在后台运行"
+    },
+    {
+      "id": "a.blue.td.003",
+      "sourceHash": "b6c3382e7807c9327edcc9af1fa092a076f19456061fa95eb1c0330a2f6dfce8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}建议目标{{end_strong_1}}"
     },
     {
       "id": "a.blue.td.004",
       "sourceHash": "70293f6fe41db4e8f4caac58d6d68370c4e820a7320a612b7d297a2cb2ee64e2",
       "termHash": "49f13dc1d0f6311d360a8f27dcb8c4c428dfae6ce4f5864685fdce4b504f0ef3",
-      "text": "四组设有库存上限的建筑供应生产线；{{item_6001_1}}产量为 {{fact_1}}{{fact_2}}；可用电力约为 {{fact_3}}"
+      "text": "四组设有库存上限的建筑超市产线；{{item_6001_1}}产量为 {{fact_1}}{{fact_2}}；可用电力约为 {{fact_3}}"
+    },
+    {
+      "id": "a.blue.td.005",
+      "sourceHash": "5a80579200e985650f8854e9c204b2169e352693ed9801d5482981f0065fbe9b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}优先研究{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.006",
+      "sourceHash": "eb363db827699d759bf4b28f12526a82eed5c4d124139aee9b7b67b3211748b9",
+      "termHash": "96607cf8127940f516f1e7ebc6b9ffb4ff96bf3f93e3f35b4edaabff6de9d00a",
+      "text": "{{tech_1001_1}} {{fact_1}} {{tech_1601_1}} {{fact_2}} {{tech_1401_1}} {{fact_3}} {{tech_1201_1}}；然后研究{{tech_1002_1}}和{{tech_1412_1}}"
+    },
+    {
+      "id": "a.blue.td.007",
+      "sourceHash": "7cd81eb1b7dca9edf9f093ea2759dbab08e7e7bfd52b3e388f2eb923e6599d88",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}留意这些问题{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.008",
+      "sourceHash": "7b25e327fc4ba100e055ab059eb7d471924101b9f36c260ae45a8d90c1526d72",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "建筑超市支线还在等配方解锁、蓝糖耗料快于部件供应，以及依赖{{item_1006_1}}却没有风电备用的电网"
+    },
+    {
+      "id": "a.blue.td.009",
+      "sourceHash": "b2cb1d09fe0b21938ca8d3371fde1aa2eb8af8daca618ee91b6892f5d4b236a0",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}何时进入下一阶段{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.010",
+      "sourceHash": "a492c5ad6f08de7e3013cb7b75828634926b5cc194e48a76f1fede135deca196",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "基础建筑物资自动补货，科研无需照看，电网也有余量迎接红糖阶段"
+    },
+    {
+      "id": "a.bootstrap.h2.001",
+      "sourceHash": "a5beb18ca7109e5a2a6c3234f0dfd1a302d34fd59c34e9f7e1210f89a6f2d1cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "目标"
+    },
+    {
+      "id": "a.blue.p.002",
+      "sourceHash": "20805d65b4586c73c7cd182bd9b043d8a089ac9d1f7366d7f3c812c9e215017e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "第一个正式阶段有两项相辅相成的任务。先建建筑超市，让基础物资在箱子里等着你，不再把时间花在反复手搓上。超市本来就要生产蓝糖所需的部件，因此用同一座逐步扩大的工厂，让蓝糖科研也自行运转。两项都完成后，再进入下一阶段。"
+    },
+    {
+      "id": "a.blue.p.003",
+      "sourceHash": "f9667b31a96e74c9dbdaa36e3f4325e8c677bb678f6c499c4c0a115dc34baba4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "不用等到所有东西都能造时才动工。超市的每一部分，都可以在相应配方解锁后立即开建。首批仓储会自行补货，同时用蓝糖解锁火力发电、钢材和地基。"
+    },
+    {
+      "id": "a.blue.p.004",
+      "sourceHash": "8c0e7853114b966fa584e90d68a11d1671b7a15def2ca141a919f50546d8a55e",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "别为了自动化所有已解锁配方而在这里停留太久。以后等待科技研究完成时，还有很多空当可以用来补建。"
+    },
+    {
+      "id": "a.blue.h3.002",
+      "sourceHash": "b5c4a0b0c36063db62b94333f391f9ba3d5a5a812c8a7f5f34f56acf3fad2a50",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "省去大麻烦的小工具"
+    },
+    {
+      "id": "a.blue.th.003",
+      "sourceHash": "74093e3ca644c8cdd115ce47bb15de6fdc35d3b661c3fe4bdbd184c41fa06e4a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "工具或习惯"
+    },
+    {
+      "id": "a.blue.th.004",
+      "sourceHash": "215f94dad72b496082fca2d8cf099beaec46a2af2e58de5ba21d5254e58575fc",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "作用"
+    },
+    {
+      "id": "a.blue.td.011",
+      "sourceHash": "84389a91213f094548d9f2f3fd8ffaf65964c03631c7fcc6f598438df34fcabd",
+      "termHash": "0c56317f17cfa129dbf0354055c8b769881cbe125e09cf0fa04504f94ab891d0",
+      "text": "{{strong_1}}{{item_2030_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.012",
+      "sourceHash": "d02acb43893b321bab95ff209a4e1a52e64d7beb335e420871401d0aa86c8f42",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "监测传送带是否达到预期流量，在科研受影响前发现停滞、空带或超负荷的运输线路。"
+    },
+    {
+      "id": "a.blue.td.013",
+      "sourceHash": "c855039957202fd368d5b6e1d524bd092b6f63d0bc1cf08ad211a4467332fea7",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}统计面板{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.014",
+      "sourceHash": "0db16daaa247a634a65ec0696019e9c4523fe3e6fcd90130e28aa4c1d0ff4b68",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "按 {{key_1}} 查看工厂的生产、消耗和库存。{{a_1}}生产统计操作示例{{end_a_1}}会用后面的黄糖产线讲解跨行星统计范围和输入物资；等这些运输线运行起来后，再回来查看。"
+    },
+    {
+      "id": "a.blue.td.015",
+      "sourceHash": "645f45897ffa90c907c7ec5b37b48dff6d9ca2c5bbe08edc2d2d072b4bc71549",
+      "termHash": "c59588076641986885efdcaa4e10de2f187d034f50e541a82ddd986feb626ce9",
+      "text": "{{strong_1}}{{item_2202_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.016",
+      "sourceHash": "ad4a22636c78c2539a1d994f5791700dea9947bbeb6e96cb6149d156524771b4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "在繁忙的建设区域旁集中放几座，给伊卡洛斯搭一个快速充电点。"
+    },
+    {
+      "id": "a.blue.td.017",
+      "sourceHash": "908d775eb0e702d5685050beda1d46dab205f548b5a55272473188edb2a89c87",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}沿东西方向建设{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.018",
+      "sourceHash": "313188bfac3ec12c8db89e843e95a7e4f968b59cea52b4c8ebcd084591b46d12",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "重复铺设的工厂模块尽量沿东西方向展开；跨越不同纬度区域时，要留意网格间距变化。"
+    },
+    {
+      "id": "a.blue.td.019",
+      "sourceHash": "85cd52491bbbc506521e41297e63eb7c4d142ac76815d3661e79c2f40e625813",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}小型模块化蓝图{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.td.020",
+      "sourceHash": "8d4ac8d8cf857efa656d3bb20084ef0fe0fdfe3c59a18b8f58546e800f17444a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先保存可重复使用的支线和物流站接口。与早早设计覆盖整颗星球的巨型蓝图相比，小蓝图更容易适应实际地形和科技水平。"
+    },
+    {
+      "id": "a.blue.summary.001",
+      "sourceHash": "f51f4da9c555d1d9a288091218fdd3fb69969de444d0ec4cdf34ba4130449bd8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作速览 — 保存可复用的支线"
+    },
+    {
+      "id": "a.blue.p.005",
+      "sourceHash": "e633f39adc19f81a0f96cfb217a3d94de483053df2877f3c6f6977b27f41d1e8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}适合练手的例子：{{end_strong_1}}一小段冶炼区：一条输入带、一排熔炉和分拣器，再接一条输出带。规模小、实用，也容易重复铺设。"
+    },
+    {
+      "id": "a.blue.li.001",
+      "sourceHash": "ca7ed69982dec0259fd8636958ba896abbd9418451a8968b57eb83cb7a26f0bd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "打开蓝图界面，按 {{key_1}} 进入框选模式。"
+    },
+    {
+      "id": "a.blue.li.002",
+      "sourceHash": "50656a429061446c3c32b6bcb390a74f9d906ff0330cb92b49704f76b63ce3f5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "拖动选框，框住想要保存的支线。"
+    },
+    {
+      "id": "a.blue.li.003",
+      "sourceHash": "0348d8db7e9979bcfbd7b0afdc00bc77e3dcd7a619f41939b89841f35384071f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "逐一点选传送带或建筑，增减选中对象，直到只剩需要复用的部分。"
+    },
+    {
+      "id": "a.blue.h2.002",
+      "sourceHash": "4632da9a7565da5f93af80968e3a4de6474fad2355d5ddd52603c899fbb83a3a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "优先研究"
+    },
+    {
+      "id": "a.blue.p.006",
+      "sourceHash": "ab6b3c8efef7b554ebaeed0af0c486172f04207f081b16a4568c160d22aa6a46",
+      "termHash": "8316e0191e8a74945f75bef8ea48deec2beafb96cb6aaf00060f0f9ef9056a3c",
+      "text": "{{strong_1}}{{tech_1001_1}} {{fact_1}} {{tech_1601_1}} {{fact_2}} {{tech_1401_1}} {{fact_3}} {{tech_1201_1}}{{end_strong_1}}"
+    },
+    {
+      "id": "a.blue.p.007",
+      "sourceHash": "b372ded25c5452a96cafd213ef1f87c0c7a9d4624ead5419dfd34b819b617d24",
+      "termHash": "1071325145cc72c6ad6fd7f935111ccc157600536e8121eb56c3fc58e2bb3f83",
+      "text": "这条开局科技链让工厂具备运输、冶炼和制造的基本能力。随着建筑超市成形，再补上{{tech_2101_1}}和{{tech_2701_1}}。等箱子补货时，也可以研究不消耗矩阵的实用升级：{{tech_2301_1}}让伊卡洛斯能携带更多物资；{{tech_2401_1}}则让建设时不必频繁调整站位。"
+    },
+    {
+      "id": "a.blue.p.008",
+      "sourceHash": "6907e160f29c99a2bc535fb625146dfc364cbfcd4b1457c8e28d3e684445dcc1",
+      "termHash": "130b031933ff77b75c17944f69d8f355f69933cf3005ef3af3a723bfc4701ec4",
+      "text": "接着解锁{{tech_1002_1}}，将蓝糖产线自动化。首批蓝糖优先投入{{tech_1412_1}}；{{item_1006_1}}终于有了稳定用途，电网也能扩容，不必再用{{item_2203_1}}铺满另一片大陆。"
+    },
+    {
+      "id": "a.blue.p.009",
+      "sourceHash": "7b8d2a38bff8be3e08c3102d93a0236ec541dcaf5fc94a3f24152d769283d4fb",
+      "termHash": "67c96d4a67646430f7c2fbc90d157aeb509c77628df0e31aea45c8e42ca9f652",
+      "text": "其余几项便宜的科技——{{tech_1801_1}}、{{tech_1805_1}}、{{tech_1701_1}}、{{tech_1120_1}}和{{tech_1101_1}}——研究很快，能解决眼前问题时就可以点。随后补上{{tech_1402_1}}以生产{{item_1109_1}}，研究{{tech_1806_1}}建立基础防御，再研究{{tech_1411_1}} {{fact_1}} {{tech_1415_1}}，并用{{tech_1602_1}}改善操作便利性。"
+    },
+    {
+      "id": "a.blue.p.010",
+      "sourceHash": "28a97c74522d6538db1948820e19c244466e78f564578c4cdfec370dda14f50d",
+      "termHash": "4f4167d739dbae69159838092d52eaba995456cad14b2d03ada9d1c4b36357a2",
+      "text": "研究移山填海工程后，在超市里增加少量{{item_1131_1}}库存：{{item_1005_1}}制成{{item_1108_1}}，铁块制成{{item_1103_1}}，再将两者送入一台制造台。这条线很简单，补满就停，不需要单独的卡片。{{tech_1403_1}}可以等到红糖阶段；{{tech_1808_1}}则可以等到所需部件已经有其他用途时再研究。"
+    },
+    {
+      "id": "a.blue.h2.003",
+      "sourceHash": "307fe36b8b9c4c93a84b8ff8228247335d4b1cbe3a34628fe9c86d0565f62a57",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 多少才够用"
+    },
+    {
+      "id": "a.blue.p.011",
+      "sourceHash": "12630b74b1c839ab5fd5ed2ba04cc638bb14e77d96be9b097359e2bb1270599b",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "平常建设只需从限量仓储中取出传送带、分拣器、采矿机、熔炉、制造台、仓储和供电设备，而不再临时手搓救急，就说明建筑超市已经就绪。你去忙别的事时，让这些箱子自行补货。"
+    },
+    {
+      "id": "a.blue.p.012",
+      "sourceHash": "d8c15496c66ae2ace3db0155aea1a36282680d9ac623c3407ea25a994c201973",
+      "termHash": "1976feead2b592070acb169c790dbbf32089974ed1a1da2ea516fd373836cb79",
+      "text": "{{strong_1}}{{item_6001_1}}产量达到 {{fact_1}}{{fact_2}}{{end_strong_1}}，就能推动初期科研；做到{{strong_2}}{{fact_3}}{{end_strong_2}}会更从容，值得一步建好。初期供电以大约{{strong_3}}{{fact_4}}{{end_strong_3}}为目标。八座{{item_2204_1}}配合工厂已有的{{item_2203_1}}，在这个阶段很实用。继续用超市产出的设备扩建风电网络：不消耗燃料的基础发电量，能在{{item_1006_1}}运输出问题时给工厂留些余地。"
+    },
+    {
+      "id": "a.blue.h2.004",
+      "sourceHash": "6754d112cf0201237abed2f8d5873a618837d63f510e786c2cb1ded33ada5e9f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "速查 — 必要建设"
+    },
+    {
+      "id": "a.blue.p.013",
+      "sourceHash": "11558df175d9b239286e6f731b540bec48761bea73996a008f1a4276dc9acc55",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}每张卡片都概括一条实用产线，从最初原料一直到目标产品。{{end_strong_1}}想看清全貌时再展开；否则就保持折叠，继续建设。必需的信息不会藏在卡片里。"
+    },
+    {
+      "id": "a.blue.h3.003",
+      "sourceHash": "b485e80532e80868a59f60ed2fe8616781cea7c4b602dbadb485a6ba25c680cd",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "建筑超市与基础自动化"
+    },
+    {
+      "id": "a.blue.div.001",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}展开全部卡片{{end_button_1}}{{button_2}}折叠全部卡片{{end_button_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.summary.001",
+      "sourceHash": "bcab52112a306d60cbc60437bdc3c7cafba60037a4e6f7ca750186fc3527b444",
+      "termHash": "ca6b11647390229f533050fc4bfdceddddc15ec1752be8a13dae25f4f90fde8b",
+      "text": "{{span_1}}建筑超市·物流 — 库存 {{fact_1}} {{item_2001_1}} + {{fact_2}} {{item_2011_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "504eddbcad1e2e956567c27eb9dcf895ccb6678cef05756d8a2ac91dcbb22bec",
+      "text": "{{item_1002_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.h5.001",
+      "sourceHash": "26e0d2294a2d07f8b7bb3b87054c6d0090062e445f993dc62cfbf2ddc4b42bc5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "现在建设"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.003",
+      "sourceHash": "11489d7de6d241a2e7032f5b59969cfa67cc17016acb6ba3800f4da393ceac8b",
+      "termHash": "c13d9e3723de547ed509511f684b39cba30700a1eee894ac8dfddf8a499b2b3f",
+      "text": "{{span_1}}铁块供应{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.004",
+      "sourceHash": "d6a2c6e318a7d9bbb2cee55e0d1bee7abe1671a5ea336e1c5bab1e5a53800f94",
+      "termHash": "003c3b734065d5faf760b648b87e23625f561eed712856269523cd9db0b71cb0",
+      "text": "{{span_1}}铜块供应{{end_span_1}}{{span_2}}{{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.route-bootstrap-gears.li.001",
+      "sourceHash": "307b44ed6ad06cd1e1e735eae4980466519b5810216e4159a0600a9455497add",
+      "termHash": "a83114984d5f6fc54a3afd34945be552e117e5749a3cb11ccea3c806e62dbae1",
+      "text": "{{span_1}}{{item_1201_1}}支线{{end_span_1}}{{span_2}}{{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1201_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.route-bootstrap-circuit-boards.li.001",
+      "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
+      "termHash": "c1f12c86539959478642edcb92dd43993b5b2da4cb341ce1859e8b8e9c20a43e",
+      "text": "{{span_1}}电路板支线{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.h5.002",
+      "sourceHash": "26e0d2294a2d07f8b7bb3b87054c6d0090062e445f993dc62cfbf2ddc4b42bc5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "现在建设"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.005",
+      "sourceHash": "a841bc754611628783d42baba63f84c0bc07b5dca8a0210f68ea56fa7f592dd7",
+      "termHash": "3a55c389bcf2b0fe20ad2c505c6e96c8b0f13ce66e03f63c6906ea1264279059",
+      "text": "{{span_1}}传送带支线{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2001_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.006",
+      "sourceHash": "07bbea92e0cf6579d4372114e9fbb56ab9a7207fed140b7c581522da9b66a666",
+      "termHash": "1128f293e04ec5803659a9f4acec421413fe8c3e97ff1211e6ebdb2d60801aaf",
+      "text": "{{span_1}}分拣器支线{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2011_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.h5.003",
+      "sourceHash": "1f5bc5ef60a704195d5672aebb399be0e66ddf15cefd1fcd4a51c63806913357",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本阶段完整产线"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.007",
+      "sourceHash": "40045eab86a069ca706a4509ef3a573a76c4cae0ff35e5947282fd9585d5c0f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{span_1}}缓冲库存{{end_span_1}}{{span_2}}传送带 · 限量仓储；分拣器 · 限量仓储{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.008",
+      "sourceHash": "a5f1002bca7f3a9a09ca6b2f5893961a591550569d4af17ebb8715dbfdd6fe64",
+      "termHash": "194ae5ef641e3a71ed3256f48e3847a299d6be67fd021338ca01294a487f578a",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2001_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}} 个传送带）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.009",
+      "sourceHash": "b6c3518441e337f8b6e3e6735bdabba41855af5764e3b52c6a13dbd8cf815be6",
+      "termHash": "a8d50622338be0d23b17cae79475208df099dd675d3bbac8469b53470227aa41",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2011_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}} 个分拣器）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "a.card-bootstrap-mall-logistics.li.010",
+      "sourceHash": "d3b82d3c5beb4f56f804898f67b53942781107eaf52635fa5dc6bd10689e361c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "每种成品的限量箱装满后，就让对应产线停下来；共用部件仍可供给超市里的其他产线。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.summary.001",
+      "sourceHash": "33985067452a38b2a31ae5e42cd732625ce7e7f3e715bc6c16fc98ead49f79dd",
+      "termHash": "62daf1b8f49810accce51dea9802c64f13a68753a7cf8d86caf5db4d4259d769",
+      "text": "{{span_1}}建筑超市·生产设备 — 库存 {{fact_1}} {{item_2301_1}} + {{fact_2}} {{item_2302_1}} + {{fact_3}} {{item_2303_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "504eddbcad1e2e956567c27eb9dcf895ccb6678cef05756d8a2ac91dcbb22bec",
+      "text": "{{item_1002_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.003",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "b89457a65b7615b6eca8df047136e35f38bc1a82c0eb2b19fe6830430ab7a9d5",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.004",
+      "sourceHash": "2bc696903a36de991319b522024cd7d2f4beee6ca2b146467325e4a3ba58890f",
+      "termHash": "6439774ea4aaa451eee8d61bb638a10d14746422fb8f04ccd5effc6ff28d174f",
+      "text": "{{item_1201_1}}（详见上方卡片）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.005",
+      "sourceHash": "b10a01c77e44d4a010ef5ef796cd702633a8f32f6318ba53b767277c76b3befd",
+      "termHash": "959d63b638036c281c75654ba2300077ec9ae604372846f969e4a81b59ea7dbf",
+      "text": "{{item_1301_1}}（详见上方卡片）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.h5.001",
+      "sourceHash": "26e0d2294a2d07f8b7bb3b87054c6d0090062e445f993dc62cfbf2ddc4b42bc5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "现在建设"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.006",
+      "sourceHash": "92fd7cae8fb082eca98afb4a9c9c6374cffd5571a17e5f4553bbf0ed4c849c1d",
+      "termHash": "c13d9e3723de547ed509511f684b39cba30700a1eee894ac8dfddf8a499b2b3f",
+      "text": "{{span_1}}铁块冶炼{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.007",
+      "sourceHash": "f95c4b7673eae204ebbb44d9201da377be324cd0a053db61a2d4456dbba1fe51",
+      "termHash": "fac64209b29aa7f8b16799b1ffcce03e014bda3a77e8b8070eda0be23cc8e9cd",
+      "text": "{{span_1}}{{item_1102_1}}冶炼{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1102_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.008",
+      "sourceHash": "d6a2c6e318a7d9bbb2cee55e0d1bee7abe1671a5ea336e1c5bab1e5a53800f94",
+      "termHash": "003c3b734065d5faf760b648b87e23625f561eed712856269523cd9db0b71cb0",
+      "text": "{{span_1}}铜块供应{{end_span_1}}{{span_2}}{{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.009",
+      "sourceHash": "1186e93eb5632ae74b809cec12265e607816f213c3e5c3bfa85b1252d022e598",
+      "termHash": "18d07c3b83acd158981066af58f83f0f7aeaef0cf3bc932cd6a066d88cef120e",
+      "text": "{{span_1}}{{item_1005_1}}供应{{end_span_1}}{{span_2}}{{item_1005_2}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1108_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.h5.002",
+      "sourceHash": "3ed9d73c2e19b94a67050b297b635cf6189799019232a1e25edd700e54fdd1a3",
+      "termHash": "540c68cca01ba560c6a067c72727a90be415a403fb79332b42543b92995ce5e0",
+      "text": "研究后补建：{{tech_1001_1}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.010",
+      "sourceHash": "2216664ef315ca7efbdf09b616edba614d7a682f456b2bfdc0f158a97d36ed77",
+      "termHash": "8f4629d19e9a15a01816056234ee2bd95857139573755cf7552eaa2cde9cf623",
+      "text": "{{span_1}}磁线圈支线{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.011",
+      "sourceHash": "c494aa0fb74d5e86add1228ac90b5dfc0bc8d2bfe3621d35ef46e0a29c14e454",
+      "termHash": "70c07a25b1f9b383f5d366a593178898a421ed46190c40b9ad339772ed66e6a3",
+      "text": "{{span_1}}{{item_2301_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2301_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.012",
+      "sourceHash": "587fe4146716aa06c5b65c335db4c45eea674aa7f55ca819744bc4722bfa3c71",
+      "termHash": "de8655bdb2d53d84fa2c36732dd96985031892b7cf482f2b9cd7a23350fa5e11",
+      "text": "{{span_1}}{{item_2302_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} + {{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2302_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.h5.003",
+      "sourceHash": "1f5bc5ef60a704195d5672aebb399be0e66ddf15cefd1fcd4a51c63806913357",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "本阶段完整产线"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.013",
+      "sourceHash": "88d3433fd5d7d991321de967ee9c0ef28bffb98f6185389acc54521e4125742f",
+      "termHash": "be84379a134925f1733c784e48caec10de5f76461e78e72241671e2ea4a4eb32",
+      "text": "{{span_1}}{{fact_1}} 制造台{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_2}}{{end_span_4}}{{span_5}}由制造台 {{fact_3}} 生产{{end_span_5}}{{end_span_3}} {{item_2303_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.014",
+      "sourceHash": "634e90eb5955cb435074190560ec68ab7df4c680577f50e08ae4c81d1932fc9e",
+      "termHash": "f549a140f0773753f4ad7ba4cd6a38d36ad96706e74d10ca0d861f5c9a0e7168",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2301_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.015",
+      "sourceHash": "0d21320d5224d05b7361586d38ccdbd1239bda557f143f447bd5dfc63f0c95dd",
+      "termHash": "800bf4b3fc49acdb194bdd043d400d47d8b85ccc728c26a96e1a57d13b1acf09",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2302_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.016",
+      "sourceHash": "ab0d2e999dd10bc1c8e7986637846982f7c2f4aaa291a41ca707051c78fa5005",
+      "termHash": "4e076797ab00c5ec9844def1db0c9dd884279764b254125fe476edc5bb25928b",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2303_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "a.card-bootstrap-mall-industry.li.017",
+      "sourceHash": "fa17ea044e0cf6ed71268b89e341b20a50ee464f0dfc086719d1f912b7332fcf",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "把铁矿分给独立的铁块和磁铁熔炉；一座电弧熔炉只能执行选定的一种配方，不能同时产出两种产品。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.summary.001",
+      "sourceHash": "fd3547d969fa4edb11ccb69e2baa2a62a8da18784eb07a05b7cd518e448ea406",
+      "termHash": "4e2871e26ef6c1ca91b8de8050bca2de8a4365e6312c1a358a3f32efe8f348a8",
+      "text": "{{span_1}}建筑超市·仓储 — 库存 {{fact_1}} {{item_2101_1}} + {{fact_2}} {{item_2106_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.002",
+      "sourceHash": "a3aec7949076e63f9ef366e9e6b0daa38292d8c09af5ab093b1003940940589f",
+      "termHash": "b89457a65b7615b6eca8df047136e35f38bc1a82c0eb2b19fe6830430ab7a9d5",
+      "text": "{{item_1005_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.h5.001",
+      "sourceHash": "26e0d2294a2d07f8b7bb3b87054c6d0090062e445f993dc62cfbf2ddc4b42bc5",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "现在建设"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.003",
+      "sourceHash": "11489d7de6d241a2e7032f5b59969cfa67cc17016acb6ba3800f4da393ceac8b",
+      "termHash": "c13d9e3723de547ed509511f684b39cba30700a1eee894ac8dfddf8a499b2b3f",
+      "text": "{{span_1}}铁块供应{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.004",
+      "sourceHash": "aed7cec7e6727cd5d49419ffe0c929ff3da3546dcc41a7acbc09faf8abbd1eee",
+      "termHash": "f3276e1836959f7ccaa6262b22651d535c3140137f483be4b89ac519da9353c0",
+      "text": "{{span_1}}石材支线{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1108_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.005",
+      "sourceHash": "2a2140fbdd9b90fa867301a4117567c1f4fa9b05890522c647edcc11aeb44b95",
+      "termHash": "7d8609e9553a9967ca9204bb9c0a7187df4330dad2b4b9bfd07eb9169207188d",
+      "text": "{{span_1}}固体储存{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2101_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.h5.002",
+      "sourceHash": "dafcc72c75ec2cbcb4b0e7f38a7b00fa7edb336ac6ad94b41c6ba30edeb5a123",
+      "termHash": "171287fa7ac8fc38384f168c33f1c2894177d890356d1e7d8731ad7a31b46b9a",
+      "text": "研究后补建：{{tech_1120_1}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.006",
+      "sourceHash": "6c2f54bef6e744506781776c5ef03813139148654414e1ce3202c7867bcdd289",
+      "termHash": "c7ea157ae7ae8bc756b6567a4ac1ce6ba0a6f4075446f5070e4b203157af9e25",
+      "text": "{{span_1}}{{item_1110_1}}支线{{end_span_1}}{{span_2}}{{item_1005_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1110_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.007",
+      "sourceHash": "67953fc322ab10ddb6166109c6ef6ac6f3d9b69845dc99a4348b2bd984239419",
+      "termHash": "ec79192a65e6990ba1855dacd995cf388f05ee7618a51368c5de0b352f19e498",
+      "text": "{{span_1}}液体储存{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1108_1}} + {{item_1110_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2106_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.008",
+      "sourceHash": "ecb06741c18f42339bfa148551335ce647404ceed626610e62369100c9d9a1c4",
+      "termHash": "9f750d2ac2dccdabd961fee6db7c898ae14d6468ee22c978d4f31be9d0482406",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2101_2}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.009",
+      "sourceHash": "7837afe4d5d715f067e13f7b951816ac49070f902fb0dfe340f87163bdecc609",
+      "termHash": "4e2871e26ef6c1ca91b8de8050bca2de8a4365e6312c1a358a3f32efe8f348a8",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2106_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "a.card-bootstrap-mall-storage.li.010",
+      "sourceHash": "b3b70d4e8713e69712d70ab23ec71f796dc3fca2efebf6f17576ccabff613137",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "储液罐支线可以等科技解锁后再建；小型储物仓（{{fact_1}}）支线则立刻就能派上用场。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.summary.001",
+      "sourceHash": "32e16bf32103f247037e577d57d69919c846f8bbf083b678e8777732572ce5f6",
+      "termHash": "105b9aff00e7cb322c20daf4d05c34f70e3a0cccd28fcb872729c5406c52e193",
+      "text": "{{span_1}}建筑超市·供电 — 库存 {{fact_1}} {{item_2203_1}} + {{fact_2}} {{item_2201_1}} + {{fact_3}} {{item_1128_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{span_4}}分步建设{{end_span_4}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "504eddbcad1e2e956567c27eb9dcf895ccb6678cef05756d8a2ac91dcbb22bec",
+      "text": "{{item_1002_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.003",
+      "sourceHash": "e041a3f3db14df424841b9204d2bbfb3ac006905f5785af7ed66f89870f7a836",
+      "termHash": "06d6eceb3101caac2f6e9ee5c487cc61f7bf4d94ac357f92b312474a043daa16",
+      "text": "{{item_1006_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.004",
+      "sourceHash": "9270bd50710bd3eab6fd96df42c82f4a0929f35484b37c285a1d0888590e81e4",
+      "termHash": "6439774ea4aaa451eee8d61bb638a10d14746422fb8f04ccd5effc6ff28d174f",
+      "text": "{{a_1}}建筑超市·物流部分产出的{{item_1201_1}}{{end_a_1}}。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.h5.001",
+      "sourceHash": "3ed9d73c2e19b94a67050b297b635cf6189799019232a1e25edd700e54fdd1a3",
+      "termHash": "540c68cca01ba560c6a067c72727a90be415a403fb79332b42543b92995ce5e0",
+      "text": "研究后补建：{{tech_1001_1}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.005",
+      "sourceHash": "8223f6f4d204276b0893e86cc17fe92d9a27cef5e2a57383ec975653c05d8f71",
+      "termHash": "3a9839b5cc9bd70d5a615a66a476a6a81fb00276fafc75cf512f6697996bd94a",
+      "text": "{{span_1}}铁块供应{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_1}} + {{item_1102_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.006",
+      "sourceHash": "d6a2c6e318a7d9bbb2cee55e0d1bee7abe1671a5ea336e1c5bab1e5a53800f94",
+      "termHash": "003c3b734065d5faf760b648b87e23625f561eed712856269523cd9db0b71cb0",
+      "text": "{{span_1}}铜块供应{{end_span_1}}{{span_2}}{{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1104_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.route-bootstrap-magnetic-coils.li.001",
+      "sourceHash": "2216664ef315ca7efbdf09b616edba614d7a682f456b2bfdc0f158a97d36ed77",
+      "termHash": "8f4629d19e9a15a01816056234ee2bd95857139573755cf7552eaa2cde9cf623",
+      "text": "{{span_1}}磁线圈支线{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.007",
+      "sourceHash": "d2a03db96c2f40e34686c5f8a01ed7edfb002484f926db61b53729112bf139d6",
+      "termHash": "c15d77985d3f710cb8189540c02c8e857806c8d68c50b73ca472447444bb0431",
+      "text": "{{span_1}}{{item_2203_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2203_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.008",
+      "sourceHash": "28a5d4550516e2e883b4337a9d331175277642b42909be34cf9790b5e4918bac",
+      "termHash": "a6b3e07bf0d2df3f0cf614fe1266d7c83b8f378c055dc1dad6753bcb3c988a7f",
+      "text": "{{span_1}}{{item_2201_1}}{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2201_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.h5.002",
+      "sourceHash": "04af301c933833abe45379730e8e0d8a8d4ec4737a61a44afccde99935519ae4",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "与电网一同建设"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.009",
+      "sourceHash": "231d28abb19cda42dd033306df4283f7ccbd0e7fb432047870b94a3952eab0e1",
+      "termHash": "6a19ce626305f79361306cf4e373dc1cadcbfe1a91d6e43b34fbb0d47fe0a31c",
+      "text": "{{span_1}}机甲燃料{{end_span_1}}{{span_2}}{{item_1006_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1128_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.010",
+      "sourceHash": "e1f7ba6699d849bb1d97c1f23cb31c7c3d023c1df61c09ed0751b8a41a4edd55",
+      "termHash": "4cd38c3916f38f48d1c9a39093f049930571600008577c4454f87da75d94ce67",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2203_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.011",
+      "sourceHash": "bea36cc8bdee5c23c52f9bd575f31d7d7cedae0f471f348a8ed7b298e5ba3160",
+      "termHash": "6a0f8937b7ee020a9a45c874b455210009e5e553fa4bf62682e7802a67aa6625",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_2201_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.012",
+      "sourceHash": "0418c935febd0bcb417c3cab16842a0443e984206c5f567ac368da30bb43eb8b",
+      "termHash": "a15b47da5e1b7e0d9daafa19dd7b51cad44340c3a1d38df532d57038287c880a",
+      "text": "{{span_1}}{{item_2101_1}} — {{item_1128_1}}{{end_span_1}} — 开放 {{span_2}}{{fact_1}} 个储物格{{end_span_2}}（最多 {{fact_2}}）。"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.h4.004",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "a.card-bootstrap-mall-power.li.013",
+      "sourceHash": "c423859a48299ed2cf620313c6a1a17137f87e399ebb0120562e36ab6e50e4b8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "这些超市产线都是补满即停的。箱子满后应停止生产，而不是一直消耗初期工厂共用的资源。"
+    },
+    {
+      "id": "a.blue-science.h3.001",
+      "sourceHash": "f2febf861c16c21facf2ecbf4a577843cf795fee1f477a5f4f3178e810fdc446",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "蓝糖科研自动化"
+    },
+    {
+      "id": "a.blue.div.002",
+      "sourceHash": "377cd32ce086b98c55c4eae74ade10f9f4c0d6a41402091ae84f3768ae254571",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{button_1}}展开全部卡片{{end_button_1}}{{button_2}}折叠全部卡片{{end_button_2}}"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.summary.001",
+      "sourceHash": "0aa02ac2627f3a61111fa5556d4b118c42e28f35e9d94d02913b865530f9d9af",
+      "termHash": "49f13dc1d0f6311d360a8f27dcb8c4c428dfae6ce4f5864685fdce4b504f0ef3",
+      "text": "{{span_1}}{{item_6001_1}} — {{fact_1}}{{end_span_1}}{{span_2}}{{span_3}}必建{{end_span_3}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.h4.001",
+      "sourceHash": "05c0c8032660c2b8a92866e87956bef7be7b97c3225184e1aba03588d9686584",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "原料供应"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.001",
+      "sourceHash": "e422752494cfcd70951bfd0fe2a78a429805f4728343a28ae3f10c010050513d",
+      "termHash": "8857190efc6fa7da667d5f0d3dc62a7b6ba16fc81077e367f3e5b2fa198a746a",
+      "text": "{{item_1001_1}}。"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.002",
+      "sourceHash": "04040e2d69a7c1e445d6939b2ddf0dafc061951914febb88362bb198f0838194",
+      "termHash": "504eddbcad1e2e956567c27eb9dcf895ccb6678cef05756d8a2ac91dcbb22bec",
+      "text": "{{item_1002_1}}。"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.h4.002",
+      "sourceHash": "a12a0417542548dc8e59989f70c494b72d568d839e2a5b45be357b21ed3ee60f",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "生产流程"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.003",
+      "sourceHash": "8360e162ff351cc50eec4fa8c57d0efc40d4ede9a991d31edad2a89d050e655e",
+      "termHash": "8826e55e2748ebd341bf1f9f2bd014860de6f178bbbe9146f4d1ff35b34d3aeb",
+      "text": "{{span_1}}{{item_1101_1}}{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1101_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.004",
+      "sourceHash": "c7fab8edf9d5d6a037e121e994e522ecc01394b2e9819a1e4f894ec00f37f824",
+      "termHash": "fac64209b29aa7f8b16799b1ffcce03e014bda3a77e8b8070eda0be23cc8e9cd",
+      "text": "{{span_1}}{{item_1102_1}}支线{{end_span_1}}{{span_2}}{{item_1001_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1102_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.005",
+      "sourceHash": "c247c9650783ea4422203681306ce3ca669284828e670300cc8664a1984a47ad",
+      "termHash": "ebee4af35866ce0e63925551bad3aa43c9fc30e4dbb05d1e7fa54b088ec72c7b",
+      "text": "{{span_1}}{{item_1104_1}}{{end_span_1}}{{span_2}}{{item_1002_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1104_2}}{{end_span_2}}"
+    },
+    {
+      "id": "a.route-blue-magnetic-coils.li.001",
+      "sourceHash": "2216664ef315ca7efbdf09b616edba614d7a682f456b2bfdc0f158a97d36ed77",
+      "termHash": "8f4629d19e9a15a01816056234ee2bd95857139573755cf7552eaa2cde9cf623",
+      "text": "{{span_1}}磁线圈支线{{end_span_1}}{{span_2}}{{item_1102_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1202_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.route-blue-circuit-boards.li.001",
+      "sourceHash": "15442e4c3f95014b7d3989424e9bede04ea6b64e60a87c7c037b8a50c556de12",
+      "termHash": "c1f12c86539959478642edcb92dd43993b5b2da4cb341ce1859e8b8e9c20a43e",
+      "text": "{{span_1}}电路板支线{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1104_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1301_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.006",
+      "sourceHash": "a8ed4e1f3add1ea3337d37245f0eede4ffcd1cd12cace2bffdf409d96f389a63",
+      "termHash": "91fb3e0dda044e4eea9e3eb9e101400888f601d9864885e9009bd0c879c1f23a",
+      "text": "{{span_1}}矩阵合成{{end_span_1}}{{span_2}}{{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6001_1}}{{end_span_2}}"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.h4.003",
+      "sourceHash": "aeeeee1f11ed75d04a3e61dd544af28bb883c2ff85dcf438c1d2cfa4943d4d94",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "产出去向"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.007",
+      "sourceHash": "8a288c0cf2879ebe6808bb78d11d6f71aed1672f17481ea54a1f566afa91269b",
+      "termHash": "56ff9bec0f9fdd0ef271676defda58547cebd241091a750bd11a2ba90cefc2cd",
+      "text": "{{span_1}}{{item_2901_1}} — {{item_6001_1}}{{end_span_1}} — 持续向科研供应{{span_2}}{{item_6001_2}}，速率为 {{fact_1}}{{fact_2}}{{end_span_2}}；如有需要，可以加上溢出仓储。"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.h4.004",
+      "sourceHash": "684d63cd5e21e221e4b5070a0ea227ba9514235cf9793480f1de9585df39d8f8",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "副产物"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.008",
+      "sourceHash": "1a7eced1ef76cb3faf67a69a40178912d4b1dbdf3be12dd64a7eb84361b11573",
+      "termHash": "165a3ae9bc7336146c439354870eefa74532aa5f0208b64973329d3b01536e5c",
+      "text": "{{item_1202_1}}。"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.009",
+      "sourceHash": "8cf9d96a26c8ab49c10dca3b49a4b76e0e7e7f1fc64b44bd2c995f0d1f2532d7",
+      "termHash": "959d63b638036c281c75654ba2300077ec9ae604372846f969e4a81b59ea7dbf",
+      "text": "{{item_1301_1}}。"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.h4.005",
+      "sourceHash": "927a75163c605c1436c006a34b82ee25e644e23c2438fe01415cd19450116d72",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "操作说明"
+    },
+    {
+      "id": "a.card-blue-blue-cubes.li.010",
+      "sourceHash": "950712abea7b3c81f83b47ed1c8347b3451ca1a19bf644873403541b4b4aab8a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "这条关键产线要贯穿整个流程，持续运行。为矩阵和部件留出充足库存，有助于度过后续矿脉枯竭、改建和临时供给中断。"
+    },
+    {
+      "id": "a.blue.h2.005",
+      "sourceHash": "7ce9f2156812fe9059f76e3ea6e99b2d08df980e3ccbb0935318843bfae8d2f2",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "注意事项"
+    },
+    {
+      "id": "a.blue.p.014",
+      "sourceHash": "b10152bf6ce5a611590dace30626f0a6cc6c0466cc362f6ddbb3f45f70b8b724",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}配方解锁时机。{{end_strong_1}}有些超市支线要等蓝糖启动后才能解锁。先建已能使用的部分，给尚未解锁的机器留出位置，等配方到手再补齐，而不是靠持续手搓来绕过等待。"
+    },
+    {
+      "id": "a.blue.p.015",
+      "sourceHash": "6139cf10febb126833c333c54820ea57531c7891a559a5268ad36e05c408070a",
+      "termHash": "32fca416fc0177ad944638b223d45b7e15daff189779e5241d82aac21ab40fe3",
+      "text": "{{strong_1}}供电波动。{{end_strong_1}}八座{{item_2204_1}}只有在{{item_1006_1}}不断送达时才有用。继续铺设超市生产的{{item_2203_1}}，避免一条燃料带中断就让超市和研究站一起停工。"
+    },
+    {
+      "id": "a.blue.p.016",
+      "sourceHash": "207a2ceec27bc0cf2fedd419636c66664578ea3b7e8693053cad58f19a5e740d",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}巨型超市总线。{{end_strong_1}}与开局就雄心勃勃地建一条庞大总线相比，短小模块更容易投产、排障，也更方便日后替换。"
+    },
+    {
+      "id": "a.blue.p.017",
+      "sourceHash": "b8962c740d1ea649a290909259d779fe35f2c6f92a28ee1729d73077faac4a8c",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{strong_1}}蓝糖规模过大。{{end_strong_1}}蓝糖始终有用，但不必成为星球上第一个巨型工业区。建一条产量宽裕的线，确认供料跟得上，就可以往下走了。"
+    },
+    {
+      "id": "a.blue.h2.006",
+      "sourceHash": "122bea832fd7d26d42ea46449fe9418c4d1941c298417a8d9aedb9637575ec25",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "满足这些条件后，再进入下一阶段"
+    },
+    {
+      "id": "a.blue.li.004",
+      "sourceHash": "0d75276c21f29e5eb12c91e37efcc3e69700f7b10efbb64b048a90839cab9c34",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}铁块、铜块、磁线圈和电路板持续到货。{{end_label_1}}"
+    },
+    {
+      "id": "a.blue.li.005",
+      "sourceHash": "bbf75cf16d05c60130998abb26be2658041de94549f33baf3582699b1ae1b917",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}传送带、分拣器、采矿机、熔炉、制造台、小型储物仓（{{fact_1}}）、储液罐、风力涡轮机和电力感应塔都能自动补货。{{end_label_1}}"
+    },
+    {
+      "id": "a.blue.li.006",
+      "sourceHash": "7b0a05e2c03446b9b75b9dd311ec4818e4dcf7d8e7eb087be3a19eb489743876",
+      "termHash": "49f13dc1d0f6311d360a8f27dcb8c4c428dfae6ce4f5864685fdce4b504f0ef3",
+      "text": "{{label_1}}{{input_1}}{{item_6001_1}}持续生产，产量达到 {{fact_1}} 或更高。{{end_label_1}}"
+    },
+    {
+      "id": "a.blue.li.007",
+      "sourceHash": "04cbe44c90553cd5946eb31c34ce26ba95fd206263bbb297fa6ff165b3645604",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}科研无需手动供料即可持续。{{end_label_1}}"
+    },
+    {
+      "id": "a.blue.li.008",
+      "sourceHash": "a2825db204f940aa306f5b16bcb43bcf88bb2c11bbc43e610e594bebbaec806a",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "{{label_1}}{{input_1}}电网提供约 {{fact_1}}，供建筑超市、蓝糖科研和即将开建的石油工业使用。{{end_label_1}}"
+    },
+    {
+      "id": "a.blue.h2.007",
+      "sourceHash": "6fb6c593859341780912bc435b01538452bb834e9ca8819adc7fb8f6c9f839ec",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "下一步"
+    },
+    {
+      "id": "a.blue.p.018",
+      "sourceHash": "e4b6025ad7b958954cbe227cd49be08a0ee6564c18d6b3854eb77404aa25f033",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "前往{{a_1}}{{img_1}}[红糖]{{end_a_1}}。建设石油工业时，超市可以继续补满各项库存。"
+    },
+    {
+      "id": "a.tech-sheet-title.h2.001",
+      "sourceHash": "5506487ef64b5e45599f8f4f898115004944ca7662811ba2673eb351a8fd3464",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "科技详情"
+    },
+    {
+      "id": "a.tech-sheet.button.001",
+      "sourceHash": "66c88e366ecb8ea4ce185f33485d4f6f32012fbcf130abea2b0aa3b9ca96f731",
+      "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "text": "关闭"
     }
   ]
 }

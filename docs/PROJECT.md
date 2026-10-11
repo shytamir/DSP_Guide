@@ -1,10 +1,9 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-E1 and ML-E2 complete; ML-01–09, ML-M1 and ML-G2 are
-agent-validated. Version 3.1 remains English only, with the localization
-foundation ready for bulk translation. All four ML-E2 stories are committed
-and pushed; ML-09's exact CI ZIP and development deployment passed verification.
-Work stops at the recorded handoff. ML-E3 / ML-10 requires a new instruction.
+**Status:** ML-E1 and ML-E2 complete; ML-E3 is executing through ML-15 under
+the owner's new instruction. Chinese segment A is agent-validated privately.
+Version 3.1 remains English only. Each Chinese story includes validation,
+management updates and a commit/push; work stops with a handoff after ML-15.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
@@ -18,7 +17,8 @@ deferred concepts remain deferred indefinitely in the historical archive.
 
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
-Only English is deployable; the three four-message HTML samples remain private.
+Only English is deployable; Chinese translation is in progress privately.
+German and Japanese still contain only four private HTML samples each.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized
 tooltip/checklist data. The disabled locales cannot deploy until their full
@@ -179,7 +179,7 @@ contract; 320 px is a stress check. Physical devices, branded iOS Safari, OS
 fonts, and assistive technologies have not been certified. Spanish and Russian
 remain excluded.
 
-The roadmap is approved; execution is currently authorized through ML-09.
+The roadmap is approved; execution is currently authorized through ML-15.
 There are no outstanding owner design, language-review, or device-testing
 decisions. Once implementation is instructed, the agent owns review, correction,
 acceptance, and closure, with a management update and commit/push to `main` after

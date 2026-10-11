@@ -56,6 +56,25 @@ catalog justification and target-language review.
 
 ## Reviewed small prose samples
 
+### Chinese edition conventions
+
+Use 建筑超市 for mall, 缓冲库存 for buffer, 支线 for branch, 汇合点 for
+convergence, and 兜底供应 for backstop. Route/color labels are 蓝糖、红糖、
+黄糖、紫糖、绿糖、戴森云、光子、白糖、戴森球、曲速 and 物流.
+Native item links retain official matrix names; prose may use color nicknames.
+The introduction explains this display distinction instead of implying that
+the generated native item labels are color aliases. Expand ILS/PLS as 星际物流运输站 /
+行星内物流运输站 on first relevant use; keep the abbreviations only where useful.
+Transport names remain distinct: 配送运输机、物流运输机、星际物流运输船.
+
+Use Chinese punctuation around protected tokens. Keep source-owned units,
+Mk.I/II/III and expedition I/II/III labels. Preserve the exact English
+`Install with Mod Manager` action beside a Chinese explanation so readers can
+find it on Thunderstore. Product/tool names, the image's quoted English title,
+keyboard keys and the legal credit remain deliberate exceptions. Put the native
+completion technology name in quotation marks when needed to avoid a repeated
+“完成任务完成” phrase. These choices introduce no new gameplay conditions.
+
 Source meaning: Keep the guide open while playing; there is no need to memorize
 it. Production targets are reference points, not permission to ignore shortages.
 

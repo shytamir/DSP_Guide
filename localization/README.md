@@ -121,8 +121,9 @@ for complete synthetic root/prefix switching, no-JS, localized tooltips/status,
 storage denial and fail-closed checks in desktop Chromium and both phone engines.
 An optional final argument (`android`, `iphone`, `desktop`) isolates one profile.
 Use a fresh output directory; fixtures carry `PREVIEW-ONLY.txt` and never deploy.
-Only four messages per language are private tooling samples, not accepted
-translations of segment A. Browser review covered the heading, intro/emphasis,
+German and Japanese each retain four private tooling samples, not accepted
+translations of segment A. Chinese story coverage is tracked in the roadmap.
+The original sample review covered the heading, intro/emphasis,
 and native-name/numeric dashboard example; the German rate example uses a label
 and colon to preserve the official name without an unnatural counted singular.
 All language stories still require translation, semantic comparison, a separate
