@@ -6,6 +6,9 @@ status or authorize work.
 
 ## Archive index
 
+- [`version-3.2-localization-corrections/`](version-3.2-localization-corrections/)
+  preserves completed LC-01–07, full-edition correction evidence, source-based
+  publication repair and the corrected candidate handoff. Publication is pending.
 - [`version-3.2/`](version-3.2/) preserves the completed 28-story phone and
   localization initiative, investigations and exact 3.1/3.2 candidate evidence.
   The 3.2 candidate is agent-validated; production publication remains pending.

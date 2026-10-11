@@ -1,28 +1,23 @@
 # DSP Practical Progression Guide
 
-**Status:** Localization corrections authorized through completion on 2026-10-11.
-LC-E1–E2 / LC-01–06 is agent-validated. LC-07 is correcting a delivery mismatch
-found during candidate validation: generated editions now live in the repository,
-and the existing branch publisher serves them. The competing artifact deployment
-is removed. Exact new CI ZIP/development checks precede the final handoff.
-Story commits are pushed to `main`. Production publication
-remains the owner's action.
+**Status:** Maintenance. LC-01–07 and all three correction epics completed and
+agent-validated on 2026-10-11. The corrected four-language 3.2 candidate has
+passed language, source, package, browser and live development checks. The
+[final handoff](archive/version-3.2-localization-corrections/HANDOFF.md) identifies
+its exact ZIP and validation limits. Production publication remains the owner's
+action; version 3.0 is the last recorded published product, cold-verified on
+2026-08-27.
 
-ML-01–28 and all six original epics remain complete and agent-validated. Their
-four-language 3.2 candidate passed the full local browser matrix, exact CI ZIP
-and development checks. Subsequent review confirmed editorial defects in number
-display, naming and prose; that technical evidence does not establish the
-corrected candidate's readiness. Each translated catalog has 1,537 messages
-and eight UI strings. The historical
-[ML-M5 handoff](archive/version-3.2/ROADMAP.md#ml-m5-handoff--2026-10-11)
-identifies the original package and evidence limits. Production publication
-remains the owner's action. Version 3.0 is the last recorded published product
-and passed final cold verification on 2026-08-27.
+The [original ML-01–28 records](archive/version-3.2/) remain completed history.
+The corrections address confirmed numeric-display, naming, convention and prose
+defects while preserving native game terms and excluding optional polish. Each
+translated catalog has 1,537 messages and eight UI strings. Generated editions
+and locale data are now committed; CI packages verified source bytes, and the
+existing branch publisher is the sole development deployment.
 
-[`ROADMAP.md`](ROADMAP.md) is the sole active correction roadmap: three epics,
-seven bounded stories, with confirmed defects separated from optional polish
-and native terms protected. The owner has authorized the complete implementation sequence.
-The two previously deferred concepts remain deferred indefinitely.
+[`ROADMAP.md`](ROADMAP.md) is the current maintenance-status record. There is no
+active implementation epic. Both previously deferred concepts remain deferred
+indefinitely. Further work requires explicit direction.
 
 ## Purpose
 
@@ -30,8 +25,8 @@ Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
 All four editions are enabled. Chinese, German and Japanese completed the
 original linguistic review, fact checks and private browser matrices; the
-combined candidate passed delivery and shared-behavior validation. The current
-correction roadmap addresses the confirmed gaps in that editorial review.
+combined candidate passed delivery and shared-behavior validation. The completed
+correction sequence resolves the confirmed gaps in that editorial review.
 Narrow main text can wrap long native names and German compounds at 200% text.
 The authoring-only parser and catalogs are not runtime dependencies. Generation
 now supplies staging/CI, locale metadata, complete-edition links, and localized
@@ -172,8 +167,8 @@ constitute production publication.
 
 Structural validation, deployed browser review, owner acceptance, and
 production publication are separate gates. Passing one never implies another.
-For the phone/localization initiative, the owner has explicitly delegated
-acceptance and story closure to the agent under the roadmap's execution policy;
+For the completed phone/localization and correction initiatives, the owner
+explicitly delegated acceptance and story closure to the agent;
 production publication remains separate and owner-controlled.
 Release packages include `LICENSE` and the privacy-sanitized game-asset
 permission record alongside `index.html`, the three locale directories and `assets/`.

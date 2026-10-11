@@ -22,7 +22,7 @@ Production 3.0 retains its previous policy until the owner publishes a candidate
 
 The phone/localization acceptance contract uses mobile Chromium/WebKit emulation,
 per-locale linguistic/factual review and exact candidate package checks. The owner
-delegated acceptance of ML-01–28 to the agent without physical-device,
+delegated acceptance of ML-01–28 and LC-01–07 to the agent without physical-device,
 native-speaker or owner gates. Record emulation and self-review limits without
 presenting them as physical-device or independent reader validation. Publication
 remains separate from candidate acceptance; new work still requires direction.

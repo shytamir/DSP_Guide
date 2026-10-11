@@ -154,6 +154,8 @@ eight UI strings reviewed and agent-validated privately through ML-15, ML-21
 and ML-27 respectively. The [completed implementation record](../docs/archive/version-3.2/ROADMAP.md)
 preserves coverage, corrections and the language handoffs. Its ML-M5 handoff
 records the accepted combined 3.2 candidate and exact package identity.
+The [correction handoff](../docs/archive/version-3.2-localization-corrections/HANDOFF.md)
+supersedes that package and records the source-based publication repair.
 The original sample review covered the heading, intro/emphasis,
 and native-name/numeric dashboard example; the German rate example uses a label
 and colon to preserve the official name without an unnatural counted singular.

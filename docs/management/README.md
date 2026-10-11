@@ -17,8 +17,8 @@ record.
    technical consistency, not reader acceptance.
 4. **Apply the recorded acceptance authority.** The owner normally accepts and
    closes stories. ML-01–28 used a completed, scoped delegation to the agent.
-   LC-01–07 is now authorized through completion with agent validation and
-   closure; production publication remains the owner's action.
+   LC-01–07 also completed under scoped agent validation and closure. Neither
+   delegation authorizes future work; publication remains the owner's action.
 5. **Close the record.** Update current project status at a meaningful
    milestone and move accepted or superseded records to `docs/archive/`.
 
@@ -34,40 +34,24 @@ record.
 
 ## Planning state
 
-Localization correction implementation is active. The sole current record is
-[`../ROADMAP.md`](../ROADMAP.md): LC-E1–E3 / LC-01–07, authorized through completion on 2026-10-11.
-Full-edition checks of the external review's patterns confirmed bounded
-number-display, naming, convention and German-prose corrections. Native game
-terms remain protected; optional polish is excluded. Execute in story order,
-validate and update records, and commit/push each completed story to `main`.
-Record epic handoffs while continuing through the fully authorized sequence.
+Maintenance; no active implementation work. LC-01–07 and all three correction
+epics are complete and agent-validated. The [archived correction records](../archive/version-3.2-localization-corrections/)
+preserve full-edition pattern dispositions, story checks and the source-based
+publication repair. The [final handoff](../archive/version-3.2-localization-corrections/HANDOFF.md)
+identifies the corrected 3.2 ZIP, successful CI/branch deployment, exact live
+bytes, browser checks and evidence limits.
 
-All ML-01–28 stories and six original phone/localization epics remain complete
-and agent-validated under their scoped delegation. Their technical delivery
-evidence remains historical; it does not resolve the newly confirmed editorial
-findings or validate a corrected candidate.
+The [original ML-01–28 records](../archive/version-3.2/) remain completed history.
+Production publication is still the owner's action; version 3.0 is the last
+recorded published product. The current [roadmap](../ROADMAP.md) is a maintenance
+placeholder, and both [deferred concepts](../archive/deferred-indefinitely/) stay
+deferred indefinitely. New work requires explicit direction.
 
-The [completed records](../archive/version-3.2/) preserve investigations and
-execution. The [ML-M5 handoff](../archive/version-3.2/ROADMAP.md#ml-m5-handoff--2026-10-11)
-identifies the four-language 3.2 package, exact CI/development checks and limits.
-Production publication remains the owner's action. The active
-[validation contract](validation-and-tooling.md#phone-and-language-acceptance-contract)
+The [validation contract](validation-and-tooling.md#phone-and-language-acceptance-contract)
 and [localization authoring guide](../../localization/README.md) govern upkeep.
-The roadmap bounds authoring-rule revisions to the associated implementation
-and validation stories. LC-01 now provides German numeric display with exact
-canonical-value checks; LC-02 aligns native labels and German grade notation.
-LC-E1–E2 is agent-validated, including all scoped convention/convergence and
-German grammar corrections. LC-07 now validates the combined candidate and
-records exact CI/package/development evidence before the final handoff. Its
-development check exposed source/artifact drift; the owner directs keeping branch
-publishing. The repair commits generated editions/data, packages verified source
-bytes and removes the competing artifact deployment. Pages settings stay unchanged.
-
-The published version 3.0 sequence is indexed under
-[`../archive/version-3.0/`](../archive/version-3.0/). The two previously named
-unplanned concepts remain deferred indefinitely, with review recommendations
-retained alongside each record, and are indexed under
-[`../archive/deferred-indefinitely/`](../archive/deferred-indefinitely/).
+Keep generated editions/data committed with their inputs; CI rejects stale
+source files and packages the committed publication set. Pages retains branch
+publishing; the package workflow must not deploy a competing artifact.
 
 ## Historical records
 
