@@ -696,19 +696,19 @@
       "id": "a.reference-electromagnetic-turbines.li.007",
       "sourceHash": "dc4e1e7e41845d3dbb297942ae1d39dca2f958925e8c316f62db9c4e31edd1e3",
       "termHash": "5768d635ed328f0c526b606763c04c16c36a34cac9c516f67271dfa8c57e3ee5",
-      "text": "{{span_1}}电动机合成{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1203_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：电动机{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1201_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1203_1}}{{end_span_2}}"
     },
     {
       "id": "a.reference-electromagnetic-turbines.h5.003",
       "sourceHash": "7c3c9631e9dbe95ad9fc00b2dc560e1a4438b1510b4e210b91d061bd38e39b70",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "最终合成"
+      "text": "最终汇合点"
     },
     {
       "id": "a.reference-electromagnetic-turbines.li.008",
       "sourceHash": "b85547ce5fdd29205132420795a0ec24901e223d65f2f775817d7fed0078b064",
       "termHash": "1ba53a8681e7b4e1a7df643dd01f7269d192b5f8834f01234d9cac879cd90a69",
-      "text": "{{span_1}}电磁涡轮合成{{end_span_1}}{{span_2}}{{item_1203_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1204_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：电磁涡轮{{end_span_1}}{{span_2}}{{item_1203_1}} + {{item_1202_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1204_1}}{{end_span_2}}"
     },
     {
       "id": "a.reference-electromagnetic-turbines.h4.003",
@@ -786,7 +786,7 @@
       "id": "a.reference-graphene.li.008",
       "sourceHash": "59cf9025e4098e46fe09c101f6f66440558c43345430543f76bcf5e924503fb9",
       "termHash": "1fbbdf55c9cde5d4530a0b3950022750a14020b49f89a6b61b763ca0eed57d7a",
-      "text": "{{span_1}}{{item_1123_1}}合成{{end_span_1}}{{span_2}}{{item_1116_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由化工厂生产{{end_span_5}}{{end_span_3}} {{item_1123_2}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：{{item_1123_1}}{{end_span_1}}{{span_2}}{{item_1116_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由化工厂生产{{end_span_5}}{{end_span_3}} {{item_1123_2}}{{end_span_2}}"
     },
     {
       "id": "a.reference-graphene.h4.003",
@@ -2226,7 +2226,7 @@
       "id": "a.card-blue-blue-cubes.li.006",
       "sourceHash": "a8ed4e1f3add1ea3337d37245f0eede4ffcd1cd12cace2bffdf409d96f389a63",
       "termHash": "91fb3e0dda044e4eea9e3eb9e101400888f601d9864885e9009bd0c879c1f23a",
-      "text": "{{span_1}}矩阵合成{{end_span_1}}{{span_2}}{{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6001_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：矩阵生产{{end_span_1}}{{span_2}}{{item_1202_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6001_1}}{{end_span_2}}"
     },
     {
       "id": "a.card-blue-blue-cubes.h4.003",
@@ -2514,7 +2514,7 @@
       "id": "b.red.p.006",
       "sourceHash": "f52ddd9900e06ab460bfd4326cb0873601887ff9d3e6164b6cb66d01ce80d496",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "如果蓝糖阶段已研究完这些便宜的前置科技，红糖阶段就很直接：建好石墨和石油支线，解锁最终合成配方，让研究站开工。"
+      "text": "如果蓝糖阶段已研究完这些便宜的前置科技，红糖阶段就很直接：建好石墨和石油支线，解锁让两条支线在汇合点合成矩阵的配方，让研究站开工。"
     },
     {
       "id": "b.red.p.007",
@@ -2604,7 +2604,7 @@
       "id": "b.card-red-red-cubes.li.005",
       "sourceHash": "d421447d9ed3cedf4cddfc5c1accf5faa81a14103bbc2b6b49501f4c2e6bcfb3",
       "termHash": "0ae314d21393468920dc0d77ce4becb6728f2855a198195d8704016800208d3a",
-      "text": "{{span_1}}矩阵合成{{end_span_1}}{{span_2}}{{item_1120_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6002_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：矩阵生产{{end_span_1}}{{span_2}}{{item_1120_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6002_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-red-cubes.h4.003",
@@ -2760,7 +2760,7 @@
       "id": "b.card-red-security-mall.li.015",
       "sourceHash": "43688dc73886538cb286167392c05c4705992c128910c272ad3ecb6b1cb14f76",
       "termHash": "5813e5fe793aa34f963cef1c1cfd81111d6172cbef958781650a31da1871736b",
-      "text": "{{span_1}}无线输电塔合成{{end_span_1}}{{span_2}}{{item_2201_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2202_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：无线输电塔{{end_span_1}}{{span_2}}{{item_2201_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2202_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.h5.003",
@@ -2772,19 +2772,19 @@
       "id": "b.card-red-security-mall.li.016",
       "sourceHash": "34dbec8683d39f7723de9e7e6f72dd16aae4fe1031c4f374745a1096eed62d3c",
       "termHash": "e10e88103b5508d34b524acfc8ff913b4a494f895ae4dabda38103610b56f699",
-      "text": "{{span_1}}导弹防御塔合成{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1203_1}} + {{item_1301_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_3005_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：导弹防御塔{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1203_1}} + {{item_1301_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_3005_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.017",
       "sourceHash": "79b94287e9e88ab020a03cb4028f44596b6271c20d78058d6d80783c7a04a8b3",
       "termHash": "4db486a369d6419466ac70a56c29733d3f9fccfeb4566392cbb8b19ea746985d",
-      "text": "{{span_1}}导弹组合成{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1301_1}} + {{item_1128_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1609_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：导弹组{{end_span_1}}{{span_2}}{{item_1104_1}} + {{item_1301_1}} + {{item_1128_1}} + {{item_1407_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1609_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.li.018",
       "sourceHash": "a7fa289295dcc7490f7f1a69e6c9ad376503e18427497ef7e87576d798860a4c",
       "termHash": "fafa81cb7d28b76607299787f35f68308cf2d408486b159740f6d86ad7654e54",
-      "text": "{{span_1}}信号塔合成{{end_span_1}}{{span_2}}{{item_2202_1}} + {{item_1103_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_3007_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：信号塔{{end_span_1}}{{span_2}}{{item_2202_1}} + {{item_1103_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_3007_1}}{{end_span_2}}"
     },
     {
       "id": "b.card-red-security-mall.h4.003",
@@ -3576,7 +3576,7 @@
       "id": "b.ils.li.018",
       "sourceHash": "bf1562fcec31e82e2223fe509e3184c81379170333c1433ae786ed5120a7f420",
       "termHash": "a63e87bd9c8533e87adfd761bce274db1d2655b21bd341de589cfe5f456ab778",
-      "text": "{{span_1}}{{item_1303_1}}合成{{end_span_1}}{{span_2}}{{item_1302_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：{{item_1303_1}}{{end_span_1}}{{span_2}}{{item_1302_1}} + {{item_1301_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
     },
     {
       "id": "b.ils.h5.002",
@@ -3612,7 +3612,7 @@
       "id": "b.ils.li.022",
       "sourceHash": "4076b5c669afdf90e059aa82517e1ccf5ea8054a9ebf48e9ac579fd639570d88",
       "termHash": "6ab5751acaf2083db8e03ea0bd4201c4cfa239650ce615e90567db052f964549",
-      "text": "{{span_1}}钛合金合成{{end_span_1}}{{span_2}}{{item_1106_1}} + {{item_1103_1}} + {{item_1116_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1107_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：钛合金{{end_span_1}}{{span_2}}{{item_1106_1}} + {{item_1103_1}} + {{item_1116_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由电弧熔炉生产{{end_span_5}}{{end_span_3}} {{item_1107_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.h5.004",
@@ -3624,7 +3624,7 @@
       "id": "b.ils.li.023",
       "sourceHash": "c02f5ef21232a983668d1396db0e6265a42821ed4a1975b6c6e9ba1deb6409c6",
       "termHash": "62734c533d62aff9f347ec63b9d3baf202fda042eb4802aef4a7d5886746602e",
-      "text": "{{span_1}}行星内物流运输站合成{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：行星内物流运输站{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.024",
@@ -3636,13 +3636,13 @@
       "id": "b.ils.li.025",
       "sourceHash": "2491e822b8ddd246f94ed02224bf017b9c219837ea2c449b7930430f279a2da0",
       "termHash": "1987794d91cda8ffa3be1f54fad7876b87e3aa5b1c9eab5218e010ce954db776",
-      "text": "{{span_1}}星际物流运输站合成{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：星际物流运输站{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.026",
       "sourceHash": "dc03258c1de18cf434e028fac8f15fa5e1d7e6eb2e0d86ae11676f0ace87b2a0",
       "termHash": "8af24086488eea6fb9036c799e2c07dd92ad2463bf59f333ef9fefff258bc258",
-      "text": "{{span_1}}星际物流运输船合成{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：星际物流运输船{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
     },
     {
       "id": "b.ils.li.027",
@@ -4038,13 +4038,13 @@
       "id": "c.card-yellow-yellow-cubes.h5.003",
       "sourceHash": "6e79ff12d5026b76fdacce60b4c32aac87f3a782843fc8dc06a3c001a422d026",
       "termHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "text": "最终合成"
+      "text": "最终汇合点"
     },
     {
       "id": "c.card-yellow-yellow-cubes.li.009",
       "sourceHash": "17a332f406fd5172feaa898f7b020fb5d43b6867ea36379c7b2a9e35037bb5c2",
       "termHash": "68295f8fafc549ebbf056854ad8feed2e0c3a2ba3f05b6f7f103b7daf0e6e241",
-      "text": "{{span_1}}矩阵合成{{end_span_1}}{{span_2}}{{item_1118_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6003_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：矩阵生产{{end_span_1}}{{span_2}}{{item_1118_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由矩阵研究站生产{{end_span_5}}{{end_span_3}} {{item_6003_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-yellow-yellow-cubes.h4.003",
@@ -4404,7 +4404,7 @@
       "id": "c.card-purple-processors.li.007",
       "sourceHash": "4515fb5c937735916583ba6d9ca16687601f1741f02d57da588502e86aa1b8ac",
       "termHash": "4737848072496ce706beec1ff6c324bcc69f72cb67e97549ff49f4d48401311b",
-      "text": "{{span_1}}{{item_1303_1}}合成{{end_span_1}}{{span_2}}{{item_1301_1}} + {{item_1302_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：{{item_1303_1}}{{end_span_1}}{{span_2}}{{item_1301_1}} + {{item_1302_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1303_2}}{{end_span_2}}"
     },
     {
       "id": "c.card-purple-processors.h4.003",
@@ -4488,7 +4488,7 @@
       "id": "c.card-purple-particle-broadband.li.006",
       "sourceHash": "e01c2e96ab21099af6ca62adba5ff730b1b59e7b2793a6bc3a162f60b2a20203",
       "termHash": "f11bc69e744cb59823815be4ed78f9aed683b2fac710b80d49c2bf604f6a887b",
-      "text": "{{span_1}}粒子宽带合成{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1115_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1402_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：粒子宽带{{end_span_1}}{{span_2}}{{item_1124_1}} + {{item_1115_1}} + {{item_1113_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1402_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-purple-particle-broadband.h4.003",
@@ -5052,7 +5052,7 @@
       "id": "c.card-green-quantum-chips.li.011",
       "sourceHash": "8d9cb74bde3fa0da87663cfde13d750c3e94eaa945969d85a237d410f9831577",
       "termHash": "b810f2b677976c6b1186398e25cc95377d0a022257673c6e836d93d3d2b1f0c0",
-      "text": "{{span_1}}位面过滤器合成{{end_span_1}}{{span_2}}{{item_1126_1}} + {{item_1119_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1304_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：位面过滤器{{end_span_1}}{{span_2}}{{item_1126_1}} + {{item_1119_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1304_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-quantum-chips.h5.003",
@@ -5064,7 +5064,7 @@
       "id": "c.card-green-quantum-chips.li.012",
       "sourceHash": "a2bd78292b75218ea5af52f7ad0c49ecec8a5ca2bf6cf13ab864e348d1e50ea1",
       "termHash": "79c080cafc389a2386322063fec70e0e1c7dad4ad8150d42c33cba2d47664a0b",
-      "text": "{{span_1}}最终合成{{end_span_1}}{{span_2}}{{item_1304_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1305_1}}{{end_span_2}}"
+      "text": "{{span_1}}最终汇合点{{end_span_1}}{{span_2}}{{item_1304_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1305_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-quantum-chips.h4.003",
@@ -5166,7 +5166,7 @@
       "id": "c.card-green-graviton-lenses.li.007",
       "sourceHash": "8c3e4127553ec431dc48282ce6b2be81328e42b11a663194fe6c77216b2bed71",
       "termHash": "2bb80736e215fb615fbcb5801cb690efddc0f27fa2bc437c98d4650c35d144dc",
-      "text": "{{span_1}}初次合成{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1206_1}} + {{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由微型粒子对撞机生产{{end_span_5}}{{end_span_3}} {{item_1127_1}}{{end_span_2}}"
+      "text": "{{span_1}}首个汇合点{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1206_1}} + {{item_1101_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由微型粒子对撞机生产{{end_span_5}}{{end_span_3}} {{item_1127_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-graviton-lenses.li.008",
@@ -5178,7 +5178,7 @@
       "id": "c.card-green-graviton-lenses.li.009",
       "sourceHash": "796dd5154428c12814f1e74b18cfd1ec1c042de6bbba09e022940429730727fb",
       "termHash": "97035cbd958225e5ff5839e90cc71de94f62d9ac74db50f7af0dc28b2e6671a6",
-      "text": "{{span_1}}最终合成{{end_span_1}}{{span_2}}{{item_1127_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1209_1}}{{end_span_2}}"
+      "text": "{{span_1}}最终汇合点{{end_span_1}}{{span_2}}{{item_1127_1}} + {{item_1112_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1209_1}}{{end_span_2}}"
     },
     {
       "id": "c.card-green-graviton-lenses.h4.003",
@@ -5490,7 +5490,7 @@
       "id": "d.card-dyson-solar-sails.li.006",
       "sourceHash": "3730b7dc6bbd69b0a22629547add46dc3844f4469008bce2c8844d9b0af386cc",
       "termHash": "612da6fcb2f8b8000193167949d57db386c3394676a4a96a18b5cf4c7a76255b",
-      "text": "{{span_1}}太阳帆合成{{end_span_1}}{{span_2}}{{item_1404_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1501_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：太阳帆{{end_span_1}}{{span_2}}{{item_1404_1}} + {{item_1123_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1501_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-solar-sails.h5.002",
@@ -5610,7 +5610,7 @@
       "id": "d.card-dyson-em-rail-ejectors.li.009",
       "sourceHash": "58cf864e177dc67419d36700af0c376d27ed5726c2346501c0720f4a6d623963",
       "termHash": "93ab20876ebea2edf6708481aebb28d7a2afecd5333e4e9ad64a284f2dcffe2c",
-      "text": "{{span_1}}电磁轨道弹射器合成{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1201_1}} + {{item_1303_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2311_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：电磁轨道弹射器{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1201_1}} + {{item_1303_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2311_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-dyson-em-rail-ejectors.h4.003",
@@ -6468,7 +6468,7 @@
       "id": "d.card-sphere-dyson-components.li.007",
       "sourceHash": "7ef4c34bd7fef734efc1d5e94a66158bd17f42ee5b2cb95072cb726f79ef550f",
       "termHash": "bb99e93352530802b0c6d628ecab1cfa962a868b6f8a5cc9c717d05c9094cf64",
-      "text": "{{span_1}}戴森球组件合成{{end_span_1}}{{span_2}}{{item_1125_1}} + {{item_1501_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1502_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：戴森球组件{{end_span_1}}{{span_2}}{{item_1125_1}} + {{item_1501_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1502_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-sphere-dyson-components.h4.003",
@@ -6558,13 +6558,13 @@
       "id": "d.card-sphere-deuteron-fuel-rods.li.008",
       "sourceHash": "b49b505589c902d23f5442673713253868dcb6e7769e39140c269c6b78f007ab",
       "termHash": "6d5945eb58d762f80e27c4348f869dd0928125561e28a58dfd68f655521c42e5",
-      "text": "{{span_1}}超级磁场环合成{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：超级磁场环{{end_span_1}}{{span_2}}{{item_1204_1}} + {{item_1102_1}} + {{item_1109_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1205_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-sphere-deuteron-fuel-rods.li.009",
       "sourceHash": "fb3130e02f900774a375d3be936b430d45470de80f25494cdaa4fcceae0efe23",
       "termHash": "1e07fa67b7aaae3f0fcfaeede79d2ac827a6f92e0548f68804926cd1217c2708",
-      "text": "{{span_1}}氘核燃料棒合成{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1802_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：氘核燃料棒{{end_span_1}}{{span_2}}{{item_1121_1}} + {{item_1107_1}} + {{item_1205_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_1802_1}}{{end_span_2}}"
     },
     {
       "id": "d.card-sphere-deuteron-fuel-rods.h4.003",
@@ -7692,7 +7692,7 @@
       "id": "e.card-logistics-distribution-kit.li.008",
       "sourceHash": "155e985edc4b7ece956f133f086b88c39083c226d69c7b20ad5e7165f3467a26",
       "termHash": "be02b3e60bcafedf71375f73b9d058261505d3732b4e11b33db8abec53a4337f",
-      "text": "{{span_1}}物流配送器合成{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2107_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：物流配送器{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1401_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2107_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-distribution-kit.li.009",
@@ -7704,7 +7704,7 @@
       "id": "e.card-logistics-distribution-kit.li.010",
       "sourceHash": "20b9f466671782642d98b7be38d10fc155bda23ab77e0cf2412e11af8e3e9c30",
       "termHash": "e9ddebfe9ab3fcb309516e55162c1bbf640a9ed9ae825494c2f6a6a2e4ccddee",
-      "text": "{{span_1}}配送运输机合成{{end_span_1}}{{span_2}}{{item_1407_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5003_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：配送运输机{{end_span_1}}{{span_2}}{{item_1407_1}} + {{item_1303_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5003_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-distribution-kit.h4.003",
@@ -7794,7 +7794,7 @@
       "id": "e.card-logistics-planetary-kit.li.007",
       "sourceHash": "1e87d7cecf20b49b1e73f5c34b32bb4bb50241e0c65b028785be69b59dbb764f",
       "termHash": "62734c533d62aff9f347ec63b9d3baf202fda042eb4802aef4a7d5886746602e",
-      "text": "{{span_1}}行星内物流运输站合成{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：行星内物流运输站{{end_span_1}}{{span_2}}{{item_1103_1}} + {{item_1106_1}} + {{item_1303_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2103_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-planetary-kit.li.008",
@@ -7806,7 +7806,7 @@
       "id": "e.card-logistics-planetary-kit.li.009",
       "sourceHash": "b859e031fc5bfaa1c1554115652a5708016222aaf92257abe3e84dcc71130abb",
       "termHash": "99af590d32ef30281b7c079842af808a2d4f9d202c207027821f2cebb212aa5d",
-      "text": "{{span_1}}物流运输机合成{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1405_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5001_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：物流运输机{{end_span_1}}{{span_2}}{{item_1101_1}} + {{item_1303_1}} + {{item_1405_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5001_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-planetary-kit.h4.003",
@@ -7890,7 +7890,7 @@
       "id": "e.card-logistics-interstellar-kit.li.006",
       "sourceHash": "e1d20feb2cb7f6adc627beff5fcdc1752816ea1493785876514e859eb2e96426",
       "termHash": "1987794d91cda8ffa3be1f54fad7876b87e3aa5b1c9eab5218e010ce954db776",
-      "text": "{{span_1}}星际物流运输站合成{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：星际物流运输站{{end_span_1}}{{span_2}}{{item_2103_1}} + {{item_1107_1}} + {{item_1206_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_2104_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-interstellar-kit.li.007",
@@ -7902,7 +7902,7 @@
       "id": "e.card-logistics-interstellar-kit.li.008",
       "sourceHash": "dc03258c1de18cf434e028fac8f15fa5e1d7e6eb2e0d86ae11676f0ace87b2a0",
       "termHash": "8af24086488eea6fb9036c799e2c07dd92ad2463bf59f333ef9fefff258bc258",
-      "text": "{{span_1}}星际物流运输船合成{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
+      "text": "{{span_1}}汇合点：星际物流运输船{{end_span_1}}{{span_2}}{{item_1107_1}} + {{item_1303_1}} + {{item_1406_1}} {{span_3}}{{img_1}}{{span_4}}{{fact_1}}{{end_span_4}}{{span_5}}由制造台 {{fact_2}} 生产{{end_span_5}}{{end_span_3}} {{item_5002_1}}{{end_span_2}}"
     },
     {
       "id": "e.card-logistics-interstellar-kit.h4.003",

@@ -57,6 +57,11 @@ game-native Latin strings, external destination titles, and legal originals are
 the only general English exceptions. Any further exception needs an explicit
 catalog justification and target-language review.
 
+Production-map convergence labels explicitly reuse 汇合点, 合流工程 or
+Zusammenführung, followed by a short output/process description. Keep real
+processes such as smelting distinct. Natural explanatory verbs may express the
+same meeting of branches without repeating a glossary noun in every sentence.
+
 ## Reviewed small prose samples
 
 ### Chinese edition conventions
