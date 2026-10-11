@@ -46,8 +46,12 @@ cannot inject HTML or executable attributes.
 
 ## Working with catalogs
 
-`source.json` inventories 1,536 annotated HTML messages and attributes:
-A 392, B 227, C 257, D 228, E 250, F 182. Dynamic UI is integrated in ML-09.
+`source.json` inventories 1,537 annotated HTML messages and attributes:
+A 393, B 227, C 257, D 228, E 250, F 182. The eight dynamic UI strings in
+`assets/data/locales/en/ui.json` and `ui/<locale>.json` also belong to segment A.
+UI catalogs carry the reviewed hash of the English strings. All eight are
+translated and self-reviewed; the language story must reconcile them with its
+terminology and complete HTML controls.
 The source remains readable English HTML. Add stable `data-i18n` IDs when adding
 text and `data-i18n-attrs` IDs for translated attributes; do not nest text-message
 annotations. Run `node scripts/localization-source.mjs --write` after a reviewed
@@ -63,7 +67,12 @@ used by that message, including their provenance.
 `{{strong_1}}…{{end_strong_1}}` and similar paired placeholders preserve inline
 markup. Move the whole pair for grammar; nesting must remain valid. Atomic
 `{{item_1106_1}}` / `{{tech_2203_1}}` placeholders render official names and keep
-their original elements, IDs and icons. `{{fact_1}}` retains the exact numeric
+their original elements, IDs and icons. A technology placeholder's `rankInside`
+flag says whether the English button already includes its rank. If false, the
+placeholder emits only the native base name: translate an adjacent `Lv` label
+using the locale's rank pattern and keep its separate fact token. Never append
+a second rank. A rendered-number comparison checks every message.
+`{{fact_1}}` retains the exact numeric
 value, rate, unit or technical symbol shown in `source.json`. Keyboard commands
 are atomic objects too. Every placeholder must occur exactly once. Catalogs
 contain plain text, not HTML; quotes and ampersands are serialized safely.
@@ -85,7 +94,33 @@ node scripts/build-site.mjs artifacts/preview-ja --preview ja --segment A
 Serve the preview folder and open `/ja/`. It intentionally mixes translated
 samples with English, contains `PREVIEW-ONLY.txt` and noindex metadata, and fails
 the release allowlist. Never package it. Ordinary release generation currently
-emits English only. ML-09 connects it to delivery and complete-locale switching.
+emits English only. `manifest.json` fixes the four URL paths/autonyms and keeps
+the three target locales disabled. Enabling a locale requires all HTML messages,
+current UI strings and native names; the build fails before writing an incomplete
+edition. ML-28 owns public activation. Complete synthetic catalogs are constructed
+only by test helpers and cannot be selected by the build CLI.
+
+The generated selector links each complete edition, retaining the current hash
+with a small enhancement. No-JS links still navigate. URLs/assets remain relative
+to the edition, so the site also works under a path prefix. No preference is
+stored and no redirect occurs. Shared localStorage identity is unchanged.
+Localized tooltip data changes only display names/labels; ID/order/rank and
+prerequisite/unlock facts are compared against the English data. Missing locale
+UI prevents dependent behavior rather than requesting English fallback data.
+
+`manifest.json` supplies the default production canonical base. Pass
+`--base-url https://host/prefix/` to generation when changing that base, and pass
+the same URL as the final argument to both output validators. The development
+Pages deployment intentionally keeps production canonical metadata; relative
+navigation/assets work under `/DSP_Guide/`. Only enabled locales appear in
+selectors and alternate metadata. CI installs the exact lockfile, generates,
+validates, packages, extracts and validates again.
+
+Run `node scripts/validate-localization-browser.mjs artifacts/localization/check`
+for complete synthetic root/prefix switching, no-JS, localized tooltips/status,
+storage denial and fail-closed checks in desktop Chromium and both phone engines.
+An optional final argument (`android`, `iphone`, `desktop`) isolates one profile.
+Use a fresh output directory; fixtures carry `PREVIEW-ONLY.txt` and never deploy.
 Only four messages per language are private tooling samples, not accepted
 translations of segment A. Browser review covered the heading, intro/emphasis,
 and native-name/numeric dashboard example; the German rate example uses a label

@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import assert from "node:assert/strict";
 import { parse, serialize, serializeOuter } from "parse5";
-import { sha256, readJson, qualifiedName } from "./terminology.mjs";
+import { sha256, readJson, qualifiedName, nativeBase } from "./terminology.mjs";
 
 export { parse, serialize };
 export const walk = (node) => [node, ...(node.childNodes || []).flatMap(walk)];
@@ -56,6 +56,7 @@ export function message(node, attribute) {
       return token(`${item ? "item" : "tech"}_${item || tech}`, {
         kind: "term",
         term: `${item ? "item" : "tech"}:${item || tech}`,
+        ...(tech ? { rankInside: /\bLv\d+\b/.test(text(child)) } : {}),
         node: child,
       });
     if (child.tagName === "kbd")
@@ -205,7 +206,11 @@ export function renderMessage(msg, value, terms, locale) {
       if (object.kind === "term") {
         assert.ok(terms[object.term], `Missing native name ${object.term}`);
         node.childNodes = node.childNodes.filter((n) => n.tagName === "img");
-        node.childNodes.push(txt(qualifiedName(terms[object.term], locale)));
+        const record = terms[object.term];
+        const name = object.rankInside
+          ? qualifiedName(record, locale)
+          : nativeBase(record.native, record.level);
+        node.childNodes.push(txt(name));
         for (const child of node.childNodes) child.parentNode = node;
       }
       if (object.kind === "open") node.childNodes = [];
@@ -218,6 +223,12 @@ export function renderMessage(msg, value, terms, locale) {
     used.size,
     Object.keys(msg.objects).length,
     `${msg.id}: missing placeholder`,
+  );
+  const numbers = (value) => (value.match(/\d+(?:[.,]\d+)*/g) || []).sort();
+  assert.deepEqual(
+    numbers(text(root)),
+    numbers(msg.attribute ? attr(msg.node, msg.attribute) : text(msg.node)),
+    `${msg.id}: rendered numerical facts differ`,
   );
   return root.childNodes;
 }
@@ -232,7 +243,16 @@ export function sourceInventory(document) {
       placeholders: Object.fromEntries(
         Object.entries(objects).map(([key, o]) => [
           key,
-          o.term || (o.kind === "fact" ? o.value : o.kind),
+          o.term
+            ? {
+                term: o.term,
+                ...(o.rankInside !== undefined
+                  ? { rankInside: o.rankInside }
+                  : {}),
+              }
+            : o.kind === "fact"
+              ? o.value
+              : o.kind,
         ]),
       ),
     }),

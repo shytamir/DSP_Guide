@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "locale": "ja",
+  "sourceHash": "c0d08e21968c302df505e713f31e457fe5a03a75f45fcbaef85890ba8bde4674",
+  "strings": {
+    "saved": "チェックリストの進捗は、このブラウザーにのみ保存されます。",
+    "unavailable": "ローカル保存を利用できません。チェックはこのページを開いている間だけ保持されます。",
+    "reset": "チェックリストの進捗をリセットしました。",
+    "resetUnavailable": "このページのチェックを解除しました。ローカル保存は利用できません。",
+    "required": "前提技術",
+    "implicit": "暗黙の前提技術",
+    "unlocks": "解放",
+    "rank": "レベル {n}"
+  }
+}

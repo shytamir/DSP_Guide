@@ -1,5 +1,6 @@
 (() => {
   function displayName(technology) {
+    if (technology?.displayName) return technology.displayName;
     const name = technology && technology.name;
     const level = technology && technology.level;
     if (!name || !Number.isInteger(level) || level < 1) return name || "";
@@ -9,18 +10,20 @@
   window.DspTechnologyLabels = Object.freeze({ displayName });
 
   const scriptUrl = document.currentScript && document.currentScript.src;
+  const locale = document.documentElement?.lang || "en";
+  const dataPath = locale === "en" ? "../data/" : `../data/locales/${locale}/`;
   const dataUrl = new URL(
-    "../data/tech-reference.json",
+    `${dataPath}tech-reference.json`,
     scriptUrl || document.baseURI,
   );
   const detailsUrl = new URL(
-    "../data/tech-tooltip-details.json",
+    `${dataPath}tech-tooltip-details.json`,
     scriptUrl || document.baseURI,
   );
   const tip = document.getElementById("tech-tooltip");
   if (!tip) return;
 
-  function attachTooltips(techData, tooltipDetails) {
+  function attachTooltips(techData, tooltipDetails, ui) {
     let active = null;
     let pinned = false;
     let restoringFocus = false;
@@ -66,21 +69,21 @@
       };
 
       addLine(
-        "Required",
+        ui.required,
         data.required &&
           data.required.map((value) =>
             displayName(techData[value.id] || value),
           ),
       );
       addLine(
-        "Implicit",
+        ui.implicit,
         data.implicitRequired &&
           data.implicitRequired.map((value) =>
             displayName(techData[value.id] || value),
           ),
       );
       addLine(
-        "Unlocks",
+        ui.unlocks,
         details.unlocks && details.unlocks.map((value) => value.label),
       );
       return true;
@@ -215,18 +218,20 @@
   }
 
   Promise.all(
-    [dataUrl, detailsUrl].map((url) =>
-      fetch(url).then((response) => {
-        if (!response.ok)
-          throw new Error(
-            `Technology data request failed with status ${response.status}.`,
-          );
-        return response.json();
-      }),
-    ),
+    [dataUrl, detailsUrl]
+      .map((url) =>
+        fetch(url).then((response) => {
+          if (!response.ok)
+            throw new Error(
+              `Technology data request failed with status ${response.status}.`,
+            );
+          return response.json();
+        }),
+      )
+      .concat(window.DspLocale.ready),
   )
-    .then(([techData, tooltipDetails]) =>
-      attachTooltips(techData, tooltipDetails),
+    .then(([techData, tooltipDetails, ui]) =>
+      attachTooltips(techData, tooltipDetails, ui),
     )
     .catch((error) =>
       console.error("Technology reference data could not be loaded.", error),

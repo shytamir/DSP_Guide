@@ -1,6 +1,10 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import vm from "node:vm";
+const ui = JSON.parse(
+  fs.readFileSync("assets/data/locales/en/ui.json", "utf8"),
+).strings;
+const window = { DspLocale: { ready: Promise.resolve(ui) } };
 import {
   findElementsByClass,
   stripMarkup,
@@ -81,7 +85,8 @@ const document = {
   },
 };
 
-vm.runInNewContext(fs.readFileSync("assets/js/checklists.js", "utf8"), {
+await vm.runInNewContext(fs.readFileSync("assets/js/checklists.js", "utf8"), {
+  window,
   document,
   localStorage,
 });
@@ -185,7 +190,8 @@ const unavailableStorage = {
     throw new Error("blocked");
   },
 };
-vm.runInNewContext(fs.readFileSync("assets/js/checklists.js", "utf8"), {
+await vm.runInNewContext(fs.readFileSync("assets/js/checklists.js", "utf8"), {
+  window,
   document: {
     getElementById(id) {
       if (id === "reset-checklist-progress") return unavailableReset;
@@ -250,7 +256,8 @@ for (const scenario of ["legacy", "aliases", "corrupt", "array", "null"]) {
     { corrupt: "{broken", array: "[]", null: "null" }[scenario] ||
       JSON.stringify(Object.fromEntries(entries)),
   );
-  vm.runInNewContext(script, {
+  await vm.runInNewContext(script, {
+    window,
     document: { ...document, querySelectorAll: () => boxes },
     localStorage,
   });

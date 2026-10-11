@@ -224,8 +224,8 @@ copying one source file cannot do that. The agent runs it for previews and
 validation, and CI runs it before packaging. It replaces manual staging of the
 single HTML page and avoids three hand-maintained markup copies. The deployed
 site stays framework-free, serverless, and dependent only on local static files.
-ML-08/09 deliberately update the existing no-build source/tooling description;
-that contract changes only when those stories are implemented.
+ML-08/09 implement the intentional source/tooling change. The deployed site
+still has no package dependencies; generation belongs only to authoring and CI.
 
 Native terminology snapshots contain only the required names, ID/key maps, and
 source hashes. They do not republish complete game files or imply new asset
@@ -239,16 +239,17 @@ parity/browser checks but do not invalidate unrelated prose. Term changes
 invalidate affected usages. Do not silently disable an already published locale
 to evade maintenance, leave it stale, or add a second manual copy of the guide.
 
-The future command interface is `node scripts/build-site.mjs <site-directory>`
+The implemented command interface is `node scripts/build-site.mjs <site-directory>`
 followed by `node scripts/validate-localization.mjs <site-directory>` and the
-updated deployment validator. These are planned commands, not existing checks
-claimed as run. Segment preview/check mode is explicitly separate from release
+updated deployment validator. Actual story evidence is in the roadmap ledger.
+Segment preview/check mode is explicitly separate from release
 generation and cannot enable incomplete catalogs.
 
 ## Validation contract
 
-Planning itself uses Tier 0 plus the bounded feasibility probes above. No full
-product/release validation is claimed for this documentation-only task.
+Planning used Tier 0 plus the bounded feasibility probes above. Implementation
+uses the story-specific tiers and records actual product/release evidence in
+the roadmap ledger; the historical probes do not count as acceptance.
 
 ### Browser matrix
 

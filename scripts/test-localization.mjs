@@ -14,6 +14,12 @@ import {
 } from "./lib/localization.mjs";
 import { readJson } from "./lib/terminology.mjs";
 import { generateSite } from "./lib/site-builder.mjs";
+import { completeFixtures } from "./lib/localization-fixtures.mjs";
+import {
+  validateEditions,
+  localeData,
+  localeUi,
+} from "./lib/locale-delivery.mjs";
 
 const html = fs.readFileSync("index.html", "utf8");
 const doc = parse(html);
@@ -116,4 +122,29 @@ assert.ok(
 assert.ok(generateSite({ preview: "ja" }).has("PREVIEW-ONLY.txt"));
 console.log(
   `Deterministic generation passed: ${first.size} files; incomplete locales excluded`,
+);
+const fixtures = completeFixtures();
+assert.throws(
+  () => generateSite({ manifest: fixtures.manifest }),
+  /Missing message/,
+);
+for (const baseUrl of [
+  "https://example.test/",
+  "https://example.test/guide/",
+]) {
+  const files = generateSite({ ...fixtures, baseUrl });
+  validateEditions(files, fixtures.manifest, baseUrl);
+  for (const locale of ["zh-CN", "de", "ja"]) {
+    const data = localeData(locale);
+    assert.equal(data["ui.json"].strings.rank, localeUi(locale).strings.rank);
+    assert.equal(Object.keys(data["tech-reference.json"]).length, 314);
+    for (const tech of Object.values(data["tech-reference.json"])) {
+      assert.ok(tech.displayName);
+      assert.ok(tech.required.every((r) => r.displayName));
+      assert.ok(tech.implicitRequired.every((r) => r.displayName));
+    }
+  }
+}
+console.log(
+  "Delivery fixtures passed: disabled activation fails closed; complete four-edition root/prefix links, metadata, localized names/UI and factual parity",
 );

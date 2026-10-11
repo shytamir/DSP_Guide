@@ -4,9 +4,6 @@ import assert from "node:assert/strict";
 import {
   parse,
   serialize,
-  walk,
-  attr,
-  setAttr,
   localizedDocument,
   factSignature,
   outputDirectory,
@@ -14,6 +11,12 @@ import {
   sourceInventory,
 } from "./localization.mjs";
 import { readJson } from "./terminology.mjs";
+import {
+  validateManifest,
+  localeUi,
+  localeData,
+  decorateEdition,
+} from "./locale-delivery.mjs";
 
 export function sharedFiles() {
   const files = new Map();
@@ -23,6 +26,12 @@ export function sharedFiles() {
       .sort((a, b) => a.name.localeCompare(b.name, "en"))) {
       const file = `${directory}/${entry.name}`;
       assert.ok(!entry.isSymbolicLink(), `Symlink forbidden: ${file}`);
+      if (file.startsWith("assets/data/locales/") && !entry.isDirectory())
+        assert.equal(
+          file,
+          "assets/data/locales/en/ui.json",
+          "Generated locale data must not be copied into source assets",
+        );
       if (entry.isDirectory()) visit(file);
       else files.set(file, fs.readFileSync(file));
     }
@@ -36,7 +45,14 @@ export function sharedFiles() {
   return files;
 }
 
-export function generateSite({ preview, segment, catalogs = {} } = {}) {
+export function generateSite({
+  preview,
+  segment,
+  catalogs = {},
+  manifest = readJson("localization/manifest.json"),
+  baseUrl = manifest.baseUrl,
+} = {}) {
+  validateManifest(manifest, baseUrl);
   const html = fs.readFileSync("index.html", "utf8");
   const source = parse(html);
   checkCoverage(source);
@@ -46,42 +62,50 @@ export function generateSite({ preview, segment, catalogs = {} } = {}) {
     "Source inventory is stale",
   );
   const files = sharedFiles();
-  files.set("index.html", Buffer.from(html));
+  localeUi("en");
+  const enabled = manifest.locales.filter((locale) => locale.enabled);
+  const editions = [...enabled];
   if (preview) {
     assert.ok(
       ["zh-CN", "de", "ja"].includes(preview),
       "Unknown preview locale",
     );
     assert.ok(!segment || /^[A-F]$/.test(segment), "Unknown segment");
-    let catalog =
-      catalogs[preview] || readJson(`localization/catalogs/${preview}.json`);
-    if (segment)
-      catalog = {
-        ...catalog,
-        messages: catalog.messages.filter((m) =>
-          m.id.startsWith(`${segment.toLowerCase()}.`),
-        ),
-      };
-    const document = localizedDocument(html, preview, catalog, {
-      partial: true,
-    });
+    if (!editions.some((locale) => locale.id === preview))
+      editions.push(manifest.locales.find((locale) => locale.id === preview));
+  }
+  for (const edition of editions) {
+    let document;
+    if (edition.id === "en") document = parse(html);
+    else {
+      let catalog =
+        catalogs[edition.id] ||
+        readJson(`localization/catalogs/${edition.id}.json`);
+      if (segment && edition.id === preview)
+        catalog = {
+          ...catalog,
+          messages: catalog.messages.filter((m) =>
+            m.id.startsWith(`${segment.toLowerCase()}.`),
+          ),
+        };
+      document = localizedDocument(html, edition.id, catalog, {
+        partial: edition.id === preview,
+      });
+      for (const [name, data] of Object.entries(localeData(edition.id)))
+        files.set(
+          `assets/data/locales/${edition.id}/${name}`,
+          Buffer.from(JSON.stringify(data, null, 2) + "\n"),
+        );
+    }
     assert.deepEqual(
       factSignature(document),
-      factSignature(parse(html)),
+      factSignature(source),
       "Localized factual objects differ",
     );
-    for (const node of walk(document))
-      for (const name of ["src", "href"]) {
-        const value = attr(node, name);
-        if (value && !/^(?:[a-z]+:|#|\/)/i.test(value))
-          setAttr(node, name, `../${value}`);
-      }
-    const head = walk(document).find((n) => n.tagName === "head");
-    const marker = parse(
-      '<!doctype html><html><head><meta name="robots" content="noindex,nofollow"></head></html>',
-    );
-    head.childNodes.push(walk(marker).find((n) => n.tagName === "meta"));
-    files.set(`${preview}/index.html`, Buffer.from(serialize(document)));
+    decorateEdition(document, edition, enabled, baseUrl, !!preview);
+    files.set(`${edition.path}index.html`, Buffer.from(serialize(document)));
+  }
+  if (preview) {
     files.set(
       "PREVIEW-ONLY.txt",
       Buffer.from(

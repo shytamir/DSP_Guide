@@ -23,6 +23,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Set up authoring runtime
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
+      - name: Install pinned authoring dependencies
+        run: npx --yes pnpm@11.25.0 install --frozen-lockfile --ignore-scripts
+
       - name: Resolve deployment version
         id: version
         shell: bash
@@ -45,21 +53,25 @@ jobs:
           echo "DEPLOYMENT_VERSION=$version" >> "$GITHUB_ENV"
           echo "DEPLOYMENT_ARCHIVE=$archive" >> "$GITHUB_ENV"
 
-      - name: Validate source readability
-        run: node scripts/validate-source-readability.mjs
+      - name: Validate authoring contracts
+        run: |
+          node scripts/validate-source-readability.mjs
+          node scripts/validate-card-system.mjs
+          node scripts/validate-checklists.mjs
+          node scripts/validate-terminology.mjs
+          node scripts/localization-source.mjs
+          node scripts/test-localization.mjs
 
       - name: Stage static website
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p _site/docs/management
-          cp index.html _site/
-          cp -a assets _site/
-          cp LICENSE _site/
-          cp docs/management/game-asset-use-permission-sanitized.md _site/docs/management/
+          node scripts/build-site.mjs _site --base-url https://dsp-beginner-guide.pages.dev/
 
       - name: Validate staged website
-        run: node scripts/validate-deployment.mjs _site .
+        run: |
+          node scripts/validate-localization.mjs _site
+          node scripts/validate-deployment.mjs _site .
 
       - name: Create deployment ZIP
         shell: bash
@@ -72,6 +84,7 @@ jobs:
 
           mkdir _package-verification
           unzip -q "$DEPLOYMENT_ARCHIVE" -d _package-verification
+          node scripts/validate-localization.mjs _package-verification
           node scripts/validate-deployment.mjs _package-verification .
 
       - name: Upload versioned deployment package
@@ -100,7 +113,7 @@ jobs:
             echo
             echo "- Version: \`${DEPLOYMENT_VERSION}\`"
             echo "- ZIP: \`${DEPLOYMENT_ARCHIVE}\`"
-            echo "- Contents: \`index.html\`, \`assets/\`, \`LICENSE\`, and the sanitized game-asset permission record"
+            echo "- Contents: enabled static editions, local assets, LICENSE, and sanitized permission; private catalogs and authoring dependencies excluded"
           } >> "$GITHUB_STEP_SUMMARY"
 
   deploy:

@@ -1,4 +1,5 @@
-(() => {
+(async () => {
+  const ui = await window.DspLocale.ready;
   const STORAGE_KEY = "dsp-guide:checklist-state:v1";
   const checkboxes = [...document.querySelectorAll(".task-list-item-checkbox")];
   const resetButton = document.getElementById("reset-checklist-progress");
@@ -46,12 +47,10 @@
     if (!storageAvailable) return;
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
-      setStatus("Checklist progress is saved only in this browser.");
+      setStatus(ui.saved);
     } catch {
       storageAvailable = false;
-      setStatus(
-        "Local saving is unavailable; checkmarks will last for this page only.",
-      );
+      setStatus(ui.unavailable);
     }
   }
 
@@ -82,11 +81,9 @@
   });
 
   if (storageAvailable) {
-    setStatus("Checklist progress is saved only in this browser.");
+    setStatus(ui.saved);
   } else {
-    setStatus(
-      "Local saving is unavailable; checkmarks will last for this page only.",
-    );
+    setStatus(ui.unavailable);
   }
 
   resetButton?.addEventListener("click", () => {
@@ -97,17 +94,15 @@
     if (storageAvailable) {
       try {
         localStorage.removeItem(STORAGE_KEY);
-        setStatus("Checklist progress reset.");
+        setStatus(ui.reset);
       } catch {
         storageAvailable = false;
-        setStatus(
-          "Checkmarks cleared for this page; local saving is unavailable.",
-        );
+        setStatus(ui.resetUnavailable);
       }
     } else {
-      setStatus(
-        "Checkmarks cleared for this page; local saving is unavailable.",
-      );
+      setStatus(ui.resetUnavailable);
     }
   });
-})();
+})().catch((error) =>
+  console.error("Checklist UI could not be loaded.", error),
+);

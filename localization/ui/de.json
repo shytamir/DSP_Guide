@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "locale": "de",
+  "sourceHash": "c0d08e21968c302df505e713f31e457fe5a03a75f45fcbaef85890ba8bde4674",
+  "strings": {
+    "saved": "Der Checklistenfortschritt wird nur in diesem Browser gespeichert.",
+    "unavailable": "Lokales Speichern ist nicht verfügbar; die Häkchen bleiben nur auf dieser Seite erhalten.",
+    "reset": "Checklistenfortschritt zurückgesetzt.",
+    "resetUnavailable": "Die Häkchen auf dieser Seite wurden entfernt; lokales Speichern ist nicht verfügbar.",
+    "required": "Voraussetzungen",
+    "implicit": "Implizite Voraussetzungen",
+    "unlocks": "Schaltet frei",
+    "rank": "Stufe {n}"
+  }
+}

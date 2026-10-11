@@ -1,9 +1,10 @@
 # DSP Practical Progression Guide
 
 **Status:** ML-E1 complete; version 3.1 English phone support is agent-validated.
-The exact CI ZIP and development deployment passed ML-M1. ML-E2 (ML-06–09)
-is now authorized, with per-story validation, management updates, commits and
-pushes to `main`, stopping after the localization foundation with a handoff.
+ML-E2 implementation and local validation are complete; ML-09's exact CI ZIP
+and development-deployment verification are pending before the epic handoff.
+ML-06–08 are committed/pushed. Work stops after the localization foundation;
+ML-E3 requires a new execution instruction.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
@@ -17,9 +18,11 @@ deferred concepts remain deferred indefinitely in the historical archive.
 
 Localization authoring now generates static editions from annotated English
 HTML, a keyed source inventory, and minimal native terminology snapshots.
-Only English is deployable; the three four-message samples remain private.
-The authoring-only parser and catalogs are not runtime dependencies. ML-09
-will connect generation to staging/CI and add the language/UI delivery contract.
+Only English is deployable; the three four-message HTML samples remain private.
+The authoring-only parser and catalogs are not runtime dependencies. Generation
+now supplies staging/CI, locale metadata, complete-edition links, and localized
+tooltip/checklist data. The disabled locales cannot deploy until their full
+catalogs pass; ML-28 owns activation. See `localization/README.md` for authoring.
 
 This repository publishes a player-facing progression guide for _Dyson Sphere
 Program_. It is written primarily for new and returning players who understand

@@ -2,6 +2,8 @@ import fs from "node:fs";
 import http from "node:http";
 import path from "node:path";
 import vm from "node:vm";
+import { generateSite } from "./lib/site-builder.mjs";
+import { readJson } from "./lib/terminology.mjs";
 import {
   withoutLocalizationAnnotations,
   components,
@@ -12,7 +14,8 @@ import {
   stripMarkup,
 } from "./lib/markup-contracts.mjs";
 
-const [siteArgument, sourceArgument = "."] = process.argv.slice(2);
+const [siteArgument, sourceArgument = ".", baseArgument] =
+  process.argv.slice(2);
 if (!siteArgument) {
   console.error(
     "Usage: node scripts/validate-deployment.mjs <site-directory> [source-directory]",
@@ -49,18 +52,10 @@ function listFiles(root) {
   return files;
 }
 
-const sourceFiles = [
-  path.join(sourceRoot, "index.html"),
-  ...listFiles(path.join(sourceRoot, "assets")),
-  path.join(sourceRoot, "LICENSE"),
-  path.join(
-    sourceRoot,
-    "docs/management/game-asset-use-permission-sanitized.md",
-  ),
-];
-const expected = sourceFiles
-  .map((file) => toRelative({ root: sourceRoot, file }))
-  .sort();
+process.chdir(sourceRoot);
+const baseUrl = baseArgument || readJson("localization/manifest.json").baseUrl;
+const generated = generateSite({ baseUrl });
+const expected = [...generated.keys()].sort();
 const deployedFiles = listFiles(siteRoot);
 const actual = deployedFiles
   .map((file) => toRelative({ root: siteRoot, file }))
@@ -71,12 +66,11 @@ check(
 );
 
 for (const relative of expected) {
-  const source = path.join(sourceRoot, relative);
   const deployed = path.join(siteRoot, relative);
   check(fs.existsSync(deployed), `Missing deployment file: ${relative}`);
   if (fs.existsSync(deployed)) {
     check(
-      fs.readFileSync(deployed).equals(fs.readFileSync(source)),
+      fs.readFileSync(deployed).equals(generated.get(relative)),
       `Deployment file changed: ${relative}`,
     );
   }
@@ -124,7 +118,7 @@ const findMeta = (attribute, value) =>
   metaTags.filter((tag) => getAttribute(tag, attribute) === value);
 const description =
   "One engineer, lost beneath an alien sun. His goal: build the Sphere. Fortunately, Dyson left directions.";
-const canonicalUrl = "https://dsp-beginner-guide.pages.dev/";
+const canonicalUrl = new URL(baseUrl).href;
 const previewUrl = `${canonicalUrl}assets/images/link-preview.png`;
 const descriptions = findMeta("name", "description");
 check(

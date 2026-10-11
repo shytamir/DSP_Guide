@@ -159,10 +159,14 @@ node scripts/validate-card-system.mjs
 node scripts/validate-checklists.mjs
 ```
 
-For a release-equivalent deployment check, stage `index.html`, `assets/`,
-`LICENSE`, and
-`docs/management/game-asset-use-permission-sanitized.md`, then run
+For a release-equivalent deployment check, run
+`node scripts/build-site.mjs <empty-site-directory>`, then
+`node scripts/validate-localization.mjs <site-directory>` and
 `node scripts/validate-deployment.mjs <site-directory> .`.
+The manifest controls enabled editions; generation includes shared assets,
+`LICENSE` and the sanitized permission record. Partial previews never deploy.
+An explicit `--base-url` build override must also be passed as the final
+argument to both validators. CI packages the generated site and rechecks the ZIP.
 
 When authoritative game knowledge is required:
 

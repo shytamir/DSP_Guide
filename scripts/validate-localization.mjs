@@ -12,6 +12,11 @@ import {
 } from "./lib/localization.mjs";
 import { readJson, localeFolders } from "./lib/terminology.mjs";
 import { generateSite } from "./lib/site-builder.mjs";
+import {
+  localeUi,
+  localeData,
+  validateEditions,
+} from "./lib/locale-delivery.mjs";
 
 const html = fs.readFileSync("index.html", "utf8");
 const doc = parse(html);
@@ -22,6 +27,8 @@ assert.deepEqual(readJson("localization/source.json"), {
   messages: sourceInventory(doc),
 });
 for (const locale of Object.keys(localeFolders)) {
+  localeUi(locale);
+  localeData(locale);
   const terms = readJson(`localization/terminology/${locale}.json`).terms;
   const catalog = readJson(`localization/catalogs/${locale}.json`);
   checkCatalog(catalog, messages, locale, terms, false);
@@ -35,7 +42,9 @@ for (const locale of Object.keys(localeFolders)) {
 }
 const site = process.argv[2];
 if (site) {
-  const expected = generateSite();
+  const manifest = readJson("localization/manifest.json");
+  const baseUrl = process.argv[3] || manifest.baseUrl;
+  const expected = generateSite({ baseUrl });
   const list = (directory) =>
     fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
       assert.ok(!entry.isSymbolicLink(), "No symlinks in output");
@@ -54,6 +63,7 @@ if (site) {
       fs.readFileSync(path.join(site, file)).equals(bytes),
       `Non-deterministic output: ${file}`,
     );
+  validateEditions(expected, manifest, baseUrl);
   console.log(
     `Generated release: ${expected.size} files byte-identical; no private catalogs or dependencies`,
   );

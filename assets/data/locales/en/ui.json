@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "locale": "en",
+  "strings": {
+    "saved": "Checklist progress is saved only in this browser.",
+    "unavailable": "Local saving is unavailable; checkmarks will last for this page only.",
+    "reset": "Checklist progress reset.",
+    "resetUnavailable": "Checkmarks cleared for this page; local saving is unavailable.",
+    "required": "Required",
+    "implicit": "Implicit",
+    "unlocks": "Unlocks",
+    "rank": "Lv{n}"
+  }
+}

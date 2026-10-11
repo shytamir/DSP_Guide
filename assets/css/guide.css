@@ -2781,3 +2781,17 @@ details.build-card[open] > summary {
     display: none;
   }
 }
+.language-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  margin-block: 0.75rem;
+}
+.language-selector[hidden] { display: none; }
+.language-selector a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 0.4rem;
+}
+.language-selector a[aria-current="page"] { font-weight: 700; }

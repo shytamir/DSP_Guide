@@ -3,6 +3,7 @@
   const trigger = document.getElementById("phone-route-trigger");
   const sheet = document.getElementById("route-sheet");
   const current = document.getElementById("phone-current-phase");
+  const openingCaption = current.textContent;
   const referenceMenu = document.querySelector(".reference-menu");
   const narrow = window.matchMedia(
     "(max-width: 900px), (max-height: 500px) and (pointer: coarse)",
@@ -125,7 +126,7 @@
     activePhase = id;
     current.textContent =
       tabs.find((tab) => tab.dataset.phase === id)?.querySelector("span")
-        ?.textContent || "Start";
+        ?.textContent || openingCaption;
     tabs.forEach((tab) =>
       tab.classList.toggle("active", tab.dataset.phase === id),
     );

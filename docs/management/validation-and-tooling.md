@@ -96,6 +96,16 @@ these on source/catalog edits; ML-09 connects generation to CI. They replace
 manual locale HTML copies and the disposable parser probe. Nothing under
 `localization/`, `scripts/` or `node_modules/` is a deployed dependency.
 
+ML-09 replaces manual staging with that generator. CI checks authoring contracts,
+the generated site and the extracted ZIP. The deployment validator compares all
+files against deterministic generation before retaining its English editorial,
+recipe, image, license and dependency checks. Localization validation adds
+enabled-locale metadata, root/prefix links and native-data factual parity.
+`validate-localization-browser.mjs <fresh-output> [android|iphone|desktop]` uses
+complete synthetic fixtures for switching/persistence, no-JS links, native
+tooltip names and all four storage messages. It is an authoring test, not a
+language release or a new deployed dependency. Real-device limits still apply.
+
 `extract-terminology.mjs` is an explicitly invoked provenance refresh: it reads
 only requested native names and retains ID/key/hash mappings. Its companion
 `validate-terminology.mjs` verifies all consumed names and rank composition from
