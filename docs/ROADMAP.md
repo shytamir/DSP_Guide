@@ -1,10 +1,9 @@
 # Roadmap — Phone Support and Localization
 
-**Status: approved, 2026-10-11.** The owner authorized committing/pushing the
-planning records and implementing ML-E1 (ML-01–05), with validation, management
-updates, and a commit/push per story. ML-E1 is complete: ML-01–05 and ML-M1 are
-agent-validated. Work stops here with the handoff below. ML-E2–06 require a
-later execution instruction.
+**Status: executing ML-E2, 2026-10-11.** ML-E1 and ML-M1 are agent-validated.
+The owner authorized ML-06–09 with validation, management updates, and a
+commit/push per story to `main`, stopping after ML-E2 with a handoff.
+ML-E3–06 require a later execution instruction.
 
 **Outcome:** make the complete guide practical on phones, then offer equivalent
 English, Simplified Chinese, German, and Japanese editions without losing
@@ -423,6 +422,7 @@ the resulting hash and push outcome.
 | ML-03 — agent-validated | `node scripts/validate-phone.mjs --mode layout --full --output artifacts/phone-validation/ml-03-accepted` (12 profiles); card, checklist, and source-readability validators; links/diff review. All passed. | All 25 tables and 19 expanded cards fit; 17 key/value tables stack and eight labelled comparison regions scroll. Header, representative dashboards/production flows, desktop, German/CJK samples, and 200% screenshots reviewed. Enlarged WebKit phase tags and reference headings now wrap; 320 px and landscape pass. Emulation only; facts and saved-key meaning unchanged. | ML-04: replace narrow hover details with an operable sheet and enlarge checklist/control targets. |
 | ML-04 — agent-validated | `node scripts/validate-phone.mjs --mode interaction --full --output artifacts/phone-validation/ml-04-accepted-final` (12 profiles); card, checklist, and source-readability validators; exact 66-item label/key/alias comparison with the preceding commit; links/diff review. All passed. | Native narrow details sheet supports Close, Escape, outside dismissal, focus return, scrolling at enlarged landscape text, orientation and desktop transitions. Reviewed both engine sheets, checklists, and desktop hover. All checkboxes have native labels; the Universe Matrix details button stays independently operable. Primary controls meet 44 px height. Save/reload, keyboard, grouped cards, isolated reset and denied storage pass. Synchronous dismissal removes a rapid-reopen race. | ML-05: freeze 3.1 and run full staged, CI ZIP and development-deployment acceptance. |
 | ML-05 — agent-validated; ML-M1 reached | All four repository validators passed, including `node scripts/validate-deployment.mjs artifacts/phone-validation/ml-05-site .` (536 identical files). `validate-phone.mjs --site artifacts/phone-validation/ml-05-site --full` passed navigation, layout and interaction modes (12 profiles each), plus navigation-edges (2). Final navigation evidence is `ml-05-navigation-final`; other mode evidence is `ml-05-<mode>`. | Version 3.1; reviewed desktop/phone dashboards, cards, glossary, footer, German/CJK samples, enlarged text/details and wide tables. A separate Chromium/WebKit touch-event audit passed route/details/checklist taps and non-overlapping enlarged controls. Integration accepts named ARIA regions and resets the Route caption when scrolling into the introduction. Assets/legal records included; no game access, translations, physical-device or production-publication claim. | Exact CI ZIP and development checks passed as recorded below. ML-E1 is complete; stop before ML-E2. |
+| ML-06 — agent-validated | `node scripts/validate-checklists.mjs`, `node scripts/validate-card-system.mjs`, `node scripts/validate-source-readability.mjs`, and `node artifacts/ml06-browser.mjs` passed; planning links and final diff reviewed. | All 66 keys and aliases match the pre-localization browser snapshot; the 41 derived keys are explicit. Fixtures restore every legacy/alias state with translated labels. Corrupt/array/null storage, isolated reset and denial pass. Chromium 156 at 1280×800 and WebKit 27.2 at 393×852 verified persistence/recovery and reviewed checklist screenshots. Full display-source inventory and stable-ID convention are in `localization/README.md`. | ML-07: retain the minimal all-consumer native terminology map; no bulk translation yet. |
 
 ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
 and uses a hoisted/copy install to avoid sandbox symlink requirements. The first

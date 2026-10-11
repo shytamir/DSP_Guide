@@ -1,0 +1,332 @@
+[
+  {
+    "key": "bootstrap:iron-copper-magnetic-coils-and-circuit-boards-arrive-continuously",
+    "aliases": "",
+    "text": "Iron, Copper, Magnetic Coils, and Circuit Boards arrive continuously."
+  },
+  {
+    "key": "bootstrap:belts-sorters-miners-smelters-assemblers-storage-mk-i-storage-tanks-wind-turbines-and-tesla-towers-replenish-automatically",
+    "aliases": "",
+    "text": "Belts, Sorters, Miners, Smelters, Assemblers, Storage Mk.I, Storage Tanks, Wind Turbines, and Tesla Towers replenish automatically."
+  },
+  {
+    "key": "blue:blue-cubes-are-produced-continuously-at-20-min-or-better",
+    "aliases": "",
+    "text": "Blue cubes are produced continuously at 20/min or better."
+  },
+  {
+    "key": "blue:research-continues-without-hand-feeding",
+    "aliases": "",
+    "text": "Research continues without hand-feeding."
+  },
+  {
+    "key": "bootstrap:the-grid-provides-roughly-5-10-mw-for-the-working-mall-matrix-labs-and-the-coming-oil-district",
+    "aliases": "blue:the-grid-has-roughly-5-10-mw-available-for-blue-science-and-the-coming-oil-district",
+    "text": "The grid provides roughly 15–20 MW for the mall, blue science, and the coming oil district."
+  },
+  {
+    "key": "red:two-matrix-labs-sustain-20-red-cubes-min-while-hydrogen-and-refined-oil-both-keep-leaving-the-refineries",
+    "aliases": "",
+    "text": "Two Matrix Labs sustain 20 red cubes/min while Hydrogen and Refined Oil both keep leaving the Refineries."
+  },
+  {
+    "key": "ils:860-titanium-ingots-and-520-high-purity-silicon-are-aboard",
+    "aliases": "",
+    "text": "860 Titanium Ingots and 520 High-Purity Silicon are aboard."
+  },
+  {
+    "key": "ils:both-smelting-lines-remain-powered-and-connected-to-storage",
+    "aliases": "",
+    "text": "Both smelting lines remain powered and connected to storage."
+  },
+  {
+    "key": "ils:the-output-area-has-room-for-the-source-ils",
+    "aliases": "",
+    "text": "The output area has room for the source ILS."
+  },
+  {
+    "key": "ils:two-ils-towers-and-five-logistics-vessels-are-deployed",
+    "aliases": "",
+    "text": "Two ILS towers and five Logistics Vessels are deployed."
+  },
+  {
+    "key": "ils:titanium-ingots-and-high-purity-silicon-arrive-at-home-without-icarus",
+    "aliases": "",
+    "text": "Titanium Ingots and High-Purity Silicon arrive at home without Icarus."
+  },
+  {
+    "key": "yellow:three-yellow-cube-labs-produce-continuously",
+    "aliases": "",
+    "text": "Three yellow-cube Labs produce continuously."
+  },
+  {
+    "key": "purple:three-purple-cube-labs-produce-continuously",
+    "aliases": "",
+    "text": "Three purple-cube Labs produce continuously."
+  },
+  {
+    "key": "green:two-green-cube-labs-produce-continuously",
+    "aliases": "",
+    "text": "Two green-cube Labs produce continuously."
+  },
+  {
+    "key": "green:quantum-chips-and-graviton-lenses-each-have-visible-storage",
+    "aliases": "",
+    "text": "Quantum Chips and Graviton Lenses each have visible storage."
+  },
+  {
+    "key": "dyson:critical-photons-are-becoming-antimatter-reliably-and-that-antimatter-can-reach-the-science-district-without-icarus-carrying-it",
+    "aliases": "",
+    "text": "Critical Photons are becoming Antimatter reliably, and that Antimatter can reach the science district without Icarus carrying it."
+  },
+  {
+    "key": "reference:all-four-receivers-are-configured-for-photon-generation-remain-lensed-and-have-warmed-up",
+    "aliases": "",
+    "text": "All four Receivers are configured for Photon Generation, remain lensed, and have warmed up."
+  },
+  {
+    "key": "reference:critical-photons-reach-the-collider-continuously",
+    "aliases": "",
+    "text": "Critical Photons reach the Collider continuously."
+  },
+  {
+    "key": "reference:antimatter-accumulates-reliably-in-visible-storage",
+    "aliases": "",
+    "text": "Antimatter accumulates reliably in visible storage."
+  },
+  {
+    "key": "reference:the-returned-hydrogen-outlet-remains-clear",
+    "aliases": "",
+    "text": "The returned-Hydrogen outlet remains clear."
+  },
+  {
+    "key": "photon:blue-red-yellow-purple-green-and-antimatter-each-sustain-at-least-40-min",
+    "aliases": "",
+    "text": "Blue, red, yellow, purple, green, and Antimatter each sustain at least 40/min."
+  },
+  {
+    "key": "photon:at-least-2-000-antimatter-is-stored",
+    "aliases": "",
+    "text": "At least 2,000 Antimatter is stored."
+  },
+  {
+    "key": "photon:blue-red-yellow-purple-green-and-antimatter-each-sustain-at-least-40-min:2",
+    "aliases": "",
+    "text": "Blue, red, yellow, purple, green, and Antimatter each sustain at least 40/min."
+  },
+  {
+    "key": "photon:at-least-2-000-antimatter-is-stored:2",
+    "aliases": "",
+    "text": "At least 2,000 Antimatter is stored."
+  },
+  {
+    "key": "white:universe-matrix-research-is-complete",
+    "aliases": "",
+    "text": "Universe Matrix research is complete."
+  },
+  {
+    "key": "white:all-six-inputs-reach-the-white-labs-continuously",
+    "aliases": "",
+    "text": "All six inputs reach the white Labs continuously."
+  },
+  {
+    "key": "white:ten-labs-sustain-40-white-cubes-min",
+    "aliases": "",
+    "text": "Ten Labs sustain 40 white cubes/min."
+  },
+  {
+    "key": "white:mission-completed-is-consuming-or-has-consumed-4-000-white-cubes",
+    "aliases": "",
+    "text": "Mission Completed is consuming or has consumed 4,000 white cubes."
+  },
+  {
+    "key": "warp:the-chosen-rare-resource-arrives-through-ils-without-icarus",
+    "aliases": "",
+    "text": "The chosen rare resource arrives through ILS without Icarus."
+  },
+  {
+    "key": "warp:the-warper-pls-refills-while-the-route-runs-and-green-science-remains-supplied",
+    "aliases": "",
+    "text": "The Warper PLS refills while the route runs and green science remains supplied."
+  },
+  {
+    "key": "warp:the-imported-shortcut-feeds-a-visible-buffer-beside-the-production-line-it-replaces",
+    "aliases": "",
+    "text": "The imported shortcut feeds a visible buffer beside the production line it replaces."
+  },
+  {
+    "key": "logistics:distributors-and-logistics-bots-refill-limited-buffers",
+    "aliases": "",
+    "text": "Distributors and Logistics Bots refill limited buffers."
+  },
+  {
+    "key": "logistics:pls-towers-and-logistics-drones-refill-limited-buffers",
+    "aliases": "",
+    "text": "PLS towers and Logistics Drones refill limited buffers."
+  },
+  {
+    "key": "logistics:ils-towers-and-logistics-vessels-refill-limited-buffers",
+    "aliases": "",
+    "text": "ILS towers and Logistics Vessels refill limited buffers."
+  },
+  {
+    "key": "logistics:a-remote-provider-vessel-remote-receiver-route-can-be-configured-without-guessing",
+    "aliases": "",
+    "text": "A Remote Provider → Vessel → Remote Receiver route can be configured without guessing."
+  },
+  {
+    "key": "logistics:a-local-provider-drone-local-receiver-route-can-be-configured-without-guessing",
+    "aliases": "",
+    "text": "A Local Provider → Drone → Local Receiver route can be configured without guessing."
+  },
+  {
+    "key": "reference:blue-materials-continuous",
+    "aliases": "reference:basic-mining-smelting-magnetic-coils-and-circuit-boards-are-automated",
+    "text": "Iron, Copper, Magnetic Coils, and Circuit Boards arrive continuously"
+  },
+  {
+    "key": "reference:blue-mall-hardware-replenishes",
+    "aliases": "reference:four-mall-blocks-refill-their-limited-buffers reference:belts-sorters-storage-and-starter-power-hardware-are-readily-available",
+    "text": "Belts, Sorters, Miners, Smelters, Assemblers, Storage Mk.I, Storage Tanks, Wind Turbines, and Tesla Towers replenish automatically"
+  },
+  {
+    "key": "reference:blue-cubes-continuous",
+    "aliases": "reference:two-matrix-labs-sustain-40-blue-cubes-min",
+    "text": "Blue cubes are produced continuously at 20/min or better"
+  },
+  {
+    "key": "reference:blue-research-without-hand-feeding",
+    "aliases": "",
+    "text": "Research continues without hand-feeding"
+  },
+  {
+    "key": "reference:blue-opening-power",
+    "aliases": "reference:power-margin-exists",
+    "text": "The grid provides roughly 15–20 MW for the mall, blue science, and the coming oil district"
+  },
+  {
+    "key": "reference:red-sustainable-refining",
+    "aliases": "",
+    "text": "Two Matrix Labs sustain 20 red cubes/min while Hydrogen and Refined Oil both keep leaving the Refineries"
+  },
+  {
+    "key": "reference:ils-transport-package-deployed",
+    "aliases": "reference:two-ils-towers-and-five-logistics-vessels-exist",
+    "text": "Two ILS towers and five Logistics Vessels are deployed"
+  },
+  {
+    "key": "reference:ils-materials-arrive-without-icarus",
+    "aliases": "reference:titanium-ingots-and-high-purity-silicon-arrive-through-remote-provider-vessel-remote-receiver-routes",
+    "text": "Titanium Ingots and High-Purity Silicon arrive at home without Icarus"
+  },
+  {
+    "key": "reference:yellow-cubes-continuous",
+    "aliases": "reference:three-matrix-labs-sustain-22-5-yellow-cubes-min",
+    "text": "Three yellow-cube Labs produce continuously"
+  },
+  {
+    "key": "reference:purple-cubes-continuous",
+    "aliases": "reference:three-matrix-labs-sustain-18-purple-cubes-min",
+    "text": "Three purple-cube Labs produce continuously"
+  },
+  {
+    "key": "reference:green-cubes-continuous",
+    "aliases": "reference:two-matrix-labs-sustain-10-green-cubes-min",
+    "text": "Two green-cube Labs produce continuously"
+  },
+  {
+    "key": "reference:green-late-components-stored",
+    "aliases": "reference:quantum-chips-and-graviton-lenses-each-have-visible-storage",
+    "text": "Quantum Chips and Graviton Lenses each have visible storage"
+  },
+  {
+    "key": "reference:dyson-sails-automated",
+    "aliases": "reference:the-chosen-route-solar-sail-line-is-automated-at-405-min-installed-capacity",
+    "text": "The chosen-route Solar Sail line is automated and operating"
+  },
+  {
+    "key": "reference:dyson-ejectors-operating",
+    "aliases": "reference:the-60-ejector-deployment-buffer-is-automated-and-useful-latitude-blocks-are-firing",
+    "text": "EM-Rail Ejector launch infrastructure is automated and operating"
+  },
+  {
+    "key": "reference:dyson-generation-useful",
+    "aliases": "reference:live-dyson-generation-is-rising-or-stable-rather-than-collapsing-from-expired-sails",
+    "text": "Live Dyson generation is useful enough to proceed to the Receiver bridge"
+  },
+  {
+    "key": "reference:receiver-antimatter-bridge",
+    "aliases": "reference:critical-photons-are-becoming-antimatter-reliably-and-reaching-science-storage",
+    "text": "Critical Photons are becoming Antimatter reliably and that Antimatter reaches the science district without Icarus"
+  },
+  {
+    "key": "reference:photon-all-inputs-at-white-pace",
+    "aliases": "",
+    "text": "Blue, red, yellow, purple, green, and Antimatter each sustain at least 40/min"
+  },
+  {
+    "key": "reference:photon-antimatter-reserve",
+    "aliases": "reference:at-least-2-000-antimatter-is-waiting-in-storage-before-white-begins",
+    "text": "At least 2,000 Antimatter is stored"
+  },
+  {
+    "key": "reference:white-universe-matrix-researched",
+    "aliases": "reference:universe-matrix-research-is-complete",
+    "text": "Universe Matrix research is complete"
+  },
+  {
+    "key": "reference:white-inputs-continuous",
+    "aliases": "reference:all-five-cube-colors-and-antimatter-reach-the-white-labs-continuously",
+    "text": "All six inputs reach the white Labs continuously"
+  },
+  {
+    "key": "reference:white-cubes-at-40-per-minute",
+    "aliases": "reference:ten-matrix-labs-sustain-40-white-cubes-min",
+    "text": "Ten Matrix Labs sustain 40 white cubes/min"
+  },
+  {
+    "key": "reference:white-mission-completed",
+    "aliases": "reference:mission-completed-is-consuming-or-has-consumed-4-000-white-cubes",
+    "text": "Mission Completed is consuming or has consumed 4,000 white cubes"
+  },
+  {
+    "key": "reference:mecha-warp-is-available-when-personal-scouting-or-hand-carrying-is-useful",
+    "aliases": "",
+    "text": "Mecha warp is available when personal scouting or hand-carrying is useful"
+  },
+  {
+    "key": "reference:vessel-warp-is-available-when-an-interstellar-ils-route-should-run-unattended",
+    "aliases": "",
+    "text": "Vessel warp is available when an interstellar ILS route should run unattended"
+  },
+  {
+    "key": "reference:each-imported-rare-resource-has-a-named-baseline-chain-to-replace",
+    "aliases": "",
+    "text": "Each imported rare resource has a named baseline chain to replace"
+  },
+  {
+    "key": "reference:a-green-cube-warper-buffer-feeds-the-ils-network-when-routine-travel-begins",
+    "aliases": "",
+    "text": "A green-cube Warper buffer feeds the ILS network when routine travel begins"
+  },
+  {
+    "key": "reference:logistics-distributors-and-bots-refill-limited-buffers",
+    "aliases": "",
+    "text": "Logistics Distributors and Bots refill limited buffers"
+  },
+  {
+    "key": "reference:pls-towers-and-logistics-drones-refill-limited-buffers",
+    "aliases": "",
+    "text": "PLS towers and Logistics Drones refill limited buffers"
+  },
+  {
+    "key": "reference:ils-towers-and-logistics-vessels-refill-limited-buffers",
+    "aliases": "",
+    "text": "ILS towers and Logistics Vessels refill limited buffers"
+  },
+  {
+    "key": "reference:provider-receiver-depot-local-and-remote-settings-make-sense-at-a-glance",
+    "aliases": "",
+    "text": "Provider, Receiver, Depot, Local, and Remote settings make sense at a glance"
+  }
+]

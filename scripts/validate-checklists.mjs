@@ -210,6 +210,57 @@ assert.equal(
 assert.match(unavailableStatus.textContent, /local saving is unavailable/i);
 
 const html = fs.readFileSync("index.html", "utf8");
+const identity = JSON.parse(
+  fs.readFileSync("scripts/fixtures/checklist-identity.json", "utf8"),
+);
+const inputs = [...html.matchAll(/<input\b[^>]*>/g)].map(([tag]) => ({
+  key: tag.match(/data-checklist-key="([^"]+)"/)?.[1],
+  aliases: tag.match(/data-checklist-aliases="([^"]*)"/)?.[1] || "",
+}));
+assert.equal(identity.length, 66);
+assert.deepEqual(
+  inputs,
+  identity.map(({ key, aliases }) => ({ key, aliases })),
+);
+assert.equal(new Set(inputs.map(({ key }) => key)).size, 66);
+assert.ok(
+  inputs.every(({ key }) => key),
+  "every input needs an explicit key",
+);
+const script = fs.readFileSync("assets/js/checklists.js", "utf8");
+for (const scenario of ["legacy", "aliases", "corrupt", "array", "null"]) {
+  const boxes = identity.map(({ key, aliases }) => {
+    const box = makeCheckbox("translated-phase", "完全に翻訳された文章");
+    box.dataset = { checklistKey: key, checklistAliases: aliases };
+    return box;
+  });
+  const entries = identity.map(({ key, aliases }) => [
+    scenario === "aliases" ? aliases.split(/\s+/)[0] || key : key,
+    true,
+  ]);
+  values.set("unrelated-reader-state", "retained");
+  values.set(
+    "dsp-guide:checklist-state:v1",
+    { corrupt: "{broken", array: "[]", null: "null" }[scenario] ||
+      JSON.stringify(Object.fromEntries(entries)),
+  );
+  vm.runInNewContext(script, {
+    document: { ...document, querySelectorAll: () => boxes },
+    localStorage,
+  });
+  const restored = ["legacy", "aliases"].includes(scenario);
+  assert.ok(boxes.every((box) => !box.disabled && box.checked === restored));
+  boxes[0].checked = true;
+  boxes[0].trigger("change");
+  assert.equal(
+    JSON.parse(values.get("dsp-guide:checklist-state:v1"))[identity[0].key],
+    true,
+  );
+  resetButton.trigger("click");
+  assert.ok(boxes.every((box) => !box.checked));
+  assert.equal(values.get("unrelated-reader-state"), "retained");
+  assert.equal(values.has("dsp-guide:checklist-state:v1"), false);
+}
 const glossary = findElementsByClass(html, "guide-glossary")[0];
 const progressIndex = findElementsByClass(html, "progress-index")[0];
 assert.ok(

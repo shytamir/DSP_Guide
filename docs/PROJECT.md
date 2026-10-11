@@ -1,13 +1,14 @@
 # DSP Practical Progression Guide
 
 **Status:** ML-E1 complete; version 3.1 English phone support is agent-validated.
-The exact CI ZIP and development deployment passed ML-M1. Work stops here;
-ML-E2 is unstarted and requires a later execution instruction.
+The exact CI ZIP and development deployment passed ML-M1. ML-E2 (ML-06–09)
+is now authorized, with per-story validation, management updates, commits and
+pushes to `main`, stopping after the localization foundation with a handoff.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
 Simplified Chinese, German, and Japanese localization, approved the roadmap,
-and authorized execution through ML-05 with a handoff before ML-E2.
+and subsequently authorized execution through ML-09 with a handoff before ML-E3.
 
 [`ROADMAP.md`](ROADMAP.md) is the sole active roadmap. The two previously
 deferred concepts remain deferred indefinitely in the historical archive.
@@ -169,7 +170,7 @@ contract; 320 px is a stress check. Physical devices, branded iOS Safari, OS
 fonts, and assistive technologies have not been certified. Spanish and Russian
 remain excluded.
 
-The roadmap is approved; execution is currently authorized only for ML-01–05.
+The roadmap is approved; execution is currently authorized through ML-09.
 There are no outstanding owner design, language-review, or device-testing
 decisions. Once implementation is instructed, the agent owns review, correction,
 acceptance, and closure, with a management update and commit/push to `main` after

@@ -1,6 +1,6 @@
 # Phone Support and Localization — Decisions and Investigation
 
-**Status:** Roadmap approved, 2026-10-11; execution authorized through ML-05.
+**Status:** Roadmap approved, 2026-10-11; execution authorized through ML-09.
 Early investigations and planning decisions are resolved below. Historical
 browser samples are disposable feasibility work, not product acceptance.
 Story scope, progress, and sequencing live only in the linked roadmap.
@@ -22,9 +22,9 @@ Story scope, progress, and sequencing live only in the linked roadmap.
   native-speaker, or owner-acceptance gates during implementation. Each finished
   story will update management records and be committed/pushed to `main` once
   implementation is instructed. Production publication remains with the owner.
-- Current execution authorization covers the planning commit/push and ML-01–05,
-  including per-story commits/pushes and the 3.1 candidate. Localization
-  implementation and production publication are outside this run.
+- Current execution authorization covers ML-06–09, following the completed
+  planning and ML-E1 work, with per-story commits/pushes and an epic handoff.
+  Bulk translation and production publication are outside this run.
 
 The historical [no-mobile-polish record](../archive/no-mobile-polish-story.md)
 does not prohibit this newly authorized planning. The published site's

@@ -33,7 +33,8 @@ repository and can be reviewed before the guide is opened.
 
 Checklist marks use one namespaced `localStorage` record in the reader's own
 browser. They are never transmitted, and the reset control removes only that
-record.
+record. All 66 checklist identities are explicit and stable across future
+language editions; the authoring inventory is in `localization/README.md`.
 
 ## Repository contents
 
