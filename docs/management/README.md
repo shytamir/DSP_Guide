@@ -33,13 +33,14 @@ record.
 
 ## Planning state
 
-The project is planning phone support and localization under
+The project is delivering phone support and localization under
 [`mobile-localization-plan.md`](mobile-localization-plan.md).
 The owner requested a complete draft and delegated design, language review,
 technical acceptance, and eventual story closure on 2026-10-11. The final draft
 has 28 weighted stories with agent-owned gates: English phone support first,
 then Simplified Chinese, German, and Japanese together. The owner approved the
-roadmap and authorized ML-01–05, stopping after that epic. Each story includes a management update
+roadmap and authorized ML-01–05, stopping after that epic. ML-01–04 are
+agent-validated; ML-05 is verifying the 3.1 candidate. Each story includes a management update
 and commit/push to `main`; production publication remains with the owner.
 [`../ROADMAP.md`](../ROADMAP.md) remains the sole current roadmap.
 

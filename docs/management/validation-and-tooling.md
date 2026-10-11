@@ -17,8 +17,8 @@ evidence justified by the change.
 | 2 — Experience | Presentation, navigation, interaction, or persistence | Tier 1 plus required desktop Chromium review; narrow viewport only when affected                                                    |
 | 3 — Release    | Deployment behavior or publication candidate          | All repository validators, release-equivalent package validation including sanitized licensing records, and required browser review |
 
-Desktop PC is the presentation target. Mobile remains best-effort unless a
-story explicitly changes narrow behavior or exposes a shared structural defect.
+Desktop and the 3.1 phone candidate are presentation targets. Production 3.0
+retains its previous best-effort mobile policy until the owner publishes 3.1.
 
 The [phone/localization roadmap](../ROADMAP.md) explicitly changes that target
 when its stories are implemented. Its
@@ -27,7 +27,7 @@ mobile Chromium/WebKit emulation, per-locale linguistic/factual review, and
 candidate package checks. The owner delegates acceptance to the agent; no
 physical-device, native-speaker, or owner gate is required. Record emulator and
 self-review limitations without presenting them as physical-device or independent
-reader validation. Until implementation, the published policy is unchanged.
+reader validation. Publication remains separate from candidate acceptance.
 
 ## Durable and story-specific checks
 

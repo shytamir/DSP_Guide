@@ -674,7 +674,9 @@ const genericAriaLabels = [
   ...html.matchAll(/<(div|span)\b([^>]*\baria-label="[^"]+"[^>]*)>/g),
 ];
 check(
-  genericAriaLabels.every((match) => /\brole="(?:group|img)"/.test(match[2])),
+  genericAriaLabels.every((match) =>
+    /\brole="(?:group|img|region)"/.test(match[2]),
+  ),
   "A generic element uses aria-label without a nameable role.",
 );
 

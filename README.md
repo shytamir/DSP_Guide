@@ -16,6 +16,15 @@ sideways scrolling. Production flows and headings wrap within the reading width.
 Tap a technology name for scrollable details with a Close button. Checklist
 text is tappable, and progress stays in the same browser-local record.
 
+Version **3.1** is the English phone-support candidate. It targets current
+Android Chrome on Galaxy S23 Ultra class phones and current iOS Safari, with
+360–480 CSS px portrait widths, landscape use, and 200% text enlargement.
+Acceptance uses agent-reviewed Chromium/WebKit emulation and installed desktop
+Chrome with mobile settings. It is not physical-device or branded iOS Safari
+certification; OS fonts, browser chrome, and assistive technology can differ.
+Desktop remains supported. Other mobile browsers and tablet-specific design
+are outside this support promise. The owner controls production publication.
+
 ## Privacy and dependencies
 
 The guide has no server-side code, accounts, cookies, or repository-supplied

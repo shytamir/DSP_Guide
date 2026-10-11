@@ -93,6 +93,14 @@
 
   function updateActiveStage() {
     stageFrame = null;
+    if (
+      activePhase &&
+      sections[0]?.getBoundingClientRect().top >
+        Math.max(20, innerHeight * 0.24)
+    ) {
+      setActive(null);
+      return;
+    }
     const stages = stageGroups.get(activePhase);
     if (!stages?.length) {
       setActiveStage(null);

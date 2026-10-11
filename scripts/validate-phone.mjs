@@ -109,6 +109,17 @@ async function screenshot(page, name) {
 }
 async function navigationChecks(page, name) {
   const phone = await page.locator("#phone-route-trigger").isVisible();
+  await page.locator("#yellow").scrollIntoViewIfNeeded();
+  await page.waitForFunction(() =>
+    document
+      .querySelector('.rail-tab[data-phase="yellow"]')
+      .classList.contains("active"),
+  );
+  await page.evaluate(() => scrollTo(0, 0));
+  await page.waitForFunction(
+    () =>
+      document.getElementById("phone-current-phase").textContent === "Start",
+  );
   const hashes = await page
     .locator(".phase-rail a")
     .evaluateAll((nodes) => nodes.map((n) => n.hash));
@@ -232,6 +243,13 @@ async function layoutChecks(page, name, width) {
   }
   for (const id of ["blue", "yellow", "purple", "logistics"]) {
     await page.locator(`#${id} table`).first().scrollIntoViewIfNeeded();
+    await page.waitForFunction(
+      (id) =>
+        document
+          .querySelector(`.rail-tab[data-phase="${id}"]`)
+          ?.classList.contains("active"),
+      id,
+    );
     await screenshot(page, `${name}-${id}-dashboard`);
   }
   const cards = [];
@@ -657,6 +675,8 @@ try {
 } finally {
   server?.close();
 }
+if (!report.cases.length)
+  report.errors.push("No browser profiles matched the requested scenario.");
 fs.writeFileSync(
   path.join(output, "report.json"),
   `${JSON.stringify(report, null, 2)}\n`,

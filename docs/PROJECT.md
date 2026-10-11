@@ -1,7 +1,8 @@
 # DSP Practical Progression Guide
 
-**Status:** Implementing ML-E1 phone support. Version 3.0 remains the
-published product and passed final cold verification on 2026-08-27. On
+**Status:** ML-05 candidate verification for version 3.1 English phone support.
+Version 3.0 remains the published product and passed final cold verification on
+2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and
 Simplified Chinese, German, and Japanese localization, approved the roadmap,
 and authorized execution through ML-05 with a handoff before ML-E2.
@@ -23,7 +24,7 @@ when local circumstances justify ignoring the default advice.
 
 ## Current product
 
-The published static site is `index.html` with supporting files under
+The source static site is `index.html` with supporting files under
 `assets/`. It contains:
 
 - ten numbered route sections plus two directly navigable optional
@@ -33,8 +34,10 @@ The published static site is `index.html` with supporting files under
 - runtime-derived technology tooltips;
 - static runtime-bound prototype icons and producer-marked production maps;
 - player-owned persistent checklists and a compact glossary;
-- a narrow-screen route sheet with full expedition-stage labels and directly
-  reachable reference/top controls; desktop retains its phase rail;
+- a narrow-screen route sheet with full expedition-stage labels, scrollable
+  technology details, tappable checklist labels, stacked dashboards, and
+  independently scrollable reference tables; desktop retains its phase rail
+  and hover/focus details;
 - a wide-desktop companion dock linking to the optional DSP Guide Check mod;
 - no server-side code, accounts, repository-supplied analytics, cookies, or
   repository-supplied remote dependencies.
@@ -158,8 +161,11 @@ and quality decisions. The roadmap defines 28 weighted stories: an English phone
 candidate (3.1), then a four-language candidate (3.2). Phone targets are current
 Android Chrome on the S23 Ultra class and current iOS Safari, assessed through
 agent-operated browser emulation. Desktop behavior must be preserved. The
-published product retains its best-effort mobile policy until the support
-stories are implemented. Spanish and Russian remain excluded.
+published 3.0 product retains its best-effort mobile policy. The 3.1 candidate
+supports 360–480 CSS px portrait, landscape, and 200% text using the emulation
+contract; 320 px is a stress check. Physical devices, branded iOS Safari, OS
+fonts, and assistive technologies have not been certified. Spanish and Russian
+remain excluded.
 
 The roadmap is approved; execution is currently authorized only for ML-01–05.
 There are no outstanding owner design, language-review, or device-testing
