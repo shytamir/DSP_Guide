@@ -2,8 +2,8 @@
 
 **Status: approved, 2026-10-11.** The owner authorized committing/pushing the
 planning records and implementing ML-E1 (ML-01–05), with validation, management
-updates, and a commit/push per story. Stop after ML-E1 with a handoff. ML-01–04
-are agent-validated; ML-05 is at candidate verification. ML-E2–06 require a
+updates, and a commit/push per story. ML-E1 is complete: ML-01–05 and ML-M1 are
+agent-validated. Work stops here with the handoff below. ML-E2–06 require a
 later execution instruction.
 
 **Outcome:** make the complete guide practical on phones, then offer equivalent
@@ -422,7 +422,7 @@ the resulting hash and push outcome.
 | ML-02 — agent-validated | `node scripts/validate-phone.mjs --mode navigation --full --output artifacts/phone-validation/ml-02` (12 profiles); `--mode navigation-edges --output artifacts/phone-validation/ml-02-edges` (both engines); card and source-readability validators; links/diff review. All passed. | Every route/stage/reference link, Back, target size, keyboard/explicit/outside dismissal, focus return, landscape, breakpoint changes, safe-area simulation, and no-JS stage links verified. Android, WebKit portrait/landscape, and desktop screenshots reviewed. Explicit focus restoration fixes WebKit's click-to-dialog return behavior. | ML-03: retain this navigation while correcting dense layout and header spacing. |
 | ML-03 — agent-validated | `node scripts/validate-phone.mjs --mode layout --full --output artifacts/phone-validation/ml-03-accepted` (12 profiles); card, checklist, and source-readability validators; links/diff review. All passed. | All 25 tables and 19 expanded cards fit; 17 key/value tables stack and eight labelled comparison regions scroll. Header, representative dashboards/production flows, desktop, German/CJK samples, and 200% screenshots reviewed. Enlarged WebKit phase tags and reference headings now wrap; 320 px and landscape pass. Emulation only; facts and saved-key meaning unchanged. | ML-04: replace narrow hover details with an operable sheet and enlarge checklist/control targets. |
 | ML-04 — agent-validated | `node scripts/validate-phone.mjs --mode interaction --full --output artifacts/phone-validation/ml-04-accepted-final` (12 profiles); card, checklist, and source-readability validators; exact 66-item label/key/alias comparison with the preceding commit; links/diff review. All passed. | Native narrow details sheet supports Close, Escape, outside dismissal, focus return, scrolling at enlarged landscape text, orientation and desktop transitions. Reviewed both engine sheets, checklists, and desktop hover. All checkboxes have native labels; the Universe Matrix details button stays independently operable. Primary controls meet 44 px height. Save/reload, keyboard, grouped cards, isolated reset and denied storage pass. Synchronous dismissal removes a rapid-reopen race. | ML-05: freeze 3.1 and run full staged, CI ZIP and development-deployment acceptance. |
-| ML-05 — local acceptance passed; remote evidence pending | All four repository validators passed, including `node scripts/validate-deployment.mjs artifacts/phone-validation/ml-05-site .` (536 identical files). `validate-phone.mjs --site artifacts/phone-validation/ml-05-site --full` passed navigation, layout and interaction modes (12 profiles each), plus navigation-edges (2). Final navigation evidence is `ml-05-navigation-final`; other mode evidence is `ml-05-<mode>`. | Version 3.1; reviewed desktop/phone dashboards, cards, glossary, footer, German/CJK samples, enlarged text/details and wide tables. A separate Chromium/WebKit touch-event audit passed route/details/checklist taps and non-overlapping enlarged controls. Integration accepts named ARIA regions and resets the Route caption when scrolling into the introduction. Assets/legal records included; no game access, translations, physical-device or production-publication claim. | Push the candidate, verify its exact CI ZIP and development deployment, then record ML-M1 and stop before ML-E2. |
+| ML-05 — agent-validated; ML-M1 reached | All four repository validators passed, including `node scripts/validate-deployment.mjs artifacts/phone-validation/ml-05-site .` (536 identical files). `validate-phone.mjs --site artifacts/phone-validation/ml-05-site --full` passed navigation, layout and interaction modes (12 profiles each), plus navigation-edges (2). Final navigation evidence is `ml-05-navigation-final`; other mode evidence is `ml-05-<mode>`. | Version 3.1; reviewed desktop/phone dashboards, cards, glossary, footer, German/CJK samples, enlarged text/details and wide tables. A separate Chromium/WebKit touch-event audit passed route/details/checklist taps and non-overlapping enlarged controls. Integration accepts named ARIA regions and resets the Route caption when scrolling into the introduction. Assets/legal records included; no game access, translations, physical-device or production-publication claim. | Exact CI ZIP and development checks passed as recorded below. ML-E1 is complete; stop before ML-E2. |
 
 ML-01 repaired the generated runtime lockfile upgrade path (`--no-frozen-lockfile`)
 and uses a hoisted/copy install to avoid sandbox symlink requirements. The first
@@ -440,6 +440,52 @@ when the subsequent management-only commit creates another workflow run. A
 management-only follow-up does not restart candidate verification or require
 another self-referential evidence commit. Apply the same rule to ML-09 if its
 deployment change requires post-push evidence.
+
+## ML-M1 candidate evidence and handoff — 2026-10-11
+
+**Result: agent-validated, ML-E1 complete.** Candidate commit
+`73cdc59f7c11ae9f36a4c7616f9bf5d890eeee5f` is version 3.1. Production publication
+is still the owner's action; no translations or ML-E2 implementation are included.
+
+- [Build/deploy run 38141867146](https://github.com/shytamir/DSP_Guide/actions/runs/38141867146),
+  run number 167, completed successfully for that exact commit. The associated
+  Pages run 38141867152 also succeeded.
+- CI artifact `11703117191` contains
+  `dsp-practical-progression-guide-3.1.166.73cdc59.zip`.
+  Downloaded through the GitHub connector, verified the outer artifact digest,
+  and validated the extracted inner package. All 536 expected files match the
+  candidate source byte for byte, including the license and sanitized permission.
+  Inner ZIP SHA-256:
+  `5a6aacb2f3fa5eb0651a66ba3b73f80877928669b7bc6cd97f48dc92d9ad602d`.
+- [Development deployment](https://shytamir.github.io/DSP_Guide/) returned version
+  3.1. Independent HTTP comparisons matched all 536 package files, with zero
+  failures. Navigation passed all six primary/desktop/stable-Chrome profiles;
+  interaction passed the primary Android and iPhone profiles. Remote route and
+  desktop screenshots were reviewed.
+- Exact package check:
+  `node scripts/validate-deployment.mjs artifacts/phone-validation/ml-05-ci-site .`.
+  Remote checks used `node scripts/validate-phone.mjs --site https://shytamir.github.io/DSP_Guide/`
+  with `--mode navigation`, and `--mode interaction --profile android` / `iphone`.
+  Reports and the downloaded ZIP are retained under ignored
+  `artifacts/phone-validation/ml-05-*` paths. The byte-comparison and touch/visual
+  audit scripts there are disposable evidence tools, not deployed dependencies.
+
+Local release checks also passed `node scripts/validate-card-system.mjs`,
+`node scripts/validate-checklists.mjs`, and
+`node scripts/validate-source-readability.mjs`. The full staged browser matrix
+and review are recorded in the ML-05 ledger row. No known blocking defect remains
+within this epic. Emulation does not certify real phones, branded iOS Safari,
+OS fonts, assistive technology, or independent reader acceptance.
+
+**Next starting point, only after a new execution instruction:** ML-E2 / ML-06.
+Preserve all 66 saved identities and aliases, including the 41 still derived
+from English text; the ML-04 comparison confirmed unchanged inputs. Inventory
+must include the new Route/Close controls, stage accessible labels, table-scroll
+hints/region names, and technology-sheet heading. Keep the independently
+operable Universe Matrix details button and its associated checklist label.
+ML-07–09 then establish terminology, catalogs/generation, and package boundaries
+before any bulk translation. Do not treat the three typography samples as
+localized editions. The two earlier concepts remain deferred indefinitely.
 
 ## Draft review — 2026-10-11
 

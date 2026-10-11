@@ -1,6 +1,8 @@
 # DSP Practical Progression Guide
 
-**Status:** ML-05 candidate verification for version 3.1 English phone support.
+**Status:** ML-E1 complete; version 3.1 English phone support is agent-validated.
+The exact CI ZIP and development deployment passed ML-M1. Work stops here;
+ML-E2 is unstarted and requires a later execution instruction.
 Version 3.0 remains the published product and passed final cold verification on
 2026-08-27. On
 2026-10-11, the owner requested a complete roadmap draft for phones first and

@@ -232,8 +232,8 @@ Release validation must complete with zero errors. Do not claim presentation,
 navigation, persistence, or responsive behavior from structural checks alone.
 
 Presentation changes normally require headless Chromium validation and a
-reviewed desktop screenshot. Check a narrow viewport when responsive behavior
-is affected, while preserving the documented best-effort mobile policy.
+reviewed desktop screenshot. Use the documented Chromium/WebKit phone matrix
+when responsive behavior is affected, and keep emulation limits explicit.
 
 If a required tool or authoritative external data source is unavailable,
 report the check as skipped or blocked. Do not call it passed. Allow at most
