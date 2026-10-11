@@ -20,6 +20,15 @@ evidence justified by the change.
 Desktop PC is the presentation target. Mobile remains best-effort unless a
 story explicitly changes narrow behavior or exposes a shared structural defect.
 
+The [phone/localization roadmap](../ROADMAP.md) explicitly changes that target
+when its stories are implemented. Its
+[validation contract](mobile-localization-plan.md#validation-contract) adds
+mobile Chromium/WebKit emulation, per-locale linguistic/factual review, and
+candidate package checks. The owner delegates acceptance to the agent; no
+physical-device, native-speaker, or owner gate is required. Record emulator and
+self-review limitations without presenting them as physical-device or independent
+reader validation. Until implementation, the published policy is unchanged.
+
 ## Durable and story-specific checks
 
 Global validators should protect stable contracts such as:

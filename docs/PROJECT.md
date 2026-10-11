@@ -1,12 +1,13 @@
 # DSP Practical Progression Guide
 
-**Status:** Maintenance mode. Version 3.0 was published and passed final cold
-verification on 2026-08-27. No product work is active or planned. Previously
-named unplanned concepts were deferred indefinitely and moved to the historical
-archive.
+**Status:** Implementing ML-E1 phone support. Version 3.0 remains the
+published product and passed final cold verification on 2026-08-27. On
+2026-10-11, the owner requested a complete roadmap draft for phones first and
+Simplified Chinese, German, and Japanese localization, approved the roadmap,
+and authorized execution through ML-05 with a handoff before ML-E2.
 
-[`ROADMAP.md`](ROADMAP.md) is the sole active roadmap and intentionally contains
-no work.
+[`ROADMAP.md`](ROADMAP.md) is the sole active roadmap. The two previously
+deferred concepts remain deferred indefinitely in the historical archive.
 
 ## Purpose
 
@@ -136,6 +137,9 @@ constitute production publication.
 
 Structural validation, deployed browser review, owner acceptance, and
 production publication are separate gates. Passing one never implies another.
+For the phone/localization initiative, the owner has explicitly delegated
+acceptance and story closure to the agent under the roadmap's execution policy;
+production publication remains separate and owner-controlled.
 Release packages include `LICENSE` and the privacy-sanitized game-asset
 permission record alongside `index.html` and `assets/`.
 
@@ -143,12 +147,30 @@ The production host's Cloudflare Pages Analytics injection was explicitly
 accepted by the owner as out-of-scope background noise during the version 3.0
 cold verification. It is external to the repository-supplied static package.
 
-## Maintenance state
+## Planning state
 
-No roadmap sequence, implementation story, release milestone, or named future
-work remains active. The YELLOW/PURPLE problem-resolver concept and Dark Fog
-COMBAT/PEACE control concept were explicitly deferred indefinitely. Their
-historical concept records are preserved under
+The active
+[`mobile and localization planning record`](management/mobile-localization-plan.md)
+contains completed early investigations and settled support, delivery, language,
+and quality decisions. The roadmap defines 28 weighted stories: an English phone
+candidate (3.1), then a four-language candidate (3.2). Phone targets are current
+Android Chrome on the S23 Ultra class and current iOS Safari, assessed through
+agent-operated browser emulation. Desktop behavior must be preserved. The
+published product retains its best-effort mobile policy until the support
+stories are implemented. Spanish and Russian remain excluded.
+
+The roadmap is approved; execution is currently authorized only for ML-01–05.
+There are no outstanding owner design, language-review, or device-testing
+decisions. Once implementation is instructed, the agent owns review, correction,
+acceptance, and closure, with a management update and commit/push to `main` after
+each story. No owner or native-speaker acceptance gate applies. Report results
+as agent-validated and preserve the limitations of emulation and self-review.
+Publication remains the owner's action. Investigations and implementation must
+not launch the game or alter its files; installed locale data may be read.
+
+The YELLOW/PURPLE problem-resolver concept and Dark Fog COMBAT/PEACE control
+concept remain deferred indefinitely. Their historical records, including the
+2026-10-11 review recommendations, are preserved under
 [`archive/deferred-indefinitely/`](archive/deferred-indefinitely/).
 
 The completed version 3.0 sequence, its source review, story records, and
@@ -156,9 +178,8 @@ supporting evidence are preserved under
 [`archive/version-3.0/`](archive/version-3.0/). Earlier completed and superseded
 records remain indexed by [`archive/README.md`](archive/README.md).
 
-Maintenance work begins only through a new explicit owner direction classified
-under `management/work-management.md`. Historical records do not authorize new
-work.
+Further work requires explicit owner direction classified under
+`management/work-management.md`. Historical records do not authorize new work.
 
 ## Documentation roles
 

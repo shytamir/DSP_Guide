@@ -15,8 +15,9 @@ record.
    contract unless they enforce a durable requirement.
 3. **Implement within the approved scope.** Passing checks establishes
    technical consistency, not reader acceptance.
-4. **Obtain the required owner decision.** Only the owner can accept, complete,
-   or archive a story.
+4. **Apply the recorded acceptance authority.** The owner normally accepts and
+   closes stories. The phone/localization roadmap explicitly delegates those
+   decisions to the agent, with no repeated owner gate.
 5. **Close the record.** Update current project status at a meaningful
    milestone and move accepted or superseded records to `docs/archive/`.
 
@@ -32,14 +33,20 @@ record.
 
 ## Planning state
 
-The project is in maintenance mode with no active or planned work.
-[`../ROADMAP.md`](../ROADMAP.md) is the sole current roadmap and is an empty
-maintenance placeholder. No story or concept record is active in this
-directory.
+The project is planning phone support and localization under
+[`mobile-localization-plan.md`](mobile-localization-plan.md).
+The owner requested a complete draft and delegated design, language review,
+technical acceptance, and eventual story closure on 2026-10-11. The final draft
+has 28 weighted stories with agent-owned gates: English phone support first,
+then Simplified Chinese, German, and Japanese together. The owner approved the
+roadmap and authorized ML-01–05, stopping after that epic. Each story includes a management update
+and commit/push to `main`; production publication remains with the owner.
+[`../ROADMAP.md`](../ROADMAP.md) remains the sole current roadmap.
 
-The completed version 3.0 sequence is indexed under
+The published version 3.0 sequence is indexed under
 [`../archive/version-3.0/`](../archive/version-3.0/). The two previously named
-unplanned concepts were deferred indefinitely and are indexed under
+unplanned concepts remain deferred indefinitely, with review recommendations
+retained alongside each record, and are indexed under
 [`../archive/deferred-indefinitely/`](../archive/deferred-indefinitely/).
 
 ## Historical records
@@ -49,7 +56,7 @@ evidence, and reviews are indexed in
 [`../archive/README.md`](../archive/README.md). Archived language is historical
 and does not define current work.
 
-Unsettled analysis may remain in an untracked working note until the owner
-approves it as active work. Raw correspondence, unsanitized personal
+Unsettled analysis may remain in an untracked working note until authorized as
+active work under the applicable acceptance policy. Raw correspondence, personal
 information, player snapshots, and game assemblies must remain outside version
 control.

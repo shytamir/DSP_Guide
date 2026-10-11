@@ -5,6 +5,16 @@
 Use this process to keep work reader-centered, bounded, and reviewable. A
 specific approved story may override this general process.
 
+**Phone/localization exception:** the owner's 2026-10-11 direction delegates
+design decisions, linguistic review, technical acceptance, and closure for
+ML-01–28 to the agent under [the roadmap](../ROADMAP.md). Once implementation
+is instructed, review/correct and close each story as `agent-validated`, update
+its management ledger, and commit/push to `main` without an owner acceptance
+checkpoint. Candidate evidence may require the documented follow-up commit.
+The owner retains production publication. Draft preparation does not start
+implementation. This specific policy overrides owner-gate defaults below only
+for this initiative; required checks and explicit limitations remain mandatory.
+
 ## Management principles
 
 1. Classify the work before approving implementation.

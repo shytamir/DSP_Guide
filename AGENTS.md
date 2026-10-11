@@ -103,6 +103,17 @@ unless the current user explicitly instructs you to do so.
 
 For non-mutating or `PLAN ONLY` tasks, do not modify, commit, or push.
 
+### Phone/localization delegation
+
+For the ML-01–28 initiative, the owner explicitly delegates implementation
+decisions, linguistic review, acceptance, and story closure to the agent under
+[`docs/ROADMAP.md`](docs/ROADMAP.md). Once implementation is instructed, update
+management records and commit/push each completed story to `main` without an
+additional owner gate. Use `agent-validated`, not `owner-validated`. Candidate
+stories may need the roadmap's evidence follow-up commit after remote checks.
+Production publication remains the owner's action. Preparing the roadmap draft
+does not itself authorize implementation, committing, or pushing.
+
 ## 7. Repository architecture
 
 Keep these layers separate:
